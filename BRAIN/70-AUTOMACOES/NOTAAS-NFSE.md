@@ -34,9 +34,18 @@ Emitir, consultar, baixar e cancelar NFS-e via API Notaas.
 - `cancelar_nota.py --dry-run` validado sem envio.
 - Operação real sem confirmação é bloqueada.
 
-## Pendência
+## Configuração
 
-Configurar API key Notaas e dados da empresa Bikon antes de uso real.
+Configurada em 2026-06-12 para Bikon Tecnologia da Informação Ltda Me.
+
+Dados não sensíveis registrados:
+
+- CNPJ: 34.191.026/0001-86
+- Inscrição Municipal: 083712941
+- Cidade/UF: Vitória/ES
+- Código IBGE: 3205309
+
+A API key foi armazenada apenas nos arquivos locais `.env` e `config/empresa.json`, com permissão `600`. Não registrar segredo no Brain nem no Git.
 
 ## Regra operacional
 

@@ -41,3 +41,9 @@
 - Corrigidos problemas de instalação, dry-run e frontmatter.
 - Instalada skill em `/data/.openclaw/workspace/skills/notaas-nfse` e `/data/.openclaw/skills/notaas-nfse`.
 - Registrados guardrails para impedir emissão/cancelamento fiscal sem confirmação explícita.
+## 2026-06-12, configuração Notaas Bikon
+
+- Configurada skill Notaas NFS-e para Bikon Tecnologia da Informação Ltda Me.
+- Registrados apenas dados não sensíveis no Brain.
+- API key mantida fora do Git, em arquivos locais com permissão 600.
+- Validação realizada em modo dry-run, sem chamada real para API.
