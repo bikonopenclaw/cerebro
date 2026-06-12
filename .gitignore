@@ -1,0 +1,25 @@
+# Arquivos sensíveis
+.env
+*.key
+*.pem
+*.secret
+secrets/
+credentials/
+
+# Arquivos temporários
+*.tmp
+*.log
+.cache/
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operacional
+._*
+.Spotlight-V100
+.Trashes
