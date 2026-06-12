@@ -14,3 +14,9 @@
 - Puppet Master permanece responsável pela administração do Brain.
 - Criada rotina diária de consolidação silenciosa.
 - Criado dashboard inicial de status do Brain.
+
+## 2026-06-12, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-12.md`.
+- Registrada automação `BRAIN/70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`.
+- Atualizados indicadores de saúde após criação da rotina e dashboard inicial.

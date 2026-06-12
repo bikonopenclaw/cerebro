@@ -1,6 +1,6 @@
 # HEALTH.md
 
-Health Score: 90/100
+Health Score: 94/100
 
 ## Status inicial
 
@@ -8,9 +8,10 @@ Health Score: 90/100
 - Arquivos obrigatórios criados.
 - Sem registros duplicados identificados no bootstrap.
 - Sem projetos abandonados identificados no bootstrap.
+- Rotina de consolidação diária registrada.
+- Dashboard inicial criado.
 
 ## Pendências
 
-- Criar rotina de consolidação diária.
-- Criar dashboards iniciais.
 - Popular registros reais conforme relevância.
+- Expandir dashboards conforme surgirem projetos, empresas, pessoas e automações reais.

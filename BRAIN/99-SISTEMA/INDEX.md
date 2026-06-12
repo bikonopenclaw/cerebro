@@ -14,3 +14,8 @@ Mapa geral do Brain.
 - `70-AUTOMACOES`: workflows e integrações.
 - `80-DASHBOARDS`: indicadores consolidados.
 - `99-SISTEMA`: regras, memória, índice, saúde e changelog.
+
+## Registros ativos
+
+- `01-DIARIO/2026/2026-06-12.md`: primeira consolidação diária do Brain.
+- `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
