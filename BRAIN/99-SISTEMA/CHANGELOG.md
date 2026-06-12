@@ -34,3 +34,10 @@
 - Script faz commit apenas quando há mudanças locais.
 - Script envia `main` para `origin/main`.
 - Automação programada para 06:00, 12:00, 18:00 e 23:00 BRT.
+
+## 2026-06-12, skill Notaas NFS-e
+
+- Auditada skill Notaas NFS-e v2.0.
+- Corrigidos problemas de instalação, dry-run e frontmatter.
+- Instalada skill em `/data/.openclaw/workspace/skills/notaas-nfse` e `/data/.openclaw/skills/notaas-nfse`.
+- Registrados guardrails para impedir emissão/cancelamento fiscal sem confirmação explícita.
