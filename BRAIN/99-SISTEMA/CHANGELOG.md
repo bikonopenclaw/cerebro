@@ -20,3 +20,10 @@
 - Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-12.md`.
 - Registrada automação `BRAIN/70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`.
 - Atualizados indicadores de saúde após criação da rotina e dashboard inicial.
+
+## 2026-06-12, filosofia cognitiva
+
+- Criado `BRAIN/99-SISTEMA/FILOSOFIA.md`.
+- Registrados princípios: memória maior que armazenamento, contexto maior que fato, conhecimento conectado, relevância conquistada e esquecimento saudável.
+- Criada pasta `BRAIN/99-ARQUIVO` para redução de prioridade sem apagar conhecimento.
+- Atualizados `CONFIG.md`, `INDEX.md`, `ROTINA-CONSOLIDACAO.md` e `HEALTH.md`.

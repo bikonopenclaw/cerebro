@@ -19,3 +19,16 @@ Mapa geral do Brain.
 
 - `01-DIARIO/2026/2026-06-12.md`: primeira consolidação diária do Brain.
 - `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
+
+## Arquivos de sistema
+
+- `CONFIG.md`: regras operacionais do Brain.
+- `FILOSOFIA.md`: princípios cognitivos e filosofia de funcionamento.
+- `ROTINA-CONSOLIDACAO.md`: rotina diária de consolidação.
+- `MEMORY.md`: memória institucional consolidada.
+- `CHANGELOG.md`: histórico de alterações.
+- `HEALTH.md`: saúde e métricas do Brain.
+
+## Arquivo
+
+- `99-ARQUIVO`: notas antigas, sem links fortes ou com baixa prioridade. Não é lixeira, é redução de visibilidade.

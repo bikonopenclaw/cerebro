@@ -237,6 +237,15 @@ Sempre que possível criar conexões explícitas. Nenhuma informação important
 
 Todo conhecimento deve apontar para pessoas, empresas, projetos e aprendizados relacionados quando aplicável.
 
+
+## Filosofia cognitiva
+
+A filosofia oficial do Brain está em `BRAIN/99-SISTEMA/FILOSOFIA.md`.
+
+Regra central: o Brain não existe para registrar o passado. O Brain existe para melhorar o futuro.
+
+Toda consolidação deve seguir os princípios de memória maior que armazenamento, contexto maior que fato, conhecimento conectado, relevância conquistada e esquecimento saudável.
+
 ## Regra final
 
 O Brain não é um arquivo. O Brain não é um repositório de documentos. O Brain é um sistema vivo de conhecimento.

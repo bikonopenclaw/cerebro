@@ -76,3 +76,28 @@ Arquivo: `BRAIN/01-DIARIO/YYYY/YYYY-MM-DD.md`
 ## Regra de ouro
 
 Se a informação não melhora decisão futura, não entra no Brain.
+
+## Rotina semanal
+
+Horário: domingo, 03:00 BRT.
+
+Objetivo:
+
+1. Revisar as daily notes dos últimos 7 dias.
+2. Identificar padrões recorrentes.
+3. Criar ou atualizar resumo semanal em `BRAIN/01-DIARIO/Semanal/`.
+4. Elevar 2 a 5 aprendizados para notas permanentes quando fizer sentido.
+5. Arquivar informações sem relevância em `BRAIN/99-ARQUIVO/`.
+
+## Rotina mensal
+
+Horário: dia 1 de cada mês, 03:00 BRT.
+
+Objetivo:
+
+1. Revisar resumos semanais do mês anterior.
+2. Consolidar aprendizados do mês.
+3. Atualizar MOCs relevantes.
+4. Identificar padrões de longo prazo.
+5. Arquivar notas sem uso ou sem conexão.
+6. Atualizar métricas em `BRAIN/99-SISTEMA/HEALTH.md`.
