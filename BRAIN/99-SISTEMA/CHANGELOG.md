@@ -27,3 +27,10 @@
 - Registrados princípios: memória maior que armazenamento, contexto maior que fato, conhecimento conectado, relevância conquistada e esquecimento saudável.
 - Criada pasta `BRAIN/99-ARQUIVO` para redução de prioridade sem apagar conhecimento.
 - Atualizados `CONFIG.md`, `INDEX.md`, `ROTINA-CONSOLIDACAO.md` e `HEALTH.md`.
+
+## 2026-06-12, sync GitHub 4x ao dia
+
+- Criado script `scripts/sync-github.sh`.
+- Script faz commit apenas quando há mudanças locais.
+- Script envia `main` para `origin/main`.
+- Automação programada para 06:00, 12:00, 18:00 e 23:00 BRT.
