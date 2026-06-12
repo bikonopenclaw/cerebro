@@ -47,3 +47,9 @@
 - Registrados apenas dados não sensíveis no Brain.
 - API key mantida fora do Git, em arquivos locais com permissão 600.
 - Validação realizada em modo dry-run, sem chamada real para API.
+## 2026-06-12, exclusividade Notaas NFS-e
+
+- Skill `notaas-nfse` restringida para uso exclusivo da Darth Vader.
+- Removida dos diretórios globais/main.
+- Mantida em `/data/.openclaw/workspace-darth-vader/skills/notaas-nfse`.
+- Validado que main e Kowalski não enxergam a skill, e Darth Vader enxerga.

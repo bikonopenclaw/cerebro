@@ -6,8 +6,7 @@ Instalada com hardening em 2026-06-12.
 
 ## Locais
 
-- Workspace skill: `/data/.openclaw/workspace/skills/notaas-nfse`
-- Skill global: `/data/.openclaw/skills/notaas-nfse`
+- Skill exclusiva Darth Vader: `/data/.openclaw/workspace-darth-vader/skills/notaas-nfse`
 - Auditoria: `/data/.openclaw/workspace/audits/notaas-nfse/AUDITORIA.md`
 - Instalação: `/data/.openclaw/workspace/audits/notaas-nfse/INSTALACAO.md`
 
@@ -50,3 +49,15 @@ A API key foi armazenada apenas nos arquivos locais `.env` e `config/empresa.jso
 ## Regra operacional
 
 Qualquer emissão ou cancelamento real de NFS-e deve ser previamente autorizado pelo Hebert/Puppet Master, por envolver obrigação fiscal.
+
+## Exclusividade
+
+Em 2026-06-12, a skill foi restringida para uso exclusivo da Darth Vader.
+
+Validação realizada:
+
+- `openclaw skills check --agent darth-vader` mostra `notaas-nfse`.
+- `openclaw skills check --agent main` não mostra `notaas-nfse`.
+- `openclaw skills check --agent kowalski` não mostra `notaas-nfse`.
+
+A skill foi removida dos diretórios globais/main e mantida apenas no workspace da Darth Vader.
