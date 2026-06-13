@@ -18,7 +18,10 @@ Mapa geral do Brain.
 ## Registros ativos
 
 - `01-DIARIO/2026/2026-06-12.md`: primeira consolidação diária do Brain.
+- `01-DIARIO/2026/2026-06-13.md`: consolidação diária silenciosa sem novos registros permanentes.
 - `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
+- `70-AUTOMACOES/SYNC-GITHUB.md`: sincronização automática do Brain com GitHub 4x ao dia.
+- `70-AUTOMACOES/NOTAAS-NFSE.md`: registro da skill Notaas NFS-e exclusiva da Darth Vader, com guardrails fiscais.
 
 ## Arquivos de sistema
 

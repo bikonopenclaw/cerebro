@@ -53,3 +53,9 @@
 - Removida dos diretórios globais/main.
 - Mantida em `/data/.openclaw/workspace-darth-vader/skills/notaas-nfse`.
 - Validado que main e Kowalski não enxergam a skill, e Darth Vader enxerga.
+
+## 2026-06-13, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-13.md`.
+- Revisado contexto recente disponível; nenhuma sessão recente visível nem memória recuperável com conhecimento novo relevante.
+- Mantidos registros permanentes sem novos arquivos para evitar ruído e duplicidade.

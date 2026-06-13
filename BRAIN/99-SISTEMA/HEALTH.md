@@ -2,14 +2,15 @@
 
 Health Score: 94/100
 
-## Status inicial
+## Status atual
 
 - Estrutura principal criada.
 - Arquivos obrigatórios criados.
-- Sem registros duplicados identificados no bootstrap.
-- Sem projetos abandonados identificados no bootstrap.
-- Rotina de consolidação diária registrada.
-- Dashboard inicial criado.
+- Sem registros duplicados identificados.
+- Sem projetos abandonados identificados.
+- Rotina de consolidação diária registrada e executada em 2026-06-13.
+- Dashboard inicial atualizado.
+- Automações registradas: consolidação diária silenciosa, sync GitHub e Notaas NFS-e exclusiva da Darth Vader.
 
 ## Pendências
 
