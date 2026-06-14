@@ -1,0 +1,34 @@
+{
+  "arquivo": "exemplo-malote-20260614-0223-133_CNAB400_1008_27846.rem",
+  "sha256": "9fbe62e26c54743b09b7477e3afa24d30e8c890da3d1682e70e9e5ff2448c9f8",
+  "diagnostico": "arquivo incompleto/template; não contém detalhe tipo 1 nem trailer tipo 9",
+  "layout_aparente": "CNAB 400 Cresol 133",
+  "linhas": 2,
+  "tamanho_linha": [
+    400
+  ],
+  "tipos_registro": [
+    "0",
+    "0"
+  ],
+  "header": {
+    "001_001_identificacao_registro": "0",
+    "002_002_identificacao_remessa": "1",
+    "003_009_literal_remessa": "REMESSA",
+    "010_011_codigo_servico": "01",
+    "012_026_literal_servico": "COBRANCA",
+    "027_046_codigo_empresa_conta_cooperado": "00000000000000027846",
+    "047_076_nome_empresa": "",
+    "077_079_codigo_banco": "133",
+    "080_094_nome_banco": "Cresol",
+    "095_100_data_gravacao_ddmmaa": "      ",
+    "111_117_sequencial_remessa": "       ",
+    "395_400_sequencial_registro": "000001"
+  },
+  "validacoes_para_skill": [
+    "exigir pelo menos um registro detalhe tipo 1",
+    "exigir trailer tipo 9",
+    "validar header obrigatório preenchido",
+    "validar tipos de registro permitidos: 0, 1, 9"
+  ]
+}

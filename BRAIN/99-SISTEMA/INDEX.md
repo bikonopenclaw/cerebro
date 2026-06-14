@@ -19,6 +19,10 @@ Mapa geral do Brain.
 
 - `01-DIARIO/2026/2026-06-12.md`: primeira consolidação diária do Brain.
 - `01-DIARIO/2026/2026-06-13.md`: consolidação diária silenciosa sem novos registros permanentes.
+- `01-DIARIO/Semanal/2026-W24.md`: primeira consolidação semanal do Brain.
+- `40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md`: princípio permanente de memória útil.
+- `40-CONHECIMENTO/Operacional/Consolidacao-silenciosa-sem-ruido.md`: regra operacional para consolidar sem interrupção e sem ruído.
+- `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
 - `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
 - `70-AUTOMACOES/SYNC-GITHUB.md`: sincronização automática do Brain com GitHub 4x ao dia.
 - `70-AUTOMACOES/NOTAAS-NFSE.md`: registro da skill Notaas NFS-e exclusiva da Darth Vader, com guardrails fiscais.

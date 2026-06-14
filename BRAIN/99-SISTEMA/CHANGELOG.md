@@ -59,3 +59,10 @@
 - Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-13.md`.
 - Revisado contexto recente disponível; nenhuma sessão recente visível nem memória recuperável com conhecimento novo relevante.
 - Mantidos registros permanentes sem novos arquivos para evitar ruído e duplicidade.
+
+## 2026-06-14, consolidação semanal
+
+- Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W24.md` cobrindo daily notes disponíveis de 2026-06-08 a 2026-06-14.
+- Identificados padrões recorrentes: Brain como sistema de memória, consolidação silenciosa sem ruído e criação de notas apenas com utilidade futura.
+- Elevados aprendizados para notas permanentes em `BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md`, `BRAIN/40-CONHECIMENTO/Operacional/Consolidacao-silenciosa-sem-ruido.md` e `BRAIN/50-PROJETOS/Em-Andamento/Brain-Enterprise.md`.
+- Nenhum arquivamento realizado; registros existentes permanecem recentes, conectados e relevantes.

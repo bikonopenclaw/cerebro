@@ -2,13 +2,15 @@
 
 ## Health Score
 
-94/100
+95/100
 
 ## Estado atual
 
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
 - Rotina diária de consolidação definida e executada em 2026-06-13.
+- Primeira consolidação semanal criada em `01-DIARIO/Semanal/2026-W24.md`.
+- Notas permanentes iniciais criadas para Brain como sistema de memória, consolidação silenciosa e projeto Brain Enterprise.
 - Automação de consolidação diária registrada.
 - Sync GitHub do Brain registrado para execução 4x ao dia.
 - Skill Notaas NFS-e registrada como automação exclusiva da Darth Vader, com guardrails fiscais e sem segredo no Brain/Git.
