@@ -1,0 +1,38 @@
+{
+  "arquivo": "exemplo-malote-20260614-015740.rem",
+  "sha256": "f7599f1a24c8acdf7b121611a2f452270739347b0b3087c2e3611cac7fedcde7",
+  "layout_provavel": "CNAB 400",
+  "banco": {
+    "codigo": "133",
+    "nome": "CRESOL"
+  },
+  "linhas": 3,
+  "tamanho_linha": [
+    400
+  ],
+  "header": {
+    "tipo_registro": "0",
+    "operacao": "1",
+    "literal_remessa": "REMESSA",
+    "codigo_servico": "01",
+    "servico": "COBRANCA",
+    "codigo_empresa": "00000000000000027846",
+    "nome_empresa": "BIKON TECNOLOGIA DA INFORMACAO",
+    "codigo_banco": "133",
+    "nome_banco": "CRESOL",
+    "data_gravacao_ddmmaa": "101024",
+    "sequencial_remessa_provavel": "0000032"
+  },
+  "detalhe_1": {
+    "vencimento_ddmmaa": "241024",
+    "valor_centavos": "0000000523093",
+    "valor_decimal": 5230.93,
+    "data_emissao_ddmmaa": "101024",
+    "tipo_doc_sacado_provavel": "02",
+    "cnpj_sacado": "21975647000109",
+    "nome_sacado": "UNUS HOLDING LTDA",
+    "endereco_sacado": "RUA SIQUEIRA CAMPOS 1281 CENTRO CASCAVEL",
+    "cep_sacado": "85812220",
+    "sequencial_registro": "000002"
+  }
+}
