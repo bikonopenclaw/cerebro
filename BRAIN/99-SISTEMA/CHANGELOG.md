@@ -66,3 +66,10 @@
 - Identificados padrões recorrentes: Brain como sistema de memória, consolidação silenciosa sem ruído e criação de notas apenas com utilidade futura.
 - Elevados aprendizados para notas permanentes em `BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md`, `BRAIN/40-CONHECIMENTO/Operacional/Consolidacao-silenciosa-sem-ruido.md` e `BRAIN/50-PROJETOS/Em-Andamento/Brain-Enterprise.md`.
 - Nenhum arquivamento realizado; registros existentes permanecem recentes, conectados e relevantes.
+
+## 2026-06-16, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-16.md`.
+- Criado registro central `BRAIN/20-EMPRESAS/BIKON/README.md` para conectar informações já existentes da BIKON sem fragmentação.
+- Atualizado `BRAIN/70-AUTOMACOES/boletos-malote/README.md` com estado, pendências de homologação Cresol e guardrail de não uso real sem validação.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md` para refletir BIKON, boletos/malote e limitação temporária da busca semântica de memória.
