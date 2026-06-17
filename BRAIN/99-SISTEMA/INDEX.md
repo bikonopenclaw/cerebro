@@ -20,6 +20,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-06-12.md`: primeira consolidação diária do Brain.
 - `01-DIARIO/2026/2026-06-13.md`: consolidação diária silenciosa sem novos registros permanentes.
 - `01-DIARIO/2026/2026-06-16.md`: consolidação diária com centralização dos registros da BIKON e limitação de memória semântica registrada.
+- `01-DIARIO/2026/2026-06-17.md`: consolidação diária sem novos registros permanentes, com limitação recorrente de memória semântica registrada.
 - `01-DIARIO/Semanal/2026-W24.md`: primeira consolidação semanal do Brain.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
 - `20-EMPRESAS/BIKON/cadastro-clientes/README.md`: backup operacional de cadastro de clientes da BIKON.

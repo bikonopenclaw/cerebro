@@ -73,3 +73,10 @@
 - Criado registro central `BRAIN/20-EMPRESAS/BIKON/README.md` para conectar informações já existentes da BIKON sem fragmentação.
 - Atualizado `BRAIN/70-AUTOMACOES/boletos-malote/README.md` com estado, pendências de homologação Cresol e guardrail de não uso real sem validação.
 - Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md` para refletir BIKON, boletos/malote e limitação temporária da busca semântica de memória.
+
+## 2026-06-17, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-17.md`.
+- Revisados arquivos locais do Brain, Inbox, `git status/log` e sessões visíveis; nenhum contexto recente externo recuperável foi encontrado.
+- Mantidos registros permanentes sem novos arquivos para evitar ruído e duplicidade.
+- Atualizados `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e a automação de consolidação diária para refletir a execução e a recorrência da limitação de `memory_search`.
