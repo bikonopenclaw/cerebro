@@ -8,7 +8,7 @@
 
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
-- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16 e 2026-06-17.
+- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17 e 2026-06-18.
 - Primeira consolidação semanal criada em `01-DIARIO/Semanal/2026-W24.md`.
 - Notas permanentes iniciais criadas para Brain como sistema de memória, consolidação silenciosa e projeto Brain Enterprise.
 - Registro central da BIKON criado em `20-EMPRESAS/BIKON/README.md`.
@@ -16,6 +16,8 @@
 - Sync GitHub do Brain registrado para execução 4x ao dia.
 - Skill Notaas NFS-e registrada como automação exclusiva da Darth Vader, com guardrails fiscais e sem segredo no Brain/Git.
 - Boletos/malote bancário da BIKON documentado como futura automação, ainda dependente de homologação Cresol antes de uso real.
+- Contextos de grupos Telegram de faturamento Bikon e FN Souza registrados, com roteamento para Darth Vader e guardrails de aprovação explícita.
+- Agente Darth Vader documentado como executor financeiro/fiscal relacionado a NFS-e, boletos e remessas.
 - Arquivos obrigatórios criados em `99-SISTEMA`.
 
 ## Próximas melhorias

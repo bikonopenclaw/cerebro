@@ -80,3 +80,12 @@
 - Revisados arquivos locais do Brain, Inbox, `git status/log` e sessões visíveis; nenhum contexto recente externo recuperável foi encontrado.
 - Mantidos registros permanentes sem novos arquivos para evitar ruído e duplicidade.
 - Atualizados `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e a automação de consolidação diária para refletir a execução e a recorrência da limitação de `memory_search`.
+
+## 2026-06-18, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-18.md`.
+- Criado `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md` para consolidar contextos dos grupos Telegram de faturamento Bikon e FN Souza.
+- Criado `BRAIN/60-AGENTES/DARTH-VADER.md` documentando o papel financeiro/fiscal do agente e guardrails de execução.
+- Atualizado `BRAIN/20-EMPRESAS/BIKON/README.md` com a restrição do grupo Faturamento Bikon.
+- Atualizados `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e a automação de consolidação diária.
+- Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais e histórico Git.
