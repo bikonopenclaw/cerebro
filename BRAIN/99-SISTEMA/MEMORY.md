@@ -10,3 +10,4 @@ Memória institucional consolidada do Brain.
 - Evitar duplicidade antes de criar novos registros.
 - Relacionar pessoas, empresas, projetos e conhecimento sempre que possível.
 - Consolidar periodicamente, sem atrapalhar a execução do dia.
+- Antes de ações que enviem, alterem, criem ou executem algo fora da conversa atual, avisar Hebert e confirmar quando o impacto não estiver previamente autorizado; rotinas silenciosas já autorizadas seguem suas próprias restrições.

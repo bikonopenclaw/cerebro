@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_operacional
-fonte: sessões Telegram visíveis em 2026-06-17
+fonte: sessões Telegram visíveis em 2026-06-17 e correção operacional em 2026-06-18/19
 confiabilidade: alta
-ultima_revisao: 2026-06-18
+ultima_revisao: 2026-06-19
 tags: [telegram, faturamento, bikon, fn-souza, nfse, boletos, remessa, darth-vader]
 ```
 
@@ -39,6 +39,7 @@ Registrar os contextos operacionais de grupos Telegram usados para faturamento, 
 - Não enviar comunicação externa ou arquivo financeiro a cliente sem aprovação explícita.
 - Preparos internos, rascunhos, conferências e validações podem ser executados sem impacto externo quando houver dados suficientes.
 - Se faltar dado fiscal/financeiro, pedir apenas o mínimo necessário para desbloquear.
+- Antes de postar, repostar, acionar agente, alterar configuração ou disparar qualquer execução fora da conversa atual, avisar Hebert e confirmar quando o impacto não estiver previamente autorizado.
 
 ## Relações
 
@@ -46,3 +47,4 @@ Registrar os contextos operacionais de grupos Telegram usados para faturamento, 
 - Automação fiscal: `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md`
 - Boletos/malote: `BRAIN/70-AUTOMACOES/boletos-malote/README.md`
 - Agente executor financeiro: Darth Vader
+- Diretriz operacional: `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`
