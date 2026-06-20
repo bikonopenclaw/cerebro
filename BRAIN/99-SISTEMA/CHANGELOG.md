@@ -97,3 +97,11 @@
 - Criado `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md` para registrar a diretriz de aviso/confirmação antes de ações com impacto fora da conversa atual.
 - Atualizados `BIKON/README.md`, `FATURAMENTO-TELEGRAM.md`, `MEMORY.md`, `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e a automação de consolidação diária.
 - Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais e histórico Git.
+## 2026-06-20, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-20.md`.
+- Atualizado `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md` com padrão Bikon de tomador completo e preservação de endereço.
+- Atualizados `BRAIN/20-EMPRESAS/BIKON/README.md` e `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md` com relatório executivo agregado Bitdefender de 2026-06-19.
+- Criado `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md` para registrar a automação diária ARX Backup → tickets NinjaOne.
+- Atualizados `MEMORY.md`, `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais e histórico Git.

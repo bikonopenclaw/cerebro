@@ -23,6 +23,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-06-17.md`: consolidação diária sem novos registros permanentes, com limitação recorrente de memória semântica registrada.
 - `01-DIARIO/2026/2026-06-18.md`: consolidação diária com registros dos contextos de faturamento Bikon/FN Souza e skill inicial FN Souza para Darth Vader.
 - `01-DIARIO/2026/2026-06-19.md`: consolidação diária com diretriz de confirmação antes de ações com impacto e desenho inicial da integração GravityZone para Bikon.
+- `01-DIARIO/2026/2026-06-20.md`: consolidação diária com padrão Bikon de tomador completo em NFS-e, relatório executivo Bitdefender e automação ARX Backup → NinjaOne.
 - `01-DIARIO/Semanal/2026-W24.md`: primeira consolidação semanal do Brain.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
 - `20-EMPRESAS/BIKON/cadastro-clientes/README.md`: backup operacional de cadastro de clientes da BIKON.
@@ -36,6 +37,7 @@ Mapa geral do Brain.
 - `70-AUTOMACOES/NOTAAS-NFSE.md`: registro da skill Notaas NFS-e exclusiva da Darth Vader, com guardrails fiscais.
 - `70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`: contextos dos grupos Telegram de faturamento Bikon e FN Souza, com roteamento para Darth Vader e guardrails.
 - `70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`: desenho inicial da integração GravityZone para segurança, inventário e relatórios da Bikon.
+- `70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`: automação diária de monitoramento ARX Backup com deduplicação/criação de tickets NinjaOne.
 - `70-AUTOMACOES/boletos-malote/README.md`: documentação da futura automação de boletos/remessa bancária da BIKON, com pendências de homologação Cresol.
 
 ## Arquivos de sistema

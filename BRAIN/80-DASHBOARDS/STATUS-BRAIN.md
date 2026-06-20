@@ -2,13 +2,13 @@
 
 ## Health Score
 
-93/100
+94/100
 
 ## Estado atual
 
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
-- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18 e 2026-06-19.
+- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19 e 2026-06-20.
 - Primeira consolidação semanal criada em `01-DIARIO/Semanal/2026-W24.md`.
 - Notas permanentes iniciais criadas para Brain como sistema de memória, consolidação silenciosa e projeto Brain Enterprise.
 - Registro central da BIKON criado em `20-EMPRESAS/BIKON/README.md`.
@@ -19,7 +19,8 @@
 - Contextos de grupos Telegram de faturamento Bikon e FN Souza registrados, com roteamento para Darth Vader e guardrails de aprovação explícita.
 - Agente Darth Vader documentado como executor financeiro/fiscal relacionado a NFS-e, boletos e remessas.
 - Diretriz de confirmação antes de ações com impacto registrada em conhecimento operacional.
-- Integração Bitdefender GravityZone da Bikon registrada como desenho inicial, sem credenciais e sem execução externa.
+- Integração Bitdefender GravityZone da Bikon registrada como desenho inicial e relatório executivo agregado de 2026-06-19 catalogado sem segredos.
+- Automação ARX Backup diário → tickets NinjaOne registrada com última execução observada bem-sucedida.
 - Arquivos obrigatórios criados em `99-SISTEMA`.
 
 ## Próximas melhorias

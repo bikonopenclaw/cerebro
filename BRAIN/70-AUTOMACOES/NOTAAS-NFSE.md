@@ -50,6 +50,21 @@ A API key foi armazenada apenas nos arquivos locais `.env` e `config/empresa.jso
 
 Qualquer emissão ou cancelamento real de NFS-e deve ser previamente autorizado pelo Hebert/Puppet Master, por envolver obrigação fiscal.
 
+## Padrão Bikon para dados do tomador
+
+Atualizado em 2026-06-19/20 após lote de homologação sair sem endereço porque o script descartava `tomador.endereco`.
+
+Para emissões da Bikon, a NFS-e deve usar todos os dados disponíveis no cadastro mestre do cliente:
+
+- CPF ou CNPJ conforme documento.
+- Nome/razão social do cadastro.
+- E-mail financeiro quando existir.
+- Endereço completo sempre que disponível: logradouro, número, complemento, bairro, cidade, UF e CEP.
+- Não emitir lote usando só documento, nome e e-mail quando o cadastro tiver endereço.
+- Se endereço estiver ausente ou ambíguo, marcar pendência antes da emissão.
+
+Correção aplicada na skill da Darth Vader em `core/client.py` e `scripts/emitir_lote.py` para preservar endereço quando disponível.
+
 ## Exclusividade
 
 Em 2026-06-12, a skill foi restringida para uso exclusivo da Darth Vader.

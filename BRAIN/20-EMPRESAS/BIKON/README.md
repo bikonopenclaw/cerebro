@@ -19,6 +19,8 @@
 
 ## Histórico relevante
 
+- 2026-06-20: definido padrão operacional de NFS-e com tomador completo; quando o cadastro mestre tiver endereço, o payload Notaas deve incluir endereço completo e não apenas documento, nome e e-mail.
+- 2026-06-19: gerado relatório executivo Bitdefender com 21 clientes, 785 licenças, 651 slots usados, 759 dispositivos, 647 gerenciados e 112 não gerenciados; caminhos registrados sem segredos.
 - 2026-06-19: desenhada oportunidade de integração Bitdefender GravityZone para inventário, status de endpoints, incidentes e relatórios por cliente; sem credenciais registradas e sem execução externa.
 - 2026-06-17: grupo Telegram `Faturamento Bikon` (`telegram:-5561224828`) restringido para tratar apenas de faturamento da Bikon: NFS-e, boletos, remessa/retorno e conferência cadastral diretamente ligada ao faturamento.
 - 2026-06-12: skill Notaas NFS-e configurada para Bikon, com segredos mantidos fora do Brain/Git e emissão/cancelamento real protegidos por confirmação explícita.
@@ -28,5 +30,6 @@
 
 - Não registrar API keys, credenciais bancárias, tokens, arquivos sensíveis sem necessidade ou dados fiscais sigilosos no Brain.
 - Qualquer emissão/cancelamento fiscal real exige autorização explícita do Hebert/Puppet Master.
+- NFS-e da Bikon deve usar dados completos do tomador quando disponíveis no cadastro mestre, incluindo endereço completo.
 - Qualquer geração de remessa bancária real deve ser validada contra layout oficial do banco antes de uso operacional.
 - Qualquer chamada real à API GravityZone ou armazenamento de chave exige autorização explícita do Hebert e cofre local fora do Git.

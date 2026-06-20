@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_seguranca
-fonte: conversa com Hebert em 2026-06-18/19 e documentação pública Bitdefender consultada na sessão
+fonte: conversa com Hebert em 2026-06-18/19, documentação pública Bitdefender consultada na sessão e relatório executivo gerado em 2026-06-19
 confiabilidade: media
-ultima_revisao: 2026-06-19
+ultima_revisao: 2026-06-20
 tags: [bikon, bitdefender, gravityzone, seguranca, inventario, endpoints, relatorios]
 ```
 
@@ -50,6 +50,24 @@ Fase posterior:
 - Não commitar arquivos `.env`, tokens, respostas sensíveis ou inventário detalhado de clientes/endpoints.
 - Começar por teste controlado de autenticação e leitura, sem alteração de políticas, pacotes ou configurações.
 - Ações de remediação, alteração de política, isolamento ou quarentena exigem aprovação explícita e registro operacional.
+
+## Relatório executivo 2026-06-19
+
+Artefatos gerados no workspace do Kowalski:
+
+- Markdown: `/data/.openclaw/workspace-kowalski/relatorios/bitdefender/relatorio-executivo-licencas-bitdefender-2026-06-19.md`
+- PDF: `/data/.openclaw/workspace-kowalski/relatorios/bitdefender/relatorio-executivo-licencas-bitdefender-2026-06-19.pdf`
+
+Resumo agregado:
+
+- 21 clientes.
+- 785 licenças.
+- 651 slots usados.
+- 759 dispositivos.
+- 647 dispositivos gerenciados.
+- 112 dispositivos não gerenciados.
+
+Observação: manter apenas métricas agregadas no Brain; não registrar API keys, respostas sensíveis ou inventário detalhado de clientes/endpoints.
 
 ## Relações
 
