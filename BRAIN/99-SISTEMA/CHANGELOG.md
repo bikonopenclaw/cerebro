@@ -105,3 +105,12 @@
 - Criado `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md` para registrar a automação diária ARX Backup → tickets NinjaOne.
 - Atualizados `MEMORY.md`, `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
 - Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais e histórico Git.
+
+## 2026-06-21, consolidação semanal
+
+- Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W25.md` cobrindo daily notes disponíveis de 2026-06-15 a 2026-06-21.
+- Identificados padrões recorrentes: escopo de canais operacionais, confirmação antes de ações com impacto, segredos fora do Brain/Git, dados mestres completos em automações fiscais e consolidação com evidência local quando `memory_search` está indisponível.
+- Elevados aprendizados para notas permanentes em `BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md`, `BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md` e `BRAIN/40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md`.
+- Reforçado `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md` como padrão semanal recorrente.
+- Atualizados `INDEX.md`, `MEMORY.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Nenhum arquivamento realizado; registros recentes permanecem conectados e relevantes.

@@ -25,11 +25,15 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-06-19.md`: consolidação diária com diretriz de confirmação antes de ações com impacto e desenho inicial da integração GravityZone para Bikon.
 - `01-DIARIO/2026/2026-06-20.md`: consolidação diária com padrão Bikon de tomador completo em NFS-e, relatório executivo Bitdefender e automação ARX Backup → NinjaOne.
 - `01-DIARIO/Semanal/2026-W24.md`: primeira consolidação semanal do Brain.
+- `01-DIARIO/Semanal/2026-W25.md`: consolidação semanal com padrões de escopo de canais, confirmação antes de impacto, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
 - `20-EMPRESAS/BIKON/cadastro-clientes/README.md`: backup operacional de cadastro de clientes da BIKON.
 - `40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md`: princípio permanente de memória útil.
 - `40-CONHECIMENTO/Operacional/Consolidacao-silenciosa-sem-ruido.md`: regra operacional para consolidar sem interrupção e sem ruído.
 - `40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`: guardrail para avisar/confirmar antes de envios, alterações, criações ou execuções com impacto fora da conversa atual.
+- `40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md`: aprendizado permanente sobre separar canais por finalidade, escopo, roteamento e guardrails.
+- `40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md`: guardrail permanente para manter credenciais, tokens e dados sensíveis fora do Brain/Git.
+- `40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md`: princípio fiscal para preservar dados completos do cadastro mestre em payloads de NFS-e.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
 - `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader e skills relacionadas.
 - `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
