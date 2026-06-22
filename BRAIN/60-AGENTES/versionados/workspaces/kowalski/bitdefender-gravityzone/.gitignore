@@ -1,0 +1,3 @@
+# Nunca versionar dumps brutos do GravityZone
+/dados/*.json
+!/dados/.gitkeep

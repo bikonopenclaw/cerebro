@@ -1,0 +1,53 @@
+{
+  "ambiente": "homologacao",
+  "serpro": {
+    "produto": "Integra Contador",
+    "modulo": "Integra Parcelamentos",
+    "contratado": false,
+    "base_url_homologacao": "PREENCHER_APOS_CONTRATACAO",
+    "base_url_producao": "PREENCHER_APOS_CONTRATACAO",
+    "client_id": "NAO_INFORMAR_AQUI",
+    "client_secret": "NAO_INFORMAR_AQUI",
+    "consumer_key": "NAO_INFORMAR_AQUI",
+    "consumer_secret": "NAO_INFORMAR_AQUI"
+  },
+  "certificado": {
+    "tipo": "A1",
+    "arquivo_pfx": "NAO_VERSIONAR_CAMINHO_REAL",
+    "senha": "USAR_SECRET_MANAGER_OU_ENV",
+    "validade": null
+  },
+  "empresa_inicial": {
+    "nome_referencia": "Bikon",
+    "cnpj": "34191026000186",
+    "controlador_informado": "Hebert",
+    "tem_procuracao_ecac_confirmada": false,
+    "procuracao_ecac_validade": null,
+    "regime": "Simples Nacional",
+    "parcelamento": {
+      "tipo": "PARCSN",
+      "numero_pedido": null,
+      "status": "desconhecido"
+    }
+  },
+  "rotina": {
+    "consulta_mensal_ativa": false,
+    "dia_consulta_mensal": 5,
+    "gerar_das_automaticamente": false,
+    "exige_confirmacao_antes_de_gerar_das": true,
+    "permitir_producao": false
+  },
+  "servicos_parcsn": {
+    "consultar_pedidos": "PEDIDOSPARC163",
+    "obter_parcelamento": "OBTERPARC164",
+    "parcelas_para_gerar": "PARCELASPARAGERAR162",
+    "gerar_das": "GERARDAS161",
+    "detalhar_pagamento": "DETPAGTOPARC165"
+  },
+  "seguranca": {
+    "mascarar_cnpj_em_logs": true,
+    "salvar_payload_raw": false,
+    "criptografar_retorno_fiscal": true,
+    "bloquear_geracao_sem_confirmacao": true
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "mode": "all_arx_tickets_to_internal_triage",
+  "defaultClientId": 1,
+  "defaultClientName": "00 - Bikon Tech",
+  "subjectPattern": "Alerta de ARX Backup - {cliente}",
+  "reason": "Regra definida pelo Hebert em 2026-06-16: por garantia, todos os tickets de ARX Backup devem abrir no cliente interno 00 - Bikon Tech. O cliente real fica no título e na descrição para triagem."
+}

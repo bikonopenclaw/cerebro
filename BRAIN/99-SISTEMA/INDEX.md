@@ -38,6 +38,7 @@ Mapa geral do Brain.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
 - `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader e skills relacionadas.
 - `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski e uso controlado no grupo Relatórios Operacionais.
+- `60-AGENTES/versionados/`: snapshots seguros de código, skills e documentação operacional do Kowalski e Darth Vader, com exclusão de segredos e artefatos gerados.
 - `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
 - `70-AUTOMACOES/SYNC-GITHUB.md`: sincronização automática do Brain com GitHub 4x ao dia.
 - `70-AUTOMACOES/NOTAAS-NFSE.md`: registro da skill Notaas NFS-e exclusiva da Darth Vader, com guardrails fiscais.

@@ -25,6 +25,7 @@
 - Fluxo NFS-e Bikon atualizado com SMTP `fatura@bikontecnologia.com.br`, template HTML padrão, anexos de NFS-e/XML/boleto e agrupamento de múltiplas notas por cliente.
 - Grupo Relatórios Operacionais registrado com roteamento restrito para Kowalski.
 - Whisper local/faster-whisper registrado como padrão para transcrição de áudios.
+- Kowalski e Darth Vader passaram a ter snapshots seguros versionados no Git do Brain, incluindo skills, scripts e documentação operacional sem segredos.
 - Arquivos obrigatórios criados em `99-SISTEMA`.
 
 ## Próximas melhorias

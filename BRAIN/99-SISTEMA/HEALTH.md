@@ -22,6 +22,7 @@ Health Score: 95/100
 - Fluxo de e-mail NFS-e Bikon registrado com SMTP validado, template HTML, anexos obrigatórios e agrupamento por cliente.
 - Agente Kowalski e grupo Relatórios Operacionais documentados.
 - Whisper local documentado como padrão de transcrição.
+- Snapshots versionados dos agentes Kowalski e Darth Vader criados em `60-AGENTES/versionados/`, com política de exclusão de segredos e artefatos.
 
 ## Pendências
 

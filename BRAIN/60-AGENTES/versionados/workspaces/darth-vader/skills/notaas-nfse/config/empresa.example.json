@@ -1,0 +1,12 @@
+{
+  "empresa": {
+    "nome": "Bikon Tecnologia da Informação Ltda Me",
+    "cnpj": "34.191.026/0001-86",
+    "cidade_ibge": "3205309",
+    "cidade_uf": "Vitória/ES"
+  },
+  "notaas": {
+    "api_key": "DEFINIR_EM_ARQUIVO_LOCAL_FORA_DO_GIT",
+    "base_url": "https://platform.notaas.com.br/api/v1"
+  }
+}

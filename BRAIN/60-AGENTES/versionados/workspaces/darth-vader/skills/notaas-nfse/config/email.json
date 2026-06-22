@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "mode": "draft_then_approval",
+  "approval_required": true,
+  "sender_name": "Faturamento Bikon",
+  "from_email": "fatura@bikontecnologia.com.br",
+  "reply_to": "fatura@bikontecnologia.com.br",
+  "default_cc": [],
+  "subject_template": "NFS-e Bikon Tecnologia - {cliente_nome} - Competência {competencia}",
+  "body_template": "Olá,\n\nSegue em anexo a NFS-e emitida pela Bikon Tecnologia referente à competência {competencia}. Quando houver cobrança por boleto, ele também seguirá anexado neste e-mail.\n\nCliente: {cliente_nome}\nValor: R$ {valor_total}\nNúmero da NFS-e: {numero_nfse}\nChave da NFS-e: {chave_nfse}\n\nDocumentos deste envio:\n{documentos_texto}\n\nQualquer dúvida, é só responder este e-mail.\n\nAtenciosamente,\nFaturamento Bikon",
+  "attachments_required": [
+    "nfse_pdf",
+    "nfse_xml",
+    "boleto_pdf_quando_houver"
+  ],
+  "notes": "Configuração Bikon: gerar rascunho automaticamente após emissão/baixa da NFS-e. Remetente padrão: fatura@bikontecnologia.com.br. Envio real para cliente externo exige autorização explícita do Hebert e credenciais SMTP configuradas no ambiente.",
+  "html_template_path": "templates/email_nfse_bikon.html",
+  "content_type": "multipart_alternative_html",
+  "template_version": "bikon-nfse-html-v1"
+}

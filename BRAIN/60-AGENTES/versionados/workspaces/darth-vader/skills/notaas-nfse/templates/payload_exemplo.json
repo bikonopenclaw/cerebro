@@ -1,0 +1,25 @@
+{
+  "tomador": {
+    "cnpj": "22874038000126",
+    "nome": "INSTITUTO BASE FORTE",
+    "email": "financeiro@institutobaseforte.org.br",
+    "endereco": {
+      "logradouro": "Rua Fagundes Pedro de Araujo",
+      "numero": "54",
+      "complemento": "Loja Terrea",
+      "bairro": "Santa Monica",
+      "cidade": "Vila Velha",
+      "uf": "ES",
+      "cep": "29105250"
+    }
+  },
+  "servico": {
+    "codigo": "171901",
+    "descricao": "Servicos de contabilidade - Imunidade"
+  },
+  "valores": {
+    "total": 674.40,
+    "aliquotaIss": 0
+  },
+  "competencia": "2026-04"
+}

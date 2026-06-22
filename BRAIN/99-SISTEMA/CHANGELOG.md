@@ -123,4 +123,11 @@
 - Atualizado `BRAIN/20-EMPRESAS/BIKON/README.md` com decisões de faturamento, relatórios operacionais e guardrails de envio externo.
 - Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
 - Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em arquivos locais, memória operacional e inspeção direta.
+## 2026-06-22, versionamento de agentes
+
+- Criado `BRAIN/60-AGENTES/versionados/` para versionar snapshots seguros do Kowalski e Darth Vader dentro do Git do Brain.
+- Incluídos diretórios `agents/<agente>/agent` e recortes seguros dos workspaces operacionais dos agentes.
+- Criado `scripts/sync-agentes-versionados.py` para atualizar os snapshots com exclusão de sessões, caches, `.env`, tokens, segredos, relatórios finais, binários pesados e artefatos gerados.
+- Configuração real da Notaas foi substituída por `empresa.example.json`; exemplos `.env.example` mantidos apenas com placeholders.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
 
