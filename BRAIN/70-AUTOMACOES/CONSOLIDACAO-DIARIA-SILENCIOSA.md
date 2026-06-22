@@ -6,7 +6,7 @@ status: ativa
 responsavel: Agente Principal / Puppet Master
 frequencia: diária
 horario_referencia_utc: "18:05"
-ultima_revisao: 2026-06-19
+ultima_revisao: 2026-06-22
 fonte: cron d95bbe73-24d9-4e2b-ba57-0032082bb54b e BRAIN/99-SISTEMA/ROTINA-CONSOLIDACAO.md
 ```
 
@@ -21,9 +21,11 @@ Executar consolidação diária do Brain sem interromper Hebert, registrando ape
 - Não criar agente Brain.
 - Não acessar sistemas externos sem autorização.
 - Atualizar registros existentes antes de criar novos.
+- Antes de consolidar, rodar `/data/.openclaw/workspace/Brain/scripts/sync-agentes-versionados.py` para atualizar os snapshots seguros do Kowalski e Darth Vader.
 - Criar ou atualizar diário em `BRAIN/01-DIARIO/YYYY/YYYY-MM-DD.md`.
 - Atualizar `CHANGELOG.md` e `HEALTH.md` quando houver impacto.
-- Fazer commit local no repositório Brain quando houver alterações.
+- Fazer commit local no repositório Brain quando houver alterações, incluindo mudanças nos snapshots versionados dos agentes.
+- Não versionar segredos, `.env` reais, sessões, caches, relatórios finais, PDFs, imagens, artefatos gerados ou dados brutos sensíveis dos agentes.
 
 ## Arquivos relacionados
 
@@ -33,6 +35,9 @@ Executar consolidação diária do Brain sem interromper Hebert, registrando ape
 - `BRAIN/01-DIARIO/2026/2026-06-17.md`
 - `BRAIN/01-DIARIO/2026/2026-06-18.md`
 - `BRAIN/01-DIARIO/2026/2026-06-19.md`
+- `BRAIN/01-DIARIO/2026/2026-06-22.md`
+- `BRAIN/60-AGENTES/versionados/`
+- `scripts/sync-agentes-versionados.py`
 
 
 ## Consolidação semanal
