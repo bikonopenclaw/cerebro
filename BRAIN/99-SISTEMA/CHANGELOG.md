@@ -114,3 +114,13 @@
 - Reforçado `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md` como padrão semanal recorrente.
 - Atualizados `INDEX.md`, `MEMORY.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
 - Nenhum arquivamento realizado; registros recentes permanecem conectados e relevantes.
+## 2026-06-22, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-22.md`.
+- Atualizado `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md` com e-mail automático Bikon, SMTP fatura validado, template HTML, anexos PDF/XML/boleto e agrupamento de múltiplas NFS-e por cliente.
+- Criado `BRAIN/60-AGENTES/KOWALSKI.md` e `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md` para registrar o grupo de relatórios operacionais e o uso restrito do Kowalski.
+- Criado `BRAIN/70-AUTOMACOES/WHISPER-LOCAL.md` para registrar faster-whisper local como padrão de transcrição de áudios.
+- Atualizado `BRAIN/20-EMPRESAS/BIKON/README.md` com decisões de faturamento, relatórios operacionais e guardrails de envio externo.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em arquivos locais, memória operacional e inspeção direta.
+

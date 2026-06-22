@@ -40,15 +40,18 @@ Configurada em 2026-06-12 para Bikon Tecnologia da Informação Ltda Me.
 Dados não sensíveis registrados:
 
 - CNPJ: 34.191.026/0001-86
-- Inscrição Municipal: 083712941
 - Cidade/UF: Vitória/ES
 - Código IBGE: 3205309
+
+Decisão de 2026-06-22: manter a configuração da Bikon sem inscrição municipal. Houve erro ao tentar usar/preencher IM; ausência de IM não deve bloquear emissão enquanto a API Notaas aceitar sem esse campo.
 
 A API key foi armazenada apenas nos arquivos locais `.env` e `config/empresa.json`, com permissão `600`. Não registrar segredo no Brain nem no Git.
 
 ## Regra operacional
 
 Qualquer emissão ou cancelamento real de NFS-e deve ser previamente autorizado pelo Hebert/Puppet Master, por envolver obrigação fiscal.
+
+Envio de e-mail para cliente externo também exige autorização explícita, mesmo quando o SMTP estiver validado e o rascunho estiver pronto.
 
 ## Padrão Bikon para dados do tomador
 
@@ -76,3 +79,74 @@ Validação realizada:
 - `openclaw skills check --agent kowalski` não mostra `notaas-nfse`.
 
 A skill foi removida dos diretórios globais/main e mantida apenas no workspace da Darth Vader.
+
+## E-mail automático Bikon
+
+Atualizado em 2026-06-22.
+
+Remetente padrão:
+
+- Caixa: `fatura@bikontecnologia.com.br`
+- Nome exibido: `Faturamento Bikon`
+- Reply-to: `fatura@bikontecnologia.com.br`
+
+SMTP validado:
+
+- Provedor: DreamHost
+- Host: `smtp.dreamhost.com`
+- Porta válida: `465` com SSL/TLS
+- Porta `587` STARTTLS falhou com autenticação `535` e não deve ser usada como padrão.
+
+Segredo local:
+
+- Arquivo: `/data/.openclaw/secrets/email-dreamhost/fatura-bikon.env`
+- Permissão: `600`
+- Não registrar senha no Brain nem no Git.
+
+Validações realizadas:
+
+- Login SMTP validado sem envio externo.
+- IMAP/Himalaya validado listando pastas da conta `fatura-bikon`.
+- E-mail teste enviado para `hebert.mattedi@bikon.com.br` e confirmado pelo Hebert como entregue na caixa de entrada.
+
+## Template HTML padrão
+
+Atualizado em 2026-06-22.
+
+Arquivos:
+
+- Template ativo: `/data/.openclaw/workspace-darth-vader/skills/notaas-nfse/templates/email_nfse_bikon.html`
+- Configuração: `/data/.openclaw/workspace-darth-vader/skills/notaas-nfse/config/email.json`
+- Script de preparo/envio controlado: `/data/.openclaw/workspace-darth-vader/skills/notaas-nfse/scripts/preparar_email_cliente.py`
+
+Regras:
+
+- E-mail deve ser multipart: texto simples + HTML.
+- Template usa identidade visual Bikon, paleta Bikon e logo embutido/base64, sem imagem externa obrigatória.
+- Campos do corpo devem incluir número da NFS-e e chave quando presentes no job.
+- Se a nota tiver boleto, o boleto PDF deve ir anexado junto com DANFSe PDF e XML.
+- Testes com dados reais de cliente devem usar destinatário explícito e não buscar cadastro automaticamente.
+
+## Agrupamento por cliente
+
+Validado pelo Hebert em 2026-06-22.
+
+Regra oficial para envio em lote:
+
+- Se houver duas ou mais NFS-e para o mesmo `cliente_id`, CPF, CNPJ ou documento de cliente, enviar um único e-mail para esse cliente.
+- O corpo do e-mail deve listar cada NFS-e com número, chave, valor e boleto relacionado.
+- Anexos devem incluir todos os PDFs/XMLs das NFS-e e todos os boletos PDF daquele cliente.
+- Um e-mail por cliente, mesmo que existam duas ou mais notas e boletos no mesmo envio.
+
+Ferramenta criada:
+
+- `/data/.openclaw/workspace-darth-vader/skills/notaas-nfse/scripts/preparar_emails_lote_clientes.py`
+
+Teste validado:
+
+- Cliente: Alzira Maria Viana.
+- NFS-e de homologação: números `5` e `7`.
+- Chaves: `32053092234191026000186000000000000526069998018858` e `32053092234191026000186000000000000726062822079919`.
+- Boletos: `105602/1534` e `105603/1535`.
+- Total: R$ 3.474,73.
+- Envio teste agrupado para `hebert.mattedi@bikon.com.br` validado pelo Hebert.
