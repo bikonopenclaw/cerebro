@@ -150,3 +150,28 @@ Teste validado:
 - Boletos: `105602/1534` e `105603/1535`.
 - Total: R$ 3.474,73.
 - Envio teste agrupado para `hebert.mattedi@bikon.com.br` validado pelo Hebert.
+
+## Trava automática de checklist antes do envio externo
+
+Implementada em 2026-06-22 no script:
+
+- `/data/.openclaw/workspace-darth-vader/skills/notaas-nfse/scripts/preparar_email_cliente.py`
+
+Arquivos gerados a cada preparo de e-mail:
+
+- `checklist-envio-nfse.json`
+- `checklist-envio-nfse.md`
+
+Comportamento:
+
+- Preparar rascunho sem `--confirmar-envio` gera checklist e `.eml`, mesmo quando houver pendência, para conferência.
+- Envio SMTP com `--confirmar-envio` só passa se o checklist não tiver bloqueios.
+- Se `config/email.json` mantiver `approval_required=true`, envio externo exige `job.email.aprovado_por_hebert=true`.
+- Se faltar PDF da NFS-e, XML da NFS-e ou boleto PDF quando houver boleto indicado, o envio externo é bloqueado.
+- O checklist lista remetente, reply-to, destinatários, assunto, cliente, quantidade de notas, total calculado, documentos, anexos, bloqueios e avisos.
+
+Validação feita:
+
+- Rascunho de teste gerou checklist com status `rascunho_conferivel`.
+- Tentativa de envio com `--confirmar-envio` sem `job.email.aprovado_por_hebert=true` retornou bloqueio e status `bloqueado_para_envio`.
+- Checklist com aprovação simulada e todos os anexos retornou `liberado_para_envio`, sem disparar SMTP no teste.
