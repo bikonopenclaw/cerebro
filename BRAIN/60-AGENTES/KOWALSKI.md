@@ -3,7 +3,7 @@
 ```yaml
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
-ultima_revisao: 2026-06-22
+ultima_revisao: 2026-06-23
 tags: [kowalski, relatorios, ninjaone, arx-backup, operacao]
 ```
 
@@ -17,6 +17,7 @@ Responsabilidades principais:
 - Relatórios NinjaOne, incluindo inventário, alertas, dispositivos offline e evidências auditáveis.
 - Relatórios ARX Backup.
 - Adequação de documentos para padrão Bikon.
+- Produzir PDFs externos com acabamento premium Bikon, sem metadados automáticos de impressão/navegador e com validação visual antes da entrega.
 - Apoio em propostas, contratos e materiais técnicos quando houver dado ou relatório envolvido.
 
 ## Grupo Relatórios Operacionais
@@ -50,6 +51,10 @@ Relatório operacional do Cartório Capixaba:
 - Aprofundou análise por dispositivo usando dados NinjaOne disponíveis.
 - Registrou limitação quando a API não entregou histórico granular contínuo de CPU/RAM/disco.
 - Usou evidências auditáveis: inventário, alertas, atividades, status, espaço em disco e características de hardware.
+
+## Evolução visual de relatórios
+
+Em 2026-06-23, o parecer do Cartório Capixaba foi ajustado para manter o layout premium, aplicar fundo suave dentro da paleta Bikon e remover cabeçalhos/rodapés automáticos. Esse ajuste reforça que relatórios externos devem parecer documentos corporativos finais, não HTML impresso.
 
 ## Relações
 

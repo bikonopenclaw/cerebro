@@ -4,7 +4,7 @@
 categoria: canal_operacional
 fonte: decisão do Hebert em 2026-06-22
 confiabilidade: alta
-ultima_revisao: 2026-06-22
+ultima_revisao: 2026-06-23
 tags: [telegram, relatorios, kowalski, ninjaone, operacao]
 ```
 
@@ -44,6 +44,17 @@ Padrão visual:
 - Respostas no grupo devem começar com `Kowalski:` ou identificação textual equivalente.
 - A identidade visual no Telegram continua sendo o bot atual.
 - A clareza de autoria deve vir do texto, não de bot separado.
+
+## Padrão visual para relatórios externos
+
+Em 2026-06-23, após revisão da versão premium do parecer do Cartório Capixaba, ficou registrado como padrão operacional para PDFs externos da Bikon:
+
+- Usar identidade visual Bikon com acabamento corporativo e leitura séria.
+- Evitar aparência de HTML impresso.
+- Remover cabeçalhos e rodapés automáticos de navegador/documento, incluindo data técnica, caminho, URL, título repetido e paginação visualmente pobre.
+- Manter apenas elementos institucionais quando fizerem parte natural do layout.
+- Preservar conteúdo técnico, conclusões e estrutura quando a solicitação for apenas ajuste visual.
+- Conferir visualmente o PDF renderizado antes de enviar ao Hebert ou ao grupo.
 
 ## Guardrails
 

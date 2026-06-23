@@ -130,4 +130,12 @@
 - Criado `scripts/sync-agentes-versionados.py` para atualizar os snapshots com exclusão de sessões, caches, `.env`, tokens, segredos, relatórios finais, binários pesados e artefatos gerados.
 - Configuração real da Notaas foi substituída por `empresa.example.json`; exemplos `.env.example` mantidos apenas com placeholders.
 - Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+## 2026-06-23, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-23.md`.
+- Atualizado `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md` com padrão visual para relatórios externos Bikon.
+- Atualizado `BRAIN/60-AGENTES/KOWALSKI.md` com responsabilidade de acabamento premium e validação visual de PDFs externos.
+- Atualizado `BRAIN/20-EMPRESAS/BIKON/README.md` com padrão de relatórios técnicos externos.
+- Sincronizados snapshots versionados de Kowalski e Darth Vader antes da consolidação.
+- Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais e inspeção direta.
 

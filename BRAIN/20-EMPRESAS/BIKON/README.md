@@ -20,6 +20,7 @@
 
 ## Histórico relevante
 
+- 2026-06-23: reforçado padrão visual premium Bikon para relatórios técnicos externos, com fundo suave dentro da paleta, sem cabeçalhos/rodapés automáticos e sem metadados de impressão/navegador.
 - 2026-06-22: validado envio de e-mail NFS-e via `fatura@bikontecnologia.com.br`, template HTML padrão Bikon e agrupamento de duas ou mais NFS-e por cliente em um único e-mail com todos os PDFs/XMLs e boletos.
 - 2026-06-22: criado grupo Telegram `relatórios operacionais` para consultas e relatórios do Kowalski, sem bot separado e sem alteração de estrutura operacional do agente.
 - 2026-06-20: definido padrão operacional de NFS-e com tomador completo; quando o cadastro mestre tiver endereço, o payload Notaas deve incluir endereço completo e não apenas documento, nome e e-mail.
@@ -37,3 +38,5 @@
 - NFS-e da Bikon deve usar dados completos do tomador quando disponíveis no cadastro mestre, incluindo endereço completo.
 - Qualquer geração de remessa bancária real deve ser validada contra layout oficial do banco antes de uso operacional.
 - Qualquer chamada real à API GravityZone ou armazenamento de chave exige autorização explícita do Hebert e cofre local fora do Git.
+
+- Relatórios técnicos externos devem sair com acabamento visual premium Bikon, sem caminhos internos, metadados automáticos, paginação feia ou aparência de HTML impresso.
