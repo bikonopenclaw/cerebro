@@ -17,9 +17,11 @@
 - Contexto de grupos de faturamento: `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`
 - Grupo relatórios operacionais: `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`
 - Integração de segurança/antivírus em desenho: `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`
+- Governança de acessos Bikon ↔ AD local de clientes: `BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md`
 
 ## Histórico relevante
 
+- 2026-06-24: iniciada governança de acessos Bikon ↔ AD local de clientes, com matriz mestre em Google Sheets para listar usuários Bikon aprovados no Entra ID, clientes, servidores, permissões e regras de auditoria antes de qualquer automação.
 - 2026-06-23: reforçado padrão visual premium Bikon para relatórios técnicos externos, com fundo suave dentro da paleta, sem cabeçalhos/rodapés automáticos e sem metadados de impressão/navegador.
 - 2026-06-22: validado envio de e-mail NFS-e via `fatura@bikontecnologia.com.br`, template HTML padrão Bikon e agrupamento de duas ou mais NFS-e por cliente em um único e-mail com todos os PDFs/XMLs e boletos.
 - 2026-06-22: criado grupo Telegram `relatórios operacionais` para consultas e relatórios do Kowalski, sem bot separado e sem alteração de estrutura operacional do agente.
@@ -38,5 +40,5 @@
 - NFS-e da Bikon deve usar dados completos do tomador quando disponíveis no cadastro mestre, incluindo endereço completo.
 - Qualquer geração de remessa bancária real deve ser validada contra layout oficial do banco antes de uso operacional.
 - Qualquer chamada real à API GravityZone ou armazenamento de chave exige autorização explícita do Hebert e cofre local fora do Git.
-
+- Qualquer automação sobre contas de AD local de clientes deve começar em modo auditoria; criação, desativação, remoção de grupos ou alteração de privilégio exige aprovação explícita e escopo validado.
 - Relatórios técnicos externos devem sair com acabamento visual premium Bikon, sem caminhos internos, metadados automáticos, paginação feia ou aparência de HTML impresso.

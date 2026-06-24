@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execução cron Kowalski em 2026-06-19
+fonte: execuções cron Kowalski em 2026-06-19 e 2026-06-23
 confiabilidade: media
-ultima_revisao: 2026-06-20
+ultima_revisao: 2026-06-24
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
 ```
 
@@ -16,9 +16,9 @@ Automação diária para monitorar situações de backup ARX e refletir issues e
 
 - Script: `/data/.openclaw/workspace-kowalski/arx-backup/scripts/run_monitorar_arx_ninjaone_tickets.sh`
 - Log operacional: `/data/.openclaw/workspace-kowalski/arx-backup/jobs/arx-ninjaone-ticket-run.log`
-- Última execução observada: 2026-06-19 11:15 UTC.
+- Última execução observada: 2026-06-23 11:15 UTC.
 - Resultado: sucesso.
-- Resumo: 10 checados, 3 issues, 0 tickets criados, 3 deduplicados, 0 erros.
+- Resumo detalhado conhecido da execução de 2026-06-19: 10 checados, 3 issues, 0 tickets criados, 3 deduplicados, 0 erros.
 
 ## Guardrails
 

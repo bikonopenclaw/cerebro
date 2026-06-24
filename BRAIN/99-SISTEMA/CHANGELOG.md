@@ -139,3 +139,13 @@
 - Sincronizados snapshots versionados de Kowalski e Darth Vader antes da consolidação.
 - Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais e inspeção direta.
 
+## 2026-06-24, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-24.md`.
+- Criado `BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md` para registrar a governança de usuários Bikon aprovados no Entra ID versus acessos em ADs locais de clientes.
+- Atualizado `BRAIN/20-EMPRESAS/BIKON/README.md` com relação, histórico e guardrail da matriz de acesso.
+- Atualizado `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md` com execução bem-sucedida observada em 2026-06-23.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Sincronizados snapshots versionados de Kowalski e Darth Vader antes da consolidação.
+- Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais, histórico Git e inspeção direta.
+
