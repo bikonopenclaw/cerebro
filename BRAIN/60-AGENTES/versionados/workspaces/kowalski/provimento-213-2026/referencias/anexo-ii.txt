@@ -1,0 +1,106 @@
+ANEXO II
+SEGURANÇA DA INFORMAÇÃO E CONTROLES TÉCNICOS
+Disposição geral:
+Este Anexo estabelece os controles técnicos mínimos de segurança da informação a serem observados pelas serventias
+extrajudiciais. Os controles nele descritos constituem expressões concretas de requisitos funcionais mínimos de proteção. A adoção de
+tecnologias distintas das exemplificadas será admitida, desde que comprovadamente aptas a assegurar grau equivalente ou superior de
+segurança, integridade, disponibilidade e rastreabilidade, devendo tal equivalência ser objetivamente demonstrável, de forma técnica.
+1. Controle de acesso e autenticação
+I - autenticação individualizada para todos os usuários;
+II - autenticação multifator (AMF/MFA) obrigatória para acessos administrativos, de gestão de sistemas, bancos de dados e
+funcionalidades críticas;
+III - vedação expressa ao uso de contas genéricas ou credenciais compartilhadas;
+IV - segregação lógica de perfis conforme princípio da necessidade.
+2. Criptografia
+I - utilização de criptografia para dados em trânsito, com protocolos equivalentes a TLS 1.2 ou superior, ou versões mantidas e
+suportadas;
+18/35
+II - utilização de criptografia para dados críticos em repouso, conforme definição do art. 2º, V, com robustez equivalente, no
+mínimo, a AES-256 ou padrão tecnicamente equivalente ou superior reconhecido pela comunidade técnica especializada;
+III - vedação ao uso de algoritmos, versões ou modos depreciados;
+IV - gestão formal e segura de chaves criptográficas, com controle de acesso restrito, segregação de funções e registro de
+operações relevantes.
+V - revisão periódica dos padrões criptográficos adotados, com substituição obrigatória de protocolos ou algoritmos que se
+tornem obsoletos ou inseguros, assegurada a adoção de padrões reconhecidos como adequados pela comunidade técnica especializada e
+compatíveis com o estado da técnica.
+2.1. Parâmetros mínimos de RPO por classe
+I – Classe 3: RPO máximo de 4 (quatro) horas;
+II – Classe 2: RPO máximo de 12 (doze) horas;
+III – Classe 1: RPO máximo de 24 (vinte e quatro) horas.
+§1º Os valores estabelecidos neste item constituem parâmetros funcionais mínimos de ponto máximo de perda de dados
+admissível, podendo ser superados por solução tecnicamente mais protetiva.
+§2º A demonstração de atendimento ao RPO deverá constar do PCN/PRD e do dossiê técnico ou relatório simplificado,
+conforme a classe.
+2.2. Parâmetros mínimos de RTO por classe
+I – Classe 3: RTO máximo de 8 (oito) horas;
+II – Classe 2: RTO máximo de 24 (vinte e quatro) horas;
+III – Classe 1: RTO máximo de 24 (vinte e quatro) horas, admitida solução simplificada de restauração documentada no
+PCN/PRD, compatível com os recursos estruturais da classe.
+§1º O RTO constitui parâmetro funcional máximo de tempo admissível para o restabelecimento das operações essenciais da
+serventia após incidente que implique indisponibilidade relevante de sistemas ou dados críticos, devendo sua definição e comprovação constar
+expressamente do PCN/PRD.
+§2º A demonstração de atendimento ao RTO deverá ocorrer por meio de testes formais e documentados de restauração,
+observada a periodicidade mínima prevista neste Anexo e no Anexo I, integrando o dossiê técnico ou relatório simplificado, conforme a classe
+da serventia.
+§3º Os parâmetros estabelecidos neste item constituem padrões mínimos obrigatórios, admitida a adoção de metas mais
+protetivas quando técnica e economicamente viável.
+3. Monitoramento e trilhas de auditoria
+19/35
+I - logs protegidos contra alteração não autorizada, com mecanismos de integridade verificável e controle de acesso restrito;
+II - identificação inequívoca do usuário, data, hora e tipo de operação;
+III - sincronização de tempo por fonte confiável;
+IV - retenção mínima das trilhas de auditoria pelo prazo de 5 (cinco) anos, admitido prazo uniforme superior quando
+tecnicamente justificado;
+V - possibilidade de utilização de solução SIEM e coleta centralizada de logs, preservada a segregação lógica por serventia;
+VI - adoção de soluções tecnológicas equivalentes ou superiores às exemplificadas, inclusive baseadas em automação
+avançada ou inteligência artificial, desde que assegurados os requisitos de imutabilidade, rastreabilidade e retenção mínima previstos neste
+Anexo.
+3.1. A referência a SIEM, IDS/IPS, correlação automatizada ou monitoramento contínuo possui natureza exemplificativa, não
+constituindo requisito de aquisição de ferramenta específica, reputando-se atendido o controle quando a serventia demonstrar, por meios
+técnicos proporcionais à sua classe, a coleta, a proteção contra adulteração, a retenção mínima e a capacidade de auditoria dos logs, inclusive
+mediante soluções nativas do fornecedor, centralização simplificada, alertas básicos e revisões periódicas documentadas, preservados os
+requisitos de imutabilidade, rastreabilidade e retenção mínima.
+4. Gestão de incidentes de segurança da informação
+I - manutenção de procedimentos documentados de resposta a incidentes;
+II - classificação por gravidade (crítico, alto, médio, baixo);
+III - comunicação à Corregedoria competente em até 72 horas nos casos críticos;
+IV - registro detalhado, análise de causa raiz e documentação de lições aprendidas;
+V - integração com obrigações da LGPD.
+5. Gestão de vulnerabilidades
+I - atualização periódica de sistemas e aplicações;
+II - tratamento de vulnerabilidades classificadas como críticas em prazo máximo de 30 (trinta) dias, quando inexistente
+evidência de exploração ativa. Identificada exploração ativa, risco iminente ou comprometimento relevante, deverão ser adotadas medidas
+imediatas de contenção e correção emergencial, preferencialmente em até 72 (setenta e duas) horas, com registro formal das providências,
+inclusive das medidas mitigatórias aplicadas durante a janela de correção;
+III - mitigação imediata quando houver exploração ativa ou risco iminente;
+IV - registro formal das providências adotadas;
+V - possibilidade de integração a programa estruturado de avaliação de vulnerabilidades.
+20/35
+6. Testes e validação de controles
+I - testes periódicos de restauração de backups;
+II - simulações anuais de cenários de desastre para validação do PCN e PRD;
+III - avaliações técnicas periódicas de segurança;
+IV - para Classe 3, realização de teste de intrusão (pentest) ou metodologia técnica equivalente, no mínimo, a cada 2 (dois)
+anos e, adicionalmente, sempre que houver alteração relevante de infraestrutura, arquitetura, exposição de serviços à internet ou substituição
+de fornecedor crítico, devendo a periodicidade ser reduzida quando a análise de risco do PCN/PRD indicar aumento relevante de superfície de
+ataque;
+V - adoção de metodologias de teste compatíveis com boas práticas reconhecidas internacionalmente, admitida a utilização de
+frameworks técnicos supervenientes, desde que preservado o objetivo de validação efetiva dos controles.
+6.1. Quando a serventia adotar solução tecnológica centralizada, compartilhada ou fornecida por entidade representativa,
+operador nacional ou fornecedor único, o requisito de teste de intrusão poderá ser comprovado mediante relatório técnico coletivo que abranja
+o ambiente efetivamente utilizado, desde que contenha descrição do escopo, metodologia aplicada, data de execução, resultados obtidos,
+plano de correção e declaração de aderência assinada pelo responsável técnico da entidade mantenedora, permanecendo a serventia
+responsável pela implementação local das medidas corretivas que lhe competirem.
+6.2. Considera-se atendido o requisito de teste de intrusão referido no item IV quando (i) a serventia operar integralmente em
+ambiente SaaS/centralizado sem exposição de infraestrutura própria à internet, e (ii) houver relatório técnico coletivo válido do ambiente
+efetivamente utilizado, complementado, quando houver componentes locais relevantes, por varredura de vulnerabilidades (scanner) e
+validação de configuração de borda, sem necessidade de novo teste de intrusão completo, salvo se a análise de risco do PCN/PRD indicar
+superfície de ataque local relevante.
+6.3. As serventias de Classe 3 que operem integralmente em ambiente de solução contratada (SaaS) ou centralizada, sem
+servidores de aplicação locais, ficam dispensadas da contratação individual de teste de intrusão (pentest), considerando-se cumprido o
+requisito mediante: (i) apresentação do relatório técnico de segurança fornecido pela empresa desenvolvedora da solução central; e (ii)
+declaração do titular, sob as penas da lei, de que as estações de trabalho locais possuem sistema operacional com suporte ativo, antivírus
+atualizado e firewall de sistema habilitado.
+7. Interoperabilidade e neutralidade tecnológica
+I - adoção preferencial de padrões abertos e formatos não proprietários (ex.: PDF/A, XML);
+II - prevenção de dependência exclusiva de fornecedor.

@@ -1,0 +1,81 @@
+ANEXO I
+INFRAESTRUTURA TECNOLÓGICA MÍNIMA
+Disposição geral:
+Este Anexo estabelece os requisitos estruturais mínimos de infraestrutura tecnológica necessários à continuidade operacional
+dos serviços notariais e de registro, compreendendo elementos físicos, energéticos, de conectividade e de suporte técnico, sem prejuízo dos
+controles de segurança previstos nos Anexos II e III. Os requisitos técnicos nele previstos constituem parâmetros mínimos compatíveis com o
+estado da técnica vigente à época da edição deste Provimento. Sempre que houver evolução tecnológica ou substituição de padrões, admitir-
+se-á a adoção de soluções tecnicamente equivalentes ou superiores, desde que assegurada, de forma demonstrável, a manutenção ou
+ampliação dos níveis de segurança, disponibilidade, integridade, rastreabilidade e continuidade exigidos neste ato normativo.
+1. Infraestrutura de energia
+I - utilização de fonte de energia estável e confiável;
+II - sistema de aterramento adequado às normas técnicas vigentes;
+15/35
+III - utilização de Sistema de Alimentação Ininterrupta (SAI/UPS) ou solução tecnicamente equivalente, com autonomia
+suficiente para assegurar o salvamento de dados em memória, o encerramento seguro das transações ativas e o desligamento ordenado dos
+equipamentos (safe shutdown), recomendando-se, preferencialmente, autonomia estendida de 30 (trinta) minutos;
+IV - previsão de plano de contingência energética compatível com a classe da serventia.
+2. Conectividade e rede
+I - conexão à internet com capacidade compatível com o pleno funcionamento dos sistemas informatizados e integrações
+obrigatórias;
+II - as velocidades nominais mínimas indicadas constituem referência compatível com o cenário tecnológico atual e poderão
+ser substituídas por métricas técnicas mais adequadas à evolução dos serviços digitais, desde que assegurado desempenho efetivo
+compatível com a classe da serventia, com as integrações obrigatórias e com o cumprimento dos parâmetros de RTO e RPO definidos neste
+Provimento.
+III - as atuais velocidades mínimas de referência são:
+a) Classe 1: 2 Mbps;
+b) Classe 2: 10 Mbps;
+c) Classe 3: 50 Mbps;
+IV - As velocidades nominais previstas neste item possuem caráter referencial. Considera-se atendido o requisito de
+conectividade quando a serventia demonstrar, por meio de testes documentados, que a infraestrutura contratada permite a conclusão do
+backup incremental e a sincronização de dados dentro do RPO estabelecido para sua classe, independentemente da largura de banda
+nominal contratada;
+V - Para fins de atendimento ao critério de desempenho efetivo referido neste inciso, admite-se a adoção de soluções
+complementares ou alternativas de continuidade e restauração, tais como armazenamento local redundante, replicação híbrida, cópia de
+segurança local sincronizada com nuvem, procedimentos de “seed” inicial, ou outros meios tecnicamente equivalentes, desde que
+documentados no PCN/PRD e aptos a demonstrar, de modo verificável, a aderência ao RTO e ao RPO estabelecidos;
+VI - utilização de roteador para gerenciamento das conexões internas e externas;
+VII - utilização de comutador (switch) para conexão dos dispositivos internos;
+VIII - possibilidade de múltiplos links ou tecnologia equivalente que assegure desempenho efetivo compatível com a classe da
+serventia.
+2.1. Para a Classe 1, a adoção de arquitetura de alta disponibilidade, redundância simultânea de links ou duplicação integral
+de infraestrutura não constitui requisito obrigatório quando o RTO e o RPO definidos para a respectiva classe forem comprovadamente
+atendidos por meio de backup periódico testado e procedimento documentado de restauração, observado o prazo máximo de 24 (vinte e
+quatro) horas.
+16/35
+3. Ambiente físico e proteção estrutural
+I - existência de espaço físico isolado para equipamentos críticos, com controle de acesso restrito, quando houver
+infraestrutura local; nas hipóteses de utilização integral de infraestrutura em nuvem, deverá ser mantida documentação contratual que
+comprove ou ao menos indicie a adoção, pelo fornecedor, de controles equivalentes de segurança física e ambiental;
+II - proteção contra incêndios, inundações, variações térmicas e acesso indevido;
+III - organização física adequada à preservação da integridade dos ativos tecnológicos.
+4. Infraestrutura de segurança perimetral básica
+I - utilização de solução de proteção de endpoint (antivírus/antimalware);
+II - implantação de firewall stateful ou solução equivalente com IPS/IDS;
+III - segmentação lógica mínima de rede compatível com a criticidade da serventia.
+5. Armazenamento estrutural e disponibilidade
+I - utilização de SGBD com integridade transacional e rastreabilidade (logs);
+II - para as Classes 1 e 2, considera-se atendido o requisito de tolerância a falhas ou alta disponibilidade mediante adoção de
+arquitetura que, sem exigir duplicação plena de todos os componentes, assegure, de modo verificável, o cumprimento do RTO e do RPO
+definidos no PCN/PRD, admitindo-se, entre outras soluções equivalentes: (a) virtualização com restauração automatizada; (b) ‘warm standby’
+ou imagem pronta para recuperação; (c) serviços gerenciados em nuvem com redundância regional; ou (d) redundância local simples com
+reposição rápida, desde que documentadas as premissas e os testes de restauração;
+III - Para a Classe 3, mecanismos de tolerância a falhas (Fault Tolerance) ou alta disponibilidade (HA), compatíveis com a
+classe da serventia;
+IV - backups automatizados off-site, com redundância geográfica;
+V - realização obrigatória de testes documentados de restauração com periodicidade mínima semestral para Classe 3 e anual
+para Classes 1 e 2;
+VI - preservação dos registros de testes de restauração pelo prazo mínimo de 5 (cinco) anos, sem prejuízo de prazo superior
+quando exigido pela Corregedoria competente em procedimento específico;
+VII - implementação dos mecanismos de tolerância a falhas, alta disponibilidade ou redundância por meio de tecnologias
+diversas, físicas ou virtuais, locais ou em nuvem, desde que assegurado nível de resiliência igual ou superior ao exigido neste Anexo.
+5.1. Os prazos de guarda previstos neste item aplicam-se exclusivamente aos registros técnicos de testes de restauração e
+não afastam os prazos de guarda documental e probatória estabelecidos nas Disposições Gerais do Anexo IV.
+17/35
+6. Equipamentos e suporte técnico
+I - disponibilidade de equipamentos adequados à operação regular dos sistemas;
+II - disponibilidade de digitalizadores e impressoras compatíveis com a gestão documental;
+III - existência de suporte técnico próprio ou contratado com atendimento contínuo.
+7. Capacitação mínima operacional
+I - treinamento periódico dos responsáveis e colaboradores quanto à operação segura dos sistemas e rotinas de backup;
+II - registro formal das capacitações realizadas.

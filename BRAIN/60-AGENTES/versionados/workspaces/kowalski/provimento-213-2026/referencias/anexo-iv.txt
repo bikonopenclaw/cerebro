@@ -1,0 +1,250 @@
+ANEXO IV
+ETAPAS PARA CUMPRIMENTO
+Disposições gerais:
+I) As etapas previstas neste Anexo constituem marcos sucessivos e cumulativos de conformidade, devendo ser observada a
+ordem sequencial aqui estabelecida. A execução de medidas pertencentes a etapas posteriores pode ser registrada junto ao Sistema Justiça
+Aberta, mas não supre nem antecipa o cumprimento integral dos requisitos da etapa imediatamente anterior.
+23/35
+II) Dentro de cada etapa, a conclusão de cada requisito, um a um, deverá ser informada ao Sistema Justiça Aberta. A
+declaração de conclusão de cada etapa pressupõe o cumprimento integral de todos os seus itens e a manutenção efetiva dos requisitos já
+implementados nas etapas precedentes, vedada qualquer declaração parcial, proporcional ou condicionada.
+III) A comprovação de conclusão deverá ser formalizada por meio de dossiê técnico específico da etapa concluída, contendo
+atas, relatórios, registros de configuração, contratos revisados, registros de capacitação e evidências técnicas.
+IV) Para as Classes 2 e 3, as evidências de conclusão deverão estar acompanhadas de mecanismo idôneo de verificação de
+integridade, considerado atendido, no mínimo, mediante:
+a) geração de hash dos arquivos integrantes do dossiê, com lista de hashes assinada digitalmente pelo responsável pela
+serventia ou responsável técnico designado; e
+b) guarda do dossiê em repositório com controle de acesso e registro auditável de alterações, ou em armazenamento com
+imutabilidade/retention lock, quando disponível. O emprego de carimbo do tempo ou mecanismo externo equivalente será exigível apenas
+quando a serventia optar por auditoria externa, por custódia por terceiro, ou quando houver compartilhamento do repositório probatório com
+entidade mantenedora.
+V) Para a Classe 1, admite-se mecanismo simplificado de comprovação documental, desde que apto a demonstrar, de forma
+objetiva, a veracidade e a integridade das evidências apresentadas. Em todos os casos, os documentos deverão permanecer arquivados por
+prazo mínimo de 5 (cinco) anos.
+VI) Para a Classe 1, a comprovação de conclusão das etapas previstas neste Anexo poderá ser realizada por meio de
+declaração de conformidade registrada no Sistema Justiça Aberta, acompanhada da guarda, pelo prazo mínimo de 5 (cinco) anos, dos
+contratos de serviços de tecnologia da informação, notas fiscais correspondentes e relatório simplificado de implementação assinado pelo
+responsável pela serventia, dispensada a manutenção de dossiê técnico estruturado em formato ampliado.
+VII) O relatório simplificado, aplicável especialmente às serventias enquadradas na Classe 1, deverá conter, no mínimo:
+a) identificação da serventia, da classe de enquadramento e da etapa do Anexo IV a que se refere;
+b) descrição objetiva do requisito normativo e da solução técnica adotada;
+c) demonstração sucinta da equivalência funcional entre a solução implementada e o requisito previsto neste Provimento;
+d) indicação das evidências técnicas ou documentais disponíveis para fiscalização, ainda que mantidas sob guarda local; e
+e) declaração formal de responsabilidade assinada pelo titular da delegação, interino ou interventor, atestando a veracidade
+das informações e a manutenção das evidências pelo prazo mínimo de 5 (cinco) anos.
+VIII) Para as Classes 2 e 3, considera-se igualmente atendida a exigência de integridade do dossiê técnico quando as
+evidências forem consolidadas em documento eletrônico único, assinado digitalmente pelo responsável técnico, acompanhado de relatório de
+hash, sendo facultativa a adoção de repositório com imutabilidade quando demonstrada sua desproporcionalidade econômica.
+IX) Para fins de fiscalização correicional, considera-se suficiente, como pacote mínimo probatório, a apresentação:
+a) de relatório único, em formato aberto, contendo descrição do requisito, solução adotada, data de implementação e
+responsável;
+24/35
+b) de evidência técnica mínima (prints, logs de configuração, relatórios automatizados do fornecedor ou do sistema) anexada
+ao relatório; e
+c) de lista de hash assinada digitalmente quando aplicável.
+X) É vedado exigir, como condição de conformidade, formalidades não previstas neste Provimento, ressalvada a possibilidade
+de a Corregedoria competente determinar, mediante decisão fundamentada, providências técnicas adicionais indispensáveis à proteção do
+acervo, à continuidade do serviço ou ao cumprimento de norma superveniente.
+ETAPA 1 — GOVERNANÇA, ESTRUTURAÇÃO ORGANIZACIONAL E CONFORMIDADE LEGAL
+Escopo da etapa: instituir a base normativa, organizacional e documental que viabiliza a conformidade integral com o
+Provimento, assegurando responsabilidade definida, alinhamento à LGPD, controle formal de acessos e prevenção imediata de
+vulnerabilidades críticas.
+Condições objetivas de conformidade: ao final desta etapa, a serventia deverá possuir governança formal instituída,
+responsabilidades claramente atribuídas, política interna vigente e publicizada, controles mínimos de autenticação implementados, inventário
+de ativos concluído e base documental apta a demonstrar conformidade inicial em eventual fiscalização correicional.
+1.1. Designar formalmente:
+I - responsável técnico interno pela implementação;
+II - responsável pela serventia como controlador de dados pessoais;
+III - encarregado/DPO, quando aplicável.
+1.2. Elaborar, aprovar e divulgar internamente a Política de Segurança da Informação, contemplando integralmente os
+elementos mínimos do Anexo III e estabelecendo (planejando), de forma expressa e estruturada, as diretrizes, objetivos estratégicos,
+cronogramas, responsabilidades e demais parâmetros que fundamentarão a elaboração, na Etapa 2, do Plano de Continuidade de Negócios
+(PCN) e do Plano de Recuperação de Desastres (PRD). Nesta Etapa 1, exige-se a incorporação dessas diretrizes à Política interna, com
+definição preliminar de escopo, governança e critérios de continuidade. A formalização técnica completa, operacional e documentada do PCN
+e do PRD, com definição detalhada de riscos, medidas de mitigação, RTO e RPO, ocorrerá obrigatoriamente na Etapa 2, vedada tanto sua
+exigência integral nesta Fase 1 quanto sua postergação para etapa posterior à segunda;
+1.3. Implementar autenticação individualizada e autenticação multifator obrigatória para acessos administrativos, vedadas
+credenciais compartilhadas;
+1.4. Instituir registro das operações de tratamento de dados pessoais, nos termos do art. 7º, §1º.
+1.5. Incidentes classificados como críticos deverão ser comunicados à Corregedoria competente nos prazos e condições
+definidos no Anexo II, sem prejuízo das comunicações exigidas pela legislação específica;
+1.6. Sem prejuízo do prazo máximo previsto no item anterior, constitui meta de governança e padrão de diligência reforçada
+que a comunicação à Corregedoria competente ocorra, sempre que possível, em até 24 (vinte e quatro) horas da ciência do incidente,
+25/35
+especialmente quando houver risco relevante de indisponibilidade prolongada, comprometimento de dados pessoais ou potencial impacto
+sistêmico;
+1.7. Elaborar inventário completo de ativos tecnológicos, integrações, bancos de dados, certificados digitais, softwares,
+histórico de atualizações e contratos;
+1.8. Regularizar licenciamento de softwares e revisar todos os contratos com terceiros que envolvam tratamento,
+armazenamento ou processamento de dados da serventia, assegurando cláusulas expressas e exequíveis de: (i) confidencialidade; (ii)
+reversibilidade; (iii) portabilidade integral do acervo em formato interoperável e não proprietário; (iv) disponibilização de documentação técnica
+necessária à migração; (v) cooperação em caso de transição de fornecedor; (vi) gestão de incidentes; e (vii) conformidade integral com a Lei
+nº 13.709/2018;
+1.9. Produzir declaração de conclusão da Etapa 1, a ser necessariamente firmada pelo titular da delegação, pelo interino na
+serventia vaga ou pelo interventor. Registrar a conclusão desta Etapa no Sistema Justiça Aberta.
+ETAPA 2 — INFRAESTRUTURA E CONTINUIDADE OPERACIONAL
+Escopo da etapa: estruturar a base material que sustenta os sistemas informatizados, garantindo disponibilidade mínima,
+estabilidade elétrica, segurança física e planejamento formal de continuidade.
+Condições objetivas de conformidade: ao término desta etapa, a serventia deverá dispor de infraestrutura física adequada,
+conectividade compatível com sua classe, planos formais de continuidade (PCN e PRD) com RTO e RPO definidos, e capacidade mínima de
+manter ou restabelecer as operações dentro dos parâmetros normativos.
+2.1. Implementar infraestrutura energética adequada (fonte estável, aterramento técnico e SAI/UPS com autonomia mínima de
+30 minutos).
+2.2. Estabelecer plano de contingência energética compatível com a classe.
+2.3. Adequar ambiente físico com controle de acesso restrito e proteção contra incêndio, inundações e variações térmicas.
+2.4. Implementar conectividade compatível com a classe, com roteador, switch e, quando necessário, múltiplos links.
+2.5. Formalizar o Plano de Continuidade de Negócios (PCN) e o Plano de Recuperação de Desastres (PRD), em documentos
+distintos ou integrados, desde que contenham, cumulativamente:
+I - identificação e avaliação estruturada de riscos;
+II - definição objetiva das medidas de mitigação;
+III - estabelecimento expresso de RTO e RPO compatíveis com a classe da serventia; e
+IV - previsão de medidas de curto prazo (até 30 dias) e de médio prazo (até 90 dias) para resposta a incidentes e restauração
+da normalidade operacional, sendo vedada a declaração de conclusão da etapa sem a presença de todos esses elementos.
+2.6. Garantir disponibilidade de equipamentos adequados e suporte técnico contínuo.
+26/35
+2.7. Implementar proteção básica de endpoint (antivírus, antimalware ou solução tecnicamente equivalente) em todas as
+estações e servidores utilizados pela serventia, como condição mínima de integridade operacional da infraestrutura
+2.8. Formalizar documento técnico simplificado da arquitetura tecnológica adotada, contendo, no mínimo:
+I - topologia básica de rede;
+II - indicação dos ambientes utilizados (local, nuvem, híbrido, SaaS ou compartilhado);
+III - fluxos de dados críticos;
+IV - localização física ou lógica dos backups;
+V - integrações externas relevantes; e
+VI - mecanismos de alta disponibilidade ou redundância.
+2.9. Produzir declaração de conclusão da Etapa 2, a ser necessariamente firmada pelo titular da delegação, pelo interino na
+serventia vaga ou pelo interventor. Registrar a conclusão desta Etapa no Sistema Justiça Aberta.
+ETAPA 3 — PROTEÇÃO DO ACERVO DIGITAL E RESILIÊNCIA TECNOLÓGICA
+Escopo da etapa: assegurar integridade, confidencialidade e recuperabilidade do acervo eletrônico, prevenindo perda de
+dados, interceptação indevida e comprometimento sistêmico.
+Condições objetivas de conformidade: ao final desta etapa, todos os dados críticos deverão estar protegidos por criptografia
+adequada, com rotinas automatizadas de backup proporcional à classe, armazenamento off-site, monitoramento ativo e defesas perimetrais
+implementadas.
+Disposição geral - A implementação das medidas previstas nesta etapa pressupõe o cumprimento integral e comprovado da
+Etapa 2, não podendo ser declarada concluída enquanto inexistentes ou incompletos os requisitos estruturais de infraestrutura e continuidade
+operacional anteriormente estabelecidos. Esta etapa consolida modelo de segurança em camadas (defesa em profundidade), integrando
+controles de identidade, rede, aplicação e armazenamento.
+3.1. Implementar criptografia para dados em trânsito e em repouso, inclusive backups, com gestão formal de chaves
+criptográficas que contemple, no mínimo:
+I - inventário atualizado de chaves e certificados;
+II - segregação de custódia;
+III - controle formal de acesso;
+IV - política documentada de rotação e renovação periódica;
+V - registro das operações de geração, renovação e revogação; e
+27/35
+VI - revisão periódica dos padrões criptográficos adotados.
+3.2. Implantar rotinas automatizadas de backup completo e incremental, observando, cumulativamente:
+I - realização de cópias completas em periodicidade compatível com a classe da serventia, observados os seguintes
+parâmetros mínimos:
+a) Classe 3: intervalo não superior a 24 (vinte e quatro) horas;
+b) Classe 2: intervalo não superior a 48 (quarenta e oito) horas;
+c) Classe 1: intervalo não superior a 72 (setenta e duas) horas, admitida solução tecnicamente equivalente que assegure o
+cumprimento do RPO aplicável;
+II - execução de cópias incrementais compatíveis com o RPO definido para a classe da serventia;
+III - armazenamento dos dados de backup em, no mínimo, dois ambientes tecnicamente independentes, assegurada
+redundância geográfica ou lógica equivalente, admitidas as seguintes arquiteturas, isoladas ou combinadas:
+a) ambiente de nuvem com redundância geográfica automática e mecanismos de imutabilidade de dados (WORM,
+versionamento bloqueado ou tecnologia equivalente);
+b) mídia eletrônica mantida em local fisicamente distinto das instalações principais (off-site);
+c) solução híbrida que combine armazenamento local redundante com replicação externa;
+d) garantia de que pelo menos um dos ambientes de backup esteja protegido contra criptografia maliciosa, exclusão indevida
+ou comprometimento sistêmico simultâneo, por meio de mecanismos de isolamento lógico, bloqueio de retenção, controle de acesso reforçado
+ou tecnologia equivalente.
+3.2.1. A exigência de múltiplos ambientes tecnicamente independentes poderá ser cumprida exclusivamente por arquitetura
+em nuvem, desde que demonstrada, por meio de documentação técnica formal, a existência cumulativa de:
+I - redundância geográfica automática em regiões distintas;
+II - política de retenção imutável com bloqueio contra exclusão administrativa;
+III - segregação lógica de acesso;
+IV - registro auditável de operações; e
+V - viabilidade comprovada de restauração integral do acervo.
+3.2.1.1. Para as serventias das Classes 1 e 2, considera-se atendido o requisito de redundância e independência técnica o
+armazenamento de cópia de segurança em serviços de nuvem comerciais de amplo mercado, desde que os arquivos de backup sejam
+submetidos à criptografia forte (AES-256 ou superior) antes do envio (criptografia na origem), assegurando-se que a chave de descriptografia
+permaneça sob custódia exclusiva da serventia e não do fornecedor (provedor) de armazenamento.
+3.2.2. As serventias localizadas em regiões com limitações estruturais de conectividade, especialmente em áreas remotas ou
+de infraestrutura digital intermitente, poderão adotar arquitetura predominantemente física ou híbrida, desde que assegurada redundância
+28/35
+externa mínima e compatibilidade com o RPO e o RTO definidos no PCN e no PRD.
+3.2.3. A escolha da arquitetura de backup deverá observar a proporcionalidade regulatória conforme a classe da serventia e as
+condições socioeconômicas e tecnológicas regionais, vedada solução que implique ponto único de falha ou dependência estrutural não
+mitigada de fornecedor exclusivo.
+3.3. Monitorar rotinas de backup com alertas automáticos e registro formal de falhas.
+3.4. Implantar firewall stateful com IPS/IDS e segmentação lógica de rede.
+3.5. Implementar solução avançada de proteção de endpoint, quando compatível com a classe da serventia, incluindo
+monitoramento ativo, detecção de comportamento anômalo ou recursos equivalentes de resposta a incidentes.
+3.6. Utilizar SGBD com integridade transacional e logs ativos.
+3.7. Implementar mecanismos de tolerância a falhas ou alta disponibilidade compatíveis com a classe.
+3.8. Implementar trilhas de auditoria técnicas imutáveis, com sincronização de tempo por fonte confiável, identificação
+inequívoca do usuário, registro de data e hora e mecanismo de verificação de integridade, assegurando sua integração obrigatória às rotinas
+de backup e recuperação, com preservação íntegra e rastreável, observados os prazos mínimos de retenção previstos neste Provimento.
+3.9. Produzir declaração de conclusão da Etapa 3, a ser necessariamente firmada pelo titular da delegação, pelo interino na
+serventia vaga ou pelo interventor. Registrar a conclusão desta Etapa no Sistema Justiça Aberta.
+ETAPA 4 — MONITORAMENTO, AUDITORIA E VALIDAÇÃO DE CONTROLES
+Escopo da etapa: consolidar a rastreabilidade, validar empiricamente os controles implementados e instituir modelo
+preventivo de gestão de riscos.
+Condições objetivas de conformidade: ao final desta etapa, a serventia deverá possuir trilhas de auditoria íntegras,
+monitoramento contínuo, gestão formal de vulnerabilidades, testes documentados de restauração e simulações de desastre validadas.
+4.1. Emitir relatório de conformidade de auditoria, atestando a aderência integral das trilhas de auditoria aos requisitos técnicos
+previstos no Anexo II, mediante procedimento documentado de verificação que comprove, cumulativamente, a imutabilidade, a identificação
+inequívoca do usuário, a sincronização temporal por fonte confiável, retenção mínima nos termos do Anexo II, e a efetiva integração às rotinas
+de backup e recuperação.
+4.1.1. O relatório de conformidade deve ser entendido como validação de requisitos estruturais das trilhas de auditoria. Deverá
+atestar não apenas se o dado “volta”, mas se o sistema efetivamente registra quem fez o que, quando fez, se o tempo está sincronizado e se
+estes registros são realmente imutáveis.
+4.2. Instituir rotina documentada de atualização periódica de sistemas e aplicações.
+4.3. Implementar gestão formal de vulnerabilidades, com:
+I - tratamento de vulnerabilidades classificadas como críticas nos prazos e condições definidos no Anexo II, com registro formal
+das providências adotadas no dossiê técnico;
+29/35
+II - adoção de medidas imediatas de contenção e correção emergencial, preferencialmente em até 72 (setenta e duas) horas,
+quando houver exploração ativa, risco iminente ou comprometimento relevante já identificado;
+III - registro formal, auditável e cronologicamente organizado das providências adotadas, com indicação de responsável e data
+de conclusão.
+4.4. Realizar simulação anual de desastre para validação do PCN e PRD.
+4.5. Realizar testes documentados de restauração de backups, conforme periodicidade da classe.
+4.6. Realizar avaliações técnicas periódicas de segurança.
+4.7. Para as serventias enquadradas na Classe 3, realizar teste de intrusão (pentest) ou metodologia técnica equivalente,
+observado o disposto no Anexo II, item 6, inclusive quanto às hipóteses de validação coletiva, dispensa condicionada e periodicidade mínima.
+4.8. Documentar análise de causa raiz e lições aprendidas para todos os incidentes.
+4.9. Produzir declaração de conclusão da Etapa 4, a ser necessariamente firmada pelo titular da delegação, pelo interino na
+serventia vaga ou pelo interventor. Registrar a conclusão desta Etapa no Sistema Justiça Aberta.
+ETAPA 5 — INTEROPERABILIDADE, CONSOLIDAÇÃO E GOVERNANÇA EVOLUTIVA
+Escopo da etapa: integrar a serventia ao ecossistema de fiscalização, consolidar as evidências documentais produzidas nas
+etapas anteriores e institucionalizar processo permanente e contínuo de revisão, aprimoramento e evolução tecnológica, vedada interpretação
+que restrinja as obrigações aqui previstas a momento único ou conclusivo.
+Condições objetivas de conformidade: ao final desta etapa, a serventia deverá estar plenamente integrada às plataformas
+de fiscalização, com interoperabilidade técnica assegurada, política revisada periodicamente, capacitação contínua implementada e
+declaração formal de conformidade realizada.
+5.1. Adequar sistemas para interoperabilidade com plataformas eletrônicas de fiscalização (art. 19).
+5.2. Adotar padrões abertos e neutralidade tecnológica, prevenindo dependência exclusiva de fornecedor.
+5.3. Instituir capacitação periódica com registro formal das ações realizadas.
+5.4. Revisar formalmente a Política de Segurança e padrões criptográficos sempre que houver alteração normativa relevante
+ou evolução tecnológica.
+5.5. Manter registros auditáveis por, no mínimo, 5 anos.
+5.6. Manter plano formal de reversibilidade e portabilidade de dados, acompanhado de simulação documentada de extração
+integral do acervo digital em formato interoperável e não proprietário, cuja realização deverá preceder a declaração de conclusão desta etapa,
+sendo vedada sua homologação sem evidência técnica de viabilidade concreta de transferência organizada ao sucessor, nos termos do art. 6º,
+III.
+5.6.1. A simulação documentada de extração integral do acervo deverá ser realizada:
+30/35
+I - no mínimo, a cada 24 (vinte e quatro) meses, para as serventias enquadradas na Classe 3;
+II - no mínimo, a cada 30 (trinta) meses, para as serventias enquadradas na Classe 2;
+III - no mínimo, a cada 36 (trinta e seis) meses, para as serventias enquadradas na Classe 1;
+IV - imediatamente, sempre que houver alteração relevante de fornecedor, arquitetura tecnológica ou modelo de governança.
+Em todos os casos, deverá ser mantido registro auditável do procedimento.
+5.6.2. A simulação documentada de extração integral poderá ser realizada:
+I - em ambiente de contingência, réplica, laboratório isolado ou cópia técnica representativa do acervo;
+II - por meio de exportação estrutural completa acompanhada de validação técnica de consistência e integridade, admitida
+verificação por amostragem estatisticamente representativa dos atos eletrônicos;
+III - de forma escalonada ou segmentada por módulos ou bases, desde que demonstrada, por evidência técnica formal, a
+viabilidade concreta de reconstrução integral do acervo.
+5.6.2.1. Quando a serventia demonstrar, por meio de justificativa técnica formal e evidências documentadas, que a realização
+da simulação integral bienal implica impacto operacional desproporcional em razão do volume do acervo digital, da arquitetura tecnológica
+adotada ou da limitação estrutural de conectividade, admitir-se-á a substituição da repetição integral por validação técnica estrutural de
+portabilidade, desde que:
+I - seja comprovada a viabilidade concreta de extração integral do acervo por meio de testes segmentados, exportações
+estruturais completas acompanhadas de verificação de integridade e reconstrução parcial representativa; e
+II - a justificativa técnica e as evidências sejam incluídas no dossiê técnico da etapa, sujeitas à fiscalização correicional.
+5.7. Produzir declaração de conclusão da Etapa 5, a ser necessariamente firmada pelo titular da delegação, pelo interino na
+serventia vaga ou pelo interventor. Registrar a conclusão desta Etapa no Sistema Justiça Aberta.
+ANEXO V
+MODELO DE ATA PARA REGISTRO DO TESTE DE RESTAURAÇÃO (

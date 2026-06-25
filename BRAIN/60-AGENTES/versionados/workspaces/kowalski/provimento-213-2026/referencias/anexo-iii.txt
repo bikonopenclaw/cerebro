@@ -1,0 +1,48 @@
+ANEXO III
+21/35
+POLÍTICA MÍNIMA DE SEGURANÇA DA INFORMAÇÃO
+Disposição geral:
+Este Anexo estabelece o conteúdo mínimo da Política Interna de Segurança da Informação de observância obrigatória, que
+deverá conter, no mínimo, os elementos indicados neste Anexo, podendo ser ampliada ou estruturada segundo metodologias reconhecidas de
+governança e compliance, desde que preservados os requisitos funcionais aqui estabelecidos.
+1. Objetivo
+Assegurar confidencialidade, integridade, disponibilidade, rastreabilidade e conformidade legal (compliance).
+2. Abrangência
+I - Aplicável ao delegatário, interino, interventor, colaboradores, estagiários e terceiros.
+3. Princípios
+Confidencialidade; Integridade; Disponibilidade; Rastreabilidade; Conformidade Legal.
+4. Estrutura mínima obrigatória
+4.1 Governança e responsabilidades;
+4.2 Regras de controle e revogação de acesso;
+4.3 Diretrizes de uso aceitável;
+4.4 Integração com PCN e PRD, com RTO e RPO definidos;
+4.5 Proteção física de ativos;
+4.6 Procedimentos de gestão de incidentes;
+4.7 Gestão de vulnerabilidades, observados integralmente os prazos e critérios técnicos definidos no Anexo II, vedada
+flexibilização por norma interna;
+4.8 Proteção de Dados Pessoais (LGPD):
+I - observância integral da Lei nº 13.709/2018;
+II - caracterização do responsável pela serventia como controlador de dados;
+III - registro das operações de tratamento;
+22/35
+IV - procedimentos para atendimento aos direitos dos titulares;
+V - comunicação de incidentes à ANPD, nos termos e prazos definidos pela legislação e regulamentação vigentes;
+VI - designação de encarregado (DPO), quando exigido.
+4.9 Criptografia
+I - previsão expressa de proteção de dados em trânsito e em repouso;
+II - gestão segura de chaves;
+III - renovação tempestiva de certificados digitais.
+IV - mecanismo de revisão periódica dos padrões criptográficos adotados, com substituição tempestiva de algoritmos ou
+protocolos que se tornem vulneráveis, preservada a equivalência ou superioridade técnica.
+4.10 Gestão de fornecedores
+I - avaliação prévia de segurança;
+II - cláusulas contratuais de confidencialidade e segurança;
+III - definição clara de responsabilidades em caso de incidentes;
+IV - monitoramento contínuo do cumprimento contratual.
+5. Revisão e auditoria
+I - revisão periódica documentada;
+II - manutenção de registros auditáveis por 5 anos;
+III - submissão à fiscalização correicional.
+IV - atualização obrigatória da Política Interna de Segurança da Informação sempre que houver alteração legislativa ou
+regulatória relevante, especialmente em matéria de proteção de dados pessoais, devendo-se adotar interpretação sistemática e evolutiva das
+obrigações legais aplicáveis.
