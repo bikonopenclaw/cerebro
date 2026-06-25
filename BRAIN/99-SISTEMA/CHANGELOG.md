@@ -149,3 +149,12 @@
 - Sincronizados snapshots versionados de Kowalski e Darth Vader antes da consolidação.
 - Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais, histórico Git e inspeção direta.
 
+## 2026-06-25, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-25.md`.
+- Atualizado `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md` para marcar FN Souza como contexto inativo/histórico e manter apenas Faturamento Bikon como grupo ativo.
+- Atualizado `BRAIN/60-AGENTES/DARTH-VADER.md` para registrar `faturamento-fn-souza` como contexto removido do conjunto ativo.
+- Atualizado `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md` com execução bem-sucedida observada em 2026-06-24.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Sincronizados snapshots versionados de Kowalski e Darth Vader antes da consolidação; o snapshot refletiu a remoção da skill `faturamento-fn-souza` da Darth Vader.
+- Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais e inspeção direta.

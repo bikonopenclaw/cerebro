@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_operacional
-fonte: sessões Telegram visíveis em 2026-06-17 e correção operacional em 2026-06-18/19
+fonte: sessões Telegram visíveis em 2026-06-17, correções operacionais em 2026-06-18/19 e remoção FN Souza em 2026-06-25
 confiabilidade: alta
-ultima_revisao: 2026-06-19
+ultima_revisao: 2026-06-25
 tags: [telegram, faturamento, bikon, fn-souza, nfse, boletos, remessa, darth-vader]
 ```
 
@@ -23,13 +23,16 @@ Registrar os contextos operacionais de grupos Telegram usados para faturamento, 
 - Fora de escopo: faturamento de terceiros, comercial geral, marketing/conteúdo, suporte técnico, infraestrutura/site/checkout sem ligação direta com faturamento, financeiro gerencial amplo e conversa operacional aleatória.
 - Roteamento: Puppet Master coordena; execução fiscal/financeira deve ser delegada ao Darth Vader quando necessário.
 
+## Contextos inativos / históricos
+
 ### Faturamento FN Souza
 
 - Chat: `telegram:-5435011106`
-- Contexto operacional local: `/data/.openclaw/workspace/contextos/telegram--5435011106-faturamento-fn-souza.md`
-- Escopo: apenas criação/conferência de NFS-e, criação/conferência de boletos e geração/validação/conferência de arquivos de remessa da skill `faturamento-fn-souza`.
-- Fora de escopo: comercial geral, suporte técnico, conteúdo/marketing, financeiro gerencial sem ligação direta com NFS-e/boleto/remessa FN Souza e conversa operacional aleatória.
-- Roteamento: Puppet Master coordena; quando houver execução fiscal/financeira, acionar Darth Vader com a skill `faturamento-fn-souza`.
+- Status: inativo desde 2026-06-25.
+- Contexto anterior: criação/conferência de NFS-e, boletos e remessas da skill `faturamento-fn-souza`.
+- Remoção operacional registrada: grupo removido da configuração do OpenClaw, pasta Google Drive `Faturamento FN Souza` movida para a lixeira e entrada `faturamento_fn_souza` removida do mapa local `contextos/google-drive-faturamento-pastas.json`.
+- Snapshot versionado: a skill `faturamento-fn-souza` deixou de aparecer no snapshot seguro da Darth Vader após sincronização de 2026-06-25.
+- Regra: não tratar FN Souza como fluxo ativo sem nova autorização explícita e novo escopo operacional.
 
 ## Guardrails
 

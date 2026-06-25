@@ -8,13 +8,13 @@ Health Score: 95/100
 - Arquivos obrigatórios criados.
 - Sem registros duplicados identificados.
 - Sem projetos abandonados identificados.
-- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23 e 2026-06-24.
+- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24 e 2026-06-25.
 - Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`) e 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`).
 - Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
 - Registro central da BIKON criado e conectado a Notaas NFS-e, cadastro de clientes e boletos/malote.
 - Dashboard inicial atualizado.
-- Automações registradas: consolidação diária silenciosa, sync GitHub, Notaas NFS-e exclusiva da Darth Vader, documentação inicial de boletos/malote da BIKON, contextos dos grupos Telegram de faturamento Bikon/FN Souza, desenho inicial GravityZone para Bikon, matriz de acesso Bikon ↔ AD local de clientes e ARX Backup diário para tickets NinjaOne.
-- Contextos dos grupos Telegram de faturamento Bikon e FN Souza registrados com escopo, roteamento e guardrails.
+- Automações registradas: consolidação diária silenciosa, sync GitHub, Notaas NFS-e exclusiva da Darth Vader, documentação inicial de boletos/malote da BIKON, contexto ativo do grupo Telegram de faturamento Bikon, histórico inativo FN Souza, desenho inicial GravityZone para Bikon, matriz de acesso Bikon ↔ AD local de clientes e ARX Backup diário para tickets NinjaOne.
+- Contexto do grupo Telegram de faturamento Bikon registrado com escopo, roteamento e guardrails; contexto FN Souza mantido apenas como histórico inativo desde 2026-06-25.
 - Agente Darth Vader documentado como executor financeiro/fiscal relacionado a NFS-e, boletos e remessas.
 - Diretriz operacional registrada para confirmação antes de ações com impacto fora da conversa atual.
 - Guardrail permanente registrado para manter segredos, tokens e inventários sensíveis fora do Brain/Git.
@@ -29,7 +29,7 @@ Health Score: 95/100
 ## Pendências
 
 - Manter cobertura diária consistente; há lacunas de diário em 2026-06-14/15, apesar da consolidação semanal de 2026-06-14.
-- Restaurar ou trocar o provedor de embeddings: `memory_search` falhou em 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23 e 2026-06-24 por quota insuficiente.
+- Restaurar ou trocar o provedor de embeddings: `memory_search` falhou em 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24 e 2026-06-25 por quota insuficiente.
 - Homologar layout Cresol antes de qualquer uso real da automação de boletos/malote.
 - Expandir dashboards conforme surgirem projetos, empresas, pessoas e automações reais.
 

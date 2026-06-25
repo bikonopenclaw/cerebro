@@ -27,6 +27,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-06-22.md`: consolidação diária com e-mail automático NFS-e Bikon, SMTP fatura validado, agrupamento de notas por cliente, grupo Relatórios Operacionais/Kowalski e Whisper local como padrão.
 - `01-DIARIO/2026/2026-06-23.md`: consolidação diária com padrão visual premium Bikon para relatórios técnicos externos e sincronização de snapshots versionados.
 - `01-DIARIO/2026/2026-06-24.md`: consolidação diária com matriz de acesso Bikon ↔ AD local de clientes, execução ARX Backup → NinjaOne e sincronização de snapshots versionados.
+- `01-DIARIO/2026/2026-06-25.md`: consolidação diária com remoção do contexto ativo FN Souza, execução ARX Backup → NinjaOne e sincronização de snapshots versionados.
 - `01-DIARIO/Semanal/2026-W24.md`: primeira consolidação semanal do Brain.
 - `01-DIARIO/Semanal/2026-W25.md`: consolidação semanal com padrões de escopo de canais, confirmação antes de impacto, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
@@ -44,7 +45,7 @@ Mapa geral do Brain.
 - `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
 - `70-AUTOMACOES/SYNC-GITHUB.md`: sincronização automática do Brain com GitHub 4x ao dia.
 - `70-AUTOMACOES/NOTAAS-NFSE.md`: registro da skill Notaas NFS-e exclusiva da Darth Vader, com guardrails fiscais.
-- `70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`: contextos dos grupos Telegram de faturamento Bikon e FN Souza, com roteamento para Darth Vader e guardrails.
+- `70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`: contexto ativo do grupo Telegram de faturamento Bikon e histórico inativo FN Souza, com roteamento para Darth Vader e guardrails.
 - `70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`: contexto do grupo Telegram de relatórios operacionais, com roteamento restrito para Kowalski.
 - `70-AUTOMACOES/WHISPER-LOCAL.md`: instância local faster-whisper definida como padrão para transcrição de áudios.
 - `70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`: desenho inicial da integração GravityZone para segurança, inventário e relatórios da Bikon.
