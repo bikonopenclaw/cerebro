@@ -4,7 +4,7 @@
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
 ultima_revisao: 2026-06-23
-tags: [kowalski, relatorios, ninjaone, arx-backup, operacao]
+tags: [kowalski, relatorios, ninjaone, arx-backup, provimento-213-2026, operacao]
 ```
 
 ## Papel
@@ -16,6 +16,7 @@ Responsabilidades principais:
 - Relatórios técnicos para clientes.
 - Relatórios NinjaOne, incluindo inventário, alertas, dispositivos offline e evidências auditáveis.
 - Relatórios ARX Backup.
+- Diagnósticos técnicos de cartórios para o Provimento CNJ 213/2026.
 - Adequação de documentos para padrão Bikon.
 - Produzir PDFs externos com acabamento premium Bikon, sem metadados automáticos de impressão/navegador e com validação visual antes da entrega.
 - Apoio em propostas, contratos e materiais técnicos quando houver dado ou relatório envolvido.
@@ -56,9 +57,18 @@ Relatório operacional do Cartório Capixaba:
 
 Em 2026-06-23, o parecer do Cartório Capixaba foi ajustado para manter o layout premium, aplicar fundo suave dentro da paleta Bikon e remover cabeçalhos/rodapés automáticos. Esse ajuste reforça que relatórios externos devem parecer documentos corporativos finais, não HTML impresso.
 
+## Skill Provimento CNJ 213/2026
+
+Em 2026-06-25, foi criada a skill `provimento-213-2026` para o Kowalski.
+
+Uso: diagnóstico técnico, checklist, dossiê, relatório simplificado, PCN/PRD, política de segurança, inventário, backup, logs, MFA, LGPD, interoperabilidade e parecer técnico no padrão Bikon/Kowalski para cartórios.
+
+Regra: apoio técnico, não parecer jurídico; não declarar conformidade jurídica plena; não enviar cliente externo sem aprovação explícita.
+
 ## Relações
 
 - Grupo operacional: `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`
 - Bikon: `BRAIN/20-EMPRESAS/BIKON/README.md`
 - ARX Backup: `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`
+- Provimento 213/2026: `BRAIN/70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`
 - Escopo de canais: `BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md`

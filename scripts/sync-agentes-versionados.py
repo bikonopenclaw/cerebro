@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sincroniza snapshots seguros dos agentes Kowalski e Darth Vader para o Brain.
+"""Sincroniza snapshots seguros dos agentes Kowalski, Darth Vader e Robotnik para o Brain.
 
 Não copia segredos, sessões, caches, relatórios finais, binários pesados nem artefatos gerados.
 """
@@ -16,11 +16,11 @@ SNAP = BRAIN / '60-AGENTES' / 'versionados'
 
 EXCLUDE_DIRS = {
     '.git', 'sessions', '.openclaw', '__pycache__', '.pytest_cache',
-    'node_modules', 'vendor', '.venv', '.pydeps',
+    'node_modules', 'vendor', '.venv', '.pydeps', 'secrets',
 }
 EXCLUDE_FILE_PATTERNS = [
     '*.pyc', '*.pyo', '*.log', '*.lock',
-    '.env', '.env.*',
+    '.env', '.env.*', 'auth-profiles.json', 'models.json',
     '*token*', '*Token*', '*secret*', '*Secret*', '*senha*', '*Senha*',
     '*credential*', '*Credential*', '*oauth*', '*OAuth*',
     '*.pdf', '*.png', '*.jpg', '*.jpeg', '*.gif', '*.webp',
@@ -63,7 +63,7 @@ def write_docs() -> None:
     SNAP.mkdir(parents=True, exist_ok=True)
     (SNAP / 'README.md').write_text('''# Agentes versionados no Brain
 
-Este diretório guarda snapshots controlados do código-fonte operacional dos agentes Kowalski e Darth Vader.
+Este diretório guarda snapshots controlados do código-fonte operacional dos agentes Kowalski, Darth Vader e Robotnik.
 
 ## Objetivo
 
@@ -121,7 +121,7 @@ def main() -> int:
     (SNAP / 'agents').mkdir(parents=True, exist_ok=True)
     (SNAP / 'workspaces').mkdir(parents=True, exist_ok=True)
 
-    for agent in ['kowalski', 'darth-vader']:
+    for agent in ['kowalski', 'darth-vader', 'robotnik']:
         copy_tree(Path(f'/data/.openclaw/agents/{agent}/agent'), SNAP / 'agents' / agent / 'agent')
 
     copy_tree(
@@ -144,6 +144,12 @@ def main() -> int:
             'boletos/lotes-emissao',
             'skills/serpro-integra-parcelamentos/SEGREDOS.md',
         },
+    )
+    copy_tree(
+        Path('/data/.openclaw/workspace-robotnik'),
+        SNAP / 'workspaces' / 'robotnik',
+        extra_exclude_dirs={'logs'},
+        extra_exclude_rel={'instagram-bikon/secrets', 'instagram-bikon/logs'},
     )
 
     # Remove configs reais e substitui por exemplo seguro quando necessário.
@@ -182,6 +188,8 @@ Gerado em: {dt.datetime.now(dt.UTC).replace(microsecond=0).isoformat()}
 - Kowalski workspace: /data/.openclaw/workspace-kowalski
 - Darth Vader agent: /data/.openclaw/agents/darth-vader/agent
 - Darth Vader workspace: /data/.openclaw/workspace-darth-vader
+- Robotnik agent: /data/.openclaw/agents/robotnik/agent
+- Robotnik workspace: /data/.openclaw/workspace-robotnik
 
 ## Destino
 

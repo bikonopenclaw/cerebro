@@ -1,6 +1,6 @@
 # Agentes versionados no Brain
 
-Este diretório guarda snapshots controlados do código-fonte operacional dos agentes Kowalski e Darth Vader.
+Este diretório guarda snapshots controlados do código-fonte operacional dos agentes Kowalski, Darth Vader e Robotnik.
 
 ## Objetivo
 

@@ -1,6 +1,6 @@
 # Manifesto dos snapshots dos agentes
 
-Gerado em: 2026-06-25T02:00:20+00:00
+Gerado em: 2026-06-25T19:36:38+00:00
 
 ## Origens
 
@@ -8,6 +8,8 @@ Gerado em: 2026-06-25T02:00:20+00:00
 - Kowalski workspace: /data/.openclaw/workspace-kowalski
 - Darth Vader agent: /data/.openclaw/agents/darth-vader/agent
 - Darth Vader workspace: /data/.openclaw/workspace-darth-vader
+- Robotnik agent: /data/.openclaw/agents/robotnik/agent
+- Robotnik workspace: /data/.openclaw/workspace-robotnik
 
 ## Destino
 

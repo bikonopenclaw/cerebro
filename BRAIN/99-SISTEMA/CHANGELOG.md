@@ -158,3 +158,13 @@
 - Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
 - Sincronizados snapshots versionados de Kowalski e Darth Vader antes da consolidação; o snapshot refletiu a remoção da skill `faturamento-fn-souza` da Darth Vader.
 - Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais e inspeção direta.
+
+## 2026-06-25, Robotnik e Provimento 213 no Brain/cron
+
+- Criado `BRAIN/60-AGENTES/ROBOTNIK.md` documentando o novo agente interno de marketing, guardrails e status da integração Instagram.
+- Criado `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md` para registrar a integração via Meta Graph API, em stand by até aprovação de segurança da Meta.
+- Criado `BRAIN/70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md` para registrar a skill do Kowalski e o fluxo operacional de diagnóstico técnico de cartórios.
+- Atualizado `scripts/sync-agentes-versionados.py` para incluir Robotnik nos snapshots seguros e reforçar exclusão de segredos/auth.
+- Atualizado cron `Brain, consolidação diária silenciosa` para considerar Kowalski, Darth Vader e Robotnik nos snapshots versionados.
+- Criado backup sanitizado `BRAIN/99-SISTEMA/openclaw-config-agentes-backup-2026-06-25.md` com os quatro agentes e allowlist agent-to-agent.
+- Atualizados `INDEX.md`, `HEALTH.md`, `KOWALSKI.md` e `CONSOLIDACAO-DIARIA-SILENCIOSA.md`.

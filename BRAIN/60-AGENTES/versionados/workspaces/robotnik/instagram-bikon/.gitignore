@@ -1,0 +1,4 @@
+secrets/*.env
+logs/*.json
+logs/*.log
+posts/*.tmp

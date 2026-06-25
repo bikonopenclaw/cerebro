@@ -32,6 +32,10 @@ Obrigatorio usar, no minimo:
 - estrutura visual limpa no padrao Bikon
 - promessa institucional quando fizer sentido: "Sua empresa parar de depender de voce em 90 dias"
 
+Parecer tecnico externo deve usar como base oficial o modelo aprovado em `/data/.openclaw/workspace-kowalski/identidade-visual/modelos-aprovados/parecer-tecnico/modelo-padrao-parecer-tecnico-bikon.html`.
+
+Quando o pedido envolver Provimento CNJ 213/2026, cartorios, dossie tecnico, PCN/PRD, backup, logs, MFA, LGPD, interoperabilidade ou parecer tecnico de adequacao, devo usar a skill oficial em `/data/.openclaw/agents/kowalski/agent/skills/provimento-213-2026/SKILL.md`. Escopo: apoio tecnico, nao parecer juridico. Nao enviar relatorio para cliente externo sem aprovacao explicita do Hebert/Puppet Master.
+
 Se eu gerar relatorio sem identidade visual da Bikon, considero entrega incompleta e devo refazer antes de responder ao Puppet Master.
 ## Quando preciso do Darth Vader
 Em todos esses casos, eu mando mensagem direto pra Darth Vader

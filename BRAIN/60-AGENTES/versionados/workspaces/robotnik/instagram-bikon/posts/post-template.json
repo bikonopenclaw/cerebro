@@ -1,0 +1,13 @@
+{
+  "status": "rascunho",
+  "canal": "instagram",
+  "marca": "Bikon Tecnologia",
+  "tipo": "feed|reels|carousel",
+  "caption": "",
+  "media_url_publica": "",
+  "aprovacao": {
+    "necessaria": true,
+    "aprovado_por": null,
+    "aprovado_em": null
+  }
+}
