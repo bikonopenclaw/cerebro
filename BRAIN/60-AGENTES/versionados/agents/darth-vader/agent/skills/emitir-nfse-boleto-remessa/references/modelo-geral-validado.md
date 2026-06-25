@@ -9,22 +9,15 @@ Repetir o fluxo completo sem hardcode de cliente:
 3. Gerar remessa CNAB400 Cresol.
 4. Validar estrutura e aguardar retorno/homologação bancária.
 
-## Caso validado que originou o modelo
+## Regra importante
 
-O fluxo foi validado no ambiente de teste do banco com a Unus em 2026-06-16:
+Não usar cliente real como referência de processo, template ou golden case.
 
-- Valor: R$ 18.004,19
-- Vencimento: 20/06/2026
-- Documento: 105601
-- Nosso número: 00000001533-7
-- Sequencial remessa: 0000084
-- Remessa CNAB400: 3 linhas, 400 posições cada, registros 0/1/9
-
-Use esse caso como golden case, não como template fixo de cliente.
+Casos históricos de cliente servem apenas como histórico/auditoria do que foi feito naquele atendimento. Para novas emissões, usar somente o schema parametrizado, os dados atuais do cliente e as regras bancárias/fiscais vigentes.
 
 ## Regras gerais
 
-- Cliente, pagador, documento, nosso número, vencimento, valor e sequencial vêm do job JSON.
+- Cliente, pagador, documento, nosso número, vencimento, valor e sequencial vêm do job JSON atual.
 - Nunca reaproveitar valor atualizado de segunda via com multa/mora como valor base de cobrança nova.
 - O boleto PDF da skill é para homologação/conferência visual. Registro bancário real depende da remessa validada ou sistema do banco.
 - A remessa `.rem` gerada pela skill é homologação até o Hebert aprovar produção.

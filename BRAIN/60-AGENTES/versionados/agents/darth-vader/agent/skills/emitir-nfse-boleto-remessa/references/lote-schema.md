@@ -16,13 +16,13 @@ Preferência, nessa ordem:
 
 | campo | obrigatório | exemplo |
 |---|---:|---|
-| cliente_slug | sim | unus-holding |
-| tomador_nome | sim | UNUS HOLDING LTDA |
-| tomador_cnpj | sim | 21.975.647/0001-09 |
-| tomador_endereco | sim | RUA SIQUEIRA CAMPOS, 1281 |
-| tomador_cep | sim | 85812220 |
-| tomador_cidade | recomendado | CASCAVEL |
-| tomador_uf | recomendado | PR |
+| cliente_slug | sim | cliente-exemplo |
+| tomador_nome | sim | CLIENTE EXEMPLO LTDA |
+| tomador_cnpj | sim | 00.000.000/0001-00 |
+| tomador_endereco | sim | RUA EXEMPLO, 123 |
+| tomador_cep | sim | 00000000 |
+| tomador_cidade | recomendado | VITORIA |
+| tomador_uf | recomendado | ES |
 | competencia | sim | 06/2026 |
 | data_emissao | sim | 16/06/2026 |
 | codigo_tributacao | sim | 010701 |
@@ -39,7 +39,7 @@ Preferência, nessa ordem:
 
 ```csv
 cliente_slug,tomador_nome,tomador_cnpj,tomador_endereco,tomador_cep,tomador_cidade,tomador_uf,competencia,data_emissao,codigo_tributacao,valor_total,vencimento,numero_documento,nosso_numero,seq_remessa,descricao_servico,email_tomador
-unus-holding,UNUS HOLDING LTDA,21.975.647/0001-09,"RUA SIQUEIRA CAMPOS, 1281, CENTRO",85812220,CASCAVEL,PR,06/2026,16/06/2026,010701,"18004,19",20/06/2026,105601,1533,0000084,"Serviços de infraestrutura e monitoramento", 
+cliente-exemplo,CLIENTE EXEMPLO LTDA,00.000.000/0001-00,"RUA EXEMPLO, 123, CENTRO",00000000,VITORIA,ES,06/2026,16/06/2026,010701,"585,00",30/06/2026,105600,1500,0000080,"Serviços de infraestrutura e monitoramento",financeiro@clienteexemplo.com.br
 ```
 
 ## Saída esperada
