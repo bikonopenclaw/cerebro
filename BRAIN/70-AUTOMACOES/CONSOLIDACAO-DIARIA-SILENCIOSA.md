@@ -6,7 +6,7 @@ status: ativa
 responsavel: Agente Principal / Puppet Master
 frequencia: diária
 horario_referencia_utc: "18:05"
-ultima_revisao: 2026-06-25
+ultima_revisao: 2026-06-26
 fonte: cron d95bbe73-24d9-4e2b-ba57-0032082bb54b e BRAIN/99-SISTEMA/ROTINA-CONSOLIDACAO.md
 ```
 

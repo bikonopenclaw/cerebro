@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_operacional
-fonte: sessões Telegram visíveis em 2026-06-17, correções operacionais em 2026-06-18/19 e remoção FN Souza em 2026-06-25
+fonte: sessões Telegram visíveis em 2026-06-17, correções operacionais em 2026-06-18/19/25/26 e remoção FN Souza em 2026-06-25
 confiabilidade: alta
-ultima_revisao: 2026-06-25
+ultima_revisao: 2026-06-26
 tags: [telegram, faturamento, bikon, fn-souza, nfse, boletos, remessa, darth-vader]
 ```
 
@@ -22,6 +22,7 @@ Registrar os contextos operacionais de grupos Telegram usados para faturamento, 
 - Inclui: NFS-e, boletos, remessa/retorno bancário e conferência cadastral ligada diretamente ao faturamento da Bikon.
 - Fora de escopo: faturamento de terceiros, comercial geral, marketing/conteúdo, suporte técnico, infraestrutura/site/checkout sem ligação direta com faturamento, financeiro gerencial amplo e conversa operacional aleatória.
 - Roteamento: Puppet Master coordena; execução fiscal/financeira deve ser delegada ao Darth Vader quando necessário.
+- Configuração operacional observada em 2026-06-25/26: o grupo permitido e o remetente permitido são dimensões separadas. `groupAllowFrom` deve conter o ID do remetente autorizado, não o ID do grupo. Após correção, foi necessário restart limpo do Gateway/Telegram para novo teste.
 
 ## Contextos inativos / históricos
 

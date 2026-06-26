@@ -28,6 +28,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-06-23.md`: consolidação diária com padrão visual premium Bikon para relatórios técnicos externos e sincronização de snapshots versionados.
 - `01-DIARIO/2026/2026-06-24.md`: consolidação diária com matriz de acesso Bikon ↔ AD local de clientes, execução ARX Backup → NinjaOne e sincronização de snapshots versionados.
 - `01-DIARIO/2026/2026-06-25.md`: consolidação diária com remoção do contexto ativo FN Souza, execução ARX Backup → NinjaOne e sincronização de snapshots versionados.
+- `01-DIARIO/2026/2026-06-26.md`: consolidação diária com correção operacional da rota Faturamento Bikon, retorno Cresol CNAB400 para parser/conciliação, execução ARX Backup → NinjaOne e sincronização de snapshots versionados.
 - `01-DIARIO/Semanal/2026-W24.md`: primeira consolidação semanal do Brain.
 - `01-DIARIO/Semanal/2026-W25.md`: consolidação semanal com padrões de escopo de canais, confirmação antes de impacto, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.

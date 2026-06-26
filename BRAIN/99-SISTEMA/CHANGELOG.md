@@ -168,3 +168,13 @@
 - Atualizado cron `Brain, consolidação diária silenciosa` para considerar Kowalski, Darth Vader e Robotnik nos snapshots versionados.
 - Criado backup sanitizado `BRAIN/99-SISTEMA/openclaw-config-agentes-backup-2026-06-25.md` com os quatro agentes e allowlist agent-to-agent.
 - Atualizados `INDEX.md`, `HEALTH.md`, `KOWALSKI.md` e `CONSOLIDACAO-DIARIA-SILENCIOSA.md`.
+
+## 2026-06-26, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-26.md`.
+- Atualizado `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md` com aprendizado operacional sobre `groupAllowFrom` e separação entre grupo permitido e remetente permitido.
+- Atualizado `BRAIN/70-AUTOMACOES/boletos-malote/README.md` com retorno Cresol CNAB400 como referência sanitizada de parser/conciliação, sem autorizar uso como remessa.
+- Atualizado `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md` com execução bem-sucedida observada em 2026-06-25.
+- Atualizados `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e a automação de consolidação diária.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; o snapshot da Darth Vader passou a incluir documentação sanitizada de retornos Cresol, sem o `.ret` bruto.
+- Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais e inspeção direta.
