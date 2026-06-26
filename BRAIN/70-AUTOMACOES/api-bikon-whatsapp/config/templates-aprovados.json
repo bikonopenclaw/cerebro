@@ -1,0 +1,10 @@
+{
+  "retomar_solicitacao": {
+    "templateId": "69b4c7d2ab61bd013ee12989",
+    "language": "pt_BR",
+    "description": "retomar_solicitacao (pt_BR)",
+    "requiresHeaderImage": true,
+    "defaultHeaderImageUrl": "https://bikon.com.br/wp-content/uploads/2024/09/logo-white.png",
+    "allowedUse": "Retomar atendimento com botões Sim/Não"
+  }
+}

@@ -69,3 +69,5 @@ Mapa geral do Brain.
 ## Arquivo
 
 - `99-ARQUIVO`: notas antigas, sem links fortes ou com baixa prioridade. Não é lixeira, é redução de visibilidade.
+- `70-AUTOMACOES/API-WHATSAPP-BIKON.md`: integração do canal oficial WhatsApp Bikon via api.bikon.tech, template `retomar_solicitacao`, rotina segura com dry-run e confirmação explícita.
+- `70-AUTOMACOES/api-bikon-whatsapp/`: snapshot sanitizado do client local, Swagger, documentação e rotina segura, sem tokens.

@@ -1,0 +1,94 @@
+[
+  {
+    "/core/v2/api/channel": {
+      "get": {
+        "tags": [
+          "Channels"
+        ],
+        "summary": "Consulta os dados do canal"
+      }
+    }
+  },
+  {
+    "/core/v2/api/channel/status": {
+      "get": {
+        "tags": [
+          "Channels"
+        ],
+        "summary": "Consulta estado atual do canal"
+      }
+    }
+  },
+  {
+    "/core/v2/api/chats/send-text": {
+      "post": {
+        "tags": [
+          "Chats"
+        ],
+        "summary": "Envio de texto"
+      },
+      "get": {
+        "tags": [
+          "Chats"
+        ],
+        "summary": "Envio de texto(Via Query Params)"
+      }
+    }
+  },
+  {
+    "/core/v2/api/chats/send-media": {
+      "post": {
+        "tags": [
+          "Chats"
+        ],
+        "summary": "Envio de arquivo de midia"
+      }
+    }
+  },
+  {
+    "/core/v2/api/chats/create-new": {
+      "post": {
+        "tags": [
+          "ChatsActions"
+        ],
+        "summary": "Cria um novo atendimento"
+      }
+    }
+  },
+  {
+    "/core/v2/api/chats/list": {
+      "post": {
+        "tags": [
+          "ChatsUtilities"
+        ],
+        "summary": "Busca todos os atendimentos do canal de acordo com o estado [paginação de 100]"
+      }
+    }
+  },
+  {
+    "/core/v2/api/contacts/number/{number}": {
+      "get": {
+        "tags": [
+          "Contacts"
+        ],
+        "summary": "Busca os dados do contato pelo número"
+      }
+    }
+  },
+  {
+    "/core/v2/api/contacts": {
+      "get": {
+        "tags": [
+          "Contacts"
+        ],
+        "summary": "Busca a lista dos contatos baseado na organização ao qual o canal pertence"
+      },
+      "post": {
+        "tags": [
+          "Contacts"
+        ],
+        "summary": "Cadastra um novo contato"
+      }
+    }
+  }
+]

@@ -38,3 +38,4 @@
 - Criar dashboard de projetos ativos.
 - Criar dashboard de faturamento por lote: NFS-e, boletos, e-mails preparados/enviados e pendências.
 - Criar mapa inicial de empresas, pessoas, projetos e agentes conforme o volume de conteúdo real crescer.
+- API WhatsApp Bikon: integração validada, token protegido fora do Git, rotina segura de template criada.

@@ -178,3 +178,13 @@
 - Atualizados `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e a automação de consolidação diária.
 - Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; o snapshot da Darth Vader passou a incluir documentação sanitizada de retornos Cresol, sem o `.ret` bruto.
 - Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais e inspeção direta.
+
+## 2026-06-26, API WhatsApp Bikon validada
+- Criado workspace operacional `/data/.openclaw/workspace/api-bikon-whatsapp` para integração com `https://api.bikon.tech`.
+- Swagger v2 enviado por Hebert salvo e indexado; client CLI local criado para canal, status, envio de texto/mídia, contatos, atendimentos e templates.
+- Token do canal capturado via Google Drive temporário, salvo apenas em `secrets/.env`; documento temporário apagado após captura.
+- Corrigido bloqueio Cloudflare 1010 adicionando User-Agent de navegador ao client.
+- Canal validado: `Atendimento Bikon`, número `+55 (27) 3022-0499`, status `REGISTERED`.
+- Template oficial WhatsApp Cloud `retomar_solicitacao (pt_BR)` validado com envio recebido por Hebert.
+- Criada rotina segura `envio_seguro_template.py`, dry-run por padrão e envio real somente com `--confirm ENVIAR`.
+- Snapshot sanitizado versionado em `BRAIN/70-AUTOMACOES/api-bikon-whatsapp/`, sem tokens, logs ou caches.

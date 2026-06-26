@@ -41,3 +41,4 @@ Health Score: 95/100
 - Métricas de saúde definidas.
 - Esquecimento saudável definido via `99-ARQUIVO`.
 - Rotinas diária, semanal e mensal especificadas.
+- API WhatsApp Bikon validada com canal oficial Meta/WhatsApp Cloud, template `retomar_solicitacao` e rotina segura com confirmação explícita.

@@ -1,0 +1,5 @@
+secrets/.env
+secrets/token-transfer-drive-current.json
+logs/
+__pycache__/
+*.pyc
