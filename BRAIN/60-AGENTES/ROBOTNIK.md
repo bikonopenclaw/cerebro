@@ -5,7 +5,7 @@ categoria: agente_operacional
 papel: marketing, conteúdo e campanhas
 fonte: configuração OpenClaw e AGENTS.md do workspace Robotnik em 2026-06-25
 confiabilidade: alta
-ultima_revisao: 2026-06-25
+ultima_revisao: 2026-06-27
 tags: [agente, marketing, robotnik, instagram, conteudo]
 ```
 
@@ -49,13 +49,13 @@ Robotnik deve pedir aprovação do Puppet Master antes de:
 
 ## Instagram Bikon
 
-A integração Instagram foi iniciada em stand by:
+A integração Instagram saiu do stand by após aprovação da verificação de segurança da Meta informada em 2026-06-26:
 
 - Pasta: `/data/.openclaw/workspace-robotnik/instagram-bikon`
 - Modo inicial: `draft`
 - Caminho correto: Meta Graph API oficial.
 - Nunca usar automação por login/senha do Instagram.
-- Aguardando aprovação da verificação de segurança da Meta, prazo informado de até 2 dias úteis em 2026-06-25.
+- Pendências atuais: preencher token Meta de longa duração e IDs da Página/Instagram Business Account em arquivo local de segredos, validar `me`/`pages` e manter publicação bloqueada até aprovação explícita.
 
 ## Relações
 

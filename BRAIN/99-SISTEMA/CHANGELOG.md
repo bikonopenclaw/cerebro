@@ -188,3 +188,13 @@
 - Template oficial WhatsApp Cloud `retomar_solicitacao (pt_BR)` validado com envio recebido por Hebert.
 - Criada rotina segura `envio_seguro_template.py`, dry-run por padrão e envio real somente com `--confirm ENVIAR`.
 - Snapshot sanitizado versionado em `BRAIN/70-AUTOMACOES/api-bikon-whatsapp/`, sem tokens, logs ou caches.
+
+## 2026-06-27, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-27.md`.
+- Atualizado `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md` e `BRAIN/60-AGENTES/ROBOTNIK.md` com retomada pós-aprovação da verificação de segurança da Meta, mantendo token/IDs fora do Brain/Git e publicação bloqueada até aprovação explícita.
+- Atualizado `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md` e `BRAIN/20-EMPRESAS/BIKON/README.md` com regra de cópia para `financeiro@bikon.com.br` em e-mails de NFS-e/boleto.
+- Atualizado `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md` com execução bem-sucedida observada em 2026-06-26.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; o snapshot do Robotnik passou a incluir o status de retomada Instagram, e a configuração de e-mail da Darth Vader refletiu a cópia financeira padrão.
+- Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais, diffs Git e inspeção direta.

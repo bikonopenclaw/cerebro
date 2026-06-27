@@ -8,7 +8,7 @@
 
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
-- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25 e 2026-06-26.
+- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26 e 2026-06-27.
 - Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md` e `01-DIARIO/Semanal/2026-W25.md`.
 - Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
 - Registro central da BIKON criado em `20-EMPRESAS/BIKON/README.md`.
@@ -21,7 +21,7 @@
 - Diretriz de confirmação antes de ações com impacto registrada em conhecimento operacional.
 - Guardrail de segredos fora do Brain/Git registrado como conhecimento operacional permanente.
 - Integração Bitdefender GravityZone da Bikon registrada como desenho inicial e relatório executivo agregado de 2026-06-19 catalogado sem segredos.
-- Automação ARX Backup diário → tickets NinjaOne registrada com última execução observada bem-sucedida em 2026-06-25.
+- Automação ARX Backup diário → tickets NinjaOne registrada com última execução observada bem-sucedida em 2026-06-26.
 - Matriz de acesso Bikon ↔ AD local de clientes registrada como base de governança/auditoria antes de automações de identidade.
 - Fluxo NFS-e Bikon atualizado com SMTP `fatura@bikontecnologia.com.br`, template HTML padrão, anexos de NFS-e/XML/boleto e agrupamento de múltiplas notas por cliente.
 - Grupo Relatórios Operacionais registrado com roteamento restrito para Kowalski.
@@ -35,7 +35,9 @@
 - Se autorizada, evoluir a integração GravityZone da Bikon com cofre local e permissões mínimas.
 - Após preenchimento da matriz de acesso, desenhar auditoria PowerShell/RMM sem ações destrutivas sobre ADs de clientes.
 - Homologar layout Cresol antes de qualquer uso real da automação de boletos/malote.
+- Concluir configuração segura da integração Instagram Bikon Robotnik pós-aprovação Meta.
 - Criar dashboard de projetos ativos.
 - Criar dashboard de faturamento por lote: NFS-e, boletos, e-mails preparados/enviados e pendências.
 - Criar mapa inicial de empresas, pessoas, projetos e agentes conforme o volume de conteúdo real crescer.
 - API WhatsApp Bikon: integração validada, token protegido fora do Git, rotina segura de template criada.
+- Instagram Bikon Robotnik: verificação Meta aprovada; próxima etapa é configurar token/IDs em segredo local e testar API mantendo modo `draft`.

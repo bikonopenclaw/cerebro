@@ -133,6 +133,7 @@ Validado pelo Hebert em 2026-06-22.
 
 Regra oficial para envio em lote:
 
+- Todo e-mail de NFS-e/boleto para cliente deve copiar `financeiro@bikon.com.br`.
 - Se houver duas ou mais NFS-e para o mesmo `cliente_id`, CPF, CNPJ ou documento de cliente, enviar um único e-mail para esse cliente.
 - O corpo do e-mail deve listar cada NFS-e com número, chave, valor e boleto relacionado.
 - Anexos devem incluir todos os PDFs/XMLs das NFS-e e todos os boletos PDF daquele cliente.

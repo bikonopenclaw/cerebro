@@ -18,9 +18,14 @@
 - Grupo relatórios operacionais: `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`
 - Integração de segurança/antivírus em desenho: `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`
 - Governança de acessos Bikon ↔ AD local de clientes: `BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md`
+- Integração Instagram Bikon Robotnik: `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`
+- API WhatsApp Bikon: `BRAIN/70-AUTOMACOES/API-WHATSAPP-BIKON.md`
 
 ## Histórico relevante
 
+- 2026-06-26: API WhatsApp Bikon validada via `api.bikon.tech`, canal Atendimento Bikon registrado como `REGISTERED`, template `retomar_solicitacao` confirmado e rotina segura criada com token fora do Brain/Git.
+- 2026-06-26: verificação de segurança da Meta aprovada para retomada da integração Instagram Bikon Robotnik; publicação real permanece bloqueada até configuração segura, testes e aprovação explícita.
+- 2026-06-26: regra de faturamento atualizada para copiar `financeiro@bikon.com.br` em todo e-mail de NFS-e/boleto enviado a cliente.
 - 2026-06-24: iniciada governança de acessos Bikon ↔ AD local de clientes, com matriz mestre em Google Sheets para listar usuários Bikon aprovados no Entra ID, clientes, servidores, permissões e regras de auditoria antes de qualquer automação.
 - 2026-06-23: reforçado padrão visual premium Bikon para relatórios técnicos externos, com fundo suave dentro da paleta, sem cabeçalhos/rodapés automáticos e sem metadados de impressão/navegador.
 - 2026-06-22: validado envio de e-mail NFS-e via `fatura@bikontecnologia.com.br`, template HTML padrão Bikon e agrupamento de duas ou mais NFS-e por cliente em um único e-mail com todos os PDFs/XMLs e boletos.
@@ -37,6 +42,7 @@
 - Não registrar API keys, credenciais bancárias, tokens, arquivos sensíveis sem necessidade ou dados fiscais sigilosos no Brain.
 - Qualquer emissão/cancelamento fiscal real exige autorização explícita do Hebert/Puppet Master.
 - Qualquer envio externo de NFS-e, boleto ou e-mail financeiro para cliente exige aprovação explícita.
+- Todo e-mail de NFS-e/boleto enviado a cliente deve copiar `financeiro@bikon.com.br`.
 - NFS-e da Bikon deve usar dados completos do tomador quando disponíveis no cadastro mestre, incluindo endereço completo.
 - Qualquer geração de remessa bancária real deve ser validada contra layout oficial do banco antes de uso operacional.
 - Qualquer chamada real à API GravityZone ou armazenamento de chave exige autorização explícita do Hebert e cofre local fora do Git.

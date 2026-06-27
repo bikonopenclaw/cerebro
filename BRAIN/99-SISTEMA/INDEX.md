@@ -29,6 +29,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-06-24.md`: consolidação diária com matriz de acesso Bikon ↔ AD local de clientes, execução ARX Backup → NinjaOne e sincronização de snapshots versionados.
 - `01-DIARIO/2026/2026-06-25.md`: consolidação diária com remoção do contexto ativo FN Souza, execução ARX Backup → NinjaOne e sincronização de snapshots versionados.
 - `01-DIARIO/2026/2026-06-26.md`: consolidação diária com correção operacional da rota Faturamento Bikon, retorno Cresol CNAB400 para parser/conciliação, execução ARX Backup → NinjaOne e sincronização de snapshots versionados.
+- `01-DIARIO/2026/2026-06-27.md`: consolidação diária com API WhatsApp Bikon validada, retomada Instagram Robotnik pós-aprovação Meta, regra de cópia financeira em NFS-e/boleto e sincronização de snapshots versionados.
 - `01-DIARIO/Semanal/2026-W24.md`: primeira consolidação semanal do Brain.
 - `01-DIARIO/Semanal/2026-W25.md`: consolidação semanal com padrões de escopo de canais, confirmação antes de impacto, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
@@ -42,7 +43,7 @@ Mapa geral do Brain.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
 - `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader e skills relacionadas.
 - `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski, incluindo skill Provimento 213/2026, e uso controlado no grupo Relatórios Operacionais.
-- `60-AGENTES/ROBOTNIK.md`: papel de marketing do agente Robotnik, status interno, guardrails e integração Instagram em stand by.
+- `60-AGENTES/ROBOTNIK.md`: papel de marketing do agente Robotnik, status interno, guardrails e integração Instagram em retomada pós-aprovação Meta.
 - `60-AGENTES/versionados/`: snapshots seguros de código, skills e documentação operacional do Kowalski, Darth Vader e Robotnik, com exclusão de segredos e artefatos gerados.
 - `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
 - `70-AUTOMACOES/SYNC-GITHUB.md`: sincronização automática do Brain com GitHub 4x ao dia.
@@ -54,7 +55,7 @@ Mapa geral do Brain.
 - `70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md`: matriz mestre para governança e auditoria de usuários Bikon aprovados no Entra ID versus acessos em ADs locais de clientes.
 - `70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`: automação diária de monitoramento ARX Backup com deduplicação/criação de tickets NinjaOne.
 - `70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`: skill e fluxo do Kowalski para diagnósticos técnicos de cartórios no Provimento CNJ 213/2026.
-- `70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`: integração Instagram Bikon com Robotnik via Meta Graph API, em stand by até aprovação de segurança da Meta.
+- `70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`: integração Instagram Bikon com Robotnik via Meta Graph API, em retomada pós-aprovação de segurança da Meta.
 - `70-AUTOMACOES/boletos-malote/README.md`: documentação da futura automação de boletos/remessa bancária da BIKON, com pendências de homologação Cresol.
 
 ## Arquivos de sistema

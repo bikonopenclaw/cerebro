@@ -2,9 +2,9 @@
 
 ```yaml
 nome: Instagram Bikon Robotnik
-status: stand_by
+status: retomada_aprovada_meta
 responsavel: Robotnik sob coordenação do Puppet Master
-ultima_revisao: 2026-06-25
+ultima_revisao: 2026-06-27
 fonte: conversa Hebert/Puppet Master e workspace Robotnik
 tags: [instagram, meta, robotnik, marketing, bikon]
 ```
@@ -30,9 +30,9 @@ Em 2026-06-25, Hebert confirmou que:
 
 - o Instagram da Bikon é profissional
 - está ligado a uma Página do Facebook
-- a verificação de segurança da Meta pode levar até 2 dias úteis
+- a verificação de segurança da Meta poderia levar até 2 dias úteis
 
-Integração ficou em stand by até aprovação da verificação.
+Em 2026-06-26, a verificação de segurança da Meta foi marcada como aprovada e a integração saiu do estado de espera. A publicação real continua bloqueada até configuração segura, testes controlados e aprovação explícita.
 
 ## Estrutura criada
 
@@ -41,7 +41,8 @@ Integração ficou em stand by até aprovação da verificação.
 - Exemplo de env: `config/instagram-bikon.env.example`
 - Segredos locais: `secrets/instagram-bikon.env`, fora do Git
 - Template de post: `posts/post-template.json`
-- Status: `status/standby-meta-verificacao-2026-06-25.md`
+- Status inicial: `status/standby-meta-verificacao-2026-06-25.md`
+- Status de retomada: `status/retomada-meta-aprovada-2026-06-26.md`
 
 ## Regra operacional
 
@@ -61,16 +62,17 @@ Robotnik não pode:
 - expor token em relatório
 - responder cliente externo sem aprovação
 
-## Próximo passo quando a Meta aprovar
+## Próximos passos pós-aprovação Meta
 
-1. Acessar Meta Developers.
-2. Criar/configurar app da Bikon.
-3. Liberar permissões necessárias, incluindo `instagram_basic`, `instagram_content_publish`, `pages_show_list` e permissões correlatas exigidas pela Meta.
-4. Gerar token seguro de longa duração.
-5. Salvar em `/data/.openclaw/workspace-robotnik/instagram-bikon/secrets/instagram-bikon.env`.
-6. Rodar teste de listagem de páginas e conta Instagram:
-   - `/data/.openclaw/workspace-robotnik/instagram-bikon/scripts/instagram_graph.py pages`
-7. Manter publicação travada até teste validado e aprovação explícita.
+1. Gerar token Meta seguro de longa duração.
+2. Salvar o token somente em `/data/.openclaw/workspace-robotnik/instagram-bikon/secrets/instagram-bikon.env`.
+3. Rodar testes seguros:
+   - `python3 scripts/instagram_graph.py me`
+   - `python3 scripts/instagram_graph.py pages`
+4. Identificar e preencher no arquivo local de segredos:
+   - `META_PAGE_ID`
+   - `INSTAGRAM_BUSINESS_ACCOUNT_ID`
+5. Manter `ROBOTNIK_INSTAGRAM_MODE=draft` e publicação travada até teste validado e aprovação explícita.
 
 ## Cron relacionado
 
