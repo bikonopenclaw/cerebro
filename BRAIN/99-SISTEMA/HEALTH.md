@@ -9,8 +9,8 @@ Health Score: 95/100
 - Sem registros duplicados identificados.
 - Sem projetos abandonados identificados.
 - Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26 e 2026-06-27.
-- Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`) e 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`).
-- Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
+- Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`), 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`) e 2026-06-28 (`01-DIARIO/Semanal/2026-W26.md`).
+- Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, separação teste/rascunho/produção, governança de identidade, retorno bancário versus remessa e validação visual de relatórios externos.
 - Registro central da BIKON criado e conectado a Notaas NFS-e, cadastro de clientes e boletos/malote.
 - Dashboard inicial atualizado.
 - Automações registradas: consolidação diária silenciosa, sync GitHub, Notaas NFS-e exclusiva da Darth Vader, documentação inicial de boletos/malote da BIKON com retorno Cresol CNAB400 para parser/conciliação, contexto ativo do grupo Telegram de faturamento Bikon, histórico inativo FN Souza, desenho inicial GravityZone para Bikon, matriz de acesso Bikon ↔ AD local de clientes, ARX Backup diário para tickets NinjaOne, Provimento 213/2026 Kowalski, Instagram Bikon Robotnik em retomada pós-aprovação Meta e API WhatsApp Bikon validada.
@@ -41,4 +41,4 @@ Health Score: 95/100
 - Métricas de saúde definidas.
 - Esquecimento saudável definido via `99-ARQUIVO`.
 - Rotinas diária, semanal e mensal especificadas.
-- API WhatsApp Bikon validada com canal oficial Meta/WhatsApp Cloud, template `retomar_solicitacao` e rotina segura com confirmação explícita.
+- API WhatsApp Bikon validada com canal oficial Meta/WhatsApp Cloud, template `retomar_solicitacao` e rotina segura com confirmação explícita. Consolidação semanal 2026-W26 concluída sem arquivamento por baixa relevância.

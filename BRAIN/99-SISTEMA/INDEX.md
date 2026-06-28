@@ -32,6 +32,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-06-27.md`: consolidação diária com API WhatsApp Bikon validada, retomada Instagram Robotnik pós-aprovação Meta, regra de cópia financeira em NFS-e/boleto e sincronização de snapshots versionados.
 - `01-DIARIO/Semanal/2026-W24.md`: primeira consolidação semanal do Brain.
 - `01-DIARIO/Semanal/2026-W25.md`: consolidação semanal com padrões de escopo de canais, confirmação antes de impacto, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
+- `01-DIARIO/Semanal/2026-W26.md`: consolidação semanal com padrões de segurança operacional antes de escala, teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, relatórios externos e canais com remetente autorizado.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
 - `20-EMPRESAS/BIKON/cadastro-clientes/README.md`: backup operacional de cadastro de clientes da BIKON.
 - `40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md`: princípio permanente de memória útil.
@@ -40,6 +41,11 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md`: aprendizado permanente sobre separar canais por finalidade, escopo, roteamento e guardrails.
 - `40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md`: guardrail permanente para manter credenciais, tokens e dados sensíveis fora do Brain/Git.
 - `40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md`: princípio fiscal para preservar dados completos do cadastro mestre em payloads de NFS-e.
+- `40-CONHECIMENTO/Financeiro/Retorno-bancario-nao-valida-remessa.md`: princípio financeiro para não usar retorno CNAB400 como validação de remessa, nosso número ou sequencial.
+- `40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md`: guardrail para separar preparo interno, dry-run e execução real.
+- `40-CONHECIMENTO/Operacional/Governanca-antes-de-automacao-de-identidade.md`: aprendizado permanente para iniciar automações de identidade por matriz, auditoria e aprovação.
+- `40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md`: padrão de revisão visual para PDFs e pareceres externos.
+- `40-CONHECIMENTO/Operacional/Canais-com-escopo-e-remetente-autorizados.md`: aprendizado sobre separar grupo/canal permitido de remetente autorizado.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
 - `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader e skills relacionadas.
 - `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski, incluindo skill Provimento 213/2026, e uso controlado no grupo Relatórios Operacionais.
@@ -57,6 +63,8 @@ Mapa geral do Brain.
 - `70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`: skill e fluxo do Kowalski para diagnósticos técnicos de cartórios no Provimento CNJ 213/2026.
 - `70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`: integração Instagram Bikon com Robotnik via Meta Graph API, em retomada pós-aprovação de segurança da Meta.
 - `70-AUTOMACOES/boletos-malote/README.md`: documentação da futura automação de boletos/remessa bancária da BIKON, com pendências de homologação Cresol.
+- `70-AUTOMACOES/API-WHATSAPP-BIKON.md`: integração do canal oficial WhatsApp Bikon via api.bikon.tech, template `retomar_solicitacao`, rotina segura com dry-run e confirmação explícita.
+- `70-AUTOMACOES/api-bikon-whatsapp/`: snapshot sanitizado do client local, Swagger, documentação e rotina segura, sem tokens.
 
 ## Arquivos de sistema
 
@@ -70,5 +78,3 @@ Mapa geral do Brain.
 ## Arquivo
 
 - `99-ARQUIVO`: notas antigas, sem links fortes ou com baixa prioridade. Não é lixeira, é redução de visibilidade.
-- `70-AUTOMACOES/API-WHATSAPP-BIKON.md`: integração do canal oficial WhatsApp Bikon via api.bikon.tech, template `retomar_solicitacao`, rotina segura com dry-run e confirmação explícita.
-- `70-AUTOMACOES/api-bikon-whatsapp/`: snapshot sanitizado do client local, Swagger, documentação e rotina segura, sem tokens.

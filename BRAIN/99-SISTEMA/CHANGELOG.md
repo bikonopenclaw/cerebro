@@ -198,3 +198,11 @@
 - Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
 - Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; o snapshot do Robotnik passou a incluir o status de retomada Instagram, e a configuração de e-mail da Darth Vader refletiu a cópia financeira padrão.
 - Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais, diffs Git e inspeção direta.
+## 2026-06-28, consolidação semanal
+
+- Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W26.md` cobrindo daily notes disponíveis de 2026-06-22 a 2026-06-28.
+- Identificados padrões recorrentes: confirmação antes de impacto, segredos fora do Brain/Git, separação entre teste/rascunho/produção, governança antes de automação de identidade, retorno bancário não valida remessa, validação visual de relatórios externos e separação entre grupo permitido/remetente autorizado.
+- Elevados aprendizados para notas permanentes em `BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md`, `BRAIN/40-CONHECIMENTO/Operacional/Governanca-antes-de-automacao-de-identidade.md`, `BRAIN/40-CONHECIMENTO/Financeiro/Retorno-bancario-nao-valida-remessa.md`, `BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md` e `BRAIN/40-CONHECIMENTO/Operacional/Canais-com-escopo-e-remetente-autorizados.md`.
+- Reforçados os guardrails permanentes de confirmação antes de ações com impacto, segredos fora do Brain/Git e escopo de canais operacionais.
+- Atualizados `INDEX.md`, `MEMORY.md` e `HEALTH.md`.
+- Nenhum arquivamento realizado; registros recentes permanecem conectados e relevantes.

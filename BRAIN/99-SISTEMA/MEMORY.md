@@ -18,3 +18,9 @@ Memória institucional consolidada do Brain.
 - Manter API keys, tokens, senhas, `.env`, inventários sensíveis e respostas detalhadas de APIs fora do Brain/Git; registrar apenas arquitetura, escopo, guardrails e métricas agregadas quando útil.
 - Canais operacionais devem ter escopo, fora de escopo, roteamento e guardrails explícitos para evitar mistura de assuntos e execução no contexto errado.
 - Quando Hebert pedir correção pontual em arte/design/arquivo, preservar a base aprovada e alterar apenas o elemento solicitado, salvo pedido explícito de redesenho amplo.
+- Separar teste, rascunho e produção em automações externas: dry-run e preparo interno podem avançar, mas envio, publicação, emissão, remessa ou alteração real exigem confirmação quando houver impacto externo.
+- Em testes com dados reais, usar destinatário explícito e impedir lookup automático que possa enviar informação a terceiros.
+- Em governança de identidade BIKON ↔ AD local de clientes, começar por auditoria e matriz aprovada; não criar, desativar ou alterar contas/grupos sem validação humana.
+- Retorno bancário CNAB400 serve para parser/conciliação quando sanitizado, mas não valida remessa, nosso número, documento ou sequencial.
+- Relatórios externos devem ser revisados visualmente antes da entrega, removendo metadados de navegador, cabeçalhos/rodapés automáticos e aparência de HTML impresso.
+- Em canais operacionais, grupo permitido e remetente autorizado são dimensões diferentes; `groupAllowFrom` deve representar remetente autorizado.

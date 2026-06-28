@@ -5,7 +5,7 @@ categoria: operacional
 tipo: guardrail
 fonte: consolidações de 2026-06-19 a 2026-06-21
 confiabilidade: alta
-ultima_revisao: 2026-06-21
+ultima_revisao: 2026-06-28
 tags: [segredos, credenciais, git, brain, api, seguranca]
 ```
 
@@ -32,3 +32,7 @@ O Brain pode registrar arquitetura, escopo, permissões, caminhos de cofre e dec
 - `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md`
 - `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`
 - `BRAIN/20-EMPRESAS/BIKON/README.md`
+
+## Reforço 2026-W26
+
+O padrão foi aplicado a SMTP DreamHost, API WhatsApp Bikon, Instagram/Meta, snapshots versionados de agentes e exemplos bancários Cresol. O Brain registra arquitetura, caminhos de cofre, placeholders e estado operacional; tokens, `.env`, logs, caches, retornos brutos e inventários sensíveis ficam fora do Git.

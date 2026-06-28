@@ -5,7 +5,7 @@ categoria: operacional
 tipo: guardrail
 fonte: orientação de Hebert em 2026-06-18/19
 confiabilidade: alta
-ultima_revisao: 2026-06-19
+ultima_revisao: 2026-06-28
 tags: [guardrails, confirmacao, telegram, execucao, mensagens, seguranca-operacional]
 ```
 
@@ -36,3 +36,7 @@ A regra reduz risco de execução fora de contexto, postagem no canal errado, al
 - `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`
 - `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`
 - `BRAIN/99-SISTEMA/MEMORY.md`
+
+## Reforço 2026-W26
+
+A regra foi reforçada por novos fluxos com impacto externo: envio de NFS-e/boleto por e-mail, disparos WhatsApp via API oficial, publicação Instagram via Meta Graph API e automações de acesso em AD local. Em todos os casos, preparação interna e dry-run são aceitáveis; envio, publicação, emissão, remessa ou alteração real permanecem dependentes de aprovação explícita quando não houver autorização prévia.
