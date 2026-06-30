@@ -206,3 +206,11 @@
 - Reforçados os guardrails permanentes de confirmação antes de ações com impacto, segredos fora do Brain/Git e escopo de canais operacionais.
 - Atualizados `INDEX.md`, `MEMORY.md` e `HEALTH.md`.
 - Nenhum arquivamento realizado; registros recentes permanecem conectados e relevantes.
+
+## 2026-06-30, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-06-30.md`.
+- Atualizado `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md` com execução bem-sucedida observada em 2026-06-29: 10 backups verificados, 3 ocorrências, 1 ticket criado, 2 tickets existentes reaproveitados e 0 erros.
+- Atualizados `HEALTH.md` e `STATUS-BRAIN.md` para refletir a consolidação diária e a última execução ARX observada.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; o manifesto foi atualizado para 2026-06-30.
+- Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais, histórico Git e inspeção direta.

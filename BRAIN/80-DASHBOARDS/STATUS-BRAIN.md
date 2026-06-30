@@ -8,8 +8,8 @@
 
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
-- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26 e 2026-06-27.
-- Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md` e `01-DIARIO/Semanal/2026-W25.md`.
+- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27 e 2026-06-30.
+- Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md` e `01-DIARIO/Semanal/2026-W26.md`.
 - Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
 - Registro central da BIKON criado em `20-EMPRESAS/BIKON/README.md`.
 - Automação de consolidação diária registrada.
@@ -21,7 +21,7 @@
 - Diretriz de confirmação antes de ações com impacto registrada em conhecimento operacional.
 - Guardrail de segredos fora do Brain/Git registrado como conhecimento operacional permanente.
 - Integração Bitdefender GravityZone da Bikon registrada como desenho inicial e relatório executivo agregado de 2026-06-19 catalogado sem segredos.
-- Automação ARX Backup diário → tickets NinjaOne registrada com última execução observada bem-sucedida em 2026-06-26.
+- Automação ARX Backup diário → tickets NinjaOne registrada com última execução observada bem-sucedida em 2026-06-29.
 - Matriz de acesso Bikon ↔ AD local de clientes registrada como base de governança/auditoria antes de automações de identidade.
 - Fluxo NFS-e Bikon atualizado com SMTP `fatura@bikontecnologia.com.br`, template HTML padrão, anexos de NFS-e/XML/boleto e agrupamento de múltiplas notas por cliente.
 - Grupo Relatórios Operacionais registrado com roteamento restrito para Kowalski.
