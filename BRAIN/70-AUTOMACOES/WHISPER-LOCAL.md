@@ -19,8 +19,8 @@ Em 2026-06-22, Hebert pediu para deixar a instância local como padrão.
 Regra:
 
 - Usar primeiro o faster-whisper local.
-- Não usar Whisper/OpenAI API como primeira opção.
-- Só usar API se Hebert pedir explicitamente ou se a rota local falhar de forma não recuperável.
+- Nunca usar Whisper/OpenAI API para áudio/voz.
+- Nunca usar API para transcrição de áudio/voz. Sem fallback externo. Se a rota local falhar, reportar bloqueio operacional com erro resumido.
 
 ## Local
 
