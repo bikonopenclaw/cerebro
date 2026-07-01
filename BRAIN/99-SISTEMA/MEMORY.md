@@ -24,3 +24,7 @@ Memória institucional consolidada do Brain.
 - Retorno bancário CNAB400 serve para parser/conciliação quando sanitizado, mas não valida remessa, nosso número, documento ou sequencial.
 - Relatórios externos devem ser revisados visualmente antes da entrega, removendo metadados de navegador, cabeçalhos/rodapés automáticos e aparência de HTML impresso.
 - Em canais operacionais, grupo permitido e remetente autorizado são dimensões diferentes; `groupAllowFrom` deve representar remetente autorizado.
+
+## Padrões consolidados mensalmente
+
+- Padrão mensal de junho/2026: segurança operacional antes de escala; automações podem preparar e validar, mas impactos fiscais, bancários, comunicacionais, publicações e alterações de identidade exigem confirmação explícita quando não autorizados previamente.

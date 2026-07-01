@@ -10,6 +10,7 @@ Health Score: 95/100
 - Sem projetos abandonados identificados.
 - Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30 e 2026-07-01.
 - Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`), 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`) e 2026-06-28 (`01-DIARIO/Semanal/2026-W26.md`).
+- Consolidação mensal executada em 2026-07-01 (`01-DIARIO/Mensal/2026-06.md`), cobrindo junho/2026.
 - Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, separação teste/rascunho/produção, governança de identidade, retorno bancário versus remessa e validação visual de relatórios externos.
 - Registro central da BIKON criado e conectado a Notaas NFS-e, cadastro de clientes e boletos/malote.
 - Dashboard inicial atualizado.
@@ -42,3 +43,14 @@ Health Score: 95/100
 - Esquecimento saudável definido via `99-ARQUIVO`.
 - Rotinas diária, semanal e mensal especificadas.
 - API WhatsApp Bikon validada com canal oficial Meta/WhatsApp Cloud, template `retomar_solicitacao` e rotina segura com confirmação explícita. Consolidação semanal 2026-W26 concluída sem arquivamento por baixa relevância.
+
+
+## Métricas — 2026-07-01
+
+- Daily notes de junho: 14 arquivos, com cobertura parcial porque o Brain iniciou em 2026-06-12 e houve lacunas.
+- Resumos semanais de junho revisados: 3 (`2026-W24`, `2026-W25`, `2026-W26`).
+- Resumos mensais: 1 (`01-DIARIO/Mensal/2026-06.md`).
+- Notas permanentes de conhecimento elevadas em junho: 11 principais, cobrindo IA/memória, operação e financeiro.
+- Arquivos em `99-ARQUIVO`: 0; nenhum arquivamento mensal porque os registros seguem recentes, conectados ou com valor de evidência.
+- MOCs/índices atualizados no mês: `INDEX.md`, `MEMORY.md`, `STATUS-BRAIN.md` e este `HEALTH.md`.
+- Pontos que reduzem score: cobertura diária parcial e `memory_search` indisponível por quota insuficiente.

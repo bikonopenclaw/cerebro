@@ -224,3 +224,11 @@
 - Atualizado `BRAIN/60-AGENTES/ROBOTNIK.md` para refletir o esclarecimento via Puppet Master quando brief vier incompleto.
 - Atualizados `HEALTH.md` e `STATUS-BRAIN.md` para refletir a consolidação diária e os novos guardrails.
 - Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais, diffs Git e inspeção direta.
+
+## 2026-07-01, consolidação mensal de junho/2026
+
+- Criado resumo mensal `BRAIN/01-DIARIO/Mensal/2026-06.md` a partir dos resumos semanais `2026-W24`, `2026-W25`, `2026-W26` e do fechamento diário de 2026-06-30.
+- Consolidados aprendizados de junho: Brain como memória, consolidação silenciosa, confirmação antes de impacto, segredos fora do Brain/Git, escopo de canais, dados mestres fiscais, separação teste/rascunho/produção, governança de identidade, retorno bancário versus remessa e validação visual de relatórios externos.
+- Identificados padrões de longo prazo: Bikon como domínio operacional central, human-in-the-loop para impacto real, segurança por desenho, evidência local quando `memory_search` falha e elevação de conhecimento por recorrência.
+- Atualizados `INDEX.md`, `MEMORY.md`, `HEALTH.md` e `STATUS-BRAIN.md` com a consolidação mensal e métricas.
+- Nenhuma nota arquivada; registros de junho seguem recentes, conectados ou com valor de evidência.

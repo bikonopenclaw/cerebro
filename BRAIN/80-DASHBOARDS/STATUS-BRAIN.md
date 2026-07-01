@@ -10,6 +10,7 @@
 - Sistema configurado como repositório de conhecimento, não como agente.
 - Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30 e 2026-07-01.
 - Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md` e `01-DIARIO/Semanal/2026-W26.md`.
+- Consolidação mensal de junho/2026 criada em `01-DIARIO/Mensal/2026-06.md`, com aprendizados, padrões de longo prazo, decisões consolidadas e critério de arquivamento.
 - Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
 - Registro central da BIKON criado em `20-EMPRESAS/BIKON/README.md`.
 - Automação de consolidação diária registrada.
@@ -32,6 +33,7 @@
 ## Próximas melhorias
 
 - Restaurar ou trocar o provedor de embeddings para recuperar a busca semântica de memória.
+- Revisar arquivamento mensal novamente após os registros de junho deixarem de ser recentes ou perderem conexão operacional.
 - Se autorizada, evoluir a integração GravityZone da Bikon com cofre local e permissões mínimas.
 - Após preenchimento da matriz de acesso, desenhar auditoria PowerShell/RMM sem ações destrutivas sobre ADs de clientes.
 - Homologar layout Cresol antes de qualquer uso real da automação de boletos/malote.
