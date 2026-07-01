@@ -280,7 +280,15 @@ def gerar(d: dict, html_out: Path, pdf_out: Path | None = None) -> dict:
     html_out.write_text(rendered, encoding='utf-8')
 
     if pdf_out:
-        subprocess.check_call(['chromium', '--headless', '--no-sandbox', '--disable-gpu', f'--print-to-pdf={pdf_out}', html_out.resolve().as_uri()], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.check_call([
+            'chromium',
+            '--headless',
+            '--no-sandbox',
+            '--disable-gpu',
+            '--no-pdf-header-footer',
+            f'--print-to-pdf={pdf_out}',
+            html_out.resolve().as_uri(),
+        ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     return {
         'html': str(html_out),
         'pdf': str(pdf_out) if pdf_out else None,

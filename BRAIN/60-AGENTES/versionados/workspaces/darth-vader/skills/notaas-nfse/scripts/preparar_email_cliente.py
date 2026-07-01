@@ -336,9 +336,18 @@ def build_message(job: dict, config: dict, attachments: list[str], to: list[str]
         numero_nfse = ', '.join(str(doc.get('numero') or 'pendente') for doc in documentos)
         chave_nfse = 'Conforme tabela de documentos abaixo'
     else:
-        valor_total = nfse.get('valor_total') or job.get('boleto', {}).get('valor', '')
-        numero_nfse = nfse.get('numero') or nfse.get('numero_novo') or documentos[0].get('numero') or 'pendente'
-        chave_nfse = nfse.get('chave') or documentos[0].get('chave') or ''
+        doc0 = documentos[0] if documentos else {}
+        boleto0 = doc0.get('boleto') if isinstance(doc0.get('boleto'), dict) else {}
+        valor_total = (
+            nfse.get('valor_total')
+            or job.get('boleto', {}).get('valor')
+            or doc0.get('valor_total')
+            or doc0.get('valor')
+            or boleto0.get('valor')
+            or ''
+        )
+        numero_nfse = nfse.get('numero') or nfse.get('numero_novo') or doc0.get('numero') or 'pendente'
+        chave_nfse = nfse.get('chave') or doc0.get('chave') or ''
     values = {
         'cliente_nome': tomador.get('nome', ''),
         'competencia': nfse.get('competencia', ''),

@@ -180,3 +180,81 @@ Validação feita:
 - Rascunho de teste gerou checklist com status `rascunho_conferivel`.
 - Tentativa de envio com `--confirmar-envio` sem `job.email.aprovado_por_hebert=true` retornou bloqueio e status `bloqueado_para_envio`.
 - Checklist com aprovação simulada e todos os anexos retornou `liberado_para_envio`, sem disparar SMTP no teste.
+
+## Atualização 2026-07-01, lote Remessa 092 e padrão mensal
+
+Hebert aprovou e validou novas regras operacionais para emissão mensal de NFS-e, boletos, remessa e e-mails.
+
+### Emissão de lote NFS-e
+
+Padrão Bikon daqui para frente:
+
+- Não usar batch cego da Notaas em produção.
+- Emitir lote de forma cadenciada: 1 NFS-e por vez.
+- O ciclo mínimo é de 60 segundos entre o início de uma nota e o início da próxima.
+- Dentro desses 60 segundos entram: `POST /emitir`, polling até `issued`, download e confirmação de XML + PDF.
+- Se o ciclo terminar antes de 60 segundos, aguardar apenas o saldo restante.
+- Se a Notaas demorar mais de 60 segundos, avançar assim que XML+PDF estiverem prontos, sem espera extra.
+- Se PDF ou XML não ficarem prontos dentro do limite de tentativas, parar o lote e não avançar para a próxima nota.
+
+Implementação:
+
+- Script: `/data/.openclaw/workspace-darth-vader/skills/notaas-nfse/scripts/emitir_lote_cadenciado.py`
+- Documentação: `/data/.openclaw/workspace-darth-vader/skills/notaas-nfse/SKILL.md`
+- Dry-run validado com o payload do lote Remessa 092.
+
+### Documentação oficial Notaas incorporada
+
+Fonte oficial registrada:
+
+- https://docs.notaas.com.br
+
+Referência operacional Bikon criada:
+
+- `/data/.openclaw/workspace-darth-vader/skills/notaas-nfse/references/notaas-emissao-cancelamento-bikon.md`
+
+Pontos incorporados:
+
+- Emissão é assíncrona via `POST /emitir`, retorno `202` com `invoiceId`, e polling em `GET /invoices/{id}/status` até `issued` ou `error`.
+- XML: `GET /invoices/{id}/xml`; XML de cancelamento: `GET /invoices/{id}/xml?type=cancel`.
+- PDF: `GET /invoices/{id}/pdf`; pode retornar temporariamente `503`/`429` mesmo com nota `issued`, como ocorreu no lote 092.
+- Webhook `nfse.documents_ready` pode vir parcial: XML pronto e `pdfUrl: null`; pode completar até 10 minutos depois.
+- Checklist de e-mail deve validar PDF/XML existentes localmente, não apenas status `issued`.
+
+### Cancelamento NFS-e
+
+Cancelamento é operação fiscal real e exige autorização explícita do Hebert.
+
+Regras:
+
+- Fazer dry-run antes.
+- Conferir `invoiceId`, número da NFS-e, cliente, valor, motivo e impacto em boleto/remessa/e-mail.
+- Cancelamento real usa `--confirmar-cancelamento`.
+- Script agora suporta polling até `cancelled`/`error`, `--max-polls`, `--out-dir` e tentativa de baixar XML de cancelamento.
+- Cancelar e reemitir são aprovações separadas.
+
+Script atualizado:
+
+- `/data/.openclaw/workspace-darth-vader/skills/notaas-nfse/scripts/cancelar_nota.py`
+
+### Regras de boleto e e-mail ajustadas no lote 092
+
+- Para cada NFS-e emitida, gerar exatamente 1 boleto.
+- Para todos os boletos do lote, gerar apenas 1 arquivo de remessa CNAB400.
+- E-mail ao cliente deve conter NFS-e + boleto.
+- Quando houver mais de uma NFS-e + boleto para o mesmo `cliente_id`, enviar apenas 1 e-mail agrupado.
+- Agrupar por `cliente_id`, não só CPF/CNPJ, para evitar misturar unidades diferentes do mesmo documento, como Celi Aracruz e Celi João Neiva.
+- CC obrigatório em todos os e-mails: `financeiro@bikon.com.br`.
+- Correção aplicada: clientes com apenas uma nota agora também preenchem o valor do e-mail usando `nfse.documentos[0].valor_total` quando necessário.
+- Correção aplicada no boleto: PDFs gerados pelo Chromium devem usar `--no-pdf-header-footer`; Hebert quer somente o corpo do boleto, sem cabeçalho/rodapé de impressão.
+
+### Resultado operacional do lote Remessa 092
+
+- 28 NFS-e emitidas.
+- 28 XMLs baixados.
+- 28 PDFs obtidos, alguns via retries e um PDF enviado manualmente pelo Hebert.
+- 28 boletos gerados.
+- 1 remessa CNAB400 gerada e enviada ao Hebert para registro dos boletos.
+- 18 e-mails enviados, agrupados por cadastro, cobrindo 28 NFS-e + 28 boletos.
+- Erros de envio: 0.
+- `financeiro@bikon.com.br` copiado em todos os e-mails.

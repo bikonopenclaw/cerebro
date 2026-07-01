@@ -344,19 +344,22 @@ class NotaasClient:
             logger.error(f"Erro ao baixar PDF: {str(e)}")
             return None
     
-    def baixar_xml(self, invoice_id: str) -> Optional[bytes]:
+    def baixar_xml(self, invoice_id: str, tipo: str = "emission") -> Optional[bytes]:
         """
         Baixa XML da NFS-e.
         
         Args:
             invoice_id: ID da nota (UUID)
+            tipo: "emission" para XML de emissão ou "cancel" para XML de cancelamento
             
         Returns:
             Conteúdo binário do XML ou None
         """
         url = f"{self.base_url}/invoices/{invoice_id}/xml"
+        if tipo != "emission":
+            url += f"?type={tipo}"
         
-        logger.debug(f"Baixando XML: {invoice_id}")
+        logger.debug(f"Baixando XML ({tipo}): {invoice_id}")
         
         try:
             response = self.session.get(url, timeout=30)

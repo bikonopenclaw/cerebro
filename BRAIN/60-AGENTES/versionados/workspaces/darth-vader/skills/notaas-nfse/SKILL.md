@@ -7,7 +7,7 @@ description: Emitir, consultar, baixar e cancelar NFS-e via API Notaas com guard
 
 > **Versão:** 2.0.0 (Portável)  
 > **Criado:** 2026-04-24  
-> **Atualizado:** 2026-06-12  
+> **Atualizado:** 2026-07-01  
 > **Status:** ✅ Produção Ready  
 > **Autor:** Claw D. Marques  
 > **Licença:** Proprietário
@@ -24,6 +24,12 @@ Skill **100% portátil e genérica** para emissão de NFS-e via API Notaas. Func
 - 🏢 **Escritórios de contabilidade** multi-empresa
 
 **Objetivo:** Automatizar emissão de NFS-e com configuração mínima no primeiro uso.
+
+Documentação oficial da Notaas para consulta de endpoints, payloads e comportamento da API:
+https://docs.notaas.com.br
+
+Referência operacional Bikon consolidada:
+`references/notaas-emissao-cancelamento-bikon.md`
 
 ---
 
@@ -197,12 +203,69 @@ python3 scripts/emitir_nota.py --dry-run \
   --descricao "serviço de infraestrutura de rede"
 ```
 
-### **Emissão em Lote (CLI)**
+### **Emissão em Lote Bikon, padrão obrigatório de produção**
+
+Para a Bikon, lote de NFS-e em produção deve ser **cadenciado**, não batch cego.
+
+Regra padrão a partir de 2026-07-01:
+
+1. Emitir 1 NFS-e por vez via Notaas.
+2. Aguardar a nota ficar `issued`.
+3. Baixar e confirmar **XML e PDF** da NFS-e.
+4. Garantir janela mínima de **60 segundos entre o início de uma nota e o início da próxima**.
+5. O tempo de emissão, status, XML e PDF conta dentro desses 60 segundos. Se tudo terminar antes, aguardar apenas o saldo restante.
+6. Se PDF ou XML não ficarem prontos dentro do limite de tentativas, parar o lote e não avançar para a próxima nota.
+
+Use o script padrão:
 
 ```bash
-python3 scripts/emitir_lote.py \
-  --arquivo clientes_lote.csv
+python3 scripts/emitir_lote_cadenciado.py \
+  --items payload-notaas-preparado.json \
+  --out-dir saida-lote \
+  --interval-seconds 60 \
+  --confirmar-emissao
 ```
+
+Para simular sem chamar a API:
+
+```bash
+python3 scripts/emitir_lote_cadenciado.py \
+  --items payload-notaas-preparado.json \
+  --out-dir saida-lote \
+  --dry-run
+```
+
+Não usar `/emitir/batch` nem `scripts/emitir_lote.py` para lote Bikon em produção, salvo autorização explícita do Hebert para exceção.
+
+### **Cancelamento Bikon, padrão obrigatório**
+
+Cancelamento de NFS-e é operação fiscal real e sempre exige autorização explícita do Hebert.
+
+Antes de cancelar, conferir invoice ID, número da NFS-e, cliente/tomador, valor, motivo e impacto em boleto/remessa/e-mail.
+
+Fluxo seguro:
+
+```bash
+python3 scripts/cancelar_nota.py \
+  --invoice-id INVOICE_ID \
+  --motivo "motivo objetivo até 255 caracteres" \
+  --dry-run
+```
+
+Depois da aprovação explícita:
+
+```bash
+python3 scripts/cancelar_nota.py \
+  --invoice-id INVOICE_ID \
+  --motivo "motivo objetivo até 255 caracteres" \
+  --confirmar-cancelamento \
+  --poll \
+  --out-dir pacote/cancelamento
+```
+
+O script faz polling até `cancelled`/`error` e tenta baixar o XML de cancelamento com `GET /invoices/{id}/xml?type=cancel`.
+
+Reemissão não é automática. Cancelar e reemitir são duas aprovações separadas.
 
 ### **Via Python (API)**
 
