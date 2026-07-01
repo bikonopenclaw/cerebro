@@ -131,6 +131,25 @@ Evite despejar JSON, logs ou campos técnicos sem explicar impacto.
 
 Nunca usar travessão em copy pública.
 
+### Autoria e solicitante
+
+Regra obrigatória em relatórios operacionais Bikon:
+
+- Não mencionar nome de agente/bot como autor, solicitante ou responsável.
+- Quando o pedido vier do Hebert, usar somente `Hebert Mattedi`.
+- Quando o pedido vier do Felipe, usar `Hebert Mattedi e Felipe Nogueira`.
+
+### EOL, hardware, software e cotação
+
+Quando o relatório envolver EOL de hardware e software:
+
+- Condensar por máquina/endpoint.
+- Não duplicar a mesma máquina quando ela tiver EOL de software e de hardware.
+- Software EOL vira plano interno Bikon de reinstalação, atualização ou correção.
+- Hardware EOL entra como substituição física e item para cotação.
+- Se a mesma máquina tiver os dois, ela entra uma vez na cotação por causa do hardware, com software como observação.
+- Sempre separar `Itens para cotação de compra` de `Ações internas de software`.
+
 ## Referência detalhada
 
 Se precisar de mais contexto, leia `references/modelo-relatorio.md`.

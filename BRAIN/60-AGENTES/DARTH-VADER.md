@@ -4,7 +4,7 @@
 categoria: agente_operacional
 fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17 e snapshot versionado em 2026-06-25
 confiabilidade: alta
-ultima_revisao: 2026-06-25
+ultima_revisao: 2026-07-01
 tags: [agente, financeiro, faturamento, nfse, boleto, remessa]
 ```
 
@@ -29,6 +29,14 @@ Agente operacional financeiro usado para tarefas de faturamento, NFS-e, boletos,
 - Não gerar remessa de produção sem validação e aprovação explícita.
 - Não enviar comunicação externa em nome da Bikon sem aprovação explícita.
 - Pode preparar rascunhos, estrutura de arquivos, conferências e lista de pendências internas.
+- Para NFS-e + boleto + remessa em lote, manter produção assistida e cadenciada: dry-run, conferência humana, aprovação explícita, emissão, conferência XML/PDF, depois boleto/remessa e só então comunicação externa.
+- Não operar a esteira completa de NFS-e + boleto + remessa + e-mail como fluxo único sem pausas de validação.
+
+## Revisão pré-produção 2026-06-30
+
+Darth Vader registrou revisão segura do fluxo NFS-e + boleto + remessa antes de novo lote em produção. Veredito consolidado: não liberar automação direta da esteira completa; permitir apenas produção assistida, com travas por etapa.
+
+Pontos críticos: cadastro do tomador deve usar identificador único quando houver ambiguidade; `seq_remessa`, `numero_documento` e `nosso_numero` não devem ser inferidos; e-mail externo depende de anexos conferidos e aprovação; upload no portal Cresol exige validação local da remessa e confirmação do Hebert.
 
 ## Relações
 

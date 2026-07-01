@@ -53,6 +53,8 @@ Qualquer emissão ou cancelamento real de NFS-e deve ser previamente autorizado 
 
 Envio de e-mail para cliente externo também exige autorização explícita, mesmo quando o SMTP estiver validado e o rascunho estiver pronto.
 
+Atualização 2026-07-01: em lote com boleto/remessa, NFS-e deve ser etapa separada. Primeiro dry-run e conferência de cadastro/valor/competência; depois aprovação explícita; depois emissão; depois conferência de XML/PDF. Boleto/remessa e e-mail só avançam após essa conferência.
+
 ## Padrão Bikon para dados do tomador
 
 Atualizado em 2026-06-19/20 após lote de homologação sair sem endereço porque o script descartava `tomador.endereco`.
@@ -65,6 +67,7 @@ Para emissões da Bikon, a NFS-e deve usar todos os dados disponíveis no cadast
 - Endereço completo sempre que disponível: logradouro, número, complemento, bairro, cidade, UF e CEP.
 - Não emitir lote usando só documento, nome e e-mail quando o cadastro tiver endereço.
 - Se endereço estiver ausente ou ambíguo, marcar pendência antes da emissão.
+- Quando houver risco de homônimos ou múltiplos cadastros, usar `cliente_id`/cadastro único e conferir CPF/CNPJ, nome, cidade, UF, CEP e endereço completo antes de emitir.
 
 Correção aplicada na skill da Darth Vader em `core/client.py` e `scripts/emitir_lote.py` para preservar endereço quando disponível.
 
@@ -169,6 +172,7 @@ Comportamento:
 - Envio SMTP com `--confirmar-envio` só passa se o checklist não tiver bloqueios.
 - Se `config/email.json` mantiver `approval_required=true`, envio externo exige `job.email.aprovado_por_hebert=true`.
 - Se faltar PDF da NFS-e, XML da NFS-e ou boleto PDF quando houver boleto indicado, o envio externo é bloqueado.
+- PDF Notaas pode atrasar ou falhar; XML é o artefato técnico confiável imediato, mas e-mail externo só deve sair quando PDF e XML estiverem conferidos.
 - O checklist lista remetente, reply-to, destinatários, assunto, cliente, quantidade de notas, total calculado, documentos, anexos, bloqueios e avisos.
 
 Validação feita:

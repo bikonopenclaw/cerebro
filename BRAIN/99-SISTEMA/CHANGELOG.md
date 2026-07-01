@@ -214,3 +214,13 @@
 - Atualizados `HEALTH.md` e `STATUS-BRAIN.md` para refletir a consolidação diária e a última execução ARX observada.
 - Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; o manifesto foi atualizado para 2026-06-30.
 - Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais, histórico Git e inspeção direta.
+
+## 2026-07-01, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-01.md`.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; manifesto atualizado para 2026-07-01 e novo snapshot sanitizado da revisão pré-produção NFS-e/boleto/remessa da Darth Vader incluído.
+- Atualizado `BRAIN/60-AGENTES/KOWALSKI.md` com regras de autoria/solicitante e padrão NinjaOne/EOL por máquina, separando cotação de hardware de ações internas de software.
+- Atualizados `BRAIN/60-AGENTES/DARTH-VADER.md`, `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md` e `BRAIN/70-AUTOMACOES/boletos-malote/README.md` com revisão pré-produção: produção assistida, etapas cadenciadas, validação de cadastro/sequenciais/anexos e confirmação explícita antes de impactos fiscais, bancários ou comunicação externa.
+- Atualizado `BRAIN/60-AGENTES/ROBOTNIK.md` para refletir o esclarecimento via Puppet Master quando brief vier incompleto.
+- Atualizados `HEALTH.md` e `STATUS-BRAIN.md` para refletir a consolidação diária e os novos guardrails.
+- Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais, diffs Git e inspeção direta.

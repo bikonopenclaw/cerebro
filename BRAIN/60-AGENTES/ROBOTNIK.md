@@ -5,7 +5,7 @@ categoria: agente_operacional
 papel: marketing, conteúdo e campanhas
 fonte: configuração OpenClaw e AGENTS.md do workspace Robotnik em 2026-06-25
 confiabilidade: alta
-ultima_revisao: 2026-06-27
+ultima_revisao: 2026-07-01
 tags: [agente, marketing, robotnik, instagram, conteudo]
 ```
 
@@ -27,6 +27,7 @@ Responsabilidades principais:
 - Agente interno por enquanto.
 - Hebert não fala direto com Robotnik no Telegram neste momento.
 - Puppet Master coordena as tarefas via `sessions_send`.
+- Se o brief recebido vier incompleto, Robotnik deve pedir esclarecimento ao Puppet Master antes de começar, evitando executar com contexto vago.
 - Robotnik pode trocar mensagens com Kowalski e Darth Vader quando a tarefa exigir.
 - Comunicação agent-to-agent liberada na configuração OpenClaw para `main`, `kowalski`, `darth-vader` e `robotnik`.
 

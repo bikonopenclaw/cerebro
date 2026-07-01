@@ -3,7 +3,7 @@
 ```yaml
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
-ultima_revisao: 2026-06-23
+ultima_revisao: 2026-07-01
 tags: [kowalski, relatorios, ninjaone, arx-backup, provimento-213-2026, operacao]
 ```
 
@@ -41,6 +41,8 @@ Regra do grupo:
 - Quando fonte como NinjaOne não possuir histórico granular, declarar limitação e usar apenas evidência auditável.
 - Preservar caminhos internos fora de relatórios finais para cliente.
 - Para relatório externo, linguagem profissional Bikon, sem nota operacional interna.
+- Relatórios operacionais não devem mencionar agente, bot, Puppet Master ou automação como autor, solicitante ou responsável.
+- Quando o pedido vier do Hebert, usar `Hebert Mattedi`; quando vier do Felipe, usar `Hebert Mattedi e Felipe Nogueira`.
 
 ## Caso validado em 2026-06-22
 
@@ -56,6 +58,17 @@ Relatório operacional do Cartório Capixaba:
 ## Evolução visual de relatórios
 
 Em 2026-06-23, o parecer do Cartório Capixaba foi ajustado para manter o layout premium, aplicar fundo suave dentro da paleta Bikon e remover cabeçalhos/rodapés automáticos. Esse ajuste reforça que relatórios externos devem parecer documentos corporativos finais, não HTML impresso.
+
+## Padrão NinjaOne/EOL
+
+Em 2026-07-01, o padrão oficial de relatórios NinjaOne/EOL foi reforçado:
+
+- Condensar por máquina/endpoint.
+- Não duplicar máquina que tenha EOL de software e hardware.
+- Software EOL vira plano interno Bikon de reinstalação, atualização ou correção.
+- Hardware EOL vira substituição física e item para cotação.
+- Se a mesma máquina tiver hardware e software EOL, listar uma vez na cotação por causa do hardware, com software como observação/plano interno.
+- Separar `Itens para cotação de compra` de `Ações internas de software`.
 
 ## Skill Provimento CNJ 213/2026
 
