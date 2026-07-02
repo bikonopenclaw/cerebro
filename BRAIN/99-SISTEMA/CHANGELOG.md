@@ -278,3 +278,8 @@
   - envios reais: Puppet Master com aprovação explícita do Hebert.
 - Criadas skills formais `whatsapp-bikon-kpi` para Kowalski e `whatsapp-bikon-campanhas` para Robotnik.
 - Atualizados manuais operacionais e nota da automação WhatsApp Bikon.
+
+## 2026-07-02, header padrão WhatsApp Meta
+
+- Confirmada por Hebert a URL padrão de header para envio de mensagem com modelo aprovado Meta: `https://bikon.com.br/wp-content/uploads/2024/09/logo-white.png`.
+- Registrada nas skills `whatsapp-bikon-campanhas` e `whatsapp-bikon-kpi` e na nota da API WhatsApp Bikon.

@@ -67,3 +67,13 @@ Toda entrega deve terminar clara:
 ```text
 Envio real depende de aprovação do Hebert e execução pelo Puppet Master.
 ```
+
+## Header padrão para template aprovado Meta
+
+Para mensagens com modelo aprovado Meta que exigem imagem no header, usar esta URL padrão:
+
+```text
+https://bikon.com.br/wp-content/uploads/2024/09/logo-white.png
+```
+
+Não trocar imagem do header sem aprovação do Puppet Master/Hebert.

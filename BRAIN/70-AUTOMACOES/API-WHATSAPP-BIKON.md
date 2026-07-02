@@ -94,3 +94,13 @@ Skills formais:
 - Usar somente templates aprovados para contato ativo/externo.
 - Registrar novos templates em `config/templates-aprovados.json` antes de uso.
 - Manter envio real centralizado no Puppet Master com aprovação explícita do Hebert.
+
+## Header padrão para modelo aprovado Meta
+
+URL confirmada por Hebert para envio de mensagem com modelo aprovado Meta:
+
+```text
+https://bikon.com.br/wp-content/uploads/2024/09/logo-white.png
+```
+
+Usar como header padrão do template `retomar_solicitacao`, salvo aprovação explícita para trocar a imagem.

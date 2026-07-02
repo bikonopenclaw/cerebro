@@ -75,3 +75,12 @@ Sempre que fizer relatório de atendimento, incluir quando disponível:
 ## Observação técnica
 
 A API documenta filtro por `byStartDate`. Se o pedido for por mês fechado, declarar se a métrica foi filtrada por data de início ou por data de finalização.
+
+## Referência de template aprovado
+
+Template WhatsApp já validado:
+
+- `retomar_solicitacao`
+- Header padrão: `https://bikon.com.br/wp-content/uploads/2024/09/logo-white.png`
+
+Kowalski só registra em relatório. Não envia mensagem.
