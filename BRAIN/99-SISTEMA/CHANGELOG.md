@@ -241,3 +241,10 @@
 - Atualizado `BRAIN/60-AGENTES/KOWALSKI.md` com guardrail para gerar PDFs externos sem cabeçalho/rodapé automático do Chromium/navegador e sem caminhos locais.
 - Registrados no diário os aprendizados recentes sobre Notaas NFS-e/lote Remessa 092, relatórios externos e pacote Controle Financeiro Familiar, sem versionar dados brutos ou artefatos sensíveis.
 - Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais, diffs Git e inspeção direta.
+
+## 2026-07-02, saneamento de skills e governança dos agentes
+
+- Movido material `serpro-integra-parcelamentos` para standby no workspace do Darth Vader e refletido no snapshot seguro versionado.
+- Removidos caches Python das skills vivas fora do Git, com backup pré-limpeza; Notaas NFS-e foi preservada estruturalmente por ser fluxo produtivo principal.
+- Registrada correção de governança: Puppet Master coordena Kowalski, Darth Vader e Robotnik como agentes plenos, com interação agente-a-agente quando a tarefa cruzar escopos.
+- Atualizado `scripts/sync-agentes-versionados.py` para excluir arquivos com `segredo/Segredo/SEGREDO` no nome, além de tokens, senhas, secrets e credenciais.

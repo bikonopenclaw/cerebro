@@ -21,7 +21,8 @@ EXCLUDE_DIRS = {
 EXCLUDE_FILE_PATTERNS = [
     '*.pyc', '*.pyo', '*.log', '*.lock',
     '.env', '.env.*', 'auth-profiles.json', 'models.json',
-    '*token*', '*Token*', '*secret*', '*Secret*', '*senha*', '*Senha*',
+    '*token*', '*Token*', '*secret*', '*Secret*',
+    '*segredo*', '*Segredo*', '*SEGREDO*', '*senha*', '*Senha*',
     '*credential*', '*Credential*', '*oauth*', '*OAuth*',
     '*.pdf', '*.png', '*.jpg', '*.jpeg', '*.gif', '*.webp',
     '*.docx', '*.xlsx', '*.zip', '*.rem', '*.ret',
