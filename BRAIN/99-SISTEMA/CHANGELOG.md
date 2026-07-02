@@ -255,3 +255,10 @@
 - Atualizada a skill `ninjaone-relatorios` para usar obrigatoriamente o modelo EOL aprovado em relatórios de End of Life, fim de vida, substituição, obsolescência e cotação por parque.
 - Registrado o PDF EOL corrigido do João Neiva, baseado no HTML/CSS real do Ferreira Rocha, como referência visual oficial no workspace do Kowalski.
 - Mantida a regra de snapshot seguro: modelos binários aprovados ficam no workspace operacional e não entram no Brain Git quando cobertos por exclusão de `modelos-aprovados`.
+
+## 2026-07-02, profundidade operacional nos agentes especialistas
+
+- Atualizados Kowalski, Darth Vader e Robotnik para operar com Extreme Ownership, Anti-Sycophancy, Input Raso -> Deep Output, raciocínio estruturado sem CoT bruto e obsessão pelo objetivo.
+- Kowalski passou a reforçar evidência, fonte, padrão Bikon e recomendação acionável.
+- Darth Vader passou a reforçar segurança fiscal/financeira/bancária/técnica, validação, rollback e separação teste/produção.
+- Robotnik passou a reforçar posicionamento, prova, CTA, recusa de marketês, promessa exagerada e exposição indevida.
