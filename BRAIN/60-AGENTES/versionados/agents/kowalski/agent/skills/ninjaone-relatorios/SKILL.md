@@ -15,6 +15,8 @@ Use esta skill quando o pedido envolver **NinjaOne**, **RMM**, inventário de di
 - Relatórios gerados: `/data/.openclaw/workspace-kowalski/relatorios/ninjaone`
 - Identidade visual: `/data/.openclaw/workspace-kowalski/identidade-visual`
 - Timbrado aprovado: `/data/.openclaw/workspace-kowalski/identidade-visual/modelos-aprovados/Bikon_Timbrado.docx`
+- Modelo aprovado de relatório EOL: `/data/.openclaw/workspace-kowalski/identidade-visual/modelos-aprovados/eol/modelo-padrao-relatorio-eol-bikon.html`
+- PDF referência EOL: `/data/.openclaw/workspace-kowalski/identidade-visual/modelos-aprovados/eol/modelo-padrao-relatorio-eol-bikon.pdf`
 
 ## Segurança
 
@@ -143,6 +145,8 @@ Regra obrigatória em relatórios operacionais Bikon:
 
 Quando o relatório envolver EOL de hardware e software:
 
+- Usar obrigatoriamente o layout aprovado em `/data/.openclaw/workspace-kowalski/identidade-visual/modelos-aprovados/eol/modelo-padrao-relatorio-eol-bikon.html`.
+- Conferir o PDF de referência em `/data/.openclaw/workspace-kowalski/identidade-visual/modelos-aprovados/eol/modelo-padrao-relatorio-eol-bikon.pdf`.
 - Condensar por máquina/endpoint.
 - Não duplicar a mesma máquina quando ela tiver EOL de software e de hardware.
 - Software EOL vira plano interno Bikon de reinstalação, atualização ou correção.

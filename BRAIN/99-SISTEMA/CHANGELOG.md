@@ -248,3 +248,10 @@
 - Removidos caches Python das skills vivas fora do Git, com backup pré-limpeza; Notaas NFS-e foi preservada estruturalmente por ser fluxo produtivo principal.
 - Registrada correção de governança: Puppet Master coordena Kowalski, Darth Vader e Robotnik como agentes plenos, com interação agente-a-agente quando a tarefa cruzar escopos.
 - Atualizado `scripts/sync-agentes-versionados.py` para excluir arquivos com `segredo/Segredo/SEGREDO` no nome, além de tokens, senhas, secrets e credenciais.
+
+## 2026-07-02, skill padrão de relatórios Bikon e modelo EOL
+
+- Criada a skill `padrao-relatorios-bikon` para o Kowalski, com checklist e validador de relatório Bikon.
+- Atualizada a skill `ninjaone-relatorios` para usar obrigatoriamente o modelo EOL aprovado em relatórios de End of Life, fim de vida, substituição, obsolescência e cotação por parque.
+- Registrado o PDF EOL corrigido do João Neiva, baseado no HTML/CSS real do Ferreira Rocha, como referência visual oficial no workspace do Kowalski.
+- Mantida a regra de snapshot seguro: modelos binários aprovados ficam no workspace operacional e não entram no Brain Git quando cobertos por exclusão de `modelos-aprovados`.
