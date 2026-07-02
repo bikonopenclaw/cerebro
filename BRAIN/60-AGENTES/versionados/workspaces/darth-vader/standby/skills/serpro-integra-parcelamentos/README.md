@@ -282,3 +282,21 @@ Com SERPRO contratado e credenciais separadas em cofre, implementar primeiro só
 6. relatório de conferência.
 
 Só depois liberar `GERARDAS161`, ainda com confirmação manual obrigatória.
+
+## Checkpoint validado em 2026-07-02
+
+A retomada segura via broker local funcionou.
+
+Comandos e payloads validados foram consolidados em:
+
+- `COMANDOS-VALIDOS-20260702.md`
+
+Fluxo de aprovação para eventual emissão futura:
+
+- `FLUXO-APROVACAO-GERARDAS161.md`
+
+Resumo:
+
+- Broker local gerou token com certificado A1 local.
+- `PEDIDOSPARC163`, `OBTERPARC164` e `PARCELASPARAGERAR162` foram validados com HTTP 200 via `POST /Consultar`.
+- Emissão real permanece bloqueada.

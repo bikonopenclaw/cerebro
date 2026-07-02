@@ -262,3 +262,10 @@
 - Kowalski passou a reforçar evidência, fonte, padrão Bikon e recomendação acionável.
 - Darth Vader passou a reforçar segurança fiscal/financeira/bancária/técnica, validação, rollback e separação teste/produção.
 - Robotnik passou a reforçar posicionamento, prova, CTA, recusa de marketês, promessa exagerada e exposição indevida.
+
+## 2026-07-02, SERPRO PARCSN broker local e consultas válidas
+
+- Registrados na skill SERPRO em standby do Darth Vader os comandos válidos e payloads confirmados para `PEDIDOSPARC163`, `OBTERPARC164` e `PARCELASPARAGERAR162`.
+- Atualizado status operacional da skill com sucesso do broker local A1, consultas HTTP 200 e parcelas disponíveis 202604, 202605 e 202606.
+- Criado fluxo de aprovação para futura emissão `GERARDAS161`, mantendo `/Emitir` bloqueado sem autorização explícita.
+- Agendada checagem em 03/07/2026 para confirmar baixa das parcelas já pagas por Hebert.
