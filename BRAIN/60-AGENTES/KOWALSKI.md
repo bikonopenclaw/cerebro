@@ -3,7 +3,7 @@
 ```yaml
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
-ultima_revisao: 2026-07-01
+ultima_revisao: 2026-07-02
 tags: [kowalski, relatorios, ninjaone, arx-backup, provimento-213-2026, operacao]
 ```
 
@@ -40,6 +40,7 @@ Regra do grupo:
 - Não inventar dado que a fonte não retorne.
 - Quando fonte como NinjaOne não possuir histórico granular, declarar limitação e usar apenas evidência auditável.
 - Preservar caminhos internos fora de relatórios finais para cliente.
+- Ao gerar PDF via Chromium/navegador, desativar cabeçalho/rodapé automático para impedir exposição de `file://`, caminhos locais ou metadados de impressão.
 - Para relatório externo, linguagem profissional Bikon, sem nota operacional interna.
 - Relatórios operacionais não devem mencionar agente, bot, Puppet Master ou automação como autor, solicitante ou responsável.
 - Quando o pedido vier do Hebert, usar `Hebert Mattedi`; quando vier do Felipe, usar `Hebert Mattedi e Felipe Nogueira`.

@@ -46,6 +46,9 @@ def copy_tree(src: Path, dst: Path, *, extra_exclude_dirs=(), extra_exclude_rel=
             d for d in dirs
             if d not in EXCLUDE_DIRS
             and d not in extra_exclude_dirs
+            and not d.startswith('tmp-')
+            and not d.startswith('tmp_')
+            and d not in {'tmp', 'temp'}
             and rel / d not in extra_exclude_rel
         ]
         target_dir = dst / rel

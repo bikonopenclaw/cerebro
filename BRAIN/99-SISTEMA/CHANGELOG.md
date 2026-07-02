@@ -232,3 +232,12 @@
 - Identificados padrões de longo prazo: Bikon como domínio operacional central, human-in-the-loop para impacto real, segurança por desenho, evidência local quando `memory_search` falha e elevação de conhecimento por recorrência.
 - Atualizados `INDEX.md`, `MEMORY.md`, `HEALTH.md` e `STATUS-BRAIN.md` com a consolidação mensal e métricas.
 - Nenhuma nota arquivada; registros de junho seguem recentes, conectados ou com valor de evidência.
+
+## 2026-07-02, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-02.md`.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; manifesto atualizado para 2026-07-02.
+- Atualizado `scripts/sync-agentes-versionados.py` para excluir diretórios temporários `tmp`, `tmp-*`, `tmp_*` e `temp` dos snapshots, evitando versionamento de artefatos de validação gerados.
+- Atualizado `BRAIN/60-AGENTES/KOWALSKI.md` com guardrail para gerar PDFs externos sem cabeçalho/rodapé automático do Chromium/navegador e sem caminhos locais.
+- Registrados no diário os aprendizados recentes sobre Notaas NFS-e/lote Remessa 092, relatórios externos e pacote Controle Financeiro Familiar, sem versionar dados brutos ou artefatos sensíveis.
+- Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais, diffs Git e inspeção direta.
