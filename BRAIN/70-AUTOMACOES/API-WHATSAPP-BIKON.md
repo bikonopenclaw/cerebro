@@ -76,8 +76,21 @@ Envio real exige confirmação explícita:
 
 Logs locais ficam em `logs/envios-template.jsonl`, fora do snapshot versionado.
 
+## Donos operacionais
+
+Regra definida por Hebert em 2026-07-02:
+
+- Relatórios e KPIs de atendimento WhatsApp: Kowalski.
+- Campanhas, templates, copies e retomada de lead: Robotnik.
+- Envios reais pelo WhatsApp: Puppet Master, sempre travado com aprovação explícita do Hebert.
+
+Skills formais:
+
+- Kowalski: `whatsapp-bikon-kpi`.
+- Robotnik: `whatsapp-bikon-campanhas`.
+
 ## Próximos passos
 
 - Usar somente templates aprovados para contato ativo/externo.
 - Registrar novos templates em `config/templates-aprovados.json` antes de uso.
-- Se virar rotina recorrente, criar skill/agente específico para atendimento WhatsApp com aprovação humana obrigatória para disparos.
+- Manter envio real centralizado no Puppet Master com aprovação explícita do Hebert.

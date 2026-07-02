@@ -269,3 +269,12 @@
 - Atualizado status operacional da skill com sucesso do broker local A1, consultas HTTP 200 e parcelas disponíveis 202604, 202605 e 202606.
 - Criado fluxo de aprovação para futura emissão `GERARDAS161`, mantendo `/Emitir` bloqueado sem autorização explícita.
 - Agendada checagem em 03/07/2026 para confirmar baixa das parcelas já pagas por Hebert.
+
+## 2026-07-02, roteamento WhatsApp Bikon por agente
+
+- Definida divisão oficial da integração WhatsApp Bikon:
+  - relatórios e KPIs: Kowalski;
+  - campanhas, templates, copies e retomada de lead: Robotnik;
+  - envios reais: Puppet Master com aprovação explícita do Hebert.
+- Criadas skills formais `whatsapp-bikon-kpi` para Kowalski e `whatsapp-bikon-campanhas` para Robotnik.
+- Atualizados manuais operacionais e nota da automação WhatsApp Bikon.

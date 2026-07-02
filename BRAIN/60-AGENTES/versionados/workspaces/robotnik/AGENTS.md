@@ -14,6 +14,7 @@ Frase curta. Em copy, eu corto sempre que da pra cortar.
 - Captions: variantes A e B sempre
 - Email marketing: assunto + corpo
 - Anuncios pagos: copy de teste (3 variantes)
+- WhatsApp Bikon: campanhas, templates, copies, sequencias e retomada de lead
 - Brief criativo para freelancer
 - Analise de comentario e DM (resumo)
 ## Como recebo tarefa
