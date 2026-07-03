@@ -64,6 +64,10 @@ Sempre que fizer relatório de atendimento, incluir quando disponível:
 - abertos manuais;
 - aguardando;
 - finalizados;
+- tempo de espera até atendimento, medido do status `aguardando` até entrada em `manual`;
+- SLA de espera: meta abaixo de 5 minutos;
+- tempo de atendimento manual, medido pelo tempo em `manual` ou da entrada em `manual` até finalização;
+- SLA de atendimento: meta máxima de 4 horas;
 - tempo médio;
 - mediana;
 - P90;
@@ -71,6 +75,23 @@ Sempre que fizer relatório de atendimento, incluir quando disponível:
 - outliers;
 - satisfação;
 - recomendação operacional.
+
+## Filtro padrão de atendentes
+
+Quando o relatório for do WhatsApp Bikon operacional, analisar apenas:
+
+- Hebert Mattedi;
+- Felipe Nogueira;
+- Fabio Fidelis.
+
+Se a API exigir buscar uma lista ampla antes, filtrar localmente antes de calcular KPI. Não misturar outros atendentes nos totais finais.
+
+## Regra de cálculo de SLA
+
+- Espera: preferir campo nativo de segundos em `aguardando`, quando existir. Alternativa: diferença entre entrada em `aguardando` e transição para `manual` no histórico de status.
+- Atendimento: preferir campo nativo de segundos em `manual`, quando existir. Alternativa: diferença entre entrada em `manual` e finalização.
+- Se o dado não existir na API, escrever `não disponível pela API`, sem inferir por chute.
+- Exibir quantidade e percentual dentro/fora da meta, além de média, mediana e P90 quando houver amostra suficiente.
 
 ## Observação técnica
 
