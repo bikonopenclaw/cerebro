@@ -8,7 +8,7 @@
 
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
-- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30 e 2026-07-01.
+- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02 e 2026-07-03.
 - Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md` e `01-DIARIO/Semanal/2026-W26.md`.
 - Consolidação mensal de junho/2026 criada em `01-DIARIO/Mensal/2026-06.md`, com aprendizados, padrões de longo prazo, decisões consolidadas e critério de arquivamento.
 - Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
@@ -22,12 +22,13 @@
 - Diretriz de confirmação antes de ações com impacto registrada em conhecimento operacional.
 - Guardrail de segredos fora do Brain/Git registrado como conhecimento operacional permanente.
 - Integração Bitdefender GravityZone da Bikon registrada como desenho inicial e relatório executivo agregado de 2026-06-19 catalogado sem segredos.
-- Automação ARX Backup diário → tickets NinjaOne registrada com última execução observada bem-sucedida em 2026-06-29.
+- Automação ARX Backup diário → tickets NinjaOne registrada com última execução observada bem-sucedida em 2026-06-29; relatório de tickets NinjaOne em 2026-07-02 depende de endpoint/permissão oficial de listagem antes de expor KPIs completos.
 - Matriz de acesso Bikon ↔ AD local de clientes registrada como base de governança/auditoria antes de automações de identidade.
 - Fluxo NFS-e Bikon atualizado com SMTP `fatura@bikontecnologia.com.br`, template HTML padrão, anexos de NFS-e/XML/boleto, agrupamento de múltiplas notas por cliente e separação obrigatória entre dry-run, aprovação, emissão, conferência XML/PDF, boleto/remessa e e-mail externo.
 - Grupo Relatórios Operacionais registrado com roteamento restrito para Kowalski.
 - Whisper local/faster-whisper registrado como padrão para transcrição de áudios.
 - Kowalski, Darth Vader e Robotnik possuem snapshots seguros versionados no Git do Brain, incluindo skills, scripts e documentação operacional sem segredos.
+- Brain/Git: PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados são ignorados por padrão; PDFs anteriormente rastreados foram removidos do índice Git em 2026-07-03.
 - Arquivos obrigatórios criados em `99-SISTEMA`.
 
 ## Próximas melhorias

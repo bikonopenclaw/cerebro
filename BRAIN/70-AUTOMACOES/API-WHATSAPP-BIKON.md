@@ -4,7 +4,7 @@
 nome: API WhatsApp Bikon
 status: validada
 responsavel: Puppet Master
-ultima_revisao: 2026-06-26
+ultima_revisao: 2026-07-03
 fonte: Swagger enviado por Hebert e teste real via canal Atendimento Bikon
 tags: [whatsapp, api, meta, atendimento, bikon]
 ```
@@ -88,6 +88,20 @@ Skills formais:
 
 - Kowalski: `whatsapp-bikon-kpi`.
 - Robotnik: `whatsapp-bikon-campanhas`.
+
+
+## KPI diário observado em 2026-07-02 BRT
+
+Resumo da rotina diária de atendimento:
+
+- Canal `Atendimento Bikon +55 (27) 3022-0499`: status `REGISTERED`.
+- Chats do dia por status: individual manual 1; individual finalizado 9.
+- Manuais abertos no momento do relatório: 2; não lidas: 0.
+- Finalizados do dia: 11.
+- Tempo manual dos finalizados: média 7,4h, mediana 30,3min, P90 22,5h.
+- Satisfação registrada: 3 respostas como `Ótimo`.
+
+Aprendizado operacional: média diária pode ficar inflada por outliers antigos finalizados no dia; relatório executivo deve considerar visão com e sem outliers quando a distorção for relevante.
 
 ## Próximos passos
 

@@ -23,3 +23,24 @@ Thumbs.db
 ._*
 .Spotlight-V100
 .Trashes
+
+# Artefatos gerados / binários não versionáveis no Brain
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+*.mp4
+*.mov
+*.mp3
+*.wav
+sessions/
+*.jsonl
+__pycache__/
+*.pyc

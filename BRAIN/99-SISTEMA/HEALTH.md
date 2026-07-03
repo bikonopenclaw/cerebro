@@ -8,7 +8,7 @@ Health Score: 95/100
 - Arquivos obrigatórios criados.
 - Sem registros duplicados identificados.
 - Sem projetos abandonados identificados.
-- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01 e 2026-07-02.
+- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02 e 2026-07-03.
 - Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`), 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`) e 2026-06-28 (`01-DIARIO/Semanal/2026-W26.md`).
 - Consolidação mensal executada em 2026-07-01 (`01-DIARIO/Mensal/2026-06.md`), cobrindo junho/2026.
 - Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, separação teste/rascunho/produção, governança de identidade, retorno bancário versus remessa e validação visual de relatórios externos.
@@ -26,14 +26,15 @@ Health Score: 95/100
 - Padrão visual premium Bikon para relatórios técnicos externos registrado.
 - Governança inicial de acessos Bikon ↔ AD local de clientes registrada com fase 1 restrita a auditoria.
 - Agentes Kowalski, Darth Vader e Robotnik documentados; Kowalski atualizado com padrão NinjaOne/EOL e autoria/solicitante; Darth Vader atualizado com revisão pré-produção de NFS-e/boleto/remessa; Robotnik atualizado com esclarecimento via Puppet Master em briefs incompletos.
-- Snapshots versionados dos agentes Kowalski, Darth Vader e Robotnik criados em `60-AGENTES/versionados/`, com política de exclusão de segredos, artefatos, diretórios temporários e dados brutos sensíveis.
+- Snapshots versionados dos agentes Kowalski, Darth Vader e Robotnik criados em `60-AGENTES/versionados/`, com política de exclusão de segredos, artefatos, diretórios temporários e dados brutos sensíveis; em 2026-07-03 o Git do Brain passou a ignorar PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados por padrão.
 
 ## Pendências
 
 - Manter cobertura diária consistente; há lacunas de diário em 2026-06-14/15, apesar da consolidação semanal de 2026-06-14.
-- Restaurar ou trocar o provedor de embeddings: `memory_search` falhou em 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01 e 2026-07-02 por quota insuficiente.
+- Restaurar ou trocar o provedor de embeddings: `memory_search` falhou em 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02 e 2026-07-03 por quota insuficiente.
 - Homologar layout Cresol antes de qualquer uso real da automação de boletos/malote; retorno `.ret` validado deve permanecer restrito a parser/conciliação.
 - Concluir configuração segura da integração Instagram Bikon Robotnik: token Meta de longa duração, IDs da Página/Instagram Business Account e testes `me`/`pages`, mantendo publicação bloqueada até aprovação explícita.
+- Validar endpoint/permissão oficial de listagem de tickets no NinjaOne; sem isso, KPIs completos de tickets devem permanecer como indisponíveis, não estimados.
 - Expandir dashboards conforme surgirem projetos, empresas, pessoas e automações reais.
 
 ## Filosofia cognitiva

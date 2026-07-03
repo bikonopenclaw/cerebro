@@ -4,7 +4,7 @@
 categoria: automacao_seguranca
 fonte: conversa com Hebert em 2026-06-18/19, documentação pública Bitdefender consultada na sessão e relatório executivo gerado em 2026-06-19
 confiabilidade: media
-ultima_revisao: 2026-06-20
+ultima_revisao: 2026-07-03
 tags: [bikon, bitdefender, gravityzone, seguranca, inventario, endpoints, relatorios]
 ```
 
@@ -68,6 +68,17 @@ Resumo agregado:
 - 112 dispositivos não gerenciados.
 
 Observação: manter apenas métricas agregadas no Brain; não registrar API keys, respostas sensíveis ou inventário detalhado de clientes/endpoints.
+
+
+## Relatório diário de ameaças 2026-07-02
+
+Resumo observado na rotina diária:
+
+- 0 ameaças detectadas.
+- 0 itens em quarentena.
+- 0 pendências humanas reportadas.
+
+Observação: manter no Brain apenas agregados executivos; não versionar respostas brutas, inventário detalhado ou credenciais.
 
 ## Relações
 

@@ -283,3 +283,11 @@
 
 - Confirmada por Hebert a URL padrão de header para envio de mensagem com modelo aprovado Meta: `https://bikon.com.br/wp-content/uploads/2024/09/logo-white.png`.
 - Registrada nas skills `whatsapp-bikon-campanhas` e `whatsapp-bikon-kpi` e na nota da API WhatsApp Bikon.
+
+## 2026-07-03, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-03.md`.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; manifesto atualizado para 2026-07-03 sem novas mudanças de conteúdo além do timestamp.
+- Atualizados registros de Bitdefender, WhatsApp Bikon, ARX/NinjaOne e Relatórios Operacionais com resultados e limitações observadas nas rotinas de 2026-07-02/03.
+- Removidos do índice Git PDFs já rastreados no Brain e ampliado `.gitignore` para bloquear PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados por padrão.
+- Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais, diffs Git e inspeção direta.

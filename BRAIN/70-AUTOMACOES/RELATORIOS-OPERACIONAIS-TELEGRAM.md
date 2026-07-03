@@ -4,7 +4,7 @@
 categoria: canal_operacional
 fonte: decisão do Hebert em 2026-06-22
 confiabilidade: alta
-ultima_revisao: 2026-06-23
+ultima_revisao: 2026-07-03
 tags: [telegram, relatorios, kowalski, ninjaone, operacao]
 ```
 
@@ -74,6 +74,16 @@ Em 2026-06-22, o grupo foi usado para solicitar parecer técnico do Cartório Ca
 - Gerar PDF para cliente externo.
 
 Resultado: Kowalski gerou e enviou PDF no grupo, com ressalva explícita sobre limitações de histórico granular quando a fonte não retornou séries contínuas.
+
+
+## Ajuste visual ARX em 2026-07-02
+
+Um PDF enviado no grupo precisou ser refeito com o conteúdo recebido encaixado dentro do layout ARX/Bikon. O caso reforça o padrão:
+
+- preservar conteúdo técnico aprovado;
+- aplicar identidade visual Bikon/ARX quando o pedido for formatação externa;
+- remover vestígios de caminho local, metadados de impressão, nome de agente ou comentário operacional;
+- validar o arquivo final antes do envio.
 
 ## Relações
 
