@@ -34,6 +34,20 @@ def fmt_money(v) -> str:
     return f'{c/100:,.2f}'.replace(',', 'X').replace('.', ',').replace('X', '.')
 
 
+
+
+def juros_mora_dia_centavos(valor) -> int:
+    # Padrão Bikon: juros de mora de 1% ao mês, proporcional ao dia.
+    return round(money_centavos(valor) / 3000)
+
+
+def instrucoes_padrao(valor) -> str:
+    juros = fmt_money(juros_mora_dia_centavos(valor))
+    return (
+        'Após o vencimento cobrar multa de 2,00%.\n'
+        f'Após o vencimento cobrar juros de R$ {juros} ao dia.'
+    )
+
 def parse_date_br(v: str) -> date:
     return datetime.strptime(v, '%d/%m/%Y').date()
 
@@ -115,7 +129,9 @@ def barcode_svg_base64(barcode: str) -> str:
         from reportlab.graphics.barcode import createBarcodeDrawing
         from reportlab.graphics import renderSVG
         from reportlab.lib.units import mm
-    drawing = createBarcodeDrawing('I2of5', value=barcode, barHeight=23.4 * mm, barWidth=0.624 * mm, checksum=0, humanReadable=False)
+    # Layout v5 aprovado provisoriamente por Hebert em 2026-07-03.
+    # Mexe somente no barcode: barras mais finas, sem alterar linhas do template.
+    drawing = createBarcodeDrawing('I2of5', value=barcode, barHeight=21.5 * mm, barWidth=0.46 * mm, checksum=0, humanReadable=False)
     svg = renderSVG.drawToString(drawing)
     if isinstance(svg, bytes):
         svg = svg.decode('utf-8')
@@ -188,7 +204,7 @@ def boleto_fields(d: dict, barcode: str, linha: str) -> dict:
         'SACADO_CIDADE': d.get('pagador_cidade', ''),
         'SACADO_ESTADO': d.get('pagador_uf', ''),
         'PARCELA': d.get('parcela', ''),
-        'INSTRUCOES': d.get('instrucoes', 'NÃO RECEBER APÓS O VENCIMENTO.'),
+        'INSTRUCOES': d.get('instrucoes') or instrucoes_padrao(d.get('valor', 0)),
     }
     fields.update(end)
     return fields
@@ -252,7 +268,7 @@ html, body {{ margin:0; padding:0; background:white; color:#000; }}
         left, top = fr_num(bc.attrib.get('Left')), fr_num(bc.attrib.get('Top'))
         # FastReport expande o Interleaved 2 of 5 conforme conteúdo; Width=64 no XML não representa a largura impressa final.
         # Escala ajustada para ficar mais próximo do boleto oficial impresso.
-        style = f'left:{left}px;top:{top}px;width:494px;height:68px;'
+        style = f'left:{left}px;top:{top + 2}px;width:546px;height:75px;'
         items.append(f'<img class="barcode" style="{style}" src="data:image/svg+xml;base64,{barcode64}">')
 
     for memo in root.findall('.//TfrxMemoView'):

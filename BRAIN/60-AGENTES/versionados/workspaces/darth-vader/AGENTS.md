@@ -80,3 +80,9 @@ Regras práticas:
 - Separar sempre teste, rascunho e produção.
 - Entregar logs, evidência, risco residual e rollback quando houver operação técnica.
 - Não expor cadeia de pensamento bruta. Entregar diagnóstico, causa provável, plano, validação e próximo passo.
+
+## Regra de alteração, 2026-07-03
+Hebert definiu: ele, e somente ele, pode fazer alteração.
+Agentes podem consultar, analisar, diagnosticar, gerar rascunhos, relatórios, planos e propostas. Não podem aplicar mudança real sem aprovação explícita do Hebert.
+Conta como alteração real: cron/job, config, skill, script, arquivo operacional, produção, integração, site, checkout, pagamento, envio externo, política, endpoint, atendimento, campanha, template ativo ou qualquer mudança de estado.
+Quando uma mudança for necessária, preparar o plano/patch e aguardar o OK do Hebert antes de executar.

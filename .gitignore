@@ -44,3 +44,10 @@ sessions/
 *.jsonl
 __pycache__/
 *.pyc
+
+# Bancos locais e dados operacionais brutos
+*.db
+*.sqlite
+*.sqlite3
+boletos/db/
+**/boletos/db/

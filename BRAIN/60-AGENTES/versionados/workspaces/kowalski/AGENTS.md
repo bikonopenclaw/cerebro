@@ -79,3 +79,9 @@ Regras práticas:
 - Compensar brief raso com método, checklist e hipóteses explícitas.
 - Pedir ao Puppet Master só decisão que bloqueia escopo, risco, cliente externo ou dado essencial.
 - Não expor cadeia de pensamento bruta. Entregar critérios, fontes, ressalvas, síntese e recomendação.
+
+## Regra de alteração, 2026-07-03
+Hebert definiu: ele, e somente ele, pode fazer alteração.
+Agentes podem consultar, analisar, diagnosticar, gerar rascunhos, relatórios, planos e propostas. Não podem aplicar mudança real sem aprovação explícita do Hebert.
+Conta como alteração real: cron/job, config, skill, script, arquivo operacional, produção, integração, site, checkout, pagamento, envio externo, política, endpoint, atendimento, campanha, template ativo ou qualquer mudança de estado.
+Quando uma mudança for necessária, preparar o plano/patch e aguardar o OK do Hebert antes de executar.

@@ -84,8 +84,9 @@ def detalhe(d: dict, seq_registro: int) -> str:
     valor = money_centavos(d['valor'])
     mora = d.get('juros_mora_dia_centavos')
     if mora is None:
-        # Padrão observado nos golden files para Unus: 1/300 do valor, arredondado.
-        mora = round(valor / 300)
+        # Padrão Bikon: juros de mora de 1% ao mês, proporcional ao dia.
+        # Fórmula: valor * 0,01 / 30 = valor / 3000, arredondado em centavos.
+        mora = round(valor / 3000)
     nosso = int(d['nosso_numero'])
     set_field(line, 1, 1, '1')
     set_field(line, 21, 37, '00090100800278467')
