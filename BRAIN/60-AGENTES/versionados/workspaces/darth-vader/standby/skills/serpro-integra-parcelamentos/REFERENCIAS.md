@@ -456,3 +456,167 @@ Content-Type: application/json
 - Credenciais Basic recebidas do Hebert foram salvas no `.env` seguro.
 - Teste simples em `https://gateway.apiserpro.serpro.gov.br/token` retornou HTTP 200 e token, mas esse endpoint não é o fluxo completo recomendado para Integra Contador, pois a documentação exige também `jwt_token` via SAPI + certificado.
 - Próximo bloqueio técnico: salvar certificado A1 `.pfx/.p12` e senha no cofre local para testar `https://autenticacao.sapi.serpro.gov.br/authenticate`.
+
+## 9. Catálogo Integra Contador revisado em 2026-07-03
+
+Fonte oficial consultada:
+`https://apicenter.estaleiro.serpro.gov.br/documentacao/api-integra-contador/pt/integra_contador/`
+`https://apicenter.estaleiro.serpro.gov.br/documentacao/api-integra-contador/pt/catalogo_de_servicos/`
+
+### Base e padrão de chamada
+
+Base URL:
+```text
+https://gateway.apiserpro.serpro.gov.br/integra-contador/v1/
+```
+
+Tipos de caminho:
+```text
+/Apoiar
+/Consultar
+/Declarar
+/Emitir
+/Monitorar
+```
+
+Regra central: o endpoint é genérico e o serviço real fica em `pedidoDados`:
+```json
+{
+  "pedidoDados": {
+    "idSistema": "PARCSN",
+    "idServico": "PEDIDOSPARC163",
+    "versaoSistema": "1.0",
+    "dados": "{}"
+  }
+}
+```
+
+O campo `dados` deve ser string JSON escapada, não objeto direto. Alguns serviços PARCSN já validados exigem `dados` como string vazia `""`.
+
+### Prioridade operacional Bikon
+
+Manter o broker local primeiro focado em PARCSN:
+
+```text
+PARCSN PEDIDOSPARC163       Consultar pedidos de parcelamento
+PARCSN PARCELASPARAGERAR162 Consultar parcelas disponíveis para geração do DAS
+PARCSN OBTERPARC164         Consultar parcelamento específico
+PARCSN DETPAGTOPARC165      Consultar detalhe de pagamento de DAS
+PARCSN GERARDAS161          Emitir documento de arrecadação, BLOQUEADO sem aprovação explícita
+```
+
+Depois de PARCSN estável, próximos candidatos úteis:
+
+```text
+PAGTOWEB PAGAMENTOS71       Consultar pagamentos
+PGDASD CONSDECLARACAO13     Consultar declarações transmitidas
+PGDASD CONSEXTRATO16        Consultar extrato do DAS
+SICALC CONSOLIDAR54         Consultar consolidação sem emitir DARF
+CAIXAPOSTAL MSGCONTRIBUINTE61 Consultar mensagens por contribuinte
+DTE CONSULTASITUACAODTE111  Consultar situação DTE
+PROCURACOES OBTERPROCURACAO41 Consultar procuração
+```
+
+### Catálogo essencial por área
+
+Integra-SN:
+```text
+PGDASD TRANSDECLARACAO11 Declarar declaração mensal
+PGDASD GERARDAS12 Emitir DAS
+PGDASD CONSDECLARACAO13 Consultar declarações transmitidas
+PGDASD CONSULTIMADECREC14 Consultar última declaração/recibo
+PGDASD CONSDECREC15 Consultar declaração/recibo
+PGDASD CONSEXTRATO16 Consultar extrato do DAS
+PGDASD GERARDASCOBRANCA17 Emitir DAS cobrança RFB
+PGDASD GERARDASPROCESSO18 Emitir DAS processo RFB
+PGDASD GERARDASAVULSO19 Emitir DAS avulso
+REGIMEAPURACAO EFETUAROPCAOREGIME101 Declarar opção regime
+REGIMEAPURACAO CONSULTARANOSCALENDARIOS102 Consultar anos/calendários
+REGIMEAPURACAO CONSULTAROPCAOREGIME103 Consultar opção de regime
+REGIMEAPURACAO CONSULTARRESOLUCAO104 Consultar resolução regime de caixa
+DEFIS TRANSDECLARACAO141 Declarar DEFIS
+DEFIS CONSDECLARACAO142 Consultar declarações DEFIS
+DEFIS CONSULTIMADECREC143 Consultar última DEFIS/recibo
+DEFIS CONSDECREC144 Consultar DEFIS/recibo específico
+```
+
+Integra-MEI:
+```text
+PGMEI GERARDASPDF21 Emitir DAS PDF
+PGMEI GERARDASCODBARRA22 Emitir DAS código de barras
+PGMEI ATUBENEFICIO23 Emitir/atualizar benefício
+PGMEI DIVIDAATIVA24 Consultar dívida ativa
+CCMEI EMITIRCCMEI121 Emitir CCMEI
+CCMEI DADOSCCMEI122 Consultar dados CCMEI
+CCMEI CCMEISITCADASTRAL123 Consultar situação cadastral MEI
+DASNSIMEI TRANSDECLARACAO151 Declarar DASN-SIMEI, aberto
+DASNSIMEI CONSULTIMADECREC152 Consultar última declaração, aberto
+DASNSIMEI GERARDASEXCESSO153 Emitir DAS excesso, aberto
+```
+
+DCTFWeb/MIT:
+```text
+DCTFWEB GERARGUIA31 Emitir guia
+DCTFWEB CONSRECIBO32 Consultar recibo
+DCTFWEB CONSDECCOMPLETA33 Consultar declaração completa
+DCTFWEB CONSRELCREDITO34 Consultar relatório crédito, aberto
+DCTFWEB CONSRELDEBITO35 Consultar relatório débito, aberto
+DCTFWEB GERARGUIAMAED36 Emitir guia MAED, aberto
+DCTFWEB CONSNOTIFMAED37 Consultar notificação MAED, aberto
+DCTFWEB CONSXMLDECLARACAO38 Consultar XML declaração
+DCTFWEB APLVINCULACAO39 Emitir/aplicar vinculação, aberto
+DCTFWEB TRANSDECLARACAO310 Declarar/transmitir declaração
+DCTFWEB GERARGUIACOMABATIMENTO311 Emitir guia residual, aberto
+DCTFWEB EDITARVALORSUSPENSO312 Emitir/editar valor suspenso, aberto
+DCTFWEB GERARGUIAANDAMENTO313 Emitir guia declaração em andamento
+MIT ENCAPURACAO314 Declarar encerramento apuração MIT
+MIT SITUACAOENC315 Apoiar situação encerramento MIT
+MIT CONSAPURACAO316 Consultar apuração MIT
+MIT LISTAAPURACOES317 Consultar apurações MIT
+```
+
+Outros grupos úteis:
+```text
+PROCURACOES OBTERPROCURACAO41 Consultar procuração
+SICALC CONSOLIDARGERARDARF51 Emitir DARF PDF
+SICALC CONSULTAAPOIORECEITAS52 Apoiar consulta receitas
+SICALC GERARDARFCODBARRA53 Emitir DARF código de barras
+SICALC CONSOLIDAR54 Consultar consolidação sem emitir DARF
+CAIXAPOSTAL MSGCONTRIBUINTE61 Consultar mensagens
+CAIXAPOSTAL MSGDETALHAMENTO62 Consultar detalhe mensagem
+CAIXAPOSTAL INNOVAMSG63 Monitorar novas mensagens
+DTE CONSULTASITUACAODTE111 Consultar situação DTE
+PAGTOWEB PAGAMENTOS71 Consultar pagamentos
+PAGTOWEB COMPARRECADACAO72 Emitir comprovante arrecadação
+PAGTOWEB CONTACONSDOCARRPG73 Consultar/contar documento pago
+SITFIS SOLICITARPROTOCOLO91 Apoiar protocolo relatório situação fiscal
+SITFIS RELATORIOSITFIS92 Emitir relatório situação fiscal
+```
+
+Parcelamentos além de PARCSN seguem padrão similar:
+```text
+PARCSN-ESP 171-175
+PERTSN 181-185
+RELPSN 191-195
+PARCMEI 201-205
+PARCMEI-ESP 211-215
+PERTMEI 221-225
+RELPMEI 231-235
+```
+
+Redesim/e-Processo:
+```text
+PNRCONTADOR CONSVINCULOS261 Consultar vínculos
+PNRCONTADOR SOLICRENUNCIA262 Declarar solicitação de renúncia
+PNRCONTADOR CONSRENUNCIA263 Consultar renúncias
+PNRCONTADOR COMPRENUNCIA264 Emitir comprovante renúncia
+PNRCONTADOR SITSOLICRENUNCIA265 Consultar situação da renúncia
+EPROCESSO CONSPROCPORINTER271 Consultar processos por interessado
+EPROCESSO OBTLISTDOCSPROC272 Consultar lista documentos, aberto
+EPROCESSO OBTDOCPROC273 Consultar documento, aberto
+EPROCESSO CONSCOMUNINTIM274 Consultar comunicados/intimações, aberto
+```
+
+### Regra operacional
+
+Nunca liberar botão solto de `Emitir`. Toda chamada de `/Emitir`, especialmente `GERARDAS161`, exige aprovação explícita do Hebert informando serviço, competência/parcela, valor e parcelamento quando aplicável.

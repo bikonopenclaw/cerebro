@@ -47,8 +47,9 @@ Use este schema para qualquer cliente. O exemplo abaixo é ilustrativo, não dev
     "data_documento": "DD/MM/AAAA",
     "vencimento": "DD/MM/AAAA",
     "valor": "100,00",
-    "juros_mora_dia_centavos": 0,
-    "instrucoes": "NÃO RECEBER APÓS O VENCIMENTO."
+    "juros_mora_dia_centavos": "calculado automaticamente como valor * 1% / 30",
+    "multa_percentual": "2,00",
+    "instrucoes": "Após o vencimento cobrar multa de 2,00%.\nApós o vencimento cobrar juros de R$ X,XX ao dia."
   },
   "remessa": {
     "layout": "CNAB400",
@@ -77,6 +78,8 @@ Use este schema para qualquer cliente. O exemplo abaixo é ilustrativo, não dev
 - `boleto_emitido` fica reservado para retorno real do banco/sistema emissor.
 - `remessa.seq_remessa` deve seguir sequência real conhecida ou ser explicitamente informada.
 - Não usar segunda via com multa/mora como base de cobrança nova.
+- Todo boleto Bikon deve sair com multa de 2,00% após vencimento e juros de mora diário calculado como 1% ao mês proporcional ao dia (`valor_original * 0,01 / 30`).
+- As instruções impressas no boleto devem conter: `Após o vencimento cobrar multa de 2,00%.` e `Após o vencimento cobrar juros de R$ X,XX ao dia.`
 - Para CNAB400 Cresol, o script atual usa conta Bikon validada: banco 133, carteira 009, cooperativa 01008, conta 27846-7. Se mudar conta, validar de novo.
 - `email.to` pode ficar vazio quando o cadastro financeiro tiver e-mails do tomador. O script busca pelo CNPJ/CPF.
 - `email.aprovado_por_hebert=true` só pode ser marcado depois de autorização explícita do Hebert para envio externo.

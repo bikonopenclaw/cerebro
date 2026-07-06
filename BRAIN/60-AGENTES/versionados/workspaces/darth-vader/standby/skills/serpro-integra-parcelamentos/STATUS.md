@@ -52,3 +52,9 @@ Próximo passo conservador:
 
 - Em 03/07/2026, consultar novamente `PARCELASPARAGERAR162` e/ou `OBTERPARC164` para verificar baixa das parcelas pagas.
 - Se necessário, mapear e testar `DETPAGTOPARC165`, ainda via `/Consultar`.
+
+## 2026-07-03, catálogo oficial revisado e implantação v5
+- Catálogo oficial Integra Contador revisado e registrado em `REFERENCIAS.md`.
+- Direção operacional: estabilizar PARCSN completo primeiro; depois avaliar `PAGTOWEB PAGAMENTOS71`, consultas PGDASD, SICALC consolidação, Caixa Postal/DTE e procurações.
+- Pacote local v5 preparado em `/data/.openclaw/workspace/entregas/serpro-parcsn-local-v5-20260703.tar.gz` com resumo amigável no final das consultas.
+- Regra mantida: `/Emitir` e `GERARDAS161` continuam bloqueados sem aprovação explícita do Hebert.

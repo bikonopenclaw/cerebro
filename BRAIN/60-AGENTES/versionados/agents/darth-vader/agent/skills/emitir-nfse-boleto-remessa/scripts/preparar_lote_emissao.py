@@ -21,6 +21,29 @@ PRESTADOR_PADRAO = {
 }
 
 
+
+
+def money_centavos(value) -> int:
+    clean_value = str(value).strip().replace('R$', '').replace('.', '').replace(',', '.')
+    return int(round(float(clean_value) * 100))
+
+
+def juros_mora_dia_centavos(valor) -> int:
+    # Padrão Bikon: juros de mora de 1% ao mês, proporcional ao dia.
+    return round(money_centavos(valor) / 3000)
+
+
+def fmt_money_centavos(cents: int) -> str:
+    return f'{cents / 100:,.2f}'.replace(',', 'X').replace('.', ',').replace('X', '.')
+
+
+def instrucoes_boleto_padrao(valor) -> str:
+    juros = fmt_money_centavos(juros_mora_dia_centavos(valor))
+    return (
+        'Após o vencimento cobrar multa de 2,00%.\n'
+        f'Após o vencimento cobrar juros de R$ {juros} ao dia.'
+    )
+
 def clean(v):
     return (v or '').strip()
 
@@ -66,8 +89,8 @@ def row_to_job(row: dict) -> dict:
             'data_documento': clean(row.get('data_documento')) or data_emissao,
             'vencimento': clean(row.get('vencimento')),
             'valor': valor,
-            'juros_mora_dia_centavos': int(clean(row.get('juros_mora_dia_centavos')) or 0),
-            'instrucoes': clean(row.get('instrucoes')) or 'NÃO RECEBER APÓS O VENCIMENTO.',
+            'juros_mora_dia_centavos': int(clean(row.get('juros_mora_dia_centavos')) or juros_mora_dia_centavos(valor)),
+            'instrucoes': instrucoes_boleto_padrao(valor),
         },
         'remessa': {
             'layout': 'CNAB400',

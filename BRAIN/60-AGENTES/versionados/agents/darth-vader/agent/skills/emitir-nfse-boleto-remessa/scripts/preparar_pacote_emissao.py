@@ -15,7 +15,33 @@ PACOTES = ROOT / 'pacotes-emissao'
 REMESSA_GENERATOR = ROOT / 'scripts' / 'gerar_remessa_cnab400_cresol.py'
 BOLETO_GENERATOR = ROOT / 'scripts' / 'gerar_boleto_cresol_html.py'
 EMAIL_GENERATOR = Path('/data/.openclaw/workspace-darth-vader/skills/notaas-nfse/scripts/preparar_email_cliente.py')
+FATURAMENTO_DB = Path('/data/.openclaw/agents/darth-vader/agent/skills/emitir-nfse-boleto-remessa/scripts/faturamento_db.py')
 
+
+
+
+def money_centavos(value) -> int:
+    if isinstance(value, int):
+        return value
+    clean = str(value).strip().replace('R$', '').replace('.', '').replace(',', '.')
+    return int(round(float(clean) * 100))
+
+
+def fmt_money_centavos(cents: int) -> str:
+    return f'{cents / 100:,.2f}'.replace(',', 'X').replace('.', ',').replace('X', '.')
+
+
+def juros_mora_dia_centavos(valor) -> int:
+    # Padrão Bikon: teto conservador de juros de mora de 1% ao mês, proporcional ao dia.
+    return round(money_centavos(valor) / 3000)
+
+
+def instrucoes_boleto_padrao(valor) -> str:
+    juros = fmt_money_centavos(juros_mora_dia_centavos(valor))
+    return (
+        'Após o vencimento cobrar multa de 2,00%.\n'
+        f'Após o vencimento cobrar juros de R$ {juros} ao dia.'
+    )
 
 def slugify(value: str) -> str:
     value = value.lower()
@@ -68,7 +94,7 @@ def build_remessa_input(job: dict) -> dict:
             'data_emissao': job['nfse'].get('data_emissao_planejada') or remessa['data_gravacao'],
             'vencimento': boleto['vencimento'],
             'valor': boleto['valor'],
-            'juros_mora_dia_centavos': boleto.get('juros_mora_dia_centavos'),
+            'juros_mora_dia_centavos': boleto.get('juros_mora_dia_centavos') or juros_mora_dia_centavos(boleto['valor']),
             'pagador_nome': tomador['nome'],
             'pagador_cnpj': tomador['cnpj'],
             'pagador_endereco': tomador['endereco'],
@@ -107,7 +133,7 @@ def build_boleto_input(job: dict) -> dict:
         'valor': boleto['valor'],
         'nfse_numero': nfse.get('numero') or nfse.get('numero_novo') or '',
         'nfse_chave': nfse.get('chave') or '',
-        'instrucoes': boleto.get('instrucoes', 'NÃO RECEBER APÓS O VENCIMENTO.'),
+        'instrucoes': instrucoes_boleto_padrao(boleto['valor']),
     }
 
 
@@ -221,6 +247,23 @@ def main() -> int:
             email_meta = json.loads(proc_email.stdout)
 
     status = write_status(pkg, job, boleto_meta, remessa_meta, email_meta, errors)
+
+    faturamento_db_meta = None
+    if FATURAMENTO_DB.exists():
+        proc_db = subprocess.run(
+            [sys.executable, str(FATURAMENTO_DB), 'registrar-pacote', '--pacote', str(pkg)],
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+        if proc_db.returncode != 0:
+            errors.append(proc_db.stderr.strip() or proc_db.stdout.strip() or 'falha ao registrar pacote no banco de faturamento')
+        else:
+            try:
+                faturamento_db_meta = json.loads(proc_db.stdout)
+            except json.JSONDecodeError:
+                faturamento_db_meta = {'raw': proc_db.stdout.strip()}
+
     result = {
         'pacote': str(pkg),
         'status': str(status),
@@ -228,6 +271,7 @@ def main() -> int:
         'linha_digitavel': boleto_meta.get('linha_digitavel') if boleto_meta else None,
         'remessa': remessa_meta.get('arquivo') if remessa_meta else None,
         'email_cliente': email_meta,
+        'faturamento_db': faturamento_db_meta,
         'errors': errors,
     }
     print(json.dumps(result, ensure_ascii=False, indent=2))
