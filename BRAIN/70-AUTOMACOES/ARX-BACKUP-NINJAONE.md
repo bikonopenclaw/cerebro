@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29 e 2026-07-02
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29 e 2026-07-02; consulta NinjaOne HOST1/Magnitos em 2026-07-06
 confiabilidade: media
-ultima_revisao: 2026-07-03
+ultima_revisao: 2026-07-07
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
 ```
 
@@ -30,6 +30,20 @@ Consequência operacional:
 
 - KPIs de chamados abertos, novos, fechados, vencidos, responsável, prioridade e tempos não devem ser inferidos sem endpoint/permissão oficial de leitura/listagem.
 - Próximo passo técnico: validar endpoint e permissões oficiais de listagem de tickets antes de consolidar relatório completo.
+
+## Limitação observada em servidor de cliente 2026-07-06
+
+Consulta operacional do Kowalski para `HOST1 | Magnitos Granitos` no NinjaOne:
+
+- Device identificado como online, Windows Server 2022 Standard em Dell PowerEdge T150.
+- Endpoint de backup/jobs existia, mas não expôs job para o `deviceId 148` nem para a organização identificada.
+- Não houve dado/campo/alerta/atividade consultável sobre replicação Hyper-V.
+- Custom fields estavam vazios; atividades recentes eram majoritariamente eventos de partição adicionada/removida.
+
+Consequência operacional:
+
+- Não inferir conclusão de backup nem saúde de replicação Hyper-V a partir da ausência de dados no NinjaOne.
+- Para validar esses itens, é necessário criar integração, monitor, script ou custom field que grave status explícito no NinjaOne.
 
 ## Guardrails
 

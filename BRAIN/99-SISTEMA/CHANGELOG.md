@@ -291,3 +291,11 @@
 - Atualizados registros de Bitdefender, WhatsApp Bikon, ARX/NinjaOne e Relatórios Operacionais com resultados e limitações observadas nas rotinas de 2026-07-02/03.
 - Removidos do índice Git PDFs já rastreados no Brain e ampliado `.gitignore` para bloquear PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados por padrão.
 - Registrada novamente a indisponibilidade de `memory_search` por quota insuficiente; revisão baseada em sessões visíveis, arquivos locais, diffs Git e inspeção direta.
+
+## 2026-07-07, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-07.md`.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; manifesto atualizado para 2026-07-07.
+- Atualizado `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md` com limitação observada para `HOST1 | Magnitos Granitos`: NinjaOne não expôs conclusão de backup nem status de replicação Hyper-V sem instrumentação explícita.
+- Atualizado `HEALTH.md` com a execução diária, recorrência de indisponibilidade do `memory_search` e pendência de instrumentação NinjaOne para backup/Hyper-V quando aplicável.
+- Registrada novamente a indisponibilidade de `memory_search` por quota/billing do provedor de embeddings; revisão baseada em sessões visíveis, arquivos locais, diffs Git e inspeção direta.
