@@ -34,6 +34,7 @@ Mapa geral do Brain.
 - `01-DIARIO/Semanal/2026-W25.md`: consolidação semanal com padrões de escopo de canais, confirmação antes de impacto, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
 - `01-DIARIO/Semanal/2026-W26.md`: consolidação semanal com padrões de segurança operacional antes de escala, teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, relatórios externos e canais com remetente autorizado.
 - `01-DIARIO/2026/2026-07-03.md`: consolidação diária com snapshots versionados, KPIs WhatsApp/Bitdefender, limitação de tickets NinjaOne, falhas por limite de uso e saneamento de PDFs/artefatos no Git.
+- `01-DIARIO/2026/2026-07-08.md`: consolidação diária com limpeza pré-migração da VPS, riscos operacionais BIKON de 06/07/2026, atualização de snapshots e pendência de `memory_search`.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
 - `20-EMPRESAS/BIKON/cadastro-clientes/README.md`: backup operacional de cadastro de clientes da BIKON.
@@ -49,6 +50,7 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md`: padrão de revisão visual para PDFs e pareceres externos.
 - `40-CONHECIMENTO/Operacional/Canais-com-escopo-e-remetente-autorizados.md`: aprendizado sobre separar grupo/canal permitido de remetente autorizado.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
+- `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, validação e rollback.
 - `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader e skills relacionadas.
 - `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski, incluindo skill Provimento 213/2026, e uso controlado no grupo Relatórios Operacionais.
 - `60-AGENTES/ROBOTNIK.md`: papel de marketing do agente Robotnik, status interno, guardrails e integração Instagram em retomada pós-aprovação Meta.

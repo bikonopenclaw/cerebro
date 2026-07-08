@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29 e 2026-07-02; consulta NinjaOne HOST1/Magnitos em 2026-07-06
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02 e 2026-07-06; consulta NinjaOne HOST1/Magnitos em 2026-07-06
 confiabilidade: media
-ultima_revisao: 2026-07-07
+ultima_revisao: 2026-07-08
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
 ```
 
@@ -30,6 +30,21 @@ Consequência operacional:
 
 - KPIs de chamados abertos, novos, fechados, vencidos, responsável, prioridade e tempos não devem ser inferidos sem endpoint/permissão oficial de leitura/listagem.
 - Próximo passo técnico: validar endpoint e permissões oficiais de listagem de tickets antes de consolidar relatório completo.
+
+## Relatórios operacionais observados em 2026-07-06 BRT
+
+ARX Backup:
+
+- 11 contas/dispositivos monitorados: 8 OK, 1 atenção e 2 críticos por recorrência histórica.
+- Críticos por recorrência: Shopping Catuaí / `4503-hv-01_3hy73` e Stcoop / `stc-mssql_wq95i`, com tickets NinjaOne existentes reaproveitados.
+- Atenção: Ferreira Rocha / `scfr01_1km2s`, também com ticket relacionado existente.
+- Guardrail mantido: status total atual concluído não apaga recorrência histórica; não abrir ticket novo quando já houver ticket relacionado para o mesmo problema.
+
+NinjaOne tickets:
+
+- A rotina conseguiu consultar 197 tickets no quadro “Todos os tickets”.
+- Ativos no momento do relatório: 30; sem responsável na base: 23; ativos com mais de 24h: 22.
+- Limitação técnica persistente: payload disponível não expôs timestamps de resolução/fechamento/primeira resposta; SLA real e fechados do dia não devem ser inventados.
 
 ## Limitação observada em servidor de cliente 2026-07-06
 

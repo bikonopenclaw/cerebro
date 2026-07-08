@@ -20,9 +20,11 @@
 - Governança de acessos Bikon ↔ AD local de clientes: `BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md`
 - Integração Instagram Bikon Robotnik: `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`
 - API WhatsApp Bikon: `BRAIN/70-AUTOMACOES/API-WHATSAPP-BIKON.md`
+- Migração OpenClaw/Hostinger VPS: `BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`
 
 ## Histórico relevante
 
+- 2026-07-07: VPS de destino da migração OpenClaw foi limpa antes do replanejamento; manter arquitetura final com usuário `openclaw` como dono e sem resíduos de `root`, `u4s` ou gateway duplicado.
 - 2026-06-26: API WhatsApp Bikon validada via `api.bikon.tech`, canal Atendimento Bikon registrado como `REGISTERED`, template `retomar_solicitacao` confirmado e rotina segura criada com token fora do Brain/Git.
 - 2026-06-26: verificação de segurança da Meta aprovada para retomada da integração Instagram Bikon Robotnik; publicação real permanece bloqueada até configuração segura, testes e aprovação explícita.
 - 2026-06-26: regra de faturamento atualizada para copiar `financeiro@bikon.com.br` em todo e-mail de NFS-e/boleto enviado a cliente.

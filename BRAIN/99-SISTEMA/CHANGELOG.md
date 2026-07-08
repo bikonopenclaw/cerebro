@@ -299,3 +299,11 @@
 - Atualizado `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md` com limitação observada para `HOST1 | Magnitos Granitos`: NinjaOne não expôs conclusão de backup nem status de replicação Hyper-V sem instrumentação explícita.
 - Atualizado `HEALTH.md` com a execução diária, recorrência de indisponibilidade do `memory_search` e pendência de instrumentação NinjaOne para backup/Hyper-V quando aplicável.
 - Registrada novamente a indisponibilidade de `memory_search` por quota/billing do provedor de embeddings; revisão baseada em sessões visíveis, arquivos locais, diffs Git e inspeção direta.
+
+## 2026-07-08, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-08.md`.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; manifesto atualizado para 2026-07-08.
+- Criado `BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md` para registrar o replanejamento da migração em VPS limpa com usuário `openclaw` como dono operacional.
+- Atualizados registros de BIKON, WhatsApp Bikon, Bitdefender, ARX/NinjaOne, Relatórios Operacionais, `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md` com contexto útil futuro.
+- Registrada novamente a indisponibilidade de `memory_search` por billing/quota do provedor de embeddings; revisão baseada em sessões visíveis, arquivos locais, diffs Git e inspeção direta.

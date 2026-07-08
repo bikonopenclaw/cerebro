@@ -4,7 +4,7 @@
 categoria: canal_operacional
 fonte: decisão do Hebert em 2026-06-22
 confiabilidade: alta
-ultima_revisao: 2026-07-03
+ultima_revisao: 2026-07-08
 tags: [telegram, relatorios, kowalski, ninjaone, operacao]
 ```
 
@@ -84,6 +84,10 @@ Um PDF enviado no grupo precisou ser refeito com o conteúdo recebido encaixado 
 - aplicar identidade visual Bikon/ARX quando o pedido for formatação externa;
 - remover vestígios de caminho local, metadados de impressão, nome de agente ou comentário operacional;
 - validar o arquivo final antes do envio.
+
+## Lista de clientes NinjaOne em 2026-07-07
+
+Solicitação no grupo pediu lista simples de clientes cadastrados no NinjaOne. O registro relevante para o Brain é o padrão operacional: quando o pedido for apenas listagem em texto, responder de forma simples no próprio chat e evitar gerar artefato, PDF ou relatório final desnecessário.
 
 ## Relações
 

@@ -4,7 +4,7 @@
 nome: API WhatsApp Bikon
 status: validada
 responsavel: Puppet Master
-ultima_revisao: 2026-07-03
+ultima_revisao: 2026-07-08
 fonte: Swagger enviado por Hebert e teste real via canal Atendimento Bikon
 tags: [whatsapp, api, meta, atendimento, bikon]
 ```
@@ -102,6 +102,18 @@ Resumo da rotina diária de atendimento:
 - Satisfação registrada: 3 respostas como `Ótimo`.
 
 Aprendizado operacional: média diária pode ficar inflada por outliers antigos finalizados no dia; relatório executivo deve considerar visão com e sem outliers quando a distorção for relevante.
+
+## KPI diário observado em 2026-07-06 BRT
+
+Resumo da rotina diária de atendimento:
+
+- Canal `Atendimento Bikon`: status `REGISTERED`.
+- Chats do dia no recorte: 3 atendimentos, sendo 1 finalizado e 2 manuais abertos.
+- SLA de espera: 3/3 dentro da meta de 5 min; média 1min57s.
+- SLA de atendimento manual/finalização: 0/3 dentro da meta de 4h; média 8h23min.
+- Fila aguardando no momento do relatório: zerada.
+
+Aprendizado operacional: separar espera inicial, que estava saudável, de atendimento manual prolongado; revisar outliers e finalizar casos que já dependem do cliente ou foram resolvidos fora do canal.
 
 ## Próximos passos
 

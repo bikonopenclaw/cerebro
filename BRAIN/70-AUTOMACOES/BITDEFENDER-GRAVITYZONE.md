@@ -4,7 +4,7 @@
 categoria: automacao_seguranca
 fonte: conversa com Hebert em 2026-06-18/19, documentação pública Bitdefender consultada na sessão e relatório executivo gerado em 2026-06-19
 confiabilidade: media
-ultima_revisao: 2026-07-03
+ultima_revisao: 2026-07-08
 tags: [bikon, bitdefender, gravityzone, seguranca, inventario, endpoints, relatorios]
 ```
 
@@ -79,6 +79,19 @@ Resumo observado na rotina diária:
 - 0 pendências humanas reportadas.
 
 Observação: manter no Brain apenas agregados executivos; não versionar respostas brutas, inventário detalhado ou credenciais.
+
+## Relatório diário de ameaças 2026-07-06
+
+Resumo observado na rotina diária:
+
+- 2 detecções/ameaças ativas encontradas na leitura.
+- 2 endpoints afetados: `NOTE-271 | 11 - Unus` e `SCFR01 | 16 - Cartório Ferreira Rocha`.
+- 0 bloqueios/quarentenas confirmados pela API para os itens retornados.
+- 54 endpoints vistos em 30 dias com assinatura/produto desatualizado.
+
+Próxima ação: revisar os endpoints com `malwareStatus` positivo diretamente no console GravityZone antes de qualquer remediação, isolamento, alteração de política ou comunicação externa.
+
+Observação: manter apenas agregados e nomes operacionais necessários; não versionar respostas brutas, API keys ou inventário detalhado.
 
 ## Relações
 
