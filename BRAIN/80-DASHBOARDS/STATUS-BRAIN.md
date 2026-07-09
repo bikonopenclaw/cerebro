@@ -8,7 +8,7 @@
 
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
-- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02 e 2026-07-03.
+- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08 e 2026-07-09.
 - Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md` e `01-DIARIO/Semanal/2026-W26.md`.
 - Consolidação mensal de junho/2026 criada em `01-DIARIO/Mensal/2026-06.md`, com aprendizados, padrões de longo prazo, decisões consolidadas e critério de arquivamento.
 - Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
@@ -16,7 +16,7 @@
 - Automação de consolidação diária registrada.
 - Sync GitHub do Brain registrado para execução 4x ao dia.
 - Skill Notaas NFS-e registrada como automação exclusiva da Darth Vader, com guardrails fiscais e sem segredo no Brain/Git.
-- Boletos/malote bancário da BIKON documentado como futura automação, com retorno Cresol CNAB400 tratado apenas como referência de parser/conciliação; produção permitida apenas assistida e cadenciada, com validação local e confirmação explícita antes de upload/envio.
+- Boletos/malote bancário da BIKON documentado como futura automação, com retorno Cresol CNAB400 tratado apenas como referência de parser/conciliação e API Cresol em homologação controlada; produção permitida apenas assistida e cadenciada, com validação local e confirmação explícita antes de upload/envio/API.
 - Contexto do grupo Telegram de faturamento Bikon registrado como ativo, com roteamento para Darth Vader e guardrails de aprovação explícita; FN Souza mantido apenas como histórico inativo desde 2026-06-25.
 - Agente Darth Vader documentado como executor financeiro/fiscal relacionado a NFS-e, boletos e remessas.
 - Diretriz de confirmação antes de ações com impacto registrada em conhecimento operacional.
@@ -25,9 +25,9 @@
 - Automação ARX Backup diário → tickets NinjaOne registrada com última execução observada bem-sucedida em 2026-06-29; relatório de tickets NinjaOne em 2026-07-02 depende de endpoint/permissão oficial de listagem antes de expor KPIs completos.
 - Matriz de acesso Bikon ↔ AD local de clientes registrada como base de governança/auditoria antes de automações de identidade.
 - Fluxo NFS-e Bikon atualizado com SMTP `fatura@bikontecnologia.com.br`, template HTML padrão, anexos de NFS-e/XML/boleto, agrupamento de múltiplas notas por cliente e separação obrigatória entre dry-run, aprovação, emissão, conferência XML/PDF, boleto/remessa e e-mail externo.
-- Grupo Relatórios Operacionais registrado com roteamento restrito para Kowalski.
+- Grupo Relatórios Operacionais registrado com roteamento restrito e canal Telegram isolado para Kowalski; Puppet Master permanece no grupo apenas sob menção nominal.
 - Whisper local/faster-whisper registrado como padrão para transcrição de áudios.
-- Kowalski, Darth Vader e Robotnik possuem snapshots seguros versionados no Git do Brain, incluindo skills, scripts e documentação operacional sem segredos.
+- Kowalski, Darth Vader e Robotnik possuem snapshots seguros versionados no Git do Brain, incluindo skills, scripts e documentação operacional sem segredos; rotina de snapshot exclui segredos, bancos locais, estados OpenClaw e artefatos gerados.
 - Brain/Git: PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados são ignorados por padrão; PDFs anteriormente rastreados foram removidos do índice Git em 2026-07-03.
 - Arquivos obrigatórios criados em `99-SISTEMA`.
 
@@ -37,7 +37,7 @@
 - Revisar arquivamento mensal novamente após os registros de junho deixarem de ser recentes ou perderem conexão operacional.
 - Se autorizada, evoluir a integração GravityZone da Bikon com cofre local e permissões mínimas.
 - Após preenchimento da matriz de acesso, desenhar auditoria PowerShell/RMM sem ações destrutivas sobre ADs de clientes.
-- Homologar layout Cresol antes de qualquer uso real da automação de boletos/malote.
+- Homologar layout/API Cresol antes de qualquer uso real da automação de boletos/malote; produção e baixa por API seguem bloqueadas sem autorização específica.
 - Concluir configuração segura da integração Instagram Bikon Robotnik pós-aprovação Meta.
 - Criar dashboard de projetos ativos.
 - Criar dashboard de faturamento por lote: NFS-e, boletos, e-mails preparados/enviados e pendências.

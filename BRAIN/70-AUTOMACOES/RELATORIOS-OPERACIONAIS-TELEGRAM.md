@@ -4,8 +4,8 @@
 categoria: canal_operacional
 fonte: decisão do Hebert em 2026-06-22
 confiabilidade: alta
-ultima_revisao: 2026-07-08
-tags: [telegram, relatorios, kowalski, ninjaone, operacao]
+ultima_revisao: 2026-07-09
+tags: [telegram, relatorios, kowalski, ninjaone, operacao, gateway]
 ```
 
 ## Finalidade
@@ -18,6 +18,19 @@ Registrar o canal Telegram `relatórios operacionais` como grupo de consulta e p
 - Chat observado: `telegram:-5165906669`
 - Agente responsável: Kowalski
 - Tipo de uso: consulta, relatório e análise operacional.
+
+## Roteamento Telegram em 2026-07-09
+
+Hebert autorizou a evolução do grupo para canal isolado do Kowalski:
+
+- Bot Kowalski: `@mattedi_02_bot`.
+- Gateway dedicado: `openclaw-gateway-kowalski.service`.
+- Porta dedicada: `18790`.
+- Puppet Master continua no grupo, mas com `requireMention=true`.
+- Kowalski fica com resposta direta para mensagens comuns dentro do escopo de relatórios operacionais.
+- A coordenação agente-a-agente e decisões com impacto continuam sob Puppet Master.
+
+Token, auth store e configuração sensível ficam fora do Brain/Git.
 
 ## Escopo permitido
 
@@ -35,15 +48,9 @@ Registrar o canal Telegram `relatórios operacionais` como grupo de consulta e p
 - Comunicação externa para cliente sem aprovação explícita.
 - Mudança em produção, faturamento, cobrança, site, checkout ou integração.
 
-## Regra de identidade visual
+## Regra de identidade no grupo
 
-Hebert decidiu não criar bot Telegram separado para Kowalski neste momento.
-
-Padrão visual:
-
-- Respostas no grupo devem começar com `Kowalski:` ou identificação textual equivalente.
-- A identidade visual no Telegram continua sendo o bot atual.
-- A clareza de autoria deve vir do texto, não de bot separado.
+Com bot próprio validado, mensagens comuns do grupo devem ser tratadas pelo Kowalski quando forem de relatório operacional. Puppet Master só deve responder quando mencionado nominalmente ou quando houver coordenação, mudança estrutural, produção, gasto, comunicação externa ou decisão estratégica.
 
 ## Padrão visual para relatórios externos
 

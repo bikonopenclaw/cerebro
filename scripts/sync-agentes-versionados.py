@@ -20,6 +20,8 @@ EXCLUDE_DIRS = {
 }
 EXCLUDE_FILE_PATTERNS = [
     '*.pyc', '*.pyo', '*.log', '*.lock',
+    '*.sqlite', '*.sqlite3', '*.sqlite-shm', '*.sqlite-wal', '*.db',
+    'openclaw-workspace-state.json',
     '.env', '.env.*', 'auth-profiles.json', 'models.json',
     '*token*', '*Token*', '*secret*', '*Secret*',
     '*segredo*', '*Segredo*', '*SEGREDO*', '*senha*', '*Senha*',
@@ -107,7 +109,8 @@ Se expõe segredo, cliente ou artefato operacional final, fica fora do Git.
 - `.env*`, exceto `.env.example`
 - Arquivos com `token`, `secret`, `senha`, `credential`, `oauth` no nome
 - `sessions/`, `.openclaw/`, `__pycache__/`, `.pytest_cache/`, `node_modules/`, `vendor/`, `.venv/`, `.pydeps/`
-- `relatorios/`, `pacotes-emissao/`, `email-rascunhos/`, `dados/`, `jobs/` quando forem artefatos de execução
+- bancos/estado/caches locais: `*.sqlite`, `*.sqlite-shm`, `*.sqlite-wal`, `*.db`, `openclaw-workspace-state.json`
+- `relatorios/`, `pacotes-emissao/`, `email-rascunhos/`, `dados/`, `jobs/`, `api-homologacao/` quando forem artefatos de execução
 - Binários e documentos finais: `*.pdf`, `*.png`, `*.jpg`, `*.jpeg`, `*.docx`, `*.xlsx`, `*.rem`, `*.ret`, `*.zip`
 
 ## Exceção
@@ -143,6 +146,7 @@ def main() -> int:
             'boletos/exemplos',
             'boletos/manual-cresol',
             'boletos/remessas',
+            'boletos/api-homologacao',
             'boletos/pacotes-emissao',
             'boletos/entradas',
             'boletos/lotes-emissao',

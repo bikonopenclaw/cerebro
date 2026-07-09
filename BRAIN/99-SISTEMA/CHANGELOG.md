@@ -307,3 +307,12 @@
 - Criado `BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md` para registrar o replanejamento da migração em VPS limpa com usuário `openclaw` como dono operacional.
 - Atualizados registros de BIKON, WhatsApp Bikon, Bitdefender, ARX/NinjaOne, Relatórios Operacionais, `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md` com contexto útil futuro.
 - Registrada novamente a indisponibilidade de `memory_search` por billing/quota do provedor de embeddings; revisão baseada em sessões visíveis, arquivos locais, diffs Git e inspeção direta.
+
+## 2026-07-09, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-09.md`.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; manifesto atualizado para 2026-07-09.
+- Atualizados `DARTH-VADER.md`, `boletos-malote/README.md` e snapshot da skill `emitir-nfse-boleto-remessa` com Cresol API em fases controladas, cliente CLI de homologação e guardrails de produção/baixa.
+- Atualizados `KOWALSKI.md` e `RELATORIOS-OPERACIONAIS-TELEGRAM.md` com canal Telegram isolado do Kowalski, gateway dedicado e Puppet Master com menção obrigatória no grupo.
+- Atualizado `scripts/sync-agentes-versionados.py`, `.gitignore` e regras de versionamento para excluir bancos locais, WAL/SHM, estado OpenClaw e artefatos de homologação da API Cresol dos snapshots.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md` com o estado consolidado.

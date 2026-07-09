@@ -8,13 +8,13 @@ Health Score: 95/100
 - Arquivos obrigatórios criados.
 - Sem registros duplicados identificados.
 - Sem projetos abandonados identificados.
-- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07 e 2026-07-08.
+- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08 e 2026-07-09.
 - Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`), 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`) e 2026-06-28 (`01-DIARIO/Semanal/2026-W26.md`).
 - Consolidação mensal executada em 2026-07-01 (`01-DIARIO/Mensal/2026-06.md`), cobrindo junho/2026.
 - Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, separação teste/rascunho/produção, governança de identidade, retorno bancário versus remessa e validação visual de relatórios externos.
 - Registro central da BIKON criado e conectado a Notaas NFS-e, cadastro de clientes e boletos/malote.
 - Dashboard inicial atualizado.
-- Automações registradas: consolidação diária silenciosa, sync GitHub, Notaas NFS-e exclusiva da Darth Vader, documentação inicial de boletos/malote da BIKON com retorno Cresol CNAB400 para parser/conciliação, contexto ativo do grupo Telegram de faturamento Bikon, histórico inativo FN Souza, desenho inicial GravityZone para Bikon, matriz de acesso Bikon ↔ AD local de clientes, ARX Backup diário para tickets NinjaOne, limitações NinjaOne para backup/Hyper-V quando não há job/campo explícito, Provimento 213/2026 Kowalski, Instagram Bikon Robotnik em retomada pós-aprovação Meta e API WhatsApp Bikon validada; projeto de migração Hostinger VPS/OpenClaw criado em planejamento.
+- Automações registradas: consolidação diária silenciosa, sync GitHub, Notaas NFS-e exclusiva da Darth Vader, documentação inicial de boletos/malote da BIKON com retorno Cresol CNAB400 para parser/conciliação e Cresol API em homologação controlada, contexto ativo do grupo Telegram de faturamento Bikon, histórico inativo FN Souza, desenho inicial GravityZone para Bikon, matriz de acesso Bikon ↔ AD local de clientes, ARX Backup diário para tickets NinjaOne, limitações NinjaOne para backup/Hyper-V quando não há job/campo explícito, Provimento 213/2026 Kowalski, canal Telegram isolado do Kowalski para Relatórios Operacionais, Instagram Bikon Robotnik em retomada pós-aprovação Meta e API WhatsApp Bikon validada; projeto de migração Hostinger VPS/OpenClaw criado em planejamento.
 - Contexto do grupo Telegram de faturamento Bikon registrado com escopo, roteamento e guardrails; contexto FN Souza mantido apenas como histórico inativo desde 2026-06-25.
 - Agente Darth Vader documentado como executor financeiro/fiscal relacionado a NFS-e, boletos e remessas.
 - Diretriz operacional registrada para confirmação antes de ações com impacto fora da conversa atual.
@@ -25,17 +25,19 @@ Health Score: 95/100
 - Whisper local documentado como padrão de transcrição.
 - Padrão visual premium Bikon para relatórios técnicos externos registrado.
 - Governança inicial de acessos Bikon ↔ AD local de clientes registrada com fase 1 restrita a auditoria.
-- Agentes Kowalski, Darth Vader e Robotnik documentados; Kowalski atualizado com padrão NinjaOne/EOL e autoria/solicitante; Darth Vader atualizado com revisão pré-produção de NFS-e/boleto/remessa; Robotnik atualizado com esclarecimento via Puppet Master em briefs incompletos.
-- Snapshots versionados dos agentes Kowalski, Darth Vader e Robotnik criados em `60-AGENTES/versionados/`, com política de exclusão de segredos, artefatos, diretórios temporários e dados brutos sensíveis; em 2026-07-03 o Git do Brain passou a ignorar PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados por padrão.
+- Agentes Kowalski, Darth Vader e Robotnik documentados; Kowalski atualizado com padrão NinjaOne/EOL, autoria/solicitante e canal Telegram isolado; Darth Vader atualizado com revisão pré-produção de NFS-e/boleto/remessa e Cresol API em homologação; Robotnik atualizado com esclarecimento via Puppet Master em briefs incompletos.
+- Snapshots versionados dos agentes Kowalski, Darth Vader e Robotnik criados em `60-AGENTES/versionados/`, com política de exclusão de segredos, artefatos, diretórios temporários e dados brutos sensíveis; em 2026-07-03 o Git do Brain passou a ignorar PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados por padrão; em 2026-07-09 a rotina passou a excluir também bancos locais, WAL/SHM, estado OpenClaw e artefatos de homologação da API Cresol.
 
 ## Pendências
 
 - Manter cobertura diária consistente; há lacunas de diário em 2026-06-14/15, apesar da consolidação semanal de 2026-06-14.
 - Restaurar ou trocar o provedor de embeddings: `memory_search` falhou em 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-07 e 2026-07-08 por quota insuficiente/billing inativo.
 - Homologar layout Cresol antes de qualquer uso real da automação de boletos/malote; retorno `.ret` validado deve permanecer restrito a parser/conciliação.
+- Consultar evolução do título controlado de homologação Cresol antes de avançar ocorrências/conciliação por API; produção e baixa por API seguem bloqueadas.
 - Concluir configuração segura da integração Instagram Bikon Robotnik: token Meta de longa duração, IDs da Página/Instagram Business Account e testes `me`/`pages`, mantendo publicação bloqueada até aprovação explícita.
 - Validar endpoint/permissão oficial de listagem de tickets no NinjaOne; sem isso, KPIs completos de tickets devem permanecer como indisponíveis, não estimados.
 - Instrumentar no NinjaOne, quando necessário, status explícito de backup e replicação Hyper-V para servidores de clientes que não expõem esses dados por jobs, alertas, atividades ou custom fields.
+- Observar o canal isolado do Kowalski no Telegram e ajustar roteamento se houver resposta fora de escopo, latência anormal ou duplicidade com Puppet Master.
 - Expandir dashboards conforme surgirem projetos, empresas, pessoas e automações reais.
 
 ## Filosofia cognitiva

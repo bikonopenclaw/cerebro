@@ -5,7 +5,7 @@ Backup e documentação da futura habilidade do Darth Vader para gerar remessa/m
 Espelho operacional:
 `/data/.openclaw/workspace-darth-vader/boletos`
 
-## Estado em 2026-07-01
+## Estado em 2026-07-09
 
 - Banco identificado nos modelos: Cresol, código 133.
 - Há modelo de boleto e template CSV em `modelos/`.
@@ -16,6 +16,8 @@ Espelho operacional:
 - O retorno analisado confirma estrutura de 3 linhas de 400 posições, registros `0/1/9` e ocorrência `06` como liquidação, servindo apenas para parser/conciliação.
 - Revisão pré-produção de 2026-06-30 confirmou que boleto/remessa podem ser preparados em produção assistida, mas não como esteira automática sem validação humana.
 - Remessa de produção deve ser validada localmente antes de upload: linhas de 400 posições, CRLF, header `0`, detalhes `1`, trailer `9`, banco `133`, literal `REMESSA`, serviço `COBRANCA`, quantidade e valor total compatíveis com o lote.
+- API Cresol entrou como camada futura complementar ao CNAB: homologação validada para autenticação, consultas e criação controlada de título de teste com autorização explícita; produção segue bloqueada.
+- Artefatos de homologação da API, como payloads, respostas e PDFs oficiais baixados, devem ficar no workspace operacional da Darth Vader e não no Git do Brain.
 
 ## Pendências antes de uso real
 
@@ -29,6 +31,7 @@ Confirmar com o banco/contrato:
 6. instruções aceitas pelo banco;
 7. validação homologada antes de qualquer envio operacional;
 8. controle aprovado de `seq_remessa`, `numero_documento` e `nosso_numero` antes de gerar arquivo de produção.
+9. mapeamento final de juros/multa para API Cresol em produção, preservando a regra Bikon de multa de 2,00% e juros de 1% ao mês proporcional ao dia.
 
 ## Guardrail
 
@@ -37,3 +40,5 @@ Não usar os modelos para envio bancário real até concluir homologação com a
 Retorno `.ret` é referência de conciliação/liquidação, não de geração de remessa `.rem`; não usar retorno para inferir próximo nosso número, número de documento, sequencial de remessa ou regras de emissão.
 
 Upload/envio no portal Cresol exige confirmação explícita do Hebert após validação local da remessa.
+
+API Cresol em produção exige nova confirmação explícita do Hebert. Baixa por API permanece bloqueada até haver procedimento próprio, rollback e autorização específica.

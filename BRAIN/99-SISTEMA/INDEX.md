@@ -35,6 +35,7 @@ Mapa geral do Brain.
 - `01-DIARIO/Semanal/2026-W26.md`: consolidação semanal com padrões de segurança operacional antes de escala, teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, relatórios externos e canais com remetente autorizado.
 - `01-DIARIO/2026/2026-07-03.md`: consolidação diária com snapshots versionados, KPIs WhatsApp/Bitdefender, limitação de tickets NinjaOne, falhas por limite de uso e saneamento de PDFs/artefatos no Git.
 - `01-DIARIO/2026/2026-07-08.md`: consolidação diária com limpeza pré-migração da VPS, riscos operacionais BIKON de 06/07/2026, atualização de snapshots e pendência de `memory_search`.
+- `01-DIARIO/2026/2026-07-09.md`: consolidação diária com Cresol API em homologação, canal Telegram isolado do Kowalski e saneamento adicional da rotina de snapshot.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
 - `20-EMPRESAS/BIKON/cadastro-clientes/README.md`: backup operacional de cadastro de clientes da BIKON.
@@ -51,22 +52,22 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Canais-com-escopo-e-remetente-autorizados.md`: aprendizado sobre separar grupo/canal permitido de remetente autorizado.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
 - `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, validação e rollback.
-- `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader e skills relacionadas.
-- `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski, incluindo skill Provimento 213/2026, e uso controlado no grupo Relatórios Operacionais.
+- `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader, incluindo NFS-e, boletos, remessa e Cresol API com guardrails.
+- `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski, incluindo skill Provimento 213/2026 e canal Telegram isolado para Relatórios Operacionais.
 - `60-AGENTES/ROBOTNIK.md`: papel de marketing do agente Robotnik, status interno, guardrails e integração Instagram em retomada pós-aprovação Meta.
 - `60-AGENTES/versionados/`: snapshots seguros de código, skills e documentação operacional do Kowalski, Darth Vader e Robotnik, com exclusão de segredos e artefatos gerados.
 - `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
 - `70-AUTOMACOES/SYNC-GITHUB.md`: sincronização automática do Brain com GitHub 4x ao dia.
 - `70-AUTOMACOES/NOTAAS-NFSE.md`: registro da skill Notaas NFS-e exclusiva da Darth Vader, com guardrails fiscais.
 - `70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`: contexto ativo do grupo Telegram de faturamento Bikon e histórico inativo FN Souza, com roteamento para Darth Vader e guardrails.
-- `70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`: contexto do grupo Telegram de relatórios operacionais, com roteamento restrito para Kowalski.
+- `70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`: contexto do grupo Telegram de relatórios operacionais, com roteamento restrito e gateway isolado para Kowalski.
 - `70-AUTOMACOES/WHISPER-LOCAL.md`: instância local faster-whisper definida como padrão para transcrição de áudios.
 - `70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`: desenho inicial da integração GravityZone para segurança, inventário e relatórios da Bikon.
 - `70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md`: matriz mestre para governança e auditoria de usuários Bikon aprovados no Entra ID versus acessos em ADs locais de clientes.
 - `70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`: automação diária de monitoramento ARX Backup com deduplicação/criação de tickets NinjaOne.
 - `70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`: skill e fluxo do Kowalski para diagnósticos técnicos de cartórios no Provimento CNJ 213/2026.
 - `70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`: integração Instagram Bikon com Robotnik via Meta Graph API, em retomada pós-aprovação de segurança da Meta.
-- `70-AUTOMACOES/boletos-malote/README.md`: documentação da futura automação de boletos/remessa bancária da BIKON, com pendências de homologação Cresol.
+- `70-AUTOMACOES/boletos-malote/README.md`: documentação da futura automação de boletos/remessa/API Cresol da BIKON, com pendências de homologação e produção bloqueada sem aprovação.
 - `70-AUTOMACOES/API-WHATSAPP-BIKON.md`: integração do canal oficial WhatsApp Bikon via api.bikon.tech, template `retomar_solicitacao`, rotina segura com dry-run e confirmação explícita.
 - `70-AUTOMACOES/api-bikon-whatsapp/`: snapshot sanitizado do client local, Swagger, documentação e rotina segura, sem tokens.
 

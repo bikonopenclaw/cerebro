@@ -3,8 +3,8 @@
 ```yaml
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
-ultima_revisao: 2026-07-02
-tags: [kowalski, relatorios, ninjaone, arx-backup, provimento-213-2026, operacao]
+ultima_revisao: 2026-07-09
+tags: [kowalski, relatorios, ninjaone, arx-backup, provimento-213-2026, operacao, telegram]
 ```
 
 ## Papel
@@ -27,12 +27,24 @@ Em 2026-06-22, Hebert criou o grupo Telegram `relatórios operacionais` para con
 
 Regra do grupo:
 
-- Somente Kowalski deve responder ali.
+- Somente Kowalski deve responder ali em mensagens comuns.
 - Uso restrito a consulta e relatório.
 - Não alterar estrutura operacional, arquivos, skills, configuração ou processos do Kowalski a partir desse grupo.
 - Usuários adicionados por Hebert podem consultar o Kowalski dentro do grupo.
 - Ninguém do grupo deve falar de forma independente com Puppet Master/main nem com outros agentes.
-- Não criar bot Telegram separado por enquanto; a autoria deve ficar clara no texto, usando prefixo como `Kowalski:`.
+- Desde 2026-07-08/09, Kowalski possui canal Telegram isolado com bot próprio para o grupo. Puppet Master permanece no grupo apenas quando mencionado nominalmente.
+
+## Canal Telegram isolado, 2026-07-08/09
+
+Configuração operacional validada:
+
+- Bot próprio: `@mattedi_02_bot`, nome Kowalski.
+- Serviço: `openclaw-gateway-kowalski.service`, ativo e habilitado.
+- Porta isolada: `18790`.
+- Grupo: `Relatórios Operacionais`.
+- Puppet Master no mesmo grupo ficou com `requireMention=true`, para evitar resposta dupla em mensagens comuns.
+- Kowalski continua subordinado à governança do Puppet Master; canal próprio muda a entrada no Telegram, não a hierarquia.
+- Token do bot fica em arquivo secreto local com permissão restrita e não deve entrar no Brain/Git.
 
 ## Guardrails
 

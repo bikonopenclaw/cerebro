@@ -49,5 +49,8 @@ __pycache__/
 *.db
 *.sqlite
 *.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+openclaw-workspace-state.json
 boletos/db/
 **/boletos/db/
