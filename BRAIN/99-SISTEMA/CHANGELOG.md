@@ -1,5 +1,12 @@
 # CHANGELOG.md
 
+## 2026-07-10, operação financeira e runtime Codex
+
+- Registrada evolução do SQLite financeiro do Darth Vader para base gerencial com views BI.
+- Registrada autorização read-only do Kowalski local e do Kowalski Hermes sobre a base financeira, mantendo escritas financeiras com Darth Vader.
+- Registrado reparo do faster-whisper local e reforço da regra: áudio do Hebert é comando operacional, não pedido de transcrição.
+- Registrada configuração do Codex OpenClaw com `model_reasoning_effort = "high"` no `CODEX_HOME` ativo.
+
 ## 2026-06-12
 
 - Criada estrutura Brain Enterprise v1.0.

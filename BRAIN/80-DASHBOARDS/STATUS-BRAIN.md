@@ -28,6 +28,9 @@
 - Grupo Relatórios Operacionais registrado com roteamento restrito e canal Telegram isolado para Kowalski; Puppet Master permanece no grupo apenas sob menção nominal.
 - Kowalski consolidado como guardião visual Bikon para materiais públicos ou semi-públicos com arte/layout, enquanto Robotnik mantém pauta, copy e campanha.
 - Whisper local/faster-whisper registrado como padrão para transcrição de áudios.
+- Faster-whisper local reparado em 2026-07-10 e regra reforçada: áudio do Hebert deve ser tratado como comando operacional, transcrito internamente e executado.
+- SQLite financeiro do Darth Vader possui camada BI inicial e acesso read-only para Kowalski local/Hermes; baixa, retorno, pagamento e escrita financeira permanecem com Darth Vader.
+- Codex OpenClaw configurado com `model_reasoning_effort = "high"` no `CODEX_HOME` ativo em 2026-07-10.
 - Kowalski, Darth Vader e Robotnik possuem snapshots seguros versionados no Git do Brain, incluindo skills, scripts e documentação operacional sem segredos; rotina de snapshot exclui segredos, bancos locais, estados OpenClaw, ambientes virtuais e artefatos gerados/homologação.
 - Brain/Git: PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados são ignorados por padrão; PDFs anteriormente rastreados foram removidos do índice Git em 2026-07-03.
 - Arquivos obrigatórios criados em `99-SISTEMA`.
