@@ -4,8 +4,8 @@
 categoria: canal_operacional
 fonte: decisão do Hebert em 2026-06-22
 confiabilidade: alta
-ultima_revisao: 2026-07-09
-tags: [telegram, relatorios, kowalski, ninjaone, operacao, gateway]
+ultima_revisao: 2026-07-10
+tags: [telegram, relatorios, kowalski, ninjaone, operacao, gateway, identidade-visual]
 ```
 
 ## Finalidade
@@ -62,6 +62,16 @@ Em 2026-06-23, após revisão da versão premium do parecer do Cartório Capixab
 - Manter apenas elementos institucionais quando fizerem parte natural do layout.
 - Preservar conteúdo técnico, conclusões e estrutura quando a solicitação for apenas ajuste visual.
 - Conferir visualmente o PDF renderizado antes de enviar ao Hebert ou ao grupo.
+
+## Guardião visual Bikon
+
+Em 2026-07-09, a responsabilidade visual do Kowalski foi ampliada para além de relatórios:
+
+- revisar post, carrossel, PDF, apresentação, proposta, landing page, template e material público ou semi-público com logo/paleta/layout da Bikon;
+- devolver veredito, três ajustes prioritários e risco visual principal;
+- manter Robotnik como responsável por pauta, copy e campanha;
+- evitar que estética hacker/cyberpunk, SaaS genérico, excesso de texto ou promessa exagerada chegue à peça final;
+- não publicar, enviar, agendar ou aplicar mudança externa sem aprovação explícita.
 
 ## Guardrails
 

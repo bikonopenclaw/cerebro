@@ -25,7 +25,7 @@ def graph(path, method="GET", params=None):
     token=need("META_ACCESS_TOKEN")
     params=dict(params or {})
     params["access_token"]=token
-    url=f"https://graph.facebook.com/{version}/{path.lstrip("/")}"
+    url=f"https://graph.facebook.com/{version}/{path.lstrip('/')}"
     if method == "GET":
         url += "?" + urllib.parse.urlencode(params)
         req=urllib.request.Request(url)

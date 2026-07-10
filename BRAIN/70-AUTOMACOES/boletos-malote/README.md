@@ -5,7 +5,7 @@ Backup e documentação da futura habilidade do Darth Vader para gerar remessa/m
 Espelho operacional:
 `/data/.openclaw/workspace-darth-vader/boletos`
 
-## Estado em 2026-07-09
+## Estado em 2026-07-10
 
 - Banco identificado nos modelos: Cresol, código 133.
 - Há modelo de boleto e template CSV em `modelos/`.
@@ -18,6 +18,8 @@ Espelho operacional:
 - Remessa de produção deve ser validada localmente antes de upload: linhas de 400 posições, CRLF, header `0`, detalhes `1`, trailer `9`, banco `133`, literal `REMESSA`, serviço `COBRANCA`, quantidade e valor total compatíveis com o lote.
 - API Cresol entrou como camada futura complementar ao CNAB: homologação validada para autenticação, consultas e criação controlada de título de teste com autorização explícita; produção segue bloqueada.
 - Artefatos de homologação da API, como payloads, respostas e PDFs oficiais baixados, devem ficar no workspace operacional da Darth Vader e não no Git do Brain.
+- Em 2026-07-09, foi gerado pacote local de homologação Cresol com remessa CNAB400 validada e boleto PDF renderizado/conferido após correção do renderizador; nada foi enviado ao portal, por e-mail ou a cliente.
+- Diretórios locais de homologação e ambientes virtuais (`homologacao-*`, `.venv-*`) foram classificados como artefatos de execução e excluídos dos snapshots versionados do Brain.
 
 ## Pendências antes de uso real
 
@@ -32,6 +34,7 @@ Confirmar com o banco/contrato:
 7. validação homologada antes de qualquer envio operacional;
 8. controle aprovado de `seq_remessa`, `numero_documento` e `nosso_numero` antes de gerar arquivo de produção.
 9. mapeamento final de juros/multa para API Cresol em produção, preservando a regra Bikon de multa de 2,00% e juros de 1% ao mês proporcional ao dia.
+10. aprovação explícita do Hebert antes de upload no portal Cresol, envio ao banco, produção, baixa por API ou comunicação externa.
 
 ## Guardrail
 

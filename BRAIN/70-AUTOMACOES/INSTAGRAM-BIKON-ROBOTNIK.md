@@ -2,9 +2,9 @@
 
 ```yaml
 nome: Instagram Bikon Robotnik
-status: retomada_aprovada_meta
+status: configurado_em_draft
 responsavel: Robotnik sob coordenação do Puppet Master
-ultima_revisao: 2026-06-27
+ultima_revisao: 2026-07-10
 fonte: conversa Hebert/Puppet Master e workspace Robotnik
 tags: [instagram, meta, robotnik, marketing, bikon]
 ```
@@ -34,6 +34,16 @@ Em 2026-06-25, Hebert confirmou que:
 
 Em 2026-06-26, a verificação de segurança da Meta foi marcada como aprovada e a integração saiu do estado de espera. A publicação real continua bloqueada até configuração segura, testes controlados e aprovação explícita.
 
+Em 2026-07-09, foram validados via Meta/Graph:
+
+- Página Facebook da Bikon conectada ao Instagram profissional.
+- `META_PAGE_ID` e `INSTAGRAM_BUSINESS_ACCOUNT_ID` identificados e testados.
+- token de longa duração gerado e salvo somente em arquivo local de segredo do Robotnik, com permissão restrita.
+- permissão `instagram_content_publish` confirmada.
+- `ROBOTNIK_INSTAGRAM_MODE=draft` mantido para impedir publicação automática.
+
+O Brain não registra token nem app secret. IDs operacionais podem aparecer apenas quando necessários para reconstruir contexto técnico; segredos permanecem fora do Git.
+
 ## Estrutura criada
 
 - Workspace: `/data/.openclaw/workspace-robotnik/instagram-bikon`
@@ -62,22 +72,17 @@ Robotnik não pode:
 - expor token em relatório
 - responder cliente externo sem aprovação
 
-## Próximos passos pós-aprovação Meta
+## Rotina editorial relacionada
 
-1. Gerar token Meta seguro de longa duração.
-2. Salvar o token somente em `/data/.openclaw/workspace-robotnik/instagram-bikon/secrets/instagram-bikon.env`.
-3. Rodar testes seguros:
-   - `python3 scripts/instagram_graph.py me`
-   - `python3 scripts/instagram_graph.py pages`
-4. Identificar e preencher no arquivo local de segredos:
-   - `META_PAGE_ID`
-   - `INSTAGRAM_BUSINESS_ACCOUNT_ID`
-5. Manter `ROBOTNIK_INSTAGRAM_MODE=draft` e publicação travada até teste validado e aprovação explícita.
+Em 2026-07-09, foram criados crons do Robotnik para cadência editorial:
 
-## Cron relacionado
+- diário, segunda a sexta às 07:30 America/Sao_Paulo: pesquisar fontes externas, propor 3 pautas e preparar material em rascunho;
+- semanal, sexta às 16:00 America/Sao_Paulo: propor 5 pautas para a semana seguinte;
+- entrega esperada no Telegram: arte/carrossel anexado, copy, legenda e pedido de aprovação;
+- publicação, agendamento ou envio externo continuam bloqueados até aprovação explícita do Hebert/Puppet Master.
 
-Existe lembrete one-shot para retomar a integração:
+## Próximos passos
 
-- Nome: `Retomar integração Instagram Bikon Robotnik`
-- Data: 2026-06-29 09:00 BRT
-- Objetivo: verificar com Hebert se a Meta aprovou a verificação.
+1. Observar as primeiras entregas dos crons e ajustar briefing se vierem genéricas, sensacionalistas ou fora do escopo Bikon.
+2. Manter fontes externas/notícias/RSS como entrada principal de pauta; usar Instagram API para contexto da Bikon, métricas, hashtags pontuais e publicação controlada.
+3. Reavaliar publicação via API somente depois de rotina estável em modo rascunho e aprovação explícita por post.

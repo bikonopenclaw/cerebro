@@ -316,3 +316,13 @@
 - Atualizados `KOWALSKI.md` e `RELATORIOS-OPERACIONAIS-TELEGRAM.md` com canal Telegram isolado do Kowalski, gateway dedicado e Puppet Master com menção obrigatória no grupo.
 - Atualizado `scripts/sync-agentes-versionados.py`, `.gitignore` e regras de versionamento para excluir bancos locais, WAL/SHM, estado OpenClaw e artefatos de homologação da API Cresol dos snapshots.
 - Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md` com o estado consolidado.
+
+## 2026-07-10, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-10.md`.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; manifesto atualizado para 2026-07-10.
+- Atualizados `ROBOTNIK.md` e `INSTAGRAM-BIKON-ROBOTNIK.md` com integração Meta/Instagram configurada em modo `draft`, crons editoriais e publicação bloqueada por aprovação explícita.
+- Atualizados `KOWALSKI.md`, `RELATORIOS-OPERACIONAIS-TELEGRAM.md` e `Validacao-visual-de-relatorios-externos.md` para consolidar Kowalski como guardião visual Bikon em materiais públicos ou semi-públicos.
+- Atualizados `BIKON/README.md` e `boletos-malote/README.md` com o avanço local da homologação Cresol sem envio externo e com artefatos brutos fora do Brain/Git.
+- Atualizado `scripts/sync-agentes-versionados.py` e regras de versionamento para excluir `.venv-*` e `homologacao-*`, removendo candidatos não rastreados antes do commit.
+- Atualizados `HEALTH.md` e `STATUS-BRAIN.md` com a execução diária, nova falha observada do `memory_search` por índice sem metadata e a higiene reforçada dos snapshots.

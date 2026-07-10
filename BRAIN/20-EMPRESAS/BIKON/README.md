@@ -24,6 +24,9 @@
 
 ## Histórico relevante
 
+- 2026-07-09: integração Instagram Bikon/Robotnik configurada em modo `draft` com Meta Graph API, token em segredo local, publicação bloqueada e crons editoriais criados para pautas diárias/semanais com aprovação humana.
+- 2026-07-09: definido Kowalski como guardião visual de materiais públicos ou semi-públicos Bikon com arte/layout, enquanto Robotnik permanece dono de pauta, copy e campanha.
+- 2026-07-09: pacote local de homologação Cresol gerado com remessa CNAB400 validada e boleto PDF conferido; nenhum upload no portal, envio ao banco ou e-mail externo foi feito.
 - 2026-07-07: VPS de destino da migração OpenClaw foi limpa antes do replanejamento; manter arquitetura final com usuário `openclaw` como dono e sem resíduos de `root`, `u4s` ou gateway duplicado.
 - 2026-06-26: API WhatsApp Bikon validada via `api.bikon.tech`, canal Atendimento Bikon registrado como `REGISTERED`, template `retomar_solicitacao` confirmado e rotina segura criada com token fora do Brain/Git.
 - 2026-06-26: verificação de segurança da Meta aprovada para retomada da integração Instagram Bikon Robotnik; publicação real permanece bloqueada até configuração segura, testes e aprovação explícita.
@@ -50,3 +53,4 @@
 - Qualquer chamada real à API GravityZone ou armazenamento de chave exige autorização explícita do Hebert e cofre local fora do Git.
 - Qualquer automação sobre contas de AD local de clientes deve começar em modo auditoria; criação, desativação, remoção de grupos ou alteração de privilégio exige aprovação explícita e escopo validado.
 - Relatórios técnicos externos devem sair com acabamento visual premium Bikon, sem caminhos internos, metadados automáticos, paginação feia ou aparência de HTML impresso.
+- Materiais públicos ou semi-públicos com logo, paleta, layout ou identidade Bikon devem passar por revisão visual do Kowalski antes da peça final; isso não substitui aprovação explícita para publicação ou envio externo.

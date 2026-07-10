@@ -18,6 +18,10 @@ EXCLUDE_DIRS = {
     '.git', 'sessions', '.openclaw', '__pycache__', '.pytest_cache',
     'node_modules', 'vendor', '.venv', '.pydeps', 'secrets',
 }
+EXCLUDE_DIR_PREFIXES = (
+    '.venv-',
+    'homologacao-',
+)
 EXCLUDE_FILE_PATTERNS = [
     '*.pyc', '*.pyo', '*.log', '*.lock',
     '*.sqlite', '*.sqlite3', '*.sqlite-shm', '*.sqlite-wal', '*.db',
@@ -49,6 +53,7 @@ def copy_tree(src: Path, dst: Path, *, extra_exclude_dirs=(), extra_exclude_rel=
             d for d in dirs
             if d not in EXCLUDE_DIRS
             and d not in extra_exclude_dirs
+            and not any(d.startswith(prefix) for prefix in EXCLUDE_DIR_PREFIXES)
             and not d.startswith('tmp-')
             and not d.startswith('tmp_')
             and d not in {'tmp', 'temp'}
@@ -108,9 +113,9 @@ Se expõe segredo, cliente ou artefato operacional final, fica fora do Git.
 
 - `.env*`, exceto `.env.example`
 - Arquivos com `token`, `secret`, `senha`, `credential`, `oauth` no nome
-- `sessions/`, `.openclaw/`, `__pycache__/`, `.pytest_cache/`, `node_modules/`, `vendor/`, `.venv/`, `.pydeps/`
+- `sessions/`, `.openclaw/`, `__pycache__/`, `.pytest_cache/`, `node_modules/`, `vendor/`, `.venv/`, `.venv-*`, `.pydeps/`
 - bancos/estado/caches locais: `*.sqlite`, `*.sqlite-shm`, `*.sqlite-wal`, `*.db`, `openclaw-workspace-state.json`
-- `relatorios/`, `pacotes-emissao/`, `email-rascunhos/`, `dados/`, `jobs/`, `api-homologacao/` quando forem artefatos de execução
+- `relatorios/`, `pacotes-emissao/`, `email-rascunhos/`, `dados/`, `jobs/`, `api-homologacao/`, `homologacao-*` quando forem artefatos de execução
 - Binários e documentos finais: `*.pdf`, `*.png`, `*.jpg`, `*.jpeg`, `*.docx`, `*.xlsx`, `*.rem`, `*.ret`, `*.zip`
 
 ## Exceção
