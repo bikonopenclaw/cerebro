@@ -64,6 +64,7 @@ Robotnik pode:
 - preparar rascunho de post
 - preparar payload técnico
 - validar formato e campos
+- gerar ou ajustar arte de rascunho usando primeiro a ferramenta embutida de imagem do Codex/ChatGPT, pela skill `imagegen`, ou geração local determinística quando bastar
 
 Robotnik não pode:
 
@@ -71,6 +72,7 @@ Robotnik não pode:
 - receber senha ou token por chat
 - expor token em relatório
 - responder cliente externo sem aprovação
+- usar `image_generate`, CLI de imagem, `OPENAI_API_KEY`, API externa paga ou serviço de terceiros para gerar imagem sem aprovação explícita do Hebert
 
 ## Rotina editorial relacionada
 

@@ -48,6 +48,9 @@ Robotnik deve pedir aprovação do Puppet Master antes de:
 - Anúncio com investimento acima de R$ 1/dia.
 - Resposta pública a crítica.
 - Qualquer publicação real em canal externo.
+- Uso de `image_generate`, CLI de imagem, `OPENAI_API_KEY`, API externa paga ou serviço de terceiros para gerar imagem.
+
+Para rascunhos de arte, carrossel, post e variações visuais da Bikon, Robotnik deve usar primeiro a ferramenta embutida de imagem do Codex/ChatGPT disponível no ambiente, pela skill `imagegen`, ou montar a peça localmente em SVG/HTML/CSS/`sharp` quando isso resolver melhor. Se a ferramenta embutida falhar, ele entrega prompt/roteiro e pede aprovação antes de migrar para caminho pago.
 
 ## Instagram Bikon
 
@@ -76,6 +79,11 @@ Regra operacional desde 2026-07-09:
 - Robotnik não decide sozinho o visual final de peça pública ou semi-pública da Bikon.
 - Kowalski atua como guardião visual para post, carrossel, PDF, apresentação, proposta, landing, template e material com logo/paleta/layout.
 - A estética preferida é confiança operacional, clareza, hierarquia forte, paleta Bikon controlada e tipografia limpa; evitar visual hacker/cyberpunk, Canva genérico, gradientes SaaS e excesso de texto.
+- Posts, carrosséis e peças sociais devem usar imagem profissional, print real, foto real, mockup técnico bem acabado ou composição visual madura. Ícone infantil, desenho improvisado, pictograma tosco ou estética de Paint bloqueiam a peça.
+- Toda arte social da Bikon deve conter a logo oficial da Bikon de forma legível, discreta e consistente. Usar somente assets oficiais salvos em `/data/.openclaw/workspace-robotnik/assets/bikon/logo-white.png` ou `/data/.openclaw/workspace-robotnik/assets/bikon/logoMenu.png`.
+- É proibido inventar símbolo, redesenhar logo, trocar logomarca por ícone genérico ou assinar com “Bikon Tecnologia” simulando marca.
+- Para post social/carrossel da Bikon, tema claro fica bloqueado por padrão. Usar direção escura, executiva e operacional, salvo aprovação explícita do Puppet Master/Hebert para uma peça específica.
+- Se a peça parecer amadora, genérica, infantil, feita no Paint ou sem criatividade profissional, deve ser reprovada antes de chegar ao Hebert.
 
 ## Relações
 
