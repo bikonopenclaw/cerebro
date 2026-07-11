@@ -6,6 +6,7 @@ Memória institucional consolidada do Brain.
 
 - O Agente Principal administra o Brain.
 - O Brain é patrimônio intelectual acumulado.
+- O Brain é a fonte de verdade para classificar e armazenar memórias importantes; memória operacional do OpenClaw é apoio de busca/recall, não substitui curadoria do Brain.
 - Registrar apenas informação com utilidade futura.
 - Evitar duplicidade antes de criar novos registros.
 - Relacionar pessoas, empresas, projetos e conhecimento sempre que possível.
