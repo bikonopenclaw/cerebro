@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## 2026-07-11, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-11.md`.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; manifesto atualizado para 2026-07-11.
+- Atualizado `scripts/sync-agentes-versionados.py` para excluir `exports/`, `drafts/`, `*.csv` e `*.svg`, impedindo versionamento de dados exportados, rascunhos visuais e imagens geradas.
+- Atualizados registros de Darth Vader, Kowalski e boletos/malote com a camada BI financeira, acesso read-only do Kowalski e ajuste do renderizador da linha digitável Cresol.
+- Atualizados registros de Robotnik/Instagram para refletir primeira evidência de rascunho editorial local e manter drafts fora do Brain/Git.
+
 ## 2026-07-10, operação financeira e runtime Codex
 
 - Registrada evolução do SQLite financeiro do Darth Vader para base gerencial com views BI.

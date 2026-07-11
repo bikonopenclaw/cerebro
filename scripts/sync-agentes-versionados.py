@@ -17,6 +17,7 @@ SNAP = BRAIN / '60-AGENTES' / 'versionados'
 EXCLUDE_DIRS = {
     '.git', 'sessions', '.openclaw', '__pycache__', '.pytest_cache',
     'node_modules', 'vendor', '.venv', '.pydeps', 'secrets',
+    'exports', 'drafts',
 }
 EXCLUDE_DIR_PREFIXES = (
     '.venv-',
@@ -30,7 +31,8 @@ EXCLUDE_FILE_PATTERNS = [
     '*token*', '*Token*', '*secret*', '*Secret*',
     '*segredo*', '*Segredo*', '*SEGREDO*', '*senha*', '*Senha*',
     '*credential*', '*Credential*', '*oauth*', '*OAuth*',
-    '*.pdf', '*.png', '*.jpg', '*.jpeg', '*.gif', '*.webp',
+    '*.pdf', '*.png', '*.jpg', '*.jpeg', '*.gif', '*.webp', '*.svg',
+    '*.csv',
     '*.docx', '*.xlsx', '*.zip', '*.rem', '*.ret',
 ]
 
@@ -116,7 +118,8 @@ Se expõe segredo, cliente ou artefato operacional final, fica fora do Git.
 - `sessions/`, `.openclaw/`, `__pycache__/`, `.pytest_cache/`, `node_modules/`, `vendor/`, `.venv/`, `.venv-*`, `.pydeps/`
 - bancos/estado/caches locais: `*.sqlite`, `*.sqlite-shm`, `*.sqlite-wal`, `*.db`, `openclaw-workspace-state.json`
 - `relatorios/`, `pacotes-emissao/`, `email-rascunhos/`, `dados/`, `jobs/`, `api-homologacao/`, `homologacao-*` quando forem artefatos de execução
-- Binários e documentos finais: `*.pdf`, `*.png`, `*.jpg`, `*.jpeg`, `*.docx`, `*.xlsx`, `*.rem`, `*.ret`, `*.zip`
+- Dados exportados e rascunhos gerados: `exports/`, `drafts/`, `*.csv`
+- Binários, imagens e documentos finais: `*.pdf`, `*.png`, `*.jpg`, `*.jpeg`, `*.svg`, `*.docx`, `*.xlsx`, `*.rem`, `*.ret`, `*.zip`
 
 ## Exceção
 

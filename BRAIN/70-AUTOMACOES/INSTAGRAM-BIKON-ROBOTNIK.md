@@ -4,7 +4,7 @@
 nome: Instagram Bikon Robotnik
 status: configurado_em_draft
 responsavel: Robotnik sob coordenação do Puppet Master
-ultima_revisao: 2026-07-10
+ultima_revisao: 2026-07-11
 fonte: conversa Hebert/Puppet Master e workspace Robotnik
 tags: [instagram, meta, robotnik, marketing, bikon]
 ```
@@ -82,6 +82,8 @@ Em 2026-07-09, foram criados crons do Robotnik para cadência editorial:
 - semanal, sexta às 16:00 America/Sao_Paulo: propor 5 pautas para a semana seguinte;
 - entrega esperada no Telegram: arte/carrossel anexado, copy, legenda e pedido de aprovação;
 - publicação, agendamento ou envio externo continuam bloqueados até aprovação explícita do Hebert/Puppet Master.
+
+Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça não representa publicação, agendamento ou aprovação; artefatos gerados de draft permanecem fora do Brain/Git.
 
 ## Próximos passos
 

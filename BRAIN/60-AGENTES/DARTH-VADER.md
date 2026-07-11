@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: agente_operacional
-fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17 e snapshot versionado em 2026-07-09
+fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17 e snapshot versionado em 2026-07-11
 confiabilidade: alta
-ultima_revisao: 2026-07-09
+ultima_revisao: 2026-07-11
 tags: [agente, financeiro, faturamento, nfse, boleto, remessa, cresol-api]
 ```
 
@@ -56,6 +56,21 @@ Pendências:
 
 - Consultar evolução de status do título de homologação antes de usar ocorrências/conciliação.
 - Confirmar mapeamento definitivo de juros/multa no payload produtivo: Bikon usa multa de 2,00% após vencimento e juros de 1% ao mês proporcional ao dia.
+
+## BI financeiro Bikon, 2026-07-10/11
+
+A workspace da Darth Vader passou a manter camada BI sobre o SQLite financeiro de boletos/NFS-e da Bikon, com views para:
+
+- boletos;
+- contas a receber;
+- KPIs mensais;
+- clientes;
+- remessas;
+- retornos.
+
+Essa camada serve para consulta gerencial, relatório e conferência. Exports CSV gerados a partir dessas views são dados derivados/sensíveis e não devem ser versionados no Brain/Git.
+
+Kowalski pode consultar a base em modo somente leitura para relatórios. Escrita, alteração de schema, importação de retorno, baixa, pagamento, NFS-e, boleto e remessa continuam exclusivamente com Darth Vader.
 
 ## Relações
 

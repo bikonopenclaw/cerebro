@@ -5,7 +5,7 @@ categoria: agente_operacional
 papel: marketing, conteúdo e campanhas
 fonte: configuração OpenClaw e AGENTS.md do workspace Robotnik em 2026-06-25
 confiabilidade: alta
-ultima_revisao: 2026-07-10
+ultima_revisao: 2026-07-11
 tags: [agente, marketing, robotnik, instagram, conteudo]
 ```
 
@@ -71,6 +71,8 @@ Em 2026-07-09, foram criados crons para cadência editorial do Robotnik:
 - sexta, 16:00 America/Sao_Paulo: 5 pautas para a semana seguinte;
 - entrega deve vir em rascunho, com arte/carrossel e copy para revisão;
 - Puppet Master revisa decisão final e leva ao Hebert quando houver publicação/envio externo.
+
+Em 2026-07-10, a primeira evidência de rascunho editorial apareceu no workspace do Robotnik para tema KEV/PME. Rascunhos visuais, SVGs, HTML renderizado, pacotes Node e variações geradas permanecem como artefatos de execução e não entram no snapshot versionado do Brain.
 
 ## Revisão visual Bikon
 

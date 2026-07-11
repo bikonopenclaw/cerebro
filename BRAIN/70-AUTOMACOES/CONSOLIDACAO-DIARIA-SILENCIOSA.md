@@ -6,7 +6,7 @@ status: ativa
 responsavel: Agente Principal / Puppet Master
 frequencia: diária
 horario_referencia_utc: "18:05"
-ultima_revisao: 2026-06-26
+ultima_revisao: 2026-07-11
 fonte: cron d95bbe73-24d9-4e2b-ba57-0032082bb54b e BRAIN/99-SISTEMA/ROTINA-CONSOLIDACAO.md
 ```
 
@@ -26,6 +26,7 @@ Executar consolidação diária do Brain sem interromper Hebert, registrando ape
 - Atualizar `CHANGELOG.md` e `HEALTH.md` quando houver impacto.
 - Fazer commit local no repositório Brain quando houver alterações, incluindo mudanças nos snapshots versionados dos agentes.
 - Não versionar segredos, `.env` reais, sessões, caches, relatórios finais, PDFs, imagens, artefatos gerados ou dados brutos sensíveis dos agentes.
+- A política de snapshot exclui `exports/`, `drafts/`, `*.csv` e `*.svg`, além dos demais binários/artefatos já bloqueados.
 
 ## Arquivos relacionados
 

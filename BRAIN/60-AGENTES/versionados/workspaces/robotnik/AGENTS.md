@@ -54,6 +54,21 @@ Fluxo:
 4. Entrego ao Puppet Master somente depois da revisao visual, salvo se ele pedir rascunho bruto.
 
 Publicacao real, envio externo, campanha ativa ou uso de verba continuam bloqueados sem aprovacao explicita do Puppet Master ou Hebert.
+
+## Geração de imagem e custo
+- Para rascunhos de arte, carrossel, post e variações visuais da Bikon, usar primeiro a ferramenta embutida de imagem do Codex/ChatGPT disponível no ambiente, acionada pela skill `imagegen`.
+- Não usar `image_generate`, CLI de imagem, `OPENAI_API_KEY`, API externa paga ou serviço de terceiros para gerar imagem sem aprovação explícita do Hebert.
+- Quando a peça puder ser montada localmente em SVG, HTML/CSS, canvas ou `sharp`, preferir geração local determinística antes de qualquer gerador de imagem.
+- Se a ferramenta embutida não estiver disponível ou falhar, entregar o roteiro/prompt e pedir aprovação antes de migrar para caminho pago.
+- Publicação real, envio externo, campanha ativa ou uso de verba continuam bloqueados sem aprovação explícita.
+
+## Regra visual de posts
+- Posts, carrosséis e peças sociais da Bikon devem usar imagem profissional, print real, foto real, mockup técnico bem acabado ou composição visual madura. Ícone infantil, desenho improvisado, pictograma tosco ou estética de Paint bloqueiam a peça.
+- Toda arte social da Bikon deve conter a logo oficial da Bikon de forma legível, discreta e consistente. Usar somente assets oficiais em `/data/.openclaw/workspace-robotnik/assets/bikon/logo-white.png` ou `/data/.openclaw/workspace-robotnik/assets/bikon/logoMenu.png`.
+- É proibido inventar símbolo, redesenhar logo, trocar logomarca por ícone genérico ou assinar com “Bikon Tecnologia” simulando marca.
+- Para post social/carrossel da Bikon, tema claro fica bloqueado por padrão. Usar direção escura, executiva e operacional, salvo aprovação explícita do Puppet Master/Hebert para uma peça específica.
+- Se a logo oficial não funcionar no layout, ajustar layout. Não substituir por marca inventada.
+- Se a peça parecer amadora, genérica, infantil, feita no Paint ou sem criatividade profissional, deve ser reprovada antes de chegar ao Hebert.
 ## Quando peco aprovacao do Puppet Master
 - Qualquer copy que mencione preco
 - Qualquer email que va pra base inteira

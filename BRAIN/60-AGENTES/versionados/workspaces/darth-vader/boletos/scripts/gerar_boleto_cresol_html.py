@@ -281,6 +281,13 @@ html, body {{ margin:0; padding:0; background:white; color:#000; }}
         align = {'haRight': 'right', 'haCenter': 'center'}.get(memo.attrib.get('HAlign'), 'left')
         valign = memo.attrib.get('VAlign')
         display = 'flex;align-items:center;' if valign == 'vaCenter' else ''
+        if text == fields.get('LINHA_DIGITAVEL'):
+            # O template oficial deixa o campo no limite; no Chromium o quinto bloco era cortado.
+            # Mantem o mesmo conteudo calculado, mas reduz a fonte e impede quebra/overflow.
+            size = min(size, 14)
+            left = min(left, 222)
+            w = max(w, width - left - 2)
+            display = 'white-space:nowrap;line-height:1;'
         style = f'left:{left}px;top:{top}px;width:{w}px;height:{h}px;font-family:{font}, Arial, sans-serif;font-size:{size}px;font-weight:{weight};text-align:{align};{display}'
         items.append(f'<div class="memo" style="{style}">{html.escape(text)}</div>')
 

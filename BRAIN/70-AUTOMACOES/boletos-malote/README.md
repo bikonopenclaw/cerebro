@@ -5,7 +5,7 @@ Backup e documentação da futura habilidade do Darth Vader para gerar remessa/m
 Espelho operacional:
 `/data/.openclaw/workspace-darth-vader/boletos`
 
-## Estado em 2026-07-10
+## Estado em 2026-07-11
 
 - Banco identificado nos modelos: Cresol, código 133.
 - Há modelo de boleto e template CSV em `modelos/`.
@@ -20,6 +20,9 @@ Espelho operacional:
 - Artefatos de homologação da API, como payloads, respostas e PDFs oficiais baixados, devem ficar no workspace operacional da Darth Vader e não no Git do Brain.
 - Em 2026-07-09, foi gerado pacote local de homologação Cresol com remessa CNAB400 validada e boleto PDF renderizado/conferido após correção do renderizador; nada foi enviado ao portal, por e-mail ou a cliente.
 - Diretórios locais de homologação e ambientes virtuais (`homologacao-*`, `.venv-*`) foram classificados como artefatos de execução e excluídos dos snapshots versionados do Brain.
+- Em 2026-07-10/11, o renderizador HTML do boleto Cresol recebeu ajuste específico para impedir corte do quinto bloco da linha digitável no Chromium, preservando o conteúdo calculado e reduzindo apenas fonte/largura quando necessário.
+- Foi criada camada BI consultável sobre o SQLite financeiro da Darth Vader, com views de boletos, contas a receber, KPI mensal, clientes, remessas e retornos. Exports CSV continuam tratados como artefatos/dados derivados e não entram no Brain/Git.
+- Kowalski tem acesso somente leitura à base financeira gerencial para relatórios e conferências; escrita, importação de retorno, baixa, NFS-e, boleto e remessa continuam sob responsabilidade da Darth Vader.
 
 ## Pendências antes de uso real
 
@@ -35,6 +38,7 @@ Confirmar com o banco/contrato:
 8. controle aprovado de `seq_remessa`, `numero_documento` e `nosso_numero` antes de gerar arquivo de produção.
 9. mapeamento final de juros/multa para API Cresol em produção, preservando a regra Bikon de multa de 2,00% e juros de 1% ao mês proporcional ao dia.
 10. aprovação explícita do Hebert antes de upload no portal Cresol, envio ao banco, produção, baixa por API ou comunicação externa.
+11. importar retornos Cresol no SQLite financeiro somente pela Darth Vader, com validação controlada antes de qualquer baixa operacional.
 
 ## Guardrail
 
