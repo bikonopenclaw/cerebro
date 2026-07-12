@@ -25,7 +25,12 @@ Memória institucional consolidada do Brain.
 - Retorno bancário CNAB400 serve para parser/conciliação quando sanitizado, mas não valida remessa, nosso número, documento ou sequencial.
 - Relatórios externos devem ser revisados visualmente antes da entrega, removendo metadados de navegador, cabeçalhos/rodapés automáticos e aparência de HTML impresso.
 - Em canais operacionais, grupo permitido e remetente autorizado são dimensões diferentes; `groupAllowFrom` deve representar remetente autorizado.
+- Artefatos gerados por execução, homologação, exportação ou rascunho devem ficar fora do Brain/Git; registrar apenas decisões, estado sanitizado e guardrails.
+- Ausência de evidência consultável em ferramenta operacional não deve ser interpretada como sucesso nem falha confirmada; quando o dado for necessário, instrumentar coleta explícita.
+- Acesso financeiro somente leitura para relatório ou BI não concede permissão operacional para escrita, baixa, emissão, boleto, remessa, retorno ou comunicação externa.
+- Homologação bancária, API funcional, boleto renderizado ou pacote local validado não autorizam produção, upload, baixa ou envio externo sem aprovação explícita e procedimento próprio.
 
 ## Padrões consolidados mensalmente
 
 - Padrão mensal de junho/2026: segurança operacional antes de escala; automações podem preparar e validar, mas impactos fiscais, bancários, comunicacionais, publicações e alterações de identidade exigem confirmação explícita quando não autorizados previamente.
+- Padrão semanal 2026-W28: maturidade operacional antes de escala; snapshots seguros excluem artefatos derivados, integrações externas permanecem em rascunho/homologação até aprovação, e decisões operacionais dependem de evidência explícita.

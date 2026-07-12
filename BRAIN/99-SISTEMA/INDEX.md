@@ -33,6 +33,7 @@ Mapa geral do Brain.
 - `01-DIARIO/Semanal/2026-W24.md`: primeira consolidação semanal do Brain.
 - `01-DIARIO/Semanal/2026-W25.md`: consolidação semanal com padrões de escopo de canais, confirmação antes de impacto, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
 - `01-DIARIO/Semanal/2026-W26.md`: consolidação semanal com padrões de segurança operacional antes de escala, teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, relatórios externos e canais com remetente autorizado.
+- `01-DIARIO/Semanal/2026-W28.md`: consolidação semanal com padrões de artefatos gerados fora do Brain/Git, evidência explícita em monitoramento, separação entre consulta gerencial e permissão operacional, homologação bancária sem produção automática e migração VPS limpa.
 - `01-DIARIO/2026/2026-07-03.md`: consolidação diária com snapshots versionados, KPIs WhatsApp/Bitdefender, limitação de tickets NinjaOne, falhas por limite de uso e saneamento de PDFs/artefatos no Git.
 - `01-DIARIO/2026/2026-07-08.md`: consolidação diária com limpeza pré-migração da VPS, riscos operacionais BIKON de 06/07/2026, atualização de snapshots e pendência de `memory_search`.
 - `01-DIARIO/2026/2026-07-09.md`: consolidação diária com Cresol API em homologação, canal Telegram isolado do Kowalski e saneamento adicional da rotina de snapshot.
@@ -50,6 +51,10 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Governanca-antes-de-automacao-de-identidade.md`: aprendizado permanente para iniciar automações de identidade por matriz, auditoria e aprovação.
 - `40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md`: padrão de revisão visual para PDFs e pareceres externos.
 - `40-CONHECIMENTO/Operacional/Canais-com-escopo-e-remetente-autorizados.md`: aprendizado sobre separar grupo/canal permitido de remetente autorizado.
+- `40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md`: guardrail para manter exports, drafts, bancos locais, estados, ambientes virtuais e artefatos de homologação fora do Brain/Git.
+- `40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md`: aprendizado para não inferir sucesso ou falha quando ferramentas de monitoramento não expõem evidência explícita.
+- `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
+- `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
 - `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, validação e rollback.
 - `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader, incluindo NFS-e, boletos, remessa e Cresol API com guardrails.

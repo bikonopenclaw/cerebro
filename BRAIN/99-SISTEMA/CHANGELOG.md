@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## 2026-07-12, consolidação semanal
+
+- Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W28.md` cobrindo daily notes disponíveis de 2026-07-06 a 2026-07-12.
+- Identificados padrões recorrentes: artefatos gerados fora do Brain/Git, separação entre rascunho/homologação/produção, homologação bancária sem autorização produtiva, consulta gerencial sem permissão operacional, ausência de evidência em monitoramento e migração VPS limpa.
+- Elevados aprendizados para notas permanentes em `BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md`, `BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md`, `BRAIN/40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md` e `BRAIN/40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`.
+- Atualizados `INDEX.md`, `MEMORY.md` e `HEALTH.md`.
+- Nenhum arquivamento realizado; registros da semana ainda são recentes, conectados e com impacto operacional claro.
+
 ## 2026-07-11, consolidação diária
 
 - Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-11.md`.
