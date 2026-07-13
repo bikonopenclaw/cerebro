@@ -217,12 +217,31 @@ def status_code_severity(code: str | None) -> int:
     return 0
 
 
+def int_or_zero(value) -> int:
+    try:
+        return int(value or 0)
+    except (TypeError, ValueError):
+        return 0
+
+
+def status_is_completed(code: str | None) -> bool:
+    return str(code) == '5'
+
+
+def current_status_has_issue(code: str | None, errors) -> bool:
+    # Historical errors can remain in counters after a later successful run.
+    # If the latest status is Completed, treat the backup as recovered.
+    if status_is_completed(code):
+        return False
+    return status_code_severity(code) >= 3 or int_or_zero(errors) > 0
+
+
 def source_failures(s: dict) -> list[dict]:
     failures = []
     for prefix, nome in FONTES:
         code = str(s.get(prefix + '0', ''))
-        err = int(s.get(prefix + '7') or 0)
-        if status_code_severity(code) >= 3 or err > 0:
+        err = int_or_zero(s.get(prefix + '7'))
+        if current_status_has_issue(code, err):
             failures.append({
                 'fonte': nome,
                 'status': status_label(code),
@@ -235,13 +254,8 @@ def source_failures(s: dict) -> list[dict]:
 
 def should_ticket(row) -> bool:
     s = flatten_settings(row)
-    if classificar(row) in {'Crítico', 'Atenção'}:
+    if current_status_has_issue(s.get('T0'), s.get('T7')):
         return True
-    try:
-        if int(s.get('T7') or 0) > 0:
-            return True
-    except ValueError:
-        pass
     return bool(source_failures(s))
 
 
@@ -306,6 +320,73 @@ Deduplicação: este ticket é aberto apenas uma vez por cliente/dispositivo enq
     return payload
 
 
+def status_name(ticket: dict | None) -> str:
+    status = (ticket or {}).get('status')
+    if isinstance(status, dict):
+        return str(status.get('name') or '').upper()
+    return str(status or '').upper()
+
+
+def ticket_is_closed(ticket: dict | None) -> bool:
+    return status_name(ticket) in {'RESOLVED', 'CLOSED'}
+
+
+def resolve_ticket(ticket_id: int | str | None) -> dict:
+    if not ticket_id:
+        raise RuntimeError('Sem ticket_id para fechar no NinjaOne')
+    ticket = ninja_request(f'ticketing/ticket/{ticket_id}')
+    if ticket_is_closed(ticket):
+        return {'ticket_id': ticket_id, 'status': status_name(ticket), 'already_closed': True}
+
+    # NinjaOne Public API exposes PUT /v2/ticketing/ticket/{ticketId} for update.
+    # The update endpoint expects a ticket-shaped payload. Keep existing fields and only
+    # change status so we do not overwrite assignment, client, priority, severity or tags.
+    full_payload = {
+        'subject': ticket.get('subject'),
+        'clientId': ticket.get('clientId'),
+        'ticketFormId': ticket.get('ticketFormId'),
+        'type': ticket.get('type'),
+        'status': 'RESOLVED',
+        'severity': ticket.get('severity'),
+        'priority': ticket.get('priority'),
+        'tags': ticket.get('tags') or [],
+    }
+    for optional_key in ('nodeId', 'locationId', 'assignedAppUserId', 'requesterUid', 'followupTime', 'version'):
+        if ticket.get(optional_key) is not None:
+            full_payload[optional_key] = ticket.get(optional_key)
+
+    attempts = [
+        full_payload,
+        {'status': 'RESOLVED'},
+        {'statusId': 5000},
+    ]
+    errors = []
+    for payload in attempts:
+        try:
+            ninja_request(f'ticketing/ticket/{ticket_id}', method='PUT', payload=payload)
+            updated = ninja_request(f'ticketing/ticket/{ticket_id}')
+            return {'ticket_id': ticket_id, 'status': status_name(updated), 'already_closed': False}
+        except Exception as exc:
+            errors.append(str(exc))
+    raise RuntimeError(f'Nao consegui fechar ticket {ticket_id}: ' + ' | '.join(errors[-2:]))
+
+
+def recovery_action(cliente: str, dispositivo: str, existing: dict, s: dict, args) -> dict:
+    action = {
+        'action': 'would_close' if not args.create else 'close',
+        'cliente': cliente,
+        'dispositivo': dispositivo,
+        'ticket_id': existing.get('ticket_id'),
+        'status_atual': status_label(s.get('T0')),
+        'ultimo_sucesso': ts_to_br(s.get('TL')),
+        'ultima_conclusao': ts_to_br(s.get('TO')),
+    }
+    if args.create:
+        close_result = resolve_ticket(existing.get('ticket_id'))
+        action.update(close_result)
+    return action
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description='Monitora ARX Backup e cria tickets NinjaOne com deduplicação')
     parser.add_argument('--create', action='store_true', help='Cria tickets reais. Sem isso, roda em dry-run.')
@@ -323,7 +404,7 @@ def main() -> int:
     rows = data.get('result', {}).get('result') or []
     # Regra operacional atual: todos os tickets ARX abrem no cliente interno 00 - Bikon Tech.
     # Não tentamos mapear organização/dispositivo final no NinjaOne para evitar chamado no cliente errado.
-    summary = {'mode': 'create' if args.create else 'dry-run', 'checked': len(rows), 'issues': 0, 'created': 0, 'deduped': 0, 'resolved': 0, 'errors': []}
+    summary = {'mode': 'create' if args.create else 'dry-run', 'checked': len(rows), 'issues': 0, 'created': 0, 'deduped': 0, 'resolved': 0, 'closed': 0, 'errors': []}
     active_keys = set()
     actions = []
 
@@ -336,9 +417,27 @@ def main() -> int:
             continue
         if not should_ticket(row):
             if key in issues and issues[key].get('active'):
-                issues[key]['active'] = False
-                issues[key]['resolved_at'] = now_iso()
-                summary['resolved'] += 1
+                existing = issues[key]
+                try:
+                    action = recovery_action(cliente, dispositivo, existing, s, args)
+                    if args.create:
+                        existing['active'] = False
+                        existing['resolved_at'] = now_iso()
+                        existing['resolved_status'] = status_label(s.get('T0'))
+                        existing['resolved_last_success'] = ts_to_br(s.get('TL'))
+                        summary['closed'] += 1
+                    summary['resolved'] += 1
+                    actions.append(action)
+                except Exception as exc:
+                    action = {
+                        'action': 'close_error',
+                        'cliente': cliente,
+                        'dispositivo': dispositivo,
+                        'ticket_id': existing.get('ticket_id'),
+                        'error': str(exc),
+                    }
+                    summary['errors'].append(action)
+                    append_log({'event': 'ticket_close_error', **action})
             continue
 
         status = classificar(row)
@@ -353,7 +452,8 @@ def main() -> int:
         if existing and existing.get('active') and existing.get('signature') == sig and existing.get('ticket_id'):
             summary['deduped'] += 1
             actions.append({'action': 'deduped', 'cliente': cliente, 'dispositivo': dispositivo, 'ticket_id': existing.get('ticket_id'), 'status': status})
-            existing['last_seen_at'] = now_iso()
+            if args.create:
+                existing['last_seen_at'] = now_iso()
             continue
 
         org = None
@@ -397,8 +497,9 @@ def main() -> int:
             pass
         actions.append(action)
 
-    state['updated_at'] = now_iso()
-    write_json(STATE_PATH, state)
+    if args.create:
+        state['updated_at'] = now_iso()
+        write_json(STATE_PATH, state)
     append_log({'event': 'run', 'summary': summary, 'actions': actions})
     print(json.dumps({'summary': summary, 'actions': actions}, ensure_ascii=False, indent=2))
     return 1 if summary['errors'] else 0

@@ -3,6 +3,8 @@
 ## Objetivo
 
 Abrir tickets no NinjaOne automaticamente quando o ARX Backup/Cove indicar backup em Atenção ou Crítico.
+Evitar falso negativo: se houve falha no histórico, mas a checagem atual mostra backup concluído, não abre ticket.
+Se havia ticket ativo e a checagem atual mostra recuperação, fecha o ticket no NinjaOne como `RESOLVED`.
 
 ## Scripts
 
@@ -34,6 +36,13 @@ Estado em:
 `jobs/arx-ninjaone-ticket-state.json`
 
 A deduplicação evita abrir ticket repetido para o mesmo cliente/dispositivo/problema enquanto o problema continuar ativo.
+
+## Regra de recuperação
+
+- Ticket só deve existir enquanto a falha atual persistir.
+- Falha histórica em `TB`, `FB`, `SB`, `QB`, `HB` ou `WB` não basta para abrir ticket se o status atual já voltou para `Concluído (5)`.
+- Quando um cliente/dispositivo com ticket ativo volta para `Concluído (5)`, o monitor fecha o ticket como `RESOLVED` e marca o item como inativo no estado local.
+- Dry-run mostra `would_close`; produção com `--create` executa o fechamento real.
 
 ## Mapa/regra de cliente
 
