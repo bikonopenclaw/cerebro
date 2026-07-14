@@ -171,7 +171,9 @@ Para gerar relatório operacional atual:
 /data/.openclaw/workspace-kowalski/arx-backup/scripts/gerar_relatorio_arx.py
 ```
 
-Para monitoramento diário ARX Backup -> tickets NinjaOne:
+Para monitoramento diário ARX Backup -> tickets NinjaOne, usar a skill canônica
+`arx-ninjaone-ticketing`. Esta skill `arx-backup` só mantém os caminhos
+operacionais para consulta e relatórios.
 
 ```bash
 # Dry-run, não cria chamados
@@ -193,8 +195,11 @@ Regras da automação NinjaOne:
 - Por regra do Hebert, todos os tickets ARX Backup devem abrir no cliente interno `00 - Bikon Tech`, nunca no cliente final. O cliente real fica no título e na descrição.
 - Título padrão do ticket: `Alerta de ARX Backup - Nome do cliente`.
 - Não vincular `nodeId` do cliente final sem nova ordem explícita.
+- Ao fechar ticket automaticamente, enviar confirmação para o Hebert no Telegram.
 - Logs ficam em `/data/.openclaw/workspace-kowalski/arx-backup/jobs/arx-ninjaone-ticket-log.jsonl` e `/data/.openclaw/workspace-kowalski/arx-backup/jobs/arx-ninjaone-ticket-run.log`.
-- Cron OpenClaw: `ARX Backup diário -> tickets NinjaOne`, id `2c387780-44b2-4ba6-9f67-0ab3d844b75a`, diariamente às `08:15 America/Sao_Paulo`.
+- Cron OpenClaw principal: `ATIVO - ARX -> tickets NinjaOne diario 01h15 seg-qui`, id `2c387780-44b2-4ba6-9f67-0ab3d844b75a`, terça a sexta às `01:15 America/Sao_Paulo`.
+- Executor shell espelhado: id `bd9fe2f3-baa7-455b-aeab-6c51e4b9e4d9`, mesma agenda, agente main.
+- Cron de sábado: id `a522de30-a6a0-4690-acff-2984ee9463f4`, sábado às `01:15 America/Sao_Paulo`.
 
 Saídas esperadas:
 

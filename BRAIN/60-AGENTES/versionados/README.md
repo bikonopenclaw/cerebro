@@ -12,6 +12,7 @@ Este diretório guarda snapshots controlados do código-fonte operacional dos ag
 
 - `agents/<agente>/agent`: definição e skills instaladas do agente.
 - `workspaces/<agente>/`: arquivos operacionais de código, skills, scripts, docs, templates e exemplos não sensíveis.
+- `workspaces/main/skills`: skills globais aprovadas do workspace principal.
 - Manifesto com data, origem e regras de exclusão.
 
 ## O que não entra

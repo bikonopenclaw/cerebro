@@ -88,6 +88,7 @@ Este diretório guarda snapshots controlados do código-fonte operacional dos ag
 
 - `agents/<agente>/agent`: definição e skills instaladas do agente.
 - `workspaces/<agente>/`: arquivos operacionais de código, skills, scripts, docs, templates e exemplos não sensíveis.
+- `workspaces/main/skills`: skills globais aprovadas do workspace principal.
 - Manifesto com data, origem e regras de exclusão.
 
 ## O que não entra
@@ -167,6 +168,11 @@ def main() -> int:
         extra_exclude_dirs={'logs'},
         extra_exclude_rel={'instagram-bikon/secrets', 'instagram-bikon/logs'},
     )
+    copy_tree(
+        Path('/data/.openclaw/workspace/skills'),
+        SNAP / 'workspaces' / 'main' / 'skills',
+        extra_exclude_dirs={'_quarantine'},
+    )
 
     # Remove configs reais e substitui por exemplo seguro quando necessário.
     for path in [
@@ -206,6 +212,7 @@ Gerado em: {dt.datetime.now(dt.UTC).replace(microsecond=0).isoformat()}
 - Darth Vader workspace: /data/.openclaw/workspace-darth-vader
 - Robotnik agent: /data/.openclaw/agents/robotnik/agent
 - Robotnik workspace: /data/.openclaw/workspace-robotnik
+- Main workspace skills: /data/.openclaw/workspace/skills
 
 ## Destino
 

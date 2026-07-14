@@ -9,6 +9,7 @@ import argparse
 import json
 import os
 import re
+import subprocess
 import sys
 import unicodedata
 from datetime import datetime, timezone
@@ -23,6 +24,8 @@ CLIENT_MAP_PATH = ROOT / 'config' / 'ninjaone-client-map.json'
 TOKEN_PATH = NINJA_ROOT / 'config' / 'oauth-user-context-token.json'
 NINJA_ENV = NINJA_ROOT / 'config' / '.env'
 DEFAULT_NINJA_CLIENT_ID = 1  # 00 - Bikon Tech. Regra operacional: todo alerta ARX abre aqui para triagem interna.
+TELEGRAM_NOTIFY_TARGET = os.getenv('ARX_TICKET_NOTIFY_TELEGRAM_TARGET', '5760416853')
+TELEGRAM_NOTIFY_ACCOUNT = os.getenv('ARX_TICKET_NOTIFY_TELEGRAM_ACCOUNT', 'default')
 
 sys.path.insert(0, str(ROOT / 'scripts'))
 from gerar_relatorio_arx import (  # noqa: E402
@@ -371,6 +374,30 @@ def resolve_ticket(ticket_id: int | str | None) -> dict:
     raise RuntimeError(f'Nao consegui fechar ticket {ticket_id}: ' + ' | '.join(errors[-2:]))
 
 
+def notify_ticket_closed(action: dict) -> dict:
+    message = (
+        "ARX Backup: ticket fechado automaticamente no NinjaOne\n"
+        f"Ticket: {action.get('ticket_id')}\n"
+        f"Cliente: {action.get('cliente')}\n"
+        f"Dispositivo: {action.get('dispositivo')}\n"
+        f"Status ARX atual: {action.get('status_atual')}\n"
+        f"Último backup válido: {action.get('ultimo_sucesso')}"
+    )
+    cmd = [
+        os.getenv('OPENCLAW_BIN', 'openclaw'),
+        'message', 'send',
+        '--channel', 'telegram',
+        '--account', TELEGRAM_NOTIFY_ACCOUNT,
+        '--target', TELEGRAM_NOTIFY_TARGET,
+        '--message', message,
+        '--json',
+    ]
+    result = subprocess.run(cmd, text=True, capture_output=True, timeout=45)
+    if result.returncode != 0:
+        raise RuntimeError((result.stderr or result.stdout or 'falha sem saída')[-1000:])
+    return {'telegram_notified': True}
+
+
 def recovery_action(cliente: str, dispositivo: str, existing: dict, s: dict, args) -> dict:
     action = {
         'action': 'would_close' if not args.create else 'close',
@@ -384,6 +411,8 @@ def recovery_action(cliente: str, dispositivo: str, existing: dict, s: dict, arg
     if args.create:
         close_result = resolve_ticket(existing.get('ticket_id'))
         action.update(close_result)
+        if not close_result.get('already_closed'):
+            action.update(notify_ticket_closed(action))
     return action
 
 

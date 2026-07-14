@@ -1,6 +1,6 @@
 # Manifesto dos snapshots dos agentes
 
-Gerado em: 2026-07-14T11:43:25+00:00
+Gerado em: 2026-07-14T13:22:36+00:00
 
 ## Origens
 
@@ -10,6 +10,7 @@ Gerado em: 2026-07-14T11:43:25+00:00
 - Darth Vader workspace: /data/.openclaw/workspace-darth-vader
 - Robotnik agent: /data/.openclaw/agents/robotnik/agent
 - Robotnik workspace: /data/.openclaw/workspace-robotnik
+- Main workspace skills: /data/.openclaw/workspace/skills
 
 ## Destino
 

@@ -14,9 +14,11 @@ Se havia ticket ativo e a checagem atual mostra recuperação, fecha o ticket no
 
 ## Cron OpenClaw
 
-- Nome: `ARX Backup diário -> tickets NinjaOne`
+- Nome: `ATIVO - ARX -> tickets NinjaOne diario 01h15 seg-qui`
 - ID: `2c387780-44b2-4ba6-9f67-0ab3d844b75a`
-- Agenda: todo dia às `08:15 America/Sao_Paulo`
+- Agenda: terça a sexta às `01:15 America/Sao_Paulo`, expressão `15 1 * * 2-5`
+- Executor shell espelhado: `bd9fe2f3-baa7-455b-aeab-6c51e4b9e4d9`, mesma agenda, agente main
+- Sábado: `a522de30-a6a0-4690-acff-2984ee9463f4`, às `01:15 America/Sao_Paulo`, expressão `15 1 * * 6`
 - Delivery: sem anúncio em sucesso
 
 ## Segurança
@@ -42,6 +44,8 @@ A deduplicação evita abrir ticket repetido para o mesmo cliente/dispositivo/pr
 - Ticket só deve existir enquanto a falha atual persistir.
 - Falha histórica em `TB`, `FB`, `SB`, `QB`, `HB` ou `WB` não basta para abrir ticket se o status atual já voltou para `Concluído (5)`.
 - Quando um cliente/dispositivo com ticket ativo volta para `Concluído (5)`, o monitor fecha o ticket como `RESOLVED` e marca o item como inativo no estado local.
+- Todo fechamento automático real deve enviar confirmação para o Hebert no Telegram.
+- Se a confirmação Telegram falhar depois do fechamento, o monitor registra erro e deixa o cron alertar.
 - Dry-run mostra `would_close`; produção com `--create` executa o fechamento real.
 
 ## Mapa/regra de cliente
