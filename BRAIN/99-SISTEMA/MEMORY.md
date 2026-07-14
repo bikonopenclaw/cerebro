@@ -24,11 +24,14 @@ Memória institucional consolidada do Brain.
 - Em governança de identidade BIKON ↔ AD local de clientes, começar por auditoria e matriz aprovada; não criar, desativar ou alterar contas/grupos sem validação humana.
 - Retorno bancário CNAB400 serve para parser/conciliação quando sanitizado, mas não valida remessa, nosso número, documento ou sequencial.
 - Relatórios externos devem ser revisados visualmente antes da entrega, removendo metadados de navegador, cabeçalhos/rodapés automáticos e aparência de HTML impresso.
+- Relatórios EOL devem usar o `Modelo de Relatório EOL Bikon`; software EOL vira ação interna Bikon, compra física entra apenas quando houver hardware classificado para substituição, e PDFs finais não entram no Brain/Git.
 - Em canais operacionais, grupo permitido e remetente autorizado são dimensões diferentes; `groupAllowFrom` deve representar remetente autorizado.
 - Artefatos gerados por execução, homologação, exportação ou rascunho devem ficar fora do Brain/Git; registrar apenas decisões, estado sanitizado e guardrails.
 - Ausência de evidência consultável em ferramenta operacional não deve ser interpretada como sucesso nem falha confirmada; quando o dado for necessário, instrumentar coleta explícita.
 - Acesso financeiro somente leitura para relatório ou BI não concede permissão operacional para escrita, baixa, emissão, boleto, remessa, retorno ou comunicação externa.
 - Homologação bancária, API funcional, boleto renderizado ou pacote local validado não autorizam produção, upload, baixa ou envio externo sem aprovação explícita e procedimento próprio.
+- Promessa de retorno sem resposta imediata deve gerar follow-up agendado no Telegram antes de encerrar a interação.
+- Bitdefender -> NinjaOne só deve abrir ticket real para critérios aprovados de alta confiança; endpoint sem proteção exige recência inferior a 30 dias, e auto-fechamento depende de nova coleta confirmando resolução.
 
 ## Padrões consolidados mensalmente
 

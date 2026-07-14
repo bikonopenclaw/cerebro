@@ -2,12 +2,12 @@
 
 ```yaml
 nome: Migração Hostinger VPS / OpenClaw
-status: planejamento
+status: validacao
 responsavel: Puppet Master
 inicio: 2026-07-06
 fim:
 prioridade: alta
-ultima_revisao: 2026-07-08
+ultima_revisao: 2026-07-14
 tags: [openclaw, vps, hostinger, migracao, infraestrutura]
 ```
 
@@ -34,14 +34,26 @@ Migrar a estrutura OpenClaw para VPS Hostinger preservando continuidade operacio
 - Usuário `openclaw` mantido com sudo.
 - Disco do destino voltou para aproximadamente 94 GB livres.
 
+## Estado observado em 2026-07-13
+
+Validação operacional do Claw3D/OpenClaw na VPS:
+
+- `claw3d.service` ativo.
+- `127.0.0.1:3000` respondendo.
+- `/office` retornando HTTP 200.
+- Gateway conectado.
+- Agentes detectados: `main`, `Kowalski`, `Darth Vader` e `Robotnik`.
+- Ajuste aplicado para abrir direto no andar `openclaw-ground`, em vez do `lobby` demo.
+- Settings salvas em `/data/.openclaw/claw3d/settings.json`; arquivo mantido com permissão restrita por conter token.
+
+Próxima validação do lado do Hebert: abrir via túnel SSH para `localhost:3000/office?fresh=1` e confirmar comportamento visual após hard refresh.
+
 ## Próximos passos
 
-1. Preparar passo a passo final com pré-checks de sistema, DNS/rede e espaço em disco.
-2. Fazer backup verificável da origem antes de transferir dados.
-3. Restaurar no destino com ownership do usuário `openclaw`.
-4. Recriar serviço systemd e validar gateway único.
-5. Validar agentes, workspaces, Brain, crons e segredos locais sem expor credenciais.
-6. Só então executar corte controlado e manter rollback documentado.
+1. Confirmar visualmente o Claw3D/OpenClaw pelo acesso do Hebert.
+2. Validar agentes, workspaces, Brain, crons e segredos locais sem expor credenciais.
+3. Documentar rollback e pontos de corte finais.
+4. Só então considerar a migração pronta para operação contínua.
 
 ## Guardrails
 

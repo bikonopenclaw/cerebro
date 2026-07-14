@@ -4,8 +4,8 @@
 categoria: automacao_seguranca
 fonte: conversa com Hebert em 2026-06-18/19, documentação pública Bitdefender consultada na sessão e relatório executivo gerado em 2026-06-19
 confiabilidade: media
-ultima_revisao: 2026-07-08
-tags: [bikon, bitdefender, gravityzone, seguranca, inventario, endpoints, relatorios]
+ultima_revisao: 2026-07-14
+tags: [bikon, bitdefender, gravityzone, seguranca, inventario, endpoints, relatorios, ninjaone, tickets]
 ```
 
 ## Finalidade
@@ -50,6 +50,8 @@ Fase posterior:
 - Não commitar arquivos `.env`, tokens, respostas sensíveis ou inventário detalhado de clientes/endpoints.
 - Começar por teste controlado de autenticação e leitura, sem alteração de políticas, pacotes ou configurações.
 - Ações de remediação, alteração de política, isolamento ou quarentena exigem aprovação explícita e registro operacional.
+- Tickets NinjaOne podem ser criados apenas para critérios aprovados; não abrir ticket para máquina inativa, validação manual sem data ou item sem evidência acionável.
+- Auto-fechamento só pode ocorrer quando nova coleta confirmar resolução; sem remediação automática no Bitdefender.
 
 ## Relatório executivo 2026-06-19
 
@@ -93,7 +95,21 @@ Próxima ação: revisar os endpoints com `malwareStatus` positivo diretamente n
 
 Observação: manter apenas agregados e nomes operacionais necessários; não versionar respostas brutas, API keys ou inventário detalhado.
 
+## Bitdefender -> tickets NinjaOne, 2026-07-13
+
+Evolução aprovada para Fase 1:
+
+- Dry-run inicial classificou 191 itens acionáveis, mas a validação separou alta confiança de ruído provável.
+- Critério ajustado: `endpoint_sem_protecao` só conta se o endpoint foi visto há menos de 30 dias; endpoints mais antigos são tratados como inativos, sem ticket.
+- Produção autorizada apenas para 39 itens de alta confiança após validação.
+- Itens sem data ou que exigem validação manual permanecem fora da automação de tickets.
+- Cron de produção foi aprovado com auto-fechamento quando uma nova coleta confirmar resolução.
+- Travas mantidas: sem remediação no Bitdefender, sem alteração de política, sem comunicação externa e sem ticket para máquina inativa.
+
+Estado operacional: Kowalski é responsável por preparar/operar o fluxo Bitdefender -> Ninja dentro dos critérios acima; Puppet Master mantém governança sobre autorização, escala e mudanças de escopo.
+
 ## Relações
 
 - Empresa: `BRAIN/20-EMPRESAS/BIKON/README.md`
 - Diretriz operacional: `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`
+- Separação teste/produção: `BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md`

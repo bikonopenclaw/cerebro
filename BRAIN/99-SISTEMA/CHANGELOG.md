@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-07-14, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-14.md`.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik antes da consolidação; manifesto atualizado para 2026-07-14 e snapshot do Kowalski passou a incluir memória operacional sanitizada de 2026-07-13 e `package.json`.
+- Atualizado `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md` com critérios aprovados da Fase 1 Bitdefender -> tickets NinjaOne, recência de 30 dias para `endpoint_sem_protecao`, trava contra máquinas inativas e auto-fechamento condicionado a nova coleta.
+- Atualizados `BRAIN/60-AGENTES/KOWALSKI.md` e `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md` com a responsabilidade Bitdefender -> NinjaOne e o `Modelo de Relatório EOL Bikon`.
+- Atualizado `BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md` com validação do Claw3D/OpenClaw na VPS e ajuste para `openclaw-ground`.
+- Atualizado `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md` com a regra de follow-up agendado quando houver promessa de retorno.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+
 ## 2026-07-12, consolidação semanal
 
 - Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W28.md` cobrindo daily notes disponíveis de 2026-07-06 a 2026-07-12.

@@ -4,8 +4,8 @@
 categoria: canal_operacional
 fonte: decisão do Hebert em 2026-06-22
 confiabilidade: alta
-ultima_revisao: 2026-07-10
-tags: [telegram, relatorios, kowalski, ninjaone, operacao, gateway, identidade-visual]
+ultima_revisao: 2026-07-14
+tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual]
 ```
 
 ## Finalidade
@@ -105,6 +105,18 @@ Um PDF enviado no grupo precisou ser refeito com o conteúdo recebido encaixado 
 ## Lista de clientes NinjaOne em 2026-07-07
 
 Solicitação no grupo pediu lista simples de clientes cadastrados no NinjaOne. O registro relevante para o Brain é o padrão operacional: quando o pedido for apenas listagem em texto, responder de forma simples no próprio chat e evitar gerar artefato, PDF ou relatório final desnecessário.
+
+## Modelo de Relatório EOL Bikon, 2026-07-13
+
+Hebert aprovou como padrão oficial para próximos relatórios de EOL o `Modelo de Relatório EOL Bikon`.
+
+Regras consolidadas:
+
+- não nomear o modelo por cliente;
+- usar PDF com identidade Bikon, capa limpa, cards de KPI, tabela com cabeçalho escuro e legendas/badges condensados;
+- manter a lógica: software EOL vira ação interna Bikon; compra física entra apenas quando houver hardware classificado para substituição;
+- validar capa, paginação, legenda em uma linha, ausência de termos internos e exportação final em PDF antes de enviar;
+- manter PDFs finais e lotes gerados fora do Brain/Git.
 
 ## Relações
 

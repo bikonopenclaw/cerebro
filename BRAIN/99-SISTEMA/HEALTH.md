@@ -8,13 +8,13 @@ Health Score: 95/100
 - Arquivos obrigatórios criados.
 - Sem registros duplicados identificados.
 - Sem projetos abandonados identificados.
-- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10 e 2026-07-11.
+- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11 e 2026-07-14.
 - Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`), 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`), 2026-06-28 (`01-DIARIO/Semanal/2026-W26.md`) e 2026-07-12 (`01-DIARIO/Semanal/2026-W28.md`).
 - Consolidação mensal executada em 2026-07-01 (`01-DIARIO/Mensal/2026-06.md`), cobrindo junho/2026.
 - Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, separação teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, validação visual de relatórios externos, artefatos gerados fora do Brain/Git, ausência de evidência em monitoramento, separação entre consulta gerencial e permissão operacional e homologação bancária sem produção automática.
 - Registro central da BIKON criado e conectado a Notaas NFS-e, cadastro de clientes e boletos/malote.
 - Dashboard inicial atualizado.
-- Automações registradas: consolidação diária silenciosa, sync GitHub, Notaas NFS-e exclusiva da Darth Vader, documentação inicial de boletos/malote da BIKON com retorno Cresol CNAB400 para parser/conciliação, Cresol em homologação controlada com pacote local validado e sem envio externo, contexto ativo do grupo Telegram de faturamento Bikon, histórico inativo FN Souza, desenho inicial GravityZone para Bikon, matriz de acesso Bikon ↔ AD local de clientes, ARX Backup diário para tickets NinjaOne, limitações NinjaOne para backup/Hyper-V quando não há job/campo explícito, Provimento 213/2026 Kowalski, canal Telegram isolado do Kowalski para Relatórios Operacionais, Instagram Bikon Robotnik configurado em modo `draft` com crons editoriais e API WhatsApp Bikon validada; projeto de migração Hostinger VPS/OpenClaw criado em planejamento.
+- Automações registradas: consolidação diária silenciosa, sync GitHub, Notaas NFS-e exclusiva da Darth Vader, documentação inicial de boletos/malote da BIKON com retorno Cresol CNAB400 para parser/conciliação, Cresol em homologação controlada com pacote local validado e sem envio externo, contexto ativo do grupo Telegram de faturamento Bikon, histórico inativo FN Souza, GravityZone/Bitdefender para Bikon com evolução aprovada para tickets NinjaOne sob critérios de alta confiança, matriz de acesso Bikon ↔ AD local de clientes, ARX Backup diário para tickets NinjaOne, limitações NinjaOne para backup/Hyper-V quando não há job/campo explícito, Provimento 213/2026 Kowalski, canal Telegram isolado do Kowalski para Relatórios Operacionais, Instagram Bikon Robotnik configurado em modo `draft` com crons editoriais e API WhatsApp Bikon validada; projeto de migração Hostinger VPS/OpenClaw em validação.
 - Contexto do grupo Telegram de faturamento Bikon registrado com escopo, roteamento e guardrails; contexto FN Souza mantido apenas como histórico inativo desde 2026-06-25.
 - Agente Darth Vader documentado como executor financeiro/fiscal relacionado a NFS-e, boletos e remessas.
 - Diretriz operacional registrada para confirmação antes de ações com impacto fora da conversa atual.
@@ -26,6 +26,8 @@ Health Score: 95/100
 - Padrão visual premium Bikon para relatórios técnicos externos registrado.
 - Governança inicial de acessos Bikon ↔ AD local de clientes registrada com fase 1 restrita a auditoria.
 - Agentes Kowalski, Darth Vader e Robotnik documentados; Kowalski atualizado com padrão NinjaOne/EOL, autoria/solicitante, canal Telegram isolado e guardião visual Bikon; Darth Vader atualizado com revisão pré-produção de NFS-e/boleto/remessa e Cresol API em homologação; Robotnik atualizado com Instagram em `draft`, crons editoriais e revisão visual via Kowalski para peças finais.
+- `Modelo de Relatório EOL Bikon` aprovado como padrão oficial para próximos relatórios EOL; PDFs finais e artefatos gerados permanecem fora do Brain/Git.
+- Claw3D/OpenClaw na VPS validado em 2026-07-13 com gateway conectado e ajuste para `openclaw-ground`; pendente confirmação visual do Hebert pelo túnel SSH.
 - Snapshots versionados dos agentes Kowalski, Darth Vader e Robotnik criados em `60-AGENTES/versionados/`, com política de exclusão de segredos, artefatos, diretórios temporários e dados brutos sensíveis; em 2026-07-03 o Git do Brain passou a ignorar PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados por padrão; em 2026-07-09 a rotina passou a excluir também bancos locais, WAL/SHM, estado OpenClaw e artefatos de homologação da API Cresol; em 2026-07-10 a rotina passou a excluir prefixos `.venv-*` e `homologacao-*`; em 2026-07-11 passou a excluir `exports/`, `drafts/`, `*.csv` e `*.svg`; em 2026-W28 esse padrão foi elevado para nota permanente.
 
 ## Pendências
@@ -38,7 +40,8 @@ Health Score: 95/100
 - Validar endpoint/permissão oficial de listagem de tickets no NinjaOne; sem isso, KPIs completos de tickets devem permanecer como indisponíveis, não estimados.
 - Instrumentar no NinjaOne, quando necessário, status explícito de backup e replicação Hyper-V para servidores de clientes que não expõem esses dados por jobs, alertas, atividades ou custom fields.
 - Observar o canal isolado do Kowalski no Telegram e ajustar roteamento se houver resposta fora de escopo, latência anormal ou duplicidade com Puppet Master.
-- Replanejar a migração Hostinger VPS/OpenClaw com VPS limpa, usuário `openclaw`, serviço único, validação e rollback documentado.
+- Acompanhar produção Bitdefender -> NinjaOne: confirmar que tickets reais respeitam critérios de alta confiança, recência de 30 dias, ausência de máquina inativa e auto-fechamento só por nova coleta.
+- Confirmar visualmente o Claw3D/OpenClaw pelo acesso do Hebert e manter rollback documentado.
 - Expandir dashboards conforme surgirem projetos, empresas, pessoas e automações reais.
 
 ## Filosofia cognitiva

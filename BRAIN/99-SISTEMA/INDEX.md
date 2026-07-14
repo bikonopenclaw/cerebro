@@ -37,6 +37,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-07-03.md`: consolidação diária com snapshots versionados, KPIs WhatsApp/Bitdefender, limitação de tickets NinjaOne, falhas por limite de uso e saneamento de PDFs/artefatos no Git.
 - `01-DIARIO/2026/2026-07-08.md`: consolidação diária com limpeza pré-migração da VPS, riscos operacionais BIKON de 06/07/2026, atualização de snapshots e pendência de `memory_search`.
 - `01-DIARIO/2026/2026-07-09.md`: consolidação diária com Cresol API em homologação, canal Telegram isolado do Kowalski e saneamento adicional da rotina de snapshot.
+- `01-DIARIO/2026/2026-07-14.md`: consolidação diária com evolução Bitdefender -> NinjaOne, Modelo de Relatório EOL Bikon, validação Claw3D/OpenClaw na VPS e snapshot seguro do Kowalski.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
 - `20-EMPRESAS/BIKON/cadastro-clientes/README.md`: backup operacional de cadastro de clientes da BIKON.
@@ -56,9 +57,9 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
-- `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, validação e rollback.
+- `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, Claw3D/OpenClaw em validação e rollback.
 - `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader, incluindo NFS-e, boletos, remessa e Cresol API com guardrails.
-- `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski, incluindo skill Provimento 213/2026 e canal Telegram isolado para Relatórios Operacionais.
+- `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski, incluindo skill Provimento 213/2026, canal Telegram isolado para Relatórios Operacionais, Modelo de Relatório EOL Bikon e operação controlada Bitdefender -> NinjaOne.
 - `60-AGENTES/ROBOTNIK.md`: papel de marketing do agente Robotnik, status interno, guardrails e integração Instagram em retomada pós-aprovação Meta.
 - `60-AGENTES/versionados/`: snapshots seguros de código, skills e documentação operacional do Kowalski, Darth Vader e Robotnik, com exclusão de segredos e artefatos gerados.
 - `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
@@ -67,7 +68,7 @@ Mapa geral do Brain.
 - `70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`: contexto ativo do grupo Telegram de faturamento Bikon e histórico inativo FN Souza, com roteamento para Darth Vader e guardrails.
 - `70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`: contexto do grupo Telegram de relatórios operacionais, com roteamento restrito e gateway isolado para Kowalski.
 - `70-AUTOMACOES/WHISPER-LOCAL.md`: instância local faster-whisper definida como padrão para transcrição de áudios.
-- `70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`: desenho inicial da integração GravityZone para segurança, inventário e relatórios da Bikon.
+- `70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`: integração GravityZone para segurança, inventário, relatórios da Bikon e tickets NinjaOne sob critérios aprovados.
 - `70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md`: matriz mestre para governança e auditoria de usuários Bikon aprovados no Entra ID versus acessos em ADs locais de clientes.
 - `70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`: automação diária de monitoramento ARX Backup com deduplicação/criação de tickets NinjaOne.
 - `70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`: skill e fluxo do Kowalski para diagnósticos técnicos de cartórios no Provimento CNJ 213/2026.

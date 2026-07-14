@@ -8,10 +8,10 @@
 
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
-- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09 e 2026-07-10.
-- Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md` e `01-DIARIO/Semanal/2026-W26.md`.
+- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11 e 2026-07-14.
+- Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md`, `01-DIARIO/Semanal/2026-W26.md` e `01-DIARIO/Semanal/2026-W28.md`.
 - Consolidação mensal de junho/2026 criada em `01-DIARIO/Mensal/2026-06.md`, com aprendizados, padrões de longo prazo, decisões consolidadas e critério de arquivamento.
-- Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
+- Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, artefatos gerados fora do Brain/Git, evidência explícita em monitoramento, consulta gerencial sem permissão operacional e homologação bancária sem produção automática.
 - Registro central da BIKON criado em `20-EMPRESAS/BIKON/README.md`.
 - Automação de consolidação diária registrada.
 - Sync GitHub do Brain registrado para execução 4x ao dia.
@@ -21,11 +21,12 @@
 - Agente Darth Vader documentado como executor financeiro/fiscal relacionado a NFS-e, boletos e remessas.
 - Diretriz de confirmação antes de ações com impacto registrada em conhecimento operacional.
 - Guardrail de segredos fora do Brain/Git registrado como conhecimento operacional permanente.
-- Integração Bitdefender GravityZone da Bikon registrada como desenho inicial e relatório executivo agregado de 2026-06-19 catalogado sem segredos.
+- Integração Bitdefender GravityZone da Bikon registrada com relatório executivo agregado de 2026-06-19 e evolução Bitdefender -> tickets NinjaOne aprovada para critérios de alta confiança, sem remediação automática e com auto-fechamento condicionado a nova coleta.
 - Automação ARX Backup diário → tickets NinjaOne registrada com última execução observada bem-sucedida em 2026-06-29; relatório de tickets NinjaOne em 2026-07-02 depende de endpoint/permissão oficial de listagem antes de expor KPIs completos.
 - Matriz de acesso Bikon ↔ AD local de clientes registrada como base de governança/auditoria antes de automações de identidade.
 - Fluxo NFS-e Bikon atualizado com SMTP `fatura@bikontecnologia.com.br`, template HTML padrão, anexos de NFS-e/XML/boleto, agrupamento de múltiplas notas por cliente e separação obrigatória entre dry-run, aprovação, emissão, conferência XML/PDF, boleto/remessa e e-mail externo.
 - Grupo Relatórios Operacionais registrado com roteamento restrito e canal Telegram isolado para Kowalski; Puppet Master permanece no grupo apenas sob menção nominal.
+- `Modelo de Relatório EOL Bikon` aprovado como padrão oficial para próximos relatórios EOL, com PDFs finais fora do Brain/Git.
 - Kowalski consolidado como guardião visual Bikon para materiais públicos ou semi-públicos com arte/layout, enquanto Robotnik mantém pauta, copy e campanha.
 - Whisper local/faster-whisper registrado como padrão para transcrição de áudios.
 - Faster-whisper local reparado em 2026-07-10 e regra reforçada: áudio do Hebert deve ser tratado como comando operacional, transcrito internamente e executado.
@@ -47,5 +48,5 @@
 - Criar dashboard de faturamento por lote: NFS-e, boletos, e-mails preparados/enviados e pendências.
 - Criar mapa inicial de empresas, pessoas, projetos e agentes conforme o volume de conteúdo real crescer.
 - API WhatsApp Bikon: integração validada, token protegido fora do Git, rotina segura de template criada.
-- Migração Hostinger VPS/OpenClaw: em planejamento; destino limpo e arquitetura final deve usar usuário `openclaw` como dono operacional.
+- Migração Hostinger VPS/OpenClaw: em validação; Claw3D/OpenClaw observado ativo na VPS com gateway conectado e ajuste para abrir direto em `openclaw-ground`.
 - Instagram Bikon Robotnik: Meta Graph API configurada em segredo local, modo `draft`, crons editoriais ativos e publicação bloqueada.

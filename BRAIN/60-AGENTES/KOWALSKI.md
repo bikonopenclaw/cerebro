@@ -3,8 +3,8 @@
 ```yaml
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
-ultima_revisao: 2026-07-11
-tags: [kowalski, relatorios, ninjaone, arx-backup, financeiro, provimento-213-2026, operacao, telegram, identidade-visual]
+ultima_revisao: 2026-07-14
+tags: [kowalski, relatorios, ninjaone, arx-backup, bitdefender, financeiro, provimento-213-2026, operacao, telegram, identidade-visual]
 ```
 
 ## Papel
@@ -16,6 +16,7 @@ Responsabilidades principais:
 - Relatórios técnicos para clientes.
 - Relatórios NinjaOne, incluindo inventário, alertas, dispositivos offline e evidências auditáveis.
 - Relatórios ARX Backup.
+- Operação controlada Bitdefender -> NinjaOne quando critérios, dry-run e autorizações estiverem registrados.
 - Diagnósticos técnicos de cartórios para o Provimento CNJ 213/2026.
 - Adequação de documentos para padrão Bikon.
 - Produzir PDFs externos com acabamento premium Bikon, sem metadados automáticos de impressão/navegador e com validação visual antes da entrega.
@@ -95,6 +96,23 @@ Em 2026-07-01, o padrão oficial de relatórios NinjaOne/EOL foi reforçado:
 - Se a mesma máquina tiver hardware e software EOL, listar uma vez na cotação por causa do hardware, com software como observação/plano interno.
 - Separar `Itens para cotação de compra` de `Ações internas de software`.
 
+Em 2026-07-13, Hebert aprovou o `Modelo de Relatório EOL Bikon` como padrão oficial para próximos relatórios de EOL. O modelo não deve ser nomeado por cliente. Quando Hebert pedir "relatório de EOL", usar PDF com identidade Bikon, capa limpa, cores/legendas do modelo aprovado, KPIs em cards, tabela com cabeçalho escuro, badges/legendas condensadas e rodapé/cabeçalho com `RELATÓRIO TÉCNICO` e número da página na mesma linha. Antes de enviar, validar capa, legibilidade, paginação, ausência de termos internos e exportação final em PDF.
+
+Referência operacional no workspace do Kowalski: `identidade-visual/modelos-aprovados/eol/modelo-padrao-relatorio-eol-bikon.html`. O Brain registra o padrão, não versiona PDFs finais ou artefatos gerados.
+
+## Bitdefender -> NinjaOne
+
+Em 2026-07-13, Kowalski recebeu a responsabilidade operacional de preparar e operar a Fase 1 da automação Bitdefender -> tickets NinjaOne, com critérios aprovados e sem remediação automática.
+
+Regras:
+
+- usar GravityZone apenas em leitura/coleta autorizada;
+- abrir ticket real somente para itens de alta confiança aprovados;
+- `endpoint_sem_protecao` só entra se visto há menos de 30 dias;
+- sem ticket para máquina inativa, validação manual sem data ou item sem evidência acionável;
+- auto-fechamento apenas após nova coleta confirmar resolução;
+- sem alteração de política, exclusão, licença, endpoint, remediação ou comunicação externa sem nova aprovação.
+
 ## Acesso financeiro read-only
 
 Em 2026-07-10/11, Kowalski recebeu acesso operacional somente leitura à base financeira gerencial mantida pela Darth Vader.
@@ -120,5 +138,6 @@ Regra: apoio técnico, não parecer jurídico; não declarar conformidade juríd
 - Bikon: `BRAIN/20-EMPRESAS/BIKON/README.md`
 - Validação visual: `BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md`
 - ARX Backup: `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`
+- Bitdefender GravityZone: `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`
 - Provimento 213/2026: `BRAIN/70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`
 - Escopo de canais: `BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md`

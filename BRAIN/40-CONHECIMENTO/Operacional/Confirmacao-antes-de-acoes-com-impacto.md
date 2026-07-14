@@ -5,8 +5,8 @@ categoria: operacional
 tipo: guardrail
 fonte: orientação de Hebert em 2026-06-18/19
 confiabilidade: alta
-ultima_revisao: 2026-06-28
-tags: [guardrails, confirmacao, telegram, execucao, mensagens, seguranca-operacional]
+ultima_revisao: 2026-07-14
+tags: [guardrails, confirmacao, telegram, execucao, mensagens, follow-up, seguranca-operacional]
 ```
 
 ## Regra
@@ -40,3 +40,7 @@ A regra reduz risco de execução fora de contexto, postagem no canal errado, al
 ## Reforço 2026-W26
 
 A regra foi reforçada por novos fluxos com impacto externo: envio de NFS-e/boleto por e-mail, disparos WhatsApp via API oficial, publicação Instagram via Meta Graph API e automações de acesso em AD local. Em todos os casos, preparação interna e dry-run são aceitáveis; envio, publicação, emissão, remessa ou alteração real permanecem dependentes de aprovação explícita quando não houver autorização prévia.
+
+## Follow-up prometido
+
+Em 2026-07-13, Hebert determinou uma regra operacional adicional: quando o Puppet Master prometer retorno futuro sem resposta imediata, deve agendar follow-up no Telegram antes de encerrar a interação. Essa regra reduz perda de acompanhamento em execuções delegadas a agentes e vale especialmente para tarefas com Kowalski/Darth Vader/Robotnik que dependam de retorno posterior.
