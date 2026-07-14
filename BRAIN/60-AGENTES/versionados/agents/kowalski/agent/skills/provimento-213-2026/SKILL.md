@@ -27,6 +27,22 @@ Referências internas desta skill:
 
 - `references/resumo-operacional.md`: requisitos, prazos, RTO/RPO e etapas.
 - `references/checklist-evidencias.md`: checklist prático por etapa com evidências esperadas.
+- `references/carteira-cartorios-cns-20260714.md`: carteira CNS recebida do Herald OS em 2026-07-14, com separação entre carteira Prov.213 ativa, contrato encerrado e cartório fora do escopo completo.
+
+## Carteira CNS e escopo operacional
+
+Antes de produzir diagnóstico, relatório, dossiê ou plano por cartório, leia `references/carteira-cartorios-cns-20260714.md` quando o pedido envolver cliente conhecido da Bikon, ARX Backup, NinjaOne, Bitdefender ou carteira Prov.213.
+
+Use a referência para:
+
+1. Identificar os 6 cartórios da carteira formal de adequação Prov.213.
+2. Evitar misturar cartório ativo da Bikon com cartório fora da carteira ativa.
+3. Registrar CNS, fonte interna, classe, prazo e status documental quando o dado estiver listado.
+4. Marcar RI Marabá com prorrogação não comprovada no acervo, não como deferida.
+5. Tratar Cartório 2º Ofício Vila Velha como contrato encerrado, sem ação operacional ativa.
+6. Tratar Cartório Camburi como fora da adequação completa Prov.213, cliente somente de ARX Backup conforme decisão do dono.
+
+Regra: CNS da carteira é dado de handoff interno com fonte citada. Não inferir CNS ausente e não promover item fora da carteira ativa para cliente Prov.213 sem aprovação explícita do Hebert.
 
 ## Regras de segurança e escopo
 
@@ -42,34 +58,36 @@ Referências internas desta skill:
 Para diagnóstico por cartório, buscar ou solicitar:
 
 1. Nome da serventia e responsável.
-2. Classe da serventia, Classe 1, 2 ou 3. Se não souber, marcar como `classe não informada` e não inventar.
-3. Lista de sistemas usados, fornecedores e contratos.
-4. Inventário de ativos, servidores, estações, rede, links, energia, certificados e backups.
-5. Evidências de MFA, logs, backup, restauração, antivírus/EDR, firewall, SGBD e criptografia.
-6. Situação de LGPD, DPO quando aplicável, registro de tratamento e política de segurança.
-7. PCN/PRD existentes, se houver.
-8. Últimos testes de backup/restauração e incidentes relevantes.
+2. CNS confirmado ou pendência formal de CNS. Se o cartório estiver na carteira CNS 2026-07-14, usar o CNS listado com sua fonte interna e manter evidência citada.
+3. Classe da serventia, Classe 1, 2 ou 3. Se não souber, marcar como `classe não informada` e não inventar.
+4. Lista de sistemas usados, fornecedores e contratos.
+5. Inventário de ativos, servidores, estações, rede, links, energia, certificados e backups.
+6. Evidências de MFA, logs, backup, restauração, antivírus/EDR, firewall, SGBD e criptografia.
+7. Situação de LGPD, DPO quando aplicável, registro de tratamento e política de segurança.
+8. PCN/PRD existentes, se houver.
+9. Últimos testes de backup/restauração e incidentes relevantes.
 
 ## Workflow padrão
 
-1. Classificar a serventia por classe ou marcar classe pendente.
-2. Ler `references/resumo-operacional.md` e, quando precisar checklist granular, `references/checklist-evidencias.md`.
-3. Montar matriz com colunas: `etapa`, `item`, `exigência`, `status`, `evidência`, `risco`, `ação recomendada`, `responsável`, `prazo sugerido`.
-4. Separar status em:
+1. Confirmar se a serventia está na carteira CNS e escopo Prov.213 ativo.
+2. Classificar a serventia por classe ou marcar classe pendente.
+3. Ler `references/resumo-operacional.md` e, quando precisar checklist granular, `references/checklist-evidencias.md`.
+4. Montar matriz com colunas: `etapa`, `item`, `exigência`, `status`, `evidência`, `risco`, `ação recomendada`, `responsável`, `prazo sugerido`.
+5. Separar status em:
    - `Atendido`: evidência suficiente e verificável.
    - `Parcial`: há controle, mas falta formalização, teste, prova ou cobertura.
    - `Pendente`: não implementado ou não demonstrado.
    - `Não avaliado`: falta acesso, dado ou evidência.
    - `Não aplicável`: justificar objetivamente.
-5. Criar diagnóstico executivo com semáforo:
+6. Criar diagnóstico executivo com semáforo:
    - `OK`: itens críticos demonstrados e pendências sem impacto imediato.
    - `Atenção`: pendências relevantes, mas com mitigação parcial.
    - `Crítico`: falta backup/restauração, MFA administrativo, logs, PCN/PRD, proteção básica ou risco claro de indisponibilidade/perda de dados.
-6. Produzir plano de adequação por fases, respeitando as Etapas 1 a 5 do Anexo IV.
-7. Gerar dossiê ou relatório simplificado conforme classe:
+7. Produzir plano de adequação por fases, respeitando as Etapas 1 a 5 do Anexo IV.
+8. Gerar dossiê ou relatório simplificado conforme classe:
    - Classe 1: relatório simplificado e guarda de contratos, notas fiscais e evidências por 5 anos.
    - Classes 2 e 3: dossiê técnico com evidências, hashes/lista assinável e controle auditável.
-8. Se for parecer externo, usar o modelo visual oficial Bikon/Kowalski de parecer técnico.
+9. Se for parecer externo, usar o modelo visual oficial Bikon/Kowalski de parecer técnico.
 
 ## Prazos normativos úteis
 
