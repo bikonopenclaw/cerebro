@@ -43,7 +43,7 @@ Configuração operacional validada:
 
 - Bot próprio: `@mattedi_02_bot`, nome Kowalski.
 - Serviço: `openclaw-gateway-kowalski.service`, ativo e habilitado.
-- Porta isolada: `18790`.
+- Porta isolada: `18810`.
 - Grupo: `Relatórios Operacionais`.
 - Puppet Master no mesmo grupo ficou com `requireMention=true`, para evitar resposta dupla em mensagens comuns.
 - Kowalski continua subordinado à governança do Puppet Master; canal próprio muda a entrada no Telegram, não a hierarquia.

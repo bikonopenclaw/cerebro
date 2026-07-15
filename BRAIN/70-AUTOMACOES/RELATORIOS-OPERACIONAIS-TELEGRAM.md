@@ -25,7 +25,7 @@ Hebert autorizou a evolução do grupo para canal isolado do Kowalski:
 
 - Bot Kowalski: `@mattedi_02_bot`.
 - Gateway dedicado: `openclaw-gateway-kowalski.service`.
-- Porta dedicada: `18790`.
+- Porta dedicada: `18810`.
 - Puppet Master continua no grupo, mas com `requireMention=true`.
 - Kowalski fica com resposta direta para mensagens comuns dentro do escopo de relatórios operacionais.
 - A coordenação agente-a-agente e decisões com impacto continuam sob Puppet Master.
