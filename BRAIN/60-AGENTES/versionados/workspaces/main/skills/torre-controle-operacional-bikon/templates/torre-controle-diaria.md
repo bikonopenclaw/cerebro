@@ -2,19 +2,24 @@
 
 Data: {{data_brasilia}}
 Janela: {{janela_brasilia}}
+Modo: {{modo}}
 
 ## Saude Geral
-{{verde_amarelo_vermelho}}: {{motivo_curto}}
+{{sinal_cor}} {{verde_amarelo_vermelho}}: {{motivo_curto}}
+Freshness: {{freshness_resumo}}
 
-## Rodou Bem
-- {{item_ok_1}}
-- {{item_ok_2}}
+## O Que Importa
+1. {{sinal_1}} {{item_decisao_1}}
+2. {{sinal_2}} {{item_decisao_2}}
+3. {{sinal_3}} {{item_decisao_3}}
 
 ## Atencao
-- {{risco_ou_alerta_1}}
+- {{sinal_alerta_1}} {{risco_ou_alerta_1}} | Fonte: {{fonte}} | Freshness: {{freshness}}
 
 ## Precisa Aprovacao
-- {{decisao_1}}
+- {{sinal_aprovacao}} {{decisao_1}} | Impacto: {{impacto}}
 
 ## Proximo Passo
-{{acao_recomendada}}
+1. Prioridade {{prioridade}}: {{acao_recomendada}}
+   Dono: {{dono}}
+   Proxima checagem: {{proxima_checagem}}

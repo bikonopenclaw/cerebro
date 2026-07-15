@@ -1,56 +1,54 @@
 ---
 name: "kowalski-arx-ticket-recovery"
-description: "ARX evita falso negativo e fecha ticket recuperado"
+description: "Alias seguro para ARX NinjaOne canonico"
 ---
 
-# Kowalski, ARX Ticket Recovery
+# Kowalski ARX Ticket Recovery
 
-## Objetivo
+## Decisao operacional
 
-Evitar ticket NinjaOne falso negativo no monitor ARX Backup e fechar automaticamente tickets quando o backup voltar a concluir.
+Esta skill nao e mais a fonte operacional principal do fluxo ARX Backup -> NinjaOne.
 
-## Regra operacional
+Ao acionar este tema, usar a skill canonica:
 
-A automação ARX Backup -> NinjaOne deve diferenciar falha atual de falha histórica.
+`/data/.openclaw/workspace/skills/arx-ninjaone-ticketing/SKILL.md`
 
-## Abrir ticket
+## Por que esta skill continua existindo
 
-Abrir ticket somente quando a checagem atual indicar problema real:
+Manter este alias evita perda de gatilho historico. Pedidos antigos como `ARX ticket recovery`, `falso negativo ARX`, `fechar ticket recuperado` ou `Kowalski ARX ticket` ainda devem cair no fluxo correto.
 
-- status total atual com severidade `Atenção` ou `Crítico`, exceto quando o status atual for `Concluído (5)`;
-- fonte atual com status problemático, como `Falhou`, `Abortado`, `Interrompido`, `Concluído com erros`, `Em progresso com falhas` ou `Acima da cota`;
-- erro atual em fonte cujo último status não seja `Concluído (5)`.
+## Redirecionamento obrigatorio
 
-Falha em histórico de 28 dias (`TB`, `FB`, `SB`, `QB`, `HB`, `WB`) não deve abrir ticket sozinha se depois dela o backup voltou a concluir.
+1. Ler e seguir `arx-ninjaone-ticketing/SKILL.md`.
+2. Para decisao de abrir ou nao abrir ticket, usar `arx-ninjaone-ticketing/references/decisao-incidente.md`.
+3. Para deduplicacao, fechamento recuperado e confirmacao Telegram, usar `arx-ninjaone-ticketing/references/deduplicacao-e-recuperacao.md`.
+4. Para cron, runner e logs, usar `arx-ninjaone-ticketing/references/operacao-cron-e-logs.md`.
+5. Nao executar regra propria desta skill sem conferir a canonica.
 
-## Não abrir falso negativo
+## Funcionalidade preservada
 
-Se houve falha anterior, mas a checagem atual mostra `Concluído (5)`, considerar recuperado e não abrir novo ticket. O histórico pode continuar aparecendo no relatório técnico, mas não deve virar chamado operacional.
+A funcionalidade original fica preservada na skill canonica:
 
-## Fechar ticket recuperado
+- nao abrir ticket por falha historica quando a checagem atual voltou para `Concluido (5)`;
+- abrir ticket somente quando houver problema atual real;
+- deduplicar por cliente, dispositivo e assinatura do problema;
+- fechar ticket recuperado como `RESOLVED`;
+- marcar o item como inativo no estado local;
+- enviar confirmacao de fechamento automatico para o Hebert no Telegram;
+- registrar fechamento, falha de confirmacao e estado local nos logs.
 
-Se já existe ticket ativo no estado local e a próxima checagem mostra que o backup voltou a concluir, fechar o ticket no NinjaOne como `RESOLVED` e marcar o item como inativo em:
+## Historico de validacao preservado
 
-`/data/.openclaw/workspace-kowalski/arx-backup/jobs/arx-ninjaone-ticket-state.json`
-
-Todo fechamento automático real deve enviar confirmação para o Hebert no Telegram. Se a confirmação falhar depois do fechamento, registrar erro e deixar o cron alertar.
-
-## Dry-run e produção
-
-- Dry-run mostra `would_close`, não cria nem fecha ticket real e não altera estado local.
-- Produção com `--create` pode criar tickets novos e fechar tickets recuperados.
-
-## Arquivos envolvidos
-
-- Script principal: `/data/.openclaw/workspace-kowalski/arx-backup/scripts/monitorar_arx_ninjaone_tickets.py`
-- Runner do cron: `/data/.openclaw/workspace-kowalski/arx-backup/scripts/run_monitorar_arx_ninjaone_tickets.sh`
-- Estado local: `/data/.openclaw/workspace-kowalski/arx-backup/jobs/arx-ninjaone-ticket-state.json`
-- Logs: `/data/.openclaw/workspace-kowalski/arx-backup/jobs/arx-ninjaone-ticket-log.jsonl`
-
-## Validação inicial
-
-Em 2026-07-11, após a mudança:
+Em 2026-07-11, apos a mudanca de recuperacao:
 
 - dry-run encontrou 11 contas, 1 issue real, 3 tickets recuperados para fechar, 0 erros;
-- execução real fechou 3 tickets como `RESOLVED` e não criou ticket novo;
-- dry-run pós-fechamento ficou com 1 issue real deduplicada e 0 pendências de fechamento.
+- execucao real fechou 3 tickets como `RESOLVED` e nao criou ticket novo;
+- dry-run pos-fechamento ficou com 1 issue real deduplicada e 0 pendencias de fechamento.
+
+## Travas
+
+- Nao alterar script, cron, token, config, estado local ou integracao NinjaOne sem aprovacao explicita do Hebert.
+- Nao rodar `--create` manual fora do cron ja aprovado sem aprovacao.
+- Nao criar ticket de teste real.
+- Nao fechar ticket real manualmente.
+- Se houver conflito entre esta skill e `arx-ninjaone-ticketing`, a canonica vence.

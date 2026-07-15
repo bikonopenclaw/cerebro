@@ -1,83 +1,94 @@
 ---
 name: "robotnik-image-cost-routing"
-description: "Robotnik usa template visual Bikon"
+description: "Robotnik roteia imagem e custo Bikon"
 ---
 
-# Roteamento de imagem e template operacional Bikon para Robotnik
+# Robotnik Image Cost Routing
 
-## Regra principal
-Robotnik e responsavel pela geracao visual de conteudo Bikon. Puppet Master atua como CEO/orquestrador: define criterio, cobra, revisa e bloqueia qualidade ruim. A geracao de imagem deve ficar com Robotnik, usando a ferramenta ja paga/disponivel antes de qualquer rota que gere custo adicional.
+## Objetivo
 
-## Memoria latente de marca
-Antes de criar qualquer imagem Bikon, Robotnik deve acionar a identidade visual Bikon como regra latente, mesmo que o pedido do momento nao mencione logo, manual ou paleta.
+Roteia a geracao visual Bikon para o agente certo, usando a ferramenta ja paga/disponivel antes de qualquer alternativa com custo adicional.
 
-Fonte primaria:
-- manual da marca e pacote oficial de logos quando disponiveis no workspace ou reenviados pelo Hebert;
-- assets oficiais locais: `/data/.openclaw/workspace/assets/bikon/logo-white.png` e `/data/.openclaw/workspace/assets/bikon/logoMenu.png`;
-- qualquer novo asset oficial de logo/manual passa a prevalecer imediatamente sobre composicoes anteriores.
+Esta skill nao e a fonte canonica do padrao visual Bikon. Para padrao visual, usar:
 
-Bloqueio absoluto: nao gerar, redesenhar, reconstruir, estilizar por IA ou aproximar a logo da Bikon. Toda arte precisa usar asset oficial. Se o asset oficial nao estiver acessivel, Robotnik deve pedir o arquivo ou devolver bloqueio, nao improvisar.
+`/data/.openclaw/workspace/skills/bikon-social-visual-hard-blocks/SKILL.md`
 
-## Ferramenta
-- Priorizar a ferramenta de imagem ja paga pelo Hebert quando disponivel e autenticada.
-- Antes de alegar custo, verificar provider/modelo habilitado e plano ativo.
-- So propor ferramenta paga adicional se a ferramenta atual falhar tecnicamente ou nao entregar qualidade minima, explicando motivo, risco e alternativa.
+## Responsabilidade operacional
 
-## Template operacional aprovado
-Todo carrossel/post Bikon deve seguir a linha visual aprovada em 2026-07-10:
-- formato 4:5 para Instagram;
-- tema escuro obrigatorio;
-- logo oficial da Bikon em todos os slides;
-- fundo com foto realista/profissional relacionada ao assunto;
-- composicao editorial densa, sobria e tecnica;
-- headline grande com branco e ciano Bikon;
-- acento vermelho/alerta quando houver risco, vulnerabilidade ou urgencia;
-- molduras, linhas, pontos e elementos finos como apoio visual;
-- rodape com prioridade, acao ou insight curto;
-- numeracao por slide.
+- Robotnik e o executor principal de conteudo, imagens, posts, carrosseis, captions, campanhas, e-mail marketing e criativo.
+- Puppet Master atua como CEO/orquestrador: define criterio, cobra, revisa e bloqueia qualidade ruim.
+- Kowalski atua como gate de consistencia visual Bikon quando a entrega envolver documento, relatorio, PDF, apresentacao ou material que precise padrao visual formal.
 
-## Criacao de imagens e fundos
-Robotnik nao deve ficar preso a imagens do site da Bikon. Pode criar, gerar ou compor imagens de fundo conforme o tema, desde que o resultado pareca real, corporativo e profissional.
+## Regra de custo
 
-Boas direcoes por tema:
-- rede/firewall: rack, switch, cabos organizados, firewall fisico, tela de monitoramento, tecnico em campo;
-- backup/continuidade: servidor, storage, dashboard de backup, gestor olhando indicador, ambiente de operacao;
-- SNOC/monitoramento: analista em telas, sala de monitoramento, painel de incidentes, equipe operacional;
-- cartorio/provimento: ambiente de atendimento formal, documentos, infraestrutura discreta, equipe administrativa com tecnologia;
-- risco/vulnerabilidade: cena corporativa sobria, alerta visual controlado, vermelho so como acento.
+1. Antes de propor ferramenta paga adicional, verificar provider/modelo habilitado, plano ativo e ferramenta ja contratada.
+2. Priorizar a ferramenta de imagem ja paga/disponivel pelo Hebert.
+3. So propor custo adicional se a ferramenta atual falhar tecnicamente ou nao atingir qualidade minima.
+4. Qualquer gasto acima de R$ 1 exige aprovacao explicita do Hebert.
+5. Nao esconder custo em teste, geracao, assinatura, credito, API ou provider alternativo.
 
-Imagem boa explica o tema. Imagem ruim so enfeita. Se a cena nao reforca a mensagem, trocar.
+## Regra visual obrigatoria
 
-## Uso de pessoas e imagens
-Robotnik pode e deve adicionar pessoas, fotos e cenas quando isso enriquecer o assunto. Boas escolhas:
-- tecnico em rack, datacenter ou ambiente de rede;
-- analista monitorando dashboards;
-- gestor em decisao operacional;
-- equipe corporativa revisando incidente;
-- close realista de servidor, firewall, notebook, cabeamento, tela de monitoramento ou sala tecnica.
+Antes de qualquer imagem Bikon, Robotnik deve ler e seguir a skill canonica:
 
-As pessoas e imagens precisam parecer reais, profissionais e coerentes com Bikon. Nunca usar caricatura, cartoon, personagem infantil, avatar generico, clipart ou imagem que pareca IA barata.
+`/data/.openclaw/workspace/skills/bikon-social-visual-hard-blocks/SKILL.md`
 
-## Bloqueios duros
-Nao enviar para Puppet Master ou Hebert se houver:
-- logo errada, logo inventada ou marca refeita;
-- tema claro;
-- estetica Paint, Canva generico, trabalho escolar ou desenho infantil;
-- arte sem imagem/foto quando o tema pede contexto visual;
-- excesso de texto, baixa leitura, fonte pequena ou composicao frouxa;
-- imagens aleatorias que nao expliquem o assunto;
-- visual que possa arranhar a reputacao da Bikon;
-- dependencia cega de imagem do site quando uma cena criada por tema resolver melhor.
+Ela contem as regras ativas para:
+
+- logo oficial Bikon;
+- tema escuro;
+- modelo premium aprovado;
+- formato 4:5 / 1080x1350;
+- imagens/fundos realistas;
+- bloqueio de visual infantil, Canva generico, Paint, logo inventada e tema claro;
+- criterios de aprovacao antes de enviar ao Hebert.
+
+Se houver conflito entre esta skill e `bikon-social-visual-hard-blocks`, a skill canonica visual vence.
 
 ## Processo operacional
-1. Robotnik recebe o tema e cria a copy por slide.
-2. Robotnik consulta a memoria latente Bikon: logo oficial, paleta, tema escuro, padrao editorial.
-3. Robotnik define imagem/cena de cada slide antes de gerar.
-4. Robotnik gera com a ferramenta ja paga.
-5. Robotnik aplica asset oficial da logo em todos os slides.
-6. Robotnik confere logo, tema escuro, imagem, hierarquia e acabamento.
-7. Robotnik entrega pacote com PNGs 4:5 e breve justificativa visual.
-8. Puppet Master faz corte executivo. Se estiver abaixo do padrao, devolve para Robotnik. Hebert so recebe quando a linha estiver defendivel.
 
-## Criterio de pronto
-A entrega precisa parecer pronta para cliente corporativo de TI, nao rascunho interno. Se Robotnik tiver duvida entre ousar e ficar generico, deve ousar com sobriedade: foto forte, texto curto, contraste alto e composicao limpa.
+1. Receber tema, objetivo comercial, canal e publico alvo.
+2. Confirmar se a entrega e rascunho interno, proposta para Hebert ou publicacao externa.
+3. Acionar `bikon-social-visual-hard-blocks` antes de briefing visual, geracao ou revisao.
+4. Definir copy e roteiro visual por slide ou peca.
+5. Escolher ferramenta ja paga/disponivel.
+6. Gerar imagens ou orientar geracao somente dentro do padrao visual canonico.
+7. Aplicar asset oficial da logo Bikon quando a peca exigir marca.
+8. Validar qualidade, leitura, tema escuro, logo correta e ausencia de visual amador.
+9. Quando houver documento, relatorio, PDF ou apresentacao, chamar Kowalski para gate visual Bikon.
+10. Entregar para Puppet Master revisar antes de mostrar ao Hebert.
+
+## Bloqueios
+
+Nao enviar para Hebert, publicar ou encaminhar como pronto se houver:
+
+- logo errada, recriada, aproximada ou gerada por IA;
+- tema claro em carrossel tecnico Bikon sem aprovacao explicita;
+- visual infantil, Paint, Canva generico, desenho amador ou IA barata;
+- imagem aleatoria que nao explica o assunto;
+- excesso de texto ou baixa leitura no celular;
+- dependencia de ferramenta nova paga sem aprovacao;
+- publicacao real em canal publico sem aprovacao do Hebert;
+- uso de rosto, preco, verba, canal publico ou base de contatos sem aprovacao.
+
+## Saida esperada
+
+Para Puppet Master ou Hebert, entregar curto:
+
+1. Peca/canal.
+2. Ferramenta usada ou recomendada.
+3. Custo: `sem custo adicional`, `custo bloqueado` ou `precisa aprovacao`.
+4. Status visual: `pronto para revisao`, `ajustar` ou `bloqueado`.
+5. Proximo passo.
+
+## Funcionalidade preservada
+
+Ficam preservadas as regras aprovadas em 2026-07-10:
+
+- geracao visual deve ser delegada a Robotnik/Kowalski quando aplicavel;
+- Puppet Master nao deve virar operador manual de imagem;
+- usar ferramenta ja paga antes de sugerir custo;
+- nao recriar logo;
+- bloquear tema claro, visual infantil/amador e imagem aleatoria;
+- permitir imagens/fundos criados ou compostos quando enriquecerem o assunto e parecerem profissionais;
+- exigir validacao de qualidade antes de enviar ao Hebert.

@@ -2,13 +2,13 @@
 
 ## Health Score
 
-95/100
+94/100
 
 ## Estado atual
 
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
-- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11 e 2026-07-14.
+- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14 e 2026-07-15.
 - Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md`, `01-DIARIO/Semanal/2026-W26.md` e `01-DIARIO/Semanal/2026-W28.md`.
 - Consolidação mensal de junho/2026 criada em `01-DIARIO/Mensal/2026-06.md`, com aprendizados, padrões de longo prazo, decisões consolidadas e critério de arquivamento.
 - Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, artefatos gerados fora do Brain/Git, evidência explícita em monitoramento, consulta gerencial sem permissão operacional e homologação bancária sem produção automática.
@@ -48,5 +48,5 @@
 - Criar dashboard de faturamento por lote: NFS-e, boletos, e-mails preparados/enviados e pendências.
 - Criar mapa inicial de empresas, pessoas, projetos e agentes conforme o volume de conteúdo real crescer.
 - API WhatsApp Bikon: integração validada, token protegido fora do Git, rotina segura de template criada.
-- Migração Hostinger VPS/OpenClaw: em validação; Claw3D/OpenClaw observado ativo na VPS com gateway conectado e ajuste para abrir direto em `openclaw-ground`.
+- Migração Hostinger VPS/OpenClaw: em validação; Fase 1 de saneamento liberou aproximadamente 7,1 GiB, skills específicas foram reposicionadas para os workspaces e 33 crons voltaram ao inventário ativo. Permanecem 11 jobs com último status de erro após restart/timeout/aborto e investigação de causa-raiz dos travamentos.
 - Instagram Bikon Robotnik: Meta Graph API configurada em segredo local, modo `draft`, crons editoriais ativos e publicação bloqueada.

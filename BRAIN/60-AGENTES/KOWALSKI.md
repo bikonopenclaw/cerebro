@@ -3,8 +3,8 @@
 ```yaml
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
-ultima_revisao: 2026-07-14
-tags: [kowalski, relatorios, ninjaone, arx-backup, bitdefender, financeiro, provimento-213-2026, operacao, telegram, identidade-visual]
+ultima_revisao: 2026-07-15
+tags: [kowalski, relatorios, ninjaone, arx-backup, bitdefender, financeiro, provimento-213-2026, cns, operacao, telegram, identidade-visual]
 ```
 
 ## Papel
@@ -131,6 +131,8 @@ Em 2026-06-25, foi criada a skill `provimento-213-2026` para o Kowalski.
 Uso: diagnóstico técnico, checklist, dossiê, relatório simplificado, PCN/PRD, política de segurança, inventário, backup, logs, MFA, LGPD, interoperabilidade e parecer técnico no padrão Bikon/Kowalski para cartórios.
 
 Regra: apoio técnico, não parecer jurídico; não declarar conformidade jurídica plena; não enviar cliente externo sem aprovação explícita.
+
+Desde 2026-07-14/15, o onboarding de cartórios usa consulta oficial por CNS como evidência complementar. CNS não pode ser inferido por nome ou similaridade; CNS obtido por fonte alternativa permanece candidato até confirmação. Classificação pelo Provimento 213/2026 depende de norma/tabela oficial vigente e arrecadação do período aplicável, sem analogias silenciosas.
 
 ## Relações
 

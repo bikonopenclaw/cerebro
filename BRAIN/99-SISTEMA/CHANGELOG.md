@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-07-15, consolidação diária
+
+- Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-15.md`.
+- Sincronizados snapshots versionados de Kowalski, Darth Vader e Robotnik; o manifesto foi atualizado e as skills específicas passaram a refletir a localização ativa em `<workspace>/skills`.
+- Atualizado o projeto `Migração Hostinger VPS / OpenClaw` com o saneamento Fase 1, liberação de aproximadamente 7,1 GiB, correção dos caminhos de skills e restauração do inventário de 33 crons.
+- Atualizada a verificação de crons com gates pós-migração e o risco de reiniciar o gateway durante disparo de backlog.
+- Atualizados `KOWALSKI.md` e `PROVIMENTO-213-2026-KOWALSKI.md` com o novo caminho ativo da skill, consulta oficial por CNS e guardrails contra inferência de CNS ou classe regulatória.
+- Registrada pendência operacional de 11 jobs com último status de erro após restart, timeout ou aborto; causa-raiz do novo travamento da VPS segue em investigação.
+- Atualizados `HEALTH.md` e `STATUS-BRAIN.md`.
+
 ## 2026-07-14, consolidação diária
 
 - Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-14.md`.

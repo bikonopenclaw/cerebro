@@ -1,6 +1,6 @@
 # HEALTH.md
 
-Health Score: 95/100
+Health Score: 94/100
 
 ## Status atual
 
@@ -8,7 +8,7 @@ Health Score: 95/100
 - Arquivos obrigatórios criados.
 - Sem registros duplicados identificados.
 - Sem projetos abandonados identificados.
-- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11 e 2026-07-14.
+- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14 e 2026-07-15.
 - Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`), 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`), 2026-06-28 (`01-DIARIO/Semanal/2026-W26.md`) e 2026-07-12 (`01-DIARIO/Semanal/2026-W28.md`).
 - Consolidação mensal executada em 2026-07-01 (`01-DIARIO/Mensal/2026-06.md`), cobrindo junho/2026.
 - Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, separação teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, validação visual de relatórios externos, artefatos gerados fora do Brain/Git, ausência de evidência em monitoramento, separação entre consulta gerencial e permissão operacional e homologação bancária sem produção automática.
@@ -28,6 +28,7 @@ Health Score: 95/100
 - Agentes Kowalski, Darth Vader e Robotnik documentados; Kowalski atualizado com padrão NinjaOne/EOL, autoria/solicitante, canal Telegram isolado e guardião visual Bikon; Darth Vader atualizado com revisão pré-produção de NFS-e/boleto/remessa e Cresol API em homologação; Robotnik atualizado com Instagram em `draft`, crons editoriais e revisão visual via Kowalski para peças finais.
 - `Modelo de Relatório EOL Bikon` aprovado como padrão oficial para próximos relatórios EOL; PDFs finais e artefatos gerados permanecem fora do Brain/Git.
 - Claw3D/OpenClaw na VPS validado em 2026-07-13 com gateway conectado e ajuste para `openclaw-ground`; pendente confirmação visual do Hebert pelo túnel SSH.
+- Em 2026-07-15, a Fase 1 de saneamento liberou aproximadamente 7,1 GiB e reduziu o uso do disco para 38%; skills específicas foram reposicionadas para os workspaces ativos e o scheduler voltou a enxergar 33 jobs habilitados.
 - Snapshots versionados dos agentes Kowalski, Darth Vader e Robotnik criados em `60-AGENTES/versionados/`, com política de exclusão de segredos, artefatos, diretórios temporários e dados brutos sensíveis; em 2026-07-03 o Git do Brain passou a ignorar PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados por padrão; em 2026-07-09 a rotina passou a excluir também bancos locais, WAL/SHM, estado OpenClaw e artefatos de homologação da API Cresol; em 2026-07-10 a rotina passou a excluir prefixos `.venv-*` e `homologacao-*`; em 2026-07-11 passou a excluir `exports/`, `drafts/`, `*.csv` e `*.svg`; em 2026-W28 esse padrão foi elevado para nota permanente.
 
 ## Pendências
@@ -42,6 +43,7 @@ Health Score: 95/100
 - Observar o canal isolado do Kowalski no Telegram e ajustar roteamento se houver resposta fora de escopo, latência anormal ou duplicidade com Puppet Master.
 - Acompanhar produção Bitdefender -> NinjaOne: confirmar que tickets reais respeitam critérios de alta confiança, recência de 30 dias, ausência de máquina inativa e auto-fechamento só por nova coleta.
 - Confirmar visualmente o Claw3D/OpenClaw pelo acesso do Hebert e manter rollback documentado.
+- Concluir a análise de causa-raiz dos travamentos/restarts da VPS e revalidar os 11 jobs cujo último status ficou em erro após interrupção, timeout ou aborto em 2026-07-15; manter a Fase 2 de saneamento suspensa até fechar a recuperação.
 - Expandir dashboards conforme surgirem projetos, empresas, pessoas e automações reais.
 
 ## Filosofia cognitiva

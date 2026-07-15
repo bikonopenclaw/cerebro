@@ -7,7 +7,7 @@ responsavel: Puppet Master
 inicio: 2026-07-06
 fim:
 prioridade: alta
-ultima_revisao: 2026-07-14
+ultima_revisao: 2026-07-15
 tags: [openclaw, vps, hostinger, migracao, infraestrutura]
 ```
 
@@ -48,18 +48,35 @@ Validação operacional do Claw3D/OpenClaw na VPS:
 
 Próxima validação do lado do Hebert: abrir via túnel SSH para `localhost:3000/office?fresh=1` e confirmar comportamento visual após hard refresh.
 
+## Estado observado em 2026-07-15
+
+Foi executada somente a Fase 1 do saneamento autorizado da VPS:
+
+- aproximadamente 7,1 GiB liberados;
+- uso do disco reduzido de 46% para 38%, com cerca de 60 GiB livres;
+- pontos de restauração e backups reservados para a Fase 2 preservados;
+- Puppet Master, Kowalski, Darth Vader, Robotnik, Claw3D e integrações locais passaram pelos gates operacionais previstos após a limpeza.
+
+A revisão de caminhos identificou skills específicas fora da rota ativa da versão atual do OpenClaw. Elas foram reposicionadas de `agents/<agente>/agent/skills` para `<workspace>/skills`. A validação posterior encontrou 12 skills de workspace elegíveis no Puppet Master, 8 no Kowalski, 4 na Darth Vader e 1 no Robotnik.
+
+O scheduler também apontava para o armazenamento legado em `/home/openclaw/.openclaw/cron/jobs.json`, enquanto a instância atual usa `/data/.openclaw/cron/jobs.json` e estado SQLite. A correção restaurou 33 jobs habilitados e `nextWake` ativo.
+
+A recuperação ainda não está encerrada: reinícios do gateway durante a correção interromperam execuções e deixaram 11 jobs com último status de erro, entre abortos, timeout de setup e interrupção por restart. Os serviços `openclaw-gateway`, `openclaw-gateway-kowalski` e `claw3d` estavam ativos na checagem posterior, mas o Hebert relatou novo travamento e a análise de causa-raiz permanece em andamento.
+
 ## Próximos passos
 
-1. Confirmar visualmente o Claw3D/OpenClaw pelo acesso do Hebert.
-2. Validar agentes, workspaces, Brain, crons e segredos locais sem expor credenciais.
-3. Documentar rollback e pontos de corte finais.
-4. Só então considerar a migração pronta para operação contínua.
+1. Concluir a análise de causa-raiz dos travamentos/restarts da VPS antes de nova manutenção.
+2. Revalidar os 11 jobs com último status de erro e confirmar execuções seguintes sem timeout, aborto ou interrupção.
+3. Confirmar visualmente o Claw3D/OpenClaw pelo acesso do Hebert.
+4. Documentar rollback e pontos de corte finais.
+5. Manter a Fase 2 suspensa até fechar a janela de recuperação e só então considerar a migração pronta para operação contínua.
 
 ## Guardrails
 
 - Não versionar backups, dumps, `.env`, sessões, caches, credenciais ou dados brutos no Brain.
 - Não preservar resíduos de tentativas anteriores se conflitarem com a arquitetura limpa.
 - Não acionar sistemas externos sem autorização explícita durante o replanejamento.
+- Não reiniciar o gateway enquanto houver backlog de crons sendo disparado; primeiro inspecionar jobs vencidos/em execução e definir janela de retomada.
 
 ## Relações
 

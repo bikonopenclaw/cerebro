@@ -1,12 +1,19 @@
 {
+  "regra_id": "{{regra_id}}",
+  "status": "candidata",
   "padrao_historico": "{{padrao_historico}}",
   "natureza": "{{natureza}}",
   "categoria": "{{categoria}}",
   "contraparte": "{{contraparte}}",
+  "centro_custo": "{{centro_custo}}",
   "competencia_padrao": "{{competencia_padrao}}",
   "tolerancia_valor": "{{tolerancia_valor}}",
   "aplicar_a": "{{aplicar_a}}",
+  "confianca_minima": "{{confianca_minima}}",
+  "precisa_revisao_humana": true,
   "aprovado_por": "Hebert Mattedi",
   "aprovado_em": "{{data_aprovacao}}",
-  "exemplos": ["{{movimento_id}}"]
+  "origem_aprovacao": "{{origem_aprovacao}}",
+  "movimentos_exemplo": ["{{movimento_id}}"],
+  "evidencias": ["{{evidencia}}"]
 }

@@ -1,6 +1,6 @@
 ---
 name: "conciliacao-bancaria-assistida"
-description: "Fila de excecoes e entrevista para conciliar extratos"
+description: "Concilia extratos com excecoes e aprovacoes"
 ---
 
 # Conciliacao Bancaria Assistida
@@ -13,16 +13,76 @@ A skill pertence operacionalmente ao Darth Vader. Puppet Master coordena, priori
 
 ## Objetivo
 
-Transformar conciliacao bancaria em processo assistido:
+Transformar conciliacao bancaria em processo assistido e auditavel:
 
 1. Importar movimentacoes.
-2. Classificar automaticamente o que ja tem regra.
-3. Separar desconhecidos em fila de excecoes.
-4. Entrevistar Hebert apenas sobre lacunas reais.
-5. Registrar a resposta como rascunho validado.
-6. Criar regra reaproveitavel quando Hebert aprovar.
+2. Normalizar cada movimento com ID unico.
+3. Classificar automaticamente apenas o que tiver regra aprovada e confianca alta.
+4. Separar desconhecidos em fila de excecoes.
+5. Entrevistar Hebert somente sobre lacunas reais.
+6. Registrar resposta como rascunho validado.
+7. Propor regra reaproveitavel quando fizer sentido.
+8. Gravar definitivo somente com aprovacao explicita.
 
-O ganho esperado e reduzir perguntas repetidas ao longo dos meses. Cada resposta de Hebert deve virar regra operacional quando fizer sentido.
+O ganho esperado e reduzir perguntas repetidas ao longo dos meses sem trocar seguranca financeira por velocidade.
+
+## Modos Operacionais
+
+A skill opera em quatro modos. Informar o modo antes de executar.
+
+### 1. `analisar`
+
+Permitido:
+
+- ler extrato;
+- normalizar movimentos;
+- identificar duplicidades;
+- sugerir classificacoes;
+- montar fila de excecoes;
+- gerar relatorio de pendencias.
+
+Proibido:
+
+- gravar classificacao definitiva;
+- criar regra permanente;
+- baixar titulo;
+- alterar banco financeiro de producao.
+
+### 2. `entrevistar`
+
+Permitido:
+
+- perguntar lacunas a Hebert;
+- apresentar opcoes numeradas;
+- registrar resposta como rascunho;
+- manter pendente quando Hebert responder `nao sei agora`.
+
+Proibido:
+
+- transformar resposta em regra permanente sem confirmacao;
+- inferir aprovacao por silencio;
+- fazer mais de uma pergunta por movimento quando uma bastar.
+
+### 3. `propor-regra`
+
+Permitido:
+
+- montar regra candidata;
+- anexar exemplos e evidencias;
+- explicar risco e escopo;
+- pedir aprovacao explicita.
+
+Proibido:
+
+- ativar regra automaticamente;
+- aplicar regra em lote sem autorizacao;
+- expandir escopo alem do aprovado.
+
+### 4. `gravar-definitivo`
+
+Permitido somente com aprovacao explicita de Hebert para a acao especifica.
+
+Mesmo com confianca alta, gravacao definitiva, baixa, regra permanente, alteracao em banco financeiro, remessa, boleto, NFS-e ou impacto financeiro real continuam bloqueados sem aprovacao.
 
 ## Travas
 
@@ -33,7 +93,8 @@ O ganho esperado e reduzir perguntas repetidas ao longo dos meses. Cada resposta
 - Nao executar pagamento.
 - Nao alterar saldo bancario manualmente.
 - Nao criar regra permanente sem confirmacao explicita.
-- Nao gravar classificacao definitiva quando a confianca for baixa.
+- Nao gravar classificacao definitiva quando a confianca for baixa ou media.
+- Nao gravar classificacao definitiva sem modo `gravar-definitivo` aprovado.
 - Comunicacao externa, envio de boleto/NFS-e/remessa e impacto financeiro real exigem aprovacao explicita de Hebert.
 
 ## Fontes De Dados
@@ -47,12 +108,26 @@ Prioridade de leitura:
 5. Regras de classificacao ja aprovadas.
 6. Historico de excecoes resolvidas.
 
+## ID Unico De Movimento
+
+Cada movimento deve receber `movimento_id` deterministico antes de qualquer classificacao.
+
+Composicao recomendada:
+
+`{{conta}}|{{data}}|{{valor}}|{{historico_normalizado}}|{{documento_ou_id_bancario}}`
+
+Se o banco fornecer identificador unico confiavel, incluir esse identificador na composicao.
+
+Antes de classificar ou perguntar, verificar se o `movimento_id` ja existe na fila, no historico de excecoes ou em classificacao anterior. Se existir, nao duplicar. Atualizar status ou apontar conflito.
+
 ## Modelo De Raciocinio
 
 Para cada movimento bancario:
 
-1. Normalizar data, valor, historico, documento, identificador e conta.
-2. Procurar casamento direto:
+1. Normalizar data, valor, historico, documento, identificador, conta e tipo: credito ou debito.
+2. Gerar `movimento_id`.
+3. Procurar duplicidade pelo ID e por valor/data/historico parecidos.
+4. Procurar casamento direto:
    - boleto liquidado;
    - NFS-e recebida;
    - retorno bancario;
@@ -61,32 +136,41 @@ Para cada movimento bancario:
    - transferencia entre contas;
    - imposto recorrente;
    - estorno ou ajuste.
-3. Atribuir confianca:
-   - `alta`: regra aprovada e dados batem.
-   - `media`: padrao provavel, mas falta confirmacao.
-   - `baixa`: desconhecido ou ambiguo.
-4. Movimentos de confianca alta podem gerar sugestao automatica.
-5. Movimentos de confianca media ou baixa entram na fila de entrevista.
+5. Registrar evidencias da sugestao.
+6. Atribuir confianca:
+   - `alta`: regra aprovada e dados batem;
+   - `media`: padrao provavel, mas falta confirmacao;
+   - `baixa`: desconhecido, ambiguo ou com dados insuficientes.
+7. Confianca alta pode gerar sugestao automatica, mas nao gravacao definitiva sem aprovacao.
+8. Confianca media ou baixa entra na fila de excecoes.
 
 ## Fila De Excecoes
 
 Cada excecao deve ter:
 
-- id interno;
+- `movimento_id`;
 - data;
 - valor;
 - tipo de movimento: credito ou debito;
 - historico bancario original;
+- historico normalizado;
 - conta bancaria;
 - possivel contraparte;
 - sugestao do agente, se houver;
+- evidencias da sugestao;
+- dado faltante ou motivo da duvida;
 - nivel de confianca;
+- risco se classificar errado;
 - pergunta para Hebert;
-- status: `pendente`, `respondido`, `rascunho`, `aprovado`, `descartado`.
+- status: `pendente`, `respondido`, `rascunho`, `aprovado`, `descartado`, `duplicado`.
 
 ## Entrevista Guiada
 
-A entrevista deve ser curta e orientada por opcoes.
+A entrevista deve ser curta, orientada por opcoes e sempre referenciar o `movimento_id`.
+
+Usar o template:
+
+`templates/pergunta-excecao-financeira.md`
 
 ### Pergunta 1: natureza
 
@@ -149,18 +233,45 @@ Opcoes:
 - Criar regra para contraparte, qualquer valor.
 - Nao criar regra ainda.
 
+## Registro De Regra
+
+Toda regra candidata deve usar o template:
+
+`templates/regra-classificacao.json`
+
+Uma regra aprovada deve conter:
+
+- id da regra;
+- padrao de historico bancario;
+- natureza;
+- categoria;
+- contraparte;
+- centro de custo, se aplicavel;
+- competencia padrao;
+- limite de valor ou tolerancia, se houver;
+- escopo de aplicacao;
+- status: `candidata`, `aprovada`, `ativa`, `rejeitada`;
+- origem da aprovacao: Hebert;
+- data da aprovacao;
+- mensagem ou registro que aprovou;
+- exemplos de movimentos usados;
+- evidencias.
+
 ## Saida Para Hebert
 
 Quando pedir uma decisao, usar formato curto:
 
 ```text
-Movimento desconhecido:
+Movimento desconhecido: {{movimento_id}}
 Data: {{data}}
 Valor: {{valor}}
 Historico: {{historico}}
+Conta: {{conta}}
 Sugestao: {{sugestao}} (confianca {{nivel}})
+Motivo da duvida: {{motivo}}
+Risco: {{risco}}
 
-Escolha:
+Responda com o numero:
 1. {{opcao_1}}
 2. {{opcao_2}}
 3. {{opcao_3}}
@@ -170,40 +281,30 @@ Escolha:
 Quando fechar lote:
 
 ```text
-Conciliação assistida
-1. Classificados automaticamente: {{n}}
+Conciliacao assistida
+1. Classificados como sugestao: {{n}}
 2. Resolvidos por entrevista: {{n}}
 3. Pendentes: {{n}}
-4. Regras novas propostas: {{n}}
-5. Precisa aprovação: {{lista_curta}}
+4. Duplicados/conflitos: {{n}}
+5. Regras novas propostas: {{n}}
+6. Precisa aprovacao: {{lista_curta}}
 ```
-
-## Registro De Regra
-
-Uma regra aprovada deve conter:
-
-- padrao de historico bancario;
-- natureza;
-- categoria;
-- contraparte;
-- centro de custo, se aplicavel;
-- competencia padrao;
-- limite de valor ou tolerancia, se houver;
-- origem da aprovacao: Hebert;
-- data da aprovacao;
-- exemplos de movimentos usados.
 
 ## Criterio De Pronto
 
 A skill esta pronta quando Darth Vader consegue:
 
 - importar extrato;
+- gerar ID unico por movimento;
 - separar desconhecidos;
+- evitar duplicidade;
 - entrevistar Hebert com opcoes claras;
-- gerar rascunho de classificacao;
-- propor regras novas;
+- registrar rascunho de classificacao;
+- propor regras novas com evidencias;
 - manter tudo travado ate aprovacao quando houver impacto definitivo.
 
 ## Regra De Postura
 
-Nao transformar Hebert em digitador de planilha. Perguntar so o que o sistema nao sabe inferir com seguranca. Toda pergunta deve melhorar a automacao futura.
+Nao transformar Hebert em digitador de planilha. Perguntar so o que o sistema nao sabe inferir com seguranca.
+
+Toda pergunta deve melhorar a automacao futura. Toda gravacao definitiva deve preservar caixa, historico financeiro e rastreabilidade.
