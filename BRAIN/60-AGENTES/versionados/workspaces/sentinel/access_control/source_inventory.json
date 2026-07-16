@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "actor": "Sentinel",
+  "audit_log": "logs/access-audit.jsonl",
+  "segregation_model": "operational_controls_only",
+  "sources": [
+    {
+      "source": "ninjaone",
+      "status": "active_readonly",
+      "client": "integrations/ninjaone/ninjaone_readonly.py",
+      "credential": "shared_m2m_external_600",
+      "allowed": "GET em allowlist e token temporario monitoring",
+      "real_segregation": false,
+      "revocation": "REVOGACAO.md#ninjaone"
+    },
+    {
+      "source": "arx-cove",
+      "status": "active_readonly",
+      "client": "integrations/arx/arx_readonly.py",
+      "credential": "shared_integration_external_600",
+      "allowed": "Login e EnumerateAccountStatistics",
+      "real_segregation": false,
+      "revocation": "REVOGACAO.md#arxcove"
+    },
+    {
+      "source": "bitdefender",
+      "status": "active_readonly",
+      "client": "integrations/bitdefender/bitdefender_readonly.py",
+      "credential": "external_api_key_600",
+      "allowed": "getCompaniesList, getEndpointsList, getQuarantineItemsList e getIncidentsList",
+      "write_methods_exposed": false,
+      "retry_or_fallback": false,
+      "revocation": "REVOGACAO.md#bitdefender"
+    },
+    {
+      "source": "operational-context",
+      "status": "active_local_readonly",
+      "client": "context/operational_context.py",
+      "credential": "none_local_allowlist",
+      "allowed": "summary, clients, client e severity",
+      "revocation": "REVOGACAO.md#fontes-locais"
+    },
+    {
+      "source": "operational-logs",
+      "status": "active_local_readonly",
+      "client": "integrations/logs/operational_logs.py",
+      "credential": "none_local_allowlist",
+      "allowed": "sources, health e tail arx|bitdefender ate 200 linhas",
+      "revocation": "REVOGACAO.md#fontes-locais"
+    }
+  ]
+}

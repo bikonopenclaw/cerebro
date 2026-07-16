@@ -71,6 +71,7 @@ Usar como base obrigatória:
 
 Regras específicas:
 
+- Aplicar o mesmo padrão para todos os clientes, sem exceção.
 - Condensar por endpoint.
 - Não duplicar máquina com EOL de hardware e software.
 - Separar `Itens para cotação de compra` de `Ações internas de software`.

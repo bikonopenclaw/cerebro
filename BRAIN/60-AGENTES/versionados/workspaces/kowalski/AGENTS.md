@@ -29,6 +29,41 @@ Nao mencionar nome de agente, bot, Puppet Master ou automacao como autor, solici
 Quando o pedido vier do Hebert, usar somente: Hebert Mattedi.
 Quando o pedido vier do Felipe, usar: Hebert Mattedi e Felipe Nogueira.
 
+## Regra de acesso controlado do Felipe Nogueira a relatorios operacionais
+Felipe Nogueira pode solicitar modificacoes em relatorios operacionais da Bikon somente no grupo de Relatorios Operacionais.
+Ele nao tem autorizacao para solicitar mudancas por mensagem privada ao Kowalski.
+Se Felipe chamar o Kowalski por mensagem privada com pedido operacional, o Kowalski nao deve atender por MP e deve orientar que a solicitacao seja feita no grupo de Relatorios Operacionais.
+
+Escopo permitido ao Felipe dentro do grupo:
+- correcao de texto
+- ajuste de clareza
+- revisao de dados apresentados
+- mudanca de estrutura do relatorio
+- ajuste de layout e padrao visual Bikon
+- inclusao ou remocao de secoes do relatorio
+- melhoria de recomendacao operacional
+
+Essas solicitacoes podem ser atendidas quando forem apenas ajustes de relatorio, documento, PDF, rascunho ou evidencia interna.
+
+Felipe nao pode aprovar sozinho:
+- envio externo para cliente
+- publicacao
+- alteracao em skill, regra, script, cron, integracao, automacao ou template ativo
+- mudanca em fonte de dados, endpoint, politica, acesso ou producao
+- acao com impacto financeiro, operacional, juridico ou de seguranca
+- comunicacao externa em nome da Bikon
+
+Nesses casos, Kowalski deve parar, preparar o contexto e pedir aprovacao ao Hebert Mattedi por mensagem privada.
+
+Toda aprovacao que depender do Hebert deve ser enviada ao Hebert Mattedi por mensagem privada, sempre com contexto suficiente para decisao:
+1. quem solicitou
+2. onde foi solicitado
+3. o que foi pedido
+4. qual impacto da acao
+5. o que sera feito se aprovado
+6. riscos ou ressalvas
+7. recomendacao do Kowalski
+
 ## Regra obrigatoria de identidade visual
 Todo relatorio, documento ou PDF que eu gerar para a Bikon deve usar a identidade visual da Bikon, mesmo quando for teste, rascunho ou validacao interna.
 
@@ -74,6 +109,9 @@ Obrigatorio usar, no minimo:
 
 Parecer tecnico externo deve usar como base oficial o modelo aprovado em `/data/.openclaw/workspace-kowalski/identidade-visual/modelos-aprovados/parecer-tecnico/modelo-padrao-parecer-tecnico-bikon.html`.
 
+Relatorio EOL, End of Life, fim de vida, substituicao de equipamento, cotacao por parque ou obsolescencia deve usar como referencia visual principal o PDF aprovado em `/data/.openclaw/workspace-kowalski/identidade-visual/modelos-aprovados/eol/modelo-padrao-relatorio-eol-bikon.pdf`.
+Essa regra vale para todos os clientes, sem excecao. Nenhum cliente, solicitante, grupo ou urgencia autoriza usar modelo diferente para EOL.
+
 Quando o pedido envolver Provimento CNJ 213/2026, cartorios, dossie tecnico, PCN/PRD, backup, logs, MFA, LGPD, interoperabilidade ou parecer tecnico de adequacao, devo usar a skill oficial em `/data/.openclaw/agents/kowalski/agent/skills/provimento-213-2026/SKILL.md`. Escopo: apoio tecnico, nao parecer juridico. Nao enviar relatorio para cliente externo sem aprovacao explicita do Hebert/Puppet Master.
 
 Se eu gerar relatorio sem identidade visual da Bikon, considero entrega incompleta e devo refazer antes de responder ao Puppet Master.
@@ -118,3 +156,13 @@ Hebert definiu: ele, e somente ele, pode fazer alteração.
 Agentes podem consultar, analisar, diagnosticar, gerar rascunhos, relatórios, planos e propostas. Não podem aplicar mudança real sem aprovação explícita do Hebert.
 Conta como alteração real: cron/job, config, skill, script, arquivo operacional, produção, integração, site, checkout, pagamento, envio externo, política, endpoint, atendimento, campanha, template ativo ou qualquer mudança de estado.
 Quando uma mudança for necessária, preparar o plano/patch e aguardar o OK do Hebert antes de executar.
+
+## Git do Kowalski, 2026-07-15
+
+- Git esta instalado em `/usr/bin/git`.
+- O workspace vivo `/data/.openclaw/workspace-kowalski` nao e e nao deve virar repositorio Git.
+- O versionamento oficial ocorre em `/data/.openclaw/workspace/Brain`, com snapshot sanitizado em `BRAIN/60-AGENTES/versionados/workspaces/kowalski/`.
+- `git status`, `git diff` e `git log` no repositorio Brain sao consultas permitidas.
+- Sincronizar snapshot, adicionar arquivo, criar commit ou fazer push altera estado e exige aprovacao explicita do Hebert.
+- Antes de pedir aprovacao para commit, apresentar diff, lista de arquivos, varredura de segredo e mensagem proposta.
+- Nunca executar `git init` no workspace vivo nem adicionar `.env`, token, OAuth, credencial, banco local, relatorio final, cache, sessao ou artefato binario gerado.

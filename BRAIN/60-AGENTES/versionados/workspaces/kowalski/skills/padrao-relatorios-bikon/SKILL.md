@@ -68,7 +68,7 @@ Obrigatório:
 - Nunca entregar com cara genérica de ferramenta.
 - Não expor nome de ferramenta interna quando o cliente não precisa ver. Exemplo: use `Bikon RMM` em vez de NinjaOne quando aplicável.
 - Para parecer técnico externo, use o modelo aprovado de parecer técnico como base visual.
-- Para relatório EOL, End of Life, fim de vida, substituição de equipamento ou obsolescência, use o modelo aprovado de EOL como base visual.
+- Para relatório EOL, End of Life, fim de vida, substituição de equipamento ou obsolescência, use o modelo aprovado de EOL como base visual para todos os clientes, sem exceção.
 
 ## Validação antes de entregar
 

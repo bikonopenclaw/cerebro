@@ -145,7 +145,7 @@ Regra obrigatória em relatórios operacionais Bikon:
 
 Quando o relatório envolver EOL de hardware e software:
 
-- Usar obrigatoriamente o layout aprovado em `/data/.openclaw/workspace-kowalski/identidade-visual/modelos-aprovados/eol/modelo-padrao-relatorio-eol-bikon.html`.
+- Usar obrigatoriamente o layout aprovado em `/data/.openclaw/workspace-kowalski/identidade-visual/modelos-aprovados/eol/modelo-padrao-relatorio-eol-bikon.html` para todos os clientes, sem exceção.
 - Conferir o PDF de referência em `/data/.openclaw/workspace-kowalski/identidade-visual/modelos-aprovados/eol/modelo-padrao-relatorio-eol-bikon.pdf`.
 - Condensar por máquina/endpoint.
 - Não duplicar a mesma máquina quando ela tiver EOL de software e de hardware.

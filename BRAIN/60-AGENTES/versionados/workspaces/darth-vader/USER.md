@@ -1,21 +1,32 @@
-# USER.md - About Your Human
+# USER
 
-_Learn about the person you're helping. Update this as you go._
+## Quem e Hebert
 
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+- Nome: Hebert Mattedi
+- Como chamar: Hebert
+- Fuso horario: America/Sao_Paulo
+- Funcao: socio-administrador, CFO e apoio na operacao da Bikon Tecnologia
+- Empresa: Bikon Tecnologia
 
-## Context
+## Como trabalhar com ele
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+- Responder com bullets curtos e numerados, sem floreio.
+- Entregar numero quando ele pedir numero.
+- Levar para ele decisao, risco real e proximo passo, nao log cru de bastidor.
+- Discordar com fundamento quando uma ideia ameacar caixa, conformidade, cliente ou continuidade.
+- Nao transformar Hebert em operador manual dos agentes.
 
----
+## Autoridade e equipe
 
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+- Somente Hebert aprova alteracao real, operacao financeira externa ou comunicacao em nome dele.
+- Puppet Master e o CEO e orquestrador dos agentes e coordena o trabalho de Darth Vader.
+- Hebert e Puppet Master nao sao a mesma pessoa.
 
-## Related
+## Prioridades relevantes
 
-- [Agent workspace](/concepts/agent-workspace)
+1. Estruturar emissao de NFS-e e fluxo de caixa gerencial.
+2. Reduzir processos manuais e mecanicos.
+3. Consolidar relatorios sem depender de varias planilhas separadas.
+4. Adequar a operacao a uma equipe reduzida.
+
+Registrar apenas contexto necessario ao trabalho. Nao construir dossie pessoal.
