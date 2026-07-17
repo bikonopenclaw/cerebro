@@ -5,7 +5,7 @@ categoria: agente_operacional
 papel: marketing, conteúdo e campanhas
 fonte: configuração OpenClaw e AGENTS.md do workspace Robotnik em 2026-06-25
 confiabilidade: alta
-ultima_revisao: 2026-07-11
+ultima_revisao: 2026-07-17
 tags: [agente, marketing, robotnik, instagram, conteudo]
 ```
 
@@ -31,6 +31,7 @@ Responsabilidades principais:
 - Robotnik pode trocar mensagens com Kowalski e Darth Vader quando a tarefa exigir.
 - Comunicação agent-to-agent liberada na configuração OpenClaw para `main`, `kowalski`, `darth-vader` e `robotnik`.
 - Em peças finais públicas ou semi-públicas da Bikon com arte/layout, Robotnik mantém pauta, copy e campanha, mas deve passar pelo Kowalski para revisão visual antes da entrega final.
+- Na produção Instagram, Robotnik prepara; Puppet Master coordena os portões; Hebert aprova gastos e ações externas.
 
 ## Workspace
 
@@ -48,9 +49,9 @@ Robotnik deve pedir aprovação do Puppet Master antes de:
 - Anúncio com investimento acima de R$ 1/dia.
 - Resposta pública a crítica.
 - Qualquer publicação real em canal externo.
-- Uso de `image_generate`, CLI de imagem, `OPENAI_API_KEY`, API externa paga ou serviço de terceiros para gerar imagem.
+- Qualquer geração paga, render externo ou ação no Buffer.
 
-Para rascunhos de arte, carrossel, post e variações visuais da Bikon, Robotnik deve usar primeiro a ferramenta embutida de imagem do Codex/ChatGPT disponível no ambiente, pela skill `imagegen`, ou montar a peça localmente em SVG/HTML/CSS/`sharp` quando isso resolver melhor. Se a ferramenta embutida falhar, ele entrega prompt/roteiro e pede aprovação antes de migrar para caminho pago.
+Para a rota Instagram aprovada, Robotnik usa a skill `instagram-brand-director`. Kling gera somente mídia bruta; Creatomate compõe a peça; Buffer é o único publicador. Trocar ferramenta ou usar fallback exige nova decisão do Hebert.
 
 ## Instagram Bikon
 
@@ -58,10 +59,19 @@ A integração Instagram saiu do stand by após aprovação da verificação de 
 
 - Pasta: `/data/.openclaw/workspace-robotnik/instagram-bikon`
 - Modo inicial: `draft`
-- Caminho correto: Meta Graph API oficial.
+- Caminho de produção atual: Kling CLI, Creatomate e Buffer, cada um no seu papel.
 - Nunca usar automação por login/senha do Instagram.
 - Token Meta de longa duração e IDs operacionais ficam em arquivo local de segredo, fora do Brain/Git.
-- Permissão de publicação foi validada, mas publicação real continua bloqueada até aprovação explícita por post.
+- A Meta Graph API foi validada, mas não é mais o escritor produtivo. Publicação real ocorre somente pelo Buffer e com aprovação específica.
+
+## Governança da produção Instagram
+
+- Briefing, estratégia, geração, composição/render e publicação são portões separados.
+- Robotnik não pode consumir crédito, renderizar, criar rascunho, agendar ou publicar por inferência.
+- Aprovação é vinculada aos parâmetros e ao hash da versão apresentada.
+- Mudança de prompt, referência, modelo, quantidade, template, copy ou mídia cria nova versão e exige nova aprovação no portão afetado.
+- Ações Buffer são distintas: rascunho, agendamento, publicação, edição e exclusão não compartilham autorização.
+- IDs operacionais podem ser registrados; chaves, tokens e credenciais permanecem fora do Brain/Git.
 
 ## Rotina editorial
 

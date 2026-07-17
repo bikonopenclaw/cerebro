@@ -2,20 +2,29 @@
 
 ```yaml
 nome: Instagram Bikon Robotnik
-status: configurado_em_draft
+status: implantacao_controlada
 responsavel: Robotnik sob coordenação do Puppet Master
-ultima_revisao: 2026-07-11
+ultima_revisao: 2026-07-17
 fonte: conversa Hebert/Puppet Master e workspace Robotnik
 tags: [instagram, meta, robotnik, marketing, bikon]
 ```
 
 ## Objetivo
 
-Conectar o Instagram profissional da Bikon ao Robotnik para preparar posts, captions, Reels e futuramente publicar ou agendar via API oficial.
+Planejar, gerar, compor, revisar e publicar conteúdo do Instagram Bikon com portões humanos, rastreabilidade e um único escritor do estado de publicação.
 
-## Decisão técnica
+## Decisão técnica atual
 
-Usar Meta Graph API oficial.
+Usar a seguinte divisão de responsabilidade:
+
+- Robotnik: pesquisa, pauta, copy, roteiro e direção criativa.
+- Puppet Master: coordenação, portões e consolidação.
+- Kling CLI: geração de mídia bruta.
+- Creatomate: composição determinística de logo, texto, CTA, tipografia e avisos.
+- Buffer: único sistema autorizado a criar rascunho, agendar ou publicar.
+- Hebert: aprovação de gasto e ação externa.
+
+A integração Meta Graph API validada em 2026-07-09 permanece como histórico técnico e contingência não autorizada. Ela não é mais a rota produtiva de publicação.
 
 Não usar:
 
@@ -23,6 +32,7 @@ Não usar:
 - automação de navegador para postar
 - scraping
 - extensões ou serviços não autorizados
+- Meta Graph API, Instagram direto ou BlackTwist como publicador paralelo ao Buffer
 
 ## Status atual
 
@@ -44,6 +54,19 @@ Em 2026-07-09, foram validados via Meta/Graph:
 
 O Brain não registra token nem app secret. IDs operacionais podem aparecer apenas quando necessários para reconstruir contexto técnico; segredos permanecem fora do Git.
 
+Em 2026-07-17, a arquitetura de produção foi consolidada:
+
+- skill `instagram-brand-director` implantada;
+- Kling CLI 0.1.3 contratada somente para `text_to_image`;
+- adapter corrigido para o prompt posicional real, com nove testes aprovados;
+- nenhuma geração enviada e nenhum crédito consumido;
+- brand pack oficial validado com Space Grotesk, logos oficiais e paleta Bikon;
+- conta Creatomate criada;
+- template `BIKON-FEED-4X5-V1`, ID `f3539d0c-8551-4913-b006-104f3354f0e7`, validado como PNG 1080 × 1350;
+- credencial Creatomate validada sem exposição e mantida fora do Brain/Git;
+- template ainda sem as camadas produtivas na última validação;
+- Buffer ainda sem perfil e credencial configurados.
+
 ## Estrutura criada
 
 - Workspace: `/data/.openclaw/workspace-robotnik/instagram-bikon`
@@ -64,7 +87,7 @@ Robotnik pode:
 - preparar rascunho de post
 - preparar payload técnico
 - validar formato e campos
-- gerar ou ajustar arte de rascunho usando primeiro a ferramenta embutida de imagem do Codex/ChatGPT, pela skill `imagegen`, ou geração local determinística quando bastar
+- preparar prompt, referências, manifesto e parâmetros de geração
 
 Robotnik não pode:
 
@@ -72,7 +95,19 @@ Robotnik não pode:
 - receber senha ou token por chat
 - expor token em relatório
 - responder cliente externo sem aprovação
-- usar `image_generate`, CLI de imagem, `OPENAI_API_KEY`, API externa paga ou serviço de terceiros para gerar imagem sem aprovação explícita do Hebert
+- submeter geração Kling sem aprovação dos parâmetros exatos
+- renderizar no Creatomate sem aprovação do portão de composição
+- criar rascunho, agendar, publicar, editar ou excluir no Buffer sem a autorização específica da operação
+
+## Portões de produção
+
+1. Briefing: objetivo, público, oferta, formato, KPI, prazo e restrições.
+2. Estratégia e rota: pilar, ângulo, hook, copy, fontes e direção visual.
+3. Geração: comando Kling, modelo, prompt, referências, quantidade, custo e hash exatos.
+4. Composição e render: mídia aprovada, template, textos, logo, CTA, avisos, áudio, legendas e hash do render.
+5. Publicação: canal, legenda, data, operação exata e versão final.
+
+Uma aprovação vale somente para o portão, os parâmetros e o hash apresentados. Nova variante exige nova aprovação. Criar rascunho não autoriza agendar; agendar não autoriza publicar, editar ou excluir.
 
 ## Rotina editorial relacionada
 
@@ -87,6 +122,8 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 
 ## Próximos passos
 
-1. Observar as primeiras entregas dos crons e ajustar briefing se vierem genéricas, sensacionalistas ou fora do escopo Bikon.
-2. Manter fontes externas/notícias/RSS como entrada principal de pauta; usar Instagram API para contexto da Bikon, métricas, hashtags pontuais e publicação controlada.
-3. Reavaliar publicação via API somente depois de rotina estável em modo rascunho e aprovação explícita por post.
+1. Concluir as camadas dinâmicas do master Creatomate e preencher o `template-map`.
+2. Validar a credencial no contexto efetivo do runtime e executar preflight sem render.
+3. Configurar o perfil Bikon no Buffer como único publicador.
+4. Executar piloto controlado de cibersegurança com uma imagem, passando por todos os portões.
+5. Manter fontes externas como entrada principal de pesquisa e usar métricas somente como evidência editorial.

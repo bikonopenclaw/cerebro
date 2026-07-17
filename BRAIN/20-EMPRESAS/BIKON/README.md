@@ -24,6 +24,8 @@
 
 ## Histórico relevante
 
+- 2026-07-17: aprovada a arquitetura de produção Instagram com Robotnik na preparação, Puppet Master na coordenação, Hebert nos portões de gasto/ação externa, Kling para mídia bruta, Creatomate para composição e Buffer como único publicador.
+- 2026-07-17: contrato Kling CLI 0.1.3 limitado a `text_to_image`, adapter corrigido e nove testes aprovados sem geração ou consumo; brand pack oficial e template Creatomate 1080 × 1350 validados, com camadas produtivas e Buffer ainda pendentes.
 - 2026-07-09: integração Instagram Bikon/Robotnik configurada em modo `draft` com Meta Graph API, token em segredo local, publicação bloqueada e crons editoriais criados para pautas diárias/semanais com aprovação humana.
 - 2026-07-09: definido Kowalski como guardião visual de materiais públicos ou semi-públicos Bikon com arte/layout, enquanto Robotnik permanece dono de pauta, copy e campanha.
 - 2026-07-09: pacote local de homologação Cresol gerado com remessa CNAB400 validada e boleto PDF conferido; nenhum upload no portal, envio ao banco ou e-mail externo foi feito.
@@ -54,3 +56,4 @@
 - Qualquer automação sobre contas de AD local de clientes deve começar em modo auditoria; criação, desativação, remoção de grupos ou alteração de privilégio exige aprovação explícita e escopo validado.
 - Relatórios técnicos externos devem sair com acabamento visual premium Bikon, sem caminhos internos, metadados automáticos, paginação feia ou aparência de HTML impresso.
 - Materiais públicos ou semi-públicos com logo, paleta, layout ou identidade Bikon devem passar por revisão visual do Kowalski antes da peça final; isso não substitui aprovação explícita para publicação ou envio externo.
+- No Instagram Bikon, briefing, estratégia, geração, composição/render e publicação são aprovações independentes. Buffer é o único publicador autorizado; Meta Graph API e Instagram direto não podem operar em paralelo.

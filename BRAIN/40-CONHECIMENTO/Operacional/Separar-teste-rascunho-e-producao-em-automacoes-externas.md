@@ -5,8 +5,8 @@ categoria: operacional
 tipo: aprendizado_permanente
 fonte: consolidação semanal 2026-W26
 confiabilidade: alta
-ultima_revisao: 2026-06-28
-tags: [guardrails, dry-run, rascunho, producao, automacoes, comunicacao-externa]
+ultima_revisao: 2026-07-17
+tags: [guardrails, dry-run, rascunho, producao, automacoes, comunicacao-externa, aprovacao, hash]
 ```
 
 ## Princípio
@@ -21,11 +21,21 @@ Automações que podem gerar efeito externo devem separar claramente preparaçã
 - Manter logs, tokens, `.env` e artefatos sensíveis fora do Brain/Git.
 - Registrar no Brain o estado operacional e os guardrails, não a execução sensível completa.
 
+## Aprovação por etapa e por hash
+
+- Separar aprovações de briefing, estratégia, geração paga, composição/render e publicação.
+- Vincular a aprovação à operação, versão, parâmetros e hash apresentados.
+- Tratar aprovação como uso único quando a operação puder consumir crédito ou alterar estado externo.
+- Qualquer mudança de prompt, modelo, referência, quantidade, template, mídia, copy, canal ou data invalida a aprovação do portão afetado.
+- Não herdar autorização entre operações. Rascunho não autoriza agendamento; agendamento não autoriza publicação; publicação não autoriza edição ou exclusão.
+- Antes de repetir, consultar o ID da operação e seu resultado. Polling ou consulta de status nunca deve virar nova submissão.
+- Registrar aprovador, horário UTC, evidência, ressalvas e correlação, sem copiar segredo.
+
 ## Exemplos conectados
 
 - Notaas NFS-e BIKON: rascunho `.eml`, SMTP validado, anexos preparados e envio externo bloqueado sem autorização.
 - API WhatsApp Bikon: rotina segura com dry-run por padrão e envio real somente com confirmação explícita.
-- Instagram Bikon Robotnik: modo `draft` até token/IDs seguros, testes controlados e aprovação de publicação.
+- Instagram Bikon Robotnik: portões separados, Kling para mídia, Creatomate para composição e Buffer como único publicador.
 
 ## Relações
 

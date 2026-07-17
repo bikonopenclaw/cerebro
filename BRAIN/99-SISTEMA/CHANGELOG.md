@@ -1,5 +1,16 @@
 # CHANGELOG.md
 
+## 2026-07-17, governança Instagram Bikon
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-07-17.md` com a implantação controlada da skill Instagram Brand Director.
+- Atualizados Robotnik e Instagram Bikon com portões separados para briefing, estratégia, geração, composição/render e publicação.
+- Registrados Kling CLI 0.1.3 limitada a `text_to_image`, adapter corrigido, nove testes aprovados e ausência de geração ou consumo.
+- Registrados brand pack oficial, template Creatomate 1080 × 1350 e credencial validada sem exposição; camadas produtivas, Buffer e preflight permanecem pendentes.
+- Buffer definido como único publicador; Meta Graph API mantida apenas como integração histórica validada e não autorizada para escrita produtiva.
+- Elevado o princípio de aprovação por etapa, operação, versão e hash em automações externas.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Nenhum snapshot ou sync executado.
+
 ## 2026-07-17, consolidação semanal parcial
 
 - Criado `BRAIN/01-DIARIO/Semanal/2026-W29.md` com cobertura parcial até 2026-07-17, usando daily notes de 14 e 15/07 e histórico Git apenas como evidência complementar.

@@ -8,11 +8,12 @@ Health Score: 94/100
 - Arquivos obrigatórios criados.
 - Sem registros duplicados identificados.
 - Sem projetos abandonados identificados.
-- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14 e 2026-07-15.
+- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15 e 2026-07-17.
 - Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`), 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`), 2026-06-28 (`01-DIARIO/Semanal/2026-W26.md`), 2026-07-12 (`01-DIARIO/Semanal/2026-W28.md`) e revisão parcial até 2026-07-17 (`01-DIARIO/Semanal/2026-W29.md`).
 - Consolidação mensal executada em 2026-07-01 (`01-DIARIO/Mensal/2026-06.md`), cobrindo junho/2026.
 - Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, separação teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, validação visual de relatórios externos, artefatos gerados fora do Brain/Git, ausência de evidência em monitoramento, separação entre consulta gerencial e permissão operacional, homologação bancária sem produção automática, validação do runtime pós-migração e menor privilégio em monitoramento.
 - Sentinel documentado como controller de Operações e SNOC read-only, com fontes autorizadas, allowlists, auditoria append-only, limites e revogação verificável.
+- Instagram Bikon documentado com aprovações separadas por etapa e hash, Kling restrita à geração, Creatomate à composição e Buffer como único publicador.
 - Registro central da BIKON criado e conectado a Notaas NFS-e, cadastro de clientes e boletos/malote.
 - Dashboard inicial atualizado.
 - Automações registradas: consolidação diária silenciosa, sync GitHub, Notaas NFS-e exclusiva da Darth Vader, documentação inicial de boletos/malote da BIKON com retorno Cresol CNAB400 para parser/conciliação, Cresol em homologação controlada com pacote local validado e sem envio externo, contexto ativo do grupo Telegram de faturamento Bikon, histórico inativo FN Souza, GravityZone/Bitdefender para Bikon com evolução aprovada para tickets NinjaOne sob critérios de alta confiança, matriz de acesso Bikon ↔ AD local de clientes, ARX Backup diário para tickets NinjaOne, limitações NinjaOne para backup/Hyper-V quando não há job/campo explícito, Provimento 213/2026 Kowalski, canal Telegram isolado do Kowalski para Relatórios Operacionais, Instagram Bikon Robotnik configurado em modo `draft` com crons editoriais e API WhatsApp Bikon validada; projeto de migração Hostinger VPS/OpenClaw em validação.
@@ -35,11 +36,11 @@ Health Score: 94/100
 ## Pendências
 
 - Manter cobertura diária consistente; há lacunas de diário em 2026-06-14/15, apesar da consolidação semanal de 2026-06-14.
-- Manter explícitas as lacunas recentes de daily notes em 2026-07-12, 2026-07-13, 2026-07-16 e 2026-07-17; a semana 2026-W29 usa histórico Git apenas como evidência complementar.
+- Manter explícitas as lacunas recentes de daily notes em 2026-07-12, 2026-07-13 e 2026-07-16; a semana 2026-W29 usou histórico Git apenas como evidência complementar até a criação do diário de 2026-07-17.
 - Restaurar, reindexar ou trocar o provedor de embeddings: `memory_search` falhou em 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-07 e 2026-07-08 por quota insuficiente/billing inativo; em 2026-07-10 retornou índice sem metadata/incompatível com o provedor/modelo atual.
 - Homologar layout Cresol antes de qualquer uso real da automação de boletos/malote; retorno `.ret` validado deve permanecer restrito a parser/conciliação.
 - Consultar evolução do título controlado de homologação Cresol antes de avançar ocorrências/conciliação por API; produção e baixa por API seguem bloqueadas.
-- Observar os crons editoriais do Robotnik e manter Instagram Bikon em modo `draft`; publicação/agendamento via API só com aprovação explícita por peça.
+- Fechar camadas do master Creatomate, `template-map`, credencial ativa no runtime, Buffer e preflight antes de liberar o piloto Instagram; geração, render e publicação seguem bloqueados por portões próprios.
 - Validar endpoint/permissão oficial de listagem de tickets no NinjaOne; sem isso, KPIs completos de tickets devem permanecer como indisponíveis, não estimados.
 - Instrumentar no NinjaOne, quando necessário, status explícito de backup e replicação Hyper-V para servidores de clientes que não expõem esses dados por jobs, alertas, atividades ou custom fields.
 - Observar o canal isolado do Kowalski no Telegram e ajustar roteamento se houver resposta fora de escopo, latência anormal ou duplicidade com Puppet Master.
