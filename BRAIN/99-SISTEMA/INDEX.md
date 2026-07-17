@@ -34,6 +34,7 @@ Mapa geral do Brain.
 - `01-DIARIO/Semanal/2026-W25.md`: consolidação semanal com padrões de escopo de canais, confirmação antes de impacto, segredos fora do Brain/Git e dados mestres completos em automações fiscais.
 - `01-DIARIO/Semanal/2026-W26.md`: consolidação semanal com padrões de segurança operacional antes de escala, teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, relatórios externos e canais com remetente autorizado.
 - `01-DIARIO/Semanal/2026-W28.md`: consolidação semanal com padrões de artefatos gerados fora do Brain/Git, evidência explícita em monitoramento, separação entre consulta gerencial e permissão operacional, homologação bancária sem produção automática e migração VPS limpa.
+- `01-DIARIO/Semanal/2026-W29.md`: consolidação parcial até 2026-07-17 com gates pós-migração, separação entre upgrade/restart/backlog, evidência recente em tickets e Sentinel read-only sob menor privilégio.
 - `01-DIARIO/2026/2026-07-03.md`: consolidação diária com snapshots versionados, KPIs WhatsApp/Bitdefender, limitação de tickets NinjaOne, falhas por limite de uso e saneamento de PDFs/artefatos no Git.
 - `01-DIARIO/2026/2026-07-08.md`: consolidação diária com limpeza pré-migração da VPS, riscos operacionais BIKON de 06/07/2026, atualização de snapshots e pendência de `memory_search`.
 - `01-DIARIO/2026/2026-07-09.md`: consolidação diária com Cresol API em homologação, canal Telegram isolado do Kowalski e saneamento adicional da rotina de snapshot.
@@ -54,6 +55,8 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Canais-com-escopo-e-remetente-autorizados.md`: aprendizado sobre separar grupo/canal permitido de remetente autorizado.
 - `40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md`: guardrail para manter exports, drafts, bancos locais, estados, ambientes virtuais e artefatos de homologação fora do Brain/Git.
 - `40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md`: aprendizado para não inferir sucesso ou falha quando ferramentas de monitoramento não expõem evidência explícita.
+- `40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md`: gate permanente para comprovar rotas ativas, skills, scheduler, canais e persistência depois de migração ou upgrade.
+- `40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md`: padrão para clientes read-only, allowlists, auditoria e revogação verificável em agentes de observabilidade.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
@@ -61,6 +64,7 @@ Mapa geral do Brain.
 - `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader, incluindo NFS-e, boletos, remessa e Cresol API com guardrails.
 - `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski, incluindo skill Provimento 213/2026, canal Telegram isolado para Relatórios Operacionais, Modelo de Relatório EOL Bikon e operação controlada Bitdefender -> NinjaOne.
 - `60-AGENTES/ROBOTNIK.md`: papel de marketing do agente Robotnik, status interno, guardrails e integração Instagram em retomada pós-aprovação Meta.
+- `60-AGENTES/SENTINEL.md`: papel do controller de Operações e SNOC, fontes autorizadas, limites read-only, menor privilégio e governança.
 - `60-AGENTES/versionados/`: snapshots seguros de código, skills e documentação operacional do Kowalski, Darth Vader e Robotnik, com exclusão de segredos e artefatos gerados.
 - `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
 - `70-AUTOMACOES/SYNC-GITHUB.md`: sincronização automática do Brain com GitHub 4x ao dia.

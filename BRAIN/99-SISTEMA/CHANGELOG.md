@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-07-17, consolidação semanal parcial
+
+- Criado `BRAIN/01-DIARIO/Semanal/2026-W29.md` com cobertura parcial até 2026-07-17, usando daily notes de 14 e 15/07 e histórico Git apenas como evidência complementar.
+- Criado `BRAIN/60-AGENTES/SENTINEL.md` com missão, fontes autorizadas, limites read-only, menor privilégio, revogação e governança.
+- Criadas as notas permanentes `Validacao-do-runtime-pos-migracao.md` e `Menor-privilegio-em-monitoramento.md`.
+- Atualizada `Ausencia-de-evidencia-nao-e-status-operacional.md` com recência, janela de validade e revalidação antes de auto-fechamento.
+- Atualizado o projeto `Migracao-Hostinger-VPS-OpenClaw.md` com gate executável pós-migração e separação entre upgrade, configuração, porta, restart e backlog.
+- Atualizados `MEMORY.md`, `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Mantidas explícitas as lacunas de daily notes em 12, 13, 16 e 17/07. Nenhum item foi arquivado.
+
 ## 2026-07-15, consolidação diária
 
 - Criado diário consolidado em `BRAIN/01-DIARIO/2026/2026-07-15.md`.

@@ -7,7 +7,7 @@ responsavel: Puppet Master
 inicio: 2026-07-06
 fim:
 prioridade: alta
-ultima_revisao: 2026-07-15
+ultima_revisao: 2026-07-17
 tags: [openclaw, vps, hostinger, migracao, infraestrutura]
 ```
 
@@ -63,6 +63,23 @@ O scheduler também apontava para o armazenamento legado em `/home/openclaw/.ope
 
 A recuperação ainda não está encerrada: reinícios do gateway durante a correção interromperam execuções e deixaram 11 jobs com último status de erro, entre abortos, timeout de setup e interrupção por restart. Os serviços `openclaw-gateway`, `openclaw-gateway-kowalski` e `claw3d` estavam ativos na checagem posterior, mas o Hebert relatou novo travamento e a análise de causa-raiz permanece em andamento.
 
+## Gate pós-migração consolidado em 2026-07-17
+
+Presença em disco não comprova runtime recuperado. Antes de encerrar a migração, validar:
+
+1. versões CLI e serviços alinhadas;
+2. supervisor, unit e state dir ativos;
+3. rotas reais dos workspaces, skills e configurações;
+4. skills descobertas pelo runtime;
+5. armazenamento do scheduler, jobs habilitados, `nextWake`, vencidos/em execução e erros consecutivos;
+6. execução read-only ou canário autorizado de cada rota crítica;
+7. RPC, canais, portas e exposição esperada;
+8. persistência depois de um segundo restart controlado.
+
+Upgrade/plugin, modelo/configuração, porta, restart e recuperação de backlog devem ocorrer em gates separados. No primeiro erro de incompatibilidade, migração, supervisor ou readiness, a janela para e retorna ao último estado conhecido. Não empilhar outra mudança para destravar.
+
+Antes do restart, inspecionar backlog e jobs em execução. Depois da recuperação, deduplicar mensagens por ID e responder apenas ao pedido mais recente quando houver conteúdo posterior que torne o anterior obsoleto.
+
 ## Próximos passos
 
 1. Concluir a análise de causa-raiz dos travamentos/restarts da VPS antes de nova manutenção.
@@ -70,6 +87,7 @@ A recuperação ainda não está encerrada: reinícios do gateway durante a corr
 3. Confirmar visualmente o Claw3D/OpenClaw pelo acesso do Hebert.
 4. Documentar rollback e pontos de corte finais.
 5. Manter a Fase 2 suspensa até fechar a janela de recuperação e só então considerar a migração pronta para operação contínua.
+6. Executar o gate pós-migração completo e registrar evidência antes/depois do restart controlado.
 
 ## Guardrails
 
@@ -77,8 +95,11 @@ A recuperação ainda não está encerrada: reinícios do gateway durante a corr
 - Não preservar resíduos de tentativas anteriores se conflitarem com a arquitetura limpa.
 - Não acionar sistemas externos sem autorização explícita durante o replanejamento.
 - Não reiniciar o gateway enquanto houver backlog de crons sendo disparado; primeiro inspecionar jobs vencidos/em execução e definir janela de retomada.
+- Arquivo existente, serviço ativo ou `nextWake` isolado não autorizam declarar recuperação concluída.
+- Não misturar upgrade, plugin, modelo/configuração, porta, restart e backlog na mesma janela.
 
 ## Relações
 
 - Diário: `BRAIN/01-DIARIO/2026/2026-07-06.md` e `BRAIN/01-DIARIO/2026/2026-07-08.md`.
 - Automação de crons: `BRAIN/70-AUTOMACOES/openclaw-crons/README-verificacao-crons.md`.
+- Conhecimento: `BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md`.

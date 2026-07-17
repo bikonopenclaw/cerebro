@@ -32,8 +32,13 @@ Memória institucional consolidada do Brain.
 - Homologação bancária, API funcional, boleto renderizado ou pacote local validado não autorizam produção, upload, baixa ou envio externo sem aprovação explícita e procedimento próprio.
 - Promessa de retorno sem resposta imediata deve gerar follow-up agendado no Telegram antes de encerrar a interação.
 - Bitdefender -> NinjaOne só deve abrir ticket real para critérios aprovados de alta confiança; endpoint sem proteção exige recência inferior a 30 dias, e auto-fechamento depende de nova coleta confirmando resolução.
+- Após migração ou upgrade, arquivos presentes não comprovam runtime recuperado; validar rotas ativas, skills indexadas, scheduler, `nextWake`, execuções, supervisor, canais e persistência após restart controlado.
+- Upgrade/plugin, modelo/configuração, porta, restart e recuperação de backlog são categorias distintas e devem passar por gates separados.
+- Agentes de monitoramento devem operar com menor privilégio: clientes read-only, allowlists, saída sanitizada, auditoria append-only e revogação verificável. Credencial compartilhada ampla continua sendo limitação explícita.
+- Evidência operacional precisa de fonte, timestamp e recência adequada. Abertura automática exige sinal atual; encerramento exige nova coleta que confirme resolução.
 
 ## Padrões consolidados mensalmente
 
 - Padrão mensal de junho/2026: segurança operacional antes de escala; automações podem preparar e validar, mas impactos fiscais, bancários, comunicacionais, publicações e alterações de identidade exigem confirmação explícita quando não autorizados previamente.
 - Padrão semanal 2026-W28: maturidade operacional antes de escala; snapshots seguros excluem artefatos derivados, integrações externas permanecem em rascunho/homologação até aprovação, e decisões operacionais dependem de evidência explícita.
+- Padrão semanal 2026-W29: recuperação comprovada antes de continuidade; runtime pós-migração exige readiness executável, mudanças ficam separadas por gate e monitoramento usa menor privilégio com evidência recente e revalidação.

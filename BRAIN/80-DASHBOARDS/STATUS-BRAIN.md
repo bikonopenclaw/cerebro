@@ -9,9 +9,9 @@
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
 - Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14 e 2026-07-15.
-- Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md`, `01-DIARIO/Semanal/2026-W26.md` e `01-DIARIO/Semanal/2026-W28.md`.
+- Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md`, `01-DIARIO/Semanal/2026-W26.md`, `01-DIARIO/Semanal/2026-W28.md` e revisão parcial `01-DIARIO/Semanal/2026-W29.md`.
 - Consolidação mensal de junho/2026 criada em `01-DIARIO/Mensal/2026-06.md`, com aprendizados, padrões de longo prazo, decisões consolidadas e critério de arquivamento.
-- Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, artefatos gerados fora do Brain/Git, evidência explícita em monitoramento, consulta gerencial sem permissão operacional e homologação bancária sem produção automática.
+- Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, artefatos gerados fora do Brain/Git, evidência explícita em monitoramento, consulta gerencial sem permissão operacional, homologação bancária sem produção automática, validação do runtime pós-migração e menor privilégio em monitoramento.
 - Registro central da BIKON criado em `20-EMPRESAS/BIKON/README.md`.
 - Automação de consolidação diária registrada.
 - Sync GitHub do Brain registrado para execução 4x ao dia.
@@ -33,6 +33,7 @@
 - SQLite financeiro do Darth Vader possui camada BI inicial e acesso read-only para Kowalski local/Hermes; baixa, retorno, pagamento e escrita financeira permanecem com Darth Vader.
 - Codex OpenClaw configurado com `model_reasoning_effort = "high"` no `CODEX_HOME` ativo em 2026-07-10.
 - Kowalski, Darth Vader e Robotnik possuem snapshots seguros versionados no Git do Brain, incluindo skills, scripts e documentação operacional sem segredos; rotina de snapshot exclui segredos, bancos locais, estados OpenClaw, ambientes virtuais e artefatos gerados/homologação.
+- Sentinel documentado como controller de Operações e SNOC estritamente read-only, com fontes autorizadas, allowlists, auditoria, revogação e proibição de remediação ou ticket sem aprovação.
 - Brain/Git: PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados são ignorados por padrão; PDFs anteriormente rastreados foram removidos do índice Git em 2026-07-03.
 - Arquivos obrigatórios criados em `99-SISTEMA`.
 
@@ -49,4 +50,6 @@
 - Criar mapa inicial de empresas, pessoas, projetos e agentes conforme o volume de conteúdo real crescer.
 - API WhatsApp Bikon: integração validada, token protegido fora do Git, rotina segura de template criada.
 - Migração Hostinger VPS/OpenClaw: em validação; Fase 1 de saneamento liberou aproximadamente 7,1 GiB, skills específicas foram reposicionadas para os workspaces e 33 crons voltaram ao inventário ativo. Permanecem 11 jobs com último status de erro após restart/timeout/aborto e investigação de causa-raiz dos travamentos.
+- Executar o gate pós-migração completo: rotas ativas, skills indexadas, scheduler, `nextWake`, execuções, supervisor, canais e persistência após restart controlado. Arquivo presente não comprova runtime saudável.
+- Cobertura diária recente segue parcial: não há daily notes em 2026-07-12, 2026-07-13, 2026-07-16 e 2026-07-17.
 - Instagram Bikon Robotnik: Meta Graph API configurada em segredo local, modo `draft`, crons editoriais ativos e publicação bloqueada.
