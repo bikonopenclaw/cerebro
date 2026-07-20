@@ -107,6 +107,9 @@ fornecer a evidencia. Nao copiar credenciais de outro workspace.
 - Kowalski: `agent:kowalski:main`
 - Darth Vader: `agent:darth-vader:main`
 - Robotnik: `agent:robotnik:main`
+- Sentinel: `agent:sentinel:main`
+
+Usar `sessions_send(sessionKey="SESSAO_CANONICA", message=brief)`. O brief deve conter contexto, tarefa, restricoes, criterio de pronto e aprovacao do Hebert quando existente. Fila ou sessao ocupada nao autoriza reenvio. Em falha real, parar e avisar `agent:main:main`.
 
 ## Proibicoes
 

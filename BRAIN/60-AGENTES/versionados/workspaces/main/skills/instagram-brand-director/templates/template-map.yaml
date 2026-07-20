@@ -1,0 +1,4 @@
+version: 1
+production_enabled: false
+formats: {}
+note: 'Preencher por janela aprovada com IDs reais, campos, safe areas, fontes, cores e assets. Enquanto vazio, composição real fica bloqueada.'

@@ -40,15 +40,15 @@ SAFE_VALUE_MARKERS = {
 
 EXCLUDE_DIRS = {
     '.git', 'sessions', '.openclaw', '__pycache__', '.pytest_cache',
-    'node_modules', 'vendor', '.venv', '.pydeps', 'secrets',
-    'exports', 'drafts',
+    'node_modules', 'vendor', '.venv', '.pydeps', '.kling-browser',
+    '.browser-libs', 'secrets', 'exports', 'drafts', 'entregas', 'state',
 }
 EXCLUDE_DIR_PREFIXES = (
     '.venv-',
     'homologacao-',
 )
 EXCLUDE_FILE_PATTERNS = [
-    '*.pyc', '*.pyo', '*.log', '*.lock',
+    '.tmp*', '*.bak*', '*.pyc', '*.pyo', '*.log', '*.lock',
     '*.sqlite', '*.sqlite3', '*.sqlite-shm', '*.sqlite-wal', '*.db',
     'openclaw-workspace-state.json',
     '.env', '.env.*', 'auth-profiles.json', 'models.json',
@@ -259,7 +259,7 @@ Este diretório guarda snapshots controlados do código-fonte operacional dos ag
 ## O que não entra
 
 - `.env`, `.env.*`, tokens OAuth, credenciais, segredos, senhas e chaves.
-- Sessões, caches, `__pycache__`, `.openclaw`, logs, locks e artefatos temporários.
+- Sessões, caches, `__pycache__`, `.openclaw`, runtimes de navegador, logs, locks e artefatos temporários.
 - Relatórios finais de clientes, PDFs, imagens, documentos binários e pacotes gerados.
 - Dados brutos sensíveis de clientes ou respostas completas de APIs.
 
@@ -281,10 +281,10 @@ Se expõe segredo, cliente ou artefato operacional final, fica fora do Git.
 
 - `.env*`, exceto `.env.example`
 - Arquivos com `token`, `secret`, `senha`, `credential`, `oauth` no nome
-- `sessions/`, `.openclaw/`, `__pycache__/`, `.pytest_cache/`, `node_modules/`, `vendor/`, `.venv/`, `.venv-*`, `.pydeps/`
+- `sessions/`, `.openclaw/`, `__pycache__/`, `.pytest_cache/`, `node_modules/`, `vendor/`, `.venv/`, `.venv-*`, `.pydeps/`, `.kling-browser/`, `.browser-libs/`
 - bancos/estado/caches locais: `*.sqlite`, `*.sqlite-shm`, `*.sqlite-wal`, `*.db`, `openclaw-workspace-state.json`
 - `relatorios/`, `pacotes-emissao/`, `email-rascunhos/`, `dados/`, `jobs/`, `api-homologacao/`, `homologacao-*` quando forem artefatos de execução
-- Dados exportados e rascunhos gerados: `exports/`, `drafts/`, `*.csv`
+- Dados exportados, entregas, estados, backups e rascunhos gerados: `exports/`, `entregas/`, `state/`, `drafts/`, `.tmp*`, `*.bak*`, `*.csv`
 - Binários, imagens e documentos finais: `*.pdf`, `*.png`, `*.jpg`, `*.jpeg`, `*.svg`, `*.docx`, `*.xlsx`, `*.rem`, `*.ret`, `*.zip`
 
 ## Exceção
@@ -350,7 +350,10 @@ def sync_snapshot() -> int:
         Path('/data/.openclaw/workspace-sentinel'),
         SNAP / 'workspaces' / 'sentinel',
         extra_exclude_dirs={'backups', 'logs'},
-        extra_exclude_rel={'media/inbound'},
+        extra_exclude_rel={
+            'media/inbound',
+            'context/operational_context_map.json',
+        },
     )
     copy_tree(
         Path('/data/.openclaw/workspace/skills'),

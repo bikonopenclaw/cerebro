@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AdapterResult",
+  "type": "object",
+  "required": [
+    "operation",
+    "request_hash",
+    "status",
+    "timestamp_utc"
+  ],
+  "properties": {
+    "operation": {
+      "type": "string"
+    },
+    "request_hash": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "blocked",
+        "failed"
+      ]
+    },
+    "timestamp_utc": {
+      "type": "string"
+    },
+    "remote_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cost": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "evidence": {
+      "type": "object"
+    },
+    "error": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

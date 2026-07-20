@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Approval",
+  "type": "object",
+  "required": [
+    "campaign_id",
+    "asset_id",
+    "operation",
+    "request_hash",
+    "approved_by",
+    "chat_id",
+    "message_id",
+    "approved_at",
+    "expires_at",
+    "used_at"
+  ],
+  "properties": {
+    "campaign_id": {
+      "type": "string"
+    },
+    "asset_id": {
+      "type": "string"
+    },
+    "operation": {
+      "type": "string"
+    },
+    "request_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "chat_id": {
+      "type": "string"
+    },
+    "message_id": {
+      "type": "string"
+    },
+    "approved_at": {
+      "type": "string"
+    },
+    "expires_at": {
+      "type": "string"
+    },
+    "used_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

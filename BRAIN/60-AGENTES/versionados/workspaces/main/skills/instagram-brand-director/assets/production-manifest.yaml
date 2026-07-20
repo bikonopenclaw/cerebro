@@ -1,0 +1,36 @@
+campaign_id: ""
+correlation_id: ""
+asset_id: ""
+version: 1
+state: "intake"
+event_version: 0
+actor: {}
+brief: {}
+research: {}
+editorial: {}
+creative: {}
+generation:
+  request_hash: ""
+  model: ""
+  parameters: {}
+  task_id: ""
+  credits_before: null
+  credits_reserved: null
+  credits_consumed: null
+  credits_after: null
+  assets: []
+composition:
+  template_id: ""
+  template_version: ""
+  modifications: {}
+  render_asset: {}
+qa: {}
+approvals: []
+publishing:
+  action: ""
+  account_id: ""
+  organization_id: ""
+  channel_id: ""
+  profile_id: ""
+  remote_id: ""
+metrics: {}

@@ -39,6 +39,16 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 Add whatever helps you do your job. This is your cheat sheet.
 
+## Mapa canonico de sessoes
+
+- Puppet Master: `agent:main:main`
+- Kowalski: `agent:kowalski:main`
+- Darth Vader: `agent:darth-vader:main`
+- Robotnik: `agent:robotnik:main`
+- Sentinel: `agent:sentinel:main`
+
+Usar `sessions_send(sessionKey="SESSAO_CANONICA", message=brief)`. O brief deve conter contexto, tarefa, restricoes, criterio de pronto e aprovacao do Hebert quando existente. Fila ou sessao ocupada nao autoriza reenvio. Em falha real, parar e avisar `agent:main:main`.
+
 ## Related
 
 - [Agent workspace](/concepts/agent-workspace)

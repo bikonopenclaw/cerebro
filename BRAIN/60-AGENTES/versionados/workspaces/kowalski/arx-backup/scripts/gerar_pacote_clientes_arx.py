@@ -26,6 +26,7 @@ OUT_MAIL = ROOT / 'email-rascunhos'
 OUT_PACK = ROOT / 'pacotes'
 MEDIA_OUT = Path('/data/.openclaw/media/outbound')
 APPROVED_TEMPLATE = Path('/data/.openclaw/agents/kowalski/agent/skills/arx-backup/assets/modelos-aprovados/modelo-padrao-relatorio-mensal-arx-backup.html')
+APPROVED_LOGO = Path('/data/.openclaw/agents/kowalski/agent/skills/arx-backup/assets/arx-backup-logo-transparent.png')
 APPROVED_MODEL_MARKER = 'data-arx-approved-model="modelo-padrao-relatorio-mensal-arx-backup"'
 
 CSS = """
@@ -142,10 +143,24 @@ def replace_once(html, old, new):
     return html.replace(old, new, 1)
 
 
+def load_approved_template():
+    html = APPROVED_TEMPLATE.read_text(encoding='utf-8')
+    pattern = r'(<img class="arx" src=")data:image/png;base64,[^"]+("[^>]*>)'
+    html, replacements = re.subn(
+        pattern,
+        lambda match: f'{match.group(1)}{APPROVED_LOGO.as_uri()}{match.group(2)}',
+        html,
+        count=1,
+    )
+    if replacements != 1:
+        raise RuntimeError('Logo oficial ARX não encontrado no template aprovado.')
+    return html
+
+
 def html_cliente(ctx, gerado):
     """Gera relatório usando o HTML aprovado pelo Hebert como base visual."""
     s = ctx['settings']
-    html = APPROVED_TEMPLATE.read_text(encoding='utf-8')
+    html = load_approved_template()
     status_nome, status_texto, status_bg, status_fg = status_mes(ctx)
     cliente = ctx['cliente']
     dispositivo = ctx['dispositivo']

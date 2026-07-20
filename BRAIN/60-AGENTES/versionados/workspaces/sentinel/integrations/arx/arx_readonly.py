@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib import error, request
 
@@ -19,19 +20,19 @@ WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
 if str(WORKSPACE_ROOT) not in sys.path:
     sys.path.insert(0, str(WORKSPACE_ROOT))
 
-from access_control.access_audit import audited_access, validate_secret_file
+from access_control.access_audit import AUDIT_PATH, audited_access, validate_secret_file
 
 
 ENV_PATH = Path("/data/.openclaw/workspace-kowalski/arx-backup/config/.env")
 DEFAULT_URL = "https://api.backup.management/jsonapi"
 ALLOWED_RPC_METHODS = {"Login", "EnumerateAccountStatistics"}
+ALLOWED_LABEL_PUNCTUATION = set(" .,_-/()&'+#")
 STATUS_COLUMNS = [
     "AR", "AN", "MN", "PN", "T0", "T7", "TB", "TL", "TO",
     "F0", "F7", "FB", "FL", "S0", "S7", "SB", "SL",
     "Q0", "Q7", "QB", "QL", "H0", "H7", "HB", "HL",
     "W0", "W7", "WB", "WL",
 ]
-SECRET_KEYS = {"password", "token", "visa", "secret", "access_token", "refresh_token"}
 
 
 def load_config() -> dict[str, str]:
@@ -50,17 +51,6 @@ def load_config() -> dict[str, str]:
     if missing:
         raise RuntimeError("Credencial ARX/Cove incompleta: " + ", ".join(missing))
     return values
-
-
-def redact(value):
-    if isinstance(value, dict):
-        return {
-            key: "[REDACTED]" if key.lower() in SECRET_KEYS else redact(item)
-            for key, item in value.items()
-        }
-    if isinstance(value, list):
-        return [redact(item) for item in value]
-    return value
 
 
 class ReadOnlyArxClient:
@@ -180,7 +170,165 @@ def probe(rows: list[dict]) -> dict:
     }
 
 
-def main() -> int:
+def integer_value(value) -> int:
+    try:
+        return int(value or 0)
+    except (TypeError, ValueError):
+        return 0
+
+
+def age_bucket(value, *, now: datetime) -> str:
+    try:
+        observed = datetime.fromtimestamp(float(value), tz=timezone.utc)
+    except (TypeError, ValueError, OSError, OverflowError):
+        return "unknown"
+    age_seconds = (now - observed).total_seconds()
+    if age_seconds < -300:
+        return "future_or_invalid"
+    if age_seconds < 3600:
+        return "under_1h"
+    if age_seconds < 6 * 3600:
+        return "1h_to_6h"
+    if age_seconds < 24 * 3600:
+        return "6h_to_24h"
+    if age_seconds < 3 * 24 * 3600:
+        return "1d_to_3d"
+    return "over_3d"
+
+
+def history_health_bucket(value) -> str:
+    states = [item for item in str(value or "") if item in "123456789"]
+    if not states:
+        return "unknown"
+    ok_count = states.count("5")
+    if ok_count == len(states):
+        return "all_ok"
+    if ok_count == 0:
+        return "no_ok_observed"
+    return "mixed"
+
+
+def attention_status_class(settings: dict) -> str:
+    if integer_value(settings.get("T7")) > 0:
+        return "error_counter_present"
+    if str(settings.get("T0", "0")) in {"6", "8"}:
+        return "attention_status_code"
+    return "attention_without_error_counter"
+
+
+def histogram(values: list[str]) -> dict[str, int]:
+    return {value: values.count(value) for value in sorted(set(values))}
+
+
+def sanitized_label(value, *, field: str) -> str:
+    if not isinstance(value, str):
+        raise RuntimeError(f"{field} ausente no unico attention")
+    normalized = " ".join(value.split())
+    if not normalized or len(normalized) > 120:
+        raise RuntimeError(f"{field} invalido no unico attention")
+    if any(
+        not character.isalnum() and character not in ALLOWED_LABEL_PUNCTUATION
+        for character in normalized
+    ):
+        raise RuntimeError(f"{field} bloqueado pela allowlist")
+    return normalized
+
+
+def attention_attribution(attention: list[dict]) -> dict:
+    if len(attention) != 1:
+        return {
+            "status": "not_unique",
+            "client": None,
+            "asset": None,
+            "cause": None,
+        }
+    settings = attention[0]
+    return {
+        "status": "attributed",
+        "client": sanitized_label(settings.get("AR"), field="client"),
+        "asset": sanitized_label(settings.get("AN"), field="asset"),
+        "cause": attention_status_class(settings),
+    }
+
+
+def attention_summary(rows: list[dict], *, now: datetime) -> dict:
+    attention = []
+    for row in rows:
+        settings = flatten_settings(row)
+        if current_severity(settings) == "attention":
+            attention.append(settings)
+    return {
+        "count": len(attention),
+        "errors_present": sum(
+            1 for settings in attention if integer_value(settings.get("T7")) > 0
+        ),
+        "status_class": histogram(
+            [attention_status_class(settings) for settings in attention]
+        ),
+        "last_success_age_bucket": histogram(
+            [age_bucket(settings.get("TL"), now=now) for settings in attention]
+        ),
+        "last_completion_age_bucket": histogram(
+            [age_bucket(settings.get("TO"), now=now) for settings in attention]
+        ),
+        "history_health_bucket": histogram(
+            [history_health_bucket(settings.get("TB")) for settings in attention]
+        ),
+        "attribution": attention_attribution(attention),
+    }
+
+
+def status_summary(rows: list[dict], *, now: datetime | None = None) -> dict:
+    summary = probe(rows)
+    observed_at = now or datetime.now(timezone.utc)
+    return {
+        "ok": summary["ok"],
+        "accounts": summary["accounts"],
+        "clients": summary["clients"],
+        "current_status": summary["current_status"],
+        "attention": attention_summary(rows, now=observed_at),
+        "write_methods_exposed": summary["write_methods_exposed"],
+    }
+
+
+def audit_reference_from_events(
+    events: list[dict], *, correlation: str, operation: str
+) -> dict[str, str]:
+    for event in reversed(events):
+        if (
+            event.get("correlation") == correlation
+            and event.get("source") == "arx-cove"
+            and event.get("operation") == operation
+            and event.get("result") == "success"
+        ):
+            reference = {
+                "correlation": event.get("correlation"),
+                "timestamp_utc": event.get("timestamp_utc"),
+                "client_sha256": event.get("client_sha256"),
+            }
+            if not all(
+                isinstance(value, str) and value for value in reference.values()
+            ):
+                break
+            return reference
+    raise RuntimeError("referencia de auditoria ARX/Cove nao encontrada")
+
+
+def audit_reference(*, correlation: str, operation: str) -> dict[str, str]:
+    try:
+        events = [
+            json.loads(line)
+            for line in AUDIT_PATH.read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        ]
+    except (OSError, json.JSONDecodeError) as exc:
+        raise RuntimeError("auditoria ARX/Cove indisponivel") from exc
+    return audit_reference_from_events(
+        events, correlation=correlation, operation=operation
+    )
+
+
+def main() -> dict:
     parser = argparse.ArgumentParser(description="ARX/Cove read-only do Sentinel")
     parser.add_argument("command", choices=("probe", "status"))
     args = parser.parse_args()
@@ -189,22 +337,7 @@ def main() -> int:
     partner_id = client.login()
     data = client.status(partner_id)
     rows = rows_from(data)
-    if args.command == "probe":
-        print(json.dumps(probe(rows), ensure_ascii=False, indent=2))
-    else:
-        print(
-            json.dumps(
-                {
-                    "ok": True,
-                    "allowed_rpc_methods": sorted(ALLOWED_RPC_METHODS),
-                    "write_methods_exposed": False,
-                    "data": redact(rows),
-                },
-                ensure_ascii=False,
-                indent=2,
-            )
-        )
-    return 0
+    return probe(rows) if args.command == "probe" else status_summary(rows)
 
 
 def audit_operation(argv: list[str]) -> str:
@@ -215,8 +348,13 @@ def cli() -> int:
     operation = audit_operation(sys.argv[1:])
     with audited_access(
         source="arx-cove", operation=operation, client_path=Path(__file__)
-    ):
-        return main()
+    ) as correlation:
+        output = main()
+    output["audit"] = audit_reference(
+        correlation=correlation, operation=operation
+    )
+    print(json.dumps(output, ensure_ascii=False, indent=2))
+    return 0
 
 
 if __name__ == "__main__":

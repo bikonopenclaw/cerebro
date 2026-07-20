@@ -1,0 +1,16 @@
+version: 1
+production_default: blocked
+actors:
+  robotnik:
+    may: [research, strategy, copy, creative_direction, prepare_assets, read_metrics]
+    may_not: [spend, publish, schedule, change_brand_policy, change_destination]
+  puppet_master:
+    may: [coordinate, review, consolidate, open_gate]
+    may_not: [approve_on_behalf_of_hebert]
+  hebert:
+    may: [approve_spend, approve_render, approve_draft, approve_schedule, approve_publish]
+approval:
+  bind_to_request_hash: true
+  single_use: true
+  require_message_id: true
+  timestamps: UTC

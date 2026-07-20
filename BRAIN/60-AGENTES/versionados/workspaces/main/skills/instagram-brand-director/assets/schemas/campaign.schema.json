@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Campaign",
+  "type": "object",
+  "required": [
+    "campaign_id",
+    "correlation_id",
+    "asset_id",
+    "version",
+    "event_version",
+    "state",
+    "created_at",
+    "updated_at",
+    "actor"
+  ],
+  "properties": {
+    "campaign_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "correlation_id": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "asset_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "event_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "state": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "actor": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

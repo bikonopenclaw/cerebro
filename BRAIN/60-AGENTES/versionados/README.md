@@ -18,7 +18,7 @@ Este diretório guarda snapshots controlados do código-fonte operacional dos ag
 ## O que não entra
 
 - `.env`, `.env.*`, tokens OAuth, credenciais, segredos, senhas e chaves.
-- Sessões, caches, `__pycache__`, `.openclaw`, logs, locks e artefatos temporários.
+- Sessões, caches, `__pycache__`, `.openclaw`, runtimes de navegador, logs, locks e artefatos temporários.
 - Relatórios finais de clientes, PDFs, imagens, documentos binários e pacotes gerados.
 - Dados brutos sensíveis de clientes ou respostas completas de APIs.
 

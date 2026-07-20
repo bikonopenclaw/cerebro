@@ -25,6 +25,7 @@ from access_control.access_audit import audited_access
 REGISTRY = Path(
     "/data/.openclaw/workspace-darth-vader/cadastros/clientes/clientes_ativos.json"
 )
+CONTEXT_MAP = Path(__file__).with_name("operational_context_map.json")
 
 SEVERITY = {
     "P1": "Indisponibilidade critica, ataque ativo, perda de dados ou impacto amplo em cliente pagante.",
@@ -52,15 +53,55 @@ def load_registry() -> dict[str, Any]:
     return data
 
 
-def safe_client(client: dict[str, Any]) -> dict[str, Any]:
+def load_context_map(registry: dict[str, Any]) -> dict[str, Any]:
+    with CONTEXT_MAP.open("r", encoding="utf-8") as handle:
+        data = json.load(handle)
+
+    clients = data.get("clients")
+    owners = data.get("owner_profiles")
+    slas = data.get("sla_profiles")
+    if not isinstance(clients, dict) or not isinstance(owners, dict) or not isinstance(slas, dict):
+        raise RuntimeError("mapa operacional invalido")
+
+    registry_ids = {str(item.get("id")) for item in registry["clientes"]}
+    mapped_ids = set(clients)
+    if registry_ids != mapped_ids:
+        missing = sorted(registry_ids - mapped_ids)
+        extra = sorted(mapped_ids - registry_ids)
+        raise RuntimeError(f"mapa operacional divergente: missing={missing}, extra={extra}")
+
+    for client_id, mapping in clients.items():
+        owner_name = mapping.get("owner")
+        sla_name = mapping.get("sla")
+        if owner_name not in owners or sla_name not in slas:
+            raise RuntimeError(f"perfil operacional invalido para {client_id}")
+        for severity, values in slas[sla_name].items():
+            ack = values.get("ack_min")
+            escalate = values.get("escalate_min")
+            if not isinstance(ack, int) or not isinstance(escalate, int):
+                raise RuntimeError(f"SLA nao inteiro em {client_id}/{severity}")
+            if ack <= 0 or escalate < ack:
+                raise RuntimeError(f"SLA invalido em {client_id}/{severity}")
+    return data
+
+
+def safe_client(client: dict[str, Any], context_map: dict[str, Any]) -> dict[str, Any]:
+    client_id = str(client.get("id"))
+    mapping = context_map["clients"][client_id]
+    owner_profile = mapping["owner"]
+    sla_profile = mapping["sla"]
     return {
-        "client_id": client.get("id"),
+        "client_id": client_id,
         "display_name": client.get("razao_social"),
         "active": bool(client.get("ativo")),
         "cartorio_context": bool(client.get("cns_cartorio")),
-        "operational_owner": {"status": "not_configured", "value": None},
-        "sla": {"status": "not_configured", "value": None},
-        "maintenance_window": {"status": "not_configured", "value": None},
+        "operational_owner": {"status": "configured", "profile": owner_profile},
+        "sla": {
+            "status": "configured",
+            "profile": sla_profile,
+            "value": context_map["sla_profiles"][sla_profile],
+        },
+        "maintenance_window": {"status": "optional", "value": None},
         "incident_profile": "sentinel-global-v1",
         "live_asset_sources": [
             "ninjaone-readonly",
@@ -82,17 +123,21 @@ def assert_sanitized(value: Any) -> None:
             assert_sanitized(child)
 
 
-def build_summary(data: dict[str, Any]) -> dict[str, Any]:
-    clients = [safe_client(item) for item in data["clientes"]]
+def build_summary(data: dict[str, Any], context_map: dict[str, Any]) -> dict[str, Any]:
+    clients = [safe_client(item, context_map) for item in data["clientes"]]
     return {
         "source_updated_at": data.get("atualizado_em"),
+        "operational_context_updated_at": context_map["source"]["modified_time_utc"],
         "registered_clients": len(clients),
         "active_clients": sum(1 for item in clients if item["active"]),
         "operational_gaps": {
-            "operational_owner": len(clients),
-            "sla": len(clients),
-            "maintenance_window": len(clients),
+            "operational_owner": sum(
+                1 for item in clients if item["operational_owner"]["status"] != "configured"
+            ),
+            "sla": sum(1 for item in clients if item["sla"]["status"] != "configured"),
+            "maintenance_window": 0,
         },
+        "maintenance_window": {"status": "optional", "configured_clients": 0},
         "severity_profile": "sentinel-global-v1",
         "live_asset_sources": [
             "ninjaone-readonly",
@@ -110,10 +155,11 @@ def main() -> int:
     args = parser.parse_args()
 
     data = load_registry()
-    clients = [safe_client(item) for item in data["clientes"]]
+    context_map = load_context_map(data)
+    clients = [safe_client(item, context_map) for item in data["clientes"]]
 
     if args.command == "summary":
-        output: Any = build_summary(data)
+        output: Any = build_summary(data, context_map)
     elif args.command == "clients":
         output = clients
     elif args.command == "severity":

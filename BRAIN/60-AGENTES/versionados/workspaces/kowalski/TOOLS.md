@@ -55,6 +55,24 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 - [Agent workspace](/concepts/agent-workspace)
 
+## Puppet Master
+
+- Sessao canonica para escalonamento: `agent:main:main`.
+- Ferramenta: `sessions_send(sessionKey="agent:main:main", message=brief)`.
+- Brief obrigatorio: contexto, tarefa, restricoes e aprovacao do Hebert quando existente.
+- Hebert Mattedi e Puppet Master nao sao a mesma identidade.
+- Se a rota falhar, parar e reportar. Nao usar Hebert como ponte e nao trocar de sessao por conta propria.
+
+## Mapa canonico de sessoes
+
+- Puppet Master: `agent:main:main`
+- Kowalski: `agent:kowalski:main`
+- Darth Vader: `agent:darth-vader:main`
+- Robotnik: `agent:robotnik:main`
+- Sentinel: `agent:sentinel:main`
+
+Usar `sessions_send` sempre com a sessao canonica. Se a sessao estiver ocupada ou o envio ficar em fila, nao reenviar nem procurar rota alternativa. Acompanhar a mesma solicitacao e copiar o Puppet Master no resumo das tarefas entre agentes.
+
 ## Git e versionamento
 
 - Binario: `/usr/bin/git`.

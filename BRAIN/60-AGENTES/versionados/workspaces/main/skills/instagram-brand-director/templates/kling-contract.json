@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "production_enabled": true,
+  "cli_version": "0.1.3",
+  "verified_at_utc": "2026-07-17T19:45:00Z",
+  "discovery_source": [
+    "kling --version",
+    "kling who_am_i",
+    "kling tool_list",
+    "kling text_to_image --help"
+  ],
+  "operations": {
+    "text_to_image": {
+      "positionals": [
+        "prompt"
+      ],
+      "flags": {
+        "model": "--model",
+        "poll": "--poll",
+        "aspect_ratio": "--aspect_ratio",
+        "img_resolution": "--img_resolution",
+        "image_count": "--imageCount"
+      },
+      "required": [
+        "model",
+        "prompt"
+      ]
+    }
+  },
+  "note": "Escopo inicial de menor privilégio: somente text_to_image. Outras gerações exigem nova janela aprovada e atualização deste contrato."
+}
