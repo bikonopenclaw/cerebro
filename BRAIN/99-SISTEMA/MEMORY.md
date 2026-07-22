@@ -36,9 +36,13 @@ Memória institucional consolidada do Brain.
 - Upgrade/plugin, modelo/configuração, porta, restart e recuperação de backlog são categorias distintas e devem passar por gates separados.
 - Agentes de monitoramento devem operar com menor privilégio: clientes read-only, allowlists, saída sanitizada, auditoria append-only e revogação verificável. Credencial compartilhada ampla continua sendo limitação explícita.
 - Evidência operacional precisa de fonte, timestamp e recência adequada. Abertura automática exige sinal atual; encerramento exige nova coleta que confirme resolução.
+- Deploy de skill exige plano imutável, algoritmo de hash nomeado, staging no mesmo filesystem, backup verificado, troca atômica, rollback e recibo append-only. Divergência de hash ou validator interrompe a janela sem fallback silencioso.
+- Na Produção Assistida, Brand QA aprova somente o snapshot e o hash apresentados. Portão C, geração, composição e publicação permanecem autorizações separadas.
+- `SSI` mede snapshots aprovados na primeira submissão sobre o total submetido ao Brand QA. `SFT` mede o tempo do início do congelamento até duas leituras consecutivas idênticas do manifesto canônico.
 
 ## Padrões consolidados mensalmente
 
 - Padrão mensal de junho/2026: segurança operacional antes de escala; automações podem preparar e validar, mas impactos fiscais, bancários, comunicacionais, publicações e alterações de identidade exigem confirmação explícita quando não autorizados previamente.
 - Padrão semanal 2026-W28: maturidade operacional antes de escala; snapshots seguros excluem artefatos derivados, integrações externas permanecem em rascunho/homologação até aprovação, e decisões operacionais dependem de evidência explícita.
 - Padrão semanal 2026-W29: recuperação comprovada antes de continuidade; runtime pós-migração exige readiness executável, mudanças ficam separadas por gate e monitoramento usa menor privilégio com evidência recente e revalidação.
+- Atualização de 2026-07-21: reconciliação técnica com evidência de relatório indicou que a proposta Instagram Brand Director v2.1.0 está pendente e não ativa; estado de produção assistida segue sob read-only até autorização explícita de corte.

@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PlaybookRun",
+  "type": "object",
+  "required": [
+    "playbook",
+    "campaign_id",
+    "started_at",
+    "status",
+    "steps"
+  ],
+  "properties": {
+    "playbook": {
+      "type": "string"
+    },
+    "campaign_id": {
+      "type": "string"
+    },
+    "started_at": {
+      "type": "string"
+    },
+    "completed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "running",
+        "blocked",
+        "complete"
+      ]
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": false
+}

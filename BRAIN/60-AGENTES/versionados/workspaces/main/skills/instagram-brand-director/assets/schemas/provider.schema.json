@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProviderDescriptor",
+  "type": "object",
+  "required": [
+    "kind",
+    "provider_id",
+    "enabled",
+    "external",
+    "adapter_path"
+  ],
+  "properties": {
+    "kind": {
+      "enum": [
+        "image",
+        "video",
+        "tts",
+        "storage",
+        "publication",
+        "search"
+      ]
+    },
+    "provider_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "external": {
+      "type": "boolean"
+    },
+    "adapter_path": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

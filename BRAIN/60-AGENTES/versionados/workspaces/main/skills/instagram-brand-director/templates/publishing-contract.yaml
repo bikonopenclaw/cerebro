@@ -1,0 +1,6 @@
+version: 1
+production_enabled: false
+adapter_path: ""
+destination: "instagram"
+allowed_operations: []
+note: "Publicação bloqueada até adapter local, credenciais mínimas e janela aprovada."

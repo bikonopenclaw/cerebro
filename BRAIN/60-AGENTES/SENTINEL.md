@@ -5,7 +5,7 @@ nome: Sentinel
 papel: controller_operacoes_snoc
 status: ativo_read_only
 responsavel: Puppet Master
-ultima_revisao: 2026-07-17
+ultima_revisao: 2026-07-20
 tags: [sentinel, snoc, operacoes, monitoramento, seguranca, read-only]
 ```
 
@@ -56,6 +56,19 @@ Referência: `BRAIN/60-AGENTES/versionados/workspaces/sentinel/access_control/RE
 - Kowalski apoia coleta, documento e padrão visual.
 - Darth Vader apoia impacto financeiro quando solicitado.
 - Robotnik só participa de comunicação educativa ou pública depois da decisão operacional.
+
+## Canário Sentinel v2
+
+Em 2026-07-20, Sentinel v2 entrou em canário read-only com:
+
+- 21 clientes ativos reconciliados;
+- janela exata de 24 horas e ciclos de 30 minutos;
+- cinco fontes autorizadas e saída sanitizada;
+- pausa automática no primeiro P1/P2, falha de fonte, desvio read-only, divergência de escopo ou lacuna de owner/SLA;
+- encerramento programado no fim da janela;
+- deduplicação, SLA, escalonamento e auditoria append-only.
+
+O primeiro ciclo fechou em estado `active`, com cinco fontes verdes, zero P1/P2 e nenhuma pausa. Isso registra apenas o primeiro ciclo e não substitui a leitura do estado corrente do canário.
 
 ## Critério de pronto
 

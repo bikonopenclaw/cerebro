@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GovernanceDecision",
+  "type": "object",
+  "required": [
+    "decision_id",
+    "timestamp_utc",
+    "decision",
+    "reasons",
+    "actor",
+    "operation",
+    "provider_kind",
+    "provider_id",
+    "payload_hash"
+  ],
+  "properties": {
+    "decision_id": {
+      "type": "string"
+    },
+    "timestamp_utc": {
+      "type": "string"
+    },
+    "decision": {
+      "enum": [
+        "allow",
+        "deny"
+      ]
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "actor": {
+      "type": "string"
+    },
+    "operation": {
+      "type": "string"
+    },
+    "provider_kind": {
+      "type": "string"
+    },
+    "provider_id": {
+      "type": "string"
+    },
+    "payload_hash": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

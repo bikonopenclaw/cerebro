@@ -4,7 +4,7 @@
 categoria: canal_operacional
 fonte: decisão do Hebert em 2026-06-22
 confiabilidade: alta
-ultima_revisao: 2026-07-14
+ultima_revisao: 2026-07-22
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual]
 ```
 
@@ -117,6 +117,14 @@ Regras consolidadas:
 - manter a lógica: software EOL vira ação interna Bikon; compra física entra apenas quando houver hardware classificado para substituição;
 - validar capa, paginação, legenda em uma linha, ausência de termos internos e exportação final em PDF antes de enviar;
 - manter PDFs finais e lotes gerados fora do Brain/Git.
+
+## Correção do dossiê técnico em 2026-07-22
+
+- A última saída correta do grupo foi identificada como o dossiê técnico Bikon originalmente publicado na mensagem `657` do grupo.
+- O PDF foi regenerado do mesmo HTML sem cabeçalho e rodapé automáticos do navegador, preservando três páginas A4 e o miolo textual.
+- O envio corrigido e válido para o usuário é a mensagem `9396`.
+- A identificação e o envio anteriores do EOL do 1º Ofício de Presidente Kennedy foram tratados como erro e não devem ser usados como referência desta entrega.
+- Regra reforçada: antes de refazer a “última saída”, resolver a última mensagem com anexo no histórico real do grupo e validar identidade, data e arquivo antes da geração e do envio.
 
 ## Relações
 

@@ -2,9 +2,9 @@
 
 ```yaml
 nome: Instagram Bikon Robotnik
-status: implantacao_controlada
+status: producao_assistida_controlada
 responsavel: Robotnik sob coordenação do Puppet Master
-ultima_revisao: 2026-07-17
+ultima_revisao: 2026-07-22
 fonte: conversa Hebert/Puppet Master e workspace Robotnik
 tags: [instagram, meta, robotnik, marketing, bikon]
 ```
@@ -67,6 +67,15 @@ Em 2026-07-17, a arquitetura de produção foi consolidada:
 - template ainda sem as camadas produtivas na última validação;
 - Buffer ainda sem perfil e credencial configurados.
 
+Em 2026-07-20, a operação avançou para Produção Assistida:
+
+- o conjunto Instagram Bikon v4 foi aprovado como canônico; cinco fundos Kling consumiram os 10 créditos autorizados e nenhuma publicação ocorreu;
+- a Instagram Brand Director v2.1.0 foi implantada por corte atômico validado, com backup integral, rollback e recibo append-only; o lifecycle da proposta continua `pending`;
+- a campanha `bikon-operacao-sem-dependencia-20260720` iniciou o fluxo assistido;
+- o snapshot `feed-base-a v1` foi congelado com sete arquivos em modo somente leitura e duas leituras integrais idênticas;
+- Brand QA pré-geração e Brand Lock do snapshot fecharam em `PASS` para manifesto `474e9af2214cbe0faa25fa9aad2535bff0260bf94752a70a6b3f21352ebfc5de`, request `5d721862890d4a5c8f72e458f9a79ce59ff70a10be5d4a9a527eaf2374b8c6a3` e payload `2be351a05379c0410a3cbba53da1c536c090c853273cef4e5a82f43ea2a642c7`;
+- Portão C, Approval individual, execução Kling, composição, upload e publicação permanecem bloqueados.
+
 ## Estrutura criada
 
 - Workspace: `/data/.openclaw/workspace-robotnik/instagram-bikon`
@@ -109,6 +118,16 @@ Robotnik não pode:
 
 Uma aprovação vale somente para o portão, os parâmetros e o hash apresentados. Nova variante exige nova aprovação. Criar rascunho não autoriza agendar; agendar não autoriza publicar, editar ou excluir.
 
+O `PASS` de Brand QA do snapshot não autoriza geração. Qualquer byte alterado em artefato congelado, prompt, request ou parâmetro invalida o snapshot e exige novo manifesto, novo hash e novo Brand QA.
+
+## Indicadores da Produção Assistida
+
+- `LTPA`, Lead Time to Production Approval: tempo do início do fluxo de aprovação até o pacote final. No fechamento do Brand QA do snapshot, estava em `2.723,846 s` e ainda aberto.
+- `SSI`, Snapshot Stability Index: snapshots aprovados na primeira submissão divididos pelo total submetido ao Brand QA. Valor inicial `50%`, com um aprovado na primeira submissão de dois snapshots.
+- `SFT`, Snapshot Freeze Time: tempo entre o início do congelamento e duas leituras consecutivas idênticas do manifesto. Valor inicial `68,985 s`, sete arquivos e uma tentativa.
+
+Registrar quantidade de snapshots, rejeições, motivo, correções locais, tempo entre congelamento e aprovação e ausência ou presença de ações externas.
+
 ## Rotina editorial relacionada
 
 Em 2026-07-09, foram criados crons do Robotnik para cadência editorial:
@@ -122,8 +141,21 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 
 ## Próximos passos
 
-1. Concluir as camadas dinâmicas do master Creatomate e preencher o `template-map`.
-2. Validar a credencial no contexto efetivo do runtime e executar preflight sem render.
-3. Configurar o perfil Bikon no Buffer como único publicador.
-4. Executar piloto controlado de cibersegurança com uma imagem, passando por todos os portões.
-5. Manter fontes externas como entrada principal de pesquisa e usar métricas somente como evidência editorial.
+1. Fechar o Portão C para o snapshot imutável `feed-base-a v1`.
+2. Receber Approval individual do Hebert antes de uma eventual geração Kling `text_to_image`.
+3. Concluir as camadas dinâmicas do master Creatomate e preencher o `template-map` antes da composição.
+4. Configurar o perfil Bikon no Buffer como único publicador.
+5. Manter geração, composição e publicação como portões separados, todos vinculados a versão e hash.
+
+## Reconciliação snapshot vs implantação (20:00+)
+
+- Fonte oficial de evidência consultada: `reports/instagram-brand-director-v2.1.0-20260720/REPORT.md`.
+- Conclusão: a proposta `instagram-brand-director-20260720-5b5709ec92` está `pending` e a skill ativa permanece em `v2.0.1` com hash `ed9fa...686cd`.
+- O snapshot `1ffb6a1` continua desatualizado enquanto a janela de implantação não for executada com backup/rollback conforme protocolo.
+- Portão C, composição e publicação permanecem bloqueados até nova decisão explícita de corte.
+
+## Bloqueio de integridade em 2026-07-22
+
+- A publicação de `v4-03-quarta-sem-log.png` foi interrompida antes da chamada externa porque o hash do arquivo local divergiu do conteúdo entregue pela URL temporária.
+- `instagram_graph.py` não foi executado e nenhuma publicação ocorreu.
+- URL temporária não substitui evidência de integridade. Antes de publicar, o conteúdo recuperado precisa reproduzir o hash aprovado do asset congelado; divergência mantém o gate fechado e exige nova decisão sobre a origem do arquivo.

@@ -1,0 +1,45 @@
+version: 1
+default: "deny"
+provider_kinds: ["image", "video", "tts", "storage", "publication", "search"]
+providers:
+  image:
+    local-none:
+      enabled: false
+      external: false
+      adapter_path: ""
+  video:
+    local-none:
+      enabled: false
+      external: false
+      adapter_path: ""
+    kling-cli:
+      enabled: false
+      external: true
+      adapter_path: "scripts/kling_exec.py"
+  tts:
+    local-none:
+      enabled: false
+      external: false
+      adapter_path: ""
+  storage:
+    filesystem-local:
+      enabled: true
+      external: false
+      adapter_path: "scripts/asset_pipeline.py"
+    remote-archive:
+      enabled: false
+      external: true
+      adapter_path: "scripts/assetctl.py"
+  publication:
+    instagram:
+      enabled: false
+      external: true
+      adapter_path: ""
+  search:
+    public-search:
+      enabled: false
+      external: true
+      adapter_path: ""
+notes:
+  - "Nenhum endpoint, token, secret ou credencial é definido neste registro."
+  - "Habilitação exige janela separada, contrato revisado e OK explícito."

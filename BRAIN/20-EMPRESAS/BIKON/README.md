@@ -24,6 +24,11 @@
 
 ## Histórico relevante
 
+- 2026-07-20: conjunto Instagram Bikon v4 aprovado como canônico; cinco fundos Kling consumiram 10 créditos autorizados e nenhuma publicação ocorreu.
+- 2026-07-20: Instagram Brand Director v2.1.0 implantada por corte atômico com backup, rollback e recibo append-only; Produção Assistida iniciada e lifecycle da proposta ainda `pending`.
+- 2026-07-20: snapshot `feed-base-a v1` congelado com sete arquivos e Brand QA pré-geração `PASS`; manifesto `474e9af2…`, request `5d721862…` e payload `2be351a0…`. Render, Portão C, Kling e publicação permanecem bloqueados.
+- 2026-07-20: SSI e SFT adotados como indicadores oficiais da Produção Assistida. Valores iniciais: SSI 50% e SFT 68,985 segundos.
+- 2026-07-20: pacote conferido com 28 PDFs das NFS-e 191 a 218, total de R$ 88.403,87, entregue sem nova emissão ou cancelamento.
 - 2026-07-17: aprovada a arquitetura de produção Instagram com Robotnik na preparação, Puppet Master na coordenação, Hebert nos portões de gasto/ação externa, Kling para mídia bruta, Creatomate para composição e Buffer como único publicador.
 - 2026-07-17: contrato Kling CLI 0.1.3 limitado a `text_to_image`, adapter corrigido e nove testes aprovados sem geração ou consumo; brand pack oficial e template Creatomate 1080 × 1350 validados, com camadas produtivas e Buffer ainda pendentes.
 - 2026-07-09: integração Instagram Bikon/Robotnik configurada em modo `draft` com Meta Graph API, token em segredo local, publicação bloqueada e crons editoriais criados para pautas diárias/semanais com aprovação humana.
@@ -57,3 +62,4 @@
 - Relatórios técnicos externos devem sair com acabamento visual premium Bikon, sem caminhos internos, metadados automáticos, paginação feia ou aparência de HTML impresso.
 - Materiais públicos ou semi-públicos com logo, paleta, layout ou identidade Bikon devem passar por revisão visual do Kowalski antes da peça final; isso não substitui aprovação explícita para publicação ou envio externo.
 - No Instagram Bikon, briefing, estratégia, geração, composição/render e publicação são aprovações independentes. Buffer é o único publicador autorizado; Meta Graph API e Instagram direto não podem operar em paralelo.
+- Brand QA pré-geração aprova somente o snapshot e o hash apresentados. Não autoriza Portão C, Kling, render, upload ou publicação; qualquer alteração de byte exige nova submissão.

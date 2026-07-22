@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AssetRecord",
+  "type": "object",
+  "required": [
+    "asset_id",
+    "campaign_id",
+    "version",
+    "stage",
+    "path",
+    "sha256",
+    "size",
+    "created_at",
+    "updated_at",
+    "lineage"
+  ],
+  "properties": {
+    "asset_id": {
+      "type": "string"
+    },
+    "campaign_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "stage": {
+      "enum": [
+        "source",
+        "generated",
+        "selected",
+        "composed",
+        "qa",
+        "release-candidate",
+        "archived",
+        "blocked"
+      ]
+    },
+    "path": {
+      "type": "string"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "size": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "mime": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "lineage": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": false
+}

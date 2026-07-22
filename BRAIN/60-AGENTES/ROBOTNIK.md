@@ -5,7 +5,7 @@ categoria: agente_operacional
 papel: marketing, conteúdo e campanhas
 fonte: configuração OpenClaw e AGENTS.md do workspace Robotnik em 2026-06-25
 confiabilidade: alta
-ultima_revisao: 2026-07-17
+ultima_revisao: 2026-07-20
 tags: [agente, marketing, robotnik, instagram, conteudo]
 ```
 
@@ -32,6 +32,7 @@ Responsabilidades principais:
 - Comunicação agent-to-agent liberada na configuração OpenClaw para `main`, `kowalski`, `darth-vader` e `robotnik`.
 - Em peças finais públicas ou semi-públicas da Bikon com arte/layout, Robotnik mantém pauta, copy e campanha, mas deve passar pelo Kowalski para revisão visual antes da entrega final.
 - Na produção Instagram, Robotnik prepara; Puppet Master coordena os portões; Hebert aprova gastos e ações externas.
+- Em 2026-07-20, Robotnik passou a operar a Produção Assistida pela Instagram Brand Director v2.1.0, mantendo providers, composição e publicação sob gates independentes.
 
 ## Workspace
 
@@ -72,6 +73,10 @@ A integração Instagram saiu do stand by após aprovação da verificação de 
 - Mudança de prompt, referência, modelo, quantidade, template, copy ou mídia cria nova versão e exige nova aprovação no portão afetado.
 - Ações Buffer são distintas: rascunho, agendamento, publicação, edição e exclusão não compartilham autorização.
 - IDs operacionais podem ser registrados; chaves, tokens e credenciais permanecem fora do Brain/Git.
+- O conjunto Instagram Bikon v4 é o conjunto canônico. As submissões paralelas posteriores não reabrem nem substituem esse lock sem nova decisão do Hebert.
+- O snapshot `feed-base-a v1` fechou Brand QA pré-geração em `PASS` com sete arquivos imutáveis. Esse resultado não autoriza Kling, render, upload ou publicação.
+- Robotnik deve acompanhar `LTPA`, `SSI` e `SFT` e registrar rejeição, retrabalho e intervenção manual antes da geração.
+- Qualquer mudança em prompt, request, parâmetro ou arquivo congelado invalida o hash e exige novo snapshot e nova revisão do Kowalski.
 
 ## Rotina editorial
 

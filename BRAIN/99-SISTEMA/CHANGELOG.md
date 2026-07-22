@@ -1,5 +1,14 @@
 # CHANGELOG.md
 
+## 2026-07-22, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-07-22.md`.
+- Registrado o bloqueio seguro da publicação Instagram por divergência de hash entre asset local e URL temporária; nenhuma chamada ao Graph foi executada.
+- Atualizados Provimento 213/2026 e Relatórios Operacionais com o pacote de evidências originais, suas limitações e a correção do dossiê técnico sem cabeçalho/rodapé.
+- Registrado como envio válido o dossiê da mensagem `9396`; a identificação EOL anterior foi descartada como erro.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Nenhum snapshot, commit ou push foi executado.
+
 ## 2026-07-17, governança Instagram Bikon
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-07-17.md` com a implantação controlada da skill Instagram Brand Director.
@@ -390,3 +399,20 @@
 - Atualizados `BIKON/README.md` e `boletos-malote/README.md` com o avanço local da homologação Cresol sem envio externo e com artefatos brutos fora do Brain/Git.
 - Atualizado `scripts/sync-agentes-versionados.py` e regras de versionamento para excluir `.venv-*` e `homologacao-*`, removendo candidatos não rastreados antes do commit.
 - Atualizados `HEALTH.md` e `STATUS-BRAIN.md` com a execução diária, nova falha observada do `memory_search` por índice sem metadata e a higiene reforçada dos snapshots.
+
+## 2026-07-20, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-07-20.md` com Sentinel v2, Instagram Bikon v4, implantação atômica da Brand Director v2.1.0, Produção Assistida, snapshot `feed-base-a v1`, SSI/SFT e pacote das NFS-e 191 a 218.
+- Criada nota permanente `BRAIN/40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico.md`.
+- Atualizados `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`, `BRAIN/60-AGENTES/ROBOTNIK.md` e `BRAIN/20-EMPRESAS/BIKON/README.md` com v2.1.0, conjunto v4, Produção Assistida, hashes do snapshot e indicadores LTPA, SSI e SFT.
+- Atualizado `BRAIN/60-AGENTES/SENTINEL.md` com escopo, limites, pausa automática e evidência do primeiro ciclo do canário v2.
+- Atualizados `BRAIN/99-SISTEMA/MEMORY.md`, `BRAIN/99-SISTEMA/INDEX.md`, `BRAIN/99-SISTEMA/HEALTH.md` e `BRAIN/80-DASHBOARDS/STATUS-BRAIN.md`.
+- Registrada em `HEALTH.md` a defasagem temporária do snapshot versionado da skill Instagram em relação à árvore ativa v2.1.0.
+- Nenhum snapshot versionado foi modificado. Sync, commit e push não foram executados.
+
+## 2026-07-21 20:22 UTC
+
+- Reconciliação iniciada conforme solicitado.
+- Verificado no relatório `instagram-brand-director-v2.1.0-20260720` que a implantação permanece em `pending` e a skill ativa segue em `v2.0.1`.
+- O débito técnico `1ffb6a1` permanece em aberto; sem ação externa executada.
+- Próximo passo: janela de corte atômico explícita ou persistência administrativa no estado atual validado.

@@ -1,0 +1,35 @@
+{
+  "schema": "bikon-font-lineage/v1",
+  "family": "Space Grotesk",
+  "release": "2.0.0",
+  "commit": "7220f5d04813fe83babe76d4fd23e02275021280",
+  "official_origin": "https://github.com/floriankarsten/space-grotesk",
+  "acquired_at_utc": "2026-07-20T22:45:02.501Z",
+  "acquisition_completed_at_utc": "2026-07-20T22:45:03.264Z",
+  "source_files": [
+    {
+      "path": "fonts/ttf/SpaceGrotesk[wght].ttf",
+      "local_name": "SpaceGrotesk-wght.ttf",
+      "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72",
+      "weights_used": [500, 600, 700]
+    },
+    {
+      "path": "OFL.txt",
+      "local_name": "OFL.txt",
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72",
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "path": "Git commit metadata",
+      "local_name": "source-commit.json",
+      "sha256": "f2b79a005529ba6809f3625e0c521ed5788d5bf428ecc34a0a4586f4310e4466"
+    }
+  ],
+  "validation": {
+    "regular_files_only": true,
+    "symlinks": 0,
+    "executables": 0,
+    "global_installation": false,
+    "modified_or_converted": false
+  }
+}

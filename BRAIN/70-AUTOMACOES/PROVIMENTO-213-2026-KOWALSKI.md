@@ -4,7 +4,7 @@
 nome: Provimento CNJ 213/2026 Kowalski
 status: ativo
 responsavel: Kowalski sob coordenação do Puppet Master
-ultima_revisao: 2026-07-15
+ultima_revisao: 2026-07-22
 fonte: skills Provimento 213/2026 e consulta CNS, carteira oficial e diagnóstico piloto Cartório Alzira
 tags: [kowalski, provimento-213-2026, cartorios, cns, cnj, diagnostico, evidencia]
 ```
@@ -81,3 +81,15 @@ Lacunas principais observadas no piloto:
 ## Versionamento
 
 A skill está incluída na rotina `sync-agentes-versionados.py`, executada pela consolidação diária silenciosa do Brain.
+
+## Evidências originais por produto em 2026-07-22
+
+Foi montado fora do Brain/Git o pacote `evidencias-originais-produtos-2026-07-22.tar.gz`, acompanhado de manifesto, para Attemics/ChatLabel, Cove, Starti e Bitdefender.
+
+- SHA-256 do pacote: `9bed3a3d8d6105ba231ad1181a9ea781579d4cd7b2c6e084672da40864e86d0c`.
+- Attemics/ChatLabel: há resposta declaratória atribuída ao desenvolvedor, mas não há documento formal original do fornecedor no acervo local; a declaração não substitui DPA, política formal, auditoria ou certificação.
+- Cove: o pacote reúne documentos originais locais e referências oficiais da N-able.
+- Starti: o pacote reúne datasheet e declarações locais; a documentação registra ausência de ISO/IEC 27001 e SOC 2 vigentes no escopo declarado.
+- Bitdefender: o pacote inclui certificado ISO 27001 e referências oficiais; isso não comprova sozinho a conformidade plena do ambiente do contratante.
+
+O manifesto e os binários permanecem no workspace operacional do Kowalski, fora do repositório de conhecimento.

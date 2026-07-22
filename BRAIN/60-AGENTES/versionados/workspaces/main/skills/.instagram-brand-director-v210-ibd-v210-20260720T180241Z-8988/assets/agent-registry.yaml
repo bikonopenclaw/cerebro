@@ -1,0 +1,36 @@
+version: 1
+default_policy: "disabled-unless-explicit"
+agents:
+  puppet_master:
+    display_name: "Puppet Master"
+    role: "orchestrator"
+    enabled: true
+    canonical: true
+  robotnik:
+    display_name: "Robotnik"
+    role: "marketing-production"
+    enabled: true
+    canonical: true
+  kowalski:
+    display_name: "Kowalski"
+    role: "brand-governance"
+    enabled: true
+    canonical: true
+  skipper:
+    display_name: "Skipper"
+    role: "research-assistant"
+    enabled: false
+    canonical: false
+    cannot: ["approve_external_action", "publish", "change_brand_policy"]
+  rico:
+    display_name: "Rico"
+    role: "qa-assistant"
+    enabled: false
+    canonical: false
+    cannot: ["approve_external_action", "issue_brand_qa", "publish"]
+  private:
+    display_name: "Private"
+    role: "compliance-assistant"
+    enabled: false
+    canonical: false
+    cannot: ["approve_external_action", "accept_residual_risk", "publish"]

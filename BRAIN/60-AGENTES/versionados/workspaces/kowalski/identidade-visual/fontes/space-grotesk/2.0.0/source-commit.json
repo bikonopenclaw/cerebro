@@ -1,0 +1,35 @@
+{
+  "sha": "7220f5d04813fe83babe76d4fd23e02275021280",
+  "node_id": "MDY6Q29tbWl0MTE0Nzg1MTczOjcyMjBmNWQwNDgxM2ZlODNiYWJlNzZkNGZkMjNlMDIyNzUwMjEyODA=",
+  "url": "https://api.github.com/repos/floriankarsten/space-grotesk/git/commits/7220f5d04813fe83babe76d4fd23e02275021280",
+  "html_url": "https://github.com/floriankarsten/space-grotesk/commit/7220f5d04813fe83babe76d4fd23e02275021280",
+  "author": {
+    "name": "mightybart",
+    "email": "kvetoslav.bartos@gmail.com",
+    "date": "2020-10-29T20:36:48Z"
+  },
+  "committer": {
+    "name": "mightybart",
+    "email": "kvetoslav.bartos@gmail.com",
+    "date": "2020-10-29T20:36:48Z"
+  },
+  "tree": {
+    "sha": "6625edd057a0223d30f779a3b78525225e4ec181",
+    "url": "https://api.github.com/repos/floriankarsten/space-grotesk/git/trees/6625edd057a0223d30f779a3b78525225e4ec181"
+  },
+  "message": "meta tags updated",
+  "parents": [
+    {
+      "sha": "317eb4cffd10748b86bf6c558b50a173e665e4ee",
+      "url": "https://api.github.com/repos/floriankarsten/space-grotesk/git/commits/317eb4cffd10748b86bf6c558b50a173e665e4ee",
+      "html_url": "https://github.com/floriankarsten/space-grotesk/commit/317eb4cffd10748b86bf6c558b50a173e665e4ee"
+    }
+  ],
+  "verification": {
+    "verified": false,
+    "reason": "unsigned",
+    "signature": null,
+    "payload": null,
+    "verified_at": null
+  }
+}

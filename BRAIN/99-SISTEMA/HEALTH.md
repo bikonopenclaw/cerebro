@@ -8,12 +8,15 @@ Health Score: 94/100
 - Arquivos obrigatórios criados.
 - Sem registros duplicados identificados.
 - Sem projetos abandonados identificados.
-- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15 e 2026-07-17.
+- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15, 2026-07-17, 2026-07-20 e 2026-07-22.
 - Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`), 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`), 2026-06-28 (`01-DIARIO/Semanal/2026-W26.md`), 2026-07-12 (`01-DIARIO/Semanal/2026-W28.md`) e revisão parcial até 2026-07-17 (`01-DIARIO/Semanal/2026-W29.md`).
 - Consolidação mensal executada em 2026-07-01 (`01-DIARIO/Mensal/2026-06.md`), cobrindo junho/2026.
 - Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, separação teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, validação visual de relatórios externos, artefatos gerados fora do Brain/Git, ausência de evidência em monitoramento, separação entre consulta gerencial e permissão operacional, homologação bancária sem produção automática, validação do runtime pós-migração e menor privilégio em monitoramento.
-- Sentinel documentado como controller de Operações e SNOC read-only, com fontes autorizadas, allowlists, auditoria append-only, limites e revogação verificável.
-- Instagram Bikon documentado com aprovações separadas por etapa e hash, Kling restrita à geração, Creatomate à composição e Buffer como único publicador.
+- Sentinel documentado como controller de Operações e SNOC read-only. Canário v2 de 24 horas iniciado para 21 clientes, com pausa automática, encerramento programado e primeiro ciclo sem P1/P2.
+- Instagram Bikon documentado com conjunto v4 canônico, Brand Director v2.1.0 implantada, Produção Assistida, snapshot `feed-base-a v1` aprovado e SSI/SFT oficiais. Portão C, Kling, render e publicação seguem bloqueados.
+- Gate de integridade Instagram validado em 2026-07-22: divergência de hash entre asset local e URL temporária bloqueou a publicação antes de executar `instagram_graph.py`.
+- Dossiê técnico corrigido sem cabeçalho/rodapé e pacote de evidências originais do Provimento 213/2026 consolidados com limitações explícitas; binários permanecem fora do Brain/Git.
+- Nota permanente criada para deploy atômico de skills com plano imutável, hash canônico nomeado, backup, rollback e evidência append-only.
 - Registro central da BIKON criado e conectado a Notaas NFS-e, cadastro de clientes e boletos/malote.
 - Dashboard inicial atualizado.
 - Automações registradas: consolidação diária silenciosa, sync GitHub, Notaas NFS-e exclusiva da Darth Vader, documentação inicial de boletos/malote da BIKON com retorno Cresol CNAB400 para parser/conciliação, Cresol em homologação controlada com pacote local validado e sem envio externo, contexto ativo do grupo Telegram de faturamento Bikon, histórico inativo FN Souza, GravityZone/Bitdefender para Bikon com evolução aprovada para tickets NinjaOne sob critérios de alta confiança, matriz de acesso Bikon ↔ AD local de clientes, ARX Backup diário para tickets NinjaOne, limitações NinjaOne para backup/Hyper-V quando não há job/campo explícito, Provimento 213/2026 Kowalski, canal Telegram isolado do Kowalski para Relatórios Operacionais, Instagram Bikon Robotnik configurado em modo `draft` com crons editoriais e API WhatsApp Bikon validada; projeto de migração Hostinger VPS/OpenClaw em validação.
@@ -31,7 +34,8 @@ Health Score: 94/100
 - `Modelo de Relatório EOL Bikon` aprovado como padrão oficial para próximos relatórios EOL; PDFs finais e artefatos gerados permanecem fora do Brain/Git.
 - Claw3D/OpenClaw na VPS validado em 2026-07-13 com gateway conectado e ajuste para `openclaw-ground`; pendente confirmação visual do Hebert pelo túnel SSH.
 - Em 2026-07-15, a Fase 1 de saneamento liberou aproximadamente 7,1 GiB e reduziu o uso do disco para 38%; skills específicas foram reposicionadas para os workspaces ativos e o scheduler voltou a enxergar 33 jobs habilitados.
-- Snapshots versionados dos agentes Kowalski, Darth Vader e Robotnik criados em `60-AGENTES/versionados/`, com política de exclusão de segredos, artefatos, diretórios temporários e dados brutos sensíveis; em 2026-07-03 o Git do Brain passou a ignorar PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados por padrão; em 2026-07-09 a rotina passou a excluir também bancos locais, WAL/SHM, estado OpenClaw e artefatos de homologação da API Cresol; em 2026-07-10 a rotina passou a excluir prefixos `.venv-*` e `homologacao-*`; em 2026-07-11 passou a excluir `exports/`, `drafts/`, `*.csv` e `*.svg`; em 2026-W28 esse padrão foi elevado para nota permanente.
+- Snapshots versionados de Kowalski, Darth Vader, Robotnik, Sentinel e skills selecionadas do workspace principal mantidos em `60-AGENTES/versionados/`, com política de exclusão de segredos, artefatos, diretórios temporários e dados brutos sensíveis; em 2026-07-03 o Git do Brain passou a ignorar PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados por padrão; em 2026-07-09 a rotina passou a excluir também bancos locais, WAL/SHM, estado OpenClaw e artefatos de homologação da API Cresol; em 2026-07-10 a rotina passou a excluir prefixos `.venv-*` e `homologacao-*`; em 2026-07-11 passou a excluir `exports/`, `drafts/`, `*.csv` e `*.svg`; em 2026-W28 esse padrão foi elevado para nota permanente.
+- O snapshot sanitizado da skill Instagram no commit `1ffb6a1` antecede a implantação completa da v2.1.0 e está temporariamente defasado em relação à árvore ativa. A reconciliação exige janela própria; esta consolidação não tocou nos snapshots versionados.
 
 ## Pendências
 
@@ -69,3 +73,9 @@ Health Score: 94/100
 - Arquivos em `99-ARQUIVO`: 0; nenhum arquivamento mensal porque os registros seguem recentes, conectados ou com valor de evidência.
 - MOCs/índices atualizados no mês: `INDEX.md`, `MEMORY.md`, `STATUS-BRAIN.md` e este `HEALTH.md`.
 - Pontos que reduzem score: cobertura diária parcial e `memory_search` indisponível por quota insuficiente.
+
+## Reconciliação Brand Director (2026-07-21)
+
+- Janela de reconciliação concluída com evidência: proposta de `Instagram Brand Director v2.1.0` ainda `pending`.
+- Skill ativa permanece `v2.0.1` com hash `ed9fa5704025e7d91b3d171abdb6cc6c6ecd664cbcc41ba5774128cd3f4e68cd`.
+- Status operacional: manter leitura/controlados e aguardar autorização explícita para corte atômico.

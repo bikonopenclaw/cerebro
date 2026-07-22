@@ -8,7 +8,7 @@
 
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
-- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15 e 2026-07-17.
+- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15, 2026-07-17, 2026-07-20 e 2026-07-22.
 - Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md`, `01-DIARIO/Semanal/2026-W26.md`, `01-DIARIO/Semanal/2026-W28.md` e revisão parcial `01-DIARIO/Semanal/2026-W29.md`.
 - Consolidação mensal de junho/2026 criada em `01-DIARIO/Mensal/2026-06.md`, com aprendizados, padrões de longo prazo, decisões consolidadas e critério de arquivamento.
 - Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, artefatos gerados fora do Brain/Git, evidência explícita em monitoramento, consulta gerencial sem permissão operacional, homologação bancária sem produção automática, validação do runtime pós-migração e menor privilégio em monitoramento.
@@ -32,9 +32,16 @@
 - Faster-whisper local reparado em 2026-07-10 e regra reforçada: áudio do Hebert deve ser tratado como comando operacional, transcrito internamente e executado.
 - SQLite financeiro do Darth Vader possui camada BI inicial e acesso read-only para Kowalski local/Hermes; baixa, retorno, pagamento e escrita financeira permanecem com Darth Vader.
 - Codex OpenClaw configurado com `model_reasoning_effort = "high"` no `CODEX_HOME` ativo em 2026-07-10.
-- Kowalski, Darth Vader e Robotnik possuem snapshots seguros versionados no Git do Brain, incluindo skills, scripts e documentação operacional sem segredos; rotina de snapshot exclui segredos, bancos locais, estados OpenClaw, ambientes virtuais e artefatos gerados/homologação.
-- Sentinel documentado como controller de Operações e SNOC estritamente read-only, com fontes autorizadas, allowlists, auditoria, revogação e proibição de remediação ou ticket sem aprovação.
-- Instagram Bikon consolidado com portões separados, Kling CLI 0.1.3 restrita a `text_to_image`, brand pack oficial, Creatomate para composição e Buffer como único publicador; produção ainda bloqueada por master, Buffer e preflight.
+- Kowalski, Darth Vader, Robotnik, Sentinel e skills selecionadas do workspace principal possuem snapshots seguros versionados no Git do Brain. A sincronização sanitizada mais recente está no commit `1ffb6a1`; a skill Instagram nele antecede a implantação completa da v2.1.0 e está temporariamente defasada.
+- Sentinel documentado como controller de Operações e SNOC estritamente read-only. O canário v2 de 24 horas foi iniciado para 21 clientes com pausa automática; o primeiro ciclo fechou com cinco fontes verdes e zero P1/P2.
+- Instagram Bikon v4 consolidado como conjunto canônico. Os cinco fundos consumiram 10 créditos autorizados e nenhuma publicação ocorreu.
+- Em 2026-07-22, uma divergência de hash entre asset local e URL temporária bloqueou a publicação antes da execução do Graph; nenhuma publicação ocorreu.
+- O dossiê técnico correto foi reenviado sem cabeçalho/rodapé na mensagem `9396`; o EOL identificado anteriormente foi descartado como erro desta entrega.
+- O pacote de evidências originais de Attemics/ChatLabel, Cove, Starti e Bitdefender foi montado com manifesto e limitações explícitas, fora do Brain/Git.
+- Instagram Brand Director v2.1.0 implantada por corte atômico validado, com backup e rollback; o lifecycle da proposta continua `pending`.
+- Produção Assistida iniciada. O snapshot imutável `feed-base-a v1` fechou Brand QA pré-geração em `PASS`, com sete arquivos, manifesto `474e9af2…`, request `5d721862…` e payload `2be351a0…`. Portão C, Kling, render e publicação continuam bloqueados.
+- Indicadores iniciais da Produção Assistida: SSI `50%`, SFT `68,985 s` e LTPA `2.723,846 s` ainda aberto no fechamento do Brand QA.
+- Pacote das NFS-e 191 a 218 conferido com 28 PDFs e total de R$ 88.403,87, sem nova emissão ou cancelamento.
 - Brain/Git: PDFs, imagens, ZIPs, sessões, caches e artefatos binários gerados são ignorados por padrão; PDFs anteriormente rastreados foram removidos do índice Git em 2026-07-03.
 - Arquivos obrigatórios criados em `99-SISTEMA`.
 
@@ -45,7 +52,7 @@
 - Se autorizada, evoluir a integração GravityZone da Bikon com cofre local e permissões mínimas.
 - Após preenchimento da matriz de acesso, desenhar auditoria PowerShell/RMM sem ações destrutivas sobre ADs de clientes.
 - Homologar layout/API Cresol antes de qualquer uso real da automação de boletos/malote; upload no portal, produção e baixa por API seguem bloqueados sem autorização específica.
-- Observar crons editoriais do Robotnik e fechar master Creatomate, `template-map`, Buffer e preflight antes do piloto; toda geração, render e ação externa exige o portão correspondente.
+- Fechar o Portão C do snapshot `feed-base-a v1` e receber Approval individual antes de qualquer nova execução Kling; composição e publicação permanecem em gates separados.
 - Criar dashboard de projetos ativos.
 - Criar dashboard de faturamento por lote: NFS-e, boletos, e-mails preparados/enviados e pendências.
 - Criar mapa inicial de empresas, pessoas, projetos e agentes conforme o volume de conteúdo real crescer.
@@ -53,4 +60,4 @@
 - Migração Hostinger VPS/OpenClaw: em validação; Fase 1 de saneamento liberou aproximadamente 7,1 GiB, skills específicas foram reposicionadas para os workspaces e 33 crons voltaram ao inventário ativo. Permanecem 11 jobs com último status de erro após restart/timeout/aborto e investigação de causa-raiz dos travamentos.
 - Executar o gate pós-migração completo: rotas ativas, skills indexadas, scheduler, `nextWake`, execuções, supervisor, canais e persistência após restart controlado. Arquivo presente não comprova runtime saudável.
 - Cobertura diária recente segue parcial: não há daily notes em 2026-07-12, 2026-07-13 e 2026-07-16.
-- Instagram Bikon Robotnik: contrato Kling e Creatomate validados sem geração/render; Buffer, camadas do master e preflight permanecem pendentes.
+- Instagram Bikon Robotnik: snapshot pré-geração aprovado; Kling, composição, Buffer, camadas do master, Brand QA final do render e publicação permanecem pendentes.
