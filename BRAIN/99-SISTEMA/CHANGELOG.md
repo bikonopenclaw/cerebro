@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-07-23, Controlador de Execução v2
+
+- Preservados no Brain os cinco artefatos originais da Etapa 0 v1 com seus hashes.
+- Versionado o pacote documental v2 recebido, com manifesto íntegro.
+- Marcado o plano operacional v1 como `superseded`, sem reescrever seu conteúdo factual.
+- Criado Registry operacional somente com modelos configurados ou observados no ambiente; candidatos não confirmados permaneceram excluídos.
+- Executada a Etapa 0.5 em modo read-only: 40 linhas revisadas, nove divergências C/R/G identificadas e dois casos sem evidência local consultável.
+- Casos de teste e baseline v2 não foram alterados porque as divergências exigem aprovação do Hebert.
+- Nenhum roteamento, modelo, cron, skill, gateway, configuração ou produção foi alterado.
+
 ## 2026-07-23, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-07-23.md`.

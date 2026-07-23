@@ -2,7 +2,7 @@
 
 ```yaml
 nome: Roteador de Execução v1
-status: etapa_0_concluida
+status: superseded_documental_v2
 responsavel: Puppet Master
 inicio: 2026-07-23
 prioridade: media
@@ -62,6 +62,7 @@ A seleção cognitiva não amplia autorização. Produção, root, gasto, comuni
 ## Decisão atual
 
 - Etapa 0 concluída.
+- Documento superseded pelo Controlador de Execução v2, preservado como histórico.
 - Troca automática de modelo não autorizada.
 - Etapas 1 a 4 não autorizadas.
 - Recomendação: ampliar a subamostra técnica e instrumentar timestamps antes de propor a Etapa 1.
@@ -77,6 +78,7 @@ A seleção cognitiva não amplia autorização. Produção, root, gasto, comuni
 ## Relações
 
 - Diário: `BRAIN/01-DIARIO/2026/2026-07-23.md`.
+- Sucessor documental: `BRAIN/50-PROJETOS/Planejamento/Controlador-de-Execucao-v2/README.md`.
 - Agente operacional: `BRAIN/60-AGENTES/SENTINEL.md`.
 - Diretrizes: `BRAIN/99-SISTEMA/MEMORY.md`.
 - Artefatos de evidência fora do Brain: `/data/.openclaw/workspace/entregas/roteador-execucao-v1-20260723/`.

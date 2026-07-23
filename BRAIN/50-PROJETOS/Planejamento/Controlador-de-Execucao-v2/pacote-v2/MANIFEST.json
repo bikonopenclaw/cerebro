@@ -1,0 +1,52 @@
+[
+  {
+    "file": "00-LEIA-ME-PARA-O-AGENTE.md",
+    "bytes": 1184,
+    "sha256": "76a96ffb789230263b863b111a64be8d0b21cd63e0d38370722d33d62e41fc78"
+  },
+  {
+    "file": "01-PLANO-CONTROLADOR-EXECUCAO-V2.md",
+    "bytes": 26484,
+    "sha256": "fcbe674b30ee41a2620e7793333d63d6b7378f4d6fa7c89641644b4a35fab035"
+  },
+  {
+    "file": "02-SPEC-CONTROLADOR-EXECUCAO-V1.md",
+    "bytes": 5669,
+    "sha256": "33ed1afb5fffb55287ec33e459b971f1ebdd2b1a5f3c2d679f7a236dfd9a04d1"
+  },
+  {
+    "file": "03-MODEL-REGISTRY-V1.md",
+    "bytes": 4189,
+    "sha256": "703ecbebd31a47208ecf79124fcc80d5a377ee91ddc2fc46d18f584ef2aee0d1"
+  },
+  {
+    "file": "04-CONTRATO-DE-EXECUCAO-V1.md",
+    "bytes": 2876,
+    "sha256": "d94cb60f9b64df1b4f46799cd14e76ef34a55682d83544c76b4390fa128001fc"
+  },
+  {
+    "file": "05-MATRIZ-CAPACIDADES-V1.md",
+    "bytes": 2552,
+    "sha256": "6fe29baa4d0475932d4d1bdfea33b41bb41dfcaa12207fad9ae8502a75ba5bb2"
+  },
+  {
+    "file": "06-CASOS-TESTE-CONTROLADOR-V1.md",
+    "bytes": 4756,
+    "sha256": "4270ae63bd119d1bdf08f6311902b7653a40105ef72637064371c7dd3fe93649"
+  },
+  {
+    "file": "07-BASELINE-40-TAREFAS-V2.csv",
+    "bytes": 20079,
+    "sha256": "fc192c13945ce03f07f500cf004b4fe2d458712d3a46233dfaac810e9f26ee73"
+  },
+  {
+    "file": "08-RELATORIO-ETAPA-0.5.md",
+    "bytes": 1677,
+    "sha256": "a3d43bf3170726903baececd4910c095b079e6eed326346efe50ef1ffc65831a"
+  },
+  {
+    "file": "09-CHANGELOG-V2.md",
+    "bytes": 1559,
+    "sha256": "85817c2ac2534d2c439c483b5d69a06d19ac01a7ae361815605bc51117f9b07f"
+  }
+]

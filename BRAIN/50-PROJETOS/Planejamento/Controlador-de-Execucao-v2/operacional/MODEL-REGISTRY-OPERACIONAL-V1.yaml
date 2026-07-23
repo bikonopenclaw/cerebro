@@ -1,0 +1,79 @@
+registry_version: "1.0"
+updated_at_utc: "2026-07-23T21:33:00Z"
+status: "documentary_only"
+activation_authorized: false
+owner: "Puppet Master"
+sources:
+  gateway_config_hash: "7ff4d90f62514e5d4c842858fe95c9f5211ca8b9e3a1aa62663878881a39f06f"
+  gateway_config_path: "agents"
+  session_status_checked_at_utc: "2026-07-23T21:33:00Z"
+snapshot_policy:
+  fixed_snapshot_ids_exposed: false
+  rule: "Sem snapshot identificável, nenhum modelo pode ser promovido para rota crítica."
+models:
+  - model_id: "openai/gpt-5.5"
+    config_state: "configured_default"
+    observation_state: "effective_observed"
+    observed_sessions: ["kowalski", "robotnik"]
+    observed_reasoning: ["high"]
+    validation_state: "candidate"
+    approved_capabilities: []
+    critical_route_allowed: false
+    limitations:
+      - "Snapshot fixo não exposto."
+      - "Capacidades C1-C4 ainda não avaliadas pela suíte v2."
+  - model_id: "openai/gpt-5.6-sol"
+    config_state: "configured"
+    observation_state: "effective_observed"
+    observed_sessions: ["puppet-master", "darth-vader", "sentinel"]
+    observed_reasoning: ["high"]
+    validation_state: "candidate"
+    approved_capabilities: []
+    critical_route_allowed: false
+    limitations:
+      - "Snapshot fixo não exposto."
+      - "Uso atual não equivale a validação C3, C4, C5 ou G3."
+  - model_id: "openai/gpt-5.4"
+    config_state: "configured_fallback"
+    observation_state: "not_observed_in_checked_sessions"
+    observed_reasoning: []
+    validation_state: "restricted"
+    approved_capabilities: []
+    critical_route_allowed: false
+  - model_id: "openai/gpt-5.4-pro"
+    config_state: "configured"
+    observation_state: "not_observed_in_checked_sessions"
+    observed_reasoning: []
+    validation_state: "candidate"
+    approved_capabilities: []
+    critical_route_allowed: false
+  - model_id: "openai/gpt-5.3-codex"
+    config_state: "configured"
+    observation_state: "not_observed_in_checked_sessions"
+    observed_reasoning: []
+    validation_state: "candidate"
+    approved_capabilities: []
+    critical_route_allowed: false
+  - model_id: "openai/gpt-5.3-codex-spark"
+    alternate_config_id: "codex/gpt-5.3-codex-spark"
+    config_state: "configured"
+    observation_state: "not_observed_in_checked_sessions"
+    observed_reasoning: []
+    validation_state: "candidate"
+    approved_capabilities: []
+    critical_route_allowed: false
+    limitations:
+      - "C1 técnico ainda não comprovado pela baseline."
+      - "Nenhuma promoção automática para tarefas mapeadas."
+excluded_candidates:
+  - candidate_id: "openai/gpt-5.6-luna"
+    reason: "Não aparece na configuração ativa nem nas sessões verificadas."
+  - candidate_id: "openai/gpt-5.6-terra"
+    reason: "Não aparece na configuração ativa nem nas sessões verificadas."
+  - candidate_id: "openai/default"
+    reason: "Placeholder configurado sem resolução reproduzível de snapshot."
+resolution_policy:
+  - "Nenhum modelo está validated para C1-C5."
+  - "Nenhuma rota crítica pode ser resolvida automaticamente."
+  - "O Registry não altera o modelo efetivo dos agentes."
+  - "Promoção exige avaliações, custo, latência, owner e snapshot identificável."
