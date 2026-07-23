@@ -437,3 +437,10 @@
 - Verificado no relatório `instagram-brand-director-v2.1.0-20260720` que a implantação permanece em `pending` e a skill ativa segue em `v2.0.1`.
 - O débito técnico `1ffb6a1` permanece em aberto; sem ação externa executada.
 - Próximo passo: janela de corte atômico explícita ou persistência administrativa no estado atual validado.
+
+## 2026-07-23, Controlador de Execução v2, correções aprovadas da Etapa 0.5
+
+- Hebert aprovou às `2026-07-23T22:07:42Z` as nove correções C/R/G identificadas na revisão documental.
+- Baseline e casos de teste operacionais foram atualizados; o pacote v2 recebido e seu manifesto permanecem imutáveis.
+- Casos 27 e 28 continuam `candidate` por ausência de evidência local.
+- Nenhum roteamento, modelo, cron, gateway, configuração ou produção foi alterado.

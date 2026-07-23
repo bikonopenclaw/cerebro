@@ -1,7 +1,7 @@
 # Controlador de Execução v2
 
 ```yaml
-status: etapa_0_5_documental_concluida_com_divergencias
+status: etapa_0_5_documental_concluida
 implementacao: nao_autorizada
 roteamento_automatico: desativado
 ultima_revisao: 2026-07-23
@@ -43,12 +43,16 @@ Os cinco arquivos foram copiados antes da marcação de supersession no artefato
 ### Resultado operacional read-only
 
 - [Registry confirmado do ambiente](operacional/MODEL-REGISTRY-OPERACIONAL-V1.yaml)
+- [Baseline operacional corrigida](operacional/BASELINE-40-TAREFAS-V2.csv)
+- [Casos de teste operacionais corrigidos](operacional/CASOS-TESTE-CONTROLADOR-V1.md)
 - [Revisão linha a linha e diff documental](operacional/RELATORIO-ETAPA-0.5-VALIDADO.md)
+
+O conteúdo de `pacote-v2/` permanece imutável como evidência recebida. As cópias em `operacional/` são a referência vigente para a Etapa 0.5.
 
 ## Estado decisório
 
 - Etapa 0.5 documental executada.
-- Nove divergências C/R/G foram encontradas e não foram aplicadas aos casos de teste.
+- Nove correções C/R/G foram aprovadas por Hebert em `2026-07-23T22:07:42Z` e aplicadas às cópias operacionais.
 - Dois casos permanecem sem artefato local consultável.
 - Registry criado somente com modelos configurados ou observados no ambiente.
 - Etapa 1 e roteamento automático continuam não autorizados.

@@ -5,8 +5,9 @@
 - Modo: read-only sobre evidências e configuração.
 - Implementação: não autorizada.
 - Roteamento automático: não ativado.
-- Casos de teste: preservados sem alterações C/R/G.
-- Resultado: `31 alinhados`, `9 divergências C/R/G`, `2 lacunas de evidência local`.
+- Correções C/R/G: aprovadas por Hebert em `2026-07-23T22:07:42Z` e aplicadas somente às cópias operacionais.
+- Pacote recebido: preservado sem alterações.
+- Resultado: `38 casos confirmados`, `2 casos candidate internamente consistentes` e `2 lacunas de evidência local`.
 
 ## Integridade do pacote
 
@@ -19,10 +20,26 @@
   - C0: 8;
   - C2: 14;
   - C3: 18;
+  - R0: 8;
+  - R2: 9;
+  - R3: 20;
+  - R4: 3;
   - G0: 27;
   - G1: 2;
   - G2: 5;
   - G3: 6.
+- Distribuição operacional após as correções aprovadas:
+  - C0: 9;
+  - C2: 13;
+  - C3: 18;
+  - R0: 9;
+  - R2: 8;
+  - R3: 20;
+  - R4: 3;
+  - G0: 27;
+  - G1: 2;
+  - G2: 4;
+  - G3: 7.
 
 ## Evidências
 
@@ -32,7 +49,7 @@
 - 11 referências de sessão foram preservadas da baseline v1 e as sessões correspondentes permanecem conhecidas no ambiente.
 - Casos 27 e 28: os diretórios de evidência informados não existem mais no workspace do Robotnik. A classificação não pode virar ground truth com a evidência atual.
 
-## Revisão linha a linha
+## Revisão linha a linha do pacote recebido
 
 | ID | Evidência | C/R/G proposto | Veredito |
 |---:|---|---|---|
@@ -77,21 +94,21 @@
 | 39 | evidência local | C3/R3/G3 | alinhado |
 | 40 | sessão conhecida | C3/R3/G0 | alinhado |
 
-## Divergências pendentes de aprovação
+## Correções aprovadas e aplicadas
 
-Nenhuma linha ou caso de teste foi alterado.
+As correções foram aplicadas em `BASELINE-40-TAREFAS-V2.csv` e `CASOS-TESTE-CONTROLADOR-V1.md` dentro de `operacional/`. O pacote recebido e seu manifesto permanecem imutáveis.
 
-| ID | Campo | Pacote | Recomendação |
-|---:|---|---|---|
-| 03 | G | G2 | G3 |
-| 06 | G | G3 | G0 |
-| 19 | G | G2 | G0 |
-| 20 | C/R | C2/R2 | C0/R0 |
-| 30 | G | G2 | G0 |
-| 33 | G | G0 | G2 |
-| 34 | G | G0 | G2 |
-| 35 | G | G0 | G2 |
-| 38 | G | G2 | G3 |
+| ID | Campo | Pacote | Operacional | Status |
+|---:|---|---|---|---|
+| 03 | G | G2 | G3 | aplicado |
+| 06 | G | G3 | G0 | aplicado |
+| 19 | G | G2 | G0 | aplicado |
+| 20 | C/R | C2/R2 | C0/R0 | aplicado |
+| 30 | G | G2 | G0 | aplicado |
+| 33 | G | G0 | G2 | aplicado |
+| 34 | G | G0 | G2 | aplicado |
+| 35 | G | G0 | G2 | aplicado |
+| 38 | G | G2 | G3 | aplicado |
 
 ## Registry operacional
 
@@ -102,6 +119,15 @@ Nenhuma linha ou caso de teste foi alterado.
 - O runtime não expôs snapshots fixos reproduzíveis. Por isso nenhuma rota crítica foi habilitada.
 
 Referência: [MODEL-REGISTRY-OPERACIONAL-V1.yaml](MODEL-REGISTRY-OPERACIONAL-V1.yaml).
+
+## QA final
+
+- Manifesto do pacote recebido: 10 de 10 arquivos válidos.
+- Baseline operacional: 40 registros e 26 colunas com delimitador `;`.
+- Consistência baseline versus casos de teste: 40 de 40 combinações C/R/G idênticas.
+- Links documentais verificados: nenhum destino ausente.
+- Varredura do lote: nenhum segredo detectado.
+- Configuração operacional: nenhuma alteração.
 
 ## Diff documental v1 para v2
 
@@ -119,8 +145,8 @@ Referência: [MODEL-REGISTRY-OPERACIONAL-V1.yaml](MODEL-REGISTRY-OPERACIONAL-V1.
 - C1 continua sem subamostra técnica independente.
 - Nenhum modelo possui snapshot fixo confirmado.
 - Casos 27 e 28 não têm evidência local consultável.
-- As nove divergências aguardam decisão do Hebert.
+- Casos 27 e 28 permanecem `candidate` e não podem virar ground truth.
 
 ## Próximo passo
 
-Submeter as nove divergências C/R/G para aprovação. Somente depois atualizar a baseline v2 e os casos de teste. A Etapa 1 permanece bloqueada e, se autorizada no futuro, deve ser apenas shadow mode.
+Recuperar ou regenerar evidência verificável para os casos 27 e 28 e ampliar a amostra com casos C1 reais. A Etapa 1 permanece bloqueada e, se autorizada no futuro, deve ser apenas shadow mode.
