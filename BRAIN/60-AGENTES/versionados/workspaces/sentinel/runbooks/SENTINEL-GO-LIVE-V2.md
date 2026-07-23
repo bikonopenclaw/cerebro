@@ -2,8 +2,11 @@
 
 ## Controle
 
-- Versão: `2.0.0`.
+- Versão: `2.1.0`.
 - Aprovação: Hebert, 2026-07-20, autorização explícita para criar e ativar a v2.
+- Aprovação complementar: Hebert, `2026-07-23T14:25:00Z`, incorporação
+  obrigatória do padrão de incerteza e nova execução v2 de 24 horas, sem
+  mudança de rota, fonte, sequência, cadência ou gates.
 - G0: `PASS`, 21/21 hashes válidos e zero bloqueios.
 - Modo: somente leitura nas fontes e escrita somente em estado, logs e auditoria locais do Sentinel.
 - Escopo: 21 clientes ativos reconciliados no contexto operacional.
@@ -18,18 +21,24 @@
 
 ## Janela ativa
 
-- Início UTC: `2026-07-20T12:55:09Z`.
-- Término UTC: `2026-07-21T12:55:09Z`.
-- Início BRT: `2026-07-20T09:55:09-03:00`.
-- Término BRT: `2026-07-21T09:55:09-03:00`.
-- Run ID: `317d339f92506bf34ee2d76c`.
+- Início UTC: `2026-07-23T14:30:41Z`.
+- Término UTC: `2026-07-24T14:30:41Z`.
+- Início BRT: `2026-07-23T11:30:41-03:00`.
+- Término BRT: `2026-07-24T11:30:41-03:00`.
+- Run ID: `b7b4d4ad110ef74744f354f0`.
+- Correlation ID de ativação: `77a841671f0c44a4ae5da105f0aeae39`.
+- Estado inicial: `active`.
+
+A janela anterior `317d339f92506bf34ee2d76c` permanece preservada em
+`backups/sentinel-canary-v2-closed-317d339f92506bf34ee2d76c-20260721T125511Z`.
 
 ## Jobs aprovados
 
-- Coletor: `6e05f8d2-887d-422d-b871-9abfd0731804`, `Sentinel v2 canario 24h ciclo 30m`.
-- Encerramento: `de620536-51f6-4003-a5e2-7bfe1218984f`, `Sentinel v2 encerramento automatico 24h`.
-- Baseline anterior: 38 jobs, nenhum job Sentinel.
-- Regra de preservação: os 38 jobs anteriores não podem ser editados, desabilitados ou removidos.
+- Coletor: `c5dd6393-0352-4f0e-bf99-69360d388c83`, `Sentinel v2 canario 24h ciclo 30m`.
+- Encerramento: `85b8d32b-dc96-419b-a027-c32df97f9e9c`, `Sentinel v2 encerramento automatico 24h`.
+- Baseline anterior: 33 jobs, nenhum job Sentinel.
+- Hash do baseline anterior: `10fa8dc13254f58fb2eabbd756fa618ff989b3c2ac66e5b27b78c8b13f771bd7`.
+- Regra de preservação: os 33 jobs anteriores não podem ser editados, desabilitados ou removidos.
 
 ## Fontes e limites
 
@@ -52,6 +61,43 @@ Não existe fallback de fonte, credencial, endpoint ou método. A segregação d
 - SLA reconciliado: P1 60/90, P2 240/300, P3 480/480 e P4 960/960 minutos para reconhecimento/escalonamento.
 - Ao alcançar `escalate_min`, o finding sobe um nível. P3 persistente por 480 minutos vira P2 e pausa o canário.
 - Janela de manutenção é opcional e não configurada; como não há remediação ou mudança, ela não silencia finding durante o canário.
+
+## Classificação provisória e confiança
+
+Toda classificação provisória deve registrar:
+
+1. fato observado;
+2. hipótese;
+3. classificação P1-P4;
+4. nível de confiança;
+5. critérios objetivos de confiança;
+6. lacuna que impede classificação final;
+7. risco de erro;
+8. evidência necessária para fechar;
+9. prazo e freshness;
+10. dono.
+
+Os gates obrigatórios são:
+
+- G1: fonte autorizada e leitura direta;
+- G2: item ou alvo atribuído de forma única;
+- G3: evidência dentro da freshness aplicável;
+- G4: regra P1-P4 determinística e sem sinal conflitante;
+- G5: impacto ou intenção operacional confirmados.
+
+Confiança alta exige G1-G5. Confiança média admite somente uma lacuna
+contextual, normalmente G5, com alternativas limitadas e prazo de revisão.
+Confiança baixa se aplica quando falta atribuição, freshness, há duas ou mais
+lacunas ou existe conflito. Sem G2 ou com evidência expirada, a confiança
+máxima é baixa. Sinal crítico conflitante impede rebaixamento automático.
+
+Cada ciclo registra o padrão no campo `provisional_classification`. A
+freshness operacional é revista na cadência de 30 minutos; SLA ou janela de
+backup ausente permanece `not_configured` e não pode ser inferida. Owner
+operacional: Sentinel; escalonamento: Puppet Master.
+
+Nenhuma classificação provisória vira final sem G1-G5 ou aceitação explícita
+do risco residual por Hebert.
 
 ## Thresholds
 
@@ -88,7 +134,8 @@ O job de encerramento permanece ativo para fechar e preservar evidências. Nenhu
 
 ## Validação de pronto
 
-1. Selftest de deduplicação, escalonamento P3 para P2 e janela de 24 horas.
+1. Selftest de deduplicação, escalonamento P3 para P2, janela de 24 horas e
+   contrato de classificação provisória.
 2. Preflight local com 21 clientes, owner/SLA e hashes dos clientes read-only.
 3. Baseline de 38 jobs e hash da configuração OpenClaw.
 4. Dois jobs novos identificados por ID, sem alteração dos 38 anteriores.
@@ -98,19 +145,30 @@ O job de encerramento permanece ativo para fechar e preservar evidências. Nenhu
 
 ## Evidência de ativação
 
-- Ativação dos jobs: concluída em `2026-07-20T12:57Z`.
-- Primeiro ciclo pelo scheduler: `5b001dd88bb74a17b3bf4654df0a1388`, iniciado em `2026-07-20T12:58:04.596343Z`.
+- Ativação dos jobs: concluída em `2026-07-23T14:32Z`.
+- Primeiro ciclo pelo scheduler: `c9cca0be9dc345419d6a2c600ec7db88`, iniciado em `2026-07-23T14:32:41.291983Z`.
 - Estado após o primeiro ciclo: `active`, cinco fontes verdes, zero P1/P2 e nenhuma pausa.
-- Findings ativos: `arx:attention` P3 com contagem 1; `ninjaone:alerts-present` P3 com contagem 189.
+- Findings ativos: `arx:attention` P3/baixa com contagem 1;
+  `arx:other` P3/baixa com contagem 1; `ninjaone:alerts-present`
+  P3/baixa com contagem 198.
 - Contexto: 21 registrados, 21 ativos, zero lacuna de owner e zero lacuna de SLA.
 - Bitdefender: zero incidentes e zero itens de quarentena.
-- Próxima checagem UTC: `2026-07-20T13:25:43.782Z`.
-- Próxima checagem BRT: `2026-07-20T10:25:43.782-03:00`.
-- Encerramento automático UTC: `2026-07-21T12:55:09Z`.
-- Encerramento automático BRT: `2026-07-21T09:55:09-03:00`.
+- Próxima checagem UTC: `2026-07-23T15:01:34.693Z`.
+- Próxima checagem BRT: `2026-07-23T12:01:34.693-03:00`.
+- Encerramento automático UTC: `2026-07-24T14:30:41Z`.
+- Encerramento automático BRT: `2026-07-24T11:30:41-03:00`.
 - Entrega do primeiro ciclo: `not-requested`.
-- Auditoria: um sucesso novo para cada uma das cinco fontes e evento local do ciclo em modo `600`.
+- Auditoria: um sucesso novo para cada uma das cinco fontes e evento local do
+  ciclo em modo `600`. Correlations das fontes:
+  NinjaOne `f4f2e6bb88c440e08db9ef392bfb1e25`, ARX
+  `0f92f6c0f3b94e88ace19321cabc94e4`, Bitdefender
+  `d71e631dc1f34c2d86658c8690939cdc`, contexto
+  `a5d8873976ec4d2db64196a9343ef3bf` e logs
+  `da5a150032974a85995d8b94f9660488`.
 
 ## Rollback
 
-O rollback está em `backups/sentinel-canary-v2-20260720T125347Z/ROLLBACK.md`. Ele desabilita somente os jobs v2 identificados neste documento e preserva todos os registros como evidência.
+Em desvio, desabilitar somente o coletor
+`c5dd6393-0352-4f0e-bf99-69360d388c83`; o encerramento
+`85b8d32b-dc96-419b-a027-c32df97f9e9c` permanece ativo para preservar o
+fechamento da janela. Estado, ciclos e auditorias não podem ser apagados.

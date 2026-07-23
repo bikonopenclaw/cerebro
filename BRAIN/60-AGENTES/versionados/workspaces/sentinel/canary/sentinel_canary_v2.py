@@ -23,7 +23,7 @@ AUDIT_LOG = ROOT / "logs" / "sentinel-canary-v2-audit.jsonl"
 LOCK_PATH = ROOT / "state" / "sentinel-canary-v2.lock"
 CONTEXT_MAP = ROOT / "context" / "operational_context_map.json"
 
-RUNNER_VERSION = "2.0.0"
+RUNNER_VERSION = "2.1.0"
 SCHEMA_VERSION = 2
 EXPECTED_CLIENTS = 21
 COLLECTOR_JOB_NAME = "Sentinel v2 canario 24h ciclo 30m"
@@ -298,6 +298,96 @@ def finding(key: str, severity: str, title: str, evidence: dict[str, Any]) -> di
     }
 
 
+def provisional_classification(
+    item: dict[str, Any],
+    *,
+    effective_severity: str,
+    observed_at: datetime,
+) -> dict[str, Any]:
+    key = item["key"]
+    aggregate_without_attribution = {
+        "ninjaone:alerts-present",
+        "arx:attention",
+        "arx:critical",
+        "arx:other",
+        "bitdefender:incidents",
+        "bitdefender:quarantine",
+        "gateway:new-fatal",
+        "gateway:new-error",
+    }
+    attributed = key not in aggregate_without_attribution
+    impact_confirmed = key not in aggregate_without_attribution
+    gates = {
+        "G1_authorized_direct_source": True,
+        "G2_unique_attribution": attributed,
+        "G3_freshness_within_cycle": True,
+        "G4_deterministic_rule_no_conflict": True,
+        "G5_impact_or_operational_intent_confirmed": impact_confirmed,
+    }
+    failed = [name for name, passed in gates.items() if not passed]
+    if not failed:
+        confidence = "high"
+    elif failed == ["G5_impact_or_operational_intent_confirmed"]:
+        confidence = "medium"
+    else:
+        confidence = "low"
+
+    if key == "ninjaone:alerts-present":
+        hypothesis = "existem alertas ativos; impacto por item ainda nao foi atribuido"
+        gap = "cliente, ativo, tipo de condicao e impacto por alerta"
+        error_risk = "P3 agregado pode superestimar alerta preventivo ou ocultar impacto localizado maior"
+        evidence_to_close = "leitura detalhada autorizada que atribua cada alerta e confirme impacto"
+    elif key == "arx:other":
+        hypothesis = "estado transitorio normal ou condicao degradada ainda sem classificacao"
+        gap = "cliente, ativo, ultima conclusao, ultimo sucesso e janela autoritativa"
+        error_risk = "P3 pode superestimar execucao normal; P4 pode mascarar continuidade degradada"
+        evidence_to_close = "atribuicao sanitizada e freshness de conclusao/sucesso pela rota aprovada"
+    elif key.startswith("arx:"):
+        hypothesis = "estado agregado ARX exige validacao operacional do item afetado"
+        gap = "atribuicao unica e impacto por conta"
+        error_risk = "severidade conservadora pode superestimar ou subestimar impacto localizado"
+        evidence_to_close = "atribuicao sanitizada e confirmacao do resultado do backup"
+    elif key.startswith("bitdefender:"):
+        hypothesis = "sinal agregado de seguranca exige atribuicao antes de classificacao final"
+        gap = "empresa, endpoint, evento e impacto por item"
+        error_risk = "contagem agregada pode ocultar recorrencia ou evento ja contido"
+        evidence_to_close = "atribuicao sanitizada e estado de contencao pela rota aprovada"
+    elif key.startswith("gateway:"):
+        hypothesis = "novo evento do gateway pode indicar degradacao operacional"
+        gap = "evento atribuido e impacto confirmado"
+        error_risk = "delta agregado pode representar ruido ou falha material"
+        evidence_to_close = "categoria segura, recorrencia e impacto confirmados"
+    else:
+        hypothesis = "o fato observado corresponde ao gate operacional descrito"
+        gap = "nenhuma lacuna material no escopo do gate"
+        error_risk = "baixo; regra deterministica pode pausar de forma conservadora"
+        evidence_to_close = "novo ciclo sem o desvio e validacao do gate correspondente"
+
+    return {
+        "fact_observed": {
+            "title": item["title"],
+            "evidence": item["evidence"],
+            "observed_at_utc": iso_utc(observed_at),
+        },
+        "hypothesis": hypothesis,
+        "classification": effective_severity,
+        "confidence": confidence,
+        "confidence_criteria": [
+            {"gate": name, "passed": passed}
+            for name, passed in gates.items()
+        ],
+        "gap_preventing_final": gap,
+        "error_risk": error_risk,
+        "evidence_to_close": evidence_to_close,
+        "freshness": {
+            "observed_at_utc": iso_utc(observed_at),
+            "review_due_utc": iso_utc(observed_at + timedelta(minutes=30)),
+            "authoritative_window": "not_configured" if key.startswith("arx:") else "cycle_30m",
+        },
+        "owner": "Sentinel",
+    }
+
+
 def build_findings(summary: dict[str, Any], previous: dict[str, Any]) -> list[dict[str, Any]]:
     findings: list[dict[str, Any]] = []
     for source, payload in summary.items():
@@ -420,6 +510,11 @@ def enrich_findings(
             **item,
             "original_severity": original,
             "severity": effective,
+            "provisional_classification": provisional_classification(
+                item,
+                effective_severity=effective,
+                observed_at=now,
+            ),
             "first_seen_utc": first_seen_text,
             "last_seen_utc": iso_utc(now),
             "occurrence_count": int(prior.get("occurrence_count") or 0) + 1,
@@ -505,9 +600,29 @@ def selftest() -> dict[str, Any]:
     duplicate = enrich_findings([base], previous, policy, now + timedelta(minutes=30))[0]
     if duplicate["first_seen_utc"] != first["first_seen_utc"] or duplicate["occurrence_count"] != 2:
         raise RuntimeError("selftest de deduplicacao falhou")
+    provisional = first.get("provisional_classification", {})
+    required = {
+        "fact_observed",
+        "hypothesis",
+        "classification",
+        "confidence",
+        "confidence_criteria",
+        "gap_preventing_final",
+        "error_risk",
+        "evidence_to_close",
+        "freshness",
+        "owner",
+    }
+    if set(provisional) != required:
+        raise RuntimeError("selftest do padrao de incerteza falhou")
     return {
         "ok": True,
-        "tests": ["dedup_by_key", "sla_escalation_p3_to_p2", "window_24h"],
+        "tests": [
+            "dedup_by_key",
+            "sla_escalation_p3_to_p2",
+            "window_24h",
+            "provisional_classification_contract",
+        ],
         "runner_version": RUNNER_VERSION,
     }
 

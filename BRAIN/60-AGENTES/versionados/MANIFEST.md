@@ -1,6 +1,6 @@
 # Manifesto dos snapshots dos agentes
 
-Gerado em: 2026-07-22T21:32:09+00:00
+Gerado em: 2026-07-23T20:33:42+00:00
 
 ## Origens
 
