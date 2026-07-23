@@ -45,7 +45,8 @@ Os cinco arquivos foram copiados antes da marcação de supersession no artefato
 - [Registry confirmado do ambiente](operacional/MODEL-REGISTRY-OPERACIONAL-V1.yaml)
 - [Baseline operacional corrigida](operacional/BASELINE-40-TAREFAS-V2.csv)
 - [Casos de teste operacionais corrigidos](operacional/CASOS-TESTE-CONTROLADOR-V1.md)
-- [Revisão linha a linha e diff documental](operacional/RELATORIO-ETAPA-0.5-VALIDADO.md)
+- [Relatório pré-aprovação, superseded](operacional/RELATORIO-ETAPA-0.5-PRE-APROVACAO.md)
+- [Relatório validado vigente](operacional/RELATORIO-ETAPA-0.5-VALIDADO.md)
 
 O conteúdo de `pacote-v2/` permanece imutável como evidência recebida. As cópias em `operacional/` são a referência vigente para a Etapa 0.5.
 
@@ -53,6 +54,7 @@ O conteúdo de `pacote-v2/` permanece imutável como evidência recebida. As có
 
 - Etapa 0.5 documental executada.
 - Nove correções C/R/G foram aprovadas por Hebert em `2026-07-23T22:07:42Z` e aplicadas às cópias operacionais.
-- Dois casos permanecem sem artefato local consultável.
+- A baseline separa estado de validação, origem da classificação e horário de aprovação.
+- Há 38 casos `confirmed` e 2 `candidate`, IDs 27 e 28, por ausência de evidência histórica local.
 - Registry criado somente com modelos configurados ou observados no ambiente.
 - Etapa 1 e roteamento automático continuam não autorizados.

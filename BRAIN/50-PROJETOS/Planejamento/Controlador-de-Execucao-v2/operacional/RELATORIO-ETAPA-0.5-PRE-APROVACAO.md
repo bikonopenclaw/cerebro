@@ -1,53 +1,32 @@
-# Etapa 0.5, revisão validada e diff documental
+# Etapa 0.5, relatório pré-aprovação
 
-Histórico anterior à aprovação: [RELATORIO-ETAPA-0.5-PRE-APROVACAO.md](RELATORIO-ETAPA-0.5-PRE-APROVACAO.md).
+> Status: `superseded`.
+>
+> Este documento preserva o estado anterior à aprovação das nove correções C/R/G. Foi substituído por [RELATORIO-ETAPA-0.5-VALIDADO.md](RELATORIO-ETAPA-0.5-VALIDADO.md) e não é a referência operacional vigente.
 
 ## Estado
 
 - Modo: read-only sobre evidências e configuração.
 - Implementação: não autorizada.
 - Roteamento automático: não ativado.
-- Correções C/R/G: aprovadas por Hebert em `2026-07-23T22:07:42Z` e aplicadas somente às cópias operacionais.
-- Pacote recebido: preservado sem alterações.
-- Resultado: `38 confirmados; os 2 casos restantes, 27 e 28, permanecem candidate pelas mesmas 2 lacunas de evidência`.
+- Casos de teste: preservados sem alterações C/R/G.
+- Resultado: `31 alinhados`, `9 divergências C/R/G`, `2 lacunas de evidência local`.
 
 ## Integridade do pacote
 
 - Manifesto: 10 de 10 hashes e tamanhos conferidos.
 - Baseline v2: 40 registros, além do cabeçalho.
 - Delimitador: `;`.
-- Colunas operacionais: 28.
+- Colunas: 26.
 - Os 18 campos históricos da baseline v1 foram preservados sem diferença, desconsiderando apenas o zero à esquerda do ID.
-- O antigo campo agregado `status_reclassificacao` foi substituído nas cópias operacionais por:
-  - `estado_validacao_v2`;
-  - `origem_classificacao_v2`;
-  - `aprovado_em_utc`.
-- Estado de validação: 38 `confirmed` e 2 `candidate`, estes nos IDs 27 e 28.
-- As nove linhas C0/R0 têm `llm_necessario=nao`, `modelo_resolvido=N/A - Gate D0` e `modo_execucao=deterministico`.
 - Distribuição proposta pelo pacote:
   - C0: 8;
   - C2: 14;
   - C3: 18;
-  - R0: 8;
-  - R2: 9;
-  - R3: 20;
-  - R4: 3;
   - G0: 27;
   - G1: 2;
   - G2: 5;
   - G3: 6.
-- Distribuição operacional após as correções aprovadas:
-  - C0: 9;
-  - C2: 13;
-  - C3: 18;
-  - R0: 9;
-  - R2: 8;
-  - R3: 20;
-  - R4: 3;
-  - G0: 27;
-  - G1: 2;
-  - G2: 4;
-  - G3: 7.
 
 ## Evidências
 
@@ -56,9 +35,8 @@ Histórico anterior à aprovação: [RELATORIO-ETAPA-0.5-PRE-APROVACAO.md](RELAT
 - A referência do caso 21 usa notação de intervalo, mas os 28 PDFs `NFSe-191.pdf` a `NFSe-218.pdf` existem.
 - 11 referências de sessão foram preservadas da baseline v1 e as sessões correspondentes permanecem conhecidas no ambiente.
 - Casos 27 e 28: os diretórios de evidência informados não existem mais no workspace do Robotnik. A classificação não pode virar ground truth com a evidência atual.
-- Evidência histórica recuperada pode validar os IDs 27 e 28. Uma nova execução deve gerar novos IDs e não pode ser atribuída retroativamente a esses casos.
 
-## Revisão linha a linha do pacote recebido
+## Revisão linha a linha
 
 | ID | Evidência | C/R/G proposto | Veredito |
 |---:|---|---|---|
@@ -103,21 +81,21 @@ Histórico anterior à aprovação: [RELATORIO-ETAPA-0.5-PRE-APROVACAO.md](RELAT
 | 39 | evidência local | C3/R3/G3 | alinhado |
 | 40 | sessão conhecida | C3/R3/G0 | alinhado |
 
-## Correções aprovadas e aplicadas
+## Divergências pendentes de aprovação
 
-As correções foram aplicadas em `BASELINE-40-TAREFAS-V2.csv` e `CASOS-TESTE-CONTROLADOR-V1.md` dentro de `operacional/`. O pacote recebido e seu manifesto permanecem imutáveis.
+Nenhuma linha ou caso de teste foi alterado.
 
-| ID | Campo | Pacote | Operacional | Status |
-|---:|---|---|---|---|
-| 03 | G | G2 | G3 | aplicado |
-| 06 | G | G3 | G0 | aplicado |
-| 19 | G | G2 | G0 | aplicado |
-| 20 | C/R | C2/R2 | C0/R0 | aplicado |
-| 30 | G | G2 | G0 | aplicado |
-| 33 | G | G0 | G2 | aplicado |
-| 34 | G | G0 | G2 | aplicado |
-| 35 | G | G0 | G2 | aplicado |
-| 38 | G | G2 | G3 | aplicado |
+| ID | Campo | Pacote | Recomendação |
+|---:|---|---|---|
+| 03 | G | G2 | G3 |
+| 06 | G | G3 | G0 |
+| 19 | G | G2 | G0 |
+| 20 | C/R | C2/R2 | C0/R0 |
+| 30 | G | G2 | G0 |
+| 33 | G | G0 | G2 |
+| 34 | G | G0 | G2 |
+| 35 | G | G0 | G2 |
+| 38 | G | G2 | G3 |
 
 ## Registry operacional
 
@@ -128,18 +106,6 @@ As correções foram aplicadas em `BASELINE-40-TAREFAS-V2.csv` e `CASOS-TESTE-CO
 - O runtime não expôs snapshots fixos reproduzíveis. Por isso nenhuma rota crítica foi habilitada.
 
 Referência: [MODEL-REGISTRY-OPERACIONAL-V1.yaml](MODEL-REGISTRY-OPERACIONAL-V1.yaml).
-
-## QA final
-
-- Manifesto do pacote recebido: 10 de 10 arquivos válidos.
-- Baseline operacional: 40 registros e 28 colunas com delimitador `;`.
-- Consistência baseline versus casos de teste: 40 de 40 combinações C/R/G idênticas.
-- Estado de validação: exatamente 38 `confirmed` e 2 `candidate`.
-- Gate D0: os 9 casos C0/R0 estão sem LLM e com modelo resolvido `N/A - Gate D0`.
-- Links documentais verificados: nenhum destino ausente.
-- Varredura do lote: nenhum segredo detectado.
-- Pacote recebido, manifesto, histórico v1 e classificações C/R/G aprovadas: nenhuma alteração.
-- Configuração operacional: nenhuma alteração.
 
 ## Diff documental v1 para v2
 
@@ -156,9 +122,9 @@ Referência: [MODEL-REGISTRY-OPERACIONAL-V1.yaml](MODEL-REGISTRY-OPERACIONAL-V1.
 - A Etapa 0.5 não mede qualidade, custo ou latência por modelo.
 - C1 continua sem subamostra técnica independente.
 - Nenhum modelo possui snapshot fixo confirmado.
-- Casos 27 e 28 não têm evidência histórica local consultável.
-- Casos 27 e 28 permanecem `candidate` e não podem virar ground truth sem recuperar a evidência histórica correspondente.
+- Casos 27 e 28 não têm evidência local consultável.
+- As nove divergências aguardam decisão do Hebert.
 
 ## Próximo passo
 
-Recuperar a evidência histórica dos casos 27 e 28 ou mantê-los como `candidate`. Qualquer nova execução deve receber novos IDs. A amostra C1 ainda precisa ser ampliada. A Etapa 1 permanece bloqueada e, se autorizada no futuro, deve ser apenas shadow mode.
+Submeter as nove divergências C/R/G para aprovação. Somente depois atualizar a baseline v2 e os casos de teste. A Etapa 1 permanece bloqueada e, se autorizada no futuro, deve ser apenas shadow mode.

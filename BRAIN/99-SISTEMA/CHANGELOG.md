@@ -444,3 +444,10 @@
 - Baseline e casos de teste operacionais foram atualizados; o pacote v2 recebido e seu manifesto permanecem imutáveis.
 - Casos 27 e 28 continuam `candidate` por ausência de evidência local.
 - Nenhum roteamento, modelo, cron, gateway, configuração ou produção foi alterado.
+
+## 2026-07-23, saneamento documental da Etapa 0.5
+
+- Estado de validação, origem da classificação e horário de aprovação foram separados na baseline operacional.
+- Os nove casos C0/R0 foram normalizados para Gate D0 determinístico, sem LLM.
+- O relatório anterior à aprovação foi preservado como `superseded`; o relatório validado passou a registrar 38 `confirmed` e 2 `candidate`.
+- Classificações C/R/G aprovadas, pacote original, manifesto, histórico v1 e configuração operacional permaneceram inalterados.
