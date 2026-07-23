@@ -41,6 +41,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-07-14.md`: consolidação diária com evolução Bitdefender -> NinjaOne, Modelo de Relatório EOL Bikon, validação Claw3D/OpenClaw na VPS e snapshot seguro do Kowalski.
 - `01-DIARIO/2026/2026-07-17.md`: consolidação diária com governança Instagram por portões, contrato Kling mínimo, brand pack Bikon, Creatomate e Buffer como publicador único.
 - `01-DIARIO/2026/2026-07-20.md`: consolidação diária com Sentinel v2 em canário, Instagram Bikon v4, implantação atômica da Brand Director v2.1.0, Produção Assistida, snapshot `feed-base-a v1`, SSI/SFT e pacote NFS-e 191 a 218.
+- `01-DIARIO/2026/2026-07-23.md`: consolidação diária com nova janela Sentinel v2 ativa e Roteador de Execução v1 fechado na Etapa 0.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
 - `20-EMPRESAS/BIKON/cadastro-clientes/README.md`: backup operacional de cadastro de clientes da BIKON.
@@ -64,6 +65,7 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
 - `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, Claw3D/OpenClaw em validação e rollback.
+- `50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md`: projeto de seleção governada de modelo e pensamento, com Gate D0, perfis, baseline de 40 tarefas e Etapa 0 concluída.
 - `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader, incluindo NFS-e, boletos, remessa e Cresol API com guardrails.
 - `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski, incluindo skill Provimento 213/2026, canal Telegram isolado para Relatórios Operacionais, Modelo de Relatório EOL Bikon e operação controlada Bitdefender -> NinjaOne.
 - `60-AGENTES/ROBOTNIK.md`: papel de marketing do Robotnik, Produção Assistida, SSI/SFT e governança Instagram com geração, composição e publicação separadas.

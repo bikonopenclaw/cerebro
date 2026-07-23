@@ -39,6 +39,10 @@ Memória institucional consolidada do Brain.
 - Deploy de skill exige plano imutável, algoritmo de hash nomeado, staging no mesmo filesystem, backup verificado, troca atômica, rollback e recibo append-only. Divergência de hash ou validator interrompe a janela sem fallback silencioso.
 - Na Produção Assistida, Brand QA aprova somente o snapshot e o hash apresentados. Portão C, geração, composição e publicação permanecem autorizações separadas.
 - `SSI` mede snapshots aprovados na primeira submissão sobre o total submetido ao Brand QA. `SFT` mede o tempo do início do congelamento até duas leituras consecutivas idênticas do manifesto canônico.
+- Antes de selecionar um modelo, aplicar o Gate D0: se a tarefa inteira tiver procedimento determinístico e resultado objetivo, usar ferramenta, script ou validador sem LLM no caminho feliz; qualquer divergência volta ao roteador.
+- Troca de modelo ou nível de pensamento nunca amplia autorização. Produção, root, gasto, comunicação externa, mudança real, risco financeiro, backup e rollback continuam sujeitos aos gates vigentes.
+- `Ultra` é perfil de paralelismo e só deve ser avaliado quando houver duas ou mais frentes independentes, ganho real e critério de pronto objetivo.
+- O Roteador de Execução v1 está congelado na Etapa 0. Spark, troca automática de modelo e Etapas 1 a 4 permanecem não autorizados até nova decisão do Hebert.
 
 ## Padrões consolidados mensalmente
 

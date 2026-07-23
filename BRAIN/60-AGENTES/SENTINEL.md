@@ -5,7 +5,7 @@ nome: Sentinel
 papel: controller_operacoes_snoc
 status: ativo_read_only
 responsavel: Puppet Master
-ultima_revisao: 2026-07-20
+ultima_revisao: 2026-07-23
 tags: [sentinel, snoc, operacoes, monitoramento, seguranca, read-only]
 ```
 
@@ -59,7 +59,7 @@ Referência: `BRAIN/60-AGENTES/versionados/workspaces/sentinel/access_control/RE
 
 ## Canário Sentinel v2
 
-Em 2026-07-20, Sentinel v2 entrou em canário read-only com:
+Em 2026-07-20, a primeira janela Sentinel v2 entrou em canário read-only com:
 
 - 21 clientes ativos reconciliados;
 - janela exata de 24 horas e ciclos de 30 minutos;
@@ -68,7 +68,24 @@ Em 2026-07-20, Sentinel v2 entrou em canário read-only com:
 - encerramento programado no fim da janela;
 - deduplicação, SLA, escalonamento e auditoria append-only.
 
-O primeiro ciclo fechou em estado `active`, com cinco fontes verdes, zero P1/P2 e nenhuma pausa. Isso registra apenas o primeiro ciclo e não substitui a leitura do estado corrente do canário.
+Essa janela anterior foi posteriormente pausada por `ARX critical=1`, classificado como P2, e preservada no histórico. Ela não comprovou 24 horas sustentadas.
+
+Uma nova janela foi autorizada e iniciou em 2026-07-23 às 14:30:41 UTC, com run ID `b7b4d4ad110ef74744f354f0` e término previsto para 2026-07-24 às 14:30:41 UTC.
+
+Estado reconciliado às 20:03:40 UTC de 2026-07-23:
+
+- `status=active`;
+- 12 ciclos executados;
+- cinco fontes disponíveis;
+- `pause_reason=null`;
+- zero P1/P2;
+- ARX com `critical=0`, uma conta em atenção e quatro em `other`;
+- NinjaOne com 197 alertas agregados;
+- Bitdefender com zero incidentes e zero quarentenas.
+
+ARX e NinjaOne permanecem P3 provisórios com confiança baixa enquanto faltarem atribuição única e confirmação de impacto. O padrão de incerteza exige fato, hipótese, severidade, confiança, G1-G5, lacuna, risco, evidência para fechar, freshness/prazo e dono.
+
+O estado `active` da nova janela não autoriza operação 24x7. O parecer depende do encerramento, reconciliação dos ciclos e fechamento dos gates.
 
 ## Critério de pronto
 

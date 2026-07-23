@@ -8,7 +8,7 @@
 
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
-- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15, 2026-07-17, 2026-07-20 e 2026-07-22.
+- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15, 2026-07-17, 2026-07-20, 2026-07-22 e 2026-07-23.
 - Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md`, `01-DIARIO/Semanal/2026-W26.md`, `01-DIARIO/Semanal/2026-W28.md` e revisão parcial `01-DIARIO/Semanal/2026-W29.md`.
 - Consolidação mensal de junho/2026 criada em `01-DIARIO/Mensal/2026-06.md`, com aprendizados, padrões de longo prazo, decisões consolidadas e critério de arquivamento.
 - Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, artefatos gerados fora do Brain/Git, evidência explícita em monitoramento, consulta gerencial sem permissão operacional, homologação bancária sem produção automática, validação do runtime pós-migração e menor privilégio em monitoramento.
@@ -33,7 +33,8 @@
 - SQLite financeiro do Darth Vader possui camada BI inicial e acesso read-only para Kowalski local/Hermes; baixa, retorno, pagamento e escrita financeira permanecem com Darth Vader.
 - Codex OpenClaw configurado com `model_reasoning_effort = "high"` no `CODEX_HOME` ativo em 2026-07-10.
 - Kowalski, Darth Vader, Robotnik, Sentinel e skills selecionadas do workspace principal possuem snapshots seguros versionados no Git do Brain. A sincronização sanitizada mais recente está no commit `1ffb6a1`; a skill Instagram nele antecede a implantação completa da v2.1.0 e está temporariamente defasada.
-- Sentinel documentado como controller de Operações e SNOC estritamente read-only. O canário v2 de 24 horas foi iniciado para 21 clientes com pausa automática; o primeiro ciclo fechou com cinco fontes verdes e zero P1/P2.
+- Sentinel documentado como controller de Operações e SNOC estritamente read-only. A janela anterior foi pausada por P2; a nova janela v2 iniciou em 23/07 e estava ativa no 12º ciclo, com cinco fontes disponíveis e zero P1/P2 às 20:03:40 UTC. O gate 24x7 continua fechado.
+- Roteador de Execução v1 registrado com Etapa 0 concluída. A baseline de 40 tarefas criou o Gate D0 determinístico; Spark ainda não foi validado, `ultra` não foi indicado e as Etapas 1 a 4 continuam não autorizadas.
 - Instagram Bikon v4 consolidado como conjunto canônico. Os cinco fundos consumiram 10 créditos autorizados e nenhuma publicação ocorreu.
 - Em 2026-07-22, uma divergência de hash entre asset local e URL temporária bloqueou a publicação antes da execução do Graph; nenhuma publicação ocorreu.
 - O dossiê técnico correto foi reenviado sem cabeçalho/rodapé na mensagem `9396`; o EOL identificado anteriormente foi descartado como erro desta entrega.
@@ -61,3 +62,4 @@
 - Executar o gate pós-migração completo: rotas ativas, skills indexadas, scheduler, `nextWake`, execuções, supervisor, canais e persistência após restart controlado. Arquivo presente não comprova runtime saudável.
 - Cobertura diária recente segue parcial: não há daily notes em 2026-07-12, 2026-07-13 e 2026-07-16.
 - Instagram Bikon Robotnik: snapshot pré-geração aprovado; Kling, composição, Buffer, camadas do master, Brand QA final do render e publicação permanecem pendentes.
+- Roteador de Execução v1: ampliar a amostra com código, patches e scripts reais antes de avaliar a Etapa 1 somente em shadow mode.

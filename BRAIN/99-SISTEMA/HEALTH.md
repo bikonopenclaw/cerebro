@@ -8,11 +8,12 @@ Health Score: 94/100
 - Arquivos obrigatórios criados.
 - Sem registros duplicados identificados.
 - Sem projetos abandonados identificados.
-- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15, 2026-07-17, 2026-07-20 e 2026-07-22.
+- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15, 2026-07-17, 2026-07-20, 2026-07-22 e 2026-07-23.
 - Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`), 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`), 2026-06-28 (`01-DIARIO/Semanal/2026-W26.md`), 2026-07-12 (`01-DIARIO/Semanal/2026-W28.md`) e revisão parcial até 2026-07-17 (`01-DIARIO/Semanal/2026-W29.md`).
 - Consolidação mensal executada em 2026-07-01 (`01-DIARIO/Mensal/2026-06.md`), cobrindo junho/2026.
 - Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, separação teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, validação visual de relatórios externos, artefatos gerados fora do Brain/Git, ausência de evidência em monitoramento, separação entre consulta gerencial e permissão operacional, homologação bancária sem produção automática, validação do runtime pós-migração e menor privilégio em monitoramento.
-- Sentinel documentado como controller de Operações e SNOC read-only. Canário v2 de 24 horas iniciado para 21 clientes, com pausa automática, encerramento programado e primeiro ciclo sem P1/P2.
+- Sentinel documentado como controller de Operações e SNOC read-only. A janela anterior foi pausada por P2; a nova janela v2 iniciou em 2026-07-23 e estava ativa no 12º ciclo, com cinco fontes disponíveis e zero P1/P2 na reconciliação das 20:03:40 UTC. Operação 24x7 segue não aprovada.
+- Roteador de Execução v1 registrado em planejamento com Etapa 0 concluída, Gate D0 determinístico, 40 tarefas analisadas, Spark ainda não validado e Etapas 1 a 4 não autorizadas.
 - Instagram Bikon documentado com conjunto v4 canônico, Brand Director v2.1.0 implantada, Produção Assistida, snapshot `feed-base-a v1` aprovado e SSI/SFT oficiais. Portão C, Kling, render e publicação seguem bloqueados.
 - Gate de integridade Instagram validado em 2026-07-22: divergência de hash entre asset local e URL temporária bloqueou a publicação antes de executar `instagram_graph.py`.
 - Dossiê técnico corrigido sem cabeçalho/rodapé e pacote de evidências originais do Provimento 213/2026 consolidados com limitações explícitas; binários permanecem fora do Brain/Git.
@@ -52,6 +53,7 @@ Health Score: 94/100
 - Confirmar visualmente o Claw3D/OpenClaw pelo acesso do Hebert e manter rollback documentado.
 - Concluir a análise de causa-raiz dos travamentos/restarts da VPS e revalidar os 11 jobs cujo último status ficou em erro após interrupção, timeout ou aborto em 2026-07-15; manter a Fase 2 de saneamento suspensa até fechar a recuperação.
 - Expandir dashboards conforme surgirem projetos, empresas, pessoas e automações reais.
+- Ampliar a baseline do Roteador de Execução v1 com tarefas reais de código, patch e script antes de propor a Etapa 1 em shadow mode.
 
 ## Filosofia cognitiva
 

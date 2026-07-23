@@ -1,5 +1,16 @@
 # CHANGELOG.md
 
+## 2026-07-23, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-07-23.md`.
+- Criado projeto `BRAIN/50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md`.
+- Registrada a conclusão read-only da Etapa 0 com 40 tarefas e o Gate D0 determinístico antes da seleção de modelo.
+- Registrado que Spark ainda não foi validado, `ultra` não foi indicado e as Etapas 1 a 4 permanecem não autorizadas.
+- Atualizado `BRAIN/60-AGENTES/SENTINEL.md` com a distinção entre a janela anterior, pausada por P2, e a nova janela iniciada em 23/07.
+- Estado Sentinel reconciliado às 20:03:40 UTC: 12 ciclos, cinco fontes disponíveis, zero P1/P2, `pause_reason=null` e janela ativa até 24/07 às 14:30:41 UTC.
+- Atualizados `MEMORY.md`, `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Nenhum snapshot de agente, sync, push, modelo, cron, gateway ou produção foi alterado.
+
 ## 2026-07-22, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-07-22.md`.
