@@ -1,0 +1,75 @@
+patch_document_version: "1.0"
+patch_status: "not_applied"
+generated_for_stage: "0.6"
+requires_explicit_approval: true
+activation_authorized: false
+critical_route_allowed: false
+
+target_registry:
+  registry_version: "1.0"
+  status_required: "documentary_only"
+
+target_model:
+  model_id: "openai/gpt-5.3-codex-spark"
+  alternate_config_id: "codex/gpt-5.3-codex-spark"
+  current_validation_state: "candidate"
+  current_approved_capabilities: []
+
+evaluation_requirements:
+  evaluation_set_id: "c1-eval-v1"
+  evaluation_set_sha256: null
+  owner: null
+  exact_model_effective: null
+  snapshot_or_fingerprint: null
+  price_table_version: null
+  logical_reasoning_mapping:
+    R1: null
+    R2: null
+  required_gates:
+    integrity: "pass"
+    c1_boundary: "pass"
+    quality: "pass"
+    efficiency: "pass"
+    reproducibility: "pass"
+
+proposed_change_if_all_gates_pass:
+  validation_state: "validated"
+  approved_capabilities: ["C1"]
+  approved_reasoning: ["R1", "R2"]
+  approved_risk_classes: ["G0", "G1"]
+  approved_execution_mode: ["single"]
+  critical_route_allowed: false
+  activation_authorized: false
+  required_confidence: "high"
+  max_files_changed: 3
+  required_rollback: "simple_and_tested"
+  required_validators:
+    - "objective_done_criteria"
+    - "scope_diff"
+    - "tests_or_structured_validator"
+  forbidden_domains:
+    - "G2"
+    - "G3"
+    - "production"
+    - "root"
+    - "credentials"
+    - "payments"
+    - "external_publish_or_send"
+    - "new_architecture"
+    - "open_ended_diagnosis"
+
+alternative_if_snapshot_unresolved:
+  validation_state: "candidate"
+  approved_capabilities: []
+  evaluation_state: "passed_alias_unresolved"
+  activation_authorized: false
+  note: "Qualidade e eficiência podem ser registradas, mas a política atual impede promoção sem snapshot ou fingerprint reproduzível."
+
+alternative_if_subset_only:
+  validation_state: "candidate"
+  approved_capabilities: []
+  proposed_restricted_families: []
+  activation_authorized: false
+  note: "Qualquer subset precisa de aprovação e nova versão do Registry."
+
+automatic_application_forbidden: true

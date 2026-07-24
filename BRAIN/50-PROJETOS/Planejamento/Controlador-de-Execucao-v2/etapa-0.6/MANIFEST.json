@@ -1,0 +1,63 @@
+{
+  "package": "ETAPA-0.6-AVALIACAO-C1-DOCUMENTACAO",
+  "version": "1.0",
+  "generated_at_utc": "2026-07-23T00:00:00Z",
+  "status": "design_complete_execution_not_authorized",
+  "source_state": {
+    "stage_0_5": "completed",
+    "baseline": "38 confirmed; 2 candidate",
+    "registry": "documentary_only",
+    "candidate": "openai/gpt-5.3-codex-spark",
+    "candidate_validation_state": "candidate",
+    "stage_1": "not_authorized"
+  },
+  "planned_sample": {
+    "eligible_tasks": 24,
+    "boundary_cases": 8,
+    "paired_primary_runs": 48,
+    "candidate_repeat_runs": 8,
+    "total_model_runs": 56
+  },
+  "files": [
+    {
+      "path": "00-LEIA-ME-PARA-O-AGENTE.md",
+      "bytes": 2895,
+      "sha256": "04eb610a9eac397053f013cceee42924bed74c395fd825265798ab3f5defec67"
+    },
+    {
+      "path": "10-PLANO-ETAPA-0.6-AVALIACAO-C1-V1.md",
+      "bytes": 17876,
+      "sha256": "b6e8b5b91783eea7908f72ac8f9067aebb9e27ff05316f333489e3edbf53d1f2"
+    },
+    {
+      "path": "11-PROTOCOLO-EXPERIMENTAL-C1-V1.md",
+      "bytes": 5897,
+      "sha256": "85171e2752c25a18fbceb63056db8d61c386003b6496303f2c51ec0356d1fae6"
+    },
+    {
+      "path": "12-CASOS-FRONTEIRA-C1-V1.md",
+      "bytes": 1899,
+      "sha256": "ef0a682c51404e26bd31d66bd58228bae82fd26685d4900ace31a5ba5573d4af"
+    },
+    {
+      "path": "13-RELATORIO-ETAPA-0.6-TEMPLATE.md",
+      "bytes": 3475,
+      "sha256": "68fe3705ea4ea524f348dc49a4786b6bd9daba19463685e96366110fd6b6dc7f"
+    },
+    {
+      "path": "14-PATCH-MODEL-REGISTRY-PROPOSTO.yaml",
+      "bytes": 2090,
+      "sha256": "603c202a8cdb51a23c1b497ca6d83682f3427bf2245d45791f0f3d9590bb39b0"
+    },
+    {
+      "path": "15-INSTRUCAO-DE-EXECUCAO-PARA-O-AGENTE.md",
+      "bytes": 2029,
+      "sha256": "88bba1c5f7fe9bf233ec423089c80aaaa13e489cb1cdb663fc96b5a85f40e8f8"
+    },
+    {
+      "path": "ETAPA-0.6-SCORECARD-C1-V1.xlsx",
+      "bytes": 25768,
+      "sha256": "a7a1db5465351ab335e05174ada41bd9b61f2db10401db78e8b53cfa1528e179"
+    }
+  ]
+}

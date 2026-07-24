@@ -1,10 +1,10 @@
 # Controlador de Execução v2
 
 ```yaml
-status: etapa_0_5_documental_concluida
+status: etapa_0_6_desenhada_nao_executada
 implementacao: nao_autorizada
 roteamento_automatico: desativado
-ultima_revisao: 2026-07-23
+ultima_revisao: 2026-07-24
 responsavel: Puppet Master
 ```
 
@@ -50,6 +50,20 @@ Os cinco arquivos foram copiados antes da marcação de supersession no artefato
 
 O conteúdo de `pacote-v2/` permanece imutável como evidência recebida. As cópias em `operacional/` são a referência vigente para a Etapa 0.5.
 
+### Desenho documental da Etapa 0.6
+
+- [Instruções do pacote](etapa-0.6/00-LEIA-ME-PARA-O-AGENTE.md)
+- [Plano da avaliação C1](etapa-0.6/10-PLANO-ETAPA-0.6-AVALIACAO-C1-V1.md)
+- [Protocolo experimental](etapa-0.6/11-PROTOCOLO-EXPERIMENTAL-C1-V1.md)
+- [Casos de fronteira](etapa-0.6/12-CASOS-FRONTEIRA-C1-V1.md)
+- [Template do relatório](etapa-0.6/13-RELATORIO-ETAPA-0.6-TEMPLATE.md)
+- [Patch de Registry proposto e não aplicado](etapa-0.6/14-PATCH-MODEL-REGISTRY-PROPOSTO.yaml)
+- [Instrução de execução bloqueada](etapa-0.6/15-INSTRUCAO-DE-EXECUCAO-PARA-O-AGENTE.md)
+- [Scorecard C1](etapa-0.6/ETAPA-0.6-SCORECARD-C1-V1.xlsx)
+- [Manifesto da Etapa 0.6](etapa-0.6/MANIFEST.json)
+
+Os nove arquivos foram incorporados sem modificação. Os oito artefatos relacionados no manifesto mantêm seus hashes SHA-256 originais.
+
 ## Estado decisório
 
 - Etapa 0.5 documental executada.
@@ -57,4 +71,9 @@ O conteúdo de `pacote-v2/` permanece imutável como evidência recebida. As có
 - A baseline separa estado de validação, origem da classificação e horário de aprovação.
 - Há 38 casos `confirmed` e 2 `candidate`, IDs 27 e 28, por ausência de evidência histórica local.
 - Registry criado somente com modelos configurados ou observados no ambiente.
+- Etapa 0.6 desenhada, mas não executada.
+- Avaliação C1 bloqueada até nova autorização explícita.
+- Spark permanece `candidate`, sem capacidades aprovadas.
+- Patch de Registry permanece `not_applied`, com `activation_authorized: false`.
+- Nenhuma das 24 tarefas elegíveis, 8 fronteiras ou 56 runs planejados foi executada.
 - Etapa 1 e roteamento automático continuam não autorizados.
