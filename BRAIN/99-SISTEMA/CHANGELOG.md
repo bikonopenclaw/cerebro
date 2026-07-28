@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-07-28, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-07-28.md`.
+- Criado projeto `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md` para registrar estado consolidado do EP-01 documental, Governance Ledger e limites de Approval/checkpoint.
+- Atualizado `BRAIN/50-PROJETOS/Planejamento/Controlador-de-Execucao-v2/README.md` com preflight experimental local da Etapa 0.6, Fase 1 e Fase 1B.
+- Registrado bloqueio seguro do transporte C1 por ausência de sandbox Linux local qualificado; nenhuma geração, gasto, Registry, roteamento, cron, gateway, agente, skill ou produção foi alterada.
+- Atualizado `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md` com a distinção entre Git, hash, checkpoint e Approval.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Revisados sessões visíveis recentes e histórico Git local; nenhum acesso externo, mensagem ao Hebert ou execução operacional foi feito por esta rotina.
+
 ## 2026-07-23, Controlador de Execução v2
 
 - Preservados no Brain os cinco artefatos originais da Etapa 0 v1 com seus hashes.

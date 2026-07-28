@@ -1,10 +1,10 @@
 # Controlador de Execução v2
 
 ```yaml
-status: etapa_0_6_desenhada_nao_executada
+status: etapa_0_6_transporte_bloqueado
 implementacao: nao_autorizada
 roteamento_automatico: desativado
-ultima_revisao: 2026-07-24
+ultima_revisao: 2026-07-28
 responsavel: Puppet Master
 ```
 
@@ -64,6 +64,17 @@ O conteúdo de `pacote-v2/` permanece imutável como evidência recebida. As có
 
 Os nove arquivos foram incorporados sem modificação. Os oito artefatos relacionados no manifesto mantêm seus hashes SHA-256 originais.
 
+### Preflight experimental local da Etapa 0.6
+
+Artefatos locais de avaliação foram preparados em `evals/c1-v1/`, fora da árvore operacional do Controlador:
+
+- Fase 1, branch `eval/etapa-0.6-c1-preflight`: harness, fixtures, guardas e relatório criados em commit local `41670f85b2cc59adcc44be43afffaee8cfb192c0`.
+- Resultado Fase 1: `preflight_blocked_no_safe_transport`, com `14/14` testes locais aprovados, zero calls, zero tokens de geração e zero gasto.
+- Fase 1B, branch `eval/etapa-0.6-c1-transport`: qualificação do Codex CLI oficial `0.145.0` em instalação isolada, com catálogo estático observado para `gpt-5.5` e `gpt-5.3-codex-spark`.
+- Resultado Fase 1B: `transport_blocked`, motivo `local_linux_sandbox_unavailable`, após falha do sandbox Linux local com `bwrap: loopback: Failed RTM_NEWADDR: Operation not permitted`.
+- Testes Fase 1B: `24/24` aprovados, sem chamada de geração, sem alteração no Registry, sem alteração de roteamento, cron, gateway, agente, skill ou produção.
+- O estado da Fase 1B foi incorporado ao commit local automático `3c44e84` no branch `eval/etapa-0.6-c1-transport`; não houve push observado nesta consolidação.
+
 ## Estado decisório
 
 - Etapa 0.5 documental executada.
@@ -71,8 +82,9 @@ Os nove arquivos foram incorporados sem modificação. Os oito artefatos relacio
 - A baseline separa estado de validação, origem da classificação e horário de aprovação.
 - Há 38 casos `confirmed` e 2 `candidate`, IDs 27 e 28, por ausência de evidência histórica local.
 - Registry criado somente com modelos configurados ou observados no ambiente.
-- Etapa 0.6 desenhada, mas não executada.
-- Avaliação C1 bloqueada até nova autorização explícita.
+- Etapa 0.6 desenhada e parcialmente qualificada em preflight local, sem execução real de modelos.
+- Avaliação C1 bloqueada por ausência de transporte seguro qualificado.
+- Sandbox Linux local precisa ser diagnosticado/corrigido antes de qualquer preflight real.
 - Spark permanece `candidate`, sem capacidades aprovadas.
 - Patch de Registry permanece `not_applied`, com `activation_authorized: false`.
 - Nenhuma das 24 tarefas elegíveis, 8 fronteiras ou 56 runs planejados foi executada.

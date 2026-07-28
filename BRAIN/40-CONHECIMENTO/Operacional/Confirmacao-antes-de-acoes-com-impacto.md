@@ -5,8 +5,8 @@ categoria: operacional
 tipo: guardrail
 fonte: orientação de Hebert em 2026-06-18/19
 confiabilidade: alta
-ultima_revisao: 2026-07-14
-tags: [guardrails, confirmacao, telegram, execucao, mensagens, follow-up, seguranca-operacional]
+ultima_revisao: 2026-07-28
+tags: [guardrails, confirmacao, telegram, execucao, mensagens, follow-up, seguranca-operacional, approval, checkpoints]
 ```
 
 ## Regra
@@ -44,3 +44,9 @@ A regra foi reforçada por novos fluxos com impacto externo: envio de NFS-e/bole
 ## Follow-up prometido
 
 Em 2026-07-13, Hebert determinou uma regra operacional adicional: quando o Puppet Master prometer retorno futuro sem resposta imediata, deve agendar follow-up no Telegram antes de encerrar a interação. Essa regra reduz perda de acompanhamento em execuções delegadas a agentes e vale especialmente para tarefas com Kowalski/Darth Vader/Robotnik que dependam de retorno posterior.
+
+## Checkpoints e Approval
+
+Em 2026-07-28, no contexto OpenClaw - Provimento 213, a regra foi reforçada para projetos governados por checkpoint: Git commit, hash de artefato, checkpoint e Approval humano são evidências distintas. Nenhum deles substitui os demais nem autoriza continuidade implícita.
+
+Resumo de índice, memória de agente, commit ou hash não podem reconstruir checkpoint ausente. Se um registro completo obrigatório estiver ausente, a cadeia permanece bloqueada até o Owner fornecer a evidência original.
