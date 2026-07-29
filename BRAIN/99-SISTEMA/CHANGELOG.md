@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## 2026-07-29, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-07-29.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md` com `EP-02_INVENTORY_FREEZE_READY`, commit `1154ef13b2273ee343bdcb0eddaf24b1f8328fb1`, SHA `f045ae63de5daebddd75af9580fee1a614d5f95407b2a2ccf3ee28cb71213d89`, counts CPM/FIM/FPM/CTM e limites de autorização.
+- Registrada a validação read-only da correção do contrato de runtime do EP-02, mantendo a alteração como pendente de fechamento formal antes de virar estado canônico.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Revisados arquivos locais do Brain, sessões visíveis recentes e memória disponível; nenhum acesso externo, mensagem ao Hebert ou execução operacional foi feito por esta rotina.
+
 ## 2026-07-28, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-07-28.md`.
