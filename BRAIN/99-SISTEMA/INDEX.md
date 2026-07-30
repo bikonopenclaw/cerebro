@@ -44,6 +44,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-07-23.md`: consolidação diária com nova janela Sentinel v2 ativa e Roteador de Execução v1 fechado na Etapa 0.
 - `01-DIARIO/2026/2026-07-28.md`: consolidação diária com Controlador de Execução v2 bloqueado por transporte/sandbox e OpenClaw - Provimento 213 com EP-01 documental pronto, execução bloqueada e Governance Ledger em bootstrap documental.
 - `01-DIARIO/2026/2026-07-29.md`: consolidação diária com `EP-02_INVENTORY_FREEZE_READY`, correção de runtime do EP-02 validada em leitura pura e implementação técnica ainda bloqueada.
+- `01-DIARIO/2026/2026-07-30.md`: consolidação diária com runtime CPython `3.14.6`, correção documental do EP-02 Inventory Freeze, baseline técnico do primeiro ciclo homologado e publicação canônica por bundle/manifest no Drive.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
 - `20-EMPRESAS/BIKON/cadastro-clientes/README.md`: backup operacional de cadastro de clientes da BIKON.
@@ -58,7 +59,7 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Governanca-antes-de-automacao-de-identidade.md`: aprendizado permanente para iniciar automações de identidade por matriz, auditoria e aprovação.
 - `40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md`: padrão de revisão visual para PDFs e pareceres externos.
 - `40-CONHECIMENTO/Operacional/Canais-com-escopo-e-remetente-autorizados.md`: aprendizado sobre separar grupo/canal permitido de remetente autorizado.
-- `40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md`: guardrail para manter exports, drafts, bancos locais, estados, ambientes virtuais e artefatos de homologação fora do Brain/Git.
+- `40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md`: guardrail para manter exports, drafts, bancos locais, estados, ambientes virtuais, bytecode e artefatos de homologação fora do Brain/Git.
 - `40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md`: aprendizado para não inferir sucesso ou falha quando ferramentas de monitoramento não expõem evidência explícita.
 - `40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md`: gate permanente para comprovar rotas ativas, skills, scheduler, canais e persistência depois de migração ou upgrade.
 - `40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md`: padrão para clientes read-only, allowlists, auditoria e revogação verificável em agentes de observabilidade.
@@ -66,7 +67,7 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
-- `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com EP-01 documental pronto, EP-02 Inventory Freeze `READY`, correção de runtime pendente de fechamento formal e implementação bloqueada.
+- `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com baseline técnico do primeiro ciclo homologado, publicação canônica por bundle/manifest no Drive e execução real bloqueada.
 - `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, Claw3D/OpenClaw em validação e rollback.
 - `50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md`: projeto de seleção governada de modelo e pensamento, com Gate D0, perfis, baseline de 40 tarefas e Etapa 0 concluída.
 - `50-PROJETOS/Planejamento/Controlador-de-Execucao-v2/README.md`: sucessor documental baseado em capacidades C0-C5, esforço R0-R5, risco G0-G3, Registry operacional e Etapa 0.5 read-only.

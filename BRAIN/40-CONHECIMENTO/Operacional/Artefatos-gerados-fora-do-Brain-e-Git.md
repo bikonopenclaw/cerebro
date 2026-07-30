@@ -5,8 +5,8 @@ categoria: operacional
 tipo: guardrail
 fonte: consolidação semanal 2026-W28
 confiabilidade: alta
-ultima_revisao: 2026-07-12
-tags: [git, brain, snapshots, artefatos, dados-derivados, seguranca]
+ultima_revisao: 2026-07-30
+tags: [git, brain, snapshots, artefatos, dados-derivados, seguranca, bytecode, validacao]
 ```
 
 ## Regra
@@ -21,6 +21,7 @@ O Brain deve registrar decisões, arquitetura, guardrails e estado operacional s
 - Excluir arquivos derivados como `*.db`, `*.sqlite`, `*.sqlite3`, WAL/SHM, `*.csv`, `*.svg`, PDFs gerados e payloads brutos.
 - Registrar no Brain apenas o resultado sanitizado, a decisão tomada e o guardrail necessário para repetir com segurança.
 - Tratar rascunhos editoriais, exports financeiros e artefatos de homologação como evidência operacional temporária, não como memória permanente.
+- Em validações Python sobre subtrees protegidos, desabilitar bytecode com `-B`/`PYTHONDONTWRITEBYTECODE=1` e checar untracked antes e depois. Arquivos `.pyc` criados pela própria validação são side effect operacional e podem invalidar a cadeia de custódia.
 
 ## Motivo
 
@@ -32,3 +33,4 @@ Dados derivados podem conter informação sensível, envelhecer rápido ou criar
 - `BRAIN/60-AGENTES/versionados/`
 - `BRAIN/70-AUTOMACOES/boletos-malote/README.md`
 - `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`
+- `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`

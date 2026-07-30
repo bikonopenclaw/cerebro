@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## 2026-07-30, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-07-30.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md` com runtime CPython `3.14.6`, correção documental do EP-02 Inventory Freeze, baseline técnico `e7be4903bd94a0ab83ccefd12224968c6bafa803` homologado e publicação canônica por bundle/manifest no Drive.
+- Atualizado `BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md` com guardrail contra bytecode/side effects em validações Python.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Revisados arquivos locais do Brain, sessões visíveis recentes e memória disponível; nenhum acesso direto a Drive, GitHub, produção, gateway externo, cron operacional ou mensagem ao Hebert foi feito por esta rotina.
+
 ## 2026-07-29, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-07-29.md`.
