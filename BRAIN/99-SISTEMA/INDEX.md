@@ -45,6 +45,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-07-28.md`: consolidação diária com Controlador de Execução v2 bloqueado por transporte/sandbox e OpenClaw - Provimento 213 com EP-01 documental pronto, execução bloqueada e Governance Ledger em bootstrap documental.
 - `01-DIARIO/2026/2026-07-29.md`: consolidação diária com `EP-02_INVENTORY_FREEZE_READY`, correção de runtime do EP-02 validada em leitura pura e implementação técnica ainda bloqueada.
 - `01-DIARIO/2026/2026-07-30.md`: consolidação diária com runtime CPython `3.14.6`, correção documental do EP-02 Inventory Freeze, baseline técnico do primeiro ciclo homologado e publicação canônica por bundle/manifest no Drive.
+- `01-DIARIO/2026/2026-07-31.md`: consolidação diária com preparação do primeiro ciclo real do Provimento 213, aquisição de metadata, transferência read-only Kowalski -> Sentinel, correção ARX/Cove e gaps de management plane ainda abertos.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
 - `20-EMPRESAS/BIKON/cadastro-clientes/README.md`: backup operacional de cadastro de clientes da BIKON.
@@ -67,14 +68,14 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
-- `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com baseline técnico do primeiro ciclo homologado, publicação canônica por bundle/manifest no Drive e execução real bloqueada.
+- `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com baseline técnico do primeiro ciclo homologado, publicação canônica por bundle/manifest no Drive, preparação do primeiro ciclo real bloqueada por gaps de management plane e execução real bloqueada.
 - `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, Claw3D/OpenClaw em validação e rollback.
 - `50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md`: projeto de seleção governada de modelo e pensamento, com Gate D0, perfis, baseline de 40 tarefas e Etapa 0 concluída.
 - `50-PROJETOS/Planejamento/Controlador-de-Execucao-v2/README.md`: sucessor documental baseado em capacidades C0-C5, esforço R0-R5, risco G0-G3, Registry operacional e Etapa 0.5 read-only.
 - `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader, incluindo NFS-e, boletos, remessa e Cresol API com guardrails.
 - `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski, incluindo skill Provimento 213/2026, canal Telegram isolado para Relatórios Operacionais, Modelo de Relatório EOL Bikon e operação controlada Bitdefender -> NinjaOne.
 - `60-AGENTES/ROBOTNIK.md`: papel de marketing do Robotnik, Produção Assistida, SSI/SFT e governança Instagram com geração, composição e publicação separadas.
-- `60-AGENTES/SENTINEL.md`: papel do controller de Operações e SNOC, fontes autorizadas, limites read-only e canário v2 de 24 horas.
+- `60-AGENTES/SENTINEL.md`: papel do controller de Operações e SNOC, fontes autorizadas, limites read-only, canário v2 de 24 horas e avaliação read-only de gaps do Provimento 213.
 - `60-AGENTES/versionados/`: snapshots seguros de código, skills e documentação operacional dos agentes, com exclusão de segredos e artefatos gerados.
 - `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
 - `70-AUTOMACOES/SYNC-GITHUB.md`: sincronização automática do Brain com GitHub 4x ao dia.

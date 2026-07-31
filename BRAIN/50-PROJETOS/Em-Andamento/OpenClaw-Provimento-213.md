@@ -2,12 +2,12 @@
 
 ```yaml
 nome: OpenClaw - Provimento 213
-status: primeiro_ciclo_baseline_tecnico_e_publicacao_drive_homologados_execucao_real_bloqueada
+status: preparacao_primeiro_ciclo_real_bloqueada_por_gaps_de_management_plane
 responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-07-30
+ultima_revisao: 2026-07-31
 tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack]
 ```
 
@@ -38,6 +38,9 @@ O Brain registra somente o estado consolidado. Artefatos autoritativos, arquivos
 - Baseline técnico do primeiro ciclo operacional: commit `e7be4903bd94a0ab83ccefd12224968c6bafa803`, tree `0638e499f8b90c06d49ebc7aa1b41bf45dfab7f4`, homologado como `FIRST_OPERATIONAL_CYCLE_TECHNICAL_BASELINE_HOMOLOGATED`.
 - Publicação canônica do baseline: bundle Git completo e manifesto Markdown homologados no Drive canônico, sem push Git.
 - Próxima fase indicada: `PREPARATION_OF_FIRST_REAL_OPERATIONAL_CYCLE`, ainda sem autorização para deploy, execução em serventia real, credenciais produtivas, recorrência ou continuação automática.
+- Preparação documental do primeiro ciclo real avançou em 2026-07-30/31, mas não liberou execução: plano formal de teste de restauração, aquisição de metadata autoritativa e avaliação de alcance read-only permanecem como evidência/proposta controlada, sem target selecionado, preflight, restore, deploy ou produção.
+- Transferência read-only Kowalski -> Sentinel para o escopo Provimento 213: `7/7` superfícies as-is roteadas após correção ARX/Cove, com paridade donor `100_PERCENT`; avaliação final executou `27` leituras, `0` mutações externas, `0` gaps fechados, `8/13` gaps parcialmente cobertos e `5/13` sem superfície transferida.
+- Próxima autorização exata indicada pelo relatório Sentinel: `ONBOARD_EXACT_MISSING_INFRASTRUCTURE_MANAGEMENT_PROVIDER`.
 
 ## Governance Ledger
 
@@ -159,6 +162,37 @@ Artefatos/documentos observados depois da homologação:
 
 Esses nomes devem permanecer tratados como proposta não congelada até nova unidade documental com freeze e validação.
 
+## Preparação do primeiro ciclo real
+
+Em 2026-07-30/31, a preparação posterior à publicação canônica produziu artefatos controlados fora do Brain/Git:
+
+- Plano formal de teste de restauração: `First_Real_Operational_Cycle_Formal_Restoration_Test_Plan_v1_PROPOSED_NOT_FROZEN.md`, SHA-256 `ffa97dccd0a86271fe9c6555d2438ad177629bad9af3763a4bd5f0bc2f793e78`, status `PLANNED_NOT_VALIDATED_NOT_EXECUTED`.
+- Binding CNS `024067`: `fc00f961256429252878b959c3528e2df67a7e01c92c1bb747df5a685190cd58`, estado `BOUND_PENDING_OPERATIONAL_PREFLIGHT`.
+- Registro de aquisição de metadata: `First_Real_Operational_Cycle_Authoritative_Target_Metadata_Acquisition_Record_v1_PROPOSED_NOT_FROZEN.md`, SHA-256 `f24bb981b1cebe3c4955b44a3ae153f4c42709c339d8d5f5116b1fa1318b45fd`, `8` candidatos inspecionados e `0` completos para documentação de target.
+
+Conclusões operacionais consolidadas:
+
+- `CRCA-SRVFS01` não foi encontrado no inventário autoritativo consultado nem por busca exata nas superfícies transferidas.
+- Sete candidatos gerenciados corroboram relacionamento com a organização NinjaOne `51`, mas não provam classificação de ambiente, isolamento, controles de produção, capacidade de cleanup, rollback ou evidência completa.
+- Nenhum target foi selecionado, aprovado, provisionado ou submetido a preflight; nenhum teste de restauração, deploy, execução real ou recorrência foi autorizado.
+
+## Transferência Kowalski -> Sentinel
+
+A transferência de capacidades read-only para Sentinel passou por bloqueio, correção e reavaliação:
+
+- Handover obrigatório inicial: `Kowalski_to_Sentinel_Required_Read_Only_Capability_Handover_Completion_Record_v1.md`, SHA-256 `13b522dbac3dd4e13a4d64bf2fb8155754adaafa121ac8b49a2f4edfe1fbc749`, resultado `BLOCKED`, paridade `32_PERCENT` e `17` gaps obrigatórios.
+- Transferência as-is: `Kowalski_to_Sentinel_As_Is_Source_Capability_Parity_Transfer_Record_v1.md`, SHA-256 `47906eb389234577ddfd2e835097d8ebecf17996b42e22af14a01cfb25e131c1`, `7/7` superfícies roteadas, `6/7` aceitações live iniciais e ARX/Cove pendente naquele momento.
+- Correção ARX/Cove: `Kowalski_to_Sentinel_ARX_Cove_Read_Acceptance_Correction_Record_v1.md`, SHA-256 `f568e821902a6f28b0b48b571d3c0afc743d4dd107375224e4ff967452b3d72a`, resultado `PASS_ARX_COVE_READ_ACCEPTANCE_CORRECTED`; cliente Sentinel-owned corrigido, donor preservado e rollback disponível.
+- Avaliação final de alcance: `Sentinel_Transferred_API_Read_Reach_and_Provimento_213_Gap_Closure_Record_v1.md`, SHA-256 `3dd22c175a3d7a38b480f2a443859c8940cdc0cc2b260d55a30c4245e8adb9b9`, `27` leituras executadas, `27` sucessos, `0` bloqueios de leitura, `0` operações com semântica de escrita e `0` mutações externas.
+
+Resultado de gaps após a avaliação final:
+
+- gaps fechados: `0`;
+- gaps parcialmente cobertos: virtualização/hypervisor, segmentação de rede, DNS/hostname/IP, storage/volumes, jobs/serviços automáticos, integrações/notificações outbound, restauração/RPO/RTO e evidência/retenção;
+- gaps restantes sem superfície transferida: cloud/VM, firewall/roteamento, replicação/snapshot/clone, cleanup/descarte e rollback.
+
+O próximo passo técnico exige autorização separada para onboardar o provedor exato de management plane de infraestrutura ausente. A avaliação não autorizou ativação de source inventory, documentação de target, provisioning, preflight, teste formal de restauração ou continuidade.
+
 ## Guardrails
 
 - Checkpoint comprova somente o estado validado de uma unidade concluída.
@@ -171,12 +205,15 @@ Esses nomes devem permanecer tratados como proposta não congelada até nova uni
 - Evidência histórica de ambiente não substitui contrato operacional futuro.
 - Homologação técnica e publicação documental não autorizam execução real, deploy, recorrência, credenciais produtivas ou continuação automática.
 - Documentos com sufixo `PROPOSED_NOT_FROZEN` são propostas e não contratos canônicos.
+- Superfície read-only transferida não fecha gap quando não expõe campo autoritativo de management plane.
+- Metadata de RMM/Drive/WhatsApp/ARX/Bitdefender pode corroborar identidade ou saúde parcial, mas não substitui prova de isolamento, controle, cleanup, rollback e evidência completa do target.
 
 ## Relações
 
 - Diário: `BRAIN/01-DIARIO/2026/2026-07-28.md`.
 - Diário: `BRAIN/01-DIARIO/2026/2026-07-29.md`.
 - Diário: `BRAIN/01-DIARIO/2026/2026-07-30.md`.
+- Diário: `BRAIN/01-DIARIO/2026/2026-07-31.md`.
 - Conhecimento operacional: `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`.
 - Conhecimento operacional: `BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md`.
 - Contexto relacionado, mas distinto: `BRAIN/70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`.

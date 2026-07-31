@@ -5,7 +5,7 @@ nome: Sentinel
 papel: controller_operacoes_snoc
 status: ativo_read_only
 responsavel: Puppet Master
-ultima_revisao: 2026-07-23
+ultima_revisao: 2026-07-31
 tags: [sentinel, snoc, operacoes, monitoramento, seguranca, read-only]
 ```
 
@@ -86,6 +86,22 @@ Estado reconciliado às 20:03:40 UTC de 2026-07-23:
 ARX e NinjaOne permanecem P3 provisórios com confiança baixa enquanto faltarem atribuição única e confirmação de impacto. O padrão de incerteza exige fato, hipótese, severidade, confiança, G1-G5, lacuna, risco, evidência para fechar, freshness/prazo e dono.
 
 O estado `active` da nova janela não autoriza operação 24x7. O parecer depende do encerramento, reconciliação dos ciclos e fechamento dos gates.
+
+## Provimento 213
+
+Em 2026-07-30/31, Sentinel recebeu e avaliou capacidades read-only transferidas do Kowalski para apoiar o OpenClaw - Provimento 213.
+
+Estado consolidado:
+
+- Handover obrigatório inicial ficou bloqueado com `17/25` gaps e paridade `32_PERCENT`, porque WhatsApp/Drive exigiam identidade read-only dedicada e 13 capacidades de management plane não existiam no donor.
+- Transferência as-is posterior roteou `7/7` superfícies solicitadas; ARX/Cove falhou inicialmente, depois foi corrigido por cliente Sentinel-owned e passou em uma aceitação read-only fresca.
+- Avaliação final do alcance das APIs transferidas executou `27` leituras com sucesso, `0` operações de escrita e `0` mutações externas.
+- A superfície transferida melhorou `8/13` domínios de gap, fechou `0` e deixou `5` sem capacidade correspondente: cloud/VM, firewall/roteamento, replicação/snapshot/clone, cleanup/descarte e rollback.
+
+Limite operacional:
+
+- Sentinel pode diagnosticar e registrar lacunas com leituras sanitizadas, mas não pode ativar source inventory, selecionar target, provisionar, executar preflight, restaurar backup, alterar infraestrutura ou continuar o fluxo sem autorização explícita.
+- Próximo passo exato registrado: `ONBOARD_EXACT_MISSING_INFRASTRUCTURE_MANAGEMENT_PROVIDER`.
 
 ## Critério de pronto
 

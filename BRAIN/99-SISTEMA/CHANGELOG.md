@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## 2026-07-31, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-07-31.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md` com preparação do primeiro ciclo real, plano formal de teste de restauração `PROPOSED_NOT_FROZEN`, binding CNS `024067`, aquisição de metadata autoritativa, transferência Kowalski -> Sentinel, correção ARX/Cove e avaliação final de alcance read-only.
+- Atualizado `BRAIN/60-AGENTES/SENTINEL.md` com o estado consolidado das capacidades read-only transferidas e os limites operacionais do Provimento 213.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Revisados arquivos locais do Brain, sessões visíveis recentes, memória disponível e artefatos locais em `media/outbound`; nenhum acesso externo novo, mensagem ao Hebert, execução produtiva, preflight, restore, deploy ou alteração de infraestrutura foi feito por esta rotina.
+
 ## 2026-07-30, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-07-30.md`.
