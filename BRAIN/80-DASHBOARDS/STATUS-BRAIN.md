@@ -10,7 +10,7 @@
 - Sistema configurado como repositório de conhecimento, não como agente.
 - Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15, 2026-07-17, 2026-07-20, 2026-07-22, 2026-07-23, 2026-07-28, 2026-07-29, 2026-07-30, 2026-07-31 e 2026-08-01.
 - Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md`, `01-DIARIO/Semanal/2026-W26.md`, `01-DIARIO/Semanal/2026-W28.md` e revisão parcial `01-DIARIO/Semanal/2026-W29.md`.
-- Consolidação mensal de junho/2026 criada em `01-DIARIO/Mensal/2026-06.md`, com aprendizados, padrões de longo prazo, decisões consolidadas e critério de arquivamento.
+- Consolidações mensais criadas em `01-DIARIO/Mensal/2026-06.md` e `01-DIARIO/Mensal/2026-07.md`, com aprendizados, padrões de longo prazo, decisões consolidadas e critério de arquivamento.
 - Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, artefatos gerados fora do Brain/Git, evidência explícita em monitoramento, consulta gerencial sem permissão operacional, homologação bancária sem produção automática, validação do runtime pós-migração e menor privilégio em monitoramento.
 - Registro central da BIKON criado em `20-EMPRESAS/BIKON/README.md`.
 - Automação de consolidação diária registrada.
@@ -69,3 +69,4 @@
 - Roteador de Execução v1: ampliar a amostra com código, patches e scripts reais antes de avaliar a Etapa 1 somente em shadow mode.
 - OpenClaw - Provimento 213: obter/autorizar evidência read-only de conta/tenant/subscription/projeto AWS, Azure ou Google Cloud antes de selecionar provider; manter documentos `*_PROPOSED_NOT_FROZEN.md` e registros pendentes de validação como propostas até freeze/validação próprios.
 - DRE v1: corrigir launcher relocatable e repetir instalação/validação completa somente com autorização específica.
+- Consolidação mensal de julho/2026 concluída com cobertura parcial: resumos semanais existentes `2026-W28` e `2026-W29`, complementados por daily notes; sem arquivamento porque os registros ainda possuem conexão operacional ou valor de auditoria.

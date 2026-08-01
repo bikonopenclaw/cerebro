@@ -48,6 +48,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-07-31.md`: consolidação diária com preparação do primeiro ciclo real do Provimento 213, aquisição de metadata, transferência read-only Kowalski -> Sentinel, correção ARX/Cove e gaps de management plane ainda abertos.
 - `01-DIARIO/2026/2026-08-01.md`: consolidação diária com freeze do reach read-only, provider discovery bloqueada por falta de evidência AWS/Azure/GCP, adaptive interview/dashboard, multi-Serventia HTML/PT-BR/PDF e DRE v1 fail-closed por launcher não relocatable.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
+- `01-DIARIO/Mensal/2026-07.md`: consolidação mensal de julho/2026 com padrões de evidência antes de status, portões separados, read-only como expansão segura, cadeia de custódia e runtime como superfície operacional.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
 - `20-EMPRESAS/BIKON/cadastro-clientes/README.md`: backup operacional de cadastro de clientes da BIKON.
 - `40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md`: princípio permanente de memória útil.

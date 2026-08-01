@@ -1,5 +1,12 @@
 # CHANGELOG.md
 
+## 2026-08-01, consolidação mensal
+
+- Criada consolidação mensal `BRAIN/01-DIARIO/Mensal/2026-07.md`.
+- Consolidados aprendizados de julho sobre evidência antes de status, portões separados para impacto real, menor privilégio/read-only, cadeia de custódia e runtime como superfície operacional.
+- Atualizados `INDEX.md`, `MEMORY.md`, `STATUS-BRAIN.md` e `HEALTH.md` com métricas mensais.
+- Nenhuma nota foi movida para `BRAIN/99-ARQUIVO/`; os registros revisados ainda possuem conexão operacional ou valor de auditoria.
+
 ## 2026-08-01, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-08-01.md`.

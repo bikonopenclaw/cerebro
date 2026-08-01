@@ -10,7 +10,7 @@ Health Score: 94/100
 - Sem projetos abandonados identificados.
 - Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15, 2026-07-17, 2026-07-20, 2026-07-22, 2026-07-23, 2026-07-28, 2026-07-29, 2026-07-30, 2026-07-31 e 2026-08-01.
 - Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`), 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`), 2026-06-28 (`01-DIARIO/Semanal/2026-W26.md`), 2026-07-12 (`01-DIARIO/Semanal/2026-W28.md`) e revisão parcial até 2026-07-17 (`01-DIARIO/Semanal/2026-W29.md`).
-- Consolidação mensal executada em 2026-07-01 (`01-DIARIO/Mensal/2026-06.md`), cobrindo junho/2026.
+- Consolidações mensais executadas em 2026-07-01 (`01-DIARIO/Mensal/2026-06.md`) e 2026-08-01 (`01-DIARIO/Mensal/2026-07.md`).
 - Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, separação teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, validação visual de relatórios externos, artefatos gerados fora do Brain/Git, ausência de evidência em monitoramento, separação entre consulta gerencial e permissão operacional, homologação bancária sem produção automática, validação do runtime pós-migração e menor privilégio em monitoramento.
 - Sentinel documentado como controller de Operações e SNOC read-only. A janela anterior foi pausada por P2; a nova janela v2 iniciou em 2026-07-23 e estava ativa no 12º ciclo, com cinco fontes disponíveis e zero P1/P2 na reconciliação das 20:03:40 UTC. Operação 24x7 segue não aprovada. Em 2026-07-31, recebeu e avaliou capacidades read-only transferidas do Kowalski para o Provimento 213, com `27` leituras bem-sucedidas, `0` mutações, `8/13` gaps parcialmente cobertos e `5/13` sem superfície transferida; depois congelou esse reach, executou provider discovery bloqueada por falta de evidência AWS/Azure/GCP e implementou/validou entrevista/dashboard sob limites read-only.
 - Roteador de Execução v1 registrado em planejamento com Etapa 0 concluída, Gate D0 determinístico, 40 tarefas analisadas, Spark ainda não validado e Etapas 1 a 4 não autorizadas.
@@ -71,6 +71,7 @@ Health Score: 94/100
 - API WhatsApp Bikon validada com canal oficial Meta/WhatsApp Cloud, template `retomar_solicitacao` e rotina segura com confirmação explícita. Consolidação semanal 2026-W26 concluída sem arquivamento por baixa relevância.
 - Consolidação semanal 2026-W28 concluída sem arquivamento por baixa relevância; registros recentes permanecem conectados e operacionais.
 - Consolidação parcial 2026-W29 concluída sem arquivamento; registros recentes permanecem conectados e com valor operacional ou de auditoria.
+- Consolidação mensal de julho/2026 concluída sem arquivamento; registros recentes permanecem conectados por diário, índice, projeto, agente, automação ou valor de auditoria.
 
 
 ## Métricas — 2026-07-01
@@ -82,6 +83,16 @@ Health Score: 94/100
 - Arquivos em `99-ARQUIVO`: 0; nenhum arquivamento mensal porque os registros seguem recentes, conectados ou com valor de evidência.
 - MOCs/índices atualizados no mês: `INDEX.md`, `MEMORY.md`, `STATUS-BRAIN.md` e este `HEALTH.md`.
 - Pontos que reduzem score: cobertura diária parcial e `memory_search` indisponível por quota insuficiente.
+
+## Métricas — 2026-08-01
+
+- Daily notes de julho: 20 arquivos; lacunas em 2026-07-04, 2026-07-05, 2026-07-12, 2026-07-13, 2026-07-16, 2026-07-18, 2026-07-19 e 2026-07-24 a 2026-07-27.
+- Resumos semanais de julho revisados: 2 existentes (`2026-W28` e `2026-W29` parcial); semanas `2026-W27`, `2026-W30` e `2026-W31` foram complementadas por daily notes disponíveis na consolidação mensal.
+- Resumos mensais: 2 (`01-DIARIO/Mensal/2026-06.md` e `01-DIARIO/Mensal/2026-07.md`).
+- Notas permanentes de conhecimento em `40-CONHECIMENTO`: 18 arquivos.
+- Arquivos em `99-ARQUIVO`: 0 notas arquivadas; apenas `.gitkeep`.
+- MOCs/índices atualizados no mês: `INDEX.md`, `MEMORY.md`, `STATUS-BRAIN.md` e este `HEALTH.md`.
+- Pontos que reduzem score: cobertura diária/semanal parcial, memoria semântica instável e pendências de runtime/scheduler, provider evidence e DRE v1.
 
 ## Reconciliação Brand Director (2026-07-21)
 
