@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## 2026-08-01, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-08-01.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md` com freeze do alcance read-only, discovery de provider bloqueada por falta de evidência AWS/Azure/GCP, adaptive interview/dashboard, uso controlado CNS `024067`, extensão multi-Serventia HTML/PT-BR/PDF, tentativa fail-closed do par final e estado DRE v1.
+- Atualizado `BRAIN/60-AGENTES/SENTINEL.md` com novas responsabilidades/limites no Provimento 213.
+- Atualizados `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Revisados arquivos locais do Brain, sessões visíveis recentes, artefatos locais em `media/outbound` e evidências locais em `/data/.openclaw/platform`; esta rotina não acessou sistemas externos, não enviou mensagem ao Hebert, não criou agente, não selecionou provider, não executou preflight/restore/deploy e não alterou infraestrutura operacional.
+
 ## 2026-07-31, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-07-31.md`.

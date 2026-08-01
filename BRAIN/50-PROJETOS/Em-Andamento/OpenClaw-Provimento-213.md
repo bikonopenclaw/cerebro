@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw - Provimento 213
-status: preparacao_primeiro_ciclo_real_bloqueada_por_gaps_de_management_plane
+status: entrevista_dashboard_html_pdf_preparados_execucao_bloqueada_por_provider_e_dre
 responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-07-31
-tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack]
+ultima_revisao: 2026-08-01
+tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre]
 ```
 
 ## Objetivo
@@ -40,7 +40,16 @@ O Brain registra somente o estado consolidado. Artefatos autoritativos, arquivos
 - Próxima fase indicada: `PREPARATION_OF_FIRST_REAL_OPERATIONAL_CYCLE`, ainda sem autorização para deploy, execução em serventia real, credenciais produtivas, recorrência ou continuação automática.
 - Preparação documental do primeiro ciclo real avançou em 2026-07-30/31, mas não liberou execução: plano formal de teste de restauração, aquisição de metadata autoritativa e avaliação de alcance read-only permanecem como evidência/proposta controlada, sem target selecionado, preflight, restore, deploy ou produção.
 - Transferência read-only Kowalski -> Sentinel para o escopo Provimento 213: `7/7` superfícies as-is roteadas após correção ARX/Cove, com paridade donor `100_PERCENT`; avaliação final executou `27` leituras, `0` mutações externas, `0` gaps fechados, `8/13` gaps parcialmente cobertos e `5/13` sem superfície transferida.
-- Próxima autorização exata indicada pelo relatório Sentinel: `ONBOARD_EXACT_MISSING_INFRASTRUCTURE_MANAGEMENT_PROVIDER`.
+- O registro de alcance read-only do Sentinel foi congelado em 2026-07-31 depois de validação independente do Kowalski: checkpoint SHA-256 `31d06b825eeb307c88332fbc6fdbd0abc18f1ba5a8d36019b3cb95f6ee64d977`.
+- Descoberta mínima de provider de management plane: `Minimum_Infrastructure_Management_Plane_Provider_Discovery_Record_v1.md`, SHA-256 `5c58a7cae426f4a35073b7f2e1e1b72a518338d70d010799df0eb71bd9d7b98b`, resultado `BLOCKED_PROVIDER_DISCOVERY_REQUIRES_SEPARATE_ACCOUNT_OR_ENVIRONMENT_EVIDENCE`.
+- AWS, Azure e Google Cloud qualificaram tecnicamente `5/5` gaps obrigatórios, mas nenhum foi selecionado porque falta evidência local de conta, tenant, subscription ou projeto existente aprovado. Hostinger, Hetzner e DigitalOcean não fecharam todos os domínios obrigatórios na evidência oficial inspecionada.
+- Adaptive evidence interview e dashboard read-only implementados no `prov213-core`: `7` artefatos validados, `48` controles, `77` perguntas, `76` requisitos de evidência, `10` perguntas de provider, `13` perguntas de gap, `8` views e `23/23` testes OK; checkpoint externo `PROV213_ADAPTIVE_INTERVIEW_AND_DASHBOARD_IMPLEMENTATION_COMPLETION_RECORD_V1_FINALIZED_WITH_INDEPENDENT_VALIDATION_PASS`.
+- Primeiro uso controlado da entrevista para CNS `024067`: sessão `INT-024067-FIRST-REAL-CYCLE-v1` ativada como `AWAITING_RESPONDENT`, com `0` respostas reais, `0` evidências recebidas e sem contato externo.
+- Extensão multi-Serventia HTML/PT-BR/PDF: `85/85` testes PASS, seletor canônico, dashboard HTML global read-only, HTML/PDF por serventia, PDF client-safe e fluxos de anexo simulados em fixture; artefatos de apresentação/localização e runtime tiveram validações cruzadas por Sentinel/Kowalski, mas os registros finais do Puppet Master ficaram `PROPOSED_PENDING_INDEPENDENT_VALIDATION_OF_PUPPET_MASTER_RECORD`.
+- Tentativa de regeneração e freeze atômico do par final multi-Serventia terminou `FAIL_CLOSED` antes de renderização porque o assert obrigatório retornou `nenhuma ordem ativa`; o mesmo `execution_id` terminal não pode ser reutilizado.
+- OpenClaw DRE v1, criado como capacidade de plataforma para renderização determinística e publicação atômica, ficou parcialmente avançado: repositório canônico OpenClaw congelado em `/opt/openclaw/src/openclaw` no commit `0790d9f593ad30c940ed93b5872a8cf6d6f3cf8c`, target freeze DRE SHA-256 `e01c844a6466f92f803777a7a19a40e5d53cab20af5dbd46068520ef144a983d`, commit local preservado `3b4bff00ad9a5c4721ae968dfe9abb571991b1db`, `75/75` testes pre-install e rollback `PASS`; instalação final bloqueada por launcher não relocatable.
+- Próxima autorização exata para seleção de provider: `PROVIDE_OR_AUTHORIZE_READ_ONLY_EXISTING_AWS_AZURE_GOOGLE_CLOUD_ACCOUNT_TENANT_SUBSCRIPTION_PROJECT_EVIDENCE_FOR_PROVIDER_SELECTION`.
+- Próxima autorização exata para DRE: `AUTHORIZE_DRE_V1_CORRECTIVE_COMMIT_FOR_RELOCATABLE_INSTALLED_LAUNCHER_AND_FULL_REINSTALL_REVALIDATION`.
 
 ## Governance Ledger
 
@@ -193,6 +202,72 @@ Resultado de gaps após a avaliação final:
 
 O próximo passo técnico exige autorização separada para onboardar o provedor exato de management plane de infraestrutura ausente. A avaliação não autorizou ativação de source inventory, documentação de target, provisioning, preflight, teste formal de restauração ou continuidade.
 
+## Provider de management plane
+
+O registro read-only de alcance transferido foi congelado depois de validação independente:
+
+- avaliação Sentinel: `Sentinel_Transferred_API_Read_Reach_and_Provimento_213_Gap_Closure_Record_v1.md`, SHA-256 `3dd22c175a3d7a38b480f2a443859c8940cdc0cc2b260d55a30c4245e8adb9b9`;
+- validação Kowalski: SHA-256 `212acfd88f5dba61fc0beb9c75a69de00cfb89eed86aed26ceba9a164ef50547`;
+- freeze checkpoint: SHA-256 `31d06b825eeb307c88332fbc6fdbd0abc18f1ba5a8d36019b3cb95f6ee64d977`.
+
+A descoberta mínima posterior avaliou providers existentes e oficiais:
+
+- `4` referências locais existentes e `6` providers externos oficiais avaliados;
+- AWS, Azure e Google Cloud: `QUALIFYING_PENDING_ACCOUNT_EVIDENCE`, com cobertura `5/5` dos domínios obrigatórios;
+- Hostinger, Hetzner e DigitalOcean: não qualificaram para todos os domínios obrigatórios na evidência inspecionada;
+- provider selecionado: `0`;
+- bloqueio: ausência de evidência autoritativa local de conta AWS, tenant/subscription Azure ou organização/projeto Google Cloud existente.
+
+Essa descoberta não autoriza onboarding, criação de conta, service identity, conector, source inventory, target, preflight ou restore.
+
+## Adaptive interview e dashboard
+
+Em 2026-07-31, Sentinel implementou no `prov213-core` o adaptive evidence interview e dashboard read-only, preservando o projeto como continuação da migração Herald -> OpenClaw e sem criar novo agente/projeto.
+
+Estado validado:
+
+- `7` artefatos validados com identidade byte/SHA-256;
+- `48` controles, `77` perguntas, `76` requisitos de evidência, `10` perguntas de provider, `13` perguntas de gap e `8` views;
+- sessão inicial CNS `024067` com binding `fc00f961256429252878b959c3528e2df67a7e01c92c1bb747df5a685190cd58`;
+- evento append-only de ativação posterior levou a sessão para `AWAITING_RESPONDENT`, com `0` respostas e `0` evidências reais;
+- dashboard read-only, isolamento cross-serventia, rejeição de segredo/dado pessoal e reconstrução determinística validados;
+- testes independentes: `23/23 OK`;
+- side effects externos: `0`.
+
+O checkpoint externo finalizou a implementação com validação independente, mas não autorizou início de entrevista, envio externo, uso operacional do dashboard, seleção de provider, target, preflight, restore ou deploy.
+
+## Multi-Serventia, HTML, PT-BR e PDF
+
+A extensão multi-Serventia criou a camada de apresentação e exportação:
+
+- dashboard HTML global de portfolio interno, read-only;
+- dashboard HTML completo por serventia;
+- export PDF interno e client-safe por serventia;
+- português brasileiro com cobertura `100_PERCENT` das perguntas ativas;
+- modo sequencial uma pergunta por vez;
+- respostas selecionáveis `SIM`, `NÃO`, `NÃO SEI`, `NÃO SE APLICA`, `EVIDÊNCIA PENDENTE` e fallback de texto;
+- fluxos de anexo e evidência simulados em fixture, sem envio externo;
+- `85/85` testes PASS após correção restrita a duas referências de teste para `localized_questions`.
+
+O estado canônico do CNS `024067` permaneceu sem respostas reais: `existing_CNS_024067_answer_count: 0`, pergunta futura `Q-PROVIDER-001`, idioma `pt-BR`.
+
+Os registros finais gerados pelo Puppet Master (`Acceptance Report` e `Implementation Completion Record`) ficaram como `PROPOSED_PENDING_INDEPENDENT_VALIDATION_OF_PUPPET_MASTER_RECORD`. A tentativa de regeneração/freeze atômico do par final não chegou a renderizar porque a ordem canônica não estava mais ativa; qualquer retry exige nova ordem, novo `execution_id` e revalidação dos artefatos atuais.
+
+## OpenClaw DRE v1
+
+O DRE v1 é capacidade de plataforma relacionada ao fluxo de renderização determinística, não autorização de execução do Provimento 213.
+
+Estado consolidado:
+
+- repositório canônico OpenClaw bootstrapado em `/opt/openclaw/src/openclaw`, commit `0790d9f593ad30c940ed93b5872a8cf6d6f3cf8c`, tree `f855f357444931631be29141026876741ebc7dbd`, `git fsck` PASS, worktree limpo;
+- DRV target freeze histórico preservado em `/data/.openclaw/platform/drv/governance/`;
+- DRE target freeze em `/data/.openclaw/platform/dre/governance/OpenClaw_DRE_v1_Target_Freeze_Record_v1.json`, SHA-256 `e01c844a6466f92f803777a7a19a40e5d53cab20af5dbd46068520ef144a983d`;
+- implementação DRE commitada localmente como `3b4bff00ad9a5c4721ae968dfe9abb571991b1db`, tree `7b15ff7fd79b365ce9e3ac655d95d725ee800b16`, `12` paths;
+- testes pre-install: `75/75` PASS em clean roots e repo, A = B = repo, `git fsck` PASS;
+- instalação revertida porque o executável instalado `/usr/local/bin/openclaw-dre` resolvia incorretamente `/usr/local/src/dre.py`, embora o launcher dentro da árvore instalada funcionasse.
+
+Resultado: `FAIL_CLOSED`, rollback `PASS`, `/opt/openclaw/platform/dre/v1` e `/usr/local/bin/openclaw-dre` ausentes, sem gateway restart, push, tag, merge ou alteração nos artefatos Provimento 213.
+
 ## Guardrails
 
 - Checkpoint comprova somente o estado validado de uma unidade concluída.
@@ -207,6 +282,9 @@ O próximo passo técnico exige autorização separada para onboardar o provedor
 - Documentos com sufixo `PROPOSED_NOT_FROZEN` são propostas e não contratos canônicos.
 - Superfície read-only transferida não fecha gap quando não expõe campo autoritativo de management plane.
 - Metadata de RMM/Drive/WhatsApp/ARX/Bitdefender pode corroborar identidade ou saúde parcial, mas não substitui prova de isolamento, controle, cleanup, rollback e evidência completa do target.
+- AWS, Azure ou Google Cloud só podem ser escolhidos depois de evidência read-only de conta/tenant/subscription/projeto existente ou autorização explícita para nova conta.
+- Registro final com `PROPOSED_PENDING_INDEPENDENT_VALIDATION_OF_PUPPET_MASTER_RECORD` não equivale a completion congelado.
+- Commit e teste pre-install do DRE não equivalem a instalação válida: o launcher final deve ser relocatable e validado por black-box no caminho instalado.
 
 ## Relações
 
@@ -214,6 +292,7 @@ O próximo passo técnico exige autorização separada para onboardar o provedor
 - Diário: `BRAIN/01-DIARIO/2026/2026-07-29.md`.
 - Diário: `BRAIN/01-DIARIO/2026/2026-07-30.md`.
 - Diário: `BRAIN/01-DIARIO/2026/2026-07-31.md`.
+- Diário: `BRAIN/01-DIARIO/2026/2026-08-01.md`.
 - Conhecimento operacional: `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`.
 - Conhecimento operacional: `BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md`.
 - Contexto relacionado, mas distinto: `BRAIN/70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`.

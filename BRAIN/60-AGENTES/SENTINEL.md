@@ -3,9 +3,9 @@
 ```yaml
 nome: Sentinel
 papel: controller_operacoes_snoc
-status: ativo_read_only
+status: ativo_read_only_com_prov213_expandido
 responsavel: Puppet Master
-ultima_revisao: 2026-07-31
+ultima_revisao: 2026-08-01
 tags: [sentinel, snoc, operacoes, monitoramento, seguranca, read-only]
 ```
 
@@ -97,11 +97,17 @@ Estado consolidado:
 - Transferência as-is posterior roteou `7/7` superfícies solicitadas; ARX/Cove falhou inicialmente, depois foi corrigido por cliente Sentinel-owned e passou em uma aceitação read-only fresca.
 - Avaliação final do alcance das APIs transferidas executou `27` leituras com sucesso, `0` operações de escrita e `0` mutações externas.
 - A superfície transferida melhorou `8/13` domínios de gap, fechou `0` e deixou `5` sem capacidade correspondente: cloud/VM, firewall/roteamento, replicação/snapshot/clone, cleanup/descarte e rollback.
+- O registro de alcance read-only foi validado por Kowalski e congelado por checkpoint externo em 2026-07-31.
+- A descoberta controlada de provider avaliou AWS, Azure e Google Cloud como rotas tecnicamente qualificadas `5/5`, mas terminou bloqueada por falta de evidência local de conta/tenant/subscription/projeto existente; Sentinel não selecionou provider.
+- Sentinel implementou o adaptive evidence interview e dashboard read-only no `prov213-core`; validação independente retornou `PASS`, com `23/23` testes, `48` controles, `77` perguntas, `76` requisitos de evidência e zero side effects externos.
+- No primeiro uso controlado, a sessão CNS `024067` ficou `AWAITING_RESPONDENT` com `0` respostas reais e `0` evidências recebidas.
+- Na extensão multi-Serventia, Sentinel validou artefatos de apresentação/localização autorados pelo Kowalski e Kowalski validou os artefatos de runtime/estado autorados pelo Sentinel; a suíte ficou `85/85` PASS. Os registros finais autorados pelo Puppet Master ainda exigem validação independente própria.
 
 Limite operacional:
 
 - Sentinel pode diagnosticar e registrar lacunas com leituras sanitizadas, mas não pode ativar source inventory, selecionar target, provisionar, executar preflight, restaurar backup, alterar infraestrutura ou continuar o fluxo sem autorização explícita.
-- Próximo passo exato registrado: `ONBOARD_EXACT_MISSING_INFRASTRUCTURE_MANAGEMENT_PROVIDER`.
+- Próximo passo exato para seleção de provider: `PROVIDE_OR_AUTHORIZE_READ_ONLY_EXISTING_AWS_AZURE_GOOGLE_CLOUD_ACCOUNT_TENANT_SUBSCRIPTION_PROJECT_EVIDENCE_FOR_PROVIDER_SELECTION`.
+- Entrevista externa, contato com respondente, envio de PDF, uso operacional de dashboard, provider onboarding, source inventory activation, target selection, provisioning, preflight e restore permanecem bloqueados sem autorização separada.
 
 ## Critério de pronto
 
