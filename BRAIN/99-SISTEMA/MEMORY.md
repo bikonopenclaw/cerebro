@@ -43,6 +43,11 @@ Memória institucional consolidada do Brain.
 - Troca de modelo ou nível de pensamento nunca amplia autorização. Produção, root, gasto, comunicação externa, mudança real, risco financeiro, backup e rollback continuam sujeitos aos gates vigentes.
 - `Ultra` é perfil de paralelismo e só deve ser avaliado quando houver duas ou mais frentes independentes, ganho real e critério de pronto objetivo.
 - O Roteador de Execução v1 está congelado na Etapa 0. Spark, troca automática de modelo e Etapas 1 a 4 permanecem não autorizados até nova decisão do Hebert.
+- Autorização operacional é atomica: approval, checkpoint, commit, hash, validação independente e publicação comprovam somente o escopo exato da unidade autorizada.
+- Runtime operacional precisa de contrato reproduzível: caminho absoluto, versão final, origem, checksums, arquitetura, Unicode quando aplicável e regra de drift.
+- Documento `PROPOSED_NOT_FROZEN` ou `PROPOSED_PENDING_INDEPENDENT_VALIDATION` preserva contexto, mas não é contrato canônico nem autorização operacional.
+- Capacidade técnica oficial de provider não substitui evidência local de conta, tenant, subscription, projeto, owner aprovado, permissão e trilha de auditoria.
+- Teste pre-install ou commit preservado não comprova ferramenta instalada; o caminho final usado pelo operador precisa passar em validação black-box.
 
 ## Padrões consolidados mensalmente
 
@@ -50,4 +55,5 @@ Memória institucional consolidada do Brain.
 - Padrão mensal de julho/2026: prova antes de continuidade; status operacional exige evidência recente e rota ativa validada, enquanto publicação, envio, baixa, deploy, restore, provider, target e recorrência permanecem separados por Approval granular.
 - Padrão semanal 2026-W28: maturidade operacional antes de escala; snapshots seguros excluem artefatos derivados, integrações externas permanecem em rascunho/homologação até aprovação, e decisões operacionais dependem de evidência explícita.
 - Padrão semanal 2026-W29: recuperação comprovada antes de continuidade; runtime pós-migração exige readiness executável, mudanças ficam separadas por gate e monitoramento usa menor privilégio com evidência recente e revalidação.
+- Padrão semanal 2026-W31: continuidade governada por unidade; evidência técnica não herda autorização, propostas não viram contratos por inferência, provider exige prova de ambiente existente e instalação precisa de black-box no caminho final.
 - Atualização de 2026-07-21: reconciliação técnica com evidência de relatório indicou que a proposta Instagram Brand Director v2.1.0 está pendente e não ativa; estado de produção assistida segue sob read-only até autorização explícita de corte.

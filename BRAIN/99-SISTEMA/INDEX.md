@@ -35,6 +35,7 @@ Mapa geral do Brain.
 - `01-DIARIO/Semanal/2026-W26.md`: consolidação semanal com padrões de segurança operacional antes de escala, teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, relatórios externos e canais com remetente autorizado.
 - `01-DIARIO/Semanal/2026-W28.md`: consolidação semanal com padrões de artefatos gerados fora do Brain/Git, evidência explícita em monitoramento, separação entre consulta gerencial e permissão operacional, homologação bancária sem produção automática e migração VPS limpa.
 - `01-DIARIO/Semanal/2026-W29.md`: consolidação parcial até 2026-07-17 com gates pós-migração, separação entre upgrade/restart/backlog, evidência recente em tickets e Sentinel read-only sob menor privilégio.
+- `01-DIARIO/Semanal/2026-W31.md`: consolidação semanal parcial com autorização atômica, contrato de runtime reproduzível, propostas sem autoridade operacional, provider sem evidência de ambiente e validação black-box do caminho final.
 - `01-DIARIO/2026/2026-07-03.md`: consolidação diária com snapshots versionados, KPIs WhatsApp/Bitdefender, limitação de tickets NinjaOne, falhas por limite de uso e saneamento de PDFs/artefatos no Git.
 - `01-DIARIO/2026/2026-07-08.md`: consolidação diária com limpeza pré-migração da VPS, riscos operacionais BIKON de 06/07/2026, atualização de snapshots e pendência de `memory_search`.
 - `01-DIARIO/2026/2026-07-09.md`: consolidação diária com Cresol API em homologação, canal Telegram isolado do Kowalski e saneamento adicional da rotina de snapshot.
@@ -67,6 +68,11 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md`: gate permanente para comprovar rotas ativas, skills, scheduler, canais e persistência depois de migração ou upgrade.
 - `40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md`: padrão para clientes read-only, allowlists, auditoria e revogação verificável em agentes de observabilidade.
 - `40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico.md`: protocolo de plano imutável, algoritmo de hash nomeado, backup, troca atômica, rollback e evidência append-only para implantação de skills.
+- `40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md`: guardrail para impedir herança implícita entre Approval, checkpoint, commit, publicação, execução real e recorrência.
+- `40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel.md`: aprendizado sobre runtime como contrato auditável com caminho absoluto, versão final, origem, checksums e controle de drift.
+- `40-CONHECIMENTO/Operacional/Proposta-nao-e-contrato-congelado.md`: guardrail para manter documentos `PROPOSED_*` sem autoridade operacional até freeze e validação próprios.
+- `40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md`: aprendizado para separar capacidade oficial de provider da evidência local de conta, tenant, owner e permissões.
+- `40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado.md`: gate para validar ferramentas instaladas em black-box pelo caminho final usado pelo operador.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.

@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## 2026-08-02, consolidacao semanal
+
+- Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W31.md` com cobertura parcial de 2026-07-27 a 2026-08-02, baseado nas daily notes disponiveis de 2026-07-28 a 2026-08-01.
+- Identificados padroes recorrentes de autorizacao atomica, contrato de runtime reproduzivel, documentos propostos sem autoridade operacional, capacidade tecnica sem evidencia de ambiente e validacao black-box do caminho final instalado.
+- Elevados aprendizados para notas permanentes em `BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md`, `Contrato-de-runtime-reprodutivel.md`, `Proposta-nao-e-contrato-congelado.md`, `Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md` e `Validacao-do-caminho-final-instalado.md`.
+- Atualizados `INDEX.md`, `MEMORY.md` e `HEALTH.md`.
+- Nenhuma nota foi movida para `BRAIN/99-ARQUIVO/`; os registros revisados seguem recentes, conectados e com valor operacional ou de auditoria.
+
 ## 2026-08-01, consolidação mensal
 
 - Criada consolidação mensal `BRAIN/01-DIARIO/Mensal/2026-07.md`.
