@@ -1,0 +1,23 @@
+schema_version: 1
+status: foundation_candidate
+excluded_from_knowledge_health:
+  path_patterns:
+    - '**/snapshots/**'
+    - '**/evidence/**'
+    - '**/exports/**'
+    - '**/runtime/**'
+    - '**/reports/**'
+    - '**/relatorios/**'
+    - '**/backup*/**'
+    - '**/*.csv'
+    - '**/*.json'
+    - '**/*.sqlite'
+  note_types:
+    - evidence
+    - snapshot
+    - proposal
+    - inbox
+requirements:
+  excluded_paths_remain_in_storage_inventory: true
+  excluded_paths_remain_visible_in_operational_evidence: true
+  exclusion_manifest_required_for_metric_reproducibility: true

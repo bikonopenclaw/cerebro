@@ -1,0 +1,45 @@
+schema_version: 1
+status: foundation_candidate
+primary_classes:
+  knowledge:
+    description: Permanent canonical knowledge validated by schema and relationship rules.
+    canonical: true
+    cognitive_metric_scope: included
+  decision:
+    description: ADRs and decision records with immutable rationale and supersession history.
+    canonical: true
+    cognitive_metric_scope: included
+  entity:
+    description: People, companies, agents, systems and stable business objects.
+    canonical: true
+    cognitive_metric_scope: included
+  event:
+    description: Time-bound facts that explain state changes.
+    canonical: true
+    cognitive_metric_scope: included_when_referenced
+  state:
+    description: Current state summaries that must reference events.
+    canonical: true
+    cognitive_metric_scope: included
+  proposal:
+    description: Agent or human suggestion awaiting approval.
+    canonical: false
+    cognitive_metric_scope: excluded_until_accepted
+  evidence:
+    description: Raw exports, transcripts, screenshots, snapshots and generated reports.
+    canonical: false
+    cognitive_metric_scope: excluded
+  snapshot:
+    description: Technical point-in-time capture preserved for audit.
+    canonical: false
+    cognitive_metric_scope: excluded
+  inbox:
+    description: Temporary intake requiring review_by, expires_at or exemption.
+    canonical: false
+    cognitive_metric_scope: excluded_until_promoted
+classification_rules:
+  exclusive_primary_class: true
+  deterministic_inventory_required: true
+  evidence_is_not_knowledge: true
+  snapshots_preserved: true
+  snapshots_excluded_from_knowledge_health: true

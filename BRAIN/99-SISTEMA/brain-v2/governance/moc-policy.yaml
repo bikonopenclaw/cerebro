@@ -1,0 +1,26 @@
+schema_version: 1
+status: foundation_candidate
+moc:
+  id: brain-v2-root-moc
+  title: Brain v2 Canonical Entry Point
+  required: true
+reachability:
+  rule: Every non-exempt cognitive note must be reachable from at least one canonical entry point.
+  exempt_types:
+    - inbox
+    - proposal
+    - evidence
+    - snapshot
+  exemption_requires:
+    - reason
+    - expires_at
+    - owner
+forbidden_patterns:
+  artificial_hub_links: true
+  generic_unjustified_edges: true
+  metric_gaming: true
+review:
+  relationship_reason_required: true
+  source_reference_required_for_new_edges: true
+  no_new_orphan_notes_per_batch: 0
+  no_new_broken_internal_links_per_batch: 0

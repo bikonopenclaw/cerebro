@@ -1,0 +1,34 @@
+schema_version: 1
+status: foundation_candidate
+approved_relationship_types:
+  belongs_to:
+    direction: child_to_parent
+    requires_reason: true
+  supports:
+    direction: evidence_to_claim
+    requires_reason: true
+  derived_from:
+    direction: derived_to_source
+    requires_reason: true
+  supersedes:
+    direction: new_to_old
+    acyclic: true
+    requires_reason: true
+  superseded_by:
+    direction: old_to_new
+    acyclic: true
+    requires_reason: true
+  implements:
+    direction: implementation_to_decision
+    requires_reason: true
+  references:
+    direction: source_to_target
+    requires_reason: true
+  generated_by:
+    direction: artifact_to_actor_or_job
+    requires_reason: true
+validation:
+  target_must_resolve: true
+  external_target_must_be_declared: true
+  new_or_changed_edges_require_source_reference: true
+  generic_hub_edges_for_metric_gain: forbidden

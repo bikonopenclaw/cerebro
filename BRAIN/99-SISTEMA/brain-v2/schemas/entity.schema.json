@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "brain-v2-entity.schema.json",
+  "title": "Brain v2 Entity",
+  "allOf": [
+    {
+      "$ref": "brain-v2-note.schema.json"
+    }
+  ],
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "title",
+    "created",
+    "schema_version",
+    "entity_kind"
+  ],
+  "properties": {
+    "type": {
+      "const": "entity"
+    },
+    "entity_kind": {
+      "type": "string",
+      "enum": [
+        "person",
+        "company",
+        "agent",
+        "system",
+        "service",
+        "client",
+        "project",
+        "asset"
+      ]
+    },
+    "canonical_name": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "source_event": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
