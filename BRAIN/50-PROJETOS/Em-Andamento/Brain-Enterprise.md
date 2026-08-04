@@ -37,5 +37,5 @@ Manter o Brain como repositório vivo de conhecimento para preservar contexto, d
 
 ## Relações
 
-- [[Brain como sistema de memória]]
-- [[Consolidação silenciosa sem ruído]]
+- [[40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria|Brain como sistema de memória]]
+- [[40-CONHECIMENTO/Operacional/Consolidacao-silenciosa-sem-ruido|Consolidação silenciosa sem ruído]]

@@ -30,6 +30,6 @@ A rotina deve aumentar a qualidade do Brain a cada ciclo, fortalecendo padrões 
 
 ## Relações
 
-- [[Brain Enterprise]]
-- [[Brain como sistema de memória]]
+- [[50-PROJETOS/Em-Andamento/Brain-Enterprise|Brain Enterprise]]
+- [[40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria|Brain como sistema de memória]]
 - [[CONSOLIDACAO-DIARIA-SILENCIOSA|Consolidação diária silenciosa do Brain]]

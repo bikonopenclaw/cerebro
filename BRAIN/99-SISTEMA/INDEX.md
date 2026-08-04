@@ -15,6 +15,12 @@ Mapa geral do Brain.
 - `80-DASHBOARDS`: indicadores consolidados.
 - `99-SISTEMA`: regras, memória, índice, saúde e changelog.
 
+## MOCs e pontos de entrada
+
+- `INDEX.md`: mapa geral do Brain.
+- `01-DIARIO/README.md`: MOC cronológico de diários, semanais e mensais.
+- `99-SISTEMA/brain-v2/governance/README.md`: ponto de entrada da governança Brain v2.
+
 ## Registros ativos
 
 - `01-DIARIO/2026/2026-06-12.md`: primeira consolidação diária do Brain.

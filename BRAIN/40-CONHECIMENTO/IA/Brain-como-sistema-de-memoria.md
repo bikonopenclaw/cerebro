@@ -12,7 +12,7 @@ criado_em: 2026-06-14
 
 ## Princípio
 
-O [[Brain Enterprise]] deve funcionar como sistema de memória, não como armazenamento indiscriminado.
+O [[50-PROJETOS/Em-Andamento/Brain-Enterprise|Brain Enterprise]] deve funcionar como sistema de memória, não como armazenamento indiscriminado.
 
 O valor do Brain está em recuperar contexto, decisões, relacionamentos e aprendizados que melhorem escolhas futuras.
 
@@ -36,6 +36,6 @@ Uma informação merece permanência quando:
 
 ## Relações
 
-- [[Brain Enterprise]]
-- [[Consolidação silenciosa sem ruído]]
+- [[50-PROJETOS/Em-Andamento/Brain-Enterprise|Brain Enterprise]]
+- [[40-CONHECIMENTO/Operacional/Consolidacao-silenciosa-sem-ruido|Consolidação silenciosa sem ruído]]
 - [[FILOSOFIA]]

@@ -22,3 +22,9 @@ Brain v2 separates canonical knowledge from evidence, events, transient state, d
 ## Foundation Scope
 
 This foundation adds governance rules, schemas, relationship types, MOC reachability policy, proposal handling, metric exclusions, health definitions and fail-closed sync rules. It does not perform full legacy migration.
+
+## Phase 11B Scope
+
+Phase 11B starts the missing reintegration layer after the foundation cutover. It adds real entry points, resolves obvious legacy wikilinks to canonical paths and introduces a local Commit Link Gate so future commits can be checked against accepted knowledge debt instead of silently adding new orphan notes.
+
+The first batch links legacy diary notes through `BRAIN/01-DIARIO/README.md` without moving historical files.

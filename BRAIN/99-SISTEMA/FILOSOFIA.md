@@ -60,10 +60,10 @@ Regra: toda informação importante deve possuir relacionamentos.
 Sintaxe compatível com Obsidian:
 
 ```markdown
-[[Bikon Tecnologia]]
-↔ [[Estrutura Organizacional]]
-↔ [[Financeiro]]
-↔ [[Comercial]]
+[[20-EMPRESAS/BIKON/README|Bikon Tecnologia]]
+↔ [[99-SISTEMA/INDEX|Estrutura Organizacional]]
+↔ [[40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional|Financeiro]]
+↔ [[99-SISTEMA/INDEX|Comercial]]
 ```
 
 ## 3. Contexto maior que fato

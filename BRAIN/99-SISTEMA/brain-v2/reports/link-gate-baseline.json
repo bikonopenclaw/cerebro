@@ -1,0 +1,20 @@
+{
+  "markdown_total": 326,
+  "broken_internal_links": 0,
+  "broken_links": [],
+  "classification_counts": {
+    "diary": 46,
+    "entity": 2,
+    "knowledge": 23,
+    "project": 27,
+    "agent": 190,
+    "automation": 22,
+    "dashboard": 1,
+    "system": 15
+  },
+  "uncategorized_markdown": 0,
+  "duplicate_ids": {},
+  "duplicate_aliases": {},
+  "secret_candidates": [],
+  "knowledge_health_estimate": 1
+}

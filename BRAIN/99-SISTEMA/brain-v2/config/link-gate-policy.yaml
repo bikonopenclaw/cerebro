@@ -1,0 +1,30 @@
+schema_version: 1
+status: accepted
+gate_id: brain-v2-commit-link-gate
+baseline:
+  path: BRAIN/99-SISTEMA/brain-v2/reports/link-gate-baseline.json
+scope:
+  include:
+    - BRAIN/**/*.md
+  exclude:
+    - BRAIN/99-SISTEMA/brain-v2/reports/*.json
+fail_closed:
+  new_broken_internal_links: true
+  new_uncategorized_markdown: true
+  duplicate_ids: true
+  duplicate_aliases: true
+  suspicious_secret_candidates: true
+  changed_paths_outside_manifest: true
+classification:
+  entry_points:
+    - BRAIN/99-SISTEMA/INDEX.md
+    - BRAIN/01-DIARIO/README.md
+    - BRAIN/99-SISTEMA/brain-v2/governance/README.md
+  known_system_paths:
+    - BRAIN/99-SISTEMA
+  known_diary_paths:
+    - BRAIN/01-DIARIO
+allowed_current_debt:
+  broken_internal_links: baseline_only
+  uncategorized_markdown: baseline_only
+  reason: Legacy debt accepted only as baseline. New debt fails.
