@@ -24,6 +24,15 @@ Espelho operacional:
 - Foi criada camada BI consultável sobre o SQLite financeiro da Darth Vader, com views de boletos, contas a receber, KPI mensal, clientes, remessas e retornos. Exports CSV continuam tratados como artefatos/dados derivados e não entram no Brain/Git.
 - Kowalski tem acesso somente leitura à base financeira gerencial para relatórios e conferências; escrita, importação de retorno, baixa, NFS-e, boleto e remessa continuam sob responsabilidade da Darth Vader.
 
+## Atualização 2026-08-03
+
+- Lote Bikon agosto/2026 remessa 093: `27` boletos gerados localmente e vinculados a `27` NFS-e autorizadas, total R$ 86.357,06.
+- Remessa local: `remessa-093-010826-producao.rem`, SHA-256 `b4616a39ed4c89adb04bab60461c93e8df2dab33c022b4807210809592e56141`, `29` linhas, 400 posições, header/detalhes/trailer e `0` erros estruturais no checklist local.
+- A remessa 093 foi preparada localmente; esta consolidação não encontrou registro de transmissão bancária. Upload/envio ao banco continua dependente de OK explícito e validação aplicável.
+- E-mails do lote: `18` envios agrupados por cliente, com `financeiro@bikon.com.br` em cópia, status local `sent_all`.
+- Homologação Cresol controlada criou e consultou título de teste `22394001`, nosso número `09/00000000356-8`, valor R$ 1,00, vencimento `2026-08-10`, com PDF oficial baixado e remessa CNAB400 de homologação gerada. O título seguia `EM_PROCESSAMENTO` nas consultas registradas; não usar esse teste como autorização de produção.
+- Baseline FBCP 2026-08-03 registrou riscos P0: nosso número sem reserva transacional antes de provider/API, validador CNAB ainda estrutural e não contrato Cresol completo, e fronteira homologação/produção dependente de flags/nomes de pasta. Próximas correções devem ser unitárias e autorizadas por escopo.
+
 ## Pendências antes de uso real
 
 Confirmar com o banco/contrato:
@@ -39,6 +48,7 @@ Confirmar com o banco/contrato:
 9. mapeamento final de juros/multa para API Cresol em produção, preservando a regra Bikon de multa de 2,00% e juros de 1% ao mês proporcional ao dia.
 10. aprovação explícita do Hebert antes de upload no portal Cresol, envio ao banco, produção, baixa por API ou comunicação externa.
 11. importar retornos Cresol no SQLite financeiro somente pela Darth Vader, com validação controlada antes de qualquer baixa operacional.
+12. antes de ampliar produção, tratar hardening FBCP de nosso número, validador CNAB de contrato Cresol e boundary forte homologação/produção.
 
 ## Guardrail
 

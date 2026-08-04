@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## 2026-08-03, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-08-03.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md` com DRE final adotado, handoff operacional, quarentena de `Q-PROVIDER-001`, reimportação legada João Neiva, Herald/dashboard CNS `024067` em produção focada e exportação PDF autenticada.
+- Atualizados registros BIKON, Darth Vader, Notaas, boletos/remessa, faturamento Telegram e relatórios operacionais com lote Bikon agosto/2026 remessa 093, crons antecipados e baseline FBCP Fase 0 read-only.
+- Atualizados `INDEX.md`, `MEMORY.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Revisados arquivos locais do Brain, memória recente disponível, sessões visíveis recentes e artefatos locais em `entregas` e workspace Darth Vader; esta rotina não acessou sistemas externos, não enviou mensagem ao Hebert, não criou agente, não transmitiu remessa bancária, não chamou Notaas/Cresol/SMTP e não alterou infraestrutura operacional.
+
 ## 2026-08-02, consolidacao semanal
 
 - Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W31.md` com cobertura parcial de 2026-07-27 a 2026-08-02, baseado nas daily notes disponiveis de 2026-07-28 a 2026-08-01.

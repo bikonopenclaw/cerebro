@@ -4,7 +4,7 @@
 categoria: agente_operacional
 fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17 e snapshot versionado em 2026-07-11
 confiabilidade: alta
-ultima_revisao: 2026-07-11
+ultima_revisao: 2026-08-03
 tags: [agente, financeiro, faturamento, nfse, boleto, remessa, cresol-api]
 ```
 
@@ -71,6 +71,34 @@ A workspace da Darth Vader passou a manter camada BI sobre o SQLite financeiro d
 Essa camada serve para consulta gerencial, relatório e conferência. Exports CSV gerados a partir dessas views são dados derivados/sensíveis e não devem ser versionados no Brain/Git.
 
 Kowalski pode consultar a base em modo somente leitura para relatórios. Escrita, alteração de schema, importação de retorno, baixa, pagamento, NFS-e, boleto e remessa continuam exclusivamente com Darth Vader.
+
+## Lote Bikon agosto/2026, remessa 093
+
+Em 2026-08-03, Darth Vader executou produção assistida do lote agosto/2026:
+
+- `27` NFS-e autorizadas em produção, com PDF/XML locais.
+- `27` boletos gerados localmente e vinculados às NFS-e.
+- `1` remessa CNAB400 local `remessa-093-010826-producao.rem`, SHA-256 `b4616a39ed4c89adb04bab60461c93e8df2dab33c022b4807210809592e56141`.
+- Total do lote: R$ 86.357,06.
+- `18` e-mails enviados, agrupados por cliente, todos com `financeiro@bikon.com.br` em cópia, status local `sent_all`.
+- A remessa bancária foi preparada, mas não há registro consolidado de transmissão ao banco nesta etapa.
+
+## Baseline FBCP, 2026-08-03
+
+Foi concluída a Fase 0 read-only do FBCP com inventário, hashes, leitura SQLite immutable, mapa de mutações e riscos P0, sem chamada Notaas, Cresol, SMTP, remessa, emissão, boleto ou alteração operacional.
+
+Riscos P0 que afetam a governança da Darth Vader:
+
+- competência default fixa em partes da skill Notaas;
+- valores tratados como `float` em CLI/helper/e-mail/CNAB;
+- retry Notaas sem ledger idempotente;
+- aprovação como flag booleana/reutilizável, sem manifest/hash de payload/anexos/destinatários;
+- nosso número sem reserva transacional prévia;
+- validador CNAB estrutural incompleto;
+- envio SMTP sem outbox transacional/recibo forte;
+- fronteira homologação/produção baseada em flags e nomes de pasta.
+
+Próxima autorização recomendada: `AUTHORIZE_FBCP_P0_COMPETENCE_AND_MONEY_HARDENING_ONLY`.
 
 ## Relações
 

@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22
+fonte: decisão do Hebert em 2026-06-22 e ajuste operacional de crons em 2026-08-03
 confiabilidade: alta
-ultima_revisao: 2026-07-22
+ultima_revisao: 2026-08-03
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual]
 ```
 
@@ -51,6 +51,15 @@ Token, auth store e configuração sensível ficam fora do Brain/Git.
 ## Regra de identidade no grupo
 
 Com bot próprio validado, mensagens comuns do grupo devem ser tratadas pelo Kowalski quando forem de relatório operacional. Puppet Master só deve responder quando mencionado nominalmente ou quando houver coordenação, mudança estrutural, produção, gasto, comunicação externa ou decisão estratégica.
+
+## Agenda automática diária
+
+Atualização 2026-08-03:
+
+- Relatórios diários ter-sex no grupo `Relatórios Operacionais`: WhatsApp 07:45, ARX Backup 07:46, NinjaOne 07:47 e Bitdefender 07:48, timezone `America/Sao_Paulo`.
+- Instrução diária do Kowalski no grupo `Suporte Bikon`: 07:59, timezone `America/Sao_Paulo`.
+- Antes/depois do ajuste foi usada a verificação local de sobreposição de crons; não reativar nem recriar arquitetura antiga.
+- Regra prática: segunda-feira usa fechamento semanal coletado no sábado; não forçar job diário de segunda quando não houver cache diário correspondente.
 
 ## Padrão visual para relatórios externos
 

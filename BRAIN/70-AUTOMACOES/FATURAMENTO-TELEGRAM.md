@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_operacional
-fonte: sessões Telegram visíveis em 2026-06-17, correções operacionais em 2026-06-18/19/25/26 e remoção FN Souza em 2026-06-25
+fonte: sessões Telegram visíveis em 2026-06-17, correções operacionais em 2026-06-18/19/25/26, remoção FN Souza em 2026-06-25 e lote Bikon agosto/2026 em 2026-08-03
 confiabilidade: alta
-ultima_revisao: 2026-06-26
+ultima_revisao: 2026-08-03
 tags: [telegram, faturamento, bikon, fn-souza, nfse, boletos, remessa, darth-vader]
 ```
 
@@ -44,6 +44,18 @@ Registrar os contextos operacionais de grupos Telegram usados para faturamento, 
 - Preparos internos, rascunhos, conferências e validações podem ser executados sem impacto externo quando houver dados suficientes.
 - Se faltar dado fiscal/financeiro, pedir apenas o mínimo necessário para desbloquear.
 - Antes de postar, repostar, acionar agente, alterar configuração ou disparar qualquer execução fora da conversa atual, avisar Hebert e confirmar quando o impacto não estiver previamente autorizado.
+
+## Lote Bikon agosto/2026
+
+Em 2026-08-03, o fluxo de faturamento Bikon operou a remessa 093 em produção assistida:
+
+- NFS-e: `27` emitidas/autorizadas, com PDF/XML locais.
+- Boletos: `27` gerados localmente.
+- Remessa: `1` CNAB400 local gerada, sem transmissão bancária consolidada.
+- E-mails: `18` enviados, agrupados por cliente, com cópia obrigatória para `financeiro@bikon.com.br`.
+- Total do lote: R$ 86.357,06.
+
+O caso preserva a regra de etapas: emissão fiscal, boleto/remessa, conferência, envio externo e transmissão bancária não devem virar uma única esteira automática sem gates próprios.
 
 ## Relações
 

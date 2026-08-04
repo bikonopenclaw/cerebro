@@ -48,6 +48,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-07-30.md`: consolidação diária com runtime CPython `3.14.6`, correção documental do EP-02 Inventory Freeze, baseline técnico do primeiro ciclo homologado e publicação canônica por bundle/manifest no Drive.
 - `01-DIARIO/2026/2026-07-31.md`: consolidação diária com preparação do primeiro ciclo real do Provimento 213, aquisição de metadata, transferência read-only Kowalski -> Sentinel, correção ARX/Cove e gaps de management plane ainda abertos.
 - `01-DIARIO/2026/2026-08-01.md`: consolidação diária com freeze do reach read-only, provider discovery bloqueada por falta de evidência AWS/Azure/GCP, adaptive interview/dashboard, multi-Serventia HTML/PT-BR/PDF e DRE v1 fail-closed por launcher não relocatable.
+- `01-DIARIO/2026/2026-08-03.md`: consolidação diária com adoção DRE dos registros finais Provimento 213, Herald/dashboard CNS `024067` em produção focada, crons operacionais antecipados, lote Bikon agosto/2026 remessa 093 e baseline FBCP read-only.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `01-DIARIO/Mensal/2026-07.md`: consolidação mensal de julho/2026 com padrões de evidência antes de status, portões separados, read-only como expansão segura, cadeia de custódia e runtime como superfície operacional.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
@@ -76,27 +77,27 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
-- `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com baseline técnico do primeiro ciclo homologado, publicação canônica por bundle/manifest no Drive, provider discovery bloqueada por falta de evidência AWS/Azure/GCP, adaptive interview/dashboard e multi-Serventia HTML/PT-BR/PDF preparados, execução real bloqueada e DRE v1 ainda não instalado.
+- `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com DRE final adotado para os registros finais, Herald/dashboard CNS `024067` em produção focada via tailnet, reimportação legada reconciliada e ciclo operacional ainda bloqueado por gates atomicos de evidência, respondente, dashboard, provider e execução.
 - `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, Claw3D/OpenClaw em validação e rollback.
 - `50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md`: projeto de seleção governada de modelo e pensamento, com Gate D0, perfis, baseline de 40 tarefas e Etapa 0 concluída.
 - `50-PROJETOS/Planejamento/Controlador-de-Execucao-v2/README.md`: sucessor documental baseado em capacidades C0-C5, esforço R0-R5, risco G0-G3, Registry operacional e Etapa 0.5 read-only.
-- `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader, incluindo NFS-e, boletos, remessa e Cresol API com guardrails.
+- `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader, incluindo NFS-e, boletos, remessa, Cresol API, lote Bikon agosto/2026 remessa 093 e baseline FBCP com riscos P0.
 - `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski, incluindo skill Provimento 213/2026, canal Telegram isolado para Relatórios Operacionais, Modelo de Relatório EOL Bikon e operação controlada Bitdefender -> NinjaOne.
 - `60-AGENTES/ROBOTNIK.md`: papel de marketing do Robotnik, Produção Assistida, SSI/SFT e governança Instagram com geração, composição e publicação separadas.
 - `60-AGENTES/SENTINEL.md`: papel do controller de Operações e SNOC, fontes autorizadas, limites read-only, canário v2 de 24 horas, avaliação read-only de gaps do Provimento 213, provider discovery e implementação/validação de entrevista/dashboard sob governança.
 - `60-AGENTES/versionados/`: snapshots seguros de código, skills e documentação operacional dos agentes, com exclusão de segredos e artefatos gerados.
 - `70-AUTOMACOES/CONSOLIDACAO-DIARIA-SILENCIOSA.md`: rotina diária silenciosa de consolidação.
 - `70-AUTOMACOES/SYNC-GITHUB.md`: sincronização automática do Brain com GitHub 4x ao dia.
-- `70-AUTOMACOES/NOTAAS-NFSE.md`: registro da skill Notaas NFS-e exclusiva da Darth Vader, com guardrails fiscais.
-- `70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`: contexto ativo do grupo Telegram de faturamento Bikon e histórico inativo FN Souza, com roteamento para Darth Vader e guardrails.
-- `70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`: contexto do grupo Telegram de relatórios operacionais, com roteamento restrito e gateway isolado para Kowalski.
+- `70-AUTOMACOES/NOTAAS-NFSE.md`: registro da skill Notaas NFS-e exclusiva da Darth Vader, com guardrails fiscais, lote 093 e riscos FBCP de competência/dinheiro/idempotência.
+- `70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`: contexto ativo do grupo Telegram de faturamento Bikon e histórico inativo FN Souza, com roteamento para Darth Vader, guardrails e lote Bikon agosto/2026.
+- `70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`: contexto do grupo Telegram de relatórios operacionais, com roteamento restrito, gateway isolado para Kowalski e agenda diária 07:45-07:48/07:59.
 - `70-AUTOMACOES/WHISPER-LOCAL.md`: instância local faster-whisper definida como padrão para transcrição de áudios.
 - `70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`: integração GravityZone para segurança, inventário, relatórios da Bikon e tickets NinjaOne sob critérios aprovados.
 - `70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md`: matriz mestre para governança e auditoria de usuários Bikon aprovados no Entra ID versus acessos em ADs locais de clientes.
 - `70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`: automação diária de monitoramento ARX Backup com deduplicação/criação de tickets NinjaOne.
 - `70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`: skill e fluxo do Kowalski para diagnósticos técnicos de cartórios no Provimento CNJ 213/2026.
 - `70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`: Produção Assistida Instagram Bikon com Brand Director v2.1.0, Robotnik, Kling, Creatomate, Buffer, SSI/SFT e aprovações por portão.
-- `70-AUTOMACOES/boletos-malote/README.md`: documentação da futura automação de boletos/remessa/API Cresol da BIKON, com pendências de homologação e produção bloqueada sem aprovação.
+- `70-AUTOMACOES/boletos-malote/README.md`: documentação da automação assistida de boletos/remessa/API Cresol da BIKON, com lote 093, teste controlado de homologação Cresol e produção bancária bloqueada sem aprovação.
 - `70-AUTOMACOES/API-WHATSAPP-BIKON.md`: integração do canal oficial WhatsApp Bikon via api.bikon.tech, template `retomar_solicitacao`, rotina segura com dry-run e confirmação explícita.
 - `70-AUTOMACOES/api-bikon-whatsapp/`: snapshot sanitizado do client local, Swagger, documentação e rotina segura, sem tokens.
 

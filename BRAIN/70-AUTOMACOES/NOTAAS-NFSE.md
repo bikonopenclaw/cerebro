@@ -55,6 +55,10 @@ Envio de e-mail para cliente externo também exige autorização explícita, mes
 
 Atualização 2026-07-01: em lote com boleto/remessa, NFS-e deve ser etapa separada. Primeiro dry-run e conferência de cadastro/valor/competência; depois aprovação explícita; depois emissão; depois conferência de XML/PDF. Boleto/remessa e e-mail só avançam após essa conferência.
 
+Atualização 2026-08-03: o lote de faturamento Bikon agosto/2026 remessa 093 emitiu `27` NFS-e em produção, com PDF/XML locais, totalizando R$ 86.357,06. Os e-mails externos foram enviados depois da preparação/conferência, com `18` mensagens agrupadas por cliente e copia para `financeiro@bikon.com.br`. O evento confirma o uso operacional assistido da skill, mas não autoriza automação cega para lotes futuros.
+
+Baseline FBCP 2026-08-03: a revisão read-only `FBCP_PHASE_0_READ_ONLY_BASELINE_FREEZE=PASS` congelou hashes, SQLite em modo immutable e superfícies de mutação sem chamar Notaas, Cresol, SMTP, transmissão de remessa ou emissão nova. Riscos P0 para a skill Notaas: competência default fixa `2026-04` em emissão individual/payload helper, uso de `float` para valores e retry sem ledger idempotente. Próxima autorização recomendada antes de evoluir produção: `AUTHORIZE_FBCP_P0_COMPETENCE_AND_MONEY_HARDENING_ONLY`.
+
 ## Padrão Bikon para dados do tomador
 
 Atualizado em 2026-06-19/20 após lote de homologação sair sem endereço porque o script descartava `tomador.endereco`.

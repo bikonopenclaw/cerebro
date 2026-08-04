@@ -2,12 +2,12 @@
 
 ```yaml
 nome: OpenClaw - Provimento 213
-status: entrevista_dashboard_html_pdf_preparados_execucao_bloqueada_por_provider_e_dre
+status: dashboard_herald_producao_cns_024067_ciclo_operacional_preparado_e_bloqueado_por_gates
 responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-01
+ultima_revisao: 2026-08-03
 tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre]
 ```
 
@@ -47,9 +47,22 @@ O Brain registra somente o estado consolidado. Artefatos autoritativos, arquivos
 - Primeiro uso controlado da entrevista para CNS `024067`: sessão `INT-024067-FIRST-REAL-CYCLE-v1` ativada como `AWAITING_RESPONDENT`, com `0` respostas reais, `0` evidências recebidas e sem contato externo.
 - Extensão multi-Serventia HTML/PT-BR/PDF: `85/85` testes PASS, seletor canônico, dashboard HTML global read-only, HTML/PDF por serventia, PDF client-safe e fluxos de anexo simulados em fixture; artefatos de apresentação/localização e runtime tiveram validações cruzadas por Sentinel/Kowalski, mas os registros finais do Puppet Master ficaram `PROPOSED_PENDING_INDEPENDENT_VALIDATION_OF_PUPPET_MASTER_RECORD`.
 - Tentativa de regeneração e freeze atômico do par final multi-Serventia terminou `FAIL_CLOSED` antes de renderização porque o assert obrigatório retornou `nenhuma ordem ativa`; o mesmo `execution_id` terminal não pode ser reutilizado.
-- OpenClaw DRE v1, criado como capacidade de plataforma para renderização determinística e publicação atômica, ficou parcialmente avançado: repositório canônico OpenClaw congelado em `/opt/openclaw/src/openclaw` no commit `0790d9f593ad30c940ed93b5872a8cf6d6f3cf8c`, target freeze DRE SHA-256 `e01c844a6466f92f803777a7a19a40e5d53cab20af5dbd46068520ef144a983d`, commit local preservado `3b4bff00ad9a5c4721ae968dfe9abb571991b1db`, `75/75` testes pre-install e rollback `PASS`; instalação final bloqueada por launcher não relocatable.
-- Próxima autorização exata para seleção de provider: `PROVIDE_OR_AUTHORIZE_READ_ONLY_EXISTING_AWS_AZURE_GOOGLE_CLOUD_ACCOUNT_TENANT_SUBSCRIPTION_PROJECT_EVIDENCE_FOR_PROVIDER_SELECTION`.
-- Próxima autorização exata para DRE: `AUTHORIZE_DRE_V1_CORRECTIVE_COMMIT_FOR_RELOCATABLE_INSTALLED_LAUNCHER_AND_FULL_REINSTALL_REVALIDATION`.
+- Até 2026-08-01, OpenClaw DRE v1, criado como capacidade de plataforma para renderização determinística e publicação atômica, estava parcialmente avançado: repositório canônico OpenClaw congelado em `/opt/openclaw/src/openclaw` no commit `0790d9f593ad30c940ed93b5872a8cf6d6f3cf8c`, target freeze DRE SHA-256 `e01c844a6466f92f803777a7a19a40e5d53cab20af5dbd46068520ef144a983d`, commit local preservado `3b4bff00ad9a5c4721ae968dfe9abb571991b1db`, `75/75` testes pre-install e rollback `PASS`; instalação final bloqueada por launcher não relocatable.
+- DRE v1 foi corrigido/instalado em 2026-08-02 com Harness v4, mas aceitação final seguia não executada sem nova autorização. Depois, para o Provimento 213, a transação `GEN-P213-DRE-FINAL-PAIR-20260802T101044Z-21DB01061749` foi adotada como `COMPLETED_IMMUTABLE`, com 2 outputs canonicos publicados e handoff operacional preparado, sem ativação automática.
+- Ciclo `INT-024067-FIRST-REAL-CYCLE-v1`: preparação passou; `Q-PROVIDER-001` foi enviada e depois quarantined como inválida para o ciclo porque disponibilidade de provider não prova aplicabilidade. `Q-CONTROL-G-01` foi reselecionada, bloqueada por falta de respondente/canal autorizado e depois reconciliada como já respondida pendente de formalização/evidência legada.
+- Herald/dashboard CNS `024067` em produção focada desde 2026-08-03: serviço `prov213-herald-dashboard.service` ativo em loopback `127.0.0.1:9213`, URL tailnet canonica `https://srv1811702.tail34aee8.ts.net/prov213/024067`, token antigo revogado, sem token permanente na URL, PT-BR/identidade Bikon e exportação PDF autenticada em `/prov213/024067/export.pdf`.
+- Estado canonico do dashboard após reimportação: sessão `CNS-024067-PROD-INTERVIEW-GOVERNANCE-RESPONSIBILITIES-v1` pausada, pergunta atual `Q-CONTROL-A-03`, completion entrevista `41/47 = 87,23%`, evidence completion `10/47 = 21,28%`, índice de conformidade `36,2%`, 37 pendências documentais, 6 perguntas genuinamente sem resposta e `Q-CONTROL-G-02` validada com evidência.
+- Próximas ações dependem de autorização atomica: aceitar/validar novas evidências, contatar respondente, mutar dashboard/entrevista, selecionar provider, executar DRE/preflight/run adicional ou enviar PDF externamente.
+
+## Atualização 2026-08-02/03
+
+O DRE deixou de ser apenas commit pre-install e passou por instalação controlada v4; a aceitação final do Harness v4 continuou proibida sem nova autorização. Em seguida, a geração DRE dos registros finais do Provimento 213 foi executada por preflight/run únicos e adotada como canonica: `DRE_TRANSACTION_STATUS=COMPLETED_IMMUTABLE`, `retry=NO`, `resume=NO`, geração fechada e publicação atomica de 2 outputs.
+
+A primeira ação operacional real mostrou um erro de seleção importante: `Q-PROVIDER-001` foi entregue no Telegram, mas depois invalidada para fins de entrevista/evidência porque AWS/provider não estava canonica ou obrigatoriamente aplicável ao ciclo. A regra corrigida é: pergunta especifica de provider só é elegível quando o provider já foi selecionado, mandatado por arquitetura aprovada, exigido por controle regulatório aplicável ou necessário para uma dependência operacional já aprovada.
+
+A reimportação canonica legada de João Neiva preservou o relatório formal `REL-PROV213-2026-v2.9_Joao_Neiva` como fonte mais detalhada por controle. Resultado consolidado: 47 controles submetidos; 10 conformes, 14 parciais, 4 não conformes, 19 pendentes/a verificar e 1 não aplicável. A discrepância histórica entre "47/47 submetidos" e 6 perguntas sem resposta foi preservada, não sobrescrita.
+
+O dashboard Herald foi colocado em produção focada para CNS `024067`, todo em PT-BR e com identidade visual Bikon. A autenticação usa sessão HTTPS pela tailnet Tailscale; o token antigo foi revogado e não deve ser registrado. O endpoint PDF autenticado foi validado com HTTP 200 autenticado, HTTP 403 anônimo, 8 páginas e sem token/caminho interno visível.
 
 ## Governance Ledger
 
@@ -293,6 +306,7 @@ Resultado: `FAIL_CLOSED`, rollback `PASS`, `/opt/openclaw/platform/dre/v1` e `/u
 - Diário: `BRAIN/01-DIARIO/2026/2026-07-30.md`.
 - Diário: `BRAIN/01-DIARIO/2026/2026-07-31.md`.
 - Diário: `BRAIN/01-DIARIO/2026/2026-08-01.md`.
+- Diário: `BRAIN/01-DIARIO/2026/2026-08-03.md`.
 - Conhecimento operacional: `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`.
 - Conhecimento operacional: `BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md`.
 - Contexto relacionado, mas distinto: `BRAIN/70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`.

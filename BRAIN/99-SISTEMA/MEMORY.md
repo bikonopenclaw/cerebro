@@ -47,7 +47,10 @@ Memória institucional consolidada do Brain.
 - Runtime operacional precisa de contrato reproduzível: caminho absoluto, versão final, origem, checksums, arquitetura, Unicode quando aplicável e regra de drift.
 - Documento `PROPOSED_NOT_FROZEN` ou `PROPOSED_PENDING_INDEPENDENT_VALIDATION` preserva contexto, mas não é contrato canônico nem autorização operacional.
 - Capacidade técnica oficial de provider não substitui evidência local de conta, tenant, subscription, projeto, owner aprovado, permissão e trilha de auditoria.
+- Disponibilidade isolada de provider também não prova aplicabilidade; pergunta ou ação específica de AWS/Azure/GCP só é elegível quando o provider já foi selecionado, mandatado por arquitetura aprovada, exigido por controle regulatório aplicável ou necessário para dependência operacional já aprovada.
 - Teste pre-install ou commit preservado não comprova ferramenta instalada; o caminho final usado pelo operador precisa passar em validação black-box.
+- Em esteira fiscal/financeira Bikon, competência deve ser explícita por operação e dinheiro deve trafegar como Decimal/centavos; `float`, default fixo de competência e aprovação booleana reutilizável são riscos P0.
+- Segunda-feira dos relatórios operacionais usa fechamento semanal coletado no sábado; não forçar job diário quando não existir coleta/cache diário correspondente.
 
 ## Padrões consolidados mensalmente
 
@@ -56,4 +59,5 @@ Memória institucional consolidada do Brain.
 - Padrão semanal 2026-W28: maturidade operacional antes de escala; snapshots seguros excluem artefatos derivados, integrações externas permanecem em rascunho/homologação até aprovação, e decisões operacionais dependem de evidência explícita.
 - Padrão semanal 2026-W29: recuperação comprovada antes de continuidade; runtime pós-migração exige readiness executável, mudanças ficam separadas por gate e monitoramento usa menor privilégio com evidência recente e revalidação.
 - Padrão semanal 2026-W31: continuidade governada por unidade; evidência técnica não herda autorização, propostas não viram contratos por inferência, provider exige prova de ambiente existente e instalação precisa de black-box no caminho final.
+- Atualização de 2026-08-03: baseline FBCP Fase 0 elevou o padrão de faturamento para manifest/hash de aprovação, competência explícita, dinheiro Decimal/centavos, idempotência/ledger, reserva transacional de nosso número, validador CNAB de contrato e outbox transacional antes de escala.
 - Atualização de 2026-07-21: reconciliação técnica com evidência de relatório indicou que a proposta Instagram Brand Director v2.1.0 está pendente e não ativa; estado de produção assistida segue sob read-only até autorização explícita de corte.

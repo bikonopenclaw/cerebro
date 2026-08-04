@@ -24,6 +24,9 @@
 
 ## Histórico relevante
 
+- 2026-08-03: faturamento agosto/2026 remessa 093 executado em produção assistida: 27 NFS-e autorizadas, 27 boletos locais, 18 e-mails enviados com cópia para `financeiro@bikon.com.br`, total R$ 86.357,06; remessa CNAB400 local gerada sem transmissão bancária consolidada.
+- 2026-08-03: dashboard Provimento 213 do CNS `024067` entrou em produção focada com identidade Bikon/PT-BR e exportação PDF autenticada via Tailscale; token antigo revogado e sem token permanente na URL.
+- 2026-08-03: crons dos relatórios operacionais diários antecipados para janela 07:45-07:48 e instrução diária do Kowalski para 07:59, timezone `America/Sao_Paulo`.
 - 2026-07-20: conjunto Instagram Bikon v4 aprovado como canônico; cinco fundos Kling consumiram 10 créditos autorizados e nenhuma publicação ocorreu.
 - 2026-07-20: Instagram Brand Director v2.1.0 implantada por corte atômico com backup, rollback e recibo append-only; Produção Assistida iniciada e lifecycle da proposta ainda `pending`.
 - 2026-07-20: snapshot `feed-base-a v1` congelado com sete arquivos e Brand QA pré-geração `PASS`; manifesto `474e9af2…`, request `5d721862…` e payload `2be351a0…`. Render, Portão C, Kling e publicação permanecem bloqueados.
