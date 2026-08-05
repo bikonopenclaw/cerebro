@@ -2,13 +2,13 @@
 
 ## Health Score
 
-94/100
+96/100
 
 ## Estado atual
 
 - Estrutura inicial criada.
 - Sistema configurado como repositório de conhecimento, não como agente.
-- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15, 2026-07-17, 2026-07-20, 2026-07-22, 2026-07-23, 2026-07-28, 2026-07-29, 2026-07-30, 2026-07-31, 2026-08-01 e 2026-08-03.
+- Rotina diária de consolidação definida e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15, 2026-07-17, 2026-07-20, 2026-07-22, 2026-07-23, 2026-07-28, 2026-07-29, 2026-07-30, 2026-07-31, 2026-08-01, 2026-08-03 e 2026-08-05.
 - Consolidações semanais criadas em `01-DIARIO/Semanal/2026-W24.md`, `01-DIARIO/Semanal/2026-W25.md`, `01-DIARIO/Semanal/2026-W26.md`, `01-DIARIO/Semanal/2026-W28.md`, revisão parcial `01-DIARIO/Semanal/2026-W29.md` e `01-DIARIO/Semanal/2026-W31.md`.
 - Consolidações mensais criadas em `01-DIARIO/Mensal/2026-06.md` e `01-DIARIO/Mensal/2026-07.md`, com aprendizados, padrões de longo prazo, decisões consolidadas e critério de arquivamento.
 - Notas permanentes criadas para Brain como sistema de memória, consolidação silenciosa, projeto Brain Enterprise, escopo de canais operacionais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, artefatos gerados fora do Brain/Git, evidência explícita em monitoramento, consulta gerencial sem permissão operacional, homologação bancária sem produção automática, validação do runtime pós-migração e menor privilégio em monitoramento.
@@ -40,6 +40,7 @@
 - OpenClaw DRE v1: instalado por fluxo v4 e usado em execução/adoção canonica do par final Provimento 213; Harness de aceitação final e novas execuções continuam proibidos sem autorização específica.
 - Faturamento Bikon agosto/2026 remessa 093: `27` NFS-e autorizadas, `27` boletos locais, `18` e-mails enviados com copia para `financeiro@bikon.com.br`, total R$ 86.357,06 e remessa CNAB400 local gerada sem transmissão bancária consolidada.
 - FBCP Fase 0 read-only concluída em 2026-08-03 com freeze de baseline fiscal/financeiro, sem chamadas externas ou mutações operacionais; riscos P0 principais: competência fixa, dinheiro `float`, retry sem idempotência, aprovação booleana, nosso número sem reserva transacional, CNAB estrutural incompleto, SMTP sem outbox e boundary homologação/produção fraco.
+- Brain v2 foundation e 11B estão em `origin/main` no commit `153129b52ae093c42bb106006de18b78a7ab7dbe`; MOC cronológico e Commit Link Gate local ficaram ativos com baseline `0` links quebrados, `0` uncategorized, `0` duplicate IDs/aliases e `0` candidatos a segredo. Após esta daily note e os snapshots de 2026-08-05, o gate validou `328` Markdown com `0` quebras e `0` uncategorized.
 - Instagram Bikon v4 consolidado como conjunto canônico. Os cinco fundos consumiram 10 créditos autorizados e nenhuma publicação ocorreu.
 - Em 2026-07-22, uma divergência de hash entre asset local e URL temporária bloqueou a publicação antes da execução do Graph; nenhuma publicação ocorreu.
 - O dossiê técnico correto foi reenviado sem cabeçalho/rodapé na mensagem `9396`; o EOL identificado anteriormente foi descartado como erro desta entrega.
@@ -71,4 +72,5 @@
 - Roteador de Execução v1: ampliar a amostra com código, patches e scripts reais antes de avaliar a Etapa 1 somente em shadow mode.
 - OpenClaw - Provimento 213: manter provider específico bloqueado até haver aplicabilidade canonica, não apenas disponibilidade; qualquer contato externo, validação de evidência, mutação de dashboard/entrevista ou novo DRE/preflight/run exige autorização atomica.
 - FBCP: aplicar primeiro hardening de competência explícita e dinheiro Decimal/centavos somente com autorização `AUTHORIZE_FBCP_P0_COMPETENCE_AND_MONEY_HARDENING_ONLY`.
+- Brain v2: reconciliar o sync GitHub legado com a política fail-closed, porque `scripts/sync-github.sh` ainda usa staging amplo antes de commit/push.
 - Consolidação mensal de julho/2026 concluída com cobertura parcial: resumos semanais existentes `2026-W28` e `2026-W29`, complementados por daily notes; sem arquivamento porque os registros ainda possuem conexão operacional ou valor de auditoria.

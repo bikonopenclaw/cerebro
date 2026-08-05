@@ -55,6 +55,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-07-31.md`: consolidação diária com preparação do primeiro ciclo real do Provimento 213, aquisição de metadata, transferência read-only Kowalski -> Sentinel, correção ARX/Cove e gaps de management plane ainda abertos.
 - `01-DIARIO/2026/2026-08-01.md`: consolidação diária com freeze do reach read-only, provider discovery bloqueada por falta de evidência AWS/Azure/GCP, adaptive interview/dashboard, multi-Serventia HTML/PT-BR/PDF e DRE v1 fail-closed por launcher não relocatable.
 - `01-DIARIO/2026/2026-08-03.md`: consolidação diária com adoção DRE dos registros finais Provimento 213, Herald/dashboard CNS `024067` em produção focada, crons operacionais antecipados, lote Bikon agosto/2026 remessa 093 e baseline FBCP read-only.
+- `01-DIARIO/2026/2026-08-05.md`: consolidação diária com Brain v2 foundation/11B, MOC cronológico, Commit Link Gate, snapshots Sentinel/Kowalski e pendência de reconciliação do sync GitHub legado.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `01-DIARIO/Mensal/2026-07.md`: consolidação mensal de julho/2026 com padrões de evidência antes de status, portões separados, read-only como expansão segura, cadeia de custódia e runtime como superfície operacional.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
@@ -82,7 +83,7 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado.md`: gate para validar ferramentas instaladas em black-box pelo caminho final usado pelo operador.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
-- `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise.
+- `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise, com Brain v2 foundation aceita, primeira reintegração 11B, MOC cronológico e Commit Link Gate local.
 - `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com DRE final adotado para os registros finais, Herald/dashboard CNS `024067` em produção focada via tailnet, reimportação legada reconciliada e ciclo operacional ainda bloqueado por gates atomicos de evidência, respondente, dashboard, provider e execução.
 - `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, Claw3D/OpenClaw em validação e rollback.
 - `50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md`: projeto de seleção governada de modelo e pensamento, com Gate D0, perfis, baseline de 40 tarefas e Etapa 0 concluída.

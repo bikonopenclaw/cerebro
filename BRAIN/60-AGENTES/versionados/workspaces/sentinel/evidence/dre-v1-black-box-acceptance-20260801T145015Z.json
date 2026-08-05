@@ -1,0 +1,100 @@
+{
+  "schema_version": "OPENCLAW-DRE-V1-BLACK-BOX-ACCEPTANCE-EVIDENCE-v1",
+  "terminal_result": "FAIL_CLOSED_INTERNAL_ROUTE_NOT_REPRODUCIBLE",
+  "recorded_at_utc": "2026-08-01T14:55:42Z",
+  "order": {
+    "order_id": "ORDER-SENTINEL-DRE-V1-BLACK-BOX-20260801T145015Z",
+    "order_path": "/data/.openclaw/workspace/media/outbound/OWNER_ORDER_SENTINEL_DRE_V1_BLACK_BOX_ACCEPTANCE_20260801T145015Z.md",
+    "order_sha256": "336953c77553c52d24c43673587df590b8bde54f607eb0e41d2d90e08c4d0820",
+    "approval_id": "APR-DRE-V1-WRAPPER-TELEGRAM-10979",
+    "execution_id": "EXE-SENTINEL-DRE-V1-BLACK-BOX-20260801T145015Z"
+  },
+  "controller_binding": {
+    "assert_result": "ALLOWED",
+    "status": "RUNNING",
+    "ack_sha256": "560141b42edb530107e9b7f00f60460f1506a4f999ee79a42d01d7bc3be5ab30",
+    "checked_at_utc": "2026-08-01T14:54:40.572921Z",
+    "lease_expires_at_utc": "2026-08-01T15:53:31.918192Z"
+  },
+  "temporary_root": "/tmp/dre-blackbox-20260801T145015Z.8XxLbl",
+  "launcher_inventory": [
+    {
+      "path": "/opt/openclaw/platform/dre/v1/bin/openclaw-dre",
+      "size_bytes": 3193,
+      "mode": "0755",
+      "sha256": "f7a321c391e2c039845303dba280329b455e0315cd2e672f63595fe44b3b5605"
+    },
+    {
+      "path": "/usr/local/bin/openclaw-dre",
+      "size_bytes": 3193,
+      "mode": "0755",
+      "sha256": "f7a321c391e2c039845303dba280329b455e0315cd2e672f63595fe44b3b5605"
+    }
+  ],
+  "completed_gates": [
+    {
+      "gate": "CLI_AVAILABILITY_AND_LAUNCHER_IDENTITY",
+      "result": "PASS",
+      "installed_path": "/opt/openclaw/platform/dre/v1/bin/openclaw-dre",
+      "global_path": "/usr/local/bin/openclaw-dre"
+    },
+    {
+      "gate": "VERSION_AND_JSON_IDENTITY",
+      "result": "PASS",
+      "installed_exit_code": 0,
+      "global_exit_code": 0,
+      "byte_identical": true,
+      "output_sha256": "b2bcf5b0c9cb61f039c7aecad0fc815c3e45784523f8c3bdcf3ff1592a83e067",
+      "version": "1.0.0",
+      "runtime_sha256": "f1dd91e2655966ce606be692f02286a333693df6126313484ff21e7666f25993"
+    },
+    {
+      "gate": "EXPECTED_PACKAGE_PREFLIGHT_REJECTION",
+      "result": "PASS",
+      "command_pattern": "OPENCLAW_DRE_STATE_ROOT=<isolated> <launcher> preflight --package <missing-synthetic-package> --json",
+      "installed_exit_code": 2,
+      "global_exit_code": 2,
+      "typed_blocker": "PACKAGE_OR_PREFLIGHT_IO_FAILURE",
+      "byte_identical": true,
+      "output_sha256": "0403d407e756e101b70e779f03bef68c00a8d4cbca4f77021c2844471fb4fade"
+    }
+  ],
+  "first_failed_gate": {
+    "sequence": 4,
+    "name": "UNEXPECTED_INTERNAL_FAIL_CLOSED_EXIT_CODE",
+    "approved_synthetic_route": "OPENCLAW_DRE_STATE_ROOT=/dev/null <launcher> status --transaction SYNTHETIC-INTERNAL-FAIL --json",
+    "expected_exit_code": 7,
+    "observed_installed_exit_code": 5,
+    "observed_global_exit_code": 5,
+    "observed_failure_classification": "TRANSACTION_NOT_FOUND",
+    "observed_message": "SYNTHETIC-INTERNAL-FAIL",
+    "launcher_outputs_byte_identical": true,
+    "output_sha256": "8eaf666e9e7e949c37211fe7f33b599e394b5976eb71e99ef35e5595f6b0bb60",
+    "route_deviation": "The safe synthetic route did not reach internal fail-closed behavior; it remained a typed transaction-not-found conflict.",
+    "fallback_or_second_route_attempted": false
+  },
+  "impact": "The complete acceptance could not proceed beyond gate 4. Codes 3, 4 and 6, successful preflight/run/resume/status/verify, deterministic publication, rollback and attestation were not evaluated.",
+  "risk": "Trying a different internal-error trigger under the same execution would violate the order's stop-on-first-deviation and no-fallback rule.",
+  "recommendation": "Close this order with FAIL_CLOSED_INTERNAL_ROUTE_NOT_REPRODUCIBLE. A new canonical order must freeze an exact safe synthetic route for exit code 7 before repeating acceptance.",
+  "execution_scope": {
+    "acceptance_stopped_on_first_failed_gate": true,
+    "render_transaction_started": false,
+    "publication_executed": false,
+    "real_provimento_213_transaction_performed": false,
+    "network_access_performed": false,
+    "service_restart_performed": false,
+    "repository_modified": false,
+    "installed_tree_modified": false,
+    "implementation_source_inspected": false,
+    "python_bytecode_created": 0
+  },
+  "preserved_artifacts": {
+    "version_installed": "/tmp/dre-blackbox-20260801T145015Z.8XxLbl/version-installed.json",
+    "version_global": "/tmp/dre-blackbox-20260801T145015Z.8XxLbl/version-global.json",
+    "expected_rejection_installed": "/tmp/dre-blackbox-20260801T145015Z.8XxLbl/reject-installed.json",
+    "expected_rejection_global": "/tmp/dre-blackbox-20260801T145015Z.8XxLbl/reject-global.json",
+    "internal_route_installed": "/tmp/dre-blackbox-20260801T145015Z.8XxLbl/internal-installed.json",
+    "internal_route_global": "/tmp/dre-blackbox-20260801T145015Z.8XxLbl/internal-global.json"
+  },
+  "controller_closed_by_sentinel": false
+}

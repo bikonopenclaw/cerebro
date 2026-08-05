@@ -1,6 +1,6 @@
 # Fail-Closed Git Sync
 
-Status: foundation candidate.
+Status: accepted policy; implementation gap tracked.
 
 ## Required Gates
 
@@ -10,6 +10,10 @@ Status: foundation candidate.
 4. Secret scanning must pass before commit or push.
 5. Fast-forward safety must be verified before merge or push.
 6. Divergence, conflict, unexpected paths or secrets stop the operation.
+
+## Current Gap
+
+As of 2026-08-05, the policy is accepted in Brain v2 and the local Commit Link Gate exists, but the legacy `scripts/sync-github.sh` still performs broad staging with `git add -A`. Treat automatic sync as operationally useful but not fully reconciled with this policy until the script is changed under a separate approval.
 
 ## Allowed Staging
 

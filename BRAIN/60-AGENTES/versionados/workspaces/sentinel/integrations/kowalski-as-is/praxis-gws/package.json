@@ -1,0 +1,37 @@
+{
+  "name": "praxis-gws",
+  "version": "1.0.0",
+  "description": "Integração Google Workspace (Gmail, Calendar, Drive) para OpenClaw",
+  "main": "enviar-email.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "auth": "node generate-auth-url.js",
+    "token": "node trocar-token.js"
+  },
+  "keywords": [
+    "google",
+    "gmail",
+    "calendar",
+    "drive",
+    "oauth",
+    "openclaw",
+    "skill"
+  ],
+  "author": "Bikon Tecnologia",
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^131.0.0",
+    "google-auth-library": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "clawhub": {
+    "slug": "praxis-gws",
+    "displayName": "Praxis GWS",
+    "category": "integrations",
+    "tags": ["google", "gmail", "calendar", "drive", "oauth", "workspace"],
+    "readme": "SKILL.md",
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "schema_version": "OPENCLAW-DRE-V1-CORRECTED-FIXTURE-BLACK-BOX-ACCEPTANCE-EVIDENCE-v1",
+  "terminal_result": "FAIL_CLOSED_ROUTE_DEVIATION",
+  "recorded_at_utc": "2026-08-01T16:49:10Z",
+  "order": {
+    "order_id": "ORDER-SENTINEL-DRE-V1-CORRECTED-FIXTURE-BLACK-BOX-20260801T164034Z",
+    "order_path": "/data/.openclaw/workspace/media/outbound/OWNER_ORDER_SENTINEL_DRE_V1_CORRECTED_FIXTURE_BLACK_BOX_ACCEPTANCE_20260801T164034Z.md",
+    "order_sha256": "7fbf8ca6f3053030e4eda7415b22c235024a20d394485848c8712d7e155daa10",
+    "approval_id": "APR-DRE-V1-FIXTURE-CORRECTION-TELEGRAM-11007",
+    "execution_id": "EXE-SENTINEL-DRE-V1-CORRECTED-FIXTURE-BLACK-BOX-20260801T164034Z"
+  },
+  "controller_binding": {
+    "assert_result": "ALLOWED",
+    "status": "RUNNING",
+    "ack_sha256": "dc6103bde465047c06b038224a3f0a14c8a191b1925cd23533fae2ba068d86ae",
+    "checked_at_utc": "2026-08-01T16:44:52.973326Z",
+    "lease_expires_at_utc": "2026-08-01T17:14:11.687702Z"
+  },
+  "temporary_root": "/tmp/dre-v1-corrected-fixture-acceptance.Ai6yWP",
+  "corrected_fixture": {
+    "path": "/tmp/dre-v1-success-fixture-20260801T163247Z-11007/package",
+    "canonical_tree_sha256_frozen": "fbd79b783285c5b650095bc9ac4e2ff44bb96da124d0948b7ee63f21e05fc250",
+    "total_declared_bytes": 3376,
+    "manifest_size_bytes": 1898,
+    "manifest_sha256": "c4ef818ac9581a41a703867cf1442a1218e6d4e39121e27481d7fbc32f5c18c6",
+    "publication_namespace": "dre-v1-acceptance-20260801t163247z-11007",
+    "observed_file_hashes": {
+      "records.json": "9d2c616334a873a35a3ea53dd8d76b96a7d603b8dfa48f29e2584e670a005735",
+      "render.py": "558dcdbb5b9164e83de609d0d8100bc01be13943b4169327aa0bc67984b83a58",
+      "template.txt": "386acaf46fd2dbbef7df4d5f4eb552909fbad990962230168fa8b897ba75c0b6"
+    }
+  },
+  "launcher_identity": {
+    "installed_path": "/opt/openclaw/platform/dre/v1/bin/openclaw-dre",
+    "global_path": "/usr/local/bin/openclaw-dre",
+    "size_bytes": 3193,
+    "sha256": "f7a321c391e2c039845303dba280329b455e0315cd2e672f63595fe44b3b5605"
+  },
+  "completed_gates": [
+    {
+      "sequence": 1,
+      "gate": "VERSION_IDENTITY",
+      "result": "PASS",
+      "installed_exit_code": 0,
+      "global_exit_code": 0,
+      "typed_output_identical": true,
+      "output_sha256": "b2bcf5b0c9cb61f039c7aecad0fc815c3e45784523f8c3bdcf3ff1592a83e067"
+    },
+    {
+      "sequence": 2,
+      "gate": "INVALID_PACKAGE_PREFLIGHT",
+      "result": "PASS",
+      "installed_exit_code": 2,
+      "global_exit_code": 2,
+      "typed_blocker": "PACKAGE_OR_PREFLIGHT_IO_FAILURE",
+      "typed_output_identical": true,
+      "output_sha256": "1c4a636eb26333fed3c3523ea17bd5228a62879b11ff06e3c749345f924189ce"
+    },
+    {
+      "sequence": 3,
+      "gate": "CORRECTED_FIXTURE_PREFLIGHT",
+      "result": "PASS",
+      "installed_exit_code": 0,
+      "global_exit_code": 0,
+      "typed_output_identical": true,
+      "output_sha256": "635fd4bfba31a73b668b5b79549acf2de954f8574c582d1023e487225f041658"
+    },
+    {
+      "sequence": 4,
+      "gate": "SYNTHETIC_SUCCESS_RUN",
+      "result": "PASS",
+      "exit_code": 0,
+      "run_output_sha256": "3cd2824bd6391ed22729c5b96e5244a74d5e477d33e2c8684cbc171b7b99b021",
+      "attestation_core_sha256": "8bad2f75e853d0bb065dc9128e72ac665c92bbb05a2eef66ff61d4b1005e83fe",
+      "published_output_tree_sha256": "0740fb652b0bec6da706c588f1a972044094a6b5606d5c3b8030837904edab51"
+    },
+    {
+      "sequence": "5-9",
+      "gate": "DETERMINISM_PUBLICATION_JOURNAL_STATUS",
+      "result": "PASS",
+      "artifact_count": 2,
+      "all_four_inventories_identical": true,
+      "preview_1_tree_sha256": "0740fb652b0bec6da706c588f1a972044094a6b5606d5c3b8030837904edab51",
+      "preview_2_tree_sha256": "0740fb652b0bec6da706c588f1a972044094a6b5606d5c3b8030837904edab51",
+      "candidate_tree_sha256": "0740fb652b0bec6da706c588f1a972044094a6b5606d5c3b8030837904edab51",
+      "published_tree_sha256": "0740fb652b0bec6da706c588f1a972044094a6b5606d5c3b8030837904edab51",
+      "atomic_current_symlink": "releases/GEN-DRE-SYNTHETIC-20260801T163247Z-11007",
+      "journal_event_count": 10,
+      "journal_hash_chain_valid": true,
+      "journal_head_sha256": "606a0fd1fc62baf8afa7ddad41ff9fb37cff37179ead82c325e0304dd48bf61b",
+      "status_exit_code": 0,
+      "status_state": "COMPLETED",
+      "validation_output_sha256": "2c091593825d7b48e541f47cf40c478c682894ccf2a0c4471dce3a265e8a20f3"
+    }
+  ],
+  "artifact_inventory": [
+    {
+      "relative_path": "record-a.json",
+      "byte_length": 57,
+      "file_mode": 420,
+      "sha256": "d19ba33f4e1ab1d1e7201ddc1a25c37fa2f43330715ff50224ccb9620bfbf7f0"
+    },
+    {
+      "relative_path": "record-b.json",
+      "byte_length": 56,
+      "file_mode": 420,
+      "sha256": "8f4c5f5385ece0210a3038878d23b17bf32c2b2ec9f117f8fb08d36acc296bf6"
+    }
+  ],
+  "first_route_deviation": {
+    "classification": "GATE_SEQUENCE_REORDERED",
+    "detail": "Invalid-attestation verification and nonexistent-transaction status were executed after gate 9 and before required cross-process resume and cross-turn-boundary gates 10 and 11.",
+    "fallback_attempted": false
+  },
+  "secondary_terminal_observation": {
+    "gate": "ROLLBACK_BEHAVIOR",
+    "route": "isolated prior release and current symlink with publication namespace made non-writable",
+    "expected_public_failure_exit_code": 4,
+    "observed_exit_code": 7,
+    "failure_classification": "INTERNAL_FAIL_CLOSED_ERROR",
+    "message": "Permission denied while creating the isolated publication staging directory",
+    "output_sha256": "a721c778af39f6062893d92cbbf95b670dbbbf4eb232a865b46ee522594abcb2",
+    "rollback_pointer_preserved": true,
+    "rollback_prior_artifact_hashes_preserved": true,
+    "visible_artifact_count_after_failure": 2,
+    "retry_or_alternate_route_attempted": false
+  },
+  "out_of_sequence_results_preserved": {
+    "valid_attestation_verify_exit_code": 0,
+    "valid_attestation_output_sha256": "b377815a8dd1eee4db8d3c8e14aca2f242220c65f8cc75e05bfb3b7fe8758d6",
+    "invalid_attestation_verify_exit_code": 6,
+    "invalid_attestation_classification": "ATTESTATION_INVALID",
+    "invalid_attestation_output_sha256": "7bbc7b99ccacbc88c2436ed9f6e9d0b2cb196cfaa46d4f36d4ce0ee271aef915",
+    "nonexistent_transaction_exit_code": 5,
+    "nonexistent_transaction_classification": "TRANSACTION_NOT_FOUND",
+    "nonexistent_transaction_output_sha256": "1fd45ffda6c034332f727c79d86eae70bfa269a733c6a1303e0001412b68ee1e"
+  },
+  "internal_exit_code_7_validation": "UNEXPECTED_PUBLIC_OBSERVATION_ABORTED; ORDER_REQUIRED_SUITE_AND_INDEPENDENT_REVIEW_ONLY",
+  "impact": "The primary success transaction and deterministic publication passed, but cross-process resume and cross-turn-boundary independence were not executed. The acceptance cannot be terminally approved.",
+  "risk": "Continuing or trying another rollback trigger would violate stop-on-first-deviation and no-fallback requirements.",
+  "recommendation": "Close this order as FAIL_CLOSED_ROUTE_DEVIATION. A new order must freeze the exact gate sequence and a validated public rollback fixture that returns the documented publication code without invoking exit code 7.",
+  "execution_scope": {
+    "cross_process_resume_executed": false,
+    "cross_turn_boundary_executed": false,
+    "network_access_performed": false,
+    "gateway_dependency_used": false,
+    "telegram_dependency_used": false,
+    "agent_or_session_memory_dependency_used": false,
+    "service_restart_performed": false,
+    "real_provimento_213_transaction_performed": false,
+    "repository_modified": false,
+    "installed_tree_modified": false,
+    "corrected_fixture_modified": false,
+    "dre_implementation_source_inspected": false,
+    "python_bytecode_created": 0
+  },
+  "preserved_artifacts": {
+    "success_state_root": "/tmp/dre-v1-corrected-fixture-acceptance.Ai6yWP/state-success",
+    "rollback_state_root": "/tmp/dre-v1-corrected-fixture-acceptance.Ai6yWP/state-rollback",
+    "run_success": "/tmp/dre-v1-corrected-fixture-acceptance.Ai6yWP/run-success.json",
+    "success_validation": "/tmp/dre-v1-corrected-fixture-acceptance.Ai6yWP/success-validation.json",
+    "rollback_run": "/tmp/dre-v1-corrected-fixture-acceptance.Ai6yWP/rollback-run.json"
+  },
+  "controller_closed_by_sentinel": false
+}

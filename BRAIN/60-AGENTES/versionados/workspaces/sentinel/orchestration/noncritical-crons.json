@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "classification": "pause_during_critical_sentinel_execution",
+  "jobs": [
+    {
+      "id": "c55087ea-9d91-4854-ae5b-bb5d65ee9767",
+      "name": "Robotnik, sugestões semanais Instagram Bikon domingo 15h"
+    },
+    {
+      "id": "e747872b-a628-4ec3-a6b3-ca901797f13a",
+      "name": "Puppet Master pergunta tema Instagram Bikon sexta 16h"
+    },
+    {
+      "id": "c8410fc9-1d2f-4ce0-8847-70e69db6f405",
+      "name": "Brain, consolidação mensal"
+    },
+    {
+      "id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+      "name": "Brain, consolidação diária silenciosa"
+    },
+    {
+      "id": "41db061a-0c72-4c37-b80f-83fceecc3485",
+      "name": "Brain, sync GitHub 4x ao dia"
+    },
+    {
+      "id": "1a1ed29a-fd45-4c5f-93f6-c3b556a2743c",
+      "name": "Brain, consolidação semanal"
+    },
+    {
+      "id": "b67cdcfb-7607-4b5a-b6b7-9a9b0cebae68",
+      "name": "Esteira fim de semana, fechamento executivo domingo 18h"
+    },
+    {
+      "id": "f646a2aa-4aa4-4ae9-9ff2-35a53ec43ca5",
+      "name": "Esteira fim de semana, torre ampliada sabado 09h"
+    }
+  ]
+}

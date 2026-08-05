@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-08-01T18:12:00Z",
+  "authorization_subject": "RECONCILE_AND_ELIMINATE_DUPLICATE_SENTINEL_START_BEFORE_DRE_FINAL_BLACK_BOX_RETRY",
+  "authorized_category": "CONTROLLED_ORCHESTRATION_ROOT_CAUSE_RECONCILIATION_AND_NOOP_VALIDATION",
+  "reconciliation_result": "FAIL_CLOSED",
+  "failed_strict_order": {
+    "order_id": "ORDER-SENTINEL-DRE-V1-STRICT-13-GATE-BLACK-BOX-20260801T171037Z",
+    "approval_id": "APR-DRE-V1-STRICT-13-GATE-TELEGRAM-11014",
+    "execution_id": "EXE-SENTINEL-DRE-V1-STRICT-13-GATE-BLACK-BOX-20260801T171037Z",
+    "order_sha256": "9a1448c913005ae9b21579867f8c8fd7f7cfc1a511cef4504531aa98bd22f308",
+    "technical_start_at_utc": "2026-08-01T17:14:21.403412Z",
+    "technical_start_event_sha256": "54a622fcecd0044e61e526c22ef5cfb794f91ef670eb091d0a76c8080e006711",
+    "stop_requested_at_utc": "2026-08-01T17:14:57.399001Z",
+    "stop_event_sha256": "bba9f589e3c2b7952d332e2b1faad57098022b782d95bd9ef137ba548964eb5",
+    "closed_at_utc": "2026-08-01T17:15:28.986171Z",
+    "terminal_result": "STOPPED_BY_PUPPET_MASTER",
+    "executed_dre_gate_count": 0
+  },
+  "root_cause": {
+    "classification": "SESSION_RESUME_REPLAY",
+    "premature_instruction_sha256": "NOT_RESOLVED",
+    "premature_instruction_finding": "NO_EXECUTION_INSTRUCTION_PRECEDED_TECHNICAL_START",
+    "finding": "A valid technical START and release were issued by one PuppetMaster context. A concurrent resumed PuppetMaster context observed RUNNING without possessing the sibling turn history and issued the false STOP. The same concurrency pattern later emitted a second NOOP release from a different coordinator turn.",
+    "root_cause_evidence_result": "PASS_COMPLETE",
+    "corrective_action": "NONE",
+    "corrective_scope_validation": "NOT_REQUIRED",
+    "reason_no_queue_mutation": "No exact stale queue item, orphan claim, or replay marker remained. Both delivery queues were empty. A durable correction requires coordinator single-owner serialization and idempotent release handling, which was outside this authorization.",
+    "sources": [
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/08/01/rollout-2026-08-01T12-37-17-019fbd54-2a8c-7790-8472-fd55476fb15b.jsonl",
+        "evidence": "valid strict technical START and release; later duplicate NOOP release call_YEF7aNA7UT7lITf0pNUoYpzK from turn 019fbe80-c5d3-7970-8eb9-6cd259a8d801"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/08/01/rollout-2026-08-01T17-08-39-019fbe4c-9cbd-7423-9eb3-e3916d7f21dd.jsonl",
+        "evidence": "concurrent strict-order context inferred unauthorized RUNNING and emitted STOP"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/08/01/rollout-2026-08-01T17-57-12-019fbe79-0dd7-7091-ab20-21e7f2773a3f.jsonl",
+        "evidence": "authorized NOOP technical START and first bound release call_Vh4O7CyXVF5MlOBmmNg64bWi from turn 019fbe79-16f1-7cd0-a9bf-c06ebcb38e8b"
+      }
+    ]
+  },
+  "noop_probe": {
+    "order_id": "ORDER-SENTINEL-ORCHESTRATION-NOOP-20260801T180500Z",
+    "approval_id": "APR-SENTINEL-ORCHESTRATION-NOOP-TELEGRAM-11030",
+    "execution_id": "EXE-SENTINEL-ORCHESTRATION-NOOP-20260801T180500Z",
+    "correlation_id": "CORR-SENTINEL-ORCHESTRATION-NOOP-20260801T180500Z",
+    "order_sha256": "20eb708505bed267c80c098fe1e217db2da58bbfa1ce49b1a8f4c103c7752894",
+    "ack_result": "PASS",
+    "ack_sha256": "5f1282d3be2538abd94e73832e23a74182af1fae3fd540e2b84e974d93fb96c5",
+    "technical_start_at_utc": "2026-08-01T18:06:05.677903Z",
+    "technical_start_event_sha256": "9ff048622f801b1358748c8a825a976e6cd5a808da8118bdb13820c1b24ad1eb",
+    "first_release_dispatched_at_utc": "2026-08-01T18:06:14.024Z",
+    "first_release_delivered_at_utc": "2026-08-01T18:06:22.257Z",
+    "first_release_message_id": "1b8d6cc2-363c-474b-9433-eb92b2cce26d",
+    "first_release_source_channel": "telegram",
+    "sentinel_assert_allowed_at_utc": "2026-08-01T18:06:39.708904Z",
+    "terminal_token_sent_at_utc": "2026-08-01T18:07:23.752Z",
+    "duplicate_release_dispatched_at_utc": "2026-08-01T18:06:45.257Z",
+    "duplicate_release_delivered_at_utc": "2026-08-01T18:07:27.455Z",
+    "duplicate_release_message_id": "fdce6fd5-dec7-44c0-a2fe-81b8f9c034ad",
+    "duplicate_release_source_channel": "webchat",
+    "duplicate_release_run_id": "66547e32-54bc-4c1d-97bf-49d21fdbd26a",
+    "duplicate_release_sha256": "344780a59738489e1448326034d7c499aa61075bbe7f0eb185b3d8962eb76874",
+    "duplicate_release_handling": "REFUSED_ALREADY_CONSUMED_NO_EXECUTION",
+    "execution_payload_before_START": 0,
+    "technical_START_count": 1,
+    "execution_release_count": 2,
+    "Sentinel_execution_count": 1,
+    "duplicate_execution_count": 0,
+    "late_execution_after_close_count": 0,
+    "NO_ACTIVE_ORDER_execution_attempt_count": 0,
+    "unauthorized_message_count": 1,
+    "pending_delivery_count_after_close": 0,
+    "stale_delivery_lease_count_after_close": 0,
+    "controller_state_after_close": "IDLE",
+    "probe_result": "FAIL_CLOSED_SENTINEL_SINGLE_START_PATH_NOT_PROVEN",
+    "controller_close_discrepancy": "Controller was closed with SENTINEL_ORCHESTRATION_NOOP_EXECUTED_ONCE at 2026-08-01T18:08:19.119198Z before forensic review identified the second release. Append-only history is preserved; this reconciliation evidence supersedes the coordinator interpretation but does not rewrite the controller ledger."
+  },
+  "final_side_effect_state": {
+    "repository_head": "7b9a9c7516afdb6d141618c871fbe17e02889887",
+    "repository_worktree_status": "CLEAN",
+    "stage_status": "EMPTY",
+    "git_fsck_result": "PASS",
+    "DRE_installed": "NO",
+    "global_launcher_state": "ABSENT",
+    "repository_files_modified": 0,
+    "new_repository_commit_created": "NO",
+    "gateway_restarted": "NO",
+    "runtime_restarted": "NO",
+    "agent_restarted": "NO",
+    "cron_definitions_modified": "NO",
+    "Provimento_213_artifacts_modified": 0,
+    "external_systems_modified": 0,
+    "controller_state": "IDLE",
+    "pending_delivery_queue_files": 0
+  },
+  "blockers": "DUPLICATE_RELEASE_FROM_CONCURRENT_COORDINATOR_SESSION_REPLAY_REQUIRES_CODE_OR_SHARED_RUNTIME_SINGLE_OWNER_AND_IDEMPOTENCY_CORRECTION",
+  "exact_next_authorization_required": "AUTHORIZE_OPENCLAW_COORDINATOR_SINGLE_OWNER_SERIALIZATION_AND_IDEMPOTENT_EXECUTION_RELEASE_CORRECTIVE_CHANGE",
+  "continuation_authorized": "NO"
+}

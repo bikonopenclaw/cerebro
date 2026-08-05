@@ -1,6 +1,6 @@
 # Brain v2 Governance
 
-Status: foundation candidate in isolated worktree.
+Status: accepted on main.
 
 Brain v2 separates canonical knowledge from evidence, events, transient state, decisions, proposals and operational snapshots. The foundation blocks new knowledge debt before legacy migration starts.
 
@@ -23,8 +23,18 @@ Brain v2 separates canonical knowledge from evidence, events, transient state, d
 
 This foundation adds governance rules, schemas, relationship types, MOC reachability policy, proposal handling, metric exclusions, health definitions and fail-closed sync rules. It does not perform full legacy migration.
 
+Cutover status as of 2026-08-04:
+
+- Foundation commit: `ef724a98800ab9a0d408e34596b4dfbb51234f55`.
+- Phase 11B commit: `153129b52ae093c42bb106006de18b78a7ab7dbe`.
+- Current accepted baseline: 0 broken internal links, 0 uncategorized Markdown, 0 duplicate IDs, 0 duplicate aliases.
+
 ## Phase 11B Scope
 
 Phase 11B starts the missing reintegration layer after the foundation cutover. It adds real entry points, resolves obvious legacy wikilinks to canonical paths and introduces a local Commit Link Gate so future commits can be checked against accepted knowledge debt instead of silently adding new orphan notes.
 
 The first batch links legacy diary notes through `BRAIN/01-DIARIO/README.md` without moving historical files.
+
+## Active Constraint
+
+The local Commit Link Gate exists as a validation tool and baseline. Automatic Git sync still needs a separate reconciliation step before it can be considered fully fail-closed for staging and commit.

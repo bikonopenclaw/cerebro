@@ -1,71 +1,79 @@
 ---
 name: "codex-limite-status"
-description: "Consulta limites Codex por comando curto"
+description: "Consulta consumo e limites do Codex pelos logs locais."
 ---
 
 # Comando de limite Codex
 
 ## Objetivo
 
-Responder corretamente quando Hebert pedir consumo/limites do Codex nos logs locais.
+Responder corretamente quando Hebert pedir consumo ou limites do Codex a partir dos logs locais do Codex CLI.
 
-## Gatilho principal
+## Gatilhos
 
-Quando Hebert mandar:
+- `limite codex`
+- `uso codex` como alias histórico. Interpretar como consulta de limite, não como pergunta sobre o motor em uso.
 
-`limite codex`
+## Fonte autorizada
 
-Puppet Master deve consultar o consumo/limites do Codex nos logs locais e responder em formato executivo.
-
-## Alias antigo
-
-Manter como alias válido:
-
-`uso codex`
-
-Esse alias existe por histórico, mas pode ser ambíguo. Se Hebert usar `uso codex`, tratar como pedido de limite Codex, não como pergunta sobre qual motor está sendo usado.
-
-## Fonte
-
-Ler o evento mais recente `token_count` nos logs `codex-home/sessions` dos agentes, principalmente:
+Leitura local, sem chamada de rede e sem credencial adicional:
 
 `/data/.openclaw/agents/main/codex-home/sessions`
 
-Quando relevante, considerar também sessões dos agentes especialistas.
+Quando relevante, consultar também o mesmo diretório de sessões dos agentes especialistas.
 
-## Campos relevantes
+Os arquivos são JSONL no padrão:
 
-- `rate_limits.primary.used_percent`: janela de 5h.
-- `rate_limits.primary.resets_at`: reset da janela de 5h.
-- `rate_limits.secondary.used_percent`: janela semanal.
-- `rate_limits.secondary.resets_at`: reset semanal.
-- `total_token_usage`: contexto de tokens da sessão, quando existir.
+`<CODEX_HOME>/sessions/<AAAA>/<MM>/<DD>/rollout-<timestamp>-<uuid>.jsonl`
 
-## Como responder
+## Regra canônica de identificação das janelas
 
-Responder em português BR, curto e direto.
+Nunca inferir a janela pela posição `primary` ou `secondary`. Essas posições não são fixas.
 
-Usar horário de Brasília.
+Identificar exclusivamente pelo campo `window_minutes`:
 
-Formato preferido:
+- `300`: janela móvel de 5 horas.
+- `10080`: janela de 7 dias.
+
+Campos úteis em cada bloco:
+
+- `used_percent`
+- `window_minutes`
+- `resets_at`
+
+Registrar também o `timestamp` do evento que originou o número.
+
+## Procedimento
+
+1. Localizar os rollouts com atividade mais recente.
+2. Ler o trecho final de cada arquivo, começando pelo mais recente.
+3. Percorrer os eventos de trás para frente.
+4. Para cada bloco em `rate_limits.primary` e `rate_limits.secondary`, classificar pela duração em `window_minutes`.
+5. Guardar a observação mais recente de cada janela.
+6. Parar quando encontrar as duas janelas ou quando acabar o recorte pesquisado.
+7. Se uma janela não aparecer, reportar `desconhecida` ou `não encontrada no recorte`. Nunca assumir 0%.
+8. Converter `resets_at` e o timestamp do evento para horário de Brasília.
+9. Não expor conteúdo sensível dos logs.
+
+Se uma janela estiver ausente, ampliar primeiro o número de arquivos e o trecho final lido. Não fazer chamada de rede como fallback.
+
+## Formato de resposta
+
+Responder em português BR, curto e direto:
 
 ```text
 5h [██████░░░░░░░░░░░░] 27% usado, 73% livre. Reset: 14:30 BRT.
 Semana [███░░░░░░░░░░░░░░░] 15% usado, 85% livre. Reset: sexta 09:00 BRT.
-Última rodada registrada: HH:MM BRT.
+Última leitura registrada: HH:MM BRT.
 ```
+
+Se os timestamps das janelas forem diferentes, informar a idade de cada leitura ou indicar qual delas está desatualizada.
 
 ## Honestidade obrigatória
 
-Explicar quando necessário:
-
-- isso mede percentual de limite/rate limit do Codex registrado nos logs locais;
-- não é saldo financeiro oficial da conta OpenAI;
-- se não houver evento recente, informar que o dado local está ausente ou velho, sem inventar número.
-
-## Restrições
-
-- Não responder que Hebert está usando Codex como motor quando o comando for `limite codex` ou `uso codex`.
-- Não inventar consumo.
-- Não converter UTC mentalmente para Hebert; sempre mostrar horário de Brasília.
-- Não expor conteúdo sensível de logs.
+- O dado é o último rate limit gravado localmente pelo Codex CLI durante uso normal.
+- Não é uma consulta ativa ao provedor.
+- Não mede saldo financeiro, custo ou teto absoluto em tokens.
+- `total_token_usage`, quando existir, é contexto da sessão e não saldo restante.
+- Ausência de dado significa desconhecido, nunca 0%.
+- O formato do log é interno e pode mudar. Se o padrão deixar de aparecer, reportar possível quebra do coletor.

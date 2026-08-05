@@ -1,0 +1,84 @@
+{
+  "schema_version": "OPENCLAW-DRE-V1-BLACK-BOX-ACCEPTANCE-EVIDENCE-v1",
+  "terminal_result": "FAIL_CLOSED_EXIT_CODE_CONTRACT",
+  "recorded_at_utc": "2026-08-01T13:08:21Z",
+  "order": {
+    "order_id": "ORDER-SENTINEL-DRE-V1-BLACK-BOX-20260801T125424Z",
+    "order_path": "/data/.openclaw/workspace/media/outbound/OWNER_ORDER_SENTINEL_DRE_V1_BLACK_BOX_ACCEPTANCE_20260801T125424Z.md",
+    "order_sha256": "914b5916f14dd6e418642060dad1751f32fb6216c042a842ad3f20de61d2c3e5",
+    "approval_id": "APR-DRE-V1-CORRECTIVE-TELEGRAM-10946",
+    "execution_id": "EXE-SENTINEL-DRE-V1-BLACK-BOX-20260801T125424Z"
+  },
+  "controller_binding": {
+    "assert_result": "ALLOWED",
+    "status": "RUNNING",
+    "ack_sha256": "338336f653d6f6c5126b25cbec0888eef818f91960302d215181a5c2c12b5697",
+    "checked_at_utc": "2026-08-01T13:02:52.927583Z",
+    "lease_expires_at_utc": "2026-08-01T13:32:10.248937Z"
+  },
+  "temporary_root": "/tmp/dre-blackbox-20260801.IEARmc",
+  "launcher_inventory": [
+    {
+      "path": "/opt/openclaw/platform/dre/v1/bin/openclaw-dre",
+      "size_bytes": 3193,
+      "mode": "0755",
+      "sha256": "f7a321c391e2c039845303dba280329b455e0315cd2e672f63595fe44b3b5605"
+    },
+    {
+      "path": "/usr/local/bin/openclaw-dre",
+      "size_bytes": 3193,
+      "mode": "0755",
+      "sha256": "f7a321c391e2c039845303dba280329b455e0315cd2e672f63595fe44b3b5605"
+    }
+  ],
+  "availability_checks": {
+    "global_command_path": "/usr/local/bin/openclaw-dre",
+    "installed_tree_cli_available": true,
+    "global_cli_available": true,
+    "launcher_byte_identity": true,
+    "version_json_identity": true,
+    "version_json": {
+      "result": "SUCCESS",
+      "runtime_identity": {
+        "path": "/opt/openclaw/runtimes/cpython-3.14.6/bin/python3",
+        "sha256": "f1dd91e2655966ce606be692f02286a333693df6126313484ff21e7666f25993",
+        "size_bytes": 35169280,
+        "version": "Python 3.14.6"
+      },
+      "version": "1.0.0"
+    }
+  },
+  "first_failed_gate": {
+    "name": "PACKAGE_PREFLIGHT_EXIT_CODE_CONTRACT",
+    "command": "OPENCLAW_DRE_STATE_ROOT=/tmp/dre-blackbox-20260801.IEARmc/state /usr/local/bin/openclaw-dre preflight --package /tmp/dre-blackbox-20260801.IEARmc/does-not-exist.json --json",
+    "expected_exit_code": 2,
+    "observed_exit_code": 7,
+    "contract_basis": "DRE_CONTRACT_v1 states exit code 2 for package/preflight failures and exit code 7 for internal fail-closed failures.",
+    "stdout": "{\"failure_classification\":\"INTERNAL_FAIL_CLOSED_ERROR\",\"message\":\"[Errno 2] No such file or directory: '/tmp/dre-blackbox-20260801.IEARmc/does-not-exist.json'\",\"result\":\"FAIL_CLOSED\"}\n",
+    "stdout_sha256": "b26ee6c460ff0ce777ca5bdaf49d6b55984996d0b68f8ad6451f49d248971781",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "execution_scope": {
+    "acceptance_stopped_on_first_failed_gate": true,
+    "preflight_success_executed": false,
+    "render_transaction_started": false,
+    "run_executed": false,
+    "resume_executed": false,
+    "status_executed": false,
+    "verify_executed": false,
+    "publication_executed": false,
+    "rollback_executed": false,
+    "real_provimento_213_transaction_performed": false,
+    "network_access_performed": false,
+    "repository_modified": false,
+    "installed_tree_modified": false,
+    "implementation_source_inspected": false,
+    "python_bytecode_created": 0
+  },
+  "preserved_artifacts": {
+    "negative_preflight_stdout": "/tmp/dre-blackbox-20260801.IEARmc/negative-preflight.stdout",
+    "negative_preflight_stderr": "/tmp/dre-blackbox-20260801.IEARmc/negative-preflight.stderr"
+  },
+  "controller_closed_by_sentinel": false
+}

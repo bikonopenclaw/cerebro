@@ -1,6 +1,6 @@
 # HEALTH.md
 
-Health Score: 94/100
+Health Score: 96/100
 
 ## Status atual
 
@@ -8,7 +8,7 @@ Health Score: 94/100
 - Arquivos obrigatórios criados.
 - Sem registros duplicados identificados.
 - Sem projetos abandonados identificados.
-- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15, 2026-07-17, 2026-07-20, 2026-07-22, 2026-07-23, 2026-07-28, 2026-07-29, 2026-07-30, 2026-07-31, 2026-08-01 e 2026-08-03.
+- Rotina de consolidação diária registrada e executada em 2026-06-13, 2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20, 2026-06-22, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-27, 2026-06-30, 2026-07-01, 2026-07-02, 2026-07-03, 2026-07-06, 2026-07-07, 2026-07-08, 2026-07-09, 2026-07-10, 2026-07-11, 2026-07-14, 2026-07-15, 2026-07-17, 2026-07-20, 2026-07-22, 2026-07-23, 2026-07-28, 2026-07-29, 2026-07-30, 2026-07-31, 2026-08-01, 2026-08-03 e 2026-08-05.
 - Consolidações semanais executadas em 2026-06-14 (`01-DIARIO/Semanal/2026-W24.md`), 2026-06-21 (`01-DIARIO/Semanal/2026-W25.md`), 2026-06-28 (`01-DIARIO/Semanal/2026-W26.md`), 2026-07-12 (`01-DIARIO/Semanal/2026-W28.md`), revisão parcial até 2026-07-17 (`01-DIARIO/Semanal/2026-W29.md`) e 2026-08-02 (`01-DIARIO/Semanal/2026-W31.md`).
 - Consolidações mensais executadas em 2026-07-01 (`01-DIARIO/Mensal/2026-06.md`) e 2026-08-01 (`01-DIARIO/Mensal/2026-07.md`).
 - Aprendizados elevados para notas permanentes conectadas em `40-CONHECIMENTO` e `50-PROJETOS`, incluindo escopo de canais, segredos fora do Brain/Git, dados mestres completos em automações fiscais, separação teste/rascunho/produção, governança de identidade, retorno bancário versus remessa, validação visual de relatórios externos, artefatos gerados fora do Brain/Git, ausência de evidência em monitoramento, separação entre consulta gerencial e permissão operacional, homologação bancária sem produção automática, validação do runtime pós-migração, menor privilégio em monitoramento, autorização atômica, contrato de runtime reproduzível, proposta sem autoridade operacional, capacidade técnica versus evidência de ambiente e validação do caminho final instalado.
@@ -16,6 +16,7 @@ Health Score: 94/100
 - Roteador de Execução v1 registrado em planejamento com Etapa 0 concluída, Gate D0 determinístico, 40 tarefas analisadas, Spark ainda não validado e Etapas 1 a 4 não autorizadas.
 - Controlador de Execução v2 está com Etapa 0.6 bloqueada: preflight local preparado, Fase 1 `14/14` testes, Fase 1B `24/24` testes, zero geração e transporte C1 bloqueado por sandbox Linux local não qualificado.
 - OpenClaw - Provimento 213 registrado como projeto governado por checkpoints: EP-01 documental pronto, EP-02 Inventory Freeze corrigido, runtime CPython `3.14.6`, baseline técnico e publicação canônica homologados, DRE final adotado para registros finais, handoff operacional preparado, Herald/dashboard CNS `024067` em produção focada via tailnet com exportação PDF autenticada, reimportação legada reconciliada e ciclo operacional ainda dependente de gates atomicos para evidência, respondente, dashboard, provider e contato externo.
+- Brain v2 foundation aceita e 11B publicada em `origin/main` no commit `153129b52ae093c42bb106006de18b78a7ab7dbe`: MOC cronológico criado, wikilinks óbvios corrigidos e Commit Link Gate local com baseline `0` links internos quebrados, `0` markdown uncategorized, `0` duplicate IDs, `0` duplicate aliases e `0` candidatos a segredo. A consolidação diária de 2026-08-05 validou novamente o gate após a nova daily note e snapshots: `328` Markdown, `0` links quebrados e `0` uncategorized.
 - OpenClaw DRE v1 foi instalado por fluxo v4 e usado em execução/adoção canonica do par final Provimento 213; Harness de aceitação final e novas execuções continuam bloqueados sem autorização específica.
 - Faturamento Bikon agosto/2026 remessa 093 consolidado: `27` NFS-e autorizadas, `27` boletos locais, `18` e-mails enviados com copia para `financeiro@bikon.com.br`, total R$ 86.357,06 e remessa CNAB400 local gerada sem transmissão bancária consolidada.
 - FBCP Fase 0 read-only concluída com freeze de baseline fiscal/financeiro e riscos P0, sem chamadas externas ou mutações operacionais.
@@ -64,6 +65,7 @@ Health Score: 94/100
 - OpenClaw - Provimento 213: antes de escolher provider, obter ou autorizar evidência read-only de conta/tenant/subscription/projeto AWS, Azure ou Google Cloud existente e aprovado; nenhum provider deve ser selecionado apenas por capacidade técnica oficial.
 - Provimento 213: manter provider específico bloqueado até haver aplicabilidade canonica, não apenas disponibilidade; qualquer contato externo, validação de evidência, mutação de dashboard/entrevista ou novo DRE/preflight/run exige autorização atomica.
 - FBCP: aplicar primeiro hardening de competência explícita e dinheiro Decimal/centavos somente com autorização `AUTHORIZE_FBCP_P0_COMPETENCE_AND_MONEY_HARDENING_ONLY`.
+- Brain v2: reconciliar `scripts/sync-github.sh` com a política fail-closed antes de considerar o sync automático plenamente protegido; o script legado ainda usa staging amplo (`git add -A`).
 
 ## Filosofia cognitiva
 
@@ -76,6 +78,7 @@ Health Score: 94/100
 - Consolidação parcial 2026-W29 concluída sem arquivamento; registros recentes permanecem conectados e com valor operacional ou de auditoria.
 - Consolidação mensal de julho/2026 concluída sem arquivamento; registros recentes permanecem conectados por diário, índice, projeto, agente, automação ou valor de auditoria.
 - Consolidação semanal 2026-W31 concluída sem arquivamento; registros recentes permanecem conectados por diário, projeto, agente, automação, governança ou valor de auditoria.
+- Brain v2 11B reduziu a dívida mensurável do gate local para zero links quebrados e zero notas uncategorized; o score sobe, mas ainda não chega ao máximo por cobertura diária/semanal parcial, memória semântica historicamente instável e gap do sync GitHub legado.
 
 
 ## Métricas — 2026-07-01

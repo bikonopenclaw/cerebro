@@ -1,0 +1,108 @@
+{
+  "schema_version": "OPENCLAW-DRE-V1-CORRECTED-BLACK-BOX-ACCEPTANCE-EVIDENCE-v1",
+  "terminal_result": "FAIL_CLOSED_UNSAFE_PATH",
+  "recorded_at_utc": "2026-08-01T16:00:11Z",
+  "order": {
+    "order_id": "ORDER-SENTINEL-DRE-V1-CORRECTED-BLACK-BOX-20260801T155058Z",
+    "order_path": "/data/.openclaw/workspace/media/outbound/OWNER_ORDER_SENTINEL_DRE_V1_CORRECTED_BLACK_BOX_ACCEPTANCE_20260801T155058Z.md",
+    "order_sha256": "7571de3d6da3994d80c504d17efc03f8369e921eac0ffb15604145c0025aa7b6",
+    "approval_id": "APR-DRE-V1-REINSTALL-TELEGRAM-10993",
+    "execution_id": "EXE-SENTINEL-DRE-V1-CORRECTED-BLACK-BOX-20260801T155058Z"
+  },
+  "controller_binding": {
+    "assert_result": "ALLOWED",
+    "status": "RUNNING",
+    "ack_sha256": "3bfc0db1d50e10ccf2bd253bd26eeba3382efcc8cd35d8e90124a77fc29a8d25",
+    "checked_at_utc": "2026-08-01T15:55:34.543416Z",
+    "lease_expires_at_utc": "2026-08-01T16:24:39.367401Z"
+  },
+  "temporary_root": "/tmp/dre-corrected-blackbox-20260801.E3ZHSP",
+  "launcher_inventory": [
+    {
+      "path": "/opt/openclaw/platform/dre/v1/bin/openclaw-dre",
+      "size_bytes": 3193,
+      "mode": "0755",
+      "sha256": "f7a321c391e2c039845303dba280329b455e0315cd2e672f63595fe44b3b5605"
+    },
+    {
+      "path": "/usr/local/bin/openclaw-dre",
+      "size_bytes": 3193,
+      "mode": "0755",
+      "sha256": "f7a321c391e2c039845303dba280329b455e0315cd2e672f63595fe44b3b5605"
+    }
+  ],
+  "completed_gates": [
+    {
+      "sequence": 1,
+      "gate": "INSTALLED_AND_GLOBAL_VERSION_JSON_IDENTITY",
+      "result": "PASS",
+      "installed_exit_code": 0,
+      "global_exit_code": 0,
+      "byte_identical": true,
+      "output_sha256": "b2bcf5b0c9cb61f039c7aecad0fc815c3e45784523f8c3bdcf3ff1592a83e067",
+      "version": "1.0.0",
+      "runtime_sha256": "f1dd91e2655966ce606be692f02286a333693df6126313484ff21e7666f25993"
+    },
+    {
+      "sequence": 2,
+      "gate": "INSTALLED_AND_GLOBAL_INVALID_PACKAGE_PREFLIGHT",
+      "result": "PASS",
+      "installed_exit_code": 2,
+      "global_exit_code": 2,
+      "typed_blocker": "TREE_HASH_MISMATCH",
+      "message": "canonical_source_tree_sha256",
+      "byte_identical": true,
+      "output_sha256": "eac6763bc5c0c9c1a70b6bd5ca634b546149e26f998d98133c0f037c20c3fe6c"
+    }
+  ],
+  "internal_fail_closed_exit_code_validation": "DEFERRED_TO_EXISTING_112_TEST_SUITE_AND_KOWALSKI_SOURCE_REVIEW",
+  "first_failed_gate": {
+    "sequence": 3,
+    "name": "SUCCESSFUL_DETERMINISTIC_SYNTHETIC_FIXTURE_PREFLIGHT",
+    "command": "OPENCLAW_DRE_STATE_ROOT=/tmp/dre-corrected-blackbox-20260801.E3ZHSP/state-rehearsal /usr/local/bin/openclaw-dre preflight --package /tmp/dre-corrected-blackbox-20260801.E3ZHSP/package/manifest.json --json",
+    "expected_exit_code": 0,
+    "observed_exit_code": 2,
+    "observed_failure_classification": "UNSAFE_PATH",
+    "observed_message": "invalid relative path",
+    "stdout_sha256": "8001d95e17ef29e8f9ddbf33c30c3d46126d8c05b689d2b55e6644841336681e",
+    "stderr_bytes": 0
+  },
+  "post_failure_observation": {
+    "fixture_path_simplification_attempted": true,
+    "second_preflight_exit_code": 2,
+    "second_failure_classification": "UNSAFE_PATH",
+    "second_message": "invalid relative path",
+    "second_output_sha256": "8001d95e17ef29e8f9ddbf33c30c3d46126d8c05b689d2b55e6644841336681e",
+    "no_further_route_attempted": true,
+    "note": "The second attempt repeated the same typed blocker and did not alter the DRE or repository. Acceptance remained fail-closed at the first gate failure."
+  },
+  "impact": "The successful deterministic fixture did not pass preflight. Run, resume, status on a legitimate transaction, publication, rollback and attestation verification were not executed.",
+  "risk": "The public package contract did not identify which relative path was rejected. Additional adaptation under the same order would be fallback after a failed gate.",
+  "recommendation": "Close the order with FAIL_CLOSED_UNSAFE_PATH. Before a new acceptance order, provide or install a frozen public black-box fixture manifest whose hashes and expected paths are independently validated.",
+  "execution_scope": {
+    "acceptance_stopped_after_failed_success_gate": true,
+    "render_transaction_started": false,
+    "run_executed": false,
+    "resume_executed": false,
+    "publication_executed": false,
+    "rollback_executed": false,
+    "real_provimento_213_transaction_performed": false,
+    "network_access_performed": false,
+    "service_restart_performed": false,
+    "repository_modified": false,
+    "installed_tree_modified": false,
+    "implementation_source_inspected": false,
+    "python_bytecode_created": 0
+  },
+  "preserved_artifacts": {
+    "version_installed": "/tmp/dre-corrected-blackbox-20260801.E3ZHSP/version-installed.json",
+    "version_global": "/tmp/dre-corrected-blackbox-20260801.E3ZHSP/version-global.json",
+    "invalid_preflight_installed": "/tmp/dre-corrected-blackbox-20260801.E3ZHSP/invalid-installed.json",
+    "invalid_preflight_global": "/tmp/dre-corrected-blackbox-20260801.E3ZHSP/invalid-global.json",
+    "first_success_fixture_preflight": "/tmp/dre-corrected-blackbox-20260801.E3ZHSP/rehearsal-1.json",
+    "second_success_fixture_preflight": "/tmp/dre-corrected-blackbox-20260801.E3ZHSP/rehearsal-2.json",
+    "current_manifest": "/tmp/dre-corrected-blackbox-20260801.E3ZHSP/package/manifest.json",
+    "current_manifest_sha256": "558fe45bd47b6c0b02905d7e62995f69db519b001cf9b519a72a4b455af74b4a"
+  },
+  "controller_closed_by_sentinel": false
+}

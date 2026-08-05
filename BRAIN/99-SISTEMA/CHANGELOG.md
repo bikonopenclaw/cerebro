@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-08-05, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-08-05.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/Brain-Enterprise.md` com Brain v2 foundation, diagnóstico 11A, reintegração 11B, commit `153129b52ae093c42bb106006de18b78a7ab7dbe` e baseline `0` links quebrados/`0` uncategorized.
+- Atualizados `BRAIN/60-AGENTES/SENTINEL.md` e `BRAIN/60-AGENTES/KOWALSKI.md` com a separação canonica: Sentinel coleta/consulta fontes operacionais; Kowalski interpreta dados consolidados e produz relatórios Bikon.
+- Atualizados `BRAIN/99-SISTEMA/brain-v2/governance/README.md`, `BRAIN/99-SISTEMA/brain-v2/sync/fail-closed-git-sync.md`, `MEMORY.md`, `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e o MOC `BRAIN/01-DIARIO/README.md`.
+- Sincronizados snapshots sanitizados de agentes com `scripts/sync-agentes-versionados.py`; a rotina trouxe atualizações de Kowalski, Sentinel, controlador de ordem ativa, inventário de fontes e skill `codex-limite-status`.
+- Commit Link Gate validado após a consolidação: `ok=True`, `328` Markdown, `0` links internos quebrados, `0` uncategorized, `0` duplicate IDs/aliases e `0` candidatos a segredo.
+- Revisados arquivos locais do Brain, memória recente disponível, sessões visíveis recentes e artefatos locais em `entregas`; esta rotina não acessou sistemas externos, não enviou mensagem ao Hebert, não criou agente, não alterou crons, não executou remediação, não fez push e não alterou infraestrutura operacional.
+
 ## 2026-08-03, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-08-03.md`.

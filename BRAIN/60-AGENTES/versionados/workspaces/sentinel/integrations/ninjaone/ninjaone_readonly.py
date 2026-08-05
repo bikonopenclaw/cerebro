@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 from pathlib import Path
 from urllib import error, parse, request
@@ -23,6 +24,9 @@ from access_control.access_audit import audited_access, validate_secret_file
 
 
 ENV_PATH = Path("/data/.openclaw/workspace-kowalski/ninjaone/config/.env")
+ORCHESTRATION_CTL = (
+    WORKSPACE_ROOT / "orchestration" / "orchestrationctl.py"
+).resolve()
 REQUIRED_SCOPE = "monitoring"
 FORBIDDEN_SCOPES = {"management", "control"}
 ALLOWED_ENDPOINTS = {
@@ -36,7 +40,59 @@ ALLOWED_ENDPOINTS = {
 }
 
 
-def load_credentials() -> dict[str, str]:
+def binding_arguments(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument("--order-id", required=True)
+    parser.add_argument("--order-path", required=True)
+    parser.add_argument("--order-sha256", required=True)
+    parser.add_argument("--approval-id", required=True)
+    parser.add_argument("--execution-id", required=True)
+
+
+def binding_from_args(args: argparse.Namespace) -> dict[str, str]:
+    return {
+        "order_id": args.order_id,
+        "order_path": args.order_path,
+        "order_sha256": args.order_sha256,
+        "approval_id": args.approval_id,
+        "execution_id": args.execution_id,
+    }
+
+
+def assert_order(binding: dict[str, str]) -> None:
+    command = [
+        sys.executable,
+        str(ORCHESTRATION_CTL),
+        "assert",
+        "--order-id",
+        binding["order_id"],
+        "--order-path",
+        binding["order_path"],
+        "--order-sha256",
+        binding["order_sha256"],
+        "--approval-id",
+        binding["approval_id"],
+        "--execution-id",
+        binding["execution_id"],
+    ]
+    result = subprocess.run(
+        command,
+        check=False,
+        text=True,
+        capture_output=True,
+        timeout=15,
+    )
+    if result.returncode != 0:
+        raise RuntimeError("Gate de orquestração recusou a operação NinjaOne")
+    try:
+        payload = json.loads(result.stdout)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError("Gate de orquestração retornou resposta inválida") from exc
+    if payload.get("allowed") is not True or payload.get("status") != "RUNNING":
+        raise RuntimeError("Gate de orquestração não está em RUNNING")
+
+
+def load_credentials(binding: dict[str, str]) -> dict[str, str]:
+    assert_order(binding)
     validate_secret_file(ENV_PATH)
 
     values: dict[str, str] = {}
@@ -59,7 +115,10 @@ def load_credentials() -> dict[str, str]:
     return values
 
 
-def get_monitoring_token(config: dict[str, str]) -> tuple[str, list[str]]:
+def get_monitoring_token(
+    config: dict[str, str],
+    binding: dict[str, str],
+) -> tuple[str, list[str]]:
     body = parse.urlencode(
         {
             "grant_type": "client_credentials",
@@ -74,6 +133,7 @@ def get_monitoring_token(config: dict[str, str]) -> tuple[str, list[str]]:
         headers={"Content-Type": "application/x-www-form-urlencoded"},
         method="POST",
     )
+    assert_order(binding)
     with request.urlopen(req, timeout=30) as response:
         payload = json.loads(response.read().decode("utf-8"))
 
@@ -91,7 +151,12 @@ def get_monitoring_token(config: dict[str, str]) -> tuple[str, list[str]]:
     return token, scopes
 
 
-def api_get(config: dict[str, str], token: str, endpoint: str):
+def api_get(
+    config: dict[str, str],
+    token: str,
+    endpoint: str,
+    binding: dict[str, str],
+):
     path = ALLOWED_ENDPOINTS[endpoint]
     url = f"{config['NINJAONE_API_BASE'].rstrip('/')}/{path}"
     req = request.Request(
@@ -102,6 +167,7 @@ def api_get(config: dict[str, str], token: str, endpoint: str):
         },
         method="GET",
     )
+    assert_order(binding)
     with request.urlopen(req, timeout=60) as response:
         raw = response.read().decode("utf-8")
         return response.status, json.loads(raw) if raw else None
@@ -117,10 +183,15 @@ def item_count(data) -> int | None:
     return None
 
 
-def run_probe(config: dict[str, str], token: str, scopes: list[str]) -> None:
+def run_probe(
+    config: dict[str, str],
+    token: str,
+    scopes: list[str],
+    binding: dict[str, str],
+) -> None:
     results = []
     for endpoint in ("organizations", "devices", "alerts"):
-        status, data = api_get(config, token, endpoint)
+        status, data = api_get(config, token, endpoint, binding)
         results.append(
             {
                 "endpoint": endpoint,
@@ -143,22 +214,26 @@ def run_probe(config: dict[str, str], token: str, scopes: list[str]) -> None:
     )
 
 
-def main() -> int:
+def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="NinjaOne read-only do Sentinel")
     parser.add_argument(
         "command",
         choices=["probe", *ALLOWED_ENDPOINTS],
         help="probe resume a validacao; os demais comandos retornam JSON da fonte",
     )
-    args = parser.parse_args()
+    binding_arguments(parser)
+    return parser
 
-    config = load_credentials()
-    token, scopes = get_monitoring_token(config)
+
+def run(args: argparse.Namespace) -> int:
+    binding = binding_from_args(args)
+    config = load_credentials(binding)
+    token, scopes = get_monitoring_token(config, binding)
     if args.command == "probe":
-        run_probe(config, token, scopes)
+        run_probe(config, token, scopes, binding)
         return 0
 
-    status, data = api_get(config, token, args.command)
+    status, data = api_get(config, token, args.command, binding)
     print(
         json.dumps(
             {
@@ -181,11 +256,12 @@ def audit_operation(argv: list[str]) -> str:
 
 
 def cli() -> int:
-    operation = audit_operation(sys.argv[1:])
+    args = build_parser().parse_args()
+    operation = args.command
     with audited_access(
         source="ninjaone", operation=operation, client_path=Path(__file__)
     ):
-        return main()
+        return run(args)
 
 
 if __name__ == "__main__":

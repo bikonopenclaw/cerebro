@@ -47,6 +47,89 @@
       "credential": "none_local_allowlist",
       "allowed": "sources, health e tail arx|bitdefender ate 200 linhas",
       "revocation": "REVOGACAO.md#fontes-locais"
+    },
+    {
+      "source": "provimento-213-2026",
+      "status": "active_temporary_shared_symlink",
+      "client": "/data/.openclaw/agents/sentinel/agent/skills/provimento-213-2026",
+      "credential": "none_local_reference",
+      "allowed": "consulta local de norma, checklist e evidencias",
+      "donor": "kowalski",
+      "order_id": "ORDER-SENTINEL-P213-AS-IS-PARITY-20260730T234051Z",
+      "external_write_prohibited": true
+    },
+    {
+      "source": "consulta-cns-cartorio",
+      "status": "active_temporary_shared_symlink",
+      "client": "/data/.openclaw/agents/sentinel/agent/skills/consulta-cns-cartorio",
+      "credential": "none_public_api",
+      "allowed": "GET publico CNJ por CNS confirmado",
+      "donor": "shared_workspace",
+      "order_id": "ORDER-SENTINEL-P213-AS-IS-PARITY-20260730T234051Z",
+      "external_write_prohibited": true
+    },
+    {
+      "source": "whatsapp-bikon-kpi",
+      "status": "active_temporary_as_is",
+      "client": "integrations/kowalski-as-is/whatsapp/bikon_whatsapp_api.py",
+      "credential": "shared_donor_reference_external_600",
+      "allowed": "channel, status, list-chats e contact-number para leitura",
+      "donor": "kowalski",
+      "write_methods_exposed": true,
+      "write_use_prohibited": true,
+      "real_segregation": false,
+      "order_id": "ORDER-SENTINEL-P213-AS-IS-PARITY-20260730T234051Z"
+    },
+    {
+      "source": "praxis-gws-drive",
+      "status": "active_temporary_as_is_read_subset",
+      "client": "integrations/kowalski-as-is/praxis-gws",
+      "credential": "shared_runtime_reference_external_600",
+      "allowed": "Drive list, search, metadata, download e export",
+      "donor": "kowalski",
+      "write_methods_copied": false,
+      "email_methods_copied": false,
+      "real_segregation": false,
+      "order_id": "ORDER-SENTINEL-P213-AS-IS-PARITY-20260730T234051Z"
+    },
+    {
+      "source": "ninjaone-kowalski-as-is",
+      "status": "active_temporary_as_is",
+      "client": "integrations/kowalski-as-is/ninjaone/ninjaone_client.py",
+      "credential": "shared_donor_reference_external_600",
+      "allowed": "GET donor em organizations, devices, alerts, activities e policies",
+      "donor": "kowalski",
+      "write_capable_scope_exposed": true,
+      "write_use_prohibited": true,
+      "real_segregation": false,
+      "order_id": "ORDER-SENTINEL-P213-AS-IS-PARITY-20260730T234051Z"
+    },
+    {
+      "source": "arx-cove-kowalski-as-is",
+      "status": "active_temporary_sentinel_owned_correction",
+      "client": "integrations/kowalski-as-is/arx-cove/arx_client.py",
+      "credential": "shared_donor_reference_external_600",
+      "allowed": "Login, EnumerateAccountStatistics via get-partner-info e EnumerateAccounts",
+      "donor": "kowalski_source_sentinel_owned_copy",
+      "donor_sha256": "1513753f5956d483925be8a1c55644d3bd001e78391713c05535b16e68b3bf8b",
+      "client_sha256": "056101cf35acdf489b9d5b4b06683fc66eb7a2e2bcda9cec5e49b668a2c4553c",
+      "generic_jsonrpc_surface_exposed": true,
+      "write_use_prohibited": true,
+      "real_segregation": false,
+      "order_id": "ORDER-SENTINEL-P213-AS-IS-PARITY-20260730T234051Z",
+      "correction_order_id": "ORDER-SENTINEL-P213-ARX-COVE-CORRECTION-20260731T003220Z"
+    },
+    {
+      "source": "bitdefender-kowalski-as-is",
+      "status": "active_temporary_as_is",
+      "client": "integrations/kowalski-as-is/bitdefender/gz_client.py",
+      "credential": "shared_external_reference_600",
+      "allowed": "network.getCompaniesList",
+      "donor": "kowalski",
+      "generic_jsonrpc_surface_exposed": true,
+      "write_use_prohibited": true,
+      "real_segregation": false,
+      "order_id": "ORDER-SENTINEL-P213-AS-IS-PARITY-20260730T234051Z"
     }
   ]
 }
