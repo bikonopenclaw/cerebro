@@ -17,9 +17,16 @@ Mapa geral do Brain.
 
 ## MOCs e pontos de entrada
 
-- `INDEX.md`: mapa geral do Brain.
-- `01-DIARIO/README.md`: MOC cronológico de diários, semanais e mensais.
-- `99-SISTEMA/brain-v2/governance/README.md`: ponto de entrada da governança Brain v2.
+- [[99-SISTEMA/INDEX|INDEX]]: mapa geral do Brain.
+- [[01-DIARIO/README|MOC Diario]]: MOC cronológico de diários, semanais e mensais.
+- [[20-EMPRESAS/README|MOC Empresas]]: empresas, cadastros e bases organizacionais.
+- [[40-CONHECIMENTO/README|MOC Conhecimento]]: biblioteca institucional.
+- [[50-PROJETOS/README|MOC Projetos]]: iniciativas em andamento, planejamento e histórico.
+- [[60-AGENTES/README|MOC Agentes]]: papeis dos agentes e area de snapshots controlados.
+- [[70-AUTOMACOES/README|MOC Automacoes]]: workflows, integrações e rotinas.
+- [[80-DASHBOARDS/README|MOC Dashboards]]: indicadores consolidados.
+- [[99-SISTEMA/README|MOC Sistema]]: regras, saúde, memória e governança.
+- [[99-SISTEMA/brain-v2/governance/README|Brain v2 Governance]]: ponto de entrada da governança Brain v2.
 
 ## Registros ativos
 

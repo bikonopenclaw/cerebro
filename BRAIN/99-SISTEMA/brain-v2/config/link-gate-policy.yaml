@@ -11,6 +11,9 @@ scope:
 fail_closed:
   new_broken_internal_links: true
   new_uncategorized_markdown: true
+  new_unreachable_cognitive_markdown: true
+  new_isolated_cognitive_markdown: true
+  reachability_rate_regression: true
   duplicate_ids: true
   duplicate_aliases: true
   suspicious_secret_candidates: true
@@ -19,12 +22,25 @@ classification:
   entry_points:
     - BRAIN/99-SISTEMA/INDEX.md
     - BRAIN/01-DIARIO/README.md
+    - BRAIN/20-EMPRESAS/README.md
+    - BRAIN/40-CONHECIMENTO/README.md
+    - BRAIN/50-PROJETOS/README.md
+    - BRAIN/60-AGENTES/README.md
+    - BRAIN/70-AUTOMACOES/README.md
+    - BRAIN/80-DASHBOARDS/README.md
+    - BRAIN/99-SISTEMA/README.md
     - BRAIN/99-SISTEMA/brain-v2/governance/README.md
   known_system_paths:
     - BRAIN/99-SISTEMA
   known_diary_paths:
     - BRAIN/01-DIARIO
+cognitive_scope:
+  exclude:
+    - BRAIN/60-AGENTES/versionados/**
+  reason: Snapshots versionados sao inventario operacional, nao notas cognitivas.
 allowed_current_debt:
   broken_internal_links: baseline_only
   uncategorized_markdown: baseline_only
+  unreachable_cognitive_markdown: baseline_only
+  isolated_cognitive_markdown: baseline_only
   reason: Legacy debt accepted only as baseline. New debt fails.

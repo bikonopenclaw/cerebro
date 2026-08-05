@@ -38,3 +38,11 @@ The first batch links legacy diary notes through `BRAIN/01-DIARIO/README.md` wit
 ## Active Constraint
 
 The local Commit Link Gate exists as a validation tool and baseline. Automatic Git sync still needs a separate reconciliation step before it can be considered fully fail-closed for staging and commit.
+
+## Phase 11C Graph Gate
+
+Phase 11C closes the gap between "no broken links" and "healthy Obsidian graph". The Commit Link Gate now measures cognitive reachability, isolated cognitive notes and graph components.
+
+`BRAIN/60-AGENTES/versionados/` remains preserved as operational inventory, but is excluded from cognitive reachability and from the Obsidian graph through `.obsidian/app.json`.
+
+Canonical MOCs by area connect empresas, conhecimento, projetos, agentes, automacoes, dashboards and sistema without moving historical notes or linking snapshots as if they were knowledge.

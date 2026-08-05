@@ -26,3 +26,9 @@ Este diretório guarda snapshots controlados do código-fonte operacional dos ag
 
 Se um arquivo for necessário para entender ou reconstruir uma automação, ele deve entrar sanitizado ou como `.example`.
 Se expõe segredo, cliente ou artefato operacional final, fica fora do Git.
+
+## Grafo cognitivo
+
+Este diretório não entra no grafo cognitivo do Brain. Ele permanece versionado para auditoria, diff e rollback básico, mas é excluído do cálculo de Knowledge Health e do gráfico do Obsidian.
+
+Ponto de entrada humano: [[60-AGENTES/README|MOC Agentes]].
