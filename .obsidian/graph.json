@@ -1,10 +1,10 @@
 {
   "collapse-filter": false,
-  "search": "-path:\"/BRAIN/60-AGENTES/versionados/\" -path:\"BRAIN/60-AGENTES/versionados\"",
+  "search": "-path:\"BRAIN/60-AGENTES/versionados\" -path:/^BRAIN\\/60-AGENTES\\/versionados\\//",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
-  "showOrphans": true,
+  "showOrphans": false,
   "collapse-color-groups": true,
   "colorGroups": [],
   "collapse-display": false,

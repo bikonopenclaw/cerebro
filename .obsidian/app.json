@@ -1,5 +1,8 @@
 {
   "userIgnoreFilters": [
-    "BRAIN/60-AGENTES/versionados/"
+    "/BRAIN/60-AGENTES/versionados/",
+    "/BRAIN/60-AGENTES/versionados/**",
+    "BRAIN/60-AGENTES/versionados/",
+    "BRAIN/60-AGENTES/versionados/**"
   ]
 }
