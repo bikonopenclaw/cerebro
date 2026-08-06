@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## 2026-08-06, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-08-06.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/Brain-Enterprise.md` com as etapas Brain v2 11C/11D/11E, incluindo Graph Gate, MOCs canonicos por area, isolamento cognitivo dos snapshots versionados e ajustes Obsidian.
+- Atualizado `BRAIN/99-SISTEMA/brain-v2/health/knowledge-health.md` com validacao local: `336` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Atualizados `BRAIN/01-DIARIO/README.md`, `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Revisados arquivos locais do Brain, historico Git local, contexto do cron atual e busca semantica de sessoes disponivel; esta rotina nao acessou sistemas externos, nao enviou mensagem ao Hebert, nao criou agente, nao alterou crons, nao executou remediacao, nao fez push e nao alterou infraestrutura operacional.
+
 ## 2026-08-05, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-08-05.md`.

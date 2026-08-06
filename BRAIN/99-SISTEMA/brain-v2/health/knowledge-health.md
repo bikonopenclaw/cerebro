@@ -1,6 +1,6 @@
 # Knowledge Health
 
-Status: foundation candidate.
+Status: accepted baseline on main.
 
 Knowledge Health measures graph and schema quality, not operational readiness.
 
@@ -28,3 +28,15 @@ Thresholds:
 - Merge/push pass: no new broken internal links, no new isolated cognitive notes, no reachability regression, no new duplicate IDs, no new alias collisions, and Knowledge Health must not decrease versus baseline.
 
 Forbidden behavior: improving the score through artificial hub links.
+
+Current validation as of 2026-08-06:
+
+- Commit Link Gate: `ok=True`.
+- Markdown total: `336`.
+- Broken internal links: `0`.
+- Uncategorized Markdown: `0`.
+- Unreachable cognitive Markdown: `0`.
+- Isolated cognitive Markdown: `0`.
+- Graph components: `1`.
+- Knowledge health estimate: `1`.
+- `BRAIN/60-AGENTES/versionados/` remains excluded from cognitive reachability and from the Obsidian graph because it is operational inventory/snapshot storage.

@@ -32,6 +32,9 @@ Manter o Brain como repositório vivo de conhecimento para preservar contexto, d
 - A etapa 11A diagnosticou a dívida de conexão legada em modo read-only: `46` candidatos orphan/uncategorized, `107` links quebrados pelo contador legado e `97` links quebrados reais.
 - A etapa 11B reintegrou o primeiro lote sem mover notas históricas, criou o MOC cronológico, corrigiu wikilinks óbvios e adicionou o Commit Link Gate local; commit `153129b52ae093c42bb106006de18b78a7ab7dbe` ficou em `origin/main`.
 - Baseline Brain v2 após 11B: `0` links internos quebrados, `0` markdown uncategorized, `0` duplicate IDs, `0` duplicate aliases e health estimate `1`.
+- A etapa 11C adicionou o Graph Gate: MOCs canonicos por area, medicao de alcance cognitivo, isolamento de snapshots versionados da camada cognitiva e filtro Obsidian para esconder `BRAIN/60-AGENTES/versionados/`.
+- As etapas 11D/11E ajustaram a visualizacao do grafo Obsidian para esconder snapshots operacionais, unresolved links e orphans, mantendo a area versionada preservada no Git e fora do grafo cognitivo.
+- Validacao local em 2026-08-06: Commit Link Gate `ok=True`, `336` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
 
 ## Próximos passos
 
@@ -40,6 +43,7 @@ Manter o Brain como repositório vivo de conhecimento para preservar contexto, d
 - Criar MOCs ou dashboards adicionais somente quando houver volume e recorrência suficientes.
 - Validar o Commit Link Gate depois de consolidações reais para comprovar que a rotina diária não volta a gerar nota solta.
 - Reconciliar o script legado de sync GitHub com a política fail-closed antes de tratar o gate como mecanismo obrigatório de commit automático.
+- Manter o filtro Obsidian alinhado ao escopo cognitivo: snapshots versionados continuam como inventario operacional, nao como conhecimento navegavel do grafo.
 
 ## Relações
 
