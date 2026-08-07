@@ -64,6 +64,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-08-03.md`: consolidação diária com adoção DRE dos registros finais Provimento 213, Herald/dashboard CNS `024067` em produção focada, crons operacionais antecipados, lote Bikon agosto/2026 remessa 093 e baseline FBCP read-only.
 - `01-DIARIO/2026/2026-08-05.md`: consolidação diária com Brain v2 foundation/11B, MOC cronológico, Commit Link Gate, snapshots Sentinel/Kowalski e pendência de reconciliação do sync GitHub legado.
 - `01-DIARIO/2026/2026-08-06.md`: consolidação diária com Brain v2 11C/11D/11E, Graph Gate, MOCs canonicos por area, filtro Obsidian para snapshots versionados e Commit Link Gate validado com `0` quebras, `0` uncategorized e `0` notas cognitivas isoladas.
+- `01-DIARIO/2026/2026-08-07.md`: consolidação diária com reconciliação CPIW V4 CNS `023689`, EDC live read-only/task-specific write alignment, boundary fail-closed do apply adapter e ODP Day 2 PostgreSQL Foundation.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `01-DIARIO/Mensal/2026-07.md`: consolidação mensal de julho/2026 com padrões de evidência antes de status, portões separados, read-only como expansão segura, cadeia de custódia e runtime como superfície operacional.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
@@ -85,6 +86,7 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md`: padrão para clientes read-only, allowlists, auditoria e revogação verificável em agentes de observabilidade.
 - `40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico.md`: protocolo de plano imutável, algoritmo de hash nomeado, backup, troca atômica, rollback e evidência append-only para implantação de skills.
 - `40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md`: guardrail para impedir herança implícita entre Approval, checkpoint, commit, publicação, execução real e recorrência.
+- `40-CONHECIMENTO/Operacional/Boundary-de-escrita-em-delegacao-de-engenharia.md`: guardrail para validar writable roots por tarefa e falhar fechado quando Codex ou outra delegação persistir artefatos fora do boundary.
 - `40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel.md`: aprendizado sobre runtime como contrato auditável com caminho absoluto, versão final, origem, checksums e controle de drift.
 - `40-CONHECIMENTO/Operacional/Proposta-nao-e-contrato-congelado.md`: guardrail para manter documentos `PROPOSED_*` sem autoridade operacional até freeze e validação próprios.
 - `40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md`: aprendizado para separar capacidade oficial de provider da evidência local de conta, tenant, owner e permissões.
@@ -92,7 +94,9 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise, com Brain v2 foundation aceita, reintegracao 11B, Graph Gate 11C, ajustes Obsidian 11D/11E, MOC cronologico, MOCs canonicos por area e Commit Link Gate local.
-- `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com DRE final adotado para os registros finais, Herald/dashboard CNS `024067` em produção focada via tailnet, reimportação legada reconciliada e ciclo operacional ainda bloqueado por gates atomicos de evidência, respondente, dashboard, provider e execução.
+- `50-PROJETOS/Em-Andamento/OpenClaw-Engineering-Delegation.md`: EDC para delegação governada de engenharia com Codex CLI, perfil read-only ativo, primeiro piloto Zone A `PASS`, ramo task-specific write alinhado e enforcement de boundary ainda pendente.
+- `50-PROJETOS/Em-Andamento/OpenClaw-Operational-Data-Platform.md`: ODP como fundação PostgreSQL governada para dados operacionais, com Day 1 final `PASS`, Day 2 `PASS_ACCEPTED`, PostgreSQL loopback e Day 3 bloqueado por token próprio.
+- `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com DRE final adotado, Herald/dashboard CNS `024067`, CPIW V4 CNS `023689` reconciliado e apply adapter bloqueado por EDC boundary.
 - `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, Claw3D/OpenClaw em validação e rollback.
 - `50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md`: projeto de seleção governada de modelo e pensamento, com Gate D0, perfis, baseline de 40 tarefas e Etapa 0 concluída.
 - `50-PROJETOS/Planejamento/Controlador-de-Execucao-v2/README.md`: sucessor documental baseado em capacidades C0-C5, esforço R0-R5, risco G0-G3, Registry operacional e Etapa 0.5 read-only.

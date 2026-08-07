@@ -54,6 +54,9 @@ Memória institucional consolidada do Brain.
 - Brain v2 possui Commit Link Gate local aceito desde o commit `153129b52ae093c42bb106006de18b78a7ab7dbe`: validar `0` links internos quebrados, `0` markdown uncategorized, ausência de duplicate IDs/aliases e ausência de novos candidatos a segredo antes de tratar uma mudança como saudável.
 - A fundação Brain v2 e a reintegração inicial não autorizam edição manual no Obsidian nem sync amplo sem gate; se o vault remoto precisar atualizar, puxar o commit canônico em vez de alterar notas à mão.
 - A separação operacional canonica dos relatórios Bikon é Sentinel coletar/consultar fontes operacionais e Kowalski interpretar os dados consolidados para produzir relatórios no padrão Bikon.
+- Delegacao de engenharia com escrita exige boundary persistido: writable roots explicitos por tarefa, validacao antes/depois e fail-closed para qualquer arquivo, diretorio, cache ou artefato fora do escopo autorizado.
+- Delegacao read-only validada nao herda autorizacao de escrita; schema, runtime, sandbox, validators e enforcement precisam de ramo proprio para a classe de tarefa.
+- Em ODP, PostgreSQL operacional deve permanecer separado de SQLite/OpenClaw e de migracoes Provimento 213 ate gates proprios; erratas de baseline aceito devem ser aditivas, limitadas e rastreaveis.
 
 ## Padrões consolidados mensalmente
 
@@ -64,4 +67,5 @@ Memória institucional consolidada do Brain.
 - Padrão semanal 2026-W31: continuidade governada por unidade; evidência técnica não herda autorização, propostas não viram contratos por inferência, provider exige prova de ambiente existente e instalação precisa de black-box no caminho final.
 - Atualização de 2026-08-03: baseline FBCP Fase 0 elevou o padrão de faturamento para manifest/hash de aprovação, competência explícita, dinheiro Decimal/centavos, idempotência/ledger, reserva transacional de nosso número, validador CNAB de contrato e outbox transacional antes de escala.
 - Atualização de 2026-08-05: Brain v2 saiu de foundation isolada para primeira reintegração efetiva, com MOC cronológico, wikilinks corrigidos e baseline `0` links quebrados/`0` uncategorized; o sync GitHub automático ainda precisa ser reconciliado com staging por manifest.
+- Atualização de 2026-08-07: EDC validou o primeiro piloto Codex Zone A read-only, mas a primeira tarefa real de escrita CPIW V4 falhou fechado por boundary; ODP fechou Day 2 PostgreSQL Foundation como `PASS_ACCEPTED`, com Day 3 ainda bloqueado por autorizacao propria.
 - Atualização de 2026-07-21: reconciliação técnica com evidência de relatório indicou que a proposta Instagram Brand Director v2.1.0 está pendente e não ativa; estado de produção assistida segue sob read-only até autorização explícita de corte.

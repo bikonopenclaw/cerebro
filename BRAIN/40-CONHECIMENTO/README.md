@@ -20,6 +20,7 @@ Este MOC liga conhecimento permanente por dominio. Ele existe para navegação c
 - [[40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git|Artefatos gerados fora do Brain e Git]]
 - [[40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional|Ausencia de evidencia nao e status operacional]]
 - [[40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo|Autorizacao atomica nao herda escopo]]
+- [[40-CONHECIMENTO/Operacional/Boundary-de-escrita-em-delegacao-de-engenharia|Boundary de escrita em delegacao de engenharia]]
 - [[40-CONHECIMENTO/Operacional/Canais-com-escopo-e-remetente-autorizados|Canais com escopo e remetente autorizados]]
 - [[40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente|Capacidade tecnica nao substitui evidencia de ambiente]]
 - [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmacao antes de acoes com impacto]]

@@ -2,12 +2,12 @@
 
 ```yaml
 nome: OpenClaw - Provimento 213
-status: dashboard_herald_producao_cns_024067_ciclo_operacional_preparado_e_bloqueado_por_gates
+status: cpiw_v4_cns_023689_reconciliado_apply_adapter_bloqueado_por_edc_boundary
 responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-03
+ultima_revisao: 2026-08-07
 tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre]
 ```
 
@@ -53,6 +53,10 @@ O Brain registra somente o estado consolidado. Artefatos autoritativos, arquivos
 - Herald/dashboard CNS `024067` em produção focada desde 2026-08-03: serviço `prov213-herald-dashboard.service` ativo em loopback `127.0.0.1:9213`, URL tailnet canonica `https://srv1811702.tail34aee8.ts.net/prov213/024067`, token antigo revogado, sem token permanente na URL, PT-BR/identidade Bikon e exportação PDF autenticada em `/prov213/024067/export.pdf`.
 - Estado canonico do dashboard após reimportação: sessão `CNS-024067-PROD-INTERVIEW-GOVERNANCE-RESPONSIBILITIES-v1` pausada, pergunta atual `Q-CONTROL-A-03`, completion entrevista `41/47 = 87,23%`, evidence completion `10/47 = 21,28%`, índice de conformidade `36,2%`, 37 pendências documentais, 6 perguntas genuinamente sem resposta e `Q-CONTROL-G-02` validada com evidência.
 - Próximas ações dependem de autorização atomica: aceitar/validar novas evidências, contatar respondente, mutar dashboard/entrevista, selecionar provider, executar DRE/preflight/run adicional ou enviar PDF externamente.
+- Reconciliação CPIW V4 para CNS `023689` / Cartório Alzira passou em 2026-08-06: `PROV213_CPIW_CNS_023689_MULTI_SOURCE_HISTORICAL_RECONCILIATION=PASS`, preview hash `a8b25d33534b314f99354d7aa968ca430ff4ed22cdbc27f1cf54adbb0cce6378`, `47` respostas, `47` comentários, `66` evidências binárias únicas, `311` operações, `311` rollback e `311` idempotency keys.
+- Tentativa de commit produtivo CPIW V4 para CNS `023689` falhou fechado antes de mutação por `V4_PRODUCTION_APPLY_NOT_AVAILABLE`; nenhuma transação operacional foi aberta, AIR/ICD/DRE/PDF/customer/provider/root permaneceram sem mutação e rollback ficou `NOT_REQUIRED`.
+- Após o primeiro piloto EDC live read-only `PASS`, a implementação isolada do CPIW V4 Production Apply Adapter foi tentada sob EDC. A primeira rodada falhou antes de Codex porque o EDC ainda não tinha ramo conforme para escrita task-specific; o EDC v1.2.2 corrigiu esse gap sem executar a tarefa CPIW.
+- A tentativa seguinte de apply adapter executou Codex uma vez, mas terminou `FAIL_CLOSED` por `CODEX_WRITE_BOUNDARY_VIOLATION_OUTSIDE_AUTHORIZED_WRITABLE_ROOTS`: `3` escritas ficaram dentro dos roots autorizados, `54` arquivos persistiram fora do boundary, Kowalski não foi invocado, o baseline do adapter não foi aceito e nenhuma operação CPIW V4 foi aplicada.
 
 ## Atualização 2026-08-02/03
 
@@ -63,6 +67,12 @@ A primeira ação operacional real mostrou um erro de seleção importante: `Q-P
 A reimportação canonica legada de João Neiva preservou o relatório formal `REL-PROV213-2026-v2.9_Joao_Neiva` como fonte mais detalhada por controle. Resultado consolidado: 47 controles submetidos; 10 conformes, 14 parciais, 4 não conformes, 19 pendentes/a verificar e 1 não aplicável. A discrepância histórica entre "47/47 submetidos" e 6 perguntas sem resposta foi preservada, não sobrescrita.
 
 O dashboard Herald foi colocado em produção focada para CNS `024067`, todo em PT-BR e com identidade visual Bikon. A autenticação usa sessão HTTPS pela tailnet Tailscale; o token antigo foi revogado e não deve ser registrado. O endpoint PDF autenticado foi validado com HTTP 200 autenticado, HTTP 403 anônimo, 8 páginas e sem token/caminho interno visível.
+
+## Atualização 2026-08-06/07
+
+A trilha CPIW V4 para CNS `023689` foi reconciliada em modo multi-source histórico e passou como preview congelado, mas ainda não chegou a commit produtivo. O primeiro bloqueio foi ausência de apply adapter V4 disponível na runtime instalada. Depois, com EDC já validado para read-only e alinhado para task-specific engineering write, a tentativa de implementação isolada do adapter revelou que o boundary de escrita ainda precisava de enforcement mais forte.
+
+Estado consolidado: o preview CPIW V4 permanece valido como insumo congelado, mas o adapter não existe como baseline aceito; artefatos preliminares e violações de boundary são evidência de fail-closed, não entrega operacional. O próximo passo exige autorização atomica para corrigir o enforcement de sandbox/boundary do EDC antes de repetir qualquer tarefa CPIW.
 
 ## Governance Ledger
 

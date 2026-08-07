@@ -7,6 +7,8 @@ Este MOC liga projetos ativos, planejamento e historico documental.
 ## Em andamento
 
 - [[50-PROJETOS/Em-Andamento/Brain-Enterprise|Brain Enterprise]]
+- [[50-PROJETOS/Em-Andamento/OpenClaw-Engineering-Delegation|OpenClaw Engineering Delegation]]
+- [[50-PROJETOS/Em-Andamento/OpenClaw-Operational-Data-Platform|OpenClaw Operational Data Platform]]
 - [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw Provimento 213]]
 
 ## Planejamento
