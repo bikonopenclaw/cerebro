@@ -1,5 +1,14 @@
 # CHANGELOG.md
 
+## 2026-08-08, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-08-08.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md` com commit produtivo CPIW V4 CNS `023689` `PASS`, hashes AIR/ICD/journal, transação `TX-CPIW-V4-FINAL-TOKEN-IDENTITY-PARITY-20260807T194936Z` e aceitação operacional pós-commit `FAIL_CLOSED`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Engineering-Delegation.md` com o bundle EDC vinculado ao commit CPIW V4 e separação entre commit de dados e aceitação operacional Herald/dashboard.
+- Atualizado `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md` com agregado operacional read-only de 2026-08-07.
+- Atualizados MOCs, `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e `BRAIN/99-SISTEMA/brain-v2/health/knowledge-health.md`.
+- Revisados arquivos locais do Brain, histórico Git local, memória/sessões visíveis recentes e artefatos locais de evidência CPIW; esta rotina não acessou sistemas externos, não enviou mensagem ao Hebert, não criou agente, não alterou crons, não executou remediação, não fez push e não alterou infraestrutura operacional.
+
 ## 2026-08-07, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-08-07.md`.

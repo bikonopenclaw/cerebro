@@ -2,12 +2,12 @@
 
 ```yaml
 nome: OpenClaw Engineering Delegation
-status: edc_live_read_only_validado_task_specific_write_alinhado_boundary_repair_pendente
+status: edc_vinculado_a_commit_cpiw_v4_boundary_e_aceitacao_operacional_em_gates_separados
 responsavel: Puppet Master
 inicio: 2026-08-06
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-07
+ultima_revisao: 2026-08-08
 tags: [openclaw, edc, codex, engineering-delegation, sandbox, writable-roots, fail-closed]
 ```
 
@@ -32,6 +32,8 @@ O EDC nao transforma Codex em agente autonomo e nao concede acesso permanente a 
 - Primeira tentativa de engineering write para CPIW V4 falhou antes de Codex porque o EDC ativo ainda nao tinha ramo conforme para `TASK_SPECIFIC_ENGINEERING_DELEGATION` com writable roots explicitos.
 - EDC v1.2.2 alinhou schema, controller, writable-root validator, fixtures task-specific, regressao read-only e simulacao do gate Provimento; `56` testes PASS e Kowalski `PASS`. Runtime-state ativo: bundle `4fbd8a16f98009b9e5aacc4b86a2087fea1c5f423b6b0ad8aab6fea1ecdea75d`.
 - Tentativa seguinte de apply adapter CPIW V4 executou Codex uma vez, mas terminou `FAIL_CLOSED` por `CODEX_WRITE_BOUNDARY_VIOLATION_OUTSIDE_AUTHORIZED_WRITABLE_ROOTS`: `3` escritas dentro dos roots autorizados e `54` arquivos fora do boundary. O baseline do adapter nao foi aceito.
+- Rodada posterior vinculada ao CPIW V4 usou EDC bundle `1dca5fece94fd1a8c3c2bb41917dbd326e1afe07498fae60bbc8613084912049` no commit produtivo CNS `023689`, que passou com `311` operações commitadas, readback `PASS`, `0` DRE/PDF/contato cliente e journal `COMMITTED`.
+- A aceitação operacional pós-commit do CNS `023689` falhou em gates do produto/runtime Herald: rota autenticada `023689` ausente e rota controle `024067` com side effect de leitura. Isso deve permanecer separado do resultado de commit de dados AIR/ICD e das evidências EDC.
 
 ## Guardrails
 
@@ -43,9 +45,9 @@ O EDC nao transforma Codex em agente autonomo e nao concede acesso permanente a 
 
 ## Proximos passos
 
-- Corrigir enforcement de boundary para escrita task-specific somente com autorizacao propria.
-- Revalidar EDC apos a correcao sem executar tarefa CPIW na mesma unidade, se esse for o escopo autorizado.
-- Autorizar novamente o apply adapter CPIW V4 apenas quando boundary, bundle EDC e baseline estiverem congelados e vinculados ao preview hash CPIW.
+- Preservar a separação entre evidência EDC, commit de dados CPIW e aceitação operacional Herald/dashboard.
+- Revalidar qualquer novo uso de escrita task-specific com bundle, writable roots e pós-estado persistido explicitamente vinculados.
+- Autorizar correção da rota `023689` e da pureza `024067` como trabalho de produto/runtime, não como repetição automática do commit CPIW.
 
 ## Relacoes
 

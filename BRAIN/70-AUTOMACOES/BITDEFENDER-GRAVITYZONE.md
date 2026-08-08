@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_seguranca
-fonte: conversa com Hebert em 2026-06-18/19, documentação pública Bitdefender consultada na sessão e relatório executivo gerado em 2026-06-19
+fonte: conversa com Hebert em 2026-06-18/19, documentação pública Bitdefender consultada na sessão, relatório executivo gerado em 2026-06-19 e relatórios operacionais read-only até 2026-08-07
 confiabilidade: media
-ultima_revisao: 2026-07-14
+ultima_revisao: 2026-08-08
 tags: [bikon, bitdefender, gravityzone, seguranca, inventario, endpoints, relatorios, ninjaone, tickets]
 ```
 
@@ -107,6 +107,20 @@ Evolução aprovada para Fase 1:
 - Travas mantidas: sem remediação no Bitdefender, sem alteração de política, sem comunicação externa e sem ticket para máquina inativa.
 
 Estado operacional: Kowalski é responsável por preparar/operar o fluxo Bitdefender -> Ninja dentro dos critérios acima; Puppet Master mantém governança sobre autorização, escala e mudanças de escopo.
+
+## Relatório diário de ameaças 2026-08-07
+
+Resumo agregado observado na rotina diária read-only:
+
+- 2 registros confirmados no dia, ambos como novas entradas em quarentena, sem incidentes.
+- 2 endpoints afetados: `NOTE-168 | 11 - Unus` e `11-000303 | 11 - Unus`, ambos `Atc4.Detection`.
+- Estado atual indicou 2 endpoints com `malwareStatus` positivo: `SCFR01 | 16 - Cartório Ferreira Rocha` e `11-000303 | 11 - Unus`.
+- Janela de licenciamento de 30 dias: 448 dispositivos vistos, 416 licenciados, 22 explicitamente sem licença, 10 sem confirmação técnica e 60 com produto/assinatura desatualizado.
+- Coleta concluída sem falhas nas consultas previstas.
+
+Próxima ação: validar no GravityZone os endpoints com `malwareStatus` positivo e confirmar se há remediação pendente antes de qualquer remediação, alteração de política, isolamento, ticket manual ou comunicação externa.
+
+Observação: manter apenas agregados e identificadores operacionais mínimos; não versionar resposta bruta, API keys ou inventário detalhado.
 
 ## Relações
 

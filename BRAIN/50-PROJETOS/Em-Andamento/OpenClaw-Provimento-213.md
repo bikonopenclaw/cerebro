@@ -2,12 +2,12 @@
 
 ```yaml
 nome: OpenClaw - Provimento 213
-status: cpiw_v4_cns_023689_reconciliado_apply_adapter_bloqueado_por_edc_boundary
+status: cpiw_v4_cns_023689_commitado_aceitacao_operacional_fail_closed
 responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-07
+ultima_revisao: 2026-08-08
 tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre]
 ```
 
@@ -57,6 +57,9 @@ O Brain registra somente o estado consolidado. Artefatos autoritativos, arquivos
 - Tentativa de commit produtivo CPIW V4 para CNS `023689` falhou fechado antes de mutação por `V4_PRODUCTION_APPLY_NOT_AVAILABLE`; nenhuma transação operacional foi aberta, AIR/ICD/DRE/PDF/customer/provider/root permaneceram sem mutação e rollback ficou `NOT_REQUIRED`.
 - Após o primeiro piloto EDC live read-only `PASS`, a implementação isolada do CPIW V4 Production Apply Adapter foi tentada sob EDC. A primeira rodada falhou antes de Codex porque o EDC ainda não tinha ramo conforme para escrita task-specific; o EDC v1.2.2 corrigiu esse gap sem executar a tarefa CPIW.
 - A tentativa seguinte de apply adapter executou Codex uma vez, mas terminou `FAIL_CLOSED` por `CODEX_WRITE_BOUNDARY_VIOLATION_OUTSIDE_AUTHORIZED_WRITABLE_ROOTS`: `3` escritas ficaram dentro dos roots autorizados, `54` arquivos persistiram fora do boundary, Kowalski não foi invocado, o baseline do adapter não foi aceito e nenhuma operação CPIW V4 foi aplicada.
+- Commit produtivo CPIW V4 para CNS `023689` passou posteriormente: `PROVIMENTO_213_CPIW_V4_PRODUCTION_COMMIT_CNS_023689=PASS`, transação `TX-CPIW-V4-FINAL-TOKEN-IDENTITY-PARITY-20260807T194936Z`, `311` operações commitadas, preflight hash `7d7e5db34c5784624908583c952efc7d53ae75fd7ec3bbfd06cdb1d2e2f8d91a`, parity hash `69761717b4be0a3726e9cc4a2e29d72a13900f9708337130eaa25b8ff3a80458`, manifest de autoridade `f85526f171aaefae546fb14fc28ef58c13cf2130279986757035059f0fd6e69c` e runtime baseline `43becfabb6501bb2ea4d8453f36eb65f35dc2190351c8e5018e910b6dcd635b7`.
+- Estado persistido do CNS `023689`: AIR canonico `f5d630c5235fbd8e47d71045dda7274b04b00d59ac994181e80be3839c7c6b17`, ICD canonico `bea17518e0dddb62490a36c5bdd810072340d9bf4985d2d1d95c1c27b43fb380`, journal `COMMITTED`, lock ausente, staging preservado apenas como evidencia da transação, `0` DRE, `0` PDF e `0` contato cliente.
+- Aceitação operacional pós-commit falhou fechado: `PROVIMENTO_213_CNS_023689_POST_COMMIT_OPERATIONAL_ACCEPTANCE=FAIL_CLOSED`, classificação `NOT_CANONICAL_OPERATIONAL_FAIL_CLOSED` e freeze `NOT_FROZEN_FAIL_CLOSED`. A rota individual autenticada `/prov213/023689/data` retornou `HTTP/1.0 404`, não existiam arquivos dashboard auth/html/token para CNS `023689`, o dashboard geral ainda não consumia `023689` automaticamente e a rota controle CNS `024067` alterou `dashboard-state-v1.json` durante a validação.
 
 ## Atualização 2026-08-02/03
 
@@ -68,11 +71,13 @@ A reimportação canonica legada de João Neiva preservou o relatório formal `R
 
 O dashboard Herald foi colocado em produção focada para CNS `024067`, todo em PT-BR e com identidade visual Bikon. A autenticação usa sessão HTTPS pela tailnet Tailscale; o token antigo foi revogado e não deve ser registrado. O endpoint PDF autenticado foi validado com HTTP 200 autenticado, HTTP 403 anônimo, 8 páginas e sem token/caminho interno visível.
 
-## Atualização 2026-08-06/07
+## Atualização 2026-08-06/08
 
-A trilha CPIW V4 para CNS `023689` foi reconciliada em modo multi-source histórico e passou como preview congelado, mas ainda não chegou a commit produtivo. O primeiro bloqueio foi ausência de apply adapter V4 disponível na runtime instalada. Depois, com EDC já validado para read-only e alinhado para task-specific engineering write, a tentativa de implementação isolada do adapter revelou que o boundary de escrita ainda precisava de enforcement mais forte.
+A trilha CPIW V4 para CNS `023689` foi reconciliada em modo multi-source histórico e passou como preview congelado. O primeiro bloqueio foi ausência de apply adapter V4 disponível na runtime instalada. Depois, com EDC já validado para read-only e alinhado para task-specific engineering write, a tentativa de implementação isolada do adapter revelou que o boundary de escrita ainda precisava de enforcement mais forte.
 
-Estado consolidado: o preview CPIW V4 permanece valido como insumo congelado, mas o adapter não existe como baseline aceito; artefatos preliminares e violações de boundary são evidência de fail-closed, não entrega operacional. O próximo passo exige autorização atomica para corrigir o enforcement de sandbox/boundary do EDC antes de repetir qualquer tarefa CPIW.
+O commit produtivo posterior do CPIW V4 passou e gravou o estado CNS `023689`, mas a aceitação operacional pós-commit falhou fechado. O ponto importante é separar persistência correta de AIR/ICD/journal de disponibilidade operacional: a rota Herald/dashboard continua presa ao CNS `024067`, não há superfície autenticada individual para `023689`, e a rota controle `024067` demonstrou side effect em leitura.
+
+Estado consolidado: CNS `023689` possui dados commitados e auditáveis, mas não está operacional canônico. O próximo passo exige autorização atomica para implementar/validar rota autenticada do CNS `023689` e corrigir a pureza read-only da rota CNS `024067`; qualquer rollback ou mutação corretiva também exige autorização separada.
 
 ## Governance Ledger
 
