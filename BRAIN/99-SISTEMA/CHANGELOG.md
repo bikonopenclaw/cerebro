@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-08-09, consolidação semanal
+
+- Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W32.md` com cobertura parcial de 2026-08-03 a 2026-08-09, baseado nas daily notes disponíveis de 2026-08-03, 2026-08-05, 2026-08-06, 2026-08-07 e 2026-08-08.
+- Identificados padrões recorrentes de aplicabilidade antes de disponibilidade operacional, separação entre commit de estado e aceitação operacional, leitura read-only sem mutação, boundary de escrita em EDC, autorização atômica e saúde Brain v2 por gate/grafo.
+- Elevados aprendizados para notas permanentes em `BRAIN/40-CONHECIMENTO/Operacional/Aplicabilidade-antes-de-disponibilidade-operacional.md`, `Commit-de-estado-nao-e-aceitacao-operacional.md` e `Leitura-read-only-deve-provar-nao-mutacao.md`.
+- Atualizados `BRAIN/40-CONHECIMENTO/Operacional/Boundary-de-escrita-em-delegacao-de-engenharia.md`, MOCs, `INDEX.md`, `MEMORY.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Commit Link Gate validado após a consolidação semanal: `ok=True`, `345` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Nenhum item foi movido para `BRAIN/99-ARQUIVO/`; os registros revisados seguem recentes, conectados e com valor operacional ou de auditoria.
+- Revisados apenas arquivos locais do Brain; esta rotina não acessou sistemas externos além do push Git configurado, não enviou mensagem ao Hebert, não criou agente, não alterou crons, não executou remediação e não alterou infraestrutura operacional.
+
 ## 2026-08-08, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-08-08.md`.

@@ -48,6 +48,8 @@ Memória institucional consolidada do Brain.
 - Documento `PROPOSED_NOT_FROZEN` ou `PROPOSED_PENDING_INDEPENDENT_VALIDATION` preserva contexto, mas não é contrato canônico nem autorização operacional.
 - Capacidade técnica oficial de provider não substitui evidência local de conta, tenant, subscription, projeto, owner aprovado, permissão e trilha de auditoria.
 - Disponibilidade isolada de provider também não prova aplicabilidade; pergunta ou ação específica de AWS/Azure/GCP só é elegível quando o provider já foi selecionado, mandatado por arquitetura aprovada, exigido por controle regulatório aplicável ou necessário para dependência operacional já aprovada.
+- Commit de estado, AIR, ICD, journal ou manifesto `PASS` nao equivalem a aceitacao operacional; rota autenticada, dashboard, PDF, token e runtime final precisam ser validados em gate proprio.
+- Leitura read-only precisa provar nao mutacao persistida; se uma rota de validacao altera estado canonico ou controle comparativo, a aceitacao deve falhar fechado.
 - Teste pre-install ou commit preservado não comprova ferramenta instalada; o caminho final usado pelo operador precisa passar em validação black-box.
 - Em esteira fiscal/financeira Bikon, competência deve ser explícita por operação e dinheiro deve trafegar como Decimal/centavos; `float`, default fixo de competência e aprovação booleana reutilizável são riscos P0.
 - Segunda-feira dos relatórios operacionais usa fechamento semanal coletado no sábado; não forçar job diário quando não existir coleta/cache diário correspondente.
@@ -68,4 +70,5 @@ Memória institucional consolidada do Brain.
 - Atualização de 2026-08-03: baseline FBCP Fase 0 elevou o padrão de faturamento para manifest/hash de aprovação, competência explícita, dinheiro Decimal/centavos, idempotência/ledger, reserva transacional de nosso número, validador CNAB de contrato e outbox transacional antes de escala.
 - Atualização de 2026-08-05: Brain v2 saiu de foundation isolada para primeira reintegração efetiva, com MOC cronológico, wikilinks corrigidos e baseline `0` links quebrados/`0` uncategorized; o sync GitHub automático ainda precisa ser reconciliado com staging por manifest.
 - Atualização de 2026-08-07: EDC validou o primeiro piloto Codex Zone A read-only, mas a primeira tarefa real de escrita CPIW V4 falhou fechado por boundary; ODP fechou Day 2 PostgreSQL Foundation como `PASS_ACCEPTED`, com Day 3 ainda bloqueado por autorizacao propria.
+- Padrão semanal 2026-W32: aplicabilidade vem antes de disponibilidade tecnica; commit de dados e aceitacao operacional sao gates separados; leitura read-only deve provar ausencia de mutacao; Brain v2 usa gate de links/grafo como saude recorrente depois de notas reais.
 - Atualização de 2026-07-21: reconciliação técnica com evidência de relatório indicou que a proposta Instagram Brand Director v2.1.0 está pendente e não ativa; estado de produção assistida segue sob read-only até autorização explícita de corte.

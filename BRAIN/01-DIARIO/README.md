@@ -55,6 +55,7 @@ Este MOC liga os registros cronologicos do Brain sem mover notas historicas. Ele
 - [[2026-W28]]
 - [[2026-W29]]
 - [[2026-W31]]
+- [[2026-W32]]
 
 ## Consolidados Mensais
 

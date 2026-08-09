@@ -34,7 +34,7 @@ Manter o Brain como repositório vivo de conhecimento para preservar contexto, d
 - Baseline Brain v2 após 11B: `0` links internos quebrados, `0` markdown uncategorized, `0` duplicate IDs, `0` duplicate aliases e health estimate `1`.
 - A etapa 11C adicionou o Graph Gate: MOCs canonicos por area, medicao de alcance cognitivo, isolamento de snapshots versionados da camada cognitiva e filtro Obsidian para esconder `BRAIN/60-AGENTES/versionados/`.
 - As etapas 11D/11E ajustaram a visualizacao do grafo Obsidian para esconder snapshots operacionais, unresolved links e orphans, mantendo a area versionada preservada no Git e fora do grafo cognitivo.
-- Validacao local em 2026-08-07: Commit Link Gate `ok=True`, `340` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Validacao local em 2026-08-09 apos consolidacao semanal: Commit Link Gate `ok=True`, `345` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
 
 ## Próximos passos
 

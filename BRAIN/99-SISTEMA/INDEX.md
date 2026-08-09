@@ -49,6 +49,7 @@ Mapa geral do Brain.
 - `01-DIARIO/Semanal/2026-W28.md`: consolidação semanal com padrões de artefatos gerados fora do Brain/Git, evidência explícita em monitoramento, separação entre consulta gerencial e permissão operacional, homologação bancária sem produção automática e migração VPS limpa.
 - `01-DIARIO/Semanal/2026-W29.md`: consolidação parcial até 2026-07-17 com gates pós-migração, separação entre upgrade/restart/backlog, evidência recente em tickets e Sentinel read-only sob menor privilégio.
 - `01-DIARIO/Semanal/2026-W31.md`: consolidação semanal parcial com autorização atômica, contrato de runtime reproduzível, propostas sem autoridade operacional, provider sem evidência de ambiente e validação black-box do caminho final.
+- `01-DIARIO/Semanal/2026-W32.md`: consolidação semanal parcial com aplicabilidade antes de disponibilidade, commit de estado separado de aceitação operacional, leitura read-only sem mutação e Brain v2 com gate/grafo recorrente.
 - `01-DIARIO/2026/2026-07-03.md`: consolidação diária com snapshots versionados, KPIs WhatsApp/Bitdefender, limitação de tickets NinjaOne, falhas por limite de uso e saneamento de PDFs/artefatos no Git.
 - `01-DIARIO/2026/2026-07-08.md`: consolidação diária com limpeza pré-migração da VPS, riscos operacionais BIKON de 06/07/2026, atualização de snapshots e pendência de `memory_search`.
 - `01-DIARIO/2026/2026-07-09.md`: consolidação diária com Cresol API em homologação, canal Telegram isolado do Kowalski e saneamento adicional da rotina de snapshot.
@@ -91,6 +92,9 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel.md`: aprendizado sobre runtime como contrato auditável com caminho absoluto, versão final, origem, checksums e controle de drift.
 - `40-CONHECIMENTO/Operacional/Proposta-nao-e-contrato-congelado.md`: guardrail para manter documentos `PROPOSED_*` sem autoridade operacional até freeze e validação próprios.
 - `40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md`: aprendizado para separar capacidade oficial de provider da evidência local de conta, tenant, owner e permissões.
+- `40-CONHECIMENTO/Operacional/Aplicabilidade-antes-de-disponibilidade-operacional.md`: guardrail para impedir pergunta, provider ou rota operacional baseada apenas em disponibilidade técnica sem aplicabilidade canônica.
+- `40-CONHECIMENTO/Operacional/Commit-de-estado-nao-e-aceitacao-operacional.md`: guardrail para separar commit de dados, AIR/ICD/journal e aceitação operacional da superfície final.
+- `40-CONHECIMENTO/Operacional/Leitura-read-only-deve-provar-nao-mutacao.md`: guardrail para validar consultas e rotas read-only por ausência de mutação persistida.
 - `40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado.md`: gate para validar ferramentas instaladas em black-box pelo caminho final usado pelo operador.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
