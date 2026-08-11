@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw Engineering Delegation
-status: edc_vinculado_a_commit_cpiw_v4_boundary_e_aceitacao_operacional_em_gates_separados
+status: edc_odp_controlled_secret_executor_prepared_installed_validation_fail_closed
 responsavel: Puppet Master
 inicio: 2026-08-06
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-08
-tags: [openclaw, edc, codex, engineering-delegation, sandbox, writable-roots, fail-closed]
+ultima_revisao: 2026-08-11
+tags: [openclaw, edc, codex, engineering-delegation, sandbox, writable-roots, fail-closed, odp]
 ```
 
 ## Objetivo
@@ -34,6 +34,9 @@ O EDC nao transforma Codex em agente autonomo e nao concede acesso permanente a 
 - Tentativa seguinte de apply adapter CPIW V4 executou Codex uma vez, mas terminou `FAIL_CLOSED` por `CODEX_WRITE_BOUNDARY_VIOLATION_OUTSIDE_AUTHORIZED_WRITABLE_ROOTS`: `3` escritas dentro dos roots autorizados e `54` arquivos fora do boundary. O baseline do adapter nao foi aceito.
 - Rodada posterior vinculada ao CPIW V4 usou EDC bundle `1dca5fece94fd1a8c3c2bb41917dbd326e1afe07498fae60bbc8613084912049` no commit produtivo CNS `023689`, que passou com `311` operações commitadas, readback `PASS`, `0` DRE/PDF/contato cliente e journal `COMMITTED`.
 - A aceitação operacional pós-commit do CNS `023689` falhou em gates do produto/runtime Herald: rota autenticada `023689` ausente e rota controle `024067` com side effect de leitura. Isso deve permanecer separado do resultado de commit de dados AIR/ICD e das evidências EDC.
+- Registro de boundary ODP em 2026-08-10 reconciliou artefatos sob caminho canonico `/data/.openclaw/workspace/projects/ODP` e preservou bloqueio por `ROOT_INSTALL_GATE`; nenhuma rota `/data/.openclaw/workspace/projetos/ODP` foi usada ou criada.
+- Preparacao do executor controlado de segredo ODP fechou `PASS_READY_FOR_ROOT_INSTALL`, sem instalacao, sudoers mutation, Day 3 promotion, PostgreSQL structural mutation, SQLite ou OpenClaw runtime mutation. Executor SHA-256 `30d79907cd2d3531957d1f755274a9286c843f4215cfe785f4a7d0a44104c909`; sudoers SHA-256 `f6bccc4e59497cce98fcd994536d5be2a04f8df9af6094c6152c24730216a502`; `12/12` testes negativos e Kowalski `PASS_READY_FOR_ROOT_INSTALL`.
+- Validacao instalada apos root bridge terminou `FAIL_CLOSED_INSTALLED_STATE_NOT_FULL_FROZEN_ARTIFACT_SET`: executor/sudoers/preflight passaram, mas `EXECUTOR_CONTRACT.json` nao estava instalado no caminho final esperado. Proximo token: `AUTHORIZE_HEBERT_ROOT_INSTALL_ODP_CONTROLLED_SECRET_EXECUTOR_MISSING_CONTRACT_ARTIFACT`.
 
 ## Guardrails
 
@@ -42,6 +45,8 @@ O EDC nao transforma Codex em agente autonomo e nao concede acesso permanente a 
 - Artefatos preliminares de rodada fail-closed nao viram baseline aceito.
 - Violacao de boundary deve preservar evidencias ate autorizacao explicita de limpeza ou retry.
 - Codex nao deve acessar dados de cliente, Provimento 213 produtivo, rede de tarefa, web/MCP, root, systemd, pacote, permissao ou restart fora do escopo autorizado.
+- Preparar artefato root-owned nao equivale a instalar, aceitar ou promover Day 3; cada camada exige gate proprio.
+- Validacao instalada deve conferir o conjunto congelado completo, nao apenas binario, sudoers e preflight.
 
 ## Proximos passos
 

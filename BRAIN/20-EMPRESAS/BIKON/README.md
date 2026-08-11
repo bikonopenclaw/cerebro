@@ -21,9 +21,11 @@
 - Integração Instagram Bikon Robotnik: `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`
 - API WhatsApp Bikon: `BRAIN/70-AUTOMACOES/API-WHATSAPP-BIKON.md`
 - Migração OpenClaw/Hostinger VPS: `BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`
+- FIP Bikon Financial Intelligence: `BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md`
 
 ## Histórico relevante
 
+- 2026-08-10/11: FIP Bikon Financial Intelligence atingiu `FIP_PRODUCTION_GO_LIVE=PASS` para fronteira privada/controlada. Totais aceitos: receita canonica R$ 2.443.859,64, despesa R$ 1.418.140,88, resultado R$ 1.025.718,76, `1438` transacoes bancarias canonicas e pendencias materiais `0`/R$ 0,00. Acesso produtivo ficou em `127.0.0.1:8787` e rota Tailscale tailnet-only `https://srv1811702.tail34aee8.ts.net:8787/`, sem Funnel/public Internet para `8787`.
 - 2026-08-03: faturamento agosto/2026 remessa 093 executado em produção assistida: 27 NFS-e autorizadas, 27 boletos locais, 18 e-mails enviados com cópia para `financeiro@bikon.com.br`, total R$ 86.357,06; remessa CNAB400 local gerada sem transmissão bancária consolidada.
 - 2026-08-03: dashboard Provimento 213 do CNS `024067` entrou em produção focada com identidade Bikon/PT-BR e exportação PDF autenticada via Tailscale; token antigo revogado e sem token permanente na URL.
 - 2026-08-03: crons dos relatórios operacionais diários antecipados para janela 07:45-07:48 e instrução diária do Kowalski para 07:59, timezone `America/Sao_Paulo`.
@@ -66,3 +68,5 @@
 - Materiais públicos ou semi-públicos com logo, paleta, layout ou identidade Bikon devem passar por revisão visual do Kowalski antes da peça final; isso não substitui aprovação explícita para publicação ou envio externo.
 - No Instagram Bikon, briefing, estratégia, geração, composição/render e publicação são aprovações independentes. Buffer é o único publicador autorizado; Meta Graph API e Instagram direto não podem operar em paralelo.
 - Brand QA pré-geração aprova somente o snapshot e o hash apresentados. Não autoriza Portão C, Kling, render, upload ou publicação; qualquer alteração de byte exige nova submissão.
+- FIP e dashboards financeiros privados nao autorizam emissao fiscal, boleto, remessa, baixa bancaria ou comunicacao externa; eles sao base executiva/gerencial ate haver Approval proprio para efeitos operacionais.
+- FIP em `8787` deve permanecer privado/autenticado; nao expor via Internet publica, segredo em URL ou relatorio.

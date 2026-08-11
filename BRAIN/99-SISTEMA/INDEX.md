@@ -67,6 +67,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-08-06.md`: consolidação diária com Brain v2 11C/11D/11E, Graph Gate, MOCs canonicos por area, filtro Obsidian para snapshots versionados e Commit Link Gate validado com `0` quebras, `0` uncategorized e `0` notas cognitivas isoladas.
 - `01-DIARIO/2026/2026-08-07.md`: consolidação diária com reconciliação CPIW V4 CNS `023689`, EDC live read-only/task-specific write alignment, boundary fail-closed do apply adapter e ODP Day 2 PostgreSQL Foundation.
 - `01-DIARIO/2026/2026-08-08.md`: consolidação diária com commit produtivo CPIW V4 CNS `023689` `PASS`, aceitação operacional pós-commit `FAIL_CLOSED`, separação entre dados commitados e rota Herald/dashboard, e agregado Bitdefender BIKON de 2026-08-07.
+- `01-DIARIO/2026/2026-08-11.md`: consolidação diária com FIP BIKON em GO-LIVE privado/controlado e executor controlado ODP em fail-closed por contrato congelado ausente no caminho final.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `01-DIARIO/Mensal/2026-07.md`: consolidação mensal de julho/2026 com padrões de evidência antes de status, portões separados, read-only como expansão segura, cadeia de custódia e runtime como superfície operacional.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
@@ -77,6 +78,7 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md`: aprendizado permanente sobre separar canais por finalidade, escopo, roteamento e guardrails.
 - `40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md`: guardrail permanente para manter credenciais, tokens e dados sensíveis fora do Brain/Git.
 - `40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md`: princípio fiscal para preservar dados completos do cadastro mestre em payloads de NFS-e.
+- `40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md`: guardrail financeiro para separar caixa bruto de evento economico antes de aceitar P&L.
 - `40-CONHECIMENTO/Financeiro/Retorno-bancario-nao-valida-remessa.md`: princípio financeiro para não usar retorno CNAB400 como validação de remessa, nosso número ou sequencial.
 - `40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md`: guardrail para separar preparo interno, dry-run e execução real.
 - `40-CONHECIMENTO/Operacional/Governanca-antes-de-automacao-de-identidade.md`: aprendizado permanente para iniciar automações de identidade por matriz, auditoria e aprovação.
@@ -99,6 +101,7 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise, com Brain v2 foundation aceita, reintegracao 11B, Graph Gate 11C, ajustes Obsidian 11D/11E, MOC cronologico, MOCs canonicos por area e Commit Link Gate local.
+- `50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md`: projeto financeiro da BIKON com P&L canonico, forecast/cenarios, GO-LIVE privado em `8787`, autenticacao, backup/rollback e Tailscale tailnet-only.
 - `50-PROJETOS/Em-Andamento/OpenClaw-Engineering-Delegation.md`: EDC para delegação governada de engenharia com Codex CLI, perfil read-only ativo, primeiro piloto Zone A `PASS`, ramo task-specific write alinhado, commit CPIW V4 vinculado a bundle EDC e aceitação operacional Herald/dashboard em gate separado.
 - `50-PROJETOS/Em-Andamento/OpenClaw-Operational-Data-Platform.md`: ODP como fundação PostgreSQL governada para dados operacionais, com Day 1 final `PASS`, Day 2 `PASS_ACCEPTED`, PostgreSQL loopback e Day 3 bloqueado por token próprio.
 - `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com DRE final adotado, Herald/dashboard CNS `024067`, CPIW V4 CNS `023689` commitado e aceitação operacional pós-commit fail-closed por rota autenticada ausente/side effect no controle `024067`.

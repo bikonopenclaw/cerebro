@@ -9,6 +9,7 @@ Este MOC liga conhecimento permanente por dominio. Ele existe para navegação c
 - [[40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional|Consulta gerencial nao e permissao operacional]]
 - [[40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais|Dados mestres completos em automacoes fiscais]]
 - [[40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao|Homologacao bancaria nao autoriza producao]]
+- [[40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL|Natureza economica provada antes de PnL]]
 - [[40-CONHECIMENTO/Financeiro/Retorno-bancario-nao-valida-remessa|Retorno bancario nao valida remessa]]
 
 ## IA e memoria

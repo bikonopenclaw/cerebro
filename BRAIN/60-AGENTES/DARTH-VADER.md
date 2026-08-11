@@ -4,8 +4,8 @@
 categoria: agente_operacional
 fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17 e snapshot versionado em 2026-07-11
 confiabilidade: alta
-ultima_revisao: 2026-08-03
-tags: [agente, financeiro, faturamento, nfse, boleto, remessa, cresol-api]
+ultima_revisao: 2026-08-11
+tags: [agente, financeiro, faturamento, nfse, boleto, remessa, cresol-api, fip]
 ```
 
 ## Papel
@@ -100,8 +100,22 @@ Riscos P0 que afetam a governança da Darth Vader:
 
 Próxima autorização recomendada: `AUTHORIZE_FBCP_P0_COMPETENCE_AND_MONEY_HARDENING_ONLY`.
 
+## FIP Bikon Financial Intelligence, 2026-08-10/11
+
+O FIP virou projeto financeiro proprio da BIKON e nao substitui a responsabilidade operacional da Darth Vader por NFS-e, boletos, remessas, baixas e comunicacao externa.
+
+Estado consolidado:
+
+- `FIP_PRODUCTION_GO_LIVE=PASS` em fronteira privada/controlada.
+- Totais aceitos: receita canonica R$ 2.443.859,64, despesa R$ 1.418.140,88, resultado R$ 1.025.718,76; 2025 resultado R$ 812.106,17; 2026-current resultado R$ 213.612,59.
+- `1438` transacoes bancarias canonicas, pendencias materiais `0`/R$ 0,00, backup/rollback `PASS`, validacao desktop/mobile `PASS`.
+- App produtivo em `127.0.0.1:8787` com rota Tailscale tailnet-only, autenticacao obrigatoria e porta `9213` intocada.
+
+Guardrail financeiro reforcado: o FIP separa caixa bruto de evento economico. Credito bancario, PIX, boleto ou cartao so entram no P&L aprovado com evidencia de natureza economica, competencia e vinculo suficiente; caso contrario ficam em clearing, settlement-only ou pendencia gerencial.
+
 ## Relações
 
 - `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md`
 - `BRAIN/70-AUTOMACOES/boletos-malote/README.md`
 - `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`
+- `BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md`
