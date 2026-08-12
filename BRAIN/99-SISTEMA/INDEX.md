@@ -68,6 +68,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-08-07.md`: consolidação diária com reconciliação CPIW V4 CNS `023689`, EDC live read-only/task-specific write alignment, boundary fail-closed do apply adapter e ODP Day 2 PostgreSQL Foundation.
 - `01-DIARIO/2026/2026-08-08.md`: consolidação diária com commit produtivo CPIW V4 CNS `023689` `PASS`, aceitação operacional pós-commit `FAIL_CLOSED`, separação entre dados commitados e rota Herald/dashboard, e agregado Bitdefender BIKON de 2026-08-07.
 - `01-DIARIO/2026/2026-08-11.md`: consolidação diária com FIP BIKON em GO-LIVE privado/controlado e executor controlado ODP em fail-closed por contrato congelado ausente no caminho final.
+- `01-DIARIO/2026/2026-08-12.md`: consolidação diária com FIP `v1.1.0` de tesouraria congelado, FIP `v1.2.0` candidato por cobertura documental parcial, Provimento 213 Mini App tecnicamente validado mas fail-closed ate reteste real do iPhone, e Cresol API NN `357-6` em homologacao.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `01-DIARIO/Mensal/2026-07.md`: consolidação mensal de julho/2026 com padrões de evidência antes de status, portões separados, read-only como expansão segura, cadeia de custódia e runtime como superfície operacional.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
@@ -101,14 +102,14 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise, com Brain v2 foundation aceita, reintegracao 11B, Graph Gate 11C, ajustes Obsidian 11D/11E, MOC cronologico, MOCs canonicos por area e Commit Link Gate local.
-- `50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md`: projeto financeiro da BIKON com P&L canonico, forecast/cenarios, GO-LIVE privado em `8787`, autenticacao, backup/rollback e Tailscale tailnet-only.
+- `50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md`: projeto financeiro da BIKON com P&L canonico, forecast/cenarios, GO-LIVE privado em `8787`, autenticacao, backup/rollback, Tailscale tailnet-only, tesouraria `v1.1.0` congelada e `v1.2.0` candidato por cobertura documental parcial.
 - `50-PROJETOS/Em-Andamento/OpenClaw-Engineering-Delegation.md`: EDC para delegação governada de engenharia com Codex CLI, perfil read-only ativo, primeiro piloto Zone A `PASS`, ramo task-specific write alinhado, commit CPIW V4 vinculado a bundle EDC e aceitação operacional Herald/dashboard em gate separado.
 - `50-PROJETOS/Em-Andamento/OpenClaw-Operational-Data-Platform.md`: ODP como fundação PostgreSQL governada para dados operacionais, com Day 1 final `PASS`, Day 2 `PASS_ACCEPTED`, PostgreSQL loopback e Day 3 bloqueado por token próprio.
-- `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com DRE final adotado, Herald/dashboard CNS `024067`, CPIW V4 CNS `023689` commitado e aceitação operacional pós-commit fail-closed por rota autenticada ausente/side effect no controle `024067`.
+- `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com DRE final adotado, Herald/dashboard CNS `024067`, CPIW V4 CNS `023689` commitado, Mini App Telegram tecnicamente validado e aceite formal ainda fail-closed por reteste real do iPhone pendente.
 - `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, Claw3D/OpenClaw em validação e rollback.
 - `50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md`: projeto de seleção governada de modelo e pensamento, com Gate D0, perfis, baseline de 40 tarefas e Etapa 0 concluída.
 - `50-PROJETOS/Planejamento/Controlador-de-Execucao-v2/README.md`: sucessor documental baseado em capacidades C0-C5, esforço R0-R5, risco G0-G3, Registry operacional e Etapa 0.5 read-only.
-- `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader, incluindo NFS-e, boletos, remessa, Cresol API, lote Bikon agosto/2026 remessa 093 e baseline FBCP com riscos P0.
+- `60-AGENTES/DARTH-VADER.md`: papel financeiro/fiscal do agente Darth Vader, incluindo NFS-e, boletos, remessa, Cresol API, lote Bikon agosto/2026 remessa 093, rodada homologacao NN `357-6` e baseline FBCP com riscos P0.
 - `60-AGENTES/KOWALSKI.md`: papel de dados/relatórios do agente Kowalski, incluindo skill Provimento 213/2026, canal Telegram isolado para Relatórios Operacionais, Modelo de Relatório EOL Bikon e operação controlada Bitdefender -> NinjaOne.
 - `60-AGENTES/ROBOTNIK.md`: papel de marketing do Robotnik, Produção Assistida, SSI/SFT e governança Instagram com geração, composição e publicação separadas.
 - `60-AGENTES/SENTINEL.md`: papel do controller de Operações e SNOC, fontes autorizadas, limites read-only, canário v2 de 24 horas, avaliação read-only de gaps do Provimento 213, provider discovery e implementação/validação de entrevista/dashboard sob governança.
@@ -124,7 +125,7 @@ Mapa geral do Brain.
 - `70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`: automação diária de monitoramento ARX Backup com deduplicação/criação de tickets NinjaOne.
 - `70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`: skill e fluxo do Kowalski para diagnósticos técnicos de cartórios no Provimento CNJ 213/2026.
 - `70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`: Produção Assistida Instagram Bikon com Brand Director v2.1.0, Robotnik, Kling, Creatomate, Buffer, SSI/SFT e aprovações por portão.
-- `70-AUTOMACOES/boletos-malote/README.md`: documentação da automação assistida de boletos/remessa/API Cresol da BIKON, com lote 093, teste controlado de homologação Cresol e produção bancária bloqueada sem aprovação.
+- `70-AUTOMACOES/boletos-malote/README.md`: documentação da automação assistida de boletos/remessa/API Cresol da BIKON, com lote 093, testes controlados de homologação Cresol ate NN `357-6` e produção bancária bloqueada sem aprovação.
 - `70-AUTOMACOES/API-WHATSAPP-BIKON.md`: integração do canal oficial WhatsApp Bikon via api.bikon.tech, template `retomar_solicitacao`, rotina segura com dry-run e confirmação explícita.
 - `70-AUTOMACOES/api-bikon-whatsapp/`: snapshot sanitizado do client local, Swagger, documentação e rotina segura, sem tokens.
 

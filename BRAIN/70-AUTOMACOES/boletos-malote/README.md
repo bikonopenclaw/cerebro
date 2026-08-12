@@ -33,6 +33,13 @@ Espelho operacional:
 - Homologação Cresol controlada criou e consultou título de teste `22394001`, nosso número `09/00000000356-8`, valor R$ 1,00, vencimento `2026-08-10`, com PDF oficial baixado e remessa CNAB400 de homologação gerada. O título seguia `EM_PROCESSAMENTO` nas consultas registradas; não usar esse teste como autorização de produção.
 - Baseline FBCP 2026-08-03 registrou riscos P0: nosso número sem reserva transacional antes de provider/API, validador CNAB ainda estrutural e não contrato Cresol completo, e fronteira homologação/produção dependente de flags/nomes de pasta. Próximas correções devem ser unitárias e autorizadas por escopo.
 
+## Atualizacao 2026-08-11
+
+- Rodada Cresol API em homologacao seguiu a ordem observada dos nossos numeros `352` a `356` e criou titulo de teste `22394650` com nosso numero `09/00000000357-6`, valor R$ 1,00 e vencimento `2026-08-18`.
+- O PDF oficial foi baixado via API e validado por texto extraido; linha digitavel, nosso numero, vencimento, valor e numero de documento conferiram com a resposta da API.
+- A remessa CNAB400 local `cb110857-titulo-22394650-homologacao.rem` teve 3 linhas de 400 posicoes, registros `0/1/9`, sequencial `2394650`, quantidade `1`, valor total R$ 1,00 e validacao estrutural OK.
+- A rodada permaneceu restrita a homologacao: sem producao, sem upload no portal/banco, sem baixa e sem envio a cliente.
+
 ## Pendências antes de uso real
 
 Confirmar com o banco/contrato:

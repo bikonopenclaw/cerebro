@@ -2,12 +2,12 @@
 
 ```yaml
 nome: FIP Bikon Financial Intelligence
-status: production_go_live_pass_private_tailnet
+status: production_v1_1_treasury_frozen_chg003_candidate_not_frozen
 responsavel: Puppet Master
 inicio: 2026-08-09
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-11
+ultima_revisao: 2026-08-12
 tags: [bikon, financeiro, fip, pnl, forecast, scenario, tailscale, go-live]
 ```
 
@@ -31,6 +31,25 @@ O Brain registra estado consolidado, decisoes e guardrails. Bancos, exports, pri
 - Validacao visual: desktop e mobile `PASS`; testes automatizados `PASS`; Scenario Studio consumiu baseline canonica sem mutar actuals.
 - Mudanca pos-GO-LIVE em 2026-08-10 criou rota Tailscale tailnet-only `https://srv1811702.tail34aee8.ts.net:8787/`, proxy para `127.0.0.1:8787`, sem Funnel/public Internet na porta `8787`; hash do DB permaneceu inalterado e porta `9213` ficou intocada.
 
+## Atualizacao 2026-08-12
+
+`FIP_CHG_002_TREASURY_CASH_INTELLIGENCE=PASS` promoveu o FIP para `v1.1.0 FROZEN_PASS` com modelo de tesouraria e caixa:
+
+- conta Cresol principal inventariada: agencia `1708`, conta mascarada `***846-7`, BRL, ativa;
+- anchors oficiais aceitos do app Cresol: fechamento 2026-08-10 R$ 17.788,22 e fechamento 2026-08-11 R$ 17.001,68;
+- saldo calculado FIP em 2026-08-11: R$ 17.001,68, diferenca atual R$ 0,00 e `CURRENT_CASH_AUTHORITY=PASS`;
+- ledger diario 2026-08-11: abertura R$ 17.788,22, entrada R$ 1.800,00, saida R$ 2.586,54, fechamento R$ 17.001,68;
+- forecast CHG-002 projetou primeiro caixa negativo em 2026-08-20 no cenario base e necessidade adicional de capital de R$ 13.553,93;
+- P&L canonico, transacoes bancarias e actuals permaneceram sem regressao; porta `8787` continuou em loopback/Tailscale e porta `9213` ficou intocada.
+
+`FIP_CHG_003_CASH_FORECAST_RELIABILITY` passou tecnicamente, mas nao virou baseline congelada:
+
+- testes automatizados `17/17`, API autenticada `200`, API anonima `401`, validacao desktop/mobile `PASS` e regressoes de tabelas protegidas `PASS`;
+- ponte 30 dias fechou exatamente: R$ 17.001,68 + R$ 81.855,10 - R$ 60.227,33 = R$ 38.629,45;
+- menor caixa projetado: -R$ 12.384,86 em 2026-09-03; primeiro negativo: 2026-08-20;
+- cobertura documental material ficou parcial: entradas confirmadas 38%, saidas confirmadas 0%, abaixo da meta de 80%;
+- `FIP v1.2.0` ficou como candidato `NOT_FROZEN`, dependente de evidencias materiais de SIMPLES, Mastercard, TiFLux, folha/pro-labore e Bitrix24 antes de promocao.
+
 ## Guardrails
 
 - Nao transformar credito bancario, PIX, boleto, fatura de cartao ou recorrencia em receita/despesa definitiva sem evidencia economica suficiente.
@@ -40,11 +59,13 @@ O Brain registra estado consolidado, decisoes e guardrails. Bancos, exports, pri
 - A porta `8787` permanece em fronteira privada/controlada; nao publicar senha, token ou segredo em URL, relatorio ou Brain.
 - Porta `9213` e outros apps nao devem ser alterados por mudancas FIP sem autorizacao propria.
 - Toda alteracao pos-GO-LIVE deve ter backup, rollback, regressao financeira, smoke autenticado/anonimo e validacao de que DB/actuals mudaram apenas quando explicitamente autorizado.
+- Forecast e cenario nao devem inflar confianca quando a cobertura documental material estiver abaixo do alvo; promover apenas como candidato/partial pass ate receber evidencias suficientes.
 
 ## Proximos passos
 
 - Operar FIP como baseline privada aceita para consulta executiva, previsao e cenarios da BIKON.
 - Tratar novas fontes, regras, exposicoes, imports ou alteracoes de forecast como gates pos-GO-LIVE independentes.
+- Coletar/importar documentos para os gaps de confiabilidade do forecast antes de promover `v1.2.0`.
 - Manter evidencias, backups, prints e exports em `projects/fip/`, fora do Brain/Git.
 
 ## Relacoes

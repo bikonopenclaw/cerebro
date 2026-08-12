@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-08-12, consolidação diária
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-08-12.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md` com `FIP v1.1.0 FROZEN_PASS`, saldo oficial Cresol reconciliado em R$ 17.001,68, forecast 30d, e `FIP v1.2.0` mantido como candidato por cobertura documental parcial.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md` com recuperação do systemd user service, bootstrap Telegram Mini App e hidratação das abas canonicas, todos tecnicamente validados mas formalmente `FAIL_CLOSED` ate reteste real do iPhone.
+- Atualizados `BRAIN/20-EMPRESAS/BIKON/README.md`, `BRAIN/60-AGENTES/DARTH-VADER.md`, `BRAIN/70-AUTOMACOES/boletos-malote/README.md` e `BRAIN/99-SISTEMA/MEMORY.md`.
+- Atualizados `BRAIN/01-DIARIO/README.md`, `INDEX.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Commit Link Gate validado após a consolidação: `ok=True`, `349` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados arquivos locais do Brain, sessoes visiveis recentes e artefatos locais em `projects/fip`, `projects/openclaw-provimento-213` e `entregas/cresol-api-20260811T184657Z`; esta rotina nao acessou sistemas externos, nao enviou mensagem ao Hebert, nao criou agente, nao alterou crons, nao executou remediacao, nao fez push e nao alterou infraestrutura operacional.
+
 ## 2026-08-11, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-08-11.md`.

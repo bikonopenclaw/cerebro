@@ -2,12 +2,12 @@
 
 ```yaml
 nome: OpenClaw - Provimento 213
-status: cpiw_v4_cns_023689_commitado_aceitacao_operacional_fail_closed
+status: miniapp_canonical_tab_content_fail_closed_pending_owner_retest
 responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-08
+ultima_revisao: 2026-08-12
 tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre]
 ```
 
@@ -60,6 +60,9 @@ O Brain registra somente o estado consolidado. Artefatos autoritativos, arquivos
 - Commit produtivo CPIW V4 para CNS `023689` passou posteriormente: `PROVIMENTO_213_CPIW_V4_PRODUCTION_COMMIT_CNS_023689=PASS`, transação `TX-CPIW-V4-FINAL-TOKEN-IDENTITY-PARITY-20260807T194936Z`, `311` operações commitadas, preflight hash `7d7e5db34c5784624908583c952efc7d53ae75fd7ec3bbfd06cdb1d2e2f8d91a`, parity hash `69761717b4be0a3726e9cc4a2e29d72a13900f9708337130eaa25b8ff3a80458`, manifest de autoridade `f85526f171aaefae546fb14fc28ef58c13cf2130279986757035059f0fd6e69c` e runtime baseline `43becfabb6501bb2ea4d8453f36eb65f35dc2190351c8e5018e910b6dcd635b7`.
 - Estado persistido do CNS `023689`: AIR canonico `f5d630c5235fbd8e47d71045dda7274b04b00d59ac994181e80be3839c7c6b17`, ICD canonico `bea17518e0dddb62490a36c5bdd810072340d9bf4985d2d1d95c1c27b43fb380`, journal `COMMITTED`, lock ausente, staging preservado apenas como evidencia da transação, `0` DRE, `0` PDF e `0` contato cliente.
 - Aceitação operacional pós-commit falhou fechado: `PROVIMENTO_213_CNS_023689_POST_COMMIT_OPERATIONAL_ACCEPTANCE=FAIL_CLOSED`, classificação `NOT_CANONICAL_OPERATIONAL_FAIL_CLOSED` e freeze `NOT_FROZEN_FAIL_CLOSED`. A rota individual autenticada `/prov213/023689/data` retornou `HTTP/1.0 404`, não existiam arquivos dashboard auth/html/token para CNS `023689`, o dashboard geral ainda não consumia `023689` automaticamente e a rota controle CNS `024067` alterou `dashboard-state-v1.json` durante a validação.
+- Recuperação de propriedade do runtime em 2026-08-11 provou que o serviço canônico é `systemctl --user prov213-interface-runtime.service`, ativo em `127.0.0.1:9213`; a consulta anterior ao system manager gerou falso diagnóstico de unit ausente. A ativação técnica passou com `228/228 OK`, rotas dashboard/PDF `200` e `GET_MUTATION_COUNT=0`, mas o relatório formal ficou `FAIL_CLOSED` por validação final Kowalski pendente naquele fechamento.
+- Bootstrap real-equivalente do Telegram Mini App em 2026-08-12 corrigiu o POST `/prov213/miniapp/api/session`: initData Telegram, identidade Project Owner e launch context assinado passaram a ser validados antes do bootstrap, sem fallback silencioso para `PROJECT_OWNER_PILOT` e sem `runtime.start()` em estado canônico. Testes `232/232 OK`, Kowalski `PASS`, mutações `0`; formalmente `FAIL_CLOSED` por falta de reteste real do iPhone após o botão `12740`.
+- Hidratação de conteúdo das abas do Mini App em 2026-08-12 corrigiu contratos `pending`, `evidence`, `corrections`, `summary` e `question-context` para estados AIR/CPIW v4 canônicos. Testes `233/233 OK`, dashboards/PDFs dos quatro CNS `200`, Kowalski `PASS`, `TAB_VIEW_MUTATION_COUNT=0` e gateway restart `0`; estado formal `FAIL_CLOSED` somente por falta de inspeção real do iPhone do Project Owner nas cinco abas após o botão `12746`.
 
 ## Atualização 2026-08-02/03
 
@@ -78,6 +81,19 @@ A trilha CPIW V4 para CNS `023689` foi reconciliada em modo multi-source histór
 O commit produtivo posterior do CPIW V4 passou e gravou o estado CNS `023689`, mas a aceitação operacional pós-commit falhou fechado. O ponto importante é separar persistência correta de AIR/ICD/journal de disponibilidade operacional: a rota Herald/dashboard continua presa ao CNS `024067`, não há superfície autenticada individual para `023689`, e a rota controle `024067` demonstrou side effect em leitura.
 
 Estado consolidado: CNS `023689` possui dados commitados e auditáveis, mas não está operacional canônico. O próximo passo exige autorização atomica para implementar/validar rota autenticada do CNS `023689` e corrigir a pureza read-only da rota CNS `024067`; qualquer rollback ou mutação corretiva também exige autorização separada.
+
+## Atualizacao 2026-08-11/12
+
+A camada runtime/Mini App avancou sem promover aceite operacional automatico:
+
+- propriedade do servico canonico: `prov213-interface-runtime.service` no systemd user manager, nao system manager;
+- runtime ativo em `127.0.0.1:9213`, sem restart dos gateways OpenClaw;
+- Telegram native WebApp launch `PASS`, sem fallback para dashboard `/prov213/<CNS>`;
+- real-equivalent bootstrap dos CNS `023689`, `023218`, `023879` e `024067` passou com auth Telegram/contexto assinado e erros seguros para casos invalidos;
+- hidratacao das cinco abas passou para estados canonicos importados: Alzira `47/47` com 17 pendencias, 66 evidencias e 37 correcoes; Capixaba `28/47`; Celi `29/47`; Joao Neiva `41/47`;
+- leituras de abas e rotas mantiveram hashes de estado imutaveis.
+
+Aceitacao formal permanece fail-closed ate reteste visual real do Project Owner no iPhone para entrevista, pendencias, evidencias, correcoes e resumo. Essa pendencia nao autoriza nova mutacao de entrevista, contato externo, provider, DRE, PDF ou rollback.
 
 ## Governance Ledger
 
@@ -313,6 +329,7 @@ Resultado: `FAIL_CLOSED`, rollback `PASS`, `/opt/openclaw/platform/dre/v1` e `/u
 - AWS, Azure ou Google Cloud só podem ser escolhidos depois de evidência read-only de conta/tenant/subscription/projeto existente ou autorização explícita para nova conta.
 - Registro final com `PROPOSED_PENDING_INDEPENDENT_VALIDATION_OF_PUPPET_MASTER_RECORD` não equivale a completion congelado.
 - Commit e teste pre-install do DRE não equivalem a instalação válida: o launcher final deve ser relocatable e validado por black-box no caminho instalado.
+- Validacao de Mini App em ambiente real exige evidencia do cliente/dispositivo alvo quando o gate explicitamente pedir inspecao humana; simulacao real-equivalente, testes e validacao independente nao substituem esse ultimo aceite.
 
 ## Relações
 
@@ -322,6 +339,7 @@ Resultado: `FAIL_CLOSED`, rollback `PASS`, `/opt/openclaw/platform/dre/v1` e `/u
 - Diário: `BRAIN/01-DIARIO/2026/2026-07-31.md`.
 - Diário: `BRAIN/01-DIARIO/2026/2026-08-01.md`.
 - Diário: `BRAIN/01-DIARIO/2026/2026-08-03.md`.
+- Diário: `BRAIN/01-DIARIO/2026/2026-08-12.md`.
 - Conhecimento operacional: `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`.
 - Conhecimento operacional: `BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md`.
 - Contexto relacionado, mas distinto: `BRAIN/70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`.

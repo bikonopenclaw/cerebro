@@ -4,7 +4,7 @@
 categoria: agente_operacional
 fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17 e snapshot versionado em 2026-07-11
 confiabilidade: alta
-ultima_revisao: 2026-08-11
+ultima_revisao: 2026-08-12
 tags: [agente, financeiro, faturamento, nfse, boleto, remessa, cresol-api, fip]
 ```
 
@@ -56,6 +56,18 @@ Pendências:
 
 - Consultar evolução de status do título de homologação antes de usar ocorrências/conciliação.
 - Confirmar mapeamento definitivo de juros/multa no payload produtivo: Bikon usa multa de 2,00% após vencimento e juros de 1% ao mês proporcional ao dia.
+
+### Rodada homologacao 2026-08-11
+
+Nova rodada Cresol API em homologacao criou o titulo `22394650` para teste BIKON:
+
+- nosso numero: `09/00000000357-6`;
+- valor: R$ 1,00;
+- vencimento: 2026-08-18;
+- status consultado: `EM_PROCESSAMENTO`;
+- PDF oficial baixado via API, SHA-256 `7bb77b5480623ac7b0505a5fefbd0b977a0fb311b1e45ff21de7f8e99b309066`;
+- remessa CNAB400 local `cb110857-titulo-22394650-homologacao.rem`, sequencial `2394650`, 3 linhas de 400 posicoes, tipos `0/1/9`, valor total R$ 1,00, validacao estrutural OK e SHA-256 `5602b5efeec58a1e033d2a77cee36644901d15b394ddcdf328848227c76ac2e8`;
+- nenhum uso de producao, upload de remessa, baixa ou envio a cliente.
 
 ## BI financeiro Bikon, 2026-07-10/11
 

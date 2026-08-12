@@ -25,6 +25,8 @@
 
 ## Histórico relevante
 
+- 2026-08-12: FIP `v1.1.0` congelado com tesouraria/caixa: saldo oficial Cresol de 2026-08-11 R$ 17.001,68 reconciliado com diferenca R$ 0,00, forecast 30d R$ 38.629,45 e primeiro caixa negativo projetado em 2026-08-20; `v1.2.0` ficou candidato nao congelado porque a cobertura documental material do forecast ficou abaixo de 80%.
+- 2026-08-11: rodada Cresol API em homologacao criou titulo `22394650`, nosso numero `09/00000000357-6`, valor R$ 1,00, vencimento 2026-08-18, PDF oficial e remessa CNAB400 local validada; sem producao, sem upload no portal/banco, sem baixa e sem envio a cliente.
 - 2026-08-10/11: FIP Bikon Financial Intelligence atingiu `FIP_PRODUCTION_GO_LIVE=PASS` para fronteira privada/controlada. Totais aceitos: receita canonica R$ 2.443.859,64, despesa R$ 1.418.140,88, resultado R$ 1.025.718,76, `1438` transacoes bancarias canonicas e pendencias materiais `0`/R$ 0,00. Acesso produtivo ficou em `127.0.0.1:8787` e rota Tailscale tailnet-only `https://srv1811702.tail34aee8.ts.net:8787/`, sem Funnel/public Internet para `8787`.
 - 2026-08-03: faturamento agosto/2026 remessa 093 executado em produção assistida: 27 NFS-e autorizadas, 27 boletos locais, 18 e-mails enviados com cópia para `financeiro@bikon.com.br`, total R$ 86.357,06; remessa CNAB400 local gerada sem transmissão bancária consolidada.
 - 2026-08-03: dashboard Provimento 213 do CNS `024067` entrou em produção focada com identidade Bikon/PT-BR e exportação PDF autenticada via Tailscale; token antigo revogado e sem token permanente na URL.
@@ -70,3 +72,4 @@
 - Brand QA pré-geração aprova somente o snapshot e o hash apresentados. Não autoriza Portão C, Kling, render, upload ou publicação; qualquer alteração de byte exige nova submissão.
 - FIP e dashboards financeiros privados nao autorizam emissao fiscal, boleto, remessa, baixa bancaria ou comunicacao externa; eles sao base executiva/gerencial ate haver Approval proprio para efeitos operacionais.
 - FIP em `8787` deve permanecer privado/autenticado; nao expor via Internet publica, segredo em URL ou relatorio.
+- Forecast FIP com cobertura documental parcial deve permanecer como candidato/partial pass; nao usar projecoes para decisao operacional irreversivel sem explicitar confianca, materialidade e lacunas.
