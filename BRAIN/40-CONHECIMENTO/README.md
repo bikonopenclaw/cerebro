@@ -28,6 +28,7 @@ Este MOC liga conhecimento permanente por dominio. Ele existe para navegação c
 - [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmacao antes de acoes com impacto]]
 - [[40-CONHECIMENTO/Operacional/Consolidacao-silenciosa-sem-ruido|Consolidacao silenciosa sem ruido]]
 - [[40-CONHECIMENTO/Operacional/Commit-de-estado-nao-e-aceitacao-operacional|Commit de estado nao e aceitacao operacional]]
+- [[40-CONHECIMENTO/Operacional/Contagem-nao-e-percentual-de-conclusao|Contagem nao e percentual de conclusao]]
 - [[40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel|Contrato de runtime reprodutivel]]
 - [[40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico|Deploy atomico de skills com hash canonico]]
 - [[40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais|Escopo de canais operacionais]]

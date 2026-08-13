@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02 e 2026-07-06; consulta NinjaOne HOST1/Magnitos em 2026-07-06
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06 e relatorios operacionais ate 2026-08-12
 confiabilidade: media
-ultima_revisao: 2026-07-08
+ultima_revisao: 2026-08-13
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
 ```
 
@@ -59,6 +59,19 @@ Consequência operacional:
 
 - Não inferir conclusão de backup nem saúde de replicação Hyper-V a partir da ausência de dados no NinjaOne.
 - Para validar esses itens, é necessário criar integração, monitor, script ou custom field que grave status explícito no NinjaOne.
+
+## Relatorio operacional 2026-08-12
+
+Resumo agregado read-only referente a 2026-08-11 BRT:
+
+- 11 contas/dispositivos monitorados.
+- Classificacao operacional: 9 OK, 2 atencao, 0 critico.
+- Status atual da API: 9 concluidos e 2 em processo.
+- Ultimo backup valido em 2026-08-11: 6/11; apos a virada para 2026-08-12: 5/11.
+- Atencoes: `16 Ferreira Rocha / servidor_2j3wv` com ticket NinjaOne `#1692` ativo; `15 - RI Maraba / 15-hv-03_fpjsk`; acompanhamento de `11 - Grupo Unus / hv-01_qbcsz`.
+- Nenhum job com falha critica atual retornado pela API.
+
+Guardrail: acompanhar jobs em processo/atencao/recorrencia e reavaliar pelo fluxo autorizado de tickets; nao alterar backup, job, politica, script ou ticket sem autorizacao explicita.
 
 ## Guardrails
 

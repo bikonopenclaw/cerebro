@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw - Provimento 213
-status: miniapp_canonical_tab_content_fail_closed_pending_owner_retest
+status: final_canonical_truth_partial_blocked_owner_acceptance_pending
 responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-12
-tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre]
+ultima_revisao: 2026-08-13
+tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre, miniapp, canonical-truth]
 ```
 
 ## Objetivo
@@ -63,6 +63,12 @@ O Brain registra somente o estado consolidado. Artefatos autoritativos, arquivos
 - Recuperação de propriedade do runtime em 2026-08-11 provou que o serviço canônico é `systemctl --user prov213-interface-runtime.service`, ativo em `127.0.0.1:9213`; a consulta anterior ao system manager gerou falso diagnóstico de unit ausente. A ativação técnica passou com `228/228 OK`, rotas dashboard/PDF `200` e `GET_MUTATION_COUNT=0`, mas o relatório formal ficou `FAIL_CLOSED` por validação final Kowalski pendente naquele fechamento.
 - Bootstrap real-equivalente do Telegram Mini App em 2026-08-12 corrigiu o POST `/prov213/miniapp/api/session`: initData Telegram, identidade Project Owner e launch context assinado passaram a ser validados antes do bootstrap, sem fallback silencioso para `PROJECT_OWNER_PILOT` e sem `runtime.start()` em estado canônico. Testes `232/232 OK`, Kowalski `PASS`, mutações `0`; formalmente `FAIL_CLOSED` por falta de reteste real do iPhone após o botão `12740`.
 - Hidratação de conteúdo das abas do Mini App em 2026-08-12 corrigiu contratos `pending`, `evidence`, `corrections`, `summary` e `question-context` para estados AIR/CPIW v4 canônicos. Testes `233/233 OK`, dashboards/PDFs dos quatro CNS `200`, Kowalski `PASS`, `TAB_VIEW_MUTATION_COUNT=0` e gateway restart `0`; estado formal `FAIL_CLOSED` somente por falta de inspeção real do iPhone do Project Owner nas cinco abas após o botão `12746`.
+- Mini App unificado em 2026-08-12: launcher `/prov213 <CNS|nome|alias>`, deep link retrocompativel `/prov213 interview <selector>`, acoes `CONTINUAR_ENTREVISTA`, `RETOMAR_ENTREVISTA`, `REABRIR_ENTREVISTA`, upload de evidencia com binding CNS/pendencia/pergunta/controle e fechamento manual auditado de pendencia. Suite `240/240 OK`, Kowalski staged/final `PASS`, `GET_MUTATION_COUNT=0`; formalmente `FAIL_CLOSED` ate aceite real iPhone/Telegram.
+- Composicao visual Bikon do Mini App em 2026-08-12: logo oficial `Bikon_Simbolo_fundo_preto.png`, SHA-256 `ef99743d2234ed2b0074ad652a695ff79d801c085c0fc63b3478ecb3da8763d3`, header grafite `#1E1E1E`, sem capsula branca, navegacao fixa e paleta do manual. Suite `237/237 OK`, Kowalski `PASS`; aceite visual real do Project Owner segue pendente.
+- Reconciliação read-only de verdade canonica em 2026-08-12 confirmou que o Project Owner estava correto ao rejeitar o falso `100%`: a fonte historica Alzira registra `48/48`, 13 conformes, 18 parciais, 17 nao conformes e indice historico `45,8%`, enquanto o runtime/PDF atual projetava entrevista `47/47` e convertia contagens de evidencias, conformidade e adequacoes em `100%`. Nenhuma mutacao produtiva, contato cliente ou gateway restart foi feito.
+- Correção do contrato semantico de KPIs em 2026-08-12 eliminou a conversao de contagem para percentual em PDF, ICD e Mini App: evidencias, conformidade e adequacoes passaram a renderizar como contagens/distribuicoes sem denominador canonico. Suite `241/241 OK`, hashes canonicos dos quatro CNS preservados e runtime `prov213-interface-runtime.service` ativo; gate formal `FAIL_CLOSED` ate aceite real do PDF novo da Alzira e fechamento Kowalski especifico.
+- Reconstrucao/certificacao final de verdade canonica ficou `PARTIAL_BLOCKED`: `874/874` paths do `MANIFESTO.json` historico presentes apos NFC, Drive com `1003` arquivos visiveis, `129` extras e `1` diferenca de tamanho em `00-checkpoint.md`; seis CNS ficaram `NOT_CERTIFIED`, sem promocao canonica.
+- Recuperacao parcial do corpus verificado registrou plano de `1003` arquivos, `76` entradas validas de progresso, `75` byte-verified, `1` mismatch e `927` restantes. Classificacao inicial dos `129` extras: `38` artefatos operacionais pos-checkpoint, `4` outputs derivados e `87` temporarios/tooling.
 
 ## Atualização 2026-08-02/03
 
@@ -94,6 +100,20 @@ A camada runtime/Mini App avancou sem promover aceite operacional automatico:
 - leituras de abas e rotas mantiveram hashes de estado imutaveis.
 
 Aceitacao formal permanece fail-closed ate reteste visual real do Project Owner no iPhone para entrevista, pendencias, evidencias, correcoes e resumo. Essa pendencia nao autoriza nova mutacao de entrevista, contato externo, provider, DRE, PDF ou rollback.
+
+## Atualizacao 2026-08-12/13
+
+O foco passou de apenas UI/Mini App para verdade canonica e semantica de metricas. O Mini App unificado e a composicao visual Bikon estao tecnicamente ativos e validados, mas continuam bloqueados por aceite real iPhone/Telegram. Em paralelo, a reconciliacao read-only provou que contagens de evidencia, conformidade e adequacao foram projetadas como `100%` no PDF/ICD, criando risco de falsa conclusao operacional.
+
+Estado consolidado:
+
+- Golden Baseline: bloqueada.
+- PDF Alzira corrigido: pendente de aceite do Project Owner.
+- Verdade canonica seis CNS: `PARTIAL_BLOCKED`, nenhum CNS certificado.
+- Materializacao local do corpus: incompleta, com continuacao em indice `76` e `927` arquivos restantes.
+- Proxima autorizacao proposta: `AUTHORIZE_PROVIMENTO_213_CORPUS_RAW_MATERIALIZATION_AND_POST_CHECKPOINT_EXTRA_CLASSIFICATION`.
+
+Nenhum dado canonico foi promovido nesta janela; nenhuma mutacao produtiva, contato cliente, provider, DRE novo, rollback ou envio externo foi autorizado pela validacao tecnica.
 
 ## Governance Ledger
 

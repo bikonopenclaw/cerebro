@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_seguranca
-fonte: conversa com Hebert em 2026-06-18/19, documentação pública Bitdefender consultada na sessão, relatório executivo gerado em 2026-06-19 e relatórios operacionais read-only até 2026-08-07
+fonte: conversa com Hebert em 2026-06-18/19, documentação pública Bitdefender consultada na sessão, relatório executivo gerado em 2026-06-19 e relatórios operacionais read-only até 2026-08-12
 confiabilidade: media
-ultima_revisao: 2026-08-08
+ultima_revisao: 2026-08-13
 tags: [bikon, bitdefender, gravityzone, seguranca, inventario, endpoints, relatorios, ninjaone, tickets]
 ```
 
@@ -121,6 +121,20 @@ Resumo agregado observado na rotina diária read-only:
 Próxima ação: validar no GravityZone os endpoints com `malwareStatus` positivo e confirmar se há remediação pendente antes de qualquer remediação, alteração de política, isolamento, ticket manual ou comunicação externa.
 
 Observação: manter apenas agregados e identificadores operacionais mínimos; não versionar resposta bruta, API keys ou inventário detalhado.
+
+## Relatorio diario de ameacas 2026-08-12
+
+Resumo agregado observado na rotina diaria read-only referente a 2026-08-11 BRT:
+
+- 3 registros confirmados no dia, todos novas entradas em quarentena, sem incidentes.
+- 3 endpoints afetados no Grupo Unus: `NOTE-168`, `PC-02` e `11-000303`, todos `Atc4.Detection`.
+- Estado atual indicou 2 endpoints com `malwareStatus` positivo: `SCFR01 | 16 - Cartorio Ferreira Rocha` e `11-000303 | 11 - Unus`.
+- Janela de licenciamento de 30 dias: 447 dispositivos vistos, 416 licenciados, 21 explicitamente sem licenca, 10 sem confirmacao tecnica e 63 com produto/assinatura desatualizado.
+- Coleta concluiu sem falhas nas consultas previstas.
+
+Proxima acao: validar no GravityZone os endpoints com `malwareStatus` positivo e confirmar remediacao pendente antes de qualquer isolamento, alteracao de politica, remediacao, ticket manual ou comunicacao externa.
+
+Observacao: manter apenas agregados e identificadores operacionais minimos; nao versionar resposta bruta, API keys ou inventario detalhado.
 
 ## Relações
 

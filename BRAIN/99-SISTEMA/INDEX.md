@@ -69,6 +69,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-08-08.md`: consolidação diária com commit produtivo CPIW V4 CNS `023689` `PASS`, aceitação operacional pós-commit `FAIL_CLOSED`, separação entre dados commitados e rota Herald/dashboard, e agregado Bitdefender BIKON de 2026-08-07.
 - `01-DIARIO/2026/2026-08-11.md`: consolidação diária com FIP BIKON em GO-LIVE privado/controlado e executor controlado ODP em fail-closed por contrato congelado ausente no caminho final.
 - `01-DIARIO/2026/2026-08-12.md`: consolidação diária com FIP `v1.1.0` de tesouraria congelado, FIP `v1.2.0` candidato por cobertura documental parcial, Provimento 213 Mini App tecnicamente validado mas fail-closed ate reteste real do iPhone, e Cresol API NN `357-6` em homologacao.
+- `01-DIARIO/2026/2026-08-13.md`: consolidacao diaria com ODP Day 3 `PASS_ACCEPTED`, Provimento 213 Mini App unificado/visual Bikon ainda dependente de aceite real, falso `100%` de KPI corrigido e verdade canonica `PARTIAL_BLOCKED` por corpus historico incompleto.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `01-DIARIO/Mensal/2026-07.md`: consolidação mensal de julho/2026 com padrões de evidência antes de status, portões separados, read-only como expansão segura, cadeia de custódia e runtime como superfície operacional.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes e boletos/malote.
@@ -97,6 +98,7 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md`: aprendizado para separar capacidade oficial de provider da evidência local de conta, tenant, owner e permissões.
 - `40-CONHECIMENTO/Operacional/Aplicabilidade-antes-de-disponibilidade-operacional.md`: guardrail para impedir pergunta, provider ou rota operacional baseada apenas em disponibilidade técnica sem aplicabilidade canônica.
 - `40-CONHECIMENTO/Operacional/Commit-de-estado-nao-e-aceitacao-operacional.md`: guardrail para separar commit de dados, AIR/ICD/journal e aceitação operacional da superfície final.
+- `40-CONHECIMENTO/Operacional/Contagem-nao-e-percentual-de-conclusao.md`: guardrail para impedir que contagens de evidencias, conformidade, remediacao ou inventario sejam renderizadas como `100%` sem denominador canonico.
 - `40-CONHECIMENTO/Operacional/Leitura-read-only-deve-provar-nao-mutacao.md`: guardrail para validar consultas e rotas read-only por ausência de mutação persistida.
 - `40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado.md`: gate para validar ferramentas instaladas em black-box pelo caminho final usado pelo operador.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
@@ -104,8 +106,8 @@ Mapa geral do Brain.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise, com Brain v2 foundation aceita, reintegracao 11B, Graph Gate 11C, ajustes Obsidian 11D/11E, MOC cronologico, MOCs canonicos por area e Commit Link Gate local.
 - `50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md`: projeto financeiro da BIKON com P&L canonico, forecast/cenarios, GO-LIVE privado em `8787`, autenticacao, backup/rollback, Tailscale tailnet-only, tesouraria `v1.1.0` congelada e `v1.2.0` candidato por cobertura documental parcial.
 - `50-PROJETOS/Em-Andamento/OpenClaw-Engineering-Delegation.md`: EDC para delegação governada de engenharia com Codex CLI, perfil read-only ativo, primeiro piloto Zone A `PASS`, ramo task-specific write alinhado, commit CPIW V4 vinculado a bundle EDC e aceitação operacional Herald/dashboard em gate separado.
-- `50-PROJETOS/Em-Andamento/OpenClaw-Operational-Data-Platform.md`: ODP como fundação PostgreSQL governada para dados operacionais, com Day 1 final `PASS`, Day 2 `PASS_ACCEPTED`, PostgreSQL loopback e Day 3 bloqueado por token próprio.
-- `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com DRE final adotado, Herald/dashboard CNS `024067`, CPIW V4 CNS `023689` commitado, Mini App Telegram tecnicamente validado e aceite formal ainda fail-closed por reteste real do iPhone pendente.
+- `50-PROJETOS/Em-Andamento/OpenClaw-Operational-Data-Platform.md`: ODP como fundação PostgreSQL governada para dados operacionais, com Day 1 final `PASS`, Day 2 `PASS_ACCEPTED`, Day 3 core `PASS_ACCEPTED`, executor v2, tres migracoes aplicadas, `0` business modules e Day 4 nao executado.
+- `50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`: projeto governado por checkpoints, Execution Pack, hashes e Approval explícito, com DRE final adotado, Herald/dashboard CNS `024067`, CPIW V4 CNS `023689` commitado, Mini App Telegram unificado/visual tecnicamente validado, falso KPI `100%` corrigido e verdade canonica `PARTIAL_BLOCKED` por corpus historico ainda nao certificado.
 - `50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`: projeto de migração OpenClaw para VPS Hostinger com ambiente limpo, usuário `openclaw`, Claw3D/OpenClaw em validação e rollback.
 - `50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md`: projeto de seleção governada de modelo e pensamento, com Gate D0, perfis, baseline de 40 tarefas e Etapa 0 concluída.
 - `50-PROJETOS/Planejamento/Controlador-de-Execucao-v2/README.md`: sucessor documental baseado em capacidades C0-C5, esforço R0-R5, risco G0-G3, Registry operacional e Etapa 0.5 read-only.
@@ -120,9 +122,9 @@ Mapa geral do Brain.
 - `70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`: contexto ativo do grupo Telegram de faturamento Bikon e histórico inativo FN Souza, com roteamento para Darth Vader, guardrails e lote Bikon agosto/2026.
 - `70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`: contexto do grupo Telegram de relatórios operacionais, com roteamento restrito, gateway isolado para Kowalski e agenda diária 07:45-07:48/07:59.
 - `70-AUTOMACOES/WHISPER-LOCAL.md`: instância local faster-whisper definida como padrão para transcrição de áudios.
-- `70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`: integração GravityZone para segurança, inventário, relatórios da Bikon e tickets NinjaOne sob critérios aprovados.
+- `70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`: integração GravityZone para segurança, inventário, relatórios da Bikon e tickets NinjaOne sob critérios aprovados, com agregado read-only atualizado em 2026-08-12.
 - `70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md`: matriz mestre para governança e auditoria de usuários Bikon aprovados no Entra ID versus acessos em ADs locais de clientes.
-- `70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`: automação diária de monitoramento ARX Backup com deduplicação/criação de tickets NinjaOne.
+- `70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`: automação diária de monitoramento ARX Backup com deduplicação/criação de tickets NinjaOne e agregado read-only de 2026-08-12 sem falha critica atual.
 - `70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`: skill e fluxo do Kowalski para diagnósticos técnicos de cartórios no Provimento CNJ 213/2026.
 - `70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`: Produção Assistida Instagram Bikon com Brand Director v2.1.0, Robotnik, Kling, Creatomate, Buffer, SSI/SFT e aprovações por portão.
 - `70-AUTOMACOES/boletos-malote/README.md`: documentação da automação assistida de boletos/remessa/API Cresol da BIKON, com lote 093, testes controlados de homologação Cresol ate NN `357-6` e produção bancária bloqueada sem aprovação.
