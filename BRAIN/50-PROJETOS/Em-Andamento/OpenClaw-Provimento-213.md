@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw - Provimento 213
-status: final_canonical_truth_partial_blocked_owner_acceptance_pending
+status: golden_baseline_protected_historical_migration_closed
 responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-13
-tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre, miniapp, canonical-truth]
+ultima_revisao: 2026-08-14
+tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre, miniapp, canonical-truth, portal213]
 ```
 
 ## Objetivo
@@ -61,13 +61,13 @@ O Brain registra somente o estado consolidado. Artefatos autoritativos, arquivos
 - Estado persistido do CNS `023689`: AIR canonico `f5d630c5235fbd8e47d71045dda7274b04b00d59ac994181e80be3839c7c6b17`, ICD canonico `bea17518e0dddb62490a36c5bdd810072340d9bf4985d2d1d95c1c27b43fb380`, journal `COMMITTED`, lock ausente, staging preservado apenas como evidencia da transação, `0` DRE, `0` PDF e `0` contato cliente.
 - Aceitação operacional pós-commit falhou fechado: `PROVIMENTO_213_CNS_023689_POST_COMMIT_OPERATIONAL_ACCEPTANCE=FAIL_CLOSED`, classificação `NOT_CANONICAL_OPERATIONAL_FAIL_CLOSED` e freeze `NOT_FROZEN_FAIL_CLOSED`. A rota individual autenticada `/prov213/023689/data` retornou `HTTP/1.0 404`, não existiam arquivos dashboard auth/html/token para CNS `023689`, o dashboard geral ainda não consumia `023689` automaticamente e a rota controle CNS `024067` alterou `dashboard-state-v1.json` durante a validação.
 - Recuperação de propriedade do runtime em 2026-08-11 provou que o serviço canônico é `systemctl --user prov213-interface-runtime.service`, ativo em `127.0.0.1:9213`; a consulta anterior ao system manager gerou falso diagnóstico de unit ausente. A ativação técnica passou com `228/228 OK`, rotas dashboard/PDF `200` e `GET_MUTATION_COUNT=0`, mas o relatório formal ficou `FAIL_CLOSED` por validação final Kowalski pendente naquele fechamento.
-- Bootstrap real-equivalente do Telegram Mini App em 2026-08-12 corrigiu o POST `/prov213/miniapp/api/session`: initData Telegram, identidade Project Owner e launch context assinado passaram a ser validados antes do bootstrap, sem fallback silencioso para `PROJECT_OWNER_PILOT` e sem `runtime.start()` em estado canônico. Testes `232/232 OK`, Kowalski `PASS`, mutações `0`; formalmente `FAIL_CLOSED` por falta de reteste real do iPhone após o botão `12740`.
-- Hidratação de conteúdo das abas do Mini App em 2026-08-12 corrigiu contratos `pending`, `evidence`, `corrections`, `summary` e `question-context` para estados AIR/CPIW v4 canônicos. Testes `233/233 OK`, dashboards/PDFs dos quatro CNS `200`, Kowalski `PASS`, `TAB_VIEW_MUTATION_COUNT=0` e gateway restart `0`; estado formal `FAIL_CLOSED` somente por falta de inspeção real do iPhone do Project Owner nas cinco abas após o botão `12746`.
-- Mini App unificado em 2026-08-12: launcher `/prov213 <CNS|nome|alias>`, deep link retrocompativel `/prov213 interview <selector>`, acoes `CONTINUAR_ENTREVISTA`, `RETOMAR_ENTREVISTA`, `REABRIR_ENTREVISTA`, upload de evidencia com binding CNS/pendencia/pergunta/controle e fechamento manual auditado de pendencia. Suite `240/240 OK`, Kowalski staged/final `PASS`, `GET_MUTATION_COUNT=0`; formalmente `FAIL_CLOSED` ate aceite real iPhone/Telegram.
-- Composicao visual Bikon do Mini App em 2026-08-12: logo oficial `Bikon_Simbolo_fundo_preto.png`, SHA-256 `ef99743d2234ed2b0074ad652a695ff79d801c085c0fc63b3478ecb3da8763d3`, header grafite `#1E1E1E`, sem capsula branca, navegacao fixa e paleta do manual. Suite `237/237 OK`, Kowalski `PASS`; aceite visual real do Project Owner segue pendente.
+- Bootstrap real-equivalente do Telegram Mini App em 2026-08-12 corrigiu o POST `/prov213/miniapp/api/session`: initData Telegram, identidade Project Owner e launch context assinado passaram a ser validados antes do bootstrap, sem fallback silencioso para `PROJECT_OWNER_PILOT` e sem `runtime.start()` em estado canônico. Testes `232/232 OK`, Kowalski `PASS`, mutações `0`; naquele fechamento ficou `FAIL_CLOSED` por falta de reteste real do iPhone após o botão `12740`, estado depois superado pelo freeze operacional de 2026-08-13/14.
+- Hidratação de conteúdo das abas do Mini App em 2026-08-12 corrigiu contratos `pending`, `evidence`, `corrections`, `summary` e `question-context` para estados AIR/CPIW v4 canônicos. Testes `233/233 OK`, dashboards/PDFs dos quatro CNS `200`, Kowalski `PASS`, `TAB_VIEW_MUTATION_COUNT=0` e gateway restart `0`; naquele fechamento ficou `FAIL_CLOSED` por falta de inspeção real do iPhone do Project Owner nas cinco abas após o botão `12746`, estado depois superado pelo freeze operacional de 2026-08-13/14.
+- Mini App unificado em 2026-08-12: launcher `/prov213 <CNS|nome|alias>`, deep link retrocompativel `/prov213 interview <selector>`, acoes `CONTINUAR_ENTREVISTA`, `RETOMAR_ENTREVISTA`, `REABRIR_ENTREVISTA`, upload de evidencia com binding CNS/pendencia/pergunta/controle e fechamento manual auditado de pendencia. Suite `240/240 OK`, Kowalski staged/final `PASS`, `GET_MUTATION_COUNT=0`; naquele fechamento ficou `FAIL_CLOSED` ate aceite real iPhone/Telegram, estado depois superado pelo freeze operacional de 2026-08-13/14.
+- Composicao visual Bikon do Mini App em 2026-08-12: logo oficial `Bikon_Simbolo_fundo_preto.png`, SHA-256 `ef99743d2234ed2b0074ad652a695ff79d801c085c0fc63b3478ecb3da8763d3`, header grafite `#1E1E1E`, sem capsula branca, navegacao fixa e paleta do manual. Suite `237/237 OK`, Kowalski `PASS`; naquele fechamento o aceite visual real do Project Owner seguia pendente, estado depois superado pelo freeze operacional de 2026-08-13/14.
 - Reconciliação read-only de verdade canonica em 2026-08-12 confirmou que o Project Owner estava correto ao rejeitar o falso `100%`: a fonte historica Alzira registra `48/48`, 13 conformes, 18 parciais, 17 nao conformes e indice historico `45,8%`, enquanto o runtime/PDF atual projetava entrevista `47/47` e convertia contagens de evidencias, conformidade e adequacoes em `100%`. Nenhuma mutacao produtiva, contato cliente ou gateway restart foi feito.
 - Correção do contrato semantico de KPIs em 2026-08-12 eliminou a conversao de contagem para percentual em PDF, ICD e Mini App: evidencias, conformidade e adequacoes passaram a renderizar como contagens/distribuicoes sem denominador canonico. Suite `241/241 OK`, hashes canonicos dos quatro CNS preservados e runtime `prov213-interface-runtime.service` ativo; gate formal `FAIL_CLOSED` ate aceite real do PDF novo da Alzira e fechamento Kowalski especifico.
-- Reconstrucao/certificacao final de verdade canonica ficou `PARTIAL_BLOCKED`: `874/874` paths do `MANIFESTO.json` historico presentes apos NFC, Drive com `1003` arquivos visiveis, `129` extras e `1` diferenca de tamanho em `00-checkpoint.md`; seis CNS ficaram `NOT_CERTIFIED`, sem promocao canonica.
+- Reconstrucao/certificacao final de verdade canonica ficou inicialmente `PARTIAL_BLOCKED`: `874/874` paths do `MANIFESTO.json` historico presentes apos NFC, Drive com `1003` arquivos visiveis, `129` extras e `1` diferenca de tamanho em `00-checkpoint.md`; seis CNS ficaram `NOT_CERTIFIED` naquele fechamento. A reconciliacao posterior de 2026-08-13/14 superou esse estado e fechou a verdade canonica como `CLOSED_AND_SOURCE_BACKED`.
 - Recuperacao parcial do corpus verificado registrou plano de `1003` arquivos, `76` entradas validas de progresso, `75` byte-verified, `1` mismatch e `927` restantes. Classificacao inicial dos `129` extras: `38` artefatos operacionais pos-checkpoint, `4` outputs derivados e `87` temporarios/tooling.
 
 ## Atualização 2026-08-02/03
@@ -99,13 +99,13 @@ A camada runtime/Mini App avancou sem promover aceite operacional automatico:
 - hidratacao das cinco abas passou para estados canonicos importados: Alzira `47/47` com 17 pendencias, 66 evidencias e 37 correcoes; Capixaba `28/47`; Celi `29/47`; Joao Neiva `41/47`;
 - leituras de abas e rotas mantiveram hashes de estado imutaveis.
 
-Aceitacao formal permanece fail-closed ate reteste visual real do Project Owner no iPhone para entrevista, pendencias, evidencias, correcoes e resumo. Essa pendencia nao autoriza nova mutacao de entrevista, contato externo, provider, DRE, PDF ou rollback.
+Naquele fechamento, a aceitacao formal permaneceu fail-closed ate reteste visual real do Project Owner no iPhone para entrevista, pendencias, evidencias, correcoes e resumo. Esse bloqueio foi depois superado pelo freeze operacional de 2026-08-13/14, sem abrir autorizacao automatica para nova mutacao de entrevista, contato externo, provider, DRE, PDF ou rollback.
 
 ## Atualizacao 2026-08-12/13
 
 O foco passou de apenas UI/Mini App para verdade canonica e semantica de metricas. O Mini App unificado e a composicao visual Bikon estao tecnicamente ativos e validados, mas continuam bloqueados por aceite real iPhone/Telegram. Em paralelo, a reconciliacao read-only provou que contagens de evidencia, conformidade e adequacao foram projetadas como `100%` no PDF/ICD, criando risco de falsa conclusao operacional.
 
-Estado consolidado:
+Estado daquele fechamento, depois supersedido pela atualizacao 2026-08-13/14:
 
 - Golden Baseline: bloqueada.
 - PDF Alzira corrigido: pendente de aceite do Project Owner.
@@ -113,7 +113,33 @@ Estado consolidado:
 - Materializacao local do corpus: incompleta, com continuacao em indice `76` e `927` arquivos restantes.
 - Proxima autorizacao proposta: `AUTHORIZE_PROVIMENTO_213_CORPUS_RAW_MATERIALIZATION_AND_POST_CHECKPOINT_EXTRA_CLASSIFICATION`.
 
-Nenhum dado canonico foi promovido nesta janela; nenhuma mutacao produtiva, contato cliente, provider, DRE novo, rollback ou envio externo foi autorizado pela validacao tecnica.
+Nenhum dado canonico foi promovido naquela janela; nenhuma mutacao produtiva, contato cliente, provider, DRE novo, rollback ou envio externo foi autorizado pela validacao tecnica.
+
+## Atualizacao 2026-08-13/14
+
+A reconciliacao posterior fechou a migracao historica e verdade canonica do Provimento 213 como estado source-backed:
+
+- `PROVIMENTO_213_HISTORICAL_MIGRATION=CLOSED`;
+- `PROVIMENTO_213_CANONICAL_TRUTH=CLOSED_AND_SOURCE_BACKED`;
+- `PROVIMENTO_213_UNIFIED_MINI_APP=FROZEN_OPERATIONAL`;
+- `PROVIMENTO_213_ICD=FROZEN_OPERATIONAL`;
+- `PROVIMENTO_213_DRE_PDF=FROZEN_OPERATIONAL`;
+- `PROVIMENTO_213_PLATFORM=GOLDEN_BASELINE_PROTECTED`.
+
+O pacote final de Golden Baseline e contract freeze `20260813T165500Z.tar.gz` passou em validacao final Kowalski com SHA-256 `106c7c2cbbbc559da6ad81ee179c3dfb7cfa8d434a0d6cac53ff9593e0efb5e7`. A regra de retomada mudou: nao propor mais engenharia para a migracao historica sem evidencia factual source-backed. Demandas futuras devem ser classificadas como `NORMAL_CUSTOMER_OPERATION`, `AUTHORIZED_PROTECTED_CONTRACT_CHANGE`, `POSTGRESQL_ODP_SYSTEM_OF_RECORD_MIGRATION`, `NEW_PROVIMENTO_FEATURE` ou `PRODUCTION_INCIDENT / REGRESSION`.
+
+Portal 213 Telegram tambem avancou como frente preparatoria offline/read-only:
+
+- Phase 0 `PASS`: artefato SHA-256 `e1e3ffc67126ad6b52d61795265bad4f7bb055e23b086bcdd5650db438865ca1`, testes `35/35`.
+- Phase 0.1 `PASS`: artefato SHA-256 `f00765d3a7411972a6be30b434d1a379b0ad5d1f8a97115815d0669f32b78241`, testes `49/49`.
+- Phase 0.2 `PASS`: artefato SHA-256 `2e62df75331df7963a3aa8c4be791610cebf34ac87b78f70b860bd40c1426458`, testes `54/54`.
+- Stage 1A deployment readiness `PASS` com runtime HTTP produtivo ainda `BLOCKED_MISSING_SUPPORTED_HTTP_RUNTIME`: artefato SHA-256 `263708f0182570d3bc931a19f41300d5226714fce99ff1d4c5ffb40d06bf98d6`, testes `70/70`.
+- Stage 1A.1 `PASS`: artefato SHA-256 `d9087940e852de6dfcee6e72b4523f2fa7bf6070af54467c26f9aa4a5d294d07`.
+- Stage 1A.2 `PASS`: artefato SHA-256 `82c8dbdd8127f506f424119e23747a321a14b09a1d0fdcee1e17b22c7b7dee07`, testes `80/80`.
+- Stage 1A.3 superseded falhou fechado por incompatibilidade entre artifact-as-bundle e controller/matriz; a entrega corrigida `20260814T000500Z.tar.gz` passou com artefato SHA-256 `43c37756af49f29737d7575ddd82b0e27431de4c02ef1fd8a2b741595b3a593e`, testes `88/88` e recibo Kowalski SHA-256 `5b85cd6718d7a9e12a58f2a21a56b49e48ea1b38dc2cc964f4718447571da4e7`.
+- Stage 1A.3-R1 `PASS`: artefato `20260814T014000Z.tar.gz`, SHA-256 `ba92141429a379a8c140af01d9435dde6a8ecf8ed27a4aac2712f63e906282cd`, commit `fb5491a1a93f81c4842eee721b95436030a1d7f9`, plan SHA `765e3d77d0cf97cabb17290793c890ad0a2547ddcdff216546360b9484f98102`, testes `94/94` e validacao Kowalski `PASS`.
+
+Essas validacoes nao executaram Stage 1B/1C, root, servico, Telegram, DNS/TLS/proxy, AIR/ICD, producao, cliente ou CNS real. A proxima ativacao do Portal 213 exige autorizacao propria com escopo, risco, rollback e canary real definidos.
 
 ## Governance Ledger
 

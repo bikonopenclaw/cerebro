@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## 2026-08-14, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-08-14.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md` com Golden Baseline `GOLDEN_BASELINE_PROTECTED`, migracao historica `CLOSED`, verdade canonica `CLOSED_AND_SOURCE_BACKED`, Mini App/ICD/DRE-PDF `FROZEN_OPERATIONAL` e Portal 213 Stage 1A.3-R1 `PASS` offline/read-only.
+- Atualizados `BRAIN/01-DIARIO/README.md`, `INDEX.md`, `MEMORY.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Commit Link Gate validado apos a consolidacao: `ok=True`, `352` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados arquivos locais do Brain, memoria/sessoes visiveis recentes e artefatos locais do projeto Provimento 213; esta rotina nao acessou sistemas externos, nao enviou mensagem ao Hebert, nao criou agente, nao alterou crons, nao executou Stage 1B/1C, nao executou root/servico/Telegram/DNS/TLS/proxy/producao e nao fez push.
+
 ## 2026-08-13, consolidação diária
 
 - Criado diário `BRAIN/01-DIARIO/2026/2026-08-13.md`.
