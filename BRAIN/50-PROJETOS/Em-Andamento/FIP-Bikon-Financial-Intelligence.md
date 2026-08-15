@@ -2,13 +2,13 @@
 
 ```yaml
 nome: FIP Bikon Financial Intelligence
-status: production_v1_1_treasury_frozen_chg003_candidate_not_frozen
+status: production_private_chg004_canonical_backend_partial_pass
 responsavel: Puppet Master
 inicio: 2026-08-09
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-12
-tags: [bikon, financeiro, fip, pnl, forecast, scenario, tailscale, go-live]
+ultima_revisao: 2026-08-15
+tags: [bikon, financeiro, fip, pnl, forecast, scenario, tailscale, go-live, chg004]
 ```
 
 ## Objetivo
@@ -50,6 +50,44 @@ O Brain registra estado consolidado, decisoes e guardrails. Bancos, exports, pri
 - cobertura documental material ficou parcial: entradas confirmadas 38%, saidas confirmadas 0%, abaixo da meta de 80%;
 - `FIP v1.2.0` ficou como candidato `NOT_FROZEN`, dependente de evidencias materiais de SIMPLES, Mastercard, TiFLux, folha/pro-labore e Bitrix24 antes de promocao.
 
+## Atualizacao 2026-08-14/15
+
+`FIP-CHG-004-FINANCIAL-CANONICAL-BACKEND-FOUNDATION` ampliou o FIP para backend canonico 2026, preservando a producao privada e sem reescrever tabelas legadas:
+
+- evidence set 2026 validado por ZIP SHA-256 `0a2a4a03c8080ef636d91c80df9841d3377e5661a4001080bc464259896483a7` e `MANIFEST.sha256` `066d306259a66b5881c59d652b4afd734b557080a29b6d2cb181ec86bdd9683a`;
+- schema aditivo criado/preservado para registry de fontes, entidades legais, banco 2026, reconciliacao bancaria, cartoes, entrevistas, reembolso, folha, Caju, impostos, grupos, contratos, recebiveis e invariantes;
+- banco 2026: `546` transacoes unicas, entrada R$ 715.914,41, saida R$ 700.271,90, `177` anchors de saldo, `14` overlaps deduplicados e `0` conflitos;
+- cartoes pessoais: Mercado Pago e Itau permanecem em quarentena privada, sem expor merchant/descricao em relatorio, com `0` classificacoes automaticas e `0` despesa/reembolso criado;
+- backend geral ficou `PARTIAL_PASS` porque Caju, cartoes, folha/impostos e membership/contratos exigiam evidencias ou decisoes adicionais antes de promocao canonica.
+
+`FIP_CHG_004_STRUCTURAL_CANONICAL_CLOSURE=PASS` fechou parte dessas lacunas sob decisao humana e fontes reconciliadas:
+
+- politica F N Souza/Felipe: `RELATED_PARTY_OBLIGATION_ASSUMED_BY_BIKON`, autoridade Hebert, 5 obrigacoes e R$ 607,96 pagos/assumidos com Bikon cash, sem criar recebivel contra Felipe;
+- 7 faturas Cresol processadas e plenamente reconciliadas como statements, com double-cost invariants zerados;
+- Caju recuperado: 7 documentos, R$ 9.996,00 alimentacao, R$ 3.650,00 mobilidade, split por funcionario ainda pendente em 7 lotes, sem alocacao inventada;
+- folha enriquecida com 15 periodos/documentos e 5 identidades de funcionarios;
+- FGTS/INSS/payroll-tax crosswalk e bank settlement linking ficaram `PARTIAL_PASS` por limitacao documental/comparabilidade, nao por parser defect.
+
+`FIP_CHG_004_CRESOL_RECEIVABLE_PORTFOLIO_INCREMENTAL=PASS` criou backend de carteira Cresol:
+
+- 231 titulos 2026, 24 clientes, 16 titulos abertos vencidos somando R$ 170.331,83;
+- 200 titulos liquidados somando R$ 519.324,42, 12 baixas manuais pre-maio/R$ 54.708,69 tratadas como politica de write-off, sem caixa sintetico;
+- metodologia de settlement exige data de pagamento, proximo dia util, soma exata de lote e token bancario `credito titulos cobranca propria`, nunca match por valor isolado;
+- permanecem 13 titulos liquidados sem prova bancaria de lote e 7 grupos de credito bancario sem match ao XLSX, por ausencia de referencia titulo-a-titulo no extrato.
+
+Grupo Unus foi congelado como membership canonico por decisao de Hebert, sem inferencia por nome:
+
+- 8 CNPJs ativos aprovados: INTESS, TAG Assistencia, Cooperativa de Trabalho dos Proprietario, TDK Corretora, UNUS Holding, TK Reguladora, BR Center Truck e TK Assistencia;
+- recorte 2026: 74 titulos/R$ 546.827,05; 15 abertos vencidos/R$ 168.285,02; 51 liquidados/R$ 317.954,87; 7 baixas manuais/R$ 50.942,96;
+- Grupo Unus representa 98,80% da carteira aberta atual medida no FIP.
+
+Filas de cartoes pessoais:
+
+- Mercado Pago: parser antigo contaminou janeiro como uma linha; reparo source-native reconciliou 7 faturas, substituiu 276 linhas antigas por 324 itens privados quarentenados, com primeira entrevista valida em `01 janeiro.pdf` e 65 itens.
+- Itau Personnalite: validacao source-native por coordenadas bbox reconciliou 8 faturas, marcou a fila atual como `INVALID_REPAIRED` e identificou 282 itens privados para fila reparada; entrevista Itau vem depois de Mercado Pago.
+- Prematch de reembolso pausou a entrevista Mercado Pago: 82 transferencias Bikon -> Hebert em 2026/R$ 193.525,56, 22 conhecidas como nao reembolso/R$ 68.457,97, 60 candidatas/R$ 125.067,59, sem classificar itens, criar batches ou mutar banco.
+- Confirmacao restrita de settlement da fatura Itau `2026-01` registrou transferencia R$ 7.681,79 contra fatura R$ 7.681,79, diferenca R$ 0,00, preservando 39 itens pendentes de classificacao economica.
+
 ## Guardrails
 
 - Nao transformar credito bancario, PIX, boleto, fatura de cartao ou recorrencia em receita/despesa definitiva sem evidencia economica suficiente.
@@ -60,12 +98,18 @@ O Brain registra estado consolidado, decisoes e guardrails. Bancos, exports, pri
 - Porta `9213` e outros apps nao devem ser alterados por mudancas FIP sem autorizacao propria.
 - Toda alteracao pos-GO-LIVE deve ter backup, rollback, regressao financeira, smoke autenticado/anonimo e validacao de que DB/actuals mudaram apenas quando explicitamente autorizado.
 - Forecast e cenario nao devem inflar confianca quando a cobertura documental material estiver abaixo do alvo; promover apenas como candidato/partial pass ate receber evidencias suficientes.
+- CHG-004 nao autoriza classificar cartao pessoal por inferencia: settlement de fatura, match de transferencia ou fila reconciliada provam estrutura/liquidacao, nao natureza economica dos itens.
+- Estados de elegibilidade canonica e motivos de bloqueio devem ser colunas/flags separados; consultas por texto como `LIKE '%CANONICAL%'` nao devem virar criterio financeiro.
+- Carteira Cresol, Grupo Unus e prematches de reembolso sao bases gerenciais/estruturais ate haver autorizacao propria para cobranca, baixa, classificacao, P&L ou comunicacao externa.
 
 ## Proximos passos
 
 - Operar FIP como baseline privada aceita para consulta executiva, previsao e cenarios da BIKON.
 - Tratar novas fontes, regras, exposicoes, imports ou alteracoes de forecast como gates pos-GO-LIVE independentes.
 - Coletar/importar documentos para os gaps de confiabilidade do forecast antes de promover `v1.2.0`.
+- Iniciar a entrevista Mercado Pago apenas com autorizacao atomica `START_FIP_PERSONAL_CARD_CLASSIFICATION_INTERVIEW_MERCADO_PAGO_REPAIRED_QUEUE`.
+- Sanitizar evidence packs futuros para nao registrar headers de autenticacao nos JSONs de smoke.
+- Avancar novos settlements de recebiveis ou Itau somente depois de encerrar o fluxo Mercado Pago autorizado ou receber gate proprio.
 - Manter evidencias, backups, prints e exports em `projects/fip/`, fora do Brain/Git.
 
 ## Relacoes

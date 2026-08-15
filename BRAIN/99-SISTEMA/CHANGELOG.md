@@ -1,5 +1,14 @@
 # CHANGELOG.md
 
+## 2026-08-15, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-08-15.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md` com CHG-004 backend canonico 2026, fechamento estrutural, carteira Cresol, Grupo Unus, reparo Mercado Pago, validacao Itau, prematch de reembolso e settlement de fatura sem classificacao economica automatica.
+- Atualizados `BRAIN/20-EMPRESAS/BIKON/README.md`, `BRAIN/60-AGENTES/DARTH-VADER.md` e `BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md`.
+- Atualizados `BRAIN/01-DIARIO/README.md`, `INDEX.md`, `MEMORY.md`, `HEALTH.md`, `STATUS-BRAIN.md` e `BRAIN/99-SISTEMA/brain-v2/health/knowledge-health.md`.
+- Commit Link Gate validado apos a consolidacao: `ok=True`, `353` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados arquivos locais do Brain, sessoes visiveis recentes e artefatos locais em `projects/fip`; esta rotina nao acessou sistemas externos, nao enviou mensagem ao Hebert, nao criou agente, nao alterou crons, nao executou classificacao de cartao, nao fez remessa/baixa/cobranca/envio externo e nao fez push.
+
 ## 2026-08-14, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-08-14.md`.

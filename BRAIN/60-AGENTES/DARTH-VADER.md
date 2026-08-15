@@ -4,7 +4,7 @@
 categoria: agente_operacional
 fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17 e snapshot versionado em 2026-07-11
 confiabilidade: alta
-ultima_revisao: 2026-08-12
+ultima_revisao: 2026-08-15
 tags: [agente, financeiro, faturamento, nfse, boleto, remessa, cresol-api, fip]
 ```
 
@@ -124,6 +124,18 @@ Estado consolidado:
 - App produtivo em `127.0.0.1:8787` com rota Tailscale tailnet-only, autenticacao obrigatoria e porta `9213` intocada.
 
 Guardrail financeiro reforcado: o FIP separa caixa bruto de evento economico. Credito bancario, PIX, boleto ou cartao so entram no P&L aprovado com evidencia de natureza economica, competencia e vinculo suficiente; caso contrario ficam em clearing, settlement-only ou pendencia gerencial.
+
+## FIP CHG-004, 2026-08-14/15
+
+Darth Vader atuou como autoridade financeira/read-only em pontos de validacao do CHG-004. Estado consolidado:
+
+- backend canonico 2026 aplicado no FIP com schema aditivo e sem substituir a responsabilidade operacional da Darth Vader por NFS-e, boletos, remessas, baixas e e-mails;
+- fechamento estrutural `PASS`, com politica F N Souza/Felipe assumida por Bikon sob autoridade Hebert, Caju/folha/Cresol estruturados e FGTS/INSS/settlements parciais onde a fonte nao permitiu comparacao plena;
+- carteira Cresol 2026 consolidada para consulta gerencial, com baixas manuais segregadas e sem caixa sintetico;
+- Grupo Unus aceito por decisao humana com 8 CNPJs, sem inferencia por nome;
+- cartoes pessoais Mercado Pago/Itau mantidos em quarentena privada; settlement ou prematch de reembolso nao autoriza classificacao economica automatica.
+
+Risco residual observado: um evidence JSON de smoke registrou header de autenticacao. Isso nao altera o veredito financeiro, mas deve ser sanitizado em proxima janela aprovada.
 
 ## Relações
 
