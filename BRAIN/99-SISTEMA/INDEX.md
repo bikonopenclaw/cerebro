@@ -50,6 +50,7 @@ Mapa geral do Brain.
 - `01-DIARIO/Semanal/2026-W29.md`: consolidação parcial até 2026-07-17 com gates pós-migração, separação entre upgrade/restart/backlog, evidência recente em tickets e Sentinel read-only sob menor privilégio.
 - `01-DIARIO/Semanal/2026-W31.md`: consolidação semanal parcial com autorização atômica, contrato de runtime reproduzível, propostas sem autoridade operacional, provider sem evidência de ambiente e validação black-box do caminho final.
 - `01-DIARIO/Semanal/2026-W32.md`: consolidação semanal parcial com aplicabilidade antes de disponibilidade, commit de estado separado de aceitação operacional, leitura read-only sem mutação e Brain v2 com gate/grafo recorrente.
+- `01-DIARIO/Semanal/2026-W33.md`: consolidação semanal parcial com FIP privado/controlado, Provimento 213 Golden Baseline protegida, ODP Day 3 aceito sem Day 4, pacote selado auto-reprodutível, aceite humano como gate próprio e cartoes pessoais em quarentena.
 - `01-DIARIO/2026/2026-07-03.md`: consolidação diária com snapshots versionados, KPIs WhatsApp/Bitdefender, limitação de tickets NinjaOne, falhas por limite de uso e saneamento de PDFs/artefatos no Git.
 - `01-DIARIO/2026/2026-07-08.md`: consolidação diária com limpeza pré-migração da VPS, riscos operacionais BIKON de 06/07/2026, atualização de snapshots e pendência de `memory_search`.
 - `01-DIARIO/2026/2026-07-09.md`: consolidação diária com Cresol API em homologação, canal Telegram isolado do Kowalski e saneamento adicional da rotina de snapshot.
@@ -84,6 +85,8 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md`: princípio fiscal para preservar dados completos do cadastro mestre em payloads de NFS-e.
 - `40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md`: guardrail financeiro para separar caixa bruto de evento economico antes de aceitar P&L.
 - `40-CONHECIMENTO/Financeiro/Retorno-bancario-nao-valida-remessa.md`: princípio financeiro para não usar retorno CNAB400 como validação de remessa, nosso número ou sequencial.
+- `40-CONHECIMENTO/Financeiro/Settlement-de-fatura-nao-classifica-natureza-economica.md`: guardrail para tratar liquidacao de fatura e prematch de reembolso como evidencia estrutural, nao classificacao automatica de despesa.
+- `40-CONHECIMENTO/Financeiro/Validacao-source-native-de-PDF-financeiro.md`: guardrail para exigir leitura de PDF financeiro por layout/coords quando parser generico puder contaminar decisao material.
 - `40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md`: guardrail para separar preparo interno, dry-run e execução real.
 - `40-CONHECIMENTO/Operacional/Governanca-antes-de-automacao-de-identidade.md`: aprendizado permanente para iniciar automações de identidade por matriz, auditoria e aprovação.
 - `40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md`: padrão de revisão visual para PDFs e pareceres externos.
@@ -102,7 +105,9 @@ Mapa geral do Brain.
 - `40-CONHECIMENTO/Operacional/Commit-de-estado-nao-e-aceitacao-operacional.md`: guardrail para separar commit de dados, AIR/ICD/journal e aceitação operacional da superfície final.
 - `40-CONHECIMENTO/Operacional/Contagem-nao-e-percentual-de-conclusao.md`: guardrail para impedir que contagens de evidencias, conformidade, remediacao ou inventario sejam renderizadas como `100%` sem denominador canonico.
 - `40-CONHECIMENTO/Operacional/Leitura-read-only-deve-provar-nao-mutacao.md`: guardrail para validar consultas e rotas read-only por ausência de mutação persistida.
+- `40-CONHECIMENTO/Operacional/Pacote-selado-auto-reprodutivel-antes-de-privilegio-operacional.md`: guardrail para exigir pacote validavel por bytes, hashes, plano, controller e rollback antes de root/servico/producao.
 - `40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado.md`: gate para validar ferramentas instaladas em black-box pelo caminho final usado pelo operador.
+- `40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md`: guardrail para separar suite tecnica de aceite visual, humano, semantico, financeiro ou canonico.
 - `40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md`: guardrail que separa leitura para relatório de escrita, baixa, emissão, remessa e efeitos financeiros.
 - `40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md`: guardrail para manter Cresol/API/remessa/baixa bloqueadas até autorização e procedimento produtivo.
 - `50-PROJETOS/Em-Andamento/Brain-Enterprise.md`: registro permanente do projeto Brain Enterprise, com Brain v2 foundation aceita, reintegracao 11B, Graph Gate 11C, ajustes Obsidian 11D/11E, MOC cronologico, MOCs canonicos por area e Commit Link Gate local.

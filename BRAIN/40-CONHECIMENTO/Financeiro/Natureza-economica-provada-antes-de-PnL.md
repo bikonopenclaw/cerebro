@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: financeiro
-fonte: consolidacao FIP Bikon de 2026-08-10/11; CHG-004 de 2026-08-14/15
+fonte: consolidacao FIP Bikon de 2026-08-10/11; CHG-004 de 2026-08-14/15; consolidacao semanal 2026-W33
 confiabilidade: alta
-ultima_revisao: 2026-08-15
+ultima_revisao: 2026-08-16
 tags: [financeiro, pnl, fip, bikon, competencia, evidencia, go-live, cartao, privacidade]
 ```
 
@@ -32,6 +32,8 @@ No FIP CHG-004, Mercado Pago e Itau foram reconciliados em nivel source-native, 
 ## Relacoes
 
 - [[50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence|FIP Bikon Financial Intelligence]]
+- [[40-CONHECIMENTO/Financeiro/Settlement-de-fatura-nao-classifica-natureza-economica|Settlement de fatura nao classifica natureza economica]]
+- [[40-CONHECIMENTO/Financeiro/Validacao-source-native-de-PDF-financeiro|Validacao source-native de PDF financeiro]]
 - [[40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional|Consulta gerencial nao e permissao operacional]]
 - [[40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais|Dados mestres completos em automacoes fiscais]]
 - [[60-AGENTES/DARTH-VADER|Darth Vader]]

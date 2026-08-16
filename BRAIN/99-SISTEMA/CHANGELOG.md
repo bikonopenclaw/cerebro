@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-08-16, consolidacao semanal
+
+- Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W33.md` com cobertura parcial de 2026-08-10 a 2026-08-16, baseado nas daily notes disponiveis de 2026-08-11 a 2026-08-15.
+- Identificados padroes recorrentes de autorizacao atomica, validacao tecnica separada de aceite humano/semantico, pacote selado auto-reprodutivel antes de privilegio operacional, natureza economica antes de P&L, settlement sem classificacao automatica e validacao source-native de PDF financeiro.
+- Elevados aprendizados para notas permanentes em `BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md`, `Pacote-selado-auto-reprodutivel-antes-de-privilegio-operacional.md`, `BRAIN/40-CONHECIMENTO/Financeiro/Settlement-de-fatura-nao-classifica-natureza-economica.md` e `Validacao-source-native-de-PDF-financeiro.md`.
+- Atualizados `BRAIN/01-DIARIO/README.md`, `BRAIN/40-CONHECIMENTO/README.md`, `INDEX.md`, `MEMORY.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Commit Link Gate validado apos a consolidacao semanal: `ok=True`, `358` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Nenhum item foi movido para `BRAIN/99-ARQUIVO/`; os registros revisados seguem recentes, conectados e com valor operacional, financeiro ou de auditoria.
+- Revisados apenas arquivos locais do Brain; esta rotina nao acessou sistemas externos alem do push Git configurado, nao enviou mensagem ao Hebert, nao criou agente, nao alterou crons, nao executou remediacao e nao alterou infraestrutura operacional.
+
 ## 2026-08-15, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-08-15.md`.

@@ -11,6 +11,8 @@ Este MOC liga conhecimento permanente por dominio. Ele existe para navegação c
 - [[40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao|Homologacao bancaria nao autoriza producao]]
 - [[40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL|Natureza economica provada antes de PnL]]
 - [[40-CONHECIMENTO/Financeiro/Retorno-bancario-nao-valida-remessa|Retorno bancario nao valida remessa]]
+- [[40-CONHECIMENTO/Financeiro/Settlement-de-fatura-nao-classifica-natureza-economica|Settlement de fatura nao classifica natureza economica]]
+- [[40-CONHECIMENTO/Financeiro/Validacao-source-native-de-PDF-financeiro|Validacao source-native de PDF financeiro]]
 
 ## IA e memoria
 
@@ -36,10 +38,12 @@ Este MOC liga conhecimento permanente por dominio. Ele existe para navegação c
 - [[40-CONHECIMENTO/Operacional/Leitura-read-only-deve-provar-nao-mutacao|Leitura read-only deve provar nao mutacao]]
 - [[40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento|Menor privilegio em monitoramento]]
 - [[40-CONHECIMENTO/Operacional/Proposta-nao-e-contrato-congelado|Proposta nao e contrato congelado]]
+- [[40-CONHECIMENTO/Operacional/Pacote-selado-auto-reprodutivel-antes-de-privilegio-operacional|Pacote selado auto-reprodutivel antes de privilegio operacional]]
 - [[40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git|Segredos fora do Brain e Git]]
 - [[40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas|Separar teste, rascunho e producao em automacoes externas]]
 - [[40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado|Validacao do caminho final instalado]]
 - [[40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao|Validacao do runtime pos-migracao]]
+- [[40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano|Validacao tecnica nao substitui aceite humano]]
 - [[40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos|Validacao visual de relatorios externos]]
 
 ## Relacionamentos
