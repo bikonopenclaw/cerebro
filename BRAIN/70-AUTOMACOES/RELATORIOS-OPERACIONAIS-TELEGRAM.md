@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22 e ajuste operacional de crons em 2026-08-03
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03 e reparo de rota em 2026-08-17
 confiabilidade: alta
-ultima_revisao: 2026-08-03
+ultima_revisao: 2026-08-18
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual]
 ```
 
@@ -52,6 +52,18 @@ Token, auth store e configuração sensível ficam fora do Brain/Git.
 
 Com bot próprio validado, mensagens comuns do grupo devem ser tratadas pelo Kowalski quando forem de relatório operacional. Puppet Master só deve responder quando mencionado nominalmente ou quando houver coordenação, mudança estrutural, produção, gasto, comunicação externa ou decisão estratégica.
 
+## Roteamento FIP/Darth em 2026-08-17
+
+Após falha real de rota em pedido de cenário financeiro, o grupo foi ajustado para evitar resposta direta de workers quando a execução envolver Darth/Kowalski e FIP:
+
+- runtime isolado do Kowalski (`openclaw-gateway-kowalski.service`, porta `18810`) passou a registrar o agente canonico `darth-vader`;
+- o grupo `telegram:-5165906669` passou a rotear para Puppet Master como owner externo quando houver fluxo com workers;
+- `darth-vader` e `kowalski` ficaram cobertos pelo guard `relatorios-operacionais-workers-no-external-outbound`, bloqueando tool `message` externo para workers;
+- o perfil isolado do Kowalski foi corrigido para modelo ChatGPT/OAuth `openai/gpt-5.5`, com fallback `openai/gpt-5.5`/`openai/gpt-5.4`, sem introduzir API key/billing;
+- prova real do fluxo: Puppet respondeu uma vez no grupo, Darth e Kowalski tiveram resposta externa direta `0`, FIP actuals e porta `9213` nao sofreram mutacao.
+
+O pedido de cenário Grupo Unus ficou validado como consulta gerencial read-only: a reducao para R$ 24.000,00 substitui os R$ 42.942,42 canonicos do grupo dentro do cenario; Simples usa perfil/recorrencia canonica, nao chute percentual.
+
 ## Agenda automática diária
 
 Atualização 2026-08-03:
@@ -88,6 +100,7 @@ Em 2026-07-09, a responsabilidade visual do Kowalski foi ampliada para além de 
 - Não incluir caminho interno de arquivo em relatório final para cliente.
 - Relatório externo deve sair limpo, profissional e sem comentário operacional.
 - Usuários adicionados por Hebert podem consultar dentro do grupo, mas não ganham permissão para acionar outros agentes.
+- Workers internos nao devem responder externamente quando a rota tiver owner Puppet; retorno de Darth/Kowalski deve voltar ao Puppet para resposta unica ao grupo.
 
 ## Caso de uso inicial
 

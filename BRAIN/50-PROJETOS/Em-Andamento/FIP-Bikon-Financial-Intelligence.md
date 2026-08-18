@@ -2,12 +2,12 @@
 
 ```yaml
 nome: FIP Bikon Financial Intelligence
-status: production_private_chg004_canonical_backend_partial_pass
+status: production_private_fcoc15_systemd_current_cash_pass
 responsavel: Puppet Master
 inicio: 2026-08-09
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-15
+ultima_revisao: 2026-08-18
 tags: [bikon, financeiro, fip, pnl, forecast, scenario, tailscale, go-live, chg004]
 ```
 
@@ -102,6 +102,19 @@ Filas de cartoes pessoais:
 - Estados de elegibilidade canonica e motivos de bloqueio devem ser colunas/flags separados; consultas por texto como `LIKE '%CANONICAL%'` nao devem virar criterio financeiro.
 - Carteira Cresol, Grupo Unus e prematches de reembolso sao bases gerenciais/estruturais ate haver autorizacao propria para cobranca, baixa, classificacao, P&L ou comunicacao externa.
 
+## Atualizacao 2026-08-17/18
+
+FIP evoluiu a camada semantica e operacional sem ampliar permissoes externas:
+
+- FCOC ativo passou a `1.5.0 FROZEN`, preservando artefatos anteriores e adicionando semanticas de compromissos mensais de socios, partner clearing, Claude/Anthropic, cronogramas Kepler/Amauri/notebook e a correcao de que notebook/Freire e reembolso de Felipe para a Bikon, sem caixa sintetico;
+- compromissos mensais registrados: Felipe R$ 16.349,00/mes, com R$ 6.898,70 dia 05 e R$ 9.450,30 dia 15 para Camila como destinataria operacional; Hebert R$ 9.780,00/mes apenas em nivel de cenario enquanto data de pagamento exige confirmacao humana;
+- clearing Felipe: Claude bruto R$ 1.100,00, parte Felipe R$ 569,00, custo liquido Bikon R$ 531,00; notebook/Freire corrige setembro-novembro para R$ 1.069,00/mes em favor da Bikon e, de dezembro em diante, R$ 569,00/mes enquanto Claude permanecer ativo;
+- entrevista Mercado Pago janeiro-julho foi retomada e ficou com `0` pendencias, `335` classificacoes totais de cartao no backend; Mercado Pago tem 251 `BUSINESS_DIRECT`/R$ 26.683,17 e 73 `PERSONAL_PRIVATE`/R$ 6.160,59; Itau Personnalite permanece `READY_NOT_STARTED_SOURCE_RECONCILED` com 271 itens pendentes;
+- reconciliacao incremental Cresol registrou extrato oficial de 2026-08-17T20:21:32-03:00, 31 linhas parseadas, 6 novos fatos bancarios, 25 identicos ja existentes, 2 fatos existentes linkados ao novo cutoff, diferenca R$ 0,00 e saldo oficial corrente R$ 10.801,39; limite de credito R$ 30.000,00 e saldo disponivel R$ 40.801,39 nao foram promovidos a caixa;
+- backend `8787` passou para `fip-8787.service` em `systemd --user`, com MainPID como autoridade canonica, autorestart validado, hardening minimo, `127.0.0.1:8787` privado/autenticado, Tailscale tailnet-only e porta `9213` intocada;
+- cenario Grupo Unus para Relatorios Operacionais reduziu os eventos futuros ativos de R$ 42.942,42/mes para R$ 24.000,00/mes por fator proporcional `0.55888792`, substituindo o valor canonico no cenario e sem mutar actuals; receita cenario R$ 85.143,84 e Simples R$ 11.745,95/mes foram calculados com perfil canonico, nao com fallback de 6%;
+- tentativa de fechamento documental Santander/MP agosto validou pacote, mas falhou fechado porque Santander exige CPF/senha e nao havia canal local no-echo aprovado; Mercado Pago agosto foi apenas parseado read-only, com total R$ 4.987,28, vencimento 2026-08-20 e diferenca R$ 0,00, sem ingestao produtiva.
+
 ## Proximos passos
 
 - Operar FIP como baseline privada aceita para consulta executiva, previsao e cenarios da BIKON.
@@ -111,6 +124,7 @@ Filas de cartoes pessoais:
 - Sanitizar evidence packs futuros para nao registrar headers de autenticacao nos JSONs de smoke.
 - Avancar novos settlements de recebiveis ou Itau somente depois de encerrar o fluxo Mercado Pago autorizado ou receber gate proprio.
 - Manter evidencias, backups, prints e exports em `projects/fip/`, fora do Brain/Git.
+- Para Santander, aceitar senha/CPF somente por canal local no-echo aprovado; nao receber por Telegram, argv, log, banco ou relatorio.
 
 ## Relacoes
 

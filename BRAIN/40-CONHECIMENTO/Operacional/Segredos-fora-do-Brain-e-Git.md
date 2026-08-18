@@ -3,9 +3,9 @@
 ```yaml
 categoria: operacional
 tipo: guardrail
-fonte: consolidações de 2026-06-19 a 2026-06-21
+fonte: consolidações de 2026-06-19 a 2026-06-21 e fechamento documental FIP em 2026-08-18
 confiabilidade: alta
-ultima_revisao: 2026-06-28
+ultima_revisao: 2026-08-18
 tags: [segredos, credenciais, git, brain, api, seguranca]
 ```
 
@@ -19,6 +19,7 @@ O Brain pode registrar arquitetura, escopo, permissões, caminhos de cofre e dec
 - Armazenar segredos em cofre local fora do repositório.
 - Usar permissões mínimas para cada integração.
 - Não solicitar nem receber chaves de API por Telegram quando houver risco de exposição.
+- Nao solicitar nem receber CPF, senha de PDF financeiro ou segredo de pessoa fisica por Telegram, argv, log, banco ou relatorio; usar canal local no-echo aprovado ou falhar fechado.
 - Não commitar `.env`, tokens, dumps de API ou relatórios sensíveis.
 - Relatórios executivos no Brain devem ser agregados, sem dados operacionais sensíveis desnecessários.
 
@@ -36,3 +37,7 @@ O Brain pode registrar arquitetura, escopo, permissões, caminhos de cofre e dec
 ## Reforço 2026-W26
 
 O padrão foi aplicado a SMTP DreamHost, API WhatsApp Bikon, Instagram/Meta, snapshots versionados de agentes e exemplos bancários Cresol. O Brain registra arquitetura, caminhos de cofre, placeholders e estado operacional; tokens, `.env`, logs, caches, retornos brutos e inventários sensíveis ficam fora do Git.
+
+## Reforço 2026-08-18
+
+No fechamento documental FIP Santander/MP, a ausencia de canal local no-echo para CPF/senha bloqueou a decriptacao Santander. O resultado correto foi `FAIL_CLOSED`: pacote validado, senha nao persistida, nao exposta em log/argv/banco e nenhum PDF decriptado deixado como residuo.

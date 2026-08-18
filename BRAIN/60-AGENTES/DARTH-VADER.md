@@ -4,7 +4,7 @@
 categoria: agente_operacional
 fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17 e snapshot versionado em 2026-07-11
 confiabilidade: alta
-ultima_revisao: 2026-08-15
+ultima_revisao: 2026-08-18
 tags: [agente, financeiro, faturamento, nfse, boleto, remessa, cresol-api, fip]
 ```
 
@@ -136,6 +136,15 @@ Darth Vader atuou como autoridade financeira/read-only em pontos de validacao do
 - cartoes pessoais Mercado Pago/Itau mantidos em quarentena privada; settlement ou prematch de reembolso nao autoriza classificacao economica automatica.
 
 Risco residual observado: um evidence JSON de smoke registrou header de autenticacao. Isso nao altera o veredito financeiro, mas deve ser sanitizado em proxima janela aprovada.
+
+## FIP/FCOC e Relatorios Operacionais, 2026-08-17/18
+
+Darth Vader passou a atuar como worker interno em cenarios FIP solicitados pelo grupo Relatorios Operacionais, com Puppet Master como unico owner externo:
+
+- active FCOC validado como `1.5.0 FROZEN`, com bootstrap/cold-start para compromissos de socios, clearing Felipe/Claude/notebook e regra de nao criar caixa sintetico;
+- acesso ao backend FIP canonico `127.0.0.1:8787` validado em leitura/autenticacao, com app supervisionado por `fip-8787.service`;
+- parecer do cenario Grupo Unus indicou consistencia aritmetica, sem erro material e baixo risco de dupla contagem se o valor reduzido R$ 24.000,00 substituir, e nao somar, os R$ 42.942,42 canonicos;
+- em rotas do grupo, Darth nao deve usar `message` externo diretamente; resultado financeiro volta ao Puppet, que responde uma unica vez no Telegram.
 
 ## Relações
 

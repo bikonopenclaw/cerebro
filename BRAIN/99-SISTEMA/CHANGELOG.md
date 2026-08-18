@@ -1,5 +1,14 @@
 # CHANGELOG.md
 
+## 2026-08-18, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-08-18.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md` com FCOC `v1.5.0`, compromissos/clearing de socios, Mercado Pago sem pendencias, Itau pendente, caixa Cresol reconciliado em R$ 10.801,39, `fip-8787.service`, cenario Grupo Unus e fail-closed Santander/MP agosto por ausencia de canal no-echo.
+- Atualizados `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`, `BRAIN/60-AGENTES/DARTH-VADER.md`, `BRAIN/60-AGENTES/KOWALSKI.md`, `BRAIN/20-EMPRESAS/BIKON/README.md`, `BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md` e `BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md`.
+- Atualizados `BRAIN/01-DIARIO/README.md`, `INDEX.md`, `MEMORY.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Commit Link Gate validado apos a consolidacao: `ok=True`, `359` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados arquivos locais do Brain, sessoes visiveis recentes e artefatos locais em `projects/fip`, `entregas` e `backups`; esta rotina nao acessou sistemas externos, nao enviou mensagem ao Hebert, nao criou agente, nao decriptou Santander, nao mutou FIP, nao alterou 9213 e nao fez push.
+
 ## 2026-08-16, consolidacao semanal
 
 - Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W33.md` com cobertura parcial de 2026-08-10 a 2026-08-16, baseado nas daily notes disponiveis de 2026-08-11 a 2026-08-15.

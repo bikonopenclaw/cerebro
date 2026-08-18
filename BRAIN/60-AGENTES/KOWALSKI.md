@@ -3,7 +3,7 @@
 ```yaml
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
-ultima_revisao: 2026-08-05
+ultima_revisao: 2026-08-18
 tags: [kowalski, relatorios, ninjaone, arx-backup, bitdefender, financeiro, provimento-213-2026, cns, operacao, telegram, identidade-visual]
 ```
 
@@ -51,6 +51,16 @@ Configuração operacional validada:
 - Kowalski continua subordinado à governança do Puppet Master; canal próprio muda a entrada no Telegram, não a hierarquia.
 - Token do bot fica em arquivo secreto local com permissão restrita e não deve entrar no Brain/Git.
 
+### Reparo 2026-08-17
+
+O perfil isolado do Kowalski (`/home/openclaw/.openclaw-kowalski/openclaw.json`) foi corrigido apos falha do fluxo Relatorios Operacionais -> Darth/FIP:
+
+- runtime isolado passou a incluir `darth-vader` como agente canonico registrado;
+- grupo `telegram:-5165906669` passou a ter Puppet Master como owner externo quando usar Darth/Kowalski como workers;
+- guard `relatorios-operacionais-workers-no-external-outbound` bloqueia envio `message` externo de `kowalski` e `darth-vader`, preservando retorno interno ao Puppet;
+- modelo default do perfil isolado foi ajustado para ChatGPT/OAuth `openai/gpt-5.5`, com fallback `openai/gpt-5.5`/`openai/gpt-5.4`, sem usar API key nova;
+- prova real: uma resposta externa via Puppet, resposta externa direta Kowalski `0` e Darth `0`.
+
 ## Guardrails
 
 - Não enviar comunicação externa para cliente sem aprovação explícita do Hebert/Puppet Master.
@@ -63,6 +73,7 @@ Configuração operacional validada:
 - Para relatório externo, linguagem profissional Bikon, sem nota operacional interna.
 - Relatórios operacionais não devem mencionar agente, bot, Puppet Master ou automação como autor, solicitante ou responsável.
 - Quando o pedido vier do Hebert, usar `Hebert Mattedi`; quando vier do Felipe, usar `Hebert Mattedi e Felipe Nogueira`.
+- Em fluxos em que Puppet Master seja owner externo do grupo, Kowalski deve devolver resultado interno e nao chamar `message` para o Telegram.
 
 ## Caso validado em 2026-06-22
 

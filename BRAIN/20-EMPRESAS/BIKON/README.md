@@ -25,6 +25,7 @@
 
 ## Histórico relevante
 
+- 2026-08-18: FIP atualizou caixa Cresol corrente para R$ 10.801,39 em 2026-08-17T20:21:32-03:00, reconciliado por extrato oficial com diferenca R$ 0,00. Limite de credito R$ 30.000,00 e saldo disponivel R$ 40.801,39 nao foram tratados como caixa. O backend `8787` ficou sob `fip-8787.service` e a rota Relatorios Operacionais para cenarios FIP passou a responder via Puppet, com Darth/Kowalski apenas como workers internos.
 - 2026-08-15: FIP CHG-004 ampliou a base financeira 2026 da BIKON: `546` transacoes bancarias canonicas 2026, carteira Cresol com 231 titulos/24 clientes e R$ 170.331,83 em 16 titulos abertos vencidos, Grupo Unus canonico com 8 CNPJs aprovados e 98,80% da carteira aberta medida, Caju/folha/impostos estruturados e cartoes pessoais preservados em quarentena privada sem classificacao automatica.
 - 2026-08-12: FIP `v1.1.0` congelado com tesouraria/caixa: saldo oficial Cresol de 2026-08-11 R$ 17.001,68 reconciliado com diferenca R$ 0,00, forecast 30d R$ 38.629,45 e primeiro caixa negativo projetado em 2026-08-20; `v1.2.0` ficou candidato nao congelado porque a cobertura documental material do forecast ficou abaixo de 80%.
 - 2026-08-11: rodada Cresol API em homologacao criou titulo `22394650`, nosso numero `09/00000000357-6`, valor R$ 1,00, vencimento 2026-08-18, PDF oficial e remessa CNAB400 local validada; sem producao, sem upload no portal/banco, sem baixa e sem envio a cliente.
@@ -75,3 +76,4 @@
 - FIP em `8787` deve permanecer privado/autenticado; nao expor via Internet publica, segredo em URL ou relatorio.
 - Forecast FIP com cobertura documental parcial deve permanecer como candidato/partial pass; nao usar projecoes para decisao operacional irreversivel sem explicitar confianca, materialidade e lacunas.
 - FIP CHG-004 e carteira Cresol sao base gerencial/canonica interna; cobranca, baixa bancaria, classificacao de cartao pessoal, reembolso, P&L definitivo, envio externo ou comunicacao com cliente continuam exigindo Approval proprio.
+- Limite de credito bancario e saldo disponivel nao sao caixa; forecasts devem usar apenas saldo oficial reconciliado como autoridade corrente.
