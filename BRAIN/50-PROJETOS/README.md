@@ -11,6 +11,7 @@ Este MOC liga projetos ativos, planejamento e historico documental.
 - [[50-PROJETOS/Em-Andamento/OpenClaw-Engineering-Delegation|OpenClaw Engineering Delegation]]
 - [[50-PROJETOS/Em-Andamento/OpenClaw-Operational-Data-Platform|OpenClaw Operational Data Platform]]
 - [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw Provimento 213]]
+- [[50-PROJETOS/Em-Andamento/OpenClaw-RSE|OpenClaw RSE]]
 
 ## Planejamento
 

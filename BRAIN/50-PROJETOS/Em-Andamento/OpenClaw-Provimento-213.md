@@ -2,12 +2,12 @@
 
 ```yaml
 nome: OpenClaw - Provimento 213
-status: golden_baseline_protected_historical_migration_closed
+status: golden_baseline_protected_portal213_stage1b_r23_preparatory_pass
 responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-14
+ultima_revisao: 2026-08-19
 tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre, miniapp, canonical-truth, portal213]
 ```
 
@@ -140,6 +140,36 @@ Portal 213 Telegram tambem avancou como frente preparatoria offline/read-only:
 - Stage 1A.3-R1 `PASS`: artefato `20260814T014000Z.tar.gz`, SHA-256 `ba92141429a379a8c140af01d9435dde6a8ecf8ed27a4aac2712f63e906282cd`, commit `fb5491a1a93f81c4842eee721b95436030a1d7f9`, plan SHA `765e3d77d0cf97cabb17290793c890ad0a2547ddcdff216546360b9484f98102`, testes `94/94` e validacao Kowalski `PASS`.
 
 Essas validacoes nao executaram Stage 1B/1C, root, servico, Telegram, DNS/TLS/proxy, AIR/ICD, producao, cliente ou CNS real. A proxima ativacao do Portal 213 exige autorizacao propria com escopo, risco, rollback e canary real definidos.
+
+## Atualizacao 2026-08-19
+
+Portal 213 Stage 1B avancou apenas como pacote preparatorio de comando local canary root, sem execucao privilegiada.
+
+R2.2 foi entregue e validado independentemente antes da nova correcao:
+
+- input R2.2 SHA-256: `35cba8423a66892b22e8d5b585c861f1185291a84c212520fa085ced93f1a246`;
+- validacao Kowalski R2.2: `PASS`, com `BASH_N`, `PY_HEREDOC_COMPILE`, secret scan, dual-stack gateway, errtrace single-dispatch, readiness healthz e metodo 405 preservados.
+
+R2.3 foi produzido como novo arquivo, sem sobrescrever R2.2:
+
+- arquivo R2.3: `/data/.openclaw/workspace/runtime-commands/portal213_stage1b_conventional_local_canary_root_r2_3_3021accf08cc797ea7366c53aa4de65ae19f0e95b72eb137a6f7317190afc0f8.txt`;
+- SHA-256 R2.3: `3021accf08cc797ea7366c53aa4de65ae19f0e95b72eb137a6f7317190afc0f8`;
+- diff R2.2 -> R2.3: SHA-256 `002235729927c1b2904dd9bd045a84ac81ac42cb6def480bcb93cc30500cc1b2`, normalizacao/exatidao `PASS`;
+- fixtures obrigatorios: `17`/`17` `PASS`;
+- recibo Kowalski R2.3: `PASS`, fixture results SHA-256 `b355598057a374f80e23a9777d5b2edbf7e27b429b4986a2bc40da08a870b76b`;
+- contadores operacionais da validacao: root `0`, service mutation `0`, package mutation `0`, script execution `0`, sudo `0`, systemctl `0`, apt `0`, production touch `0`.
+
+Correcoes exercitadas pelo R2.3:
+
+- sinais INT/TERM/HUP ignorados durante fail/rollback/cleanup sem restaurar default durante fechamento;
+- flags de reentrada para um unico fail e um unico rollback;
+- rollback systemd com verificacao de `stop`, `daemon-reload`, `LoadState=not-found`, unit ausente e porta `19213` sem listener;
+- inventario/criacao/rollback de pais `/opt/bikon`, `/opt/bikon/prov213` e `/opt/bikon/prov213/releases` apenas quando criados na rodada;
+- classificacao real de `gunicorn3`/dpkg como `unchanged`, `installed-exact` ou `PACKAGE_RECOVERY_REQUIRED`, sem remocao automatica;
+- guarda estrita de evidence path sob `/var/lib/portal213-stage1b-evidence/<RUN_ID>`;
+- protecao contra interrupcao durante publicacao atomica de segredo temporario e limpeza de `.stage1-canary.secret.*`.
+
+Este estado nao autoriza Stage 1B/1C, root, servico, Telegram, DNS/TLS/proxy, AIR/ICD, producao, cliente ou CNS real.
 
 ## Governance Ledger
 

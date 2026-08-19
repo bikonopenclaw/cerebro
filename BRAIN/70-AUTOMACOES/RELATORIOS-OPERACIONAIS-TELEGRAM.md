@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03 e reparo de rota em 2026-08-17
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17 e alias-router em 2026-08-19
 confiabilidade: alta
-ultima_revisao: 2026-08-18
+ultima_revisao: 2026-08-19
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual]
 ```
 
@@ -64,6 +64,31 @@ Após falha real de rota em pedido de cenário financeiro, o grupo foi ajustado 
 
 O pedido de cenário Grupo Unus ficou validado como consulta gerencial read-only: a reducao para R$ 24.000,00 substitui os R$ 42.942,42 canonicos do grupo dentro do cenario; Simples usa perfil/recorrencia canonica, nao chute percentual.
 
+## Alias-router em 2026-08-19
+
+Apos evidencia de `REPLY_SKIP` em consulta Corpus/NinjaOne, o grupo manteve Puppet Master como owner externo e recebeu reparo de contrato de alias no main profile:
+
+- rota externa do grupo `telegram:-5165906669`: Telegram default account -> `main`;
+- Kowalski nao foi restaurado como owner externo; `enabled=false`, `groupPolicy=disabled`, `requireMention=true` no perfil isolado;
+- `requireMention=false` do main no grupo ja nao era o bloqueio; o defeito era contrato semantico de alias/resposta visivel;
+- alias-router adicionado para inicio de mensagem: `Puppet`, `Puppet Master`, `Kowalski`, `Darth` e `Darth Vader`;
+- match incidental fora do inicio da frase deve retornar `none`;
+- alias `Kowalski` deve usar `sessions_send` para `agent:kowalski:main`; alias `Darth`/`Darth Vader` deve usar `sessions_send` para `agent:darth-vader:main`;
+- resposta visivel em grupo deve sair pelo Puppet via `message(action=send)`;
+- guard `relatorios-operacionais-workers-no-external-outbound` continua bloqueando `message` externo de Kowalski/Darth quando a source for o grupo Relatorios;
+- falha/timeout de worker deve gerar resposta unica sanitizada, sem stack trace, shell, SQLite, paths, provider, payloads, credenciais ou erro bruto.
+
+Validacoes locais do reparo:
+
+- aliases Puppet/Kowalski/Darth/Darth Vader: `PASS`;
+- unaddressed routing de clientes Corpus/NinjaOne para Kowalski: `PASS`;
+- unaddressed routing de caixa/recebiveis para Darth: `PASS`;
+- worker external send bloqueado para Kowalski/Darth e permitido para Puppet;
+- `RAW_INTERNAL_ERROR_DISCLOSURE_COUNT=0`;
+- FIP, FCOC, card interview, porta `8787` e porta `9213`: mutacao `0`.
+
+Reload do gateway principal foi solicitado via SIGUSR1 sem sudo; o reload de canal ficou `deferred` enquanto a propria execucao estava ativa. Retry real ainda necessario: `Kowalski, vc sabe quais sao os clientes da corpus no ninjaone?`, esperando Puppet externo `1`, Kowalski externo `0` e silencio `0`.
+
 ## Agenda automática diária
 
 Atualização 2026-08-03:
@@ -101,6 +126,7 @@ Em 2026-07-09, a responsabilidade visual do Kowalski foi ampliada para além de 
 - Relatório externo deve sair limpo, profissional e sem comentário operacional.
 - Usuários adicionados por Hebert podem consultar dentro do grupo, mas não ganham permissão para acionar outros agentes.
 - Workers internos nao devem responder externamente quando a rota tiver owner Puppet; retorno de Darth/Kowalski deve voltar ao Puppet para resposta unica ao grupo.
+- Alias de especialista no grupo so deve valer no inicio da mensagem; mencao incidental a Kowalski/Darth no meio de frase nao deve desviar owner nem acionar worker.
 
 ## Caso de uso inicial
 

@@ -2,13 +2,13 @@
 
 ```yaml
 nome: FIP Bikon Financial Intelligence
-status: production_private_fcoc15_systemd_current_cash_pass
+status: production_private_fcoc16_document_intake_gateway_pass
 responsavel: Puppet Master
 inicio: 2026-08-09
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-18
-tags: [bikon, financeiro, fip, pnl, forecast, scenario, tailscale, go-live, chg004]
+ultima_revisao: 2026-08-19
+tags: [bikon, financeiro, fip, pnl, forecast, scenario, tailscale, go-live, chg004, intake]
 ```
 
 ## Objetivo
@@ -101,6 +101,7 @@ Filas de cartoes pessoais:
 - CHG-004 nao autoriza classificar cartao pessoal por inferencia: settlement de fatura, match de transferencia ou fila reconciliada provam estrutura/liquidacao, nao natureza economica dos itens.
 - Estados de elegibilidade canonica e motivos de bloqueio devem ser colunas/flags separados; consultas por texto como `LIKE '%CANONICAL%'` nao devem virar criterio financeiro.
 - Carteira Cresol, Grupo Unus e prematches de reembolso sao bases gerenciais/estruturais ate haver autorizacao propria para cobranca, baixa, classificacao, P&L ou comunicacao externa.
+- Intake documental produtivo nao deve executar fixture sintetica contra producao. Se isso ocorrer, a neutralizacao precisa registrar estado explicito, rollback logico e trilha append-only, mesmo quando delta canonico e impacto financeiro forem zero.
 
 ## Atualizacao 2026-08-17/18
 
@@ -115,12 +116,26 @@ FIP evoluiu a camada semantica e operacional sem ampliar permissoes externas:
 - cenario Grupo Unus para Relatorios Operacionais reduziu os eventos futuros ativos de R$ 42.942,42/mes para R$ 24.000,00/mes por fator proporcional `0.55888792`, substituindo o valor canonico no cenario e sem mutar actuals; receita cenario R$ 85.143,84 e Simples R$ 11.745,95/mes foram calculados com perfil canonico, nao com fallback de 6%;
 - tentativa de fechamento documental Santander/MP agosto validou pacote, mas falhou fechado porque Santander exige CPF/senha e nao havia canal local no-echo aprovado; Mercado Pago agosto foi apenas parseado read-only, com total R$ 4.987,28, vencimento 2026-08-20 e diferenca R$ 0,00, sem ingestao produtiva.
 
+## Atualizacao 2026-08-19
+
+`FIP_DOCUMENT_INTAKE_GATEWAY_V1_0_0=PASS` implantou o gateway permanente de intake documental como primeiro componente de classe em `projects/fip/intake/`:
+
+- workflow privado do Puppet via skill `fip-document-intake-gateway`;
+- contratos aceitos de source immutability, idempotencia, document detection, state machine, parser contract, reconciliation gate, canonical promotion, human decision queue, password security e personal card privacy;
+- canario produtivo contra fonte Cresol ja ingerida retornou `ALREADY_INGESTED` e delta canonico `0`;
+- FCOC ativo evoluiu de `1.5.0` para `1.6.0`, preservando versoes congeladas anteriores;
+- `fip-8787.service` permaneceu `active`, HTTP anonimo `/` retornou `401`, dashboard autenticado `/api/dashboard` retornou `200`, caixa oficial seguiu R$ 10.801,39 no cutoff `2026-08-17T20:21:32-03:00`;
+- cobertura preservada: Caju `7`, FGTS `12`, INSS `9`, Itau Personnalite `8`, Mercado Pago `8`, Payroll `15`, Santander `8`, Simples `25`, classificacoes de cartao `335` e sessoes de entrevista `6`;
+- contadores de seguranca ficaram zerados: mutacao de bytes fonte, senha persistida/logada/argv, residuo temporario de decriptacao, restart do servico FIP, mutacao das portas `8787`/`9213`, card interview e Relatorios Operacionais.
+
+Durante a validacao, uma fixture sintetica `SIMPLES` foi executada por engano contra producao. Ela foi neutralizada no mesmo intake como source `ROLLED_BACK/ARQUIVADO`, tax obligation `ROLLED_BACK`, decision `ROLLED_BACK` e audit append-only; nenhum caixa, cartao, FCOC antigo, Relatorios Operacionais, `8787` ou `9213` foi alterado por essa fixture.
+
 ## Proximos passos
 
 - Operar FIP como baseline privada aceita para consulta executiva, previsao e cenarios da BIKON.
 - Tratar novas fontes, regras, exposicoes, imports ou alteracoes de forecast como gates pos-GO-LIVE independentes.
 - Coletar/importar documentos para os gaps de confiabilidade do forecast antes de promover `v1.2.0`.
-- Iniciar a entrevista Mercado Pago apenas com autorizacao atomica `START_FIP_PERSONAL_CARD_CLASSIFICATION_INTERVIEW_MERCADO_PAGO_REPAIRED_QUEUE`.
+- Usar o gateway de intake documental para novas fontes somente quando o tipo de documento tiver parser/reconciliation gate, protecao de segredo e privacidade de cartao pessoal adequados.
 - Sanitizar evidence packs futuros para nao registrar headers de autenticacao nos JSONs de smoke.
 - Avancar novos settlements de recebiveis ou Itau somente depois de encerrar o fluxo Mercado Pago autorizado ou receber gate proprio.
 - Manter evidencias, backups, prints e exports em `projects/fip/`, fora do Brain/Git.

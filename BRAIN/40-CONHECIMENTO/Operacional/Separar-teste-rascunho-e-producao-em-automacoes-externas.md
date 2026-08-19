@@ -3,9 +3,9 @@
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidação semanal 2026-W26
+fonte: consolidação semanal 2026-W26 e FIP Document Intake Gateway 2026-08-19
 confiabilidade: alta
-ultima_revisao: 2026-07-17
+ultima_revisao: 2026-08-19
 tags: [guardrails, dry-run, rascunho, producao, automacoes, comunicacao-externa, aprovacao, hash]
 ```
 
@@ -18,6 +18,7 @@ Automações que podem gerar efeito externo devem separar claramente preparaçã
 - Usar `dry-run`, rascunhos, payloads e pré-visualização como padrão inicial.
 - Antes de envio, publicação, emissão, cancelamento, chamada real ou alteração operacional, listar o impacto esperado e exigir confirmação quando não houver autorização prévia.
 - Em testes com dados reais, usar destinatário explícito e impedir lookup automático de cadastro que possa enviar para terceiros.
+- Fixture sintetica nao deve ser executada contra producao; se isso ocorrer por erro, neutralizar no proprio dominio com estado explicito, rollback logico, delta verificado e trilha append-only.
 - Manter logs, tokens, `.env` e artefatos sensíveis fora do Brain/Git.
 - Registrar no Brain o estado operacional e os guardrails, não a execução sensível completa.
 
@@ -36,6 +37,7 @@ Automações que podem gerar efeito externo devem separar claramente preparaçã
 - Notaas NFS-e BIKON: rascunho `.eml`, SMTP validado, anexos preparados e envio externo bloqueado sem autorização.
 - API WhatsApp Bikon: rotina segura com dry-run por padrão e envio real somente com confirmação explícita.
 - Instagram Bikon Robotnik: portões separados, Kling para mídia, Creatomate para composição e Buffer como único publicador.
+- FIP Document Intake Gateway: source real ja ingerido pode validar idempotencia; fixture sintetica em producao precisa ser rejeitada ou neutralizada com auditoria.
 
 ## Relações
 
