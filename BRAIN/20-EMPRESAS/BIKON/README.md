@@ -25,6 +25,7 @@
 
 ## Histórico relevante
 
+- 2026-08-20: FIP Google Drive Archival Storage foi concluido com `PASS`: `356/356` objetos `ARCHIVE_AND_RELEASE` fechados, `0` pendentes, `UPLOAD_STARTED=0`, `sqlite integrity_check=ok`, liberacao efetiva de `9.066.463.232` bytes na VPS e registry final SHA-256 `96edb9ed377d1a0c32c55c0f04cee26e42f91554bb5f96ea7086d7983332d89d`. Objetos fora do escopo (`ARCHIVE_KEEP_LOCAL`, `KEEP_LOCAL`, `DEFER_AMBIGUOUS` e 5 `PURGE_REGENERABLE`) foram preservados.
 - 2026-08-19: FIP implantou gateway privado de intake documental `v1.0.0` como componente permanente e elevou FCOC ativo para `1.6.0`, com canario produtivo Cresol `ALREADY_INGESTED`/delta `0`, caixa oficial ainda R$ 10.801,39, `fip-8787.service` ativo e portas `8787`/`9213` sem mutacao. Relatorios Operacionais recebeu alias-router para Puppet/Kowalski/Darth preservando Puppet como owner externo e workers sem envio externo direto.
 - 2026-08-18: FIP atualizou caixa Cresol corrente para R$ 10.801,39 em 2026-08-17T20:21:32-03:00, reconciliado por extrato oficial com diferenca R$ 0,00. Limite de credito R$ 30.000,00 e saldo disponivel R$ 40.801,39 nao foram tratados como caixa. O backend `8787` ficou sob `fip-8787.service` e a rota Relatorios Operacionais para cenarios FIP passou a responder via Puppet, com Darth/Kowalski apenas como workers internos.
 - 2026-08-15: FIP CHG-004 ampliou a base financeira 2026 da BIKON: `546` transacoes bancarias canonicas 2026, carteira Cresol com 231 titulos/24 clientes e R$ 170.331,83 em 16 titulos abertos vencidos, Grupo Unus canonico com 8 CNPJs aprovados e 98,80% da carteira aberta medida, Caju/folha/impostos estruturados e cartoes pessoais preservados em quarentena privada sem classificacao automatica.
@@ -79,3 +80,4 @@
 - FIP CHG-004 e carteira Cresol sao base gerencial/canonica interna; cobranca, baixa bancaria, classificacao de cartao pessoal, reembolso, P&L definitivo, envio externo ou comunicacao com cliente continuam exigindo Approval proprio.
 - Limite de credito bancario e saldo disponivel nao sao caixa; forecasts devem usar apenas saldo oficial reconciliado como autoridade corrente.
 - Novas evidencias documentais no FIP devem entrar pelo intake gateway somente com parser/reconciliation gate, idempotencia, protecao de senha e privacidade de cartao pessoal preservadas.
+- Limpeza adicional de arquivos FIP fora do escopo `ARCHIVE_AND_RELEASE` exige autorizacao propria e prova de destino/rollback; conclusao do archive nao autoriza purge por heranca.

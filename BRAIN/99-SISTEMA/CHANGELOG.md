@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-08-20, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-08-20.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md` com FIP Google Drive Archival Storage `PASS`, `356/356` objetos `ARCHIVE_AND_RELEASE` fechados, `UPLOAD_STARTED=0`, `9.066.463.232` bytes liberados efetivamente, evidencia local final e registry SHA-256 `96edb9ed377d1a0c32c55c0f04cee26e42f91554bb5f96ea7086d7983332d89d`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md` com Portal 213 Stage 1B R2.4, SHA-256 `fcd0de0d34a2616aae9e50beaba6409d5804b306d9fad58c95f54fd36e2dfe26`, rota de tres checkpoints, execucoes anteriores orfas/nao autoritativas e Checkpoint 1 read-only pendente de evidencia terminal autenticada.
+- Atualizados `BRAIN/20-EMPRESAS/BIKON/README.md`, `BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md`, `BRAIN/40-CONHECIMENTO/Operacional/Pacote-selado-auto-reprodutivel-antes-de-privilegio-operacional.md` e `BRAIN/99-SISTEMA/MEMORY.md`.
+- Atualizados `BRAIN/01-DIARIO/README.md`, `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e `BRAIN/99-SISTEMA/brain-v2/health/knowledge-health.md`.
+- Commit Link Gate validado apos a consolidacao: `ok=True`, `362` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados arquivos locais do Brain e sessoes visiveis recentes; esta rotina nao acessou sistemas externos, nao enviou mensagem ao Hebert, nao criou agente, nao executou root/sudo/producao e nao fez push.
+
 ## 2026-08-19, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-08-19.md`.

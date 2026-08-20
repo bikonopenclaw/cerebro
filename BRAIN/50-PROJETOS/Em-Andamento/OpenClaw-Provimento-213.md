@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw - Provimento 213
-status: golden_baseline_protected_portal213_stage1b_r23_preparatory_pass
+status: golden_baseline_protected_portal213_stage1b_r24_checkpoint1_pending
 responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-19
-tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre, miniapp, canonical-truth, portal213]
+ultima_revisao: 2026-08-20
+tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre, miniapp, canonical-truth, portal213, r24]
 ```
 
 ## Objetivo
@@ -170,6 +170,23 @@ Correcoes exercitadas pelo R2.3:
 - protecao contra interrupcao durante publicacao atomica de segredo temporario e limpeza de `.stage1-canary.secret.*`.
 
 Este estado nao autoriza Stage 1B/1C, root, servico, Telegram, DNS/TLS/proxy, AIR/ICD, producao, cliente ou CNS real.
+
+## Atualizacao 2026-08-20
+
+Hebert aprovou a mudanca de rota do Portal 213 Stage 1B para tres checkpoints curtos, auditaveis e independentes, mantendo o Goal existente ativo e proibindo execucao monolitica longa.
+
+Autoridade e limites da rota:
+
+- R2.4 SHA-256: `fcd0de0d34a2616aae9e50beaba6409d5804b306d9fad58c95f54fd36e2dfe26`;
+- `gunicorn` e `python3-gunicorn` `20.1.0-6ubuntu0.1` declarados instalados/verificados;
+- `dpkg audit` declarado limpo;
+- nao repetir `apt-get` e nao rebootar a VPS;
+- execucoes anteriores `runId 189060bf-deb9-43cb-9582-90a4d550ba4f`, child `agent:main:subagent:6cdc7b2a-75a9-456e-9722-ad1564927df8` e isolated execution `1fe9acaf-8259-4e80-8791-d41bbfff76a5` sao orfas e nao autoritativas;
+- nenhuma execucao anterior pode ser tratada como `PASS` ou retry automatico sem evidencia autenticada.
+
+Checkpoint 1 foi aberto como reconciliacao read-only para determinar o estado deixado pelas execucoes perdidas, escrever evidencia atomica e classificar exatamente um resultado: `CLEAN_PRE_CANARY`, `EXACT_RESUMABLE_CANARY_STATE`, `PARTIAL_BOUNDED_STATE` ou `AMBIGUOUS_OR_UNSAFE_STATE`.
+
+No contexto revisado desta consolidacao, ainda nao havia retorno terminal autenticado do Checkpoint 1 com `evidence_path` e `MANIFEST.sha256`. Portanto, Checkpoint 2 nao esta autorizado por inferencia.
 
 ## Governance Ledger
 

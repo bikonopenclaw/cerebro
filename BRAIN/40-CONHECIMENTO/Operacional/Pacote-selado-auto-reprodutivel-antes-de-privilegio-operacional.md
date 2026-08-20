@@ -3,10 +3,10 @@
 ```yaml
 categoria: operacional
 tipo: guardrail
-fonte: consolidacao semanal 2026-W33 e Portal 213 Stage 1B R2.3
+fonte: consolidacao semanal 2026-W33 e Portal 213 Stage 1B R2.3/R2.4
 confiabilidade: alta
-ultima_revisao: 2026-08-19
-tags: [pacote, hash, rollback, preflight, root, producao, provimento-213]
+ultima_revisao: 2026-08-20
+tags: [pacote, hash, rollback, preflight, root, producao, provimento-213, checkpoint]
 ```
 
 ## Principio
@@ -29,6 +29,8 @@ O pacote preparatorio deve falhar antes da ativacao real, nao durante ela.
 No Portal 213, o Stage 1A.3 supersedido falhou porque o artefato selado nao era aceito pelo proprio controller como delivery bundle e divergia da matriz de rollback. O Stage 1A.3-R1 corrigiu o controller transacional futuro, validou hashes, plano, release binding e rollback offline/read-only, mas continuou sem autorizar Stage 1B/1C ou ativacao real.
 
 Em 2026-08-19, o Portal 213 Stage 1B R2.3 reforcou o mesmo principio em formato de comando local canary root: o artefato novo foi validado por diff exato, `bash -n`, compilacao de heredocs Python, fixtures de sinais, rollback systemd, pais `/opt`, apt parcial, evidence path e segredo temporario, com root/sudo/systemctl/apt/producao `0`. O `PASS` continua preparatorio e nao autoriza execucao real.
+
+Em 2026-08-20, a rota R2.4 tornou explicito que um pacote com prerequisito instalado ainda precisa de reconciliacao read-only autenticada antes de canary: execucoes orfas nao sao `PASS`, e Checkpoint 2 so pode iniciar depois de Checkpoint 1 retornar classificacao, evidence path e manifest SHA.
 
 ## Relacoes
 

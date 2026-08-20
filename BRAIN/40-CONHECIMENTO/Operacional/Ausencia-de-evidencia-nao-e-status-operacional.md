@@ -3,10 +3,10 @@
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidação semanal 2026-W28
+fonte: consolidação semanal 2026-W28; Portal 213 Stage 1B R2.4 em 2026-08-20
 confiabilidade: alta
-ultima_revisao: 2026-07-17
-tags: [monitoramento, evidencia, recencia, revalidacao, ninjaone, backup, hyper-v, operacao]
+ultima_revisao: 2026-08-20
+tags: [monitoramento, evidencia, recencia, revalidacao, ninjaone, backup, hyper-v, operacao, checkpoint]
 ```
 
 ## Princípio
@@ -31,10 +31,13 @@ Evidência antiga também não comprova estado atual. Toda conclusão operaciona
 - Abertura automática de ticket exige evidência atual e regra aprovada. No fluxo Bitdefender -> NinjaOne, `endpoint_sem_protecao` só é acionável quando o endpoint foi visto há menos de 30 dias.
 - Auto-fechamento exige uma coleta posterior à abertura que confirme resolução. Ausência do alerta anterior não basta quando a fonte não comprova o estado atual.
 - Quando a fonte estiver indisponível, manter `sem evidência consultável` e registrar a necessidade de revalidação.
+- Child session, processo orfao, log parcial ou marcador historico nao e autoridade operacional. Para continuar uma execucao interrompida, exigir evidence path estavel, manifest hash e validacao do estado subjacente.
 
 ## Exemplo conectado
 
 Em 2026-07-07, o NinjaOne expôs inventário, conectividade, volumes, alertas e atividades de `HOST1 | Magnitos Granitos`, mas não expôs conclusão de backup nem status de Hyper-V replication. O status correto foi registrar ausência de evidência e apontar instrumentação necessária.
+
+Em 2026-08-20, no Portal 213 Stage 1B R2.4, execucoes anteriores foram classificadas como orfas e nao autoritativas. Sem retorno autenticado de classificacao, evidence path e `MANIFEST.sha256`, o estado correto e nao iniciar o proximo checkpoint por inferencia.
 
 ## Relações
 
@@ -43,3 +46,4 @@ Em 2026-07-07, o NinjaOne expôs inventário, conectividade, volumes, alertas e 
 - `BRAIN/20-EMPRESAS/BIKON/README.md`
 - `BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md`
 - `BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md`
+- [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw - Provimento 213]]

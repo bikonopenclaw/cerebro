@@ -2,13 +2,13 @@
 
 ```yaml
 nome: FIP Bikon Financial Intelligence
-status: production_private_fcoc16_document_intake_gateway_pass
+status: production_private_fcoc16_document_intake_archive_pass
 responsavel: Puppet Master
 inicio: 2026-08-09
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-19
-tags: [bikon, financeiro, fip, pnl, forecast, scenario, tailscale, go-live, chg004, intake]
+ultima_revisao: 2026-08-20
+tags: [bikon, financeiro, fip, pnl, forecast, scenario, tailscale, go-live, chg004, intake, archive]
 ```
 
 ## Objetivo
@@ -130,6 +130,24 @@ FIP evoluiu a camada semantica e operacional sem ampliar permissoes externas:
 
 Durante a validacao, uma fixture sintetica `SIMPLES` foi executada por engano contra producao. Ela foi neutralizada no mesmo intake como source `ROLLED_BACK/ARQUIVADO`, tax obligation `ROLLED_BACK`, decision `ROLLED_BACK` e audit append-only; nenhum caixa, cartao, FCOC antigo, Relatorios Operacionais, `8787` ou `9213` foi alterado por essa fixture.
 
+## Atualizacao 2026-08-20
+
+A retomada do FIP Google Drive Archival Storage foi concluida com `PASS`, tratando primeiro o estado interrompido:
+
+- registry canonico `projects/fip/data/fip_archive_registry.sqlite3` reautenticado, com os 3 objetos em `UPLOAD_STARTED` reconciliados contra o Drive;
+- como nao havia objeto remoto integro correspondente para esses 3 uploads, eles foram recuperados para `LOCAL_HASHED` antes do processamento, sem repetir exclusao insegura;
+- objetos `ARCHIVE_AND_RELEASE` fechados: `356/356`;
+- pendentes `ARCHIVE_AND_RELEASE`: `0`;
+- validacoes finais: `sqlite integrity_check=ok`, `UPLOAD_STARTED=0`, `no_unverified_local_delete=true` e `active_runtime_local_release_count=0`;
+- espaco liberado efetivo na VPS por delta de filesystem: `9.066.463.232` bytes;
+- payload logico registrado em release manifest: `9.160.638.953` bytes;
+- tamanho final do projeto FIP: de `11.703.546.113` para `2.799.574.529` bytes;
+- `reports/backups`: de `8.954.126.977` para `49.053.696` bytes;
+- evidencia local: `/data/.openclaw/workspace/projects/fip/reports/fip-drive-archive-v1.0.0/final-archive-report.json`;
+- registry final SHA-256: `96edb9ed377d1a0c32c55c0f04cee26e42f91554bb5f96ea7086d7983332d89d`.
+
+Ficaram preservados fora do escopo da retomada objetos `ARCHIVE_KEEP_LOCAL`, `KEEP_LOCAL`, `DEFER_AMBIGUOUS` e 5 `PURGE_REGENERABLE` pequenos. Qualquer limpeza desses grupos exige autorizacao separada.
+
 ## Proximos passos
 
 - Operar FIP como baseline privada aceita para consulta executiva, previsao e cenarios da BIKON.
@@ -140,6 +158,7 @@ Durante a validacao, uma fixture sintetica `SIMPLES` foi executada por engano co
 - Avancar novos settlements de recebiveis ou Itau somente depois de encerrar o fluxo Mercado Pago autorizado ou receber gate proprio.
 - Manter evidencias, backups, prints e exports em `projects/fip/`, fora do Brain/Git.
 - Para Santander, aceitar senha/CPF somente por canal local no-echo aprovado; nao receber por Telegram, argv, log, banco ou relatorio.
+- Tratar limpeza adicional de objetos fora do escopo do archive como nova unidade autorizada.
 
 ## Relacoes
 
