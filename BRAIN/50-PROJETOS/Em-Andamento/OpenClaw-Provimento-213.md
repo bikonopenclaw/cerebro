@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw - Provimento 213
-status: golden_baseline_protected_portal213_stage1b_r24_checkpoint1_pending
+status: golden_baseline_protected_portal213_stage1b_pass_accepted_telegram_only_manual_client_gate_pending
 responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-20
-tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre, miniapp, canonical-truth, portal213, r24]
+ultima_revisao: 2026-08-21
+tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre, miniapp, canonical-truth, portal213, telegram-only]
 ```
 
 ## Objetivo
@@ -187,6 +187,55 @@ Autoridade e limites da rota:
 Checkpoint 1 foi aberto como reconciliacao read-only para determinar o estado deixado pelas execucoes perdidas, escrever evidencia atomica e classificar exatamente um resultado: `CLEAN_PRE_CANARY`, `EXACT_RESUMABLE_CANARY_STATE`, `PARTIAL_BOUNDED_STATE` ou `AMBIGUOUS_OR_UNSAFE_STATE`.
 
 No contexto revisado desta consolidacao, ainda nao havia retorno terminal autenticado do Checkpoint 1 com `evidence_path` e `MANIFEST.sha256`. Portanto, Checkpoint 2 nao esta autorizado por inferencia.
+
+## Atualizacao 2026-08-20/21
+
+Portal 213 Stage 1B R2.5 foi executado pelo Owner como root e aceito apos export autenticado do evidence dir.
+
+Estado Stage 1B:
+
+- `STAGE1B_RESULT=PASS_ACCEPTED`;
+- R2.5 SHA-256 `e171b18c1fcc003fa4f7eef9f441ec5461a353128b6a4773e7041a5a43c3cde7`;
+- transcript publicado SHA-256 `bfa388d1e16fed872aad1d6b480c7d6d749e9c793e86170dc737987b9b570f0f`;
+- export do evidence dir em `/data/.openclaw/workspace/runtime-commands/portal213_stage1b_r2_5_checkpoint3_evidence_export_20260820T170817Z`;
+- tar do export SHA-256 `51fee6e56ba76a26f647453d7fb5b745fd4de9bf74c0e5aa8c088fd1eb524b1f`;
+- `OFFLINE_TESTS=94/94`;
+- `LOOPBACK_BINDING=PASS`;
+- `HTTP_CANARY_FLOW=PASS`;
+- `REPLAY_PROTECTION=PASS`;
+- `SECURE_COOKIE_CONTRACT=PASS`;
+- `RESTART_DURABILITY=PASS`;
+- `LIVE_LOG_REDACTION=PASS`;
+- `ZERO_EXTERNAL_CUSTOMER_PATH=PASS`;
+- `PROTECTED_PORTS_UNCHANGED=PASS`;
+- `OPENCLAW_PROTECTED_GATEWAY_PROCESSES_UNCHANGED=PASS`;
+- `REAL_BOT_TOKEN_CONSUMED=NO`;
+- `TELEGRAM_EXTERNAL_READ_COUNT=0`;
+- `TELEGRAM_EXTERNAL_WRITE_COUNT=0`;
+- `DNS_TLS_PROXY_MUTATION_COUNT=0`;
+- `AIR_ICD_PRODUCTION_MUTATION_COUNT=0`;
+- `CUSTOMER_CONTACT_COUNT=0`;
+- servico `portal213-stage1.service` ativo em loopback `127.0.0.1:19213` e `disabled` no boot.
+
+Hebert cancelou explicitamente a rota Stage 1C HTTPS/web. Nao criar nem pedir DNS, AAAA, TLS, Nginx, reverse proxy, firewall, Certbot, Cloudflare, browser publico ou BotFather `/setdomain` para portal web. O alvo final canonico virou Telegram-only.
+
+Estado Telegram-only:
+
+- canal privado com card fixado `Portal 213`;
+- bot `@mattedi_05_bot`;
+- duas acoes primarias: `Start or continue interview` e `Access Portal 213`;
+- card interno publicado/pinado no canal privado com `LIVE_ACTIVATION=PASS`;
+- identidade do bot, membership do owner e permissoes de post/pin validadas;
+- deep links `start=` foram considerados defeituosos porque abriam chat do bot, nao a Main Mini App;
+- card corrigido para URLs `startapp`: `https://t.me/mattedi_05_bot?startapp=interview&mode=fullscreen` e `https://t.me/mattedi_05_bot?startapp=portal213&mode=fullscreen`;
+- BotFather depois passou a reportar Main Mini App configurada;
+- Mini App em `https://srv1811702.tail34aee8.ts.net/prov213/miniapp` respondeu `200`, com body SHA-256 `d393b4ab6bfbf2aeaf036e53b58c7da56588c4829b9530b0a5a98db1769e8649`;
+- endpoints live com initData real assinado responderam `200` para CNS `023218` e `023689`;
+- probes sinteticos invalidos falharam em `403`;
+- journal redaction scan: `real_bot_token_count=0`, `telegram_token_pattern_count=0`;
+- `real_bot_token_disclosure_count=0` e `sensitive_data_disclosure_count=0`.
+
+Gate ainda pendente: validacao manual no cliente Telegram real. A Bot API e a API/HTML do Mini App validam contrato tecnico, mas nao provam sozinhas que `t.me startapp` abre a Main Mini App e injeta `initData`/`start_param` como producao. Nao retomar Stage 1C por inercia.
 
 ## Governance Ledger
 

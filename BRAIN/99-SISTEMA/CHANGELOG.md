@@ -1,5 +1,14 @@
 # CHANGELOG.md
 
+## 2026-08-21, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-08-21.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md` com Portal 213 Stage 1B R2.5 `PASS_ACCEPTED`, evidence export autenticado, cancelamento da rota HTTPS/web, alvo Telegram-only, card privado `startapp`, Main Mini App configurada e gate manual pendente no cliente Telegram real.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-RSE.md` com producao limitada a `EXECUTION_TREE_RECOVERY`, adapters live `BOUNDED_EXECUTION_TREE_RECOVERY`, manifest final `179` entradas, candidate SHA-256 `31f02863bc249b813f2a346faf7e7bdb474ac41c79b3fcaa3ecadf018b3f2b13`, `RSE_READER_REAL_V2_RECORD=PASS`, `19` registros validos e `0` invalidos.
+- Atualizados `BRAIN/99-SISTEMA/MEMORY.md`, `BRAIN/01-DIARIO/README.md`, `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e `BRAIN/99-SISTEMA/brain-v2/health/knowledge-health.md`.
+- Commit Link Gate validado apos a consolidacao: `ok=True`, `363` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados arquivos locais do Brain, memoria local recente, sessoes visiveis recentes e artefatos locais em `projects/openclaw-provimento-213`, `projects/RSE` e `runtime-commands`; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao alterou permissoes root-owned, nao executou producao e nao fez push.
+
 ## 2026-08-20, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-08-20.md`.

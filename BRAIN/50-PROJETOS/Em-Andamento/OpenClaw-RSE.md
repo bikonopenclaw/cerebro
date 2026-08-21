@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw RSE
-status: stage4_phase_a_accepted_frozen_phase_b_child_prepared_pending_validation
+status: production_bounded_execution_tree_recovery_only
 responsavel: Puppet Master
 inicio: 2026-08-18
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-19
-tags: [openclaw, rse, execution-foundation, shadow, fail-closed, stage4]
+ultima_revisao: 2026-08-21
+tags: [openclaw, rse, execution-foundation, fail-closed, stage4, production, bounded-execution-tree-recovery]
 ```
 
 ## Objetivo
@@ -81,10 +81,38 @@ Dominios implementados no child preparatorio:
 - PID ou cgroup observado serve como evidencia hash, nao como autoridade de target.
 - Phase B, instalacao, canary e producao exigem gates proprios e validacao independente antes de qualquer mutacao.
 
+## Atualizacao 2026-08-20/21
+
+Evidencia local posterior indicou ativacao produtiva estritamente limitada do RSE:
+
+- `CURRENT_RSE_MODE=PRODUCTION`;
+- `LIVE_MUTATION_ADAPTERS=BOUNDED_EXECUTION_TREE_RECOVERY`;
+- `ENABLED_MUTATION_DOMAINS=EXECUTION_TREE_RECOVERY`;
+- `ACTIVE_EXECUTION_TERMINATION_DEFAULT=FORBIDDEN`;
+- `GATEWAY_RESTART_POLICY=ESCALATION_ONLY`;
+- `HOST_REBOOT_POLICY=FORBIDDEN`.
+
+A evidencia final de producao registrou:
+
+- manifest final com `179` entradas;
+- candidate SHA-256 `31f02863bc249b813f2a346faf7e7bdb474ac41c79b3fcaa3ecadf018b3f2b13`;
+- `FINAL_CANDIDATE_VERIFICATION=PASS`;
+- `RELEASE_RESIDUES=ZERO`;
+- `PREDECESSOR_CANDIDATE_INTEGRITY=PASS`;
+- `PRODUCTION_ACTIVATION_AUTHORITY=PASS`;
+- `WRITERS=ZERO`;
+- `RSE_READER_REAL_V2_RECORD=PASS`, com `19` registros validos e `0` invalidos;
+- hash chain `PASS` para canary e producao;
+- canary semantic evidence `PASS`;
+- `PRODUCTION_NORMAL_CYCLES=3`;
+- `PRODUCTION_SIGNALS=0`.
+
+Este estado nao autoriza dominios adicionais. Memoria, restart, SQLite, terminacao ativa, gateway restart, reboot, novos adapters live e qualquer mutacao fora de `EXECUTION_TREE_RECOVERY` continuam exigindo approvals e gates proprios.
+
 ## Proximos passos
 
-- Executar somente a validacao independente do child Stage 4 Phase B quando autorizada.
-- Manter RSE em `SHADOW` e adapters `INERT` ate gate explicito de instalacao/canary/producao.
+- Manter producao restrita a `EXECUTION_TREE_RECOVERY`.
+- Exigir approval especifico antes de habilitar memoria, restart, SQLite, terminacao ativa, gateway restart, reboot ou qualquer novo adapter live.
 
 ## Relacoes
 
