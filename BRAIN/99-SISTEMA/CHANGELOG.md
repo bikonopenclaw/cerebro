@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-08-22, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-08-22.md`.
+- Atualizado `BRAIN/60-AGENTES/SENTINEL.md` com Sentinel V2 Goal 1 `PARTIAL_EXTERNAL_AUTHORITY_BLOCKED`, Goal 2 `PASS`, `14` capacidades registradas, manifest SHA-256 `0ca98716b95724c6c7f5dfdd10fa37952cdf5dc54ffdd9226f952e27418ce801`, mutacoes reais `0` e canarios live bloqueados por ausencia de alvo seguro.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Operational-Data-Platform.md` com ODP Day 4 `RECOVERABLE_P0_SECRET_EXPOSURE_PENDING_OPENCLAW_RUNTIME_SECRET_ROTATION`, pacote SHA-256 `6071d6d7a8c098aadd7b70e4a72d392e368c30706cbb592d1732e1c851b30a8b`, Day 4 `NOT_CONTINUED` e proxima bridge de rotacao.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-RSE.md` com RSE Capacity-Aware Execution Governance v1 `PASS`, successor SHA-256 `5c72cb05f796434cdd8aff9240c1ee5de69246e3dadac5c73f0e5d2c37a11336`, manifest de evidencia SHA-256 `4aae90089b30cae124130711d91850b9fdec5146820104c1903e62334b0afcaf`, admissao por capacidade produtiva e dominios mutativos ainda restritos a `EXECUTION_TREE_RECOVERY`.
+- Atualizados `BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md`, `BRAIN/99-SISTEMA/MEMORY.md`, `BRAIN/01-DIARIO/README.md`, `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e `BRAIN/99-SISTEMA/brain-v2/health/knowledge-health.md`.
+- Commit Link Gate validado apos a consolidacao: `ok=True`, `364` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados arquivos locais do Brain, memoria local recente, sessoes visiveis recentes e artefatos locais em `projects/sentinel`, `projects/ODP` e `projects/RSE`; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao acessou sistemas externos, nao registrou plaintext de segredo, nao executou rotacao/runtime bridge/producao nova e nao fez push.
+
 ## 2026-08-21, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-08-21.md`.

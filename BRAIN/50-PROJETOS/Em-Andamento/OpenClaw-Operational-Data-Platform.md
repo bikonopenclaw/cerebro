@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw Operational Data Platform
-status: day3_core_pass_accepted_day4_not_executed
+status: day3_core_pass_accepted_day4_blocked_secret_rotation_required
 responsavel: Puppet Master
 inicio: 2026-08-05
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-13
-tags: [openclaw, odp, postgresql, operational-data, governance, rollback, non-interference, controlled-secret-executor, day3]
+ultima_revisao: 2026-08-22
+tags: [openclaw, odp, postgresql, operational-data, governance, rollback, non-interference, controlled-secret-executor, day3, day4, secret-rotation]
 ```
 
 ## Objetivo
@@ -32,7 +32,12 @@ O Brain registra apenas estado consolidado e guardrails. Evidencias, pacotes, ma
 - Instalacao root parcial posterior validou executor, sudoers e preflight autenticado `module_migrator|odp`, com `16/16` testes negativos; a primeira validacao instalada terminou `FAIL_CLOSED_INSTALLED_STATE_NOT_FULL_FROZEN_ARTIFACT_SET` porque o contrato congelado nao estava instalado no caminho final esperado.
 - Day 3 foi corrigido e aceito como `PASS_ACCEPTED`: executor v2 final `PASS`, `platform_admin -> platform_owner`, preflight `PASS`, migracoes `0000_bootstrap.sql`, `0001_core_metadata.sql` e `0002_observability.sql` aplicadas, ledger `PASS_0000_0001_0002`, drift `0`, checksums `3/3`, Kowalski `PASS_ACCEPTED`, `0` business modules, `0` mutacoes no runtime OpenClaw, `0` interacoes SQLite e `0` exposicao de segredo.
 - Day 3 Completion Pack v1.0.0: `DAY3_COMPLETION_PACK_v1.0.0.tar.gz`; pacote final `ODP_DAY3_CORE_FINAL_ACCEPTANCE_PASS_20260811T124410Z.tar.gz`.
-- Proximo token operacional registrado: `DAY_4_PROVIMENTO_213_ONBOARDING`.
+- Day 4 foi autorizado como `DAY_4_PROVIMENTO_213_ONBOARDING`, mas falhou fechado antes de qualquer continuacao por exposicao P0 recuperavel de credenciais OpenClaw runtime durante discovery de ambiente.
+- Incidente Day 4 em 2026-08-21: comando de preflight nao delimitado `env | sort | rg -i 'PG|POSTGRES|ODP|CRC|DATABASE|DB|OPENCLAW'` expôs referencias logicas de credenciais OpenClaw runtime no stdout/tool result/transcripts. Referencias afetadas: `OPENCLAW_GATEWAY_TOKEN`, `OPENCLAW_GATEWAY_REMOTE_TOKEN` e `OPENCLAW_HOOKS_TOKEN`. Plaintext nao deve ser registrado no Brain.
+- Pacote de recuperacao: `/data/.openclaw/workspace/projects/ODP/reports/day4-secret-exposure-recovery-20260821T152254Z.tar.gz`, SHA-256 `6071d6d7a8c098aadd7b70e4a72d392e368c30706cbb592d1732e1c851b30a8b`.
+- Estado Day 4: `RECOVERABLE_P0_SECRET_EXPOSURE_PENDING_OPENCLAW_RUNTIME_SECRET_ROTATION`, `DAY4_CONTINUATION=NOT_CONTINUED`, `DAY4_COMPLETION_PACK` nao executado, implementacao/testes/promocao/validacao Kowalski/estabilidade nao executados.
+- Integridade preservada por nao mutacao: ODP production DB `NOT_TOUCHED`, CRC authority `PRESERVED_BY_NON_MUTATION`, EDC `PRESERVED_BY_NON_MUTATION`, Day 2/Day 3 authority `PRESERVED_BY_NON_MUTATION`, OpenClaw runtime state nao mutado pelo child, SQLite sem interacao.
+- Proximo token operacional registrado: `OPENCLAW_RUNTIME_ROTATION_BRIDGE_THEN_CONTINUE_SAME_DAY_4_PROVIMENTO_213_ONBOARDING_AUTHORITY`.
 
 ## Guardrails
 
@@ -42,10 +47,12 @@ O Brain registra apenas estado consolidado e guardrails. Evidencias, pacotes, ma
 - Rollback deve distinguir artefatos criados por pacote Ubuntu, artefatos ODP, roles/databases/configuracao/backups ODP e elementos pre-existentes.
 - Nunca remover pacote ou artefato pre-existente de cliente sem autorizacao destrutiva explicita.
 - Errata em baseline aceito deve ser aditiva, limitada e rastreavel; o pacote imutavel permanece preservado.
+- Discovery de ambiente nao pode despejar `env` em stdout com filtro amplo. Preflight seguro deve usar allowlist de nomes, metadata/hash ou probes que provem ausencia de segredo antes de imprimir qualquer saida.
+- Exposicao de segredo em transcript/evidence exige fail-closed, inventario de superficies, rotacao/revogacao de runtime, validacao de credencial nova sem stdout secreto, invalidez da antiga onde testavel e suite negativa com exposicao pos-recuperacao zerada antes de retomar a autoridade original.
 
 ## Proximos passos
 
-- Avancar Day 4 somente com autoridade propria `DAY_4_PROVIMENTO_213_ONBOARDING`.
+- Retomar Day 4 somente apos a bridge `OPENCLAW_RUNTIME_ROTATION_BRIDGE_THEN_CONTINUE_SAME_DAY_4_PROVIMENTO_213_ONBOARDING_AUTHORITY` fechar sem segredo em stdout e com validacao da nova vinculacao.
 - Antes de qualquer migracao Provimento 213 para ODP, exigir contratos AIR/CPIW/ICD/DRE, rollback, non-interference e autorizacao atomica.
 
 ## Relacoes

@@ -3,10 +3,10 @@
 ```yaml
 nome: Sentinel
 papel: controller_operacoes_snoc
-status: ativo_read_only_com_coleta_operacional_governada
+status: ativo_capability_model_controlado_com_mutacao_bloqueada_por_gate
 responsavel: Puppet Master
-ultima_revisao: 2026-08-05
-tags: [sentinel, snoc, operacoes, monitoramento, seguranca, read-only]
+ultima_revisao: 2026-08-22
+tags: [sentinel, snoc, operacoes, monitoramento, seguranca, read-only, capability-recovery]
 ```
 
 ## Missão
@@ -122,6 +122,36 @@ Regras consolidadas:
 - antes de credencial, token, GET ou artefato técnico, a rota deve passar por `assert`;
 - ordem divergente fecha em `STALE_OR_UNBOUND_ORDER_REJECTED`, sem fallback interpretativo;
 - crons não críticos podem ser pausados e restaurados pelo controlador apenas dentro do escopo autorizado.
+
+## Sentinel V2 Goal 1/2
+
+Em 2026-08-21, a auditoria forense e os Goals 1/2 do Sentinel V2 revisaram a diferenca entre capacidade declarada, capacidade real, autoridade de provider e plano de acao controlada.
+
+Goal 1 fechou como `PARTIAL_EXTERNAL_AUTHORITY_BLOCKED`:
+
+- pacote final: `/data/.openclaw/workspace/projects/sentinel/goal1/final/SENTINEL_V2_GOAL1_FOUNDATION_READ_PLANE_20260821T213206Z`;
+- manifest SHA-256 `802d2b6847ac8e50e13aefd8923e87b16a4063fe8df35d3eda5e6196730421af`;
+- NinjaOne `PASS`;
+- ARX/Cove `PASS_WITH_SHARED_CREDENTIAL_LIMITATION`;
+- Bitdefender `PASS_WITH_AGGREGATE_IDENTITY_LIMITATION`;
+- WhatsApp e Instagram `BLOCKED_EXTERNAL_AUTHORITY`;
+- controller final `IDLE`, ticketing produtivo `DISABLED` e contadores mutativos `0`.
+
+Goal 2 Completion fechou como `SENTINEL_V2_GOAL2_RESULT=PASS`:
+
+- pacote final: `/data/.openclaw/workspace/projects/sentinel/goal2/final/SENTINEL_V2_GOAL2_FULL_CAPABILITY_20260821T231003Z`;
+- manifest SHA-256 `0ca98716b95724c6c7f5dfdd10fa37952cdf5dc54ffdd9226f952e27418ce801`;
+- `TOTAL_REGISTERED_CAPABILITIES=14`;
+- `READ_CAPABILITIES=7`;
+- `WRITE_ACTION_CAPABILITIES=5`;
+- `TICKET_CAPABILITIES=2`;
+- recuperacao de capacidades NinjaOne, ARX/Cove, Bitdefender, WhatsApp e Instagram `PASS`;
+- provider read parity, provider action parity, ticketing contract, idempotency, negative authority acceptance, secret handover, state ownership, Puppet/Sentinel consumption, Kowalski non-regression, Robotnik non-regression e Golden Baseline `PASS`;
+- `00 - Bikon Tech` permanece `CONFLICT`;
+- real ticket canary, real action canary, WhatsApp send canary e Instagram publish canary ficaram `NOT_RUN_NO_SAFE_TARGET`;
+- `UNAUTHORIZED_MUTATION_COUNT=0`, `REAL_TICKET_MUTATION_COUNT=0`, `REAL_PROVIDER_ACTION_COUNT=0`, `REAL_WHATSAPP_SEND_COUNT=0` e `REAL_INSTAGRAM_PUBLISH_COUNT=0`.
+
+Estado canonico: Sentinel possui modelo controlado de capacidade e contratos para leitura, ticketing e acoes, mas nenhuma mutacao real fica autorizada por inferencia. A primeira execucao real de ticket, provider action, WhatsApp send ou Instagram publish exige alvo seguro, approval proprio, idempotency key, rollback e evidencia.
 
 ## Critério de pronto
 

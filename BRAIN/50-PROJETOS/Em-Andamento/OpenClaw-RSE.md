@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw RSE
-status: production_bounded_execution_tree_recovery_only
+status: production_capacity_governed_execution_tree_recovery_only
 responsavel: Puppet Master
 inicio: 2026-08-18
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-21
-tags: [openclaw, rse, execution-foundation, fail-closed, stage4, production, bounded-execution-tree-recovery]
+ultima_revisao: 2026-08-22
+tags: [openclaw, rse, execution-foundation, fail-closed, stage4, production, bounded-execution-tree-recovery, capacity-governance]
 ```
 
 ## Objetivo
@@ -109,9 +109,57 @@ A evidencia final de producao registrou:
 
 Este estado nao autoriza dominios adicionais. Memoria, restart, SQLite, terminacao ativa, gateway restart, reboot, novos adapters live e qualquer mutacao fora de `EXECUTION_TREE_RECOVERY` continuam exigindo approvals e gates proprios.
 
+## Capacity-Aware Execution Governance v1
+
+Em 2026-08-22, o RSE Capacity-Aware Execution Governance v1 fechou `PASS` em producao.
+
+Evidencia consolidada:
+
+- pacote successor: `/data/.openclaw/workspace/projects/RSE/openclaw-rse-execution-pack-v1.0.0/rse-capacity-aware-execution-governance-v1-production-successor-20260822T003248Z`;
+- evidencia de producao: `/data/.openclaw/workspace/projects/RSE/rse-capacity-governance-v1-production-evidence-20260822T004212Z`;
+- predecessor SHA-256 `31f02863bc249b813f2a346faf7e7bdb474ac41c79b3fcaa3ecadf018b3f2b13`;
+- successor SHA-256 `5c72cb05f796434cdd8aff9240c1ee5de69246e3dadac5c73f0e5d2c37a11336`;
+- installed implementation manifest SHA-256 `20ed7430d27ce2a41c4d244bc49ed7c9c4317421966df0191673bd8d98509106`;
+- evidence manifest `37` entradas, SHA-256 `4aae90089b30cae124130711d91850b9fdec5146820104c1903e62334b0afcaf`;
+- `EXISTING_PUPPET_TASK_CLASSIFIER_INTEGRATION=PASS`;
+- `EXECUTION_RESOURCE_PROFILING=PASS`;
+- `HISTORICAL_RESOURCE_MODEL=PASS`;
+- `DYNAMIC_HOST_CAPACITY_MODEL=PASS`;
+- `PLATFORM_RESERVE_MODEL=PASS`;
+- `DYNAMIC_SAFETY_HEADROOM=PASS`;
+- `CAPACITY_AWARE_ADMISSION_CONTROL=PASS`;
+- `FIXED_CONCURRENCY_LIMIT=NONE`;
+- `DEFERRED_EXECUTION_QUEUE=PASS`;
+- `AUTOMATIC_REEVALUATION=PASS`;
+- `FAIRNESS_AGING=PASS`;
+- `PRESSURE_ADMISSION_FREEZE=PASS`;
+- `RUNTIME_PRESSURE_GOVERNANCE=PASS`;
+- `ORPHAN_PROCESS_TREE_RECOVERY=PASS`;
+- `REGISTRY_COVERAGE_ALL_MANAGED_EXECUTIONS=PASS`;
+- `UNREGISTERED_MANAGED_EXECUTION_SCOPE_COUNT=0`;
+- `SIGNAL_AUTHORITY_ABORT_NONFATAL=PASS`;
+- `RSE_SELF_SURVIVAL_UNDER_PRESSURE=PASS`;
+- `HARDWARE_ADAPTIVITY_8G/16G/32G=PASS`;
+- `NO_CONCURRENCY_CONFIGURATION_CHANGE_BETWEEN_HOST_SIZES=PASS`;
+- `PUPPET_TELEGRAM_RESPONSIVENESS=PASS`;
+- `CONTROLLED_PRODUCTION_CANARY=PASS`;
+- `CANARY_PRODUCTION_TARGETS_SELECTED=ZERO`;
+- `CANARY_PRODUCTION_TARGETS_SIGNALED=ZERO`;
+- `RSE_TIMER_ACTIVE=YES`;
+- `RSE_CONTROLLER_HEALTH=PASS`;
+- `P0_BLOCKERS=0`;
+- `P1_BLOCKERS=0`;
+- `ROLLBACK_READY=YES`;
+- `ROLLBACK_RESULT=PASS`;
+- `UNRELATED_PRODUCTION_MUTATIONS=ZERO`;
+- `PRODUCTION_SQLITE_UNINTENDED_MUTATIONS=ZERO`;
+- `UNRELATED_PROCESS_SIGNALS=ZERO`.
+
+Contrato canonico: Puppet continua dono de intencao, classificacao e colocacao foreground/background. RSE nao reclassifica a tarefa; ele consome o perfil de recurso e governa admissao, fila, pressao, reserva atomica e capacidade. A terminacao ativa segue proibida por padrao; pressao congela admissoes caras e preserva trabalho legitimamente em execucao.
+
 ## Proximos passos
 
-- Manter producao restrita a `EXECUTION_TREE_RECOVERY`.
+- Manter dominios mutativos restritos a `EXECUTION_TREE_RECOVERY`, embora as capacidades de admissao/capacidade/fila/pressao ja estejam produtivas.
 - Exigir approval especifico antes de habilitar memoria, restart, SQLite, terminacao ativa, gateway restart, reboot ou qualquer novo adapter live.
 
 ## Relacoes
