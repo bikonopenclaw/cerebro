@@ -1,5 +1,16 @@
 # CHANGELOG.md
 
+## 2026-08-23, consolidacao semanal
+
+- Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W34.md` com cobertura parcial de 2026-08-17 a 2026-08-23, baseado nas daily notes disponiveis de 2026-08-18 a 2026-08-22.
+- Identificados padroes recorrentes de autorizacao atomica por superficie, segredo fora de stdout/log, evidencia terminal antes de continuidade, owner externo unico de canal, producao parcial por dominio e governanca de capacidade separada de roteamento semantico.
+- Criadas notas permanentes `BRAIN/40-CONHECIMENTO/Operacional/Producao-parcial-por-dominio-nao-herda-autorizacao.md` e `BRAIN/40-CONHECIMENTO/Operacional/Governanca-de-capacidade-nao-e-roteamento-semantico.md`.
+- Elevados/relacionados aprendizados semanais tambem em `Segredos-fora-do-Brain-e-Git.md`, `Ausencia-de-evidencia-nao-e-status-operacional.md` e `Separar-teste-rascunho-e-producao-em-automacoes-externas.md`.
+- Atualizados MOCs, `INDEX.md`, `MEMORY.md`, `HEALTH.md`, `STATUS-BRAIN.md` e `BRAIN/99-SISTEMA/brain-v2/health/knowledge-health.md`.
+- Commit Link Gate validado apos a consolidacao semanal: `ok=True`, `367` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Nenhum item foi movido para `BRAIN/99-ARQUIVO/`; os registros revisados seguem recentes, conectados e com valor operacional, financeiro, de seguranca ou auditoria.
+- Revisados apenas arquivos locais do Brain; esta rotina nao acessou sistemas externos alem do push Git configurado, nao enviou mensagem ao Hebert, nao criou agente, nao executou rotacao/runtime bridge/producao nova e nao registrou plaintext de segredo.
+
 ## 2026-08-22, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-08-22.md`.
