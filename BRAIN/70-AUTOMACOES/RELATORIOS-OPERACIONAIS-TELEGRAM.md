@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17 e alias-router em 2026-08-19
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19 e checkpoint de crons em 2026-08-24
 confiabilidade: alta
-ultima_revisao: 2026-08-19
+ultima_revisao: 2026-08-25
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual]
 ```
 
@@ -97,6 +97,14 @@ Atualização 2026-08-03:
 - Instrução diária do Kowalski no grupo `Suporte Bikon`: 07:59, timezone `America/Sao_Paulo`.
 - Antes/depois do ajuste foi usada a verificação local de sobreposição de crons; não reativar nem recriar arquitetura antiga.
 - Regra prática: segunda-feira usa fechamento semanal coletado no sábado; não forçar job diário de segunda quando não houver cache diário correspondente.
+
+Checkpoint 2026-08-24:
+
+- Janela canonica de entrega solicitada por Hebert: `07:45-07:48 America/Sao_Paulo`.
+- Relatorios diarios de NinjaOne estavam habilitados sob Kowalski no cron `5cee835c-67c0-4761-ad54-e5ddd6175150`, expressao `47 7 * * 2-5`.
+- Relatorio semanal NinjaOne estava habilitado sob Kowalski no cron `b1c0fdbf-69ad-4b27-978e-10590ce3dbac`, expressao `47 7 * * 1`.
+- Nao voltar ao padrao antigo de segunda `08:00-08:03`; semanais devem respeitar a mesma janela operacional.
+- Ticketing ARX -> NinjaOne e relatorios operacionais sao responsabilidades distintas: o primeiro pode criar/fechar tickets apenas quando reautorizado e validado; o segundo entrega resumo na janela acordada.
 
 ## Padrão visual para relatórios externos
 

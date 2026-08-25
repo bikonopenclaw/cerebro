@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: agente_operacional
-fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17 e snapshot versionado em 2026-07-11
+fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17, snapshot versionado em 2026-07-11 e fechamento/paridade dedicada em 2026-08-23/24
 confiabilidade: alta
-ultima_revisao: 2026-08-18
+ultima_revisao: 2026-08-25
 tags: [agente, financeiro, faturamento, nfse, boleto, remessa, cresol-api, fip]
 ```
 
@@ -145,6 +145,22 @@ Darth Vader passou a atuar como worker interno em cenarios FIP solicitados pelo 
 - acesso ao backend FIP canonico `127.0.0.1:8787` validado em leitura/autenticacao, com app supervisionado por `fip-8787.service`;
 - parecer do cenario Grupo Unus indicou consistencia aritmetica, sem erro material e baixo risco de dupla contagem se o valor reduzido R$ 24.000,00 substituir, e nao somar, os R$ 42.942,42 canonicos;
 - em rotas do grupo, Darth nao deve usar `message` externo diretamente; resultado financeiro volta ao Puppet, que responde uma unica vez no Telegram.
+
+## Gateway dedicado e paridade funcional, 2026-08-23/24
+
+Darth Vader fechou a extracao para runtime Telegram dedicado com aceite de producao e Golden Baseline:
+
+- `DARTH_DEDICATED_GATEWAY_GOAL_RESULT=PASS`;
+- `DARTH_GOLDEN_BASELINE_VERSION=DARTH_DEDICATED_GATEWAY_V1.0.0`;
+- servico canonico `openclaw-gateway-darth-vader.service`, porta `18840`, runtime unico e `PUPPET_HOSTS_DARTH=NO`;
+- aceite Telegram direto pos-rotacao `PASS`, single-writer `PASS` e conflitos 409 pos-rotacao `0`;
+- Puppet continua podendo delegar para Darth, mas nao hospeda mais o bot/rota Darth;
+- Storage Guard, RSE, PGL e regressao de gateways relacionados fecharam `PASS`;
+- rollback boundary validado em `/data/.openclaw/backups/darth-dedicated-gateway-final-boundary-20260823T224831Z`, sem copiar segredo.
+
+Antes do aceite final, a investigacao passiva do conflito Telegram 409 provou `PASS_NO_LOCAL_DUPLICATE_AT_CONFLICT`; a origem ficou `EXTERNAL_OR_NON_LOCAL_UNRESOLVED` ate rotacao owner-exclusive do token pelo Hebert/BotFather. O novo segredo foi vinculado somente pelo tokenfile canonico e nao deve ser transportado por chat.
+
+A auditoria de paridade funcional em 2026-08-24 fechou `DARTH_FULL_FUNCTIONAL_PARITY=PASS`, pacote SHA-256 `b21a1fbfa42035ed96a0ffda4c96ab4865e1c6852667e709460f4617c3c951cc` e `NEW_DARTH_GOLDEN_BASELINE_REQUIRED=NO`. Capacidades legitimas de predecessor permaneceram cobertas por Darth dedicado ou servicos compartilhados canonicos: NFS-e, boletos/remessa, conciliacao assistida, FIP, BI financeiro, reporting, input documental suportado, interface Telegram direta e delegacao Puppet. O item `DARTH_GATEWAY_LOCAL_COMMAND_TOKEN_BINDING=NON_BLOCKING_REVIEW_ITEM` deve ser tratado como revisao tecnica sem bloquear operacao aceita, salvo se virar falha operacional provada.
 
 ## Relações
 

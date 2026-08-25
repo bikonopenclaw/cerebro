@@ -5,7 +5,7 @@ nome: Sentinel
 papel: controller_operacoes_snoc
 status: ativo_capability_model_controlado_com_mutacao_bloqueada_por_gate
 responsavel: Puppet Master
-ultima_revisao: 2026-08-22
+ultima_revisao: 2026-08-25
 tags: [sentinel, snoc, operacoes, monitoramento, seguranca, read-only, capability-recovery]
 ```
 
@@ -152,6 +152,21 @@ Goal 2 Completion fechou como `SENTINEL_V2_GOAL2_RESULT=PASS`:
 - `UNAUTHORIZED_MUTATION_COUNT=0`, `REAL_TICKET_MUTATION_COUNT=0`, `REAL_PROVIDER_ACTION_COUNT=0`, `REAL_WHATSAPP_SEND_COUNT=0` e `REAL_INSTAGRAM_PUBLISH_COUNT=0`.
 
 Estado canonico: Sentinel possui modelo controlado de capacidade e contratos para leitura, ticketing e acoes, mas nenhuma mutacao real fica autorizada por inferencia. A primeira execucao real de ticket, provider action, WhatsApp send ou Instagram publish exige alvo seguro, approval proprio, idempotency key, rollback e evidencia.
+
+## Forense passivo Darth 409, 2026-08-23
+
+Sentinel executou investigacao local read-only do conflito Telegram 409 do Darth sem `getUpdates`, canary artificial, restart/stop, token/header/env, root/sudo ou mutacao de producao.
+
+Resultado:
+
+- `DARTH_PASSIVE_409_OBSERVER_RESULT=PASS_NO_LOCAL_DUPLICATE_AT_CONFLICT`;
+- 409 genuino capturado em 2026-08-23T19:56:58Z;
+- runtime canonico local no conflito: `openclaw-gateway-darth-vader.service`;
+- nenhum quarto PID/unit/cgroup local apareceu como poller duplicado;
+- Main/Puppet e Kowalski tinham conexoes ao endpoint Telegram comum, mas com providers distintos e sem autoridade sobre a credencial Darth;
+- classificacao terminal antes da rotacao: `DARTH_TELEGRAM_DUPLICATE_POLLER_ORIGIN=EXTERNAL_OR_NON_LOCAL_UNRESOLVED`.
+
+A remediacao exigiu acao owner-exclusive fora do Sentinel: rotacao do token no BotFather e binding seguro do novo tokenfile canonico. Sentinel nao deve pedir, receber, imprimir ou transportar token por chat.
 
 ## Critério de pronto
 

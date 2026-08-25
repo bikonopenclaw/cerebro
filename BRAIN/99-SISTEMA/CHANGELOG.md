@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-08-25, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-08-25.md`.
+- Atualizado `BRAIN/60-AGENTES/DARTH-VADER.md` com fechamento do gateway dedicado em producao `PASS`, Golden Baseline `DARTH_DEDICATED_GATEWAY_V1.0.0`, single-writer Telegram `PASS`, 409 pos-rotacao `0`, `PUPPET_HOSTS_DARTH=NO`, paridade funcional `PASS` e pacote SHA-256 `b21a1fbfa42035ed96a0ffda4c96ab4865e1c6852667e709460f4617c3c951cc`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md` com requalificacao FIP pelo Darth dedicado, `FIP_WEEKLY_CLASSIFICATION_MODE=ACTIVE`, fila de `16` cards finais, R$ 1.395.651,35 em valor total, R$ 500.294,54 potencialmente relevante para P&L e gates financeiros ainda fechados para ambiguidades.
+- Atualizados `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`, `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`, `BRAIN/60-AGENTES/KOWALSKI.md` e `BRAIN/60-AGENTES/SENTINEL.md` com a separacao Sentinel read-plane, Kowalski relatorio/ticketing, Puppet control-plane, RMM canonico `https://rmm.bikon.com.br`, janela 07:45-07:48 America/Sao_Paulo e canario NinjaOne limitado a um ticket.
+- Atualizados `BRAIN/99-SISTEMA/MEMORY.md`, `BRAIN/01-DIARIO/README.md` e `HEALTH.md`.
+- Commit Link Gate validado apos a consolidacao: `ok=True`, `368` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados arquivos locais do Brain, memoria local recente e artefatos locais em `reports/`, `projects/fip/`, `artifacts/darth-parity-20260824/` e `memory/`; esta rotina nao acessou sistemas externos, nao enviou mensagem ao Hebert, nao criou agente, nao executou canario/ticket, nao rotacionou token, nao fez restart e nao registrou plaintext de segredo.
+
 ## 2026-08-23, consolidacao semanal
 
 - Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W34.md` com cobertura parcial de 2026-08-17 a 2026-08-23, baseado nas daily notes disponiveis de 2026-08-18 a 2026-08-22.

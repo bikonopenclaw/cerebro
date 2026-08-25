@@ -2,13 +2,13 @@
 
 ```yaml
 nome: FIP Bikon Financial Intelligence
-status: production_private_fcoc16_document_intake_archive_pass
+status: production_private_fcoc16_darth_weekly_operation_active
 responsavel: Puppet Master
 inicio: 2026-08-09
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-20
-tags: [bikon, financeiro, fip, pnl, forecast, scenario, tailscale, go-live, chg004, intake, archive]
+ultima_revisao: 2026-08-25
+tags: [bikon, financeiro, fip, pnl, forecast, scenario, tailscale, go-live, chg004, intake, archive, darth]
 ```
 
 ## Objetivo
@@ -148,6 +148,44 @@ A retomada do FIP Google Drive Archival Storage foi concluida com `PASS`, tratan
 
 Ficaram preservados fora do escopo da retomada objetos `ARCHIVE_KEEP_LOCAL`, `KEEP_LOCAL`, `DEFER_AMBIGUOUS` e 5 `PURGE_REGENERABLE` pequenos. Qualquer limpeza desses grupos exige autorizacao separada.
 
+## Atualizacao 2026-08-23/24
+
+A requalificacao do FIP pelo runtime dedicado da Darth Vader fechou `PASS`, sem reabrir nem redesenhar a Golden Baseline `DARTH_DEDICATED_GATEWAY_V1.0.0`:
+
+- `DARTH_FIP_RUNTIME_AUTHORITY=DEDICATED_DARTH`;
+- `DARTH_TO_FIP_REAL_CANARY=PASS_READONLY`;
+- `DARTH_FIP_BINDING=PASS`;
+- `FIP_DATA_LOSS=0`;
+- `FIP_DUPLICATE_PROTECTION=PASS`;
+- `DARTH_FIP_TELEGRAM_WORKFLOW=PASS`;
+- `FIP_WEEKLY_CLASSIFICATION_MODE=ACTIVE`;
+- `FIP_PENDING_QUEUE=READY`;
+- `DARTH_FINANCIAL_CLASSIFICATION_READY=PASS`.
+
+Estado financeiro autenticado na requalificacao:
+
+- fontes `48`;
+- transacoes `3484`;
+- classificadas `2792`;
+- transacoes em revisao `692`;
+- receita reportada R$ 2.443.859,64;
+- despesa reportada R$ 1.418.140,88;
+- caixa corrente R$ 10.801,39 reconciliado;
+- FCOC ativo `1.6.0 FROZEN`;
+- testes automatizados FIP `40/40 PASS`.
+
+O fechamento de integridade financeira gerou um conjunto final de `16` cards operator-facing, total R$ 1.395.651,35, com R$ 500.294,54 potencialmente relevante para P&L e `692` revisoes transacionais restantes. A fila esta pronta para decisao humana via Darth direto, mas nao autoriza classificacao automatica de ambiguidades.
+
+Gates financeiros que permanecem fechados:
+
+- NFS-e agosto/2026: `13` eventos/R$ 48.832,88 aceitos como receita incremental, `6` eventos/R$ 5.783,16 neutralizados como evidencia fiscal duplicada e `8` eventos/R$ 31.741,02 em risco de duplicidade; R$ 37.524,18 nao devem entrar no P&L aceito sem prova ou neutralizacao.
+- Recebiveis precisam de composicao por titulo/cliente/NFS-e antes de receita nova.
+- Partes relacionadas e reembolsos exigem decisao por padrao, nao inferencia por nome.
+- Parcelas de financiamento exigem contrato/cronograma; principal nao e despesa.
+- Settlement Mastercard julho permanece fail-closed ate fatura/ciclo correto ou tratamento explicito.
+
+Operacao esperada: Hebert pode trabalhar a fila pelo bot Darth direto; cada decisao financeira precisa ser explicita antes de persistencia/regra. NFS-e, boleto, remessa, pagamento, banco, e-mail externo, novas fontes e mudancas de backend continuam exigindo gates proprios.
+
 ## Proximos passos
 
 - Operar FIP como baseline privada aceita para consulta executiva, previsao e cenarios da BIKON.
@@ -159,6 +197,7 @@ Ficaram preservados fora do escopo da retomada objetos `ARCHIVE_KEEP_LOCAL`, `KE
 - Manter evidencias, backups, prints e exports em `projects/fip/`, fora do Brain/Git.
 - Para Santander, aceitar senha/CPF somente por canal local no-echo aprovado; nao receber por Telegram, argv, log, banco ou relatorio.
 - Tratar limpeza adicional de objetos fora do escopo do archive como nova unidade autorizada.
+- Resolver os `16` cards finais da fila semanal pelo Darth dedicado, sem promover ambiguidades para P&L por inferencia.
 
 ## Relacoes
 

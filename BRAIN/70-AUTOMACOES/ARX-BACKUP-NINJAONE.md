@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06 e relatorios operacionais ate 2026-08-12
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12 e checkpoints de reativacao em 2026-08-24/25
 confiabilidade: media
-ultima_revisao: 2026-08-13
+ultima_revisao: 2026-08-25
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
 ```
 
@@ -72,6 +72,45 @@ Resumo agregado read-only referente a 2026-08-11 BRT:
 - Nenhum job com falha critica atual retornado pela API.
 
 Guardrail: acompanhar jobs em processo/atencao/recorrencia e reavaliar pelo fluxo autorizado de tickets; nao alterar backup, job, politica, script ou ticket sem autorizacao explicita.
+
+## Reativacao controlada 2026-08-24/25
+
+Hebert pediu retorno da abertura de tickets ARX -> NinjaOne e depois autorizou o passo seguinte como `Ok reautorizar ninjaone e canary 1 ticket`. Registrar isso como autorizacao estreita para reautorizar NinjaOne e executar somente um canario real de ticket quando houver issue ARX real atual ou fixture controlada explicitamente aprovada; nao e autorizacao para bulk create.
+
+Responsabilidade canonica atual:
+
+- Sentinel: coleta/read-plane operacional;
+- Kowalski: producao de relatorios e operacao ARX Backup -> NinjaOne ticketing;
+- Puppet Master: controle, aprovacao e orquestracao.
+
+Arquivos canonicos ativos:
+
+- Skill: `/data/.openclaw/workspace/skills/arx-ninjaone-ticketing/SKILL.md`.
+- Runner: `/data/.openclaw/workspace-kowalski/arx-backup/scripts/run_monitorar_arx_ninjaone_tickets.sh`.
+- Script: `/data/.openclaw/workspace-kowalski/arx-backup/scripts/monitorar_arx_ninjaone_tickets.py`.
+- State: `/data/.openclaw/workspace-kowalski/arx-backup/jobs/arx-ninjaone-ticket-state.json`.
+- JSONL log: `/data/.openclaw/workspace-kowalski/arx-backup/jobs/arx-ninjaone-ticket-log.jsonl`.
+
+Evidencia local no checkpoint:
+
+- Ultimo monitor ARX observado: `2026-08-24T23:34:02Z`, modo `dry-run`, `13` checados, issues `0`, created/deduped/resolved/closed `0`, errors `[]`.
+- State ainda mostrava issues anteriores inativas, atualizado em `2026-08-22T04:15:22Z`.
+- Nao havia issue ARX real atual segura para provar criacao de canario no momento do checkpoint.
+- Tentativas create-mode anteriores de 2026-08-18 a 2026-08-22 para `16 Ferreira Rocha` / `servidor_2j3wv` falharam com NinjaOne `HTTP Error 400: Bad Request`; ticket anterior `1692` do mesmo device foi resolvido em 2026-08-15 apos recuperacao.
+
+NinjaOne/RMM canonico:
+
+- URL canonica corrigida: `https://rmm.bikon.com.br`.
+- OAuth pendente regenerado com `auth_base=https://rmm.bikon.com.br/ws/oauth/authorize`, `token_url=https://rmm.bikon.com.br/ws/oauth/token`, `api_base=https://rmm.bikon.com.br/v2`, redirect `http://localhost:8756/callback/` e scope `monitoring management offline_access`.
+- O token anterior predatava a correcao; nao assumir user-context auth valido ate completar a reautorizacao.
+
+Estado de cron no checkpoint:
+
+- Crons de relatorio NinjaOne sob Kowalski estavam habilitados na janela 07:45-07:48 America/Sao_Paulo.
+- Crons de abertura ARX -> NinjaOne ainda estavam desabilitados no DB local: diario `f2b954f0-1c38-46d0-acde-796d3898093f` e semanal `cd7bfa61-30ca-458f-9f62-2679726dfc09`.
+- Antes de reabilitar producao, verificar ownership/target conforme o novo modelo de responsabilidade.
+
+Proxima retomada segura: concluir OAuth em `https://rmm.bikon.com.br`, rodar dry-run, inspecionar `summary.errors` e executar no maximo um ticket real canario se houver issue real atual. Registrar ticket id e impedir abertura em massa ate revisao do resultado.
 
 ## Guardrails
 

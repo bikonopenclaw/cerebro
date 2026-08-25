@@ -3,7 +3,7 @@
 ```yaml
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
-ultima_revisao: 2026-08-18
+ultima_revisao: 2026-08-25
 tags: [kowalski, relatorios, ninjaone, arx-backup, bitdefender, financeiro, provimento-213-2026, cns, operacao, telegram, identidade-visual]
 ```
 
@@ -18,7 +18,7 @@ Responsabilidades principais:
 - Relatórios técnicos para clientes.
 - Relatórios NinjaOne a partir de dados consolidados pelo Sentinel, incluindo inventário, alertas, dispositivos offline e evidências auditáveis.
 - Relatórios ARX Backup a partir de dados consolidados pelo Sentinel.
-- Operação controlada Bitdefender -> NinjaOne quando critérios, dry-run e autorizações estiverem registrados.
+- Operação controlada ARX Backup -> NinjaOne e Bitdefender -> NinjaOne quando critérios, dry-run e autorizações estiverem registrados.
 - Diagnósticos técnicos de cartórios para o Provimento CNJ 213/2026.
 - Adequação de documentos para padrão Bikon.
 - Produzir PDFs externos com acabamento premium Bikon, sem metadados automáticos de impressão/navegador e com validação visual antes da entrega.
@@ -60,6 +60,18 @@ O perfil isolado do Kowalski (`/home/openclaw/.openclaw-kowalski/openclaw.json`)
 - guard `relatorios-operacionais-workers-no-external-outbound` bloqueia envio `message` externo de `kowalski` e `darth-vader`, preservando retorno interno ao Puppet;
 - modelo default do perfil isolado foi ajustado para ChatGPT/OAuth `openai/gpt-5.5`, com fallback `openai/gpt-5.5`/`openai/gpt-5.4`, sem usar API key nova;
 - prova real: uma resposta externa via Puppet, resposta externa direta Kowalski `0` e Darth `0`.
+
+### Estrutura operacional 2026-08-24
+
+Hebert reafirmou a separacao de responsabilidades:
+
+- Sentinel coleta e consulta fontes operacionais/read-plane;
+- Kowalski produz relatorios, formata entregas e opera ARX Backup -> NinjaOne ticketing sob autorizacao;
+- Puppet Master permanece como control-plane, orquestrador e gate de aprovacao.
+
+Crons de relatorio NinjaOne sob Kowalski foram observados habilitados na janela `07:45-07:48 America/Sao_Paulo`: diario terca-sexta `47 7 * * 2-5` e semanal segunda `47 7 * * 1`. Nao usar a janela antiga de segunda `08:00-08:03`.
+
+Para ARX Backup -> NinjaOne, a reativacao de ticketing deve seguir: reautorizar NinjaOne no RMM canonico `https://rmm.bikon.com.br`, rodar dry-run, verificar erros e executar no maximo um canario real de ticket quando houver issue atual ou fixture controlada aprovada. A permissao de "canary 1 ticket" nao autoriza bulk create nem reabilitacao automatica sem revisao.
 
 ## Guardrails
 
