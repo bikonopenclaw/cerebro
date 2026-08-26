@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-08-26, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-08-26.md`.
+- Criado projeto `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-DBS.md` para DBS `1.0.0` como plataforma canonica de documentacao self-hosted `OPERATIONAL_ACCEPTED_FROZEN`, release read-only daemonless, `45/45` testes `PASS`, rollback real `PASS`, storage/security `PASS` e Golden Baseline `DBS_GOLDEN_BASELINE_V1.0.0`.
+- Atualizado `BRAIN/60-AGENTES/SENTINEL.md` com Phase D Capability Registry `PASS`, `374` capacidades canonicas, `185` read, `189` mutativas owner-gated, `21` implementadas canonicas, `248` nao implementadas, `0` provider-scope blocked, single writer, um diretorio/checkpoint terminal e mutacoes `0`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md` com settlement Santander 2026-04 `PASS`/R$ 10.315,46/diferenca R$ 0,00 preservando `57` itens sem classificacao economica, e duas rodadas de classificacao recorrente por decisao humana com `65` itens classificados e pendencias reduzidas de `733` para `694`.
+- Atualizados `BRAIN/99-SISTEMA/MEMORY.md`, `BRAIN/01-DIARIO/README.md`, `BRAIN/50-PROJETOS/README.md`, `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e `BRAIN/99-SISTEMA/brain-v2/health/knowledge-health.md`.
+- Commit Link Gate validado apos a consolidacao: `ok=True`, `370` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados arquivos locais do Brain, memoria local recente, sessoes visiveis recentes e artefatos locais em `reports/`, `projects/sentinel/`, `projects/DBS/`, `projects/fip/` e `memory/`; esta rotina nao acessou sistemas externos, nao enviou mensagem ao Hebert, nao criou agente, nao executou Phase E/canario mutativo/ticket, nao executou remessa/envio externo, nao fez restart e nao registrou plaintext de segredo.
+
 ## 2026-08-25, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-08-25.md`.

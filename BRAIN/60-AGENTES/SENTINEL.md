@@ -3,10 +3,10 @@
 ```yaml
 nome: Sentinel
 papel: controller_operacoes_snoc
-status: ativo_capability_model_controlado_com_mutacao_bloqueada_por_gate
+status: ativo_capability_registry_controlado_com_mutacao_bloqueada_por_gate
 responsavel: Puppet Master
-ultima_revisao: 2026-08-25
-tags: [sentinel, snoc, operacoes, monitoramento, seguranca, read-only, capability-recovery]
+ultima_revisao: 2026-08-26
+tags: [sentinel, snoc, operacoes, monitoramento, seguranca, read-only, capability-registry]
 ```
 
 ## Missão
@@ -152,6 +152,49 @@ Goal 2 Completion fechou como `SENTINEL_V2_GOAL2_RESULT=PASS`:
 - `UNAUTHORIZED_MUTATION_COUNT=0`, `REAL_TICKET_MUTATION_COUNT=0`, `REAL_PROVIDER_ACTION_COUNT=0`, `REAL_WHATSAPP_SEND_COUNT=0` e `REAL_INSTAGRAM_PUBLISH_COUNT=0`.
 
 Estado canonico: Sentinel possui modelo controlado de capacidade e contratos para leitura, ticketing e acoes, mas nenhuma mutacao real fica autorizada por inferencia. A primeira execucao real de ticket, provider action, WhatsApp send ou Instagram publish exige alvo seguro, approval proprio, idempotency key, rollback e evidencia.
+
+## Sentinel Phase D Capability Registry
+
+Em 2026-08-26, a Phase D Capability Registry fechou terminalmente como `PASS`, apos tentativas anteriores sem artefato autoritativo e gates de recuperacao que permaneceram nao autoritativos.
+
+Checkpoint autoritativo:
+
+- terminal gerado em 2026-08-26T00:26:55Z;
+- diretorio terminal: `/data/.openclaw/workspace/reports/SENTINEL_PHASE_D_CAPABILITY_REGISTRY_20260826T002655Z/`;
+- `PHASE_D_CAPABILITY_REGISTRY=PASS`;
+- `PHASE_D_INDEPENDENT_VALIDATION=PASS`;
+- `AUTHORITATIVE_TERMINAL_DIRECTORY_COUNT=1`;
+- `AUTHORITATIVE_TERMINAL_CHECKPOINT_COUNT=1`;
+- `TERMINAL_WRITER_COUNT=1`;
+- `PROVIDER_MUTATION_COUNT=0`;
+- `SCHEDULE_MUTATION_COUNT=0`;
+- `PRODUCTION_MUTATION_COUNT=0`;
+- `DUPLICATE_CANONICAL_CAPABILITY_ID_COUNT=0`.
+
+Matriz consolidada:
+
+| Provider | Total | Read | Mutative | Owner gated | Provider-scope blocked |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| ARX/Cove | 34 | 29 | 5 | 5 | 0 |
+| Bitdefender | 24 | 14 | 10 | 10 | 0 |
+| Instagram/Meta | 15 | 10 | 5 | 5 | 0 |
+| NinjaOne | 188 | 77 | 111 | 111 | 0 |
+| WhatsApp | 113 | 55 | 58 | 58 | 0 |
+
+Totais:
+
+- `RAW_PROVIDER_CAPABILITY_COUNT=374`;
+- `CANONICAL_CAPABILITY_COUNT=374`;
+- `TOTAL_READ_CAPABILITIES=185`;
+- `TOTAL_MUTATIVE_CAPABILITIES=189`;
+- `TOTAL_IMPLEMENTED_CANONICAL=21`;
+- `TOTAL_IMPLEMENTED_DONOR_OR_SHARED_ONLY=8`;
+- `TOTAL_PARTIALLY_IMPLEMENTED=5`;
+- `TOTAL_NOT_IMPLEMENTED=248`;
+- `TOTAL_OWNER_APPROVAL_REQUIRED=189`;
+- `TOTAL_BLOCKED_PROVIDER_SCOPE=0`.
+
+Estado canonico: Phase D e um inventario autenticado e validado, nao uma autorizacao de uso. Phase E, ticket real, provider action, WhatsApp send, Instagram publish, criacao/alteracao de webhook, politica, device, contato, documento ou qualquer mutacao permanecem bloqueados ate ordem nova, approval proprio, alvo seguro, idempotency, rollback e evidencia.
 
 ## Forense passivo Darth 409, 2026-08-23
 

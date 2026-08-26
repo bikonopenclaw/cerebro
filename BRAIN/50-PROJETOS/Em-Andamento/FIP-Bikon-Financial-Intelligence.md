@@ -2,12 +2,12 @@
 
 ```yaml
 nome: FIP Bikon Financial Intelligence
-status: production_private_fcoc16_darth_weekly_operation_active
+status: production_private_fcoc16_darth_weekly_operation_active_card_classification_in_progress
 responsavel: Puppet Master
 inicio: 2026-08-09
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-25
+ultima_revisao: 2026-08-26
 tags: [bikon, financeiro, fip, pnl, forecast, scenario, tailscale, go-live, chg004, intake, archive, darth]
 ```
 
@@ -185,6 +185,31 @@ Gates financeiros que permanecem fechados:
 - Settlement Mastercard julho permanece fail-closed ate fatura/ciclo correto ou tratamento explicito.
 
 Operacao esperada: Hebert pode trabalhar a fila pelo bot Darth direto; cada decisao financeira precisa ser explicita antes de persistencia/regra. NFS-e, boleto, remessa, pagamento, banco, e-mail externo, novas fontes e mudancas de backend continuam exigindo gates proprios.
+
+## Atualizacao 2026-08-25
+
+FIP avancou em liquidacao estrutural e classificacao de cartoes por decisao humana, preservando gates financeiros:
+
+- Santander statement settlement 2026-04 fechou `SANTANDER_EXACT_SETTLEMENT_CONFIRMATION=PASS`;
+- fatura Santander 2026-04: R$ 10.315,46, vencimento 2026-04-18;
+- transacao bancaria vinculada: `bank_tx_008797e1f4f3788bd87b7ce6`, 2026-04-22, R$ 10.315,46;
+- diferenca: R$ 0,00;
+- `57` itens subjacentes preservados como `STILL_REQUIRED`;
+- nenhuma classificacao de item, batch de reembolso, FCOC, cursor de entrevista, fato bancario ou caixa corrente foi mutado por esse settlement.
+
+Classificacao recorrente por decisao humana:
+
+- batch 1 fechou `PASS`, classificando `26` itens e criando `6` display overrides, sem regras futuras;
+- batch 2 fechou `PASS`, classificando `39` itens adicionais, sem regras futuras;
+- total das duas rodadas: `65` itens classificados;
+- classificacoes humanas totais passaram de `361` para `400`;
+- itens recorrentes atuais passaram de `201` para `162`;
+- grupos recorrentes atuais passaram de `39` para `33`;
+- itens nao resolvidos passaram de `733` para `694`;
+- SQLite `quick_check=ok`;
+- contadores de mutacao para bank facts, settlement, FCOC, reimbursement batch, cursor de entrevista e cash anchor ficaram zerados.
+
+Limite: essas decisoes reduzem a fila e melhoram a base economica, mas nao criam regras futuras automaticas. Santander/Amazon/seguros e demais lotes pendentes continuam dependendo de decisao humana explicita.
 
 ## Proximos passos
 

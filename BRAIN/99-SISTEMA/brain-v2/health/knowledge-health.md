@@ -29,16 +29,16 @@ Thresholds:
 
 Forbidden behavior: improving the score through artificial hub links.
 
-Current validation as of 2026-08-23:
+Current validation as of 2026-08-26:
 
 - Commit Link Gate: `ok=True`.
-- Markdown total: `367`.
+- Markdown total: `370`.
 - Broken internal links: `0`.
 - Uncategorized Markdown: `0`.
 - Unreachable cognitive Markdown: `0`.
 - Isolated cognitive Markdown: `0`.
 - Graph components: `1`.
 - Knowledge health estimate: `1`.
-- Cognitive Markdown: `180`.
-- Reachable cognitive Markdown: `180`.
+- Cognitive Markdown: `183`.
+- Reachable cognitive Markdown: `183`.
 - `BRAIN/60-AGENTES/versionados/` remains excluded from cognitive reachability and from the Obsidian graph because it is operational inventory/snapshot storage.
