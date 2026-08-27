@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12 e checkpoints de reativacao em 2026-08-24/25
-confiabilidade: media
-ultima_revisao: 2026-08-25
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25 e relatorios Cartorio Gerusa em 2026-08-26
+confiabilidade: alta
+ultima_revisao: 2026-08-27
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
 ```
 
@@ -111,6 +111,14 @@ Estado de cron no checkpoint:
 - Antes de reabilitar producao, verificar ownership/target conforme o novo modelo de responsabilidade.
 
 Proxima retomada segura: concluir OAuth em `https://rmm.bikon.com.br`, rodar dry-run, inspecionar `summary.errors` e executar no maximo um ticket real canario se houver issue real atual. Registrar ticket id e impedir abertura em massa ate revisao do resultado.
+
+## Relatorios Cartorio Gerusa em 2026-08-26
+
+- Relatorio consolidado junho-agosto/2026 concluido em tres paginas A4, revisado visualmente, sem JavaScript, caminhos locais, nomes de agentes, segredos ou texto tecnico indevido.
+- Relatorio mensal de agosto/2026 foi mantido como parcial ate 26/08, com classificacao `ATENCAO`, sem inferir fechamento mensal ou taxa de sucesso ausente na fonte.
+- Snapshot parcial de agosto: `5` jobs concluidos, `0` erros ativos, `1.550,7 GB` selecionados e `1.165,6 GB` processados.
+- Historico recente: `28` registros, sendo `27` concluidos e `1` concluido com erros; a ocorrencia foi tratada como recuperada, sem inventar data nao retornada pela fonte.
+- Os PDFs finais permanecem fora do Brain/Git; a versao consolidada correta substitui o rascunho mensal como entrega, sem apagar o historico parcial.
 
 ## Guardrails
 

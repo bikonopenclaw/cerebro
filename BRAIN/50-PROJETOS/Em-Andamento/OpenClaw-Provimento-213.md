@@ -2,12 +2,12 @@
 
 ```yaml
 nome: OpenClaw - Provimento 213
-status: golden_baseline_protected_portal213_stage1b_pass_accepted_telegram_only_manual_client_gate_pending
+status: golden_baseline_protected_portal213_repair_build_accepted_owner_iphone_pass
 responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-21
+ultima_revisao: 2026-08-27
 tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre, miniapp, canonical-truth, portal213, telegram-only]
 ```
 
@@ -235,7 +235,33 @@ Estado Telegram-only:
 - journal redaction scan: `real_bot_token_count=0`, `telegram_token_pattern_count=0`;
 - `real_bot_token_disclosure_count=0` e `sensitive_data_disclosure_count=0`.
 
-Gate ainda pendente: validacao manual no cliente Telegram real. A Bot API e a API/HTML do Mini App validam contrato tecnico, mas nao provam sozinhas que `t.me startapp` abre a Main Mini App e injeta `initData`/`start_param` como producao. Nao retomar Stage 1C por inercia.
+Esse gate manual foi concluido em 2026-08-27 depois do reparo descrito abaixo. A regra permanente continua valida: Bot API e API/HTML do Mini App nao substituem o teste real no cliente Telegram quando a experiencia depende de `t.me startapp`. Nao retomar Stage 1C por inercia.
+
+## Atualizacao 2026-08-26/27
+
+O primeiro teste real do Owner no iPhone reabriu corretamente o mesmo Goal `PORTAL_213_PORTFOLIO_WIDE_CANONICAL_PENDING_EVIDENCE_REPAIR`: o build `B20260826T174303Z` carregava documento e shell, mas falhava no bootstrap com `MINIAPP_AUTH_SESSION_BOOTSTRAP_FAILED`.
+
+Causa e reparo consolidados:
+
+- causa raiz: `SIGNED_VERSIONED_START_PARAM_REJECTED_DURING_INITDATA_VALIDATION`;
+- o card fixado ainda enviava `interview_B20260821T132000Z` e `portal213_B20260821T132000Z`, enquanto o build de 26/08 aceitava somente o proprio sufixo;
+- repair build: `B20260826T194616Z`;
+- commit: `f34df545c40556f747772f612931eaf1917b943b`;
+- tree: `b3d4808dca64798a8a8b2b35b90a8fe72bfb1cdb`;
+- manifest SHA-256 validado: `48b1db72fecd0f7afa14a941aef97691479dd8e933b640c880f434389d9a2cb4`;
+- o contrato reparado aceita `interview`/`portal213` sem sufixo ou com sufixo estrito `BYYYYMMDDTHHMMSSZ`, preservando assinatura, freshness/replay, membership e isolamento de tenant;
+- gates de maquina: `266/266` testes, `6/6` serventias e `178/178` pendencias, com ambos os botoes legados, parametros legados/atuais, rejeicao de sufixo invalido e paridade loopback/Tailnet;
+- runtime canonico permaneceu em `127.0.0.1:9213`, sem reinicios na validacao final.
+
+A primeira rodada Kowalski falhou por desvio de infraestrutura: a solicitacao apontou `prov213-core`, que nao era root Git. A repeticao corrigiu somente a origem para o worktree autenticado, preservou os recibos anteriores e fechou `PORTAL_213_INDEPENDENT_VALIDATION=PASS`.
+
+Aceite final:
+
+- o Owner testou no iPhone os dois botoes antigos;
+- ambos funcionaram e as pendencias carregaram com descricao;
+- `PORTAL_213_DELIVERY=ACCEPTED`;
+- Goal encerrado no build `B20260826T194616Z`;
+- nenhuma acao do Owner permanece pendente nesse Goal.
 
 ## Governance Ledger
 

@@ -81,6 +81,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-08-22.md`: consolidacao diaria com Sentinel V2 Goal 2 `PASS`, ODP Day 4 bloqueado por exposicao P0 recuperavel de segredo runtime e RSE Capacity-Aware Execution Governance v1 `PASS` em producao.
 - `01-DIARIO/2026/2026-08-25.md`: consolidacao diaria com Darth dedicado em producao, FIP requalificado pelo Darth, fila semanal FIP pronta, separacao Sentinel/Kowalski/Puppet e ARX -> NinjaOne ainda dependente de OAuth/canario.
 - `01-DIARIO/2026/2026-08-26.md`: consolidacao diaria com Sentinel Phase D Capability Registry `PASS`, OpenClaw DBS `OPERATIONAL_ACCEPTED_FROZEN`, settlement Santander 2026-04 e classificacao FIP de `65` itens recorrentes por decisao humana.
+- `01-DIARIO/2026/2026-08-27.md`: consolidacao diaria com Portal 213 repair build aceito apos validacao independente e teste real no iPhone, autoridade controlada de Felipe no grupo Relatorios Operacionais, cadastro CNS ratificado e relatorios ARX Cartorio Gerusa.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `01-DIARIO/Mensal/2026-07.md`: consolidação mensal de julho/2026 com padrões de evidência antes de status, portões separados, read-only como expansão segura, cadeia de custódia e runtime como superfície operacional.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes, boletos/malote e FIP CHG-004 financeiro 2026.

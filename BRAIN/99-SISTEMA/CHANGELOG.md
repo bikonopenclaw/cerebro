@@ -1,5 +1,16 @@
 # CHANGELOG.md
 
+## 2026-08-27, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-08-27.md`.
+- Atualizado `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md` com a falha real do build `B20260826T174303Z`, causa `SIGNED_VERSIONED_START_PARAM_REJECTED_DURING_INITDATA_VALIDATION`, repair build `B20260826T194616Z`, `266/266` testes, `6/6` serventias, `178/178` pendencias, validacao independente `PASS` e aceite real dos dois botoes no iPhone; Goal encerrado e `PORTAL_213_DELIVERY=ACCEPTED`.
+- Atualizados `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`, `BRAIN/60-AGENTES/KOWALSKI.md` e `BRAIN/99-SISTEMA/MEMORY.md` com autoridade limitada de Felipe Nogueira para tickets NinjaOne, scripts existentes/aprovados, layout de relatorio e pesquisa read-only em API ja liberada, preservando os dominios excluidos sob gate do Hebert.
+- Atualizado `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md` com os relatorios Cartorio Gerusa de junho-agosto e agosto parcial, sem versionar os PDFs finais.
+- Atualizado `BRAIN/20-EMPRESAS/BIKON/README.md` com ratificacao do CNS `021337`, consistencia JSON/CSV/SQLite e entrega dos cards cadastrais validados.
+- Atualizados `BRAIN/01-DIARIO/README.md`, `INDEX.md`, `HEALTH.md`, `STATUS-BRAIN.md` e `BRAIN/99-SISTEMA/brain-v2/health/knowledge-health.md`.
+- Commit Link Gate validado apos a consolidacao: `ok=True`, `371` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados arquivos locais do Brain, contexto recente visivel e artefatos locais do Portal 213, cadastro BIKON e relatorios ARX; esta rotina nao acessou sistemas externos, nao enviou mensagem ao Hebert, nao criou agente, nao executou ticket/script/API, nao alterou runtime e nao registrou plaintext de segredo.
+
 ## 2026-08-26, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-08-26.md`.

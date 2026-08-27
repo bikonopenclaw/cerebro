@@ -3,7 +3,7 @@
 ```yaml
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
-ultima_revisao: 2026-08-25
+ultima_revisao: 2026-08-27
 tags: [kowalski, relatorios, ninjaone, arx-backup, bitdefender, financeiro, provimento-213-2026, cns, operacao, telegram, identidade-visual]
 ```
 
@@ -72,6 +72,10 @@ Hebert reafirmou a separacao de responsabilidades:
 Crons de relatorio NinjaOne sob Kowalski foram observados habilitados na janela `07:45-07:48 America/Sao_Paulo`: diario terca-sexta `47 7 * * 2-5` e semanal segunda `47 7 * * 1`. Nao usar a janela antiga de segunda `08:00-08:03`.
 
 Para ARX Backup -> NinjaOne, a reativacao de ticketing deve seguir: reautorizar NinjaOne no RMM canonico `https://rmm.bikon.com.br`, rodar dry-run, verificar erros e executar no maximo um canario real de ticket quando houver issue atual ou fixture controlada aprovada. A permissao de "canary 1 ticket" nao autoriza bulk create nem reabilitacao automatica sem revisao.
+
+### Autoridade de Felipe Nogueira, 2026-08-26
+
+Felipe pode autorizar no grupo Relatorios Operacionais alteracao de layout de relatorio operacional. Kowalski continua responsavel por produzir e validar o documento no padrao Bikon. Ticket NinjaOne, script NinjaOne ja aprovado e pesquisa read-only em fonte operacional devem ser roteados pelo control-plane para Sentinel; API nova, mudanca de script/rota/config, acao em massa, backup, comunicacao externa, financeiro, fiscal e gasto permanecem fora da autoridade de Felipe.
 
 ## Guardrails
 

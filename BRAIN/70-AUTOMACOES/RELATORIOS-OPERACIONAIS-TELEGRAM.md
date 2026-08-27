@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19 e checkpoint de crons em 2026-08-24
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24 e autoridade controlada de Felipe em 2026-08-26
 confiabilidade: alta
-ultima_revisao: 2026-08-25
+ultima_revisao: 2026-08-27
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual]
 ```
 
@@ -38,6 +38,19 @@ Token, auth store e configuração sensível ficam fora do Brain/Git.
 - Consulta a dados NinjaOne quando houver acesso/fonte disponível.
 - Relatórios por dispositivo, alertas, inventário, disponibilidade, backup e evidências técnicas.
 - Pareceres técnicos em linguagem Bikon quando aprovados pelo fluxo.
+
+## Autoridade controlada de Felipe Nogueira, 2026-08-26
+
+No grupo Relatorios Operacionais, Felipe pode solicitar e autorizar somente:
+
+- abertura, atualizacao e fechamento de ticket operacional no NinjaOne;
+- execucao de script NinjaOne ja existente e previamente aprovado, limitada ao escopo e aos parametros informados no pedido;
+- alteracao de layout de relatorio operacional;
+- pesquisa read-only em API ja liberada para a Bikon.
+
+Roteamento: ticket, script e pesquisa em fonte operacional ficam com Sentinel; layout e documento ficam com Kowalski.
+
+Essa autoridade nao inclui API ou endpoint novo, ampliacao de credencial/permissao, criacao ou alteracao de script, cron, configuracao, integracao, mudanca de rota, fallback, acao em massa, alteracao de backup, comunicacao externa, financeiro, fiscal ou gasto. Esses dominios continuam dependentes de autorizacao do Hebert.
 
 ## Fora de escopo
 
