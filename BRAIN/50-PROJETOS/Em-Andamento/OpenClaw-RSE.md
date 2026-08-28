@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw RSE
-status: production_capacity_governed_execution_tree_recovery_only
+status: production_capacity_governed_lifecycle_repair_b1_incomplete
 responsavel: Puppet Master
 inicio: 2026-08-18
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-22
-tags: [openclaw, rse, execution-foundation, fail-closed, stage4, production, bounded-execution-tree-recovery, capacity-governance]
+ultima_revisao: 2026-08-28
+tags: [openclaw, rse, execution-foundation, fail-closed, stage4, production, bounded-execution-tree-recovery, capacity-governance, lifecycle, durable-deferral]
 ```
 
 ## Objetivo
@@ -157,10 +157,32 @@ Evidencia consolidada:
 
 Contrato canonico: Puppet continua dono de intencao, classificacao e colocacao foreground/background. RSE nao reclassifica a tarefa; ele consome o perfil de recurso e governa admissao, fila, pressao, reserva atomica e capacidade. A terminacao ativa segue proibida por padrao; pressao congela admissoes caras e preserva trabalho legitimamente em execucao.
 
+## Incidente de lifecycle e Checkpoint B1, 2026-08-27/28
+
+A qualificacao do onboarding ODP provou um defeito estrutural fora do workload de negocio:
+
+- o child pode ser criado antes da decisao de admissao RSE;
+- o caller fica bloqueado em `rse-capacity --wait` durante uma deferral;
+- a sessao/registry pode terminar enquanto a admissao ou o processo fisico continua vivo;
+- perfis equivalentes do workload ODP oscilaram entre aproximadamente 805 MB e 5,77 GB, e uma execucao admitida sob o perfil menor chegou a aproximadamente 6,95 GB;
+- houve evidencia de registry terminal enquanto o cgroup ainda produzia heartbeat.
+
+Consequencia: fila RSE, child/subagent, execution registry e processo/cgroup nao possuem hoje uma unica verdade canonica de lifecycle. O reparo precisa estabelecer admission-before-child, deferral duravel sem espera no gateway, execution ID estavel, ativacao exatamente uma vez e proibicao de terminal enquanto o cgroup canonico estiver vivo.
+
+Contencao preservada com verdade historica:
+
+- admissao `0705a63f-2759-4a53-b5fb-561e4913a2e9`: `RECONCILED_STALE`, motivo `DEFERRED_REQUEST_LEASE_EXPIRED`; processo e cgroup ja ausentes;
+- uma tentativa de contencao pelo caminho antigo criou a admissao tecnica `8dbc88f6-126e-4de4-ada0-8014f83153c4`, confirmando a dependencia circular e proibindo novo retry pelo mesmo mecanismo;
+- restore point foi reautenticado antes do B1.
+
+O B1 foi autorizado somente como construcao/staging em clone user-owned autenticado e unit transitoria `systemd --user`, sem RSE admission, `rse-capacity --wait`, deploy, `/opt`, runtime live ou mutacao ODP/EDC de producao. A unit terminou em 2026-08-28 com patch e testes parciais, mas sem package manifest, suite integral ou fechamento B1. Estado canonico nesta consolidacao: `B1_INCOMPLETE_PENDING_RECONCILIATION`, nao deployavel e nao aceito.
+
 ## Proximos passos
 
 - Manter dominios mutativos restritos a `EXECUTION_TREE_RECOVERY`, embora as capacidades de admissao/capacidade/fila/pressao ja estejam produtivas.
 - Exigir approval especifico antes de habilitar memoria, restart, SQLite, terminacao ativa, gateway restart, reboot ou qualquer novo adapter live.
+- Reconciliar os artefatos parciais do B1 sem promover ou repetir cegamente; exigir manifest SHA-256, testes unitarios/integracao/staging completos e prova de todos os invariantes antes de solicitar deploy B2.
+- Preservar a admissao P1 `f3c9c0bf-07f9-4c53-8257-92c810249e29` sem retry concorrente ate o reparo do lifecycle ser aceito e implantado por boundary proprio.
 
 ## Relacoes
 

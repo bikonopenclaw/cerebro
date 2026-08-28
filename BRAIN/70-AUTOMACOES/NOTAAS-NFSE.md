@@ -57,6 +57,8 @@ Atualização 2026-07-01: em lote com boleto/remessa, NFS-e deve ser etapa separ
 
 Atualização 2026-08-03: o lote de faturamento Bikon agosto/2026 remessa 093 emitiu `27` NFS-e em produção, com PDF/XML locais, totalizando R$ 86.357,06. Os e-mails externos foram enviados depois da preparação/conferência, com `18` mensagens agrupadas por cliente e copia para `financeiro@bikon.com.br`. O evento confirma o uso operacional assistido da skill, mas não autoriza automação cega para lotes futuros.
 
+Atualizacao 2026-08-27: lote BIKON 4.1 emitiu as NFS-e `246` e `247`, R$ 899,00 cada, somente depois de autorizacoes explicitas para competencia `08/2026` e emissao em `27/08/2026`. PDFs/XMLs, boletos, remessa 094 e rascunhos foram empacotados localmente. E-mails nao foram enviados, a remessa nao foi transmitida e nao existe confirmacao de registro bancario. A divergencia original reforca que emissao, competencia, data de gravacao da remessa, envio de e-mail e transmissao bancaria sao superficies materiais separadas.
+
 Baseline FBCP 2026-08-03: a revisão read-only `FBCP_PHASE_0_READ_ONLY_BASELINE_FREEZE=PASS` congelou hashes, SQLite em modo immutable e superfícies de mutação sem chamar Notaas, Cresol, SMTP, transmissão de remessa ou emissão nova. Riscos P0 para a skill Notaas: competência default fixa `2026-04` em emissão individual/payload helper, uso de `float` para valores e retry sem ledger idempotente. Próxima autorização recomendada antes de evoluir produção: `AUTHORIZE_FBCP_P0_COMPETENCE_AND_MONEY_HARDENING_ONLY`.
 
 ## Padrão Bikon para dados do tomador

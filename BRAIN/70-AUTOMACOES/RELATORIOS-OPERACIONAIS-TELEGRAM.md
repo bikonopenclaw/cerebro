@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24 e autoridade controlada de Felipe em 2026-08-26
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26 e incidente P1 em 2026-08-27/28
 confiabilidade: alta
-ultima_revisao: 2026-08-27
+ultima_revisao: 2026-08-28
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual]
 ```
 
@@ -118,6 +118,22 @@ Checkpoint 2026-08-24:
 - Relatorio semanal NinjaOne estava habilitado sob Kowalski no cron `b1c0fdbf-69ad-4b27-978e-10590ce3dbac`, expressao `47 7 * * 1`.
 - Nao voltar ao padrao antigo de segunda `08:00-08:03`; semanais devem respeitar a mesma janela operacional.
 - Ticketing ARX -> NinjaOne e relatorios operacionais sao responsabilidades distintas: o primeiro pode criar/fechar tickets apenas quando reautorizado e validado; o segundo entrega resumo na janela acordada.
+
+## Incidente P1 de entrega, 2026-08-27/28
+
+Evidencia real confirmou indisponibilidade dos resumos diarios WhatsApp Bikon, ARX Backup, NinjaOne Tickets e Bitdefender, alem de `OPERATIONAL_TOWER_DELIVERY=NOT_DELIVERED`.
+
+Estado consolidado:
+
+- incidente `P1` aberto para restaurar a cadeia completa schedule -> coleta Sentinel -> estado/input canonico -> consumo Kowalski -> artefato -> entrega Telegram;
+- a mensagem generica `coleta Sentinel/Kowalski nao gerou arquivo` e sintoma, nao causa raiz comprovada;
+- o executor P1 morreu antes do workload, sem diagnostico completo, patch, artefato ou catch-up;
+- admissao `f3c9c0bf-07f9-4c53-8257-92c810249e29` permaneceu `DEFERRED` com `--wait` vivo; nao abrir retry concorrente;
+- retomada depende do reparo B1 do lifecycle RSE e do deploy B2 autorizado, sempre pela rota canonica;
+- ao retomar, reconciliar Sentinel `bd15e995-81f5-4c24-97e2-a67168ec9ce2` e Kowalski `3c4ae1da-0ded-42a8-8333-188ad3e75f2e`, autenticando cada transicao ate terminalidade;
+- catch-up so pode ocorrer exatamente uma vez, no grupo correto, com dados validos/frescos e prova de idempotencia.
+
+Ownership preservado: Sentinel coleta e mantem dados operacionais; Kowalski produz e entrega relatorios internos; Puppet Master governa orquestracao, autoridade e comunicacao externa. Identidade visivel do bot no Telegram nao prova ownership de schedule, execucao, relatorio ou entrega.
 
 ## Padrão visual para relatórios externos
 

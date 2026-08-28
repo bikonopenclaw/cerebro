@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw Operational Data Platform
-status: day3_core_pass_accepted_day4_blocked_secret_rotation_required
+status: day4_checkpoint_l_preserved_platform_lifecycle_repair_b1_incomplete
 responsavel: Puppet Master
 inicio: 2026-08-05
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-22
-tags: [openclaw, odp, postgresql, operational-data, governance, rollback, non-interference, controlled-secret-executor, day3, day4, secret-rotation]
+ultima_revisao: 2026-08-28
+tags: [openclaw, odp, postgresql, operational-data, governance, rollback, non-interference, controlled-secret-executor, day3, day4, production-onboarding, rse-lifecycle]
 ```
 
 ## Objetivo
@@ -39,6 +39,14 @@ O Brain registra apenas estado consolidado e guardrails. Evidencias, pacotes, ma
 - Integridade preservada por nao mutacao: ODP production DB `NOT_TOUCHED`, CRC authority `PRESERVED_BY_NON_MUTATION`, EDC `PRESERVED_BY_NON_MUTATION`, Day 2/Day 3 authority `PRESERVED_BY_NON_MUTATION`, OpenClaw runtime state nao mutado pelo child, SQLite sem interacao.
 - Proximo token operacional registrado: `OPENCLAW_RUNTIME_ROTATION_BRIDGE_THEN_CONTINUE_SAME_DAY_4_PROVIMENTO_213_ONBOARDING_AUTHORITY`.
 
+## Atualizacao Day 4 e pipeline de onboarding, 2026-08-27/28
+
+- A recuperacao e os gates posteriores preservaram Day 4 no Checkpoint L com `311/311` testes, candidato `17/17`, PGL `PASS`, Kowalski `PASS` e mutacoes de producao `0`.
+- O objetivo corrente e provar `ODP_PRODUCTION_ONBOARDING_PIPELINE=PASS_ACCEPTED`, com Provimento 213 como primeiro workload real, sem reconstruir trabalho autenticado do Checkpoint L.
+- A execucao foi bloqueada antes do canario por defeito estrutural do lifecycle OpenClaw/RSE/EDC: child criado antes da admissao, deferral bloqueando caller em `--wait`, perda de sessao com admissao viva, perfis de memoria inconsistentes e registry terminal enquanto cgroup permanecia ativo.
+- O reparo B1 foi autorizado fora do caminho quebrado, em clone isolado e unit `systemd --user`, sem RSE, deploy ou mutacao ODP/EDC de producao. Na janela desta consolidacao, terminou com patch/testes parciais, mas sem manifesto/pacote final e sem aceite; `B1_INCOMPLETE_PENDING_RECONCILIATION`.
+- Nenhum canario produtivo, onboarding Provimento 213, reexecucao idempotente, teste de falha, escala ou rollback de qualificacao foi concluido por esta rodada.
+
 ## Guardrails
 
 - Day 3 nao autoriza Day 4, business modules, importacao de operational-data, Provimento 213 ou interacao SQLite.
@@ -52,7 +60,8 @@ O Brain registra apenas estado consolidado e guardrails. Evidencias, pacotes, ma
 
 ## Proximos passos
 
-- Retomar Day 4 somente apos a bridge `OPENCLAW_RUNTIME_ROTATION_BRIDGE_THEN_CONTINUE_SAME_DAY_4_PROVIMENTO_213_ONBOARDING_AUTHORITY` fechar sem segredo em stdout e com validacao da nova vinculacao.
+- Preservar o Checkpoint L e nao repetir trabalho aceito; reconciliar e concluir B1 antes de qualquer boundary B2/deploy.
+- Apos B1 aceito e B2 autorizado, requalificar lifecycle com canario nao produtivo, deferral duravel, perda de sessao/gateway, ativacao unica, terminalidade convergente e rollback antes de retomar o onboarding real.
 - Antes de qualquer migracao Provimento 213 para ODP, exigir contratos AIR/CPIW/ICD/DRE, rollback, non-interference e autorizacao atomica.
 
 ## Relacoes

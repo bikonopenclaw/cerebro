@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-08-28, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-08-28.md`.
+- Atualizados `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Operational-Data-Platform.md` e `OpenClaw-RSE.md` com Day 4 preservado no Checkpoint L, causa sistemica do lifecycle RSE/child/registry/cgroup, verdade historica da admissao `RECONCILED_STALE`, bootstrap B1 isolado e estado `B1_INCOMPLETE_PENDING_RECONCILIATION`, sem deploy ou mutacao live.
+- Atualizado `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md` com incidente P1 dos quatro resumos diarios e Torre Operacional, executor sem workload, admissao P1 deferida preservada, ownership Sentinel/Kowalski/Puppet e retomada somente depois do reparo canonico.
+- Atualizados `BRAIN/60-AGENTES/DARTH-VADER.md`, `BRAIN/20-EMPRESAS/BIKON/README.md`, `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md` e `boletos-malote/README.md` com lote 4.1: NFS-e `246`/`247`, dois boletos locais, remessa 094 local/R$ 1.798,00, e-mails nao enviados, remessa nao transmitida e sem confirmacao de registro bancario.
+- Atualizados `BRAIN/99-SISTEMA/MEMORY.md`, `BRAIN/01-DIARIO/README.md`, `HEALTH.md`, `STATUS-BRAIN.md` e `BRAIN/99-SISTEMA/brain-v2/health/knowledge-health.md`.
+- Commit Link Gate validado apos a consolidacao: `ok=True`, `372` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados arquivos locais do Brain, memoria local recente, sessoes visiveis recentes e artefatos locais em `projects/RSE/` e no workspace da Darth Vader; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao acessou sistemas externos, nao fez deploy/restart/retry, nao transmitiu remessa, nao enviou e-mail e nao registrou plaintext de segredo.
+
 ## 2026-08-27, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-08-27.md`.

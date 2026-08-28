@@ -40,6 +40,12 @@ Espelho operacional:
 - A remessa CNAB400 local `cb110857-titulo-22394650-homologacao.rem` teve 3 linhas de 400 posicoes, registros `0/1/9`, sequencial `2394650`, quantidade `1`, valor total R$ 1,00 e validacao estrutural OK.
 - A rodada permaneceu restrita a homologacao: sem producao, sem upload no portal/banco, sem baixa e sem envio a cliente.
 
+## Atualizacao 2026-08-27
+
+- Lote BIKON 4.1: dois boletos locais de conferencia, documentos `105659` e `105660`, nossos numeros `009/00000001591-4` e `009/00000001592-2`, vencimento em `05/09/2026` e valor de R$ 899,00 cada.
+- Remessa CNAB400 094 local `remessa-094-270826-local-nao-transmitida.rem`: quatro linhas de 400 caracteres, dois titulos, total R$ 1.798,00 e data de gravacao 27/08/2026, autorizada explicitamente depois da divergencia com `260826` na planilha.
+- Nao ha confirmacao de registro bancario dos boletos. A remessa nao foi transmitida e os e-mails permaneceram como rascunhos; cada acao externa exige autorizacao propria.
+
 ## Pendências antes de uso real
 
 Confirmar com o banco/contrato:

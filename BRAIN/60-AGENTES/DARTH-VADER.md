@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: agente_operacional
-fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17, snapshot versionado em 2026-07-11 e fechamento/paridade dedicada em 2026-08-23/24
+fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17, snapshot versionado em 2026-07-11, fechamento/paridade dedicada em 2026-08-23/24 e lote BIKON 4.1 em 2026-08-27
 confiabilidade: alta
-ultima_revisao: 2026-08-25
+ultima_revisao: 2026-08-28
 tags: [agente, financeiro, faturamento, nfse, boleto, remessa, cresol-api, fip]
 ```
 
@@ -111,6 +111,19 @@ Riscos P0 que afetam a governança da Darth Vader:
 - fronteira homologação/produção baseada em flags e nomes de pasta.
 
 Próxima autorização recomendada: `AUTHORIZE_FBCP_P0_COMPETENCE_AND_MONEY_HARDENING_ONLY`.
+
+## Lote BIKON 4.1, remessa 094
+
+Em 2026-08-27, Darth Vader concluiu o lote assistido depois de tres gates materiais separados: data real de emissao, competencia e data de gravacao da remessa.
+
+- NFS-e `246`, Alfredo Chaves Cartorio do I Oficio, R$ 899,00;
+- NFS-e `247`, Donna Industria de Madeiras Ltda, R$ 899,00;
+- competencia `08/2026`, emissao `27/08/2026`, vencimento `05/09/2026`, servico `010701`;
+- boletos locais de conferencia: documentos `105659` e `105660`, nossos numeros `009/00000001591-4` e `009/00000001592-2`;
+- remessa CNAB400 094 local: quatro linhas de 400 caracteres, dois titulos, total R$ 1.798,00, gravacao em 27/08/2026;
+- pack validado em `/data/.openclaw/workspace-darth-vader/boletos/lotes-emissao/pack-final-lote-4.1-remessa-094-20260827.tar.gz`.
+
+Estado externo: e-mails apenas em rascunho, sem envio; remessa nao transmitida; boletos sem confirmacao de registro bancario. Envio de e-mail e qualquer registro/transmissao bancaria continuam exigindo autorizacoes proprias.
 
 ## FIP Bikon Financial Intelligence, 2026-08-10/11
 
