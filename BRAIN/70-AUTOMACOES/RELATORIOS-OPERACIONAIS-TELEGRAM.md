@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26 e incidente P1 em 2026-08-27/28
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26 e incidente P1 em 2026-08-27/29
 confiabilidade: alta
-ultima_revisao: 2026-08-28
+ultima_revisao: 2026-08-29
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual]
 ```
 
@@ -132,6 +132,8 @@ Estado consolidado:
 - retomada depende do reparo B1 do lifecycle RSE e do deploy B2 autorizado, sempre pela rota canonica;
 - ao retomar, reconciliar Sentinel `bd15e995-81f5-4c24-97e2-a67168ec9ce2` e Kowalski `3c4ae1da-0ded-42a8-8333-188ad3e75f2e`, autenticando cada transicao ate terminalidade;
 - catch-up so pode ocorrer exatamente uma vez, no grupo correto, com dados validos/frescos e prova de idempotencia.
+
+Tentativa posterior de retomada em 2026-08-28 tambem terminou antes do workload: o isolamento recebeu perfil de aproximadamente 5,77 GB, enquanto o RSE liberava aproximadamente 4,47 GB. Houve zero spawn, zero bootstrap, zero execucao do P1 e zero entrega; a admissao dessa tentativa foi cancelada sem orfao. O incidente permanece aberto e nao deve receber novo retry concorrente enquanto o reparo M2 nao fechar, for congelado e atravessar seu boundary de implantacao proprio.
 
 Ownership preservado: Sentinel coleta e mantem dados operacionais; Kowalski produz e entrega relatorios internos; Puppet Master governa orquestracao, autoridade e comunicacao externa. Identidade visivel do bot no Telegram nao prova ownership de schedule, execucao, relatorio ou entrega.
 

@@ -25,6 +25,7 @@
 
 ## Histórico relevante
 
+- 2026-08-28: snapshot read-only de NFS-e de agosto registrou 29 notas, 23 validas e 6 canceladas, com bruto R$ 88.155,06, cancelado R$ 35.211,55 e liquido R$ 52.943,51. O cancelamento da NFS-e `214`/boleto `105609` parou sem mutacao por falta de motivo fiscal e de rota CNAB400 validada para ocorrencia `02`. Em homologacao Cresol, boleto/remessa NN `358` foram preparados localmente sem importacao, envio ou registro externo.
 - 2026-08-27: lote 4.1 concluido apos aprovacao explicita de competencia `08/2026`, emissao em `27/08/2026` e gravacao da remessa 094 em `27/08/2026`: NFS-e `246` e `247`, R$ 899,00 cada; dois boletos locais; remessa CNAB400 local com dois titulos/R$ 1.798,00; e-mails apenas em rascunho, remessa nao transmitida e sem confirmacao de registro bancario.
 - 2026-08-26/27: CNS `02.133-7`/`021337` do Cartorio do I Oficio de Alfredo Chaves ratificado pelo Owner; JSON, CSV e SQLite do cadastro permaneceram consistentes, com CNS unico e `integrity_check=ok`. Cards cadastrais validados de Alfredo Chaves e Donna Industria de Madeiras foram entregues sem refacao dos dados.
 - 2026-08-20: FIP Google Drive Archival Storage foi concluido com `PASS`: `356/356` objetos `ARCHIVE_AND_RELEASE` fechados, `0` pendentes, `UPLOAD_STARTED=0`, `sqlite integrity_check=ok`, liberacao efetiva de `9.066.463.232` bytes na VPS e registry final SHA-256 `96edb9ed377d1a0c32c55c0f04cee26e42f91554bb5f96ea7086d7983332d89d`. Objetos fora do escopo (`ARCHIVE_KEEP_LOCAL`, `KEEP_LOCAL`, `DEFER_AMBIGUOUS` e 5 `PURGE_REGENERABLE`) foram preservados.

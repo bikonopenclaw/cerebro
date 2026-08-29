@@ -2,12 +2,12 @@
 
 ```yaml
 nome: OpenClaw RSE
-status: production_capacity_governed_lifecycle_repair_b1_incomplete
+status: production_capacity_governed_lifecycle_repair_m2_staging_active_not_frozen
 responsavel: Puppet Master
 inicio: 2026-08-18
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-28
+ultima_revisao: 2026-08-29
 tags: [openclaw, rse, execution-foundation, fail-closed, stage4, production, bounded-execution-tree-recovery, capacity-governance, lifecycle, durable-deferral]
 ```
 
@@ -177,11 +177,34 @@ Contencao preservada com verdade historica:
 
 O B1 foi autorizado somente como construcao/staging em clone user-owned autenticado e unit transitoria `systemd --user`, sem RSE admission, `rse-capacity --wait`, deploy, `/opt`, runtime live ou mutacao ODP/EDC de producao. A unit terminou em 2026-08-28 com patch e testes parciais, mas sem package manifest, suite integral ou fechamento B1. Estado canonico nesta consolidacao: `B1_INCOMPLETE_PENDING_RECONCILIATION`, nao deployavel e nao aceito.
 
+## Bootstrap de reparo M2 em staging, 2026-08-28/29
+
+A retomada confirmou que o proprio caminho de isolamento podia reproduzir a falha que deveria corrigir:
+
+- `sessions_spawn` aplicou perfil de aproximadamente 5,77 GB contra capacidade liberavel de aproximadamente 4,47 GB;
+- a tentativa terminou com zero spawn, zero bootstrap e zero workload, e a admissao foi cancelada sem orfao;
+- o B1 permaneceu no HEAD `7b9a9c7516afdb6d141618c871fbe17e02889887`, com 17 arquivos modificados e 10 nao rastreados, sem promocao ou deploy.
+
+A causa da interrupcao de uma continuacao direta foi classificada como `PARENT_OPENCLAW_EXECUTION_SCOPE_TEARDOWN`, nao como OOM, reboot, timeout ou falha comprovada do patch. A execucao passou entao para um tmux persistente, mas a auditoria posterior corrigiu a identidade operacional: o executor real e o tmux root-owned `rse-m2`, dentro de `session-3.scope`; o nome `rse-bootstrap-final` e os limites reportados de 2 GB, 75% CPU e 48 processos nao estavam aplicados ao processo real.
+
+Evidencia de progresso em staging no corte desta consolidacao:
+
+- qualificacao A-N `14/14 PASS`;
+- invariantes `18/18 PASS`;
+- upgrade compatibility `1/1 PASS`;
+- Node/E2E `13/13 PASS`;
+- regressao predecessora `432 PASS`;
+- suite CAS adicional `21 PASS`;
+- manifest global intermediario `fe08162d4bf0ad1ffefc4c710ebe7d39cc58ffea28229cbad7b7a4b040f1bcce`.
+
+Esse resultado ainda nao e terminal. Auditoria posterior encontrou dois P0 abertos: processos escapando do slice canonico e fechamento do client dedicado antes do estado terminal. Os bytes continuavam mudando no corte; portanto nao existe freeze final, pacote imutavel aceito, SHA do pacote, rollback byte-exato, auditoria independente fechada, preflight root ou primeiro comando root. Producao permanece em quarentena, sem deploy/root comprovado e sem mutacao do B1 ou de ODP/EDC de producao.
+
 ## Proximos passos
 
 - Manter dominios mutativos restritos a `EXECUTION_TREE_RECOVERY`, embora as capacidades de admissao/capacidade/fila/pressao ja estejam produtivas.
 - Exigir approval especifico antes de habilitar memoria, restart, SQLite, terminacao ativa, gateway restart, reboot ou qualquer novo adapter live.
 - Reconciliar os artefatos parciais do B1 sem promover ou repetir cegamente; exigir manifest SHA-256, testes unitarios/integracao/staging completos e prova de todos os invariantes antes de solicitar deploy B2.
+- No M2, fechar os dois P0 de containment/terminalidade, autenticar o cgroup e o envelope de recursos realmente usados, repetir a qualificacao central serial nos bytes finais e somente depois congelar pacote, manifest e rollback.
 - Preservar a admissao P1 `f3c9c0bf-07f9-4c53-8257-92c810249e29` sem retry concorrente ate o reparo do lifecycle ser aceito e implantado por boundary proprio.
 
 ## Relacoes

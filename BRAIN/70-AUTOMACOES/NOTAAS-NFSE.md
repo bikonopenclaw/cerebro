@@ -264,3 +264,11 @@ Script atualizado:
 - 18 e-mails enviados, agrupados por cadastro, cobrindo 28 NFS-e + 28 boletos.
 - Erros de envio: 0.
 - `financeiro@bikon.com.br` copiado em todos os e-mails.
+
+## Atualizacao 2026-08-28
+
+- Consulta read-only da competencia agosto/2026 encontrou 29 NFS-e: 23 emitidas e 6 canceladas (`235`, `240`, `242`, `243`, `244` e `245`), sem duplicidade.
+- Totais do snapshot: bruto R$ 88.155,06, cancelado R$ 35.211,55 e liquido valido R$ 52.943,51. PDF/CSV de entrega permanecem fora do Brain/Git.
+- O cancelamento solicitado da NFS-e `214`, R$ 2.046,81, foi interrompido no preflight sem mutacao. A nota continuava `issued` e o boleto relacionado `105609`, nosso numero `1541`, continuava `emitido_producao`, sem baixa.
+- Bloqueios: motivo fiscal obrigatorio nao informado e gerador CNAB400 aprovado fixo na ocorrencia `01`, enquanto a baixa exige ocorrencia `02`. Cancelar a nota isoladamente criaria inconsistencia fiscal/bancaria.
+- Retomar somente com motivo fiscal e uma rota CNAB de baixa `02` validada e explicitamente autorizada; cancelamento da nota, baixa/remessa e eventual mudanca de script/metodo sao gates separados.

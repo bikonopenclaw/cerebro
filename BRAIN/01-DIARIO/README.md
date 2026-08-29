@@ -60,6 +60,7 @@ Este MOC liga os registros cronologicos do Brain sem mover notas historicas. Ele
 - [[2026-08-26]]
 - [[2026-08-27]]
 - [[2026-08-28]]
+- [[2026-08-29]]
 
 ## Consolidados Semanais
 

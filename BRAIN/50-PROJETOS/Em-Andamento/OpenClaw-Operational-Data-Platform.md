@@ -7,7 +7,7 @@ responsavel: Puppet Master
 inicio: 2026-08-05
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-28
+ultima_revisao: 2026-08-29
 tags: [openclaw, odp, postgresql, operational-data, governance, rollback, non-interference, controlled-secret-executor, day3, day4, production-onboarding, rse-lifecycle]
 ```
 
@@ -45,6 +45,7 @@ O Brain registra apenas estado consolidado e guardrails. Evidencias, pacotes, ma
 - O objetivo corrente e provar `ODP_PRODUCTION_ONBOARDING_PIPELINE=PASS_ACCEPTED`, com Provimento 213 como primeiro workload real, sem reconstruir trabalho autenticado do Checkpoint L.
 - A execucao foi bloqueada antes do canario por defeito estrutural do lifecycle OpenClaw/RSE/EDC: child criado antes da admissao, deferral bloqueando caller em `--wait`, perda de sessao com admissao viva, perfis de memoria inconsistentes e registry terminal enquanto cgroup permanecia ativo.
 - O reparo B1 foi autorizado fora do caminho quebrado, em clone isolado e unit `systemd --user`, sem RSE, deploy ou mutacao ODP/EDC de producao. Na janela desta consolidacao, terminou com patch/testes parciais, mas sem manifesto/pacote final e sem aceite; `B1_INCOMPLETE_PENDING_RECONCILIATION`.
+- Em 2026-08-28/29, o bootstrap M2 do reparo de lifecycle avancou somente em staging. O B1 continuou preservado no mesmo HEAD e sem mutacao; como o M2 ainda tinha dois P0 abertos e bytes em mudanca, ele nao liberou B2, canario ODP nem retomada do onboarding.
 - Nenhum canario produtivo, onboarding Provimento 213, reexecucao idempotente, teste de falha, escala ou rollback de qualificacao foi concluido por esta rodada.
 
 ## Guardrails

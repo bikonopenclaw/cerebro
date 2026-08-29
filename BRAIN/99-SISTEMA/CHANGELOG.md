@@ -1,5 +1,16 @@
 # CHANGELOG.md
 
+## 2026-08-29, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-08-29.md` e atualizado o MOC cronologico.
+- Atualizados `OpenClaw-RSE.md` e `OpenClaw-Operational-Data-Platform.md` com o bootstrap M2 em staging, suites intermediarias verdes, dois P0 abertos, ausencia de freeze/deploy, B1 preservado e correcao da identidade/cgroup real do executor.
+- Atualizado `RELATORIOS-OPERACIONAIS-TELEGRAM.md` com nova tentativa P1 encerrada antes do workload por bloqueio de capacidade, zero entrega e cancelamento sem orfao.
+- Atualizados BIKON, Notaas NFS-e e boletos/malote com snapshot de agosto, homologacao Cresol NN `358` e bloqueio consistente da NFS-e `214`/boleto `105609` ate existir motivo fiscal e rota CNAB400 `02` validada.
+- Atualizada a nota permanente `Contrato-de-runtime-reprodutivel.md` com prova de executor/cgroup efetivo e durabilidade independente da conversa.
+- Atualizados `MEMORY.md`, `HEALTH.md`, `STATUS-BRAIN.md` e Knowledge Health.
+- Commit Link Gate validado: `ok=True`, `373` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados arquivos locais do Brain, sessoes visiveis recentes e artefatos locais do RSE; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao acessou sistemas externos, nao executou deploy/root/restart/retry, nao importou remessa, nao cancelou NFS-e e nao registrou segredo.
+
 ## 2026-08-28, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-08-28.md`.

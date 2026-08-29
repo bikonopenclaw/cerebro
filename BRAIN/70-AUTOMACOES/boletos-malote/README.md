@@ -46,6 +46,13 @@ Espelho operacional:
 - Remessa CNAB400 094 local `remessa-094-270826-local-nao-transmitida.rem`: quatro linhas de 400 caracteres, dois titulos, total R$ 1.798,00 e data de gravacao 27/08/2026, autorizada explicitamente depois da divergencia com `260826` na planilha.
 - Nao ha confirmacao de registro bancario dos boletos. A remessa nao foi transmitida e os e-mails permaneceram como rascunhos; cada acao externa exige autorizacao propria.
 
+## Atualizacao 2026-08-28
+
+- Em homologacao, a tentativa NN `357` foi preservada como referencia rejeitada e o proximo numero livre observado foi NN `358`, DV `4`.
+- Foram gerados localmente um boleto de homologacao de R$ 1,00, vencimento `31/08/2026`, e uma remessa CNAB400 de homologacao com 3 linhas de 400 posicoes, tipos `0/1/9`, CRLF, um titulo e validacao estrutural sem erros.
+- Nada foi importado, enviado ou registrado na Cresol; producao e configuracao permaneceram sem mutacao. A proxima etapa e importacao/aceite em homologacao e exige autorizacao explicita por alterar estado externo.
+- Para o boleto de producao `105609`, nosso numero `1541`, a baixa permaneceu bloqueada: o gerador aprovado emite ocorrencia `01`, mas baixa CNAB400 exige `02`. Nao cancelar a NFS-e relacionada isoladamente nem adaptar script/metodo sem motivo fiscal, rota validada e autorizacao propria.
+
 ## Pendências antes de uso real
 
 Confirmar com o banco/contrato:
@@ -62,6 +69,7 @@ Confirmar com o banco/contrato:
 10. aprovação explícita do Hebert antes de upload no portal Cresol, envio ao banco, produção, baixa por API ou comunicação externa.
 11. importar retornos Cresol no SQLite financeiro somente pela Darth Vader, com validação controlada antes de qualquer baixa operacional.
 12. antes de ampliar produção, tratar hardening FBCP de nosso número, validador CNAB de contrato Cresol e boundary forte homologação/produção.
+13. validar uma rota controlada para ocorrencia CNAB400 `02` antes de qualquer baixa; o gerador de entrada `01` nao deve ser reutilizado por inferencia.
 
 ## Guardrail
 
