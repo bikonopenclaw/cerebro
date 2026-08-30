@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-08-30, consolidacao semanal
+
+- Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W35.md` com cobertura parcial de 2026-08-24 a 2026-08-30, baseado nas daily notes disponiveis de 2026-08-25 a 2026-08-29.
+- Identificados padroes recorrentes de convergencia do lifecycle antes de terminalidade, prova do executor/cgroup real, compatibilidade de interfaces persistentes entre builds, inventario de capacidades separado de autorizacao e gates atomicos fiscais/bancarios.
+- Criadas notas permanentes `Estado-terminal-requer-convergencia-do-lifecycle.md`, `Interfaces-persistentes-participam-do-contrato-de-compatibilidade.md` e `Inventario-de-capacidades-nao-autoriza-uso-operacional.md`; relacionado tambem `Contrato-de-runtime-reprodutivel.md`.
+- Atualizados os MOCs de diario e conhecimento, `MEMORY.md`, `HEALTH.md`, `STATUS-BRAIN.md` e Knowledge Health.
+- Commit Link Gate validado apos a consolidacao semanal: `ok=True`, `377` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Nenhum item foi movido para `BRAIN/99-ARQUIVO/`; os registros revisados seguem recentes, conectados e com valor operacional, financeiro, de seguranca ou auditoria.
+- Revisados apenas arquivos locais do Brain; esta rotina nao acessou sistemas externos alem do push Git configurado, nao enviou mensagem ao Hebert, nao criou agente, nao executou retry/deploy/mutacao operacional e nao registrou segredo.
+
 ## 2026-08-29, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-08-29.md` e atualizado o MOC cronologico.
