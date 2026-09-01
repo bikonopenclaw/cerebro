@@ -1,5 +1,14 @@
 # CHANGELOG.md
 
+## 2026-09-01, consolidacao mensal
+
+- Criada consolidacao mensal `BRAIN/01-DIARIO/Mensal/2026-08.md` a partir dos resumos `2026-W31` a `2026-W35`, com fechamento de 2026-08-31 preservado pela daily de 2026-09-01.
+- Consolidados aprendizados de agosto sobre autorizacao atomica, separacao entre capacidade/aplicabilidade/autoridade, aceite em camadas, lifecycle observavel, classificacao financeira por evidencia e cancelamento como estado canonico.
+- Atualizados o MOC cronologico, `INDEX.md`, `MEMORY.md`, `HEALTH.md` e `STATUS-BRAIN.md`.
+- Nenhum item foi movido para `BRAIN/99-ARQUIVO/`: a auditoria encontrou `0` notas cognitivas inalcançaveis e `0` isoladas, e os registros revisados preservam valor operacional, decisorio, documental ou de auditoria.
+- Commit Link Gate validado apos a consolidacao mensal: `ok=True`, `379` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados apenas arquivos locais do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente e nao acessou sistemas externos alem do push Git configurado.
+
 ## 2026-09-01, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-01.md` e atualizado o MOC cronologico.

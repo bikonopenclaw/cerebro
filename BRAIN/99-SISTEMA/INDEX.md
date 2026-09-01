@@ -52,6 +52,7 @@ Mapa geral do Brain.
 - `01-DIARIO/Semanal/2026-W32.md`: consolidação semanal parcial com aplicabilidade antes de disponibilidade, commit de estado separado de aceitação operacional, leitura read-only sem mutação e Brain v2 com gate/grafo recorrente.
 - `01-DIARIO/Semanal/2026-W33.md`: consolidação semanal parcial com FIP privado/controlado, Provimento 213 Golden Baseline protegida, ODP Day 3 aceito sem Day 4, pacote selado auto-reprodutível, aceite humano como gate próprio e cartoes pessoais em quarentena.
 - `01-DIARIO/Semanal/2026-W34.md`: consolidação semanal parcial com FIP intake/archive, Portal 213 Telegram-only, ODP Day 4 bloqueado por segredo, Sentinel V2, RSE em produção parcial e governança de capacidade sem roteamento semântico.
+- `01-DIARIO/Semanal/2026-W35.md`: consolidação semanal parcial com convergencia do lifecycle, executor/cgroup real, compatibilidade de interfaces persistentes e inventario de capacidades separado de autoridade operacional.
 - `01-DIARIO/2026/2026-07-03.md`: consolidação diária com snapshots versionados, KPIs WhatsApp/Bitdefender, limitação de tickets NinjaOne, falhas por limite de uso e saneamento de PDFs/artefatos no Git.
 - `01-DIARIO/2026/2026-07-08.md`: consolidação diária com limpeza pré-migração da VPS, riscos operacionais BIKON de 06/07/2026, atualização de snapshots e pendência de `memory_search`.
 - `01-DIARIO/2026/2026-07-09.md`: consolidação diária com Cresol API em homologação, canal Telegram isolado do Kowalski e saneamento adicional da rotina de snapshot.
@@ -85,6 +86,7 @@ Mapa geral do Brain.
 - `01-DIARIO/2026/2026-09-01.md`: consolidacao diaria do cancelamento permanente e desinstalacao do RSE, com ODP desacoplado e sujeito a autoridade propria para qualquer retomada.
 - `01-DIARIO/Mensal/2026-06.md`: consolidação mensal de junho/2026 com aprendizados consolidados, padrões de longo prazo, decisões e critério de não arquivamento por recência/conexão.
 - `01-DIARIO/Mensal/2026-07.md`: consolidação mensal de julho/2026 com padrões de evidência antes de status, portões separados, read-only como expansão segura, cadeia de custódia e runtime como superfície operacional.
+- `01-DIARIO/Mensal/2026-08.md`: consolidação mensal de agosto/2026 com governanca por transicao, separacao entre capacidade/aplicabilidade/autoridade, aceite em camadas, lifecycle observavel e cancelamento como estado canonico.
 - `20-EMPRESAS/BIKON/README.md`: registro central da BIKON e conexões com automações fiscal, cadastro de clientes, boletos/malote e FIP CHG-004 financeiro 2026.
 - `20-EMPRESAS/BIKON/cadastro-clientes/README.md`: backup operacional de cadastro de clientes da BIKON.
 - `40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md`: princípio permanente de memória útil.

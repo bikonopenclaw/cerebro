@@ -80,6 +80,7 @@ Este MOC liga os registros cronologicos do Brain sem mover notas historicas. Ele
 
 - [[2026-06]]
 - [[2026-07]]
+- [[2026-08]]
 
 ## Templates
 

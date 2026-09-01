@@ -91,6 +91,7 @@ Memória institucional consolidada do Brain.
 
 - Padrão mensal de junho/2026: segurança operacional antes de escala; automações podem preparar e validar, mas impactos fiscais, bancários, comunicacionais, publicações e alterações de identidade exigem confirmação explícita quando não autorizados previamente.
 - Padrão mensal de julho/2026: prova antes de continuidade; status operacional exige evidência recente e rota ativa validada, enquanto publicação, envio, baixa, deploy, restore, provider, target e recorrência permanecem separados por Approval granular.
+- Padrão mensal de agosto/2026: governanca por transicao verificavel; capacidade, aplicabilidade, autoridade e estado terminal sao dimensoes independentes, aceite e composto por camadas, lifecycle observavel integra o produto e cancelamento remove rotas ativas sem apagar a evidencia historica.
 - Padrão semanal 2026-W28: maturidade operacional antes de escala; snapshots seguros excluem artefatos derivados, integrações externas permanecem em rascunho/homologação até aprovação, e decisões operacionais dependem de evidência explícita.
 - Padrão semanal 2026-W29: recuperação comprovada antes de continuidade; runtime pós-migração exige readiness executável, mudanças ficam separadas por gate e monitoramento usa menor privilégio com evidência recente e revalidação.
 - Padrão semanal 2026-W31: continuidade governada por unidade; evidência técnica não herda autorização, propostas não viram contratos por inferência, provider exige prova de ambiente existente e instalação precisa de black-box no caminho final.
