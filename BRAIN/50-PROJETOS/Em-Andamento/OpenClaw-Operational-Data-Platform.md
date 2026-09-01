@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw Operational Data Platform
-status: day4_checkpoint_l_preserved_platform_lifecycle_repair_b1_incomplete
+status: day4_checkpoint_l_preserved_rse_cancelled_b1_workspace_preserved
 responsavel: Puppet Master
 inicio: 2026-08-05
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-29
-tags: [openclaw, odp, postgresql, operational-data, governance, rollback, non-interference, controlled-secret-executor, day3, day4, production-onboarding, rse-lifecycle]
+ultima_revisao: 2026-08-31
+tags: [openclaw, odp, postgresql, operational-data, governance, rollback, non-interference, controlled-secret-executor, day3, day4, production-onboarding, rse-decommissioned]
 ```
 
 ## Objetivo
@@ -61,8 +61,8 @@ O Brain registra apenas estado consolidado e guardrails. Evidencias, pacotes, ma
 
 ## Proximos passos
 
-- Preservar o Checkpoint L e nao repetir trabalho aceito; reconciliar e concluir B1 antes de qualquer boundary B2/deploy.
-- Apos B1 aceito e B2 autorizado, requalificar lifecycle com canario nao produtivo, deferral duravel, perda de sessao/gateway, ativacao unica, terminalidade convergente e rollback antes de retomar o onboarding real.
+- Preservar o Checkpoint L e o workspace B1 incompleto em `/data/.openclaw/workspace/projects/ODP/preserved/odp-b1-bootstrap-20260827T235127Z`; ODP nao aguarda nem invoca RSE. Qualquer reconciliacao B1 ou boundary B2 exige nova autoridade ODP propria.
+- RSE foi permanentemente cancelado e desinstalado. Uma retomada ODP nao pode depender de RSE nem interpretar artefatos historicos RSE como autoridade ativa.
 - Antes de qualquer migracao Provimento 213 para ODP, exigir contratos AIR/CPIW/ICD/DRE, rollback, non-interference e autorizacao atomica.
 
 ## Relacoes
