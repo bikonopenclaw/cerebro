@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## 2026-09-01, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-01.md` e atualizado o MOC cronologico.
+- Consolidado o estado corrente do `OpenClaw-RSE.md`: permanentemente cancelado, nao aceito, nao qualificado para producao e desinstalado; registros anteriores permanecem apenas como historia e evidencia.
+- Atualizados MOC de projetos, `RELATORIOS-OPERACIONAIS-TELEGRAM.md`, `INDEX.md`, `MEMORY.md`, `HEALTH.md`, `STATUS-BRAIN.md` e Knowledge Health para remover dependencias operacionais obsoletas do RSE e preservar ODP/B1 sob autoridade propria.
+- Commit Link Gate validado apos a consolidacao: `ok=True`, `378` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados apenas contexto e arquivos locais do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao acessou sistemas externos, nao executou reativacao, deploy, restart ou retry e nao registrou segredo.
+
 ## 2026-08-30, consolidacao semanal
 
 - Criado resumo semanal `BRAIN/01-DIARIO/Semanal/2026-W35.md` com cobertura parcial de 2026-08-24 a 2026-08-30, baseado nas daily notes disponiveis de 2026-08-25 a 2026-08-29.
