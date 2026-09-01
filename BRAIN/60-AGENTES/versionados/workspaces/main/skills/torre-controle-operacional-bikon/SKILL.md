@@ -45,7 +45,7 @@ Uso para consolidacao, diagnostico, fila de decisao e preparacao. Nao executar m
 
 1. Crons OpenClaw ativos e ultimos resultados.
 2. Crons Hermes dos perfis `kowalski` e `robotnik`.
-3. Ponte Hermes `gru` via `hermes-task-bridge` quando for necessario validar execucao.
+3. Validacao de execucao deve usar exclusivamente mecanismos canonicos ativos do OpenClaw; componentes aposentados ou removidos nao devem ser invocados.
 4. Projeto `projetos/hermes-openclaw-filial.md` para matriz de corte e travas.
 5. Memoria diaria em `memory/YYYY-MM-DD.md` para decisoes recentes.
 6. Logs operacionais apenas quando status ou falha exigir detalhe.
