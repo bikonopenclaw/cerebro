@@ -1,5 +1,13 @@
 # CHANGELOG.md
 
+## 2026-09-02, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-02.md` e atualizado o MOC cronologico.
+- Atualizado `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md` com a regra da Torre de Controle que restringe validacao de execucao a mecanismos canonicos ativos do OpenClaw e impede fallback por componentes aposentados ou removidos.
+- Atualizados `HEALTH.md` e Knowledge Health para registrar a execucao da rotina e a validacao corrente; nao houve duplicidade ou novo projeto.
+- Commit Link Gate validado: `ok=True`, `380` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados apenas contexto e arquivos locais do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente e nao acessou sistemas externos.
+
 ## 2026-09-01, consolidacao mensal
 
 - Criada consolidacao mensal `BRAIN/01-DIARIO/Mensal/2026-08.md` a partir dos resumos `2026-W31` a `2026-W35`, com fechamento de 2026-08-31 preservado pela daily de 2026-09-01.

@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29 e cancelamento RSE em 2026-08-31
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31 e snapshot da Torre de Controle em 2026-09-01
 confiabilidade: alta
-ultima_revisao: 2026-09-01
+ultima_revisao: 2026-09-02
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual]
 ```
 
@@ -101,6 +101,12 @@ Validacoes locais do reparo:
 - FIP, FCOC, card interview, porta `8787` e porta `9213`: mutacao `0`.
 
 Reload do gateway principal foi solicitado via SIGUSR1 sem sudo; o reload de canal ficou `deferred` enquanto a propria execucao estava ativa. Retry real ainda necessario: `Kowalski, vc sabe quais sao os clientes da corpus no ninjaone?`, esperando Puppet externo `1`, Kowalski externo `0` e silencio `0`.
+
+## Fonte canonica da Torre de Controle, 2026-09-01
+
+- Validacao de execucao deve usar exclusivamente mecanismos canonicos ativos do OpenClaw.
+- Pontes, gateways ou componentes aposentados/removidos podem permanecer como contexto historico de comparacao, mas nao devem ser invocados nem usados como fallback.
+- A existencia de uma referencia legada na skill ou em registros de corte nao prova disponibilidade, autoridade ou saude operacional atual.
 
 ## Agenda automática diária
 
