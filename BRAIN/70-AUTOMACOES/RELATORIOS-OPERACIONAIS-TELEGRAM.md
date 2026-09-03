@@ -2,10 +2,10 @@
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31 e snapshot da Torre de Controle em 2026-09-01
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01 e teste controlado ponta a ponta em 2026-09-02
 confiabilidade: alta
-ultima_revisao: 2026-09-02
-tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual]
+ultima_revisao: 2026-09-03
+tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
 ## Finalidade
@@ -144,6 +144,21 @@ Tentativa posterior de retomada em 2026-08-28 tambem terminou antes do workload:
 Atualizacao canonica de 2026-08-31: RSE foi permanentemente cancelado, nao aceito, nao qualificado para producao e desinstalado. A dependencia anterior de reparo M2/B1/B2 fica historica e nao e mais rota de retomada. O incidente P1 continua aberto, mas eventual diagnostico, catch-up ou retry exige autoridade atomica propria e uma rota de execucao independente do RSE, preservando idempotencia, dados frescos e ownership Sentinel/Kowalski/Puppet.
 
 Ownership preservado: Sentinel coleta e mantem dados operacionais; Kowalski produz e entrega relatorios internos; Puppet Master governa orquestracao, autoridade e comunicacao externa. Identidade visivel do bot no Telegram nao prova ownership de schedule, execucao, relatorio ou entrega.
+
+## Teste controlado ponta a ponta, 2026-09-02
+
+O primeiro run falhou fechado no gate inicial: WhatsApp nao chegou a START por sessao presa no gateway; ARX, NinjaOne e Bitdefender nao iniciaram, nenhum provider foi consultado e nenhuma mensagem foi entregue. O controller voltou a `IDLE`, sem lease ou ordem ativa. O reset local foi recusado enquanto a sessao seguia marcada como ativa, e restart amplo do gateway nao foi executado.
+
+A retomada autorizada fechou `CONTROLLED_DAILY_REPORTING_PRODUCTION_TEST=ACCEPTED`:
+
+- as quatro evidencias de fonte foram reautenticadas e consumidas sem nova coleta/API;
+- Kowalski gerou WhatsApp, ARX, NinjaOne, Bitdefender e instrucao helpdesk; os cinco validadores canonicos fecharam exit `0`, `APROVADO COM AVISOS`;
+- QA factual obrigatoria passou, com zero conteudo proibido, segredo ou caminho interno nos TXT finais;
+- os cinco documentos foram enviados exclusivamente ao Hebert; grupos e outros destinatarios receberam `0` entregas, sem retry duplicado;
+- a configuracao normal foi reautenticada sem mutacao: WhatsApp/ARX/NinjaOne/Bitdefender seguem habilitados para `07:45-07:48 America/Sao_Paulo` no grupo Relatorios Operacionais, e helpdesk para `07:59` no grupo Suporte Bikon;
+- pressao transitoria no app-server afetou apenas um post-check opcional; o resultado produtivo, a validacao obrigatoria e o cleanup permaneceram `PASS`.
+
+Regra reforcada: ausencia de saida no transcript nao autoriza repetir coleta, geracao ou entrega. Primeiro reconciliar o Goal pelo registro duravel, checkpoints, artefatos e fila de anuncio; neste caso, a reconstrucao provou terminal `ACCEPTED` e classificou o alerta posterior como falso stall de transcript.
 
 ## Padrão visual para relatórios externos
 

@@ -1,5 +1,14 @@
 # CHANGELOG.md
 
+## 2026-09-03, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-03.md` e atualizado o MOC cronologico.
+- Atualizado `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md` com o teste controlado ponta a ponta: falha inicial fechada antes da coleta, retomada `ACCEPTED` sem recoleta/API, cinco TXT validados e entregues somente ao Hebert, zero entrega a grupos/outros destinatarios e configuracao normal dos cinco jobs preservada.
+- Atualizada a nota permanente `Estado-terminal-requer-convergencia-do-lifecycle.md` e `MEMORY.md`: transcript incompleto nao prova stall; registry, checkpoints, artefatos e fila de anuncio devem ser reconciliados antes de retry, recoleta, regeneracao ou reenvio.
+- Atualizados `HEALTH.md` e Knowledge Health; nao houve duplicidade, novo projeto ou arquivamento.
+- Commit Link Gate validado: `ok=True`, `381` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados contexto recente disponivel, sessoes visiveis, artefatos locais e arquivos do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente e nao acessou sistemas externos.
+
 ## 2026-09-02, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-02.md` e atualizado o MOC cronologico.
