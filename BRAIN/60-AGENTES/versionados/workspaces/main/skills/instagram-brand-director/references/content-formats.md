@@ -29,7 +29,7 @@ Manter todos os slides na mesma proporção. Usar como ponto de partida:
 
 Variar a quantidade conforme a narrativa. Não alongar artificialmente.
 
-Gerar imagens-base ou série visual na Kling quando aprovado. Aplicar texto, paginação e consistência em SVG/ImageMagick ou Motion Canvas.
+Para imagens Bikon, usar exclusivamente a rota registrada em `/data/.openclaw/workspace-robotnik/skills/content-production-contract/SKILL.md`, carregando contrato e referência. Para outras marcas, gerar imagens-base na Kling somente quando expressamente aprovado. Aplicar texto, paginação e consistência em SVG/ImageMagick ou Motion Canvas como finalização técnica.
 
 ## Reel 9:16
 

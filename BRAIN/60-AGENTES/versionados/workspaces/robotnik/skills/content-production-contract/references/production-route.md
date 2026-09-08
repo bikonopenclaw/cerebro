@@ -1,6 +1,6 @@
 # Rota produtiva Bikon
 
-Estado: ROTA NATIVA REGISTRADA PARA VALIDAÇÃO COM UM PILOTO; aceite produtivo final depende do resultado real, revisão e decisão humana.
+Estado: GERAÇÃO NATIVA COMPROVADA; FLUXO PRODUTIVO BLOQUEADO NA PASSAGEM DO ARQUIVO. A sessão nova `01a0813c-b8ba-7a61-864d-70849ea46469` leu automaticamente a autoridade e gerou imagem com a referência. O arquivo retornado no Codex home não ficou legível ao shell normal. A tentativa de criação/limpeza para materialização recebeu `blocked by policy` em 08/09/2026 às 13:46:52 UTC. Não repetir geração, transferir via root ou contornar a rejeição. Retomar somente após resolução autorizada dessa dependência. Revisão Kowalski, entrega e aceite permanecem pendentes. Evidência: `/data/.openclaw/recovery/robotnik-creative-install-v1.0CQlWA/pilot-call-audit.json` (registro privado de engenharia; não precisa ser lido pelo Robotnik).
 
 Autenticação permitida: somente conta ChatGPT já autorizada do Robotnik, na identidade nativa do gateway existente. Nenhuma API key, CLI de imagem paga, outro provider, conector, root renderer ou ampliação de permissões é rota alternativa.
 
