@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-09-08, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-08.md` e atualizado o MOC cronologico.
+- Atualizado `BRAIN/60-AGENTES/SENTINEL.md` com a manutencao de mapping/runtime bloqueada antes de qualquer mutacao: o sandbox nao expunha config/state, workspace Sentinel, SQLite, supervisor ou systemd; o mesmo Goal/correlacao foi preservado e root nao foi demonstrado necessario.
+- Atualizados `BRAIN/60-AGENTES/ROBOTNIK.md` e `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md` com a revisao visual `FAIL_CLOSED` da esteira "sua empresa governada por IA", sem acesso aos mesmos bytes no runtime do Kowalski e sem upload, agendamento ou publicacao.
+- Atualizadas as notas permanentes `Contrato-de-runtime-reprodutivel.md` e `Validacao-visual-de-relatorios-externos.md`: `cwd` nao concede mounts e declaracao de caminho/hash nao substitui acesso verificavel ao alvo ou aos bytes.
+- Atualizados `HEALTH.md` e Knowledge Health; nao houve duplicidade, novo projeto ou arquivamento.
+- Commit Link Gate validado: `ok=True`, `382` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados contexto recente visivel, sessoes sanitizadas e arquivos locais do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao acessou sistemas externos e nao executou provider, coleta, ticket, upload, agendamento, publicacao, restart, root ou sudo.
+
 ## 2026-09-03, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-03.md` e atualizado o MOC cronologico.

@@ -5,7 +5,7 @@ nome: Sentinel
 papel: controller_operacoes_snoc
 status: ativo_capability_registry_controlado_com_mutacao_bloqueada_por_gate
 responsavel: Puppet Master
-ultima_revisao: 2026-08-26
+ultima_revisao: 2026-09-08
 tags: [sentinel, snoc, operacoes, monitoramento, seguranca, read-only, capability-registry]
 ```
 
@@ -195,6 +195,21 @@ Totais:
 - `TOTAL_BLOCKED_PROVIDER_SCOPE=0`.
 
 Estado canonico: Phase D e um inventario autenticado e validado, nao uma autorizacao de uso. Phase E, ticket real, provider action, WhatsApp send, Instagram publish, criacao/alteracao de webhook, politica, device, contato, documento ou qualquer mutacao permanecem bloqueados ate ordem nova, approval proprio, alvo seguro, idempotency, rollback e evidencia.
+
+## Recuperacao de runtime e mapping, 2026-09-07
+
+A manutencao autorizada do mapping/runtime do Sentinel permaneceu `BLOCKED_FAIL_CLOSED` no precheck, preservando o Goal `416a2f2a-db00-4f09-941d-db7c92f81edd` e a correlacao `sentinel-runtime-recovery-416a2f2a-db00-4f09-941d-db7c92f81edd`.
+
+Evidencia consolidada:
+
+- os executores receberam somente `/data/.openclaw/workspace`; config e state ativos, `/data/.openclaw/workspace-sentinel`, agentDir do Sentinel, SQLite, supervisor, gateway/CLI e bus do systemd nao estavam montados ou acessiveis;
+- definir `cwd=/data/.openclaw` nao mudou os mounts do sandbox;
+- a indisponibilidade local nao autentica defeito, ausencia ou estado do runtime vivo do Sentinel;
+- nao houve backup novo, alteracao de config/binding/unit, restart, root/sudo, nova RUN, PGL, chamada a provider, coleta, ticket ou entrega;
+- WhatsApp, ARX, NinjaOne e Bitdefender permaneceram `NOT_STARTED_PRECONDITION_BLOCKED`, sem handoff ao Kowalski;
+- root nao foi demonstrado como necessario.
+
+Retomada obrigatoria: usar o mesmo Goal e correlacao numa superficie policy-enforced com visibilidade contemporanea do state/config, workspace Sentinel, SQLite, CLI, supervisor, unit/drop-ins e systemd. O precheck deve recomecar do zero, autenticar o alvo vivo e somente depois permitir backups ou correcao. Nao criar Goal substituto nem reenviar a ordem de coleta por inferencia.
 
 ## Forense passivo Darth 409, 2026-08-23
 

@@ -3,10 +3,10 @@
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidacao semanal 2026-W31; bootstrap RSE M2 em 2026-08-28/29
+fonte: consolidacao semanal 2026-W31; bootstrap RSE M2 em 2026-08-28/29; precheck Sentinel em 2026-09-07
 confiabilidade: alta
-ultima_revisao: 2026-08-29
-tags: [runtime, python, reproducibilidade, checksums, supply-chain, drift, cgroup, executor, lifecycle]
+ultima_revisao: 2026-09-08
+tags: [runtime, python, reproducibilidade, checksums, supply-chain, drift, cgroup, executor, lifecycle, sandbox, mounts]
 ```
 
 ## Principio
@@ -32,12 +32,16 @@ Runtime operacional nao deve depender de caminho conveniente, instalacao local i
 - Em execucoes longas, provar PID, tmux/unit real, cgroup efetivo e limites lidos do processo; o nome ou scope planejado nao comprova onde o workload esta rodando.
 - Separar durabilidade do trabalho da vida da conversa/control-plane: clone, checkpoints, logs e identidade precisam sobreviver ao encerramento do turno.
 - Nao declarar isolamento de recursos quando o scope limitado esta inativo e o processo real pertence a outro cgroup.
+- Autenticar a superficie efetivamente visivel ao executor: mudar `cwd` nao cria mounts nem concede acesso a state dir, workspace de outro agente, SQLite, CLI, supervisor ou systemd.
+- Falha de acesso dentro de um sandbox prova apenas a limitacao daquela superficie; nao comprova ausencia, defeito ou estado terminal do alvo vivo.
 
 ## Exemplo conectado
 
 Em 2026-W31, o contrato futuro do Provimento 213 foi alinhado ao CPython `3.14.6` final em `/opt/openclaw/runtimes/cpython-3.14.6/bin/python3`, com Unicode `16.0.0`, hash de executavel e hash de arvore instalada. A referencia historica a `/opt/homebrew/bin/python3` permaneceu evidencia antiga, nao contrato operacional futuro.
 
 No bootstrap RSE M2 de 2026-08-28/29, uma continuacao direta caiu quando o scope pai do OpenClaw terminou. O tmux persistente preservou o trabalho, mas a auditoria mostrou que o executor real estava em `session-3.scope`, nao no scope limitado reportado. O aprendizado e verificar o cgroup efetivo do processo antes de afirmar durabilidade ou resource envelope.
+
+No precheck Sentinel de 2026-09-07, diferentes executores receberam apenas o workspace principal. Mesmo com `cwd=/data/.openclaw`, config/state ativos, workspace Sentinel, SQLite, supervisor e systemd continuaram invisiveis. A manutencao parou antes de backup ou mutacao e preservou o mesmo Goal, pois readmitir em uma superficie correta e diferente de inferir o estado do runtime a partir do sandbox errado.
 
 ## Relacoes
 

@@ -5,7 +5,7 @@ categoria: agente_operacional
 papel: marketing, conteúdo e campanhas
 fonte: configuração OpenClaw e AGENTS.md do workspace Robotnik em 2026-06-25
 confiabilidade: alta
-ultima_revisao: 2026-07-20
+ultima_revisao: 2026-09-08
 tags: [agente, marketing, robotnik, instagram, conteudo]
 ```
 
@@ -101,6 +101,7 @@ Regra operacional desde 2026-07-09:
 - É proibido inventar símbolo, redesenhar logo, trocar logomarca por ícone genérico ou assinar com “Bikon Tecnologia” simulando marca.
 - Para post social/carrossel da Bikon, tema claro fica bloqueado por padrão. Usar direção escura, executiva e operacional, salvo aprovação explícita do Puppet Master/Hebert para uma peça específica.
 - Se a peça parecer amadora, genérica, infantil, feita no Paint ou sem criatividade profissional, deve ser reprovada antes de chegar ao Hebert.
+- Em 2026-09-07, a revisao da esteira "sua empresa governada por IA" ficou `FAIL_CLOSED` porque os mesmos bytes nao estavam acessiveis no runtime do Kowalski. Declaracao de caminho ou hash nao substitui abertura dos arquivos; a esteira permanece rascunho e separada de qualquer peca unica ja autorizada, sem upload, agendamento ou publicacao ate transporte aprovado e legivel.
 
 ## Relações
 

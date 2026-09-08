@@ -3,10 +3,10 @@
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidação semanal 2026-W26 e revisão visual Bikon em 2026-07-09
+fonte: consolidação semanal 2026-W26; revisão visual Bikon em 2026-07-09; bloqueio de transporte em 2026-09-07
 confiabilidade: alta
-ultima_revisao: 2026-07-10
-tags: [relatorios, pdf, bikon, kowalski, robotnik, qualidade, identidade-visual]
+ultima_revisao: 2026-09-08
+tags: [relatorios, pdf, bikon, kowalski, robotnik, qualidade, identidade-visual, integridade, transporte]
 ```
 
 ## Princípio
@@ -26,6 +26,8 @@ O mesmo princípio vale para materiais públicos ou semi-públicos da Bikon: pos
 - A revisão visual deve ser curta e decisória: veredito, três ajustes prioritários e principal risco visual.
 - Evitar estética hacker/cyberpunk, SaaS genérico, excesso de texto, promessa exagerada, medo barato e elementos que pareçam fora do padrão Bikon.
 - Recorte visual preferido para Bikon: confiança operacional, clareza direta, hierarquia forte, paleta navy/ciano controlada e tipografia limpa.
+- Revisao formal exige acesso aos mesmos bytes da versao apresentada. Caminho Markdown, hash declarado, screenshot parcial ou relato do produtor nao substitui abertura dos arquivos pelo revisor.
+- Se a rota entre workspaces nao expuser o asset, fechar como `FAIL_CLOSED` e preservar o rascunho; nao aprovar por declaracao, trocar de rota por improviso, alterar o asset, fazer upload, agendar ou publicar.
 
 ## Relações
 

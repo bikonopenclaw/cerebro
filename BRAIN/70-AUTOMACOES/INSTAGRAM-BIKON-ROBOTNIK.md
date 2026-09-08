@@ -2,9 +2,9 @@
 
 ```yaml
 nome: Instagram Bikon Robotnik
-status: producao_assistida_controlada
+status: producao_assistida_controlada_com_revisao_visual_bloqueada
 responsavel: Robotnik sob coordenação do Puppet Master
-ultima_revisao: 2026-07-22
+ultima_revisao: 2026-09-08
 fonte: conversa Hebert/Puppet Master e workspace Robotnik
 tags: [instagram, meta, robotnik, marketing, bikon]
 ```
@@ -159,3 +159,10 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 - A publicação de `v4-03-quarta-sem-log.png` foi interrompida antes da chamada externa porque o hash do arquivo local divergiu do conteúdo entregue pela URL temporária.
 - `instagram_graph.py` não foi executado e nenhuma publicação ocorreu.
 - URL temporária não substitui evidência de integridade. Antes de publicar, o conteúdo recuperado precisa reproduzir o hash aprovado do asset congelado; divergência mantém o gate fechado e exige nova decisão sobre a origem do arquivo.
+
+## Bloqueio de transporte para Brand QA em 2026-09-07
+
+- A esteira "sua empresa governada por IA" nao chegou ao runtime do Kowalski por uma rota de bytes aprovada e legivel; os caminhos e o pacote declarados pelo Robotnik nao estavam montados no ambiente do revisor.
+- Kowalski nao abriu PNG, prancha ou pacote e, portanto, nao validou hash, dimensoes, paleta, logo, legibilidade mobile, clipping ou artefatos.
+- Estado canonico: `FAIL_CLOSED`, esteira em rascunho e aprovacao humana pendente. Esse pacote nao deve ser confundido com a peca unica ja autorizada.
+- Ate os mesmos bytes estarem acessiveis por mecanismo aprovado, ficam proibidos nova tentativa pelo mesmo caminho, revisao por declaracao de hash, troca improvisada de rota, alteracao do asset, upload, agendamento e publicacao.
