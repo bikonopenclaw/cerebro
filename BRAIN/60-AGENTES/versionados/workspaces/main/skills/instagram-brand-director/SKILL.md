@@ -7,6 +7,10 @@ description: "Produção governada de conteúdo Instagram com provedores, evento
 
 Plataforma local-first para conduzir conteúdo do briefing ao aprendizado, com IA assistiva, trilha auditável e ação externa bloqueada por padrão.
 
+## Vinculação criativa Bikon
+
+Para marketing Bikon, consumir exclusivamente `/data/.openclaw/workspace-robotnik/skills/content-production-contract/SKILL.md` e seu contrato integral; referências técnicas desta plataforma não selecionam outra estética, imagem-base ou rota de geração. Outras marcas e ferramentas técnicas permanecem no escopo original.
+
 ## Autoridade
 
 - Puppet Master coordena estado, gates, decisões e handoffs.

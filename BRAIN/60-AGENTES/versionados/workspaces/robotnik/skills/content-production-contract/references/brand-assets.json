@@ -1,0 +1,35 @@
+{
+  "manual_source": "/data/.openclaw/workspace-kowalski/identidade-visual/referencias/Bikon-Manual_de_Identidade_Visual.pdf",
+  "manual_sha256": "f80f05d3e20b2b4355b5a0d15c2d3e9827c69d08b637ba2c63ed3d1487191ed3",
+  "official_palette": {
+    "black": "#000000",
+    "dark": "#1E1E1E",
+    "cyan": "#00B4B9",
+    "light_cyan": "#54BCC1",
+    "pale_cyan": "#7FC8CA"
+  },
+  "palette_evidence": "Manual V1.0 page 9. #1F2A33 and #D8E1E5 from prior proposal are not listed as official colors in this manual. White typography and dark photographic tonal variation follow the approved creative contract.",
+  "typography": "Space Grotesk, manual page 13",
+  "clear_space": "Height of letter B, manual page 19",
+  "logo": {
+    "source": "/data/.openclaw/workspace-kowalski/identidade-visual/logos/Bikon_Horizontal_fundo_preto.png",
+    "installed": "/data/.openclaw/workspace-robotnik/skills/content-production-contract/assets/Bikon_Horizontal_fundo_preto.png",
+    "sha256": "7b547dec1c1ec3091eaaa3990ad5e5773bef9e71f17b448aa2598483b72e3a6d",
+    "dimensions": [
+      3628,
+      1594
+    ],
+    "alpha": true,
+    "official_variant": "horizontal negative, native transparency verified with identify",
+    "minimum_horizontal_width_px": 130
+  },
+  "reference": {
+    "path": "/data/.openclaw/workspace-robotnik/skills/content-production-contract/assets/referencia-canonica.jpeg",
+    "sha256": "6ffff92be3f7efe5ab7198a90cbd19a00dbf30953a4017b0317404007b53227e",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "role": "canonical reference INPUT, never pilot output or historical published asset"
+  }
+}

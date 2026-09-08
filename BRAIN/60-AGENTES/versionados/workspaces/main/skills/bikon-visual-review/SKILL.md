@@ -9,9 +9,7 @@ description: "Gate visual Bikon para revisar entregas"
 
 Revisar pecas visuais da Bikon antes de chegarem ao Hebert ou irem para canal externo.
 
-Esta skill nao define a identidade visual canonica. Para padrao visual, ler e seguir:
-
-`/data/.openclaw/workspace/skills/bikon-social-visual-hard-blocks/SKILL.md`
+Esta skill nao define direção criativa. Para marketing Bikon, ler integralmente o contrato e abrir a referência vinculados em `/data/.openclaw/workspace-robotnik/skills/content-production-contract/SKILL.md`. Para relatórios, documentos administrativos e cadeias ARX, preservar a autoridade documental própria do Kowalski em `/data/.openclaw/workspace-kowalski/skills/padrao-relatorios-bikon/SKILL.md` e seus modelos aprovados. Os critérios documentais abaixo não substituem a direção fotográfica do marketing.
 
 A funcao desta skill e dar veredito, apontar risco visual e travar entrega que pareca generica, amadora ou desalinhada com a Bikon.
 
@@ -40,7 +38,7 @@ Nao use para:
 ## Fluxo Obrigatorio
 
 1. Identificar canal, publico, objetivo e status da peca.
-2. Ler `bikon-social-visual-hard-blocks/SKILL.md` antes de julgar identidade visual.
+2. Carregar a autoridade correspondente ao domínio: contrato criativo para marketing; contrato documental do Kowalski para relatórios.
 3. Se for documento, relatorio, PDF ou apresentacao, exigir consistencia de Kowalski antes do envio ao Hebert.
 4. Revisar reputacao, legibilidade, logo, tema, imagem, hierarquia, CTA e risco comercial.
 5. Entregar veredito curto para Puppet Master.
@@ -49,9 +47,9 @@ Nao use para:
 ## Posicao no Fluxo
 
 1. Robotnik cria pauta, copy, roteiro, campanha ou arte.
-2. Kowalski revisa consistencia quando houver documento, relatorio, PDF, apresentacao ou proposta.
+2. Kowalski revisa formalmente toda arte Bikon, inclusive posts; relatórios conservam seu fluxo documental.
 3. Bikon Visual Review faz o gate visual.
-4. Puppet Master decide se esta pronto para Hebert.
+4. Para marketing, Robotnik entrega diretamente a Hebert após revisão formal; Puppet mantém coordenação quando necessária. O fluxo documental próprio permanece.
 5. Hebert aprova, pede ajuste ou reprova quando houver publicacao, envio externo ou decisao sensivel.
 
 ## Criterios de Revisao
@@ -59,7 +57,7 @@ Nao use para:
 Responder objetivamente:
 
 - A peca parece Bikon ou parece template generico?
-- Esta aderente ao modelo premium aprovado em `bikon-social-visual-hard-blocks`?
+- Está aderente à referência canônica de marketing ou ao modelo documental aprovado, conforme o domínio?
 - A logo oficial esta correta e veio de asset oficial?
 - O tema escuro foi respeitado quando for carrossel ou post tecnico?
 - A imagem ou fundo enriquece o assunto?
@@ -69,7 +67,7 @@ Responder objetivamente:
 - Existe risco de parecer amador, infantil, Canva, Paint, IA barata ou banco de imagem ruim?
 - O CTA e claro, sobrio e compativel com a Bikon?
 
-## Bloqueios
+## Bloqueios documentais; para marketing aplicar todos os critérios do contrato criativo
 
 Reprovar ou pedir refacao se houver:
 
@@ -103,7 +101,7 @@ Se estiver aprovado, ainda informar se precisa aprovacao do Hebert antes de publ
 ## Travas
 
 - Nao virar segunda fonte de identidade visual.
-- Nao contradizer `bikon-social-visual-hard-blocks`.
+- Nao contradizer a autoridade canônica aplicável ao domínio.
 - Nao publicar nada.
 - Nao enviar para cliente.
 - Nao suavizar problema visual grave para acelerar entrega.
@@ -111,4 +109,4 @@ Se estiver aprovado, ainda informar se precisa aprovacao do Hebert antes de publ
 
 ## Regra Final
 
-Esta skill existe para reduzir erro de gosto e proteger reputacao. A identidade visual canonica continua em `bikon-social-visual-hard-blocks`. Se houver conflito, a canonica vence.
+Esta skill existe para reduzir erro de gosto e proteger reputacao. Marketing usa somente o contrato criativo do Robotnik. Documentos mantêm sua autoridade no Kowalski. Para marketing, o revisor precisa abrir piloto e referência reais, inspecionar resolução integral e prévia reduzida, registrar hashes, anatomia, cena, overlays, logo e correspondência da legenda. Acesso negado bloqueia revisão; jamais inventar aprovação ou inspeção em celular físico.

@@ -4,7 +4,11 @@
 
 Robotnik desenvolve as rotas. Kowalski fornece restrições e verifica aderência. Puppet Master apresenta a decisão ao proprietário.
 
-## Rotas
+## Autoridade Bikon
+
+Para marketing Bikon, carregar `/data/.openclaw/workspace-robotnik/skills/content-production-contract/SKILL.md`. A direção já aprovada e a única rota registrada substituem a exploração de alternativas. As regras de exploração abaixo se aplicam somente a outras marcas ou a uma revisão de contrato explicitamente autorizada por Hebert. Ferramentas locais abaixo finalizam a fotografia; não são alternativa estética.
+
+## Rotas para outras marcas
 
 Propor no máximo três rotas. Incluir em cada uma:
 

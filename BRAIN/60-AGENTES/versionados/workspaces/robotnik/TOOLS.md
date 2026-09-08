@@ -1,54 +1,48 @@
-# TOOLS.md - Local Notes
+# TOOLS - Robotnik
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+Notas locais de capacidade, convencao e proveniencia. Este arquivo nao concede
+ownership e nunca armazena segredo. Autoridade canonica:
+`/data/.openclaw/workspace/AGENT_ARCHITECTURE_AUTHORITY.md`.
 
-## What Goes Here
-
-Things like:
-
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
-
-## Examples
-
-```markdown
-### Cameras
-
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
-
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
-
-## Why Separate?
-
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
-
----
-
-Add whatever helps you do your job. This is your cheat sheet.
-
-## Mapa canonico de sessoes
+## Sessoes canonicas
 
 - Puppet Master: `agent:main:main`
+- Sentinel: `agent:sentinel:main`
 - Kowalski: `agent:kowalski:main`
 - Darth Vader: `agent:darth-vader:main`
 - Robotnik: `agent:robotnik:main`
-- Sentinel: `agent:sentinel:main`
 
-Usar `sessions_send(sessionKey="SESSAO_CANONICA", message=brief)`. O brief deve conter contexto, tarefa, restricoes, criterio de pronto e aprovacao do Hebert quando existente. Fila ou sessao ocupada nao autoriza reenvio. Em falha real, parar e avisar `agent:main:main`.
+Usar `sessions_send` com contexto, tarefa, restricoes, criterio de pronto e a
+aprovacao exata quando existente. Kowalski revisa padrao visual/documental;
+Robotnik conserva a direcao e verdade de marketing. Fila nao autoriza duplicar.
+Falha real volta ao Puppet Master.
 
-## Related
+Segredo, token e credencial nao entram neste arquivo. Para marketing Bikon, carregar `/data/.openclaw/workspace-robotnik/skills/content-production-contract/SKILL.md`. Geração e finalização seguem exclusivamente a rota registrada ali; indisponibilidade não autoriza substituição. API paga ou publicação exigem autorização aplicável.
 
-- [Agent workspace](/concepts/agent-workspace)
+## Instagram operacional, recuperação 2026-09-07
+
+Entrypoint: `python3 instagram-bikon/scripts/instagram_graph.py` no workspace Robotnik.
+Runbook obrigatório: `instagram-bikon/docs/README.md`.
+Para a peça já autorizada: `run-job bikon-ia-20260907`; para estado durável: `job-status bikon-ia-20260907`.
+Não usar chamadas avulsas de publicação, trocar legenda/asset, outro publicador ou novo conector.
+Falha Meta 190/463 exige renovação da sessão Facebook Login no segredo canônico, sem colar token em chat. Egress nativo usa o proxy gerenciado; DNS direto bloqueado não significa falha HTTPS do proxy.
+
+## Anexos nativos no Telegram, recuperação 2026-09-08
+
+Para entregar arquivo existente e autorizado na conversa de origem, conferir
+arquivo e SHA-256 no workspace e emitir na resposta final uma linha simples
+`MEDIA:<caminho-absoluto-do-arquivo>` por anexo, fora de Markdown e cerca de código.
+O gateway transporta os bytes usando a conta/chat da conversa autenticada.
+Um link Markdown para caminho local não entrega anexo. `sessions_send` com texto
+também não transporta o arquivo citado. Não usar Bot API por shell, copiar token,
+abrir rede/roots, nem criar hospedagem para contornar falha de anexo.
+
+PNGs locais enviados pela saída nativa do comando de agente com conta `robotnik`
+usam documento para conservar bytes e nome. A validação de acesso continua ativa.
+Não liberar a ferramenta `message`: ela permanece negada pela política instalada.
+Em falha, registrar run/session e reconciliar recibos da fila e message IDs antes
+de repetir; `accepted` do agente não é confirmação Telegram. Nunca reenviar anexo
+com message ID confirmado só para testar novamente.
+
+A esteira `esteira-instagram-ia-governada-20260907` foi REPROVADA por Hebert. Preservar seus arquivos e recibos apenas como histórico; não selecionar como referência positiva, nova direção ou final.
+Entrega Telegram não significa visualização, aprovação, publicação ou agendamento.
