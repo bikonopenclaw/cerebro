@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-09-09, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-09.md` e atualizado o MOC cronologico.
+- Atualizados BIKON, Robotnik, Kowalski, Sentinel e as automacoes de Instagram/Relatorios Operacionais/ARX com o contrato criativo v1, o piloto aceito sem autorizacao de publicacao e a cadeia ARX historica qualificada sem catch-up ou envio.
+- Atualizadas as notas permanentes `Ausencia-de-evidencia-nao-e-status-operacional.md` e `Contrato-de-runtime-reprodutivel.md`, alem de `MEMORY.md`, com prova de populacao temporal, estados separados de entrega e timeout externo ao bootstrap/grupo de processos.
+- Corrigida no snapshot sanitizado do contrato Robotnik uma referencia Markdown a asset binario deliberadamente excluido do Brain/Git; o caminho operacional foi preservado como texto e o Link Gate voltou a zero links quebrados.
+- Atualizados `HEALTH.md` e Knowledge Health; nao houve duplicidade, novo projeto ou arquivamento.
+- Commit Link Gate validado: `ok=True`, `388` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados contexto recente disponivel e arquivos locais do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao acessou sistemas externos e nao executou coleta, provider, retry, catch-up, SMTP, Telegram, upload, agendamento ou publicacao.
+
 ## 2026-09-08, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-08.md` e atualizado o MOC cronologico.

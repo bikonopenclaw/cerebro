@@ -3,9 +3,9 @@
 ```yaml
 categoria: agente_operacional
 papel: marketing, conteúdo e campanhas
-fonte: configuração OpenClaw e AGENTS.md do workspace Robotnik em 2026-06-25
+fonte: configuração OpenClaw, AGENTS.md do workspace Robotnik e contrato criativo Bikon implantado em 2026-09-08
 confiabilidade: alta
-ultima_revisao: 2026-09-08
+ultima_revisao: 2026-09-09
 tags: [agente, marketing, robotnik, instagram, conteudo]
 ```
 
@@ -32,7 +32,7 @@ Responsabilidades principais:
 - Comunicação agent-to-agent liberada na configuração OpenClaw para `main`, `kowalski`, `darth-vader` e `robotnik`.
 - Em peças finais públicas ou semi-públicas da Bikon com arte/layout, Robotnik mantém pauta, copy e campanha, mas deve passar pelo Kowalski para revisão visual antes da entrega final.
 - Na produção Instagram, Robotnik prepara; Puppet Master coordena os portões; Hebert aprova gastos e ações externas.
-- Em 2026-07-20, Robotnik passou a operar a Produção Assistida pela Instagram Brand Director v2.1.0, mantendo providers, composição e publicação sob gates independentes.
+- Desde 2026-09-08, `content-production-contract` v1 e a unica autoridade criativa ativa para marketing Bikon, inclusive apos nova sessao; direcoes anteriores permanecem apenas como historico.
 
 ## Workspace
 
@@ -52,7 +52,7 @@ Robotnik deve pedir aprovação do Puppet Master antes de:
 - Qualquer publicação real em canal externo.
 - Qualquer geração paga, render externo ou ação no Buffer.
 
-Para a rota Instagram aprovada, Robotnik usa a skill `instagram-brand-director`. Kling gera somente mídia bruta; Creatomate compõe a peça; Buffer é o único publicador. Trocar ferramenta ou usar fallback exige nova decisão do Hebert.
+Para marketing Bikon, Robotnik deve carregar `content-production-contract` v1, a referencia canonica e os assets oficiais. A rota visual principal registrada e `image_gen.imagegen`, com finalizacao local deterministica limitada a tipografia, logo, recorte, contraste e exportacao. Kling, Creatomate, Buffer, `openclaw.image_generate`, CLI paga ou outro provider nao sao fallback ativo. Publicacao permanece uma autorizacao independente e deve usar somente o publicador canonico vigente no contrato/runtime.
 
 ## Instagram Bikon
 
@@ -102,6 +102,14 @@ Regra operacional desde 2026-07-09:
 - Para post social/carrossel da Bikon, tema claro fica bloqueado por padrão. Usar direção escura, executiva e operacional, salvo aprovação explícita do Puppet Master/Hebert para uma peça específica.
 - Se a peça parecer amadora, genérica, infantil, feita no Paint ou sem criatividade profissional, deve ser reprovada antes de chegar ao Hebert.
 - Em 2026-09-07, a revisao da esteira "sua empresa governada por IA" ficou `FAIL_CLOSED` porque os mesmos bytes nao estavam acessiveis no runtime do Kowalski. Declaracao de caminho ou hash nao substitui abertura dos arquivos; a esteira permanece rascunho e separada de qualquer peca unica ja autorizada, sem upload, agendamento ou publicacao ate transporte aprovado e legivel.
+
+## Contrato criativo e piloto aceito, 2026-09-08
+
+- Foi instalada uma direcao unica: fotografia humana realista em situacao de gestao, atmosfera escura com profundidade, titulo branco dominante, ciano como destaque e elementos tecnicos subordinados a narrativa.
+- A rota nativa `image_gen.imagegen` foi comprovada. Um importer de escopo exato materializou somente os sete PNGs autorizados do thread original, validando nomes, hashes, tamanho, assinatura, dimensoes, decode, estabilidade e ausencia de symlink; nao ampliou os roots do agente nem criou ferramenta generica de copia.
+- O piloto final 1080 x 1350 sRGB recebeu logo oficial, revisao formal Kowalski `APROVADO`, entrega normal pelo gateway Robotnik no Telegram `messageId 794` e confirmacao de Hebert: `HUMAN_ACCEPTED / COMPLETE`.
+- A ressalva de acentos em dois rotulos pequenos foi conhecida no aceite. Os bytes aceitos nao devem ser corrigidos silenciosamente nem reenviados; grafia correta segue obrigatoria nas proximas pecas.
+- O aceite encerra apenas este piloto. Nao autoriza novo post, serie, staging, upload, Instagram, agendamento ou publicacao. As cinco artes antigas e os pacotes quebrados permanecem historico reprovado, sem autoridade criativa.
 
 ## Relações
 

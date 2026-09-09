@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25 e relatorios Cartorio Gerusa em 2026-08-26
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26 e qualificacao ARX de 2026-09-08/09
 confiabilidade: alta
-ultima_revisao: 2026-08-27
+ultima_revisao: 2026-09-09
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
 ```
 
@@ -120,11 +120,37 @@ Proxima retomada segura: concluir OAuth em `https://rmm.bikon.com.br`, rodar dry
 - Historico recente: `28` registros, sendo `27` concluidos e `1` concluido com erros; a ocorrencia foi tratada como recuperada, sem inventar data nao retornada pela fonte.
 - Os PDFs finais permanecem fora do Brain/Git; a versao consolidada correta substitui o rascunho mensal como entrega, sem apagar o historico parcial.
 
+## Qualificacao da cadeia ARX em 2026-09-08/09
+
+A investigacao separou coleta, render, transporte e leitura humana e preservou o owner canonico: Sentinel coleta/evidencia, Kowalski produz e entrega relatorios, Puppet Master governa autoridade. O job original `879289fc-12e3-44c3-984b-9c7e4fb39221` continua `FAILED` e inativo; nao foi reaberto nem reclassificado como sucesso.
+
+### Diario e Telegram
+
+- A coleta diaria anterior ocorreu em 08/09 03:30 UTC e a entrega no grupo ocorreu em 08/09 10:46:01 UTC, ACK Telegram `messageId 1687` pela conta Kowalski.
+- O corpo entregue continha wrappers de stdout/stderr e diagnosticos internos. Foram instalados binding por hashes da evidencia/coleta, validacao de identidade/data/contagens e saida limpa; entrega ja confirmada e suprimida por `NO_REPLY` para impedir duplicata.
+- Resultados desconhecidos agora persistem recibo privado `UNKNOWN / UNRESOLVED / HOLD_RECONCILE_BEFORE_RETRY` e retornam hold silencioso, impedindo que callback de falha crie retry ou notificacao enganosa.
+- O fluxo corrigido ainda precisa de observacao no ciclo natural: coleta diaria em 09/09 03:30 UTC e entrega em 09/09 10:46 UTC. Teste instalado/no-send nao equivale a entrega natural aceita.
+
+### Mensal e e-mail
+
+- O source contract anterior expunha apenas estatistica corrente e nao provava um mes-calendario. Foi instalada aquisicao historica nativa, limitada aos quatro dispositivos autorizados, com `GetAccountInfoById`, `QuerySessions` e `QueryErrors`, paginacao exaurida, IDs/periodo/identidade validados e evidencia imutavel.
+- Os quatro crons mensais preservaram IDs, horarios de 01/10, timezone, remetente, destinos e owner Kowalski; nao foi criado cron novo nem alterada a rotina diaria/semanal.
+- Agosto foi recuperado e renderizado no template aprovado, com Markdown/HTML/PDF idempotentes e `VALIDATED_NO_SEND`: Alzira 744 sessoes registradas/744 sucesso; Camburi 744 registradas, 734 sucesso, 1 com erros e 9 puladas; Capixaba 744 registradas, 742 sucesso, 1 falha e 1 pulada; Vila Velha 743 registradas, 707 sucesso, 1 falha, 1 com erros e 34 puladas.
+- Alzira, Camburi e Vila Velha estao `CONFIRMED_NOT_SUBMITTED` apenas nas execucoes historicas autenticadas. Capixaba permanece `UNKNOWN`; um PDF valido ou credencial SMTP de saida nao prova o efeito anterior e nao autoriza retry.
+- Nenhum catch-up, SMTP ou Telegram foi enviado na qualificacao. O ciclo mensal natural continua pendente por cliente em 01/10; Vila Velha tambem mantem gate de cobertura aberto porque a consulta nativa nao retornou sessoes em 07/09.
+
+### Regra de evidencia temporal
+
+- Primeiro/ultimo timestamp, nome de arquivo, ACK de transporte ou barra rolante de 28 dias nao provam cobertura mensal.
+- Fechamento exige populacao vinculada ao cliente e periodo, paginacao terminal, IDs unicos, dias/lacunas explicitados, classificacoes sem mistura e separacao entre metricas do mes e observacao corrente de retencao/storage.
+- Artefato valido, submissao SMTP, aceite do provider, entrega na caixa e leitura humana permanecem estados distintos.
+
 ## Guardrails
 
 - Não imprimir tokens, segredos ou credenciais em respostas, logs consolidados ou Brain.
 - Em caso de erro, relatar de forma curta e apontar o caminho do log operacional.
 - Não acionar cliente externo nem enviar e-mail apenas por execução bem-sucedida da rotina.
+- Resultado de entrega `UNKNOWN` deve bloquear retry ate reconciliacao confiavel ou nova autorizacao especifica; regenerar o anexo nao contorna a identidade logica cliente/competencia.
 
 ## Relações
 

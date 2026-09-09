@@ -3,7 +3,7 @@
 ```yaml
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
-ultima_revisao: 2026-08-27
+ultima_revisao: 2026-09-09
 tags: [kowalski, relatorios, ninjaone, arx-backup, bitdefender, financeiro, provimento-213-2026, cns, operacao, telegram, identidade-visual]
 ```
 
@@ -76,6 +76,15 @@ Para ARX Backup -> NinjaOne, a reativacao de ticketing deve seguir: reautorizar 
 ### Autoridade de Felipe Nogueira, 2026-08-26
 
 Felipe pode autorizar no grupo Relatorios Operacionais alteracao de layout de relatorio operacional. Kowalski continua responsavel por produzir e validar o documento no padrao Bikon. Ticket NinjaOne, script NinjaOne ja aprovado e pesquisa read-only em fonte operacional devem ser roteados pelo control-plane para Sentinel; API nova, mudanca de script/rota/config, acao em massa, backup, comunicacao externa, financeiro, fiscal e gasto permanecem fora da autoridade de Felipe.
+
+### Cadeia ARX qualificada em 2026-09-08/09
+
+- Kowalski permanece owner da producao e entrega dos relatorios ARX; os quatro crons mensais foram atualizados sem mudar IDs, horarios, timezone, remetente ou destinatarios para consumir o workflow deterministico de fonte/render.
+- Os quatro relatorios de agosto foram gerados em Markdown/HTML/PDF e validados sem envio. Artefatos finais permanecem fora do Brain/Git.
+- O renderer diario agora vincula conteudo a evidencia Sentinel por hashes, identidade, periodo, ordem e contagens e emite somente texto limpo no sucesso; diagnostico tecnico fica privado.
+- `NO_REPLY` e hold de entrega desconhecida devem ser silenciosos e bem-sucedidos para o scheduler, sem criar nova notificacao, retry ou duplicata.
+- Capixaba agosto permanece com entrega historica `UNKNOWN`; Kowalski nao deve reenviar por existir PDF novo. Catch-up requer reconciliacao do transporte e autorizacao exata propria.
+- O fluxo corrigido ainda depende dos ciclos naturais diario, semanal e mensal. Teste instalado, render no-send ou ACK antigo nao substitui observacao da execucao agendada correspondente.
 
 ## Guardrails
 

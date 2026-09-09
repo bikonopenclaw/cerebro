@@ -25,6 +25,8 @@
 
 ## Histórico relevante
 
+- 2026-09-08/09: marketing Bikon passou a ter `content-production-contract` v1 como unica direcao criativa ativa, com geracao principal por `image_gen.imagegen`, finalizacao deterministica e revisao dos mesmos bytes pelo Kowalski. O piloto final foi entregue no Telegram `messageId 794` e aceito por Hebert como `HUMAN_ACCEPTED / COMPLETE`; o aceite nao autoriza Instagram, staging, agendamento ou publicacao.
+- 2026-09-08/09: a cadeia mensal ARX foi reparada para aquisicao historica nativa e gerou artefatos de agosto `VALIDATED_NO_SEND` para Alzira, Camburi, Capixaba e Vila Velha. Tres execucoes historicas sao `CONFIRMED_NOT_SUBMITTED`, Capixaba permanece `UNKNOWN`, e os ciclos naturais corrigidos ainda aguardam observacao.
 - 2026-08-28: snapshot read-only de NFS-e de agosto registrou 29 notas, 23 validas e 6 canceladas, com bruto R$ 88.155,06, cancelado R$ 35.211,55 e liquido R$ 52.943,51. O cancelamento da NFS-e `214`/boleto `105609` parou sem mutacao por falta de motivo fiscal e de rota CNAB400 validada para ocorrencia `02`. Em homologacao Cresol, boleto/remessa NN `358` foram preparados localmente sem importacao, envio ou registro externo.
 - 2026-08-27: lote 4.1 concluido apos aprovacao explicita de competencia `08/2026`, emissao em `27/08/2026` e gravacao da remessa 094 em `27/08/2026`: NFS-e `246` e `247`, R$ 899,00 cada; dois boletos locais; remessa CNAB400 local com dois titulos/R$ 1.798,00; e-mails apenas em rascunho, remessa nao transmitida e sem confirmacao de registro bancario.
 - 2026-08-26/27: CNS `02.133-7`/`021337` do Cartorio do I Oficio de Alfredo Chaves ratificado pelo Owner; JSON, CSV e SQLite do cadastro permaneceram consistentes, com CNS unico e `integrity_check=ok`. Cards cadastrais validados de Alfredo Chaves e Donna Industria de Madeiras foram entregues sem refacao dos dados.
@@ -75,7 +77,7 @@
 - Qualquer automação sobre contas de AD local de clientes deve começar em modo auditoria; criação, desativação, remoção de grupos ou alteração de privilégio exige aprovação explícita e escopo validado.
 - Relatórios técnicos externos devem sair com acabamento visual premium Bikon, sem caminhos internos, metadados automáticos, paginação feia ou aparência de HTML impresso.
 - Materiais públicos ou semi-públicos com logo, paleta, layout ou identidade Bikon devem passar por revisão visual do Kowalski antes da peça final; isso não substitui aprovação explícita para publicação ou envio externo.
-- No Instagram Bikon, briefing, estratégia, geração, composição/render e publicação são aprovações independentes. Buffer é o único publicador autorizado; Meta Graph API e Instagram direto não podem operar em paralelo.
+- No marketing Bikon, estrategia, geracao, finalizacao, revisao, entrega e publicacao sao aprovacoes independentes. `content-production-contract` v1 e a autoridade criativa ativa; `image_gen.imagegen` e a rota visual principal. Nenhum publicador esta autorizado por inferencia a partir do aceite de uma arte.
 - Brand QA pré-geração aprova somente o snapshot e o hash apresentados. Não autoriza Portão C, Kling, render, upload ou publicação; qualquer alteração de byte exige nova submissão.
 - FIP e dashboards financeiros privados nao autorizam emissao fiscal, boleto, remessa, baixa bancaria ou comunicacao externa; eles sao base executiva/gerencial ate haver Approval proprio para efeitos operacionais.
 - FIP em `8787` deve permanecer privado/autenticado; nao expor via Internet publica, segredo em URL ou relatorio.

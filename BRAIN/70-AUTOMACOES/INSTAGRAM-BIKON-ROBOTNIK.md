@@ -2,9 +2,9 @@
 
 ```yaml
 nome: Instagram Bikon Robotnik
-status: producao_assistida_controlada_com_revisao_visual_bloqueada
+status: contrato_criativo_v1_ativo_piloto_aceito_publicacao_bloqueada
 responsavel: Robotnik sob coordenação do Puppet Master
-ultima_revisao: 2026-09-08
+ultima_revisao: 2026-09-09
 fonte: conversa Hebert/Puppet Master e workspace Robotnik
 tags: [instagram, meta, robotnik, marketing, bikon]
 ```
@@ -15,16 +15,17 @@ Planejar, gerar, compor, revisar e publicar conteúdo do Instagram Bikon com por
 
 ## Decisão técnica atual
 
-Usar a seguinte divisão de responsabilidade:
+Usar a seguinte divisao de responsabilidade:
 
 - Robotnik: pesquisa, pauta, copy, roteiro e direção criativa.
 - Puppet Master: coordenação, portões e consolidação.
-- Kling CLI: geração de mídia bruta.
-- Creatomate: composição determinística de logo, texto, CTA, tipografia e avisos.
-- Buffer: único sistema autorizado a criar rascunho, agendar ou publicar.
+- `content-production-contract` v1: unica autoridade criativa Bikon.
+- `image_gen.imagegen`: rota principal registrada para geracao/edicao visual na autenticacao ChatGPT ja existente.
+- Finalizacao local deterministica: somente tipografia, logo oficial, recorte, contraste e exportacao; nao substitui a fotografia.
+- Kowalski: revisao dos bytes reais e da referencia canonica antes da entrega.
 - Hebert: aprovação de gasto e ação externa.
 
-A integração Meta Graph API validada em 2026-07-09 permanece como histórico técnico e contingência não autorizada. Ela não é mais a rota produtiva de publicação.
+A arquitetura Kling/Creatomate/Buffer e a integracao Meta Graph API permanecem como historico tecnico. Nao sao direcoes ou fallbacks ativos. A skill vigente registra publicador canonico proprio, mas nenhuma publicacao, staging ou agendamento novo esta autorizado pelo aceite do piloto.
 
 Não usar:
 
@@ -32,7 +33,7 @@ Não usar:
 - automação de navegador para postar
 - scraping
 - extensões ou serviços não autorizados
-- Meta Graph API, Instagram direto ou BlackTwist como publicador paralelo ao Buffer
+- Meta Graph API, Instagram direto, Buffer, BlackTwist ou outro publicador sem autorizacao especifica e contrato vigente
 
 ## Status atual
 
@@ -76,6 +77,8 @@ Em 2026-07-20, a operação avançou para Produção Assistida:
 - Brand QA pré-geração e Brand Lock do snapshot fecharam em `PASS` para manifesto `474e9af2214cbe0faa25fa9aad2535bff0260bf94752a70a6b3f21352ebfc5de`, request `5d721862890d4a5c8f72e458f9a79ce59ff70a10be5d4a9a527eaf2374b8c6a3` e payload `2be351a05379c0410a3cbba53da1c536c090c853273cef4e5a82f43ea2a642c7`;
 - Portão C, Approval individual, execução Kling, composição, upload e publicação permanecem bloqueados.
 
+Esse bloco registra a arquitetura historica de julho. Em 2026-09-08, as instrucoes criativas concorrentes foram retiradas do uso ativo e substituidas pelo contrato v1 descrito abaixo.
+
 ## Estrutura criada
 
 - Workspace: `/data/.openclaw/workspace-robotnik/instagram-bikon`
@@ -104,16 +107,15 @@ Robotnik não pode:
 - receber senha ou token por chat
 - expor token em relatório
 - responder cliente externo sem aprovação
-- submeter geração Kling sem aprovação dos parâmetros exatos
-- renderizar no Creatomate sem aprovação do portão de composição
-- criar rascunho, agendar, publicar, editar ou excluir no Buffer sem a autorização específica da operação
+- trocar a rota `image_gen.imagegen` por Kling, Creatomate, CLI paga, `openclaw.image_generate` ou outro provider por conveniencia
+- criar rascunho, agendar, publicar, editar ou excluir em qualquer publicador sem a autorização específica da operação
 
 ## Portões de produção
 
 1. Briefing: objetivo, público, oferta, formato, KPI, prazo e restrições.
 2. Estratégia e rota: pilar, ângulo, hook, copy, fontes e direção visual.
-3. Geração: comando Kling, modelo, prompt, referências, quantidade, custo e hash exatos.
-4. Composição e render: mídia aprovada, template, textos, logo, CTA, avisos, áudio, legendas e hash do render.
+3. Geração: ferramenta nativa registrada, prompt, referências, quantidade e identidade/hash da saída.
+4. Finalização: mídia aprovada, textos, logo oficial, crop, contraste, formato e hash do export.
 5. Publicação: canal, legenda, data, operação exata e versão final.
 
 Uma aprovação vale somente para o portão, os parâmetros e o hash apresentados. Nova variante exige nova aprovação. Criar rascunho não autoriza agendar; agendar não autoriza publicar, editar ou excluir.
@@ -141,11 +143,10 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 
 ## Próximos passos
 
-1. Fechar o Portão C para o snapshot imutável `feed-base-a v1`.
-2. Receber Approval individual do Hebert antes de uma eventual geração Kling `text_to_image`.
-3. Concluir as camadas dinâmicas do master Creatomate e preencher o `template-map` antes da composição.
-4. Configurar o perfil Bikon no Buffer como único publicador.
-5. Manter geração, composição e publicação como portões separados, todos vinculados a versão e hash.
+1. Tratar o piloto aceito como concluido, sem correcao silenciosa, nova geracao ou reenvio.
+2. Para uma nova peca, carregar o contrato v1, a referencia canonica e os assets oficiais em sessao nova.
+3. Preservar geracao, finalizacao, revisao, entrega e publicacao como portoes separados, todos vinculados a versao e hash.
+4. Exigir autorizacao especifica antes de qualquer staging, upload, agendamento ou publicacao.
 
 ## Reconciliação snapshot vs implantação (20:00+)
 
@@ -166,3 +167,10 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 - Kowalski nao abriu PNG, prancha ou pacote e, portanto, nao validou hash, dimensoes, paleta, logo, legibilidade mobile, clipping ou artefatos.
 - Estado canonico: `FAIL_CLOSED`, esteira em rascunho e aprovacao humana pendente. Esse pacote nao deve ser confundido com a peca unica ja autorizada.
 - Ate os mesmos bytes estarem acessiveis por mecanismo aprovado, ficam proibidos nova tentativa pelo mesmo caminho, revisao por declaracao de hash, troca improvisada de rota, alteracao do asset, upload, agendamento e publicacao.
+
+## Contrato criativo v1 e piloto concluido em 2026-09-08
+
+- `content-production-contract` v1 tornou-se a unica autoridade criativa Bikon e consolidou referencia canonica, brand assets, direcao editorial, rota produtiva e criterios de QA.
+- A geracao nativa produziu sete PNGs completos. A fronteira de artefato foi resolvida somente para esse conjunto por handoff autorizado, imutavel e verificado; o importer nao aceita paths livres nem autoriza exportacao futura generica.
+- O piloto final `piloto-ia-sem-dono-rascunho-final.png`, SHA-256 `6c5fe3548dac700798f64cfcaf52c1d9cd353d7a4debfe727e42bd26774525a8`, foi revisado pelo Kowalski, entregue pelo gateway Robotnik como documento Telegram `messageId 794` e aceito por Hebert.
+- Estado terminal: `HUMAN_ACCEPTED / COMPLETE`. Aprovacao da peca nao autoriza Instagram, staging, upload, agendamento, publicacao, nova serie ou reutilizacao das cinco artes reprovadas.

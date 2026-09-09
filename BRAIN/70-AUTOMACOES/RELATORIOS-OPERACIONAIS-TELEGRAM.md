@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01 e teste controlado ponta a ponta em 2026-09-02
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02 e qualificacao ARX em 2026-09-08/09
 confiabilidade: alta
-ultima_revisao: 2026-09-03
+ultima_revisao: 2026-09-09
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
@@ -159,6 +159,13 @@ A retomada autorizada fechou `CONTROLLED_DAILY_REPORTING_PRODUCTION_TEST=ACCEPTE
 - pressao transitoria no app-server afetou apenas um post-check opcional; o resultado produtivo, a validacao obrigatoria e o cleanup permaneceram `PASS`.
 
 Regra reforcada: ausencia de saida no transcript nao autoriza repetir coleta, geracao ou entrega. Primeiro reconciliar o Goal pelo registro duravel, checkpoints, artefatos e fila de anuncio; neste caso, a reconstrucao provou terminal `ACCEPTED` e classificou o alerta posterior como falso stall de transcript.
+
+## Correcao do relatorio diario ARX, 2026-09-08/09
+
+- O Telegram confirmou o envio ARX de 08/09 pelo Kowalski no grupo canonico, `messageId 1687`, mas o texto entregue continha wrappers de stdout/stderr e diagnosticos internos.
+- Coleta e renderer foram corrigidos para preservar evidencia imutavel, vincular fonte/ordem/periodo/contagens por hash e anunciar apenas o texto limpo. Diagnostico e validacao permanecem em recibo privado.
+- A reconciliacao do ACK existente retorna `NO_REPLY` sem novo envio. Resultado desconhecido gera hold persistido e silencioso, impedindo retry ou notificacao que possa ser confundida com o relatorio.
+- A correcao passou em testes instalados sem transporte real. A aceitacao ponta a ponta do fluxo corrigido permanece pendente da coleta natural de 09/09 03:30 UTC e entrega natural de 09/09 10:46 UTC, com artefato e ACK correlacionados.
 
 ## Padrão visual para relatórios externos
 

@@ -5,7 +5,7 @@ nome: Sentinel
 papel: controller_operacoes_snoc
 status: ativo_capability_registry_controlado_com_mutacao_bloqueada_por_gate
 responsavel: Puppet Master
-ultima_revisao: 2026-09-08
+ultima_revisao: 2026-09-09
 tags: [sentinel, snoc, operacoes, monitoramento, seguranca, read-only, capability-registry]
 ```
 
@@ -17,6 +17,7 @@ Consolidar a saúde operacional dos clientes, separar sinal de incidente, classi
 
 - NinjaOne por cliente read-only com método `GET` e allowlist interna.
 - ARX Backup/Cove pelos métodos JSON-RPC `Login` e `EnumerateAccountStatistics`.
+- Excecao ARX mensal estreita e registrada para quatro dispositivos: `GetAccountInfoById`, `QuerySessions` e `QueryErrors`, somente leitura, com periodo, paginacao, identidade, hash e auditoria vinculados a ordem ativa.
 - Bitdefender GravityZone pelos métodos de consulta explicitamente permitidos.
 - Contexto operacional sanitizado, sem dados fiscais, endereço, telefone ou e-mail financeiro.
 - Logs locais autorizados com limite, redação e sem acesso a sessões, mensagens, segredos ou SQLite.
@@ -210,6 +211,16 @@ Evidencia consolidada:
 - root nao foi demonstrado como necessario.
 
 Retomada obrigatoria: usar o mesmo Goal e correlacao numa superficie policy-enforced com visibilidade contemporanea do state/config, workspace Sentinel, SQLite, CLI, supervisor, unit/drop-ins e systemd. O precheck deve recomecar do zero, autenticar o alvo vivo e somente depois permitir backups ou correcao. Nao criar Goal substituto nem reenviar a ordem de coleta por inferencia.
+
+## Fonte historica mensal ARX, 2026-09-09
+
+Sob autorizacao estreita, Sentinel passou a adquirir a populacao historica mensal dos quatro dispositivos ARX ja definidos, sem ampliar para outros clientes ou metodos mutativos.
+
+- Aquisicao usa endpoint nativo de historico autenticado, paginas sequenciais, resposta terminal, IDs unicos, limites de tempo e identidade de conta/dispositivo; `QueryErrors` reconcilia as sessoes com erro.
+- Evidencia imutavel e contrato de fonte ficam separados dos artefatos de Kowalski. O workflow mensal falha fechado antes do render se periodo, cliente, hashes, paginacao, lacunas ou classificacao nao fecharem.
+- Agosto foi recuperado para Alzira, Camburi, Capixaba e Vila Velha; consultas de setembro preservam somente intervalo decorrido e nao qualificam o mes ainda aberto.
+- A ausencia de sessoes de Vila Velha em 07/09 permanece lacuna operacional nao classificada: nao prova sucesso, falha nem destruicao de fonte.
+- A autorizacao de History nao inclui restore, Recovery Verification ativo, alteracao de backup, envio de relatorio, ampliacao de cliente ou mutacao do provider.
 
 ## Forense passivo Darth 409, 2026-08-23
 

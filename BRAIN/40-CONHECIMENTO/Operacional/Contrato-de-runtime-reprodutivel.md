@@ -3,10 +3,10 @@
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidacao semanal 2026-W31; bootstrap RSE M2 em 2026-08-28/29; precheck Sentinel em 2026-09-07
+fonte: consolidacao semanal 2026-W31; bootstrap RSE M2 em 2026-08-28/29; precheck Sentinel em 2026-09-07; reparo do relay nativo em 2026-09-08
 confiabilidade: alta
-ultima_revisao: 2026-09-08
-tags: [runtime, python, reproducibilidade, checksums, supply-chain, drift, cgroup, executor, lifecycle, sandbox, mounts]
+ultima_revisao: 2026-09-09
+tags: [runtime, python, reproducibilidade, checksums, supply-chain, drift, cgroup, executor, lifecycle, sandbox, mounts, timeout, process-group]
 ```
 
 ## Principio
@@ -34,6 +34,7 @@ Runtime operacional nao deve depender de caminho conveniente, instalacao local i
 - Nao declarar isolamento de recursos quando o scope limitado esta inativo e o processo real pertence a outro cgroup.
 - Autenticar a superficie efetivamente visivel ao executor: mudar `cwd` nao cria mounts nem concede acesso a state dir, workspace de outro agente, SQLite, CLI, supervisor ou systemd.
 - Falha de acesso dentro de um sandbox prova apenas a limitacao daquela superficie; nao comprova ausencia, defeito ou estado terminal do alvo vivo.
+- Timeout de subprocesso deve envolver o bootstrap externo e seu grupo de processos. Um limite iniciado somente depois do runtime carregar nao contem travamento anterior ao startup nem relay abandonado.
 
 ## Exemplo conectado
 
@@ -42,6 +43,8 @@ Em 2026-W31, o contrato futuro do Provimento 213 foi alinhado ao CPython `3.14.6
 No bootstrap RSE M2 de 2026-08-28/29, uma continuacao direta caiu quando o scope pai do OpenClaw terminou. O tmux persistente preservou o trabalho, mas a auditoria mostrou que o executor real estava em `session-3.scope`, nao no scope limitado reportado. O aprendizado e verificar o cgroup efetivo do processo antes de afirmar durabilidade ou resource envelope.
 
 No precheck Sentinel de 2026-09-07, diferentes executores receberam apenas o workspace principal. Mesmo com `cwd=/data/.openclaw`, config/state ativos, workspace Sentinel, SQLite, supervisor e systemd continuaram invisiveis. A manutencao parou antes de backup ou mutacao e preservou o mesmo Goal, pois readmitir em uma superficie correta e diferente de inferir o estado do runtime a partir do sandbox errado.
+
+No reparo Puppet/Robotnik de 2026-09-08, o relay nativo precisava limitar o CLI antes que Node pudesse iniciar. O comando passou a envolver bootstrap e grupo de processos com timeout/TERM/KILL limitado; canarios de sucesso, falha de ferramenta e entrega Telegram passaram, sem converter o job ARX original falho em sucesso.
 
 ## Relacoes
 
