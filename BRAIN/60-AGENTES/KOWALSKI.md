@@ -3,7 +3,7 @@
 ```yaml
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
-ultima_revisao: 2026-09-09
+ultima_revisao: 2026-09-10
 tags: [kowalski, relatorios, ninjaone, arx-backup, bitdefender, financeiro, provimento-213-2026, cns, operacao, telegram, identidade-visual]
 ```
 
@@ -124,6 +124,8 @@ Formato esperado da revisão visual:
 - Principal risco visual.
 
 Essa revisão não autoriza publicação, envio externo ou agendamento; aprovação explícita do Puppet Master/Hebert continua necessária.
+
+Em 2026-09-09/10, Kowalski revisou os mesmos bytes da peça "IA governada para PME" e aprovou o gate visual para envio como rascunho, verificando identidade Bikon, cena distinta, anatomia, hierarquia, logo e legibilidade na prévia digital. O parecer não autorizou publicação; essa autorização veio depois, separadamente, de Hebert.
 
 ## Padrão NinjaOne/EOL
 

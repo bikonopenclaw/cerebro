@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-09-10, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-10.md` e atualizado o MOC cronologico.
+- Atualizados BIKON, Robotnik, Kowalski e a automacao Instagram com a peça "IA governada para PME": aprovação explícita de Hebert, publicação única confirmada pelo Graph e fechamento local pendente por bloqueio do novo CDN, sem autorização de republicação.
+- Atualizados o Controlador de Execução v2 e `MEMORY.md` com a avaliação exploratória de OmniRoute/Nemotron e o contrato de um eventual laboratório autônomo isolado, sem instalação ou alteração de rota/modelo/provider.
+- Atualizada a nota permanente `Estado-terminal-requer-convergencia-do-lifecycle.md` com a separação entre efeito externo comprovado e readback/cleanup/recibo.
+- Atualizados `HEALTH.md` e o relatório de Knowledge Health; não houve duplicidade, novo projeto ou arquivamento.
+- Commit Link Gate validado: `ok=True`, `389` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados contexto recente disponível, sessões sanitizadas e arquivos locais do Brain; esta rotina não enviou mensagem ao Hebert, não criou agente, não acessou sistemas externos e não executou publicação, retry, readback, cleanup, mudança de allowlist, instalação ou alteração de provider/modelo.
+
 ## 2026-09-09, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-09.md` e atualizado o MOC cronologico.

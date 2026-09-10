@@ -25,6 +25,7 @@
 
 ## Histórico relevante
 
+- 2026-09-10: Hebert aprovou no Telegram `messageId 860` a publicação da peça "IA governada para PME". Robotnik executou um único `media_publish`; o Graph confirmou `bikontech`, `IMAGE/FEED`, legenda pública e permalink `https://www.instagram.com/p/DdFkfePleea/` (`media_id 18619098217050385`). O job permanece `PUBLISHED` com fechamento local pendente porque o proxy bloqueou o readback do novo CDN exato; a pendência não autoriza republicação.
 - 2026-09-08/09: marketing Bikon passou a ter `content-production-contract` v1 como unica direcao criativa ativa, com geracao principal por `image_gen.imagegen`, finalizacao deterministica e revisao dos mesmos bytes pelo Kowalski. O piloto final foi entregue no Telegram `messageId 794` e aceito por Hebert como `HUMAN_ACCEPTED / COMPLETE`; o aceite nao autoriza Instagram, staging, agendamento ou publicacao.
 - 2026-09-08/09: a cadeia mensal ARX foi reparada para aquisicao historica nativa e gerou artefatos de agosto `VALIDATED_NO_SEND` para Alzira, Camburi, Capixaba e Vila Velha. Tres execucoes historicas sao `CONFIRMED_NOT_SUBMITTED`, Capixaba permanece `UNKNOWN`, e os ciclos naturais corrigidos ainda aguardam observacao.
 - 2026-08-28: snapshot read-only de NFS-e de agosto registrou 29 notas, 23 validas e 6 canceladas, com bruto R$ 88.155,06, cancelado R$ 35.211,55 e liquido R$ 52.943,51. O cancelamento da NFS-e `214`/boleto `105609` parou sem mutacao por falta de motivo fiscal e de rota CNAB400 validada para ocorrencia `02`. Em homologacao Cresol, boleto/remessa NN `358` foram preparados localmente sem importacao, envio ou registro externo.
@@ -78,6 +79,7 @@
 - Relatórios técnicos externos devem sair com acabamento visual premium Bikon, sem caminhos internos, metadados automáticos, paginação feia ou aparência de HTML impresso.
 - Materiais públicos ou semi-públicos com logo, paleta, layout ou identidade Bikon devem passar por revisão visual do Kowalski antes da peça final; isso não substitui aprovação explícita para publicação ou envio externo.
 - No marketing Bikon, estrategia, geracao, finalizacao, revisao, entrega e publicacao sao aprovacoes independentes. `content-production-contract` v1 e a autoridade criativa ativa; `image_gen.imagegen` e a rota visual principal. Nenhum publicador esta autorizado por inferencia a partir do aceite de uma arte.
+- Depois de `media_publish` comprovado, falha de readback, cleanup ou recibo nao autoriza repetir a publicação; preservar o media ID e retomar apenas o fechamento do mesmo job.
 - Brand QA pré-geração aprova somente o snapshot e o hash apresentados. Não autoriza Portão C, Kling, render, upload ou publicação; qualquer alteração de byte exige nova submissão.
 - FIP e dashboards financeiros privados nao autorizam emissao fiscal, boleto, remessa, baixa bancaria ou comunicacao externa; eles sao base executiva/gerencial ate haver Approval proprio para efeitos operacionais.
 - FIP em `8787` deve permanecer privado/autenticado; nao expor via Internet publica, segredo em URL ou relatorio.

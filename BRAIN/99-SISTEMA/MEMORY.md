@@ -45,6 +45,7 @@ Memória institucional consolidada do Brain.
 - Troca de modelo ou nível de pensamento nunca amplia autorização. Produção, root, gasto, comunicação externa, mudança real, risco financeiro, backup e rollback continuam sujeitos aos gates vigentes.
 - `Ultra` é perfil de paralelismo e só deve ser avaliado quando houver duas ou mais frentes independentes, ganho real e critério de pronto objetivo.
 - O Roteador de Execução v1 está congelado na Etapa 0. Spark, troca automática de modelo e Etapas 1 a 4 permanecem não autorizados até nova decisão do Hebert.
+- Teste conclusivo de roteamento autônomo deve ocorrer em laboratório isolado, sem dados sensíveis, com autonomia previamente autorizada dentro de allowlist fixa, teto de custo `strict`, falha fechada e cenários forçados de cota, 429/5xx, latência e indisponibilidade; isso não autoriza rota produtiva.
 - Autorização operacional é atomica: approval, checkpoint, commit, hash, validação independente e publicação comprovam somente o escopo exato da unidade autorizada.
 - Runtime operacional precisa de contrato reproduzível: caminho absoluto, versão final, origem, checksums, arquitetura, Unicode quando aplicável e regra de drift.
 - Documento `PROPOSED_NOT_FROZEN` ou `PROPOSED_PENDING_INDEPENDENT_VALIDATION` preserva contexto, mas não é contrato canônico nem autorização operacional.
@@ -81,6 +82,7 @@ Memória institucional consolidada do Brain.
 - Segunda-feira dos relatórios operacionais usa fechamento semanal coletado no sábado; não forçar job diário quando não existir coleta/cache diário correspondente.
 - Relatorio por janela fechada exige prova da populacao: alvo/periodo/timezone vinculados, paginacao exaurida, IDs unicos, cobertura e lacunas explicitas. Snapshot corrente, barra rolante, primeiro/ultimo timestamp ou nome de arquivo nao comprovam mes-calendario.
 - Em entrega automatizada, artefato valido, submissao, ACK do provider, entrega na caixa e leitura humana sao estados separados. Resultado `UNKNOWN` deve bloquear retry; regenerar bytes nao contorna a identidade logica cliente/competencia.
+- Em publicação externa, `media_publish` comprovado e fechamento local também são estados separados. Falha posterior de readback, cleanup ou recibo preserva `PUBLISHED` e bloqueia republicação; retomar somente o mesmo job e suas etapas idempotentes de fechamento.
 - Para marketing Bikon, `content-production-contract` v1 e a unica autoridade criativa ativa desde 2026-09-08; `image_gen.imagegen` e a rota visual principal. Geracao, finalizacao, revisao dos mesmos bytes, entrega, aceite humano e publicacao permanecem gates independentes.
 - Brain v2 possui Commit Link Gate local aceito desde o commit `153129b52ae093c42bb106006de18b78a7ab7dbe`: validar `0` links internos quebrados, `0` markdown uncategorized, ausência de duplicate IDs/aliases e ausência de novos candidatos a segredo antes de tratar uma mudança como saudável.
 - A fundação Brain v2 e a reintegração inicial não autorizam edição manual no Obsidian nem sync amplo sem gate; se o vault remoto precisar atualizar, puxar o commit canônico em vez de alterar notas à mão.

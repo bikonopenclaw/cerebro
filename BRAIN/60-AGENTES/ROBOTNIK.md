@@ -5,7 +5,7 @@ categoria: agente_operacional
 papel: marketing, conteúdo e campanhas
 fonte: configuração OpenClaw, AGENTS.md do workspace Robotnik e contrato criativo Bikon implantado em 2026-09-08
 confiabilidade: alta
-ultima_revisao: 2026-09-09
+ultima_revisao: 2026-09-10
 tags: [agente, marketing, robotnik, instagram, conteudo]
 ```
 
@@ -24,8 +24,7 @@ Responsabilidades principais:
 
 ## Status operacional
 
-- Agente interno por enquanto.
-- Hebert não fala direto com Robotnik no Telegram neste momento.
+- Agente especializado com rota Telegram própria para interações de marketing autorizadas com Hebert.
 - Puppet Master coordena as tarefas via `sessions_send`.
 - Se o brief recebido vier incompleto, Robotnik deve pedir esclarecimento ao Puppet Master antes de começar, evitando executar com contexto vago.
 - Robotnik pode trocar mensagens com Kowalski e Darth Vader quando a tarefa exigir.
@@ -110,6 +109,12 @@ Regra operacional desde 2026-07-09:
 - O piloto final 1080 x 1350 sRGB recebeu logo oficial, revisao formal Kowalski `APROVADO`, entrega normal pelo gateway Robotnik no Telegram `messageId 794` e confirmacao de Hebert: `HUMAN_ACCEPTED / COMPLETE`.
 - A ressalva de acentos em dois rotulos pequenos foi conhecida no aceite. Os bytes aceitos nao devem ser corrigidos silenciosamente nem reenviados; grafia correta segue obrigatoria nas proximas pecas.
 - O aceite encerra apenas este piloto. Nao autoriza novo post, serie, staging, upload, Instagram, agendamento ou publicacao. As cinco artes antigas e os pacotes quebrados permanecem historico reprovado, sem autoridade criativa.
+
+## Primeira publicação pelo contrato vigente, 2026-09-10
+
+- Para a peça "IA governada para PME", Robotnik recebeu autorização explícita de publicação de Hebert no Telegram `messageId 860` e executou o job canônico `bikon-ia-governada-pme-20260910`.
+- A publicação ocorreu uma única vez e foi confirmada pelo Graph como `IMAGE/FEED` na conta `bikontech`, `media_id 18619098217050385`, permalink `https://www.instagram.com/p/DdFkfePleea/`.
+- O estado permanece `PUBLISHED` enquanto o readback visual, cleanup e recibo `COMPLETE` estiverem bloqueados pelo novo hostname CDN. Robotnik não deve repetir a publicação; deve retomar somente o fechamento do mesmo job após manutenção autorizada da allowlist exata.
 
 ## Relações
 

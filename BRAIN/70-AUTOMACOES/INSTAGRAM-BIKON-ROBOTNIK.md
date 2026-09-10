@@ -2,9 +2,9 @@
 
 ```yaml
 nome: Instagram Bikon Robotnik
-status: contrato_criativo_v1_ativo_piloto_aceito_publicacao_bloqueada
+status: contrato_criativo_v1_ativo_primeira_publicacao_confirmada_fechamento_pendente
 responsavel: Robotnik sob coordenação do Puppet Master
-ultima_revisao: 2026-09-09
+ultima_revisao: 2026-09-10
 fonte: conversa Hebert/Puppet Master e workspace Robotnik
 tags: [instagram, meta, robotnik, marketing, bikon]
 ```
@@ -143,10 +143,11 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 
 ## Próximos passos
 
-1. Tratar o piloto aceito como concluido, sem correcao silenciosa, nova geracao ou reenvio.
-2. Para uma nova peca, carregar o contrato v1, a referencia canonica e os assets oficiais em sessao nova.
-3. Preservar geracao, finalizacao, revisao, entrega e publicacao como portoes separados, todos vinculados a versao e hash.
-4. Exigir autorizacao especifica antes de qualquer staging, upload, agendamento ou publicacao.
+1. Concluir o job publicado `bikon-ia-governada-pme-20260910` sem novo `media_publish`: liberar apenas o hostname CDN exato por rota autorizada, fazer readback, `confirm-artwork`, cleanup e recibo `COMPLETE`.
+2. Tratar o piloto aceito como concluido, sem correcao silenciosa, nova geracao ou reenvio.
+3. Para uma nova peca, carregar o contrato v1, a referencia canonica e os assets oficiais em sessao nova.
+4. Preservar geracao, finalizacao, revisao, entrega e publicacao como portoes separados, todos vinculados a versao e hash.
+5. Exigir autorizacao especifica antes de qualquer staging, upload, agendamento ou publicacao futura.
 
 ## Reconciliação snapshot vs implantação (20:00+)
 
@@ -174,3 +175,12 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 - A geracao nativa produziu sete PNGs completos. A fronteira de artefato foi resolvida somente para esse conjunto por handoff autorizado, imutavel e verificado; o importer nao aceita paths livres nem autoriza exportacao futura generica.
 - O piloto final `piloto-ia-sem-dono-rascunho-final.png`, SHA-256 `6c5fe3548dac700798f64cfcaf52c1d9cd353d7a4debfe727e42bd26774525a8`, foi revisado pelo Kowalski, entregue pelo gateway Robotnik como documento Telegram `messageId 794` e aceito por Hebert.
 - Estado terminal: `HUMAN_ACCEPTED / COMPLETE`. Aprovacao da peca nao autoriza Instagram, staging, upload, agendamento, publicacao, nova serie ou reutilizacao das cinco artes reprovadas.
+
+## Peça "IA governada para PME" publicada em 2026-09-10
+
+- O rascunho final, a legenda e o parecer Kowalski foram entregues a Hebert após revisão visual dos mesmos bytes; a validação cobriu a prévia digital, não um celular físico.
+- Hebert autorizou a publicação no Telegram `messageId 860` com "Aprovado para publicação".
+- Robotnik executou o job canônico `bikon-ia-governada-pme-20260910` uma única vez. O journal registrou `publication_attempts=1`, `container_id 18007366910970824` e `media_id 18619098217050385`.
+- O Graph confirmou conta `bikontech`, tipo `IMAGE/FEED`, legenda pública correta e permalink `https://www.instagram.com/p/DdFkfePleea/`.
+- Estado canônico: `PUBLISHED`, não `COMPLETE`. O novo hostname CDN `scontent-gru1-2.cdninstagram.com` foi bloqueado pelo proxy, impedindo readback visual, `confirm-artwork`, cleanup e recibo final.
+- Regra de retomada: preservar o mesmo job e media ID; não repetir `media_publish`, não criar novo job e não trocar de publicador. A manutenção mínima deve liberar apenas o hostname exato, sem wildcard, e continuar somente o fechamento operacional.

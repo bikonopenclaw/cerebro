@@ -4,7 +4,7 @@
 status: etapa_0_6_transporte_bloqueado
 implementacao: nao_autorizada
 roteamento_automatico: desativado
-ultima_revisao: 2026-07-28
+ultima_revisao: 2026-09-10
 responsavel: Puppet Master
 ```
 
@@ -89,3 +89,12 @@ Artefatos locais de avaliação foram preparados em `evals/c1-v1/`, fora da árv
 - Patch de Registry permanece `not_applied`, com `activation_authorized: false`.
 - Nenhuma das 24 tarefas elegíveis, 8 fronteiras ou 56 runs planejados foi executada.
 - Etapa 1 e roteamento automático continuam não autorizados.
+
+## Avaliação exploratória de modelos e roteamento, 2026-09-09
+
+- OmniRoute foi avaliado como candidato de laboratório, não como backbone produtivo. Um teste conclusivo deve executar o `auto` com autonomia real dentro de allowlist fixa de modelos/providers, teto de custo `strict` e falha fechada quando o orçamento acabar.
+- O laboratório deve permanecer isolado, sem dados de cliente, financeiro, cartório ou credenciais, e provocar esgotamento de cota, 429/5xx, latência alta, provider indisponível e recuperação do provider original.
+- Medidas mínimas: continuidade, preservação de contexto, ausência de ação duplicada, tool calling/JSON, qualidade antes/depois da troca, custo, latência e trilha da decisão de rota.
+- Nemotron Embed/Rerank foi identificado como candidato mais promissor para recuperação documental em português. Nano e componentes multimodais permanecem auxiliares experimentais; não substituem Sol/Terra, owners ou gates.
+- O VPS atual não é alvo de inferência Nemotron local: não há GPU NVIDIA e a capacidade observada de RAM/disco é inadequada. Eventual PoC deve usar ambiente/API isolado e dados sanitizados.
+- Esta avaliação não instalou software, não alterou Registry, modelos, provider, rota, gateway ou produção e não autoriza a Etapa 1 do Controlador.
