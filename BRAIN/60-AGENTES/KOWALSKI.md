@@ -127,6 +127,8 @@ Essa revisão não autoriza publicação, envio externo ou agendamento; aprovaç
 
 Em 2026-09-09/10, Kowalski revisou os mesmos bytes da peça "IA governada para PME" e aprovou o gate visual para envio como rascunho, verificando identidade Bikon, cena distinta, anatomia, hierarquia, logo e legibilidade na prévia digital. O parecer não autorizou publicação; essa autorização veio depois, separadamente, de Hebert.
 
+Em 2026-09-11, Kowalski recebeu novas opcoes A/B por copia de escopo exato no proprio workspace depois de a pasta compartilhada permanecer invisivel ao seu runtime. Abriu os assets reais, conferiu hashes e aprovou ambos com ressalvas apenas para entrega privada como rascunho. A repete a composicao de 10/09 e exige recomposicao/legenda nova antes de aceite artistico ou publicacao; B e alternativa comparativa sem pessoas. O parecer nao comprova aceite humano nem autoriza Instagram.
+
 ## Padrão NinjaOne/EOL
 
 Em 2026-07-01, o padrão oficial de relatórios NinjaOne/EOL foi reforçado:

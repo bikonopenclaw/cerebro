@@ -116,6 +116,12 @@ Regra operacional desde 2026-07-09:
 - A publicação ocorreu uma única vez e foi confirmada pelo Graph como `IMAGE/FEED` na conta `bikontech`, `media_id 18619098217050385`, permalink `https://www.instagram.com/p/DdFkfePleea/`.
 - O estado permanece `PUBLISHED` enquanto o readback visual, cleanup e recibo `COMPLETE` estiverem bloqueados pelo novo hostname CDN. Robotnik não deve repetir a publicação; deve retomar somente o fechamento do mesmo job após manutenção autorizada da allowlist exata.
 
+## Handoff de rascunhos A/B, 2026-09-11
+
+- O handoff compartilhado falhou por isolamento entre visoes gerenciadas de filesystem. A rota funcional copiou os mesmos bytes para o workspace proprio do Kowalski e exigiu leitura/revisao real, sem alterar permissoes, configuracao ou servicos.
+- Kowalski aprovou A e B com ressalvas somente para apresentacao privada. A ainda precisa de recomposicao e nova legenda antes de aceite artistico/publicacao; B e a comparacao sem pessoas.
+- Robotnik entregou os originais no Telegram como documentos `messageId 871` e `873`. O gateway aceitou a entrega, mas visualizacao e aprovacao humana permanecem falsas/pendentes; nenhuma mutacao Instagram ocorreu.
+
 ## Relações
 
 - Instagram Robotnik: `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`

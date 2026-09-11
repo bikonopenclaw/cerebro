@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-09-11, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-11.md` e atualizado o MOC cronologico.
+- Atualizados ODP, Provimento 213 e `MEMORY.md` com o successor Day 4 `v1.1.0`: qualificacao de host `34/34 + 23/23 + 266/266`, nova extracao `57/57`, cleanup `PASS` e pacote delta pronto, sem endpoint ou mutacao produtiva e sem autorizacao de promocao.
+- Atualizados BIKON, Robotnik, Kowalski, automacao Instagram e `Contrato-de-runtime-reprodutivel.md` com a falha de materializacao/visibilidade do handoff, a copia de escopo exato no workspace do revisor e a entrega privada A/B ainda sem aceite humano ou publicacao.
+- Atualizados ARX com o ciclo diario validado apenas ate coleta/render (`delivery=NOT_REQUESTED`) e boletos/malote com a preparacao local de intake SecretRef Cresol por TTY/no-echo, sem registrar valores nem inferir execucao ou autoridade produtiva.
+- Atualizados `HEALTH.md` e Knowledge Health; nao houve duplicidade, novo projeto ou arquivamento.
+- Commit Link Gate validado: `ok=True`, `390` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados contexto recente disponivel, artefatos locais e arquivos do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao acessou sistemas externos e nao executou publicacao, retry, chamada Cresol, intake de segredo, instalacao, migracao, PGL/status write ou promocao produtiva.
+
 ## 2026-09-10, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-10.md` e atualizado o MOC cronologico.

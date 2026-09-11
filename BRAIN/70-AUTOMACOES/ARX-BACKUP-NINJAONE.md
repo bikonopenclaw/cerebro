@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26 e qualificacao ARX de 2026-09-08/09
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26 e qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10
 confiabilidade: alta
-ultima_revisao: 2026-09-09
+ultima_revisao: 2026-09-11
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
 ```
 
@@ -130,6 +130,7 @@ A investigacao separou coleta, render, transporte e leitura humana e preservou o
 - O corpo entregue continha wrappers de stdout/stderr e diagnosticos internos. Foram instalados binding por hashes da evidencia/coleta, validacao de identidade/data/contagens e saida limpa; entrega ja confirmada e suprimida por `NO_REPLY` para impedir duplicata.
 - Resultados desconhecidos agora persistem recibo privado `UNKNOWN / UNRESOLVED / HOLD_RECONCILE_BEFORE_RETRY` e retornam hold silencioso, impedindo que callback de falha crie retry ou notificacao enganosa.
 - O fluxo corrigido ainda precisa de observacao no ciclo natural: coleta diaria em 09/09 03:30 UTC e entrega em 09/09 10:46 UTC. Teste instalado/no-send nao equivale a entrega natural aceita.
+- O ciclo referente a 09/09 produziu artefato em 10/09 03:30 UTC e passou validacao em 10/09 10:46 UTC: 12 contas, 10 clientes, 8 OK, 1 atencao, 0 critico e 3 outros. A validacao registrou `delivery=NOT_REQUESTED`; portanto prova coleta/render validos, nao transporte ou leitura humana, e nao fecha a observacao ponta a ponta.
 
 ### Mensal e e-mail
 

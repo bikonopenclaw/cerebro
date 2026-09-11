@@ -3,10 +3,10 @@
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidacao semanal 2026-W31; bootstrap RSE M2 em 2026-08-28/29; precheck Sentinel em 2026-09-07; reparo do relay nativo em 2026-09-08
+fonte: consolidacao semanal 2026-W31; bootstrap RSE M2 em 2026-08-28/29; precheck Sentinel em 2026-09-07; reparo do relay nativo em 2026-09-08; handoff Robotnik/Kowalski em 2026-09-11
 confiabilidade: alta
-ultima_revisao: 2026-09-09
-tags: [runtime, python, reproducibilidade, checksums, supply-chain, drift, cgroup, executor, lifecycle, sandbox, mounts, timeout, process-group]
+ultima_revisao: 2026-09-11
+tags: [runtime, python, reproducibilidade, checksums, supply-chain, drift, cgroup, executor, lifecycle, sandbox, mounts, handoff, materializacao, timeout, process-group]
 ```
 
 ## Principio
@@ -35,6 +35,7 @@ Runtime operacional nao deve depender de caminho conveniente, instalacao local i
 - Autenticar a superficie efetivamente visivel ao executor: mudar `cwd` nao cria mounts nem concede acesso a state dir, workspace de outro agente, SQLite, CLI, supervisor ou systemd.
 - Falha de acesso dentro de um sandbox prova apenas a limitacao daquela superficie; nao comprova ausencia, defeito ou estado terminal do alvo vivo.
 - Timeout de subprocesso deve envolver o bootstrap externo e seu grupo de processos. Um limite iniciado somente depois do runtime carregar nao contem travamento anterior ao startup nem relay abandonado.
+- Sucesso de escrita ou copia dentro da visao gerenciada do produtor nao prova materializacao duravel no host nem visibilidade para o consumidor. Handoff entre agentes precisa de leitura real pelo destino, identidade/hash dos mesmos bytes e recibo terminal separado da mera aceitacao da solicitacao.
 
 ## Exemplo conectado
 
@@ -45,6 +46,8 @@ No bootstrap RSE M2 de 2026-08-28/29, uma continuacao direta caiu quando o scope
 No precheck Sentinel de 2026-09-07, diferentes executores receberam apenas o workspace principal. Mesmo com `cwd=/data/.openclaw`, config/state ativos, workspace Sentinel, SQLite, supervisor e systemd continuaram invisiveis. A manutencao parou antes de backup ou mutacao e preservou o mesmo Goal, pois readmitir em uma superficie correta e diferente de inferir o estado do runtime a partir do sandbox errado.
 
 No reparo Puppet/Robotnik de 2026-09-08, o relay nativo precisava limitar o CLI antes que Node pudesse iniciar. O comando passou a envolver bootstrap e grupo de processos com timeout/TERM/KILL limitado; canarios de sucesso, falha de ferramenta e entrega Telegram passaram, sem converter o job ARX original falho em sucesso.
+
+No handoff Robotnik/Kowalski de 2026-09-11, a copia reportada no workspace principal nao apareceu de forma duravel e, mesmo depois de criada no host, permaneceu invisivel ao filesystem gerenciado do revisor. A rota funcional materializou copia byte a byte no workspace proprio do Kowalski e exigiu abertura/revisao real dos assets; configuracao, permissoes e servicos permaneceram inalterados.
 
 ## Relacoes
 

@@ -184,3 +184,12 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 - O Graph confirmou conta `bikontech`, tipo `IMAGE/FEED`, legenda pública correta e permalink `https://www.instagram.com/p/DdFkfePleea/`.
 - Estado canônico: `PUBLISHED`, não `COMPLETE`. O novo hostname CDN `scontent-gru1-2.cdninstagram.com` foi bloqueado pelo proxy, impedindo readback visual, `confirm-artwork`, cleanup e recibo final.
 - Regra de retomada: preservar o mesmo job e media ID; não repetir `media_publish`, não criar novo job e não trocar de publicador. A manutenção mínima deve liberar apenas o hostname exato, sem wildcard, e continuar somente o fechamento operacional.
+
+## Recuperacao de handoff e novas opcoes em rascunho, 2026-09-11
+
+- A geracao e persistencia das opcoes A/B haviam concluido, mas o handoff entre workspaces falhou: sucesso de copia na visao gerenciada do Robotnik nao produziu pasta compartilhada duravel, e a pasta criada depois no host continuou invisivel ao runtime do Kowalski.
+- O reparo minimo materializou copia byte a byte no workspace proprio do Kowalski, sem mudar permissao, configuracao, servico ou rota global. O revisor abriu os assets reais e confirmou seus hashes.
+- Opcao A, SHA-256 `68a9aeaaf8e8d4515f15acd514dc031ff36947d6b0609176ccb673e52cbc4501`, e opcao B, SHA-256 `80f5bc4d4b7b6b440eabdbb3f2bccaf63c79c9ae97cc442015ea4535bdad9dc8`, receberam `APROVADO_COM_RESSALVA` apenas para apresentacao privada como rascunho.
+- Kowalski registrou que A repete a composicao de 10/09 e exige recomposicao e reescrita da legenda antes de aceite artistico/publicacao. B funciona como alternativa comparativa sem pessoas.
+- Robotnik entregou os originais no Telegram como documentos `messageId 871` e `873`, com textos conferidos e nota de revisao. Estado: `TELEGRAM_ACCEPTED / AWAITING_HUMAN_APPROVAL`; leitura e aprovacao humana nao foram comprovadas.
+- Esta recuperacao executou zero mutacoes Instagram e nao altera o job ja publicado de 10/09. Entrega privada, aceite artistico e publicacao continuam gates separados.

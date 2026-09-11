@@ -2,13 +2,13 @@
 
 ```yaml
 nome: OpenClaw Operational Data Platform
-status: day4_checkpoint_l_preserved_rse_cancelled_b1_workspace_preserved
+status: day4_successor_host_qualified_package_ready_production_unauthorized
 responsavel: Puppet Master
 inicio: 2026-08-05
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-31
-tags: [openclaw, odp, postgresql, operational-data, governance, rollback, non-interference, controlled-secret-executor, day3, day4, production-onboarding, rse-decommissioned]
+ultima_revisao: 2026-09-11
+tags: [openclaw, odp, postgresql, operational-data, governance, rollback, non-interference, controlled-secret-executor, day3, day4, production-onboarding, compatible-successor, rse-decommissioned]
 ```
 
 ## Objetivo
@@ -48,6 +48,15 @@ O Brain registra apenas estado consolidado e guardrails. Evidencias, pacotes, ma
 - Em 2026-08-28/29, o bootstrap M2 do reparo de lifecycle avancou somente em staging. O B1 continuou preservado no mesmo HEAD e sem mutacao; como o M2 ainda tinha dois P0 abertos e bytes em mudanca, ele nao liberou B2, canario ODP nem retomada do onboarding.
 - Nenhum canario produtivo, onboarding Provimento 213, reexecucao idempotente, teste de falha, escala ou rollback de qualificacao foi concluido por esta rodada.
 
+## Successor compativel do Day 4, 2026-09-10/11
+
+- O modulo Provimento 213 compativel com ODP foi preservado como successor `v1.1.0`, contrato `provimento-213-persistence-v1.1`, sem alterar Core, corpus atual ou estado produtivo.
+- Duas execucoes predecessoras falharam fechado e permanecem evidencia imutavel: a primeira isolou uma leitura com role incorreta no teste 22; a segunda passou Core `34/34` e successor `23/23`, mas parou antes dos `266` testes Provimento por discovery de um diretorio `tests/` nao empacotado. As correcoes foram locais ao teste/qualificador, sem ampliar grants nem tocar producao.
+- A execucao final `ODP-DAY4-HOST-20260911T014804Z-a33dc80d02b9939e` fechou `HOST_QUALIFICATION_PASS`: Core `34/34`, successor `23/23`, Provimento `266/266`, nova extracao Core `34/34` e successor `23/23`, sem failures, errors, skips ou expected failures.
+- O harness autenticou PostgreSQL privado por run antes das escritas de schema, registrou `production_database_endpoint_used=false`, desligou processos, removeu apenas recursos proprios e fechou cleanup `PASS`.
+- O pacote `ODP_DAY4_SUCCESSOR_v1.1.0.tar.gz` ficou pronto, SHA-256 `c3d1e79396b3233d54a510ffd82843a1c83b8be7bf804de9acc642d2266aecf2`. Ele e um delta com Core autenticado como pre-requisito separado, nao um pacote self-contained.
+- Qualificacao de host e package-ready nao autorizam instalacao, migracao, PGL/status write, ingestao de cliente, binding Puppet ou qualquer mutacao produtiva. A leitura sanitizada final de PGL/status e a promocao continuam em gates proprios.
+
 ## Guardrails
 
 - Day 3 nao autoriza Day 4, business modules, importacao de operational-data, Provimento 213 ou interacao SQLite.
@@ -61,9 +70,9 @@ O Brain registra apenas estado consolidado e guardrails. Evidencias, pacotes, ma
 
 ## Proximos passos
 
-- Preservar o Checkpoint L e o workspace B1 incompleto em `/data/.openclaw/workspace/projects/ODP/preserved/odp-b1-bootstrap-20260827T235127Z`; ODP nao aguarda nem invoca RSE. Qualquer reconciliacao B1 ou boundary B2 exige nova autoridade ODP propria.
+- Preservar o Checkpoint L, o workspace B1 historico, os dois runs fail-closed predecessores e o successor `v1.1.0` qualificado; nenhum deles deve ser reclassificado ou sobrescrito.
 - RSE foi permanentemente cancelado e desinstalado. Uma retomada ODP nao pode depender de RSE nem interpretar artefatos historicos RSE como autoridade ativa.
-- Antes de qualquer migracao Provimento 213 para ODP, exigir contratos AIR/CPIW/ICD/DRE, rollback, non-interference e autorizacao atomica.
+- Executar a leitura sanitizada de PGL/status e revisar o pacote delta somente sob gates proprios. Antes de instalacao ou migracao Provimento 213 para ODP, exigir pre-requisitos autenticados, contratos aplicaveis, rollback, non-interference e autorizacao atomica de promocao.
 
 ## Relacoes
 

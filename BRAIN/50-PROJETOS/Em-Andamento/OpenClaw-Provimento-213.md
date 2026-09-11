@@ -7,8 +7,8 @@ responsavel: Puppet Master
 inicio: 2026-07-28
 fim:
 prioridade: alta
-ultima_revisao: 2026-08-27
-tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre, miniapp, canonical-truth, portal213, telegram-only]
+ultima_revisao: 2026-09-11
+tags: [openclaw, provimento-213, governanca, checkpoints, approval, execution-pack, dre, miniapp, canonical-truth, portal213, telegram-only, odp]
 ```
 
 ## Objetivo
@@ -479,6 +479,13 @@ Estado consolidado:
 - instalação revertida porque o executável instalado `/usr/local/bin/openclaw-dre` resolvia incorretamente `/usr/local/src/dre.py`, embora o launcher dentro da árvore instalada funcionasse.
 
 Resultado: `FAIL_CLOSED`, rollback `PASS`, `/opt/openclaw/platform/dre/v1` e `/usr/local/bin/openclaw-dre` ausentes, sem gateway restart, push, tag, merge ou alteração nos artefatos Provimento 213.
+
+## Successor ODP qualificado, 2026-09-10/11
+
+- O successor Provimento 213 para ODP permanece separado da Golden Baseline operacional protegida e foi qualificado como modulo `v1.1.0`, contrato `provimento-213-persistence-v1.1`.
+- A execucao final de host fechou Core `34/34`, successor `23/23`, corpus Provimento atual `266/266` e nova extracao `57/57`, com cleanup `PASS`, endpoint produtivo nao usado e mutacoes produtivas `0`.
+- O pacote delta ficou pronto com SHA-256 `c3d1e79396b3233d54a510ffd82843a1c83b8be7bf804de9acc642d2266aecf2`; Core autenticado continua pre-requisito separado.
+- Esse resultado nao reabre a migracao historica, nao altera o Portal 213 aceito e nao autoriza instalacao, migracao, PGL/status write, ingestao de cliente, binding Puppet ou producao.
 
 ## Guardrails
 

@@ -53,6 +53,12 @@ Espelho operacional:
 - Nada foi importado, enviado ou registrado na Cresol; producao e configuracao permaneceram sem mutacao. A proxima etapa e importacao/aceite em homologacao e exige autorizacao explicita por alterar estado externo.
 - Para o boleto de producao `105609`, nosso numero `1541`, a baixa permaneceu bloqueada: o gerador aprovado emite ocorrencia `01`, mas baixa CNAB400 exige `02`. Nao cancelar a NFS-e relacionada isoladamente nem adaptar script/metodo sem motivo fiscal, rota validada e autorizacao propria.
 
+## Preparacao de SecretRef Cresol, 2026-09-10
+
+- Foram preparados dois scripts locais de intake por TTY/no-echo para `cresol-api.env` generico e `cresol-api-producao.env`, com `umask 077`, arquivo final `0600`, validacao de ownership/permissoes, recusa de symlink/sobrescrita e commit atomico por hard link.
+- A presenca dos scripts nao prova execucao nem existencia de SecretRef. Nenhum valor foi lido ou registrado no Brain.
+- O intake de credencial, se executado pelo owner em sessao local apropriada, apenas materializa segredo; nao autoriza chamada Cresol, producao, emissao, baixa, upload, remessa ou comunicacao externa.
+
 ## Pendências antes de uso real
 
 Confirmar com o banco/contrato:
