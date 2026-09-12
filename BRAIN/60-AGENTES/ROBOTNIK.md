@@ -5,7 +5,7 @@ categoria: agente_operacional
 papel: marketing, conteúdo e campanhas
 fonte: configuração OpenClaw, AGENTS.md do workspace Robotnik e contrato criativo Bikon implantado em 2026-09-08
 confiabilidade: alta
-ultima_revisao: 2026-09-10
+ultima_revisao: 2026-09-12
 tags: [agente, marketing, robotnik, instagram, conteudo]
 ```
 
@@ -114,13 +114,19 @@ Regra operacional desde 2026-07-09:
 
 - Para a peça "IA governada para PME", Robotnik recebeu autorização explícita de publicação de Hebert no Telegram `messageId 860` e executou o job canônico `bikon-ia-governada-pme-20260910`.
 - A publicação ocorreu uma única vez e foi confirmada pelo Graph como `IMAGE/FEED` na conta `bikontech`, `media_id 18619098217050385`, permalink `https://www.instagram.com/p/DdFkfePleea/`.
-- O estado permanece `PUBLISHED` enquanto o readback visual, cleanup e recibo `COMPLETE` estiverem bloqueados pelo novo hostname CDN. Robotnik não deve repetir a publicação; deve retomar somente o fechamento do mesmo job após manutenção autorizada da allowlist exata.
+- O bloqueio inicial de readback pelo novo hostname CDN foi superado em R4 por worker confinado e grant efemero; o job chegou a `BYTES_VERIFIED/corresponds=true`, com `instagram_mutations=0`. Robotnik não deve repetir a publicação e qualquer etapa residual deve permanecer no mesmo job.
 
 ## Handoff de rascunhos A/B, 2026-09-11
 
 - O handoff compartilhado falhou por isolamento entre visoes gerenciadas de filesystem. A rota funcional copiou os mesmos bytes para o workspace proprio do Kowalski e exigiu leitura/revisao real, sem alterar permissoes, configuracao ou servicos.
 - Kowalski aprovou A e B com ressalvas somente para apresentacao privada. A ainda precisa de recomposicao e nova legenda antes de aceite artistico/publicacao; B e a comparacao sem pessoas.
 - Robotnik entregou os originais no Telegram como documentos `messageId 871` e `873`. O gateway aceitou a entrega, mas visualizacao e aprovacao humana permanecem falsas/pendentes; nenhuma mutacao Instagram ocorreu.
+
+## Qualificacao R3/R4 e piloto 365 Control, 2026-09-11/12
+
+- O canario tecnico R3 `robotnik-media-canario-r3-20260911` permaneceu `DRAFT / NAO PUBLICAR`. Duas versoes passaram por dois reviews reais do Kowalski, ambos `REQUIRES_CHANGES`: V3 repetia materialmente a referencia e V4 violava o protagonismo humano do contrato. O canario nao concedeu aceite artistico, entrega operacional ou autoridade de publicacao.
+- No job ja publicado `bikon-ia-governada-pme-20260910`, a qualificacao R4 recuperou os bytes pelo verificador protegido usando grant efemero de 120 segundos para `scontent-gru1-2.cdninstagram.com:443`. O estado chegou a `BYTES_VERIFIED`, o parecer registrou correspondencia visual e os contadores provaram `instagram_mutations=0`; nenhuma nova publicacao foi executada.
+- Para o piloto `bikon-365-control-piloto-20260912`, a V3 recebeu `APPROVED_FOR_TECHNICAL_DELIVERY`, mas Hebert pediu uma alternativa menos sombria. A opcao C corrigida chegou a V6 e foi enviada somente como previa; `review_prepare` continuou falhando, portanto a V6 nao e versao final validada. Publicacao e agendamento permanecem falsos.
 
 ## Relações
 

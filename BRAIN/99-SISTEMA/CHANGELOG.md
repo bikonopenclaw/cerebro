@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-09-12, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-12.md` e atualizado o MOC cronologico.
+- Atualizados BIKON, Robotnik, Kowalski e a automacao Instagram com a qualificacao tecnica R3/R4: canario de criacao preservado `DRAFT / NAO PUBLICAR` com dois reviews `REQUIRES_CHANGES`; readback do job ja publicado recuperado como `BYTES_VERIFIED/corresponds=true` por worker confinado e grant efemero, com `instagram_mutations=0`.
+- Atualizados os mesmos registros com o piloto 365 Control: V3 aprovada para entrega tecnica, pedido posterior de alternativa menos sombria e opcao C V6 entregue somente como previa, ainda sem revalidacao por falha em `review_prepare` e sem publicacao/agendamento.
+- Atualizada a nota permanente `Leitura-read-only-deve-provar-nao-mutacao.md` com a separacao entre leitura externa, evidencia local autorizada e prova de zero mutacao no provedor.
+- Atualizados `HEALTH.md` e Knowledge Health; nao houve duplicidade, novo projeto ou arquivamento.
+- Commit Link Gate validado: `ok=True`, `391` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados contexto recente sanitizado e arquivos locais do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao acessou sistemas externos e nao executou geracao, revisao, publicacao, agendamento, provider, grant, retry ou mutacao operacional.
+
 ## 2026-09-11, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-11.md` e atualizado o MOC cronologico.

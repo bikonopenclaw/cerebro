@@ -4,7 +4,7 @@
 nome: Instagram Bikon Robotnik
 status: contrato_criativo_v1_ativo_primeira_publicacao_confirmada_fechamento_pendente
 responsavel: Robotnik sob coordenação do Puppet Master
-ultima_revisao: 2026-09-10
+ultima_revisao: 2026-09-12
 fonte: conversa Hebert/Puppet Master e workspace Robotnik
 tags: [instagram, meta, robotnik, marketing, bikon]
 ```
@@ -143,11 +143,12 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 
 ## Próximos passos
 
-1. Concluir o job publicado `bikon-ia-governada-pme-20260910` sem novo `media_publish`: liberar apenas o hostname CDN exato por rota autorizada, fazer readback, `confirm-artwork`, cleanup e recibo `COMPLETE`.
+1. Preservar o job publicado `bikon-ia-governada-pme-20260910` em `BYTES_VERIFIED` sem novo `media_publish`; executar somente etapas residuais idempotentes de fechamento, se ainda exigidas pelo journal canonico.
 2. Tratar o piloto aceito como concluido, sem correcao silenciosa, nova geracao ou reenvio.
 3. Para uma nova peca, carregar o contrato v1, a referencia canonica e os assets oficiais em sessao nova.
 4. Preservar geracao, finalizacao, revisao, entrega e publicacao como portoes separados, todos vinculados a versao e hash.
 5. Exigir autorizacao especifica antes de qualquer staging, upload, agendamento ou publicacao futura.
+6. Corrigir `review_prepare` antes de submeter a opcao C V6 do 365 Control; nao reutilizar o parecer vinculado a V3.
 
 ## Reconciliação snapshot vs implantação (20:00+)
 
@@ -182,8 +183,8 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 - Hebert autorizou a publicação no Telegram `messageId 860` com "Aprovado para publicação".
 - Robotnik executou o job canônico `bikon-ia-governada-pme-20260910` uma única vez. O journal registrou `publication_attempts=1`, `container_id 18007366910970824` e `media_id 18619098217050385`.
 - O Graph confirmou conta `bikontech`, tipo `IMAGE/FEED`, legenda pública correta e permalink `https://www.instagram.com/p/DdFkfePleea/`.
-- Estado canônico: `PUBLISHED`, não `COMPLETE`. O novo hostname CDN `scontent-gru1-2.cdninstagram.com` foi bloqueado pelo proxy, impedindo readback visual, `confirm-artwork`, cleanup e recibo final.
-- Regra de retomada: preservar o mesmo job e media ID; não repetir `media_publish`, não criar novo job e não trocar de publicador. A manutenção mínima deve liberar apenas o hostname exato, sem wildcard, e continuar somente o fechamento operacional.
+- Em 2026-09-11, a qualificacao R4 retomou o mesmo job e recuperou os bytes publicados por worker protegido, com grant efemero de 120 segundos limitado a `scontent-gru1-2.cdninstagram.com:443`. O estado chegou a `BYTES_VERIFIED`, com parecer visual `corresponds=true`, `instagram_mutations=0` e sem nova chamada de publicacao.
+- Regra de retomada: preservar o mesmo job e media ID; não repetir `media_publish`, não criar novo job e não trocar de publicador. Qualquer etapa residual de fechamento deve continuar de forma idempotente e nao pode herdar autoridade para novo efeito externo.
 
 ## Recuperacao de handoff e novas opcoes em rascunho, 2026-09-11
 
@@ -193,3 +194,9 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 - Kowalski registrou que A repete a composicao de 10/09 e exige recomposicao e reescrita da legenda antes de aceite artistico/publicacao. B funciona como alternativa comparativa sem pessoas.
 - Robotnik entregou os originais no Telegram como documentos `messageId 871` e `873`, com textos conferidos e nota de revisao. Estado: `TELEGRAM_ACCEPTED / AWAITING_HUMAN_APPROVAL`; leitura e aprovacao humana nao foram comprovadas.
 - Esta recuperacao executou zero mutacoes Instagram e nao altera o job ja publicado de 10/09. Entrega privada, aceite artistico e publicacao continuam gates separados.
+
+## Qualificacao tecnica do pipeline e piloto 365 Control, 2026-09-11/12
+
+- O canario R3 `robotnik-media-canario-r3-20260911` consumiu as duas geracoes autorizadas e permaneceu `DRAFT / NAO PUBLICAR`. Os dois pedidos de revisao foram persistidos e retomados pelo Kowalski; ambos terminaram `REVIEW_COMPLETE / REQUIRES_CHANGES`, sem autoridade de publicacao.
+- O primeiro reverify do R3 falhou fechado em `PROVIDER_LINEAGE_READ/DNS_RESOLUTION_FAILED`, com mutacoes zero. A R4 resolveu a leitura por worker confinado, policy/verifier protegidos contra escrita, capacidades zeradas, `NoNewPrivs=1` e grant host/porta/metodo/TTL especifico; o resultado foi `BYTES_VERIFIED`, nao uma nova publicacao.
+- O piloto `bikon-365-control-piloto-20260912` preservou versoes e gates. A V3 foi validada para entrega tecnica; apos pedido de Hebert por alternativa menos sombria, a opcao C evoluiu ate a previa V6. A falha recorrente em `review_prepare` impede tratar V6 como final validada. Nao publicar ou agendar sem revisao concluida e aprovacao humana explicita.
