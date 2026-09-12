@@ -1,10 +1,18 @@
-# Bikon — Contrato persistente de direção criativa
+# Bikon — Contrato persistente de criação do Robotnik
 
 **Identificador:** BIKON_CREATIVE_DIRECTION_CONTRACT_V1  
-**Versão:** 1.0 — implantação autorizada em 08/09/2026  
-**Estado:** INSTALADO; VALIDAÇÃO OPERACIONAL E ACEITE DO PILOTO PENDENTES  
+**Versão-base:** 1.1 — aprovada por Hebert  
+**Revisão documental:** 1.1-S1 — 12/09/2026; ajustes semânticos de metas e alcance dos aceites  
+**Estado da base:** APROVADO DOCUMENTALMENTE  
+**Aplicação na VPS:** INSTALADA POR UPDATE CONTROLADO DO SKILL WORKSHOP; consumo deve ser comprovado pelo runtime  
 **Dono da direção e da aprovação:** Hebert Mattedi  
-**Execução:** Robotnik. **Revisão visual formal:** Kowalski, conforme o fluxo existente.
+**Execução e planejamento editorial:** Robotnik. **Revisão visual formal:** Kowalski, conforme o fluxo existente.
+
+Esta revisão adapta cadência e distribuição de formatos à estrutura Bikon. Mantém o mesmo contrato e os responsáveis existentes. Não cria agente, departamento, aprovador, habilidade independente ou rota alternativa de produção.
+
+A instalação e o aceite humano da versão 1.0 permanecem preservados nos recibos existentes. Esta versão ativa integra a revisão editorial à instalação anterior, conserva seus ajustes operacionais posteriores e não reabre o aceite do piloto já aprovado.
+
+A base de integração é a versão 1.1 aprovada. A proposta 1.2, inclusive a redução para três posts, não foi adotada. Esta consolidação mantém a cadência de 4–5 posts, a direção visual e a estrutura aprovada; altera somente a representação das metas e explicita os limites de cada aceite. O runbook R2.2 orientou a implantação sem ser instalado como habilidade ou autoridade criativa.
 
 ## 1. Decisão central
 
@@ -60,7 +68,7 @@ As interfaces ilustrativas não devem simular resultados comprovados da Bikon ou
 
 Variação dentro da campanha é permitida. Mudança de direção exige decisão explícita de Hebert e nova versão deste contrato. Uma peça aprovada posteriormente não substitui automaticamente a referência canônica.
 
-## 4. Direção editorial
+## 4. Direção e planejamento editorial
 
 O conteúdo conversa com quem administra uma PME. Parte de uma tensão reconhecível — decisão, acesso, retrabalho, responsabilidade, previsibilidade — e mostra uma consequência prática.
 
@@ -68,15 +76,161 @@ IA deve aparecer como apoio à gestão com regras, responsáveis e acompanhament
 
 Cada peça precisa de uma ideia central. A chamada atrai pela situação ou pergunta; a legenda desenvolve o raciocínio e apresenta um próximo passo coerente. Não repetir slogans só para parecer uma continuação. Não tratar a legenda anteriormente sugerida ou aprovada como texto obrigatório de todos os posts.
 
+### 4.1 Responsabilidades na estrutura existente
+
+| Função incorporada ao contrato | Responsável existente | Limite da atribuição |
+|---|---|---|
+| Planejar temas, cadência, formatos, sequência e objetivos | Robotnik | Planejamento subordinado ao pedido de Hebert, à capacidade real e à direção visual canônica. |
+| Preparar briefing, texto, cena humana, geração e acabamento | Robotnik | Usar os insumos e a rota de produção já validados. |
+| Revisar visualmente os arquivos finais | Kowalski | Manter a revisão formal existente, com acesso aos arquivos reais e à referência. |
+| Aprovar direção, conteúdo e autorizar publicação | Hebert Mattedi | Aplicar o alcance exato de cada aceite; não pedir novamente um aceite já registrado para o mesmo conteúdo. |
+| Registrar resultados e propor ajustes editoriais | Robotnik | Usar evidências disponíveis; isso não concede autorização de publicação nem cria coleta ou envio automático. |
+
+Esta é a tradução de funções para a estrutura existente, não a criação de novos cargos ou etapas de aprovação. Referências a responsáveis, estudos privados, campanhas, fornecedores e orçamentos de outra operação não são dependências deste contrato.
+
+### 4.2 Cadência e distribuição de formatos
+
+A cadência é uma **recomendação editorial ajustável para o total da conta Bikon no Instagram**, compartilhada entre campanhas simultâneas. Não multiplicar a quantidade semanal pelo número de campanhas. Considerar semanas de segunda-feira a domingo em `America/Sao_Paulo`.
+
+| Formato | Referência semanal | Função preferencial | Diretriz de construção |
+|---|---|---|---|
+| Carrossel | 2 publicações | Aprofundamento e conteúdo útil para consulta | Pergunta ou dor, contexto, desenvolvimento, exemplo quando disponível e conclusão com próximo passo. |
+| Reel | 1 publicação | Descoberta e introdução de um tema | Gancho claro, ideia central e progressão compreensível. Pode ensinar ou demonstrar quando isso servir ao objetivo. |
+| Imagem estática | 1 publicação; uma segunda quando justificada | Mensagem direta que funcione isoladamente | Situação relevante, pergunta, orientação ou oferta sustentada pelos fatos do briefing. |
+
+O total de referência é **4–5 publicações por semana**. Trata-se de ponto de partida operacional, não de mínimo imposto pelo Instagram nem de distribuição cientificamente validada para a Bikon. Não produzir uma peça fraca apenas para completar a quantidade. Robotnik registra no planejamento qualquer ajuste por prioridade, qualidade, disponibilidade ou orientação de Hebert.
+
+Para carrosséis, sete lâminas são uma referência de organização, com seis a oito como faixa usual. Não alongar um assunto nem retirar conteúdo necessário para obedecer ao número. Justificar outra extensão pelo conteúdo. Duração de Reel é decidida por Robotnik no briefing da peça, considerando roteiro, leitura e capacidade técnica; este contrato não fixa uma duração universal.
+
+Cada publicação é uma unidade editorial: um carrossel conta como uma publicação, embora tenha várias imagens. No arranjo de sete lâminas, a semana envolve 14 imagens de carrossel, uma ou duas imagens estáticas e um vídeo. Planejar também roteiro, acabamento, revisão e retrabalho.
+
+Os papéis dos formatos são preferenciais, não exclusivos. A sequência pode conectar um Reel introdutório a um carrossel de aprofundamento e a uma imagem que sintetize uma decisão. Cada publicação continua compreensível por quem não viu as anteriores.
+
+### 4.3 Campos estruturados para consumo do Robotnik
+
+```yaml
+schema_version: 1
+contract_id: BIKON_CREATIVE_DIRECTION_CONTRACT_V1
+contract_version: "1.1"
+semantic_revision: S1
+scope:
+  brand: Bikon
+  channel: instagram
+  cadence_unit: account_week
+  shared_across_campaigns: true
+  timezone: America/Sao_Paulo
+  week_starts: monday
+responsibilities:
+  editorial_and_production: Robotnik
+  existing_visual_review: Kowalski
+  owner_and_approver: Hebert Mattedi
+cadence:
+  rule_type: adjustable_recommendation
+  evidence_status: editorial_starting_point
+  scientific_optimum_claimed: false
+  target_override_authority: Hebert Mattedi
+  total_publications: {target: 4, optional_additional: 1}
+  carousel:
+    publications: {target: 2}
+    preferred_role: aprofundamento
+    slides:
+      recommended: 7
+      usual_range: {min: 6, max: 8}
+      hard_limit: false
+  reel:
+    publications: {target: 1}
+    preferred_role: descoberta
+    duration_seconds: null
+    duration_decision: per_piece_brief_by_Robotnik
+  static_image:
+    publications: {target: 1, optional_additional: 1}
+    preferred_role: mensagem_direta
+    second_publication_requires_editorial_reason: true
+production:
+  route: existing_validated_route
+  quality_precedes_volume: true
+  foreign_credit_budget_applies: false
+review:
+  initial_published_weeks: 4
+  insufficient_data: record_limit_and_extend_observation
+  automatic_schedule_created: false
+authorization:
+  planning_is_publication_approval: false
+  direction_or_pilot_acceptance_scope: approved_direction_only
+  production_scope: existing_specific_request
+  final_content_acceptance_scope: exact_media_version_and_caption
+  publication_authorization_scope: exact_job_account_content_and_action
+  same_job_resume_policy: preserve_valid_original_authorization_within_exact_scope
+  publish_only_with_Hebert_authorization: true
+```
+
+`target` é uma meta de planejamento ajustável, não uma obrigação mínima nem um teto técnico. O arranjo de partida soma dois carrosséis, um Reel e um estático; o segundo estático corresponde à publicação adicional opcional, sem contagem em dobro. Hebert pode orientar outro alvo. Robotnik registra ajustes operacionais por qualidade, capacidade e prioridade conforme a seção 4.2, sem transformar um desvio pontual em nova regra permanente. A faixa usual de lâminas continua sendo uma referência de organização, não um limite obrigatório. A duração `null` significa ausência de padrão universal: o briefing define a duração da peça. O YAML não cria agenda, agente ou autorização de execução.
+
+**Alcance dos aceites:** não existe aprovação genérica transferível entre etapas. Usar as evidências já registradas no fluxo existente:
+
+| Escopo | Evidência aplicável | Limite |
+|---|---|---|
+| Direção ou piloto | Aceite de Hebert para a linguagem visual apresentada | Pode orientar desdobramentos solicitados; não aprova geração não solicitada, mídia futura, legenda ou publicação. |
+| Produção | Pedido específico de Hebert, com insumos e alcance | Autoriza produzir o que foi solicitado; não equivale a aceitar o resultado final. |
+| Conteúdo final | Aceite vinculado à versão da mídia e à legenda apresentadas | Não se transfere para arquivos ou texto alterados; só inclui publicação quando isso estiver explicitamente autorizado. |
+| Publicação | Autorização vinculada ao job, à conta, ao conteúdo final e à ação | Não autoriza outra peça, conta ou nova publicação. |
+
+As evidências identificam a versão final da mídia, seus hashes e, quando aplicável, a ordem das lâminas, além da legenda correspondente. Não criar outro registro de aprovação concorrente. Uma mesma mensagem de Hebert pode cobrir produção, aceite e/ou publicação quando seu alcance for explícito; não exigir mensagens ou aprovadores adicionais por formalismo.
+
+**Retomada:** a restrição acima impede transportar o aceite de direção para as demais etapas. Ela não invalida uma autorização específica já concedida ao mesmo conteúdo e job. Essa autorização permanece válida dentro do alcance original enquanto não revogada e com suas condições atendidas. Uma falha técnica ou sessão nova, por si só, não exige novo aceite. Alterações de conteúdo, conta ou ação exigem verificar e obter a autorização correspondente ao que mudou. Antes de repetir uma operação de efeito remoto incerto, reconciliar pelo fluxo canônico; um job concluído não é publicado novamente.
+
+### 4.4 Briefing e continuidade
+
+Quando o pedido for uma campanha ou esteira, Robotnik prepara o planejamento com: período, objetivo de negócio, público, temas, distribuição de formatos, relação entre peças e capacidade de execução. Quando o pedido for uma peça avulsa, responde ao pedido sem criar automaticamente uma campanha inteira.
+
+Antes de produzir cada peça, registrar:
+
+- Campanha, quando houver, e posição na sequência.
+- Objetivo, público, ideia central, formato e razão da escolha.
+- Chamada, desenvolvimento, CTA e fatos que sustentam as afirmações.
+- Cena humana e composição vinculadas à referência canônica.
+- Ordem e conteúdo das lâminas, para carrossel; roteiro e duração pretendida, para Reel.
+- Arquivos e versão que serão submetidos à revisão e ao aceite existentes.
+
+Reutilizar dados e aprovações já fornecidos por Hebert. Perguntar somente por informação ausente que altere materialmente a entrega. Planejamento, revisão e publicação permanecem etapas do fluxo existente; este anexo não acrescenta um aprovador de calendário.
+
+### 4.5 Aplicação visual e capacidade de produção
+
+Todos os formatos obedecem às seções 2, 3, 6 e 7. A distribuição editorial não cria exceção para templates abstratos, troca de estética, supressão do protagonismo humano ou uso impreciso do logo. Adaptar a composição ao formato com unidade visual, sem repetir mecanicamente a mesma cena nem esticar uma imagem para preencher um vídeo.
+
+No carrossel, revisar o conjunto e cada lâmina: ordem, continuidade, leitura, ortografia e consistência. No Reel, assistir ao arquivo exportado, verificando cortes, tempo de leitura, proporção e áudio quando houver. Essas verificações integram a revisão já existente de Kowalski e o aceite aplicável de Hebert; não criam outro revisor.
+
+Manter a regra de piloto já estabelecida para uma nova esteira. Aceites existentes não são reabertos por causa desta revisão editorial. Antes de prometer publicação de um formato, confirmar que a rota canônica o suporta; conseguir produzir ou enviar o arquivo ao Telegram não comprova publicação no Instagram. Se faltar essa capacidade, registrar a dependência do formato sem inventar um publicador alternativo.
+
+A produção continua na rota nativa autorizada e já validada com autenticação ChatGPT, sem novo provedor, chave de API ou modalidade de cobrança. Teto de créditos de outra operação não é um orçamento Bikon. A capacidade é estimada com os limites efetivos da rota, tempo de execução, tentativas, retrabalho e volume de peças aprovadas. O planejamento não provisiona infraestrutura nem altera limites do runtime.
+
+### 4.6 Evidência e avaliação editorial
+
+Classificar a origem das decisões como: orientação de Hebert, recomendação editorial, observação da conta Bikon ou limite operacional confirmado. Se uma afirmação depender de pesquisa externa, registrar fonte original verificável, data, recorte e definição da métrica; não tratar uma fonte privada indisponível como comprovação.
+
+Este contrato não incorpora multiplicadores fixos de salvamentos, promessas de engajamento, uma quantidade universal de lâminas ou a obrigação de apenas um Reel. Não atribuir ao algoritmo uma penalização ou regra sem fonte verificável. Casos de clientes, resultados e bastidores reais exigem evidência e autorização de uso. Cenas ilustrativas devem permanecer reconhecíveis como ilustração, sem serem apresentadas como um case real.
+
+Robotnik registra, com os dados disponíveis na rota autorizada:
+
+- Alcance e descoberta por não seguidores, quando essa informação estiver disponível.
+- Salvamentos e compartilhamentos, com valores absolutos e taxas por alcance quando o denominador estiver disponível e for maior que zero.
+- Retenção ou conclusão de vídeo, quando disponíveis, sem inferi-las de visualizações totais.
+- Contatos qualificados e conversas comerciais, quando registrados, sem atribuir automaticamente uma venda a uma publicação.
+- Tempo de produção, tentativas e ajustes solicitados, para avaliar capacidade e qualidade.
+
+Fazer uma primeira avaliação após quatro semanas com publicações do plano, quando houver dados. Esse prazo é um checkpoint operacional escolhido, não garantia de significância estatística. Registrar período e número de peças por formato; se a amostra for insuficiente, manter a limitação explícita e estender a observação. Dados indisponíveis são registrados como indisponíveis, nunca como zero ou resultado estimado.
+
+Robotnik usa essa avaliação para propor ou justificar ajustes editoriais no fluxo existente, respeitando as orientações de Hebert. Não criar cron, lembrete, coleta adicional ou envio externo apenas por constar uma periodicidade neste documento. Resultados de desempenho não alteram automaticamente a direção visual, a rota técnica ou os critérios de aprovação.
+
 ## 5. Uma única autoridade, carregada em cada sessão
 
-Na implantação, o `content-production-contract` ativo deverá ser consolidado como **ponto único de autoridade criativa Bikon**, preservando funções compartilhadas que não pertençam a este escopo. Seu caminho efetivo deve ser identificado no ambiente; não será presumido a partir de um diretório de outra sessão.
+O `content-production-contract` existente permanece como **ponto único de autoridade criativa Bikon**, com planejamento editorial subordinado à mesma direção. Na aplicação desta revisão, localizar seu caminho efetivo e incorporar a seção 4 na autoridade existente, preservando funções compartilhadas e ajustes operacionais posteriores. Não criar outra habilidade nem substituir o arquivo instalado integralmente por este texto-base.
 
 AGENTS, TOOLS, memórias operacionais e demais pontos de entrada devem apontar para essa autoridade, sem manter versões paralelas da direção criativa. Instruções técnicas de ferramentas podem continuar existindo: elas ensinam a operar recursos, mas não escolhem outra estética.
 
 Antes de cada trabalho, inclusive após `/new`, reinício ou troca de executor, Robotnik deve:
 
-1. Carregar a versão ativa do contrato e a referência canônica.
+1. Carregar a versão ativa do contrato e a referência canônica; para campanhas e peças de Instagram, consumir também as diretrizes da seção 4 antes de definir o briefing.
 2. Confirmar acesso à imagem e aos insumos oficiais da marca.
 3. Conferir a disponibilidade efetiva da rota de geração e edição registrada.
 4. Vincular o trabalho à versão do contrato, ao hash da referência e aos insumos usados.
@@ -93,7 +247,7 @@ Registrar então uma rota principal de geração/edição e suas etapas de final
 
 **Sequência obrigatória de trabalho:**
 
-1. **Brief:** objetivo, público, mensagem central, formato, CTA e fatos disponíveis. Aproveitar informações já fornecidas; perguntar apenas o que mudar materialmente a peça.
+1. **Brief:** aplicar a seção 4 ao pedido, definindo objetivo, público, mensagem central, formato, CTA e fatos disponíveis. Aproveitar informações já fornecidas; perguntar apenas o que mudar materialmente a peça.
 2. **Direção da peça:** definir a cena humana, a tensão operacional, o enquadramento e a relação com a chamada, mantendo a referência como parâmetro.
 3. **Produção visual:** gerar ou editar a cena pela rota registrada. Iterar se o resultado não atingir a direção; não exportar um substituto de categoria inferior como solução equivalente.
 4. **Finalização:** aplicar texto, logo oficial, contraste, recorte e exportação com precisão. ImageMagick ou ferramenta local equivalente pode executar essas etapas; não pode substituir a fotografia por um template geométrico.
@@ -129,6 +283,8 @@ Kowalski precisa receber os arquivos reais e a referência. Se não conseguir ac
 
 ## 8. Retirada das referências e caminhos concorrentes
 
+Estas regras preservam a consolidação original. A revisão 1.1 não determina uma nova limpeza, exclusão de histórico ou reinstalação. Na aplicação editorial, remover apenas referências conflitantes introduzidas no texto adaptado, preservando o estado já aceito.
+
 O objetivo é **eliminar sua autoridade e uso ativo**, não apagar o histórico do que aconteceu. A consolidação não deve deixar um menu de estéticas antigas disponível ao Robotnik.
 
 | Tipo de material | Tratamento proposto |
@@ -150,7 +306,7 @@ O objetivo é **eliminar sua autoridade e uso ativo**, não apagar o histórico 
 5. Validar a configuração efetiva e uma sessão nova. Uma busca textual isolada não comprova que todas as fontes ativas foram retiradas.
 6. Emitir manifesto com o que foi alterado, retirado do uso ativo e preservado, além de como recuperar as mudanças locais.
 
-**Nenhuma exclusão irreversível é executada por esta proposta.** Se Hebert desejar eliminar também as cópias históricas de referências não protegidas, os alvos exatos deverão ser apresentados antes. Não usar exclusões recursivas amplas ou apagar evidências para obter “uma referência só”.
+**Esta revisão não autoriza exclusão irreversível.** Se Hebert desejar eliminar também as cópias históricas de referências não protegidas, os alvos exatos deverão ser apresentados antes. Não usar exclusões recursivas amplas ou apagar evidências para obter “uma referência só”.
 
 Um rollback técnico não deve reativar silenciosamente a produção pelas direções reprovadas. Se não for possível manter o contrato aprovado, a produção criativa permanece bloqueada até decisão de Hebert.
 
@@ -167,23 +323,32 @@ Também ficam preservados:
 
 Este contrato não aprova novos posts, agendamentos, serviços, publicações de teste ou mudanças de cobrança/autenticação.
 
-## 10. Critério para considerar a implantação concluída
+## 10. Aplicação da revisão editorial ao contrato existente
 
-A implantação só estará concluída quando houver evidência de:
+A versão 1.1 é uma atualização documental autorizada por Hebert nesta conversa. Sua gravação não comprova implantação nem consumo no runtime.
 
-1. Uma autoridade criativa Bikon efetivamente ativa, com versão e referência identificadas, sem instruções concorrentes carregáveis como vigentes.
-2. Acesso real aos insumos e à rota de produção em uma sessão nova do Robotnik.
-3. Uma nova peça piloto produzida por essa rota, revisada contra a referência e entregue como anexo real pelo canal já autorizado.
-4. Aceite de direção por Hebert — sem inferi-lo a partir de testes técnicos ou da publicação anterior.
-5. Preservação dos registros protegidos e emissão do manifesto de consolidação.
+Para aplicá-la na VPS:
 
-O aceite deste documento aprova a proposta de direção; **não comprova sua instalação**. A execução na VPS deve ser autorizada e acompanhada das evidências acima. Até lá, o estado deste arquivo permanece PROPOSTA.
+1. Ler a autoridade e a versão realmente instaladas. Conferir as instruções canônicas da topologia e preservar os ajustes posteriores ao texto-base, incluindo passagem de imagens, entrega de anexos e recuperação de sessão.
+2. Integrar o conteúdo editorial da seção 4 e seu apontamento de leitura à mesma habilidade `content-production-contract`. Não criar um contrato concorrente, agente, aprovador ou serviço.
+3. Preservar direção visual, referência, insumos, rota, papéis, aceites e recursos protegidos. A atualização não requer nova geração, envio de mídia, publicação ou repetição do piloto já aceito.
+4. Versionar somente os trechos alterados pelo mecanismo Git privado existente e registrar a revisão documental. Não sobrescrever arquivos compartilhados ou restaurar configurações antigas para reproduzir este documento.
+5. Verificar o consumo em sessão nova por um pedido textual de planejamento, sem geração nem envio externo: o resultado deve usar apenas os responsáveis existentes, aplicar a cadência ao total da conta e distinguir recomendação editorial de autorização de publicação.
+6. Registrar versão instalada, arquivos alterados e evidência do consumo. Se a aplicação não tiver ocorrido, manter esse estado explícito; não declarar instalação concluída pelo simples fato de o documento estar salvo.
+
+O contrato visual e os aceites históricos continuam válidos. A revisão editorial não reabre sua aprovação nem autoriza novos posts.
 
 ---
 
-**Síntese normativa:** carregar a referência, planejar uma cena humana com significado, produzir pela rota validada, finalizar com a marca oficial, revisar o resultado real e obter o aceite aplicável. Sem acesso à rota ou aos insumos, declarar o bloqueio. Nunca trocar silenciosamente a direção aprovada por algo mais fácil de executar.
+**Regra de execução:** planejar conforme o objetivo e a capacidade da conta, carregar a referência, produzir pela rota validada, finalizar com a marca oficial, revisar o resultado real e aplicar o aceite correspondente. A quantidade e o formato não autorizam desvio da direção criativa.
 
+## Registro de implantação 1.1-S1
 
-## Registro de implantação
+Aplicação autorizada pela ordem de Hebert vinculada ao Goal nativo `01a09754-ee23-7851-b39b-fd186a313620`. Integração restrita à cadência editorial ajustável e aos escopos de aceite, via proposta `update` do Skill Workshop. Referências, assets, rota operacional, recibos e aceite do piloto permanecem subordinados e preservados. O proposal ID e a evidência de consumo constam no lifecycle canônico e no recibo privado da implantação.
+
+## Histórico preservado da implantação 1.0
+
+O texto abaixo é registro histórico da instalação anterior; o estado atual do piloto é definido por `pilot-operational-receipt.md`.
+
 
 Instalação autorizada pelo GOAL.md e pedido de Hebert na thread `01a0812b-d8f6-7143-b2a8-dc99048f0977`. Texto normativo integral preservado acima; referências à proposta descrevem o histórico da aprovação. O estado deste cabeçalho descreve a implantação atual. Evidência da proposta original permanece privada e inalterada, SHA-256 `b5ba146a2ba4fdc4fd06b3dcd37e57be9c5e864dbfd48feab51d741202e83947`. Aceite artístico novo ainda pendente. Insumos e capacidade efetiva: `brand-assets.json` e `production-route.md`, neste diretório.
