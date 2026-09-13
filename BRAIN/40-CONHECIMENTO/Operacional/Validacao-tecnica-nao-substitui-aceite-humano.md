@@ -3,10 +3,10 @@
 ```yaml
 categoria: operacional
 tipo: guardrail
-fonte: consolidacao semanal 2026-W33
+fonte: consolidacao semanal 2026-W33; consolidacao semanal 2026-W37
 confiabilidade: alta
-ultima_revisao: 2026-08-16
-tags: [aceite, validacao, fail-closed, provimento-213, fip, kowalski]
+ultima_revisao: 2026-09-13
+tags: [aceite, validacao, fail-closed, provimento-213, fip, kowalski, versao, artefato, entrega]
 ```
 
 ## Principio
@@ -22,10 +22,14 @@ Validacao tecnica reduz risco, mas nao muda o criterio de aceite.
 - Separar "pronto tecnicamente" de "aceito operacionalmente".
 - Registrar quem ou qual evidencia autoriza a promocao final.
 - Nao substituir reteste em dispositivo real, revisao de PDF, reconciliacao de corpus ou aceite de Project Owner por resumo tecnico.
+- Vincular o parecer ao hash/versao revisado. Mudanca de copy, composicao, acabamento ou bytes invalida a heranca de aceite e exige nova revisao no gate aplicavel.
+- Distinguir aceite do transporte de aceite humano: upload concluido, ACK do gateway ou entrega Telegram nao comprovam visualizacao, aprovacao artistica nem autoridade de publicacao.
 
 ## Exemplo conectado
 
 Na semana 2026-W33, o Mini App e a composicao visual do Provimento 213 passaram em testes, rotas, Kowalski e pureza read-only, mas permaneceram bloqueados ate reteste real do iPhone do Project Owner. O PDF Alzira tambem exigiu aceite semantico apos corrigir o falso `100%`.
+
+Na semana 2026-W37, os rascunhos A/B da Bikon foram revisados e entregues sem aceite humano, o canario R3 permaneceu `REQUIRES_CHANGES` e a opcao C V6 do 365 Control nao herdou o parecer tecnico da V3. Cada versao conservou seu proprio estado e nenhuma recebeu autoridade de publicacao por inferencia.
 
 ## Relacoes
 
@@ -33,3 +37,4 @@ Na semana 2026-W33, o Mini App e a composicao visual do Provimento 213 passaram 
 - [[40-CONHECIMENTO/Operacional/Commit-de-estado-nao-e-aceitacao-operacional|Commit de estado nao e aceitacao operacional]]
 - [[40-CONHECIMENTO/Operacional/Contagem-nao-e-percentual-de-conclusao|Contagem nao e percentual de conclusao]]
 - [[01-DIARIO/Semanal/2026-W33|Semana 2026-W33]]
+- [[01-DIARIO/Semanal/2026-W37|Semana 2026-W37]]

@@ -53,6 +53,7 @@ Mapa geral do Brain.
 - `01-DIARIO/Semanal/2026-W33.md`: consolidação semanal parcial com FIP privado/controlado, Provimento 213 Golden Baseline protegida, ODP Day 3 aceito sem Day 4, pacote selado auto-reprodutível, aceite humano como gate próprio e cartoes pessoais em quarentena.
 - `01-DIARIO/Semanal/2026-W34.md`: consolidação semanal parcial com FIP intake/archive, Portal 213 Telegram-only, ODP Day 4 bloqueado por segredo, Sentinel V2, RSE em produção parcial e governança de capacidade sem roteamento semântico.
 - `01-DIARIO/Semanal/2026-W35.md`: consolidação semanal parcial com convergencia do lifecycle, executor/cgroup real, compatibilidade de interfaces persistentes e inventario de capacidades separado de autoridade operacional.
+- `01-DIARIO/Semanal/2026-W37.md`: consolidacao semanal parcial com evidencia vinculada a identidade/versao/bytes exatos, handoff comprovado no consumidor, autoridade por gate, cobertura temporal e retry bloqueado depois de efeito externo comprovado.
 - `01-DIARIO/2026/2026-07-03.md`: consolidação diária com snapshots versionados, KPIs WhatsApp/Bitdefender, limitação de tickets NinjaOne, falhas por limite de uso e saneamento de PDFs/artefatos no Git.
 - `01-DIARIO/2026/2026-07-08.md`: consolidação diária com limpeza pré-migração da VPS, riscos operacionais BIKON de 06/07/2026, atualização de snapshots e pendência de `memory_search`.
 - `01-DIARIO/2026/2026-07-09.md`: consolidação diária com Cresol API em homologação, canal Telegram isolado do Kowalski e saneamento adicional da rotina de snapshot.

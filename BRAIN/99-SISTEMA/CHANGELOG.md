@@ -1,5 +1,16 @@
 # CHANGELOG.md
 
+## 2026-09-13, consolidacao semanal
+
+- Criado resumo `BRAIN/01-DIARIO/Semanal/2026-W37.md` com cobertura parcial de 2026-09-07 a 2026-09-13, baseado nas daily notes disponiveis de 08 a 12/09.
+- Consolidados os padroes de evidencia vinculada a identidade/versao/bytes exatos, handoff comprovado no consumidor, autoridade separada por gate, cobertura temporal verificavel e bloqueio de retry depois de efeito externo comprovado.
+- Elevados cinco aprendizados por conexao; `Autorizacao-atomica-nao-herda-escopo.md` e `Validacao-tecnica-nao-substitui-aceite-humano.md` foram atualizados, enquanto tres notas permanentes ja existentes foram reforcadas no resumo sem criar duplicidade.
+- Atualizados MOC Diario, `INDEX.md`, `MEMORY.md`, `HEALTH.md` e Knowledge Health.
+- Corrigido no snapshot sanitizado do contrato criativo Robotnik o wikilink para a referencia canonica binaria deliberadamente excluida do Brain/Git; o caminho operacional foi preservado como texto e o Link Gate retornou a zero quebras.
+- Nenhum item foi movido para `BRAIN/99-ARQUIVO/`; os registros seguem recentes, conectados e com valor operacional, decisorio ou de auditoria.
+- Commit Link Gate validado: `ok=True`, `392` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados apenas arquivos locais do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente e nao acessou sistemas externos alem do push Git configurado.
+
 ## 2026-09-12, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-12.md` e atualizado o MOC cronologico.
