@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26 e qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10 e fechamento semanal entregue em 2026-09-14
 confiabilidade: alta
-ultima_revisao: 2026-09-11
+ultima_revisao: 2026-09-15
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
 ```
 
@@ -145,6 +145,13 @@ A investigacao separou coleta, render, transporte e leitura humana e preservou o
 - Primeiro/ultimo timestamp, nome de arquivo, ACK de transporte ou barra rolante de 28 dias nao provam cobertura mensal.
 - Fechamento exige populacao vinculada ao cliente e periodo, paginacao terminal, IDs unicos, dias/lacunas explicitados, classificacoes sem mistura e separacao entre metricas do mes e observacao corrente de retencao/storage.
 - Artefato valido, submissao SMTP, aceite do provider, entrega na caixa e leitura humana permanecem estados distintos.
+
+## Fechamento semanal de 2026-09-11 entregue em 2026-09-14
+
+- A fotografia corrente coletada em 12/09 00:36:41 BRT registrou 12 contas de 10 clientes: 9 OK, 1 em atencao, 0 criticas e 2 nao classificadas. Ela foi apresentada explicitamente como snapshot corrente, nao como historico nativo da sexta-feira.
+- Nos quatro snapshots historicos disponiveis de 07/09 a 10/09 houve 48 contas-snapshot: 34 OK, 4 em atencao, 0 criticas e 10 nao classificadas. A fonte nao expos eventos completos por job nem o placar historico nativo de 11/09.
+- A atencao recorrente foi atribuida a `16 Ferreira Rocha / servidor_2j3wv` de 08/09 a 10/09 e no snapshot corrente; o ultimo backup valido recente reduziu risco imediato, mas nao provou operacao saudavel durante toda a semana.
+- Proxima validacao segura: confirmar se o contador de erro do ativo zera em coleta posterior, classificar as duas contas ainda nao classificadas e correlacionar com ticket NinjaOne somente quando a evidencia expuser o vinculo ARX.
 
 ## Guardrails
 

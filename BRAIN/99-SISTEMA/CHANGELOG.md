@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-09-15, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-15.md` e atualizado o MOC cronologico.
+- Atualizados BIKON, Robotnik, Kowalski e a automacao Instagram com a evolucao do 365 Control em 14/09: V12 aceita como arte final sem herdar publicacao; novo carrossel/Reel refeitos com variedade criativa, aprovados tecnicamente nos manifests correntes e entregues somente em privado, ainda com `approval=null`, `publication=null` e `publication_authority=false`.
+- Atualizados Relatorios Operacionais e ARX com o fechamento semanal de 11/09 entregue em 14/09: WhatsApp, ARX e NinjaOne consumidos do cache legitimo; Bitdefender fail-closed no ponto de consumo por cache ausente/invalido; fotografia ARX preservada como snapshot corrente, sem inventar historico por job.
+- Atualizadas as notas permanentes `Validacao-tecnica-nao-substitui-aceite-humano.md` e `Ausencia-de-evidencia-nao-e-status-operacional.md` para separar superficies de QA e os estados coleta, composicao, cache e consumo.
+- Atualizados `HEALTH.md` e Knowledge Health; nao houve duplicidade, novo projeto ou arquivamento.
+- Commit Link Gate validado: `ok=True`, `394` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados contexto recente sanitizado e arquivos locais do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao acessou sistemas externos e nao executou coleta, provider, publicacao, agendamento, impulsionamento, retry, ticket ou mutacao operacional.
+
 ## 2026-09-13, consolidacao semanal
 
 - Criado resumo `BRAIN/01-DIARIO/Semanal/2026-W37.md` com cobertura parcial de 2026-09-07 a 2026-09-13, baseado nas daily notes disponiveis de 08 a 12/09.

@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02 e qualificacao ARX em 2026-09-08/09
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09 e fechamento semanal de 2026-09-14
 confiabilidade: alta
-ultima_revisao: 2026-09-09
+ultima_revisao: 2026-09-15
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
@@ -116,6 +116,13 @@ Atualização 2026-08-03:
 - Instrução diária do Kowalski no grupo `Suporte Bikon`: 07:59, timezone `America/Sao_Paulo`.
 - Antes/depois do ajuste foi usada a verificação local de sobreposição de crons; não reativar nem recriar arquitetura antiga.
 - Regra prática: segunda-feira usa fechamento semanal coletado no sábado; não forçar job diário de segunda quando não houver cache diário correspondente.
+
+## Fechamento semanal entregue em 2026-09-14
+
+- Na janela 07:45-07:48 BRT, os crons consumiram apenas os caches semanais autenticados de 11/09 e usaram entrega governada, sem coleta direta, recomposicao ou mutacao operacional.
+- WhatsApp Bikon, ARX Backup e NinjaOne Tickets foram entregues pelo ciclo legitimo. O WhatsApp registrou 18 atendimentos finalizados na semana, com 16/18 dentro do SLA de espera e 15/18 dentro do SLA de atendimento; o NinjaOne expôs snapshot de 34 tickets e nenhum item alto/critico, mas sem historico suficiente para saldo liquido de eventos.
+- Bitdefender retornou a mensagem fail-closed de indisponibilidade porque o cache semanal esperado nao estava materializado/valido no ponto de consumo. Isso prova falha do handoff/cache do relatorio, nao causa raiz na coleta upstream nem estado do provider.
+- O ARX preservou limites de evidencia: fotografia corrente de 12 contas, 9 OK, 1 em atencao e 2 nao classificadas; falta de placar historico nativo de 11/09 e ausencia de eventos por job impediram converter snapshot em fechamento historico completo.
 
 Checkpoint 2026-08-24:
 

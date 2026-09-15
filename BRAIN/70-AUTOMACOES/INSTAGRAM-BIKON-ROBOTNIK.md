@@ -4,7 +4,7 @@
 nome: Instagram Bikon Robotnik
 status: contrato_criativo_v1_ativo_primeira_publicacao_confirmada_fechamento_pendente
 responsavel: Robotnik sob coordenação do Puppet Master
-ultima_revisao: 2026-09-12
+ultima_revisao: 2026-09-15
 fonte: conversa Hebert/Puppet Master e workspace Robotnik
 tags: [instagram, meta, robotnik, marketing, bikon]
 ```
@@ -200,3 +200,11 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 - O canario R3 `robotnik-media-canario-r3-20260911` consumiu as duas geracoes autorizadas e permaneceu `DRAFT / NAO PUBLICAR`. Os dois pedidos de revisao foram persistidos e retomados pelo Kowalski; ambos terminaram `REVIEW_COMPLETE / REQUIRES_CHANGES`, sem autoridade de publicacao.
 - O primeiro reverify do R3 falhou fechado em `PROVIDER_LINEAGE_READ/DNS_RESOLUTION_FAILED`, com mutacoes zero. A R4 resolveu a leitura por worker confinado, policy/verifier protegidos contra escrita, capacidades zeradas, `NoNewPrivs=1` e grant host/porta/metodo/TTL especifico; o resultado foi `BYTES_VERIFIED`, nao uma nova publicacao.
 - O piloto `bikon-365-control-piloto-20260912` preservou versoes e gates. A V3 foi validada para entrega tecnica; apos pedido de Hebert por alternativa menos sombria, a opcao C evoluiu ate a previa V6. A falha recorrente em `review_prepare` impede tratar V6 como final validada. Nao publicar ou agendar sem revisao concluida e aprovacao humana explicita.
+
+## Lote semanal 365 Control e variedade criativa, 2026-09-14
+
+- A V12 do piloto foi aprovada tecnicamente e aceita por Hebert como arte final (`ARTWORK_ACCEPTED`); essa decisao nao foi convertida em autoridade de publicacao.
+- Nos jobs `bikon-365-control-carrossel-semana1-20260913` e `bikon-365-control-reel-semana1-20260913`, o pedido `HUMAN_REQUIRES_CREATIVE_VARIETY_REVISION` foi registrado no brief persistente. Reviews anteriores permaneceram como evidencia historica e nao foram reaproveitados para bytes alterados.
+- O lote seguinte substituiu repeticao de template por cenas, pessoas, enquadramentos e mensagens distintas. Os manifests correntes de carrossel e Reel fecharam `REVIEW_COMPLETE / APPROVED_FOR_TECHNICAL_DELIVERY` e foram consumidos somente como gates de entrega privada.
+- Robotnik validou estrategia, precisao editorial, arquivos e o MP4 integral de 24 segundos. Kowalski validou o pacote visual, narrativa, variedade, composicao, marca e legendas. As duas coberturas foram registradas separadamente.
+- Estado apos a entrega privada: `approval=null`, `publication=null` e `publication_authority=false`; nao houve publicacao, agendamento ou impulsionamento.

@@ -5,7 +5,7 @@ categoria: agente_operacional
 papel: marketing, conteúdo e campanhas
 fonte: configuração OpenClaw, AGENTS.md do workspace Robotnik e contrato criativo Bikon implantado em 2026-09-08
 confiabilidade: alta
-ultima_revisao: 2026-09-12
+ultima_revisao: 2026-09-15
 tags: [agente, marketing, robotnik, instagram, conteudo]
 ```
 
@@ -127,6 +127,14 @@ Regra operacional desde 2026-07-09:
 - O canario tecnico R3 `robotnik-media-canario-r3-20260911` permaneceu `DRAFT / NAO PUBLICAR`. Duas versoes passaram por dois reviews reais do Kowalski, ambos `REQUIRES_CHANGES`: V3 repetia materialmente a referencia e V4 violava o protagonismo humano do contrato. O canario nao concedeu aceite artistico, entrega operacional ou autoridade de publicacao.
 - No job ja publicado `bikon-ia-governada-pme-20260910`, a qualificacao R4 recuperou os bytes pelo verificador protegido usando grant efemero de 120 segundos para `scontent-gru1-2.cdninstagram.com:443`. O estado chegou a `BYTES_VERIFIED`, o parecer registrou correspondencia visual e os contadores provaram `instagram_mutations=0`; nenhuma nova publicacao foi executada.
 - Para o piloto `bikon-365-control-piloto-20260912`, a V3 recebeu `APPROVED_FOR_TECHNICAL_DELIVERY`, mas Hebert pediu uma alternativa menos sombria. A opcao C corrigida chegou a V6 e foi enviada somente como previa; `review_prepare` continuou falhando, portanto a V6 nao e versao final validada. Publicacao e agendamento permanecem falsos.
+
+## Aceite da V12 e lote semanal com variedade criativa, 2026-09-14
+
+- A V12 foi comparada com a referencia, aprovada tecnicamente pelo Kowalski e aceita por Hebert como arte final (`ARTWORK_ACCEPTED`). Esse aceite pertence aos bytes apresentados e nao autoriza publicacao por heranca.
+- Nos jobs `bikon-365-control-carrossel-semana1-20260913` e `bikon-365-control-reel-semana1-20260913`, o pedido humano `HUMAN_REQUIRES_CREATIVE_VARIETY_REVISION` foi persistido sem alterar `approval` ou `publication`. Os reviews anteriores foram mantidos como evidencia historica dos bytes que cobriam.
+- O lote refeito adotou variedade real de situacao, pessoas, enquadramento e mensagem. Carrossel e Reel chegaram a `REVIEW_COMPLETE / APPROVED_FOR_TECHNICAL_DELIVERY` nos manifests atuais e foram entregues privadamente para avaliacao de Hebert.
+- O QA permaneceu dividido por superficie: Robotnik validou o MP4 integral de 24 segundos; Kowalski aprovou o pacote visual, a narrativa, a variedade, a composicao, a marca e as legendas. O parecer de um nao foi ampliado para a superficie nao exercitada pelo outro.
+- Estado consolidado: `approval=null`, `publication=null` e `publication_authority=false`. A entrega privada nao comprova aceite artistico/comercial e nao autoriza publicar, agendar, impulsionar ou reutilizar.
 
 ## Relações
 

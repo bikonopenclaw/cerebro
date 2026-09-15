@@ -3,7 +3,7 @@
 ```yaml
 categoria: agente_operacional
 papel: dados, relatórios e documentação técnica
-ultima_revisao: 2026-09-12
+ultima_revisao: 2026-09-15
 tags: [kowalski, relatorios, ninjaone, arx-backup, bitdefender, financeiro, provimento-213-2026, cns, operacao, telegram, identidade-visual]
 ```
 
@@ -130,6 +130,8 @@ Em 2026-09-09/10, Kowalski revisou os mesmos bytes da peça "IA governada para P
 Em 2026-09-11, Kowalski recebeu novas opcoes A/B por copia de escopo exato no proprio workspace depois de a pasta compartilhada permanecer invisivel ao seu runtime. Abriu os assets reais, conferiu hashes e aprovou ambos com ressalvas apenas para entrega privada como rascunho. A repete a composicao de 10/09 e exige recomposicao/legenda nova antes de aceite artistico ou publicacao; B e alternativa comparativa sem pessoas. O parecer nao comprova aceite humano nem autoriza Instagram.
 
 Ainda em 2026-09-11, o canario tecnico R3 da nova integracao de midia comprovou dois reviews persistidos e retomaveis pelo fluxo canonico. Kowalski marcou ambos `REQUIRES_CHANGES`: uma versao reproduzia demais a composicao da referencia e a outra contrariava o protagonismo humano obrigatorio. No piloto 365 Control, Kowalski aprovou tecnicamente a V3 apos a retirada do bloco escuro; a alternativa V6 entregue depois permanece sem revalidacao porque o empacotamento `review_prepare` falhou. Nenhum desses pareceres autoriza publicacao.
+
+Em 2026-09-14, a V12 do 365 Control foi aceita por Hebert como arte final depois da comparacao visual; o aceite permaneceu vinculado a esses bytes e nao concedeu publicacao. Quando Hebert pediu maior variedade nas pecas semanais, Kowalski revisou manifests novos: carrossel e Reel chegaram a `APPROVED_FOR_TECHNICAL_DELIVERY` para entrega privada, com `approval=null`, `publication=null` e `publication_authority=false`. No Reel, Kowalski validou somente a superficie visual do pacote; MP4 integral, duracao e encode ficaram sob QA tecnico do Robotnik e nao foram apropriados como parecer visual proprio.
 
 ## Padrão NinjaOne/EOL
 

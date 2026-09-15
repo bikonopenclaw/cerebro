@@ -3,9 +3,9 @@
 ```yaml
 categoria: operacional
 tipo: guardrail
-fonte: consolidacao semanal 2026-W33; consolidacao semanal 2026-W37
+fonte: consolidacao semanal 2026-W33; consolidacao semanal 2026-W37; lote 365 Control em 2026-09-14
 confiabilidade: alta
-ultima_revisao: 2026-09-13
+ultima_revisao: 2026-09-15
 tags: [aceite, validacao, fail-closed, provimento-213, fip, kowalski, versao, artefato, entrega]
 ```
 
@@ -24,12 +24,15 @@ Validacao tecnica reduz risco, mas nao muda o criterio de aceite.
 - Nao substituir reteste em dispositivo real, revisao de PDF, reconciliacao de corpus ou aceite de Project Owner por resumo tecnico.
 - Vincular o parecer ao hash/versao revisado. Mudanca de copy, composicao, acabamento ou bytes invalida a heranca de aceite e exige nova revisao no gate aplicavel.
 - Distinguir aceite do transporte de aceite humano: upload concluido, ACK do gateway ou entrega Telegram nao comprovam visualizacao, aprovacao artistica nem autoridade de publicacao.
+- Preservar a superficie exata de cada QA: validacao de MP4 integral pelo produtor nao amplia um parecer do revisor sobre frames/capa, e revisao visual nao prova encode, audio, duracao ou sincronismo que nao foram exercitados.
 
 ## Exemplo conectado
 
 Na semana 2026-W33, o Mini App e a composicao visual do Provimento 213 passaram em testes, rotas, Kowalski e pureza read-only, mas permaneceram bloqueados ate reteste real do iPhone do Project Owner. O PDF Alzira tambem exigiu aceite semantico apos corrigir o falso `100%`.
 
 Na semana 2026-W37, os rascunhos A/B da Bikon foram revisados e entregues sem aceite humano, o canario R3 permaneceu `REQUIRES_CHANGES` e a opcao C V6 do 365 Control nao herdou o parecer tecnico da V3. Cada versao conservou seu proprio estado e nenhuma recebeu autoridade de publicacao por inferencia.
+
+Em 2026-09-14, carrossel e Reel 365 Control chegaram a `APPROVED_FOR_TECHNICAL_DELIVERY` e foram entregues privadamente, mas permaneceram com `approval=null`, `publication=null` e `publication_authority=false`. No Reel, Robotnik validou o MP4 integral enquanto Kowalski cobriu apenas o pacote visual; as duas evidencias foram mantidas separadas.
 
 ## Relacoes
 
