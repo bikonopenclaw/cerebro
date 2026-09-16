@@ -2,12 +2,12 @@
 
 ```yaml
 nome: OpenClaw Operational Data Platform
-status: day4_successor_host_qualified_package_ready_production_unauthorized
+status: owner_bundle_v1_17_prepared_validated_not_deployed
 responsavel: Puppet Master
 inicio: 2026-08-05
 fim:
 prioridade: alta
-ultima_revisao: 2026-09-11
+ultima_revisao: 2026-09-16
 tags: [openclaw, odp, postgresql, operational-data, governance, rollback, non-interference, controlled-secret-executor, day3, day4, production-onboarding, compatible-successor, rse-decommissioned]
 ```
 
@@ -68,11 +68,19 @@ O Brain registra apenas estado consolidado e guardrails. Evidencias, pacotes, ma
 - Discovery de ambiente nao pode despejar `env` em stdout com filtro amplo. Preflight seguro deve usar allowlist de nomes, metadata/hash ou probes que provem ausencia de segredo antes de imprimir qualquer saida.
 - Exposicao de segredo em transcript/evidence exige fail-closed, inventario de superficies, rotacao/revogacao de runtime, validacao de credencial nova sem stdout secreto, invalidez da antiga onde testavel e suite negativa com exposicao pos-recuperacao zerada antes de retomar a autoridade original.
 
+## Pacote completo para o proprietario v1.17.0, 2026-09-15
+
+- O bundle completo `ODP_OWNER_DEPLOYMENT_BUNDLE_v1.17.0_20260915.tar.gz` foi preparado e validado como `openclaw`, com `3.567` arquivos regulares, `22.033.077` bytes descomprimidos e SHA-256 `891bda4a7ecba5a8b380246104aa123d21da93a6b5781066dd41eaaa8d1e2e2d`.
+- A qualificacao preservou `15` testes Day 3, `16` Day 4, `31` de credenciais e `28` focados v1.17; a copia extraida do arquivo passou novamente nos `28` testes, na verificacao integral e na importacao RPC offline.
+- O teste real de isolamento PTY entre usuarios continua dependente do proprietario. Tambem permanecem pendentes layout congelado sob controle root, preflight atual de recursos/backup protegido, execucao produtiva autorizada, aceite independente e readback PGL canonico.
+- O pacote inclui sequencia de deploy, rollback, deltas, dependencias e verificadores, mas nao foi implantado. Nao houve PostgreSQL novo, RPC real, segredo, privilegio do agente, alteracao de ACL/sudoers, restart ou mutacao produtiva.
+- `HOST_CAPACITY_STATUS=EMERGENCY_OPEN` e package-ready nao substituem revisao de codigo, preflight atual nem autorizacao atomica posterior do proprietario.
+
 ## Proximos passos
 
 - Preservar o Checkpoint L, o workspace B1 historico, os dois runs fail-closed predecessores e o successor `v1.1.0` qualificado; nenhum deles deve ser reclassificado ou sobrescrito.
 - RSE foi permanentemente cancelado e desinstalado. Uma retomada ODP nao pode depender de RSE nem interpretar artefatos historicos RSE como autoridade ativa.
-- Executar a leitura sanitizada de PGL/status e revisar o pacote delta somente sob gates proprios. Antes de instalacao ou migracao Provimento 213 para ODP, exigir pre-requisitos autenticados, contratos aplicaveis, rollback, non-interference e autorizacao atomica de promocao.
+- Revisar e congelar o bundle v1.17.0 em local root-controlled somente pelo proprietario. A sequencia produtiva continua separada e exige autorizacao posterior; antes de instalacao ou migracao Provimento 213 para ODP, exigir pre-requisitos autenticados, contratos aplicaveis, rollback, non-interference e autorizacao atomica de promocao.
 
 ## Relacoes
 

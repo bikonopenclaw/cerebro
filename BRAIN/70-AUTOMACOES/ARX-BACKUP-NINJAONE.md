@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10 e fechamento semanal entregue em 2026-09-14
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15 e request mensal 2111 reconciliado em 2026-09-16
 confiabilidade: alta
-ultima_revisao: 2026-09-15
+ultima_revisao: 2026-09-16
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
 ```
 
@@ -153,12 +153,27 @@ A investigacao separou coleta, render, transporte e leitura humana e preservou o
 - A atencao recorrente foi atribuida a `16 Ferreira Rocha / servidor_2j3wv` de 08/09 a 10/09 e no snapshot corrente; o ultimo backup valido recente reduziu risco imediato, mas nao provou operacao saudavel durante toda a semana.
 - Proxima validacao segura: confirmar se o contador de erro do ativo zera em coleta posterior, classificar as duas contas ainda nao classificadas e correlacionar com ticket NinjaOne somente quando a evidencia expuser o vinculo ARX.
 
+## Ciclo diario referente a 2026-09-14
+
+- A coleta autenticada read-only gerada em 15/09 00:30:03 BRT registrou `11` contas de `10` clientes: `10` OK, `1` em atencao, `0` criticas e `0` outras.
+- O artefato passou validacao, mas o recibo preservou `delivery=NOT_REQUESTED`; portanto prova coleta/render, nao transporte nem leitura humana.
+- O resumo agregado nao expos eventos completos do periodo nem ultimo backup valido por conta. O placar e fotografia corrente e nao deve ser convertido em total de backups executados no dia.
+
+## Relatorio mensal 2111 Alfredo Chaves, 2026-09-15/16
+
+- O pedido referente a agosto/2026 preservou a janela exata de `2026-08-01T03:00:00Z` a `2026-09-01T03:00:00Z` exclusiva, em `America/Sao_Paulo`, mas nao produziu relatorio mensal.
+- Tentativas sucessivas falharam fechadas antes de dados validos por invisibilidade do workspace/controlador Sentinel, binding `supersedes` defasado, ausencia do cliente no mapping mensal e credencial inacessivel na rota anterior.
+- O caminho hardcoded da credencial foi removido em favor do cofre compartilhado aprovado, com arquivo regular, ownership esperado e modo `600`; os testes fail-closed passaram `7/7`, sem expor o valor secreto.
+- A reconciliacao terminal manteve a request canonica como `FAIL_CLOSED_EXTERNAL_OWNER_GATE`: `0` chamadas ao provider, `0` mutacoes, `0` envios externos, `0` evidencia mensal Sentinel e `0` PDF Kowalski.
+- O escopo permanece congelado sem criar novo sucessor: faltam binding numerico `PartnerId/AccountId` aprovado pelo proprietario e decisao sobre a permissao nativa Sentinel-only preparada para `api.backup.management`. Nome de exibicao nao autoriza esse binding e snapshot corrente nao substitui historico completo de agosto.
+
 ## Guardrails
 
 - Não imprimir tokens, segredos ou credenciais em respostas, logs consolidados ou Brain.
 - Em caso de erro, relatar de forma curta e apontar o caminho do log operacional.
 - Não acionar cliente externo nem enviar e-mail apenas por execução bem-sucedida da rotina.
 - Resultado de entrega `UNKNOWN` deve bloquear retry ate reconciliacao confiavel ou nova autorizacao especifica; regenerar o anexo nao contorna a identidade logica cliente/competencia.
+- Timeout de ACK/start em ordem ad-hoc deve fechar a mesma identidade terminalmente; nao autoriza criar sucessor nem acessar provider por rota alternativa.
 
 ## Relações
 

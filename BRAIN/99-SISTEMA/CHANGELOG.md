@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-09-16, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-16.md` e atualizado o MOC cronologico.
+- Atualizado ODP com o bundle completo v1.17.0 preparado e validado para o proprietario, ainda nao implantado e com gates produtivos/root preservados.
+- Atualizados Sentinel, ARX e a nota permanente de lifecycle com o contrato de ACK/start ad-hoc, o reparo do caminho de credencial e a reconciliacao fail-closed do request mensal 2111 antes de qualquer provider call, mutacao, envio ou PDF.
+- Registrado o ciclo diario ARX referente a 14/09 como coleta/render validos com `delivery=NOT_REQUESTED`, sem promover snapshot corrente a historico por job.
+- Atualizados `HEALTH.md` e Knowledge Health; nao houve duplicidade, novo projeto ou arquivamento.
+- Commit Link Gate validado: `ok=True`, `395` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados contexto recente sanitizado, artefatos locais e arquivos do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao acessou sistemas externos e nao executou provider, coleta, retry, permissao de rede, root, deploy, migracao, PGL/status write, entrega ou mutacao operacional.
+
 ## 2026-09-15, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-15.md` e atualizado o MOC cronologico.

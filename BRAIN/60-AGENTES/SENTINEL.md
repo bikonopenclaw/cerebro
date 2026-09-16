@@ -222,6 +222,13 @@ Sob autorizacao estreita, Sentinel passou a adquirir a populacao historica mensa
 - A ausencia de sessoes de Vila Velha em 07/09 permanece lacuna operacional nao classificada: nao prova sucesso, falha nem destruicao de fonte.
 - A autorizacao de History nao inclui restore, Recovery Verification ativo, alteracao de backup, envio de relatorio, ampliacao de cliente ou mutacao do provider.
 
+## Binding ad-hoc ARX e request 2111, 2026-09-15/16
+
+- Ordens ad-hoc ARX/Cove passaram a exigir ativacao unica pelo Puppet e dispatch do coletor canonico com os bindings exatos da ordem ativa. O coletor executa preflight no namespace Sentinel e persiste ACK/start da mesma identidade; mensagens conversacionais nao substituem essas transicoes.
+- ACK e start possuem limites de `120` segundos, observados por watchdog independente a cada `30` segundos. Timeout persiste falha terminal e bloqueia a request supervisionada, sem criar sucessor ou chamar provider.
+- No request mensal de `2111-Cartorio Alfredo Chaves` para agosto/2026, o caminho hardcoded para credencial fora do workspace Sentinel foi substituido pelo cofre compartilhado aprovado, preservando segredo fora de logs/Brain e validando o loader em `7/7` testes fail-closed.
+- A request reconciliada terminou `FAIL_CLOSED_EXTERNAL_OWNER_GATE`, com `0` provider requests, `0` mutacoes e `0` envios. Ela permanece congelada ate binding numerico `PartnerId/AccountId` aprovado pelo proprietario e decisao sobre permissao nativa Sentinel-only; display name ou inferencia nao sao binding de provider.
+
 ## Forense passivo Darth 409, 2026-08-23
 
 Sentinel executou investigacao local read-only do conflito Telegram 409 do Darth sem `getUpdates`, canary artificial, restart/stop, token/header/env, root/sudo ou mutacao de producao.
