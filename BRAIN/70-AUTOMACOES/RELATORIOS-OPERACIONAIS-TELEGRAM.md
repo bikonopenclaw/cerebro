@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09 e fechamento semanal de 2026-09-14
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14 e qualificacao do fluxo universal em 2026-09-16
 confiabilidade: alta
-ultima_revisao: 2026-09-15
+ultima_revisao: 2026-09-17
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
@@ -173,6 +173,14 @@ Regra reforcada: ausencia de saida no transcript nao autoriza repetir coleta, ge
 - Coleta e renderer foram corrigidos para preservar evidencia imutavel, vincular fonte/ordem/periodo/contagens por hash e anunciar apenas o texto limpo. Diagnostico e validacao permanecem em recibo privado.
 - A reconciliacao do ACK existente retorna `NO_REPLY` sem novo envio. Resultado desconhecido gera hold persistido e silencioso, impedindo retry ou notificacao que possa ser confundida com o relatorio.
 - A correcao passou em testes instalados sem transporte real. A aceitacao ponta a ponta do fluxo corrigido permanece pendente da coleta natural de 09/09 03:30 UTC e entrega natural de 09/09 10:46 UTC, com artefato e ACK correlacionados.
+
+## Qualificacao do fluxo universal, 2026-09-16
+
+- Sete pedidos independentes foram normalizados apenas pelo texto de negocio e processados sequencialmente pelo fluxo canonico: NinjaOne, Bitdefender, WhatsApp e Helpdesk de 14/09; Torre Operacional de 13/09; consolidado operacional de 14/09; e comparativo NinjaOne/Bitdefender de 07 a 11/09.
+- Todos fecharam `SUCCESS`, `REPORT_PRODUCT_RESULT=PASS` e `DELIVERY_RESULT=NOT_REQUESTED`, com PDFs e recibos internos, sem envio externo, ACK manual, manipulacao de segredo ou sucessor.
+- O comparativo preservou `evidence=INSUFFICIENT`: Bitdefender estava autenticado, mas NinjaOne nao possuia terminal produtivo com a validacao exigida. O PDF documenta a disponibilidade de evidencia e nao deve ser tratado como comparacao integral.
+- A Torre Operacional de 12/09 tambem fechou separadamente em `SUCCESS`, com QA aprovado e entrega somente interna ao Hebert. Em ambos os dias, ausencia de registro foi mantida como limitacao, nao como prova de ausencia de atividade.
+- Regra operacional: sucesso do produto significa que o documento representa honestamente a evidencia disponivel; nao converte fonte incompleta em cobertura integral nem autoriza entrega externa.
 
 ## Padrão visual para relatórios externos
 

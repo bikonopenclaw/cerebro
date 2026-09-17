@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-09-17, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-17.md` e atualizado o MOC cronologico.
+- Atualizados ARX e Sentinel com o ciclo duravel do cliente 2111: PDF inicial tecnicamente valido, rejeicao do proprietario por falta dos backups realizados e sucessor encerrado em `TERMINAL_INTERNAL_FAILURE / EVIDENCE_INSUFFICIENT` apos esgotar as fontes causais autorizadas, sem envio externo ou mutacao do provider.
+- Atualizados Relatorios Operacionais com a qualificacao de sete pedidos pelo fluxo universal e a Torre Operacional de 12/09: produtos `PASS`, entregas externas suprimidas e limitacoes factuais preservadas, inclusive o comparativo NinjaOne/Bitdefender com evidencia insuficiente.
+- Atualizada a nota permanente `Contrato-de-runtime-reprodutivel.md` com a falha de handoff documental entre namespaces: caminho do produtor e loopback local nao provam transporte; o consumidor precisa materializar, ler e conferir os mesmos bytes.
+- Atualizado `HEALTH.md`; nao houve duplicidade, novo projeto, nova pessoa ou arquivamento.
+- Commit Link Gate validado: `ok=True`, `396` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados contexto recente sanitizado, registros duraveis observacionais e arquivos locais do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao acessou sistemas externos e nao executou provider, coleta, retry, reparo, envio, deploy, publicacao ou mutacao operacional.
+
 ## 2026-09-16, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-16.md` e atualizado o MOC cronologico.

@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15 e request mensal 2111 reconciliado em 2026-09-16
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15 e requests mensais 2111 reconciliadas em 2026-09-16/17
 confiabilidade: alta
-ultima_revisao: 2026-09-16
+ultima_revisao: 2026-09-17
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
 ```
 
@@ -165,7 +165,14 @@ A investigacao separou coleta, render, transporte e leitura humana e preservou o
 - Tentativas sucessivas falharam fechadas antes de dados validos por invisibilidade do workspace/controlador Sentinel, binding `supersedes` defasado, ausencia do cliente no mapping mensal e credencial inacessivel na rota anterior.
 - O caminho hardcoded da credencial foi removido em favor do cofre compartilhado aprovado, com arquivo regular, ownership esperado e modo `600`; os testes fail-closed passaram `7/7`, sem expor o valor secreto.
 - A reconciliacao terminal manteve a request canonica como `FAIL_CLOSED_EXTERNAL_OWNER_GATE`: `0` chamadas ao provider, `0` mutacoes, `0` envios externos, `0` evidencia mensal Sentinel e `0` PDF Kowalski.
-- O escopo permanece congelado sem criar novo sucessor: faltam binding numerico `PartnerId/AccountId` aprovado pelo proprietario e decisao sobre a permissao nativa Sentinel-only preparada para `api.backup.management`. Nome de exibicao nao autoriza esse binding e snapshot corrente nao substitui historico completo de agosto.
+- Naquele checkpoint, o escopo permaneceu congelado sem criar novo sucessor: faltavam binding numerico `PartnerId/AccountId` aprovado pelo proprietario e decisao sobre a permissao nativa Sentinel-only preparada para `api.backup.management`. Nome de exibicao nao autoriza esse binding e snapshot corrente nao substitui historico completo de agosto.
+
+## Rework mensal 2111 e esgotamento de evidencia, 2026-09-16/17
+
+- Depois da autorizacao e do binding numerico autenticado, a request duravel `DW-12bc23c0ea0b5e4ec41480df` consultou a conta `5452047` sob o partner `2944584`, produziu PDF e passou QA. A leitura mensal retornou zero registros e nao sustentou volume, falhas, taxa de sucesso ou pontos de recuperacao; o proprietario rejeitou o artefato por nao mostrar os backups realizados.
+- O predecessor ficou preservado como `REWORK_REQUIRED / OWNER_REJECTED`, sem apagar o sucesso tecnico anterior. O sucessor `DW-378186a1a4d61eb0b026fa6a` manteve a linhagem e executou recuperacao limitada da mesma request, sem envio externo nem mutacao do provider.
+- A resolucao reutilizou evidencia valida e esgotou as hipoteses causais autorizadas: historico primario, host alternativo autenticado, auditoria nativa e descritores de retencao. Uma leitura falha preservou o recibo original e bloqueou retry identico automatico.
+- O terminal canonico do sucessor foi `TERMINAL_INTERNAL_FAILURE / EVIDENCE_INSUFFICIENT`, com primeiro rompimento na etapa `collect`. Nao produzir novo PDF nem repetir consulta identica: retomada depende de nova fonte causal capaz de provar as sessoes de agosto ou de nova decisao explicita do proprietario sobre uma saida honesta com a lacuna declarada.
 
 ## Guardrails
 
@@ -174,6 +181,7 @@ A investigacao separou coleta, render, transporte e leitura humana e preservou o
 - Não acionar cliente externo nem enviar e-mail apenas por execução bem-sucedida da rotina.
 - Resultado de entrega `UNKNOWN` deve bloquear retry ate reconciliacao confiavel ou nova autorizacao especifica; regenerar o anexo nao contorna a identidade logica cliente/competencia.
 - Timeout de ACK/start em ordem ad-hoc deve fechar a mesma identidade terminalmente; nao autoriza criar sucessor nem acessar provider por rota alternativa.
+- PDF valido e QA aprovado nao compensam evidencia mensal insuficiente nem aceite negativo do proprietario; produto, suficiência factual e aceite sao gates separados.
 
 ## Relações
 

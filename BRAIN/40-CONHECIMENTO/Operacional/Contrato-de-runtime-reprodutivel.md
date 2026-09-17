@@ -3,9 +3,9 @@
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidacao semanal 2026-W31; bootstrap RSE M2 em 2026-08-28/29; precheck Sentinel em 2026-09-07; reparo do relay nativo em 2026-09-08; handoff Robotnik/Kowalski em 2026-09-11
+fonte: consolidacao semanal 2026-W31; bootstrap RSE M2 em 2026-08-28/29; precheck Sentinel em 2026-09-07; reparo do relay nativo em 2026-09-08; handoffs Robotnik/Kowalski em 2026-09-11 e Puppet/Kowalski em 2026-09-16
 confiabilidade: alta
-ultima_revisao: 2026-09-11
+ultima_revisao: 2026-09-17
 tags: [runtime, python, reproducibilidade, checksums, supply-chain, drift, cgroup, executor, lifecycle, sandbox, mounts, handoff, materializacao, timeout, process-group]
 ```
 
@@ -36,6 +36,7 @@ Runtime operacional nao deve depender de caminho conveniente, instalacao local i
 - Falha de acesso dentro de um sandbox prova apenas a limitacao daquela superficie; nao comprova ausencia, defeito ou estado terminal do alvo vivo.
 - Timeout de subprocesso deve envolver o bootstrap externo e seu grupo de processos. Um limite iniciado somente depois do runtime carregar nao contem travamento anterior ao startup nem relay abandonado.
 - Sucesso de escrita ou copia dentro da visao gerenciada do produtor nao prova materializacao duravel no host nem visibilidade para o consumidor. Handoff entre agentes precisa de leitura real pelo destino, identidade/hash dos mesmos bytes e recibo terminal separado da mera aceitacao da solicitacao.
+- `127.0.0.1` e relativo ao namespace de rede do processo. Um servidor local do produtor nao e ponte entre agentes isolados sem rota explicitamente compartilhada e autorizada; falha de `curl` no consumidor deve bloquear o handoff, nao induzir copia presumida.
 
 ## Exemplo conectado
 
@@ -48,6 +49,8 @@ No precheck Sentinel de 2026-09-07, diferentes executores receberam apenas o wor
 No reparo Puppet/Robotnik de 2026-09-08, o relay nativo precisava limitar o CLI antes que Node pudesse iniciar. O comando passou a envolver bootstrap e grupo de processos com timeout/TERM/KILL limitado; canarios de sucesso, falha de ferramenta e entrega Telegram passaram, sem converter o job ARX original falho em sucesso.
 
 No handoff Robotnik/Kowalski de 2026-09-11, a copia reportada no workspace principal nao apareceu de forma duravel e, mesmo depois de criada no host, permaneceu invisivel ao filesystem gerenciado do revisor. A rota funcional materializou copia byte a byte no workspace proprio do Kowalski e exigiu abertura/revisao real dos assets; configuracao, permissoes e servicos permaneceram inalterados.
+
+No handoff documental Puppet/Kowalski de 2026-09-16, os PDFs-base nao estavam visiveis pelo caminho compartilhado e o servidor em `127.0.0.1` do produtor nao era alcancavel no namespace de rede do Kowalski. Hash declarado e aceite do job nao provaram download. A continuacao segura ficou dependente de materializacao autenticada no workspace do consumidor e confirmacao dos mesmos bytes antes de gerar ou revisar os documentos.
 
 ## Relacoes
 
