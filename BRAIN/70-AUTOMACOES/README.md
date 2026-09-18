@@ -15,6 +15,7 @@ Este MOC liga automacoes e rotinas operacionais documentadas no Brain.
 - [[70-AUTOMACOES/API-WHATSAPP-BIKON|API WhatsApp Bikon]]
 - [[70-AUTOMACOES/ARX-BACKUP-NINJAONE|ARX Backup NinjaOne]]
 - [[70-AUTOMACOES/BITDEFENDER-GRAVITYZONE|Bitdefender GravityZone]]
+- [[70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION|Bikon Durable Work Orchestration]]
 - [[70-AUTOMACOES/FATURAMENTO-TELEGRAM|Faturamento Telegram]]
 - [[70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK|Instagram Bikon Robotnik]]
 - [[70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES|Matriz de acesso Bikon AD clientes]]

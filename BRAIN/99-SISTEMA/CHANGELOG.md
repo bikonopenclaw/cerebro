@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-09-18, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-18.md` e atualizado o MOC cronologico.
+- Criado o projeto `LinkedIn-Robotnik-Publisher.md` e atualizados BIKON, Robotnik e a nota de autorizacao atomica: scaffold mock `12/12 PASS`, genesis PGL aceito e Gate A bloqueado antes do portal por navegador autenticado nao anexavel, sem app, OAuth, segredo ou publicacao.
+- Criada a automacao `BIKON-DURABLE-WORK-ORCHESTRATION.md` e atualizado ARX com o contrato de admissao/recovery/QA/entrega duravel, a conclusao documental Bruna e quatro relatorios ARX por dados autenticados disponiveis, sem customer delivery ou mutacao de provider.
+- Registrada no diario a instalacao tecnica do acesso PGL mediado para Puppet: append na sequencia `81`, readback e replay idempotente, sem promover o marco a aceitacao geral.
+- Atualizado `HEALTH.md`; nao houve duplicidade, nova pessoa ou arquivamento.
+- Commit Link Gate validado: `ok=True`, `399` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados contexto recente sanitizado, sessoes internas e artefatos locais; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao acessou sistema externo e nao executou provider, coleta, retry operacional, OAuth, app LinkedIn, publicacao ou entrega.
+
 ## 2026-09-17, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-17.md` e atualizado o MOC cronologico.

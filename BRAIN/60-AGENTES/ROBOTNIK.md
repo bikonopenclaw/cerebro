@@ -3,10 +3,10 @@
 ```yaml
 categoria: agente_operacional
 papel: marketing, conteúdo e campanhas
-fonte: configuração OpenClaw, AGENTS.md do workspace Robotnik e contrato criativo Bikon implantado em 2026-09-08
+fonte: configuração OpenClaw, AGENTS.md do workspace Robotnik, contrato criativo Bikon implantado em 2026-09-08 e projeto LinkedIn preparado em 2026-09-17
 confiabilidade: alta
-ultima_revisao: 2026-09-15
-tags: [agente, marketing, robotnik, instagram, conteudo]
+ultima_revisao: 2026-09-18
+tags: [agente, marketing, robotnik, instagram, linkedin, conteudo]
 ```
 
 ## Papel
@@ -32,6 +32,7 @@ Responsabilidades principais:
 - Em peças finais públicas ou semi-públicas da Bikon com arte/layout, Robotnik mantém pauta, copy e campanha, mas deve passar pelo Kowalski para revisão visual antes da entrega final.
 - Na produção Instagram, Robotnik prepara; Puppet Master coordena os portões; Hebert aprova gastos e ações externas.
 - Desde 2026-09-08, `content-production-contract` v1 e a unica autoridade criativa ativa para marketing Bikon, inclusive apos nova sessao; direcoes anteriores permanecem apenas como historico.
+- Para LinkedIn, Robotnik prepara conteúdo, mas não escolhe a organização alvo, não recebe token e não publica por herança; Puppet Master mantém orquestração e Hebert aprova cada efeito externo.
 
 ## Workspace
 
@@ -136,9 +137,17 @@ Regra operacional desde 2026-07-09:
 - O QA permaneceu dividido por superficie: Robotnik validou o MP4 integral de 24 segundos; Kowalski aprovou o pacote visual, a narrativa, a variedade, a composicao, a marca e as legendas. O parecer de um nao foi ampliado para a superficie nao exercitada pelo outro.
 - Estado consolidado: `approval=null`, `publication=null` e `publication_authority=false`. A entrega privada nao comprova aceite artistico/comercial e nao autoriza publicar, agendar, impulsionar ou reutilizar.
 
+## LinkedIn Robotnik Publisher, 2026-09-17/18
+
+- Projeto técnico criado para a Página Bikon pela API oficial do LinkedIn, com modo mock default, target fixo, preview/hash determinísticos, aprovação one-shot assinada, redaction e live fail-closed.
+- Validação local: `12/12 PASS` e demo mock sem rede. O `PROJECT_GENESIS` foi aceito pelo PGL canônico na sequência `1`.
+- O Gate A autorizado cobre somente app, associação/verificação da Página e pedido Community Management Development com `w_organization_social`. A tentativa parou antes do portal porque o Chrome autenticado não estava anexável; app, OAuth, segredo, scope e publicação continuam inexistentes.
+- Credenciamento, OAuth, conexão, aprovação de conteúdo e publicação são gates independentes.
+
 ## Relações
 
 - Instagram Robotnik: `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`
+- LinkedIn Robotnik: [[50-PROJETOS/Em-Andamento/LinkedIn-Robotnik-Publisher|LinkedIn Robotnik Publisher]]
 - Validação visual: `BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md`
 - Snapshots versionados: `BRAIN/60-AGENTES/versionados/`
 - Configuração OpenClaw: `BRAIN/99-SISTEMA/openclaw-config-agentes-backup-2026-06-25.md`

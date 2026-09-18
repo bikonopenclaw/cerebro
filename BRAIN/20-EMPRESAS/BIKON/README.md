@@ -19,12 +19,14 @@
 - Integração de segurança/antivírus em desenho: `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`
 - Governança de acessos Bikon ↔ AD local de clientes: `BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md`
 - Integração Instagram Bikon Robotnik: `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`
+- Projeto LinkedIn Bikon/Robotnik: `BRAIN/50-PROJETOS/Em-Andamento/LinkedIn-Robotnik-Publisher.md`
 - API WhatsApp Bikon: `BRAIN/70-AUTOMACOES/API-WHATSAPP-BIKON.md`
 - Migração OpenClaw/Hostinger VPS: `BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`
 - FIP Bikon Financial Intelligence: `BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md`
 
 ## Histórico relevante
 
+- 2026-09-17/18: preparado o `LinkedIn Robotnik Publisher` para a Página Bikon, somente pela API oficial e com `w_organization_social`. Mock/testes locais e genesis PGL passaram; o Gate A parou antes do portal por falta do Chrome autenticado anexável. Nenhum app, OAuth, segredo ou post foi criado, e publicação continua sujeita a aprovação própria por conteúdo.
 - 2026-09-14: a V12 do piloto 365 Control foi aceita por Hebert como arte final (`ARTWORK_ACCEPTED`), sem autoridade herdada de publicação. Nos jobs semanais de carrossel e Reel, o pedido humano de maior variedade criativa foi persistido sem apagar os reviews dos bytes anteriores; novas versões com situações, pessoas, enquadramentos e mensagens distintas chegaram a `REVIEW_COMPLETE / APPROVED_FOR_TECHNICAL_DELIVERY` e foram entregues privadamente. `approval` e `publication` continuaram nulos, e publicação, agendamento e impulsionamento permaneceram bloqueados.
 - 2026-09-12: o piloto "365 Control" evoluiu por iteracoes controladas. A V3 recebeu revisao tecnica do Kowalski; depois Hebert pediu uma alternativa menos sombria. A opcao C corrigida chegou a V6 e foi entregue apenas como previa, ainda sem revalidacao porque `review_prepare` permaneceu falhando. Nao houve publicacao nem agendamento.
 - 2026-09-11: o readback da peca publicada em 10/09 foi recuperado por verificador confinado com grant de 120 segundos restrito ao hostname/porta exatos. O estado chegou a `BYTES_VERIFIED`, o parecer visual registrou correspondencia entre o JPEG submetido e o publicado, e `instagram_mutations=0`; isso nao autoriza nova publicacao.

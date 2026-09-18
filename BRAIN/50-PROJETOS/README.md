@@ -8,6 +8,7 @@ Este MOC liga projetos ativos, planejamento e historico documental.
 
 - [[50-PROJETOS/Em-Andamento/Brain-Enterprise|Brain Enterprise]]
 - [[50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence|FIP Bikon Financial Intelligence]]
+- [[50-PROJETOS/Em-Andamento/LinkedIn-Robotnik-Publisher|LinkedIn Robotnik Publisher]]
 - [[50-PROJETOS/Em-Andamento/OpenClaw-DBS|OpenClaw DBS]]
 - [[50-PROJETOS/Em-Andamento/OpenClaw-Engineering-Delegation|OpenClaw Engineering Delegation]]
 - [[50-PROJETOS/Em-Andamento/OpenClaw-Operational-Data-Platform|OpenClaw Operational Data Platform]]
