@@ -5,7 +5,7 @@ nome: Sentinel
 papel: controller_operacoes_snoc
 status: ativo_capability_registry_controlado_com_mutacao_bloqueada_por_gate
 responsavel: Puppet Master
-ultima_revisao: 2026-09-17
+ultima_revisao: 2026-09-19
 tags: [sentinel, snoc, operacoes, monitoramento, seguranca, read-only, capability-registry]
 ```
 
@@ -221,6 +221,14 @@ Sob autorizacao estreita, Sentinel passou a adquirir a populacao historica mensa
 - Agosto foi recuperado para Alzira, Camburi, Capixaba e Vila Velha; consultas de setembro preservam somente intervalo decorrido e nao qualificam o mes ainda aberto.
 - A ausencia de sessoes de Vila Velha em 07/09 permanece lacuna operacional nao classificada: nao prova sucesso, falha nem destruicao de fonte.
 - A autorizacao de History nao inclui restore, Recovery Verification ativo, alteracao de backup, envio de relatorio, ampliacao de cliente ou mutacao do provider.
+
+## Requalificacao do ciclo diario ARX, 2026-09-18
+
+- O preflight do runtime real passou com adapter, namespace e referencia de segredo visiveis e contagem zero de exposicao de valor secreto.
+- O inspect por isolamento `bubblewrap` foi bloqueado pelo host por ausencia de namespace nao privilegiado. A negativa foi preservada sem alterar permissao ou improvisar fallback.
+- Uma primeira qualificacao in-process fechou em `PROVIDER_ATTEMPT_RECONCILIATION_REQUIRED`, mantendo o recibo original e proibindo retry identico automatico.
+- Descoberta autenticada read-only posterior encontrou cinco contas configuradas. A qualificacao v2 vinculada por hashes encerrou o ciclo logico `2026-09-17` em `SUCCESS / PASS`, com validacao obrigatoria `PASS`.
+- O marco prova a rota nativa de leitura e a producao do artefato do ciclo; nao autoriza ticket, envio, mutacao de provider, cron novo ou ampliacao de escopo.
 
 ## Binding ad-hoc ARX e request 2111, 2026-09-15/16
 

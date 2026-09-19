@@ -1,5 +1,16 @@
 # CHANGELOG.md
 
+## 2026-09-19, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-19.md` e atualizado o MOC cronologico.
+- Atualizados ARX e Sentinel com a requalificacao da rota nativa do ciclo diario: preflight seguro, negativa `bubblewrap` preservada, discovery de cinco contas e qualificacao v2 `SUCCESS / PASS`, sem envio, ticket ou mutacao.
+- Atualizados ARX e Durable Work com os pedidos Alzira e Cartorio Capixaba: evidencias autenticadas, QA `PASS`, entrega privada reconhecida e recuperacoes causais na mesma identidade, preservando revisoes/recibos anteriores e separando terminal tecnico de aceite de negocio.
+- Atualizada a nota permanente de validacao visual com referencias canonicas, prova por rollout nativo/runtime vivo e proibicao de replay sem mudanca causal.
+- Criada e ligada ao MOC a nota financeira `Total-fechado-nao-prova-integridade.md`, sem promover como auditados os numeros ou artefatos externos do documento-fonte.
+- Atualizado `HEALTH.md`; nao houve duplicidade, nova pessoa, novo projeto ou arquivamento.
+- Commit Link Gate validado: `ok=True`, `401` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados contexto recente sanitizado, sessoes internas, registros duraveis e arquivos locais; esta rotina nao enviou mensagem ao Hebert, nao criou agente, nao executou provider, coleta, retry, ticket, envio, publicacao ou mutacao operacional.
+
 ## 2026-09-18, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-18.md` e atualizado o MOC cronologico.

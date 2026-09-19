@@ -12,6 +12,7 @@ Este MOC liga conhecimento permanente por dominio. Ele existe para navegação c
 - [[40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL|Natureza economica provada antes de PnL]]
 - [[40-CONHECIMENTO/Financeiro/Retorno-bancario-nao-valida-remessa|Retorno bancario nao valida remessa]]
 - [[40-CONHECIMENTO/Financeiro/Settlement-de-fatura-nao-classifica-natureza-economica|Settlement de fatura nao classifica natureza economica]]
+- [[40-CONHECIMENTO/Financeiro/Total-fechado-nao-prova-integridade|Total fechado nao prova integridade financeira]]
 - [[40-CONHECIMENTO/Financeiro/Validacao-source-native-de-PDF-financeiro|Validacao source-native de PDF financeiro]]
 
 ## IA e memoria

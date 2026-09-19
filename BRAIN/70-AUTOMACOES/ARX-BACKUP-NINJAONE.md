@@ -2,9 +2,9 @@
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15 e requests mensais reconciliadas em 2026-09-16/18
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15 e requests mensais/qualificacao nativa reconciliadas em 2026-09-16/19
 confiabilidade: alta
-ultima_revisao: 2026-09-18
+ultima_revisao: 2026-09-19
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
 ```
 
@@ -181,6 +181,14 @@ A investigacao separou coleta, render, transporte e leitura humana e preservou o
 - Alfredo Chaves usou `31` sessões retidas autenticadas, deixando claro que a cobertura não prova o mês inteiro. Capixaba e Camburi usaram `190` registros autenticados cada; Vila Velha usou `134` registros, dos quais `122` execuções, `121` sucessos, `1` com erro e `12` skips.
 - Métrica válida continua limitada ao recorte temporal e à evidência de origem. “Dados disponíveis” não permite omitir lacunas, converter ausência em zero nem generalizar observação parcial para todo o mês.
 
+## Requalificacao nativa e revisoes mensais, 2026-09-18/19
+
+- O preflight no runtime Sentinel confirmou namespace, adapter e referencia de segredo legiveis, com `SECRET_VALUE_EXPOSURE_COUNT=0`. O inspect isolado por `bubblewrap` falhou por indisponibilidade de namespace nao privilegiado e nao foi contornado por repeticao ou alteracao de permissao.
+- A primeira qualificacao in-process preservou o recibo e fechou em `PROVIDER_ATTEMPT_RECONCILIATION_REQUIRED`; uma descoberta autenticada posterior identificou cinco contas configuradas. A qualificacao v2, com input e codigo vinculados por hash, encerrou o ciclo logico `2026-09-17` em `SUCCESS / PASS`, sem envio, ticket ou mutacao.
+- O pedido Alzira terminou `SUCCESS`, QA `PASS` e delivery privado `ACKNOWLEDGED`, usando `192` execucoes autenticadas do recorte de setembro: `191` sucessos, `1` falha e taxa de `99,4792%`. Houve uma recuperacao causal depois de falha no QA visual.
+- O pedido Cartorio Capixaba terminou `SUCCESS`, QA `PASS` e delivery privado `ACKNOWLEDGED`, com `190` execucoes autenticadas e `100%` de sucesso no recorte observado. Cinco recuperacoes causais preservaram a mesma request, as versoes anteriores e os recibos enquanto corrigiam contrato/prova visual e revisoes de apresentacao.
+- No Capixaba, a versao final entregue separou o placar verde `SEM FALHAS NO RECORTE · 01–08/09` da posicao historica de armazenamento em vermelho. Essa correcao de negocio nao alterou a evidencia do provider e nao converteu o terminal tecnico em aceite de negocio automatico.
+
 ## Guardrails
 
 - Não imprimir tokens, segredos ou credenciais em respostas, logs consolidados ou Brain.
@@ -190,6 +198,7 @@ A investigacao separou coleta, render, transporte e leitura humana e preservou o
 - Timeout de ACK/start em ordem ad-hoc deve fechar a mesma identidade terminalmente; nao autoriza criar sucessor nem acessar provider por rota alternativa.
 - PDF valido e QA aprovado nao compensam evidencia mensal insuficiente nem aceite negativo do proprietario; produto, suficiência factual e aceite sao gates separados.
 - A política `AVAILABLE_AUTHENTICATED_DATA_V1` é exceção explícita por request, não relaxamento global do gate de performance mensal.
+- Apresentacao corrigida dentro da mesma request deve preservar artefatos/recibos anteriores, usar revisionamento imutavel e impedir replay do mesmo input depois da barreira de efeitos.
 
 ## Relações
 
