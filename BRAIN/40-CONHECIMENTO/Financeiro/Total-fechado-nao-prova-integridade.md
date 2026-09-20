@@ -3,9 +3,9 @@
 ```yaml
 categoria: financeiro
 tipo: aprendizado_permanente
-fonte: avaliacao documental de contrato financeiro com IA em 2026-09-18
+fonte: avaliacao documental de contrato financeiro com IA em 2026-09-18; consolidacao semanal 2026-W38
 confiabilidade: media
-ultima_revisao: 2026-09-19
+ultima_revisao: 2026-09-20
 tags: [financeiro, conciliacao, integridade, duplicidade, ia, controles, auditoria]
 ```
 
@@ -24,6 +24,7 @@ Saida de IA em financas deve ser tratada como resultado nao confiavel ate que fo
 - Separar erro tecnico, bloqueio de regra, hipotese, validacao, aprovacao e autoridade operacional.
 - Em valores quantizados, manter comparacoes exatas quando o dominio exige exatidao; limite de materialidade nao substitui igualdade contabil ou contratual.
 - Preservar originais e evidencias externas. O contrato que descreve uma prova nao substitui scripts, manifestos, recibos e fontes citados.
+- Reconciliar contagens declaradas com os itens efetivamente enumerados em cada secao. Divergencia interna bloqueia promocao da conclusao mesmo quando o total monetario fecha.
 
 ## Limite da fonte
 

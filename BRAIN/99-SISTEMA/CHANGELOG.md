@@ -1,5 +1,15 @@
 # CHANGELOG.md
 
+## 2026-09-20, consolidacao semanal
+
+- Criado resumo `BRAIN/01-DIARIO/Semanal/2026-W38.md` com cobertura parcial de 2026-09-14 a 2026-09-20, baseado nas daily notes disponiveis de 15 a 19/09.
+- Consolidados os padroes de gates independentes entre sucesso tecnico, suficiencia factual, aceite de negocio e autoridade produtiva; recovery causal na mesma identidade; handoff verificavel entre namespaces; cobertura temporal explicita; e integridade financeira alem do total agregado.
+- Elevados cinco aprendizados por conexao: quatro notas permanentes foram atualizadas e `Contrato-de-runtime-reprodutivel.md` foi reforcada no resumo sem duplicidade.
+- Atualizados MOC Diario, `MEMORY.md`, `HEALTH.md` e Knowledge Health.
+- Nenhum item foi movido para `BRAIN/99-ARQUIVO/`; os registros seguem recentes, conectados e com valor operacional, decisorio ou de auditoria.
+- Commit Link Gate validado: `ok=True`, `402` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+- Revisados apenas arquivos locais do Brain; esta rotina nao enviou mensagem ao Hebert, nao criou agente e nao acessou sistemas externos alem do push Git configurado.
+
 ## 2026-09-19, consolidacao diaria
 
 - Criado diario `BRAIN/01-DIARIO/2026/2026-09-19.md` e atualizado o MOC cronologico.

@@ -3,9 +3,9 @@
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidacao semanal 2026-W35, teste controlado de relatorios operacionais em 2026-09-02, publicacao Instagram Bikon em 2026-09-10 e lifecycle ad-hoc ARX em 2026-09-16
+fonte: consolidacao semanal 2026-W35, teste controlado de relatorios operacionais em 2026-09-02, publicacao Instagram Bikon em 2026-09-10, lifecycle ad-hoc ARX em 2026-09-16 e consolidacao semanal 2026-W38
 confiabilidade: alta
-ultima_revisao: 2026-09-16
+ultima_revisao: 2026-09-20
 tags: [lifecycle, execucao, registry, cgroup, terminalidade, reconciliacao, supervisao, transcript]
 ```
 
@@ -26,6 +26,7 @@ Uma execucao so e terminal quando fila, admissao, registry, child, processo fisi
 - Pressao transitoria (`EAGAIN`, `pthread_create`, capacidade do app-server) so admite retry limitado quando a operacao e segura, o efeito externo e conhecido e os checkpoints permanecem intactos.
 - Quando o efeito externo já foi comprovado, falha posterior de readback, cleanup ou recibo não autoriza repetir o efeito; preservar o estado realizado e retomar somente as etapas idempotentes de fechamento.
 - ACK e start sao transicoes duraveis da mesma identidade de execucao, nao mensagens conversacionais. Timeout deve persistir falha terminal e bloquear a request; nao autoriza criar sucessor, trocar rota ou iniciar efeito externo.
+- Recovery exige uma mudanca causal documentada: nova fonte, contrato corrigido ou evidencia de runtime distinta. Preservar a mesma identidade, artefatos, hashes, revisoes e recibos; replay do mesmo input depois da barreira de efeitos deve ser bloqueado.
 
 ## Exemplo conectado
 
@@ -36,6 +37,8 @@ No teste controlado de Relatorios Operacionais de 2026-09-02, um transcript inco
 Na publicação Instagram Bikon de 2026-09-10, o Graph confirmou o `media_id` e o permalink antes de o readback visual falhar por bloqueio do novo CDN. O estado correto permaneceu `PUBLISHED`, com fechamento local pendente; repetir `media_publish` seria duplicar um efeito externo já comprovado.
 
 No request ARX/Cove ad-hoc de 2026-09-15/16, tentativas intermediarias nao autorizaram sucessores em loop. A reconciliacao reteve uma unica linhagem canonica, fechou `FAIL_CLOSED_EXTERNAL_OWNER_GATE` antes do provider e congelou a mesma request ate existirem binding numerico aprovado e gate de rede proprio.
+
+Em 2026-W38, as revisoes do relatorio Capixaba permaneceram na mesma request e corrigiram contrato visual, prova do runtime e apresentacao sem recoleta. No caso 2111, o esgotamento das fontes autorizadas fechou a linhagem por evidencia insuficiente e bloqueou repeticao identica.
 
 ## Relacoes
 
