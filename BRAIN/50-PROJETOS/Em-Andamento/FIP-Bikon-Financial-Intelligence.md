@@ -6,7 +6,7 @@ created: '2026-09-21T18:54:56.269635Z'
 schema_version: '1.0'
 created_semantics: Data de registro estruturado, não origem do conteúdo legado.
 relationships: []
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T21:16:57.672344Z'
 ---
 
 # FIP Bikon Financial Intelligence
@@ -287,3 +287,17 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-2026
 Em 09/08, o detector confundiu “Limite de Crédito” de extrato bancário com fatura e importou saldos como transações. A correção foi limitada aos 77 registros ruins daquela fonte e ao reprocessamento do mesmo PDF identificado por hash; o contexto posterior já mostrava 60 transações bancárias e total 1.326, não 77 operações válidas. Lote 3 havia validado 19 itens de copa/material, 3 de frota/manutenção e 9 de infraestrutura; alimentação ambígua, Corpus/Unifi, cafeteria, presente e crédito de anuidade continuavam em revisão naquele instante. Darth validou capitalização R$ 58,00 como patrimonial neutra (resultado 0, caixa 1) e tarifa R$ 43,22 como despesa somente sem duplicidade; uma conciliação existente mantinha o movimento bancário neutro para evitar contar tarifa duas vezes. Empréstimos sem principal/juros separados, contraparte nominal divergente e cobrança própria sem vínculo ao título não autorizavam DRE. Settlement Mastercard de R$ 4.828,25 não correspondia à fatura importada. São decisões/achados daquele episódio, anteriores ao GO-LIVE posterior; não afirmar que pendências persistem hoje ou que todo item de cartão é despesa empresarial. Localizadores históricos: data/fip.db, reports/FIP_DARTH_LOTE3_APPLICATION_20260809T204144Z.md e canonical-export-20260809T205553Z.json; conferir identidade/proveniência antes de reutilizar. Fonte: unidades 28800.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 26 de 2026-09-21
+
+Na preparação histórica BAFT, extrato bancário e fatura de cartão tinham fontes e papéis distintos: pagamento de fatura é liquidação, saldo de abertura não é receita e principal de empréstimo não vira despesa sem composição. Forecast e cenários devem derivar de baseline sem modificar actuals. A camada BAFT foi requerida com vínculos tipados e preservação de evidências/decisões durante rebuild, evitando reconstrução que apague lastro. Na cauda desta revisão, existiam rotinas e proposta de schema, mas as tabelas BAFT ainda não estavam presentes no banco consultado; intenção de implementar e testes citados não eram prova da conclusão. Quantidades intermediárias de transações e cards não substituem a baseline posteriormente consolidada. Fonte: unidades 28841.
+
+Na preparação histórica de 09–10/08, BAFT separou evidência, caixa, evento econômico e vínculo em camada derivada, sem reescrever financial_transaction ou alterar realizado; evidência precisava ser append-safe e sobreviver a rebuild de dashboard. Banco provava caixa, documento sustentava natureza econômica, e links ambíguos ficavam fora de DRE/KPI. Cenário/forecast e Source Library podiam evoluir sem rebuild financeiro. O Source Set V1 recebeu PARTIAL_PASS/FROZEN_PARTIAL: PDF e CSV de julho eram equivalentes, overlaps de fevereiro/março exigiam deduplicação, CSV sem metadados não provava saldo final, e junho/2025 carecia do intervalo 24–30. Fonte completa chegada depois do freeze exigia V2 antes de remover a lacuna. Esta etapa antecedeu o GO-LIVE privado posteriormente aceito; não conservar o bloqueio inicial como diagnóstico atual. Fonte: unidades 28858.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch26-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 27 de 2026-09-21
+
+A especificação FCOC v1.1.0 de 15/08 separou PERSONAL_PRIVATE de DISPLAY_DESCRIPTION_OVERRIDE. Override muda apresentação, não transforma item em pessoal privado nem altera bytes da descrição fonte; a descrição original por trás do override não deve ser exibida a terceiros. Detalhes PERSONAL_PRIVATE ficam restritos a Hebert e falha de entrega de alerta não afrouxa a privacidade. Criar a versão filha preservava v1.0.0 congelada, o cursor e a ausência de classificação do item então pendente. Não confundir implementação dessas regras com autorização para classificar ou divulgar dados. Fonte: unidades 34810.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch27-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

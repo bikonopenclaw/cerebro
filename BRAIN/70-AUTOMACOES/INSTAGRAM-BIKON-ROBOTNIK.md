@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:46:44.672892Z'
+updated: '2026-09-21T21:16:57.672344Z'
 ---
 
 # Instagram Bikon, Robotnik
@@ -256,3 +256,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-2026
 No preflight local histórico da campanha de 20/07, max_cost=2 era valor documentado, sem enforcement antes da chamada; preço, saldo e disponibilidade permaneciam dinâmicos e não foram consultados. Alterar prompt/parâmetros invalidou o hash anterior, e quatro cópias textuais foram alinhadas antes do novo hash. Adapter dry-run retornou execute=false, sem invocar Kling nem consumir Approval/crédito. O schema exigia destination=kling, e o caminho local era documental; não inventar campo incompatível para aparentar validação. Materiais antigos movidos a archive/noncanonical-pre-freeze não eram os artefatos vigentes. Isto descreve contrato histórico, não rota atual de produção ou autorização de gasto. Fonte: unidades 39423.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 26 de 2026-09-21
+
+Na homologação histórica post-unico-4x5 de 20/07, Phase 1 v1.1 distinguiu moldura decorativa de 56 px e margens internas de conteúdo de 80 px horizontal/78 px vertical, substituindo 72 px. Isso era geometria específica do template 1080×1350, não safe area oficial da plataforma nem regra automática para Reel/Story. Space Grotesk precisava fonte/licença verificadas; fallback DejaVu era prova mecânica sem liberação. Duas imagens idênticas e template técnico PASS não aprovavam raw já reprovado nem peça completa. Bytes novos do template exigiam manifesto correspondente; manifesto anterior não autenticava a revisão. Revalidar contra o contrato visual vigente antes de aplicar esses parâmetros históricos. Fonte: unidades 8734.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch26-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

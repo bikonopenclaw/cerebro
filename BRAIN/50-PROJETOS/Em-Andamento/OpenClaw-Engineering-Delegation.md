@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T21:07:33.285014Z'
+updated: '2026-09-21T21:16:57.672344Z'
 ---
 
 # OpenClaw Engineering Delegation
@@ -97,3 +97,9 @@ Na primeira revisão EDC v1.1.2, 34 testes e lifecycle em cópia temporária sug
 A continuação de 07/08 fechou a primeira validação independente EDC v1.2.3 em PASS: 60 testes, isolamento/rollback, fontes canônicas restauradas e dez diretórios temporários eliminados, com zero invocações Codex durante a revisão. O relatório foi gerado e hashado, superando o checkpoint ainda pendente da unidade 8854. A matriz before/after guardava linhas do candidato anterior; a prova do estado restaurado veio da checagem direta e do recibo de limpeza, sem apagar o histórico da violação. Em seguida começou revisão de um baseline final diferente, cujo resultado ainda não aparece aqui; não transferir automaticamente o PASS entre baselines. Fonte: unidades 8855.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 27 de 2026-09-21
+
+Em 20/08, o Owner ampliou explicitamente a autonomia do Codex app-server para eliminar confirmações repetidas de comandos e alterações já autorizadas. O documento era decisão de política de execução, não evidência de configuração efetiva nem ampliação automática do escopo Portal, root, DNS ou operações externas. A verificação deveria demonstrar startup efetivo e canário; uma mensagem de autorização ou ACK não demonstra instalação. Essa decisão histórica não é instrução para reconfigurar o ambiente durante recuperação de memórias. Fonte: unidades 37111.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch27-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

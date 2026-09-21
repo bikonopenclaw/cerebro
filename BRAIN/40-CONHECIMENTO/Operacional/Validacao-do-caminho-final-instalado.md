@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:07:33.285014Z'
+updated: '2026-09-21T21:16:57.672344Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -148,3 +148,11 @@ Na revisão histórica do Shadow Mode, o candidato inicial falhou por timeout pe
 Nas revisões históricas EP-02A, contagens e duas gerações byte idênticas passaram enquanto o FIM usava mutações genéricas em /payload/value para defeitos de outros campos. Depois persistiram casos LEFT/RIGHT indistintos e colisões esperadas antes de recompor commitments, que na verdade acionavam primeiro DATA_HASH_MISMATCH. Um caso negativo deve atingir a condição nomeada, distinguir os lados e satisfazer precondições dos gates anteriores; determinismo não prova adequação semântica. A leitura seguinte confirmou correções LEFT/RIGHT e ausência de no-op, e o freeze final posterior passou. Arquivo anunciado congelado que muda durante a revisão exige nova submissão coerente, sem reutilizar hashes ou stdout antigos. Fonte: unidades 9740, 9743.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 26 de 2026-09-21
+
+A pré-validação DRE v2 reconciliou exatamente Gates 03 e 12 com o código congelado: PACKAGE_OR_PREFLIGHT_IO_FAILURE/exit 2 e ATTESTATION_INVALID/exit 6. Manteve 13 gates, ordem, comandos e códigos esperados, preservou artefatos antigos e passou revisão independente. Exit 7 continuava falha interna, não aceitação pública; raiz-mãe única de evidência não significa uma única state-root para todos os gates. A revisão v3 seguinte examinou capture_expected_exit para 2/5/6 sem desativar ERR trap para falha inesperada; o checkpoint ainda não executou harness nem instalou DRE. Reconciliar pré-validação, execução e instalação como provas distintas. Fonte: unidades 9803.
+
+O defeito histórico CPIW de autoautorizar root foi posteriormente fechado em 07/08: setup explícito, binding anti-cópia/tamper, rejeição imutável de root arbitrário/canônico/produtivo, 179 testes e ciclo shadow de 311 operações com rollback e idempotência. Kowalski validou staging e cópia limpa após promoção de quatro caminhos pelo coordenador; não promoveu nem escreveu AIR/ICD produtivo. Baseline de staging, cópia limpa e caminho canônico tinham identidades distintas e não eram intercambiáveis. A próxima superfície AUTHORITATIVE_PRODUCTION iniciada na cauda era autorização/validação separada. Isto supera o bloqueio antigo sem provar estado produtivo atual. Fonte: unidades 9817.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch26-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

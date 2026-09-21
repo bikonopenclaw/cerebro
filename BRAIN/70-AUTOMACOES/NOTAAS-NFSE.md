@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:46:44.672892Z'
+updated: '2026-09-21T21:16:57.672344Z'
 ---
 
 # Skill Notaas NFS-e
@@ -344,3 +344,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-2026
 O cadastro operacional deve preservar todos os e-mails financeiros como lista e distinguir unidades/endereço quando o mesmo CPF/CNPJ aparece mais de uma vez; agrupar envio por cliente_id, não apenas documento. Na importação histórica de 17/06/2026, 21 cadastros e 37 e-mails foram estruturados em JSON, CSV e SQLite, com ferramenta de manutenção; uma correção de cidade foi explicitamente solicitada e aplicada. Para consulta corrente, usar a fonte operacional protegida em /data/.openclaw/workspace-darth-vader/cadastros/clientes/clientes_ativos.json e revalidar seus dados. Brain guarda regras e proveniência, não uma réplica dos dados pessoais. O total histórico não é contagem atual. Fonte: unidades 30847.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch19-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 27 de 2026-09-21
+
+No fluxo inicial Unus, Hebert informou aceite da remessa no ambiente bancário de teste, após validação local de três registros CNAB400 de 400 posições e correção visual do boleto. Isso era homologação bancária relatada, não registro produtivo. O pacote NFS-e/boleto/remessa deveria ser generalizado por job JSON e estados explícitos, sem hardcode de cliente nem afirmar emissão/registro sem recibo da superfície correspondente. A mesma fonte chama a NFS-e de homologação porque o log/resposta trazia esse rótulo, embora a configuração local dissesse produção; a investigação posterior do ambiente prevalece, e esse resumo não certifica sandbox fiscal. No ticketing NinjaOne, user context superou o 403 inicial e houve teste controlado seguido de deduplicação; isso não renova autorização de tickets ou credenciais. Fonte: unidades 36566.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch27-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

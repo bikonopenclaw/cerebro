@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:07:33.285014Z'
+updated: '2026-09-21T21:16:57.672344Z'
 relationships:
 - type: references
   target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
@@ -217,3 +217,11 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch23-2026
 Na apuração de 17/07/2026, a consulta apenas repetiu banner da migração realizada em 16/07: 31 arquivos legados originaram 199 entradas, e os pares de run logs eram byte a byte iguais. Não houve nova migração na janela investigada nem backup novo; o comando histórico exato não pôde ser recuperado. SQLite/WAL/SHM mudavam por operação normal, e store_key podia manter caminho JSON já inexistente sem ser a fonte operacional. Rollback sem snapshot prévio poderia perder estado posterior ou duplicar jobs, portanto não foi indicado para o falso incidente. Separar leitura, reconciliação e autorização de mudanças. Na mesma conversa, o usuário pediu progresso nativo das ferramentas no Telegram, sem mensagens artificiais de progresso; configuração via documento temporário exigia excluir o documento após validação, sem copiar segredo para memória. Fonte: unidades 9436.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 26 de 2026-09-21
+
+Na consolidação documental de 17/07, praxis-gws era camada de acesso/transporte, sem substituir geradores, fórmulas, templates ou periodicidade. O gate técnico da cópia local e do scanner de segredos não comprovava autenticação nem operação externa. O relatório executivo de fechamento parou ao importar docx no Python de sistema, antes de criar DOCX/PDF/render; um DOCX de proposta anterior era outro artefato. Localizar e validar o interpretador e a rota Bikon já existentes antes de instalar pacote ou trocar ferramenta. Preservar modelos canônicos e confirmar conteúdo, renderização e hashes na rota efetivamente autorizada; não converter uma falha de ambiente em permissão para remover a integração duplicada. Fonte: unidades 9453.
+
+Na consolidação histórica Praxis GWS para Kowalski, a cópia autorizada de 19 arquivos foi seguida por checagem sintática de 14 arquivos JavaScript, sem chamadas externas, OAuth ou restart. Isso não comprovava operação das APIs. Uma primeira busca de padrões de segredo falhou por interpretar o padrão como opção; somente a execução corrigida podia sustentar resultado negativo. O gog instalado/desativado permaneceu intocado. A tentativa de produzir relatório DOCX/PDF de fechamento falhou por ausência de python-docx no interpretador usado; descobrir outro ambiente virtual ainda não provava geração. Relatório proposto anterior não substitui artefato final recebido, e falha histórica não descreve dependências atuais. Fonte: unidades 9458.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch26-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T21:07:33.285014Z'
+updated: '2026-09-21T21:16:57.672344Z'
 ---
 
 # SENTINEL, Controller de Operações e SNOC
@@ -366,3 +366,17 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch23-2026
 Na equivalência Sentinel/Kowalski de 26/07, o snapshot não demonstrava duração nem reassignment no board. As fixtures SYN-KOW-NINJA-ATTRIBUTION-001 e SYN-KOW-NINJA-DURATION-001 cobriam atribuição e duração de 60 segundos apenas como SYNTHETIC_EQUIVALENCE_COVERAGE_ONLY. Não transformar cenário sintético em prova histórica de duração, ticket alterado ou equivalência integral. A classificação parcial permitia revisão offline e sugeria comparação controlada antes de canário, sem autorizá-los por si; qualquer patch posterior invalidava os hashes anteriores até regeneração e validação do manifesto. Fonte: unidades 8589.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 26 de 2026-09-21
+
+Na sequência R4 de 26/07, uma ordem executiva posterior consolidou A.1, integração, equivalência, shadow, canário, cutover e postchecks para advisory-only com saída exclusiva ao Puppet. Ela substituiu a exigência anterior de novas aprovações entre etapas já autorizadas, condicionando avanço à comprovação dos gates e rollback imediato por risco material. Equivalência parcial e cobertura sintética foram aceitas; continue do Kowalski versus individual_p2 do Sentinel era diferença semântica intencional, sem eliminar o finding. No checkpoint, SOURCE_SCHEMA_READY e adapter real ainda faltavam, por isso a ordem não provava execução nem liberava inventar contrato. Este caso histórico ensina reconciliar autoridade posterior e evitar pedidos redundantes, sem tornar autorização antiga vigente. Fonte: unidades 41545.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch26-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 27 de 2026-09-21
+
+No piloto Sentinel de 19/07, 21 clientes tiveram owner/SLA reconciliados por client_id, com manutenção opcional. O manifesto de 4.484 bytes tinha hash a501d8 na ordem de inserção, mas o contrato sort_keys=True/ensure_ascii=False produzia cde0025; serializações distintas não são hashes intercambiáveis. A fonte relata consultas NinjaOne, ARX e Bitdefender antes de comprovar resolução desse desvio; read-only e zero escrita não sanam violação da ordem de gates. O retorno consolidado ainda precisava correlação com auditoria, sem certificado final de conformidade. Os 34/631/207 objetos NinjaOne e demais contagens eram observações de julho, não estado ou incidentes atuais; não repetir coleta nem iniciar 24x7 por esta memória. Fonte: unidades 41490.
+
+No complemento da consulta histórica de 18/08/2026, o relato atribuiu 274 dos 659 dispositivos ao organizationId 6 (Grupo Unus), coletado às 20:19:13 UTC. É um recorte temporal, não inventário atual nem equivalência com membership financeiro de CNPJs. O sufixo truncado da lista de dispositivos foi completado a partir do resultado já coletado, sem repetir GET; separar recuperação da resposta de nova coleta autorizada. Fonte: unidades 36847.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch27-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

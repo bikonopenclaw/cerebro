@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T21:16:57.672344Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-20.md
@@ -127,3 +127,9 @@ Na homologação EDC v1.1.0 corrigida, ZIP e hashes individuais foram conferidos
 Nos clean roots iniciais do BCA em 29/07, inventários e result.json eram iguais entre runs, mas operational.txt e ep02.txt tinham hashes diferentes, sem causa reconciliada naquele resumo. Delimitar a afirmação de determinismo aos artefatos efetivamente comparados; não declarar o pacote inteiro byte idêntico nem atribuir diferenças a timestamps sem examinar. A invocação inicial de unittest falhou por PYTHONPATH e a corrigida passou; isso distingue erro de invocador de regressão do contrato. O schema consolidado e readiness do BCA permaneceram documentais, com evolução posterior própria. Fonte: unidades 8892.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 26 de 2026-09-21
+
+No pacote histórico DRE/Prov213 de 02/08, a reconciliação confirmou duas cópias idênticas do relatório e substituiu um hash transcrito não verificado. A autoridade foi separada em âncora machine-readable primária e bloqueante, relatório humano supporting e contexto append-only/mutável. Divergência apenas do relatório não deveria bloquear preflight se o contrato dizia que ele não era âncora; divergência da âncora primária, sim. Hash de arquivo de sessão ainda vivo não era gate permanente. Inspeção de sintaxe, modos, serialização e freeze não significava preflight real executado, e wrapper one-shot não autorizava retry automático. Preservar a função semântica do hash, além dos bytes. Fonte: unidades 8605.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch26-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

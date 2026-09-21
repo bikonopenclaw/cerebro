@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:07:33.285014Z'
+updated: '2026-09-21T21:16:57.672344Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
@@ -175,3 +175,11 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch23-2026
 Na inspeção de marca de 20/07/2026, fc-match devolveu DejaVu Sans quando Space Grotesk estava ausente. Sucesso do resolvedor não comprova fonte canônica: conferir a família realmente usada antes do render final e obter alternativa explicitamente aprovada se necessário. O hash agregado do manual e seis logos identifica apenas o conjunto de bytes inspecionado, não cria brandpack_version oficial. Ausência de handoff, safe areas ou critérios de formato deve permanecer lacuna, sem inventar margens. A alegação de 90 dias presente na orientação interna precisava de substanciação e não superava a proibição de promessa absoluta. São constatações históricas, não prova de fontes ausentes hoje. Fonte: unidades 8724.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch24-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 27 de 2026-09-21
+
+O fechamento da rodada visual Bikon D/E/F de julho não teve vencedora: D 21/55, E 22/55 e F 29/55, uma geração de dois créditos por rota, total histórico 6/12. E falhou por focais múltiplos e transferência ambígua; F tinha acabamento melhor, mas metáfora industrial ilegível, não sistema operacional reconhecível. Aprovar prompt não aprova mídia, e compositor não corrige falha conceitual. Continuação requeria hipótese material nova, payload/approval próprios e QA pré/pós, sem retry cosmético. A cauda inicia a hipótese D2 com três adultos e handoff físico, mas não prova geração, gasto adicional nem aprovação final; 8/12 era projeção após D2, não consumo confirmado nessa fonte. Fonte: unidades 9641.
+
+Após D/E/F sem vencedora, D2 foi gerada uma vez e também cortada em 29/55: dono com aparência de fiscal, transferência ilegível e área de texto contaminada. O consumo confirmado passou a 8/12 créditos, sem composição aprovada. E2 mudou materialmente para travessia de um único fólio com dois gestos distintos e recebeu somente pré-gate single-use de até dois créditos; a fonte não comprova execução nem QA do raw E2. O total 10/12 era projeção, não recibo. A melhora relativa não substitui a tese visual completa e não autoriza retry, publicação ou cobrança adicional. Fonte: unidades 9644.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch27-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
