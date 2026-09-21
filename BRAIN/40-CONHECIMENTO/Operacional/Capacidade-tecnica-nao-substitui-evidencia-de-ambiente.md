@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:08:05.502633Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md
@@ -59,3 +59,9 @@ Na semana 2026-W31, AWS, Azure e Google Cloud cobriam tecnicamente os gaps de cl
 - [[40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento|Menor privilégio em monitoramento]]
 - [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw - Provimento 213]]
 - [[01-DIARIO/Semanal/2026-W31|Semana 2026-W31, cobertura parcial]]
+
+## Complementos reconciliados — lote 5 de 2026-09-21
+
+No desenho de 18/06/2026, a conta DreamHost foi separada da integração Gmail/Google Workspace: deveria usar rota IMAP/SMTP apropriada, com permissão de leitura/envio definida para aquela conta. Ter token gmail.send não demonstra acesso a uma caixa DreamHost. Hosts/portas e credenciais devem ser confirmados na configuração e documentação atuais antes de conectar. Fonte: unidades 34711.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

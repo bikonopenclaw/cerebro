@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:08:05.502633Z'
 ---
 
 # Boletos e malote bancário
@@ -104,3 +104,25 @@ API Cresol em produção exige nova confirmação explícita do Hebert. Baixa po
 Correção histórica de nomenclatura solicitada por Hebert: o layout aprovado deve ser identificado como Cresol/Bikon, sem atribuição Intelitech. A correção é de nome/atribuição e não altera o conteúdo aprovado nem constitui homologação bancária nova. Fonte: unidades 30819.
 
 Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.
+
+## Complementos reconciliados — lote 4 de 2026-09-21
+
+Na comparação histórica, o mapa preliminar tratava uma posição como branca, mas o golden file trazia valor preenchido. A divergência foi encontrada antes da entrega. Validar cada campo contra layout oficial aplicável, versão/banco e exemplos autenticados, documentando divergências; não copiar automaticamente o valor de uma remessa antiga para outras carteiras ou versões. Fonte: unidades 36474.
+
+Após aprovar o layout Cresol/Bikon, Hebert pediu retirar referências a modelos/geradores antigos para evitar seleção acidental. Preservar uma referência canônica inequívoca para o modelo vigente e marcar predecessores como históricos; isso não autoriza apagar manuais bancários nem trocar uma versão posterior aceita. Fonte: unidades 30822.
+
+Referência documental recebida no histórico: “Integrada Remessa CNAB400 Cresol 133”, hospedada no Scribd (documento 931063879). Tratar como referência histórica a validar contra o manual oficial atual da Cresol; não inferir homologação, vigência ou direito de redistribuir o conteúdo. Fonte: unidades 29052.
+
+Em junho/2026, Hebert aprovou o layout visual do boleto após ajuste de tamanho e pediu sua adoção como modelo da skill. A nomenclatura foi corrigida para Cresol/Bikon. Esse aceite de apresentação não equivale à homologação bancária, não fixa o gerador atual e não autoriza substituir uma versão posterior já aprovada. Fonte: unidades 30816.
+
+Unus é referência histórica de cliente/teste do fluxo, não modelo fixo de negócio. Geração deve receber os dados do job/cliente e preservar validações de NFS-e, boleto e remessa; um golden case valida exemplos, não substitui contrato bancário vigente ou autorização por etapa. Fonte: unidades 36977, 36539.
+
+Caso de homologação CNAB Cresol: o gerador marcava todo pagador como CNPJ, e o banco rejeitou pessoas físicas. Preservar tipagem do documento do pagador (CPF versus CNPJ) e validar conteúdo/posições pelo layout bancário vigente; não inferir tipo pelo cadastro genérico nem reaplicar offsets históricos sem contrato. Fonte: unidades 36254.
+
+Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json`. Aplicações históricas permanecem delimitadas pelo período e contrato da fonte.
+
+## Complementos reconciliados — lote 5 de 2026-09-21
+
+No teste histórico do SQLite de faturamento de 03/07/2026, o retorno CNAB foi conciliado distinguindo valor original, valor pago, juros/mora, tarifa, desconto, abatimento e data de crédito. A diferença entre pagamento e principal não deve sobrescrever o título original nem ser classificada automaticamente como receita principal. Resultado de fixture em banco temporário não comprova baixa de título real. Fonte: unidades 38083, 38086.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

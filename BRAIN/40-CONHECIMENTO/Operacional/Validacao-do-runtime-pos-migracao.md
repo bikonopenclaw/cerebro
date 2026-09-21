@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:08:05.502633Z'
 relationships:
 - type: references
   target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
@@ -69,3 +69,11 @@ Na recuperação histórica de 2026-06-13, os relatos distinguiram agentes cadas
 Como critério de validação, conferir separadamente essas superfícies no runtime efetivo. Uma sessão com permissões carregadas antes da mudança pode exigir uma prova nova pelo caminho aprovado. Não concluir falha do gateway só por uma visão antiga da ferramenta, nem sucesso da comunicação cruzada só por um ping individual. Isso não recomenda abrir visibilidade ou permissões amplas; cada rota deve continuar limitada ao escopo necessário.
 
 Fontes: trechos 28921, 28925, 28926, 28932, 28933, 28937 e 28938, identificados por hash e posição no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-round2-20260921.json`. São relatos históricos, não uma verificação da configuração atual.
+
+## Complementos reconciliados — lote 5 de 2026-09-21
+
+No ensaio de migração de 07/07/2026, foram conferidos versões, ownership e conteúdo restaurado, mas o gateway de destino foi mantido inativo/desabilitado até o corte para não disputar o mesmo bot. Um snapshot fresco foi feito porque mensagens/configuração mudaram após o primeiro restore. Contagens e login Telegram isolados não provam equivalência funcional: credenciais de integrações e perfil web precisavam validação própria. O owner legado u4s dessa tentativa foi removido no replanejamento posterior em favor de openclaw único. Fonte: unidades 31003, 31018, 31027, 31033.
+
+No incidente Telegram de 07/07/2026, a investigação relatou múltiplos gateways em root/openclaw/u4s e um gateway que renascia ao abrir sessão SSH por script de login/profile. A validação de single-writer precisa inspecionar supervisor de sistema, serviços de usuário e inicialização de shell/login, não apenas uma unit conhecida. Conflito 409 indica consumidor concorrente, mas não identifica sozinho a máquina/processo; confirmar origem antes de terminar processos ou reiniciar o host. Fonte: unidades 31105, 31114, 31117, 31153.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

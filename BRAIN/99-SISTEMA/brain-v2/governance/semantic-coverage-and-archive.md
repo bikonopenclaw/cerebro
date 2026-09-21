@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: false
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:08:05.502633Z'
 relationships:
 - type: derived_from
   target: BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md
@@ -50,7 +50,7 @@ As notas Markdown, relações justificadas e recibos mínimos ficam no Brain/Git
 
 A habilidade `brain-semantic-search` foi instalada na VPS em 2026-09-21. Ela usa um único modelo multilíngue local e um índice derivado fora do Git, em `/data/.openclaw/local/brain-semantic`. A pasta compartilhada de habilidades está em `/data/.openclaw/skills`; os perfis separados de Kowalski e Darth Vader apontam para a mesma habilidade. A descoberta foi conferida pelos catálogos dos agentes e a pesquisa foi executada diretamente. Isso comprova disponibilidade, não que todas as sessões já tenham invocado a habilidade.
 
-Por padrão, a pesquisa privilegia conhecimento permanente; `--scope all` inclui diários, estados e propostas, que exigem interpretação temporal. Resultados mostram caminho, hash, data e relações. Similaridade recupera candidatos; não prova equivalência, autorização ou cobertura. O índice é atualizado por demanda quando os hashes do Brain mudam, reaproveitando notas inalteradas. São mantidas no máximo duas gerações. Toda inferência de embeddings é local, sem API externa.
+Por padrão, a pesquisa privilegia conhecimento permanente; `--scope all` inclui diários, estados e propostas, que exigem interpretação temporal. Resultados mostram caminho, hash, data, relações estruturadas e links explicitamente escritos na nota. Um link declarado é apresentado como tal, sem inferir tipo de relação pelo modelo. Similaridade recupera candidatos; não prova equivalência, autorização ou cobertura. O índice é atualizado por demanda quando os hashes do Brain mudam, reaproveitando notas inalteradas. São mantidas no máximo duas gerações. Toda inferência de embeddings é local, sem API externa.
 
 A habilidade é uma ferramenta explícita, distinta do `memory_search` nativo; a configuração deste último não foi alterada. Código, dependências fixadas e instruções ficam versionados, enquanto o modelo e índice permanecem na VPS. As rotinas periódicas ainda não ganham recibos automáticos apenas por esta instalação.
 

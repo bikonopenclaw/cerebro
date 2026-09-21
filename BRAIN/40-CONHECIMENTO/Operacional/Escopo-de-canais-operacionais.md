@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:08:05.502633Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
@@ -67,3 +67,15 @@ Além do escopo do canal, a configuração precisa separar grupo permitido de re
 ## Reforço 2026-08-18
 
 Quando um canal operacional usa workers internos, o owner externo precisa ser unico e testado. No grupo Relatorios Operacionais, Puppet Master ficou responsavel pela resposta ao Telegram em fluxos com Darth/Kowalski, enquanto os workers retornam resultado interno e ficam bloqueados de `message` externo para evitar duplicidade ou resposta fora de contexto.
+
+## Complementos reconciliados — lote 4 de 2026-09-21
+
+Na consulta assistida SERPRO, o usuário pediu retorno compreensível, com resultado, limitações e próximo passo; diagnóstico técnico do terminal deve sustentar a resposta, não ser transferido ao usuário como única entrega. Isso não autoriza emissão nem oculta erro ou ausência de evidência. Fonte: unidades 38045.
+
+Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json`. Aplicações históricas permanecem delimitadas pelo período e contrato da fonte.
+
+## Complementos reconciliados — lote 5 de 2026-09-21
+
+No broker local SERPRO, o usuário preferiu iniciar, consultar e encerrar sob demanda por comando acessível, em vez de deixá-lo sempre aberto. Preservar limite de exposição e controle explícito do ciclo; esta preferência não autoriza túnel público, emissão fiscal ou serviço permanente. Fonte: unidades 37988.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -33,6 +33,20 @@ def source_snapshot(root):
     digest=sha(json.dumps([(k,v['sha256']) for k,v in files.items()],ensure_ascii=False).encode())
     return files,digest
 
+def declared_links(text,name,known):
+    """Resolve only authored wikilinks; never infer a semantic relationship type."""
+    found=[];seen=set()
+    for raw in re.findall(r'\[\[([^\]]+)\]\]',text):
+        target=raw.split('|',1)[0].split('#',1)[0].strip()
+        if not target or '://' in target:continue
+        stem=target.removesuffix('.md');options=[stem+'.md', 'BRAIN/'+stem+'.md', str(Path(name).parent/(stem+'.md'))]
+        matches=[x for x in options if x in known]
+        if not matches and '/' not in stem:matches=[x for x in known if Path(x).stem==stem]
+        matches=list(dict.fromkeys(matches))
+        if len(matches)==1 and matches[0] not in seen:
+            seen.add(matches[0]);found.append({'target':matches[0],'basis':'explicit_wikilink_in_source'})
+    return found
+
 class Runtime:
     def __init__(self,config):
         self.root=Path(config['brain_root']).resolve();self.data=Path(config['data_dir']).resolve()
@@ -116,21 +130,24 @@ class Runtime:
     def search(self,query,limit=5,scope='knowledge'):
         index,vectors,refresh=self.refresh()
         q=np.asarray(next(self.model.embed([query])),dtype=np.float32);q/=max(float(np.linalg.norm(q)),1e-12)
-        scores=vectors@q;seen=set();results=[]
+        scores=vectors@q;seen=set();results=[];known={d['path'] for d in index['docs']}
         for pos in np.argsort(-scores):
             chunk=index['chunks'][int(pos)];doc=index['docs'][chunk['doc']]
             if scope=='knowledge' and (not doc['path'].startswith('BRAIN/40-CONHECIMENTO/') or doc['path'].endswith('/README.md')):continue
             if doc['path'] in seen:continue
             seen.add(doc['path']);score=float(scores[pos])
+            raw=(self.root/doc['path']).read_bytes()
+            if sha(raw)!=doc['sha256']:raise RuntimeError('Result source changed; retry')
             results.append({'path':doc['path'],'title':doc['title'],'source_sha256':doc['sha256'],'cosine':score,
                             'match_strength':'weak' if score<0.35 else 'candidate','excerpt':redact(chunk['text']),
-                            'relationships':doc.get('relationships',[])[:6]})
+                            'relationships':doc.get('relationships',[])[:6], 'source_updated':doc.get('updated',''),
+                            'declared_links':declared_links(raw.decode('utf-8'),doc['path'],known)[:12]})
             if len(results)>=limit:break
         if source_snapshot(self.root)[1]!=index['source_digest']:raise RuntimeError('Source changed during search; retry against the new snapshot')
         return {'query':redact(query),'scope':scope,'index_at':index['indexed_at'],'source_digest':index['source_digest'],
                 'refresh':refresh,'results':results,'raw_history_access':False,
                 'limitations':['Similaridade sugere leitura; não prova equivalência, cobertura, autorização nem estado atual.',
-                               'Consulta somente o Brain consolidado. O arquivo histórico completo tem destino e acesso separados.',
+                               'Consulta somente o Brain consolidado. Históricos brutos não integram este índice; sua retenção segue os recibos de cobertura.',
                                'Filtro de credenciais é complementar; não publicar resultados brutos automaticamente.']}
 
 def main():

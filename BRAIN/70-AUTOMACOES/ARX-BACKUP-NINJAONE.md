@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:08:05.502633Z'
 ---
 
 # ARX Backup diário → tickets NinjaOne
@@ -226,3 +226,37 @@ Na configuração histórica dos envios ARX, Hebert pediu criação sequencial p
 No episódio de aprovação do modelo diário ARX, Hebert pediu guardar o modelo aprovado para reutilização pelo Kowalski. A versão submetida havia retirado a seção de seleção protegida quando não havia lista explícita das pastas. A regra durável é separar modelo aprovado de artefato em validação e não preencher seleção de backup por inferência; recuperar a versão vigente por identidade verificável antes de reutilizar. Fonte: unidades 36366.
 
 Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.
+
+## Complementos reconciliados — lote 4 de 2026-09-21
+
+No caso histórico do ARX, foi removida a barra sempre verde: cores/severidade devem representar dados reais da fonte, inclusive falhas. O relato identificava TB como janela rolante de 28 dias e outros campos por fonte; validar esses campos no schema consultado. Uma barra rolante correta ainda não prova cobertura integral de mês-calendário. Fonte: unidades 36333, 36327.
+
+Escopo histórico solicitado para ARX Backup: relatórios em português do Brasil, separados por cliente, com capacidade de preparar e-mail ou job de envio limitada a esse produto. Preparação e envio real continuam etapas distintas; destinatário, modelo e autorização devem ser validados pelo contrato aplicável. Fonte: unidades 36267, 32001.
+
+No gerador histórico NinjaOne, um alerta vinculado a dispositivo precisou ser relacionado ao cadastro do dispositivo para chegar à organização/cliente. Antes de agregar alertas por cliente, validar as chaves e cardinalidade do schema efetivamente consultado; não supor que o evento traz diretamente organizationId. Sem vínculo inequívoco, manter o alerta não atribuído em vez de inventar cliente. Fonte: unidades 31926.
+
+Na padronização histórica de quatro crons mensais ARX, a alteração autorizada foi somente assunto e corpo do email. Agenda, destinatários e BCC deveriam permanecer preservados; uniformizar apresentação não autoriza mudar distribuição ou criar novos envios. Fonte: unidades 36308.
+
+No desenho histórico ARX, relatório diário significa recorte de backup das últimas 24 horas e usa modelo próprio; não é o resumo de tarefas realizadas pelo agente. Diário e mensal exigem fonte, período e aprovação correspondentes, sem reaproveitar o nome de um para afirmar cobertura do outro. Fonte: unidades 36347.
+
+No ciclo inicial de ARX→NinjaOne, o usuário pediu centralizar tickets em 00 - Bikon Tech, com cliente no título, evitando remapear automaticamente para organização final do cliente. Registrar como decisão histórica de roteamento, sujeita ao contrato vigente; não migrar tickets nem conceder autorização de criação em massa. Fonte: unidades 36443.
+
+Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json`. Aplicações históricas permanecem delimitadas pelo período e contrato da fonte.
+
+## Complementos reconciliados — lote 5 de 2026-09-21
+
+Na integração de 15/06/2026, ARX/Cove foi identificado como JSON-RPC: login com partner/usuário/credencial retornava uma sessão visa; chamadas usavam query e Columns, e a estrutura observada incluía result.result.Settings. A presença de segredo em respostas exigia saneamento antes de guardar evidência. São observações daquele conector, não contrato atual garantido; não registrar visa, senhas ou inventário bruto no Brain. Fonte: unidades 32017, 32080.
+
+O checkpoint de 15/06/2026 consolidou relatórios em português brasileiro e separados por cliente, templates aprovados como referência, preparação de e-mails sem disparo automático, separação CNAB400/CNAB240 e conector ARX/Cove JSON-RPC. Falhas de autenticação e bloqueio de comunicação descritos ali eram estado transitório; não reexecutar tentativas de credenciais, restaurar configurações ou tomar listas de arquivos modificados como prova do runtime atual. Os detalhes de custódia permanecem apenas como caminhos lógicos, sem segredos. Fonte: unidades 32059.
+
+No desenho dos relatórios ARX de 16/06/2026, o BCC padrão solicitado era backup@bikon.com.br, enquanto o contato apresentado ao cliente era backup@arxcore.com.br. Preparação de job distinguia cliente, dia/horário e destinatários. Preservar essa separação entre identidade pública e cópia interna, sem confundir documentação histórica com configuração de envio vigente ou autorização de novos disparos. Fonte: unidades 36274, 36295, 36310.
+
+Em 16/06/2026 foram relatados agendamentos mensais ARX separados para Alzira, Camburi, Capixaba e Vila Velha, dia 1 às 08:00 GMT-3. Esse é o desenho inicial: disponibilidade da agenda e execução posterior exigem recibos próprios e configuração autenticada; não reativar jobs antigos por esta memória. Fonte: unidades 36298, 36301, 36304, 36307.
+
+Na implantação ARX→NinjaOne de 16/06/2026, o usuário pediu centralizar os alertas na organização interna 00 - Bikon Tech enquanto nomes/clientes não estavam mapeados com segurança. O título final foi corrigido para Alerta de ARX Backup - Nome do cliente, após erro AARX. Esse fallback era específico daquele desenho; não substitui vínculo estável aprovado entre cliente, ativo e fonte, nem autoriza hoje abrir tickets na organização errada. Fonte: unidades 36430, 36439, 36445, 36454.
+
+No dry-run inicial de ticketing ARX, o prefixo numérico15 produziu associação incorreta entre Vila Velha e RI Marabá. Resolver identidade por cadastro/ID canônico ou mapeamento explícito validado; prefixo ou nome parecido não confirma cliente e não autoriza ticket na organização presumida. Fonte: unidades 36428.
+
+Na ativação histórica ARX, criar o cron não autorizou forçar execução imediata dos tickets detectados. Configuração, primeira execução real e abertura de tickets são ações distintas; manter autorização específica e deduplicação. Horário08:15 daquele episódio não é grade vigente. Fonte: unidades 36434.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

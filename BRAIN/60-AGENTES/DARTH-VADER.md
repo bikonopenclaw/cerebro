@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:08:05.502633Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
@@ -215,3 +215,33 @@ A auditoria de paridade funcional em 2026-08-24 fechou `DARTH_FULL_FUNCTIONAL_PA
 Preferência de tratamento registrada por Hebert: referir-se ao agente Darth Vader no masculino (ele). Fonte: unidades 29025.
 
 Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.
+
+## Complementos reconciliados — lote 4 de 2026-09-21
+
+No início da proposta de integração SERPRO/PARCSN, o escopo informado por Hebert era somente a própria Bikon, com certificado A1 e contratação Integra Contador ainda pendente. Não estender para terceiros ou inferir procuração/contrato ativo a partir dessa declaração histórica. A recuperação não contrata serviço nem autoriza emissão de guias. Fonte: unidades 34611.
+
+Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json`. Aplicações históricas permanecem delimitadas pelo período e contrato da fonte.
+
+## Complementos reconciliados — lote 5 de 2026-09-21
+
+Na preparação SERPRO de 18/06/2026, o controle proposto separava cadastro do parcelamento, parcelas por competência e alertas: valor previsto, guia emitida, pagamento e comprovante são campos distintos. Valor de parcela pode variar e pagamento exige evidência, não mera previsão. Limites legais, prazos e gatilhos de rescisão mencionados no diálogo eram referências históricas e precisam da fonte oficial atual; não preservá-los como regra universal nem executar emissão automática pelo calendário sugerido. Fonte: unidades 34603.
+
+O projeto SERPRO registrou contrato/pedido 540190 da Bikon, datado 18/06/2026, e cobrança por requisição, com referências técnicas na skill em standby. O resumo daquela data citou faixas iniciais de R$ 0,24 consulta, R$ 0,32 emissão e R$ 0,40 declaração, além de prazo de liberação até 10 dias. Esses números são relato histórico do contrato, não preços atuais validados; qualquer novo consumo/contratação depende de contrato e escopo vigentes. Fonte: unidades 34618, 34621, 34627.
+
+Em 18/06/2026, Hebert colocou SERPRO em standby até encontrar forma segura de operar sem entregar seu certificado. A retomada experimental local em02/07 não apagou esse limite de custódia nem liberou emissão fiscal. Arquivo da skill existir ou estar versionado não significa serviço produtivo ativo. Fonte: unidades 34657.
+
+Em 02/07/2026, Hebert determinou que a skill SERPRO ficasse somente no workspace de Darth Vader em standby, para retomada posterior. No mesmo saneamento, ressaltou que Notaas e a esteira notas/boletos/remessa/e-mail eram operação principal e não poderiam ser removidas por parecerem resíduo. Essa decisão histórica exige separar material em espera de dependências realmente usadas antes de limpar skills. Fonte: unidades 35644.
+
+Checkpoint histórico de 02/07/2026: o kit Controle Financeiro Familiar fase4 foi descrito como pacote de instalação limpo, com SQLite/categorias, bot Telegram, OCR Apple Vision/Tesseract, dashboard local, aprovação de pendências, limites de upload e allowlist de chat fail-closed. Banco, uploads, pending, caches e .env real foram excluídos do pacote. Era candidato a teste local controlado, não prova de produção nem identidade automática com o FIP posterior. Fonte: unidades 35695.
+
+No experimento SERPRO de 02/07/2026, PEDIDOSPARC163 e PARCELASPARAGERAR162 responderam com pedidoDados.dados como string vazia; objeto vazio/null tiveram erro. OBTERPARC164 exigiu numeroParcelamento, não numero. Também houve erro local de construção JSON antes da requisição; distinguir rejeição do provider de falha do script. O teste evitou disparar múltiplos payloads por tentativa porque chamadas poderiam ser cobradas. Estas são observações históricas do PARCSN, a conferir no contrato atual antes de nova chamada; não liberam emissão. Fonte: unidades 35746, 35749, 35752, 35755, 35758, 35761, 35770.
+
+No fluxo SERPRO em standby documentado em 02/07/2026, GERARDAS161 permaneceu bloqueado até aprovação específica que identificasse serviço, parcelamento, competência/parcela e valor. Uma eventual primeira emissão seria limitada à unidade aprovada; consultas de pedidos/parcelas não herdavam permissão para /Emitir. Disponibilidade de parcela na consulta não comprova dívida não paga e exige conferência antes de emissão. Fonte: unidades 35776.
+
+O checkpoint SERPRO de 02/07/2026 preserva: skill em standby exclusiva de Darth, Notaas produtivo preservado no saneamento, broker loopback sob custódia do titular, consulta antes de emissão, segredos fora do chat/Git e teste controlado por potencial cobrança. PEDIDOSPARC163 com dados vazio foi o primeiro sucesso; OBTERPARC164 estava em construção e o campo numero foi depois corrigido para numeroParcelamento. Caminhos e próximos passos do resumo são históricos, não autoridade para reativar serviço ou emitir. Fonte: unidades 35782.
+
+Em 03/07/2026, o experimento SERPRO foi mantido no fluxo local solicitado por Hebert após tentativa de túnel para endereço interno inacessível. O controle local agrupava iniciar/parar/testar broker e consultas de pedidos, parcelas e detalhe; DETPAGTOPARC165 era experimental, GERARDAS161 bloqueado. Diagnóstico distinguiu caminho certificado com hífen/underscore e arquivo .env efetivamente lido. A rotina de baixa comparava parcelas disponíveis com demonstrativo, mas presença na API só documenta o estado daquela fonte naquele instante, não nega pagamento externo. Redigir dados para saída não deve corromper o JSON usado no cálculo/parsing; preservar estrutura interna e produzir resumo sanitizado separado. Fonte: unidades 37966, 37981, 37990, 38011, 38026, 38044, 38050, 38062.
+
+Preferência de tratamento registrada por Hebert: Darth Vader e Kowalski no masculino; usar ele/dele para Darth Vader. Trata-se de convenção de comunicação dos agentes, sem alterar papel, permissão ou roteamento. Fonte: unidades 29027.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

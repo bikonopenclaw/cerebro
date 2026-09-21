@@ -1,0 +1,526 @@
+[
+  {
+    "proposal_id": "coverage-round3-a2c0ca05e5b1af11",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/20-EMPRESAS/BIKON/README.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md#relações"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-8b3a4cc164fa24d4",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/boletos-malote/README.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md#relações"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-6c2a6fe514b26e14",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/60-AGENTES/KOWALSKI.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/20-EMPRESAS/BIKON/README.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+        "reason": "Aplica a distinção entre evidência ausente e falha confirmada ao timeout histórico de emissão fiscal.",
+        "source": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-20260921.json#text-3515-3518"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-bf78a26fa0e02626",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/01-DIARIO/Semanal/2026-W31.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md",
+        "reason": "Complementa o limite de escopo da autorização com a exigência de aceite aplicável à versão do artefato; não equipara aprovação técnica e humana.",
+        "source": "git:2e5f3ed0e3bfcc873f2044df1a3fe80e3097be97:BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md; BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-b0d009e977ec0103",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/01-DIARIO/Semanal/2026-W31.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md#relações"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-be26739c501dc773",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/60-AGENTES/DARTH-VADER.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md#relações"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-d03ba676ba34b20e",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/60-AGENTES/SENTINEL.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/60-AGENTES/versionados/workspaces/sentinel/access_control/REVOGACAO.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md#relações"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-3e9ad7dafe0a82be",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/20-EMPRESAS/BIKON/README.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md#relações"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-2acb877be050e1fb",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/openclaw-crons/README-verificacao-crons.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/01-DIARIO/Semanal/2026-W29.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md#relações"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-452159666a22bea3",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/60-AGENTES/KOWALSKI.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/60-AGENTES/ROBOTNIK.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/20-EMPRESAS/BIKON/README.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md#relações"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-bb1cb60bf742a053",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/60-AGENTES/DARTH-VADER.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/60-AGENTES/DARTH-VADER.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/boletos-malote/README.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/60-AGENTES/DARTH-VADER.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/60-AGENTES/DARTH-VADER.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/60-AGENTES/DARTH-VADER.md#relações"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-0a760a78b2e8b1e1",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/60-AGENTES/ROBOTNIK.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/60-AGENTES/ROBOTNIK.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/60-AGENTES/ROBOTNIK.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/99-SISTEMA/openclaw-config-agentes-backup-2026-06-25.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/60-AGENTES/ROBOTNIK.md#relações"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-04355f8d4991d42e",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/70-AUTOMACOES/API-WHATSAPP-BIKON.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-fbd5bebde43f9b40",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-6b68b846fff4c439",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-d1a84fb415145df1",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/60-AGENTES/KOWALSKI.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/20-EMPRESAS/BIKON/README.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md#relações"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-b0a3b4ab05ec7c58",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/70-AUTOMACOES/boletos-malote/README.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round3-ad90ba8266d344cd",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/temporal-reconciliation-20260921.json",
+    "target_note": "BRAIN/99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "derived_from",
+        "target": "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+        "reason": "Aplica relevância e contexto à cobertura de históricos.",
+        "source": "git:2e5f3ed0e3bfcc873f2044df1a3fe80e3097be97:BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md"
+      },
+      {
+        "type": "derived_from",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md",
+        "reason": "Mantém evidência bruta fora da camada cognitiva e do Git.",
+        "source": "git:2e5f3ed0e3bfcc873f2044df1a3fe80e3097be97:BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  }
+]

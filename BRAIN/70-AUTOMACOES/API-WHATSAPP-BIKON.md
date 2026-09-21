@@ -1,3 +1,15 @@
+---
+id: brain-04355f8d4991d42e12e3
+type: state
+title: API WhatsApp Bikon
+created: '2026-09-21T19:00:06.782473Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T19:08:05.502633Z'
+---
+
 # API WhatsApp Bikon
 
 ```yaml
@@ -130,3 +142,9 @@ https://bikon.com.br/wp-content/uploads/2024/09/logo-white.png
 ```
 
 Usar como header padrão do template `retomar_solicitacao`, salvo aprovação explícita para trocar a imagem.
+
+## Complementos reconciliados — lote 4 de 2026-09-21
+
+No contrato histórico de KPI WhatsApp de 02/07, espera foi definida como aguardando→manual com meta menor que cinco minutos; atendimento manual, até quatro horas. Relatório incluía média, mediana, P90 e dentro/fora da meta, restrito a Hebert Mattedi, Felipe Nogueira e Fabio Fidelis. Se o timestamp necessário não vier da API, declarar indisponível em vez de inventar o SLA. Reconfirmar escopo de operadores antes de aplicar ao fluxo vigente. Fonte: unidades 37946.
+
+Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json`. Aplicações históricas permanecem delimitadas pelo período e contrato da fonte.

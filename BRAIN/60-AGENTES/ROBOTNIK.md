@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:08:05.502633Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md
@@ -78,16 +78,18 @@ Robotnik deve pedir aprovação do Puppet Master antes de:
 
 Para marketing Bikon, Robotnik deve carregar `content-production-contract` v1, a referencia canonica e os assets oficiais. A rota visual principal registrada e `image_gen.imagegen`, com finalizacao local deterministica limitada a tipografia, logo, recorte, contraste e exportacao. Kling, Creatomate, Buffer, `openclaw.image_generate`, CLI paga ou outro provider nao sao fallback ativo. Publicacao permanece uma autorizacao independente e deve usar somente o publicador canonico vigente no contrato/runtime.
 
-## Instagram Bikon
+## Instagram Bikon — configuração histórica de julho/2026
+
+Este bloco descreve a configuração anterior ao contrato criativo de 08/09. As rotas de geração e publicação citadas aqui não são instruções atuais nem fallbacks autorizados; prevalecem o contrato vigente e os gates descritos abaixo.
 
 A integração Instagram saiu do stand by após aprovação da verificação de segurança da Meta informada em 2026-06-26 e foi configurada em modo `draft` em 2026-07-09:
 
 - Pasta: `/data/.openclaw/workspace-robotnik/instagram-bikon`
 - Modo inicial: `draft`
-- Caminho de produção atual: Kling CLI, Creatomate e Buffer, cada um no seu papel.
+- Caminho de produção registrado naquele período: Kling CLI, Creatomate e Buffer, cada um no seu papel; superado como direção ativa em 08/09.
 - Nunca usar automação por login/senha do Instagram.
 - Token Meta de longa duração e IDs operacionais ficam em arquivo local de segredo, fora do Brain/Git.
-- A Meta Graph API foi validada, mas não é mais o escritor produtivo. Publicação real ocorre somente pelo Buffer e com aprovação específica.
+- Na arquitetura daquele período, a Meta Graph API havia sido validada e Buffer foi escolhido como escritor produtivo. Essa escolha é histórica; a publicação pelo contrato vigente usa somente seu publicador canônico e aprovação específica.
 
 ## Governança da produção Instagram
 
@@ -97,7 +99,7 @@ A integração Instagram saiu do stand by após aprovação da verificação de 
 - Mudança de prompt, referência, modelo, quantidade, template, copy ou mídia cria nova versão e exige nova aprovação no portão afetado.
 - Ações Buffer são distintas: rascunho, agendamento, publicação, edição e exclusão não compartilham autorização.
 - IDs operacionais podem ser registrados; chaves, tokens e credenciais permanecem fora do Brain/Git.
-- O conjunto Instagram Bikon v4 é o conjunto canônico. As submissões paralelas posteriores não reabrem nem substituem esse lock sem nova decisão do Hebert.
+- O conjunto Instagram Bikon v4 foi o conjunto canônico no ciclo histórico de julho. Seu lock não autoriza substituir o contrato criativo v1 de 08/09 nem reutilizar direções antigas como atuais.
 - O snapshot `feed-base-a v1` fechou Brand QA pré-geração em `PASS` com sete arquivos imutáveis. Esse resultado não autoriza Kling, render, upload ou publicação.
 - Robotnik deve acompanhar `LTPA`, `SSI` e `SFT` e registrar rejeição, retrabalho e intervenção manual antes da geração.
 - Qualquer mudança em prompt, request, parâmetro ou arquivo congelado invalida o hash e exige novo snapshot e nova revisão do Kowalski.

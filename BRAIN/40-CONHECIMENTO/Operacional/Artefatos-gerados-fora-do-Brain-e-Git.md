@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:08:05.502633Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md
@@ -62,3 +62,9 @@ Dados derivados podem conter informação sensível, envelhecer rápido ou criar
 - [[70-AUTOMACOES/boletos-malote/README|Boletos e malote bancário]]
 - [[70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK|Instagram Bikon, Robotnik]]
 - [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw - Provimento 213]]
+
+## Complementos reconciliados — lote 5 de 2026-09-21
+
+No export de 07/07/2026, o pacote foi movido para fora da árvore de origem para não incluir o próprio backup em construção. A geração de arquivo de recuperação deve manter destino separado da árvore percorrida e validar manifesto/hash depois; caso contrário, uma cópia pode crescer por auto-inclusão sem melhorar cobertura. Fonte: unidades 30982.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

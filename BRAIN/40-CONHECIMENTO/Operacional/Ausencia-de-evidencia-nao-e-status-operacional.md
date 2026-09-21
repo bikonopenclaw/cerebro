@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:08:05.502633Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md
@@ -116,3 +116,15 @@ Caso histórico de 02/07/2026: no checklist de backup do Cartório Camburi, a fo
 Em 01/07/2026, um relatório afirmou que 29 de 40 endpoints não eram gerenciados; o usuário contestou a origem e pediu retirar Bitdefender daquele relatório. O aprendizado é bloquear ou qualificar a alegação enquanto arquivo, regra e campo de origem não estiverem demonstrados. A retirada daquele conteúdo não estabelece proibição geral de usar Bitdefender em outros relatórios. Fonte: unidades 29086.
 
 Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.
+
+## Complementos reconciliados — lote 4 de 2026-09-21
+
+No monitor histórico Hyper-V/Windows Backup, ausência de configuração deveria ser NAO_CONFIGURADO, nunca OK. CRITICAL era reservado a falha real; apenas esse estado poderia alimentar a regra aprovada de ticket, com exit code 2 no contrato daquela versão. Falta de configuração/evidência não deve ser convertida automaticamente em incidente ou saúde positiva. Fonte: unidades 34589.
+
+Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json`. Aplicações históricas permanecem delimitadas pelo período e contrato da fonte.
+
+## Complementos reconciliados — lote 5 de 2026-09-21
+
+No relatório ARX de 15/06/2026, Hebert pediu incluir o backup mais antigo efetivamente armazenado. Essa dimensão de retenção deve ser obtida de registro consultável da fonte, distinguindo idade do backup armazenado, último backup válido e janela de status exibida. Nome de política ou barra de 28 dias não demonstra sozinho o ponto recuperável mais antigo. Fonte: unidades 32104.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

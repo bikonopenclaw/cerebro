@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:08:05.502633Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
@@ -73,3 +73,9 @@ No LinkedIn Robotnik, Hebert autorizou somente o Gate A de credenciamento. A fal
 ## Conexão revisada em 2026-09-21
 
 [[40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano|Validacao tecnica nao substitui aceite humano]]: Complementa o limite de escopo da autorização com a exigência de aceite aplicável à versão do artefato; não equipara aprovação técnica e humana.
+
+## Complementos reconciliados — lote 4 de 2026-09-21
+
+No desenho histórico SERPRO, consulta de parcelamento e emissão de DAS eram autorizações distintas. A autorização de emissão deveria identificar serviço, competência/parcela e valor; não expor botão genérico Emitir que contorne essas dimensões. O catálogo histórico de códigos/endpoints não é comprovação de API vigente. Fonte: unidades 38054.
+
+Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json`. Aplicações históricas permanecem delimitadas pelo período e contrato da fonte.

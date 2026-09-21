@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:08:05.502633Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/SENTINEL.md
@@ -62,3 +62,11 @@ Um wrapper read-only reduz risco operacional, mas não transforma uma credencial
 Em 01/07/2026, no contexto de dashboard do controle financeiro familiar, Hebert pediu restringir acesso ao IP fixo da empresa. Registrar como requisito de acesso daquele projeto, sujeito a confirmação do endereço e teste efetivo da restrição; a conversa não comprova firewall ou autenticação implementados. Não generalizar o IP observado no servidor como endereço autorizado da empresa. Fonte: unidades 29965.
 
 Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.
+
+## Complementos reconciliados — lote 5 de 2026-09-21
+
+Na preparação praxis-gws em 18/06/2026, o pacote incluía e-mails/relatórios de outra operação e scopes amplos. A instalação foi relatada sem autenticação nem envio, com revisão do conteúdo e scripts antes de usar. Dependência instalada não concede autoridade operacional; reduzir dados herdados e scopes ao necessário antes de integrar conta real. Fonte: unidades 34663, 34666.
+
+No teste praxis-gws de 18/06/2026, gmail.send permitiu envio, mas consulta de perfil pediu permissão que não estava concedida. O diagnóstico deve distinguir operação fora do scope de falha de autenticação, sem ampliar permissão só para passar um teste. Drive.file e calendar.events foram depois adicionados para funções específicas, com criação/exclusão de objetos de teste; esse registro histórico não comprova scopes atuais nem autoriza novas operações. Fonte: unidades 34684, 34690, 34693, 34696, 34699.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

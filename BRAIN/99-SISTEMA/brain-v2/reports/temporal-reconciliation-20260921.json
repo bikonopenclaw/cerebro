@@ -1,0 +1,24 @@
+{
+  "reconciliations": [
+    {
+      "path": "BRAIN/60-AGENTES/ROBOTNIK.md",
+      "before_sha256": "e91c18ec9f188a459473fd434f5c8ab4ef18b6737d1f7dec33d84cd0f0a9f1fe",
+      "reason": "A mesma nota afirmava Buffer como atual apesar de registrar substituição explícita pelo contrato de08/09 e publicação de10/09. Marcar bloco de julho como histórico preserva fato e elimina autoridade conflitante.",
+      "sources": [
+        "BRAIN/60-AGENTES/ROBOTNIK.md#contrato-criativo-e-piloto-aceito-2026-09-08",
+        "BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md#decisao-tecnica-atual"
+      ]
+    },
+    {
+      "path": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "before_sha256": "a07043fcffb581a2b2556c192d6233462aaf2b481f78e90f6b5c08e0ea0c7443",
+      "reason": "Formulação inicial por CPF/CNPJ conflitava com correção posterior explícita por cliente_id. Preservado o histórico e adotada a chave canônica já documentada.",
+      "sources": [
+        "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md#agrupamento-por-cliente",
+        "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md linhas263-264 no baseline5276fad"
+      ]
+    }
+  ],
+  "basis": "Explicit later decisions inside already published sources, not embedding similarity",
+  "runtime_configuration_changed": false
+}

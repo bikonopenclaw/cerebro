@@ -1,3 +1,15 @@
+---
+id: brain-6b68b846fff4c439dfe6
+type: state
+title: Skill Notaas NFS-e
+created: '2026-09-21T19:00:06.782473Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T19:08:05.502633Z'
+---
+
 # Skill Notaas NFS-e
 
 ## Status
@@ -143,7 +155,7 @@ Validado pelo Hebert em 2026-06-22.
 Regra oficial para envio em lote:
 
 - Todo e-mail de NFS-e/boleto para cliente deve copiar `financeiro@bikon.com.br`.
-- Se houver duas ou mais NFS-e para o mesmo `cliente_id`, CPF, CNPJ ou documento de cliente, enviar um único e-mail para esse cliente.
+- Agrupar duas ou mais NFS-e pelo mesmo `cliente_id` comprovado. A formulação inicial que também permitia agrupar apenas por CPF/CNPJ/documento foi superada pela correção registrada abaixo: unidades diferentes do mesmo documento, como Celi Aracruz e Celi João Neiva, não devem ser misturadas. Essa regra de agrupamento não concede autorização de envio.
 - O corpo do e-mail deve listar cada NFS-e com número, chave, valor e boleto relacionado.
 - Anexos devem incluir todos os PDFs/XMLs das NFS-e e todos os boletos PDF daquele cliente.
 - Um e-mail por cliente, mesmo que existam duas ou mais notas e boletos no mesmo envio.
@@ -272,3 +284,9 @@ Script atualizado:
 - O cancelamento solicitado da NFS-e `214`, R$ 2.046,81, foi interrompido no preflight sem mutacao. A nota continuava `issued` e o boleto relacionado `105609`, nosso numero `1541`, continuava `emitido_producao`, sem baixa.
 - Bloqueios: motivo fiscal obrigatorio nao informado e gerador CNAB400 aprovado fixo na ocorrencia `01`, enquanto a baixa exige ocorrencia `02`. Cancelar a nota isoladamente criaria inconsistencia fiscal/bancaria.
 - Retomar somente com motivo fiscal e uma rota CNAB de baixa `02` validada e explicitamente autorizada; cancelamento da nota, baixa/remessa e eventual mudanca de script/metodo sao gates separados.
+
+## Complementos reconciliados — lote 4 de 2026-09-21
+
+O fluxo assistido recebe lista de notas/itens, cruza cadastro e gera resultados/status por item. Entrada em lote não elimina aprovação fiscal nem conferência de NFS-e, boleto e remessa; o caso Unus não deve ficar hardcoded. Fonte: unidades 36551.
+
+Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json`. Aplicações históricas permanecem delimitadas pelo período e contrato da fonte.

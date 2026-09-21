@@ -1,0 +1,41 @@
+{
+  "installed_at": "2026-09-21T19:05:54.792101+00:00",
+  "release": "20260921-v2",
+  "previous_release": "releases/20260921-v1",
+  "source_sha256": "bb912831ae79756b27322161bff878856837b7286f03c1d5956f11dbacaa50c5",
+  "query_proof": {
+    "matched_path": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+    "source_updated": "2026-09-21T18:55:38.578515Z",
+    "declared_links": [
+      {
+        "target": "BRAIN/20-EMPRESAS/BIKON/README.md",
+        "basis": "explicit_wikilink_in_source"
+      },
+      {
+        "target": "BRAIN/60-AGENTES/DARTH-VADER.md",
+        "basis": "explicit_wikilink_in_source"
+      },
+      {
+        "target": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+        "basis": "explicit_wikilink_in_source"
+      },
+      {
+        "target": "BRAIN/40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md",
+        "basis": "explicit_wikilink_in_source"
+      },
+      {
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md",
+        "basis": "explicit_wikilink_in_source"
+      },
+      {
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+        "basis": "explicit_wikilink_in_source"
+      }
+    ],
+    "index_rebuilt": false
+  },
+  "shared_by_all_profiles": true,
+  "model_duplicated": false,
+  "gateways_restarted": false,
+  "temporary_uploads_removed": true
+}

@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:08:05.502633Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/KOWALSKI.md
@@ -295,3 +295,17 @@ Distinguir o produto solicitado: no episódio dos resumos automáticos NinjaOne,
 Histórico de 06/07/2026: Hebert separou coleta de dados e entrega dos resumos. Para o fechamento de sexta, a proposta ajustada coletava no sábado e enviava na segunda, com mensagens espaçadas; os agendamentos permaneceram desabilitados naquela alteração. Esse registro é cronologia, não grade vigente: horários atuais exigem consulta à configuração autenticada. Fonte: unidades 32209.
 
 Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.
+
+## Complementos reconciliados — lote 4 de 2026-09-21
+
+Na padronização histórica dos resumos Telegram, a apresentação separou título/data, placar do recorte, números principais, atenção acionável, destaques e próxima ação sugerida. A clareza de formato não dispensa declarar lacunas de fonte e não autoriza reenviar o relatório apenas para testar o visual. Fonte: unidades 35873.
+
+Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json`. Aplicações históricas permanecem delimitadas pelo período e contrato da fonte.
+
+## Complementos reconciliados — lote 5 de 2026-09-21
+
+No desenho inicial de 02/07/2026, os resumos WhatsApp, tickets NinjaOne e ameaças Bitdefender passaram do privado para o grupo Relatórios Operacionais. Hebert pediu texto no corpo do Telegram, sem anexos nem caminhos internos, organizado com título, placar executivo e blocos. Horários daquela implantação são históricos e foram alterados depois; esse contrato de apresentação deve ser aplicado somente à rotina correspondente, não a PDFs/artefatos solicitados em outras tarefas. Fonte: unidades 35836, 35848, 35860, 35863, 35866.
+
+Histórico da grade operacional: em 02/07/2026, WhatsApp foi proposto às 19h, NinjaOne teve escopo corrigido para tickets e horário 18h30; Bitdefender ficou 18h45. Em 03/07 foi acrescentado resumo ARX 18h15. Em 06/07, Hebert esclareceu que o fechamento de sexta era semanal, depois separou coleta na madrugada e entrega, levando o fechamento da sexta para segunda. Os agendamentos dessa alteração permaneceram desabilitados. Registrar como cronologia de decisões; a grade atual é a configuração autenticada e mudanças posteriores já documentadas. Fonte: unidades 32200, 38068, 35839, 38065, 35845.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

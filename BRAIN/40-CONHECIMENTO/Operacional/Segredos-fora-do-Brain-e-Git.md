@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:08:05.502633Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
@@ -77,3 +77,19 @@ No ODP Day 4, um comando preparatorio de discovery `env | sort | rg -i ...` exp�
 Caso histórico de 18/06/2026: Hebert recusou entregar seu certificado A1 ao agente. O desenho de integração deve respeitar esse limite de custódia: não interpretar a posse de um token de serviço como autorização para obter ou exportar o certificado privado. Uma alternativa de autenticação deve preservar o certificado sob controle do titular e ter escopo explicitamente aprovado; esta memória não atesta implantação de broker nem validade atual de credenciais. Fonte: unidades 34654.
 
 Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.
+
+## Complementos reconciliados — lote 4 de 2026-09-21
+
+Na integração histórica Bitdefender, a pasta de interação no Drive foi reservada aos arquivos que exigiam participação do usuário. Isso não autorizava transferir toda documentação ou segredos para o Drive; o restante deveria permanecer nos locais operacionais definidos. Não extrapolar para política global de armazenamento sem escopo vigente. Fonte: unidades 33707.
+
+Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json`. Aplicações históricas permanecem delimitadas pelo período e contrato da fonte.
+
+## Complementos reconciliados — lote 5 de 2026-09-21
+
+Em 02/07/2026, a alternativa à entrega do A1 foi um broker experimental somente em loopback no computador sob controle de Hebert. O objetivo era manter certificado e senha nesse ambiente e permitir consumo de tokens sem transportar a chave privada para o agente. Pacotes de código não continham certificado, senha, token ou .env real. Consulta fiscal e emissão continuavam separadas; esse desenho histórico não autoriza expor o broker em rede, transferir o certificado à VPS ou manter dados desta limpeza no Mac permanentemente. Fonte: unidades 35719, 35722, 35725, 35740.
+
+No experimento SERPRO de 03/07/2026, a tentativa de acessar broker por túnel encontrou endereço interno inacessível, e Hebert pediu retornar ao método local do dia anterior. A localização do OpenClaw na nuvem não autoriza expor broker/certificado nem inventar acesso público. Confirmar rota e custódia autorizadas antes de propor conectividade; consulta local do titular permanece distinta de operação remota pelo agente. Fonte: unidades 37963.
+
+Redação de segredos não deve destruir a estrutura necessária para interpretar a resposta. Separar parsing interno da saída sanitizada; quando o conteúdo redigido ficar inválido, não tratar extração parcial por regex como prova completa de resposta fiscal. Caso histórico SERPRO precisa conservar limites da evidência. Fonte: unidades 38060.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
