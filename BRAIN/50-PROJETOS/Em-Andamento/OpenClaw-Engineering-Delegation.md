@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:54:07.904960Z'
+updated: '2026-09-21T21:07:33.285014Z'
 ---
 
 # OpenClaw Engineering Delegation
@@ -89,3 +89,11 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-2026
 Na revisão histórica EDC v1.2.3 de 07/08, a reconciliação do CPIW preservou candidato/diff e restaurou fontes canônicas aos hashes pré-invocação; dez diretórios temporários de testes foram removidos, sem residual autorizado como baseline. A simulação validou workspace isolado, contenção de temporários, promoção controlada e rollback, com zero invocações Codex naquela revisão. Isso não apaga a violação anterior nem comprova promoção produtiva. O snapshot ainda aguardava relatório independente final; registrar essa fronteira antes de usar o pacote como evidência atual. Fonte: unidades 8854.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch22-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 25 de 2026-09-21
+
+Na primeira revisão EDC v1.1.2, 34 testes e lifecycle em cópia temporária sugeriram PASS, mas o caso negativo revelou que o controller aceitava authorization_hash arbitrário. A correção posterior passou ao exigir o vínculo exato da autorização, com 35 testes e pacote/inventário reconciliados. Testar rejeição de autoridade errada, além do caminho feliz, antes de emitir resultado terminal; uma sugestão de PASS no resumo não supera evidência negativa posterior. A homologação em clone não ativou o perfil real nem invocou Codex; ativação e piloto ocorreram em fases autorizadas separadamente. Fonte: unidades 8831, 8837.
+
+A continuação de 07/08 fechou a primeira validação independente EDC v1.2.3 em PASS: 60 testes, isolamento/rollback, fontes canônicas restauradas e dez diretórios temporários eliminados, com zero invocações Codex durante a revisão. O relatório foi gerado e hashado, superando o checkpoint ainda pendente da unidade 8854. A matriz before/after guardava linhas do candidato anterior; a prova do estado restaurado veio da checagem direta e do recibo de limpeza, sem apagar o histórico da violação. Em seguida começou revisão de um baseline final diferente, cujo resultado ainda não aparece aqui; não transferir automaticamente o PASS entre baselines. Fonte: unidades 8855.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

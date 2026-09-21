@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:46:44.672892Z'
+updated: '2026-09-21T21:07:33.285014Z'
 ---
 
 # ARX Backup diário → tickets NinjaOne
@@ -306,3 +306,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch19-2026
 Após criar o ticket interno 1502 em 18/07, a tentativa autorizada de fechamento fez um PUT com retry=False e recebeu HTTP 400; parou antes do GET. O último estado confirmado era NEW antes da tentativa, mas o estado posterior ainda não havia sido relido, portanto nem NEW atual nem RESOLVED estavam provados. O helper resolve_ticket faria GET/PUT/GET e o wrapper tinha retry/refresh por padrão, excedendo o orçamento daquela ordem; o one-shot exigia controlar explicitamente método e número de chamadas. A nova autorização era apenas diagnóstico e um GET, não segundo PUT. Nenhum segredo ou hash de segredo precisa ser preservado como memória. Fonte: unidades 8754.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 25 de 2026-09-21
+
+O fechamento histórico do teste interno NinjaOne 1502 foi concluído após as falhas 400/401 descritas antes: autorização específica permitiu um refresh e GET→PUT→GET, quatro requisições no total, todas HTTP 200, retry=False e nenhum fallback. O último GET confirmou RESOLVED naquela data. O payload preservou version e requesterUid obtidos só em memória e enviou status como string; a mensagem exata do primeiro HTTP 400 não estava disponível, portanto não atribuir a causa definitiva a um campo isolado. Somente o tokenfile autorizado mudou; outros tickets e deduplicação ficaram intactos. Isso supera a pendência histórica, sem afirmar estado atual, reabrir autorização ou persistir token, callback ou hash de segredo no Brain. Fonte: unidades 8755.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

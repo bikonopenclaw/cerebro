@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:54:07.904960Z'
+updated: '2026-09-21T21:07:33.285014Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -134,3 +134,17 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch21-2026
 No Harness DRE v3 histórico, o Gate 04 falhou com PACKAGE_OR_PREFLIGHT_IO_FAILURE porque --package recebeu o diretório da fixture, embora o contrato exigisse o arquivo manifest.json. O preflight direto com o arquivo passou e os 12 caminhos congelados permaneciam equivalentes. A correção v4 autorizada separava FIXTURE_ROOT de FIXTURE_MANIFEST, exigia validação dos bytes do harness/instalador e wrapper que somente declarasse PASS após preflights reais, com rollback em divergência. A preparação e o PASS local não autorizavam instalação nem execução do novo harness; houve parada obrigatória no gate root. Esse checkpoint antecede a instalação posterior e não indica defeito atual. Fonte: unidades 30780.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch22-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 23 de 2026-09-21
+
+Na revisão pós-commit EP-02, o parecer PASS foi sustentado por 23 testes e reprodução independente do relatório normalizado, sem ler como entrada o relatório fornecido pelo executor. O JSON compacto usava ordem fixa, UTF-8 e nenhum newline final; já o manifesto de caminhos exigia ordem da Seção 12 e newline final. Aplicar a convenção de bytes de cada artefato, sem uma normalização genérica. Esse aceite homologava o kernel técnico; a discussão seguinte ainda apontava ausência de perfil e fluxo de negócio concretos, anterior ao Business Completion posterior. Fonte: unidades 8864.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch23-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 25 de 2026-09-21
+
+Na revisão histórica do Shadow Mode, o candidato inicial falhou por timeout permissivo, duplicação entre primário/fallback e relatório sem deduplicação. O commit d217f53c0c76f461d5f3058dfab4e3bdf5f28043 corrigiu os probes finais: validar escrita, leitura regular segura e lock antes do handoff; companion inválido não deve impedir primário saudável; JSON completo sem newline continua válido. Persistência usava lock interprocesso e busca integral limitada pelo deadline, não apenas tail fixo; mesmo execution_id com conteúdo conflitante abortava relatório, duplicata equivalente podia colapsar. Entrada inválida preservava resultado parcial explicitamente incompleto, rc 2. Os alertas finais eram de versões intermediárias e não se reproduziram no SHA entregue. A quinta revisão integral estava apenas iniciada; probes finais pontuais não comprovam todos os gates dessa nova rodada nem estado atual. Fonte: unidades 41428.
+
+Nas revisões históricas EP-02A, contagens e duas gerações byte idênticas passaram enquanto o FIM usava mutações genéricas em /payload/value para defeitos de outros campos. Depois persistiram casos LEFT/RIGHT indistintos e colisões esperadas antes de recompor commitments, que na verdade acionavam primeiro DATA_HASH_MISMATCH. Um caso negativo deve atingir a condição nomeada, distinguir os lados e satisfazer precondições dos gates anteriores; determinismo não prova adequação semântica. A leitura seguinte confirmou correções LEFT/RIGHT e ausência de no-op, e o freeze final posterior passou. Arquivo anunciado congelado que muda durante a revisão exige nova submissão coerente, sem reutilizar hashes ou stdout antigos. Fonte: unidades 9740, 9743.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

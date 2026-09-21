@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T21:07:33.285014Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md
@@ -91,3 +91,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-2026
 Consolidar com9533/9545: este checkpoint ainda aguardava patchstaging, mantendo FAIL_CLOSED; o fechamento posterior comprovou correção de isolamento/readpurity. Não conservar o bloqueio intermediário como situação vigente. Fonte: unidades 9536.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 25 de 2026-09-21
+
+Na auditoria cron de 17/07, a CLI exibiu banner de migração, mas os registros não mostraram criação/atualização de cron naquela janela. A migração real fora registrada em 16/07: 199 entradas vindas de 31 arquivos legados; os pares JSONL preservados eram idênticos. O banco operacional era openclaw.sqlite, e store_key com caminho jobs.json era identificador lógico, não prova de JSON ativo. Variação normal de SQLite/WAL/SHM não atribuía mudança à CLI. Não inventar argv histórico ausente nem fazer rollback sobre estado novo só por banner: a recomendação era preservar o estado sem defeito comprovado. A preferência expressa no Telegram era progresso nativo das ferramentas, sem mensagens manuais repetitivas. Dados transitórios de autenticação não integram memória cognitiva. Fonte: unidades 9431.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

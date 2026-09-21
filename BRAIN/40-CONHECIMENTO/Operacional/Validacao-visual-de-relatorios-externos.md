@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:46:44.672892Z'
+updated: '2026-09-21T21:07:33.285014Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
@@ -163,3 +163,15 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-2026
 Complemento à unidade 36689: após a rejeição do DOCX/PDF de 17/07, o executor reconheceu que confundira validação técnica e aprovação visual e confirmou a parada solicitada. A avaliação seguinte de Instagram incidia sobre um guia marcado substituído, não sobre a skill canônica instalada; críticas daquele guia não demonstram defeito da versão atual. Separar identidade/versão do material avaliado, prova visual dos bytes e aceite humano, sem reativar receitas antigas de Chromium ou Kling. Fonte: unidades 36695.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 23 de 2026-09-21
+
+Na campanha Bikon de julho, D-v1 foi cortada no QA da mídia real: 21/55, composição stock e quarta pessoa parcial apesar do requisito de três. Aprovação do prompt não aprovava a imagem. Na rota E, o payload pré-aprovado já havia sido consumido e concluído; o approval citado na mensagem diferia do efetivamente consumido em disco. Reconciliar execution/approval/payload e custo antes de responder, sem reemitir pré-gate retroativo nem gerar retry/segunda cobrança. Naquele checkpoint D+E somavam 4/12 créditos, E aguardava QA do raw e F permanecia em espera; números e bloqueios são históricos, não estado ou autorização atuais. Fonte: unidades 9638.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch23-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 24 de 2026-09-21
+
+Na inspeção de marca de 20/07/2026, fc-match devolveu DejaVu Sans quando Space Grotesk estava ausente. Sucesso do resolvedor não comprova fonte canônica: conferir a família realmente usada antes do render final e obter alternativa explicitamente aprovada se necessário. O hash agregado do manual e seis logos identifica apenas o conjunto de bytes inspecionado, não cria brandpack_version oficial. Ausência de handoff, safe areas ou critérios de formato deve permanecer lacuna, sem inventar margens. A alegação de 90 dias presente na orientação interna precisava de substanciação e não superava a proibição de promessa absoluta. São constatações históricas, não prova de fontes ausentes hoje. Fonte: unidades 8724.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch24-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

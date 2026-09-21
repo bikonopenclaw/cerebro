@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:46:44.672892Z'
+updated: '2026-09-21T21:07:33.285014Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md
@@ -218,3 +218,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-2026
 No rollback histórico DRE, a primeira leitura de uma captura foi anunciada como PASS, mas o prompt de continuação indicava aspa aberta e nenhum comando executado. A inspeção mostrou os alvos ainda presentes; só depois de execução concluída e verificação direta da ausência houve fechamento. Separar comando digitado, saída efetiva, retorno ao prompt e estado pós-ação. Não reutilizar comandos destrutivos do histórico nem remover validações para contornar erro de quoting. Fonte: unidades 32825.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch17-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 25 de 2026-09-21
+
+A proposta histórica de confiança Sentinel em 23/07 definiu G1 fonte direta autorizada; G2 atribuição única; G3 recência válida; G4 regra determinística P1–P4 sem conflito; G5 impacto ou intenção operacional confirmados. Alta exigia todos; média permitia uma lacuna contextual; ausência de atribuição ou evidência vencida limitava a baixa, e sinais críticos conflitantes impediam downgrade automático. Definitividade exigia fechar gates ou aceitar explicitamente risco residual. Era proposta de método, sem comprovação de adoção automática. No snapshot, 194/196 alertas Ninja foram classificados e dois Spooler ficaram dependentes de contexto; ARX other não sustentava P2 atual, diferente do P2 histórico que interrompeu canário. Bitdefender estava completo somente no contrato agregado, não inventário detalhado; sete ciclos com pausa segura não provavam 24 horas contínuas nem autorizavam 24x7. Fonte: unidades 41593.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

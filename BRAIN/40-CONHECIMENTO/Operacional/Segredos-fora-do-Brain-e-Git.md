@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:46:44.672892Z'
+updated: '2026-09-21T21:07:33.285014Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
@@ -121,3 +121,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-2026
 No fluxo histórico OAuth NinjaOne de 18/07, a mensagem de state validado foi corrigida após constatar que o processo de stdin encerrou antes de receber o callback. Conhecer visualmente o valor esperado não prova que o executor recebeu, comparou e vinculou o callback. Registrar precisamente a etapa alcançada, número de POSTs e efeitos persistidos; não consumir ou repetir código com base apenas no resumo. O bloqueio desse pré-check foi superado por tentativa posterior independente, sem tornar o token daquela data uma credencial atual. Fonte: unidades 36902.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 25 de 2026-09-21
+
+Na validação histórica praxis-gws, um padrão iniciado por hífens foi interpretado como opção e rg terminou com unrecognized flag. O marcador subsequente SECRET_SIGNATURES=absent era inválido e foi descartado. A execução corrigida com padrão explícito (-e) terminou com exit code 1, zero matches e ausência de mutações no escopo examinado. Distinguir erro do scanner, ausência de correspondência e conclusão do controlador; zero matches vale somente para padrões e arquivos efetivamente examinados, não prova ausência universal de segredos. Não imprimir valores sensíveis no diagnóstico nem transportar o sucesso da instalação para autenticação ou operação externa. Fonte: unidades 9447.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

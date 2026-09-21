@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:54:07.904960Z'
+updated: '2026-09-21T21:07:33.285014Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-28.md
@@ -682,3 +682,27 @@ O retorno histórico de 28/07 às 02:03 relata Governance Ledger Bootstrap COMPL
 Na definição histórica EP-02, duas gerações idênticas não sanavam a inconsistência CTM-017: as fixtures disponíveis preservavam a mesma idempotency key, contrariando o caso esperado, e alterar a fixture compartilhada quebraria CTM-018. A correção documental acrescentou comparadora específica para scope/key/provenance divergentes com mesmo Command ID, elevando o inventário futuro de 54 para 55 paths. Validar satisfatibilidade semântica dos casos e não regressão antes de congelar hashes; isso foi alteração documental, anterior ao commit e à implementação posteriores. Fonte: unidades 35453.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch21-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 23 de 2026-09-21
+
+Na sequência histórica de 08/08, o pacote staged PIR não correspondia inicialmente à árvore ativa: Herald ainda aparecia em código/testes e a suíte observada tinha 206 testes, não 212. A revalidação posterior encontrou zero referências ativas Herald, módulos PIR, estado/eventos dos dois CNS byte idênticos ao namespace legado, 212 testes aprovados e GET_MUTATION_COUNT=0, fechando o gate staged. A etapa seguinte já observou o serviço user novo ativo/enabled e o antigo ausente, mas esta fonte termina antes do resultado final de rotas externas/PDF/Mini App. Preservar essa progressão sem manter o FAIL antigo como atual nem inferir o último aceite. Retenção ou remoção do namespace legado é ação separada, não pré-requisito inventado do QA. Fonte: unidades 9602, 9608.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch23-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 25 de 2026-09-21
+
+O retorno posterior da canonicalização PIR em 08/08 concluiu também o gate final externo: serviço user prov213-interface-runtime ativo/enabled, antigo ausente, naming ativo sem Herald, rotas e Mini App local/externo HTTP 200, PDFs dos dois CNS válidos, 212 testes e GET_MUTATION_COUNT=0. Isso supera a cauda ainda sem resultado da unidade 9608. A ocorrência undefined detectada no Mini App era um literal JavaScript esperado no corpo opcional do fetch, não prova de valor inválido exibido. Interpretar alertas de busca no contexto sintático e validar o caminho real. A nova revisão de opções canônicas AIR começou depois e não recebeu resultado nesta fonte. Fonte: unidades 9611.
+
+A regeneração final EP-02A validou CPM 211, FIM 233, FPM 83 e CTM 23, com dez artefatos idênticos entre as duas execuções e recomputação independente dos agregados. CTM-017 usou a comparadora específica: mesmo Command ID e bytes canônicos divergentes produziam DATA_COMMAND_ID_COLLISION; a comparação de provenance era NOT_APPLICABLE nesse ramo, apesar dos commitments distintos. CTM-018 continuava cobrindo bytes/scope/key iguais com provenance divergente. O PASS do freeze resolveu aqueles defeitos sem autorizar implementação; commit e declaração do checkpoint foram verificações posteriores distintas. Fonte: unidades 9767.
+
+Na revisão offline Portal 213 Phase 0, 35 testes, anti-replay, entitlement/membership e ausência de caminho LLM/OpenClaw passaram, enquanto HTTPS público e HEAD permaneciam bloqueios declarados. O checker inicialmente procurava unittest em stdout, mas a prova estava em stderr; também confundia menção textual a import OpenClaw com import executável. Validar stream e contexto sintático antes de declarar ausência ou violação. Nenhum helper de segredo/discovery nem chamada Telegram foi executado nessa revisão; a cauda iniciou Phase 0.1 com 49 testes declarados, sem ainda comprovar seu aceite independente. Fonte: unidades 9875.
+
+Na tentativa live Portal 213 de 20/08, botões pinados abriam bot-chat via start, não o Mini App; autenticação do bot e membership passavam, mas isso não provava AIR/ICD carregados no dispositivo. A recomendação inicial de novo domínio/DNS foi expressamente substituída pelo Owner por reutilizar o padrão Prov213 existente: URL/ingress HTTPS aprovado, serviço user em 9213, Mini App e validação server-side de initData com entitlement/membership. Não reabrir DNS novo nem confundir esse runtime com o Stage 1B separado em 19213. Preservar token válido sem pedir rotação desnecessária; publicação/pin, BotFather, root e aceite no dispositivo continuam superfícies próprias. A reconciliação iniciou, mas esta fonte não demonstra conclusão live; relatos contraditórios sobre Stage 1B devem ser confrontados com evidência corrente antes de alterar serviços. Fonte: unidades 31436.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 24 de 2026-09-21
+
+No checkpoint PIR de 08/08/2026, a árvore staging removeu Herald da autoridade ativa e adotou prov213_interface_runtime.py, prov213_interface_runtime_ctl.py, runtime/prov213, pir-session-state-v1.json, pir-runtime-events-v1.jsonl e prov213-interface-runtime.service. As 3.148 ocorrências em 377 arquivos legados foram classificadas como evidência imutável, não configuração ativa. A enumeração do runtime real ainda encontrava runtime/herald e nenhuma migração real havia ocorrido; testes da cópia byte a byte e grep zero no staging não provavam deploy. A suíte completa PIR foi iniciada, mas a saída final estava truncada nessa fonte, sem marcador final comprovado. Os PASS anteriores do PDF externo e Mini App são gates distintos; evolução posterior do projeto não deve ser confundida com esse checkpoint. Fonte: unidades 9600.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch24-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

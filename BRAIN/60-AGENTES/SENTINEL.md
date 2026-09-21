@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:54:07.904960Z'
+updated: '2026-09-21T21:07:33.285014Z'
 ---
 
 # SENTINEL, Controller de Operações e SNOC
@@ -352,3 +352,17 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-2026
 A lista histórica de clientes vinculados operacionalmente à Corpus não se limitava à organização Corpus Soluções (ID 16). Os caches de junho/julho distinguiam Rio Novo do Sul (ID 44; código 2015 depois 2102), Presidente Kennedy (ID 46; 2017 depois 2106) e João Neiva (ID 51). Essa associação por conhecimento/cache não prova hierarquia formal pai-filho da API nem cadastro atual. Em consulta separada de 18/08/2026 às 20:03:51Z, o relato registrou 659 dispositivos, maior ID 719 e 69 IDs de 651 a 719, com created exposto e zero mutações: quantidade de dispositivos, maior identificador e data real de criação são medidas distintas. O bloqueio anterior por falta de ordem foi superado por uma ordem read-only específica, sem ampliar autoridade operacional por memória. Fonte: unidades 36844.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch21-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 23 de 2026-09-21
+
+Em 26/07, a preflight Sentinel parou porque o hash indicado identificava Markdown de autorização, não OAS3, e o pacote local não continha contrato OpenAPI. A ordem foi depois substituída por aquisição documental pública isolada, sem controlador, credenciais ou endpoints operacionais: relato de três requisições e 799.450 bytes obteve o YAML oficial NinjaRMM API v2, OpenAPI 3.0.1, 250 paths e 310 operações, hash e940a40f7f0a7d00ade9603963fe480f300b298393259852ce6da3143d771538. Aquisição de contrato não era retomada operacional. Validar conteúdo e função do artefato além do hash e não conservar bloqueio de ausência após recibo posterior válido. Fonte: unidades 33683.
+
+Na prova Sentinel de 26/07, contrato pinado e allowlist getOrganizations/getDevices/getAlerts passaram; approval foi consumido atomicamente antes da autenticação e replay offline foi rejeitado. Houve quatro chamadas: autenticação monitoring e três GETs 200, com contagens históricas 34/644/203 e zero alteração operacional. O adapter comprovava parsing e contagem, não validação estrita item a item de schema. O relato inicial do executor ainda dizia RUNNING; o fechamento posterior pelo coordenador restaurou oito crons e deixou IDLE. Essa prova advisory-only não liberava 24x7. A pergunta posterior sobre papéis foi consolidada depois como Sentinel coleta e Kowalski interpreta/produz relatórios, sem coleta paralela implícita. Fonte: unidades 33689.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch23-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 25 de 2026-09-21
+
+Na equivalência Sentinel/Kowalski de 26/07, o snapshot não demonstrava duração nem reassignment no board. As fixtures SYN-KOW-NINJA-ATTRIBUTION-001 e SYN-KOW-NINJA-DURATION-001 cobriam atribuição e duração de 60 segundos apenas como SYNTHETIC_EQUIVALENCE_COVERAGE_ONLY. Não transformar cenário sintético em prova histórica de duração, ticket alterado ou equivalência integral. A classificação parcial permitia revisão offline e sugeria comparação controlada antes de canário, sem autorizá-los por si; qualquer patch posterior invalidava os hashes anteriores até regeneração e validação do manifesto. Fonte: unidades 8589.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

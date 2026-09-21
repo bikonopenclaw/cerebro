@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:54:07.904960Z'
+updated: '2026-09-21T21:07:33.285014Z'
 relationships:
 - type: references
   target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
@@ -203,3 +203,17 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-2026
 Na correção histórica do harness DRE v4, FIXTURE_ROOT era diretório e FIXTURE_MANIFEST arquivo regular: --package devia receber o manifest, enquanto operações sobre a árvore usavam a raiz. O preflight direto com manifest passou sem instalar ou alterar o core. Revisar semanticamente os argumentos da rota real e testar o helper de códigos de saída; preparar/validar um instalador não prova instalação ou aceite black-box. O freeze dos mesmos 12 caminhos entre commits não dispensa validar o wiring externo. Fonte: unidades 30785, 30788.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch21-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 23 de 2026-09-21
+
+Após concluir historicamente as 27 NFS-e e obter os 54 PDFs/XMLs da remessa 093, a preparação de boletos encontrou reportlab ausente no Python chamado e depois PIL._imaging quebrado: a pasta .pydeps-pdf sombreava dependências funcionais de .venv-pdf. Verificar o interpretador, sys.path e a origem efetiva do módulo antes de reinstalar dependências ou alterar o Python global. Essa falha era da etapa PDF/boletos, não prova de falha das NFS-e já emitidas; emissão, remessa e envio externo têm comprovação própria e sucessiva. Fonte: unidades 3410.
+
+Na continuação da homologação EP-02, duas clean rooms passaram 23/23 testes após incluir o documento normativo exigido: eram 55 arquivos técnicos e um documento adicional de validação. Isso supera a primeira tentativa com 22 PASS e um erro de isolamento. O commit posterior tinha os 55 caminhos técnicos esperados; diferença de ordem no git diff não mudava o conjunto. O manifesto, porém, devia respeitar a ordem contratual da Seção 12 e o newline final, pois seus bytes participavam do hash. Separar contagem de código, dependências de validação, igualdade de conjuntos e serialização. Fonte: unidades 8861.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch23-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 25 de 2026-09-21
+
+Na apuração de 17/07/2026, a consulta apenas repetiu banner da migração realizada em 16/07: 31 arquivos legados originaram 199 entradas, e os pares de run logs eram byte a byte iguais. Não houve nova migração na janela investigada nem backup novo; o comando histórico exato não pôde ser recuperado. SQLite/WAL/SHM mudavam por operação normal, e store_key podia manter caminho JSON já inexistente sem ser a fonte operacional. Rollback sem snapshot prévio poderia perder estado posterior ou duplicar jobs, portanto não foi indicado para o falso incidente. Separar leitura, reconciliação e autorização de mudanças. Na mesma conversa, o usuário pediu progresso nativo das ferramentas no Telegram, sem mensagens artificiais de progresso; configuração via documento temporário exigia excluir o documento após validação, sem copiar segredo para memória. Fonte: unidades 9436.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

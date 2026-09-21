@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:54:07.904960Z'
+updated: '2026-09-21T21:07:33.285014Z'
 ---
 
 # Estado terminal requer convergencia do lifecycle
@@ -112,3 +112,9 @@ Na revalidação documental EP-02 de 28/07, trocar READY_DOCUMENTATION_ONLY por 
 Na implantação histórica das travas de orquestração em 26/07, foram relatados ordem ativa única, supersedes, ACK por caminho/hash e pausa de oito crons não críticos; 9 testes e um ensaio passaram, com estado final IDLE e os oito crons restaurados. Essa prova cobre aquela aplicação/ensaio, sem comprovar política ou grade atuais nem reabrir a rota NinjaOne. Avaliar fechamento também pela restauração das suspensões temporárias, além do término do agente. Fonte: unidades 33677.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch21-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 23 de 2026-09-21
+
+Na Fase A Sentinel de 26/07/2026, o approval foi validado, seis GETs ocorreram e o resultado fechou BLOCKED_BY_PAGINATION antes de chegar um STOP associado à falta de receipt. O STOP impede ações futuras, mas não pode reclassificar a execução comprovada como não iniciada ou não autorizada: preservar fatos e timestamps, entrega pendente e resultado terminal separadamente. A Fase A.1 posterior tinha nova identidade e falhou antes do consumo e de qualquer GET porque ensure_ascii=True divergia da serialização UTF-8/jq contratada. Não transportar o zero GET da segunda tentativa para apagar a primeira, nem o sucesso de propagação da primeira para aprovar a segunda. Fonte: unidades 37815.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch23-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

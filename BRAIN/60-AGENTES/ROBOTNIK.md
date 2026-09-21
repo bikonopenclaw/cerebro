@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T21:07:33.285014Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md
@@ -183,3 +183,9 @@ Regra operacional desde 2026-07-09:
 Registro histórico delimitou pesquisa, leitura e rascunho como autonomia de Robotnik; publicação externa, custo, preço/estratégia, uso de rosto/voz e mudança de credenciais/configuração continuavam sujeitos à autorização de Hebert. Puppet coordenava conflito entre agentes, não era intermediário obrigatório de toda tarefa. Confrontar com contrato posterior antes de tratar limites e limiares monetários antigos como vigentes. Fonte: unidades 39646.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 25 de 2026-09-21
+
+No inventário histórico Robotnik, copy/direção Bikon, composição local e fluxo de revisão estavam separados de Kling/vídeo/publicação experimental. A dependência Sharp em /tmp/bikon-render, então ausente, evidenciou portabilidade frágil: pacote deve declarar dependências e assets locais reproduzíveis, sem node_modules de outro projeto ou caminhos absolutos do host. Logo, copy, preço e CTA pertencem ao compositor; feature flags de rotas experimentais/externas devem iniciar desativadas e --force não contorna aprovação. O inventário não instalou pacote nem aplicou Skill Workshop. A auditoria de comunicação iniciada depois só confirmou aceitação da rota lateral na fila, sem resposta final nem prova da rota hierárquica nessa fonte. Achados de capacidade são históricos e não descrevem instalação atual. Fonte: unidades 39644.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
