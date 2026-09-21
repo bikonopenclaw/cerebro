@@ -1,0 +1,46 @@
+{
+  "executed": false,
+  "journal_path": null,
+  "brain_commit": "cb48fd05beb4a55c82f09e9de15733eba639a180",
+  "manifest_sha256": "ba9d99ca64446669ed33bd10ec263e92214e2f680501c2886e69ea045a64e871",
+  "checked_at_epoch": 1790028228.876991,
+  "protected_proof_files_verified": 7310,
+  "fresh_reference_errors": [],
+  "candidates_verified": 26329,
+  "files_removed": 0,
+  "allocated_bytes_removed": 0,
+  "logical_bytes_removed": 0,
+  "candidate_allocated_bytes": 1944064000,
+  "retained_operational_and_proof_files": 9961,
+  "filesystem_df": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/sda1        96G   60G   37G  63% /\n",
+  "filesystem_bytes": {
+    "block_size": 4096,
+    "available_blocks": 9497051,
+    "total_blocks": 25119164
+  },
+  "services": {
+    "openclaw-gateway.service": "MainPID=4077961\nActiveState=active\nSubState=running\n",
+    "openclaw-gateway-kowalski.service": "MainPID=1695445\nActiveState=active\nSubState=running\n",
+    "openclaw-gateway-darth-vader.service": "MainPID=1934863\nActiveState=active\nSubState=running\n"
+  },
+  "checked_at": "2026-09-21T22:04:48.392073+00:00",
+  "execution_blocker": "Four supervisory scripts await explicit authorization required by automatic approval review for temporary local analysis. No gateway freeze or history deletion executed.",
+  "mac_cleanup": {
+    "verified": true,
+    "at": "2026-09-21T22:08:26.699203+00:00",
+    "temporary_copies_removed": true,
+    "temporary_ssh_key_removed": true,
+    "source_attachments_untouched": true
+  },
+  "coverage_counts": {
+    "already_represented": 1196,
+    "conditional_exact_reuse": 1417,
+    "conditional_external_preservation": 2,
+    "curated_published": 517,
+    "exact_evidence_containment": 4832,
+    "no_durable_knowledge": 3224
+  },
+  "semantic_search_persistent": true,
+  "future_scheduled_runs_already_verified": false,
+  "resume_evidence_dir": "/var/lib/brain-coverage-20260921"
+}
