@@ -1,3 +1,27 @@
+---
+id: brain-3e9ac6eb255c95ad45d8
+type: knowledge
+title: Deploy atômico de skills com hash canônico
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-07-20.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico.md#relações
+---
+
 # Deploy atômico de skills com hash canônico
 
 ```yaml
@@ -55,9 +79,9 @@ O deploy termina somente quando a árvore ativa tem o hash planejado, todos os v
 
 ## Relações
 
-- `BRAIN/01-DIARIO/2026/2026-07-20.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`
+- [[01-DIARIO/2026/2026-07-20|2026-07-20]]
+- [[40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao|Validação do runtime pós-migração]]
+- [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]
 - `BRAIN/60-AGENTES/versionados/`
 
 ## Registro de reconciliação (2026-07-21)

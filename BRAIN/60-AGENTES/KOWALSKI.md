@@ -1,3 +1,43 @@
+---
+id: brain-d5dbe309085a3ca7e40c
+type: entity
+title: Kowalski
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/KOWALSKI.md#relações
+- type: references
+  target: BRAIN/20-EMPRESAS/BIKON/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/KOWALSKI.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/KOWALSKI.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/KOWALSKI.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/KOWALSKI.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/KOWALSKI.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/KOWALSKI.md#relações
+---
+
 # Kowalski
 
 ```yaml
@@ -184,10 +224,10 @@ Desde 2026-07-14/15, o onboarding de cartórios usa consulta oficial por CNS com
 
 ## Relações
 
-- Grupo operacional: `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`
-- Bikon: `BRAIN/20-EMPRESAS/BIKON/README.md`
-- Validação visual: `BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md`
-- ARX Backup: `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`
-- Bitdefender GravityZone: `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`
-- Provimento 213/2026: `BRAIN/70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`
-- Escopo de canais: `BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md`
+- Grupo operacional: [[70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM|Relatórios Operacionais Telegram]]
+- Bikon: [[20-EMPRESAS/BIKON/README|BIKON]]
+- Validação visual: [[40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos|Validação visual de relatórios externos]]
+- ARX Backup: [[70-AUTOMACOES/ARX-BACKUP-NINJAONE|ARX Backup diário → tickets NinjaOne]]
+- Bitdefender GravityZone: [[70-AUTOMACOES/BITDEFENDER-GRAVITYZONE|Bitdefender GravityZone - integração Bikon]]
+- Provimento 213/2026: [[70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI|Provimento CNJ 213/2026, Kowalski]]
+- Escopo de canais: [[40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais|Escopo de canais operacionais]]

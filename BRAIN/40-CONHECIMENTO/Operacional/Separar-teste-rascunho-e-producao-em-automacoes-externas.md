@@ -1,3 +1,35 @@
+---
+id: brain-ee4e9b868c7dc6d3dbd0
+type: knowledge
+title: Separar teste, rascunho e produção em automações externas
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/API-WHATSAPP-BIKON.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md#relações
+---
+
 # Separar teste, rascunho e produção em automações externas
 
 ```yaml
@@ -41,8 +73,8 @@ Automações que podem gerar efeito externo devem separar claramente preparaçã
 
 ## Relações
 
-- `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md`
-- `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md`
-- `BRAIN/70-AUTOMACOES/API-WHATSAPP-BIKON.md`
-- `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`
+- [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]
+- [[40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git|Segredos fora do Brain e Git]]
+- [[70-AUTOMACOES/NOTAAS-NFSE|Skill Notaas NFS-e]]
+- [[70-AUTOMACOES/API-WHATSAPP-BIKON|API WhatsApp Bikon]]
+- [[70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK|Instagram Bikon, Robotnik]]

@@ -1,3 +1,31 @@
+---
+id: brain-bb1cb60bf742a053139d
+type: entity
+title: Darth Vader
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/DARTH-VADER.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/boletos-malote/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/DARTH-VADER.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/DARTH-VADER.md#relações
+- type: references
+  target: BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/DARTH-VADER.md#relações
+---
+
 # Darth Vader
 
 ```yaml
@@ -177,7 +205,7 @@ A auditoria de paridade funcional em 2026-08-24 fechou `DARTH_FULL_FUNCTIONAL_PA
 
 ## Relações
 
-- `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md`
-- `BRAIN/70-AUTOMACOES/boletos-malote/README.md`
-- `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`
-- `BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md`
+- [[70-AUTOMACOES/NOTAAS-NFSE|Skill Notaas NFS-e]]
+- [[70-AUTOMACOES/boletos-malote/README|Boletos e malote bancário]]
+- [[70-AUTOMACOES/FATURAMENTO-TELEGRAM|Grupos Telegram de faturamento]]
+- [[50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence|FIP Bikon Financial Intelligence]]

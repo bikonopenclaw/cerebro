@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "archive_id": "agents-older30d-20260921",
+  "archive_sha256": "d3cfff31b2252170a2ece2e81106ffbc763bfc5427a0c2f652ce213dd9ba47e8",
+  "baseline_commit": "2e5f3ed0e3bfcc873f2044df1a3fe80e3097be97",
+  "files_verified": 36389,
+  "archive_location": "Mac privado do owner; manifesto e índice fora do Git",
+  "baseline_coverage_categories": {
+    "protected_runtime_reference": {
+      "files": 7310,
+      "allocated": 2611494912
+    },
+    "metadata_requires_review": {
+      "files": 10017,
+      "allocated": 87982080
+    },
+    "semantic_review_pending": {
+      "files": 17966,
+      "allocated": 2172133376
+    },
+    "exact_dialogue_coverage_in_retained_sources": {
+      "files": 1095,
+      "allocated": 176615424
+    },
+    "protected_parse_exception": {
+      "files": 1,
+      "allocated": 114688
+    }
+  },
+  "initial_pending_unique_texts": 11186,
+  "reviewed_texts": [
+    {
+      "text_id": 3515,
+      "text_sha256": "c6aa536289d6187b49f057112d36b7d51b66d6a7c37be15668380f769c9ceab8",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 89,
+        "role": "assistant",
+        "timestamp": "2026-06-13T20:52:24.557Z"
+      },
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "disposition": "context_added",
+      "reason": "Timeout após envio não demonstra ausência do efeito; preservar resultado indeterminado e não repetir a emissão por inferência.",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "coverage_unit": "visible_text_only",
+      "file_deletion_authorized": false
+    },
+    {
+      "text_id": 3518,
+      "text_sha256": "9495e496a8c2b328d3a2e015b58eb61e56d261267473ef8f9c509fd9e842d09f",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 101,
+        "role": "assistant",
+        "timestamp": "2026-06-13T20:53:09.895Z"
+      },
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "disposition": "context_added",
+      "reason": "A consulta histórica inconclusiva não estabeleceu sucesso nem falha fiscal; a observação não descreve a API atual.",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "coverage_unit": "visible_text_only",
+      "file_deletion_authorized": false
+    },
+    {
+      "text_id": 3545,
+      "text_sha256": "3ea6e1b8e5054f631f4adbc79ee6ad0b4fe0d436071b0d165649c0d0b1de5f08",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 190,
+        "role": "assistant",
+        "timestamp": "2026-06-25T23:11:49.407Z"
+      },
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Retorno-bancario-nao-valida-remessa.md",
+      "disposition": "already_represented",
+      "reason": "A distinção entre retorno e remessa, nosso número e sequencial já está explicitamente preservada nesta nota.",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "coverage_unit": "visible_text_only",
+      "file_deletion_authorized": false
+    },
+    {
+      "text_id": 3558,
+      "text_sha256": "4f85b4a143dc45c2f30bf2a869eaec59f880664de7db9eacf759de671a3289c5",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 248,
+        "role": "assistant",
+        "timestamp": "2026-06-26T11:55:35.181Z"
+      },
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "disposition": "already_represented",
+      "reason": "A nota canônica já diferencia emissão de recuperação posterior do PDF e registra indisponibilidade temporária do PDF; não repetir emissão para baixar documento.",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "coverage_unit": "visible_text_only",
+      "file_deletion_authorized": false
+    },
+    {
+      "text_id": 3566,
+      "text_sha256": "a93ec9456c7a71140ae119342aeda7ce5cd6ae564fa42b04b16110601b1306de",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 285,
+        "role": "assistant",
+        "timestamp": "2026-07-01T12:43:34.148Z"
+      },
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "disposition": "historical_intent_only",
+      "reason": "Declaração de intenção de auditoria local. Não comprova execução e não contém nova autorização atual; o escopo permanece no arquivo de evidência.",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "coverage_unit": "visible_text_only",
+      "file_deletion_authorized": false
+    },
+    {
+      "text_id": 3579,
+      "text_sha256": "0ae13c693b37fde8ae1c34960e0232633f9390705e3c837833c0d73732344000",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 335,
+        "role": "assistant",
+        "timestamp": "2026-07-03T13:11:25.194Z"
+      },
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md",
+      "disposition": "historical_intent_only",
+      "reason": "Intenção de consulta, sem emissão ou gravação; não é evidência de execução nem nova decisão financeira.",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "coverage_unit": "visible_text_only",
+      "file_deletion_authorized": false
+    },
+    {
+      "text_id": 3584,
+      "text_sha256": "f8f917bce9b0f24f3a91d6b343280984cbd465792a6be8d9779f3bbc0174c304",
+      "source": {
+        "path": "darth-vader/sessions/c1763b11-cd02-4f2c-8612-80f3daae4f23.jsonl",
+        "line": 31,
+        "role": "assistant",
+        "timestamp": "2026-08-17T12:10:39.021Z"
+      },
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "disposition": "historical_receipt_only",
+      "reason": "Recebimento de nomes de artefatos sem ação; os identificadores permanecem recuperáveis na evidência original, sem afirmar que os artefatos foram validados.",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "coverage_unit": "visible_text_only",
+      "file_deletion_authorized": false
+    },
+    {
+      "text_id": 3586,
+      "text_sha256": "721936510b70cd604f5577e3d548ebc526b68e5e56034d6b47dc28944756e132",
+      "source": {
+        "path": "darth-vader/sessions/c1763b11-cd02-4f2c-8612-80f3daae4f23.trajectory.jsonl",
+        "line": 50,
+        "role": "assistant",
+        "timestamp": "2026-08-17T19:35:15.127Z"
+      },
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "disposition": "deferred",
+      "reason": "Marcador PASS parcial com campo redigido: falta contexto suficiente para afirmar cobertura ou estado atual.",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "coverage_unit": "visible_text_only",
+      "file_deletion_authorized": false
+    },
+    {
+      "text_id": 3592,
+      "text_sha256": "452ecdcb285c39c29e8fa438e8b9c957d48eda1fed0a2710e4031df55e895206",
+      "source": {
+        "path": "darth-vader/sessions/e74ec74f-ba03-4f2d-afee-e83916c2042e.jsonl",
+        "line": 81,
+        "role": "assistant",
+        "timestamp": "2026-08-14T18:31:25.177Z"
+      },
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "disposition": "deferred",
+      "reason": "Parecer financeiro histórico parcial: requer revisar a decisão e os anexos vinculados antes de declarar cobertura integral.",
+      "reviewer": "Codex editorial review 2026-09-21",
+      "coverage_unit": "visible_text_only",
+      "file_deletion_authorized": false
+    }
+  ],
+  "coverage_complete": false,
+  "deletion_performed": false,
+  "deletion_authorized_in_this_batch": false,
+  "next_action": "Continuar revisão das fontes; preservar originais na VPS até cobertura concluída.",
+  "structured_note_date_semantics": "created em migração denota criação do registro estruturado; a origem histórica permanece no corpo legado."
+}

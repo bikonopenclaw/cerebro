@@ -1,3 +1,27 @@
+---
+id: brain-d03ba676ba34b20e7863
+type: knowledge
+title: Menor privilégio em monitoramento
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/60-AGENTES/SENTINEL.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md#relações
+- type: references
+  target: BRAIN/60-AGENTES/versionados/workspaces/sentinel/access_control/REVOGACAO.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md#relações
+---
+
 # Menor privilégio em monitoramento
 
 ```yaml
@@ -29,6 +53,6 @@ Um wrapper read-only reduz risco operacional, mas não transforma uma credencial
 
 ## Relações
 
-- `BRAIN/60-AGENTES/SENTINEL.md`
-- `BRAIN/60-AGENTES/versionados/workspaces/sentinel/access_control/REVOGACAO.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md`
+- [[60-AGENTES/SENTINEL|SENTINEL, Controller de Operações e SNOC]]
+- [[60-AGENTES/versionados/workspaces/sentinel/access_control/REVOGACAO|Procedimento de revogacao]]
+- [[40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional|Ausência de evidência não é status operacional]]

@@ -1,3 +1,27 @@
+---
+id: brain-41161537545a2b7d927a
+type: knowledge
+title: Governança antes de automação de identidade
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Governanca-antes-de-automacao-de-identidade.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Governanca-antes-de-automacao-de-identidade.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Governanca-antes-de-automacao-de-identidade.md#relações
+---
+
 # Governança antes de automação de identidade
 
 ```yaml
@@ -28,6 +52,6 @@ Automação de identidade tem alto risco operacional. Uma correção indevida po
 
 ## Relações
 
-- `BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md`
+- [[70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES|Matriz de acesso Bikon x clientes AD local]]
+- [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]
+- [[40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git|Segredos fora do Brain e Git]]

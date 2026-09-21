@@ -1,3 +1,31 @@
+---
+id: brain-0e82d17a3d791cc73817
+type: knowledge
+title: Consulta gerencial não é permissão operacional
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/boletos-malote/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md#relações
+- type: references
+  target: BRAIN/60-AGENTES/DARTH-VADER.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md#relações
+- type: references
+  target: BRAIN/60-AGENTES/KOWALSKI.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md#relações
+---
+
 # Consulta gerencial não é permissão operacional
 
 ```yaml
@@ -26,7 +54,7 @@ Kowalski recebeu acesso somente leitura à base financeira gerencial da BIKON pa
 
 ## Relações
 
-- `BRAIN/70-AUTOMACOES/boletos-malote/README.md`
-- `BRAIN/60-AGENTES/DARTH-VADER.md`
-- `BRAIN/60-AGENTES/KOWALSKI.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`
+- [[70-AUTOMACOES/boletos-malote/README|Boletos e malote bancário]]
+- [[60-AGENTES/DARTH-VADER|Darth Vader]]
+- [[60-AGENTES/KOWALSKI|Kowalski]]
+- [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]

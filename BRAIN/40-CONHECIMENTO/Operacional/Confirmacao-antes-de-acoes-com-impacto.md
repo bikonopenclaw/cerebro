@@ -1,3 +1,27 @@
+---
+id: brain-1aaee8dea1ff664edcb0
+type: knowledge
+title: Confirmação antes de ações com impacto
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md#relações
+- type: references
+  target: BRAIN/99-SISTEMA/MEMORY.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md#relações
+---
+
 # Confirmação antes de ações com impacto
 
 ```yaml
@@ -33,9 +57,9 @@ A regra reduz risco de execução fora de contexto, postagem no canal errado, al
 
 ## Relações
 
-- `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`
-- `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`
-- `BRAIN/99-SISTEMA/MEMORY.md`
+- [[70-AUTOMACOES/FATURAMENTO-TELEGRAM|Grupos Telegram de faturamento]]
+- [[70-AUTOMACOES/BITDEFENDER-GRAVITYZONE|Bitdefender GravityZone - integração Bikon]]
+- [[99-SISTEMA/MEMORY|MEMORY.md]]
 
 ## Reforço 2026-W26
 

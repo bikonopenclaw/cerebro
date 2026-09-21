@@ -1,3 +1,27 @@
+---
+id: brain-2acb877be050e1fb027d
+type: knowledge
+title: Validação do runtime pós-migração
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/openclaw-crons/README-verificacao-crons.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/Semanal/2026-W29.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md#relações
+---
+
 # Validação do runtime pós-migração
 
 ```yaml
@@ -34,6 +58,6 @@ Antes de reiniciar ou reabrir canais, inspecionar jobs vencidos, em execução e
 
 ## Relações
 
-- `BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`
-- `BRAIN/70-AUTOMACOES/openclaw-crons/README-verificacao-crons.md`
-- `BRAIN/01-DIARIO/Semanal/2026-W29.md`
+- [[50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw|Migração Hostinger VPS / OpenClaw]]
+- [[70-AUTOMACOES/openclaw-crons/README-verificacao-crons|Verificação de segurança de crons]]
+- [[01-DIARIO/Semanal/2026-W29|Semana 2026-W29, cobertura parcial até 2026-07-17]]

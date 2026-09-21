@@ -1,3 +1,55 @@
+---
+id: brain-90f25d94937d305680e8
+type: state
+title: OpenClaw - Provimento 213
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-07-28.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-07-29.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-07-30.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-07-31.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-08-01.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-08-03.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-08-12.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md#relações
+---
+
 # OpenClaw - Provimento 213
 
 ```yaml
@@ -508,13 +560,13 @@ Resultado: `FAIL_CLOSED`, rollback `PASS`, `/opt/openclaw/platform/dre/v1` e `/u
 
 ## Relações
 
-- Diário: `BRAIN/01-DIARIO/2026/2026-07-28.md`.
-- Diário: `BRAIN/01-DIARIO/2026/2026-07-29.md`.
-- Diário: `BRAIN/01-DIARIO/2026/2026-07-30.md`.
-- Diário: `BRAIN/01-DIARIO/2026/2026-07-31.md`.
-- Diário: `BRAIN/01-DIARIO/2026/2026-08-01.md`.
-- Diário: `BRAIN/01-DIARIO/2026/2026-08-03.md`.
-- Diário: `BRAIN/01-DIARIO/2026/2026-08-12.md`.
-- Conhecimento operacional: `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`.
-- Conhecimento operacional: `BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md`.
-- Contexto relacionado, mas distinto: `BRAIN/70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI.md`.
+- Diário: [[01-DIARIO/2026/2026-07-28|2026-07-28]].
+- Diário: [[01-DIARIO/2026/2026-07-29|2026-07-29]].
+- Diário: [[01-DIARIO/2026/2026-07-30|2026-07-30]].
+- Diário: [[01-DIARIO/2026/2026-07-31|2026-07-31]].
+- Diário: [[01-DIARIO/2026/2026-08-01|2026-08-01]].
+- Diário: [[01-DIARIO/2026/2026-08-03|2026-08-03]].
+- Diário: [[01-DIARIO/2026/2026-08-12|2026-08-12]].
+- Conhecimento operacional: [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]].
+- Conhecimento operacional: [[40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git|Artefatos gerados fora do Brain e Git]].
+- Contexto relacionado, mas distinto: [[70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI|Provimento CNJ 213/2026, Kowalski]].

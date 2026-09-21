@@ -1,3 +1,19 @@
+---
+id: brain-cad100d46d057cc2e09e
+type: state
+title: Matriz de acesso Bikon x clientes AD local
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/20-EMPRESAS/BIKON/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md#relações
+---
+
 # Matriz de acesso Bikon x clientes AD local
 
 ```yaml
@@ -50,6 +66,6 @@ A matriz deve servir primeiro como base de auditoria e, somente depois de valida
 
 ## Relações
 
-- Empresa: `BRAIN/20-EMPRESAS/BIKON/README.md`
+- Empresa: [[20-EMPRESAS/BIKON/README|BIKON]]
 - Possível executor técnico futuro: Kowalski, se autorizado e restrito a relatório/auditoria.
 - Conhecimento relacionado: confirmação antes de ações com impacto e segredos fora do Brain/Git.

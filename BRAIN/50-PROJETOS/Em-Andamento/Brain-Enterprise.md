@@ -1,3 +1,19 @@
+---
+id: brain-2cbb50d023b0fb9f84e0
+type: state
+title: Brain Enterprise
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive.md
+  reason: Registra o processo de cobertura e reconciliação autorizado para este projeto.
+  source: user-request-20260921-brain-coverage
+---
+
 # Brain Enterprise
 
 ```yaml
@@ -51,3 +67,7 @@ Manter o Brain como repositório vivo de conhecimento para preservar contexto, d
 - [[40-CONHECIMENTO/Operacional/Consolidacao-silenciosa-sem-ruido|Consolidação silenciosa sem ruído]]
 - [[01-DIARIO/README|MOC Diario]]
 - [[99-SISTEMA/brain-v2/governance/README|Brain v2 Governance]]
+
+## Cobertura de históricos em 2026-09-21
+
+[[99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive|Cobertura, conexões e arquivo semântico]] registra o procedimento e seus limites. O arquivo externo de 36.389 fontes foi verificado, mas a revisão de conteúdo permanece parcial. Os originais da VPS continuam preservados por decisão do usuário. A pesquisa local no Mac não foi integrada aos gateways e os agendamentos existentes não foram alterados.

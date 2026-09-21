@@ -1,3 +1,27 @@
+---
+id: brain-3e9ad7dafe0a82beb622
+type: knowledge
+title: Segredos fora do Brain e Git
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md#relações
+- type: references
+  target: BRAIN/20-EMPRESAS/BIKON/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md#relações
+---
+
 # Segredos fora do Brain e Git
 
 ```yaml
@@ -32,9 +56,9 @@ O Brain pode registrar arquitetura, escopo, permissões, caminhos de cofre e dec
 
 ## Relações
 
-- `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md`
-- `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`
-- `BRAIN/20-EMPRESAS/BIKON/README.md`
+- [[70-AUTOMACOES/NOTAAS-NFSE|Skill Notaas NFS-e]]
+- [[70-AUTOMACOES/BITDEFENDER-GRAVITYZONE|Bitdefender GravityZone - integração Bikon]]
+- [[20-EMPRESAS/BIKON/README|BIKON]]
 
 ## Reforço 2026-W26
 

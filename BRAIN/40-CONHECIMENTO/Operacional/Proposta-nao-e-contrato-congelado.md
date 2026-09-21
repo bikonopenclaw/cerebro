@@ -1,3 +1,27 @@
+---
+id: brain-e8fa11c100610f877915
+type: knowledge
+title: Proposta nao e contrato congelado
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Proposta-nao-e-contrato-congelado.md#relações
+- type: references
+  target: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Proposta-nao-e-contrato-congelado.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/Semanal/2026-W31.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Proposta-nao-e-contrato-congelado.md#relações
+---
+
 # Proposta nao e contrato congelado
 
 ```yaml
@@ -26,6 +50,6 @@ Na semana 2026-W31, documentos como `Serventia_Identity_Contract_v1_PROPOSED_NOT
 
 ## Relacoes
 
-- `BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md`
-- `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`
-- `BRAIN/01-DIARIO/Semanal/2026-W31.md`
+- [[40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo|Autorizacao atomica nao herda escopo]]
+- [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw - Provimento 213]]
+- [[01-DIARIO/Semanal/2026-W31|Semana 2026-W31, cobertura parcial]]

@@ -1,3 +1,31 @@
+---
+id: brain-bf78a26fa0e02626330e
+type: knowledge
+title: Autorizacao atomica nao herda escopo
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md#relações
+- type: references
+  target: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/Semanal/2026-W31.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md
+  reason: Complementa o limite de escopo da autorização com a exigência de aceite aplicável à versão do artefato; não equipara aprovação técnica e humana.
+  source: git:2e5f3ed0e3bfcc873f2044df1a3fe80e3097be97:BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md; BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md
+---
+
 # Autorizacao atomica nao herda escopo
 
 ```yaml
@@ -36,8 +64,12 @@ No LinkedIn Robotnik, Hebert autorizou somente o Gate A de credenciamento. A fal
 
 ## Relacoes
 
-- `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`
-- `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`
-- `BRAIN/01-DIARIO/Semanal/2026-W31.md`
+- [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]
+- [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw - Provimento 213]]
+- [[01-DIARIO/Semanal/2026-W31|Semana 2026-W31, cobertura parcial]]
 - [[01-DIARIO/Semanal/2026-W37|Semana 2026-W37]]
 - [[50-PROJETOS/Em-Andamento/LinkedIn-Robotnik-Publisher|LinkedIn Robotnik Publisher]]
+
+## Conexão revisada em 2026-09-21
+
+[[40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano|Validacao tecnica nao substitui aceite humano]]: Complementa o limite de escopo da autorização com a exigência de aceite aplicável à versão do artefato; não equipara aprovação técnica e humana.

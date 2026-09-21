@@ -1,3 +1,31 @@
+---
+id: brain-8b3a4cc164fa24d4f269
+type: knowledge
+title: Artefatos gerados fora do Brain e Git
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/boletos-malote/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md#relações
+- type: references
+  target: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md#relações
+---
+
 # Artefatos gerados fora do Brain e Git
 
 ```yaml
@@ -29,8 +57,8 @@ Dados derivados podem conter informação sensível, envelhecer rápido ou criar
 
 ## Relações
 
-- `BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md`
+- [[40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git|Segredos fora do Brain e Git]]
 - `BRAIN/60-AGENTES/versionados/`
-- `BRAIN/70-AUTOMACOES/boletos-malote/README.md`
-- `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`
-- `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`
+- [[70-AUTOMACOES/boletos-malote/README|Boletos e malote bancário]]
+- [[70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK|Instagram Bikon, Robotnik]]
+- [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw - Provimento 213]]

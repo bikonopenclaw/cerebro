@@ -1,3 +1,27 @@
+---
+id: brain-f819c078460db8166730
+type: knowledge
+title: Validacao do caminho final instalado
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/Semanal/2026-W31.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado.md#relações
+---
+
 # Validacao do caminho final instalado
 
 ```yaml
@@ -27,6 +51,6 @@ Na semana 2026-W31, o OpenClaw DRE v1 tinha commit preservado, `75/75` testes pr
 
 ## Relacoes
 
-- `BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico.md`
-- `BRAIN/01-DIARIO/Semanal/2026-W31.md`
+- [[40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao|Validação do runtime pós-migração]]
+- [[40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico|Deploy atômico de skills com hash canônico]]
+- [[01-DIARIO/Semanal/2026-W31|Semana 2026-W31, cobertura parcial]]

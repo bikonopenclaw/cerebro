@@ -1,3 +1,27 @@
+---
+id: brain-0a760a78b2e8b1e1c165
+type: entity
+title: Robotnik
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/ROBOTNIK.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/ROBOTNIK.md#relações
+- type: references
+  target: BRAIN/99-SISTEMA/openclaw-config-agentes-backup-2026-06-25.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/60-AGENTES/ROBOTNIK.md#relações
+---
+
 # Robotnik
 
 ```yaml
@@ -146,8 +170,8 @@ Regra operacional desde 2026-07-09:
 
 ## Relações
 
-- Instagram Robotnik: `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`
+- Instagram Robotnik: [[70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK|Instagram Bikon, Robotnik]]
 - LinkedIn Robotnik: [[50-PROJETOS/Em-Andamento/LinkedIn-Robotnik-Publisher|LinkedIn Robotnik Publisher]]
-- Validação visual: `BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md`
+- Validação visual: [[40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos|Validação visual de relatórios externos]]
 - Snapshots versionados: `BRAIN/60-AGENTES/versionados/`
-- Configuração OpenClaw: `BRAIN/99-SISTEMA/openclaw-config-agentes-backup-2026-06-25.md`
+- Configuração OpenClaw: [[99-SISTEMA/openclaw-config-agentes-backup-2026-06-25|Backup configuração agentes OpenClaw, 2026-06-25]]

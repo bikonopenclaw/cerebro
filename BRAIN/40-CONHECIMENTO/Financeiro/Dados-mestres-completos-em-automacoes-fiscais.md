@@ -1,3 +1,27 @@
+---
+id: brain-a2c0ca05e5b1af111694
+type: knowledge
+title: Dados mestres completos em automações fiscais
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md#relações
+- type: references
+  target: BRAIN/20-EMPRESAS/BIKON/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md#relações
+---
+
 # Dados mestres completos em automações fiscais
 
 ```yaml
@@ -30,6 +54,6 @@ Payload fiscal não deve ser reduzido ao mínimo técnico aceito pela API. A fon
 
 ## Relações
 
-- `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md`
-- `BRAIN/20-EMPRESAS/BIKON/README.md`
-- `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`
+- [[70-AUTOMACOES/NOTAAS-NFSE|Skill Notaas NFS-e]]
+- [[20-EMPRESAS/BIKON/README|BIKON]]
+- [[70-AUTOMACOES/FATURAMENTO-TELEGRAM|Grupos Telegram de faturamento]]

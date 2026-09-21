@@ -1,3 +1,27 @@
+---
+id: brain-d1a84fb415145df14c7f
+type: state
+title: Relatórios Operacionais Telegram
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/60-AGENTES/KOWALSKI.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md#relações
+- type: references
+  target: BRAIN/20-EMPRESAS/BIKON/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md#relações
+---
+
 # Relatórios Operacionais Telegram
 
 ```yaml
@@ -260,6 +284,6 @@ Regras consolidadas:
 
 ## Relações
 
-- Agente Kowalski: `BRAIN/60-AGENTES/KOWALSKI.md`
-- Escopo de canais operacionais: `BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md`
-- Bikon: `BRAIN/20-EMPRESAS/BIKON/README.md`
+- Agente Kowalski: [[60-AGENTES/KOWALSKI|Kowalski]]
+- Escopo de canais operacionais: [[40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais|Escopo de canais operacionais]]
+- Bikon: [[20-EMPRESAS/BIKON/README|BIKON]]

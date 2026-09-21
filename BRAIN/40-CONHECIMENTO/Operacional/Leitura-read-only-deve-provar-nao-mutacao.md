@@ -1,3 +1,19 @@
+---
+id: brain-da0559fd8fa57b85e42a
+type: knowledge
+title: Leitura read-only deve provar nao mutacao
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md
+  reason: 'A restrição de capacidades deve ser acompanhada de prova dos efeitos observados: uma credencial ampla envolvida por um cliente read-only não demonstra menor privilégio.'
+  source: git:2e5f3ed0e3bfcc873f2044df1a3fe80e3097be97:BRAIN/40-CONHECIMENTO/Operacional/Leitura-read-only-deve-provar-nao-mutacao.md; BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md
+---
+
 # Leitura read-only deve provar nao mutacao
 
 ```yaml
@@ -39,3 +55,7 @@ Na qualificacao R4 da midia Bikon publicada em 2026-09-10, o verificador protegi
 - [[40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo|Autorizacao atomica nao herda escopo]]
 - [[01-DIARIO/Semanal/2026-W32|Semana 2026-W32]]
 - [[01-DIARIO/2026/2026-09-12|Diario 2026-09-12]]
+
+## Conexão revisada em 2026-09-21
+
+[[40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento|Menor privilegio em monitoramento]]: A restrição de capacidades deve ser acompanhada de prova dos efeitos observados: uma credencial ampla envolvida por um cliente read-only não demonstra menor privilégio.

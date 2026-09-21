@@ -1,3 +1,31 @@
+---
+id: brain-02e75574c3a45c7b2fcd
+type: state
+title: Migração Hostinger VPS / OpenClaw
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-07-06.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-07-08.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/openclaw-crons/README-verificacao-crons.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md#relações
+---
+
 # Migração Hostinger VPS / OpenClaw
 
 ```yaml
@@ -100,6 +128,6 @@ Antes do restart, inspecionar backlog e jobs em execução. Depois da recuperaç
 
 ## Relações
 
-- Diário: `BRAIN/01-DIARIO/2026/2026-07-06.md` e `BRAIN/01-DIARIO/2026/2026-07-08.md`.
-- Automação de crons: `BRAIN/70-AUTOMACOES/openclaw-crons/README-verificacao-crons.md`.
-- Conhecimento: `BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md`.
+- Diário: [[01-DIARIO/2026/2026-07-06|2026-07-06]] e [[01-DIARIO/2026/2026-07-08|2026-07-08]].
+- Automação de crons: [[70-AUTOMACOES/openclaw-crons/README-verificacao-crons|Verificação de segurança de crons]].
+- Conhecimento: [[40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao|Validação do runtime pós-migração]].

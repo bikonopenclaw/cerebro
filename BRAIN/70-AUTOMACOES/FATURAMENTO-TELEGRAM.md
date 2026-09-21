@@ -1,3 +1,31 @@
+---
+id: brain-ed9d140a3088aec50c54
+type: state
+title: Grupos Telegram de faturamento
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/20-EMPRESAS/BIKON/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/boletos-malote/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md#relações
+---
+
 # Grupos Telegram de faturamento
 
 ```yaml
@@ -59,8 +87,8 @@ O caso preserva a regra de etapas: emissão fiscal, boleto/remessa, conferência
 
 ## Relações
 
-- Empresa: `BRAIN/20-EMPRESAS/BIKON/README.md`
-- Automação fiscal: `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md`
-- Boletos/malote: `BRAIN/70-AUTOMACOES/boletos-malote/README.md`
+- Empresa: [[20-EMPRESAS/BIKON/README|BIKON]]
+- Automação fiscal: [[70-AUTOMACOES/NOTAAS-NFSE|Skill Notaas NFS-e]]
+- Boletos/malote: [[70-AUTOMACOES/boletos-malote/README|Boletos e malote bancário]]
 - Agente executor financeiro: Darth Vader
-- Diretriz operacional: `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`
+- Diretriz operacional: [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]

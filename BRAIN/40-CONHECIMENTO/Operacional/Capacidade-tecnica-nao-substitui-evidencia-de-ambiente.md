@@ -1,3 +1,31 @@
+---
+id: brain-b0d009e977ec010322b2
+type: knowledge
+title: Capacidade tecnica nao substitui evidencia de ambiente
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md#relações
+- type: references
+  target: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/Semanal/2026-W31.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md#relações
+---
+
 # Capacidade tecnica nao substitui evidencia de ambiente
 
 ```yaml
@@ -27,7 +55,7 @@ Na semana 2026-W31, AWS, Azure e Google Cloud cobriam tecnicamente os gaps de cl
 
 ## Relacoes
 
-- `BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md`
-- `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`
-- `BRAIN/01-DIARIO/Semanal/2026-W31.md`
+- [[40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional|Ausência de evidência não é status operacional]]
+- [[40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento|Menor privilégio em monitoramento]]
+- [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw - Provimento 213]]
+- [[01-DIARIO/Semanal/2026-W31|Semana 2026-W31, cobertura parcial]]

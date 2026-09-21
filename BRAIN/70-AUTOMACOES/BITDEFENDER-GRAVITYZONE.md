@@ -1,3 +1,27 @@
+---
+id: brain-7a6103874c8018f1606c
+type: state
+title: Bitdefender GravityZone - integração Bikon
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/20-EMPRESAS/BIKON/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md#relações
+---
+
 # Bitdefender GravityZone - integração Bikon
 
 ```yaml
@@ -138,6 +162,6 @@ Observacao: manter apenas agregados e identificadores operacionais minimos; nao 
 
 ## Relações
 
-- Empresa: `BRAIN/20-EMPRESAS/BIKON/README.md`
-- Diretriz operacional: `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`
-- Separação teste/produção: `BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md`
+- Empresa: [[20-EMPRESAS/BIKON/README|BIKON]]
+- Diretriz operacional: [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]
+- Separação teste/produção: [[40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas|Separar teste, rascunho e produção em automações externas]]

@@ -1,3 +1,27 @@
+---
+id: brain-7a504005b89f6a90fac0
+type: knowledge
+title: Retorno bancário não valida remessa
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/boletos-malote/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Financeiro/Retorno-bancario-nao-valida-remessa.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Financeiro/Retorno-bancario-nao-valida-remessa.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Financeiro/Retorno-bancario-nao-valida-remessa.md#relações
+---
+
 # Retorno bancário não valida remessa
 
 ```yaml
@@ -27,6 +51,6 @@ Retorno e remessa têm finalidades opostas no fluxo CNAB. Confundir os dois pode
 
 ## Relações
 
-- `BRAIN/70-AUTOMACOES/boletos-malote/README.md`
-- `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`
+- [[70-AUTOMACOES/boletos-malote/README|Boletos e malote bancário]]
+- [[70-AUTOMACOES/FATURAMENTO-TELEGRAM|Grupos Telegram de faturamento]]
+- [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]

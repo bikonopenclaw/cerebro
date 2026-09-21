@@ -1,3 +1,31 @@
+---
+id: brain-299009eb0400bb3e84f0
+type: state
+title: Roteador de Execução v1
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-07-23.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md#relações
+- type: references
+  target: BRAIN/50-PROJETOS/Planejamento/Controlador-de-Execucao-v2/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md#relações
+- type: references
+  target: BRAIN/60-AGENTES/SENTINEL.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md#relações
+- type: references
+  target: BRAIN/99-SISTEMA/MEMORY.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/50-PROJETOS/Planejamento/Roteador-de-Execucao-v1.md#relações
+---
+
 # Roteador de Execução v1
 
 ```yaml
@@ -77,8 +105,8 @@ A seleção cognitiva não amplia autorização. Produção, root, gasto, comuni
 
 ## Relações
 
-- Diário: `BRAIN/01-DIARIO/2026/2026-07-23.md`.
-- Sucessor documental: `BRAIN/50-PROJETOS/Planejamento/Controlador-de-Execucao-v2/README.md`.
-- Agente operacional: `BRAIN/60-AGENTES/SENTINEL.md`.
-- Diretrizes: `BRAIN/99-SISTEMA/MEMORY.md`.
+- Diário: [[01-DIARIO/2026/2026-07-23|Diário, 2026-07-23]].
+- Sucessor documental: [[50-PROJETOS/Planejamento/Controlador-de-Execucao-v2/README|Controlador de Execução v2]].
+- Agente operacional: [[60-AGENTES/SENTINEL|SENTINEL, Controller de Operações e SNOC]].
+- Diretrizes: [[99-SISTEMA/MEMORY|MEMORY.md]].
 - Artefatos de evidência fora do Brain: `/data/.openclaw/workspace/entregas/roteador-execucao-v1-20260723/`.

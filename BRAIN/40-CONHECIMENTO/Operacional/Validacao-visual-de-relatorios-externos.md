@@ -1,3 +1,31 @@
+---
+id: brain-452159666a22bea34c4e
+type: knowledge
+title: Validação visual de relatórios externos
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md#relações
+- type: references
+  target: BRAIN/60-AGENTES/KOWALSKI.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md#relações
+- type: references
+  target: BRAIN/60-AGENTES/ROBOTNIK.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md#relações
+- type: references
+  target: BRAIN/20-EMPRESAS/BIKON/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md#relações
+---
+
 # Validação visual de relatórios externos
 
 ```yaml
@@ -35,7 +63,7 @@ O mesmo princípio vale para materiais públicos ou semi-públicos da Bikon: pos
 
 ## Relações
 
-- `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`
-- `BRAIN/60-AGENTES/KOWALSKI.md`
-- `BRAIN/60-AGENTES/ROBOTNIK.md`
-- `BRAIN/20-EMPRESAS/BIKON/README.md`
+- [[70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM|Relatórios Operacionais Telegram]]
+- [[60-AGENTES/KOWALSKI|Kowalski]]
+- [[60-AGENTES/ROBOTNIK|Robotnik]]
+- [[20-EMPRESAS/BIKON/README|BIKON]]

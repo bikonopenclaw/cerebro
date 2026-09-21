@@ -1,3 +1,55 @@
+---
+id: brain-f6c00041cbcfa4a63c3d
+type: entity
+title: BIKON
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/20-EMPRESAS/BIKON/README.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/20-EMPRESAS/BIKON/README.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/20-EMPRESAS/BIKON/README.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/20-EMPRESAS/BIKON/README.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/20-EMPRESAS/BIKON/README.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/20-EMPRESAS/BIKON/README.md#relações
+- type: references
+  target: BRAIN/50-PROJETOS/Em-Andamento/LinkedIn-Robotnik-Publisher.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/20-EMPRESAS/BIKON/README.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/API-WHATSAPP-BIKON.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/20-EMPRESAS/BIKON/README.md#relações
+- type: references
+  target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/20-EMPRESAS/BIKON/README.md#relações
+- type: references
+  target: BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/20-EMPRESAS/BIKON/README.md#relações
+---
+
 # BIKON
 
 ## Identificação
@@ -11,18 +63,18 @@
 
 ## Relações no Brain
 
-- Automação fiscal: `BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md`
+- Automação fiscal: [[70-AUTOMACOES/NOTAAS-NFSE|Skill Notaas NFS-e]]
 - Cadastro de clientes: `BRAIN/20-EMPRESAS/BIKON/cadastro-clientes/`
 - Boletos e malote bancário: `BRAIN/70-AUTOMACOES/boletos-malote/`
-- Contexto de grupos de faturamento: `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`
-- Grupo relatórios operacionais: `BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md`
-- Integração de segurança/antivírus em desenho: `BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md`
-- Governança de acessos Bikon ↔ AD local de clientes: `BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md`
-- Integração Instagram Bikon Robotnik: `BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md`
-- Projeto LinkedIn Bikon/Robotnik: `BRAIN/50-PROJETOS/Em-Andamento/LinkedIn-Robotnik-Publisher.md`
-- API WhatsApp Bikon: `BRAIN/70-AUTOMACOES/API-WHATSAPP-BIKON.md`
-- Migração OpenClaw/Hostinger VPS: `BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md`
-- FIP Bikon Financial Intelligence: `BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md`
+- Contexto de grupos de faturamento: [[70-AUTOMACOES/FATURAMENTO-TELEGRAM|Grupos Telegram de faturamento]]
+- Grupo relatórios operacionais: [[70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM|Relatórios Operacionais Telegram]]
+- Integração de segurança/antivírus em desenho: [[70-AUTOMACOES/BITDEFENDER-GRAVITYZONE|Bitdefender GravityZone - integração Bikon]]
+- Governança de acessos Bikon ↔ AD local de clientes: [[70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES|Matriz de acesso Bikon x clientes AD local]]
+- Integração Instagram Bikon Robotnik: [[70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK|Instagram Bikon, Robotnik]]
+- Projeto LinkedIn Bikon/Robotnik: [[50-PROJETOS/Em-Andamento/LinkedIn-Robotnik-Publisher|LinkedIn Robotnik Publisher]]
+- API WhatsApp Bikon: [[70-AUTOMACOES/API-WHATSAPP-BIKON|API WhatsApp Bikon]]
+- Migração OpenClaw/Hostinger VPS: [[50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw|Migração Hostinger VPS / OpenClaw]]
+- FIP Bikon Financial Intelligence: [[50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence|FIP Bikon Financial Intelligence]]
 
 ## Histórico relevante
 

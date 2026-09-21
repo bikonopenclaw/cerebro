@@ -1,3 +1,31 @@
+---
+id: brain-b1cfcd65c58f33791afc
+type: knowledge
+title: Contrato de runtime reproduzivel
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel.md#relações
+- type: references
+  target: BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/Semanal/2026-W31.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel.md#relações
+---
+
 # Contrato de runtime reproduzivel
 
 ```yaml
@@ -54,7 +82,7 @@ No handoff documental Puppet/Kowalski de 2026-09-16, os PDFs-base nao estavam vi
 
 ## Relacoes
 
-- `BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md`
-- `BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md`
-- `BRAIN/01-DIARIO/Semanal/2026-W31.md`
+- [[40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao|Validação do runtime pós-migração]]
+- [[40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git|Artefatos gerados fora do Brain e Git]]
+- [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw - Provimento 213]]
+- [[01-DIARIO/Semanal/2026-W31|Semana 2026-W31, cobertura parcial]]

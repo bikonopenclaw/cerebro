@@ -1,3 +1,27 @@
+---
+id: brain-a99fd14c965ed57d037f
+type: knowledge
+title: Canais com escopo e remetente autorizados
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Canais-com-escopo-e-remetente-autorizados.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Canais-com-escopo-e-remetente-autorizados.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Canais-com-escopo-e-remetente-autorizados.md#relações
+---
+
 # Canais com escopo e remetente autorizados
 
 ```yaml
@@ -22,6 +46,6 @@ Em canais operacionais, grupo permitido e remetente autorizado são dimensões d
 
 ## Relações
 
-- `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`
+- [[70-AUTOMACOES/FATURAMENTO-TELEGRAM|Grupos Telegram de faturamento]]
+- [[40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais|Escopo de canais operacionais]]
+- [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]

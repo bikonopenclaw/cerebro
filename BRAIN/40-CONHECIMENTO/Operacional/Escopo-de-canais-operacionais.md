@@ -1,3 +1,27 @@
+---
+id: brain-be26739c501dc773919a
+type: knowledge
+title: Escopo de canais operacionais
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md#relações
+- type: references
+  target: BRAIN/60-AGENTES/DARTH-VADER.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais.md#relações
+---
+
 # Escopo de canais operacionais
 
 ```yaml
@@ -32,9 +56,9 @@ Separar canais por empresa e tipo de operação reduz risco financeiro, fiscal e
 
 ## Relações
 
-- `BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md`
-- `BRAIN/60-AGENTES/DARTH-VADER.md`
+- [[70-AUTOMACOES/FATURAMENTO-TELEGRAM|Grupos Telegram de faturamento]]
+- [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]
+- [[60-AGENTES/DARTH-VADER|Darth Vader]]
 
 ## Reforço 2026-W26
 

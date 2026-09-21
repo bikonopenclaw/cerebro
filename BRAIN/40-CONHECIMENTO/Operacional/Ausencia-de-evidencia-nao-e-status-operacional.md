@@ -1,3 +1,39 @@
+---
+id: brain-6c2a6fe514b26e141d58
+type: knowledge
+title: Ausência de evidência não é status operacional
+created: '2026-09-21T17:53:52Z'
+created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+updated: '2026-09-21T17:53:52Z'
+relationships:
+- type: references
+  target: BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md#relações
+- type: references
+  target: BRAIN/60-AGENTES/KOWALSKI.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md#relações
+- type: references
+  target: BRAIN/20-EMPRESAS/BIKON/README.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md#relações
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md
+  reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
+  source: BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md#relações
+- type: references
+  target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
+  reason: Aplica a distinção entre evidência ausente e falha confirmada ao timeout histórico de emissão fiscal.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-20260921.json#text-3515-3518
+---
+
 # Ausência de evidência não é status operacional
 
 ```yaml
@@ -58,9 +94,17 @@ Em 2026-W38, relatorios ARX por dados autenticados disponiveis foram aceitos ape
 
 ## Relações
 
-- `BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md`
-- `BRAIN/60-AGENTES/KOWALSKI.md`
-- `BRAIN/20-EMPRESAS/BIKON/README.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md`
-- `BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md`
+- [[70-AUTOMACOES/ARX-BACKUP-NINJAONE|ARX Backup diário → tickets NinjaOne]]
+- [[60-AGENTES/KOWALSKI|Kowalski]]
+- [[20-EMPRESAS/BIKON/README|BIKON]]
+- [[40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao|Validação do runtime pós-migração]]
+- [[40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento|Menor privilégio em monitoramento]]
 - [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw - Provimento 213]]
+
+## Evidência histórica reconciliada em 2026-09-21
+
+O histórico de Darth Vader de 2026-06-13 relata timeout depois do envio de uma emissão NFS-e e uma consulta posterior inconclusiva. Esse relato sustenta a distinção entre falta de resposta e ausência de efeito: a intenção de não reenviar evitava assumir que a emissão havia falhado. Não comprova o resultado fiscal daquela tentativa nem a disponibilidade atual de endpoints.
+
+A fonte original foi preservada no arquivo externo verificado; o catálogo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-20260921.json` identifica os trechos 3515 e 3518 por hash e posição. Essa recuperação histórica não autoriza reemitir notas nem retomar tarefas antigas.
+
+[[70-AUTOMACOES/NOTAAS-NFSE|Notaas NFS-e]] documenta emissão, consulta e recuperação de documentos como etapas distintas.
