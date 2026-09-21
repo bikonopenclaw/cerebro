@@ -1,3 +1,15 @@
+---
+id: brain-d8a71db9bf98c7602db1
+type: state
+title: CHANGELOG.md
+created: '2026-09-21T21:52:07.972617Z'
+created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
+updated: '2026-09-21T21:52:39.723601Z'
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+---
+
 # CHANGELOG.md
 
 ## 2026-09-20, consolidacao semanal
@@ -897,3 +909,7 @@
 - Os nove casos C0/R0 foram normalizados para Gate D0 determinístico, sem LLM.
 - O relatório anterior à aprovação foi preservado como `superseded`; o relatório validado passou a registrar 38 `confirmed` e 2 `candidate`.
 - Classificações C/R/G aprovadas, pacote original, manifesto, histórico v1 e configuração operacional permaneceram inalterados.
+
+## 2026-09-21 — cobertura histórica e pesquisa persistente
+
+Triagem de11.187 unidades concluída no recorte exportado; índice de disposições e recibos por lote preservados. Conhecimento reconciliado nas notas, com fontes e relações. Pesquisa local persistente e inventário dos5 agentes/3 perfis incorporados às rotinas existentes. Corrigidos erros silenciosos de acesso no inventário. Limpeza de históricos ainda não executada neste registro; dependências retidas e janela de concorrência são gates separados. Ver [[01-DIARIO/2026/2026-09-21|diário]].

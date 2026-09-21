@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T21:39:24.440350Z'
+updated: '2026-09-21T21:52:39.723601Z'
 ---
 
 # SENTINEL, Controller de Operações e SNOC
@@ -428,3 +428,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch32-2026
 No Goal 3 de 22/08 às 10:34, o fechamento relatou 14 capacidades Sentinel primary, 12 donor shadow, 12 donor fallback e 14 regras determinísticas. OBSERVE, DETECT e INCIDENT foram classificados operacionais; TICKET, ACTION e comunicação ficaram capazes de produção, mas sem canário live de mutação por falta de alvo seguro autenticado. Nenhum envio WhatsApp/publicação Instagram ocorreu e SAFE_AUTOMATIC_ACTIONS_ENABLED permaneceu 0. A correlação não deveria adivinhar identidade fraca. PASS de roteamento/paridade/observabilidade não significava automação autônoma, escrita autorizada ou aposentadoria dos doadores; Goals posteriores têm seus próprios aceites. Fonte: unidades 35474.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch34-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 33 de 2026-09-21
+
+No diagnóstico histórico de 23/07 às 10:37 BRT, NinjaOne registrou 196 alertas: 194 classificados automaticamente (93 de espaço, 32 de memória, 9 de I/O e 60 de uptime) e dois Spooler sujeitos a confirmação de uso/impacto. Os timestamps numéricos Unix precisaram de conversão correta para BRT; valores inicialmente inválidos eram defeito de parsing. ARX apresentou 10 OK e um other, sem evidência atual de P2 naquele snapshot; o P2 que pausara o canário anterior não deveria ser carregado como incidente ativo. Bitdefender estava completo somente para quatro operações agregadas, não inventário GravityZone detalhado. O modelo então proposto definia G1 fonte autorizada, G2 atribuição única, G3 freshness válida, G4 regra determinística sem conflito e G5 impacto/intenção confirmados. Alta confiança exigia todos; falta de atribuição ou evidência expirada limitava a baixa, e conflito crítico impedia downgrade automático. Formalização e 24x7 ainda dependiam de aprovação; a janela posterior e seus números diferentes são eventos separados. Fonte: unidades 41592.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch33-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

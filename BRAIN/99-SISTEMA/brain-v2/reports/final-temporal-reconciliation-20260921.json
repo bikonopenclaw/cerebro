@@ -1,0 +1,34 @@
+{
+  "changes": [
+    {
+      "note": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+      "before_sha256": "27c399938b4032e6bbfeeb6a91dc57676df80c81a734db5293f542f84001ea60",
+      "after_sha256": "79db10a32d3a5c7a2baab2d9f4bffedf6fd5ee7679195086e68c6bf83a4c0f9b",
+      "source_ids": [
+        37346,
+        37354
+      ]
+    },
+    {
+      "note": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+      "before_sha256": "2e749403a45aaa23f90b8c6a70d673abb0abc39159986d1120506eca22877b6a",
+      "after_sha256": "5999b6e3d7e52cc1054ab65d2e2f2d6357717ec7f5bcb8821fb76387b08c67fe",
+      "source_ids": [
+        37346,
+        37354
+      ]
+    },
+    {
+      "note": "BRAIN/40-CONHECIMENTO/Operacional/Aplicabilidade-antes-de-disponibilidade-operacional.md",
+      "source_ids": [
+        32603
+      ],
+      "correction": "Data confirmada pela entrega às21:48:10 UTC e quarentena às22:27:32 UTC de02/08; antes estava03/08."
+    }
+  ],
+  "source_sha256": {
+    "37346": "02ed1a517782782557b214457f0e399b2d3c0c30bbe4d6a866335e72c16ada02",
+    "37354": "716042076e2d051c2101f083009252a8fe46b921585f4040cc8020644ec784fa",
+    "32603": "029a366237808207c0af8ba625bdbb98eef5e9382c878e949efa25fb3aafaff5"
+  }
+}

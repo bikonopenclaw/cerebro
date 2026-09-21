@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:39:24.440350Z'
+updated: '2026-09-21T21:52:39.723601Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-28.md
@@ -136,9 +136,9 @@ O dashboard Herald foi colocado em produção focada para CNS `024067`, todo em 
 
 A trilha CPIW V4 para CNS `023689` foi reconciliada em modo multi-source histórico e passou como preview congelado. O primeiro bloqueio foi ausência de apply adapter V4 disponível na runtime instalada. Depois, com EDC já validado para read-only e alinhado para task-specific engineering write, a tentativa de implementação isolada do adapter revelou que o boundary de escrita ainda precisava de enforcement mais forte.
 
-O commit produtivo posterior do CPIW V4 passou e gravou o estado CNS `023689`, mas a aceitação operacional pós-commit falhou fechado. O ponto importante é separar persistência correta de AIR/ICD/journal de disponibilidade operacional: a rota Herald/dashboard continua presa ao CNS `024067`, não há superfície autenticada individual para `023689`, e a rota controle `024067` demonstrou side effect em leitura.
+No checkpoint inicial pós-commit do CPIW V4, o estado CNS `023689` estava persistido, mas a aceitação operacional falhou fechado: faltavam a rota individual autenticada e a pureza de leitura da rota controle. Esse bloqueio foi superado pelo fechamento de 08/08 às 18:46:55 UTC, que relatou operacionalização `PASS`, validação final Kowalski `PASS` e `GET_MUTATION_COUNT=0` após o restart adicional especificamente autorizado.
 
-Estado consolidado: CNS `023689` possui dados commitados e auditáveis, mas não está operacional canônico. O próximo passo exige autorização atomica para implementar/validar rota autenticada do CNS `023689` e corrigir a pureza read-only da rota CNS `024067`; qualquer rollback ou mutação corretiva também exige autorização separada.
+Reconciliação temporal: persistência, disponibilidade e aceite são gates separados; o bloqueio inicial não é o estado consolidado posterior. A fonte direta da unidade 37346 registra o fechamento operacional, e a unidade 37354 registra os aceites externos posteriores. Esses resultados históricos não comprovam o runtime atual nem autorizam novos restarts, commits ou contatos.
 
 ## Atualizacao 2026-08-11/12
 
@@ -782,3 +782,17 @@ O bloqueio pós-commit do CNS 023689 foi posteriormente superado no fechamento d
 Após a queda da VPS em 02/08, a recuperação do preflight v2 preservou pacote, manifesto, wrapper e freeze válidos, reconstruiu somente o relatório ausente e não descartou artefato algum porque não encontrou staging incompleto elegível. Os 28 testes locais passaram sem preflight ou run real. A preparação do run seguinte parou antes de criar artefatos: HEAD e tracked diff estavam corretos, mas 19 arquivos untracked de RuntimeMaintenance impediam classificar a worktree como limpa. Isso exigia reconciliação separada, sem apagar trabalho alheio, mudar safe.directory, repetir preflight ou tratar o bloqueio de governança como mutação do runtime. O single-run posterior já consolidado pertence à etapa seguinte. Fonte: unidades 32576.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch34-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 33 de 2026-09-21
+
+Na revisão histórica do primeiro draft EP-02 Inventory Freeze, as contagens 211/233/83/23 estavam corretas, mas não bastavam para geração determinística. CPM não fixava ponteiros, valores originais/alternativos e expected_outcome por linha; 130 dos 233 tokens FIM não tinham roteamento inequívoco pela regra de prefixos. Adiar hashes agregados não dispensava fechar essas escolhas. A alternativa aceitável era materializar as linhas ou especificar algoritmo completamente fechado, sem inferir comportamento pelos nomes dos tokens. O checkpoint seguinte mostrou run1/run2 idênticos e JSONs válidos, ainda sem provar correção semântica. Esse defeito pertence ao draft anterior e foi superado pelas regenerações e validações posteriores já registradas. Fonte: unidades 9735.
+
+Após o checkpoint de carregamento iOS de 21/08, a revisão final comunicou INTERNAL_TAILNET_OWNER_ACCEPTED: ambos os intents tinham traces reais, initData validado, APIs 200, conteúdo Portal e AIR renderizado, seis CNS autorizados e isolamento entre clientes. O AIR observado estava em sessão real IN_PROGRESS, sem fallback de CNS; isso não equivale a entrevista concluída ou nova evidência aceita. Kowalski aceitou a entrega interna com a condição de Tailscale ativo, sem prontidão para clientes externos. O runtime user em 9213 ficou preservado; o serviço separado em 19213 continuou ativo e seu descarte não foi realizado. Esse fechamento supera a pendência de aceite do checkpoint anterior, preservando as versões posteriores como autoridade atual. Fonte: unidades 32877.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch33-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 36 de 2026-09-21
+
+Em 03/08 às 02:20, o piloto CNS 024067 foi fechado como mal delimitado e o modelo aprovado voltou à entrevista adaptativa por sessão temática completa, sem autorização individual por pergunta. A correção preservou respostas legadas, removeu duplicação, separou entrevista de coleta documental e não reabriu DRE nem criou nova plataforma. O checkpoint registrava 77 perguntas, 67 ativas, seis respondidas (uma validada e cinco aguardando evidência), 42 genuinamente não respondidas, dez não aplicáveis e 19 bloqueadas; eram dimensões daquele snapshot, não contadores atuais. Preparar a próxima sessão Governance and formal responsibilities não significava executá-la. O ciclo anterior e a exceção de e-mail não autorizavam follow-up, contato automático ou aceite de evidência. Às 02:53, o relato Herald descreveu runtime ativo, comandos start/resume/pause/status/current/correct e dashboard, respostas de escolha simples/múltipla, booleanas, numéricas, datas e texto, além de anexar agora, referenciar ou entregar evidência depois. Pausa/retomada e correções preservavam histórico; resposta e evidência tinham estados separados e não exigiam autorização por anexo. Permaneciam sem automação de e-mail/cliente, provider ou DRE no loop. A pergunta então indicada era G-02; essa disponibilidade histórica não confirma runtime atual nem entrevista finalizada. Fonte: unidades 30566, 32612.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch36-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -1,3 +1,15 @@
+---
+id: brain-aeec0257f343fe06bb57
+type: state
+title: HEALTH.md
+created: '2026-09-21T21:52:07.972617Z'
+created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
+updated: '2026-09-21T21:52:39.723601Z'
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+---
+
 # HEALTH.md
 
 Health Score: 96/100
@@ -171,3 +183,7 @@ Health Score: 96/100
 - Janela de reconciliação concluída com evidência: proposta de `Instagram Brand Director v2.1.0` ainda `pending`.
 - Skill ativa permanece `v2.0.1` com hash `ed9fa5704025e7d91b3d171abdb6cc6c6ecd664cbcc41ba5774128cd3f4e68cd`.
 - Status operacional: manter leitura/controlados e aguardar autorização explícita para corte atômico.
+
+## Verificação de cobertura — 2026-09-21
+
+Zero unidades editoriais pendentes no recorte histórico exportado desta tarefa. Isso não mede a completude de todo o conhecimento nem transforma o score estrutural legado em score semântico. Cobertura por correspondência exata continua dependente das fontes preservadas na VPS. Inventário dos5 agentes e3 perfis e pesquisa semântica disponíveis; recibos de futuras execuções diárias/semanais/mensais não antecipados. Ver [[01-DIARIO/2026/2026-09-21|diário]] e `brain-v2/reports/coverage-disposition-index-20260921.json`.

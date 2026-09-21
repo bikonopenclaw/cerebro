@@ -1,3 +1,14 @@
+---
+id: brain-e492990e4bb06c0b37d9
+type: knowledge
+title: Aplicabilidade antes de disponibilidade operacional
+created: '2026-09-21T21:52:39.723601Z'
+created_semantics: Registro estruturado; origem legada preservada separadamente.
+schema_version: '1.0'
+relationships: []
+updated: '2026-09-21T21:52:39.723601Z'
+---
+
 # Aplicabilidade antes de disponibilidade operacional
 
 ```yaml
@@ -29,7 +40,7 @@ Uma pergunta, decisao ou execucao especifica sobre provider so e elegivel quando
 
 ## Exemplo conectado
 
-Em 2026-08-03, a pergunta `Q-PROVIDER-001` do Provimento 213 foi entregue e depois colocada em quarentena porque confundiu disponibilidade de provider com aplicabilidade do provider ao ciclo. A regra corrigida exige provider selecionado, mandatado, requerido por controle aplicavel ou necessario para dependencia ja aprovada.
+Em 2026-08-02, a pergunta `Q-PROVIDER-001` do Provimento 213 foi entregue e depois colocada em quarentena porque confundiu disponibilidade de provider com aplicabilidade do provider ao ciclo. A regra corrigida exige provider selecionado, mandatado, requerido por controle aplicavel ou necessario para dependencia ja aprovada.
 
 ## Relacoes
 

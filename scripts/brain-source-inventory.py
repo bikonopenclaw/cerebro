@@ -14,15 +14,21 @@ def inventory(days=7,base=Path('/data/.openclaw'),profiles=None):
         for kind,root,profile in roots:
             if not root.exists():surfaces.append(dict(agent=agent,profile=profile,kind=kind,path=str(root),exists=False));continue
             real=root.resolve();surfaces.append(dict(agent=agent,profile=profile,kind=kind,path=str(root),resolved=str(real),exists=True))
+            def record_walk_error(error):
+                errors.append(dict(path=str(error.filename or root),error=type(error).__name__))
             def walk():
                 if real.is_file():yield real;return
-                for directory,dirs,files in os.walk(real,followlinks=False):
+                for directory,dirs,files in os.walk(real,followlinks=False,onerror=record_walk_error):
                     dirs[:]=[d for d in dirs if not (Path(directory)/d).is_symlink()]
                     for f in files:yield Path(directory)/f
             try:
                 for p in walk():
-                    if p.is_symlink():continue
-                    st=p.stat()
+                    try:
+                        if p.is_symlink():continue
+                        st=p.stat()
+                    except OSError as e:
+                        errors.append(dict(path=str(p),error=type(e).__name__))
+                        continue
                     if not stat.S_ISREG(st.st_mode) or st.st_mtime<cutoff:continue
                     if kind=='memory' and p.suffix.lower()!='.md':continue
                     if kind!='memory' and not (p.name.endswith('.jsonl') or p.name=='sessions.json'):continue

@@ -1,3 +1,15 @@
+---
+id: brain-d575f124b6b8ec7b974b
+type: state
+title: MOC Diario
+created: '2026-09-21T21:52:07.972617Z'
+created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
+updated: '2026-09-21T21:52:39.723601Z'
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+---
+
 # MOC Diario
 
 Status: canonical entry point
@@ -105,3 +117,5 @@ Este MOC liga os registros cronologicos do Brain sem mover notas historicas. Ele
 - [[INDEX]]
 - [[Brain-Enterprise|Brain Enterprise]]
 - [[Brain-como-sistema-de-memoria|Brain como sistema de memoria]]
+
+- [[01-DIARIO/2026/2026-09-21|2026-09-21]]: cobertura histórica, reconciliação temporal e pesquisa semântica persistente.

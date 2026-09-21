@@ -6,7 +6,7 @@ created: '2026-09-21T18:54:56.269635Z'
 schema_version: '1.0'
 created_semantics: Data de registro estruturado, não origem do conteúdo legado.
 relationships: []
-updated: '2026-09-21T21:39:24.440350Z'
+updated: '2026-09-21T21:52:39.723601Z'
 ---
 
 # FIP Bikon Financial Intelligence
@@ -309,3 +309,9 @@ Na revisão FIP de 10/08, a UI dark BI e Scenario Studio passaram com 18 workflo
 Hebert confirmou historicamente que a transferência Bikon→Hebert de R$ 6.964,82 em 13/04/2026 liquidava integralmente a fatura Itaú Personnalité 2026-04, com diferença zero. A autorização separava settlement de classificação econômica dos 33 itens: não criar despesa empresarial pelo total, batch econômico de reembolso ou classificação automática, não tirar itens da fila e manter a entrevista pausada. Se necessário, a separação estrutural deveria ser aditiva antes da persistência. A decisão não autorizava reinterpretar pagamentos anteriores; este registro preserva a autoridade/escopo declarados, sem afirmar que todo o processamento posterior foi executado pelo fragmento. Fonte: unidades 34805.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch31-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 36 de 2026-09-21
+
+Na sequência histórica de 10/08, o Source Set V1 recebeu 1.543 linhas e derivou 1.347 transações, suprimindo 196 sobreposições sem modificar financial_transaction, DRE/KPI ou realizado; os 29 testes passaram, mas a lacuna de junho e ausência de prova de saldo mantinham o gate financeiro fechado. O checkpoint posterior V1_1 já constava FROZEN_PASS para janeiro/2025 a 10/08/2026: 1.675 linhas fonte, 1.438 transações canônicas, 237 duplicatas suprimidas, 20/20 meses cobertos e zero gaps. Isso superou a lacuna bancária do V1, não todas as barreiras: 627 linhas careciam de balance metadata, apenas 18 dos 2.731 vínculos econômicos estavam validados e 61 itens de forecast exigiam revisão. Cobertura bancária PASS, continuidade de saldo PARTIAL_PASS e natureza econômica pendente eram dimensões diferentes. O rebuild bounded relatou 30 testes PASS preservando evidências e realizado; banco-only, principal financeiro, liquidação de cartão e partes relacionadas não podiam virar resultado/forecast por inferência. Esses snapshots antecedem o fechamento financeiro e GO-LIVE privado posteriores já registrados, sem manter o bloqueio inicial como estado atual nem autorizar reprocessamento. Fonte: unidades 28863.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch36-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

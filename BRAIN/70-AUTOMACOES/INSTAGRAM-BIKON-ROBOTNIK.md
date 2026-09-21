@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T21:39:24.440350Z'
+updated: '2026-09-21T21:52:39.723601Z'
 ---
 
 # Instagram Bikon, Robotnik
@@ -278,3 +278,9 @@ Uma revisão histórica do fluxo de geração identificou que aprovação textua
 Na semana de 20–24/07, o pacote final corrigido v4 de cinco capas foi escolhido como canônico; v5 era histórico e a rodada paralela v6 foi supersedida. A revisão recusou um PASS atribuído a arquivo com os mesmos bytes de uma versão já rejeitada: nomes de versão diferentes não criam evidência visual nova. Aprovação do calendário, dos fundos e do pacote final eram gates separados, sem publicação comprovada nessa etapa. O teto inicialmente autorizado para a semana e o gasto efetivo de 10 créditos não devem ser confundidos com orçamento de outra capa/ordem. A geometria dessa composição era específica do pacote, não margem universal da marca. Fonte: unidades 8704.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch30-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 41 de 2026-09-21
+
+Na revisão histórica das cinco capas de 20–24/07, a sexta-feira v2 foi marcada AJUSTAR por usar desfoque excessivo para esconder elementos proibidos do fundo gerado. A alternativa proposta era reutilizar o fundo original já aprovado sem custo; outra geração exigia autorização específica de gasto. A autorização para produzir e entregar internamente não abrangia publicação ou criação de contêineres. Naquela ordem, o teto informado era 250 créditos e o consumo relatado foi 10 para cinco fundos, grandezas que não concediam autorização permanente. Esse era checkpoint anterior ao pacote v4 canônico já reconciliado nesta nota: não manter a pendência v2 como estado atual nem reativar a rota Kling legada. Fonte: unidades 8697.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch41-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

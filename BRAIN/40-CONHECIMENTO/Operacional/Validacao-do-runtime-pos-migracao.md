@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:39:24.440350Z'
+updated: '2026-09-21T21:52:39.723601Z'
 relationships:
 - type: references
   target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
@@ -243,3 +243,17 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-2026
 Em uma saída histórica truncada do canário Portal, PROTECTED_GATEWAY_PORT_SET_INVALID listava pares IPv4 e IPv6 para o mesmo PID em cada porta protegida. Isso não prova dois gateways independentes nem permite diagnosticar a causa completa a partir da cauda. Preservar identidade de processo e normalizar endpoints dual-stack ao comparar a baseline; o resultado final exige o recibo completo, não apenas esse marcador de erro. Fonte: unidades 37046.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch31-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 35 de 2026-09-21
+
+Na rehologação RuntimeMaintenance de 02/08, a correção dos gates SQLite e arquivo ativo relatou 25 testes e sete gates PASS, mantendo arquivos bloqueados byte-idênticos e sem instalação ou limpeza produtiva. A autorização seguinte permitiu somente instalar a integração congelada e definições systemd, manter timer desabilitado/inativo e realizar um dry-run produtivo sem exclusão, truncamento, movimento ou compactação. Exigia hashes instalados iguais aos homologados e inventário dos bloqueios/ganho projetado. A fonte termina antes do resultado completo dessa instalação; não transforma autorização, prontidão ou previsão de espaço em cleanup executado, nem permite ativar rotina autônoma hoje. Fonte: unidades 37511.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch35-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 36 de 2026-09-21
+
+Na investigação histórica do ticket ARX 1482, buscas em memória, documentação Bitdefender e uma expressão textual ampla em OR localizaram arquivos genéricos; isso não confirmou existência, cliente, ativo, severidade, deduplicação ou causa do ticket. Um resultado poderia conter apenas Ninja ou ticket, sem o identificador procurado. A skill de relatórios cobria organizações, dispositivos e alertas, sem comprovar uma rota individual de ticketing. Validar a correspondência concreta e o contrato da consulta antes de usar o achado como evidência ou recomendar remediação; não criar duplicata nem transferir autoridade de outro fluxo. Este checkpoint não efetuou a consulta canônica e não descreve o estado atual do ticket. Fonte: unidades 9498.
+
+Após a incompatibilidade entre wrapper RuntimeMaintenance e OCOT instalado, a rodada de 02/08 às 17:56 relatou homologação do adaptador em cópia isolada: 58 testes OCOT passaram, comandos existentes e unknown-command conservaram comportamento, sem substituir o symlink/binário produtivo. O adaptador apenas despachava ao controller congelado e não implementava limpeza própria. Não houve instalação systemd/cron, sudo, restart, cleanup ou dry-run produtivo; a recomendação de canário com timer desabilitado ainda dependia da etapa seguinte. Fonte: unidades 37517.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch36-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
