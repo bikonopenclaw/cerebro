@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:16:57.672344Z'
+updated: '2026-09-21T21:33:26.060207Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -156,3 +156,11 @@ A pré-validação DRE v2 reconciliou exatamente Gates 03 e 12 com o código con
 O defeito histórico CPIW de autoautorizar root foi posteriormente fechado em 07/08: setup explícito, binding anti-cópia/tamper, rejeição imutável de root arbitrário/canônico/produtivo, 179 testes e ciclo shadow de 311 operações com rollback e idempotência. Kowalski validou staging e cópia limpa após promoção de quatro caminhos pelo coordenador; não promoveu nem escreveu AIR/ICD produtivo. Baseline de staging, cópia limpa e caminho canônico tinham identidades distintas e não eram intercambiáveis. A próxima superfície AUTHORITATIVE_PRODUCTION iniciada na cauda era autorização/validação separada. Isto supera o bloqueio antigo sem provar estado produtivo atual. Fonte: unidades 9817.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch26-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 29 de 2026-09-21
+
+Na sequência CPIW de 07/08, o manifesto usado em fixture foi reclassificado como autoridade somente de layout isolado. O binding posterior dos caminhos AIR/ICD reais foi validado apenas por metadados, sem preflight ou escrita. Compatibilidade de schema e propagação do recibo independente passaram em staging; emenda seguinte corrigiu somente o temp-root do harness, sem alterar runtime ou manifesto real. Uma etapa posterior propôs staging por CNS e expected-preflight-hash obrigatório antes de apply, mantendo constantes V4; a inspeção inicial não demonstrava promoção nem execução. Validar a mesma identidade de CNS entre manifesto, preview, preflight, destino e staging; não combinar manifestos de etapas distintas nem promover autoridade de fixture a produção. Fonte: unidades 9835.
+
+Antes do commit CPIW de 07/08, dois gates diferentes bloquearam corretamente a primeira escrita: preflight derivava staging dentro de CNS-023689 enquanto apply apontava a pasta compartilhada; depois, a parity havia usado COMMIT_CANDIDATE_FOR_PREMUTATION_PARITY e o token final PRODUCTION_COMMIT, alterando o binding. Identidade de destino e identidade de autorização precisam convergir entre preflight, ensaio e apply, não apenas seus arquivos existirem. O commit posterior de 311 operações já consolidado superou essas falhas; não manter o blocker antigo nem repetir commit pela leitura deste registro. Fonte: unidades 32637, 32643, 32646.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

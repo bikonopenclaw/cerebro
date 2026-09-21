@@ -1,0 +1,39 @@
+{
+  "target_note": "BRAIN/60-AGENTES/SENTINEL.md",
+  "corrected_text_id": 41444,
+  "reason": "Retirada inferência de violação ACK-only da compactação; mensagens diretas posteriores documentam START e liberação antes da execução, e fechamento incompleto depois.",
+  "evidence": [
+    {
+      "text_id": 40812,
+      "sha256": "8a41737cc5dc6d3476b228963e2aeff234067ae476eb5fd6b4048c0ceb06921c",
+      "source": {
+        "path": "sentinel/codex-home/sessions/2026/07/30/rollout-2026-07-30T22-49-58-019fb538-5e7d-7490-90ce-0ad544a936e3.jsonl",
+        "line": 91
+      }
+    },
+    {
+      "text_id": 40831,
+      "sha256": "1d2093ff8fb0147df231c3461563b62daeb25a1d9f678113e21788a610797c8e",
+      "source": {
+        "path": "sentinel/codex-home/sessions/2026/07/30/rollout-2026-07-30T22-49-58-019fb538-5e7d-7490-90ce-0ad544a936e3.jsonl",
+        "line": 334
+      }
+    },
+    {
+      "text_id": 40836,
+      "sha256": "cc59da334942e0b058f68c3451e43697ea1e4ade1aabf46765d5176ab013a137",
+      "source": {
+        "path": "sentinel/codex-home/sessions/2026/07/30/rollout-2026-07-30T22-49-58-019fb538-5e7d-7490-90ce-0ad544a936e3.jsonl",
+        "line": 375
+      }
+    },
+    {
+      "text_id": 40837,
+      "sha256": "01c189659de0bf4674542e94a1ede6475771118bed3fee4d6475f9686076c948",
+      "source": {
+        "path": "sentinel/codex-home/sessions/2026/07/30/rollout-2026-07-30T22-49-58-019fb538-5e7d-7490-90ce-0ad544a936e3.jsonl",
+        "line": 385
+      }
+    }
+  ]
+}

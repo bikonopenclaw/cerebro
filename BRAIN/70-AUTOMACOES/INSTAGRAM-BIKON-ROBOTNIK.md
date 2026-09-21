@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T21:16:57.672344Z'
+updated: '2026-09-21T21:33:26.060207Z'
 ---
 
 # Instagram Bikon, Robotnik
@@ -262,3 +262,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-2026
 Na homologação histórica post-unico-4x5 de 20/07, Phase 1 v1.1 distinguiu moldura decorativa de 56 px e margens internas de conteúdo de 80 px horizontal/78 px vertical, substituindo 72 px. Isso era geometria específica do template 1080×1350, não safe area oficial da plataforma nem regra automática para Reel/Story. Space Grotesk precisava fonte/licença verificadas; fallback DejaVu era prova mecânica sem liberação. Duas imagens idênticas e template técnico PASS não aprovavam raw já reprovado nem peça completa. Bytes novos do template exigiam manifesto correspondente; manifesto anterior não autenticava a revisão. Revalidar contra o contrato visual vigente antes de aplicar esses parâmetros históricos. Fonte: unidades 8734.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch26-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 29 de 2026-09-21
+
+Na revisão histórica feed-base-a v1 de 20/07, o FAIL baseado no pacote mutável Robotnik foi supersedido após selecionar a fonte canônica correta. O snapshot com sete arquivos estáveis passou pré-geração com manifesto 474e9af2214cbe0faa25fa9aad2535bff0260bf94752a70a6b3f21352ebfc5de, request 5d721862890d4a5c8f72e458f9a79ce59ff70a10be5d4a9a527eaf2374b8c6a3 e payload 2be351a05379c0410a3cbba53da1c536c090c853273cef4e5a82f43ea2a642c7. O relatório de deployment ainda citava a identidade anterior 478436/8b67e9; isso exigia reconciliação documental, não restaurar prompt antigo nem invalidar os bytes canônicos confirmados. PASS de prompt/editorial e Capa textual não era Capa visual, Brand Lock global, Approval de custo, geração ou publicação. Qualquer byte alterado exigia novo vínculo/revisão; a imagem gerada posteriormente ainda precisava QA própria e acabou reprovada. Trata-se de linhagem histórica, sem reativar a rota Kling legada. Fonte: unidades 8729.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:16:57.672344Z'
+updated: '2026-09-21T21:33:26.060207Z'
 relationships:
 - type: references
   target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
@@ -225,3 +225,15 @@ Na consolidação documental de 17/07, praxis-gws era camada de acesso/transport
 Na consolidação histórica Praxis GWS para Kowalski, a cópia autorizada de 19 arquivos foi seguida por checagem sintática de 14 arquivos JavaScript, sem chamadas externas, OAuth ou restart. Isso não comprovava operação das APIs. Uma primeira busca de padrões de segredo falhou por interpretar o padrão como opção; somente a execução corrigida podia sustentar resultado negativo. O gog instalado/desativado permaneceu intocado. A tentativa de produzir relatório DOCX/PDF de fechamento falhou por ausência de python-docx no interpretador usado; descobrir outro ambiente virtual ainda não provava geração. Relatório proposto anterior não substitui artefato final recebido, e falha histórica não descreve dependências atuais. Fonte: unidades 9458.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch26-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 28 de 2026-09-21
+
+Na sequência documental de 17/07, três interpretadores não importavam docx e a primeira criação de venv falhou por ensurepip ausente. Uma janela posterior autorizada removeu somente o venv parcial e recriou .venv-docs-bikon com Python 3.12.3, pip 24.0, python-docx 1.2.0, lxml 6.1.1 e typing_extensions 4.16.0. Import, pip check, timbrado e hashes dos cinco modelos passaram; modelos ficaram inalterados. Isso resolveu o runtime histórico, sem gerar o relatório de fechamento nem autorizar remoção de gog. Versões descrevem aquela validação, não recomendação atual. Fonte: unidades 9460.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch28-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 29 de 2026-09-21
+
+Na consolidação documental de 17/07, o ambiente .venv-docs-bikon foi reconstruído e validado; a rota Chromium 149 e o template ARX com logo oficial por file:// passaram uma homologação visual de uma página. Isso não concluiu o relatório executivo DOCX/PDF, ainda ausente nesse trecho. O gerador ARX recém-alterado exigia um logo base64 para substituição, enquanto o template ativo já usava file://: render direto aprovado não validava a combinação gerador/template e não autorizava executá-la sem reconciliar o contrato. O timbrado DOCX continha imagens VML; falta de wp:anchor/wp:inline não significava ausência de logo. A inspeção zipfile substituiu apenas a leitura estrutural, não a rota de geração. Paralelamente, memória e documentação Bitdefender não consultaram nem confirmaram o ticket ARX 1482; leitura da skill de outro fluxo não é diagnóstico desse ticket. Enriquecimento P4 também não tinha artefato final, e ausência na projeção operacional seria reconciliada depois pela fonte owner/SLA. Não reaplicar pendências antigas como estado atual. Fonte: unidades 9491, 9494.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

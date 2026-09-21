@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T21:16:57.672344Z'
+updated: '2026-09-21T21:33:26.060207Z'
 ---
 
 # Skill Notaas NFS-e
@@ -350,3 +350,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch19-2026
 No fluxo inicial Unus, Hebert informou aceite da remessa no ambiente bancário de teste, após validação local de três registros CNAB400 de 400 posições e correção visual do boleto. Isso era homologação bancária relatada, não registro produtivo. O pacote NFS-e/boleto/remessa deveria ser generalizado por job JSON e estados explícitos, sem hardcode de cliente nem afirmar emissão/registro sem recibo da superfície correspondente. A mesma fonte chama a NFS-e de homologação porque o log/resposta trazia esse rótulo, embora a configuração local dissesse produção; a investigação posterior do ambiente prevalece, e esse resumo não certifica sandbox fiscal. No ticketing NinjaOne, user context superou o 403 inicial e houve teste controlado seguido de deduplicação; isso não renova autorização de tickets ou credenciais. Fonte: unidades 36566.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch27-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Referência histórica recuperada — remessa 090
+
+No pedido histórico de junho, descontos e identificação da unidade Celi/Aracruz foram confirmados pelo usuário. Emissão desejada em 22/06, vencimento em 25/06 e sequências de boleto eram instruções daquele lote, não prova de emissão, pagamento ou sequência vigente. A composição literal de 26 notas e 95 itens foi recuperada em referência privada na VPS, fora do Git, incluindo antes/depois da correção de unidade e proveniência. Os 1.024 campos foram conferidos. Revalidar cadastro, valores e sequência antes de qualquer nova operação; não reemitir por memória.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-external-data-preservation-20260921.json`, unidades 36229 e 36234. O registro privado precisa continuar verificável para sustentar descarte dos históricos que o continham.

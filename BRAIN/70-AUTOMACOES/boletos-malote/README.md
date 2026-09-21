@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T21:33:26.060207Z'
 ---
 
 # Boletos e malote bancário
@@ -160,3 +160,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-2026
 No lote de agosto/remessa 093, a fonte 3411 relata 27 NFS-e com PDF/XML e 27 boletos, total R$ 86.357,06, mas a remessa ainda era null/ok=false por KeyError data_emissao no detalhe CNAB400 (posições 151–156). Validar todos os campos obrigatórios antes de gerar o arquivo; reprocessar remessa não deve reemitir notas ou boletos já produzidos. O texto de inicialização Notaas dizia homologation, portanto ambiente/validade fiscal não devem ser inferidos só do log ou do rótulo issued: conferir comprovantes e identificadores originais. Localizador histórico: workspace-darth-vader/boletos/lotes-emissao/producao-20260801-remessa-093, resultado-emissao-cadenciada.json, resultado-boletos-remessa.json e nfse-arquivos. Documentos previstos 105632–105658 e nossos números 1564–1590 permitem reconciliação com o ledger. Erro intermediário não prova pendência atual; emissão, geração, envio de e-mail e transmissão bancária são efeitos separados. Fonte: unidades 3411.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 29 de 2026-09-21
+
+Em 17/06/2026, Hebert forneceu o layout do sistema antigo e pediu reprodução fiel. O fragmento era FastReport 4.8.36/PascalScript, A4 (210×297 mm), margens 10 mm, dataset Boleto133/Boleto, com comprovante de entrega, recibo e ficha de compensação; incluía código de barras Interleaved 2 of 5 e campos dinâmicos do pagador/beneficiário, datas, valor, instruções e linha digitável. Nosso Número era composto de carteira/número-dígito; agência/conta tinha dígitos próprios. O texto de conversa termina no meio de um elemento XML e não é template integral nem prova de reprodução exata. O aceite visual posterior e a correção de nome para Cresol/Bikon são autoridade histórica superior para apresentação; para reconstruir fielmente, usar o modelo canônico completo aprovado, não completar esse fragmento por inferência. Layout visual, checksum e registro/homologação bancária permanecem validações distintas; nenhuma conta, pagador ou segredo deve virar exemplo real publicado. Fonte: unidades 30800.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

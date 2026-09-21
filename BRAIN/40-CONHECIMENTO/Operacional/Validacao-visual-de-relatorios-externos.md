@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:16:57.672344Z'
+updated: '2026-09-21T21:33:26.060207Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
@@ -183,3 +183,9 @@ O fechamento da rodada visual Bikon D/E/F de julho não teve vencedora: D 21/55,
 Após D/E/F sem vencedora, D2 foi gerada uma vez e também cortada em 29/55: dono com aparência de fiscal, transferência ilegível e área de texto contaminada. O consumo confirmado passou a 8/12 créditos, sem composição aprovada. E2 mudou materialmente para travessia de um único fólio com dois gestos distintos e recebeu somente pré-gate single-use de até dois créditos; a fonte não comprova execução nem QA do raw E2. O total 10/12 era projeção, não recibo. A melhora relativa não substitui a tese visual completa e não autoriza retry, publicação ou cobrança adicional. Fonte: unidades 9644.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch27-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 28 de 2026-09-21
+
+No diagnóstico ARX de 17/07 com Chromium 149 fixado, o logo oficial PNG em base64 desaparecia, enquanto a referência file:// ao mesmo asset renderizava. Foi autorizado trocar somente o src, preservando template aprovado, marcador, conteúdo e layout; backup de gerador/template foi feito. A fonte ainda não demonstra patch nem PDF de homologação. O critério era inspeção visual de logo/cabeçalho, uma página A4 e metadados compatíveis, não apenas sucesso da conversão. Os assets de workspace e agente eram idênticos; isso não dispensa conferir o arquivo efetivamente usado pelo renderizador. Fonte: unidades 9481, 9478.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch28-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:16:57.672344Z'
+updated: '2026-09-21T21:33:26.060207Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-28.md
@@ -728,3 +728,23 @@ Na recuperação de 21/08, testes 32/32 e 253/253, HTML atualizado e canário HT
 No handoff R2.5 de 20/08, o R1 corrigiu corrida do transcript/tee, mas falhou antes da execução por tratamento de arquivo regular vazio. O R2 foi limitado à correção de metadados e fixtures, sem mudar bytes R2.5. A emenda manteve o mesmo filho e retirou dele a validação Kowalski porque aquela sessão não tinha a rota aprovada: o coordenador deveria validar os artefatos persistidos e solicitar revisão pelo caminho disponível. Perda da sessão não justifica criar trabalho duplicado ou descartar evidência em disco. Esses gates preparatórios antecedem o Stage1B posteriormente aceito. Fonte: unidades 37063.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch27-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 28 de 2026-09-21
+
+A compatibilidade CPIW real-boundary passou 188 testes em staging: dispatch explícito do schema real e propagação do recibo independente, enquanto o antigo production-authority-v1 continuava bloqueado nessa rota. Canonical permaneceu inalterado e nenhuma promoção, rede ou escrita AIR/ICD ocorreu. A emenda seguinte mudou apenas a resolução da raiz temporária no teste do publisher, repetiu 188 testes e preservou runtime, manifesto e recibo reais; mudança de harness não era nova autoridade. A cauda iniciou outro candidato com expected-preflight-hash e staging específico do CNS 023689, rejeitando caminhos compartilhados, symlink e escape. Essa inspeção de diff não contém seu aceite final e antecede a generalização multi-CNS posterior; não promover o hard-bind histórico como requisito atual. Fonte: unidades 9833.
+
+Na validação CPIW de 07/08, a superfície de autoridade produtiva passou staging e caminho final com 184 testes e baseline 262e67801fdb7d7c08daf52094f7da53faa53c83cda9d1374adb4cda2aa8a13e. O manifesto b89ce275f5dd68f8fdb6772bae0cad477aca28c73ea39d751952a0cf31d24ffd foi reclassificado como fixture de layout isolado e não podia autorizar produção. O vínculo real de AIR/ICD do CNS 024067 foi examinado separadamente apenas por metadata/estrutura, com manifesto 7758ec9123e2334daef71a46d9c84bfa5239d74c83938250c42a6167ebb56980 e recibo 60108378eb2c97c595db0b7b7a3308fb02c8b27de35e6ddbd7913e8969309aa3. Esse PASS comprovava o binding, com zero preflight e zero mutações, não apply nem autoridade vigente. A revisão de compatibilidade de schema iniciou depois; não confundir manifesto de fixture, binding real e execução produtiva. Fonte: unidades 9824.
+
+Após os oito candidatos de restauração sem comprovação suficiente, a avaliação read-only de 30/07 examinou quatro ambientes existentes e um substrato de provisionamento, sem rota qualificada ou selecionada. Referência à VPS operacional Hostinger e inventário NinjaOne de servidores não demonstravam isolamento não produtivo, ausência de rota a produção, armazenamento dedicado, cleanup, rollback ou compatibilidade de restore. O management plane Hostinger não estava configurado naquela avaliação; isso não autorizava instalar MCP, pedir token ou provisionar. Resultado terminal: BLOCKED_TARGET_ESTABLISHMENT_ROUTE_REQUIRES_SEPARATE_ACCESS_AUTHORIZATION, com zero mudança e autorização de acesso metadata separada como próxima condição. A aceitação Kowalski→Sentinel começou depois sob outra ordem; ACK e leitura dos documentos não eram seu resultado final. Fonte: unidades 41441.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch28-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 29 de 2026-09-21
+
+Na validação histórica da extensão multi-Serventia em 31/07, button_set_complete produziu falha por exigir os seis rótulos globais em todas as perguntas. O registro de 77 perguntas usava subconjuntos intencionais: 13 EVIDENCE_REFERENCE com EVIDÊNCIA PENDENTE e RESPONDER COM TEXTO; 10 SHORT_TEXT acrescentando NÃO SEI; e 54 SINGLE_CHOICE com os seis rótulos. A correção necessária era no predicado do validador, sem alterar os artefatos canônicos. A saída estrutural exibida aprovava template Herald e política client-safe, mas a matriz completa, os hashes restantes e a validação recíproca ainda precisavam ser concluídos naquele checkpoint. Suíte 85/85 não substituía esse aceite independente, e saída truncada não provava completude. Fonte: unidades 41607.
+
+No binding real CPIW de 07/08, a evidência examinava o namespace AIR/ICD do CNS 024067, mas o manifesto declarava CNS 023689. A compatibilidade de schema confirmada depois derivava o target CNS-023689 dessa raiz e rejeitava CNS-024067 como destino de escrita. Não confundir namespace usado para provar o layout com autorização de mutação nele. O recibo independente selava o payload mesmo quando o campo interno kowalski_validation ainda dizia PENDING; resultado externo e rótulo do manifesto tinham papéis diferentes. A revisão passou 188 testes apenas em staging, sem commit ou produção; a emenda de temp-root iniciou separadamente e foi concluída no checkpoint posterior. A generalização multi-CNS posterior supera esse hard-bind como arquitetura ativa. Fonte: unidades 9827, 9830.
+
+Na reconciliação dos registros finais multi-Serventia, recomputar os hashes do par observado confirmou seus bytes, mas não explicou a transição a partir do par anteriormente anunciado. O retorno ainda exigia leitura completa, matriz de autoria e comparação de bindings/claims com os inputs dos 85 testes. Não selecionar uma linhagem como canônica só porque o hash atual confere, nem rerodar testes para substituir a prova documental ausente. O checkpoint incompleto permanece histórico e não é certificação jurídica ou do estado atual. Fonte: unidades 41610.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

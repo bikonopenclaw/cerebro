@@ -1,0 +1,84 @@
+{
+  "reviewed_units": 2,
+  "status": "conditional_external_preservation",
+  "private_data_published_to_git": false,
+  "source_histories_deleted": 0,
+  "items": [
+    {
+      "id": 36229,
+      "sha256": "e09043bc0d04db7a1fce89f9226469a8f51d0b28056ea028904fb136ecdc2130",
+      "source": {
+        "path": "main/sessions/cc513fb4-716f-49b2-a404-238aa63ad48b.trajectory.jsonl",
+        "line": 32
+      },
+      "root_disposition": "conditional_external_preservation",
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "reason": "Todos os campos úteis do CSV corrigido 36234 foram preservados literalmente em referência histórica estruturada na VPS; a nota 9 inclui valor anterior e corrigido, cobrindo também 36229. A comparação local reconstruiu todas as células não vazias e a VPS comprovou hash e 1.024/1.024 campos. Metadados de transporte/embalagem da mensagem não agregam conhecimento durável. Esta é preservação externa controlada, não cobertura de dados pessoais no Brain nem prova de pagamento, emissão ou estado fiscal atual. Exclusão do histórico só pode ocorrer enquanto a referência VPS permanecer verificável.",
+      "external_dependency": {
+        "path": "/data/.openclaw/workspace-darth-vader/boletos/referencias-historicas/2026-06-remessa-090-recuperada.json",
+        "sha256": "addb88f0652aa264fe32cff3c0332357db176f93e2792e8670794387a5deb4c9"
+      },
+      "live_field_validation": {
+        "path": "/data/.openclaw/workspace-darth-vader/boletos/referencias-historicas/2026-06-remessa-090-recuperada.json",
+        "sha256": "addb88f0652aa264fe32cff3c0332357db176f93e2792e8670794387a5deb4c9",
+        "file_hash_match": true,
+        "bytes": 61458,
+        "regular_file": true,
+        "is_symlink": false,
+        "mode": "0o600",
+        "uid": 1000,
+        "expected_leaf_fields": 1024,
+        "matched_leaf_fields": 1024,
+        "different_field_paths": [],
+        "invoices": 26,
+        "items": 95,
+        "historical_only": true
+      },
+      "reviewers": [
+        "coverage_a",
+        "coverage_b",
+        "root"
+      ],
+      "brain_cognitive_coverage_is_not_private_data_coverage": true,
+      "deletion_authorized": false
+    },
+    {
+      "id": 36234,
+      "sha256": "582e10f2d098614ccfa8a2dd380e23ceb0d1f3dc1d81e89af9da62238d1b9df8",
+      "source": {
+        "path": "main/sessions/cc513fb4-716f-49b2-a404-238aa63ad48b.trajectory.jsonl",
+        "line": 60
+      },
+      "root_disposition": "conditional_external_preservation",
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "reason": "Todos os campos úteis do CSV corrigido 36234 foram preservados literalmente em referência histórica estruturada na VPS; a nota 9 inclui valor anterior e corrigido, cobrindo também 36229. A comparação local reconstruiu todas as células não vazias e a VPS comprovou hash e 1.024/1.024 campos. Metadados de transporte/embalagem da mensagem não agregam conhecimento durável. Esta é preservação externa controlada, não cobertura de dados pessoais no Brain nem prova de pagamento, emissão ou estado fiscal atual. Exclusão do histórico só pode ocorrer enquanto a referência VPS permanecer verificável.",
+      "external_dependency": {
+        "path": "/data/.openclaw/workspace-darth-vader/boletos/referencias-historicas/2026-06-remessa-090-recuperada.json",
+        "sha256": "addb88f0652aa264fe32cff3c0332357db176f93e2792e8670794387a5deb4c9"
+      },
+      "live_field_validation": {
+        "path": "/data/.openclaw/workspace-darth-vader/boletos/referencias-historicas/2026-06-remessa-090-recuperada.json",
+        "sha256": "addb88f0652aa264fe32cff3c0332357db176f93e2792e8670794387a5deb4c9",
+        "file_hash_match": true,
+        "bytes": 61458,
+        "regular_file": true,
+        "is_symlink": false,
+        "mode": "0o600",
+        "uid": 1000,
+        "expected_leaf_fields": 1024,
+        "matched_leaf_fields": 1024,
+        "different_field_paths": [],
+        "invoices": 26,
+        "items": 95,
+        "historical_only": true
+      },
+      "reviewers": [
+        "coverage_a",
+        "coverage_b",
+        "root"
+      ],
+      "brain_cognitive_coverage_is_not_private_data_coverage": true,
+      "deletion_authorized": false
+    }
+  ]
+}
