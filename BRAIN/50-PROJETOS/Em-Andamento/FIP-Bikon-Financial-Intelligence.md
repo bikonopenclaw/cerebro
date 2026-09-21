@@ -1,3 +1,14 @@
+---
+id: brain-f48b64f767658a6e1a3d
+type: state
+title: FIP Bikon Financial Intelligence
+created: '2026-09-21T18:54:56.269635Z'
+schema_version: '1.0'
+created_semantics: Data de registro estruturado, não origem do conteúdo legado.
+relationships: []
+updated: '2026-09-21T18:55:38.578515Z'
+---
+
 # FIP Bikon Financial Intelligence
 
 ```yaml
@@ -232,3 +243,13 @@ Limite: essas decisoes reduzem a fila e melhoram a base economica, mas nao criam
 - [[40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional|Consulta gerencial nao e permissao operacional]]
 - [[40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git|Segredos fora do Brain e Git]]
 - [[40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo|Autorizacao atomica nao herda escopo]]
+
+## Correção de escopo recuperada da memória de Darth Vader
+
+A memória de 2026-08-25 do gateway Darth registra uma correção explícita de Hebert: o FIP é controle de fluxo de caixa gerencial, e não controle de DRE/P&L. Esse registro qualifica as referências históricas a P&L acima: não usá-las para apresentar o produto como contabilidade ou como DRE aprovada. A autoridade canônica continua no ACTIVE FCOC, backend/estado do projeto FIP, registros de cartão e fatos bancários; o workspace do agente não substitui essas fontes.
+
+A mesma memória distingue classificação de ocorrências atuais de criação de regra futura. Escopo omitido fica restrito às ocorrências comprovadas; `ATUAIS_E_FUTURAS` exige decisão explícita e identidade determinística. O batch 1 registrou conflito entre ocorrências anteriores reembolsáveis e novas ocorrências diretas, e por isso não criou regra futura. Settlement de fatura continua separado da classificação dos itens e não autoriza reembolso ou alteração dos fatos bancários.
+
+Os totais transacionais, identidades de lançamentos e estados de fila pertencem à trilha operacional canônica e não devem ser restaurados pela leitura desta memória. A consolidação de 26/08 já avançou o batch 2; o checkpoint anterior que ainda o aguardava não descreve o estado atual.
+
+Fonte lida em 21/09: `/data/.openclaw/workspace-darth-vader/memory/2026-08-25.md`, SHA-256 `340a8ac20fe8577cfbc980b8d505c6db181ce69564faa114df75bdb0c7660fa0`. O arquivo vivo continua preservado; esta adição não afirma cobertura de todas as transações nem altera dados financeiros.

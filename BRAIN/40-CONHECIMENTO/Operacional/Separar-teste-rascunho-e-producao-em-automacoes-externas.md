@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T18:55:38.578515Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
@@ -78,3 +78,9 @@ Automações que podem gerar efeito externo devem separar claramente preparaçã
 - [[70-AUTOMACOES/NOTAAS-NFSE|Skill Notaas NFS-e]]
 - [[70-AUTOMACOES/API-WHATSAPP-BIKON|API WhatsApp Bikon]]
 - [[70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK|Instagram Bikon, Robotnik]]
+
+## Efeitos indiretos do payload
+
+O escopo autorizado também alcança efeitos indiretos, como comunicação que possa ser disparada pelo provedor a partir dos campos enviados. Antes de executar, verificar esses efeitos junto com destinatários e configurações; omitir um campo não é prova suficiente de que o provedor não enviará uma mensagem.
+
+O relato de 2026-06-26 sobre emissão de NFS-e sem e-mail externo registrou a intenção de omitir o e-mail do payload e parar se a API o exigisse. Esse episódio ilustra a necessidade de validar o efeito, sem comprovar o comportamento atual da API nem substituir uma política explícita de destinatários. Fonte: trecho 3554 no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-round2-20260921.json`.

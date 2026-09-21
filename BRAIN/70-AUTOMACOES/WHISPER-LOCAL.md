@@ -1,3 +1,15 @@
+---
+id: brain-82f366910033b5309526
+type: state
+title: Whisper local
+created: '2026-09-21T18:53:54.531182Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T18:55:38.578515Z'
+---
+
 # Whisper local
 
 ```yaml
@@ -57,3 +69,9 @@ A transcrição local permitiu processar pedido do Hebert sobre agrupamento de e
 - Áudio deve ser tratado como conteúdo sensível operacional.
 - Transcrições úteis devem ser resumidas e consolidadas, não despejadas integralmente no Brain salvo quando tiverem valor permanente.
 - Manter processamento local como padrão para reduzir dependência externa e custo.
+
+## Conhecimento recuperado dos históricos — revisão 2026-09-21
+
+Regra de interação registrada no histórico: áudio recebido deve ser interpretado como a demanda expressa pelo usuário; entregar apenas transcrição quando ele a solicitar. A interpretação não amplia autorização para efeitos externos e deve preservar as travas aplicáveis. Processamento permanece local, sem API de transcrição. Fonte: unidades 33809.
+
+Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.

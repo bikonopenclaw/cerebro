@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T18:55:38.578515Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/SENTINEL.md
@@ -56,3 +56,9 @@ Um wrapper read-only reduz risco operacional, mas não transforma uma credencial
 - [[60-AGENTES/SENTINEL|SENTINEL, Controller de Operações e SNOC]]
 - [[60-AGENTES/versionados/workspaces/sentinel/access_control/REVOGACAO|Procedimento de revogacao]]
 - [[40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional|Ausência de evidência não é status operacional]]
+
+## Conhecimento recuperado dos históricos — revisão 2026-09-21
+
+Em 01/07/2026, no contexto de dashboard do controle financeiro familiar, Hebert pediu restringir acesso ao IP fixo da empresa. Registrar como requisito de acesso daquele projeto, sujeito a confirmação do endereço e teste efetivo da restrição; a conversa não comprova firewall ou autenticação implementados. Não generalizar o IP observado no servidor como endereço autorizado da empresa. Fonte: unidades 29965.
+
+Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.

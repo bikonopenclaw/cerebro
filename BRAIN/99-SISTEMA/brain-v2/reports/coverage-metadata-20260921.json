@@ -1,0 +1,47 @@
+{
+  "text_id": 41674,
+  "sha256": "75707d3e8b1fdab384841d1350d0b24a4499ce5f0615a0fed7ebc2847300f864",
+  "sources": [
+    {
+      "path": "main/sessions/sessions.json.bak-renew-active-20260714T192713Z",
+      "field": "/agent:main:telegram:group:-5165906669/compactionCheckpoints/0/summary",
+      "sha256": "75707d3e8b1fdab384841d1350d0b24a4499ce5f0615a0fed7ebc2847300f864",
+      "text_id": 41674
+    },
+    {
+      "path": "main/sessions/sessions.json.bak-thinking-high-20260710-2159",
+      "field": "/agent:main:telegram:group:-5165906669/compactionCheckpoints/0/summary",
+      "sha256": "75707d3e8b1fdab384841d1350d0b24a4499ce5f0615a0fed7ebc2847300f864",
+      "text_id": 41674
+    },
+    {
+      "path": "main/sessions/sessions.json.pre-oom-neutralization-20260802T143251Z",
+      "field": "/agent:main:telegram:group:-5165906669/compactionCheckpoints/0/summary",
+      "sha256": "75707d3e8b1fdab384841d1350d0b24a4499ce5f0615a0fed7ebc2847300f864",
+      "text_id": 41674
+    }
+  ],
+  "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md",
+  "disposition": "curated_pending_publication",
+  "reason": "Preservados identidade Corpus, modelo Joao Neiva, nomenclatura publica BikonRMM e cadastros explicitamente delimitados; progresso, caminhos temporarios e relato de implantacao nao sao validacao atual.",
+  "metadata_files_inspected": 10017,
+  "new_unique_summary_units": 1,
+  "padding_exceptions": [
+    {
+      "path": "robotnik/codex-home/sessions/2026/07/21/rollout-2026-07-21T12-32-41-019f84aa-0031-7ed0-80cb-71631c63ce86.jsonl",
+      "line": 15,
+      "bytes": 893,
+      "all_bytes_nul": true,
+      "sha256": "19682db649b35a82d1a849d59786fc3dd8fce44185b17520b70b822614baa47a"
+    },
+    {
+      "path": "robotnik/sessions/f74adb17-286b-47fc-a38f-004fe2094bdd.trajectory.jsonl",
+      "line": 9,
+      "bytes": 186,
+      "all_bytes_nul": true,
+      "sha256": "b57cceac5243ea773def6e4a96db5bd89d900f7a41429431c2719f43d523c83f"
+    }
+  ],
+  "runtime_dependency_check_still_required": true,
+  "source_files_deleted": 0
+}

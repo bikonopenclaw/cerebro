@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T18:55:38.578515Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md
@@ -59,3 +59,9 @@ Na qualificacao R4 da midia Bikon publicada em 2026-09-10, o verificador protegi
 ## Conexão revisada em 2026-09-21
 
 [[40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento|Menor privilegio em monitoramento]]: A restrição de capacidades deve ser acompanhada de prova dos efeitos observados: uma credencial ampla envolvida por um cliente read-only não demonstra menor privilégio.
+
+## Conhecimento recuperado dos históricos — revisão 2026-09-21
+
+No caso histórico NinjaOne de 06/07/2026, o usuário pediu retirar o retorno de JSON completo do script. A proposta seguinte separou remover a produção/gravação desse payload de apagar o custom field já existente no provider. Ajustar saída local não comprova nem autoriza excluir estrutura remota; o escopo da alteração deve ser explícito e o efeito verificado separadamente. Fonte: unidades 34591.
+
+Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.

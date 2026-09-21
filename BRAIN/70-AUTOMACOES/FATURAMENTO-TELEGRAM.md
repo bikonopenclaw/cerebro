@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T18:55:38.578515Z'
 relationships:
 - type: references
   target: BRAIN/20-EMPRESAS/BIKON/README.md
@@ -92,3 +92,9 @@ O caso preserva a regra de etapas: emissão fiscal, boleto/remessa, conferência
 - Boletos/malote: [[70-AUTOMACOES/boletos-malote/README|Boletos e malote bancário]]
 - Agente executor financeiro: Darth Vader
 - Diretriz operacional: [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]
+
+## Conhecimento recuperado dos históricos — revisão 2026-09-21
+
+Histórico de 18/06/2026: as pastas vinculadas aos grupos de faturamento foram definidas como entrada de arquivos das notas a serem faturadas. A presença de um documento nesse espaço é insumo para preparação e conferência, não evidência de emissão concluída ou autorização automática de envio. FN Souza foi depois desativado em 25/06; esta finalidade histórica não reativa seu grupo, pasta ou fluxo. Fonte: unidades 34708.
+
+Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.

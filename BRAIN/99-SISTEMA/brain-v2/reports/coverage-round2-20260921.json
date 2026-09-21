@@ -1,0 +1,1608 @@
+{
+  "baseline": "4aa07b008c7a84eb816b9d1fbfe6217b3d709533",
+  "items_reviewed": 100,
+  "items": [
+    {
+      "text_id": 3494,
+      "text_sha256": "c3449cdcd7b48559bd6071e686784ccd9b80425dcbba028abc7438c0f7037e5c",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 5,
+        "role": "user",
+        "timestamp": "2026-06-12T13:49:07.514Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3495,
+      "text_sha256": "fb97d500f491150ce62019213936ed052d41512faa4f6e72bed6415bd7fa8cb7",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 6,
+        "role": "assistant",
+        "timestamp": "2026-06-12T13:49:13.912Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3497,
+      "text_sha256": "c6edc7631aaf898f40b9e1c106426b27386f815c477fb2b4f1a13c2123b390fa",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 16,
+        "role": "assistant",
+        "timestamp": "2026-06-12T13:50:13.443Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3503,
+      "text_sha256": "f95bf6c06667c29b40d1a6bdda58f0a8f2f95bd406a53e635da90315cb0f347e",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 60,
+        "role": "user",
+        "timestamp": "2026-06-13T12:29:42.606Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 8801,
+      "text_sha256": "3a4c6b31187e9c40c66a50aca3da140bd82341433a14a4d6facf6c3643fab26f",
+      "source": {
+        "path": "kowalski/sessions/46c4749c-49e2-4724-8522-233fd2f3e530.jsonl",
+        "line": 425,
+        "role": "assistant",
+        "timestamp": "2026-08-09T18:07:44.023Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9398,
+      "text_sha256": "7c61da67c5f92f8ee70f5516ceb7c741cbf4d874bb1ff69c76aa10ad76b9aec9",
+      "source": {
+        "path": "kowalski/sessions/8f462f4c-6b17-4611-be62-26b1d375e285.jsonl",
+        "line": 66,
+        "role": "assistant",
+        "timestamp": "2026-08-19T06:31:17.706Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9514,
+      "text_sha256": "55a9f4f8994b1bbf2058ea38c8efb6c459000814d5f39c087002571639e6230e",
+      "source": {
+        "path": "kowalski/sessions/a412887b-f7a9-4f66-b488-909021334389.jsonl",
+        "line": 123,
+        "role": "user",
+        "timestamp": "2026-07-22T19:38:15.338Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28912,
+      "text_sha256": "9b186e077c7c6d044f5789d76e6d8070a5b0aaa902ebc608bc34170722dba903",
+      "source": {
+        "path": "main/sessions/0730b968-bc98-4a35-bc64-501c7fd5fc09.trajectory.jsonl",
+        "line": 57,
+        "role": "user",
+        "timestamp": "2026-07-27T13:30:34.545Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28919,
+      "text_sha256": "d68194d2787b263197ca4e9eda0c4dad6b29044cbdea124616ea211fc4ee9aa2",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 5,
+        "role": "user",
+        "timestamp": "2026-06-13T12:26:30.827Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28920,
+      "text_sha256": "cbad87314a5d839da81484cf4270d200469e09ad419177aa54906fd5c717d52e",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 9,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:26:41.237Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28923,
+      "text_sha256": "1449e2b47fd1963690da5123bdbbc8047424cd9c7966e4a3db720493926fde8c",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 19,
+        "role": "user",
+        "timestamp": "2026-06-13T12:27:25.921Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28924,
+      "text_sha256": "3a5c3c70ea45d1b1550cbaf80a9447ed640f8bea534ae190339ca828b76a541f",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 21,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:27:30.385Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28927,
+      "text_sha256": "26fa4c4bd59854c937c359f3f250be2f654c59df5f35458e5f354c087d659a1c",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 31,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:27:54.527Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28928,
+      "text_sha256": "a9b90d42bb9abf0036b400262d1e338822583b3d7ce623ba03b0f820eff6ba2d",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 33,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:28:02.428Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28929,
+      "text_sha256": "d05f65866701221e6875a9fa7f12e56d2ee0d042ee5f94fd95a6d42eb6fe6cac",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 35,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:28:19.532Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28930,
+      "text_sha256": "e5268703a461f00de0054d57b21ea65b98be45272b88bd5d162768516786f94f",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 37,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:28:23.593Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28931,
+      "text_sha256": "40af8e3cab46cba9c315468fe319d4c77ce99a3881dc54509867217c3fff27c1",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 39,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:28:28.317Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28934,
+      "text_sha256": "fa414e0c00e95b38b7d4b637b36bb5abbaea2ef791433f5688182985205d3ca6",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 48,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:28:54.053Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28935,
+      "text_sha256": "122de8b3265fe4b17cc3f6c0b6024e2b0bee69b150766d9fc80edfffdc55ef49",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 57,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:29:29.210Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28936,
+      "text_sha256": "ad66db2efa73179afa078068e785b17ec07b60b3fe8114784c2d21e3d423fe10",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 60,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:29:51.579Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28940,
+      "text_sha256": "cd43b5b07895fb9ae02d8a32ec269d02135a790067ffe41f8a69a2cd49637f32",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 68,
+        "role": "user",
+        "timestamp": "2026-06-13T12:38:44.247Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28941,
+      "text_sha256": "6eec2a917e18d6c3c147a0919a044c02c2518e2db13441b432a9c9b22d417bda",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 70,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:38:49.896Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28943,
+      "text_sha256": "ea6c951432c8b3f207ff37ba6ca7ac210e4f2f0548735c72c6fae47d99d96bd5",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 76,
+        "role": "user",
+        "timestamp": "2026-06-13T12:59:18.474Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28945,
+      "text_sha256": "fc9bba2d5ebfaf3a4db21797105e37f311a2efe3d2ce5899c48a0266c0620a5b",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 81,
+        "role": "user",
+        "timestamp": "2026-06-13T20:44:50.220Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28946,
+      "text_sha256": "2e6420623d734514611c80668b8614148220834847481e05bc2140bdc12d0b90",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 85,
+        "role": "assistant",
+        "timestamp": "2026-06-13T20:44:59.442Z"
+      },
+      "disposition": "historical_interaction_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Teste, saudação, pedido ou intenção operacional histórica; não comprova execução nem altera estado atual. A conversa e sua ordem permanecem no arquivo integral; não há nova regra permanente a promover neste trecho.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3514,
+      "text_sha256": "23415f6ca0420d2627d6b774c91b918aacb2e9607bfcff739e7af787b93b6b24",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 85,
+        "role": "assistant",
+        "timestamp": "2026-06-13T20:51:48.258Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3521,
+      "text_sha256": "cf66b0edc7e0d1572649a1ee413a422084d5e7dcc7ce914163a2fad7d785d1a4",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 106,
+        "role": "assistant",
+        "timestamp": "2026-06-13T20:58:32.887Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3524,
+      "text_sha256": "9c69740de36e9bdc6fa6c8a3e53364cb113a5549d45f6f102542cd1e1ec1aba7",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 113,
+        "role": "assistant",
+        "timestamp": "2026-06-13T21:00:28.363Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3527,
+      "text_sha256": "1968cf21795bcf60c7b83b5952762ca657d5ece5985af6c16ef5a4b9fca34dfe",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 122,
+        "role": "assistant",
+        "timestamp": "2026-06-18T13:12:01.067Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3530,
+      "text_sha256": "98cc220848a3684c05f8ec9466ca326370f4ac50d246ece55f8a01bb7f901211",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 132,
+        "role": "assistant",
+        "timestamp": "2026-06-18T13:16:32.936Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3533,
+      "text_sha256": "7e472607081d3f7622d907bc0338ededcfe55c982017ead5bb3b746e5911f53e",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 147,
+        "role": "assistant",
+        "timestamp": "2026-06-19T19:14:48.313Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3536,
+      "text_sha256": "508bf4ae9b9391ad2f46c0e9720d2ee3bf8e74bd5f80bad393d334449b6b1d2f",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 162,
+        "role": "assistant",
+        "timestamp": "2026-06-19T19:20:32.978Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3548,
+      "text_sha256": "d6ce1ec49c5492795b68c9f9749f1bc90412cbc4a4c1ee612b1705d870046b08",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 205,
+        "role": "assistant",
+        "timestamp": "2026-06-26T11:24:40.809Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3550,
+      "text_sha256": "424031f378b2fd170d07994ad73a287afead68e1cb0be235a4a69c302505497f",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 218,
+        "role": "assistant",
+        "timestamp": "2026-06-26T11:26:39.585Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3553,
+      "text_sha256": "3426767d044db22f9779335730468a8e8d86b013a8076a26c1a340e64d5903bb",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 226,
+        "role": "assistant",
+        "timestamp": "2026-06-26T11:54:06.777Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3555,
+      "text_sha256": "f4b588451c53fe161983454fc454368a6b39fedb3a8fcbf92cb56c9cb2b9eb31",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 240,
+        "role": "assistant",
+        "timestamp": "2026-06-26T11:54:49.669Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3556,
+      "text_sha256": "2eec2c597b0f7d4f148e7e785c3f8a2d4f35481737ea7007b22b6d6200179c00",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 244,
+        "role": "assistant",
+        "timestamp": "2026-06-26T11:55:13.179Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3557,
+      "text_sha256": "a2cc2933a2578d466b0b8146c88cd6186c8ee55a1a71965b56d9dce302112087",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 246,
+        "role": "assistant",
+        "timestamp": "2026-06-26T11:55:18.210Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3562,
+      "text_sha256": "22a27d3134cfb53c9fa834c970c361f551d78a68b208794f36de5967653f21d1",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 264,
+        "role": "assistant",
+        "timestamp": "2026-06-30T16:45:40.495Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3563,
+      "text_sha256": "b76d1c28c8174b748486f3450bce688cae4deb72c14dfeb91d50ae2c6808ecff",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 272,
+        "role": "assistant",
+        "timestamp": "2026-06-30T16:45:55.608Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3571,
+      "text_sha256": "f72af80b5a19669496bc0015de7ae6e357c013836b3fb2bfd48ccfa49a68000b",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 309,
+        "role": "assistant",
+        "timestamp": "2026-07-03T13:03:19.877Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3572,
+      "text_sha256": "b4cca10a224a7660435b25bbd1c39cfab468d2a7418451f25bafe5bc535d2cee",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 313,
+        "role": "assistant",
+        "timestamp": "2026-07-03T13:03:26.551Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3575,
+      "text_sha256": "b9604a3e4b0bbf5e2cc901ab62c86b7a9a2213cccb314e92fd746f368280e2e9",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 322,
+        "role": "assistant",
+        "timestamp": "2026-07-03T13:04:25.915Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 8877,
+      "text_sha256": "32ce0120ea7ed5bc5c58b66d7c341a3e1024a2bd25eaf599bdcd14836f137414",
+      "source": {
+        "path": "kowalski/sessions/502ca998-5e6d-42b8-9666-5657a57f9d0a.jsonl",
+        "line": 568,
+        "role": "assistant",
+        "timestamp": "2026-07-29T15:39:02.879Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 8889,
+      "text_sha256": "15bfa9aca16d322982457c790fa34c0cd1e3b9e634410670bde325bcc7dfa1be",
+      "source": {
+        "path": "kowalski/sessions/502ca998-5e6d-42b8-9666-5657a57f9d0a.jsonl",
+        "line": 747,
+        "role": "assistant",
+        "timestamp": "2026-07-29T17:12:17.774Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 8921,
+      "text_sha256": "9e16b4222cdcb29d2ba040d18db1e79b7e92da1188b485312b892f62534e47ed",
+      "source": {
+        "path": "kowalski/sessions/502ca998-5e6d-42b8-9666-5657a57f9d0a.jsonl",
+        "line": 1367,
+        "role": "assistant",
+        "timestamp": "2026-07-29T22:34:52.329Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9445,
+      "text_sha256": "20e97dd0852ed161c81482f8ff32c303cca4fa841d5706651fa2d6852cac89f4",
+      "source": {
+        "path": "kowalski/sessions/917703d5-57ab-4807-87cc-4c4f3ebb4241.jsonl",
+        "line": 284,
+        "role": "assistant",
+        "timestamp": "2026-07-17T14:17:30.525Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9895,
+      "text_sha256": "41d3b9334b3782f8311d33c53b10f34331c01c5404773663fd70cc51969c7af4",
+      "source": {
+        "path": "kowalski/sessions/f8be2ff9-027a-4929-a16f-ec8c204d3833.jsonl",
+        "line": 8,
+        "role": "assistant",
+        "timestamp": "2026-06-27T11:15:14.236Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9896,
+      "text_sha256": "0162b5ee0bec72368cfecc5ff5515a298cdeeb909d5e6c2ff8ecc6fd739a8f6f",
+      "source": {
+        "path": "kowalski/sessions/f8be2ff9-027a-4929-a16f-ec8c204d3833.jsonl",
+        "line": 10,
+        "role": "assistant",
+        "timestamp": "2026-06-27T11:15:19.855Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28904,
+      "text_sha256": "ed3a0a9b08a3aa50bee60d07803049315b670eefa97fc7a682d2c1262707708b",
+      "source": {
+        "path": "main/sessions/05ede887-d365-4dda-abaf-416d0cf80003.trajectory.jsonl",
+        "line": 5,
+        "role": "assistant",
+        "timestamp": "2026-06-17T11:02:17.465Z"
+      },
+      "disposition": "historical_scope_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "reason": "Intenção, gate ou limitação vinculada a uma execução passada. O princípio de escopo já está preservado; a autorização e os identificadores históricos continuam na evidência e não são promovidos a permissão atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 8565,
+      "text_sha256": "9562daf3623f94df53507869b633a630f41e714e8e66f648bd8888e38d01c719",
+      "source": {
+        "path": "kowalski/sessions/1078220e-4389-47c4-9d39-06f53c7aae00.jsonl",
+        "line": 8,
+        "role": "assistant",
+        "timestamp": "2026-06-26T11:15:13.346Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 8608,
+      "text_sha256": "5a85e10c73e1833cd611a3c268760ef60624549da96641734c936a5a35a2a0e0",
+      "source": {
+        "path": "kowalski/sessions/2f5dddfe-7693-4b34-943e-73be521f6edb.jsonl",
+        "line": 450,
+        "role": "assistant",
+        "timestamp": "2026-08-02T20:52:07.775Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 8762,
+      "text_sha256": "8fd667b0dcdbe3f6bae91e78b4854f556cb0cafe5e1d7b3caa1a4eea721ff016",
+      "source": {
+        "path": "kowalski/sessions/42df5375-daa4-4cc5-9c5d-7f4d0dca8727.jsonl",
+        "line": 10,
+        "role": "assistant",
+        "timestamp": "2026-06-29T11:15:17.530Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 8929,
+      "text_sha256": "dcdb0bc7747444a7683117f853922cd49858f8efe10d5d3fa84d15389b6b2671",
+      "source": {
+        "path": "kowalski/sessions/502ca998-5e6d-42b8-9666-5657a57f9d0a.jsonl",
+        "line": 1464,
+        "role": "assistant",
+        "timestamp": "2026-07-29T23:40:54.776Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 8942,
+      "text_sha256": "29d26684872824099d73eca787b5678f1e8b6a38aa56df0efde13df93888688a",
+      "source": {
+        "path": "kowalski/sessions/5ebfb85a-118f-4cb2-a117-4ad0bfa24a0c.jsonl",
+        "line": 8,
+        "role": "assistant",
+        "timestamp": "2026-06-22T11:15:17.039Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 8964,
+      "text_sha256": "3e964ae3ba816e2d90e556e369f05941a679634bc31d778fd35b96ae27785a2c",
+      "source": {
+        "path": "kowalski/sessions/6f95e29e-5de3-4c4e-afd1-19ae723b7639.jsonl",
+        "line": 391,
+        "role": "assistant",
+        "timestamp": "2026-07-31T18:56:55.167Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9427,
+      "text_sha256": "a27ba46c71c84a69fbe8fb303aea81f435896805052ab37d7df5697409dc6185",
+      "source": {
+        "path": "kowalski/sessions/917703d5-57ab-4807-87cc-4c4f3ebb4241.jsonl",
+        "line": 228,
+        "role": "assistant",
+        "timestamp": "2026-07-17T13:58:41.008Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9507,
+      "text_sha256": "b72ea18c46526d7f95e0117a5156a54ecb947a79b356f4254d32cdf78b874d02",
+      "source": {
+        "path": "kowalski/sessions/923c578c-6144-4f6c-a4e3-7c3177814db3.jsonl",
+        "line": 10,
+        "role": "assistant",
+        "timestamp": "2026-06-21T11:15:15.929Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9666,
+      "text_sha256": "1b646b9b162c1ec370542af2ed1cbb206f0e4cb0412e9a212ab600e66e33b201",
+      "source": {
+        "path": "kowalski/sessions/bbf11a12-311f-409c-a17b-a581f32c7577.jsonl",
+        "line": 519,
+        "role": "assistant",
+        "timestamp": "2026-08-12T01:21:59.067Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9689,
+      "text_sha256": "a67e28c96cd04b9f31fa8197099cb9dbfecff984701e06f5315d5a5df50c6d39",
+      "source": {
+        "path": "kowalski/sessions/c681cd09-b410-49c1-9dd5-88f47bbaf63d.jsonl",
+        "line": 8,
+        "role": "assistant",
+        "timestamp": "2026-07-02T11:15:11.928Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9777,
+      "text_sha256": "be5e6c41178b1639f29f5b867dbee598a355d39af9c3517474d1bab777dbc0cc",
+      "source": {
+        "path": "kowalski/sessions/ca4dc74a-5f59-4c2b-bfc6-1a7f474a2cc6.jsonl",
+        "line": 8,
+        "role": "assistant",
+        "timestamp": "2026-07-01T11:16:57.430Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9849,
+      "text_sha256": "bfe1b8a3e168a40c89218bb30edd80051db2d6277e565fa561da1ea2619a9a18",
+      "source": {
+        "path": "kowalski/sessions/f2fba0d5-8b69-448b-830e-f64f8ea3557f.jsonl",
+        "line": 12,
+        "role": "assistant",
+        "timestamp": "2026-06-19T11:15:19.742Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9864,
+      "text_sha256": "cadba3b92ca0fbd398315e9b3a4f1504c5a1675690aa36c04aabcdb1db17283e",
+      "source": {
+        "path": "kowalski/sessions/f814dda7-def7-41fe-b9ab-06818ef1daa9.jsonl",
+        "line": 183,
+        "role": "assistant",
+        "timestamp": "2026-07-08T20:40:01.533Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9897,
+      "text_sha256": "aeb3944ec42d3be69bee4a4b71b427a1a044aeacd43f29c50c849e22492fb417",
+      "source": {
+        "path": "kowalski/sessions/f8be2ff9-027a-4929-a16f-ec8c204d3833.jsonl",
+        "line": 12,
+        "role": "assistant",
+        "timestamp": "2026-06-27T11:15:21.613Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28884,
+      "text_sha256": "73716b1bca0b81df6eee2b0f8908430710e0b8008fbb420df966bd35e1420afc",
+      "source": {
+        "path": "main/sessions/0481cc66-5cfe-4172-a936-6deef3298631.trajectory.jsonl",
+        "line": 5,
+        "role": "assistant",
+        "timestamp": "2026-06-14T02:00:20.359Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28907,
+      "text_sha256": "cddebd0312c77b08ddb50f5893e89bc381758e79e64cb574798c4147eeaa888b",
+      "source": {
+        "path": "main/sessions/06f88802-518e-4bff-bc4a-91ffffd8c908.trajectory.jsonl",
+        "line": 5,
+        "role": "assistant",
+        "timestamp": "2026-06-25T02:02:57.854Z"
+      },
+      "disposition": "historical_status_archived",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Relato datado de execução, configuração, contagens ou validação. Preservado para auditoria no arquivo pesquisável; não atesta o estado atual e não constitui novo aprendizado permanente por si só.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3513,
+      "text_sha256": "e6bef306aff980902aa72e8aaab2147b5adec51bb30ff3516132ca6a8ca82319",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 79,
+        "role": "assistant",
+        "timestamp": "2026-06-13T20:51:31.547Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md",
+      "reason": "O aprendizado de conferir documento, cadastro e competência e não inventar dados já consta no Brain; a ocorrência específica e os alertas originais ficam na evidência histórica.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3540,
+      "text_sha256": "87520847789aa76c1e075ebc5b47ac3c985cb08014035abf0f91c1651b861cd5",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 172,
+        "role": "assistant",
+        "timestamp": "2026-06-25T22:47:37.242Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md",
+      "reason": "O aprendizado de conferir documento, cadastro e competência e não inventar dados já consta no Brain; a ocorrência específica e os alertas originais ficam na evidência histórica.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3559,
+      "text_sha256": "caf7e089907eb2aec80dc4a4d80f1aa654abf38e91646a1db6fa8ffb5b2482c0",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 256,
+        "role": "assistant",
+        "timestamp": "2026-06-26T11:57:07.708Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md",
+      "reason": "O aprendizado de conferir documento, cadastro e competência e não inventar dados já consta no Brain; a ocorrência específica e os alertas originais ficam na evidência histórica.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3516,
+      "text_sha256": "228d86af2e10d36c8144597625738c219e90db1c66255060e828feffb0e14e1e",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 93,
+        "role": "assistant",
+        "timestamp": "2026-06-13T20:52:42.129Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Consulta inconclusiva ou broker inacessível não prova resultado da emissão nem indisponibilidade do provedor; a distinção já está preservada.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3580,
+      "text_sha256": "b85e4fd892866e21614045eeca69718a3599aaaf58b615160d5653ba606c4ebf",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 338,
+        "role": "assistant",
+        "timestamp": "2026-07-03T13:11:33.369Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Consulta inconclusiva ou broker inacessível não prova resultado da emissão nem indisponibilidade do provedor; a distinção já está preservada.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3517,
+      "text_sha256": "79c98d0283565f8675873fc692129c193c79b421c425c943696c5846e07d1188",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 95,
+        "role": "assistant",
+        "timestamp": "2026-06-13T20:52:50.571Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "reason": "Dependências vendorizadas da skill, em vez do Python global, já estão documentadas; o erro específico permanece no histórico.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28775,
+      "text_sha256": "daac98a013548af7c857da2b055eb14ede8ad15a9e3d44b40d55cebe893e8a4b",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 35,
+        "role": "assistant",
+        "timestamp": "2026-08-09T20:26:48.928Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+      "reason": "Separação caixa/economia/evidência, revisão fora do resultado, proteção do realizado e lacunas temporais já estão preservadas no conhecimento financeiro e no projeto FIP. Números e etapas daquele ciclo permanecem como evidência histórica, não como situação financeira atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28776,
+      "text_sha256": "a365001d5cd55a0237df11eedd0ff10ea9c4d1067233ac3e9d8d8a43caa025a1",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 36,
+        "role": "assistant",
+        "timestamp": "2026-08-09T20:29:17.259Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+      "reason": "Separação caixa/economia/evidência, revisão fora do resultado, proteção do realizado e lacunas temporais já estão preservadas no conhecimento financeiro e no projeto FIP. Números e etapas daquele ciclo permanecem como evidência histórica, não como situação financeira atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28778,
+      "text_sha256": "3e9ebceb52b661703d75b42cddfe62631578109f1f0d224281b630e81776782b",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 38,
+        "role": "assistant",
+        "timestamp": "2026-08-09T20:32:13.399Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+      "reason": "Separação caixa/economia/evidência, revisão fora do resultado, proteção do realizado e lacunas temporais já estão preservadas no conhecimento financeiro e no projeto FIP. Números e etapas daquele ciclo permanecem como evidência histórica, não como situação financeira atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28781,
+      "text_sha256": "4669efae2f29727efd408e270ab5c4d527b44e8e246b04c94a631981d5719b48",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 127,
+        "role": "assistant",
+        "timestamp": "2026-08-09T20:34:55.278Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+      "reason": "Separação caixa/economia/evidência, revisão fora do resultado, proteção do realizado e lacunas temporais já estão preservadas no conhecimento financeiro e no projeto FIP. Números e etapas daquele ciclo permanecem como evidência histórica, não como situação financeira atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28782,
+      "text_sha256": "0879e192b7dc046e7e84c052c8842152a4cce8a10c0fcb313bbeb70d53294eb0",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 128,
+        "role": "assistant",
+        "timestamp": "2026-08-09T20:36:12.460Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+      "reason": "Separação caixa/economia/evidência, revisão fora do resultado, proteção do realizado e lacunas temporais já estão preservadas no conhecimento financeiro e no projeto FIP. Números e etapas daquele ciclo permanecem como evidência histórica, não como situação financeira atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28831,
+      "text_sha256": "db0f90b0cfd1668e6f8455cb35ebea30f432459685a77bf0267d49f4510b343c",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 306,
+        "role": "assistant",
+        "timestamp": "2026-08-10T01:24:16.962Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+      "reason": "Separação caixa/economia/evidência, revisão fora do resultado, proteção do realizado e lacunas temporais já estão preservadas no conhecimento financeiro e no projeto FIP. Números e etapas daquele ciclo permanecem como evidência histórica, não como situação financeira atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28834,
+      "text_sha256": "c94338db6fe1389e82d202f5972879f7d0015d179012f1a459bd0396bb94c9c8",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 309,
+        "role": "assistant",
+        "timestamp": "2026-08-10T01:28:29.962Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+      "reason": "Separação caixa/economia/evidência, revisão fora do resultado, proteção do realizado e lacunas temporais já estão preservadas no conhecimento financeiro e no projeto FIP. Números e etapas daquele ciclo permanecem como evidência histórica, não como situação financeira atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28852,
+      "text_sha256": "0f5f211027c5516ddedffc2c6bd99b64635f5c2d519a0be8555136a0a0a888ed",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 462,
+        "role": "assistant",
+        "timestamp": "2026-08-10T03:03:36.044Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+      "reason": "Separação caixa/economia/evidência, revisão fora do resultado, proteção do realizado e lacunas temporais já estão preservadas no conhecimento financeiro e no projeto FIP. Números e etapas daquele ciclo permanecem como evidência histórica, não como situação financeira atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28856,
+      "text_sha256": "dfcd75cc265a77fde17ba769de3ea4190a52d3f5ffa3bf0d8c8d99d794aadcc6",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 466,
+        "role": "assistant",
+        "timestamp": "2026-08-10T03:13:30.097Z"
+      },
+      "disposition": "already_represented",
+      "target_note": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+      "reason": "Separação caixa/economia/evidência, revisão fora do resultado, proteção do realizado e lacunas temporais já estão preservadas no conhecimento financeiro e no projeto FIP. Números e etapas daquele ciclo permanecem como evidência histórica, não como situação financeira atual.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28785,
+      "text_sha256": "0bbf916ea04a8e19c60e27caa96d24077ed47a2db4471e182a8599ab4aec31ed",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 163,
+        "role": "assistant",
+        "timestamp": "2026-08-09T20:40:44.977Z"
+      },
+      "disposition": "artifact_locator_archived",
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "reason": "Este trecho contém somente o nome de um artefato. O localizador fica pesquisável na origem preservada; não se presume que o artefato foi validado ou que o nome comprova conteúdo.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28854,
+      "text_sha256": "a94f4cdd2a332d2ae9752d66c8584e1d98a380d9b0f9201a56c716e1a4cd3b3a",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 464,
+        "role": "assistant",
+        "timestamp": "2026-08-10T03:08:03.642Z"
+      },
+      "disposition": "artifact_locator_archived",
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "reason": "Este trecho contém somente o nome de um artefato. O localizador fica pesquisável na origem preservada; não se presume que o artefato foi validado ou que o nome comprova conteúdo.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28862,
+      "text_sha256": "21df24efc85387a92aed6d1e5ef04f14296b7981a78c71e9335c39edb591219d",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 584,
+        "role": "assistant",
+        "timestamp": "2026-08-10T03:36:36.265Z"
+      },
+      "disposition": "artifact_locator_archived",
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "reason": "Este trecho contém somente o nome de um artefato. O localizador fica pesquisável na origem preservada; não se presume que o artefato foi validado ou que o nome comprova conteúdo.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28870,
+      "text_sha256": "348112a25c236dae5381eb4acf47b614a7adc056f47410565a724eaf37719b04",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 701,
+        "role": "assistant",
+        "timestamp": "2026-08-10T11:48:24.694Z"
+      },
+      "disposition": "artifact_locator_archived",
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "reason": "Este trecho contém somente o nome de um artefato. O localizador fica pesquisável na origem preservada; não se presume que o artefato foi validado ou que o nome comprova conteúdo.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28876,
+      "text_sha256": "c374eea6fc46e9d250133faea2fc1a2a3f4696cc33c4fc2ad6c40a7405caedb9",
+      "source": {
+        "path": "main/sessions/031c2754-53be-45dc-97e9-af3a41a10203.jsonl",
+        "line": 707,
+        "role": "assistant",
+        "timestamp": "2026-08-10T12:14:16.746Z"
+      },
+      "disposition": "artifact_locator_archived",
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "reason": "Este trecho contém somente o nome de um artefato. O localizador fica pesquisável na origem preservada; não se presume que o artefato foi validado ou que o nome comprova conteúdo.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3537,
+      "text_sha256": "b6a4a06ba18a19f525f8d8103d63adb5761b69b1c308d199e64deb73faf4d2fc",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 164,
+        "role": "assistant",
+        "timestamp": "2026-06-19T19:20:42.289Z"
+      },
+      "disposition": "deferred",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Exige contexto/artefato adicional, ou contém dado de acesso/resultado redigido. Manter pendente e privado; não inferir conclusão ou publicar o conteúdo bruto.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3549,
+      "text_sha256": "07d62e5818b070966c8a4850003e4c285eb1732701a64ac5b54a3df1656f64bb",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 214,
+        "role": "assistant",
+        "timestamp": "2026-06-26T11:26:06.321Z"
+      },
+      "disposition": "deferred",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Exige contexto/artefato adicional, ou contém dado de acesso/resultado redigido. Manter pendente e privado; não inferir conclusão ou publicar o conteúdo bruto.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3586,
+      "text_sha256": "721936510b70cd604f5577e3d548ebc526b68e5e56034d6b47dc28944756e132",
+      "source": {
+        "path": "darth-vader/sessions/c1763b11-cd02-4f2c-8612-80f3daae4f23.trajectory.jsonl",
+        "line": 50,
+        "role": "assistant",
+        "timestamp": "2026-08-17T19:35:15.127Z"
+      },
+      "disposition": "deferred",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Exige contexto/artefato adicional, ou contém dado de acesso/resultado redigido. Manter pendente e privado; não inferir conclusão ou publicar o conteúdo bruto.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3587,
+      "text_sha256": "f1ad5060c2959df94443220534f174b5b53f949a3dc618efb72be88d912e4006",
+      "source": {
+        "path": "darth-vader/sessions/c1763b11-cd02-4f2c-8612-80f3daae4f23.trajectory.jsonl",
+        "line": 246,
+        "role": "assistant",
+        "timestamp": "2026-08-18T00:49:03.118Z"
+      },
+      "disposition": "deferred",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Exige contexto/artefato adicional, ou contém dado de acesso/resultado redigido. Manter pendente e privado; não inferir conclusão ou publicar o conteúdo bruto.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 8758,
+      "text_sha256": "f69bbd0c80045b30f320cba539d620170246c078a8608b096cb9a46f5931d6e2",
+      "source": {
+        "path": "kowalski/sessions/3b4bd43c-ae6a-49f6-97ab-c6c2d1c54e3e.trajectory.jsonl",
+        "line": 482,
+        "role": "assistant",
+        "timestamp": "2026-07-18T18:04:17.826Z"
+      },
+      "disposition": "deferred",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Exige contexto/artefato adicional, ou contém dado de acesso/resultado redigido. Manter pendente e privado; não inferir conclusão ou publicar o conteúdo bruto.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9892,
+      "text_sha256": "70412b378aea163c98ce4c62acb5db32381bf16be8288eab487a8b0f40712c4b",
+      "source": {
+        "path": "kowalski/sessions/f87124a8-d2e0-40a6-98b2-ca02dce1d827.trajectory.jsonl",
+        "line": 178,
+        "role": "assistant",
+        "timestamp": "2026-08-13T14:12:51.809Z"
+      },
+      "disposition": "deferred",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "reason": "Exige contexto/artefato adicional, ou contém dado de acesso/resultado redigido. Manter pendente e privado; não inferir conclusão ou publicar o conteúdo bruto.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3554,
+      "text_sha256": "8b19252b301fd725bac5f58be95797ee6a864c2610719e2e9e40fc22d77e673a",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 236,
+        "role": "assistant",
+        "timestamp": "2026-06-26T11:54:33.217Z"
+      },
+      "disposition": "curated_pending_publication",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md",
+      "reason": "O relato destaca efeito externo indireto: um campo de contato no payload pode acionar comunicação. Incorporar a verificação de efeitos indiretos, sem afirmar implementação ou comportamento atual do provedor.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28921,
+      "text_sha256": "12ee5306c1e960b0927fd656cb152f7330acc93f86a074ce1666510bb370e706",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 15,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:26:55.315Z"
+      },
+      "disposition": "curated_pending_publication",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Distinguir cadastro, visibilidade, permissão cruzada, cache da sessão e teste de comunicação entre agentes; incorporar ao gate de runtime sem promover configuração histórica a recomendação de permissões amplas.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28925,
+      "text_sha256": "727f3e25b8a8f7ef77093268441bb526cacdd1789d3786d2e81ae4ce29fa42a2",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 23,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:27:33.633Z"
+      },
+      "disposition": "curated_pending_publication",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Distinguir cadastro, visibilidade, permissão cruzada, cache da sessão e teste de comunicação entre agentes; incorporar ao gate de runtime sem promover configuração histórica a recomendação de permissões amplas.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28926,
+      "text_sha256": "f8e56a67ae9ef455537b6f953f9588e27d5c8702b36e54c5f122818edcfd8b82",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 27,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:27:42.845Z"
+      },
+      "disposition": "curated_pending_publication",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Distinguir cadastro, visibilidade, permissão cruzada, cache da sessão e teste de comunicação entre agentes; incorporar ao gate de runtime sem promover configuração histórica a recomendação de permissões amplas.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28932,
+      "text_sha256": "ad1187cea2c046fb6ef19d250fb3e71103bb7e7ddca04662e3541c8bfaa255d5",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 43,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:28:38.877Z"
+      },
+      "disposition": "curated_pending_publication",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Distinguir cadastro, visibilidade, permissão cruzada, cache da sessão e teste de comunicação entre agentes; incorporar ao gate de runtime sem promover configuração histórica a recomendação de permissões amplas.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28933,
+      "text_sha256": "473337f39adb52dd1fca718cdefb8a2ca56058acfa8ecc8ca85ad8bbc1f86de5",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 46,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:28:49.250Z"
+      },
+      "disposition": "curated_pending_publication",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Distinguir cadastro, visibilidade, permissão cruzada, cache da sessão e teste de comunicação entre agentes; incorporar ao gate de runtime sem promover configuração histórica a recomendação de permissões amplas.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28937,
+      "text_sha256": "781b227526962b930732319cb24f69ab83afd5ad96e2c01adac898aacbc5a860",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 63,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:30:03.058Z"
+      },
+      "disposition": "curated_pending_publication",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Distinguir cadastro, visibilidade, permissão cruzada, cache da sessão e teste de comunicação entre agentes; incorporar ao gate de runtime sem promover configuração histórica a recomendação de permissões amplas.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 28938,
+      "text_sha256": "9846f6e3801917677aa5ea7628c69b9b73a32b551ea230a45d747791f639d49e",
+      "source": {
+        "path": "main/sessions/0812c2e1-90b1-4dac-a074-5ce136e4faef.checkpoint.01a269ab-ef42-4dbe-8ead-6c691f2dfecd.jsonl",
+        "line": 65,
+        "role": "assistant",
+        "timestamp": "2026-06-13T12:30:36.344Z"
+      },
+      "disposition": "curated_pending_publication",
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "reason": "Distinguir cadastro, visibilidade, permissão cruzada, cache da sessão e teste de comunicação entre agentes; incorporar ao gate de runtime sem promover configuração histórica a recomendação de permissões amplas.",
+      "reviewer": "Codex editorial review round 2, 2026-09-21",
+      "scope": "visible excerpt only; original context remains in verified external archive",
+      "deletion_authorized": false
+    }
+  ],
+  "coverage_complete": false,
+  "source_files_deleted": 0
+}

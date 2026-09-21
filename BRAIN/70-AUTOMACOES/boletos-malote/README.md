@@ -1,3 +1,15 @@
+---
+id: brain-b0a3b4ab05ec7c58c289
+type: state
+title: Boletos e malote bancário
+created: '2026-09-21T18:53:54.531182Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T18:55:38.578515Z'
+---
+
 # Boletos e malote bancário
 
 Backup e documentação da futura habilidade do Darth Vader para gerar remessa/malote bancário de boletos da Bikon.
@@ -86,3 +98,9 @@ Retorno `.ret` é referência de conciliação/liquidação, não de geração d
 Upload/envio no portal Cresol exige confirmação explícita do Hebert após validação local da remessa.
 
 API Cresol em produção exige nova confirmação explícita do Hebert. Baixa por API permanece bloqueada até haver procedimento próprio, rollback e autorização específica.
+
+## Conhecimento recuperado dos históricos — revisão 2026-09-21
+
+Correção histórica de nomenclatura solicitada por Hebert: o layout aprovado deve ser identificado como Cresol/Bikon, sem atribuição Intelitech. A correção é de nome/atribuição e não altera o conteúdo aprovado nem constitui homologação bancária nova. Fonte: unidades 30819.
+
+Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.

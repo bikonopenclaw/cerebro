@@ -1,3 +1,15 @@
+---
+id: brain-fbd5bebde43f9b4077a9
+type: state
+title: ARX Backup diário → tickets NinjaOne
+created: '2026-09-21T18:53:54.531182Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T18:55:38.578515Z'
+---
+
 # ARX Backup diário → tickets NinjaOne
 
 ```yaml
@@ -204,3 +216,13 @@ A investigacao separou coleta, render, transporte e leitura humana e preservou o
 
 - Agente executor observado: Kowalski.
 - Categoria: monitoramento operacional / abertura de tickets.
+
+## Conhecimento recuperado dos históricos — revisão 2026-09-21
+
+No fluxo histórico de e-mail ARX, Hebert pediu uma cópia oculta para a caixa funcional de backup da Bikon. Preservar a exigência de BCC no contrato de entrega aplicável, mantendo destinatário exato na configuração operacional e revalidando a regra vigente antes de enviar; isso não autoriza envios adicionais. Fonte: unidades 36273.
+
+Na configuração histórica dos envios ARX, Hebert pediu criação sequencial por cliente. Cada agendamento deve vincular cliente inequívoco, período, dia/horário, destinatários, modelo validado e regra de cópia; validar o primeiro antes de passar ao próximo. Esta recuperação não reativa agendas antigas nem autoriza novos destinatários. Fonte: unidades 36294.
+
+No episódio de aprovação do modelo diário ARX, Hebert pediu guardar o modelo aprovado para reutilização pelo Kowalski. A versão submetida havia retirado a seção de seleção protegida quando não havia lista explícita das pastas. A regra durável é separar modelo aprovado de artefato em validação e não preencher seleção de backup por inferência; recuperar a versão vigente por identidade verificável antes de reutilizar. Fonte: unidades 36366.
+
+Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.

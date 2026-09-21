@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T18:55:38.578515Z'
 relationships:
 - type: references
   target: BRAIN/99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive.md
@@ -70,4 +70,8 @@ Manter o Brain como repositório vivo de conhecimento para preservar contexto, d
 
 ## Cobertura de históricos em 2026-09-21
 
-[[99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive|Cobertura, conexões e arquivo semântico]] registra o procedimento e seus limites. O arquivo externo de 36.389 fontes foi verificado, mas a revisão de conteúdo permanece parcial. Os originais da VPS continuam preservados por decisão do usuário. A pesquisa local no Mac não foi integrada aos gateways e os agendamentos existentes não foram alterados.
+[[99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive|Cobertura, conexões e arquivo semântico]] registra o procedimento e seus limites. O arquivo externo de 36.389 fontes foi verificado, mas a revisão de conteúdo permanece parcial. Os originais da VPS continuam preservados por decisão do usuário. A habilidade de pesquisa semântica está instalada na VPS e foi reconhecida pelos catálogos dos cinco agentes, incluindo os perfis separados de Kowalski e Darth Vader. O índice acompanha alterações nas notas por demanda; o mecanismo nativo de memória e os agendamentos existentes não foram alterados. A revisão dos históricos continua parcial. O Mac serve somente à revisão transitória; as cópias brutas elegíveis serão descartadas após cobertura e checagem operacional, sem exigência de arquivo integral permanente.
+
+## Cobertura dos gateways separados
+
+A conferência de 21/09 confirmou contribuições parciais de Kowalski e Darth Vader no Brain, mas não envio integral contínuo. Os quatro agendamentos Brain pertencem ao perfil principal; os perfis dedicados têm zero agendamentos Brain. As duas memórias Markdown de Kowalski coincidem com snapshots publicados em julho. A memória FIP de Darth de 25/08 não tem snapshot equivalente: parte está consolidada no projeto FIP, e a revisão recuperou uma correção de escopo ainda ausente. O recibo `BRAIN/99-SISTEMA/brain-v2/reports/gateway-brain-coverage-20260921.json` separa essas evidências. A rotina diária precisa de inventário explícito das fontes por agente e recibos de cobertura; essa automação ainda não foi implantada.

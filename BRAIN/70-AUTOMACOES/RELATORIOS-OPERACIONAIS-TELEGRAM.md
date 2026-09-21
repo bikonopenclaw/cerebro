@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T18:55:38.578515Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/KOWALSKI.md
@@ -287,3 +287,11 @@ Regras consolidadas:
 - Agente Kowalski: [[60-AGENTES/KOWALSKI|Kowalski]]
 - Escopo de canais operacionais: [[40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais|Escopo de canais operacionais]]
 - Bikon: [[20-EMPRESAS/BIKON/README|BIKON]]
+
+## Conhecimento recuperado dos históricos — revisão 2026-09-21
+
+Distinguir o produto solicitado: no episódio dos resumos automáticos NinjaOne, Bitdefender e WhatsApp, Hebert pediu texto limpo no corpo da mensagem, sem arquivo Markdown ou caminho local. Em pedidos de relatório como documento, a entrega esperada é o documento anexo ou um bloqueio real. Essas fontes têm escopos diferentes e não autorizam uma regra global de sempre anexar ou nunca anexar. Fonte: unidades 35859, 37923, 35862, 37932, 38121.
+
+Histórico de 06/07/2026: Hebert separou coleta de dados e entrega dos resumos. Para o fechamento de sexta, a proposta ajustada coletava no sábado e enviava na segunda, com mensagens espaçadas; os agendamentos permaneceram desabilitados naquela alteração. Esse registro é cronologia, não grade vigente: horários atuais exigem consulta à configuração autenticada. Fonte: unidades 32209.
+
+Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.

@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: false
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T18:55:38.578515Z'
 relationships:
 - type: derived_from
   target: BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md
@@ -24,11 +24,11 @@ relationships:
 
 Preservar conhecimento útil antes de retirar históricos do disco da VPS. Esta rotina complementa as consolidações diária, semanal e mensal; um resumo periódico não demonstra, por si só, que todas as fontes foram examinadas.
 
-O pedido de 2026-09-21 autoriza a cobertura e a exclusão posterior dos arquivos elegíveis. O usuário escolheu manter os originais na VPS até concluir a cobertura. Este lote não autoriza nem executa exclusão.
+O pedido de 2026-09-21 autoriza a cobertura e a exclusão posterior dos arquivos elegíveis. O usuário escolheu manter os originais na VPS até concluir a cobertura. O usuário também confirmou que o Mac é transitório: depois da cobertura e da verificação de dependências, as cópias brutas elegíveis podem ser excluídas sem manter um arquivo integral permanente. Esta publicação ainda não executa exclusões de históricos.
 
 ## Três provas independentes
 
-1. **Preservação:** cada arquivo foi copiado para armazenamento externo e comparado por tamanho e SHA-256. Isso comprova os bytes disponíveis para recuperação.
+1. **Integridade durante a revisão:** cada arquivo foi copiado temporariamente e comparado por tamanho e SHA-256. A cópia permite conferir a fonte enquanto a revisão está aberta; não constitui obrigação de arquivo permanente após o descarte autorizado.
 2. **Cobertura:** cada unidade de conteúdo recebeu disposição rastreável: já representada, incorporada, registro histórico sem aprendizado novo, duplicata exata, pendente ou contraditória. Uma decisão útil precisa apontar a nota que a preserva. Arquivo copiado, modelo vetorial e pontuação de similaridade não encerram essa revisão.
 3. **Elegibilidade operacional:** não há dependência de sessão/retomada, arquivo aberto relevante, alteração posterior ou erro de leitura. Conferir novamente na VPS imediatamente antes da exclusão. Sessão registrada não significa sessão executando, mas continua sendo uma dependência a reconciliar.
 
@@ -46,19 +46,23 @@ A autorização de descarte exige as três provas, o escopo aprovado e um manife
 
 ## Pesquisa e arquivo
 
-As notas Markdown e as relações justificadas ficam no Brain/Git. Transcrições, SQLite, embeddings, modelos, arquivos comprimidos e manifestações completas de sessões ficam no arquivo privado externo.
+As notas Markdown, relações justificadas e recibos mínimos ficam no Brain/Git. Transcrições, SQLite, embeddings, modelos e arquivos comprimidos não são conteúdo cognitivo do repositório.
 
-A ferramenta local `scripts/brain-semantic-search.py` pesquisa as notas por embeddings multilíngues. Com `--archive`, recupera até 100 candidatos pelo índice textual e os reordena semanticamente. Esse modo é híbrido; não equivale a uma busca vetorial exaustiva de todos os históricos. Por padrão a pesquisa privilegia conhecimento permanente; `--scope all` inclui diários, estados e propostas, que exigem interpretação temporal.
+A habilidade `brain-semantic-search` foi instalada na VPS em 2026-09-21. Ela usa um único modelo multilíngue local e um índice derivado fora do Git, em `/data/.openclaw/local/brain-semantic`. A pasta compartilhada de habilidades está em `/data/.openclaw/skills`; os perfis separados de Kowalski e Darth Vader apontam para a mesma habilidade. A descoberta foi conferida pelos catálogos dos agentes e a pesquisa foi executada diretamente. Isso comprova disponibilidade, não que todas as sessões já tenham invocado a habilidade.
 
-Resultados mostram origem e status de evidência histórica. O filtro de credenciais é uma proteção adicional, não uma garantia de anonimização. Não publicar resultados brutos. Toda indexação é local, sem transmitir conteúdo para API de embeddings. Reconstruir o índice quando hashes das notas mudarem; registrar modelo, versão, fragmentação e testes de recuperação.
+Por padrão, a pesquisa privilegia conhecimento permanente; `--scope all` inclui diários, estados e propostas, que exigem interpretação temporal. Resultados mostram caminho, hash, data e relações. Similaridade recupera candidatos; não prova equivalência, autorização ou cobertura. O índice é atualizado por demanda quando os hashes do Brain mudam, reaproveitando notas inalteradas. São mantidas no máximo duas gerações. Toda inferência de embeddings é local, sem API externa.
 
-O catálogo no Git registra identificador do arquivo, hash, quantidades, estado de cobertura e referências mínimas. O manifesto privado permite reconstruir arquivo, hash e linha sem carregar milhares de logs no repositório. O pacote local não passa a ser acessível aos agentes da VPS automaticamente: a consulta foi instalada no Mac, e integração ao runtime exige uma etapa própria.
+A habilidade é uma ferramenta explícita, distinta do `memory_search` nativo; a configuração deste último não foi alterada. Código, dependências fixadas e instruções ficam versionados, enquanto o modelo e índice permanecem na VPS. As rotinas periódicas ainda não ganham recibos automáticos apenas por esta instalação.
+
+O arquivo de históricos, seu índice de revisão e o modelo temporário do Mac são descartáveis ao fim desta operação. A eliminação exige encerramento rastreável das unidades úteis, confirmação de publicação e leitura do conhecimento no Brain e nova checagem das dependências dos arquivos. Quando uma duplicata estiver coberta somente por outra fonte bruta, essa fonte continua protegida até que a informação útil seja consolidada ou classificada explicitamente como não durável. Não encadear exclusões apoiadas em cópias que também serão eliminadas.
+
+Após o descarte autorizado não haverá recuperação literal das conversas removidas. Decisões úteis, restrições, aprendizados e relações ficam preservados no Brain. Recibos mínimos com hashes, posições e justificativas documentam a revisão sem publicar transcrições ou credenciais. A proteção de credenciais nos resultados é adicional, não garantia de anonimização.
 
 ## Integração às rotinas existentes
 
 - Diária: examinar fontes novas e disposições pendentes; registrar recibos de cobertura por fonte. A agenda sozinha não substitui recibo.
 - Semanal: reconciliar repetição, conflito e vínculos; promover padrões revisados a notas permanentes.
-- Mensal: verificar continuidade temporal, pendências, recuperação externa e retenção.
+- Mensal: verificar continuidade temporal, pendências e retenção do conhecimento e dos arquivos operacionais ainda necessários.
 
 Esta especificação não altera os quatro agendamentos existentes nem o script legado de sincronização. A implementação dos recibos automáticos continua pendente. Nunca apresentar procedimento documentado como automação já ativa.
 

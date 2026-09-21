@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T18:55:38.578515Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md
@@ -108,3 +108,11 @@ O histórico de Darth Vader de 2026-06-13 relata timeout depois do envio de uma 
 A fonte original foi preservada no arquivo externo verificado; o catálogo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-20260921.json` identifica os trechos 3515 e 3518 por hash e posição. Essa recuperação histórica não autoriza reemitir notas nem retomar tarefas antigas.
 
 [[70-AUTOMACOES/NOTAAS-NFSE|Notaas NFS-e]] documenta emissão, consulta e recuperação de documentos como etapas distintas.
+
+## Conhecimento recuperado dos históricos — revisão 2026-09-21
+
+Caso histórico de 02/07/2026: no checklist de backup do Cartório Camburi, a fonte solicitada foi a API ARX Backup. A seleção de uma API não comprova, por si, independência de repositórios, imutabilidade, redundância ou atendimento de todos os itens; cada alegação deve apontar o campo/registro efetivamente obtido e registrar o que a fonte não demonstra. Fonte: unidades 37927.
+
+Em 01/07/2026, um relatório afirmou que 29 de 40 endpoints não eram gerenciados; o usuário contestou a origem e pediu retirar Bitdefender daquele relatório. O aprendizado é bloquear ou qualificar a alegação enquanto arquivo, regra e campo de origem não estiverem demonstrados. A retirada daquele conteúdo não estabelece proibição geral de usar Bitdefender em outros relatórios. Fonte: unidades 29086.
+
+Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.

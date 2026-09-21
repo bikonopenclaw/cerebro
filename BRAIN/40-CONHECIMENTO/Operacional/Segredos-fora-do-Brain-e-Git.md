@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T18:55:38.578515Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
@@ -71,3 +71,9 @@ No fechamento documental FIP Santander/MP, a ausencia de canal local no-echo par
 ## Reforço 2026-08-22
 
 No ODP Day 4, um comando preparatorio de discovery `env | sort | rg -i ...` expôs referencias logicas de credenciais OpenClaw runtime no stdout/tool result/transcripts. O estado correto foi `RECOVERABLE_P0_SECRET_EXPOSURE_PENDING_OPENCLAW_RUNTIME_SECRET_ROTATION`, com Day 4 `NOT_CONTINUED`, sem registrar plaintext no Brain, e retomada bloqueada ate bridge de rotacao/revogacao, validacao de nova credencial sem stdout secreto e suite negativa com exposicao pos-recuperacao zerada.
+
+## Conhecimento recuperado dos históricos — revisão 2026-09-21
+
+Caso histórico de 18/06/2026: Hebert recusou entregar seu certificado A1 ao agente. O desenho de integração deve respeitar esse limite de custódia: não interpretar a posse de um token de serviço como autorização para obter ou exportar o certificado privado. Uma alternativa de autenticação deve preservar o certificado sob controle do titular e ter escopo explicitamente aprovado; esta memória não atesta implantação de broker nem validade atual de credenciais. Fonte: unidades 34654.
+
+Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.

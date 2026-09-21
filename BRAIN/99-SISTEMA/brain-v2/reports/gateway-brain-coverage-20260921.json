@@ -1,0 +1,57 @@
+{
+  "verified_at": "2026-09-21T18:54:56.269635Z",
+  "brain_head_remote": "4aa07b008c7a84eb816b9d1fbfe6217b3d709533",
+  "conclusion": "Partial existing contributions; no comprehensive per-agent coverage receipt. Dedicated gateways do not have Brain consolidation jobs.",
+  "gateways": {
+    "main": {
+      "pid": 4077961,
+      "state_root": "/data/.openclaw",
+      "brain_jobs": 4
+    },
+    "kowalski": {
+      "pid": 1695445,
+      "profile": "kowalski",
+      "state_root": "/home/openclaw/.openclaw-kowalski",
+      "brain_jobs": 0,
+      "total_jobs": 1,
+      "memory_notes": 2,
+      "matching_versioned_memory_notes": 2,
+      "last_memory_snapshot_commit": "523d611",
+      "last_memory_snapshot_date": "2026-07-15"
+    },
+    "darth-vader": {
+      "pid": 1934863,
+      "state_root": "/home/openclaw/.openclaw-darth-vader",
+      "brain_jobs": 0,
+      "total_jobs": 0,
+      "memory_notes": 1,
+      "matching_versioned_memory_notes": 0,
+      "last_agent_snapshot_commit": "1ffb6a1",
+      "last_agent_snapshot_date": "2026-07-20",
+      "knowledge_contributions_found": [
+        "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md#atualizacao-2026-08-25"
+      ],
+      "memory_source": "/data/.openclaw/workspace-darth-vader/memory/2026-08-25.md",
+      "memory_sha256": "340a8ac20fe8577cfbc980b8d505c6db181ce69564faa114df75bdb0c7660fa0"
+    }
+  },
+  "primary_jobs": {
+    "daily": "weekdays 23:00 America/Sao_Paulo",
+    "weekly": "Sunday 03:00 America/Sao_Paulo",
+    "monthly": "day 1 04:00 America/Sao_Paulo",
+    "github_sync": "06:00,12:00,17:00,22:00 America/Sao_Paulo"
+  },
+  "recent_runs": {
+    "weekly": "2026-W38 created; run marked ok despite reported DNS push failure; commit later verified present remotely",
+    "daily": "recent log NO_REPLY is not proof of per-agent source coverage",
+    "sync": "last two runs reported no changes; current HEAD equals remote"
+  },
+  "semantic_skill_actual_profiles_verified": [
+    "main",
+    "kowalski",
+    "darth-vader"
+  ],
+  "schedulers_changed": false,
+  "sources_deleted": 0,
+  "next_gap": "Daily task asks for available recent context without an explicit inventory of each gateway/agent source and per-source completion receipts."
+}

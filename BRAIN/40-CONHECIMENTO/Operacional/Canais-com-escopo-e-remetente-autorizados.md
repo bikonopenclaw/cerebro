@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T18:55:38.578515Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
@@ -49,3 +49,9 @@ Em canais operacionais, grupo permitido e remetente autorizado são dimensões d
 - [[70-AUTOMACOES/FATURAMENTO-TELEGRAM|Grupos Telegram de faturamento]]
 - [[40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais|Escopo de canais operacionais]]
 - [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]
+
+## Conhecimento recuperado dos históricos — revisão 2026-09-21
+
+No episódio histórico de configuração de grupos, a abertura consultiva foi limitada a grupos aprovados nominalmente; não autorizou wildcard para qualquer grupo nem abertura do faturamento. Permissão consultiva e autoridade para efeitos financeiros continuam distintas; a configuração vigente deve ser revalidada antes de reutilizar o exemplo. Fonte: unidades 31800.
+
+Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.

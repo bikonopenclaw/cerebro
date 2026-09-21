@@ -1,0 +1,31 @@
+{
+  "verified_at": "2026-09-21T18:46:55.499685Z",
+  "runtime": "/data/.openclaw/local/brain-semantic",
+  "release": "20260921-v1",
+  "disk_mib": 476,
+  "single_model": true,
+  "native_memory_configuration_changed": false,
+  "gateways_restarted": false,
+  "brain_baseline": "4aa07b008c7a84eb816b9d1fbfe6217b3d709533",
+  "catalog_eligible_agents": [
+    "main",
+    "kowalski",
+    "robotnik",
+    "sentinel",
+    "darth-vader"
+  ],
+  "actual_state_roots_checked": [
+    "/data/.openclaw",
+    "/home/openclaw/.openclaw-darth-vader",
+    "/home/openclaw/.openclaw-kowalski"
+  ],
+  "darth_separate_profile_link": true,
+  "query_executed_as": "openclaw",
+  "query_first_expected_note": "Validacao-tecnica-nao-substitui-aceite-humano",
+  "automated_future_coverage_receipts": false,
+  "temporary_upload_removed": true,
+  "historical_sources_deleted": 0,
+  "mac_is_transient": true,
+  "limitation": "Catalog availability and direct command verified; spontaneous invocation in every existing conversation not tested.",
+  "kowalski_separate_profile_link": true
+}
