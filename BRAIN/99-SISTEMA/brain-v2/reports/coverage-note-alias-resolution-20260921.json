@@ -1,0 +1,10 @@
+{
+  "source_text_id": 29818,
+  "original_review_sha256": "48eeaa0f3708179709b174b394d1f3d75beb43618e3aa52bd72bcc66e01eaa89",
+  "alias": "BRAIN/50-PROJETOS/Historico/Controle-Financeiro-Familiar-Local.md",
+  "canonical": "BRAIN/50-PROJETOS/Historico/Controle-financeiro-familiar.md",
+  "canonical_note_sha256": "f5c7eac7975e3d47e6d7c4c3eae13f1cac55810a9e9353673a7a2f5dbe610ed5",
+  "proposal_sha256": "0ad82922fcb7e313e7edb2135be8a1caf2f4163ceb28ae3c29a2872021c21eb8",
+  "verification": "All10 nested proposal targets retained a superseded draft filename; the exact complete proposal is published in the canonical note, source29818, batch9. Original immutable review is preserved; this receipt resolves only its filename.",
+  "scope": "Only source29818; no global fuzzy filename matching."
+}
