@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 ---
 
 # SENTINEL, Controller de Operações e SNOC
@@ -280,3 +280,15 @@ Uma ocorrência só está consolidada quando possui fonte, recência, impacto, s
 Na preparação Sentinel de julho/2026, lista de 21 clientes, responsáveis e SLA não bastava para liberar operação: faltavam vínculos dos IDs NinjaOne/ARX/Bitdefender com client_id e cobertura esperada. IDs técnicos e evidência são preparados pelo agente; o usuário decide fontes esperadas, mínimos/exceção e aprovação do vínculo. Interface de aprovação não deve transferir 24 colunas técnicas ao usuário. Cadastro completo não prova cobertura real 24x7. Fonte: unidades 31504, 31513.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+No desenho inicial read-only do Sentinel, responsável significa humano ou função Bikon que assume o incidente; o agente detecta e escala. SLA de reconhecimento/escalonamento não é disponibilidade da rede. Janela de manutenção pertence à intervenção planejada e não deve bloquear leitura pura; prazos exemplificados não são contratos aprovados. Fonte: unidades 36206.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+Contrato OAS3 deve ser autenticado nos bytes do YAML/JSON local, com proveniência ao pacote autorizado, paths/operações/schemas e refs resolvíveis offline. Hash de Markdown da autorização não identifica OAS3. Zero candidato ou múltiplos sem identidade inequívoca bloqueiam; não reconstruir do HTML nem escolher outro parseável. Approval deve vincular execução, caminho, hash, finalidade, uso único/expiração; descrever uma API não autoriza chamá-la. Fonte: unidades 33680.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

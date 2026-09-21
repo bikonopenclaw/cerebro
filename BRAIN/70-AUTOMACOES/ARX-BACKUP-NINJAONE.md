@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 ---
 
 # ARX Backup diário → tickets NinjaOne
@@ -268,3 +268,11 @@ Reconciliação histórica: após a proposta de bloquear autofechamento pela aus
 No ajuste histórico dos quatro envios mensais ARX, Hebert pediu intervalos de5min: Alzira08:00, Camburi08:05, Capixaba08:10 e VilaVelha08:15, dia01 em Brasília. O espaçamento evita largada simultânea, mas não prova ausência de fila se um job exceder5min. Revalidar agenda vigente; não recriar esses crons pela memória. Fonte: unidades 29280.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+No P3 histórico Ferreira Rocha, a atribuição única ligou atenção a erro de backup, sem evidência de perda de dados ou indisponibilidade ampla. Sucesso recente não bastava para encerrar: validar contador de erro zerado, backup subsequente bem-sucedido e saída do estado de atenção. O registro não prova incidente atual nem autoriza ticket/remediação; severidade depende de impacto e evidência atuais. Fonte: unidades 36792.
+
+No histórico NinjaOne, Client Credentials servia à consulta de determinadas superfícies, mas não deve ser assumido como suficiente para ticketing: a rota autorizada passou a exigir user-context. Escolher grant/escopo pelo endpoint e autoridade efetivamente demonstrados, preservando segredo local e validação de callback; não reutilizar URLs tentativas antigas. Fonte: unidades 31889.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

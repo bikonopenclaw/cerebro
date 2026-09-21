@@ -1,3 +1,15 @@
+---
+id: brain-3acee14e0da86feb9873
+type: state
+title: Instagram Bikon, Robotnik
+created: '2026-09-21T19:31:17.466455Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T19:32:09.804705Z'
+---
+
 # Instagram Bikon, Robotnik
 
 ```yaml
@@ -208,3 +220,11 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 - O lote seguinte substituiu repeticao de template por cenas, pessoas, enquadramentos e mensagens distintas. Os manifests correntes de carrossel e Reel fecharam `REVIEW_COMPLETE / APPROVED_FOR_TECHNICAL_DELIVERY` e foram consumidos somente como gates de entrega privada.
 - Robotnik validou estrategia, precisao editorial, arquivos e o MP4 integral de 24 segundos. Kowalski validou o pacote visual, narrativa, variedade, composicao, marca e legendas. As duas coberturas foram registradas separadamente.
 - Estado apos a entrega privada: `approval=null`, `publication=null` e `publication_authority=false`; nao houve publicacao, agendamento ou impulsionamento.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+Na preparação histórica instagram-brand-director v2.1.1, a árvore canônica tinha64 arquivos e o workshop66 ao incluir metadata. Versão proposta e metadata administrativa ainda divergiam, apesar de testes de build passarem. Definir quais arquivos entram no hash e distinguir drift administrativo de versão ativa; pré-flight técnico não comprova peça final, consumo de crédito ou publicação. Não reativar aquela versão antiga. Fonte: unidades 30704.
+
+Rascunhos históricos sobre CNJ213/243 propuseram comunicar prazos por classe, plano técnico e prova de adequação, com ressalva explícita de validação jurídica antes de publicar datas absolutas. Preservar essa separação: copy educativo não substitui texto normativo consolidado nem autoriza prometer conformidade/prorrogação. Números e contagem de prazo daquele rascunho não foram revalidados nesta cobertura e não devem ser promovidos a orientação atual. Fonte: unidades 39470.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

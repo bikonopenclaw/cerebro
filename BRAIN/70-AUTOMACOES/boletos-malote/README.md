@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 ---
 
 # Boletos e malote bancário
@@ -134,3 +134,9 @@ No golden case histórico, normalizar cooperativa/carteira no campo livre do bol
 Livro operacional de emitidos e importador de retorno devem manter componentes financeiros distintos e vínculo ao título original. A fala histórica sobre faturamento.db não fixa nome/local do banco atual nem comprova migração ou baixa realizada. Fonte: unidades 38078.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+O relato histórico38088 identificou PDF com NÃO RECEBER APÓS O VENCIMENTO enquanto o gerador CNAB aplicava mora diária, inclusive fallback de1/300do valor. Preservar como risco de inconsistência, não como taxa aprovada. Conferir regra contratual autorizada e layout bancário vigente, explicitar unidades/percentual e manter PDF/remessa coerentes; não conservar cálculo automático implícito por tradição. Separar principal, juros, tarifa e descontos na conciliação. Fonte: unidades 38088.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

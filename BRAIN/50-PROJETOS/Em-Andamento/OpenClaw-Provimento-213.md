@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-28.md
@@ -576,3 +576,21 @@ Resultado: `FAIL_CLOSED`, rollback `PASS`, `/opt/openclaw/platform/dre/v1` e `/u
 No reparo histórico do Mini App que mostrava apenas NÃO, a API passou a expor answer_options[] canônico e o cliente submeteu ID/valor, não rótulo inferido. Regressões cobriam opções binárias/múltiplas, enum específico, false e 0. Resposta HTTP 200 e suíte técnica não substituem conferir as opções renderizadas no Telegram/iPhone real; valores falsy não devem ser descartados como ausência. Fonte: unidades 33157, 33160.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+Em levantamento inicial do Prov213, leitura de AGENTS/COMO-ABRIR não provou acesso ao pacote criptografado. Hebert foi indicado como autoridade operacional e Felipe como responsável pela validação jurídica final; isso não transfere automaticamente novas autorizações operacionais. Dashboard manual alimentado por JSON não comprovava sincronização com banco. Validar fonte, versão e autoridade antes de transformar declaração de prazo ou conformidade em fato; o levantamento não é estado atual nem parecer jurídico. Fonte: unidades 34121.
+
+No teste histórico iPhone, acesso ao Portal dependia do cliente Tailscale conectado à tailnet; resposta local ou HTML correto não comprovava acesso do usuário móvel. Entitlements por CNS devem vir da identidade autorizada, sem fallback fixo; aceite do piloto interno não autoriza exposição a clientes. Fonte: unidades 32894.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+A arqueologia histórica Capixaba023218 e Celi023879 encontrou28/47 e29/47 controles, respectivamente; os19 e18 restantes não existiam no template legado de15itens. As respostas recuperadas eram L2, não L1, e não houve reutilização entreCNS. Ausência em template/fonte não equivale a não conformidade nem autoriza preencher resposta: manter UNKNOWN com proveniência e obter evidência própria do CNS. PASS da busca não significa47/47 completos nem autorização de preview/publicação. Fonte: unidades 8778.
+
+No contrato histórico Serventia Identity revision2, CNS era a âncora em serventia_id: string JSON UTF-8 de exatamente seis dígitos decimais ASCII, regex ^[0-9]{6}$, preservando zeros à esquerda. Aprovar o documento não selecionava nem vinculava uma serventia real; binding exigia entrada autoritativa e confirmação próprias. O recibo não comprova binding atual nem substitui validação da identidade na fonte oficial. Fonte: unidades 8982.
+
+Na definição histórica do Command Envelope, mesmo Command ID com bytes canônicos divergentes deveria resultar DATA_COMMAND_ID_COLLISION antes da avaliação de provenance/scope/key. CTM017 exigiu fixture própria com scope/key/provenance divergentes, preservando CTM018 que precisava de scope/key iguais. Teste deve representar todas as condições declaradas sem destruir a prova de outro cenário; revisão documental PASS não equivale a implementação autorizada. Fonte: unidades 30524.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

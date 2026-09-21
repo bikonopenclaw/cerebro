@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: false
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: derived_from
   target: BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md
@@ -84,3 +84,19 @@ A verificação de interconexão precisa ser repetida após uma execução natur
 Em julho o relato37479 registrou memorySearch.provider=none e FTS-only para evitar embeddings cobrados por API, usando OAuth dos agentes para inferência. Esse estado é histórico e não prova o mecanismo atual. Na aceitação da habilidade persistente, verificar separadamente busca lexical, busca semântica, fornecedor/modelo do índice e credenciais/custo; autenticação do agente não comprova cobertura de embeddings. O índice semântico novo deve ter teste funcional próprio e não herdar diagnóstico antigo de billing. Fonte: unidades 37479.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+A revisão histórica do Obsidian separou grafo completo, notas cognitivas e snapshots versionados. Excluir snapshots do gráfico pode melhorar navegação, mas desativar showOrphans é apenas visual e não prova interconexão. Manter gate de órfãos reais independente do filtro, e validar a experiência no aplicativo quando alegar grafo visual corrigido. Configuração persistida e cache do aplicativo também precisam corresponder ao snapshot testado. Fonte: unidades 29625, 29631.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+O Gate0 histórico do Brain recusou foundation com ADR ainda PROPOSED, contratos sem Scope/Requirement/Validation/Failure Behavior e métricas sem fórmula/limiar. Existência de arquivos não prova governança operável; cada regra precisa de alcance, critério verificável e tratamento de falha. Aplicar isso ao arquivo semântico: definição de cobertura e condição de exclusão devem ser verificáveis, sem supor que link/score por si prova preservação de significado. Fonte: unidades 29694.
+
+No Gate2 histórico do Brain, os dry-runs foram relatados como aprovados, mas os artefatosDR01–10 haviam sido removidos. O gate ficou NO_GO e exigiu repetir com manifestos verificáveis. Evidências necessárias à aprovação não devem ser descartadas antes do fechamento do gate e da cobertura demonstrada. Isso exige retenção até a revisão, não arquivo bruto permanente nem cópia definitiva no Mac. Fonte: unidades 29700.
+
+Foundation do Brain não concluiu reintegração: no baseline histórico havia107 links quebrados e46 notas uncategorized/órfãs apesar de Operational Health1.0. A fase11 separou diagnóstico, reintegração em lotes e Commit Link Gate para novos conteúdos. Métrica estrutural saudável não substitui ligação semântica válida, cobertura de conteúdo e busca útil; números pertencem ao baseline de04/08 e não descrevem o presente. Fonte: unidades 29718.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

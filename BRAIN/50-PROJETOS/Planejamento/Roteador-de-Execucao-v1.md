@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-23.md
@@ -110,3 +110,11 @@ A seleção cognitiva não amplia autorização. Produção, root, gasto, comuni
 - Agente operacional: [[60-AGENTES/SENTINEL|SENTINEL, Controller de Operações e SNOC]].
 - Diretrizes: [[99-SISTEMA/MEMORY|MEMORY.md]].
 - Artefatos de evidência fora do Brain: `/data/.openclaw/workspace/entregas/roteador-execucao-v1-20260723/`.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+O MVP histórico do roteador foi descrito como CLI JSON com classificação estruturada, escolha do menor modelo elegível e gates; não chamava modelo, ferramenta ou rede. Testes e merge documental não comprovam ativação no fluxo real. Estado atual deve ser verificado no contrato v2 e no call site instalado. Fonte: unidades 34532.
+
+Na revisão histórica do MVP, a classificação precisava chegar estruturada: ferramenta disponível não equivale a ferramenta obrigatória e efeito externo não equivale ao nível de risco. O executor Python não devia inventar semântica ausente; fallback e gates deveriam ser validados separadamente. Fonte: unidades 34535.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

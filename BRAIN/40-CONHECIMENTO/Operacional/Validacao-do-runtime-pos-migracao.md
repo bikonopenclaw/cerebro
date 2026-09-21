@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
@@ -89,3 +89,49 @@ Nos testes históricos DRE, a aceitação falhou primeiro por código de saída 
 No teste histórico Robotnik/Puppet, bot próprio foi inicialmente implementado como canal no mesmo processo. Isso separa identidade/conversa, mas não falhas, reinícios ou disputa do runtime. Avaliar trabalho paralelo com evidência de contexto, latência e disponibilidade; gateway dedicado requer implantação própria, não pode ser inferido da existência do bot. Fonte: unidades 29557, 29560.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+Falhas históricas DRE: um launcher necessário estava ignorado pelo Git e teria ficado fora do commit; outro funcionava na árvore, mas resolvia caminho errado ao ser instalado em /usr/local/bin. Validar conjunto efetivamente versionado/empacotado e chamada pelo ponto de entrada instalado, sob ambiente mínimo. PASS pré-instalação não substitui aceitação do artefato entregue; não restaurar DRE pelo histórico. Fonte: unidades 29265, 29277.
+
+No CPIW V4, Hebert distinguiu BLOCKED_PENDING_INDEPENDENT_VALIDATION de reprovação da candidata. Recuperar resultado já submetido; se transporte/sessão só ecoou briefing ou não produziu resultado, completar validação sobre os mesmos bytes conforme autorização vigente. Não reconstruir candidata nem trocar hash para resolver falta de evidência. Falha técnica exige gate/comando/esperado/observado reproduzíveis; falha do validador deve ser identificada como tal. Fonte: unidades 32622.
+
+No desenho OCOT Runtime Maintenance, integração proposta era aditiva: novo comando despacha somente ao controlador congelado, sem lógica de limpeza no adaptador e sem segundo binário concorrente. Preservar comandos existentes, help, alvos, argumentos, códigos de saída e unknown-command; comparar inventário/regressão antes e depois. Homologar adaptador não significa instalar/ativar timer ou autorizar limpeza em produção. Fonte: unidades 37512.
+
+No diagnóstico documental, PDFs comprovavam Chromium149, mas não origem Snap/Playwright/pacote/wrapper nem build exato. Cache posterior não prova a origem anterior, e instalar pacote atual não restaura por identidade uma rota histórica. A recomendação posterior revogou o comando apt/Snap proposto: preservar incerteza e obter origem autoritativa ou aprovar nova arquitetura, validando o comando efetivo no PATH. Não executar receita anterior por replay. Fonte: unidades 36663.
+
+No ajuste histórico de modelo/reasoning do OpenClaw, default validado em configuração não alterou automaticamente sessões já abertas. A verificação precisa comparar configuração resolvida e sessão efetiva. Renovar apenas a sessão necessária não implica excluir crons ou histórico de atendimento; versões/modelos citados no episódio não são recomendação atual. Fonte: unidades 35452, 37471, 35449.
+
+No episódio Claw3D, /office HTTP 200 e gateway saudável coexistiram com falha no navegador. A lista vazia resultava de escopo operator.read ausente ao rebaixar identidade do cliente; falhas posteriores vieram de instanceId/assinatura e metadata de plataforma incoerentes no proxy. Validar identidade, escopo, origem e WebSocket ponta a ponta, sem inferir ausência de agentes da UI. localhost no navegador aponta para a máquina do usuário, salvo túnel; correções históricas não dispensam autenticar versão/protocolo atual. Fonte: unidades 35359, 35434, 35356, 35350, 35347.
+
+Em um protótipo de dashboard, foi proposta escuta em loopback com acesso mediado por proxy e allowlist; uma porta local respondendo não comprova publicação remota autorizada. Confirme host, rede, identidade e política de acesso no runtime escolhido antes de expor o painel. Fonte: unidades 29966.
+
+No histórico Claw3D, HTTP 200 da interface não provava handshake do Gateway. Foram diferenciados upstream apontando ao próprio Claw3D, token desatualizado, divergência device/instanceId e metadata distinta entre teste Node e navegador Mac. Diagnóstico deve seguir browser -> proxy -> Gateway e reproduzir a identidade do cliente real; erro 1011/1012 sozinho não identifica a causa. Validar configuração atual e evitar copiar tokens para notas. Fonte: unidades 35348, 35354, 35357, 35360, 35432.
+
+No kit financeiro Telegram antigo, serviço e execução manual simultâneos disputaram o mesmo token. Antes de iniciar uma segunda instância, verificar proprietário e exclusividade de polling; usar lock controlado. Conflito 409 isolado não prova duplicata local e não autoriza matar processos por padrão amplo. Fonte: unidades 35699.
+
+No contrato histórico de manutenção, SQLite candidato exigia validação offline quick_check e checks semânticos antes de compactar/substituir/limpar. Corrupção ou handle ativo bloqueavam mutação e preservavam bytes; evidência identificava PID/processo/cgroup/path. Homologação devia provar equivalência dry-run/real, lock e idempotência. Isso era requisito de segurança, não autorização para ativar cleanup em produção. Fonte: unidades 37508.
+
+No broker SERPRO histórico, uso de setdefault permitia variável herdada do shell prevalecer sobre o arquivo local. Ao diagnosticar configuração, verificar precedência e caminho efetivamente carregado sem expor valores secretos; limpar apenas o ambiente autorizado do processo, não aplicar unset indiscriminado no sistema. Fonte: unidades 38015.
+
+No planejamento histórico Hermes, a inspeção do OpenAPI expôs superfícies MCP/perfis, sem provar a rota tasks antes suposta. A migração foi proposta em fases: conexão, modelo, saneamento, definição de agentes, dry-run e só então cutover. Descobrir contratos no backend real antes de desenhar integração; plano e papéis propostos não comprovam runtime implantado. Fonte: unidades 37439.
+
+Em migração de agentes, um hardlink de banco financeiro visível com modo 0644 não prova isolamento somente leitura: proprietário, mounts e processo efetivo precisam ser conferidos. Compartilhamento entre perfis deve ser explícito; antes do corte, comparar o mesmo input nos runtimes e verificar contratos MCP/concorrência. Modelos e estado de autenticação daquele diagnóstico são históricos. Fonte: unidades 37475.
+
+O payload SERPRO pode trazer dados como JSON serializado dentro de uma string. Decodificar e validar essa camada antes de montar o resumo: uma lista vazia do parser não prova ausência de parcelas/pagamentos na fonte. No incidente histórico, leitura correta recuperou meses pagos; estado atual requer consulta própria. Fonte: unidades 38057.
+
+Verificar origem e dependências do navegador usado pelo executor: um pacote apt de Chromium pode encaminhar para Snap, e o Chromium empacotado pelo Playwright não necessariamente é o binário chromium no PATH. Versão aparente semelhante não prova equivalência de plataforma, serviços ou bibliotecas. Validar o executável concreto e seu ambiente antes de declarar renderização instalada. Fonte: unidades 36662.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+Validar tipo de arquivo por invariantes, não igualdade com a descrição textual stat %F: um arquivo regular vazio pode aparecer como regular empty file. Para transcript, conferir separadamente arquivo regular, ausência de symlink, proprietário/grupo, modo, links e tamanho esperado; um transcript inicial vazio e final não vazio têm critérios diferentes. O caso antigo não autoriza reexecutar o handoff. Fonte: unidades 37058.
+
+Ao verificar checkout de outro usuário num wrapper privilegiado, separar falha de confiança/ownership do Git de divergência real de HEAD. Executar a inspeção com a identidade correta do proprietário, conforme autorização, antes de diagnosticar código alterado. Não ampliar safe.directory globalmente para esconder erro; validar novamente o artefato quando corrigir o wrapper. Fonte: unidades 37505.
+
+Acesso via Tailscale Serve envolve três condições independentes: tailnet permite Serve, identidade local tem autoridade para configurar o daemon e proxy efetivamente aponta ao serviço em loopback. Tailscale conectado/JSON aplicado não comprova acesso remoto. Verificar de cliente autorizado; Serve privado e Funnel público têm exposições distintas. Fonte: unidades 32519.
+
+Sugestão de instalação apresentada na interface Codex não foi entregue automaticamente ao usuário no Telegram. Antes de afirmar que há uma aprovação visível, conferir qual interface/canal realmente a recebe. No incidente Robotnik, corrigiu-se a alegação e o fluxo de integração; valores OAuth não devem compor memória cognitiva, nem a integração antiga deve ser reativada por esta nota. Fonte: unidades 36614.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

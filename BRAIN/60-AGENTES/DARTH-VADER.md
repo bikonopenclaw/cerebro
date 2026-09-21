@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
@@ -253,3 +253,13 @@ O protótipo de controle financeiro familiar foi desenhado como aplicativo local
 Para ingestão financeira local, explorar QR estruturado antes de OCR, preservar evidência e exigir revisão humana antes de persistir classificação. O desenho histórico fechava o bot por padrão, limitava tamanho de arquivo, tirava OCR do event loop e mostrava erros operacionais. Avaliação antiga de Apple Vision/Tesseract não é ranking atual nem autorização para enviar dados a serviços externos. Fonte: unidades 29983, 30004.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+Desenho histórico da conciliação assistida: separar analisar, entrevistar, propor regra e gravar definitivo. Movimento desconhecido entra em exceção com ID estável, evidência, regra candidata, dado ausente e risco. Resposta humana deve distinguir aplicação só ao movimento de regra futura. Confiança alta não autoriza gravação definitiva. Fechamento informa classificados, pendentes, regras propostas e bloqueios; conectar à autoridade atual FIP sem criar banco paralelo. Fonte: unidades 35376, 37500.
+
+No blueprint histórico Controle Financeiro Familiar, compra contém cabeçalho e itens categorizados ligados à evidência. Orçamento com ciclo dia5→dia4e lista de compras assistida com baixa eram expansões planejadas, não funcionalidades comprovadas. Preservar essa distinção de escopo e estágio; não confundir o protótipo familiar com o FIP corporativo posterior. Fonte: unidades 29796.
+
+No blueprint familiar histórico, reservas e investimentos foram propostos como movimentos patrimoniais: podem afetar caixa/orçamento sem constituir despesa de consumo. A visão de lançamento deve distinguir caixa, competência, conta, categoria, responsável e conciliação. Trata-se de modelagem proposta, não prova de módulo implementado. Fonte: unidades 29810.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

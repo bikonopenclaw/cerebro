@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
@@ -231,3 +231,15 @@ Desde 2026-07-14/15, o onboarding de cartórios usa consulta oficial por CNS com
 - Bitdefender GravityZone: [[70-AUTOMACOES/BITDEFENDER-GRAVITYZONE|Bitdefender GravityZone - integração Bikon]]
 - Provimento 213/2026: [[70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI|Provimento CNJ 213/2026, Kowalski]]
 - Escopo de canais: [[40-CONHECIMENTO/Operacional/Escopo-de-canais-operacionais|Escopo de canais operacionais]]
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+No caso Prov213 Q-PROVIDER-001, aplicabilidade do provedor não estava comprovada: a seleção foi invalidada/quarentenada, outbound preservado, resposta não exigida nem elegível como evidência, progresso zero. Elegibilidade deve preceder pergunta/ação; ausência de prova não selecionaAWSou outro provedor. Reconciliar legado sem apagar respostas válidas, retirar duplicatas e distinguir entrevista de comprovação documental. Respostas/questionário avançado não equivalem a controles evidenciados; manter próximo passo coerente com contrato e contexto atuais. Fonte: unidades 8631, 8616.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+Diretriz histórica para Kowalski: trabalhar com briefing de contexto, tarefa e restrições; linguagem clara ao cliente leigo, sem promessa milagrosa nem frases motivacionais vazias, preservando padrão visual Bikon. Nomes Chiquinha/Chaves e coleta direta em APIs eram referências antigas e não devem substituir arquitetura Sentinel coletor/Kowalski relatórios atual; promessa90dias exige contrato comercial vigente, não aplicação automática. Fonte: unidades 34205.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

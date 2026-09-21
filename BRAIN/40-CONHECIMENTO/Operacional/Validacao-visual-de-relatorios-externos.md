@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
@@ -117,3 +117,15 @@ Em 16/06/2026, Hebert confirmou validação dos PDFs de Catuaí e Grupo Unus ap�
 No relatório de acompanhamento ARX, Hebert pediu usar o nome público ARX Backup e retirar referências ao fornecedor Cove, reservando recomendações operacionais para a superfície adequada. O formato de acompanhamento não autoriza ocultar falhas, maquiar severidade ou omitir limitações de fonte; preservar evidência e distinguir relatório ao cliente de diagnóstico interno. Fonte: unidades 32111.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+A proposta histórica de consolidação documental separava geradores de negócio (boleto/NFS-e/ARX) de motores finais de PDF/DOCX/XLSX/imagem. Não apagar processo fiscal ao retirar conversor legado; PDF oficial de API permanece intocado. Migração exige mapa de dependências, fonte comum quando aplicável, regressão de layout/conteúdo/abertura e versão identificada. WeasyPrint69/python-docx/openpyxl/Pillow eram a proposta daquele contexto, não requisito universal nem prova de instalação vigente. Fonte: unidades 29565.
+
+Manter um padrão editorial/visual Bikon comum e reservar skills específicas a coleta, regra técnica ou automação próprias. Variação de layout isolada não precisa criar outra skill; validação externa verifica autoria humana, marca correta e ausência de caminhos ou segredos. Fonte: unidades 35675.
+
+No feed-base histórico, composição final 4:5 exigia elementos essenciais dentro da área segura de recorte da fonte 3:4; margem 80px de template quadrado não era transferível. Manter papéis e painéis abstratos/ilegíveis, sem dados reais, e owner presente como supervisor. Sem template aprovado, não inventar safe area em pixels. Fonte: unidades 39416.
+
+Ao fechar um par de registros cujo segundo referencia o primeiro, congele primeiro os bytes do registro-base e faça o segundo referenciar seu hash; não exija hashes finais mutuamente embutidos, pois isso cria dependência circular. Validação independente deve conferir o par efetivamente gerado antes do freeze; o histórico não autoriza regenerar o par atual. Fonte: unidades 41669.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

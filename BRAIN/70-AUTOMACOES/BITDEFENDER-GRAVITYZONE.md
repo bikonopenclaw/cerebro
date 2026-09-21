@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/20-EMPRESAS/BIKON/README.md
@@ -165,3 +165,9 @@ Observacao: manter apenas agregados e identificadores operacionais minimos; nao 
 - Empresa: [[20-EMPRESAS/BIKON/README|BIKON]]
 - Diretriz operacional: [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]
 - Separação teste/produção: [[40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas|Separar teste, rascunho e produção em automações externas]]
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+No snapshot de06/07, a consulta não disponibilizou endpoint de quarentena e apresentou zero confirmados entre itens retornados. Isso não prova zero quarentenas no universo. Informar indisponível/não verificado quando falta a fonte; se usar contagem parcial, dar denominador e cobertura. Licenças, endpoints vistos30dias, inventário total e slots do contrato são medidas distintas; não somar universos ou fechar percentuais por compensação. Fonte: unidades 32397.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

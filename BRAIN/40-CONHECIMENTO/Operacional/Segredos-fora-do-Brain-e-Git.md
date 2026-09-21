@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
@@ -99,3 +99,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260
 Em 19/06/2026 foi criada no Drive a pasta Integrações para documentação de APIs/integrações, com registro Bitdefender. A regra era guardar referência técnica sem chaves ou segredos. Essa finalidade documental não autoriza usar Drive como cofre ou perpetuar o fluxo temporário de transferência de credenciais observado em seguida. Fonte: unidades 33706.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+Auditoria estática que sinaliza child_process em integração ampla indica capacidade a revisar, não invasão comprovada. Avaliar escopos e scripts reais antes de quarentena/correção. Quando há proxy, confiar apenas nas origens verificadas; runtime/filesystem amplos aceitáveis num cenário solo não demonstram isolamento multiusuário. Os findings de julho não são estado atual. Fonte: unidades 32525.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

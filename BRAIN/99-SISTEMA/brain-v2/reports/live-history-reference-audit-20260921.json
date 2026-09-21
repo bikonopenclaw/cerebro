@@ -1,0 +1,518 @@
+{
+  "checked_at_epoch": 1790019039.2703855,
+  "checks": [
+    {
+      "kind": "sessions_index",
+      "path": "/data/.openclaw/agents/robotnik/sessions/sessions.json"
+    },
+    {
+      "kind": "sessions_index",
+      "path": "/data/.openclaw/agents/darth-vader/sessions/sessions.json"
+    },
+    {
+      "kind": "sessions_index",
+      "path": "/data/.openclaw/agents/kowalski/sessions/sessions.json"
+    },
+    {
+      "kind": "sessions_index",
+      "path": "/data/.openclaw/agents/sentinel/sessions/sessions.json"
+    },
+    {
+      "kind": "sessions_index",
+      "path": "/data/.openclaw/agents/main/sessions/sessions.json"
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "managed_outgoing_image_records",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "voicewake_routing_config",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "voicewake_routing_routes",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "gateway_restart_sentinel",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "acp_sessions",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "acp_replay_sessions",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "acp_replay_events",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "capture_events",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "sandbox_registry_entries",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "commitments",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "cron_run_logs",
+      "rows": 1698
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "cron_jobs",
+      "rows": 95
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "command_log_entries",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "delivery_queue_entries",
+      "rows": 119
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "task_runs",
+      "rows": 309
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "subagent_runs",
+      "rows": 223
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "current_conversation_bindings",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "tui_last_sessions",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/data/.openclaw/state/openclaw.sqlite",
+      "table": "audit_events",
+      "rows": 57153
+    },
+    {
+      "kind": "sessions_index",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/sessions/sessions.json"
+    },
+    {
+      "kind": "sessions_index",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/sessions.json"
+    },
+    {
+      "kind": "sessions_index",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/sentinel/sessions/sessions.json"
+    },
+    {
+      "kind": "sessions_index",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/main/sessions/sessions.json"
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "managed_outgoing_image_records",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "voicewake_routing_config",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "voicewake_routing_routes",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "gateway_restart_sentinel",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "acp_sessions",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "acp_replay_sessions",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "acp_replay_events",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "capture_events",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "sandbox_registry_entries",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "commitments",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "cron_run_logs",
+      "rows": 38
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "cron_jobs",
+      "rows": 1
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "command_log_entries",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "delivery_queue_entries",
+      "rows": 14
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "task_runs",
+      "rows": 114
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "subagent_runs",
+      "rows": 4
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "current_conversation_bindings",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "tui_last_sessions",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "table": "audit_events",
+      "rows": 10266
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "audit_events",
+      "rows": 3961
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "managed_outgoing_image_records",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "voicewake_routing_config",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "voicewake_routing_routes",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "gateway_restart_sentinel",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "acp_sessions",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "acp_replay_sessions",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "acp_replay_events",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "capture_events",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "sandbox_registry_entries",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "commitments",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "cron_run_logs",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "cron_jobs",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "command_log_entries",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "delivery_queue_entries",
+      "rows": 5
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "task_runs",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "subagent_runs",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "current_conversation_bindings",
+      "rows": 0
+    },
+    {
+      "kind": "gateway_session_refs",
+      "db": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "table": "tui_last_sessions",
+      "rows": 0
+    },
+    {
+      "kind": "codex_threads",
+      "path": "/data/.openclaw/agents/robotnik/codex-home/state_5.sqlite",
+      "rows": 277
+    },
+    {
+      "kind": "codex_threads",
+      "path": "/data/.openclaw/agents/darth-vader/codex-home/state_5.sqlite",
+      "rows": 3609
+    },
+    {
+      "kind": "codex_threads",
+      "path": "/data/.openclaw/agents/kowalski/codex-home/state_5.sqlite",
+      "rows": 1221
+    },
+    {
+      "kind": "codex_threads",
+      "path": "/data/.openclaw/agents/sentinel/codex-home/state_5.sqlite",
+      "rows": 291
+    },
+    {
+      "kind": "codex_threads",
+      "path": "/data/.openclaw/agents/main/codex-home/state_5.sqlite",
+      "rows": 5664
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/data/.openclaw/agents/darth-vader/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/data/.openclaw/agents/darth-vader/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/data/.openclaw/agents/kowalski/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/data/.openclaw/agents/kowalski/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/data/.openclaw/agents/main/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/data/.openclaw/agents/main/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/data/.openclaw/agents/robotnik/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/data/.openclaw/agents/robotnik/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/data/.openclaw/agents/sentinel/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/data/.openclaw/agents/sentinel/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "stale_registered_agent_db",
+      "path": "/data/.openclaw/agents/skill-installer-1784636646946/agent/openclaw-agent.sqlite"
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/home/openclaw/.openclaw/agents/darth-vader/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/home/openclaw/.openclaw/agents/kowalski/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/home/openclaw/.openclaw/agents/main/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/home/openclaw/.openclaw/agents/robotnik/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/main/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/main/agent/openclaw-agent.sqlite",
+      "rows": 0
+    },
+    {
+      "kind": "memory_session_sources",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/sentinel/agent/openclaw-agent.sqlite",
+      "rows": 0
+    }
+  ],
+  "errors": [],
+  "protected_files_in_export": 9961,
+  "allocated_bytes": 3103383552,
+  "open_files_under_agents": 46,
+  "semantics": "Conservative references include historical entries. Referenced does not imply running. Refreshed validation required immediately before deletion.",
+  "files_deleted": 0
+}

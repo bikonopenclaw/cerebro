@@ -1,3 +1,15 @@
+---
+id: brain-be7d87681eef2b3bcc3a
+type: knowledge
+title: Pacote selado auto-reprodutivel antes de privilegio operacional
+created: '2026-09-21T19:31:17.466455Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T19:32:09.804705Z'
+---
+
 # Pacote selado auto-reprodutivel antes de privilegio operacional
 
 ```yaml
@@ -39,3 +51,9 @@ Em 2026-08-20, a rota R2.4 tornou explicito que um pacote com prerequisito insta
 - [[40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado|Validacao do caminho final instalado]]
 - [[40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo|Autorizacao atomica nao herda escopo]]
 - [[01-DIARIO/Semanal/2026-W33|Semana 2026-W33]]
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+Em scripts privilegiados, mantenha o descritor retornado por mkstemp; não combine arquivo já criado com nova abertura O_EXCL do mesmo caminho. Rollback só remove recursos criados/iniciados pela própria execução, com flags por recurso e sem agir após preflight sem mutação. Verifique hash por caminho exato, não presença em lista; processo/listener inalterado não prova teste funcional Telegram. Fonte revisada e cópia privilegiada executada devem manter identidade de bytes. Fonte: unidades 30533.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

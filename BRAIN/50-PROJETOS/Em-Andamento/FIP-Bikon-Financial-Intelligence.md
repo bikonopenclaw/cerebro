@@ -6,7 +6,7 @@ created: '2026-09-21T18:54:56.269635Z'
 schema_version: '1.0'
 created_semantics: Data de registro estruturado, não origem do conteúdo legado.
 relationships: []
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:32:09.804705Z'
 ---
 
 # FIP Bikon Financial Intelligence
@@ -253,3 +253,11 @@ A mesma memória distingue classificação de ocorrências atuais de criação d
 Os totais transacionais, identidades de lançamentos e estados de fila pertencem à trilha operacional canônica e não devem ser restaurados pela leitura desta memória. A consolidação de 26/08 já avançou o batch 2; o checkpoint anterior que ainda o aguardava não descreve o estado atual.
 
 Fonte lida em 21/09: `/data/.openclaw/workspace-darth-vader/memory/2026-08-25.md`, SHA-256 `340a8ac20fe8577cfbc980b8d505c6db181ce69564faa114df75bdb0c7660fa0`. O arquivo vivo continua preservado; esta adição não afirma cobertura de todas as transações nem altera dados financeiros.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+Na entrevista de16/08/2026, Hebert autorizou MERCADOLIVRE*MERCADOLI como empresa/equipamento para suas parcelas e confirmou YOUSE AUTO como o mesmo seguro veicular recorrente; relato posterior registrou aplicação. Para o item MP*HEBERTMATTEDI deR$100,55 respondeu empresa/mercado, sem que esse descritor se torne regra global porque aparecia com naturezas diferentes. São decisões históricas por item/série; não executar nova classificação nem criar caixa ao consolidar memória. Fonte: unidades 33560.
+
+Na entrevista de15/08/2026, o item AMAZON BR foi tratado como BUSINESS_DIRECT com evidência ferramenta e propagação NOT_APPLICABLE. O recibo seguinte referencia o relatório20260815T112231Z. Não transformar o fornecedor em regra global: itens AMAZON MARKETPLACE próximos receberam naturezas distintas. Informação é decisão por item; não comprova saldo atual ou nova gravação. Fonte: unidades 35186.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

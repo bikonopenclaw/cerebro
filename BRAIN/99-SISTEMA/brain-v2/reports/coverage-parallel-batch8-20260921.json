@@ -1,0 +1,1893 @@
+{
+  "reviewed_units": 90,
+  "new_units": 70,
+  "revisited_units": 20,
+  "counts": {
+    "already_represented": 24,
+    "no_durable_knowledge": 27,
+    "curated_pending_publication": 39
+  },
+  "historical_coverage_complete": false,
+  "source_files_deleted": 0,
+  "items": [
+    {
+      "id": 36006,
+      "sha256": "9c0e2d0fdd6127010df5d4b4004ffd3769112dcb5c81723bf1a0aa56e961d8a6",
+      "source": {
+        "path": "main/sessions/c5f28b6c-ba0c-4467-88a0-9295fb5cfa1c.trajectory.jsonl",
+        "line": 11,
+        "role": "user",
+        "timestamp": "2026-06-12T13:40:43.478Z"
+      },
+      "disposition": "already_represented",
+      "reason": "Identidade e escopo financeiro de Darth estão preservados. A autorização geral antiga não supera os gates fiscais atuais nem comprova poderes atuais.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/60-AGENTES/DARTH-VADER.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Identidade e escopo financeiro de Darth estão preservados. A autorização geral antiga não supera os gates fiscais atuais nem comprova poderes atuais.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30660,
+      "sha256": "46ffc19f681b46bca0c732eb1a04662a008003059482ef2302b077412fdb517e",
+      "source": {
+        "path": "main/sessions/3637a0f6-e3cc-4403-8adb-7c3ad3dfca31.trajectory.jsonl",
+        "line": 442,
+        "role": "user",
+        "timestamp": "2026-08-21T21:17:50.060Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Checkpoint histórico do Sentinel, com percentuais, contagens e ações futuras. Estado posterior e contratos canônicos preservados; não converter readiness parcial ou ausência de job daquela data em estado atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Checkpoint histórico do Sentinel, com percentuais, contagens e ações futuras. Estado posterior e contratos canônicos preservados; não converter readiness parcial ou ausência de job daquela data em estado atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 8553,
+      "sha256": "3c04fcc9dae40a272f27ca1306d5f3ba11dc6155841932cd16ec2306d6ce82ae",
+      "source": {
+        "path": "kowalski/sessions/0ad82600-fb63-4ba1-a9a2-929fc2f3a2d7.jsonl",
+        "line": 304,
+        "role": "summary",
+        "timestamp": "2026-07-13T14:27:09.224Z"
+      },
+      "disposition": "already_represented",
+      "reason": "Proposta pending após timeout não é implantação. A distinção entre árvore ativa e lifecycle administrativo está explicitamente preservada.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Proposta pending após timeout não é implantação. A distinção entre árvore ativa e lifecycle administrativo está explicitamente preservada.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 33573,
+      "sha256": "6f28ad2337a65c2d9370515b33d76f2b58e51fb82193e4b0d969698202dbefc3",
+      "source": {
+        "path": "main/sessions/8d29d4ee-e2c3-4d5a-a645-5dbea58f8216.jsonl.deleted.2026-09-20T15-00-01.173Z",
+        "line": 152,
+        "role": "summary",
+        "timestamp": "2026-08-21T13:01:32.845Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Tentativa intermediária para loader iOS sem aceite no dispositivo. Diagnóstico ainda hipotético, posteriormente contextualizado por conectividade; não preservar a mudança de sintaxe como causa comprovada.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Tentativa intermediária para loader iOS sem aceite no dispositivo. Diagnóstico ainda hipotético, posteriormente contextualizado por conectividade; não preservar a mudança de sintaxe como causa comprovada.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30462,
+      "sha256": "8c8c950545bfd39f28f96582c127331ee8772467f922f006010bad2842dcbaa7",
+      "source": {
+        "path": "main/sessions/27d55932-b538-429e-ba34-f06a7214b815.trajectory.jsonl",
+        "line": 4,
+        "role": "user",
+        "timestamp": "2026-07-03T22:00:07.096Z"
+      },
+      "disposition": "already_represented",
+      "reason": "Contrato WhatsApp preserva KPIs, operadores, limites e indisponibilidade explícita. Prompt cron não é autoridade de execução atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/API-WHATSAPP-BIKON.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Contrato WhatsApp preserva KPIs, operadores, limites e indisponibilidade explícita. Prompt cron não é autoridade de execução atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 8769,
+      "sha256": "55e44cc53316dbce67bb02da32f1f6d9a87d575d0831e5a36c56368632730746",
+      "source": {
+        "path": "kowalski/sessions/432f2178-1d79-4c93-8649-033cf20c6278.trajectory.jsonl",
+        "line": 183,
+        "role": "user",
+        "timestamp": "2026-08-20T17:56:14.371Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Retry de validação estática sem ferramentas e sem bytes completos do artefato. Não demonstra implantação nem validação; estado intermediário sem novo conhecimento além dos gates existentes.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Retry de validação estática sem ferramentas e sem bytes completos do artefato. Não demonstra implantação nem validação; estado intermediário sem novo conhecimento além dos gates existentes.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 9678,
+      "sha256": "37706551b7ef76fbc372da2dc1fa960708b5f244c98fddd5bc75e758dafa7bb2",
+      "source": {
+        "path": "kowalski/sessions/c2bd1e36-2744-43d9-b71a-dab3a49d9c6c.jsonl",
+        "line": 312,
+        "role": "summary",
+        "timestamp": "2026-08-03T10:57:08.322Z"
+      },
+      "disposition": "already_represented",
+      "reason": "A nota Prov213 registra reimportação de CNS024067, G.02 validada com evidência, entrevista41/47 e próximo A.03. Snapshot prévio e staging não são estado atual; o pedido helpdesk é distinto e não prova implantação.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "A nota Prov213 registra reimportação de CNS024067, G.02 validada com evidência, entrevista41/47 e próximo A.03. Snapshot prévio e staging não são estado atual; o pedido helpdesk é distinto e não prova implantação.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 33087,
+      "sha256": "9543e2bbf1487c8d47226b06d65b3bb64b12977da07d24829b0a8d4fdfa15eb9",
+      "source": {
+        "path": "main/sessions/80994d0e-8718-4fb1-b681-eef14bae4240.trajectory.jsonl",
+        "line": 1789,
+        "role": "user",
+        "timestamp": "2026-08-01T00:57:02.369Z"
+      },
+      "disposition": "proposal",
+      "reason": "Contrato DRE contém lição de independência de sessão e transação única para render/publicação; implementação histórica não deve ser reativada.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md",
+      "proposal_text": "Na especificação histórica DRE, render e publicação formavam uma unidade durável: inputs e renderer disponíveis fora da sessão, identidade de runtime congelada, três renders de mesma entrada com hash idêntico, journal de retomada, ponteiro de publicação atômico e rollback. Preservar a lição de autossuficiência e identidade, sem transformar a proposta antiga de CPython/DRE em dependência atual nem inferir entrega pelo texto da especificação.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Contrato DRE contém lição de independência de sessão e transação única para render/publicação; implementação histórica não deve ser reativada.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 34455,
+      "sha256": "20a8a9e54dd85fee71e00d5334a73b5c7e55e01d07b820cd1d5a5ddd2015c75d",
+      "source": {
+        "path": "main/sessions/ae2d2891-c2ab-499c-8922-882575bb7008.jsonl",
+        "line": 63,
+        "role": "summary",
+        "timestamp": "2026-07-08T02:05:08.758Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30654,
+      "sha256": "2539f2ed9a2e61dc7c9d44753d8788c7b511c9c324737d30f25f90c90fc3d257",
+      "source": {
+        "path": "main/sessions/3637a0f6-e3cc-4403-8adb-7c3ad3dfca31.trajectory.jsonl",
+        "line": 282,
+        "role": "user",
+        "timestamp": "2026-08-21T19:58:54.852Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Checkpoint histórico do Sentinel, com percentuais, contagens e ações futuras. Estado posterior e contratos canônicos preservados; não converter readiness parcial ou ausência de job daquela data em estado atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Checkpoint histórico do Sentinel, com percentuais, contagens e ações futuras. Estado posterior e contratos canônicos preservados; não converter readiness parcial ou ausência de job daquela data em estado atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 36666,
+      "sha256": "b289067e95fbf24eace3b94e1ef927a4a9b27fa2991fd38dabcab78986a7205f",
+      "source": {
+        "path": "main/sessions/d4e04ea5-4f1d-46bc-8aaa-29c8f4ab4a4e.trajectory.jsonl",
+        "line": 1130,
+        "role": "user",
+        "timestamp": "2026-07-17T15:26:43.163Z"
+      },
+      "disposition": "already_represented",
+      "reason": "A nota de validação de runtime já preserva diagnóstico de Chromium e retirada da sugestão Snap; metadados antigos não provam origem/build do runtime. Não reinstalar por este replay.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "A nota de validação de runtime já preserva diagnóstico de Chromium e retirada da sugestão Snap; metadados antigos não provam origem/build do runtime. Não reinstalar por este replay.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 33042,
+      "sha256": "f92db1148630974609ada1afb29a013adbdc433171d279dd29286804443101b2",
+      "source": {
+        "path": "main/sessions/80994d0e-8718-4fb1-b681-eef14bae4240.trajectory.jsonl",
+        "line": 860,
+        "role": "user",
+        "timestamp": "2026-07-31T19:14:31.822Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Recibo de correção no teste localized_questions e aceitação85/85. Não altera contrato durável; testes de HTML não provam conformidade normativa ou produção.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Recibo de correção no teste localized_questions e aceitação85/85. Não altera contrato durável; testes de HTML não provam conformidade normativa ou produção.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 31524,
+      "sha256": "d10dcb1b6ed38e053dbabf13aab7c31f42e07f594302207b1ced09f825cfeef4",
+      "source": {
+        "path": "main/sessions/55e938a6-b5fc-4117-8f6b-f5c1158304d3.jsonl.deleted.2026-09-21T01-00-00.875Z",
+        "line": 172,
+        "role": "summary",
+        "timestamp": "2026-08-21T22:26:10.574Z"
+      },
+      "disposition": "proposal",
+      "reason": "Compaction registra ordem truncada iniciada apesar de leitura incompleta; registrar limitação, não promover full_order_read.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md",
+      "proposal_text": "No checkpoint histórico Sentinel Goal2, a leitura da ordem de981linhas terminou truncada no Success Model após ARX, enquanto a execução começou. Marcar essa evidência como leitura parcial: resumo e trechos visíveis não permitem afirmar leitura integral nem confirmar limites faltantes. Antes de consumir autorização, recuperar as seções faltantes e verificar escopo/condições do mesmo documento; registro histórico não autoriza repetir a operação.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Compaction registra ordem truncada iniciada apesar de leitura incompleta; registrar limitação, não promover full_order_read.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 8622,
+      "sha256": "47966351a4758f2a0f0257ac9e2d370ea4f75bd2c3b9a08f49fe265a5b13fb58",
+      "source": {
+        "path": "kowalski/sessions/2f5dddfe-7693-4b34-943e-73be521f6edb.trajectory.jsonl",
+        "line": 128,
+        "role": "user",
+        "timestamp": "2026-08-02T09:53:34.999Z"
+      },
+      "disposition": "proposal",
+      "reason": "Bytecode criado na inspeção pode contaminar pacote congelado; exclusão lógica não modifica a identidade original.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico.md",
+      "proposal_text": "Em validação read-only de pacote congelado, um .pyc extra altera o inventário e pode resultar da própria inspeção. Não importar ou compilar o pacote para inspecioná-lo sem controlar escrita de bytecode. Uma comparação com exclusão lógica explícita ajuda a diagnosticar, mas não apaga o arquivo, não aprova o pacote contaminado e não substitui a identidade congelada original.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Bytecode criado na inspeção pode contaminar pacote congelado; exclusão lógica não modifica a identidade original.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 29694,
+      "sha256": "d613198536e6be3cc94b563fcdc7dc1de9a0b193196395b6c5908bd704b0a56c",
+      "source": {
+        "path": "main/sessions/15310be7-b0eb-431a-9493-1b6a7ce97d55.trajectory.jsonl",
+        "line": 51,
+        "role": "user",
+        "timestamp": "2026-08-04T16:46:38.653Z"
+      },
+      "disposition": "proposal",
+      "reason": "Gate0 do Brain distinguiu estrutura criada de contratos normativos completos e métricas calculáveis.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive.md",
+      "proposal_text": "O Gate0 histórico do Brain recusou foundation com ADR ainda PROPOSED, contratos sem Scope/Requirement/Validation/Failure Behavior e métricas sem fórmula/limiar. Existência de arquivos não prova governança operável; cada regra precisa de alcance, critério verificável e tratamento de falha. Aplicar isso ao arquivo semântico: definição de cobertura e condição de exclusão devem ser verificáveis, sem supor que link/score por si prova preservação de significado.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Gate0 do Brain distinguiu estrutura criada de contratos normativos completos e métricas calculáveis.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 37032,
+      "sha256": "ed0eb0248941d99d92890ef3c99dd9c2208c2d5c589d2d74f85339a8c08a3097",
+      "source": {
+        "path": "main/sessions/e1071326-76e9-4d21-a68f-b05867a6655e.trajectory.jsonl",
+        "line": 121,
+        "role": "assistant",
+        "timestamp": "2026-08-20T10:54:00.716Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 9912,
+      "sha256": "d1685e6bb216074e1126bf9df8aebefc54bcbdb9ff3d2ade8b3df6ea563eef7c",
+      "source": {
+        "path": "kowalski/sessions/skills-prompts/sha256/d1/d1685e6bb216074e1126bf9df8aebefc54bcbdb9ff3d2ade8b3df6ea563eef7c.txt",
+        "line": 1,
+        "role": "artifact",
+        "timestamp": ""
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30525,
+      "sha256": "a0161870c1183c89ec2020cbbdf00cf3ffbe761267a6ffb8d3ded3ec9678b402",
+      "source": {
+        "path": "main/sessions/2b939611-9a39-4cc7-b039-508a2723d250.trajectory.jsonl",
+        "line": 104,
+        "role": "user",
+        "timestamp": "2026-07-28T23:54:22.381Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 29700,
+      "sha256": "ef4ce36c1977096207ccf8e79a4e2c3a171941ddee217c47647eb545e1d60c62",
+      "source": {
+        "path": "main/sessions/15310be7-b0eb-431a-9493-1b6a7ce97d55.trajectory.jsonl",
+        "line": 152,
+        "role": "user",
+        "timestamp": "2026-08-04T17:04:37.301Z"
+      },
+      "disposition": "proposal",
+      "reason": "Teste passou mas artefatosDR01–10 foram removidos antes do gate; evidência não disponível impediu auditoria.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive.md",
+      "proposal_text": "No Gate2 histórico do Brain, os dry-runs foram relatados como aprovados, mas os artefatosDR01–10 haviam sido removidos. O gate ficou NO_GO e exigiu repetir com manifestos verificáveis. Evidências necessárias à aprovação não devem ser descartadas antes do fechamento do gate e da cobertura demonstrada. Isso exige retenção até a revisão, não arquivo bruto permanente nem cópia definitiva no Mac.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Teste passou mas artefatosDR01–10 foram removidos antes do gate; evidência não disponível impediu auditoria.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 33813,
+      "sha256": "76e503047fb8d56e1fe85c9d0fbb4180283ce910e7d177bb9e6a286217490646",
+      "source": {
+        "path": "main/sessions/94520af5-1e65-4138-a4de-524c5586fd02.trajectory.jsonl",
+        "line": 4,
+        "role": "user",
+        "timestamp": "2026-07-03T21:45:06.338Z"
+      },
+      "disposition": "already_represented",
+      "reason": "Contrato Bitdefender preserva janela30dias, licensed explícito e descarte de chaves. Ausência recente não prova desligamento definitivo do endpoint.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Contrato Bitdefender preserva janela30dias, licensed explícito e descarte de chaves. Ausência recente não prova desligamento definitivo do endpoint.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30945,
+      "sha256": "ba0835579ef745bd599debfd31b9fdf1342cef585ee7e78f543ce405002c2308",
+      "source": {
+        "path": "main/sessions/4532a946-c1ce-403c-903f-2a2c0722d7fd.jsonl.deleted.2026-09-20T15-00-01.180Z",
+        "line": 142,
+        "role": "summary",
+        "timestamp": "2026-08-21T14:53:16.876Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Checkpoint histórico do Sentinel, com percentuais, contagens e ações futuras. Estado posterior e contratos canônicos preservados; não converter readiness parcial ou ausência de job daquela data em estado atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Checkpoint histórico do Sentinel, com percentuais, contagens e ações futuras. Estado posterior e contratos canônicos preservados; não converter readiness parcial ou ausência de job daquela data em estado atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 29706,
+      "sha256": "45a1e934fbb24f93c36d90ada6ab9206e049a877e3c7c8b515c3f3536c08e453",
+      "source": {
+        "path": "main/sessions/15310be7-b0eb-431a-9493-1b6a7ce97d55.trajectory.jsonl",
+        "line": 249,
+        "role": "user",
+        "timestamp": "2026-08-04T17:36:49.650Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 32898,
+      "sha256": "b51f1057d6a43ff4b15c3f2dccf47af44d66b7283ce4623779a3450e85eb73fb",
+      "source": {
+        "path": "main/sessions/7efbf4f9-3cd7-432d-860c-64f54d0e4994.trajectory.jsonl",
+        "line": 856,
+        "role": "assistant",
+        "timestamp": "2026-08-21T14:55:28.606Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Checkpoint histórico do Sentinel, com percentuais, contagens e ações futuras. Estado posterior e contratos canônicos preservados; não converter readiness parcial ou ausência de job daquela data em estado atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Checkpoint histórico do Sentinel, com percentuais, contagens e ações futuras. Estado posterior e contratos canônicos preservados; não converter readiness parcial ou ausência de job daquela data em estado atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30567,
+      "sha256": "63fa93fe326c3c35c849c4fec0e5421f59e02f75e026750585591b2765eef849",
+      "source": {
+        "path": "main/sessions/3084dcd3-f199-4395-9127-900fa1a1cc18.trajectory.jsonl",
+        "line": 268,
+        "role": "user",
+        "timestamp": "2026-08-03T08:58:21.964Z"
+      },
+      "disposition": "already_represented",
+      "reason": "A nota Prov213 registra reimportação de CNS024067, G.02 validada com evidência, entrevista41/47 e próximo A.03. Snapshot prévio e staging não são estado atual; o pedido helpdesk é distinto e não prova implantação.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "A nota Prov213 registra reimportação de CNS024067, G.02 validada com evidência, entrevista41/47 e próximo A.03. Snapshot prévio e staging não são estado atual; o pedido helpdesk é distinto e não prova implantação.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38166,
+      "sha256": "5c4a2ff781a711508b696b35fa88ee97d85af83127b2ddb79aabe52ddcadf445",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/5c/5c4a2ff781a711508b696b35fa88ee97d85af83127b2ddb79aabe52ddcadf445.txt",
+        "line": 1,
+        "role": "artifact",
+        "timestamp": ""
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3624,
+      "sha256": "8a91985795078dd0c1371864bd6f242b079946e9ae5172d45e9602588b504e44",
+      "source": {
+        "path": "darth-vader/sessions/skills-prompts/sha256/8a/8a91985795078dd0c1371864bd6f242b079946e9ae5172d45e9602588b504e44.txt",
+        "line": 1,
+        "role": "artifact",
+        "timestamp": ""
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38181,
+      "sha256": "b35e4ebafc9d58164f3f95c0b41fe538cfd6034558ff594ad248a78fe5323687",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/b3/b35e4ebafc9d58164f3f95c0b41fe538cfd6034558ff594ad248a78fe5323687.txt",
+        "line": 1,
+        "role": "artifact",
+        "timestamp": ""
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3621,
+      "sha256": "7e3fe6aa4e66e0733605d2450ec9ea4f36eae6d495e7cad01b80da2e3432e1bc",
+      "source": {
+        "path": "darth-vader/sessions/skills-prompts/sha256/7e/7e3fe6aa4e66e0733605d2450ec9ea4f36eae6d495e7cad01b80da2e3432e1bc.txt",
+        "line": 1,
+        "role": "artifact",
+        "timestamp": ""
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3618,
+      "sha256": "4f05389071ef3309a728b4dac1a13635c19a3fd29045358df6513dacab5b5f4f",
+      "source": {
+        "path": "darth-vader/sessions/skills-prompts/sha256/4f/4f05389071ef3309a728b4dac1a13635c19a3fd29045358df6513dacab5b5f4f.txt",
+        "line": 1,
+        "role": "artifact",
+        "timestamp": ""
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 8778,
+      "sha256": "7d8d936900950bc05448c365b6f8c2aa91e68e34b0a3ca87d9b1c945ea103588",
+      "source": {
+        "path": "kowalski/sessions/46c4749c-49e2-4724-8522-233fd2f3e530.jsonl",
+        "line": 190,
+        "role": "summary",
+        "timestamp": "2026-08-09T10:59:54.254Z"
+      },
+      "disposition": "proposal",
+      "reason": "Busca histórica demonstrou lacuna de template, não resposta negativa do cliente; manter UNKNOWN e identidadeCNS.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+      "proposal_text": "A arqueologia histórica Capixaba023218 e Celi023879 encontrou28/47 e29/47 controles, respectivamente; os19 e18 restantes não existiam no template legado de15itens. As respostas recuperadas eram L2, não L1, e não houve reutilização entreCNS. Ausência em template/fonte não equivale a não conformidade nem autoriza preencher resposta: manter UNKNOWN com proveniência e obter evidência própria do CNS. PASS da busca não significa47/47 completos nem autorização de preview/publicação.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Busca histórica demonstrou lacuna de template, não resposta negativa do cliente; manter UNKNOWN e identidadeCNS.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3615,
+      "sha256": "2b2e39bfe027457a15003f9c898339fc8d2cd363bc6c2644f0e593316f75e53a",
+      "source": {
+        "path": "darth-vader/sessions/skills-prompts/sha256/2b/2b2e39bfe027457a15003f9c898339fc8d2cd363bc6c2644f0e593316f75e53a.txt",
+        "line": 1,
+        "role": "artifact",
+        "timestamp": ""
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 41634,
+      "sha256": "c4b5c16e5573f57cc929feb19d2ad0432dcba8f2e6183b50f1224f3d72ddf75b",
+      "source": {
+        "path": "sentinel/sessions/d205119e-65c8-4af7-a652-5b2e5a96a6e7.jsonl",
+        "line": 969,
+        "role": "summary",
+        "timestamp": "2026-07-31T21:12:06.095Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 8856,
+      "sha256": "03ebbc136cdb60231af20a2def8148916fdee732d65dc34353fad4e092bc384f",
+      "source": {
+        "path": "kowalski/sessions/502ca998-5e6d-42b8-9666-5657a57f9d0a.jsonl",
+        "line": 121,
+        "role": "summary",
+        "timestamp": "2026-07-29T09:01:12.804Z"
+      },
+      "disposition": "already_represented",
+      "reason": "Conflito CTM016/022 e correção documental do freeze estão preservados. PASS de runtime e correção documental não são PASS da implementaçãoEP02.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Conflito CTM016/022 e correção documental do freeze estão preservados. PASS de runtime e correção documental não são PASS da implementaçãoEP02.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 29718,
+      "sha256": "0f1f177a77da7801fa168467807422ac4089f4e0e95e5e710ee2d7ac94310853",
+      "source": {
+        "path": "main/sessions/15310be7-b0eb-431a-9493-1b6a7ce97d55.trajectory.jsonl",
+        "line": 467,
+        "role": "user",
+        "timestamp": "2026-08-04T18:38:56.732Z"
+      },
+      "disposition": "proposal",
+      "reason": "Usuário distinguiu explicitamente foundation de reintegração; ponto essencial para não encerrar sem interconexão real.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive.md",
+      "proposal_text": "Foundation do Brain não concluiu reintegração: no baseline histórico havia107 links quebrados e46 notas uncategorized/órfãs apesar de Operational Health1.0. A fase11 separou diagnóstico, reintegração em lotes e Commit Link Gate para novos conteúdos. Métrica estrutural saudável não substitui ligação semântica válida, cobertura de conteúdo e busca útil; números pertencem ao baseline de04/08 e não descrevem o presente.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Usuário distinguiu explicitamente foundation de reintegração; ponto essencial para não encerrar sem interconexão real.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 39678,
+      "sha256": "05b00aa3386ff340f98d3c9a30273c7f564e6f5e21723e4643edc67ded59dfe9",
+      "source": {
+        "path": "robotnik/sessions/a4d598e9-3b59-4623-8010-9661e5a5cc71.jsonl",
+        "line": 227,
+        "role": "summary",
+        "timestamp": "2026-07-17T13:32:16.431Z"
+      },
+      "disposition": "already_represented",
+      "reason": "Obrigatoriedade Kling histórica foi superada expressamente na nota atual. Não reativar login, instalação ou compra; direção visual e gate de publicação preservados.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Obrigatoriedade Kling histórica foi superada expressamente na nota atual. Não reativar login, instalação ou compra; direção visual e gate de publicação preservados.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 8982,
+      "sha256": "997c666497369012eec8d8c11456a6822cebd0a87bd92fd32b0d7e3a0f090447",
+      "source": {
+        "path": "kowalski/sessions/771d68e4-21c3-405b-8f51-2585c6face6a.jsonl",
+        "line": 136,
+        "role": "summary",
+        "timestamp": "2026-07-30T11:22:51.078Z"
+      },
+      "disposition": "proposal",
+      "reason": "Fonte explicita representação exata de CNS e separação entre definição de contrato e binding real.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+      "proposal_text": "No contrato histórico Serventia Identity revision2, CNS era a âncora em serventia_id: string JSON UTF-8 de exatamente seis dígitos decimais ASCII, regex ^[0-9]{6}$, preservando zeros à esquerda. Aprovar o documento não selecionava nem vinculava uma serventia real; binding exigia entrada autoritativa e confirmação próprias. O recibo não comprova binding atual nem substitui validação da identidade na fonte oficial.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Fonte explicita representação exata de CNS e separação entre definição de contrato e binding real.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30093,
+      "sha256": "bd3c9f795a93d7bb4535f6d82c5c9940623a6e3c5f10e1b4184451fb410a5dd1",
+      "source": {
+        "path": "main/sessions/1ffd6aca-47b7-4b22-b6d3-b65502adbc33.trajectory.jsonl",
+        "line": 245,
+        "role": "user",
+        "timestamp": "2026-07-08T17:24:34.077Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Entrega transitória de credencial via Drive e código OAuth, sem conhecimento permanente a extrair. Não copiar segredo/código/link para Brain; o pedido de apagar a planilha após uso não comprova que isso ocorreu nem exige rotação para excluir o log.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Entrega transitória de credencial via Drive e código OAuth, sem conhecimento permanente a extrair. Não copiar segredo/código/link para Brain; o pedido de apagar a planilha após uso não comprova que isso ocorreu nem exige rotação para excluir o log.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 9516,
+      "sha256": "7131f0610ce4b9dd4dde62200ee8eb33eb10990ce1ad422ef224fa29fb3a2cd2",
+      "source": {
+        "path": "kowalski/sessions/b0811e82-539f-4436-895b-130a7255078c.jsonl",
+        "line": 136,
+        "role": "summary",
+        "timestamp": "2026-07-23T13:29:00.358Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Checkpoint histórico do Sentinel, com percentuais, contagens e ações futuras. Estado posterior e contratos canônicos preservados; não converter readiness parcial ou ausência de job daquela data em estado atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Checkpoint histórico do Sentinel, com percentuais, contagens e ações futuras. Estado posterior e contratos canônicos preservados; não converter readiness parcial ou ausência de job daquela data em estado atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 8985,
+      "sha256": "553828e6e5cb9d18c12827af8eddea2c77b341773a4334694a8a6b683c207098",
+      "source": {
+        "path": "kowalski/sessions/771d68e4-21c3-405b-8f51-2585c6face6a.jsonl",
+        "line": 193,
+        "role": "summary",
+        "timestamp": "2026-07-30T14:29:41.767Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30522,
+      "sha256": "7529e67e14fc4091d973ce9e43edf197a4131cb7f5491d93bc1292191ef7d46b",
+      "source": {
+        "path": "main/sessions/2b939611-9a39-4cc7-b039-508a2723d250.trajectory.jsonl",
+        "line": 3,
+        "role": "user",
+        "timestamp": "2026-07-28T12:08:09.572Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "risks": [
+        "Proposta de revisão; não autoriza exclusão física. História não comprova estado atual."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-a10.json",
+      "root_reason": "Catálogo de ferramentas ou recibo/brief de etapa histórica, sem novo fato operacional durável além dos contratos e marcos preservados. Hash, ordem ou autorização antigos não autorizam repetição nem provam ambiente atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 9701,
+      "sha256": "81215dffd006633356a0777e8b2d90745a493a311e8e7ac4ff946d5742c16ff3",
+      "source": {
+        "path": "kowalski/sessions/c851f9e0-ffe1-4766-8477-91c8d960f279.jsonl",
+        "line": 166
+      },
+      "disposition": "already_represented",
+      "reason": "Revisão EP01 PASS e predecessor EP02 ainda documental/não executável já preservados; continuidade da revisão não prova implementação nem liberação posterior.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Revisão EP01 PASS e predecessor EP02 ainda documental/não executável já preservados; continuidade da revisão não prova implementação nem liberação posterior.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 33323,
+      "sha256": "5fd6caf40ff02fe26b0644edc609e251a99f6673354f3ed9cb73dc0b6fd2f1b3",
+      "source": {
+        "path": "main/sessions/84ca6b72-bc51-435d-a83f-410d78bacc39.jsonl.deleted.2026-09-21T15-00-07.867Z",
+        "line": 2
+      },
+      "disposition": "already_represented",
+      "reason": "Ordem Goal4 preserva Sentinel primário, donors shadow/fallback e canário sem cliente; qualificação de aposentadoria é diferente de remoção. Fronteiras estão registradas na nota Sentinel.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/60-AGENTES/SENTINEL.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Ordem Goal4 preserva Sentinel primário, donors shadow/fallback e canário sem cliente; qualificação de aposentadoria é diferente de remoção. Fronteiras estão registradas na nota Sentinel.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 34322,
+      "sha256": "0127274598610c007e17f883ce82e7213c2af4563dacc01df4d70710d241f806",
+      "source": {
+        "path": "main/sessions/a82176a4-28ae-412d-b6df-31093b43836e.trajectory.jsonl",
+        "line": 374
+      },
+      "disposition": "already_represented",
+      "reason": "Portfolio CPIW com identidade/fonte incompleta permanece bloqueado; completar referência não autoriza commit. Nota do projeto registra consolidação e limites; anexos/contagens do checkpoint não são estado atual.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Portfolio CPIW com identidade/fonte incompleta permanece bloqueado; completar referência não autoriza commit. Nota do projeto registra consolidação e limites; anexos/contagens do checkpoint não são estado atual.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 36929,
+      "sha256": "a0d8f5b045230705691e4303c75e35c3dd17abc10cefad770dcda0f8f16aaf07",
+      "source": {
+        "path": "main/sessions/d9cac9e3-a45d-47be-af58-92e4992c7515.trajectory.jsonl",
+        "line": 846
+      },
+      "disposition": "already_represented",
+      "reason": "Proposta one-shot ARX em organização interna não é execução; payload privado sem nodeId e criação diferente de fechamento estão preservados no contrato ARX. Token/callback histórico não deve ser memória.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Proposta one-shot ARX em organização interna não é execução; payload privado sem nodeId e criação diferente de fechamento estão preservados no contrato ARX. Token/callback histórico não deve ser memória.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 37058,
+      "sha256": "a889ec145a72039cd6db7b46a37890263e8d6f438f98bfe7e190bdbc055e669f",
+      "source": {
+        "path": "main/sessions/e1071326-76e9-4d21-a68f-b05867a6655e.trajectory.jsonl",
+        "line": 646
+      },
+      "disposition": "proposal",
+      "reason": "Correção concreta de metadados de arquivo vazio evita falso bloqueio por string dependente do conteúdo/locale.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "proposal_text": "Validar tipo de arquivo por invariantes, não igualdade com a descrição textual stat %F: um arquivo regular vazio pode aparecer como regular empty file. Para transcript, conferir separadamente arquivo regular, ausência de symlink, proprietário/grupo, modo, links e tamanho esperado; um transcript inicial vazio e final não vazio têm critérios diferentes. O caso antigo não autoriza reexecutar o handoff.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Correção concreta de metadados de arquivo vazio evita falso bloqueio por string dependente do conteúdo/locale.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 37505,
+      "sha256": "da6e0224a1dd9201afc5f37d6d8db2718355162d2f84f633b46b0ebae094a5cd",
+      "source": {
+        "path": "main/sessions/ed1749d9-3dc6-4c58-b646-10616063c144.trajectory.jsonl",
+        "line": 3
+      },
+      "disposition": "proposal",
+      "reason": "Erro Git por ownership foi rotulado indevidamente como divergência de HEAD.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "proposal_text": "Ao verificar checkout de outro usuário num wrapper privilegiado, separar falha de confiança/ownership do Git de divergência real de HEAD. Executar a inspeção com a identidade correta do proprietário, conforme autorização, antes de diagnosticar código alterado. Não ampliar safe.directory globalmente para esconder erro; validar novamente o artefato quando corrigir o wrapper.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Erro Git por ownership foi rotulado indevidamente como divergência de HEAD.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3398,
+      "sha256": "34271bd6cb700aefd227920c2a7f42f6d3c15b2e1c04b42a91f46bd64f6e80cc",
+      "source": {
+        "path": "darth-vader/sessions/059fb396-ade3-419b-abfd-a35478b54f71.jsonl",
+        "line": 144
+      },
+      "disposition": "proposal",
+      "reason": "Decisões materiais de pré-check NFSe antecedem emissão já consolidada; descontos e chave cadastral não devem ser inferidos em novo lote.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "proposal_text": "No lote Bikon agosto/2026 de 27 notas, Hebert esclareceu que diferenças entre soma e total eram descontos concedidos e que os sufixos aracruz/joão neiva identificavam qual cadastro/endereço Celi usar, com os dados mestres completos na emissão. Isso resolve aquele lote e não autoriza tratar qualquer divergência futura como desconto. Preparar notas, boletos/remessa e rascunhos é distinto de enviar/transmitir.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Decisões materiais de pré-check NFSe antecedem emissão já consolidada; descontos e chave cadastral não devem ser inferidos em novo lote.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3401,
+      "sha256": "3b3b7966cd185417cac455939c723b6b086d00bb662987d74e18f04bd2ac4e13",
+      "source": {
+        "path": "darth-vader/sessions/059fb396-ade3-419b-abfd-a35478b54f71.jsonl",
+        "line": 157
+      },
+      "disposition": "proposal",
+      "reason": "Continuação do mesmo lote agosto: 27 notas/total e emissão subsequente já consolidados, separação de envio preservada. Detalhe de desconto/cadastro foi proposto com3398 neste lote; numeradores de julho não devem ser reutilizados.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "context_proofs": [
+        {
+          "text_id": 3398,
+          "basis": "Mesmo lote e decisões de pré-check; proposta conjunta nesta revisão, requer integração antes de encerramento."
+        }
+      ],
+      "proposal_text": "Integrar com3398 a decisão histórica do lote agosto: divergências foram descontos confirmados por Hebert, parênteses identificavam cadastro/endereço correto e dados/sequência devem vir do lote atual, sem herdar numeradores de julho. Emissão/preparação não implica envio/transmissão.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Continuação do mesmo lote agosto: 27 notas/total e emissão subsequente já consolidados, separação de envio preservada. Detalhe de desconto/cadastro foi proposto com3398 neste lote; numeradores de julho não devem ser reutilizados.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30569,
+      "sha256": "0f43c26b6a1e6b196e59d201dd95f550077418fbb4da611e92857ba90302bc62",
+      "source": {
+        "path": "main/sessions/3084dcd3-f199-4395-9127-900fa1a1cc18.trajectory.jsonl",
+        "line": 277
+      },
+      "disposition": "already_represented",
+      "reason": "Runtime Herald, PT-BR, autenticação tailnet e onboarding por CNS constam na nota Prov213; resposta 1 à pergunta antiga não configura uma nova declaração atual. Projeção/access metadata não deve ser confundida com mutação da entrevista.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Runtime Herald, PT-BR, autenticação tailnet e onboarding por CNS constam na nota Prov213; resposta 1 à pergunta antiga não configura uma nova declaração atual. Projeção/access metadata não deve ser confundida com mutação da entrevista.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30575,
+      "sha256": "d34720701f379a2b0addda19e886b4a2e19f1e5328bb98bba9c741ab2c0a0ec1",
+      "source": {
+        "path": "main/sessions/3084dcd3-f199-4395-9127-900fa1a1cc18.trajectory.jsonl",
+        "line": 326
+      },
+      "disposition": "already_represented",
+      "reason": "Runtime Herald, PT-BR, autenticação tailnet e onboarding por CNS constam na nota Prov213; resposta 1 à pergunta antiga não configura uma nova declaração atual. Projeção/access metadata não deve ser confundida com mutação da entrevista.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Runtime Herald, PT-BR, autenticação tailnet e onboarding por CNS constam na nota Prov213; resposta 1 à pergunta antiga não configura uma nova declaração atual. Projeção/access metadata não deve ser confundida com mutação da entrevista.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 37799,
+      "sha256": "d400623ec66a42a551ddf42103cf36d39d37a602453be8be28e1463ee15f5e98",
+      "source": {
+        "path": "main/sessions/f800daa6-b3d5-4695-b8a6-dcda6b383d5a.trajectory.jsonl",
+        "line": 390
+      },
+      "disposition": "already_represented",
+      "reason": "Direção Notebook/Freire em favor da Bikon, bruto separado do líquido, sem caixa sintético e clearing Claude já registrados no FIP; autorização histórica não altera números atuais.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Direção Notebook/Freire em favor da Bikon, bruto separado do líquido, sem caixa sintético e clearing Claude já registrados no FIP; autorização histórica não altera números atuais.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30095,
+      "sha256": "79a31d139532995aa8d4e49fbe9aeda76bca0bd670184e07029c4453dd7ff669",
+      "source": {
+        "path": "main/sessions/1ffd6aca-47b7-4b22-b6d3-b65502adbc33.trajectory.jsonl",
+        "line": 258
+      },
+      "disposition": "already_represented",
+      "reason": "Transporte de credencial por Drive/OAuth é antecedente histórico superado pelo contrato de segredo local; não preservar valor de callback nem impor rotação por mera ocorrência antiga. Pergunta sobre gateway é incompleta e sem novo diagnóstico.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Transporte de credencial por Drive/OAuth é antecedente histórico superado pelo contrato de segredo local; não preservar valor de callback nem impor rotação por mera ocorrência antiga. Pergunta sobre gateway é incompleta e sem novo diagnóstico.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30524,
+      "sha256": "afb0c66d544798ee27217904f6871d1b9d8b70b83874323f0271fcb9dcd999fd",
+      "source": {
+        "path": "main/sessions/2b939611-9a39-4cc7-b039-508a2723d250.trajectory.jsonl",
+        "line": 82
+      },
+      "disposition": "proposal",
+      "reason": "Correção de fixture CTM017 explicita precedência de colisão e impede alterar fixture que prova outro caso.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+      "proposal_text": "Na definição histórica do Command Envelope, mesmo Command ID com bytes canônicos divergentes deveria resultar DATA_COMMAND_ID_COLLISION antes da avaliação de provenance/scope/key. CTM017 exigiu fixture própria com scope/key/provenance divergentes, preservando CTM018 que precisava de scope/key iguais. Teste deve representar todas as condições declaradas sem destruir a prova de outro cenário; revisão documental PASS não equivale a implementação autorizada.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Correção de fixture CTM017 explicita precedência de colisão e impede alterar fixture que prova outro caso.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30533,
+      "sha256": "8ebd7b700e20561583559f565d886436e0eb6af64327c8a736ff7d96c6488081",
+      "source": {
+        "path": "main/sessions/2bedd2e0-5db2-43da-b3e0-e374aa7c58f9.trajectory.jsonl",
+        "line": 212
+      },
+      "disposition": "proposal",
+      "reason": "Correção do root-script reúne invariantes concretos ausentes da nota curta do pacote.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Pacote-selado-auto-reprodutivel-antes-de-privilegio-operacional.md",
+      "proposal_text": "Em scripts privilegiados, mantenha o descritor retornado por mkstemp; não combine arquivo já criado com nova abertura O_EXCL do mesmo caminho. Rollback só remove recursos criados/iniciados pela própria execução, com flags por recurso e sem agir após preflight sem mutação. Verifique hash por caminho exato, não presença em lista; processo/listener inalterado não prova teste funcional Telegram. Fonte revisada e cópia privilegiada executada devem manter identidade de bytes.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Correção do root-script reúne invariantes concretos ausentes da nota curta do pacote.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 33557,
+      "sha256": "240c6140331fc29659e9c017d02956a12f9a18701d34939409b130d1182a956c",
+      "source": {
+        "path": "main/sessions/8d1f28a5-5812-4985-93b8-0d1eb0558ebc.trajectory.jsonl",
+        "line": 995
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Texto de processo interno repetitivo sobre envio e canais, sem nova decisão além de uma pergunta financeira ainda aberta. Não é conhecimento durável nem instrução vigente.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Texto de processo interno repetitivo sobre envio e canais, sem nova decisão além de uma pergunta financeira ainda aberta. Não é conhecimento durável nem instrução vigente.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30704,
+      "sha256": "0926bdaa96f061e147d17c33acf45bcf269910164954607d7359cc7ae04bef47",
+      "source": {
+        "path": "main/sessions/368a93e2-84f3-4be9-9557-685646c6d2bf.jsonl",
+        "line": 76
+      },
+      "disposition": "proposal",
+      "reason": "Estado workshop e árvore canônica apresentavam hashes/versionamentos diferentes sem mudança funcional; separar embalagem de runtime evita falso aceite.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md",
+      "proposal_text": "Na preparação histórica instagram-brand-director v2.1.1, a árvore canônica tinha64 arquivos e o workshop66 ao incluir metadata. Versão proposta e metadata administrativa ainda divergiam, apesar de testes de build passarem. Definir quais arquivos entram no hash e distinguir drift administrativo de versão ativa; pré-flight técnico não comprova peça final, consumo de crédito ou publicação. Não reativar aquela versão antiga.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Estado workshop e árvore canônica apresentavam hashes/versionamentos diferentes sem mudança funcional; separar embalagem de runtime evita falso aceite.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 37043,
+      "sha256": "bf3ce27d035f50f437391ace6d09da14fa33a5555f04f27190ac493db9de5bfb",
+      "source": {
+        "path": "main/sessions/e1071326-76e9-4d21-a68f-b05867a6655e.trajectory.jsonl",
+        "line": 324
+      },
+      "disposition": "proposal",
+      "reason": "Exit code zero da exportação foi incorretamente confundido com prova de deploy.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "proposal_text": "Sucesso do comando que exporta evidência prova a exportação, não a operação descrita. Conferir janela temporal, identidade dos bytes, manifesto final, canário e estado do serviço. No caso Portal Stage1B, só havia evidência anterior de falha e serviço ausente; execução do pacote novo ficou NOT_PROVEN apesar do export retornar0. Não inferir sucesso nem repetir efeito sem reconciliação.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Exit code zero da exportação foi incorretamente confundido com prova de deploy.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 32519,
+      "sha256": "9cd5421c12648c8307ea39f9a206eed5f347f347caa9bbb653a0a9d7614f7698",
+      "source": {
+        "path": "main/sessions/7748b202-c62b-4971-bced-1b241719dc7e.trajectory.jsonl",
+        "line": 1055
+      },
+      "disposition": "proposal",
+      "reason": "Tailscale conectado e JSON aplicado não bastaram para habilitar proxy; preservar separação de gates.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "proposal_text": "Acesso via Tailscale Serve envolve três condições independentes: tailnet permite Serve, identidade local tem autoridade para configurar o daemon e proxy efetivamente aponta ao serviço em loopback. Tailscale conectado/JSON aplicado não comprova acesso remoto. Verificar de cliente autorizado; Serve privado e Funnel público têm exposições distintas.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Tailscale conectado e JSON aplicado não bastaram para habilitar proxy; preservar separação de gates.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 32525,
+      "sha256": "ea39b7be1f5ac517cb6cae26fe74f162a53745b44b6de941015b89c4ed0e49bb",
+      "source": {
+        "path": "main/sessions/7748b202-c62b-4971-bced-1b241719dc7e.trajectory.jsonl",
+        "line": 1105
+      },
+      "disposition": "proposal",
+      "reason": "Auditoria detectou child_process e proxy sem configurar; finding não equivale a invasão confirmada.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md",
+      "proposal_text": "Auditoria estática que sinaliza child_process em integração ampla indica capacidade a revisar, não invasão comprovada. Avaliar escopos e scripts reais antes de quarentena/correção. Quando há proxy, confiar apenas nas origens verificadas; runtime/filesystem amplos aceitáveis num cenário solo não demonstram isolamento multiusuário. Os findings de julho não são estado atual.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Auditoria detectou child_process e proxy sem configurar; finding não equivale a invasão confirmada.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 32975,
+      "sha256": "acf04bc1d76c1075e419aef8c4a00352ac5d3c24a10f2bffe73d2d61dca761c3",
+      "source": {
+        "path": "main/sessions/80195073-8bf5-4b59-b4f5-c9342fb9f4d4.trajectory.jsonl",
+        "line": 554
+      },
+      "disposition": "already_represented",
+      "reason": "Integração Meta, modo draft e publicação sob autorização estão preservados; credencial/data de expiração antigas não são estado atual. Pergunta sobre pesquisar Instagram não comprova capacidade geral de varredura.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Integração Meta, modo draft e publicação sob autorização estão preservados; credencial/data de expiração antigas não são estado atual. Pergunta sobre pesquisar Instagram não comprova capacidade geral de varredura.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 8744,
+      "sha256": "38dc20ad449080e589d1e346ad53cd492463cf6fefe283e1202749bd6cdd6808",
+      "source": {
+        "path": "kowalski/sessions/3b4bd43c-ae6a-49f6-97ab-c6c2d1c54e3e.jsonl",
+        "line": 325
+      },
+      "disposition": "already_represented",
+      "reason": "Diagnóstico OAuth separava GravityZone saudável de NinjaOne401, uma tentativa/post, state e persistência atômica local; contrato de segredo e fonte já preservado. Expiração/valores históricos não são memória cognitiva.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Diagnóstico OAuth separava GravityZone saudável de NinjaOne401, uma tentativa/post, state e persistência atômica local; contrato de segredo e fonte já preservado. Expiração/valores históricos não são memória cognitiva.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 41636,
+      "sha256": "3c638516e6d3e3b80067d54436943178008c3f97a3d498b7b6ec1055e0d077b3",
+      "source": {
+        "path": "sentinel/sessions/d205119e-65c8-4af7-a652-5b2e5a96a6e7.jsonl",
+        "line": 984
+      },
+      "disposition": "already_represented",
+      "reason": "Par final independente, autoria separada da validação e reuso de testes somente com inputs idênticos estão registrados. Checkpoint intermediário não é freeze final nem autoriza rerun.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Par final independente, autoria separada da validação e reuso de testes somente com inputs idênticos estão registrados. Checkpoint intermediário não é freeze final nem autoriza rerun.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 8975,
+      "sha256": "7c5ab99ab6efbb6c33b86231b32f32587272167ec36eb88cd739b057566de0eb",
+      "source": {
+        "path": "kowalski/sessions/6f95e29e-5de3-4c4e-afd1-19ae723b7639.trajectory.jsonl",
+        "line": 342
+      },
+      "disposition": "already_represented",
+      "reason": "Par final independente, autoria separada da validação e reuso de testes somente com inputs idênticos estão registrados. Checkpoint intermediário não é freeze final nem autoriza rerun.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Par final independente, autoria separada da validação e reuso de testes somente com inputs idênticos estão registrados. Checkpoint intermediário não é freeze final nem autoriza rerun.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 9680,
+      "sha256": "92fb4fdff580fa43167550a8042a2c93806386e0d80953e3866a835c99b6d748",
+      "source": {
+        "path": "kowalski/sessions/c2bd1e36-2744-43d9-b71a-dab3a49d9c6c.jsonl",
+        "line": 337
+      },
+      "disposition": "proposal",
+      "reason": "Busca de cron demonstra autoridade SQLite e importância de identidade exata do job.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/Brain-Enterprise.md",
+      "proposal_text": "No scheduler SQLite, storePath legado exibido por CLI não prova que jobs.json seja fonte ativa. Identificar storage/sqlitePath e job exato por nome/ID/contrato. Se rotina pedida não é encontrada, não editar job vizinho porque horário/agente parecem próximos; ausência naquela consulta não comprova inexistência atual. Horário histórico de helpdesk não altera agenda Brain vigente.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Busca de cron demonstra autoridade SQLite e importância de identidade exata do job.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 41432,
+      "sha256": "f648e55b349b642d46e7203762454103cef59a730e9d36412b59b20986f36bac",
+      "source": {
+        "path": "sentinel/sessions/3343a5e4-a962-4808-b876-e1df2a04b10e.jsonl",
+        "line": 141
+      },
+      "disposition": "already_represented",
+      "reason": "Inventário NinjaOne e capacidade parcial não provam target isolado/restaurável; ACK/start, autorização e ausência de inferência constam da regra de evidência de ambiente.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Capacidade-tecnica-nao-substitui-evidencia-de-ambiente.md",
+      "root_disposition": "already_represented",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Inventário NinjaOne e capacidade parcial não provam target isolado/restaurável; ACK/start, autorização e ausência de inferência constam da regra de evidência de ambiente.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 29795,
+      "sha256": "ad52b3c5157cb286c79630eb35ba9f5ead1559abb9c8b68736e98471c0a1c95e",
+      "source": {
+        "path": "main/sessions/176bbbfe-aea4-498e-8d0e-5ec1a7f691ae.trajectory.jsonl",
+        "line": 11
+      },
+      "disposition": "proposal",
+      "reason": "Blueprint familiar é projeto distinto do FIP corporativo e possui requisitos duráveis propostos.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Historico/Controle-financeiro-familiar.md",
+      "proposal_text": "Blueprint familiar importado em28/06/2026 descreve nota fiscal→compra/cabeçalho+itens categorizados em transação e dashboard por categoria. Planejava ciclo orçamentário dia5 ao4 com tetos definidos no painel, e lista assistida alimentada pela família durante a compra, não automaticamente pela nota; cruzamento com nota seria opcional. Propunha usuário identificado, domínio familiar isolado e MFA, com stack Python/Flask/SQLite só de referência. Arquivo era estrutura sem dados pessoais; declarações de implementação pertencem ao Herald de origem, não provam implantação nesta VPS.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Blueprint familiar é projeto distinto do FIP corporativo e possui requisitos duráveis propostos.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 33560,
+      "sha256": "9645c858506b309b33f7a0b0ced39bfaffc6fbef2ce12d7ad2790c1818897ec8",
+      "source": {
+        "path": "main/sessions/8d1f28a5-5812-4985-93b8-0d1eb0558ebc.trajectory.jsonl",
+        "line": 1016
+      },
+      "disposition": "proposal",
+      "reason": "Decisões financeiras específicas ainda não explicitadas na nota FIP; preservar o escopo sem generalizar descritor ambíguo.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "proposal_text": "Na entrevista de16/08/2026, Hebert autorizou MERCADOLIVRE*MERCADOLI como empresa/equipamento para suas parcelas e confirmou YOUSE AUTO como o mesmo seguro veicular recorrente; relato posterior registrou aplicação. Para o item MP*HEBERTMATTEDI deR$100,55 respondeu empresa/mercado, sem que esse descritor se torne regra global porque aparecia com naturezas diferentes. São decisões históricas por item/série; não executar nova classificação nem criar caixa ao consolidar memória.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Decisões financeiras específicas ainda não explicitadas na nota FIP; preservar o escopo sem generalizar descritor ambíguo.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 36614,
+      "sha256": "23b63bc4b582f23df47523615558de8c2d0ac5c2f30ba6d3a3d0588c2324a5cc",
+      "source": {
+        "path": "main/sessions/d4e04ea5-4f1d-46bc-8aaa-29c8f4ab4a4e.trajectory.jsonl",
+        "line": 3
+      },
+      "disposition": "proposal",
+      "reason": "Erro de superfície de aprovação é reutilizável; credencial histórica deve ser omitida.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md",
+      "proposal_text": "Sugestão de instalação apresentada na interface Codex não foi entregue automaticamente ao usuário no Telegram. Antes de afirmar que há uma aprovação visível, conferir qual interface/canal realmente a recebe. No incidente Robotnik, corrigiu-se a alegação e o fluxo de integração; valores OAuth não devem compor memória cognitiva, nem a integração antiga deve ser reativada por esta nota.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Erro de superfície de aprovação é reutilizável; credencial histórica deve ser omitida.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 33680,
+      "sha256": "d98e69a5ba4cc7333479a2c5d7a055e23c868a7d4e61b759fc71bd804844babd",
+      "source": {
+        "path": "main/sessions/8f3d90c4-f51c-4024-b546-81cf3642c812.trajectory.jsonl",
+        "line": 1129
+      },
+      "disposition": "proposal",
+      "reason": "Ordem corrigida distinguiu hash da autorização do hash OAS3 e proibiu contrato substituto arbitrário.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/60-AGENTES/SENTINEL.md",
+      "proposal_text": "Contrato OAS3 deve ser autenticado nos bytes do YAML/JSON local, com proveniência ao pacote autorizado, paths/operações/schemas e refs resolvíveis offline. Hash de Markdown da autorização não identifica OAS3. Zero candidato ou múltiplos sem identidade inequívoca bloqueiam; não reconstruir do HTML nem escolher outro parseável. Approval deve vincular execução, caminho, hash, finalidade, uso único/expiração; descrever uma API não autoriza chamá-la.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Ordem corrigida distinguiu hash da autorização do hash OAS3 e proibiu contrato substituto arbitrário.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 39779,
+      "sha256": "7bf400e65bbfb6ee406f2ca3614dde71568c856bcdf868ac7a3b17b6a24bc30b",
+      "source": {
+        "path": "robotnik/sessions/bba0b036-e43b-4376-a8b1-067b88620793.trajectory.jsonl",
+        "line": 318
+      },
+      "disposition": "proposal",
+      "reason": "Painel possui implementação/aceite relatados e solicitação posterior de edição de dados; não há nota temática equivalente encontrada.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+      "proposal_text": "Painel de Medições e Faturamento foi desenvolvido em18/08/2026 por Robotnik como owner, Codex executor/revisor, em workspace-robotnik/painel-medicoes-faturamento: React/TypeScript, Node/Express e SQLite. Fechamento relatou21 testes,5 clientes/60 ciclos, persistência,CSV/HTML e correções de datas inválidas, pagamento fora de ordem,status histórico enganoso e teste tocando DB real. Preview local4175 não era publicação pública; acesso tailnet foi entregue. Hebert aprovou aparência e pediu área para atualizar informações. Login por cookie HTTP-only/API protegida foi proposta posterior, sem conclusão demonstrada pelos trechos aqui revistos; verificar runtime antes de presumir proteção atual.",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "pending_review",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Painel possui implementação/aceite relatados e solicitação posterior de edição de dados; não há nota temática equivalente encontrada.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 39524,
+      "sha256": "b98e1a26e5e358e1cafdf48f751740420f59b0e6856d46272eee8b52a575594f",
+      "source": {
+        "path": "robotnik/sessions/52c78f7c-a2e6-4488-ab22-4dd418db504f.jsonl",
+        "line": 20
+      },
+      "disposition": "proposal",
+      "reason": "Deferred anterior reconciliado pelo contexto39779 do painel; proposta distingue build relatado de login apenas prometido.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+      "proposal_text": "Consolidar com39779 o painel interno, owner Robotnik/executor Codex, stack React/Node/SQLite e acesso privado.39524 anuncia build;39536 relata PASS local sem publicação nativa;39542 propõe compartilhamento tailnet distinto de público;39545 promete login/cookie e não prova implementação. Não afirmar proteção atual sem verificação.",
+      "context_proofs": [
+        {
+          "text_id": 39779,
+          "sha256": "7bf400e65bbfb6ee406f2ca3614dde71568c856bcdf868ac7a3b17b6a24bc30b"
+        }
+      ],
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Deferred anterior reconciliado pelo contexto39779 do painel; proposta distingue build relatado de login apenas prometido.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 39536,
+      "sha256": "8c8d9496fbe6576a1764f6c941a5ec1e5cc8d326df2e783e50a3f6f2c177ddcb",
+      "source": {
+        "path": "robotnik/sessions/52c78f7c-a2e6-4488-ab22-4dd418db504f.jsonl",
+        "line": 32
+      },
+      "disposition": "proposal",
+      "reason": "Deferred anterior reconciliado pelo contexto39779 do painel; proposta distingue build relatado de login apenas prometido.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+      "proposal_text": "Consolidar com39779 o painel interno, owner Robotnik/executor Codex, stack React/Node/SQLite e acesso privado.39524 anuncia build;39536 relata PASS local sem publicação nativa;39542 propõe compartilhamento tailnet distinto de público;39545 promete login/cookie e não prova implementação. Não afirmar proteção atual sem verificação.",
+      "context_proofs": [
+        {
+          "text_id": 39779,
+          "sha256": "7bf400e65bbfb6ee406f2ca3614dde71568c856bcdf868ac7a3b17b6a24bc30b"
+        }
+      ],
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Deferred anterior reconciliado pelo contexto39779 do painel; proposta distingue build relatado de login apenas prometido.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 39542,
+      "sha256": "fb1c44e48b3e5ab268c0e5069afbf0ece4ca7aa556c548ccc3be733dffd39f33",
+      "source": {
+        "path": "robotnik/sessions/52c78f7c-a2e6-4488-ab22-4dd418db504f.jsonl",
+        "line": 38
+      },
+      "disposition": "proposal",
+      "reason": "Deferred anterior reconciliado pelo contexto39779 do painel; proposta distingue build relatado de login apenas prometido.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+      "proposal_text": "Consolidar com39779 o painel interno, owner Robotnik/executor Codex, stack React/Node/SQLite e acesso privado.39524 anuncia build;39536 relata PASS local sem publicação nativa;39542 propõe compartilhamento tailnet distinto de público;39545 promete login/cookie e não prova implementação. Não afirmar proteção atual sem verificação.",
+      "context_proofs": [
+        {
+          "text_id": 39779,
+          "sha256": "7bf400e65bbfb6ee406f2ca3614dde71568c856bcdf868ac7a3b17b6a24bc30b"
+        }
+      ],
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Deferred anterior reconciliado pelo contexto39779 do painel; proposta distingue build relatado de login apenas prometido.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 39545,
+      "sha256": "35032be3602e916321d58067b7dd8a44369dd74ea4a01e077b286f45da90eb3d",
+      "source": {
+        "path": "robotnik/sessions/52c78f7c-a2e6-4488-ab22-4dd418db504f.jsonl",
+        "line": 41
+      },
+      "disposition": "proposal",
+      "reason": "Deferred anterior reconciliado pelo contexto39779 do painel; proposta distingue build relatado de login apenas prometido.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+      "proposal_text": "Consolidar com39779 o painel interno, owner Robotnik/executor Codex, stack React/Node/SQLite e acesso privado.39524 anuncia build;39536 relata PASS local sem publicação nativa;39542 propõe compartilhamento tailnet distinto de público;39545 promete login/cookie e não prova implementação. Não afirmar proteção atual sem verificação.",
+      "context_proofs": [
+        {
+          "text_id": 39779,
+          "sha256": "7bf400e65bbfb6ee406f2ca3614dde71568c856bcdf868ac7a3b17b6a24bc30b"
+        }
+      ],
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-8.json",
+      "root_reason": "Deferred anterior reconciliado pelo contexto39779 do painel; proposta distingue build relatado de login apenas prometido.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30866,
+      "sha256": "79186a9917eeb6413e48f741bd67c45cddbb5191dae0cd5fdc539aa8230baca1",
+      "source": {
+        "path": "main/sessions/42e691c4-7219-4547-b6d3-b169d509e5b2.trajectory.jsonl",
+        "line": 19
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "É somente aviso de truncamento/tamanho, sem conteúdo substantivo. A existência de truncamento é limite da fonte, não conhecimento cognitivo. Esta classificação do marcador não certifica cobertura dos bytes omitidos nem autoriza excluir seu arquivo antes da checagem global do root.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "É somente aviso de truncamento/tamanho, sem conteúdo substantivo. A existência de truncamento é limite da fonte, não conhecimento cognitivo. Esta classificação do marcador não certifica cobertura dos bytes omitidos nem autoriza excluir seu arquivo antes da checagem global do root.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 35186,
+      "sha256": "283d90375b3a30a026db65903449b182fb1ac71a10e0309e9544c4bf3475b7b3",
+      "source": {
+        "path": "main/sessions/bdb70494-9128-4bb2-9d38-bc9f4ec10964.jsonl",
+        "line": 82
+      },
+      "disposition": "proposal",
+      "reason": "Contexto35187 associa resposta a relatório FIP de15/08/2026; suficiente para registrar decisão histórica sem inventar ID/propagação.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "proposal_text": "Na entrevista de15/08/2026, o item AMAZON BR foi tratado como BUSINESS_DIRECT com evidência ferramenta e propagação NOT_APPLICABLE. O recibo seguinte referencia o relatório20260815T112231Z. Não transformar o fornecedor em regra global: itens AMAZON MARKETPLACE próximos receberam naturezas distintas. Informação é decisão por item; não comprova saldo atual ou nova gravação.",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Contexto35187 associa resposta a relatório FIP de15/08/2026; suficiente para registrar decisão histórica sem inventar ID/propagação.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 30857,
+      "sha256": "5115e6bd438bb752145a59a4db7d50c37e3c9eb2099b3c562ba61b8ba654ee2e",
+      "source": {
+        "path": "main/sessions/42e691c4-7219-4547-b6d3-b169d509e5b2.checkpoint.6fffe929-c1f0-4c80-9ab3-236fbfac1bbe.jsonl",
+        "line": 219
+      },
+      "disposition": "proposal",
+      "reason": "Recibo de correção cadastral é fato histórico delimitado, não precisa ser transformado em auditoria permanente do cadastro.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/20-EMPRESAS/BIKON/cadastro-clientes/README.md",
+      "proposal_text": "Houve correção histórica da cidade de Nicole para CASCAVEL em JSON/CSV/SQLite, com validação relatada naquele momento. Antes de emissão ou envio, usar o cadastro mestre atual; contagem21 clientes/37 emails do recibo não é inventário vigente nem motivo para sobrescrever atualizações posteriores.",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Recibo de correção cadastral é fato histórico delimitado, não precisa ser transformado em auditoria permanente do cadastro.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 34184,
+      "sha256": "60671973abf98d282f5d312e96765d501ae59c884047b99848afe59bac0c4ccf",
+      "source": {
+        "path": "main/sessions/9eca2531-2f7b-4838-800d-d80a00a728b9.trajectory.jsonl",
+        "line": 33
+      },
+      "disposition": "proposal",
+      "reason": "Preferências e papel podem ser preservados em forma cognitiva sem reativar todos os comandos do perfil antigo.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/60-AGENTES/README.md",
+      "proposal_text": "Hebert espera Puppet Master coordenando, delegando, revisando e fechando ciclos, com comunicação PT-BR direta e enxuta, exceções/riscos relevantes e entregas prontas. Formato histórico de pedido→entrega/status→próximo passo é referência de clareza, não regra que suprime explicação necessária. Autonomia não amplia autorização para efeito externo/financeiro/configuração; instruções atuais prevalecem.",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Preferências e papel podem ser preservados em forma cognitiva sem reativar todos os comandos do perfil antigo.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 35651,
+      "sha256": "87e7002fe330e6cde729c6191846121b8c2816316d2cf2c0744d07cfe5727beb",
+      "source": {
+        "path": "main/sessions/c510aed8-3524-4f51-9045-4a3183990562.checkpoint.04409b05-d71b-49d7-9043-1075b667765d.jsonl",
+        "line": 42
+      },
+      "disposition": "proposal",
+      "reason": "Preferências e papel podem ser preservados em forma cognitiva sem reativar todos os comandos do perfil antigo.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/60-AGENTES/README.md",
+      "proposal_text": "Hebert espera Puppet Master coordenando, delegando, revisando e fechando ciclos, com comunicação PT-BR direta e enxuta, exceções/riscos relevantes e entregas prontas. Formato histórico de pedido→entrega/status→próximo passo é referência de clareza, não regra que suprime explicação necessária. Autonomia não amplia autorização para efeito externo/financeiro/configuração; instruções atuais prevalecem.",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Preferências e papel podem ser preservados em forma cognitiva sem reativar todos os comandos do perfil antigo.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 31061,
+      "sha256": "9141ebf44e65a2b08bccb7a1483678524bc37b3286856a86ccc26ae3d5e77aa5",
+      "source": {
+        "path": "main/sessions/4978e8f9-c3b1-4b31-bc8b-e45ef89dca43.jsonl.bak-848-1783461178517",
+        "line": 492
+      },
+      "disposition": "proposal",
+      "reason": "Preferências e papel podem ser preservados em forma cognitiva sem reativar todos os comandos do perfil antigo.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/60-AGENTES/README.md",
+      "proposal_text": "Hebert espera Puppet Master coordenando, delegando, revisando e fechando ciclos, com comunicação PT-BR direta e enxuta, exceções/riscos relevantes e entregas prontas. Formato histórico de pedido→entrega/status→próximo passo é referência de clareza, não regra que suprime explicação necessária. Autonomia não amplia autorização para efeito externo/financeiro/configuração; instruções atuais prevalecem.",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Preferências e papel podem ser preservados em forma cognitiva sem reativar todos os comandos do perfil antigo.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38135,
+      "sha256": "ebb620b0682c1ab83a6fd8e9b1fa52f85b19844d25af580e2cf8df7cdae9ebe1",
+      "source": {
+        "path": "main/sessions/ff9a8eb5-a873-43c0-9c78-a33451053a87.jsonl.bak-38775-1783113241495",
+        "line": 473
+      },
+      "disposition": "proposal",
+      "reason": "Aprovação estética provisória e solicitação de limpeza/importação são decisões diferentes; falta de recibo não invalida o registro do pedido.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "proposal_text": "Hebert aceitou provisoriamente layoutv5 como padrão apesar de insatisfação estética, e pediu descartar simulações e carregar o faturamento de julho na base recém-criada. O trecho registra pedido/autorização daquela etapa, não prova exclusão/importação concluídas nem autorização vigente para limpar dados atuais. Não promover aceitável por enquanto a aprovação definitiva de qualidade.",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Aprovação estética provisória e solicitação de limpeza/importação são decisões diferentes; falta de recibo não invalida o registro do pedido.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 32180,
+      "sha256": "153766b19eef655191428acdc76e87730937de97c14b17d6b04af16b1c86bb99",
+      "source": {
+        "path": "main/sessions/6765cbef-5db2-4078-9cf7-817402f93f88.checkpoint.bcb99280-cb14-4d4a-a633-e1b127b990a0.jsonl",
+        "line": 15
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Proposta antiga de bootstrap com mudança IDENTITY/USER e exclusão BOOTSTRAP aguardava OK; não há fato concluído. Preferência útil de identidade/estilo é consolidada em outros trechos; conservar cada pedido de permissão não acrescenta conhecimento.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Proposta antiga de bootstrap com mudança IDENTITY/USER e exclusão BOOTSTRAP aguardava OK; não há fato concluído. Preferência útil de identidade/estilo é consolidada em outros trechos; conservar cada pedido de permissão não acrescenta conhecimento.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 35318,
+      "sha256": "ad3ebe3840f8dba11e916197ce2da81a5da0bc103ccd8fa6122182ad2a80602d",
+      "source": {
+        "path": "main/sessions/bf2b9fcd-7f20-49a8-ab0b-59303391c115.jsonl",
+        "line": 81
+      },
+      "disposition": "proposal",
+      "reason": "Contexto35321 confirma que gatilho foi relatado preservado; deve ser memória de convenção, não comando ativo inventado.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/60-AGENTES/README.md",
+      "proposal_text": "Convenção histórica de linguagem: limite codex foi proposto como gatilho principal para consulta de consumo/limites, com uso codex como alias antigo; recibo35321 informou persistência no Brain/skills. Ao atender, consultar a fonte real disponível e explicitar período/conta; o nome do gatilho não garante presença de um script ou resultado atual.",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Contexto35321 confirma que gatilho foi relatado preservado; deve ser memória de convenção, não comando ativo inventado.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 34181,
+      "sha256": "bd777d8333763936b7938e62fcc8f74d23e1d8047214f27b36abd9b97103670e",
+      "source": {
+        "path": "main/sessions/9eca2531-2f7b-4838-800d-d80a00a728b9.trajectory.jsonl",
+        "line": 25
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Texto de persona fictícia do Puppet (idade/carreira/história) não é biografia real nem fato empresarial. Papel de orquestrador e tom direto estão preservados separadamente; não perpetuar biografia simulada na memória cognitiva.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Texto de persona fictícia do Puppet (idade/carreira/história) não é biografia real nem fato empresarial. Papel de orquestrador e tom direto estão preservados separadamente; não perpetuar biografia simulada na memória cognitiva.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 35378,
+      "sha256": "e1ff48f69e2590950574569f61536650b0b6b05e3ae4b25a16be1bee16908beb",
+      "source": {
+        "path": "main/sessions/bf2b9fcd-7f20-49a8-ab0b-59303391c115.jsonl",
+        "line": 141
+      },
+      "disposition": "already_represented",
+      "reason": "Versão canônica da skill lida integralmente: quatro modos analisar/entrevistar/propor-regra/gravar-definitivo, movimento_id determinístico, exceções e aprovação de gravação estão expressos. Não requer nova modificação do snapshot.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/60-AGENTES/versionados/workspaces/main/skills/conciliacao-bancaria-assistida/SKILL.md",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "already_represented",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Versão canônica da skill lida integralmente: quatro modos analisar/entrevistar/propor-regra/gravar-definitivo, movimento_id determinístico, exceções e aprovação de gravação estão expressos. Não requer nova modificação do snapshot.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 35444,
+      "sha256": "7635aa2a87f41b783fd0f55df4f67446de437e0219fd89124ef8135246b3095a",
+      "source": {
+        "path": "main/sessions/bf2b9fcd-7f20-49a8-ab0b-59303391c115.jsonl",
+        "line": 207
+      },
+      "disposition": "already_represented",
+      "reason": "Referência Cresol integralmente lida contém os mesmos comandos de leitura, flags allow-write/allow-producao e credencial local fora da skill. Versão histórica não substitui consulta atual de endpoint nem autoriza chamada externa.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/60-AGENTES/versionados/workspaces/darth-vader/skills/emitir-nfse-boleto-remessa/references/cresol-api-boletos.md",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "already_represented",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Referência Cresol integralmente lida contém os mesmos comandos de leitura, flags allow-write/allow-producao e credencial local fora da skill. Versão histórica não substitui consulta atual de endpoint nem autoriza chamada externa.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 36464,
+      "sha256": "650c1f7ce4edd06b914f270d2549a9b0bd698330e82b6e9090fa357bc242fbd8",
+      "source": {
+        "path": "main/sessions/cda14897-bc93-4473-850d-cfb4fc11a8e5.checkpoint.ad9c22b5-41b5-450e-a050-1afeab76637c.jsonl",
+        "line": 587
+      },
+      "disposition": "proposal",
+      "reason": "Contexto36465 esclarece que PDF era referência para teste/emissão seguinte, não novo lançamento nem prova de baixa; preservar distinção útil com dado mínimo.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "proposal_text": "NFS-e180 Unus, competência junho/2026 e totalR$18.004,19, foi lida como documento de referência para preparar fluxo seguinte de NFS-e/boleto/remessa Cresol. Era NFS-e de serviço, não DANFE de produto. Não registrar novamente receita, pagamento ou quitação apenas por essa leitura, nem copiar a chave fiscal ao Brain. Comprovante/documento mestre permanecem autoridade operacional.",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Contexto36465 esclarece que PDF era referência para teste/emissão seguinte, não novo lançamento nem prova de baixa; preservar distinção útil com dado mínimo.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 34205,
+      "sha256": "4e141e85bf94f316729344d4908252dca3ffb006584b15fe7e1843c020c682a1",
+      "source": {
+        "path": "main/sessions/9eca2531-2f7b-4838-800d-d80a00a728b9.trajectory.jsonl",
+        "line": 74
+      },
+      "disposition": "proposal",
+      "reason": "Perfil antigo contém roteamento/cargos supersedidos, mas briefing e tom Bikon seguem informação útil.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/60-AGENTES/KOWALSKI.md",
+      "proposal_text": "Diretriz histórica para Kowalski: trabalhar com briefing de contexto, tarefa e restrições; linguagem clara ao cliente leigo, sem promessa milagrosa nem frases motivacionais vazias, preservando padrão visual Bikon. Nomes Chiquinha/Chaves e coleta direta em APIs eram referências antigas e não devem substituir arquitetura Sentinel coletor/Kowalski relatórios atual; promessa90dias exige contrato comercial vigente, não aplicação automática.",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Perfil antigo contém roteamento/cargos supersedidos, mas briefing e tom Bikon seguem informação útil.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 34187,
+      "sha256": "063734524cbbd07fb682cd2a50012925e6c9a198dddfc3896be59b502ffd7ffc",
+      "source": {
+        "path": "main/sessions/9eca2531-2f7b-4838-800d-d80a00a728b9.trajectory.jsonl",
+        "line": 46
+      },
+      "disposition": "proposal",
+      "reason": "Manual antigo mistura preferências duráveis com limites/rotas/horários obsoletos; preservar somente o núcleo qualificado.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/60-AGENTES/README.md",
+      "proposal_text": "No manual histórico de operação, Hebert deveria ser apresentado como fundador na comunicação pública, com foco em empresas de5 ou mais dispositivos e em reduzir sua dependência do operacional. Prioridade proposta: cliente pagante em incidente, entrega/lancamento com prazo, conteúdo programado e melhoria interna; comunicar bloqueio material em vez de permanecer silencioso. Papéis de apenas dois agentes, gasto autônomoR$1 e horários de relatório daquele manual não são autoridade atual; marca/promessa comercial precisam de validação vigente.",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Manual antigo mistura preferências duráveis com limites/rotas/horários obsoletos; preservar somente o núcleo qualificado.",
+      "deletion_authorized": false
+    },
+    {
+      "id": 39470,
+      "sha256": "04c99eb97411e24ffc9f2140522f3a0de608fd76c22b6f1c311cd5077aa8ed36",
+      "source": {
+        "path": "robotnik/sessions/305a3959-9589-4893-89fb-ec651a31e137.jsonl",
+        "line": 33
+      },
+      "disposition": "proposal",
+      "reason": "Rascunho editorial sem aceite não precisa virar arquivo permanente nem norma jurídica; preservar o aprendizado de fronteira normativa.",
+      "risks": [
+        "Histórico não comprova estado atual nem autoriza reexecução."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md",
+      "proposal_text": "Rascunhos históricos sobre CNJ213/243 propuseram comunicar prazos por classe, plano técnico e prova de adequação, com ressalva explícita de validação jurídica antes de publicar datas absolutas. Preservar essa separação: copy educativo não substitui texto normativo consolidado nem autoriza prometer conformidade/prorrogação. Números e contagem de prazo daquele rascunho não foram revalidados nesta cobertura e não devem ser promovidos a orientação atual.",
+      "supersedes_review": "deferred em relatório anterior coverage_c",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "review_file": "review-agent-c-9.json",
+      "root_reason": "Rascunho editorial sem aceite não precisa virar arquivo permanente nem norma jurídica; preservar o aprendizado de fronteira normativa.",
+      "deletion_authorized": false
+    }
+  ]
+}

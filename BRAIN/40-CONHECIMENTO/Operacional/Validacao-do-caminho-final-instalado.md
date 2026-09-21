@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -60,3 +60,11 @@ Na semana 2026-W31, o OpenClaw DRE v1 tinha commit preservado, `75/75` testes pr
 Na validação histórica do DRE, uma fixture que deveria provocar erro interno 7 retornou legitimamente TRANSACTION_NOT_FOUND 5; em outra tentativa, exit esperado 2 disparou trap ERR antes da asserção. O harness precisa distinguir saída esperada do domínio de falha do próprio teste, exercitar a rota instalada real e congelar fixtures válidas. Um teste mal especificado não prova defeito de produção nem autoriza repetir ordem encerrada. Fonte: unidades 33946, 33985.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+A aceitação histórica do Shadow Mode rejeitou uma suíte verde porque não havia call site no fluxo real. Também separou exceção de comparador, timeout com thread ainda viva e classificação C0 sem LLM. Validar integração efetiva e terminalidade de falhas, não somente testes da biblioteca. Fonte: unidades 34544.
+
+Uma revisão encontrou controller criando automaticamente `.prov213-shadow-root` em qualquer root recebido pela CLI. Isso transforma rótulo em autorização e invalida isolamento: aceitar somente root de teste previamente preparado pela rota explícita e validar que ambiente produtivo continua rejeitado. Testes verdes não substituem esse controle negativo. Fonte: unidades 37175.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

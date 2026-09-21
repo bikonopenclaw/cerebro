@@ -1,3 +1,15 @@
+---
+id: brain-74f9d101198913292ed0
+type: knowledge
+title: Estado terminal requer convergencia do lifecycle
+created: '2026-09-21T19:26:27.377766Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T19:32:09.804705Z'
+---
+
 # Estado terminal requer convergencia do lifecycle
 
 ```yaml
@@ -52,3 +64,9 @@ Em 2026-W38, as revisoes do relatorio Capixaba permaneceram na mesma request e c
 - [[01-DIARIO/Semanal/2026-W35|Semana 2026-W35]]
 - [[01-DIARIO/2026/2026-09-03|Diario 2026-09-03]]
 - [[01-DIARIO/2026/2026-09-10|Diario 2026-09-10]]
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+No caso histórico R2, o child não possuía a rota aprovada para Kowalski. Limitou-se à preparação local e retorno de artefatos/hash; o controle principal fazia a revisão independente. Se o child perder contexto, reconciliar artefatos existentes antes de criar sucessor, evitando fila duplicada ou aprovação impossível no isolamento. Fonte: unidades 37061.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

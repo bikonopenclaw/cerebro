@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/SENTINEL.md
@@ -70,3 +70,13 @@ Na preparação praxis-gws em 18/06/2026, o pacote incluía e-mails/relatórios 
 No teste praxis-gws de 18/06/2026, gmail.send permitiu envio, mas consulta de perfil pediu permissão que não estava concedida. O diagnóstico deve distinguir operação fora do scope de falha de autenticação, sem ampliar permissão só para passar um teste. Drive.file e calendar.events foram depois adicionados para funções específicas, com criação/exclusão de objetos de teste; esse registro histórico não comprova scopes atuais nem autoriza novas operações. Fonte: unidades 34684, 34690, 34693, 34696, 34699.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+No desenho de acesso ao painel por terceiro, compartilhar o dispositivo Tailscale e autorizar só o serviço/porta desejado foram considerados controles distintos. Validar alcance efetivo de ACL e autenticação da aplicação; não supor que convite ao nó concede somente o painel. Proposta histórica não comprova ACL aplicada e não autoriza tornar serviço público. Fonte: unidades 39543.
+
+No cliente ARX do Sentinel, status foi limitado a contagens/classificações agregadas e referência de auditoria após append-only bem-sucedido; payload bruto, contas/ativos/settings não deveriam sair do comando agregado. Consulta bem-sucedida com atenção agregada não identifica cliente nem autoriza nova leitura/ticket/remediação. Separar observabilidade sanitizada de acesso detalhado e manter correlação com a coleta autenticada. Fonte: unidades 36765.
+
+No acesso remoto histórico, ativar Tailscale no host não expunha automaticamente serviços presos a loopback. Serve foi relatado como proxy tailnet-only para o dashboard OpenClaw; publicar Claw3D na mesma raiz substituiria esse destino. Exposição de novo serviço precisa de rota/porta e ACL próprias, sem trocar silenciosamente o dashboard existente; tailnet-only não equivale a Internet pública, e endereço antigo não prova serviço atual. Fonte: unidades 37435, 37432, 35440.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

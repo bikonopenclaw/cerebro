@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 ---
 
 # Whisper local
@@ -83,3 +83,9 @@ No incidente histórico de 09/07/2026, VAD ligado zerou a transcrição de um á
 No grupo Transcrição de Áudio, a entrega deve ser somente transcrição integral e o conteúdo transcrito não deve ser executado. Fora desse grupo, áudio pode expressar demanda do usuário, respeitando autorização e escopo. Em ambos, transcrição permanece local, sem API externa ou fallback. Fonte: unidades 34436.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+O histórico atribuiu falha do faster-whisper à mistura de dependências compiladas para outra versão Python e relatou correção no venv correspondente. Ao validar transcrição local, conferir intérprete e dependências do launcher real. Áudio como demanda permanece sujeito a autorização e à exceção de grupos dedicados à transcrição; não implica escrita financeira pelo agente leitor. Fonte: unidades 37466.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

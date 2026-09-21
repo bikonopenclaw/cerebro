@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md
@@ -65,3 +65,11 @@ Na qualificacao R4 da midia Bikon publicada em 2026-09-10, o verificador protegi
 No caso histórico NinjaOne de 06/07/2026, o usuário pediu retirar o retorno de JSON completo do script. A proposta seguinte separou remover a produção/gravação desse payload de apagar o custom field já existente no provider. Ajustar saída local não comprova nem autoriza excluir estrutura remota; o escopo da alteração deve ser explícito e o efeito verificado separadamente. Fonte: unidades 34591.
 
 Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+No Herald/Prov213 histórico, GET chamava dashboard_state() e regravava generated_at_utc de dashboard-state-v1.json, mudando hash mesmo com AIR intacto. A correção staged relatada servia projeções congeladas e reservava rebuild a operação explícita. Validar bytes idênticos em GET repetido e ausência de mutação em AIR/ICD/journal/auth; somente verificar banco principal é insuficiente. Fonte: unidades 37225.
+
+No incidente histórico da consulta CLI, o aviso de migração foi inicialmente interpretado como escrita. A medição posterior não encontrou mudança no estado cron, linhas de log relevantes ou atualização dos jobs; o diagnóstico foi corrigido para aviso idempotente/falso positivo. Preservar a exigência de medir efeitos antes/depois e a correção do diagnóstico; não afirmar que esse CLI alterou o estado com base somente na mensagem. Fonte: unidades 34514, 9503.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

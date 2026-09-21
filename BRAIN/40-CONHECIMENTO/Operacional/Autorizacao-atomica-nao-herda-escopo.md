@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
@@ -79,3 +79,11 @@ No LinkedIn Robotnik, Hebert autorizou somente o Gate A de credenciamento. A fal
 No desenho histórico SERPRO, consulta de parcelamento e emissão de DAS eram autorizações distintas. A autorização de emissão deveria identificar serviço, competência/parcela e valor; não expor botão genérico Emitir que contorne essas dimensões. O catálogo histórico de códigos/endpoints não é comprovação de API vigente. Fonte: unidades 38054.
 
 Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json`. Aplicações históricas permanecem delimitadas pelo período e contrato da fonte.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+Um relato antigo de config.patch bloqueado foi seguido por edição direta do JSON. Isso não deve virar procedimento de contorno: uma restrição de ferramenta deve ser entendida e a via de alteração explicitamente autorizada antes de qualquer mudança. Estado saudável posterior não valida retroativamente o escopo da ação. Fonte: unidades 32318.
+
+Canário de manutenção dry-run, instalação do wrapper e unidade/timer desabilitados são fases distintas da ativação de limpeza. Registrar quais efeitos são permitidos, incluindo escrita de evidência local, e verificar que não houve alteração do conteúdo alvo; só autorização específica posterior pode ativar exclusão ou recorrência. Fonte: unidades 37514.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

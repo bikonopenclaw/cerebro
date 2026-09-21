@@ -1,3 +1,15 @@
+---
+id: brain-a52ff1ea79271de9327d
+type: state
+title: MOC Projetos
+created: '2026-09-21T19:26:27.377766Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T19:32:09.804705Z'
+---
+
 # MOC Projetos
 
 Status: canonical entry point
@@ -35,3 +47,9 @@ Este MOC liga projetos ativos, planejamento e historico documental.
 
 - [[99-SISTEMA/INDEX|INDEX]]
 - [[70-AUTOMACOES/README|MOC Automacoes]]
+
+## Histórico com estado atual não verificado
+
+- [[50-PROJETOS/Historico/Painel-Medicoes-Faturamento|Painel de medições e faturamento]]
+
+- [[50-PROJETOS/Historico/Controle-financeiro-familiar|Controle financeiro familiar — blueprint histórico]]

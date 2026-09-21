@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-20.md
@@ -91,3 +91,17 @@ O deploy termina somente quando a árvore ativa tem o hash planejado, todos os v
 - ativo do workspace segue com hash `ed9fa5704025e7d91b3d171abdb6cc6c6ecd664cbcc41ba5774128cd3f4e68cd` (39 arquivos);
 - candidato/histórico do ciclo está com hash `d2c1a74768ed37e6666ac62a14329992ccce393d994c0bf4700443e225165226`.
 - Em consequência, reconciliação administrativamente continua em aberto: não houve correlação automática nem atualização de snapshot nesta janela.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+No incidente de propagação, o validador serializou JSON com ensure_ascii=True, enquanto o contrato exigia UTF-8 canônico equivalente ao jq -cS; os hashes divergiram. Identidade depende dos bytes da canonicalização acordada, não somente equivalência de objeto. Testar acentos/Unicode e comparar resultado entre produtor e consumidor antes de usar hash como binding; correção não permite reutilizar ordem terminal nem consumir aprovação falha. Fonte: unidades 34125.
+
+Quando aprovação usa SHA-256 de JSON, congele a serialização exata: ensure_ascii=true e JSON UTF-8/jq compacto podem representar os mesmos valores e produzir hashes distintos. Comparação semântica não substitui identidade de bytes exigida pelo gate; corrigir o contrato antes de consumir autorização, sem forçar um hash discrepante. Fonte: unidades 34124.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+Em validação read-only de pacote congelado, um .pyc extra altera o inventário e pode resultar da própria inspeção. Não importar ou compilar o pacote para inspecioná-lo sem controlar escrita de bytecode. Uma comparação com exclusão lógica explícita ajuda a diagnosticar, mas não apaga o arquivo, não aprova o pacote contaminado e não substitui a identidade congelada original. Fonte: unidades 8622.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

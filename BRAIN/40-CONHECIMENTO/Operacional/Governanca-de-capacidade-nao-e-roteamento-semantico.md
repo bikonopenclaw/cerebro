@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 ---
 
 # Governanca de capacidade nao e roteamento semantico
@@ -61,3 +61,9 @@ Caso histórico Bitdefender: continue descrevia deduplicação de tickets no dom
 Na revisão dos crons de 06/07/2026, o verificador inicialmente tratou coleta pesada e envio leve por cache como equivalentes. A correção conceitual distingue operações que consomem capacidade/fonte dos envios que apenas leem artefato materializado; intervalos curtos de entrega não são automaticamente colisão de coleta. Aplicar aos contratos atuais, sem reativar a grade antiga das 08h. Fonte: unidades 32218.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+Na revisão Sentinel R2, distinguir incident severity de protective hold: agregado crítico sem atribuição não justifica inventar P2, mas tampouco aguardar8hcomo rotina. Propor contenção imediata safety_hold_unresolved_critical com severidade ainda não determinada até evidência de atribuição/impacto. Aceite offline da candidata e contenção técnica das ferramentas no agente ativo são gates diferentes; documentação autodeclarada APPROVED não concede autoridade. Fonte: unidades 37017.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 ---
 
 # Bikon Durable Work Orchestration
@@ -66,3 +66,15 @@ Preservar pedidos assíncronos de relatórios e documentos além do turno conver
 Nos episódios de promessa de retorno, exigir registro de pendência com identidade, responsável, estado, próximo acompanhamento e critério de encerramento; deduplicar follow-ups e encerrar explicitamente como concluído, bloqueado com causa ou falho. Hebert posteriormente pediu retirar a restrição de horário desse acompanhamento. O contrato atual de trabalho durável prevalece: integrar ao controlador canônico, sem criar ledger paralelo ou reinstalar plugin/cron histórico pela memória. Fonte: unidades 35310, 35382, 31098.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+O episódio DRV mostrou que validar UTF-8/hash/filesystem não garante retomar uma transação: o renderer necessário não estava disponível após mudança de turno. Trabalho que cruza turnos precisa de executor/artefatos autocontidos e identificados por versão/hash, com entradas e progresso persistidos. Não reconstruir implementação pela memória conversacional nem alegar continuidade a partir de capability check parcial. Fonte: unidades 29247, 33078.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+Na especificação histórica DRE, render e publicação formavam uma unidade durável: inputs e renderer disponíveis fora da sessão, identidade de runtime congelada, três renders de mesma entrada com hash idêntico, journal de retomada, ponteiro de publicação atômico e rollback. Preservar a lição de autossuficiência e identidade, sem transformar a proposta antiga de CPython/DRE em dependência atual nem inferir entrega pelo texto da especificação. Fonte: unidades 33087.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

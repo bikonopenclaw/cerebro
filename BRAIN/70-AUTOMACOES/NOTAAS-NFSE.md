@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:32:09.804705Z'
 ---
 
 # Skill Notaas NFS-e
@@ -290,3 +290,21 @@ Script atualizado:
 O fluxo assistido recebe lista de notas/itens, cruza cadastro e gera resultados/status por item. Entrada em lote não elimina aprovação fiscal nem conferência de NFS-e, boleto e remessa; o caso Unus não deve ficar hardcoded. Fonte: unidades 36551.
 
 Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch4-20260921.json`. Aplicações históricas permanecem delimitadas pelo período e contrato da fonte.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+Diagnóstico histórico FBCP: a skill assistida não deve ser fonte única de autoridade financeira. Além de competência atual, centavos/Decimal e retry protegido, desenho exige identidade canônica billing_operation_id/external_reference, autorização vinculada a operação/hash/validade, journal de transições e outbox de email com hashMIME/recibo. Flag booleana reutilizável não prova autorização dessa operação e timeout dePOSTnão permite retry cego. Implementação por etapas e baseline; não alegar esses componentes instalados só por constarem da proposta. Fonte: unidades 31587.
+
+O histórico distinguiu chave de projeto Notaas usada em emissão/consulta de token de organização para gestão de certificados. Nenhum desses fatos comprova possibilidade de exportar A1 para SERPRO; usar certificado sob controle do titular e verificar capacidades do endpoint, sem prometer exportação de segredo. Fonte: unidades 34733.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+No lote Bikon agosto/2026 de 27 notas, Hebert esclareceu que diferenças entre soma e total eram descontos concedidos e que os sufixos aracruz/joão neiva identificavam qual cadastro/endereço Celi usar, com os dados mestres completos na emissão. Isso resolve aquele lote e não autoriza tratar qualquer divergência futura como desconto. Preparar notas, boletos/remessa e rascunhos é distinto de enviar/transmitir. Fonte: unidades 3398, 3401.
+
+Hebert aceitou provisoriamente layoutv5 como padrão apesar de insatisfação estética, e pediu descartar simulações e carregar o faturamento de julho na base recém-criada. O trecho registra pedido/autorização daquela etapa, não prova exclusão/importação concluídas nem autorização vigente para limpar dados atuais. Não promover aceitável por enquanto a aprovação definitiva de qualidade. Fonte: unidades 38135.
+
+NFS-e180 Unus, competência junho/2026 e totalR$18.004,19, foi lida como documento de referência para preparar fluxo seguinte de NFS-e/boleto/remessa Cresol. Era NFS-e de serviço, não DANFE de produto. Não registrar novamente receita, pagamento ou quitação apenas por essa leitura, nem copiar a chave fiscal ao Brain. Comprovante/documento mestre permanecem autoridade operacional. Fonte: unidades 36464.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

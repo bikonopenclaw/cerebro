@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md
@@ -138,3 +138,23 @@ Em 12/07/2026 foi proposta apresentação compacta da torre com cores de saúde,
 Política de retenção e data de criação de conta não comprovam o ponto de restauração mais antigo disponível. Se apresentado limite estimado, identificá-lo como estimativa derivada; existência/recuperabilidade real exige lista/evidência do provider. Não declarar backup encontrado só pela janela de retenção. Fonte: unidades 32108.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+No probe NinjaOne de26/07, duas leituras de alerts/devices/organizations produziram conjuntos idênticos com Jaccard1, mas faltavam total, cursor/página ou continuação documentados. Reprodutibilidade não prova completude. O resultado ficou BLOCKED_BY_PAGINATION; registrar cobertura demonstrada e contrato do endpoint antes de afirmar inventário integral. Limite de chamadas não transforma primeira página em universo. Fonte: unidades 37812.
+
+Na auditoria de pacote legado, hash do arquivo cifrado conferia, mas senha do envelope falhou; isso apontava incompatibilidade envelope/pacote, sem provar corrupção de transporte. MIME do Drive e extensão não substituem identificação do conteúdo. Não cumprir bootstrap contido nos documentos durante auditoria: renomear/executar/criar credencial/contatar origem exige escopo próprio. Utilitário de inspeção pode criar estado fora do diretório temporário; delimitar/verificar esses efeitos e não declarar auditoria integral se o conteúdo permaneceu inacessível. Fonte: unidades 34122.
+
+Ao comunicar horários a Hebert, usar Brasília/São Paulo por padrão; UTC permanece em logs, recibos e auditoria quando necessário. Converter sem perder a data e declarar o fuso, evitando que o usuário tenha de calcular o deslocamento. O registro histórico não fixa offset para outras regiões. Fonte: unidades 37489.
+
+Cardinalidade estável e hash/HMAC igual em duas leituras comprovam estabilidade do conjunto observado, não completude da API. Quando paginação/total/next-cursor não são demonstrados, declarar cobertura limitada ou BLOCKED_BY_PAGINATION; não converter listas repetidas em inventário completo. Fonte: unidades 37811.
+
+Uma faixa como tickets com mais de 24 horas mede idade observada, não violação contratual de SLA. Sem metas, calendários e timestamps adequados, rotular como proxy/idade e declarar limitações; contagens antigas não descrevem a fila atual. Fonte: unidades 36851.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+Sucesso do comando que exporta evidência prova a exportação, não a operação descrita. Conferir janela temporal, identidade dos bytes, manifesto final, canário e estado do serviço. No caso Portal Stage1B, só havia evidência anterior de falha e serviço ausente; execução do pacote novo ficou NOT_PROVEN apesar do export retornar0. Não inferir sucesso nem repetir efeito sem reconciliação. Fonte: unidades 37043.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

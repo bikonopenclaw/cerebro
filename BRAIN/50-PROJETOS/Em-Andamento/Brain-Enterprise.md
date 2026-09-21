@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:32:09.804705Z'
 relationships:
 - type: references
   target: BRAIN/99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive.md
@@ -75,3 +75,17 @@ Manter o Brain como repositório vivo de conhecimento para preservar contexto, d
 ## Cobertura dos gateways separados
 
 A conferência de 21/09 confirmou contribuições parciais de Kowalski e Darth Vader no Brain, mas não envio integral contínuo. Os quatro agendamentos Brain pertencem ao perfil principal; os perfis dedicados têm zero agendamentos Brain. As duas memórias Markdown de Kowalski coincidem com snapshots publicados em julho. A memória FIP de Darth de 25/08 não tem snapshot equivalente: parte está consolidada no projeto FIP, e a revisão recuperou uma correção de escopo ainda ausente. O recibo `BRAIN/99-SISTEMA/brain-v2/reports/gateway-brain-coverage-20260921.json` separa essas evidências. A rotina diária precisa de inventário explícito das fontes por agente e recibos de cobertura; essa automação ainda não foi implantada.
+
+## Complementos reconciliados — lote 7 de 2026-09-21
+
+Falha de busca semântica não significa perda das notas. Arquivos de memória e Brain podem permanecer disponíveis para leitura direta enquanto o provedor de embeddings falha; registrar separadamente disponibilidade de conteúdo, índice e mecanismo de consulta, sem declarar o incidente antigo como vigente. Fonte: unidades 31091.
+
+No incidente histórico billing_not_active, a busca vetorial falhou enquanto chat OAuth e arquivos continuavam disponíveis. Verificar autenticação, disponibilidade do provedor de embeddings e índice separadamente do Gateway/chat; não concluir que assinatura de chat cobre embeddings nem que falha de índice apagou memória. Estado antigo não autoriza ativar cobrança ou trocar provedor. Fonte: unidades 37478.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 8 de 2026-09-21
+
+No scheduler SQLite, storePath legado exibido por CLI não prova que jobs.json seja fonte ativa. Identificar storage/sqlitePath e job exato por nome/ID/contrato. Se rotina pedida não é encontrada, não editar job vizinho porque horário/agente parecem próximos; ausência naquela consulta não comprova inexistência atual. Horário histórico de helpdesk não altera agenda Brain vigente. Fonte: unidades 9680.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
