@@ -1,0 +1,45 @@
+[
+  {
+    "proposal_id": "coverage-round16-a37be5dff82969c9",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch33-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch41-20260921.json",
+    "target_note": "BRAIN/01-DIARIO/2026/2026-09-21.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  },
+  {
+    "proposal_id": "coverage-round16-7a6103874c8018f1",
+    "producer": "Codex root with user-authorized editorial subagents",
+    "source": "user-request-20260921-brain-coverage; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch33-20260921.json; BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch41-20260921.json",
+    "target_note": "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md",
+    "operation": "update",
+    "reason": "Consolida decisões históricas revisadas, corrige distinções de escopo e registra pesquisa persistente e lacunas verificadas nos gateways. Não altera dados de negócio nem elimina históricos.",
+    "confidence": 1.0,
+    "suggested_relations": [
+      {
+        "type": "references",
+        "target": "BRAIN/20-EMPRESAS/BIKON/README.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md#relações"
+      },
+      {
+        "type": "references",
+        "target": "BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md",
+        "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+        "source": "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md#relações"
+      }
+    ],
+    "approval_id": "user-request-20260921-brain-coverage",
+    "status": "accepted"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "id": 9103,
+  "sha256": "f64376367d17ef03a490fd513e68054dfe6bbe80b2f038b0e525b8a1b37526d4",
+  "source": {
+    "path": "kowalski/sessions/868da2de-baf5-455b-9859-83aaf52eebc9.checkpoint.4edfedab-f627-4958-a24c-92bb57ae3e0c.jsonl",
+    "line": 297
+  },
+  "target_note": "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md",
+  "disposition": "proposal",
+  "proposal_text": "No resumo histórico de junho/2026 preservado em um backup de sessions.json, os 587 dispositivos com licença confirmada no detalhe eram uma métrica distinta de 647 dispositivos gerenciados e 651 slots usados; esses denominadores não deviam ser intercambiados. A descoberta daquela integração usava network/getCompaniesList, network/getEndpointsList por parentId, detalhe somente para endpoints gerenciados e licensing/getLicenseInfo por companyId, omitindo licenseKey. Esses contratos eram referências observadas naquela versão, não validação da API atual nem autorização de coleta direta por Kowalski: a rota posterior delega a fonte ao Sentinel. O mesmo resumo preservava o caso Capixaba de22/06 já consolidado em Kowalski: inventário e eventos auditáveis não autorizavam inventar histórico granular, e a norma não foi tratada como obrigação direta de trocar computadores. Contadores intermediários de máquinas, fases de substituição e paths de entrega eram checkpoints históricos; não são inventário atual nem nova autorização de contato.",
+  "reason": "Resumo adicional de backup de índice estava fora das11187 unidades iniciais. Leitura completa preservou distinções duráveis; checkpoints e instruções históricas não se tornam estado/autoridade atual.",
+  "raw_summary_characters": 8721,
+  "context_order_reviewed": true,
+  "deletion_authorized": false
+}

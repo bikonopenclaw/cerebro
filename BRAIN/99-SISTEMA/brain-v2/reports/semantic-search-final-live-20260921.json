@@ -1,0 +1,280 @@
+{
+  "query": "Por que caixa bancário não comprova natureza econômica na DRE?",
+  "scope": "all",
+  "index_at": "2026-09-21T21:56:57.991452Z",
+  "source_digest": "0a67bed77d3d1d76c2788c9c8541cadabf9a7fcfd4fcfb6b97a85290bbcd4220",
+  "refresh": {
+    "updated": true,
+    "changed_notes": 63,
+    "reused_notes": 151
+  },
+  "results": [
+    {
+      "path": "BRAIN/40-CONHECIMENTO/README.md",
+      "title": "MOC Conhecimento",
+      "source_sha256": "0938bd78b5f07c87a16a84be0b4a154d356100a03f33083829184d1b5b99d4af",
+      "cosine": 0.6471863389015198,
+      "match_strength": "candidate",
+      "relationships": [],
+      "source_updated": "",
+      "declared_links": [
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Dados-mestres-completos-em-automacoes-fiscais.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Retorno-bancario-nao-valida-remessa.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Settlement-de-fatura-nao-classifica-natureza-economica.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Total-fechado-nao-prova-integridade.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Validacao-source-native-de-PDF-financeiro.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+          "basis": "explicit_wikilink_in_source"
+        }
+      ]
+    },
+    {
+      "path": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "title": "FIP Bikon Financial Intelligence",
+      "source_sha256": "bcf54122e64ebb0e52aa8f454f3579c41e86760ab6eea55de58dd948d0c7f8ed",
+      "cosine": 0.6302043199539185,
+      "match_strength": "candidate",
+      "relationships": [],
+      "source_updated": "2026-09-21T21:52:39.723601Z",
+      "declared_links": [
+        {
+          "target": "BRAIN/20-EMPRESAS/BIKON/README.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/60-AGENTES/DARTH-VADER.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Consulta-gerencial-nao-e-permissao-operacional.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+          "basis": "explicit_wikilink_in_source"
+        }
+      ]
+    },
+    {
+      "path": "BRAIN/20-EMPRESAS/BIKON/README.md",
+      "title": "BIKON",
+      "source_sha256": "5e34fe5d45bb9e8c4cf441bc8554e03bf189521354c47cbfb651df63477f0fe8",
+      "cosine": 0.627769947052002,
+      "match_strength": "candidate",
+      "relationships": [
+        {
+          "type": "references",
+          "target": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+          "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+          "source": "BRAIN/20-EMPRESAS/BIKON/README.md#relações"
+        },
+        {
+          "type": "references",
+          "target": "BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md",
+          "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+          "source": "BRAIN/20-EMPRESAS/BIKON/README.md#relações"
+        },
+        {
+          "type": "references",
+          "target": "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md",
+          "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+          "source": "BRAIN/20-EMPRESAS/BIKON/README.md#relações"
+        },
+        {
+          "type": "references",
+          "target": "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md",
+          "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+          "source": "BRAIN/20-EMPRESAS/BIKON/README.md#relações"
+        },
+        {
+          "type": "references",
+          "target": "BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md",
+          "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+          "source": "BRAIN/20-EMPRESAS/BIKON/README.md#relações"
+        },
+        {
+          "type": "references",
+          "target": "BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md",
+          "reason": "Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.",
+          "source": "BRAIN/20-EMPRESAS/BIKON/README.md#relações"
+        }
+      ],
+      "source_updated": "2026-09-21T19:50:50.519705Z",
+      "declared_links": [
+        {
+          "target": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/50-PROJETOS/Em-Andamento/LinkedIn-Robotnik-Publisher.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/70-AUTOMACOES/API-WHATSAPP-BIKON.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+          "basis": "explicit_wikilink_in_source"
+        }
+      ]
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-08-11.md",
+      "title": "2026-08-11",
+      "source_sha256": "88789432fbaa2d86e14e1328591f21497050127978cdcd4d5ae97834bb9d9f96",
+      "cosine": 0.6216031312942505,
+      "match_strength": "candidate",
+      "relationships": [],
+      "source_updated": "",
+      "declared_links": [
+        {
+          "target": "BRAIN/20-EMPRESAS/BIKON/README.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Operational-Data-Platform.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Engineering-Delegation.md",
+          "basis": "explicit_wikilink_in_source"
+        }
+      ]
+    },
+    {
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W33.md",
+      "title": "Semana 2026-W33, cobertura parcial",
+      "source_sha256": "02b77743061e822c151ba757809f715815429ad59559ebabf57f8c6e40c79d84",
+      "cosine": 0.6211826801300049,
+      "match_strength": "candidate",
+      "relationships": [],
+      "source_updated": "",
+      "declared_links": [
+        {
+          "target": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/50-PROJETOS/Em-Andamento/OpenClaw-Operational-Data-Platform.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Operacional/Pacote-selado-auto-reprodutivel-antes-de-privilegio-operacional.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Settlement-de-fatura-nao-classifica-natureza-economica.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Financeiro/Validacao-source-native-de-PDF-financeiro.md",
+          "basis": "explicit_wikilink_in_source"
+        },
+        {
+          "target": "BRAIN/40-CONHECIMENTO/Operacional/Contagem-nao-e-percentual-de-conclusao.md",
+          "basis": "explicit_wikilink_in_source"
+        }
+      ]
+    }
+  ],
+  "raw_history_access": false,
+  "limitations": [
+    "Similaridade sugere leitura; não prova equivalência, cobertura, autorização nem estado atual.",
+    "Consulta somente o Brain consolidado. Históricos brutos não integram este índice; sua retenção segue os recibos de cobertura.",
+    "Filtro de credenciais é complementar; não publicar resultados brutos automaticamente."
+  ],
+  "verification_limit": "Consulta real confirma recuperação e relações declaradas; não mede recall completo nem inferência automática de todas as relações."
+}

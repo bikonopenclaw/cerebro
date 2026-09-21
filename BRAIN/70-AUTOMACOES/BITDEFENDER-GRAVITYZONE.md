@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T21:59:38.438442Z'
 relationships:
 - type: references
   target: BRAIN/20-EMPRESAS/BIKON/README.md
@@ -193,3 +193,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-2026
 Em 13/07, create bitdefender-ticket-operacional terminada em 892185b0a0 foi confirmada applied, mas o update distinto terminado em 80074a5213 continuava pending naquele snapshot. Status não se transfere entre IDs ou workspaces; inspect not found em um escopo não prova inexistência global. Regra humana de V1 mantinha fila/prioridade padrão e permitia elevar prioridade somente por ameaça ativa, usuário parado ou cliente sem proteção. Skill/proposta aplicada não comprova cron de abertura automática; separar contrato manual, automação real e critérios atuais. A evolução posterior da rotina prevalece sobre esses estados históricos. Fonte: unidades 8559.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complemento de cobertura de metadados — 2026-09-21
+
+No resumo histórico de junho/2026 preservado em um backup de sessions.json, os 587 dispositivos com licença confirmada no detalhe eram uma métrica distinta de 647 dispositivos gerenciados e 651 slots usados; esses denominadores não deviam ser intercambiados. A descoberta daquela integração usava network/getCompaniesList, network/getEndpointsList por parentId, detalhe somente para endpoints gerenciados e licensing/getLicenseInfo por companyId, omitindo licenseKey. Esses contratos eram referências observadas naquela versão, não validação da API atual nem autorização de coleta direta por Kowalski: a rota posterior delega a fonte ao Sentinel. O mesmo resumo preservava o caso Capixaba de22/06 já consolidado em Kowalski: inventário e eventos auditáveis não autorizavam inventar histórico granular, e a norma não foi tratada como obrigação direta de trocar computadores. Contadores intermediários de máquinas, fases de substituição e paths de entrega eram checkpoints históricos; não são inventário atual nem nova autorização de contato. Fonte: unidade9103.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-metadata-summary-9103-20260921.json`.
