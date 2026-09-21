@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: false
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:18:32.790773Z'
 relationships:
 - type: derived_from
   target: BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md
@@ -76,3 +76,11 @@ Separar integridade dos links, alcance no grafo, validade dos schemas, validade 
 - [[40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git|Artefatos fora do Git]] — separação de conhecimento e evidência.
 - [[99-SISTEMA/brain-v2/governance/README|Governança Brain v2]] — taxonomia, schemas e aprovação.
 - [[99-SISTEMA/brain-v2/health/knowledge-health|Knowledge Health]] — métricas e seus limites.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+A verificação de interconexão precisa ser repetida após uma execução natural das rotinas de consolidação e sync. O gate inicial demonstra links/alcance no snapshot; o pós-ciclo detecta regressão para notas isoladas. Alcance100% e zero links quebrados medem estrutura, não suficiência semântica ou cobertura integral do histórico; validar também relações fundamentadas e busca por intenções reais. Fonte: unidades 29616, 29622.
+
+Em julho o relato37479 registrou memorySearch.provider=none e FTS-only para evitar embeddings cobrados por API, usando OAuth dos agentes para inferência. Esse estado é histórico e não prova o mecanismo atual. Na aceitação da habilidade persistente, verificar separadamente busca lexical, busca semântica, fornecedor/modelo do índice e credenciais/custo; autenticação do agente não comprova cobertura de embeddings. O índice semântico novo deve ter teste funcional próprio e não herdar diagnóstico antigo de billing. Fonte: unidades 37479.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

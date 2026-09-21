@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:18:32.790773Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md
@@ -128,3 +128,13 @@ Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-paral
 No relatório ARX de 15/06/2026, Hebert pediu incluir o backup mais antigo efetivamente armazenado. Essa dimensão de retenção deve ser obtida de registro consultável da fonte, distinguindo idade do backup armazenado, último backup válido e janela de status exibida. Nome de política ou barra de 28 dias não demonstra sozinho o ponto recuperável mais antigo. Fonte: unidades 32104.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+O widget histórico de uso Codex somava logs locais e comparava limites definidos manualmente. Isso é estimativa local, não saldo oficial nem visão completa da conta. Não usar essa estimativa para afirmar limite diário/semanal restante; quando houver fonte oficial acessível, identificá-la e distinguir claramente os dois indicadores. Fonte: unidades 36138.
+
+Em 12/07/2026 foi proposta apresentação compacta da torre com cores de saúde, ícones de estado e barras de uso/progresso. A proposta estava pendente: esses elementos apenas representam métricas verificadas, nunca criam percentuais ou diagnóstico sem denominador/fonte. Não tratar a proposta como instalação ou aprovação vigente. Fonte: unidades 31408.
+
+Política de retenção e data de criação de conta não comprovam o ponto de restauração mais antigo disponível. Se apresentado limite estimado, identificá-lo como estimativa derivada; existência/recuperabilidade real exige lista/evidência do provider. Não declarar backup encontrado só pela janela de retenção. Fonte: unidades 32108.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

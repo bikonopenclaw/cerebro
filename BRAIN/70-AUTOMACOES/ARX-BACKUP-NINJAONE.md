@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:18:32.790773Z'
 ---
 
 # ARX Backup diário → tickets NinjaOne
@@ -260,3 +260,11 @@ No dry-run inicial de ticketing ARX, o prefixo numérico15 produziu associação
 Na ativação histórica ARX, criar o cron não autorizou forçar execução imediata dos tickets detectados. Configuração, primeira execução real e abertura de tickets são ações distintas; manter autorização específica e deduplicação. Horário08:15 daquele episódio não é grade vigente. Fonte: unidades 36434.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+Reconciliação histórica: após a proposta de bloquear autofechamento pela ausência de motivo, Hebert pediu abandonar esse campo se o NinjaOne não o exige. O relato35343 registra remoção da trava e notificação no Telegram após fechamento real como RESOLVED; teste isolado não enviou mensagem nem fechou ticket. Não restaurar formulário/gate abandonado. Só campos realmente obrigatórios no contrato vigente podem bloquear a transição; conservar evidência e notificar pelo canal autorizado quando a mudança real ocorrer. Este registro não reativa automação. Fontes de contexto35342–35344; qualifica propostas35337/35340 do lote A5. Fonte: unidades 35337, 35340, 35343.
+
+No ajuste histórico dos quatro envios mensais ARX, Hebert pediu intervalos de5min: Alzira08:00, Camburi08:05, Capixaba08:10 e VilaVelha08:15, dia01 em Brasília. O espaçamento evita largada simultânea, mas não prova ausência de fila se um job exceder5min. Revalidar agenda vigente; não recriar esses crons pela memória. Fonte: unidades 29280.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

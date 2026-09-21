@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:18:32.790773Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
@@ -93,3 +93,9 @@ No experimento SERPRO de 03/07/2026, a tentativa de acessar broker por túnel en
 Redação de segredos não deve destruir a estrutura necessária para interpretar a resposta. Separar parsing interno da saída sanitizada; quando o conteúdo redigido ficar inválido, não tratar extração parcial por regex como prova completa de resposta fiscal. Caso histórico SERPRO precisa conservar limites da evidência. Fonte: unidades 38060.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+Em 19/06/2026 foi criada no Drive a pasta Integrações para documentação de APIs/integrações, com registro Bitdefender. A regra era guardar referência técnica sem chaves ou segredos. Essa finalidade documental não autoriza usar Drive como cofre ou perpetuar o fluxo temporário de transferência de credenciais observado em seguida. Fonte: unidades 33706.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

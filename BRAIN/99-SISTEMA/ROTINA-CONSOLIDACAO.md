@@ -1,3 +1,19 @@
+---
+id: brain-05c5983554b099eafabd
+type: state
+title: Rotina de consolidação do Brain
+created: '2026-09-21T19:14:26.441708Z'
+created_semantics: Data de registro estruturado; o documento de rotina é anterior.
+updated: '2026-09-21T19:18:32.790773Z'
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships:
+- type: references
+  target: BRAIN/99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive.md
+  reason: Aplica os critérios de cobertura e reconciliação à rotina central existente.
+  source: user-request-20260921-brain-coverage; gateway-brain-coverage-20260921.json
+---
+
 # ROTINA DE CONSOLIDAÇÃO DO BRAIN
 
 ## Princípio
@@ -8,11 +24,11 @@ O Puppet Master administra o Brain e executa a consolidação com apoio dos agen
 
 ## Frequência
 
-Diária, em modo silencioso, sem interromper o Hebert.
+Diária nos dias úteis, em modo silencioso, sem interromper o Hebert.
 
-## Horário recomendado
+## Horário verificado
 
-18:05 UTC, depois do horário operacional principal.
+23:00 America/Sao_Paulo, segunda a sexta. Configuração do agendador conferida em 2026-09-21; o horário anterior neste documento estava desatualizado.
 
 ## O que analisar
 
@@ -91,7 +107,7 @@ Objetivo:
 
 ## Rotina mensal
 
-Horário: dia 1 de cada mês, 03:00 BRT.
+Horário: dia 1 de cada mês, 04:00 America/Sao_Paulo, conforme configuração verificada em 2026-09-21.
 
 Objetivo:
 
@@ -101,3 +117,18 @@ Objetivo:
 4. Identificar padrões de longo prazo.
 5. Arquivar notas sem uso ou sem conexão.
 6. Atualizar métricas em `BRAIN/99-SISTEMA/HEALTH.md`.
+
+## Cobertura entre gateways e pesquisa semântica
+
+Kowalski e Darth Vader usam gateways/perfis separados. A consolidação central não deve presumir que toda conversa desses perfis já está no contexto do Puppet Master. A conferência de 21/09 encontrou memórias Kowalski versionadas e conteúdo FIP/Darth parcialmente consolidado, mas nenhum recibo que provasse cobertura integral por fonte.
+
+Na execução autorizada, delimitar período e inventariar as fontes disponíveis por agente: memórias em `/data/.openclaw/workspace-<agente>/memory/`, registros operacionais pertinentes e históricos explicitamente elegíveis. Usar somente acessos já autorizados; se uma fonte não puder ser lida, registrar lacuna e manter a cobertura parcial. Arquivos iguais por hash não precisam de nova promoção, mas a disposição anterior precisa existir. Não confundir snapshot de código/skill com consolidação cognitiva de conversas.
+
+A habilidade compartilhada `brain-semantic-search` orienta pesquisa, reconciliação e arquivamento semântico. Procurar notas existentes, preservar contexto/data/escopo e qualificar regras superadas por decisões posteriores explícitas. Similaridade e quantidade de links não comprovam significado nem cobertura.
+
+Registrar no fechamento fontes examinadas, hashes ou identidades verificáveis, disposições, notas-alvo e pendências. Separar revisão concluída, commit local e publicação remota confirmada: execução do cron marcada OK não prova push nem cobertura. Quando faltarem recibos por fonte, não declarar que todos os agentes enviaram tudo.
+
+Estas instruções complementam as rotinas existentes. A pesquisa persistente está instalada; não foi implantado um coletor automático completo de todas as fontes ou um mecanismo de exclusão automática. Descarte exige o protocolo de cobertura e autorização aplicável, com nova verificação operacional.
+
+- [[99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive|Protocolo de cobertura e arquivamento]]
+- Evidência da agenda e dos perfis: `BRAIN/99-SISTEMA/brain-v2/reports/gateway-brain-coverage-20260921.json`.

@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:18:32.790773Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
@@ -79,3 +79,11 @@ Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-paral
 No broker local SERPRO, o usuário preferiu iniciar, consultar e encerrar sob demanda por comando acessível, em vez de deixá-lo sempre aberto. Preservar limite de exposição e controle explícito do ciclo; esta preferência não autoriza túnel público, emissão fiscal ou serviço permanente. Fonte: unidades 37988.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+No pedido histórico de acompanhamento, Hebert preferiu progresso operacional nativo de ferramentas em vez de mensagens artificiais repetidas. Mostrar ação, resultado, bloqueio e próximo passo quando permitido, preservando segredos e sem expor raciocínio privado. Formato de progresso não substitui fechamento do objetivo. Fonte: unidades 29552.
+
+Progresso visível deve relatar ação executada, resultado, bloqueio e próximo passo, sem senha, token, cookie, dados sensíveis ou raciocínio privado. Autoridade para custo, publicação ou mudança operacional continua separada do log. Fonte: unidades 39581.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

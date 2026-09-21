@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:18:32.790773Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/KOWALSKI.md
@@ -309,3 +309,9 @@ No desenho inicial de 02/07/2026, os resumos WhatsApp, tickets NinjaOne e ameaç
 Histórico da grade operacional: em 02/07/2026, WhatsApp foi proposto às 19h, NinjaOne teve escopo corrigido para tickets e horário 18h30; Bitdefender ficou 18h45. Em 03/07 foi acrescentado resumo ARX 18h15. Em 06/07, Hebert esclareceu que o fechamento de sexta era semanal, depois separou coleta na madrugada e entrega, levando o fechamento da sexta para segunda. Os agendamentos dessa alteração permaneceram desabilitados. Registrar como cronologia de decisões; a grade atual é a configuração autenticada e mudanças posteriores já documentadas. Fonte: unidades 32200, 38068, 35839, 38065, 35845.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+No relatório diário de tíquetes NinjaOne, priorizar abertos/novos/fechados, vencidos/parados, prioridade, status e responsável e tempos apenas quando fonte suportar. Organizações/dispositivos entram somente como contexto de ticket, não como substituto do produto solicitado; declarar métricas indisponíveis. Fonte: unidades 35843.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

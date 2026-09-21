@@ -1,0 +1,17 @@
+{
+  "installed_at": "2026-09-21T19:17:52.083401+00:00",
+  "skill_sha256": "9eb2b6ebf1ce86d5034a9fd23e8a0448eddac515f4c0e09944c9e3729c78163a",
+  "previous_sha256": "64c34bf3e66d64bdfd15729e0fecb5ac4a52808e2a2be30b46ee828fb8ebff7f",
+  "profiles_share_same_file": true,
+  "workflow": [
+    "search",
+    "source_review",
+    "evidence_based_relationships",
+    "temporal_reconciliation",
+    "coverage_receipts",
+    "authorized_archiving"
+  ],
+  "schedulers_changed": false,
+  "permissions_expanded": false,
+  "gateways_restarted": false
+}

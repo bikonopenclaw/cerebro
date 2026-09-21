@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:18:32.790773Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
@@ -74,3 +74,9 @@ Em 2026-07-13, Hebert determinou uma regra operacional adicional: quando o Puppe
 Em 2026-07-28, no contexto OpenClaw - Provimento 213, a regra foi reforçada para projetos governados por checkpoint: Git commit, hash de artefato, checkpoint e Approval humano são evidências distintas. Nenhum deles substitui os demais nem autoriza continuidade implícita.
 
 Resumo de índice, memória de agente, commit ou hash não podem reconstruir checkpoint ausente. Se um registro completo obrigatório estiver ausente, a cadeia permanece bloqueada até o Owner fornecer a evidência original.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+Nos episódios de entrega via Drive, a disponibilidade de uma interface/plugin no Codex não significava que o usuário havia recebido autorização no Telegram ou que o runtime institucional estava conectado. Não deslocar o fluxo para navegador/computador pessoal nem trocar integração silenciosamente. Respeitar o canal/ambiente autorizado da solicitação atual; uma aceitação técnica em outra superfície não transfere permissão. Fonte: unidades 29547, 36213.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

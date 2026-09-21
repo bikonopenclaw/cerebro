@@ -1,3 +1,15 @@
+---
+id: brain-b0976f89ebe5e8407b9f
+type: state
+title: MEMORY.md
+created: '2026-09-21T19:15:09.943981Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T19:18:32.790773Z'
+---
+
 # MEMORY.md
 
 Memória institucional consolidada do Brain.
@@ -136,3 +148,9 @@ Memória institucional consolidada do Brain.
 - Atualizacao de 2026-08-29: snapshot read-only de NFS-e agosto/2026 registrou 29 notas, 23 validas, 6 canceladas e liquido R$ 52.943,51. Homologacao Cresol NN `358` foi preparada sem envio; NFS-e `214`/boleto `105609` permaneceram sem cancelamento/baixa por falta de motivo fiscal e rota CNAB400 `02` validada.
 - Atualizacao de 2026-08-31: RSE foi permanentemente cancelado pelo owner, nao aceito, nao qualificado para producao e desinstalado. ODP preserva Checkpoint L e o B1 incompleto, mas nao aguarda nem invoca RSE; qualquer retomada exige autoridade atomica propria.
 - Atualização de 2026-07-21: reconciliação técnica com evidência de relatório indicou que a proposta Instagram Brand Director v2.1.0 está pendente e não ativa; estado de produção assistida segue sob read-only até autorização explícita de corte.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+Atalhos históricos de consulta de limites Codex: limite codex como gatilho principal e uso codex como alias; retorno esperado diferencia janelas de5h e semanal, informa recência/fonte e reset em Brasília. Ausência de uma janela no evento local deve ser declarada, não preenchida por inferência; isso não equivale a saldo financeiro oficial e exige rota atual validada. Fonte: unidades 35319.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:18:32.790773Z'
 relationships:
 - type: references
   target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
@@ -77,3 +77,15 @@ No ensaio de migração de 07/07/2026, foram conferidos versões, ownership e co
 No incidente Telegram de 07/07/2026, a investigação relatou múltiplos gateways em root/openclaw/u4s e um gateway que renascia ao abrir sessão SSH por script de login/profile. A validação de single-writer precisa inspecionar supervisor de sistema, serviços de usuário e inicialização de shell/login, não apenas uma unit conhecida. Conflito 409 indica consumidor concorrente, mas não identifica sozinho a máquina/processo; confirmar origem antes de terminar processos ou reiniciar o host. Fonte: unidades 31105, 31114, 31117, 31153.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+No incidente de grupo Telegram, a lição foi consultar primeiro logs/status do canal para separar mensagem recebida, autorização, handler e poller preso; só depois alterar configuração ou reiniciar. Evidência da camada defeituosa evita tentativas amplas e restauração desnecessária de serviço. Fonte: unidades 31791.
+
+No incidente histórico Kowalski, serviço/modelo/Telegram saudáveis não bastaram para encerrar manutenção. A aceitação incluiu resposta real do agente após reinicialização controlada para provar persistência. O número de restarts do episódio não é rotina universal: o teste deve comprovar o caminho funcional solicitado, sem reiniciar agentes desnecessariamente. Fonte: unidades 34443.
+
+Nos testes históricos DRE, a aceitação falhou primeiro por código de saída divergente; depois um exitcode esperado acionou o ERRtrap do harness e outra fixture passou diretório onde o contrato esperava arquivo. Validar códigos de saída por cenário e sua interpretação pelo chamador, além do tipo/caminho dos argumentos. O caso ensina validação de contrato, sem restaurar DRE, repetir ordem ou promover testes antigos a aceite atual. Fonte: unidades 33930, 33987, 33993.
+
+No teste histórico Robotnik/Puppet, bot próprio foi inicialmente implementado como canal no mesmo processo. Isso separa identidade/conversa, mas não falhas, reinícios ou disputa do runtime. Avaliar trabalho paralelo com evidência de contexto, latência e disponibilidade; gateway dedicado requer implantação própria, não pode ser inferido da existência do bot. Fonte: unidades 29557, 29560.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

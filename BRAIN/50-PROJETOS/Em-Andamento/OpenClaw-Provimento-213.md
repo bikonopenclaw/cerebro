@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:18:32.790773Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-28.md
@@ -570,3 +570,9 @@ Resultado: `FAIL_CLOSED`, rollback `PASS`, `/opt/openclaw/platform/dre/v1` e `/u
 - Conhecimento operacional: [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]].
 - Conhecimento operacional: [[40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git|Artefatos gerados fora do Brain e Git]].
 - Contexto relacionado, mas distinto: [[70-AUTOMACOES/PROVIMENTO-213-2026-KOWALSKI|Provimento CNJ 213/2026, Kowalski]].
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+No reparo histórico do Mini App que mostrava apenas NÃO, a API passou a expor answer_options[] canônico e o cliente submeteu ID/valor, não rótulo inferido. Regressões cobriam opções binárias/múltiplas, enum específico, false e 0. Resposta HTTP 200 e suíte técnica não substituem conferir as opções renderizadas no Telegram/iPhone real; valores falsy não devem ser descartados como ausência. Fonte: unidades 33157, 33160.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

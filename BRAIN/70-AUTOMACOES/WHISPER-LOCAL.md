@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:18:32.790773Z'
 ---
 
 # Whisper local
@@ -72,6 +72,14 @@ A transcrição local permitiu processar pedido do Hebert sobre agrupamento de e
 
 ## Conhecimento recuperado dos históricos — revisão 2026-09-21
 
-Regra de interação registrada no histórico: áudio recebido deve ser interpretado como a demanda expressa pelo usuário; entregar apenas transcrição quando ele a solicitar. A interpretação não amplia autorização para efeitos externos e deve preservar as travas aplicáveis. Processamento permanece local, sem API de transcrição. Fonte: unidades 33809.
+Regra de interação registrada no histórico: fora de canais dedicados exclusivamente à transcrição, áudio pode expressar a demanda do usuário; entregar apenas transcrição quando solicitada. No grupo Transcrição de Áudio, o conteúdo deve ser somente transcrito, nunca executado, conforme a exceção documentada abaixo. A interpretação não amplia autorização para efeitos externos e deve preservar as travas aplicáveis. Processamento permanece local, sem API de transcrição. Fonte: unidades 33809.
 
 Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+No incidente histórico de 09/07/2026, VAD ligado zerou a transcrição de um áudio válido. Foi relatado retry local sem VAD quando a saída fica vazia. Esse fallback permanece dentro do processamento local; não autoriza API externa nem transforma transcrição vazia em comando inexistente. Confirmar suporte no script ativo antes de supor a correção instalada. Fonte: unidades 33253, 33254.
+
+No grupo Transcrição de Áudio, a entrega deve ser somente transcrição integral e o conteúdo transcrito não deve ser executado. Fora desse grupo, áudio pode expressar demanda do usuário, respeitando autorização e escopo. Em ambos, transcrição permanece local, sem API externa ou fallback. Fonte: unidades 34436.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

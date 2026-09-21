@@ -1,3 +1,15 @@
+---
+id: brain-ff506efba7da0ae10837
+type: entity
+title: SENTINEL, Controller de Operações e SNOC
+created: '2026-09-21T19:15:09.943981Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T19:18:32.790773Z'
+---
+
 # SENTINEL, Controller de Operações e SNOC
 
 ```yaml
@@ -262,3 +274,9 @@ A remediacao exigiu acao owner-exclusive fora do Sentinel: rotacao do token no B
 ## Critério de pronto
 
 Uma ocorrência só está consolidada quando possui fonte, recência, impacto, severidade, responsável, prazo, estado e evidência. Encerramento exige nova coleta que comprove resolução quando o estado depende de ferramenta operacional.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+Na preparação Sentinel de julho/2026, lista de 21 clientes, responsáveis e SLA não bastava para liberar operação: faltavam vínculos dos IDs NinjaOne/ARX/Bitdefender com client_id e cobertura esperada. IDs técnicos e evidência são preparados pelo agente; o usuário decide fontes esperadas, mínimos/exceção e aprovação do vínculo. Interface de aprovação não deve transferir 24 colunas técnicas ao usuário. Cadastro completo não prova cobertura real 24x7. Fonte: unidades 31504, 31513.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

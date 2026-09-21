@@ -1,0 +1,96 @@
+{
+  "items": [
+    {
+      "text_id": 3537,
+      "sha256": "b6a4a06ba18a19f525f8d8103d63adb5761b69b1c308d199e64deb73faf4d2fc",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 164
+      },
+      "previous_status": "deferred",
+      "disposition": "no_durable_knowledge",
+      "target_note": null,
+      "reason": "Comentário transitório sobre leitura de CSV; não define regra nova nem confirma transformação concluída.",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3549,
+      "sha256": "07d62e5818b070966c8a4850003e4c285eb1732701a64ac5b54a3df1656f64bb",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 214
+      },
+      "previous_status": "deferred",
+      "disposition": "already_represented",
+      "target_note": "BRAIN/70-AUTOMACOES/boletos-malote/README.md",
+      "reason": "Tipagem CPF/CNPJ e proibição de hardcode de pagador já consolidadas com caso de homologação e layout vigente.",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3586,
+      "sha256": "721936510b70cd604f5577e3d548ebc526b68e5e56034d6b47dc28944756e132",
+      "source": {
+        "path": "darth-vader/sessions/c1763b11-cd02-4f2c-8612-80f3daae4f23.trajectory.jsonl",
+        "line": 50
+      },
+      "previous_status": "deferred",
+      "disposition": "no_durable_knowledge",
+      "target_note": null,
+      "reason": "Marcadores parciais de validação com campo redigido; não fornecem nova decisão, conclusão financeira ou autorização. Não inferir valor omitido.",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3587,
+      "sha256": "f1ad5060c2959df94443220534f174b5b53f949a3dc618efb72be88d912e4006",
+      "source": {
+        "path": "darth-vader/sessions/c1763b11-cd02-4f2c-8612-80f3daae4f23.trajectory.jsonl",
+        "line": 246
+      },
+      "previous_status": "deferred",
+      "disposition": "no_durable_knowledge",
+      "target_note": null,
+      "reason": "Marcadores de teste/FAIL_CLOSED sem conteúdo decisório recuperável no campo redigido; não descrevem estado atual nem nova mutação.",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 8758,
+      "sha256": "f69bbd0c80045b30f320cba539d620170246c078a8608b096cb9a46f5931d6e2",
+      "source": {
+        "path": "kowalski/sessions/3b4bd43c-ae6a-49f6-97ab-c6c2d1c54e3e.trajectory.jsonl",
+        "line": 482
+      },
+      "previous_status": "deferred",
+      "disposition": "no_durable_knowledge",
+      "target_note": null,
+      "reason": "URL transitória de autorização OAuth; não é conhecimento durável, credencial atual nem política de integração. Valor não reproduzido no Brain.",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 9892,
+      "sha256": "70412b378aea163c98ce4c62acb5db32381bf16be8288eab487a8b0f40712c4b",
+      "source": {
+        "path": "kowalski/sessions/f87124a8-d2e0-40a6-98b2-ca02dce1d827.trajectory.jsonl",
+        "line": 178
+      },
+      "previous_status": "deferred",
+      "disposition": "no_durable_knowledge",
+      "target_note": null,
+      "reason": "Nome de validação com resultado redigido; não permite afirmar CNS válido, resultado ou vínculo cadastral.",
+      "deletion_authorized": false
+    },
+    {
+      "text_id": 3592,
+      "sha256": "452ecdcb285c39c29e8fa438e8b9c957d48eda1fed0a2710e4031df55e895206",
+      "source": {
+        "path": "darth-vader/sessions/e74ec74f-ba03-4f2d-afee-e83916c2042e.jsonl",
+        "line": 81
+      },
+      "previous_status": "exact_evidence_containment",
+      "disposition": "already_represented",
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "reason": "Limite documental PARTIAL_PASS, sanitização de evidência e ausência de autorização adicional já preservados na nota FIP; confirmação do estado passado não cria regra nova.",
+      "deletion_authorized": false
+    }
+  ],
+  "historical_coverage_complete": false
+}

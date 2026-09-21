@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:18:32.790773Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES.md
@@ -55,3 +55,11 @@ Automação de identidade tem alto risco operacional. Uma correção indevida po
 - [[70-AUTOMACOES/MATRIZ-ACESSO-BIKON-AD-CLIENTES|Matriz de acesso Bikon x clientes AD local]]
 - [[40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto|Confirmação antes de ações com impacto]]
 - [[40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git|Segredos fora do Brain e Git]]
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+Na consolidação de CNS, manter a fonte oficial CNJ como autoridade de validação; resultado de busca/Corregedoria auxilia a formar candidato, não prova por si o vínculo final no cadastro. Conferir identidade e escopo contratual antes de gravar; fonte e data fazem parte da evidência. Fonte: unidades 35415.
+
+No piloto de correlação entre NinjaOne, ARX e Bitdefender, ter21clientes cadastrados não provava mapeamento dos IDs de cada fonte: G0 ficou NO-GO e24x7desligado. Matriz candidata deve usar IDs estáveis, ser revisada e ter vínculos de negócio aprovados antes de rotear alerta. A família Corpus/2xxx foi observada como associação operacional por nome, sem vínculo pai/filho formal demonstrado pela API; não promover essa lista a hierarquia canônica nem fazer matching por nome silenciosamente. Fonte: unidades 31503, 36849, 31506.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

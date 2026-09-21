@@ -1,3 +1,15 @@
+---
+id: brain-9dd83da7f6bfc489970f
+type: knowledge
+title: Total fechado nao prova integridade financeira
+created: '2026-09-21T19:15:09.943981Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T19:18:32.790773Z'
+---
+
 # Total fechado nao prova integridade financeira
 
 ```yaml
@@ -36,3 +48,9 @@ O documento avaliado foi recebido para analise, nao para auditoria de seus artef
 - [[40-CONHECIMENTO/Financeiro/Validacao-source-native-de-PDF-financeiro|Validacao source-native de PDF financeiro]]
 - [[40-CONHECIMENTO/Financeiro/Settlement-de-fatura-nao-classifica-natureza-economica|Settlement de fatura nao classifica natureza economica]]
 - [[40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano|Validacao tecnica nao substitui aceite humano]]
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+No episódio do segundo lote fiscal, Hebert confirmou que diferenças entre soma dos itens e total refletiam descontos já validados naquele lote. Preservar essa justificativa vinculada ao lote e sua aprovação; não transformar o aceite em regra de ignorar divergências futuras ou de alterar totais automaticamente. O anexo e dados fiscais continuam exigindo reconciliação própria. Fonte: unidades 34938.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

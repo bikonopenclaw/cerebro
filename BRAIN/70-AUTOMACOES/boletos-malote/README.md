@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:18:32.790773Z'
 ---
 
 # Boletos e malote bancário
@@ -126,3 +126,11 @@ Proveniência e disposições: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-paral
 No teste histórico do SQLite de faturamento de 03/07/2026, o retorno CNAB foi conciliado distinguindo valor original, valor pago, juros/mora, tarifa, desconto, abatimento e data de crédito. A diferença entre pagamento e principal não deve sobrescrever o título original nem ser classificada automaticamente como receita principal. Resultado de fixture em banco temporário não comprova baixa de título real. Fonte: unidades 38083, 38086.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+No golden case histórico, normalizar cooperativa/carteira no campo livre do boleto foi necessário porque representação de entrada e remessa não tinham a mesma largura. Não reutilizar uma formatação universal para boleto e remessa: validar largura, zeros à esquerda, dígitos e checksum conforme cada contrato oficial e comparar com caso autenticado. O exemplo 01008→1008 é histórico daquele layout, não regra para todo banco. Fonte: unidades 36546.
+
+Livro operacional de emitidos e importador de retorno devem manter componentes financeiros distintos e vínculo ao título original. A fala histórica sobre faturamento.db não fixa nome/local do banco atual nem comprova migração ou baixa realizada. Fonte: unidades 38078.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

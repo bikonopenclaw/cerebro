@@ -1,3 +1,15 @@
+---
+id: brain-89486c0eadea3b74ee11
+type: state
+title: Bikon Durable Work Orchestration
+created: '2026-09-21T19:15:09.943981Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T19:18:32.790773Z'
+---
+
 # Bikon Durable Work Orchestration
 
 ```yaml
@@ -48,3 +60,9 @@ Preservar pedidos assíncronos de relatórios e documentos além do turno conver
 - [[60-AGENTES/SENTINEL|Sentinel]]
 - [[60-AGENTES/KOWALSKI|Kowalski]]
 - [[40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle|Estado terminal requer convergencia do lifecycle]]
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+Nos episódios de promessa de retorno, exigir registro de pendência com identidade, responsável, estado, próximo acompanhamento e critério de encerramento; deduplicar follow-ups e encerrar explicitamente como concluído, bloqueado com causa ou falho. Hebert posteriormente pediu retirar a restrição de horário desse acompanhamento. O contrato atual de trabalho durável prevalece: integrar ao controlador canônico, sem criar ledger paralelo ou reinstalar plugin/cron histórico pela memória. Fonte: unidades 35310, 35382, 31098.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:18:32.790773Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -54,3 +54,9 @@ Na semana 2026-W31, o OpenClaw DRE v1 tinha commit preservado, `75/75` testes pr
 - [[40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao|Validação do runtime pós-migração]]
 - [[40-CONHECIMENTO/Operacional/Deploy-atomico-de-skills-com-hash-canonico|Deploy atômico de skills com hash canônico]]
 - [[01-DIARIO/Semanal/2026-W31|Semana 2026-W31, cobertura parcial]]
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+Na validação histórica do DRE, uma fixture que deveria provocar erro interno 7 retornou legitimamente TRANSACTION_NOT_FOUND 5; em outra tentativa, exit esperado 2 disparou trap ERR antes da asserção. O harness precisa distinguir saída esperada do domínio de falha do próprio teste, exercitar a rota instalada real e congelar fixtures válidas. Um teste mal especificado não prova defeito de produção nem autoriza repetir ordem encerrada. Fonte: unidades 33946, 33985.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

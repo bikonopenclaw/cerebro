@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:18:32.790773Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
@@ -84,3 +84,9 @@ Automações que podem gerar efeito externo devem separar claramente preparaçã
 O escopo autorizado também alcança efeitos indiretos, como comunicação que possa ser disparada pelo provedor a partir dos campos enviados. Antes de executar, verificar esses efeitos junto com destinatários e configurações; omitir um campo não é prova suficiente de que o provedor não enviará uma mensagem.
 
 O relato de 2026-06-26 sobre emissão de NFS-e sem e-mail externo registrou a intenção de omitir o e-mail do payload e parar se a API o exigisse. Esse episódio ilustra a necessidade de validar o efeito, sem comprovar o comportamento atual da API nem substituir uma política explícita de destinatários. Fonte: trecho 3554 no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-round2-20260921.json`.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+No episódio Notaas, o cliente local conservava rótulo interno homologation enquanto a configuração/destino e os documentos indicavam efeitos produtivos. Um rótulo de log, modo ou nome de diretório não prova sandbox: validar endpoint, credencial, contrato do ambiente e evidência do resultado antes de chamar uma ação de homologação. Não usar o episódio como autorização para emitir novamente. Fonte: unidades 35061, 36498.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-21T19:18:32.790773Z'
 ---
 
 # Governanca de capacidade nao e roteamento semantico
@@ -51,3 +51,13 @@ Em 2026-W34, [[50-PROJETOS/Em-Andamento/OpenClaw-RSE|OpenClaw RSE]] fechou Capac
 Correção histórica de 18/07/2026: Hebert rejeitou tratar UNUS como nome de processo; UNUS identifica um cliente. Em memória e roteamento, separar identidade da entidade (cliente/organização) do procedimento, capacidade ou workflow que a atende. Uma coincidência de nome em tarefa ou artefato não cria um processo institucional e não deve originar vínculo semântico desse tipo sem evidência. Fonte: unidades 36976.
 
 Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+Sessões e workspaces separados permitem concorrência lógica, mas processos na mesma VPS continuam compartilhando CPU, memória e disco. Separar gateway pode reduzir um domínio de falha, não acrescentar capacidade; antes de aumentar paralelismo, observar carga e preservar prioridades. O relato de uma VPS de2vCPU é histórico, não inventário atual. Fonte: unidades 29559.
+
+Caso histórico Bitdefender: continue descrevia deduplicação de tickets no domínio Kowalski; pause descrevia ação individual atribuível P2 no domínio Sentinel. O diagnóstico SEMANTIC_MAPPING_DIFFERENCE não autoriza converter pausa em continuação. Comparar objeto, ator, escopo, condição, tempo e autoridade antes de reconciliar instruções semanticamente; registrar equivalência ou distinção com evidência, preservando gates reais. Fonte: unidades 34089.
+
+Na revisão dos crons de 06/07/2026, o verificador inicialmente tratou coleta pesada e envio leve por cache como equivalentes. A correção conceitual distingue operações que consomem capacidade/fonte dos envios que apenas leem artefato materializado; intervalos curtos de entrega não são automaticamente colisão de coleta. Aplicar aos contratos atuais, sem reativar a grade antiga das 08h. Fonte: unidades 32218.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

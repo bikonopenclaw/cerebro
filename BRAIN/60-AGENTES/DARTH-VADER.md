@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T19:18:32.790773Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
@@ -245,3 +245,11 @@ Em 03/07/2026, o experimento SERPRO foi mantido no fluxo local solicitado por He
 Preferência de tratamento registrada por Hebert: Darth Vader e Kowalski no masculino; usar ele/dele para Darth Vader. Trata-se de convenção de comunicação dos agentes, sem alterar papel, permissão ou roteamento. Fonte: unidades 29027.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 6 de 2026-09-21
+
+O protótipo de controle financeiro familiar foi desenhado como aplicativo local/offline Flask + SQLite, dashboard lendo o mesmo banco, entrada manual e posterior bot Telegram com recepção de documentos/OCR local e confirmação humana. A fase inicial citava 46 categorias. Esse registro descreve o protótipo histórico, não migração concluída nem arquitetura produtiva vigente. Fonte: unidades 29827, 29833, 29836, 29950.
+
+Para ingestão financeira local, explorar QR estruturado antes de OCR, preservar evidência e exigir revisão humana antes de persistir classificação. O desenho histórico fechava o bot por padrão, limitava tamanho de arquivo, tirava OCR do event loop e mostrava erros operacionais. Avaliação antiga de Apple Vision/Tesseract não é ranking atual nem autorização para enviar dados a serviços externos. Fonte: unidades 29983, 30004.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
