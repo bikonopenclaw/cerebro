@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-28.md
@@ -594,3 +594,45 @@ No contrato histórico Serventia Identity revision2, CNS era a âncora em serven
 Na definição histórica do Command Envelope, mesmo Command ID com bytes canônicos divergentes deveria resultar DATA_COMMAND_ID_COLLISION antes da avaliação de provenance/scope/key. CTM017 exigiu fixture própria com scope/key/provenance divergentes, preservando CTM018 que precisava de scope/key iguais. Teste deve representar todas as condições declaradas sem destruir a prova de outro cenário; revisão documental PASS não equivale a implementação autorizada. Fonte: unidades 30524.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 9 de 2026-09-21
+
+A preparação histórica de30/07 relatou seleção CNS024067 revision3 congelada, Classe2 aceita por declaração do Owner (sem alegar classificação CNJ oficial), binding hash fc00f961256429252878b959c3528e2df67a7e01c92c1bb747df5a685190cd58 e posterior validação Sentinel/freeze do plano formal hash ffa97dccd0a86271fe9c6555d2438ad177629bad9af3763a4bd5f0bc2f793e78. O nome PROPOSED do arquivo não resolve sozinho lifecycle posterior; conciliar recibo de freeze. Continuavam0targets qualificados entre8, nenhum teste executado e nenhuma autorização operacional implícita. Fonte: unidades 29934.
+
+No desenho histórico do Provimento 213, Sentinel coletava e produzia Assessment/Finding/Evidence; Kowalski gerava documentos, QA, DocumentPackage, Manifest e relatório final; Darth era fornecedor opcional de contexto do cliente somente leitura. A ação corretiva protegida era módulo técnico interno limitado ao fluxo aprovado, sem autoridade externa independente. Papel de Puppet estava redigido nesta ocorrência e não deve ser reconstruído a partir dela. Fonte: unidades 8935, 30421.
+
+Recibo histórico do dashboard CNS 024067 vinculou G.02 à Portaria 003/2026 e registrou G02_REASKED=NO, conformidade CONFORME, HTTPS e equivalência dashboard/Telegram. Preservar como evidência e estado daquele recibo; não atesta conformidade atual nem dispensa validação do documento. Fonte: unidades 31591.
+
+No registro histórico do EP-01, a sequência normativa era charter, ordem, domínio, arquitetura, contratos de agentes, modelo de dados e definição documental EP-01. O pacote de governança de execução era auxiliar, sem substituir essa sequência. O commit documental não autorizava implementação técnica; estado atual exige evidência posterior. Fonte: unidades 34780.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 10 de 2026-09-21
+
+Dashboard HTML e exportação PDF precisam de rotas/headers separados: abrir a página não deve disparar download ou herdar application/pdf/attachment. Botão de exportar deve preservar o dashboard aberto e usar o mesmo estado canônico; validar HTML/interatividade no cliente remoto e PDF separadamente, sem mutar entrevista/evidências ao corrigir apresentação. Fonte: unidades 30599.
+
+No desenho histórico de onboarding de cartório, CNS oficial enriquece cadastro mediante evidência: remover pontuação preservando zeros à esquerda, não deduzir CNS apenas pelo nome, registrar fonte/horário e tratar resultado de lista alternativa como candidato até confirmação. Puppet coordena; Kowalski usa em documentos; Darth consulta quando cadastro financeiro depende da identidade; marketing não requer esse acesso por padrão. Consulta não autoriza escrita em CRM nem classificação normativa sem tabela oficial vigente. Fonte: unidades 35416.
+
+No contrato histórico aprovado v1.0.0, remediation.py era componente técnico interno limitado à ação congelada, sem criar agente/gateway/persona ou serviço autônomo. Puppet poderia orquestrá-lo somente após validação do Approval exato, sem transferir propriedade de ação externa para Puppet ou Darth. Consolidar com o mapeamento de papéis recuperado em8935/30421; não indica permissão operacional atual. Fonte: unidades 8932.
+
+Em20/08/2026, ao discutir o Portal213 como Telegram Mini App, Hebert recusou criar um novo DNS e pediu fazer como a outra solução. O contexto27838 identifica o projeto, mas não comprova aceite ou implantação de uma alternativa específica. Preservar a restrição daquele desenho, sem generalizar proibição de DNS para outros projetos ou declarar o Mini App entregue. Fonte: unidades 34459.
+
+Um recibo histórico declarou upload do PDF EV-000002 de292.076bytes ligado a Q-CONTROL-G-06 e entrevista em COMPLETED_WITH_OPEN_EVIDENCE_GAPS. O mesmo recibo distinguiu correção disponível no backend de fluxo de correção ainda não exposto no Mini App. Preservar como resultado relatado daquela janela; não equivale a evidência integral, estado atual ou prova de que a tela prometida foi entregue. O documento de evidência não pertence ao escopo de exclusão dos históricos. Fonte: unidades 33168.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Contrato histórico local preservado
+
+- [[50-PROJETOS/Historico/Prov213-Business-Completion-Addendum-v1|Business Completion Addendum v1]] — proposta de avaliação/restore posteriormente validada no escopo documental, com correção de schema e ensaios não produtivos; não comprova operação real.
+
+## Complementos reconciliados — lote 12 de 2026-09-21
+
+Na recuperação histórica do MiniApp, start_param de portal devia forçar visão overview, assim como interview forçava entrevista, evitando herdar aba de sessão anterior. CONTENT_RENDERED só deveria ocorrer após conteúdo não vazio da visão pretendida. Mudança de comportamento requer identidade do build e launcher coerentes; listener manual saudável não prova persistência quando o serviço canônico está reiniciando. Fonte: unidades 32395.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 14 de 2026-09-21
+
+No dry-run da promoção de seis CNS, Alzira passou de66 evidências brutas a8 canônicas com66 contabilizadas e zero descarte silencioso; pendências17→35 tinham disposições explícitas. Mudança de contagem exige mapa fonte→fato/disposição, não igualdade bruta. Validação do indexador não executou os1003objetos; produção posterior ainda tinha KOWALSKI_FINAL=PENDING nesse trecho, embora FINAL_STATUS dissessePASS. Usar fechamento posterior autenticado, sem converter recibo autodeclarado em aceite independente. Fonte: unidades 9869.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

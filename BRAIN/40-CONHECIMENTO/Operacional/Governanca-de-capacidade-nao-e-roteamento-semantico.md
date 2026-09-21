@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 ---
 
 # Governanca de capacidade nao e roteamento semantico
@@ -67,3 +67,21 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260
 Na revisão Sentinel R2, distinguir incident severity de protective hold: agregado crítico sem atribuição não justifica inventar P2, mas tampouco aguardar8hcomo rotina. Propor contenção imediata safety_hold_unresolved_critical com severidade ainda não determinada até evidência de atribuição/impacto. Aceite offline da candidata e contenção técnica das ferramentas no agente ativo são gates diferentes; documentação autodeclarada APPROVED não concede autoridade. Fonte: unidades 37017.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 9 de 2026-09-21
+
+Fallback aciona outro modelo sob uma condição de falha/indisponibilidade; advisor/segunda avaliação é uma etapa de consulta ou revisão. Configurar default e fallback não implementa automaticamente arquitetura com assessor ou consenso. Comparações históricas com Hermes não comprovam capacidade instalada do OpenClaw. Fonte: unidades 37456.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 12 de 2026-09-21
+
+No routerMVP histórico, núcleo recebia classificação C/R/G e D0 estruturada; seus testes não provavam que a classificação representava o pedido natural. required_tools é requisito, available_tools é disponibilidade: não transformar ferramenta opcional em obrigação. Gates exigidos precisam aparecer no contrato do prompt mesmo em saída blocked quando isso for critério; safe_default também precisa passar elegibilidade. Não confundir muitos testes locais com validação semântica do classificador. Fonte: unidades 34537.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 13 de 2026-09-21
+
+No router MVP revisado em 24/07, 26 testes e 48 casos verdes reproduziam frases do classificador e não demonstravam generalização: comparação byte a byte não cadastrada foi roteada para LLM, e relatório read-only mencionando pagamentos históricos foi bloqueado como G3. Separar ação solicitada, contexto citado e restrições antes de calcular efeito/risco; testar paráfrases, negações, contexto adversarial legítimo e operações determinísticas não cadastradas. available_tools não implica required_tools, risco potencial não implica efeito externo e gates calculados devem chegar literalmente ao executor. Esse relatório rejected não atesta estado atual da implementação corrigida. Fonte: unidades 34533.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -1,0 +1,18 @@
+{
+  "id": 8931,
+  "sha256": "72075cb47a2c4776e9dc8ca7f8ebc2e8c244853dadf0f3b77d2286f2c5f39924",
+  "sources": [
+    {
+      "path": "kowalski/sessions/502ca998-5e6d-42b8-9666-5657a57f9d0a.trajectory.jsonl",
+      "line": 579
+    },
+    {
+      "path": "kowalski/sessions/502ca998-5e6d-42b8-9666-5657a57f9d0a.trajectory.jsonl",
+      "line": 596
+    }
+  ],
+  "disposition": "curated_pending_publication",
+  "target_note": "BRAIN/50-PROJETOS/Historico/Prov213-Business-Completion-Addendum-v1.md",
+  "reason": "Contrato proposto integralmente lido e reconciliado em nota histórica estruturada; não afirma norma, aceite ou implementação atuais; fórmulas redigidas não reconstruídas.",
+  "deletion_authorized": false
+}

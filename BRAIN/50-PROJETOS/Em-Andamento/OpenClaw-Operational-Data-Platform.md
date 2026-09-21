@@ -1,3 +1,15 @@
+---
+id: brain-72a9278ef452680844ba
+type: knowledge
+title: OpenClaw Operational Data Platform
+created: '2026-09-21T19:47:59.816365Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T19:50:50.519705Z'
+---
+
 # OpenClaw Operational Data Platform
 
 ```yaml
@@ -88,3 +100,15 @@ O Brain registra apenas estado consolidado e guardrails. Evidencias, pacotes, ma
 - [[40-CONHECIMENTO/Operacional/Segredos-fora-do-Brain-e-Git|Segredos fora do Brain e Git]]
 - [[40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo|Autorizacao atomica nao herda escopo]]
 - [[40-CONHECIMENTO/Operacional/Proposta-nao-e-contrato-congelado|Proposta nao e contrato congelado]]
+
+## Complementos reconciliados — lote 13 de 2026-09-21
+
+No planejamento de16/07/2026 da migração corporativa, clientes_ativos.json era mestre eSQLiteprojeção; hardlink não era segundo banco e snapshots/runtime não eram bases de negócio ativas. KitFamiliar foi incluído depois somente no desenho. A troca deveria coordenar escritor/helper/BI semdual-master; rollback após escritaPostgreSQL requer delta idempotente antes de reabrirSQLite. Auditoria encontrou divergência itens×total/vínculo pessoa-unidade e efeitosPDF/XML/REM/email fora da transaçãoDB; mudar engine não resolve esses problemas. Recomendação4vCPU/12–16GB e bloqueios daquele snapshot não substituem capacidade/estadoODP atuais. Fonte: unidades 29489.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 14 de 2026-09-21
+
+A JanelaA de16/07 foi depois concluída: três cópiasSQLite passaram integrity_check, zero violaçõesFK e igualdade lógica às fontes; JSONmestre e manifesto5/5 conferiram. KitFamiliar era referência de schema/pipeline, não fonteprodutiva migrada. Consolidar junto29489, removendo pendência histórica de criação debackup; aceite daJanelaA não autorizou instalação, resize oucutover, nem prova que esses backups ainda existam hoje. Fonte: unidades 29540.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

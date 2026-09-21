@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 ---
 
 # Boletos e malote bancário
@@ -140,3 +140,17 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260
 O relato histórico38088 identificou PDF com NÃO RECEBER APÓS O VENCIMENTO enquanto o gerador CNAB aplicava mora diária, inclusive fallback de1/300do valor. Preservar como risco de inconsistência, não como taxa aprovada. Conferir regra contratual autorizada e layout bancário vigente, explicitar unidades/percentual e manter PDF/remessa coerentes; não conservar cálculo automático implícito por tradição. Separar principal, juros, tarifa e descontos na conciliação. Fonte: unidades 38088.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 11 de 2026-09-21
+
+Um diagnóstico histórico constatou faturamento.db com2clientes,2NFS-e,2boletos,1remessa, nenhum retorno/baixa eR$18.589,19 registrados. Contrastava com Remessa092 de01/07/2026:28NFS-e,28boletos,CNAB400 com30linhas,totalR$88.403,87 gerados fora do ledger. Propunha backfill a partir dosJSONs já gerados, sem reemitir/recriar/enviar, depois parser de retorno. Relato não prova que a lacuna persiste nem autoriza backfill automático. Fonte: unidades 37458.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch11-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 12 de 2026-09-21
+
+Inventário PostgreSQL de16/07/2026 registrava17clientes,30NFS-e,30boletos,2remessas,29vínculos,0retornos eR$106.993,06; snapshot posterior ao relato de ledger com2notas. Não provar backfill por soma: conferir IDs/proveniência. Permaneciam5de28notas com diferença itens-total deR$1.670,63 e3documentos/R$2.721,17 com vínculo ambíguo; umdocumento representava duasunidades. EfeitosPDF/XML/REM/emissão/e-mail podiam ocorrer antes de gravarDB, então rollbackDB não os desfaz. Fonte mestre cadastral era clientes_ativos.json, SQLite projeção; alias hardlink em/var/tmp não era segundo banco lógico. MigraçãoBikon proposta excluía OpenClaw/Codex/runtime e kitfinanceirofamiliar; cutover conjunto escritor/helper/BI, semdual-master/fallback automático, rollback após escrita exige delta reconciliado. Inventário é histórico, não atestado de capacidade atual ou autorização de migração. Fonte operacional indicada: workspace/relatorios/postgresql-etapa-0-inventario-plano-20260716.md, SHAec09cc1002fb7410e44af869c65a04727782696ef77beb5588b76aaa754a2377. Fonte: unidades 29484.
+
+Implementação histórica faturamento_db.py previa init,registrar-pacote,sincronizar-pacotes,importar-retorno e relatório; retornoCresol conciliava nosso_numero e fallbacknumero_documento. Códigos06/17 eram tratados como pagamento e03/09/26 como outrosstatus no mapa local, sujeitos a contrato oficial/versão antes de uso. Original,pago,juros/mora,tarifa,desconto,abatimento,pagamento/crédito eram separados. Registrar pacote apenas ao fim da emissão deixa janela entre efeitoexterno eledger, que exige reconciliação/idempotência. Fonte do pacoteCeli: workspace-darth-vader/boletos/pacotes-emissao/20260626-celi-aracruz-nfse-producao/resumo-emissao.json e boleto-input.json/resultado-boleto.json; caminhos são localizadores históricos, não prova de conteúdo atual ou númeroNFS-e189. Fonte: unidades 38100.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

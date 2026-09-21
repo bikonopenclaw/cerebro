@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 ---
 
 # SENTINEL, Controller de Operações e SNOC
@@ -292,3 +292,43 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260
 Contrato OAS3 deve ser autenticado nos bytes do YAML/JSON local, com proveniência ao pacote autorizado, paths/operações/schemas e refs resolvíveis offline. Hash de Markdown da autorização não identifica OAS3. Zero candidato ou múltiplos sem identidade inequívoca bloqueiam; não reconstruir do HTML nem escolher outro parseável. Approval deve vincular execução, caminho, hash, finalidade, uso único/expiração; descrever uma API não autoriza chamá-la. Fonte: unidades 33680.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 10 de 2026-09-21
+
+Uma baseline pode servir ao desenho de supervisor/modelo/isolamento sem provar equivalência funcional. Na preparação Sentinel, PDF/dossiê/QA visual não substituíam ciclos reais de alerta NinjaOne, agregado ARX e decisão Bitdefender. Comparar os mesmos inputs sanitizados, preservando decisões materiais, pause state e findings; diferenças editoriais não bloqueiam, divergências operacionais devem ser classificadas. Não copiar credenciais, transcritos, identidade ou permissões amplas do donor. Fonte: unidades 33617, 8582.
+
+O manifesto histórico de contexto operacional Sentinel usava client_id exato para associar exceções, separava owners/SLA padrão de overrides por cliente e registrava fonte, data de alteração, exportação e hash. Naquela planilha, C=Não selecionava padrão e C=Sim override; o nome genérico do campo inheritance_flag não deve inverter essa regra. Revalidar planilha/schema antes de reutilizar; manutenção estava opcional e não configurada naquele snapshot. Fonte: unidades 29740.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 12 de 2026-09-21
+
+Na matriz G0 de19/07, havia280célulasPENDENTE, mas o conjunto autorizado de decisão tinha52. Formatação limitada não alterou valores/fórmulas. As17decisõesARX REVISAR tornaram-se não bloqueantes paraG0 por regra expressa, sem equivaler aAPROVAR nem autorizar uso fora do gate. Hashes lógicos de21linhas precisaram ser recalculados após edição manual. G0PASS e0bloqueios de matriz não comprovaram prontidão de produção recorrente: runbook, credenciais, janela, duplicação efalse-green ainda eram questões próprias. Estado histórico não redefine política atual. Fonte: unidades 8721.
+
+Na proposta histórica SentinelR3, incidenteP1/P2 atribuído pausava; agregado crítico sem atribuição suficiente provocava protective_hold_unresolved_critical imediato com severidade nula; agregado não crítico incompleto era dívida de evidência. Timeout dessa dívida (480min no desenho) não se convertia artificialmente emP2. Agente, motor determinístico e Puppet eram camadas distintas: build isolado podia avançar, mas implantação exigia política restrita, envelope sanitizado e prova de runtime. Aceiteoffline não equivalia à homologação real. Não ativar estados/prazos pela nota histórica. Fonte: unidades 37018.
+
+No piloto read-only de19/07/2026, a fonte local indicava owner/SLA ausentes para21/21, embora a planilha validada tivesse21 completos (13padrão/8exceções). A inspeção encontrou safe_client forçando not_configured, portanto ausência na projeção não demonstrava ausência na origem. Rodada parou antes de APIs externas; reconciliação requeria vínculo porclient_id/proveniência, sem inferir janela de manutenção. Situação histórica, não diagnóstico atual nem autoridade para editar clientes. Fonte: unidades 41456.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 13 de 2026-09-21
+
+Na preparação SentinelR4, equivalência parcial permitia offline/shadow condicionado, não canário. Advisory-only deveria provar recomendação determinística de owner/destino sem reassignment real. Divergência P2/continue exigia distinguir semântica do campo, elegibilidade no evento, mudança intencional de política ou erro do resumo. Medir duração/overlap/processo residual contra deadline configurado sem inventar limite. O shadow histórico limitava-se a2ciclos ou30min e terminava antes de canário; autorização antiga não é vigente. Fonte: unidades 33623.
+
+Consolidar junto41456: planilha histórica diretamente lida confirmava padrão e8exceções, enquanto safe_client anulava owner/SLA na projeção. Autoridade está no mapeamento porclient_id e proveniência, não em nome/default inferido do resumo. Janela de manutenção vazia era opcional somente para aquele piloto read-only. Fonte: unidades 41459.
+
+Goal5B histórico teve bloqueio por descoberta rootcrontab, depois superado por evidência humanaPASS_EMPTY. Criou15sucessores para17agendas, consolidando2paresARXduplicados. Mutativos/comunicação tiveram predecessores desativados antes de ativar sucessores; auditoria pós-corte relatou old_active0/new_inactive0/duplicatas0. Validador legado falhou por esperarjobs.json quando autoridade eraSQLite: isso não invalida por si o cutover. O trecho ainda pendia pacote/baseline final; não presume estado atual nem requer repetir rootgate antigo. Fonte: unidades 31205.
+
+Fechamento da equivalência classificou P2+continue de Kowalski como SEMANTIC_MAPPING_DIFFERENCE: continue significava rotina sem falha, não decisãoSNOC de não pausar. Sentinel mantém pausa individualP2atribuível; não comparar os enums diretamente nem descartar findings corretos. Aceite histórico PASS_WITH_INTENTIONAL_SEMANTIC_MAPPING preservava advisory-only/semcopiarpermissões e não liberava canário. Consolidar com33623 como evolução resolvida, não pendência atual. Fonte: unidades 8591.
+
+Consolidar com41456/41459: safe_client anulava campos daorigem; aguardo de decisão era checkpoint histórico, não determinação vigente nem prova de owner/SLA ausentes hoje. Fonte: unidades 41462.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 14 de 2026-09-21
+
+A decisão humana “Sentinel coleta tudo” já aparece em 26/07/2026, seguida de confirmação interagente: coleta/consulta exclusiva nas fontes operacionais autorizadas pelo Sentinel, handoff ao Kowalski com fonte, horário UTC, escopo e evidência sanitizada para interpretar/formatar. Não manter coleta paralela no Kowalski nem inferir novas permissões de fontes; Puppet acompanha mudanças de prioridade, gate ou risco. A menção canônica a 05/08 registra consolidação posterior, não necessariamente a primeira decisão. Fonte: unidades 33693.
+
+Na correção ARX de 17/07, status passou a emitir somente ok, accounts, clients, current_status, write_methods_exposed e audit; audit continha correlation, timestamp_utc e client_sha256 obtidos após append-only bem-sucedido. Redigir campos de um payload bruto não substitui allowlist explícita de saída. A única leitura retornou 11 contas/10 clientes/attention=1, escrita indisponível: corrigir sanitização não resolve a ocorrência operacional. Consulta direcionada posterior foi autorizada separadamente, sem herdar ticket, remediação ou avanço de fase. Counts e estado são históricos. Fonte: unidades 36768.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 ---
 
 # ARX Backup diário → tickets NinjaOne
@@ -276,3 +276,9 @@ No P3 histórico Ferreira Rocha, a atribuição única ligou atenção a erro de
 No histórico NinjaOne, Client Credentials servia à consulta de determinadas superfícies, mas não deve ser assumido como suficiente para ticketing: a rota autorizada passou a exigir user-context. Escolher grant/escopo pelo endpoint e autoridade efetivamente demonstrados, preservando segredo local e validação de callback; não reutilizar URLs tentativas antigas. Fonte: unidades 31889.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 13 de 2026-09-21
+
+No teste ARX/NinjaOne de18/07, --create amplo permaneceu bloqueado porque podia criar/fechar múltiplos tickets e alterar dedupe. A proposta autorizada era umPOST literal interno e umGET de conferência, retry=False, semnodeIddecliente e sem fechamento posterior. Dry-run também fazia append no log por desenho: ausência de efeito externo não significa zero escrita local. Esse checkpoint ainda não havia criado o ticket; parâmetros/endpoint antigos não são autorização atual. Fonte: unidades 8750.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

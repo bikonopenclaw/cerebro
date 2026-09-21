@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 ---
 
 # Pacote selado auto-reprodutivel antes de privilegio operacional
@@ -57,3 +57,9 @@ Em 2026-08-20, a rota R2.4 tornou explicito que um pacote com prerequisito insta
 Em scripts privilegiados, mantenha o descritor retornado por mkstemp; não combine arquivo já criado com nova abertura O_EXCL do mesmo caminho. Rollback só remove recursos criados/iniciados pela própria execução, com flags por recurso e sem agir após preflight sem mutação. Verifique hash por caminho exato, não presença em lista; processo/listener inalterado não prova teste funcional Telegram. Fonte revisada e cópia privilegiada executada devem manter identidade de bytes. Fonte: unidades 30533.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 14 de 2026-09-21
+
+Nos execution packs DRE de 02/08, validação do preflight v2 não executava o preflight nem autorizava run v1. Cada pacote vinculava bytes, owner/modos, inventário sem symlinks, argv/env exatos, usuário efetivo openclaw, claim atômico e resultado de uma tentativa; sem retry/resume/segunda invocação. Domínio de confiança runtime/package/preflight/state-root não deveria depender do repositório de fonte ou safe.directory, nem promover artefatos de manutenção a âncoras de execução. Testes 28/28 e claim ausente indicavam prontidão naquela versão, não efeito real ou autorização presente. Fonte: unidades 8610.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -1,0 +1,794 @@
+{
+  "reviewed_units": 28,
+  "counts": {
+    "curated_pending_publication": 10,
+    "no_durable_knowledge": 17,
+    "already_represented": 1
+  },
+  "historical_coverage_complete": false,
+  "source_files_deleted": 0,
+  "conditional_dependencies": [],
+  "items": [
+    {
+      "id": 3519,
+      "sha256": "1e443518b25a6ee1f0a01d47e636c7abfa9ab46aff4d80523a3402008a0807fc",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 103,
+        "role": "assistant",
+        "timestamp": "2026-06-13T20:53:14.463Z"
+      },
+      "disposition": "proposal",
+      "reason": "Preservação suficiente do resultado histórico INDETERMINADO, sem inferir emissão ou perda.",
+      "risks": [
+        "Fato/decisão histórica não é lançamento nem prova de aplicação atual; não emitir, reclassificar ou cobrar por replay."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "proposal_text": "Em13/06/2026, a tentativa fiscal real de valorR$1,00 teve timeout apósPOST Notaas; não retornaram invoice_id, número, código verificador ouPDF/XML. O resultado comunicado foi INDETERMINADO, com orientação de conferir provider antes de repetir para não duplicar emissão. Isso é estado histórico, não prova de pendência atual nem autorização de retry. Relatório referenciado: workspace-darth-vader/relatorios/status_emissao_nfse_hebert_mattedi_2026-06-13.md.",
+      "operational_checks": {
+        "known_path": "/data/.openclaw/workspace-darth-vader/relatorios/status_emissao_nfse_hebert_mattedi_2026-06-13.md",
+        "expected_fields": [
+          "data/hora da tentativa",
+          "ambiente real",
+          "valor1.00",
+          "serviço010701",
+          "competência2026-06-13",
+          "status da consulta posterior",
+          "invoice_id/número/chave se retornados",
+          "evidência de cancelamento ou resolução se existir"
+        ],
+        "note": "Arquivo citado é localizador, não existência/conteúdo verificados por este auxiliar."
+      },
+      "review_file": "review-agent-a-financial-amendments.json",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "deletion_authorized": false
+    },
+    {
+      "id": 29391,
+      "sha256": "71f959dbc989681cb91455c481f0f6999da11b17465c62f4d79fa1a5fb1e7806",
+      "source": {
+        "path": "main/sessions/1126690f-b5cd-406d-b8fe-20f33e9ae699.trajectory.jsonl",
+        "line": 11,
+        "role": "user",
+        "timestamp": "2026-06-13T11:58:55.337Z"
+      },
+      "disposition": "proposal",
+      "reason": "Dados/briefs preparatórios da mesma tentativa; preservar escopo sem copiar CPF/endereço.",
+      "risks": [
+        "Fato/decisão histórica não é lançamento nem prova de aplicação atual; não emitir, reclassificar ou cobrar por replay."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "proposal_text": "Pedido histórico de NFS-e real deR$1,00 para Hebert em13/06, serviço de infraestrutura de rede010701, município de prestaçãoVitória/ES eISS5%; houve preparação/dry-run com gate final e posterior timeoutINDETERMINADO. As instruções fiscais do pedido são históricas, não validação tributária vigente. Não conservar CPF/endereço nos resumos do Brain; consulta operacional deve usar cadastro protegido e evidência original autorizada.",
+      "operational_checks": {
+        "known_path": "/data/.openclaw/workspace-darth-vader/relatorios/status_emissao_nfse_hebert_mattedi_2026-06-13.md",
+        "expected_fields": [
+          "data/hora da tentativa",
+          "ambiente real",
+          "valor1.00",
+          "serviço010701",
+          "competência2026-06-13",
+          "status da consulta posterior",
+          "invoice_id/número/chave se retornados",
+          "evidência de cancelamento ou resolução se existir"
+        ],
+        "note": "Arquivo citado é localizador, não existência/conteúdo verificados por este auxiliar."
+      },
+      "review_file": "review-agent-a-financial-amendments.json",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3501,
+      "sha256": "614893a583e8ceeca5a179579918aea4fd8cabdebfab185d2a33a14562cab4a7",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 34,
+        "role": "user",
+        "timestamp": "2026-06-13T00:14:31.949Z"
+      },
+      "disposition": "proposal",
+      "reason": "Dados/briefs preparatórios da mesma tentativa; preservar escopo sem copiar CPF/endereço.",
+      "risks": [
+        "Fato/decisão histórica não é lançamento nem prova de aplicação atual; não emitir, reclassificar ou cobrar por replay."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "proposal_text": "Pedido histórico de NFS-e real deR$1,00 para Hebert em13/06, serviço de infraestrutura de rede010701, município de prestaçãoVitória/ES eISS5%; houve preparação/dry-run com gate final e posterior timeoutINDETERMINADO. As instruções fiscais do pedido são históricas, não validação tributária vigente. Não conservar CPF/endereço nos resumos do Brain; consulta operacional deve usar cadastro protegido e evidência original autorizada.",
+      "operational_checks": {
+        "known_path": "/data/.openclaw/workspace-darth-vader/relatorios/status_emissao_nfse_hebert_mattedi_2026-06-13.md",
+        "expected_fields": [
+          "data/hora da tentativa",
+          "ambiente real",
+          "valor1.00",
+          "serviço010701",
+          "competência2026-06-13",
+          "status da consulta posterior",
+          "invoice_id/número/chave se retornados",
+          "evidência de cancelamento ou resolução se existir"
+        ],
+        "note": "Arquivo citado é localizador, não existência/conteúdo verificados por este auxiliar."
+      },
+      "review_file": "review-agent-a-financial-amendments.json",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3510,
+      "sha256": "3969f58d7d83d9f42263c6fa8ea1d8fb51811756de196e145859eb0d51e14cdf",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 72,
+        "role": "user",
+        "timestamp": "2026-06-13T20:49:32.460Z"
+      },
+      "disposition": "proposal",
+      "reason": "Dados/briefs preparatórios da mesma tentativa; preservar escopo sem copiar CPF/endereço.",
+      "risks": [
+        "Fato/decisão histórica não é lançamento nem prova de aplicação atual; não emitir, reclassificar ou cobrar por replay."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "proposal_text": "Pedido histórico de NFS-e real deR$1,00 para Hebert em13/06, serviço de infraestrutura de rede010701, município de prestaçãoVitória/ES eISS5%; houve preparação/dry-run com gate final e posterior timeoutINDETERMINADO. As instruções fiscais do pedido são históricas, não validação tributária vigente. Não conservar CPF/endereço nos resumos do Brain; consulta operacional deve usar cadastro protegido e evidência original autorizada.",
+      "operational_checks": {
+        "known_path": "/data/.openclaw/workspace-darth-vader/relatorios/status_emissao_nfse_hebert_mattedi_2026-06-13.md",
+        "expected_fields": [
+          "data/hora da tentativa",
+          "ambiente real",
+          "valor1.00",
+          "serviço010701",
+          "competência2026-06-13",
+          "status da consulta posterior",
+          "invoice_id/número/chave se retornados",
+          "evidência de cancelamento ou resolução se existir"
+        ],
+        "note": "Arquivo citado é localizador, não existência/conteúdo verificados por este auxiliar."
+      },
+      "review_file": "review-agent-a-financial-amendments.json",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "deletion_authorized": false
+    },
+    {
+      "id": 35157,
+      "sha256": "068140f7baf753aec4d65d381754c6ce4a727a35fc7c6297f890af8b69618c1d",
+      "source": {
+        "path": "main/sessions/bdb70494-9128-4bb2-9d38-bc9f4ec10964.jsonl",
+        "line": 53,
+        "role": "assistant",
+        "timestamp": "2026-08-14T23:25:56.792Z"
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Pergunta de entrevista sem resposta ou decisão humana: item1/65 de janeiroMercadoPago foi apresentado, explicitamente sem lançamento. Não atribuir natureza econômica pela lista de opções.",
+      "risks": [
+        "Fato/decisão histórica não é lançamento nem prova de aplicação atual; não emitir, reclassificar ou cobrar por replay."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "operational_checks": {
+        "known_path": "/data/.openclaw/workspace/projects/fip/data/fip.db",
+        "lookup": "Fonte01 janeiro.pdf; vencimento20/01/2026; compra22/12/2025; GSHIELD;R$24,37;12/12;final0508",
+        "expected_fields": [
+          "ID da fonte",
+          "ID do item",
+          "decisão humana posterior e timestamp",
+          "estado da entrevista",
+          "proveniência/audit/classificação atual"
+        ],
+        "note": "Somente se necessário reconciliar estado atual; a pergunta isolada não contém decisão durável."
+      },
+      "review_file": "review-agent-a-financial-amendments.json",
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "deferred",
+      "deletion_authorized": false
+    },
+    {
+      "id": 37458,
+      "sha256": "90f1562ca32cfce5f6b781bccb9669b45c87cf034b145a76332ce34c7008e750",
+      "source": {
+        "path": "main/sessions/ec9d828e-3537-447b-803e-68c24f7d7068.jsonl",
+        "line": 124,
+        "role": "assistant",
+        "timestamp": "2026-07-10T20:29:07.623Z"
+      },
+      "disposition": "proposal",
+      "reason": "Relato documenta divergência entre emissão e ledger; preservar como diagnóstico datado, não alegar gap atual.",
+      "risks": [
+        "Fato/decisão histórica não é lançamento nem prova de aplicação atual; não emitir, reclassificar ou cobrar por replay."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/boletos-malote/README.md",
+      "proposal_text": "Um diagnóstico histórico constatou faturamento.db com2clientes,2NFS-e,2boletos,1remessa, nenhum retorno/baixa eR$18.589,19 registrados. Contrastava com Remessa092 de01/07/2026:28NFS-e,28boletos,CNAB400 com30linhas,totalR$88.403,87 gerados fora do ledger. Propunha backfill a partir dosJSONs já gerados, sem reemitir/recriar/enviar, depois parser de retorno. Relato não prova que a lacuna persiste nem autoriza backfill automático.",
+      "operational_checks": {
+        "known_path": "/data/.openclaw/workspace-darth-vader/boletos/db/faturamento.db",
+        "known_tables": [
+          "clientes",
+          "nfse",
+          "boletos",
+          "remessas",
+          "retornos",
+          "retorno_ocorrencias"
+        ],
+        "expected_fields": [
+          "identidadeRemessa092/2026-07-01",
+          "28invoice_ids/números",
+          "28boletos/nossosnúmeros",
+          "total88403.87",
+          "vínculosID entre tabelas",
+          "artefatosJSON ehashes",
+          "recibo/auditoria debackfill posterior",
+          "retornos/baixas sem duplicação"
+        ]
+      },
+      "review_file": "review-agent-a-financial-amendments.json",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "deletion_authorized": false
+    },
+    {
+      "id": 31443,
+      "sha256": "553a764533f0a1774768d84454587d0d971f4d1e6e768754fcdf5224384f4c6d",
+      "source": {
+        "path": "main/sessions/4e96390b-8620-4159-9182-5a08617c0875.trajectory.jsonl",
+        "line": 25,
+        "role": "user",
+        "timestamp": "2026-06-26T11:52:04.650Z"
+      },
+      "disposition": "proposal",
+      "reason": "Autorização concreta preservável sem afirmar conclusão; identificaçãoNFS-e189 requer recibo posterior.",
+      "risks": [
+        "Fato/decisão histórica não é lançamento nem prova de aplicação atual; não emitir, reclassificar ou cobrar por replay."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "proposal_text": "Em26/06/2026, Hebert autorizou uma únicaNFS-e real para Celi/Aracruz, R$585,00, competênciajunho/2026, serviço gerenciamento/controladoria/monitoramento de recursos de rede010701, prestaçãoVitória/ES,ISS5%. CSVRemessa091260626 indicava data desejada22/06, boleto comvencimento30/06 e próximo documento105602/últimonossonúmero1533-7. A delegação vedava lote, e-mailcliente, boleto/remessa e cancelamento naquele passo. Isso preserva pedido e limites; não prova emissão, númeroNFS-e189 ou envio. Cadastro pessoal deve ficar na fonte operacional protegida, não neste resumo.",
+      "operational_checks": {
+        "known_path": "/data/.openclaw/media/inbound/Emissão_de_NFS-e_-_Produção_1o_lote---39b04eb1-553c-416d-a977-cb171306f715.csv",
+        "ledger_path": "/data/.openclaw/workspace-darth-vader/boletos/db/faturamento.db",
+        "expected_fields": [
+          "invoice_id",
+          "NFS-e número189 se realmente vinculado",
+          "tomador protegido",
+          "valor585.00",
+          "competência2026-06",
+          "status e ambiente",
+          "PDF/XML ehashes",
+          "data de emissão efetiva versus desejada",
+          "sem inferir boleto/remessa por autorização de nota"
+        ]
+      },
+      "review_file": "review-agent-a-financial-amendments.json",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3552,
+      "sha256": "29364318c4a9c3a8d33de032452b116ca320b335360aa1207784108c68a600be",
+      "source": {
+        "path": "darth-vader/sessions/bdeb7819-995e-4cdb-b06c-ad63ba154305.jsonl",
+        "line": 225,
+        "role": "user",
+        "timestamp": "2026-06-26T11:53:54.304Z"
+      },
+      "disposition": "proposal",
+      "reason": "Autorização concreta preservável sem afirmar conclusão; identificaçãoNFS-e189 requer recibo posterior.",
+      "risks": [
+        "Fato/decisão histórica não é lançamento nem prova de aplicação atual; não emitir, reclassificar ou cobrar por replay."
+      ],
+      "target_note": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+      "proposal_text": "Em26/06/2026, Hebert autorizou uma únicaNFS-e real para Celi/Aracruz, R$585,00, competênciajunho/2026, serviço gerenciamento/controladoria/monitoramento de recursos de rede010701, prestaçãoVitória/ES,ISS5%. CSVRemessa091260626 indicava data desejada22/06, boleto comvencimento30/06 e próximo documento105602/últimonossonúmero1533-7. A delegação vedava lote, e-mailcliente, boleto/remessa e cancelamento naquele passo. Isso preserva pedido e limites; não prova emissão, númeroNFS-e189 ou envio. Cadastro pessoal deve ficar na fonte operacional protegida, não neste resumo.",
+      "operational_checks": {
+        "known_path": "/data/.openclaw/media/inbound/Emissão_de_NFS-e_-_Produção_1o_lote---39b04eb1-553c-416d-a977-cb171306f715.csv",
+        "ledger_path": "/data/.openclaw/workspace-darth-vader/boletos/db/faturamento.db",
+        "expected_fields": [
+          "invoice_id",
+          "NFS-e número189 se realmente vinculado",
+          "tomador protegido",
+          "valor585.00",
+          "competência2026-06",
+          "status e ambiente",
+          "PDF/XML ehashes",
+          "data de emissão efetiva versus desejada",
+          "sem inferir boleto/remessa por autorização de nota"
+        ]
+      },
+      "review_file": "review-agent-a-financial-amendments.json",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "deletion_authorized": false
+    },
+    {
+      "id": 37986,
+      "sha256": "5d022423818cfca3070b8539ceae9287f2457e3785576b19adeb7dbedefe6a2e",
+      "source": {
+        "path": "main/sessions/ff9a8eb5-a873-43c0-9c78-a33451053a87.checkpoint.c00f070d-2cf8-49f6-a81f-7263eb5ec15f.jsonl",
+        "line": 120,
+        "role": "user",
+        "timestamp": "2026-07-03T13:25:00.543Z"
+      },
+      "disposition": "proposal",
+      "reason": "Snapshot provider preservável com data da coleta e dados que estavam ausentes da nota; não converter em saldo atual.",
+      "risks": [
+        "Fato/decisão histórica não é lançamento nem prova de aplicação atual; não emitir, reclassificar ou cobrar por replay."
+      ],
+      "target_note": "BRAIN/60-AGENTES/DARTH-VADER.md",
+      "proposal_text": "ConsultaPARCSN OBTERPARC164 em03/07/2026 às10:24:45.443Z, parcelamento2, retornou Emparcelamento: pedido20/01, situação21/01, totalconsolidadoR$34.622,89 em24parcelas/baseR$1.442,62. Composição: apuração2025-10, vencimento21/11, originalR$14.359,14/atualizadoR$17.549,69;2025-11, vencimento22/12, originalR$14.110,14/atualizadoR$17.073,20. Demonstrativo: parcela2026-01 venceu22/01 e arrecadou20/01 R$1.442,62;2026-02 venceu27/02 e arrecadou31/03 R$1.471,47;2026-03 venceu31/03 e arrecadou31/03 R$1.471,47. DataConsolidacao estava mascarada/corrompida e não deve ser inferida. É fotografia histórica do provider, não quitação/saldo atual ou atualização doFIP.",
+      "operational_checks": {
+        "known_source": "responseId64959762-d675-49d5-bc28-afba00baf321; texto37986/hash registrado",
+        "expected_fields": [
+          "numeroParcelamento2",
+          "serviçoOBTERPARC164",
+          "responseDateTime",
+          "mesDaParcela",
+          "vencimentoDoDas",
+          "dataDeArrecadacao",
+          "valorPago",
+          "resposta posterior se alegar situação atual"
+        ],
+        "note": "Sem executar consulta externa ou inferir data mascarada."
+      },
+      "review_file": "review-agent-a-financial-amendments.json",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3468,
+      "sha256": "da6351340eb3135ad91b55d9e06981d416adfe529aabde11d876112e777249ff",
+      "source": {
+        "path": "darth-vader/sessions/60a3b10c-b9ab-4e9c-8c89-7f85006ac4d2.trajectory.jsonl",
+        "line": 86,
+        "role": "user",
+        "timestamp": "2026-08-09T20:28:22.757Z"
+      },
+      "disposition": "proposal",
+      "reason": "Pedido de classificação de grupos é informação de escopo, não decisão; relacionar aplicação histórica posterior28794.",
+      "risks": [
+        "Fato/decisão histórica não é lançamento nem prova de aplicação atual; não emitir, reclassificar ou cobrar por replay."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "proposal_text": "No lote3 inicialFIP, a solicitação separava alimentação/mercado, frota/material técnico, infra/TI/treinamento, CafeteriaBikon09/12–12/12 R$1.241,20, PresenteGustavo03/10–10/10 R$640,64 e créditoanuidadeR$9,95. Foi pedido manter presentes/finalidade corporativa ambígua e crédito sem vínculo em revisão; não inventar relação de cliente. A solicitação não classificou os itens por si. O relato posterior28794 registra aplicação parcial de grupos e31validações operacionais, com demais emreview; natureza econômica atual requer trilha do banco, não regra por merchant.",
+      "operational_checks": {
+        "known_path": "/data/.openclaw/workspace/projects/fip/data/fip.db",
+        "known_audit_correlation": "FIP-DARTH-LOTE3-20260809T204117Z",
+        "expected_fields": [
+          "IDs dastransações",
+          "sourceDARTH_LOTE3",
+          "natureza/categoria/status antes/depois",
+          "audit correlation ehashDB",
+          "autor da decisão",
+          "regra supersedida por fluxogerencial se aplicável"
+        ]
+      },
+      "review_file": "review-agent-a-financial-amendments.json",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "deletion_authorized": false
+    },
+    {
+      "id": 33558,
+      "sha256": "c4bc724f926c89f6d4e85672969f6319cf00eecc25bdff17fe85eed67b4815db",
+      "source": {
+        "path": "main/sessions/8d1f28a5-5812-4985-93b8-0d1eb0558ebc.trajectory.jsonl",
+        "line": 999,
+        "role": "user",
+        "timestamp": "2026-08-16T17:35:46.000Z"
+      },
+      "disposition": "proposal",
+      "reason": "Decisões humanas específicas preservadas sem alegar aplicação da última resposta nem criar lançamentos.",
+      "risks": [
+        "Fato/decisão histórica não é lançamento nem prova de aplicação atual; não emitir, reclassificar ou cobrar por replay."
+      ],
+      "target_note": "BRAIN/50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence.md",
+      "proposal_text": "Em16/08/2026, Hebert confirmou MERCADOLIVRE*CARVINGSTUDI12x como empresa/equipamento e replicação; relato do agente menciona1/12, splitativo2/12–4/12 e obrigações futuras em dois blocos porcentavos. Confirmou MERCADOLIVRE*MERCADOLI6x como empresa/equipamento e todas parcelas; relato menciona split2/6–4/6 e cobertura documental1/6–6/6. Para YOUSEAUTO*8635-18/24 R$208,14, itemmpcarditem_b2ec9b41deccd35270147b840bf0, respondeu “É a mesma coisa pode replicar” à pergunta se era empresa/seguroveicularrecorrente comoYOUSEEmissao. Preservar decisão do item/família, sem classificar todo merchant. Source intacta/reimbursementdelta0 foram alegados nos dois primeiros recibos; a última resposta não prova execução posterior.",
+      "operational_checks": {
+        "known_path": "/data/.openclaw/workspace/projects/fip/data/fip.db",
+        "known_item_ids": [
+          "mpcarditem_0fd7fbb49adbf41fef814a33d186",
+          "mpcarditem_b2ec9b41deccd35270147b840bf0"
+        ],
+        "expected_fields": [
+          "ID compra/família",
+          "parcela atual/total",
+          "bloco de centavos e soma",
+          "naturezaBUSINESS_DIRECT/categoriaequipamento ouseguro",
+          "decisão humana datada eproveniência",
+          "splitativo versus obrigação futura documental",
+          "reimbursement batch delta",
+          "source hash/descrição preservada"
+        ],
+        "note": "Nomes de tabelas específicas ainda não foram verificados; não presumir schema."
+      },
+      "review_file": "review-agent-a-financial-amendments.json",
+      "root_disposition": "curated_pending_publication",
+      "previous_status": "deferred",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3620,
+      "sha256": "7d1b5ad922d8576594eb21f0c27d07dc27e7a5ccac82f4935470ebac68aecc6a",
+      "source": {
+        "path": "darth-vader/sessions/skills-prompts/sha256/7d/7d1b5ad922d8576594eb21f0c27d07dc27e7a5ccac82f4935470ebac68aecc6a.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 17,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38165,
+      "sha256": "55dcb297874d73674e8e1190faad249a0c71a43e129f5b3acda2fa9b1b11c42a",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/55/55dcb297874d73674e8e1190faad249a0c71a43e129f5b3acda2fa9b1b11c42a.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 18,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3614,
+      "sha256": "27fec42907f0561407f935f37162a85c7f9d14acdf3fdc809113072c58c1aa55",
+      "source": {
+        "path": "darth-vader/sessions/skills-prompts/sha256/27/27fec42907f0561407f935f37162a85c7f9d14acdf3fdc809113072c58c1aa55.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 18,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 3617,
+      "sha256": "3353edcf97e62b0100ad0d461720e150257c734d042497c17cf66709c9645e97",
+      "source": {
+        "path": "darth-vader/sessions/skills-prompts/sha256/33/3353edcf97e62b0100ad0d461720e150257c734d042497c17cf66709c9645e97.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 18,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38174,
+      "sha256": "944d92769785ad30ec63eedf268d98243d3344b2e07983e61e6249962c1d65cb",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/94/944d92769785ad30ec63eedf268d98243d3344b2e07983e61e6249962c1d65cb.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 20,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38156,
+      "sha256": "25f62a87528cfec1fd159b748129e52d17a999052f88840bdd3d8266e1728874",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/25/25f62a87528cfec1fd159b748129e52d17a999052f88840bdd3d8266e1728874.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 21,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38153,
+      "sha256": "1f05551e1f9d64f82dd2d535e92d01cc4e88bfbe7d4b5ba0d17c01ed56a3998c",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/1f/1f05551e1f9d64f82dd2d535e92d01cc4e88bfbe7d4b5ba0d17c01ed56a3998c.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 23,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38189,
+      "sha256": "d8faa0c2a101b77000c2eb38db3341c584ed0c6fa46ad0d9d29d589904b49475",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/d8/d8faa0c2a101b77000c2eb38db3341c584ed0c6fa46ad0d9d29d589904b49475.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 24,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38171,
+      "sha256": "791cb4ba0328b68591b3b7627bf54ebbd355de58d47ddc7233b35be5593dc17c",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/79/791cb4ba0328b68591b3b7627bf54ebbd355de58d47ddc7233b35be5593dc17c.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 27,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38168,
+      "sha256": "6af0cf7c7ba09a3517ed2b5b24b32090ef1cc5cb005e6d1512bd95a82aa8a93a",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/6a/6af0cf7c7ba09a3517ed2b5b24b32090ef1cc5cb005e6d1512bd95a82aa8a93a.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 27,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38180,
+      "sha256": "af73c20ac15b1724f4ca8e5bf4f48d12dc5b468fb6c322d48e13cb5dabe006b5",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/af/af73c20ac15b1724f4ca8e5bf4f48d12dc5b468fb6c322d48e13cb5dabe006b5.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 27,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38159,
+      "sha256": "3aa44b49ddac1134860068aa17f1156825759b720aff10d6a645bea643d84b38",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/3a/3aa44b49ddac1134860068aa17f1156825759b720aff10d6a645bea643d84b38.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 27,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38186,
+      "sha256": "d160a8eae07a48091f1ddebd15fa2e772cf67fe72dfa07f0d3b3d3b8d5663b4f",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/d1/d160a8eae07a48091f1ddebd15fa2e772cf67fe72dfa07f0d3b3d3b8d5663b4f.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 27,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 9914,
+      "sha256": "e66d14d50d64a36fe58b1f6b1117a038ac45f82445897247a430e8d7b3629d7a",
+      "source": {
+        "path": "kowalski/sessions/skills-prompts/sha256/e6/e66d14d50d64a36fe58b1f6b1117a038ac45f82445897247a430e8d7b3629d7a.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 24,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38177,
+      "sha256": "9bd2b675a9052709f013135ac7906a38cbfa00b979d0a404d48a1745ba5e97b0",
+      "source": {
+        "path": "main/sessions/skills-prompts/sha256/9b/9bd2b675a9052709f013135ac7906a38cbfa00b979d0a404d48a1745ba5e97b0.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 30,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 9917,
+      "sha256": "f4d77794d37571bd3045506684574b926f3046fa07fdf2a5e046e0261972a94a",
+      "source": {
+        "path": "kowalski/sessions/skills-prompts/sha256/f4/f4d77794d37571bd3045506684574b926f3046fa07fdf2a5e046e0261972a94a.txt",
+        "line": 1
+      },
+      "disposition": "no_durable_knowledge",
+      "reason": "Catálogo automático exclusivamente de skills: nomes, descrições, localizações e versões históricas. Todos blocos novos foram lidos integralmente; repetidos têm igualdade SHA com catálogos previamente lidos. Wrappers só têm instrução genérica do catálogo/whitespace; não há pedido, decisão de negócio ou dado operacional adicional. Disponibilidade anunciada não prova carregamento vigente.",
+      "risks": [
+        "Não interpretar catálogo histórico como instrução vigente ou prova de permissão operacional."
+      ],
+      "review_method": "all_unique_skill_blocks_read_plus_literal_reuse_of_prior_read_blocks",
+      "review_proof": "agent-c-catalog-proof.json",
+      "skill_blocks": 25,
+      "review_file": "review-agent-c-12.json",
+      "target_note": null,
+      "root_disposition": "no_durable_knowledge",
+      "previous_status": "pending_review",
+      "deletion_authorized": false
+    },
+    {
+      "id": 38053,
+      "sha256": "3839c65d6ad198242af50c7563a2621945ab7d61a45eff6a29efe8ee1f5fb21c",
+      "source": {
+        "path": "main/sessions/ff9a8eb5-a873-43c0-9c78-a33451053a87.checkpoint.c00f070d-2cf8-49f6-a81f-7263eb5ec15f.jsonl",
+        "line": 254,
+        "role": "assistant",
+        "timestamp": "2026-07-03T18:04:44.223Z"
+      },
+      "supersedes_disposition": "deferred",
+      "disposition": "already_represented",
+      "reason": "Revisão integral do catálogo histórico: conhecimento útil está preservado no REFERENCIAS seção9 (endpoints genéricos, pedidoDados, focoPARCSN, candidatos futuros, e gate específico de Emitir). Os códigos ausentes de grupos auxiliares/eventos/PAEX/SIPADE são catálogo técnico antigo sem decisão empresarial própria, sem uso comprovado nesta fonte e sem autoridade atual: não precisam de réplica integral no Brain. Não declarar equivalência textual nem84códigos preservados. A referência também qualifica dados:string com exceção validada string vazia para serviçosPARCSN, evitando transformar a frase genérica do histórico em regra errada.",
+      "target_note": "BRAIN/60-AGENTES/versionados/workspaces/darth-vader/standby/skills/serpro-integra-parcelamentos/REFERENCIAS.md",
+      "target_sections": [
+        {
+          "target_note": "BRAIN/60-AGENTES/versionados/workspaces/darth-vader/standby/skills/serpro-integra-parcelamentos/REFERENCIAS.md",
+          "section": "9. Catálogo Integra Contador revisado em 2026-07-03",
+          "line_start": 460,
+          "line_end": 622,
+          "note_sha256": "52c2840901fb7ad5fa1c8a5516b14c3332b9e63d33cd8b5b3951847db208fe58",
+          "section_sha256": "7d93142d272d48dd63f2a3a0f8252a4e38c93a4d866d8aa1af103374992720ab"
+        }
+      ],
+      "semantic_components": [
+        {
+          "disposition": "already_represented",
+          "subject": "Método de envelope e separação consulta/emissão; prioridadePARCSN e aprovação porserviço,competência/parcela,valor",
+          "target_sections": [
+            {
+              "target_note": "BRAIN/60-AGENTES/versionados/workspaces/darth-vader/standby/skills/serpro-integra-parcelamentos/REFERENCIAS.md",
+              "section": "9. Catálogo Integra Contador revisado em 2026-07-03",
+              "line_start": 460,
+              "line_end": 622,
+              "note_sha256": "52c2840901fb7ad5fa1c8a5516b14c3332b9e63d33cd8b5b3951847db208fe58",
+              "section_sha256": "7d93142d272d48dd63f2a3a0f8252a4e38c93a4d866d8aa1af103374992720ab"
+            }
+          ]
+        },
+        {
+          "disposition": "no_durable_knowledge",
+          "subject": "Enumeração histórica de códigos de serviços fora do escopoPARCSN e não usados no episódio",
+          "reason": "Catálogo de fornecedor pode ser recuperado da documentação oficial atual quando necessário; nomes enumerados não são decisão específica ou fonte de verdade da organização."
+        }
+      ],
+      "official_source_recorded_in_retained_reference": "https://apicenter.estaleiro.serpro.gov.br/documentacao/api-integra-contador/pt/catalogo_de_servicos/",
+      "current_api_verified": false,
+      "documentation_as_of": "2026-07-03 according to retained reference",
+      "deletion_authorized": false,
+      "review_file": "review-agent-b-38053-resolved.json",
+      "root_disposition": "already_represented",
+      "previous_status": "deferred"
+    }
+  ]
+}

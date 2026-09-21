@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 ---
 
 # Instagram Bikon, Robotnik
@@ -228,3 +228,11 @@ Na preparação histórica instagram-brand-director v2.1.1, a árvore canônica 
 Rascunhos históricos sobre CNJ213/243 propuseram comunicar prazos por classe, plano técnico e prova de adequação, com ressalva explícita de validação jurídica antes de publicar datas absolutas. Preservar essa separação: copy educativo não substitui texto normativo consolidado nem autoriza prometer conformidade/prorrogação. Números e contagem de prazo daquele rascunho não foram revalidados nesta cobertura e não devem ser promovidos a orientação atual. Fonte: unidades 39470.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 14 de 2026-09-21
+
+Na campanha operacao-sem-dependencia de 20/07, a rota textual escolhida foi “Se tudo termina em você, isso não é controle. É dependência.” O dono permanece supervisor/responsável por exceções; “90 dias” foi restringido a direção/metodologia, não garantia ou prazo contratual. Post publicado naquele dia e pacote novo em RASCUNHO/HOLD eram objetos distintos, sem transferência de aprovação. Base gerada deveria ser ilegível/abstrata; textos finais entrariam na composição, crop-safe derivado do mapa aprovado sem inventar margens. Na preparação Kling, falta de img_resolution mudava identidade do payload e provider_kind=video para text_to_image era divergência de contrato a reconciliar. CLI estática e sucesso histórico não provam valores aceitos hoje. Esses limites históricos não reativam Kling/Creatomate nem substituem contrato visual vigente. Fonte: unidades 39417.
+
+No planejamento de09/07/2026, Robotnik diferenciou pesquisa editorial ampla em web/notícias/RSS/alertas de leitura de conta, métricas e publicação pela API Instagram. Hashtag Search e Business Discovery foram citados como recursos delimitados, não mecanismo de busca livre por tema. Limites, permissões e disponibilidade devem ser revalidados na documentação oficial antes de usar; o histórico não autoriza raspagem nem publicação. Leitura bem-sucedida, token durável e modo draft não são aprovação para publish. Fonte: unidades 32977.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

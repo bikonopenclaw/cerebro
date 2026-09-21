@@ -1,0 +1,708 @@
+{
+  "result": "READ_ONLY_DISCOVERY",
+  "mutations": 0,
+  "sources": [
+    {
+      "path": "/data/.openclaw/state/openclaw.sqlite",
+      "kind": "sqlite",
+      "exists": true,
+      "rows_read": 95
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/state/openclaw.sqlite",
+      "kind": "sqlite",
+      "exists": true,
+      "rows_read": 1
+    },
+    {
+      "path": "/home/openclaw/.openclaw-darth-vader/state/openclaw.sqlite",
+      "kind": "sqlite",
+      "exists": true,
+      "rows_read": 0
+    }
+  ],
+  "matching_to_candidates": [
+    {
+      "text_id": 36296,
+      "source": {
+        "path": "/data/.openclaw/state/openclaw.sqlite",
+        "table": "cron_jobs",
+        "job_id": "773e8af3-1937-43ba-be0b-5a8c8459eedc",
+        "payload_sha256": "a2eba7fd4dc2203c9b2f7ad7e243d306e5038a2d5c24a9df71acec9fa8984434"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "03d91373ba27cc09b396ee0661da9cec9389c74507ea96b572e16398358307d4"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true
+    },
+    {
+      "text_id": 31370,
+      "source": {
+        "path": "/data/.openclaw/state/openclaw.sqlite",
+        "table": "cron_jobs",
+        "job_id": "773e8af3-1937-43ba-be0b-5a8c8459eedc",
+        "payload_sha256": "a2eba7fd4dc2203c9b2f7ad7e243d306e5038a2d5c24a9df71acec9fa8984434"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "03d91373ba27cc09b396ee0661da9cec9389c74507ea96b572e16398358307d4"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true
+    },
+    {
+      "text_id": 36299,
+      "source": {
+        "path": "/data/.openclaw/state/openclaw.sqlite",
+        "table": "cron_jobs",
+        "job_id": "53e725ff-c36a-42cd-9cfd-ede5795cb0d8",
+        "payload_sha256": "15511680bac386230bf224f37825d24e72dea12c037fccfbe8a8226e29888b2e"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "83d2f763aa9a9f4273a6196b71560568f966caeb72fc7eee33fd1f67fe261244"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true
+    },
+    {
+      "text_id": 36302,
+      "source": {
+        "path": "/data/.openclaw/state/openclaw.sqlite",
+        "table": "cron_jobs",
+        "job_id": "7e07f719-3e33-41e0-9a46-edec377c0fc1",
+        "payload_sha256": "8a2cd2597ba68d18507c41ba69ba6496f4e4fa58640af780cd2d90f18571f4b8"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "4b70da25cfde6849cdfb147cdd7a80d9d1757493617557caa09c631a2133c990"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true
+    },
+    {
+      "text_id": 36305,
+      "source": {
+        "path": "/data/.openclaw/state/openclaw.sqlite",
+        "table": "cron_jobs",
+        "job_id": "56a76c63-584b-4d19-81ff-174024b2973f",
+        "payload_sha256": "f5c43cf649f10fe6497fce9e44c28352c68d781189208dfb64a36aba81e392c1"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "6fec2c9edf57c0f5ce0c1df5555cc5ce14cf4fe245073d97d36f7db296509e80"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true
+    },
+    {
+      "text_id": 36296,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/approved-canonical-3.1-2026-08-5346027.json",
+        "json_pointer": "$",
+        "file_sha256": "3aa62eb79d8fe7530183452047a53c1c203cace7e59536d9552a7797974b8c98",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "03d91373ba27cc09b396ee0661da9cec9389c74507ea96b572e16398358307d4"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 31370,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/approved-canonical-3.1-2026-08-5346027.json",
+        "json_pointer": "$",
+        "file_sha256": "3aa62eb79d8fe7530183452047a53c1c203cace7e59536d9552a7797974b8c98",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "03d91373ba27cc09b396ee0661da9cec9389c74507ea96b572e16398358307d4"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36302,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/approved-canonical-3.1-2026-08-5346029.json",
+        "json_pointer": "$",
+        "file_sha256": "ca528e0bb144642e9c94e91134487608ddee3d4ebcaffdec65e396c3552385ae",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "4b70da25cfde6849cdfb147cdd7a80d9d1757493617557caa09c631a2133c990"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36305,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/approved-canonical-3.1-2026-08-5347588.json",
+        "json_pointer": "$",
+        "file_sha256": "a3e31ab9e6a40c3fbb36410a9ac55fa71875d234f249633defebcec2a37fedf5",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "6fec2c9edf57c0f5ce0c1df5555cc5ce14cf4fe245073d97d36f7db296509e80"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36299,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/approved-canonical-3.1-2026-08-5348782.json",
+        "json_pointer": "$",
+        "file_sha256": "808d84c0e2bed5ad0f830c7dfc81a889e3b41b667611e5299affc923ce94f4a1",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "83d2f763aa9a9f4273a6196b71560568f966caeb72fc7eee33fd1f67fe261244"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36296,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-mensal-2026-07-01-15-cartorio-alzira-02-hv-03_49tpe.json",
+        "json_pointer": "$",
+        "file_sha256": "70fbd3c9e0c8e82d7f57b500cb79776d4aad4f4639f3f3c5b5b22378f9be210c",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "03d91373ba27cc09b396ee0661da9cec9389c74507ea96b572e16398358307d4"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 31370,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-mensal-2026-07-01-15-cartorio-alzira-02-hv-03_49tpe.json",
+        "json_pointer": "$",
+        "file_sha256": "70fbd3c9e0c8e82d7f57b500cb79776d4aad4f4639f3f3c5b5b22378f9be210c",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "03d91373ba27cc09b396ee0661da9cec9389c74507ea96b572e16398358307d4"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36299,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-mensal-2026-07-01-15-cartorio-camburi-camburi-hv01.json",
+        "json_pointer": "$",
+        "file_sha256": "0196e4a095a08f1e9cfe683abc018d8783e56b59f0ef2dea54a730ad6877bb78",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "83d2f763aa9a9f4273a6196b71560568f966caeb72fc7eee33fd1f67fe261244"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36302,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-mensal-2026-07-01-15-cartorio-capixaba-06-hv-01_x9unz.json",
+        "json_pointer": "$",
+        "file_sha256": "033702a641dafdf36ff6cc8abcbeb9308a51c5972509f81420b5c305eb341f38",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "4b70da25cfde6849cdfb147cdd7a80d9d1757493617557caa09c631a2133c990"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36305,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-mensal-2026-07-01-15-cartorio-vila-velha-hv-01-vilavelha.json",
+        "json_pointer": "$",
+        "file_sha256": "0bea40e8a9472e440a21e7c534b933143e29055ab5ae7204d96afa93d02a966a",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "6fec2c9edf57c0f5ce0c1df5555cc5ce14cf4fe245073d97d36f7db296509e80"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36296,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-mensal-2026-08-01-15-cartorio-alzira-02-hv-03_49tpe.json",
+        "json_pointer": "$",
+        "file_sha256": "adcde2046f700ab74516d2d1dac15929720f6e00be1440241729447de7580b7a",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "03d91373ba27cc09b396ee0661da9cec9389c74507ea96b572e16398358307d4"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 31370,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-mensal-2026-08-01-15-cartorio-alzira-02-hv-03_49tpe.json",
+        "json_pointer": "$",
+        "file_sha256": "adcde2046f700ab74516d2d1dac15929720f6e00be1440241729447de7580b7a",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "03d91373ba27cc09b396ee0661da9cec9389c74507ea96b572e16398358307d4"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36299,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-mensal-2026-08-01-15-cartorio-camburi-camburi-hv01.json",
+        "json_pointer": "$",
+        "file_sha256": "03d5cfb26da6905e39e98d85e706df3b7e22c69af671dbfd2ce3349f180ae9d5",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "83d2f763aa9a9f4273a6196b71560568f966caeb72fc7eee33fd1f67fe261244"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36302,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-mensal-2026-08-01-15-cartorio-capixaba-06-hv-01_x9unz.json",
+        "json_pointer": "$",
+        "file_sha256": "5ac85ed97f75931586edc911bcb5af23dc34360469acbdeb64a7a95b823614d1",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "4b70da25cfde6849cdfb147cdd7a80d9d1757493617557caa09c631a2133c990"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36305,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-mensal-2026-08-01-15-cartorio-vila-velha-hv-01-vilavelha.json",
+        "json_pointer": "$",
+        "file_sha256": "75cb47f28af06e152e40b3c33b68e7faafe6f278c96c94b460778c040d7b55dd",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "6fec2c9edf57c0f5ce0c1df5555cc5ce14cf4fe245073d97d36f7db296509e80"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36296,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-unico-inicial-2026-06-17-15-cartorio-alzira.json",
+        "json_pointer": "$",
+        "file_sha256": "fe562f3f01fe7ebfbdc9d699d16fab3dd3004061eb512f0e35c8ad0962b5cb0a",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "03d91373ba27cc09b396ee0661da9cec9389c74507ea96b572e16398358307d4"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 31370,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-unico-inicial-2026-06-17-15-cartorio-alzira.json",
+        "json_pointer": "$",
+        "file_sha256": "fe562f3f01fe7ebfbdc9d699d16fab3dd3004061eb512f0e35c8ad0962b5cb0a",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "03d91373ba27cc09b396ee0661da9cec9389c74507ea96b572e16398358307d4"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36299,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-unico-inicial-2026-06-17-15-cartorio-camburi.json",
+        "json_pointer": "$",
+        "file_sha256": "57a1c8f632dfee32aa4e4d6237c2c9e43169685543ea1b6d847147ab3004bb7e",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "83d2f763aa9a9f4273a6196b71560568f966caeb72fc7eee33fd1f67fe261244"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36302,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-unico-inicial-2026-06-17-15-cartorio-capixaba.json",
+        "json_pointer": "$",
+        "file_sha256": "49db9f1d38ec694fdbd84e5551b24f65b0ab5f6c9310767cc5451271d304c582",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 3,
+          "set_sha256": "4b70da25cfde6849cdfb147cdd7a80d9d1757493617557caa09c631a2133c990"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    },
+    {
+      "text_id": 36305,
+      "source": {
+        "path": "/data/.openclaw/workspace-kowalski/arx-backup/jobs/envio-unico-inicial-2026-06-17-15-cartorio-vila-velha.json",
+        "json_pointer": "$",
+        "file_sha256": "e0047688f3574f6fc9c70f380e4a51898c83d867731732de342dd644e37083ba",
+        "basis": "structured_recipient_fields"
+      },
+      "observed": {
+        "to": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "6fec2c9edf57c0f5ce0c1df5555cc5ce14cf4fe245073d97d36f7db296509e80"
+        },
+        "bcc": {
+          "state": "parsed",
+          "count": 2,
+          "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7"
+        }
+      },
+      "to_exact_match": true,
+      "bcc_explicit_exact_match": true,
+      "bcc_union_with_config_default": {
+        "count": 2,
+        "set_sha256": "4ec7107642e4ed473a6aeb5aafec5304272ea8b660258b1068cf5b7707b40ff7",
+        "exact_match": true
+      }
+    }
+  ],
+  "warning": "Config/job existente prova preservação de destinatários, não autorização atual ou envio. BCC derivado por união é hipótese baseada no sender versionado.",
+  "default_bcc": {
+    "count": 1,
+    "set_sha256": "c4aea2b3832ce51696770ace6641eef1d9b86b44450f27db7b1daf85459260a8",
+    "matches_expected": true
+  },
+  "json_file_count": 26
+}

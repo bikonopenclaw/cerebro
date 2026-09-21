@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Menor-privilegio-em-monitoramento.md
@@ -73,3 +73,21 @@ No Herald/Prov213 histórico, GET chamava dashboard_state() e regravava generate
 No incidente histórico da consulta CLI, o aviso de migração foi inicialmente interpretado como escrita. A medição posterior não encontrou mudança no estado cron, linhas de log relevantes ou atualização dos jobs; o diagnóstico foi corrigido para aviso idempotente/falso positivo. Preservar a exigência de medir efeitos antes/depois e a correção do diagnóstico; não afirmar que esse CLI alterou o estado com base somente na mensagem. Fonte: unidades 34514, 9503.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 12 de 2026-09-21
+
+No incidente histórico DRE, inventário suplementar deveria reconciliar a árvore original por exclusão lógica do contaminante, preservando a árvore contaminada bytea byte. Não executar py_compile/compileall dentro da evidência imutável nem apagar o contaminante para fabricar igualdade. Distinguir reconciliação documental do inventário e nova transação de renderização autorizada. Fonte: unidades 8623.
+
+Na renomeação histórica Herald→PIR, o trabalho declarava staging isolado, mas uma checagem encontrou a árvore canônica já usando nomes novos. Sem baseline e autoria/tempo comprovados, não afirmar automaticamente escrita indevida nem zero mutação: reconciliar possível promoção anterior, concorrência ou contaminação do escopo. Nome de staging e relato de intenção não provam isolamento. Fonte: unidades 34126.
+
+Na rehologação histórica RuntimeMaintenance, candidato SQLite precisava passar quick_check e checagens semânticas offline/read-only; corrupção bloqueava e preservava bytes. Arquivo aberto identificado via lsof também bloqueava ação, comPID/processo/cgroup/path como evidência. Adaptador validado em cópia isolada não autoriza limpeza real ou timer; nenhuma dessas provas antigas substitui verificação atual das dependências. Fonte: unidades 37651.
+
+Na validação histórica Prov213, catálogo/HTML multiCNS e13testesPASS não cobriam /export.pdf e /evidence: essas rotas ainda usavam singleton024067 e recomputação mutante. Inspecionar handlers ativos e estado canônico porCNS, não apenas texto legado. Correção posterior9545 desabilitou PDF nessa rota read-only com403, isolou evidência porCNS e provou GET_MUTATION_COUNT=0; fases posteriores podem oferecer PDF autenticado por rota própria. Fonte: unidades 9533, 9545.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 13 de 2026-09-21
+
+Consolidar com9533/9545: este checkpoint ainda aguardava patchstaging, mantendo FAIL_CLOSED; o fechamento posterior comprovou correção de isolamento/readpurity. Não conservar o bloqueio intermediário como situação vigente. Fonte: unidades 9536.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

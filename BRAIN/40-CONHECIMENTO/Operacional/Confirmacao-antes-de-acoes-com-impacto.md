@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
@@ -86,3 +86,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260
 No checkpoint histórico Sentinel Goal2, a leitura da ordem de981linhas terminou truncada no Success Model após ARX, enquanto a execução começou. Marcar essa evidência como leitura parcial: resumo e trechos visíveis não permitem afirmar leitura integral nem confirmar limites faltantes. Antes de consumir autorização, recuperar as seções faltantes e verificar escopo/condições do mesmo documento; registro histórico não autoriza repetir a operação. Fonte: unidades 31524.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 10 de 2026-09-21
+
+Na retomada Sentinel A1Retry, documento congelado ainda mostrava consumed:false, mas marcador do executor criado atomicamente por O_EXCL provava consumo. Estado de execução/recibo autoritativo prevalece sobre flag estática no documento aprovado; não consumir de novo nem gerar novo execution_id por restart. Distinguir consumed_at de technical_started_at, sem retroagir início ou inventar coleta. Retomada depende de estado verificável e validade do mesmo escopo, não do replay textual. Fonte: unidades 41538.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

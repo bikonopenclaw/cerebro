@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 ---
 
 # MOC Projetos
@@ -53,3 +53,4 @@ Este MOC liga projetos ativos, planejamento e historico documental.
 - [[50-PROJETOS/Historico/Painel-Medicoes-Faturamento|Painel de medições e faturamento]]
 
 - [[50-PROJETOS/Historico/Controle-financeiro-familiar|Controle financeiro familiar — blueprint histórico]]
+- [[50-PROJETOS/Historico/Prov213-Business-Completion-Addendum-v1|Prov213 — addendum histórico local]]

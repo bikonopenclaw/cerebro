@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 ---
 
 # Bikon Durable Work Orchestration
@@ -78,3 +78,15 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260
 Na especificação histórica DRE, render e publicação formavam uma unidade durável: inputs e renderer disponíveis fora da sessão, identidade de runtime congelada, três renders de mesma entrada com hash idêntico, journal de retomada, ponteiro de publicação atômico e rollback. Preservar a lição de autossuficiência e identidade, sem transformar a proposta antiga de CPython/DRE em dependência atual nem inferir entrega pelo texto da especificação. Fonte: unidades 33087.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 9 de 2026-09-21
+
+No testeNinja1502, sucessivos pedidos de aprovação atrasaram sequência já autorizada e a credencial deixou de funcionar antes da escrita. Definir escopo completo e executável de autenticar/ler/alterar/verificar, capturar valores necessários em memória e respeitar a autorização já concedida. Callbacklocalhost requer handler no dispositivo que recebe o redirecionamento ou túnel validado; nó ausente não permite prometer fluxo de um gesto. Uma sequênciaGET/PUT/GET não é transação reversível: falha apósPUT pode deixar alteração remota; registrar resultado parcial/incerto e não repetir escrita cegamente. Fonte: unidades 36216.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 10 de 2026-09-21
+
+Em preparação da adoção PGL, evidência root-owned0700 não era legível ao usuário openclaw; um selo independente acessível foi usado para autenticar baseline, com limite de evidência explícito. Propôs-se contrato compartilhado único e ponteiros nos agentes, em vez de semânticas duplicadas ou ledger concorrente. Bindings PFE que diziam PGL deferred/unavailable exigiam reconciliação, não evento histórico inventado; projetos existentes adotariam na transição de ciclo apropriada. Este trecho era descoberta read-only, não prova de adoção concluída ou saúde atual. Fonte: unidades 30968.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

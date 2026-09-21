@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md
@@ -158,3 +158,37 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260
 Sucesso do comando que exporta evidência prova a exportação, não a operação descrita. Conferir janela temporal, identidade dos bytes, manifesto final, canário e estado do serviço. No caso Portal Stage1B, só havia evidência anterior de falha e serviço ausente; execução do pacote novo ficou NOT_PROVEN apesar do export retornar0. Não inferir sucesso nem repetir efeito sem reconciliação. Fonte: unidades 37043.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 9 de 2026-09-21
+
+Registrar classificação provisória separando fato observado, hipótese, prioridade, confiança, lacuna, risco de erro, evidência de fechamento, freshness, prazo e responsável. Falta de atribuição ou evidência vencida limita a confiança; não fechar como definitivo sem os gates exigidos ou aceitação explícita do risco. O registro histórico chama os gates de G1–G5, mas este fragmento não basta para definir cada um. Fonte: unidades 31726.
+
+Para um número coletado de registro operacional, conservar o timestamp do evento de origem além do horário de leitura. Ler novamente o mesmo valor não o torna recente; consumidores devem calcular a idade da evidência e marcar stale quando apropriado. Fonte: unidades 33061.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 10 de 2026-09-21
+
+Antes de declarar falha de pacote por KeyError, conferir esquema real do artefato: no Golden Baseline Prov213, PROTECTED_SURFACE_HASHES.csv era surface/sha256, distinto de inventário de arquivos path/size. Erro do checker não demonstra defeito do pacote; validação de indexador não prova execução integral de corpus, e progresso75/1003 não deve ser rotulado100%. O fechamento posterior consolidado prevalece sobre esse checkpoint. Fonte: unidades 9872.
+
+No monitoramento histórico NinjaOne, campos de data com formato não aceito e floats vazios foram rejeitados, enquanto o script imprimia CUSTOM_FIELD_WRITTEN. Mensagem local de escrita não prova persistência: validar tipo/serialização conforme contrato e conferir retorno/readback antes de marcar sucesso. Dado ausente deve permanecer desconhecido, não número vazio/zero. Versões e formato do provider precisam ser confirmados antes de reutilizar o patch. Fonte: unidades 34594.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 12 de 2026-09-21
+
+Na auditoria15/07, cron emerro porrestart coexistiu com caches tardios WhatsApp/Bitdefender; ARX seguia semcache e filaTelegram emsend_attempt_started não comprovava entrega. Separar status formal dojob, efeitos locais tardios/órfãos e recibo externo de entrega/ticket. Texto emsessão e arquivo existente não são messageId ou sucesso remoto. Job nunca executado com primeira data futura não é falha passada; considerar janela/cron antes declassificar. Fonte: unidades 9018.
+
+Na observação histórica da migração, cronsnovos ativos e ausência de disputaTelegram foram usados para concluir que o painelantigo havia sido desligado. Esses sinais comprovam apenas o ambienteobservado: verificar diretamente scheduler/processos do legado para afirmar desativação e cessação de consumo. Um pedidoantigo de transferir senha porGoogleSheets não é regra de custódia nem autorizaçãoatual; segredo deve seguir canal aprovado fora doBrain. Fonte: unidades 30091.
+
+Quando uma validação inicialmente PASS corrige hash de fonte e passa a PASS_COM_RESSALVA, recibos dependentes que ainda repetem PASS precisam qualificação. Preservar o achado e a correção, sem herdar veredito anterior por cópia. Na arqueologia Prov213, template histórico de15 itens não continha os37 controles faltantes dos doisCNS; essa ausência não é falha do cliente nem autoriza completar por outroCNS. Fonte: unidades 8783.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 14 de 2026-09-21
+
+Na revisão DREv2, validator local terminou rc124; oPASS foi sustentado por recibo congelado e verificações estáticas, não por essa execução. Relatar a base efetivamente observada e limite: arquivo0600root podia ter sómetadados conferidos pelo revisor semroot. Nunca converter timeout emtestesexecutadosPASS ou presença demanifesto emleituraintegral. Contaminação anterior foi preservada para prova, não apagada para fabricar igualdade. Fonte: unidades 8606.
+
+Na auditoria15/07, runnerARX reportou closed1 mas ticket já estava fechado; houve reconciliação local, sem comprovação dealteração remota na janela. IDsTelegram próximos no tempo não foram atribuídos ajob/conteúdo semvínculo preservado. Não repetir runner para corrigir cronvermelho quando efeito já ocorreu; separar campoagregado, mutação local e efeitoexterno. Esses são resultados históricos, não incidente atual. Fonte: unidades 9026.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

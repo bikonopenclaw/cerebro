@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 relationships:
 - type: references
   target: BRAIN/20-EMPRESAS/BIKON/README.md
@@ -171,3 +171,25 @@ Observacao: manter apenas agregados e identificadores operacionais minimos; nao 
 No snapshot de06/07, a consulta não disponibilizou endpoint de quarentena e apresentou zero confirmados entre itens retornados. Isso não prova zero quarentenas no universo. Informar indisponível/não verificado quando falta a fonte; se usar contagem parcial, dar denominador e cobertura. Licenças, endpoints vistos30dias, inventário total e slots do contrato são medidas distintas; não somar universos ou fechar percentuais por compensação. Fonte: unidades 32397.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 9 de 2026-09-21
+
+Em13/07, a proposta bitdefender-ticket-operacional foi confirmada applied por inspect/list e diretório ativo após timeout anterior; pending era estado intermediário superado. A V1 humana definia Ninja com prioridade e fila padrão, assunto/cliente/evidência/impacto/urgência/ação; cotações e segredos ficavam fora. Esse histórico não amplia critérios automáticos posteriormente restringidos a evidência recente e acionável, nem comprova versão instalada atual. Fonte: unidades 8556.
+
+No incidente18/07, GravityZone respondia mas NinjaOAuth falhava. Um precheck state_hash divergente veio de constante transcrita errada no invocador, não corrupção comprovada do arquivo. Comparar fonte e constante antes de remover guarda de integridade. Após única trocaOAuth autorizada retornar invalid_token, não houve token novo persistido nemGETorganizations; exigir fluxo fresco e persistência atômica somente após resposta completa, sem repetir código usado ou atribuir indisponibilidade ao provider errado. É lição histórica, não status atual. Fonte: unidades 8745.
+
+Desenho histórico para tickets Bitdefender→Ninja separava coleta/relatório read-only da ação externa: alertas acionáveis, mapeamento de cliente comprovado e chave de deduplicação por cliente/endpoint/tipo/identificador. Fase inicial propunha abrir/deduplicar; fechamento automático seria fase posterior, condicionado à resolução comprovada em duas coletas. Dry-runs, horário proposto e número de ciclos não comprovam que automação foi implantada. Fonte: unidades 35308.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 13 de 2026-09-21
+
+Em 18/07/2026, após a tentativa invalid_token, novo fluxo fresco de OAuth NinjaOne terminou em um exchange HTTP 200, token validado/persistido com modo 600 e GET /v2/organizations HTTP 200 para 34 organizações. GravityZone já respondia para 21 empresas. O teste de produção/ticket não havia sido realizado nessa etapa; autorização posterior de um ticket interno exigia dry-run limpo e rota segura existente, sem fechar ticket nem criar clientes reais. Preservar endpoint do tenant e scopes efetivamente vinculados ao contrato vigente; esse sucesso histórico não atesta token válido hoje. Não arquivar códigos, tokens ou hashes de arquivos de segredo como memória cognitiva. Fonte: unidades 8748.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 14 de 2026-09-21
+
+Em 13/07, create bitdefender-ticket-operacional terminada em 892185b0a0 foi confirmada applied, mas o update distinto terminado em 80074a5213 continuava pending naquele snapshot. Status não se transfere entre IDs ou workspaces; inspect not found em um escopo não prova inexistência global. Regra humana de V1 mantinha fila/prioridade padrão e permitia elevar prioridade somente por ameaça ativa, usuário parado ou cliente sem proteção. Skill/proposta aplicada não comprova cron de abertura automática; separar contrato manual, automação real e critérios atuais. A evolução posterior da rotina prevalece sobre esses estados históricos. Fonte: unidades 8559.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

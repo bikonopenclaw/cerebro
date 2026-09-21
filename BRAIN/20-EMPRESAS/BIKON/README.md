@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T19:50:50.519705Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
@@ -146,3 +146,11 @@ relationships:
 - Limite de credito bancario e saldo disponivel nao sao caixa; forecasts devem usar apenas saldo oficial reconciliado como autoridade corrente.
 - Novas evidencias documentais no FIP devem entrar pelo intake gateway somente com parser/reconciliation gate, idempotencia, protecao de senha e privacidade de cartao pessoal preservadas.
 - Limpeza adicional de arquivos FIP fora do escopo `ARCHIVE_AND_RELEASE` exige autorizacao propria e prova de destino/rollback; conclusao do archive nao autoriza purge por heranca.
+
+## Complementos reconciliados — lote 10 de 2026-09-21
+
+Briefing histórico posicionou Bikon como parceira operacional B2B de infraestrutura/rede/SNOC/backup, evitando suporte genérico e linguagem institucional vazia. Público proposto: empresas a partir de5dispositivos com dependência real de rede. Copy pública deveria chamar Hebert de fundador/sócio-administrador e evitar travessão. A formulação de reduzir dependência do dono em90dias era proposta daquele briefing, não garantia validada; a persona Captain era desenho, não agente operacional comprovado. Fonte: unidades 3493.
+
+Perfil histórico de Hebert: sócio-administrador/CFO com apoio operacional; Bikon em reorganização de processos com equipe de3pessoas. Prioridades declaradas naquela janela: Provimento213, NFS-e/caixa gerencial e equipe enxuta; metas então propostas eram R$1,5milhão/ano e30clientes em12meses, e equipe10/R$6milhões/ano em3anos. Preferia respostas curtas/numeradas e reduzir tarefas manuais/relatórios dispersos. Horário8–18dias úteis e contato fora só emergência eram regra geral histórica, conciliada com autorização posterior de follow-ups prometidos sem essa limitação. Não tratar metas antigas como previsão atual. Fonte: unidades 34183.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

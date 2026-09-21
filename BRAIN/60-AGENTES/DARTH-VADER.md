@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
@@ -263,3 +263,15 @@ No blueprint histórico Controle Financeiro Familiar, compra contém cabeçalho 
 No blueprint familiar histórico, reservas e investimentos foram propostos como movimentos patrimoniais: podem afetar caixa/orçamento sem constituir despesa de consumo. A visão de lançamento deve distinguir caixa, competência, conta, categoria, responsável e conciliação. Trata-se de modelagem proposta, não prova de módulo implementado. Fonte: unidades 29810.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 11 de 2026-09-21
+
+ConsultaPARCSN OBTERPARC164 em03/07/2026 às10:24:45.443Z, parcelamento2, retornou Emparcelamento: pedido20/01, situação21/01, totalconsolidadoR$34.622,89 em24parcelas/baseR$1.442,62. Composição: apuração2025-10, vencimento21/11, originalR$14.359,14/atualizadoR$17.549,69;2025-11, vencimento22/12, originalR$14.110,14/atualizadoR$17.073,20. Demonstrativo: parcela2026-01 venceu22/01 e arrecadou20/01 R$1.442,62;2026-02 venceu27/02 e arrecadou31/03 R$1.471,47;2026-03 venceu31/03 e arrecadou31/03 R$1.471,47. DataConsolidacao estava mascarada/corrompida e não deve ser inferida. É fotografia histórica do provider, não quitação/saldo atual ou atualização doFIP. Fonte: unidades 37986.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch11-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 12 de 2026-09-21
+
+Em03/07/2026, a consultaPARCELASPARAGERAR162 ainda listava202604,202605 e202606 aR$1.536,24 cada; OBTERPARC164 mostrava demonstrativo pago sóaté202603. Isso coexistia com a informação deHebert de que abril–junho jáhaviam sido pagos. Não era autorização para emitir novamente: reconciliar baixa e comprovante por consulta específica. É fotografia histórica, não quitação, saldoou atraso atual. Tentativas locais de túnel/arquivoausente não alteram estado financeiro. Fonte: unidades 37984, 37987, 38035.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

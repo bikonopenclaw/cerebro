@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 relationships:
 - type: references
   target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
@@ -135,3 +135,39 @@ Acesso via Tailscale Serve envolve três condições independentes: tailnet perm
 Sugestão de instalação apresentada na interface Codex não foi entregue automaticamente ao usuário no Telegram. Antes de afirmar que há uma aprovação visível, conferir qual interface/canal realmente a recebe. No incidente Robotnik, corrigiu-se a alegação e o fluxo de integração; valores OAuth não devem compor memória cognitiva, nem a integração antiga deve ser reativada por esta nota. Fonte: unidades 36614.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 9 de 2026-09-21
+
+Na revisão estática Portal213, Gunicorn master e workers compartilhavam listener; ss podia listar worker primeiro, provocando falso rollback. Verificar conjunto completo de PIDs, MainPID numérico não zero pertencente ao conjunto e identidade via /proc/MainPID; registrar início do processo, executável, hash/argc do comando e endereço exato. Repetir após start e restart. A especificação não demonstra instalação nem autoriza executar script root. Fonte: unidades 28887.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 10 de 2026-09-21
+
+No DRE, fixture usava path onde o contrato exigia relative_path; ausência da chave virou string vazia e foi corretamente rejeitada como UNSAFE_PATH. Conferir esquema efetivo antes de alterar o validador para acomodar teste inválido. Códigos de erro exatos e classes distintas não devem ser normalizados artificialmente apenas para fazer harness passar. Fonte: unidades 9800, 34019.
+
+Para Gunicorn, master e workers podem compartilhar o listener; a ordem dos PIDs no ss não define dono canônico. Usar MainPID do serviço, exigir que esteja no conjunto de PIDs do socket, validar identidade por /proc/MainPID e registrar start-time/executável/hash de comando/endereço. Repetir a verificação após restart autorizado; não reverter serviço saudável porque worker apareceu primeiro. Fonte: unidades 28886.
+
+Na recuperação histórica de instagram-brand-director, inventários com64arquivos coincidiam, mas frontmatter administrativo extra no SKILL.md alterava o hash da árvore. O pacote de evidências validado não continha a árvore candidata completa. Comparar conteúdo canônico/algoritmo de hash e distinguir bundle de evidências de backup restaurável de código antes de afirmar recuperação exata. Fonte: unidades 30718.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 12 de 2026-09-21
+
+No canário histórico Gunicorn/Portal, validação de listener precisou considerar socket compartilhado e pertencimento do MainPID ao conjunto de processos do serviço. Múltiplas identidades de worker não significam necessariamente múltiplos serviços conflitantes. Validar antes/depois de restart e preservar separação entre revisão estática do script e instalação/canário efetivamente executados. Fonte: unidades 28888.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 13 de 2026-09-21
+
+No episódio da rotina instrucao-diaria-helpdesk-suporte-bikon, configuração exata foi copiada do SQLiteperfilKowalski para storeprincipal e listada única nesta última; legado permaneceu existente. Unicidade em uma store não prova ausência de execução poroutro scheduler. Verificar autoridade efetiva/instâncias antes de chamar globalmente único; horário07:59diasúteis e agenteKowalski são configuração histórica, não instrução atual. Fonte: unidades 9683.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 14 de 2026-09-21
+
+Após a migração histórica de08/07/2026, o supervisor real era openclaw-gateway.service de usuário, com enabled e linger, e executável Node diferente do template sugerido. Não substituir unit saudável só para coincidir com nome/caminho esperado: conferir usuário, supervisor, executável e comportamento após reinício. Linger/enabled e Restart configurados precisam de prova no ambiente aplicável; caminhos e versões do relato não são receita atual. Fonte: unidades 30103.
+
+Na tentativa SentinelA1 de26/07, postcheck detectou gatewayPID diferente, mas starttime do novoPID era anterior a technical_started_at. BASELINE_DIVERGENCE demonstrava baseline inválida, não restart causado pela auditoria. Gate OpenAPI falhou antes deautenticação/dados; zeroGETdedados não significazeroGETdedocumentação. Marker executor-controlled deconsumo era autoridade mesmo com approvalimutável consumed:false; adapter sintético e replay offline não substituíam contrato realSOURCE_SCHEMA_READY. Fonte: unidades 41540.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

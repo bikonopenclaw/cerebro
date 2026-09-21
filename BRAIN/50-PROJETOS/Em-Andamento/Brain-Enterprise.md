@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 relationships:
 - type: references
   target: BRAIN/99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive.md
@@ -89,3 +89,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260
 No scheduler SQLite, storePath legado exibido por CLI não prova que jobs.json seja fonte ativa. Identificar storage/sqlitePath e job exato por nome/ID/contrato. Se rotina pedida não é encontrada, não editar job vizinho porque horário/agente parecem próximos; ausência naquela consulta não comprova inexistência atual. Horário histórico de helpdesk não altera agenda Brain vigente. Fonte: unidades 9680.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 9 de 2026-09-21
+
+Em diagnóstico OpenClaw, separar autenticação OAuth do agente de faturamento/credencial do provedor de embeddings. Uma falha histórica billing_not_active da memória/embeddings não é resolvida necessariamente refazendo login OAuth do agente; verificar o subsistema efetivamente bloqueado antes de alterar autenticação. Fonte: unidades 37477.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

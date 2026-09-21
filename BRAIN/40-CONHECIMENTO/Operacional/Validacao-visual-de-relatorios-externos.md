@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
@@ -129,3 +129,17 @@ No feed-base histórico, composição final 4:5 exigia elementos essenciais dent
 Ao fechar um par de registros cujo segundo referencia o primeiro, congele primeiro os bytes do registro-base e faça o segundo referenciar seu hash; não exija hashes finais mutuamente embutidos, pois isso cria dependência circular. Validação independente deve conferir o par efetivamente gerado antes do freeze; o histórico não autoriza regenerar o par atual. Fonte: unidades 41669.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 10 de 2026-09-21
+
+Na peça histórica E2 sobre transferência de responsabilidade, melhorar estética não bastava: folio único, vão e gesto de entrega deveriam ser compreendidos em thumbnail com headline, sem legenda auxiliar. Reservar área tipográfica e testar o significado pretendido na escala de uso. Esse critério pertence à peça/briefing, sem tornar o objeto específico obrigatório em outras campanhas. Fonte: unidades 9646.
+
+No desenho histórico de entrada única bikon-docs, documento nativo Google deveria usar exportação oficial da origem; documento local usaria motor local apropriado. Unificar interface não significa trocar o conteúdo por conversão menos fiel. O teste da rota Google estava bloqueado por dependência ausente e nenhuma alteração havia sido aplicada. Limites de formato/tamanho citados na época precisam ser revalidados; arquivo acima do limite não autoriza fallback improvisado ou apagar o gerador de negócio. Fonte: unidades 29566.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 13 de 2026-09-21
+
+No carrossel Provimento de 16/07, os três ajustes de wordmark, respiro do CTA e cor de SEGMENTAÇÃO foram relatados como aplicados antes de chegar novamente o veredito antigo “ajustar”. Timeout/killed da sessão revisora não valida nem reprova os novos PNGs. Vincular QA à versão/hash dos bytes efetivamente vistos e revalidar após reexportação; não repetir correções já presentes nem reutilizar parecer da versão anterior. Comparação posterior de Kling deveria preservar copy, identidade, composição local, custos, QA e autorização de publicação, sem inferir adoção a partir do estudo. Fonte: unidades 39624.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

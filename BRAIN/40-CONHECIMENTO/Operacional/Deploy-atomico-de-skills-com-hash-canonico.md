@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-20.md
@@ -105,3 +105,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260
 Em validação read-only de pacote congelado, um .pyc extra altera o inventário e pode resultar da própria inspeção. Não importar ou compilar o pacote para inspecioná-lo sem controlar escrita de bytecode. Uma comparação com exclusão lógica explícita ajuda a diagnosticar, mas não apaga o arquivo, não aprova o pacote contaminado e não substitui a identidade congelada original. Fonte: unidades 8622.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 12 de 2026-09-21
+
+Na revisãoEP02A, run1/run2 idênticos, contagens e hashes corretos não bastaram: semanticHash usava wrapperkind/version/envelope enquanto a revisão doADR então congelada descrevia preimagemdireta. Conferir preimagem contra a versão autoritativa exata; revisão normativa posterior pode mudar a regra. Não perpetuar “semwrapper” como verdade universal. AssinaturasFIM duplicadas exigiam justificar distinçãoatômica ou corrigirfixtures; maislinhas não significam cobertura maior. Fonte: unidades 9750.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

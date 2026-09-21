@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 ---
 
 # Estado terminal requer convergencia do lifecycle
@@ -70,3 +70,25 @@ Em 2026-W38, as revisoes do relatorio Capixaba permaneceram na mesma request e c
 No caso histórico R2, o child não possuía a rota aprovada para Kowalski. Limitou-se à preparação local e retorno de artefatos/hash; o controle principal fazia a revisão independente. Se o child perder contexto, reconciliar artefatos existentes antes de criar sucessor, evitando fila duplicada ou aprovação impossível no isolamento. Fonte: unidades 37061.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 9 de 2026-09-21
+
+Na validação histórica ShadowR4 em POSIX/Linux, check+varredura+append usavam o mesmo flock com deadline, coordenando fonte primária e fallback por execution_id. Duplicata semanticamente idêntica conta uma vez; mesmoID com conteúdo conflitante falha, sem relatório de sucesso. JSON inválido/truncado torna relatório incompleto; ausência de fonte não é conjunto vazio bem-sucedido. Agreement usa comparáveis; coverage usa universo único, com UNKNOWN separado. Confirmar escrita perdida por ALREADY_PRESENT evita segunda linha. Garantia não abrange perda total do host; PASS dos testes não ativa runtime. Fonte: unidades 34275.
+
+Histórico DRE registrou duplicação de liberação após replay/resume de sessão. Identificar execução de forma estável e serializar a transição no controlador/owner único; nova mensagem ou retomada do agente não deve criar uma segunda liberação da mesma janela. Reconciliar estado canônico antes de retentar. Fonte: unidades 33976.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 10 de 2026-09-21
+
+A revisão Shadow anterior à R4 reproduziu duplicação porque busca usava tail fixo de131072bytes, relatórios ignoravam companion fallback e timeout aceitava bool/NaN/Infinity/1e308. Exigir tipo numérico finito positivo com máximo documentado, varredura completa sob deadline/lock e deduplicação por identidade. Companion inválido não pode ser seguido como arquivo seguro nem bloquear indefinidamente o primário; testar falha/contingência sem violar idempotência. Timeout isolado de FIFO não virou bloqueador quando reprodução mostrou rc2 rápido: preservar apenas achado reproduzido, não ampliar severidade por primeira observação. Estado final posterior daR4 deve prevalecer sobre rejeição intermediária. Fonte: unidades 41424.
+
+Na revisão histórica Shadow, janela fixa dos últimos128KiB deixou duplicação passar; idempotência deve cobrir primário e fallback sob coordenação interprocesso/deadline. Timeout precisa rejeitar booleanos,NaN,infinito,não positivo e valores além do máximo contratado. Mesmo execution_id com conteúdo divergente deve bloquear métricas, não somar como duas execuções; fallback inválido não deve silenciosamente destruir a garantia de persistência. Achados pertencem ao candidato revisado, não afirmam falha atual. Fonte: unidades 41423.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 14 de 2026-09-21
+
+Na revisão ShadowR4, primeiro probeFIFO expirou, mas repetição confirmou rc2 semhang; não manter bloqueador baseado só no primeiro timeout. FonteUTF8inválida podia produzir relatório parcial com registros válidos do companion, report_complete=false/rc2. Companion inválido havia impedido append no primário saudável, mas nova alteração de código exigia revalidar o diff porhash; mtime não prova correção nem permanência do defeito. Consolidar junto41423 semdiagnóstico atual. Fonte: unidades 41426.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

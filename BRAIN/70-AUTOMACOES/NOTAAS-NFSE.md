@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 ---
 
 # Skill Notaas NFS-e
@@ -308,3 +308,33 @@ Hebert aceitou provisoriamente layoutv5 como padrão apesar de insatisfação es
 NFS-e180 Unus, competência junho/2026 e totalR$18.004,19, foi lida como documento de referência para preparar fluxo seguinte de NFS-e/boleto/remessa Cresol. Era NFS-e de serviço, não DANFE de produto. Não registrar novamente receita, pagamento ou quitação apenas por essa leitura, nem copiar a chave fiscal ao Brain. Comprovante/documento mestre permanecem autoridade operacional. Fonte: unidades 36464.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 10 de 2026-09-21
+
+No segundo lote de produção de01/07/2026, Hebert confirmou que diferenças entre soma dos itens e total refletiam descontos já conferidos; isso não autorizava emissão imediata. A pré-validação precisava distinguir Celi Aracruz e Celi JoãoNeiva por cliente_id/endereço, não fundir por nome/CPF. Aceitação de desconto nesse lote não é regra genérica para ignorar divergência de totais em lotes futuros. Fonte: unidades 3565.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 11 de 2026-09-21
+
+Em13/06/2026, a tentativa fiscal real de valorR$1,00 teve timeout apósPOST Notaas; não retornaram invoice_id, número, código verificador ouPDF/XML. O resultado comunicado foi INDETERMINADO, com orientação de conferir provider antes de repetir para não duplicar emissão. Isso é estado histórico, não prova de pendência atual nem autorização de retry. Relatório referenciado: workspace-darth-vader/relatorios/status_emissao_nfse_hebert_mattedi_2026-06-13.md. Fonte: unidades 3519, 3501, 3510.
+
+Pedido histórico de NFS-e real deR$1,00 para Hebert em13/06, serviço de infraestrutura de rede010701, município de prestaçãoVitória/ES eISS5%; houve preparação/dry-run com gate final e posterior timeoutINDETERMINADO. As instruções fiscais do pedido são históricas, não validação tributária vigente. Não conservar CPF/endereço nos resumos do Brain; consulta operacional deve usar cadastro protegido e evidência original autorizada. Fonte: unidades 29391.
+
+Em26/06/2026, Hebert autorizou uma únicaNFS-e real para Celi/Aracruz, R$585,00, competênciajunho/2026, serviço gerenciamento/controladoria/monitoramento de recursos de rede010701, prestaçãoVitória/ES,ISS5%. CSVRemessa091260626 indicava data desejada22/06, boleto comvencimento30/06 e próximo documento105602/últimonossonúmero1533-7. A delegação vedava lote, e-mailcliente, boleto/remessa e cancelamento naquele passo. Isso preserva pedido e limites; não prova emissão, númeroNFS-e189 ou envio. Cadastro pessoal deve ficar na fonte operacional protegida, não neste resumo. Fonte: unidades 31443, 3552.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch11-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 12 de 2026-09-21
+
+O formulário histórico do pedidoR$1 deHebert especificava competência2026-06 eISS5%retido, além do serviço010701 eVitória/ES. Preservar como instrução do pedido daépoca, sem validar o enquadramento fiscalatual ou inferir emissão; a tentativa terminouINDETERMINADA após timeout e exigia conferência antes de retry. E-mail/CPF não precisam ser duplicados na memória. Fonte: unidades 29388.
+
+Uma solicitação histórica separada pediu NFS-e paraCeliCabral deJoãoNeiva,R$585, com boleto vencendo30/06 e arquivo de remessa. Esse pedido não é equivalente à delegaçãoAracruz preservada em31443/3552, que tinha escopo restrito. Manter identidades e escopos separados; nenhum dos pedidos isolados comprova emissão/transmissão. O cadastro mestre deve distinguir cliente_id/endereço sem repetir dados pessoais noBrain. Fonte: unidades 36972.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 14 de 2026-09-21
+
+Em03/08/2026, um recibo do lote fiscal relatou autorização da posição01 após retentativa (invoice254af27a-8f4c-4f51-a2ec-291c668daebb), posições01–07 emitidas com PDF/XML, e interrupção na posição08 (invoicefcc65f27-a93b-4736-b381-774766878a98) por resposta nãoJSON HTTP503 do SNNFSE, sem número/chave/PDF/XML para essa tentativa. Envio externo permanecia bloqueado. Posição do lote não é número oficial deNFS-e; erro de resposta não prova inexistência de emissão remota. Conferir esses identificadores no registro/provider antes de qualquer retry autorizado. A chave fiscal e os documentos operacionais permanecem fora desta memória cognitiva e do escopo de exclusão de históricos. Fonte: unidades 3405.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

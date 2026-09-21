@@ -6,7 +6,7 @@ created: '2026-09-21T18:54:56.269635Z'
 schema_version: '1.0'
 created_semantics: Data de registro estruturado, não origem do conteúdo legado.
 relationships: []
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T19:50:50.519705Z'
 ---
 
 # FIP Bikon Financial Intelligence
@@ -261,3 +261,23 @@ Na entrevista de16/08/2026, Hebert autorizou MERCADOLIVRE*MERCADOLI como empresa
 Na entrevista de15/08/2026, o item AMAZON BR foi tratado como BUSINESS_DIRECT com evidência ferramenta e propagação NOT_APPLICABLE. O recibo seguinte referencia o relatório20260815T112231Z. Não transformar o fornecedor em regra global: itens AMAZON MARKETPLACE próximos receberam naturezas distintas. Informação é decisão por item; não comprova saldo atual ou nova gravação. Fonte: unidades 35186.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 9 de 2026-09-21
+
+Não calcular indicadores de risco de caixa quando o caixa inicial não for confiável. Distinguir fluxo projetado de saldo disponível efetivo; ausência de baseline não pode ser substituída silenciosamente por zero. Fonte: unidades 34252.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 11 de 2026-09-21
+
+No lote3 inicialFIP, a solicitação separava alimentação/mercado, frota/material técnico, infra/TI/treinamento, CafeteriaBikon09/12–12/12 R$1.241,20, PresenteGustavo03/10–10/10 R$640,64 e créditoanuidadeR$9,95. Foi pedido manter presentes/finalidade corporativa ambígua e crédito sem vínculo em revisão; não inventar relação de cliente. A solicitação não classificou os itens por si. O relato posterior28794 registra aplicação parcial de grupos e31validações operacionais, com demais emreview; natureza econômica atual requer trilha do banco, não regra por merchant. Fonte: unidades 3468.
+
+Em16/08/2026, Hebert confirmou MERCADOLIVRE*CARVINGSTUDI12x como empresa/equipamento e replicação; relato do agente menciona1/12, splitativo2/12–4/12 e obrigações futuras em dois blocos porcentavos. Confirmou MERCADOLIVRE*MERCADOLI6x como empresa/equipamento e todas parcelas; relato menciona split2/6–4/6 e cobertura documental1/6–6/6. Para YOUSEAUTO*8635-18/24 R$208,14, itemmpcarditem_b2ec9b41deccd35270147b840bf0, respondeu “É a mesma coisa pode replicar” à pergunta se era empresa/seguroveicularrecorrente comoYOUSEEmissao. Preservar decisão do item/família, sem classificar todo merchant. Source intacta/reimbursementdelta0 foram alegados nos dois primeiros recibos; a última resposta não prova execução posterior. Fonte: unidades 33558.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch11-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 14 de 2026-09-21
+
+Em15/08/2026, uma resposta anunciou intenção de classificar a parcela7/10 como BUSINESS_DIRECT, evidência treinamento, e proibiu propagar para8/10,9/10 e10/10 sem SIM explícito. O verbo futuro não é recibo de aplicação. Preservar escopo por parcela e autorização específica, sem inferir estado atual do lançamento. Fonte: unidades 35181.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
