@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T21:39:24.440350Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
@@ -92,3 +92,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260
 Na retomada Sentinel A1Retry, documento congelado ainda mostrava consumed:false, mas marcador do executor criado atomicamente por O_EXCL provava consumo. Estado de execução/recibo autoritativo prevalece sobre flag estática no documento aprovado; não consumir de novo nem gerar novo execution_id por restart. Distinguir consumed_at de technical_started_at, sem retroagir início ou inventar coleta. Retomada depende de estado verificável e validade do mesmo escopo, não do replay textual. Fonte: unidades 41538.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 30 de 2026-09-21
+
+No checkpoint Sentinel de 26/07, falha local após consumir a aprovação e antes do primeiro GET não apagou o consumo. A correção preservou marcador e recibo O_EXCL, registrou TECHNICAL_START_DEVIATION e produziu a evidência técnica faltante antes da chamada, mantendo replay rejeitado. Distinguir consumo, início e ação efetiva; reparar evidência de estado sob o mesmo escopo não equivale a reautorizar, reconsumir ou repetir ação externa. As capturas públicas posteriores eram truncadas/incompletas e não comprovavam ausência de endpoint; o contrato integral veio em outra etapa já registrada. Fonte: unidades 41551.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch30-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

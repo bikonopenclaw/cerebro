@@ -6,7 +6,7 @@ created: '2026-09-21T18:54:56.269635Z'
 schema_version: '1.0'
 created_semantics: Data de registro estruturado, não origem do conteúdo legado.
 relationships: []
-updated: '2026-09-21T21:16:57.672344Z'
+updated: '2026-09-21T21:39:24.440350Z'
 ---
 
 # FIP Bikon Financial Intelligence
@@ -301,3 +301,11 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch26-2026
 A especificação FCOC v1.1.0 de 15/08 separou PERSONAL_PRIVATE de DISPLAY_DESCRIPTION_OVERRIDE. Override muda apresentação, não transforma item em pessoal privado nem altera bytes da descrição fonte; a descrição original por trás do override não deve ser exibida a terceiros. Detalhes PERSONAL_PRIVATE ficam restritos a Hebert e falha de entrega de alerta não afrouxa a privacidade. Criar a versão filha preservava v1.0.0 congelada, o cursor e a ausência de classificação do item então pendente. Não confundir implementação dessas regras com autorização para classificar ou divulgar dados. Fonte: unidades 34810.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch27-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 31 de 2026-09-21
+
+Na revisão FIP de 10/08, a UI dark BI e Scenario Studio passaram com 18 workflows mobile, 17 testes e cenário de stress de receita -20%, despesa +10%, horizonte de 12 meses, preservando actuals e a porta 9213. O go-live ainda estava FAIL_CLOSED por gates financeiros e de credencial daquela etapa, apesar de UI PASS. O documento repetido foi reconhecido como já executado, sem rerun. Essa barreira inicial antecede o go-live privado posterior já consolidado; não inferir bloqueio atual ou nova obrigação de rotação a partir do snapshot. Fonte: unidades 34253.
+
+Hebert confirmou historicamente que a transferência Bikon→Hebert de R$ 6.964,82 em 13/04/2026 liquidava integralmente a fatura Itaú Personnalité 2026-04, com diferença zero. A autorização separava settlement de classificação econômica dos 33 itens: não criar despesa empresarial pelo total, batch econômico de reembolso ou classificação automática, não tirar itens da fila e manter a entrevista pausada. Se necessário, a separação estrutural deveria ser aditiva antes da persistência. A decisão não autorizava reinterpretar pagamentos anteriores; este registro preserva a autoridade/escopo declarados, sem afirmar que todo o processamento posterior foi executado pelo fragmento. Fonte: unidades 34805.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch31-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

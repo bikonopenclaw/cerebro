@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:33:26.060207Z'
+updated: '2026-09-21T21:39:24.440350Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
@@ -189,3 +189,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch27-2026
 No diagnóstico ARX de 17/07 com Chromium 149 fixado, o logo oficial PNG em base64 desaparecia, enquanto a referência file:// ao mesmo asset renderizava. Foi autorizado trocar somente o src, preservando template aprovado, marcador, conteúdo e layout; backup de gerador/template foi feito. A fonte ainda não demonstra patch nem PDF de homologação. O critério era inspeção visual de logo/cabeçalho, uma página A4 e metadados compatíveis, não apenas sucesso da conversão. Os assets de workspace e agente eram idênticos; isso não dispensa conferir o arquivo efetivamente usado pelo renderizador. Fonte: unidades 9481, 9478.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch28-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 30 de 2026-09-21
+
+No checkpoint ARX de 17/07 posterior à troca exclusiva de src, o template file:// passou homologação visual: logo oficial, cabeçalho alinhado, uma página A4 e Chromium 149. Porém o gerador ainda procurava um único logo base64 e poderia rejeitar o template já alterado; PASS visual do arquivo não era PASS do fluxo gerador→template. Conferir compatibilidade dos dois componentes e dependência do asset local antes de afirmar recuperação completa. A extração estrutural do DOCX via ZIP demonstrava imagens/VML, enquanto o validador disponível aceitava apenas formatos textuais; não interpretar rejeição de extensão como defeito do conteúdo. Esses eram checkpoints históricos, sem comprovar produção atual ou relatório final entregue. Fonte: unidades 9496.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch30-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

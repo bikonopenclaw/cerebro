@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:33:26.060207Z'
+updated: '2026-09-21T21:39:24.440350Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-28.md
@@ -748,3 +748,37 @@ No binding real CPIW de 07/08, a evidência examinava o namespace AIR/ICD do CNS
 Na reconciliação dos registros finais multi-Serventia, recomputar os hashes do par observado confirmou seus bytes, mas não explicou a transição a partir do par anteriormente anunciado. O retorno ainda exigia leitura completa, matriz de autoria e comparação de bindings/claims com os inputs dos 85 testes. Não selecionar uma linhagem como canônica só porque o hash atual confere, nem rerodar testes para substituir a prova documental ausente. O checkpoint incompleto permanece histórico e não é certificação jurídica ou do estado atual. Fonte: unidades 41610.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 30 de 2026-09-21
+
+No incidente iOS de 21/08, o build B20260821T132000Z acrescentou shell visível antes de JavaScript, bridge inicial web_app_ready/web_app_expand e card com startapp versionado. A observabilidade separava HTML_LOADED, TELEGRAM_SDK_READY, INITDATA_PRESENT, INTENT_RESOLVED, INITDATA_VALIDATED, MEMBERSHIP_ALLOWED, CONTEXT_RESOLVED e CONTENT_RENDERED, sem gravar initData ou segredos brutos. Autorização continuava server-side por initData, membership e entitlement; start_param apenas escolhia visão. Mesmo HTML idêntico em loopback/HTTPS, testes e render sintético não encerraram o incidente. A confirmação do proprietário ao ativar Tailscale no iPhone resolveu o acesso tailnet; o segundo job de reparo foi parado sem novas mudanças. O fechamento de carregamento não era aceite automático de todo fluxo AIR. Conferir conectividade do dispositivo antes de reabrir correções da aplicação; esse build é referência histórica, não versão atual obrigatória. Fonte: unidades 32871.
+
+Os retornos de 08/08 às 19:20 e 20:01 reportaram aceitação operacional externa e depois visual/analytics para CNS 023689 e 024067: seis rotas HTTP200, GET_MUTATION_COUNT=0, inspeção mobile e validação Kowalski. Isso supera a pendência da checagem externa nos checkpoints anteriores, sem provar disponibilidade atual. O adaptador reconciliou interview_completion estruturado V4 com executive_summary legado, preservou contagens e não inventou current_question/status ausentes. Promoção limitada a source/test e serviço Herald não equivalia a DRE, PDF, novo CPIW ou contato cliente. Fonte: unidades 37354.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch30-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 31 de 2026-09-21
+
+No fechamento Mini App de 09/08, as opções ausentes vinham da prioridade incorreta de ações globais/fuzzy sobre current_question.answer_options; a correção submetia answer_option_id e semantic_answer_value sem fixar SIM/NÃO. O upload PDF falhava no cliente antes de evidence-finalize porque a UI faltava apesar do backend corrigido. O piloto relatou comentário, PDF, correção e abas PASS, 219 testes e validação independente, mas terminou COMPLETED_WITH_OPEN_EVIDENCE_GAPS. Resposta e próxima pergunta determinísticas usaram zero chamadas LLM; a latência técnica registrada não equivale a latência percebida no dispositivo. Esse aceite funcional não fecha lacunas documentais nem substitui a Golden Baseline posterior. Fonte: unidades 37373.
+
+Em 02/08 às 20:53, o replacement DRE single-run foi relatado PASS com um preflight independente, uma execução, transação COMPLETED, journal/identidades/publicação atômica válidos e dois outputs publicados no release GEN-P213-DRE-FINAL-PAIR-20260802T101044Z-21DB01061749. A validação Kowalski passou, com pacote não modificado e zero rede/acesso externo/cliente. A publicação dos registros não constituía adoção operacional: CONTINUATION_AUTHORIZED=NO e o próximo gate era adoção dos registros finais e handoff, sem dashboard ou Drive alterados. Não repetir a execução pela leitura desta memória. Fonte: unidades 32588.
+
+No Phase 0.1 histórico do Portal 213, os testes passaram de 35 para 49 após corrigir contrato de permissão do bot, consumo atômico de replay e ticket, sessão server-side, discovery gated e entrada de segredo. Broker e helpers estavam preparados, mas inativos; CUSTOMER_SAFE_AIR_TARGET continuava BLOCKED. PASS offline não consumiu token real, chamou Telegram, contatou cliente ou executou root. Comandos de discovery e entrada de segredo eram instruções futuras condicionadas, não operações demonstradas nem autorização vigente. Fonte: unidades 29309.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch31-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 32 de 2026-09-21
+
+Na cadeia Stage 1B de 20/08, um export de evidência anterior não comprovava execução do R2.4; o handoff seguinte precisava invocar os bytes autenticados e capturar transcript/exit code na mesma execução. O R2.4 executado depois falhou antes de mutação. R2.5 corrigiu apenas capture_protected_gateways e passou checkpoints locais e revisão independente após duas sessões terminarem sem artefatos; NATIVE_GOAL_STATE continuava MISSING e não devia ser declarado ativo. O primeiro comando de execução R2.5 foi rejeitado por problemas no pipeline do transcript, sem invalidar os bytes R2.5: corrigir wrapper e registrar falha separadamente. Esses gates preparatórios antecedem o Stage 1B posteriormente aceito; não autorizam repetir comandos históricos. Fonte: unidades 37048, 37054, 37051.
+
+Na sequência de 02/08 para CNS 024067, evidência legada já respondia G.01; a nova pergunta foi cancelada e substituída por pedido de documento formal aprovado/assinado, sem crédito duplicado de progresso. A autorização posterior distinguiu respostas declaratórias, que exigiam respondente humano vinculado, de pedido de documento institucional existente, permitido por canal oficial documentado e expressamente autorizado para aquele escopo. O binding institucional foi criado, mas o checkpoint registrou zero tentativa de envio. Sem executor de e-mail aprovado, houve autorização excepcional de envio manual pelo Owner: ela não dava e-mail/credenciais ao agente, não autorizava retry, aceite da resposta ou alteração do dashboard. Pedido autorizado e binding existente não provam entrega nem validação da evidência. Fonte: unidades 32611.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch32-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 34 de 2026-09-21
+
+O bloqueio pós-commit do CNS 023689 foi posteriormente superado no fechamento de 08/08 às 18:46: a correção de compatibilidade string-serventia já promovida, hash 3c2245344bcc1c661e177f9537cf3191c88ee2a92411959dce2be5532b14438d, recebeu autorização para exatamente um restart adicional do serviço Herald. O retorno relatou operacionalização PASS, read purity do CNS 024067 PASS, validação final Kowalski PASS e GET_MUTATION_COUNT=0 nas rotas geral e individuais. Não houve DRE, PDF, cliente, restart de gateway ou serviço não relacionado. Portanto a indisponibilidade inicial de 023689 descreve a etapa anterior, não o resultado deste fechamento nem prova do estado atual. Fonte: unidades 37346.
+
+Após a queda da VPS em 02/08, a recuperação do preflight v2 preservou pacote, manifesto, wrapper e freeze válidos, reconstruiu somente o relatório ausente e não descartou artefato algum porque não encontrou staging incompleto elegível. Os 28 testes locais passaram sem preflight ou run real. A preparação do run seguinte parou antes de criar artefatos: HEAD e tracked diff estavam corretos, mas 19 arquivos untracked de RuntimeMaintenance impediam classificar a worktree como limpa. Isso exigia reconciliação separada, sem apagar trabalho alheio, mudar safe.directory, repetir preflight ou tratar o bloqueio de governança como mutação do runtime. O single-run posterior já consolidado pertence à etapa seguinte. Fonte: unidades 32576.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch34-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

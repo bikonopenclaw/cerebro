@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T21:07:33.285014Z'
+updated: '2026-09-21T21:39:24.440350Z'
 ---
 
 # Pacote selado auto-reprodutivel antes de privilegio operacional
@@ -69,3 +69,15 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-2026
 Na reconciliação DRE de 02/08, duas cópias observadas do relatório eram byte idênticas, enquanto o hash antes citado na autorização não tinha comprovação. O registro classificou a divergência como transcrição de âncora de governança, sem atribuí-la ao engine, pacote ou state-root. Relatório era evidência de apoio, não âncora primária de execução. Conferir a identidade efetiva e o papel do artefato antes de bloquear ou culpar o runtime. Essa revisão do pack limitou-se a bytes, modos, sintaxe e regras; validar wrapper/preflight não significa executá-lo. Fonte: unidades 8603.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 31 de 2026-09-21
+
+Na revisão estática do script Portal de 14/08, bash -n passou, mas shellcheck não estava instalado: não declarar esse lint executado. O launcher proposto vinculava o SHA esperado, obtinha lock e copiava o script para arquivo root-owned 0700 imprevisível sob /run, conferindo tipo, dono, modo, link count e hash da cópia antes de executar. O anexo era cópia independente, não hardlink. Esses controles preservavam identidade entre revisão e bytes privilegiados; a revisão tinha ROOT_ACTION_COUNT=0 e não era prova de canário executado nem receita atual para rodá-lo. Fonte: unidades 30536.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch31-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 32 de 2026-09-21
+
+No Portal 213 de 20/08, dois arquivos inner-artifact encontrados em disco não constituíam duas autoridades concorrentes. A seleção devia seguir outer bundle congelado por nome e hash → FINAL_DELIVERY_MANIFEST interno → membro inner exato nomeado pelo manifesto, preservando a evidência do diagnóstico anterior. A adjudicação estática passou e preparou o handoff, mas não executou root nem Checkpoint 3. Conferir proveniência hierárquica em vez de escolher arquivo por proximidade, nome parecido ou busca solta. O estado do Goal nativo precisava ser reportado separadamente: artefato válido e tarefa em conversa não provam que o controlador mantém Goal ativo. Fonte: unidades 37033, 37036.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch32-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

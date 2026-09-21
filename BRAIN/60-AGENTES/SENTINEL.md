@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T21:33:26.060207Z'
+updated: '2026-09-21T21:39:24.440350Z'
 ---
 
 # SENTINEL, Controller de Operações e SNOC
@@ -400,3 +400,31 @@ No hardening histórico de 26/07, rehearsal básico não bastou: assert aceitava
 Após a conversão da matriz original 22×24, Sentinel retornou CERTIFICADO_PARA_USO_NO_G0 apenas como input controlado, sem certificar IDs, aplicabilidade, mínimos ou decisões humanas. A projeção simples 22×11 foi criada e conferida antes do STOP, com 21 decisões pendentes e hash lógico origem/export igual; a expandida 22×35 foi validada localmente, com 24 células candidatas (NinjaOne 11, ARX 4, Bitdefender 9) e 39 sem candidato. Todos os vínculos por nome permaneciam CANDIDATO_NAO_AUTORITATIVO; cobertura estrutural não elevava crosswalk 0/21 a mapeamento aprovado. Os 21 hashes usavam colunas 1–34 em UTF-8 separadas por unit separator. Falhas do validador vieram de headers assumidos: a fonte usava identificacao e prefix_decisao_utc. Corrigir o validador não autorizava alterar CSV para satisfazer schema inventado. A revisão de capas Instagram era frente separada: calendário aprovado e cinco capas produzidas para entrega interna ainda não eram QA das peças nem publicação. Fonte: unidades 8693.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 30 de 2026-09-21
+
+No fechamento histórico Goal 5 de 22/08, 14 capacidades foram requalificadas e 71 testes passaram, mas nenhuma capacidade foi retirada do routing. Permaneciam 12 fallbacks, dois retirements bloqueados e dependências de compatibilidade; o schedule Bitdefender→Ninja ainda bloqueava aposentadoria, e ações sem canário live seguro não estavam provadas. Kowalski mantinha reporting/documentos/tickets e Robotnik marketing/Instagram. PASS daquele Goal não era desacoplamento integral, nem autorização para remover capacidades compartilhadas; uso donor devia continuar explícito e observável. Os números descrevem aquele checkpoint, não inventário atual. Fonte: unidades 35482.
+
+A ordem histórica Goal 6 de 22/08 limitou o fechamento à consolidação e aceitação da produção existente, preservando capacidades legítimas de Kowalski e Robotnik e credenciais compartilhadas. Após aceite deveria cessar a migração: sem Goal 7 automático, novas mudanças seguiriam operação, incidente, expansão, política ou change control explícito. O retorno daquela conversa declarou migração CLOSED e steady-state ACTIVE; é declaração histórica, não revalidação atual nem prova isolada de todos os testes exigidos pelo documento. Fonte: unidades 35488.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch30-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 31 de 2026-09-21
+
+Na auditoria forense Sentinel de 21/08, o pacote foi relatado PASS com 34 arquivos conferidos, zero mutação de produção e scan básico sem vazamento óbvio, enquanto a prontidão de remediação ficou NO_GO. Faltavam prova de credenciais dedicadas, ticketing Sentinel, desacoplamento do state dos doadores e normalização/identidade completas. PASS da auditoria confirmava o diagnóstico, não removia esses gates. Os Goals posteriores precisam ser lidos como etapas posteriores, sem carregar automaticamente aquele NO_GO para o presente. Fonte: unidades 30647.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch31-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 32 de 2026-09-21
+
+Nos relatos históricos Goals 3–4 de 22/08, Sentinel tinha 14 capacidades primárias e 14 regras determinísticas, mas SAFE_AUTOMATIC_ACTIONS_ENABLED continuava 0. Ticket, ação de provedor e comunicação eram capacidades implementadas e testadas sem canário live: faltava alvo interno autenticado com owner, limites de impacto, reversibilidade, limpeza e autoridade. O Goal 4 reportou resolução de identidade de 40%, com 00 - Bikon Tech em CONFLICT e crosswalk entre provedores ainda insuficiente; PASS dos 61 testes não eliminava essas lacunas. Independência do estado/runtime donor também não comprovava credenciais dedicadas nem retirada dos fallbacks. Preservar a diferença entre capacidade, teste isolado, aceitação live e automação ativada; números e conflitos são daquele snapshot, não estado atual. Fonte: unidades 35479, 35476.
+
+Em 21/08, o handover forense Sentinel passou como auditoria read-only, mas remediação ficou NO_GO por autoridade de credenciais não comprovada, ticketing bloqueado, acoplamento donor e identidade parcial. A ordem Goal 1 posterior autorizou fundação/read plane com herança segura, preservando Kowalski/Robotnik e adiando aposentadoria. O contrato exigia identidade nativa, timestamps de observação/coleta, freshness, proveniência, saúde de integração e semântica explícita de erro/resultado parcial; falha de provedor não podia produzir healthy completo. Identidade devia permanecer RESOLVED/AMBIGUOUS/ORPHAN/CONFLICT conforme evidência, sem chute. A autorização previa isolamento de falhas por provedor e fronteira sem envio/publicação; descreve o estágio inicial, não prova implantação completa nem proibição que automaticamente invalide fases posteriores autorizadas. Fonte: unidades 30649.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch32-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 34 de 2026-09-21
+
+No Goal 3 de 22/08 às 10:34, o fechamento relatou 14 capacidades Sentinel primary, 12 donor shadow, 12 donor fallback e 14 regras determinísticas. OBSERVE, DETECT e INCIDENT foram classificados operacionais; TICKET, ACTION e comunicação ficaram capazes de produção, mas sem canário live de mutação por falta de alvo seguro autenticado. Nenhum envio WhatsApp/publicação Instagram ocorreu e SAFE_AUTOMATIC_ACTIONS_ENABLED permaneceu 0. A correlação não deveria adivinhar identidade fraca. PASS de roteamento/paridade/observabilidade não significava automação autônoma, escrita autorizada ou aposentadoria dos doadores; Goals posteriores têm seus próprios aceites. Fonte: unidades 35474.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch34-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

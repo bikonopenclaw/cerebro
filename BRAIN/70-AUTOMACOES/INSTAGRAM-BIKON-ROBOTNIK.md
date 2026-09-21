@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T21:33:26.060207Z'
+updated: '2026-09-21T21:39:24.440350Z'
 ---
 
 # Instagram Bikon, Robotnik
@@ -268,3 +268,13 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch26-2026
 Na revisão histórica feed-base-a v1 de 20/07, o FAIL baseado no pacote mutável Robotnik foi supersedido após selecionar a fonte canônica correta. O snapshot com sete arquivos estáveis passou pré-geração com manifesto 474e9af2214cbe0faa25fa9aad2535bff0260bf94752a70a6b3f21352ebfc5de, request 5d721862890d4a5c8f72e458f9a79ce59ff70a10be5d4a9a527eaf2374b8c6a3 e payload 2be351a05379c0410a3cbba53da1c536c090c853273cef4e5a82f43ea2a642c7. O relatório de deployment ainda citava a identidade anterior 478436/8b67e9; isso exigia reconciliação documental, não restaurar prompt antigo nem invalidar os bytes canônicos confirmados. PASS de prompt/editorial e Capa textual não era Capa visual, Brand Lock global, Approval de custo, geração ou publicação. Qualquer byte alterado exigia novo vínculo/revisão; a imagem gerada posteriormente ainda precisava QA própria e acabou reprovada. Trata-se de linhagem histórica, sem reativar a rota Kling legada. Fonte: unidades 8729.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 30 de 2026-09-21
+
+Na revisão histórica do calendário Instagram Bikon para 03 a 07/08/2026, sobre Provimento 243, o parecer ao Robotnik foi AJUSTAR antes de mostrar ao Hebert. A direção geral ter sido aceita não significava aprovar as cinco peças para entrega ou publicação. O fragmento anuncia três ajustes essenciais, mas termina antes de descrevê-los; não reconstruir esses ajustes por inferência nem apresentar esse parecer como estado atual. Fonte: unidades 37520.
+
+Uma revisão histórica do fluxo de geração identificou que aprovação textual e generation.command livre não bastavam para vincular execução e gasto. O controle de custo precisava registrar saldo anterior, teto por ativo e por campanha, créditos reservados, acumulado e moeda/unidade. Preservar essas dimensões como critérios de revisão, não como prova de que o controle foi implementado ou de que provedores legados estão autorizados. O trecho final da regra de custo está truncado e não deve ser completado por suposição. Fonte: unidades 35996.
+
+Na semana de 20–24/07, o pacote final corrigido v4 de cinco capas foi escolhido como canônico; v5 era histórico e a rodada paralela v6 foi supersedida. A revisão recusou um PASS atribuído a arquivo com os mesmos bytes de uma versão já rejeitada: nomes de versão diferentes não criam evidência visual nova. Aprovação do calendário, dos fundos e do pacote final eram gates separados, sem publicação comprovada nessa etapa. O teto inicialmente autorizado para a semana e o gasto efetivo de 10 créditos não devem ser confundidos com orçamento de outra capa/ordem. A geometria dessa composição era específica do pacote, não margem universal da marca. Fonte: unidades 8704.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch30-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

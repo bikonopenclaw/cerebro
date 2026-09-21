@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:33:26.060207Z'
+updated: '2026-09-21T21:39:24.440350Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -164,3 +164,9 @@ Na sequência CPIW de 07/08, o manifesto usado em fixture foi reclassificado com
 Antes do commit CPIW de 07/08, dois gates diferentes bloquearam corretamente a primeira escrita: preflight derivava staging dentro de CNS-023689 enquanto apply apontava a pasta compartilhada; depois, a parity havia usado COMMIT_CANDIDATE_FOR_PREMUTATION_PARITY e o token final PRODUCTION_COMMIT, alterando o binding. Identidade de destino e identidade de autorização precisam convergir entre preflight, ensaio e apply, não apenas seus arquivos existirem. O commit posterior de 311 operações já consolidado superou essas falhas; não manter o blocker antigo nem repetir commit pela leitura deste registro. Fonte: unidades 32637, 32643, 32646.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 31 de 2026-09-21
+
+No bloqueio CPIW de 07/08 às 18:42, production-apply recalculava a identidade do preflight com transaction id e token de commit, em vez de verificar o registro read-only congelado 662aac832c91bd81d8578ccafceffe266579d192eb3fc8dabae12e3cbbd614e7. FAIL_CLOSED_PREFLIGHT_APPLY_PATH_DRIFT ocorreu antes de AIR/ICD/journal/lock/staging, com commit false e zero mutação. A correção proposta exigia o próprio caminho de apply até a barreira da primeira escrita, sem aproximar sua lógica em outro comando. Esse bloqueio antecede a reconciliação e o commit de 311 operações já registrados; não é impedimento atual nem autoriza retry. Fonte: unidades 32639.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch31-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

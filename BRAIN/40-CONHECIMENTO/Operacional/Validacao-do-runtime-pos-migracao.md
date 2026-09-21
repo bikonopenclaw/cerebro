@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:33:26.060207Z'
+updated: '2026-09-21T21:39:24.440350Z'
 relationships:
 - type: references
   target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
@@ -237,3 +237,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch28-2026
 Na consolidação documental de 17/07, o ambiente .venv-docs-bikon foi reconstruído e validado; a rota Chromium 149 e o template ARX com logo oficial por file:// passaram uma homologação visual de uma página. Isso não concluiu o relatório executivo DOCX/PDF, ainda ausente nesse trecho. O gerador ARX recém-alterado exigia um logo base64 para substituição, enquanto o template ativo já usava file://: render direto aprovado não validava a combinação gerador/template e não autorizava executá-la sem reconciliar o contrato. O timbrado DOCX continha imagens VML; falta de wp:anchor/wp:inline não significava ausência de logo. A inspeção zipfile substituiu apenas a leitura estrutural, não a rota de geração. Paralelamente, memória e documentação Bitdefender não consultaram nem confirmaram o ticket ARX 1482; leitura da skill de outro fluxo não é diagnóstico desse ticket. Enriquecimento P4 também não tinha artefato final, e ausência na projeção operacional seria reconciliada depois pela fonte owner/SLA. Não reaplicar pendências antigas como estado atual. Fonte: unidades 9491, 9494.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 31 de 2026-09-21
+
+Em uma saída histórica truncada do canário Portal, PROTECTED_GATEWAY_PORT_SET_INVALID listava pares IPv4 e IPv6 para o mesmo PID em cada porta protegida. Isso não prova dois gateways independentes nem permite diagnosticar a causa completa a partir da cauda. Preservar identidade de processo e normalizar endpoints dual-stack ao comparar a baseline; o resultado final exige o recibo completo, não apenas esse marcador de erro. Fonte: unidades 37046.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch31-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
