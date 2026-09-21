@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:46:44.672892Z'
+updated: '2026-09-21T20:54:07.904960Z'
 ---
 
 # SENTINEL, Controller de Operações e SNOC
@@ -346,3 +346,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-2026
 Na auditoria interna de 19/07, owner/SLA estavam completos para 21/21 clientes (13 padrão e 8 exceções), enquanto o vínculo determinístico completo entre client_id e as três plataformas era 0/21 nas fontes autorizadas inspecionadas. Havia 21 valores fiscais preenchidos, mas somente 20 únicos; nem nome nem esse campo podiam funcionar como chave universal. ninjaone-client-map.json era política de encaminhar ARX à triagem interna Bikon, não cadastro de organizações de clientes. Atribuição pontual de um incidente não prova crosswalk geral. Manutenção continuava opcional, e célula órfã G6 não deveria ser promovida por inferência. Esse é resultado delimitado às fontes/data, não afirmação de inexistência global ou estado atual. Fonte: unidades 8649.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 21 de 2026-09-21
+
+A lista histórica de clientes vinculados operacionalmente à Corpus não se limitava à organização Corpus Soluções (ID 16). Os caches de junho/julho distinguiam Rio Novo do Sul (ID 44; código 2015 depois 2102), Presidente Kennedy (ID 46; 2017 depois 2106) e João Neiva (ID 51). Essa associação por conhecimento/cache não prova hierarquia formal pai-filho da API nem cadastro atual. Em consulta separada de 18/08/2026 às 20:03:51Z, o relato registrou 659 dispositivos, maior ID 719 e 69 IDs de 651 a 719, com created exposto e zero mutações: quantidade de dispositivos, maior identificador e data real de criação são medidas distintas. O bloqueio anterior por falta de ordem foi superado por uma ordem read-only específica, sem ampliar autoridade operacional por memória. Fonte: unidades 36844.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch21-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

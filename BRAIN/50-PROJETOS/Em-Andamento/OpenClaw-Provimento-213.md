@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:46:44.672892Z'
+updated: '2026-09-21T20:54:07.904960Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-28.md
@@ -340,7 +340,7 @@ Estado do ledger no momento da autorização:
 - execution readiness: `EXECUTION_BLOCKED`;
 - continuation authorized: `NO`.
 
-O resultado final do Bootstrap ainda não estava disponível nesta consolidação; registrar atualização quando houver resposta final da sessão executora.
+A pendência de resultado desta consolidação inicial foi superada pelo retorno de 28/07 às 02:03 (unidade 32375): Governance Ledger Bootstrap relatado COMPLETED, com estrutura criada e validada. A cadeia documental ainda aguardava os registros integrais 1–5; conclusão da estrutura não era conclusão da cadeia nem autorização de execução.
 
 ## EP-02
 
@@ -670,3 +670,15 @@ Na convergência visual ICD de 08/08, fórmulas e gráficos eram projeções por
 Na implementação inicial da entrevista adaptativa de 31/07, eventos append-only eram autoridade do negócio; dashboard reconstruível e memória de agente eram projeções não autoritativas. O checkpoint registrava 48 controles, 1 conforme e 47 não avaliados, além de 1,32% de evidência e 0% de entrevista. O indicador 1/1=100% considerava apenas avaliados e foi explicitamente rotulado como não sendo conformidade legal; ele não significa 48/48 completos. UNKNOWN, conflito, evidência técnica e atestado humano permaneciam distintos, com origem e versão. Sete artefatos e 23 testes passaram no aceite do autor, enquanto independent_validation_result ainda era NOT_COMPLETED; o parecer posterior da nota fecha outro gate. Fonte: unidades 41598.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 21 de 2026-09-21
+
+Em 03/08/2026, Hebert pediu que todo o dashboard estivesse em português. O requisito abrange a interface inteira, não apenas perguntas ativas; a existência de cobertura PT-BR nas perguntas não prova tradução de todos os rótulos e estados. O contexto descrevia naquele momento produção restrita ao CNS 024067, token antigo revogado, serviço supervisionado e rota tailnet sem mutação de entrevista. Não transportar a restrição inicial de uma serventia para o runtime multi-CNS posterior, nem tratar o pedido de tradução como prova de implementação completa. Fonte: unidades 30571.
+
+No checkpoint de recuperação de 05/08/2026, apenas três de cinco fontes primárias foram encontradas, de forma completa ou parcial: Alzira, Capixaba e Celi estavam elegíveis ao próximo mapeamento read-only; Ferreira Rocha e RI Marabá ainda dependiam de nova entrada ou decisão explícita sobre aceitar fonte secundária. Roteiro vazio e tabela/relatório diagnóstico não foram tratados automaticamente como entrevista primária. Isso antecede a reconciliação e Golden Baseline posteriores. Elegibilidade para mapear fonte não equivale a preview aprovado, commit ou ativação de cliente; autorizações históricas não devem ser reutilizadas. Fonte: unidades 34324.
+
+O retorno histórico de 28/07 às 02:03 relata Governance Ledger Bootstrap COMPLETED: estrutura criada e validada no Drive por operações de criação sob governance-ledger, sem atualizar arquivos existentes nem fabricar checkpoints. Isso fecha a criação da estrutura, mas a cadeia continuava bloqueada aguardando os registros integrais 1–5. Distinguir bootstrap concluído de cadeia documental completa e autorização de execução; o registro não comprova estado atual do Drive. Fonte: unidades 32375.
+
+Na definição histórica EP-02, duas gerações idênticas não sanavam a inconsistência CTM-017: as fixtures disponíveis preservavam a mesma idempotency key, contrariando o caso esperado, e alterar a fixture compartilhada quebraria CTM-018. A correção documental acrescentou comparadora específica para scope/key/provenance divergentes com mesmo Command ID, elevando o inventário futuro de 54 para 55 paths. Validar satisfatibilidade semântica dos casos e não regressão antes de congelar hashes; isso foi alteração documental, anterior ao commit e à implementação posteriores. Fonte: unidades 35453.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch21-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

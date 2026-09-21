@@ -8,12 +8,12 @@ def inventory(days=7,base=Path('/data/.openclaw'),profiles=None):
     profiles=profiles or {k:Path(v) for k,v in PROFILES.items()};cutoff=time.time()-days*86400;rows={};errors=[];surfaces=[]
     for agent in AGENTS:
         workspace=base/('workspace' if agent=='main' else 'workspace-'+agent)
-        roots=[('memory',workspace/'memory'),('memory',workspace/'MEMORY.md')]
+        roots=[('memory',workspace/'memory','shared_workspace'),('memory',workspace/'MEMORY.md','shared_workspace')]
         for profile,root in profiles.items():
-            roots.extend([('openclaw_history',root/'agents'/agent/'sessions'),('codex_history',root/'agents'/agent/'codex-home'/'sessions')])
-        for kind,root in roots:
-            if not root.exists():surfaces.append(dict(agent=agent,kind=kind,path=str(root),exists=False));continue
-            real=root.resolve();surfaces.append(dict(agent=agent,kind=kind,path=str(root),resolved=str(real),exists=True))
+            roots.extend([('openclaw_history',root/'agents'/agent/'sessions',profile),('codex_history',root/'agents'/agent/'codex-home'/'sessions',profile)])
+        for kind,root,profile in roots:
+            if not root.exists():surfaces.append(dict(agent=agent,profile=profile,kind=kind,path=str(root),exists=False));continue
+            real=root.resolve();surfaces.append(dict(agent=agent,profile=profile,kind=kind,path=str(root),resolved=str(real),exists=True))
             def walk():
                 if real.is_file():yield real;return
                 for directory,dirs,files in os.walk(real,followlinks=False):
@@ -26,8 +26,9 @@ def inventory(days=7,base=Path('/data/.openclaw'),profiles=None):
                     if not stat.S_ISREG(st.st_mode) or st.st_mtime<cutoff:continue
                     if kind=='memory' and p.suffix.lower()!='.md':continue
                     if kind!='memory' and not (p.name.endswith('.jsonl') or p.name=='sessions.json'):continue
-                    key=str(p);r=rows.setdefault(key,dict(path=key,agents=[],kind=kind,size=st.st_size,mtime_ns=st.st_mtime_ns,inode=st.st_ino,coverage='unreviewed',content_read=False))
+                    key=str(p);r=rows.setdefault(key,dict(path=key,agents=[],profiles=[],kind=kind,size=st.st_size,mtime_ns=st.st_mtime_ns,inode=st.st_ino,coverage='unreviewed',content_read=False))
                     if agent not in r['agents']:r['agents'].append(agent)
+                    if profile not in r['profiles']:r['profiles'].append(profile)
             except OSError as e:errors.append(dict(path=str(root),error=type(e).__name__))
     return dict(schema_version='1.0',generated_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),window_days=days,since_epoch=cutoff,coverage_complete=False,scope='Recent local memories and session histories only; older gaps require an explicit earlier window. Stat inventory is not content coverage.',surfaces=surfaces,errors=errors,sources=sorted(rows.values(),key=lambda r:(r['mtime_ns'],r['path'])))
 if __name__=='__main__':

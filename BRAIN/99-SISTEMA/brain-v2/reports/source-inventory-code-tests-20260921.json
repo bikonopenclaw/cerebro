@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "implementation_sha256": "6c4865307a1413a4983dafcbad192c329ce8744af0c418c4a8f5cc86c5fafd65",
+  "checks": [
+    "recent window",
+    "sensitive extensions excluded",
+    "symlink children excluded",
+    "aliases deduplicated",
+    "profile is distinct from agent",
+    "inventory is not coverage"
+  ]
+}

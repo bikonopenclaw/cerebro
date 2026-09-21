@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:54:07.904960Z'
 ---
 
 # OpenClaw Engineering Delegation
@@ -83,3 +83,9 @@ No primeiro piloto read-only EDC v1.2.1, o autorrelato de Codex trazia invocatio
 Na revalidação histórica EDC v1.1.2, o ZIP externo tinha a identidade esperada e os inventários de core apontavam à nova baseline, mas três relatórios ainda citavam o ZIP/core anterior. Separar identidade do pacote, identidade do core e escopo temporal do recibo independente; um PASS antigo não pode autenticar bytes novos sem reconciliação explícita. Não exigir que o ZIP contenha seu próprio hash integral: a inconsistência relevante era o vínculo de evidência vigente, não a ausência de uma referência autorrecursiva. O v1.2.2 posteriormente validado supera esse checkpoint; não afirmar defeito ativo. Fonte: unidades 8834.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 22 de 2026-09-21
+
+Na revisão histórica EDC v1.2.3 de 07/08, a reconciliação do CPIW preservou candidato/diff e restaurou fontes canônicas aos hashes pré-invocação; dez diretórios temporários de testes foram removidos, sem residual autorizado como baseline. A simulação validou workspace isolado, contenção de temporários, promoção controlada e rollback, com zero invocações Codex naquela revisão. Isso não apaga a violação anterior nem comprova promoção produtiva. O snapshot ainda aguardava relatório independente final; registrar essa fronteira antes de usar o pacote como evidência atual. Fonte: unidades 8854.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch22-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

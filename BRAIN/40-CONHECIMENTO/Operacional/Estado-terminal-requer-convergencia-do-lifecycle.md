@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:54:07.904960Z'
 ---
 
 # Estado terminal requer convergencia do lifecycle
@@ -104,3 +104,11 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-2026
 No EP-02 documental, o resultado podia explicar prontidão apenas documental, mas o campo de checkpoint precisava continuar no enum contratado READY/BLOCKED/FAILED. Separar resultado explicativo e estado executável; não inventar READY_DOCUMENTATION_ONLY como estado técnico se o contrato não o reconhece. Autorização para redigir um artefato também não altera por si o conteúdo das fontes normativas daquele projeto. O PASS documental posterior não autoriza implementação nem transforma o bloqueio técnico anterior em execução realizada. Fonte: unidades 9722.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 21 de 2026-09-21
+
+Na revalidação documental EP-02 de 28/07, trocar READY_DOCUMENTATION_ONLY por READY não bastava: a Execution Order congelada exigia commit e conferência pós-commit para READY, enquanto a unidade ainda proibia stage/commit. Conferir pré-condições do estado além do enum. O checkpoint intermediário seguia pendente; o commit documental autorizado posterior resolve essa etapa, sem autorizar implementação técnica nem estabelecer primazia universal de documento sobre instruções do usuário. Fonte: unidades 9724.
+
+Na implantação histórica das travas de orquestração em 26/07, foram relatados ordem ativa única, supersedes, ACK por caminho/hash e pausa de oito crons não críticos; 9 testes e um ensaio passaram, com estado final IDLE e os oito crons restaurados. Essa prova cobre aquela aplicação/ensaio, sem comprovar política ou grade atuais nem reabrir a rota NinjaOne. Avaliar fechamento também pela restauração das suspensões temporárias, além do término do agente. Fonte: unidades 33677.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch21-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

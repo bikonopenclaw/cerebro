@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:46:44.672892Z'
+updated: '2026-09-21T20:54:07.904960Z'
 ---
 
 # Validacao tecnica nao substitui aceite humano
@@ -74,3 +74,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-2026
 Em 17/07/2026, o Chromium fixado produziu PDF com metadados compatíveis, mas o teste visual perdeu logo e deslocou cabeçalho. Depois da adaptação com brand pack, o agente anunciou DOCX/PDF validados; Hebert rejeitou a configuração do DOCX e o timbrado/padrão do PDF e pediu para não continuar naquele momento. Preservar o aceite negativo como desfecho: paginação e metadados corretos não comprovam fidelidade visual entre formatos. Não reabrir a tarefa nem reinstalar a versão antiga por esta memória. Fonte: unidades 36688, 36691.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch19-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 22 de 2026-09-21
+
+No Portal 213 de 21/08, build versionado, HTML loopback/HTTPS idêntico, probes assinados e Chromium renderizado coexistiram com os dois botões reais falhando no Telegram/iOS do usuário. O aceite precisava reabrir e localizar a quebra entre tap, WebView, HTTPS/build, initData e render, sem pedir repetição antes de hipótese/build corrigidos. A afirmação inicial de unit inexistente foi contradita pelo journal do user manager com loop de restart; healthz nomeando serviço também não prova ownership. Registrar restart loop como evidência operacional e hipótese causal naquele checkpoint, sem afirmar causa conclusiva ou estado atual. Fonte: unidades 30217.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch22-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

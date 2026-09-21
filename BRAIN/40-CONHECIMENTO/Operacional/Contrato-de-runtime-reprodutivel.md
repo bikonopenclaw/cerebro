@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T17:53:52Z'
+updated: '2026-09-21T20:54:07.904960Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -86,3 +86,9 @@ No handoff documental Puppet/Kowalski de 2026-09-16, os PDFs-base nao estavam vi
 - [[40-CONHECIMENTO/Operacional/Artefatos-gerados-fora-do-Brain-e-Git|Artefatos gerados fora do Brain e Git]]
 - [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw - Provimento 213]]
 - [[01-DIARIO/Semanal/2026-W31|Semana 2026-W31, cobertura parcial]]
+
+## Complementos reconciliados — lote 21 de 2026-09-21
+
+No DRV histórico de 31/07, o adaptador comprovou UTF-8, SHA-256, filesystem, rename atômico e fsync, mas a execução parou porque o renderer não sobreviveu à fronteira de turno. PASS da camada de capacidades não demonstrava presença do código/estado necessário à retomada. Persistir e autenticar executor, inputs e checkpoint recuperáveis, sem depender da memória da conversa; naquele episódio houve zero render/publicação e a ordem foi encerrada, antecedendo o desenho DRE posterior. Fonte: unidades 33080, 33083.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch21-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

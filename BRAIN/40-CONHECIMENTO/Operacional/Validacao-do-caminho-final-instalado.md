@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:46:44.672892Z'
+updated: '2026-09-21T20:54:07.904960Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -120,3 +120,17 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-2026
 No DRE v1 de 01/08, duas árvores idênticas e 75 testes não bastaram para o commit: a regra bin/ do .gitignore excluía o launcher, deixando somente 11 dos 12 paths no stage simulado. Comparar inventário físico autorizado, regras de ignore e conteúdo efetivamente commitado antes de empacotar. A nova tentativa autorizou force-add apenas do launcher, sem alterar a política global; o commit de 12 paths ainda precisava de instalação e teste pela rota real, que depois revelou outro problema. Não confundir autorização de force-add restrito com liberação de arquivos ignorados em geral. Fonte: unidades 33089.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 21 de 2026-09-21
+
+No DRE v1 de 01/08, a execução passou gates 1–9, mas antecipou testes de attestation inválida e transação inexistente antes dos gates obrigatórios de resume entre processos e entre turnos; terminou FAIL_CLOSED_ROUTE_DEVIATION. Uma tentativa posterior foi fechada antes do Gate 1 por conflito de start/controller, com zero gates executados. Conjunto de testes úteis não substitui sequência contratada, e interrupção de orquestração não é evidência de novo defeito no DRE. Rollback solicitado não significa rollback executado; a instalação/aceitação posterior pertence a outro checkpoint. Fonte: unidades 32824.
+
+Na aceitação histórica DRE de 01/08, preflight, run sintético, determinismo, publicação e journal passaram, mas o executor antecipou testes de attestation inválida/transação inexistente antes dos gates obrigatórios de resume e fronteira de turno. O resultado foi FAIL_CLOSED_ROUTE_DEVIATION, não aprovação parcial da instalação. Quando o contrato congela sequência, sucesso isolado dos testes não substitui percurso autorizado e estado terminal. A solicitação de rollback e preparação posterior de reinstalação são etapas distintas, sem prova automática da execução pelo texto da ordem. Fonte: unidades 32822.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch21-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 22 de 2026-09-21
+
+No Harness DRE v3 histórico, o Gate 04 falhou com PACKAGE_OR_PREFLIGHT_IO_FAILURE porque --package recebeu o diretório da fixture, embora o contrato exigisse o arquivo manifest.json. O preflight direto com o arquivo passou e os 12 caminhos congelados permaneciam equivalentes. A correção v4 autorizada separava FIXTURE_ROOT de FIXTURE_MANIFEST, exigia validação dos bytes do harness/instalador e wrapper que somente declarasse PASS após preflights reais, com rollback em divergência. A preparação e o PASS local não autorizavam instalação nem execução do novo harness; houve parada obrigatória no gate root. Esse checkpoint antecede a instalação posterior e não indica defeito atual. Fonte: unidades 30780.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch22-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:46:44.672892Z'
+updated: '2026-09-21T20:54:07.904960Z'
 relationships:
 - type: references
   target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
@@ -197,3 +197,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-2026
 Na implementação histórica EP-02, a primeira clean room passou os inventários e correções de tipo/null, mas terminou com 22 testes aprovados e um erro: o teste de isolamento precisava do documento canônico EP-02, que o harness não havia incluído entre os insumos de leitura. Definir separadamente inventário de código extraído e dependências documentais de validação; autenticar ambos antes da suíte. Não enfraquecer o teste nem declarar defeito produtivo para compensar fixture incompleta. O checkpoint foi anterior à homologação posterior e não descreve bloqueio atual. Fonte: unidades 31709.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 21 de 2026-09-21
+
+Na correção histórica do harness DRE v4, FIXTURE_ROOT era diretório e FIXTURE_MANIFEST arquivo regular: --package devia receber o manifest, enquanto operações sobre a árvore usavam a raiz. O preflight direto com manifest passou sem instalar ou alterar o core. Revisar semanticamente os argumentos da rota real e testar o helper de códigos de saída; preparar/validar um instalador não prova instalação ou aceite black-box. O freeze dos mesmos 12 caminhos entre commits não dispensa validar o wiring externo. Fonte: unidades 30785, 30788.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch21-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
