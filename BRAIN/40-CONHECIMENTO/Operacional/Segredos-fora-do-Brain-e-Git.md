@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
@@ -105,3 +105,13 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260
 Auditoria estática que sinaliza child_process em integração ampla indica capacidade a revisar, não invasão comprovada. Avaliar escopos e scripts reais antes de quarentena/correção. Quando há proxy, confiar apenas nas origens verificadas; runtime/filesystem amplos aceitáveis num cenário solo não demonstram isolamento multiusuário. Os findings de julho não são estado atual. Fonte: unidades 32525.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+Na extração de equivalência Kowalski em 26/07, grep acusou chat_id/ticket_id em listas de campos proibidos e expressões que produziam apenas booleanos. Um nome de campo em código/validador não demonstra vazamento do valor. Examinar fluxo e saída reais, distinguir schema/literal de identificador sensível e testar allowlist de campos e ausência de valores; renomear/fragmentar literal para ficar invisível ao scanner não é prova de privacidade. Regenerar manifesto após qualquer patch. A equivalência final posterior prevalece sobre a validação intermediária deste snapshot. Fonte: unidades 8586.
+
+Na seleção de serventia revision 3 em 30/07, a minimização encontrou duas ocorrências do nome desnecessário, enquanto a expectativa inicial era três. A transformação precisava contar ocorrências reais e validar o resultado, preservando campos institucionais necessários, sem inventar a terceira ocorrência. A classificação por declaração do Owner permaneceu distinta de publicação oficial CNJ. Quantidade esperada em autorização não substitui inspeção do artefato; qualquer diferença deve ser reconciliada antes de declarar cumprimento exato. Fonte: unidades 9000.
+
+Em OAuth, distinguir URL de autorização de callback recebido e validar os parâmetros obrigatórios antes de trocar o código. Resultado vazio de parser pode ser falso negativo: conferir formato e integridade do artefato antes de concluir ausência ou mutação. Restaurar o arquivo local de token preserva seus bytes, mas não garante que o provedor aceite novamente a credencial anterior; não declarar rollback externo apenas com prova de rollback local. Nunca consolidar códigos, estados ou tokens brutos no Brain. Fonte: unidades 36890.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

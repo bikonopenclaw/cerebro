@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/SENTINEL.md
@@ -98,3 +98,11 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-2026
 No diagnóstico histórico Praxis após migração, caminho antigo de credenciais/launcher e permissões do token eram problemas separados: Drive podia responder enquanto Gmail/Calendar retornavam403 por falta de escopo. Validar cada superfície pretendida e configuração efetiva; autorização de conexão com escopos amplos não autoriza enviar e-mail ou alterar conteúdo. Não reutilizar callback nem tratar o estado autenticado antigo como atual. Fonte: unidades 32650.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+Em um checkpoint histórico de julho, praxis-gws foi relatada instalada e com gate técnico fechado, enquanto gog permanecia desabilitada e intacta aguardando decisão de Hebert. Conclusão de validação de uma integração não autoriza habilitar outra; o registro não comprova instalação ou estado atual. Fonte de confirmação curta, sem teste adicional nessa unidade. Fonte: unidades 9427.
+
+Na preparação documental Prov213 em 28/07, uma rota local falhou por dependência googleapis ausente; outra conseguia ler o Drive, mas a criação devolveu 403 por escopo insuficiente. Compartilhamento amplo de pasta não concede automaticamente o scope OAuth de escrita do conector. Separar dependência de execução, ACL do recurso e escopo da credencial ao diagnosticar. Não persistir callback ou segredo histórico como memória nem ampliar credenciais sem escopo autorizado. Naquele pacote, seis documentos normativos precediam EP-01; o governance pack era auxiliar, não uma etapa sequencial adicional. Fonte: unidades 32376.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

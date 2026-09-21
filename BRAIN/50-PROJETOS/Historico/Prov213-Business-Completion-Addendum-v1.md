@@ -3,7 +3,7 @@ id: brain-8e9ec44fd0edd87d039d
 type: state
 title: Prov213 — Business Completion Addendum v1 histórico
 created: '2026-09-21T19:43:12.426265Z'
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 schema_version: '1.0'
 created_semantics: Registro de proposta histórica; não data de aceite ou implementação.
 relationships:
@@ -77,3 +77,15 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-2026
 No BusinessCompletionAddendum posterior, decisões como severidadeALTA e retenção foram rotuladas LOCAL_OPERATIONAL_DECISION, sem atribuí-las aoCNJ. Schema fechado inicialmente conflitava com hashpolicy; consolidou evidence_items com drive_file_id,mime_type,byte_length,modified_time_utc(RFC3339UTCZ),sha256. Revalidação retornou READY_FOR_FIRST_OPERATIONAL_IMPLEMENTATION; ensaios equivalentes em2roots usavam fixturesnão produtivas. Conciliar comreprovação8870: origemlocalexplícita e correção decontrato não são obrigação jurídica universal nem teste real de serventia. Fonte: unidades 8885.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+O resumo histórico de 29/07 às 22:59 relata PASS do Operational_Business_Completion_Addendum_v1.md, 13.488 bytes, SHA-256 f4a9afcbc88ac8d38d234e07cffdc2ec0d633ead5d41fd7698046d6020d1cb6b, além do primeiro ciclo materializado e validação RIC em dois roots (33/23/12 testes). Esse registro é posterior à proposta 8931, à crítica 8870 e ao READY com schema corrigido de 8885; o PASS deve permanecer vinculado à identidade exata desse artefato, sem promover todas as propostas anteriores ou comprovar teste real em serventia. RIC passou a exigir PROV213_REPOSITORY_STATE explícito candidate/committed, com identidade do manifesto quando committed; omissão resultava BLOCKED, e estados known-failure/partial eram terminais bloqueados. Testes em fixtures e readiness documental não são implantação produtiva. Fonte: unidades 8925.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 16 de 2026-09-21
+
+A fonte 8910 confirma o BCA consolidado f4a9afcbc88ac8d38d234e07cffdc2ec0d633ead5d41fd7698046d6020d1cb6b, 13.488 bytes, nos dois roots v2, mas sua rodada do pacote fechou FAIL_CLOSED: o implementation manifest declarado df37ec… não correspondia aos bytes estáveis b435060aa8cdf06f41e6b5f96cb78e1e85f856e5f18d9362ad8b58360f009906. Testes 27/23/12 e igualdade entre roots não corrigiam o binding errado. Distinguir READY/PASS do documento, identidade do pacote e efeito operacional. A evidência posterior 8925 registra evolução; não perpetuar o erro intermediário como bloqueio atual nem apagar sua causa histórica. Fonte: unidades 8910.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

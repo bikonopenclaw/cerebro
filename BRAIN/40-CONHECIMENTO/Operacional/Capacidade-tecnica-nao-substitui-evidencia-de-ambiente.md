@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:08:05.502633Z'
+updated: '2026-09-21T20:06:54.602140Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md
@@ -65,3 +65,9 @@ Na semana 2026-W31, AWS, Azure e Google Cloud cobriam tecnicamente os gaps de cl
 No desenho de 18/06/2026, a conta DreamHost foi separada da integração Gmail/Google Workspace: deveria usar rota IMAP/SMTP apropriada, com permissão de leitura/envio definida para aquela conta. Ter token gmail.send não demonstra acesso a uma caixa DreamHost. Hosts/portas e credenciais devem ser confirmados na configuração e documentação atuais antes de conectar. Fonte: unidades 34711.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch5-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+O status agregado ARX expunha contagens sanitizadas, suficientes para indicar atenção, mas insuficientes para explicar a causa de um cliente específico. Antes de usar uma consulta autorizada para responder outra pergunta, verificar se o contrato retorna a informação necessária; não inferir diagnóstico a partir de contagem nem abrir payloads brutos como atalho. Uma extensão apropriada pode fornecer categorias agregadas de causa, com escopo e minimização explícitos, antes da execução correspondente. Fonte: unidades 36770.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

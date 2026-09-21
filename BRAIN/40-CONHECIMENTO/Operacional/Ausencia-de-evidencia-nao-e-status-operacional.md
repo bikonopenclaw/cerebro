@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md
@@ -192,3 +192,23 @@ Na revisão DREv2, validator local terminou rc124; oPASS foi sustentado por reci
 Na auditoria15/07, runnerARX reportou closed1 mas ticket já estava fechado; houve reconciliação local, sem comprovação dealteração remota na janela. IDsTelegram próximos no tempo não foram atribuídos ajob/conteúdo semvínculo preservado. Não repetir runner para corrigir cronvermelho quando efeito já ocorreu; separar campoagregado, mutação local e efeitoexterno. Esses são resultados históricos, não incidente atual. Fonte: unidades 9026.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+No fechamento histórico do Prov213 em 31/07, um par foi inicialmente declarado PASS e depois contestado por identidade de origem; outro par foi alegado como canônico pelo executor, sem que isso, sozinho, resolvesse a linhagem. Distinguir hash observado, autoria declarada e geração demonstrada. Validadores divergentes exigem reconciliação com fonte e contrato, e o fechamento posterior por geração atômica prevalece. Contar 85 testes por AST não equivale a executá-los; não promover o relato intermediário a evidência final. Fonte: unidades 8972.
+
+Para telemetria de consumo baseada em logs locais, separar momento do evento e momento da coleta. Persistir também falhas de leitura; último valor válido pode continuar visível apenas com indicação de desatualização, nunca como medição nova. Uma série de observações append-only serve à análise de variação; estado atual é projeção separada e não prova tendência sozinho. Registrar procedência e janela por duração, sem inferir consumo zero quando falta evento. Trata-se de princípio de desenho histórico, não prova de que o monitor tenha sido implantado. Fonte: unidades 33062.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 16 de 2026-09-21
+
+Na adoção DRE de 02/08, o resultado de execução root:root 0440 não era legível pelo usuário openclaw. O revisor declarou Permission denied e utilizou a leitura canônica fornecida por Hebert, complementada por verificações independentes de outputs, ponteiro current, journal de 10 eventos, attestations e handoff. Relatar separadamente evidência delegada e leitura direta; não alegar acesso integral nem afrouxar permissão apenas para melhorar o relatório. O fechamento COMPLETED_IMMUTABLE publicou dois outputs, sem entrega externa, retomada de entrevista ou início automático do primeiro ciclo. Fonte: unidades 8613.
+
+No diagnóstico Windows Server Backup de 06/07/2026, havia catálogo e último backup bem-sucedido, mas o destino textual não foi associado a um volume local; espaço livre do destino ficou indisponível. Não preencher essa lacuna com espaço livre de outro disco nem tratar alvo ausente como zero. Separar saúde do backup, cobertura da coleta e Hyper-V sem replicação configurada: um WARNING agregado não transforma cada subchecagem em falha. O catálogo antigo e suas capacidades não comprovam estado atual. Fonte: unidades 34597.
+
+Um recibo pode usar CUSTOMER_CONTACTED=PASS, EMAIL_SENT=PASS ou DRE_EXECUTED=PASS para indicar que o check de ausência dessas ações passou. Preservar o valor semântico do contrato e os contadores explícitos: nesse caso não houve contato, envio, mutação de dashboard ou execução DRE. Não transformar o rótulo PASS em evento de negócio realizado. Verificação de hashes de código também não fecha contrato de armazenamento; caminho informado ausente requer conferir raiz canônica, sem declarar todo runtime ausente. Fonte: unidades 8621.
+
+Na homologação histórica EDC v1.1.0, ZIP e hashes individuais foram conferidos, mas o algoritmo exato do agregado da baseline não estava documentado. Relatar o limite: valor declarado consistente entre artefatos é evidência diferente de agregado recalculado independentemente. Quando o agregado é critério de aceite, registrar escopo de arquivos, ordenação, serialização e algoritmo para permitir reprodução. Correção de schemas foi validada sem afrouxar restrições; prontidão v1.1.1 em fixture não era ativação real. Fonte: unidades 8828.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

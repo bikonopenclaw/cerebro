@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 ---
 
 # Validacao tecnica nao substitui aceite humano
@@ -62,3 +62,9 @@ Em 2026-W38, o primeiro PDF ARX do cliente 2111 passou pipeline e QA, mas foi re
 No dashboard Prov213 multi-CNS, PASS local foi reaberto: Tailscale removia prefixo /prov213, então rotas gerais davam404 externamente embora individuais funcionassem; o renderer tratava objetos ICDV4 como strings. Adaptar view model e validar HTTPS real, GET repetido sem mutação e hashes antes/depois. Teste de traversal com cliente normalizando ../ não demonstra bloqueio: enviar caminho literal. Fila aceita de validação não é PASS; aguardar retorno independente do mesmo artefato. Fonte: unidades 33186.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+Em 08/08, após a revisão que detectara escrita por GET, o gate multi-CNS relatou PASS em oito rotas HTTPS reais, export pelo registro do CNS, zero mutações em GET repetido e ausência de Chromium tratada como 503. A igualdade do conteúdo PDF foi avaliada também com normalização de metadados dinâmicos de geração. Declarar se a prova é equivalência semântica normalizada ou identidade exata de bytes; uma não substitui a outra em manifesto selado. PASS staged não basta para o endereço externo, e este gate de exportação não equivale a aceite posterior do Mini App pelo usuário. Fonte: unidades 9591.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

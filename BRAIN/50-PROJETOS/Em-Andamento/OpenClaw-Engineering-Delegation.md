@@ -1,3 +1,15 @@
+---
+id: brain-13c7d8e58ffac16ae29b
+type: knowledge
+title: OpenClaw Engineering Delegation
+created: '2026-09-21T20:06:16.863394Z'
+created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
+schema_version: '1.0'
+legacy_content_preserved: true
+relationships: []
+updated: '2026-09-21T20:06:54.602140Z'
+---
+
 # OpenClaw Engineering Delegation
 
 ```yaml
@@ -61,3 +73,13 @@ O EDC nao transforma Codex em agente autonomo e nao concede acesso permanente a 
 - [[40-CONHECIMENTO/Operacional/Boundary-de-escrita-em-delegacao-de-engenharia|Boundary de escrita em delegacao de engenharia]]
 - [[40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel|Contrato de runtime reprodutivel]]
 - [[40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado|Validacao do caminho final instalado]]
+
+## Complementos reconciliados — lote 16 de 2026-09-21
+
+No EDC v1.2.0, novo binding local corrigiu a referência de controller, mas o ZIP ainda carregava envelope/invocation antigos, inventário com auto-hash obsoleto e README fora da cobertura, além de documentos exigidos pelo validador ausentes. Os 35 testes e validator health PASS não provaram autocontenção do pacote. Revalidar bytes selados, inventário não circular e todos os bindings documento→schema, depois emitir nova versão. O v1.2.1 posterior passou; o registro histórico não mantém o bloqueio antigo aberto. Fonte: unidades 8844.
+
+No primeiro piloto read-only EDC v1.2.1, o autorrelato de Codex trazia invocation_id nulo, enquanto o registro canônico vinculava a execução a EDC-CODEX-INV-0001. Tratar isso como divergência de metadados do autorrelato, sem inventar ausência de execução ou usar o autorrelato como autoridade. A preparação v1.2.2 de escrita era etapa separada: testes e schema não significavam nova invocação nem aprovação de produção. Conferir contrato, invocação e evidência persistida antes de concluir estado atual. Fonte: unidades 8851.
+
+Na revalidação histórica EDC v1.1.2, o ZIP externo tinha a identidade esperada e os inventários de core apontavam à nova baseline, mas três relatórios ainda citavam o ZIP/core anterior. Separar identidade do pacote, identidade do core e escopo temporal do recibo independente; um PASS antigo não pode autenticar bytes novos sem reconciliação explícita. Não exigir que o ZIP contenha seu próprio hash integral: a inconsistência relevante era o vínculo de evidência vigente, não a ausência de uma referência autorrecursiva. O v1.2.2 posteriormente validado supera esse checkpoint; não afirmar defeito ativo. Fonte: unidades 8834.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
@@ -143,3 +143,11 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-2026
 No carrossel Provimento de 16/07, os três ajustes de wordmark, respiro do CTA e cor de SEGMENTAÇÃO foram relatados como aplicados antes de chegar novamente o veredito antigo “ajustar”. Timeout/killed da sessão revisora não valida nem reprova os novos PNGs. Vincular QA à versão/hash dos bytes efetivamente vistos e revalidar após reexportação; não repetir correções já presentes nem reutilizar parecer da versão anterior. Comparação posterior de Kling deveria preservar copy, identidade, composição local, custos, QA e autorização de publicação, sem inferir adoção a partir do estudo. Fonte: unidades 39624.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+A validação posterior do PDF multi-CNS em 08/08 registrou suite de 202 testes e publicação externa; supera o bloqueio temporário anterior. Para comparar PDFs de CNS distintos, conferir texto normalizado, identidade e isolamento por CNS; diferenças legítimas de timestamp não exigem igualdade binária nem tamanho fixo. Ausência do runtime deve produzir a indisponibilidade contratada, não um PDF vazio ou dados de outro CNS. MiniApp com 209 testes ainda era candidato separado, sem equivalência automática a aceite real de cliente. Fonte: unidades 9593.
+
+No portfólio Prov213, a visão de atenção ordena pendências, remediações, itens não resolvidos, entrevista e CNS; isso não constitui um score global combinado de risco. Preservar os eixos e denominadores de cada dimensão, exibindo N/A quando faltam dados. Harness deve ler as chaves reais do modelo antes de alegar falha; validação HTML/HTTPS e staging do PDF têm gates próprios. A aprovação posterior do PDF deve ser ligada ao checkpoint final, sem projetá-la retroativamente sobre o staging. Fonte: unidades 9572.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

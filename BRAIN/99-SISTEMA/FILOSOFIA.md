@@ -1,3 +1,14 @@
+---
+id: brain-e4046e51d25d5337058b
+type: knowledge
+title: Filosofia do Brain
+created: '2026-09-21T20:03:55.466133+00:00'
+updated: '2026-09-21T20:06:54.602140Z'
+schema_version: '1.0'
+created_semantics: Registro estruturado; filosofia original de 2026-06-12.
+relationships: []
+---
+
 # 🧠 FILOSOFIA DO BRAIN
 
 Propósito: guia filosófico e cognitivo para o sistema Brain  
@@ -300,7 +311,9 @@ Sinais de alerta:
 - [ ] Elevar 2 a 5 aprendizados para notas permanentes.
 - [ ] Arquivar informações sem relevância.
 
-### Mensal, dia 1 às 03:00 BRT
+### Mensal, dia 1 às 04:00 America/Sao_Paulo
+
+Horário conferido no agendador em 2026-09-21; a versão anterior indicava 03:00.
 
 - [ ] Revisar 4 resumos semanais.
 - [ ] Consolidar aprendizados do mês.

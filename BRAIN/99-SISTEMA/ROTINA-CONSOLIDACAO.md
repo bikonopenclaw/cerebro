@@ -4,7 +4,7 @@ type: state
 title: Rotina de consolidação do Brain
 created: '2026-09-21T19:14:26.441708Z'
 created_semantics: Data de registro estruturado; o documento de rotina é anterior.
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-21T20:06:54.602140Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships:
@@ -132,3 +132,13 @@ Estas instruções complementam as rotinas existentes. A pesquisa persistente es
 
 - [[99-SISTEMA/brain-v2/governance/semantic-coverage-and-archive|Protocolo de cobertura e arquivamento]]
 - Evidência da agenda e dos perfis: `BRAIN/99-SISTEMA/brain-v2/reports/gateway-brain-coverage-20260921.json`.
+
+## Inventário obrigatório da janela de consolidação
+
+Os agendamentos diário, semanal e mensal já apontam para este documento. Em cada execução, iniciar com `python3 /data/.openclaw/workspace/Brain/scripts/brain-source-inventory.py --days 7`. A janela móvel de sete dias inclui o intervalo do fim de semana; retomar pendências mais antigas registradas nos recibos. Para a mensal, usar também a janela de 35 dias quando a continuidade semanal não estiver comprovada.
+
+O inventário somente lista arquivos e metadados de main, Kowalski, Darth Vader, Robotnik e Sentinel nos perfis reais. Não lê o conteúdo nem atribui cobertura. Selecionar as fontes por agente, ler as unidades pertinentes, calcular sua identidade ao revisar e registrar disposição individual. Mudança de tamanho/data após a leitura exige nova verificação. Memória ausente, fonte inacessível, limite de execução ou fila não lida são lacunas explícitas, não ausência de conhecimento.
+
+Salvar recibo sanitizado em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-<data>-<ciclo>.json`, com janela, agente/perfil, caminho/hash da fonte, unidades ou intervalo efetivamente lido, disposição, nota-alvo, pendências e publicação comprovada. Não registrar payloads brutos ou credenciais. Sem leitura completa do escopo declarado, informar cobertura parcial e carregar a fila para a execução seguinte. Reutilizar recibos apenas quando a identidade da fonte e a disposição anterior coincidirem.
+
+A inclusão deste inventário torna a exigência executável pelas rotinas existentes; não prova que uma execução futura já ocorreu nem que todo histórico vivo está consolidado. Nenhuma exclusão automática foi adicionada.

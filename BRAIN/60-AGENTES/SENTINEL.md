@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 ---
 
 # SENTINEL, Controller de Operações e SNOC
@@ -332,3 +332,11 @@ A decisão humana “Sentinel coleta tudo” já aparece em 26/07/2026, seguida 
 Na correção ARX de 17/07, status passou a emitir somente ok, accounts, clients, current_status, write_methods_exposed e audit; audit continha correlation, timestamp_utc e client_sha256 obtidos após append-only bem-sucedido. Redigir campos de um payload bruto não substitui allowlist explícita de saída. A única leitura retornou 11 contas/10 clientes/attention=1, escrita indisponível: corrigir sanitização não resolve a ocorrência operacional. Consulta direcionada posterior foi autorizada separadamente, sem herdar ticket, remediação ou avanço de fase. Counts e estado são históricos. Fonte: unidades 36768.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 16 de 2026-09-21
+
+Após o fechamento da diferença continue/pause como SEMANTIC_MAPPING_DIFFERENCE, a fonte 8595 registra uma ordem executiva posterior e distinta: shadow advisory-only por até dois ciclos ou 30 minutos, e canário por um ciclo ou 15 minutos somente após SHADOW_PASS ou PASS com diferença intencional. Kowalski permanecia referência, sem copiar identidade/permissões; ações externas continuavam proibidas. Essa autorização condicional não comprova execução dos ciclos e não elimina SOURCE_SCHEMA_READY para o adapter definitivo. A nota da unidade 8591 descreve o gate anterior, sem autorização de canário; reconciliar pela cronologia, não como contradição a resolver apagando restrições. Fonte: unidades 8595.
+
+Em 19/07, a implementação já aplicada do mapa operacional foi inspecionada: 21 IDs exatos, 13 owners padrão e 8 overrides por aliases, SLA completo, modo 0600 e ausência de PII. A associação usou client_id, sem alterar cadastro mestre; o defeito estava na apresentação safe_client. Manutenção permaneceu opcional e G6 órfão fora do piloto. A existência do patch não bastou: foi necessária validação contra manifesto em memória antes de nova rodada. Este fechamento supera a pendência de reconciliação anterior, mas não comprova execução do piloto seguinte nem produção 24x7. Fonte: unidades 41480.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

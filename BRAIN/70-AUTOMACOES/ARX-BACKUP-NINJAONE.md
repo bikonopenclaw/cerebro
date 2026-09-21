@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 ---
 
 # ARX Backup diário → tickets NinjaOne
@@ -282,3 +282,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260
 No teste ARX/NinjaOne de18/07, --create amplo permaneceu bloqueado porque podia criar/fechar múltiplos tickets e alterar dedupe. A proposta autorizada era umPOST literal interno e umGET de conferência, retry=False, semnodeIddecliente e sem fechamento posterior. Dry-run também fazia append no log por desenho: ausência de efeito externo não significa zero escrita local. Esse checkpoint ainda não havia criado o ticket; parâmetros/endpoint antigos não são autorização atual. Fonte: unidades 8750.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 16 de 2026-09-21
+
+Em 18/07, após OAuth válido e dry-run, foi relatado teste isolado no NinjaOne: um POST criou o ticket 1502 na organização interna Bikon e um GET por ID confirmou NEW, sem nodeId de cliente, sem retry/refresh e sem alteração dos arquivos protegidos no one-shot. A rota ampla --create foi evitada porque também podia processar/fechar outros tickets e gravar deduplicação. O dry-run havia escrito apenas seu log por design, distinguindo fases. Pedido posterior autorizou resolver apenas esse ticket e conferir por GET; esta fonte termina antes da execução do fechamento e não comprova status RESOLVED nem estado atual do ticket. Nenhum token, callback ou hash de segredo integra esta memória. Fonte: unidades 8751.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

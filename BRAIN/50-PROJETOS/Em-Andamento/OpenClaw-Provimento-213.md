@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-28.md
@@ -636,3 +636,15 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-2026
 No dry-run da promoção de seis CNS, Alzira passou de66 evidências brutas a8 canônicas com66 contabilizadas e zero descarte silencioso; pendências17→35 tinham disposições explícitas. Mudança de contagem exige mapa fonte→fato/disposição, não igualdade bruta. Validação do indexador não executou os1003objetos; produção posterior ainda tinha KOWALSKI_FINAL=PENDING nesse trecho, embora FINAL_STATUS dissessePASS. Usar fechamento posterior autenticado, sem converter recibo autodeclarado em aceite independente. Fonte: unidades 9869.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+Na revisão multi-CNS de 08/08, 13 testes passaram, mas GET /export.pdf ainda podia reconstruir dashboard e escrever, enquanto /evidence consultava runtime global preso ao CNS 024067. O gate falhou apesar de catálogo/HTML/data dinâmicos. Read purity e isolamento precisam cobrir todas as rotas export/evidence, usando o registro canônico do CNS solicitado; procurar constantes sem seguir o caminho ativo não basta. A falha histórica foi etapa anterior ao fechamento posterior do Mini App e não prova regressão atual. Fonte: unidades 9531.
+
+Na reconciliação histórica de 13/08, a conclusão do indexador registrou 1.003 objetos: 873 com bytes verificados, 129 apenas por metadados e 1 divergência. O ledger listava 17.209 candidatos a fatos: 2.614 aceitos, 298 conflitantes, 2.821 derivados, 4.411 duplicados, 2.855 irrelevantes e 4.210 superados. PASS do validador verificava a estrutura/provas daquele ledger; não convertia os 298 conflitos em verdade reconciliada nem os 129 metadados em conteúdo lido. A fonte Alzira continha 48 tabelas apesar de rótulo 47; a reconciliação preservou 13 conformes, 18 parciais e 17 não conformes. Tratar estes números como snapshot anterior à Golden Baseline posterior, não inventário atual. Para arquivamento semântico, registrar explicitamente cobertura de bytes, proveniência e conflitos, sem usar PASS de schema como prova de completude factual. Fonte: unidades 9867.
+
+Na transferência de 31/07, as sete superfícies do donor passaram após corrigir a cópia ARX/Cove do Sentinel; PartnerId veio de Login antes de GetPartnerInfo e EnumerateAccountStatistics. A orientação humana escolheu paridade as-is de 100%, aceitando risco e adiando hardening. O registro dizia WRITE_CAPABILITY=PRESENT_AS_IN_KOWALSKI, embora o ensaio tivesse zero mutações. Portanto zero escrita observada não prova credencial ou código tecnicamente incapaz de escrever, e 7/7 superfícies não fecha os 13 gaps operacionais. Preservar a distinção entre capacidade, autorização e efeito medido, sem reautorizar escrita pela memória histórica. Fonte: unidades 35631.
+
+Na validação histórica EP-02, contagem de linhas por prefixo encontrou também o resumo de correções e inflou o inventário. Confinar parsing à seção correta. O agregado CTM era hash do objeto canônico com inventory_id, inventory_version e rows, não da lista rows isolada; a identidade deve usar exatamente o contrato de serialização. CTM-016/022 foram corrigidos documentalmente sem afrouxar ADR nem transformar o arquivo de evidência em implementação ativa. Fonte: unidades 8857.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

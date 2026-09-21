@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 ---
 
 # Instagram Bikon, Robotnik
@@ -162,12 +162,12 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 5. Exigir autorizacao especifica antes de qualquer staging, upload, agendamento ou publicacao futura.
 6. Corrigir `review_prepare` antes de submeter a opcao C V6 do 365 Control; nao reutilizar o parecer vinculado a V3.
 
-## Reconciliação snapshot vs implantação (20:00+)
+## Conclusão intermediária superada — snapshot vs implantação (20:00+)
 
 - Fonte oficial de evidência consultada: `reports/instagram-brand-director-v2.1.0-20260720/REPORT.md`.
-- Conclusão: a proposta `instagram-brand-director-20260720-5b5709ec92` está `pending` e a skill ativa permanece em `v2.0.1` com hash `ed9fa...686cd`.
-- O snapshot `1ffb6a1` continua desatualizado enquanto a janela de implantação não for executada com backup/rollback conforme protocolo.
-- Portão C, composição e publicação permanecem bloqueados até nova decisão explícita de corte.
+- A leitura intermediária inferiu v2.0.1 ativa a partir do estado `pending`. Essa inferência foi superada pela auditoria posterior da unidade 30703: árvore física v2.1.0, v2.0.1 em backup/withdrawn e drift do lifecycle. Não usar o estado administrativo para inferir a versão instalada.
+- O snapshot `1ffb6a1` era insuficiente para provar a árvore instalada; nova implantação não deve ser executada apenas para reconciliar o registro administrativo.
+- O bloqueio histórico de publicação continua distinto de versão instalada. Este trecho não concede nova autorização de corte, geração ou publicação.
 
 ## Bloqueio de integridade em 2026-07-22
 
@@ -236,3 +236,11 @@ Na campanha operacao-sem-dependencia de 20/07, a rota textual escolhida foi “S
 No planejamento de09/07/2026, Robotnik diferenciou pesquisa editorial ampla em web/notícias/RSS/alertas de leitura de conta, métricas e publicação pela API Instagram. Hashtag Search e Business Discovery foram citados como recursos delimitados, não mecanismo de busca livre por tema. Limites, permissões e disponibilidade devem ser revalidados na documentação oficial antes de usar; o histórico não autoriza raspagem nem publicação. Leitura bem-sucedida, token durável e modo draft não são aprovação para publish. Fonte: unidades 32977.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+A auditoria posterior da campanha de 20/07/2026 classificou a conclusão anterior como INCONCLUSIVE_STATE_CONTRADICTION: a árvore física correspondia à v2.1.0 (64 arquivos canônicos; 3 pyc fora do inventário), enquanto Workshop seguia pending por drift de lifecycle. v2.0.1 estava em backup/withdrawn; não foi encontrada evidência de rollback posterior. Portanto a seção antiga que inferia v2.0.1 ativa de pending deve ser marcada como conclusão histórica superada. A mesma reconciliação encontrou metrics.json restrito à primeira janela (1 geração/2 créditos), contra 6 gerações brutas/12 créditos nos recibos; nenhum asset publicável e F2 não consumido por gate semântico. Não repetir corte para corrigir apenas registro administrativo, nem tratar esses números como saldo ou instalação atual. Fonte: unidades 30703.
+
+No diagnóstico histórico Meta de 09/07/2026, erro de parsing de token, host/API incorreto, lista de Páginas vazia, vinculação da conta profissional e scope de publicação eram hipóteses distintas. Token aceito ou leitura de perfil não prova acesso ao ativo nem capacidade de publicar. Conferir contrato vigente, identidade, vínculo e permissões antes de ampliar escopo; código OAuth não é access token. Essa lembrança não autoriza reutilizar segredos, coletar payload sensível nem reativar a integração antiga. Fonte: unidades 32971.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

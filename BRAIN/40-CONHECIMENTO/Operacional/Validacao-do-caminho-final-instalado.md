@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -98,3 +98,19 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-2026
 No DRE v1 de 01/08, launcher relocatable e 91 testes pós-instalação passaram, mas black-box de pacote inexistente devolveu exit 7 quando o contrato exigia 2. A falha ocorreu antes de renderizar e bloqueou aceite; o rollback foi solicitado apenas para os dois alvos instalados, condicionado a hashes esperados. Separar sucesso de instalação, contrato de erro e aceite black-box. O screenshot posterior sem texto extraído neste trecho não comprova que rollback ocorreu; confirmação requer recibo/estado posterior, não inferência da autorização. Fonte: unidades 32802.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+Na validação histórica cleanroots, dois outputs concordantes ainda podiam divergir do perfil autorizado; em seguida, a identidade do manifesto também precisou ser reconciliada. Validar a cadeia perfil → manifesto → geração → outputs, incluindo a convenção de bytes e normalização exigida pelo contrato. Não substituir hash bruto por hash de texto normalizado silenciosamente. O PASS posterior de 8927 supera esses bloqueios históricos, sem dispensar a ligação de origem para futuras gerações. Fonte: unidades 8903.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 16 de 2026-09-21
+
+Na revisão Shadow R4 de 25/07, validate_target() aprovava o primário enquanto <primary>.lock era symlink; a primeira escrita falhava e deixava o destino vazio. Validar os mesmos recursos e tipos usados no caminho real, incluindo lock e companion, sem seguir links ou bloquear em FIFO. Um companion inválido não deve inutilizar silenciosamente um destino primário saudável. Na leitura de relatório, primário UTF-8 inválido e fallback válido produziram rc 2, report_complete=false e os registros válidos preservados; isso é parcial explícito, não PASS completo. O primeiro timeout de FIFO não se reproduziu, portanto não foi elevado a defeito confirmado. Snapshot/testes antigos não dispensam revalidação após mudança do diff. Fonte: unidades 41427.
+
+Na validação histórica EP-02, null na raiz é um valor JSON materializado válido; usar None como sentinela de ausência fez o teste confundir a mutação válida com falha de materialização. Separadamente, converter tuple para list antes de verificar o perfil permitia entrada não JSON que deveria ser rejeitada: esse era defeito de implementação. Usar sentinela distinta e validar tipos antes de normalizações destrutivas. Contar casos apenas na seção correspondente e calcular agregado com o wrapper definido pela versão do contrato. A correção documental CTM teve PASS_DOCUMENTATION_ONLY; o estado homologado posterior com 23/23 testes supera os bloqueios desse checkpoint. Fonte: unidades 8858.
+
+No EP-02A, run1 e run2 byte-idênticos, contagens corretas e hashes reproduzíveis não bastavam quando o commitment usava preimage diferente da ADR congelada. A regra do preimage deve ser ligada ao hash e à versão da fonte normativa, evitando misturar revisões posteriores. Pacote anunciado como congelado que muda durante a revisão exige nova submissão coerente. Correções já verificadas de LEFT/RIGHT e inclusão de semantic_commitment não permanecem como bloqueadores; os checkpoints posteriores do projeto substituem os FAIL intermediários. Fonte: unidades 9755.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

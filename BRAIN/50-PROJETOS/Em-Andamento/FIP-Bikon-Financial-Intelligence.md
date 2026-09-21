@@ -6,7 +6,7 @@ created: '2026-09-21T18:54:56.269635Z'
 schema_version: '1.0'
 created_semantics: Data de registro estruturado, não origem do conteúdo legado.
 relationships: []
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 ---
 
 # FIP Bikon Financial Intelligence
@@ -281,3 +281,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch11-2026
 Em15/08/2026, uma resposta anunciou intenção de classificar a parcela7/10 como BUSINESS_DIRECT, evidência treinamento, e proibiu propagar para8/10,9/10 e10/10 sem SIM explícito. O verbo futuro não é recibo de aplicação. Preservar escopo por parcela e autorização específica, sem inferir estado atual do lançamento. Fonte: unidades 35181.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+Em 09/08, o detector confundiu “Limite de Crédito” de extrato bancário com fatura e importou saldos como transações. A correção foi limitada aos 77 registros ruins daquela fonte e ao reprocessamento do mesmo PDF identificado por hash; o contexto posterior já mostrava 60 transações bancárias e total 1.326, não 77 operações válidas. Lote 3 havia validado 19 itens de copa/material, 3 de frota/manutenção e 9 de infraestrutura; alimentação ambígua, Corpus/Unifi, cafeteria, presente e crédito de anuidade continuavam em revisão naquele instante. Darth validou capitalização R$ 58,00 como patrimonial neutra (resultado 0, caixa 1) e tarifa R$ 43,22 como despesa somente sem duplicidade; uma conciliação existente mantinha o movimento bancário neutro para evitar contar tarifa duas vezes. Empréstimos sem principal/juros separados, contraparte nominal divergente e cobrança própria sem vínculo ao título não autorizavam DRE. Settlement Mastercard de R$ 4.828,25 não correspondia à fatura importada. São decisões/achados daquele episódio, anteriores ao GO-LIVE posterior; não afirmar que pendências persistem hoje ou que todo item de cartão é despesa empresarial. Localizadores históricos: data/fip.db, reports/FIP_DARTH_LOTE3_APPLICATION_20260809T204144Z.md e canonical-export-20260809T205553Z.json; conferir identidade/proveniência antes de reutilizar. Fonte: unidades 28800.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

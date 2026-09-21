@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 ---
 
 # Estado terminal requer convergencia do lifecycle
@@ -92,3 +92,15 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-2026
 Na revisão ShadowR4, primeiro probeFIFO expirou, mas repetição confirmou rc2 semhang; não manter bloqueador baseado só no primeiro timeout. FonteUTF8inválida podia produzir relatório parcial com registros válidos do companion, report_complete=false/rc2. Companion inválido havia impedido append no primário saudável, mas nova alteração de código exigia revalidar o diff porhash; mtime não prova correção nem permanência do defeito. Consolidar junto41423 semdiagnóstico atual. Fonte: unidades 41426.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+Em 01/08, o NOOP Sentinel executou uma vez e o controlador retornou IDLE, levando a relato inicial de PASS. A revisão posterior do ledger encontrou technical_START_count=1, execution_release_count=2 e Sentinel_execution_count=1, sem execução duplicada ou tardia. O resultado final foi FAIL_CLOSED por replay concorrente de sessão coordenadora: uma execução de negócio não prova unicidade da liberação. Preservar a divergência no ledger append-only; a correção requeria single-owner e liberação idempotente em runtime sob nova autorização. Não retomar a antiga ordem DRE: rollback havia sido confirmado, e o próximo pedido de implementação não é prova de correção já aplicada. Fonte: unidades 30768.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 16 de 2026-09-21
+
+No EP-02 documental, o resultado podia explicar prontidão apenas documental, mas o campo de checkpoint precisava continuar no enum contratado READY/BLOCKED/FAILED. Separar resultado explicativo e estado executável; não inventar READY_DOCUMENTATION_ONLY como estado técnico se o contrato não o reconhece. Autorização para redigir um artefato também não altera por si o conteúdo das fontes normativas daquele projeto. O PASS documental posterior não autoriza implementação nem transforma o bloqueio técnico anterior em execução realizada. Fonte: unidades 9722.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

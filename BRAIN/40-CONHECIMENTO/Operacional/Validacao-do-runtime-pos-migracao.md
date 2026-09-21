@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 relationships:
 - type: references
   target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
@@ -171,3 +171,17 @@ Após a migração histórica de08/07/2026, o supervisor real era openclaw-gatew
 Na tentativa SentinelA1 de26/07, postcheck detectou gatewayPID diferente, mas starttime do novoPID era anterior a technical_started_at. BASELINE_DIVERGENCE demonstrava baseline inválida, não restart causado pela auditoria. Gate OpenAPI falhou antes deautenticação/dados; zeroGETdedados não significazeroGETdedocumentação. Marker executor-controlled deconsumo era autoridade mesmo com approvalimutável consumed:false; adapter sintético e replay offline não substituíam contrato realSOURCE_SCHEMA_READY. Fonte: unidades 41540.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+Na investigação histórica da instrução Helpdesk às 07:59 BRT em dias úteis, a busca no state principal não encontrou a rotina; ela existia no SQLite do perfil Kowalski. Um storePath anunciado para JSON não provava arquivo ativo quando storage era SQLite. Conferir identidade do processo, perfil e banco efetivamente consumido antes de declarar ausência ou criar/editar job; registro em banco alternativo também precisa de prova de uso pelo scheduler ativo. Não editar rotinas vizinhas por proximidade de horário, nem reativar IDs antigos pelo histórico. Fonte: unidades 9682.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 16 de 2026-09-21
+
+Em 17/07/2026, após a incerteza sobre a origem do Chromium anterior, foi instalada uma rota nova e fixada: cópia do runtime Playwright para /opt/bikon/chromium-149.0.7827.55, seguida de root ownership e link global. cp -a havia preservado o dono openclaw; conferir propriedade dos bytes, não apenas do diretório pai. O binário headless gerou PDF de teste, e Poppler foi instalado para concluir metadados; esse checkpoint ainda não comprovava relatório real nem equivalência com a origem antiga. É registro histórico, não recomendação de versão ou receita de reinstalação atual. Fonte: unidades 36685.
+
+No diagnóstico histórico Praxis/Drive em 27/07, Gmail/Drive/Calendar passaram via API, mas a auditoria autorizada pelo visualizador continuou parada: Chromium/CDP respondia e a página chegava ao login, sem sessão Google utilizável. Restauração do navegador não comprova autenticação nem leitura do documento. Autenticação interativa foi a opção aprovada; não ampliar a permissão da pasta nem substituir pela API silenciosamente. Inventário de 1.000 itens não prova leitura do conteúdo; não preservar callbacks, códigos ou tokens no Brain. Fonte: unidades 32654.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

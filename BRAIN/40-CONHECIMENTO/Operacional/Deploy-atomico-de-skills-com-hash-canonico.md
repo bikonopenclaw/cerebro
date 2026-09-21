@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-20.md
@@ -111,3 +111,19 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260
 Na revisãoEP02A, run1/run2 idênticos, contagens e hashes corretos não bastaram: semanticHash usava wrapperkind/version/envelope enquanto a revisão doADR então congelada descrevia preimagemdireta. Conferir preimagem contra a versão autoritativa exata; revisão normativa posterior pode mudar a regra. Não perpetuar “semwrapper” como verdade universal. AssinaturasFIM duplicadas exigiam justificar distinçãoatômica ou corrigirfixtures; maislinhas não significam cobertura maior. Fonte: unidades 9750.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 15 de 2026-09-21
+
+No EP-02 de 29/07, FIM-0095/0104 materializavam JSON null como Python None; assertIsNotNone confundia valor válido de fixture com falha de materialização. Separadamente, FIM-0038 era defeito real: thaw transformava tuple em lista antes de validar o domínio JSON e a entrada proibida passava. Validar tipos originais antes de normalização e usar sentinela distinta para ausência de materialização. Categoria primária de erro também precisa respeitar a precedência normativa, não apenas rejeitar. A rodada posterior mostrou os três casos rejeitados conforme contrato e 23 testes passando; não perpetuar falha histórica como estado atual. Fonte: unidades 8859.
+
+Na revisão EP-02A de 28/07, nove arquivos run1/run2 eram byte idênticos, com contagens e hashes consistentes, mas CTM-017 declarava expected_idempotency_key_match=false em contradição com a evidência de CTM-016/018. O gate falhou: determinismo reproduz também uma expectativa errada. A correção mínima proposta era true ou uma fixture diferente que realmente alterasse a chave, preservando a semântica normativa. FIM LEFT/RIGHT e semantic_commitment já haviam sido corrigidos nessa rodada; não reabrir todos os defeitos anteriores como simultaneamente ativos. A aprovação posterior do pacote é etapa distinta e não torna o FAIL intermediário inexistente. Fonte: unidades 9759.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 16 de 2026-09-21
+
+Na homologação EDC v1.1.0 corrigida, ZIP e hashes individuais foram conferidos e 21 testes passaram; o valor corrected_baseline_hash concordava nos relatórios, mas seu método de agregação não estava documentado. Concordância entre declarações não equivale a recomputação independente do agregado. Registrar precisamente qual identidade foi calculada, qual foi apenas conferida entre fontes e a regra de serialização/inventário necessária para reproduzir o agregado. Isso não desfaz o PASS limitado nem ativa o pacote homologado. Fonte: unidades 8826.
+
+Nos clean roots iniciais do BCA em 29/07, inventários e result.json eram iguais entre runs, mas operational.txt e ep02.txt tinham hashes diferentes, sem causa reconciliada naquele resumo. Delimitar a afirmação de determinismo aos artefatos efetivamente comparados; não declarar o pacote inteiro byte idêntico nem atribuir diferenças a timestamps sem examinar. A invocação inicial de unittest falhou por PYTHONPATH e a corrigida passou; isso distingue erro de invocador de regressão do contrato. O schema consolidado e readiness do BCA permaneceram documentais, com evolução posterior própria. Fonte: unidades 8892.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

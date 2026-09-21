@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:06:54.602140Z'
 ---
 
 # Boletos e malote bancário
@@ -154,3 +154,9 @@ Inventário PostgreSQL de16/07/2026 registrava17clientes,30NFS-e,30boletos,2reme
 Implementação histórica faturamento_db.py previa init,registrar-pacote,sincronizar-pacotes,importar-retorno e relatório; retornoCresol conciliava nosso_numero e fallbacknumero_documento. Códigos06/17 eram tratados como pagamento e03/09/26 como outrosstatus no mapa local, sujeitos a contrato oficial/versão antes de uso. Original,pago,juros/mora,tarifa,desconto,abatimento,pagamento/crédito eram separados. Registrar pacote apenas ao fim da emissão deixa janela entre efeitoexterno eledger, que exige reconciliação/idempotência. Fonte do pacoteCeli: workspace-darth-vader/boletos/pacotes-emissao/20260626-celi-aracruz-nfse-producao/resumo-emissao.json e boleto-input.json/resultado-boleto.json; caminhos são localizadores históricos, não prova de conteúdo atual ou númeroNFS-e189. Fonte: unidades 38100.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 16 de 2026-09-21
+
+No lote de agosto/remessa 093, a fonte 3411 relata 27 NFS-e com PDF/XML e 27 boletos, total R$ 86.357,06, mas a remessa ainda era null/ok=false por KeyError data_emissao no detalhe CNAB400 (posições 151–156). Validar todos os campos obrigatórios antes de gerar o arquivo; reprocessar remessa não deve reemitir notas ou boletos já produzidos. O texto de inicialização Notaas dizia homologation, portanto ambiente/validade fiscal não devem ser inferidos só do log ou do rótulo issued: conferir comprovantes e identificadores originais. Localizador histórico: workspace-darth-vader/boletos/lotes-emissao/producao-20260801-remessa-093, resultado-emissao-cadenciada.json, resultado-boletos-remessa.json e nfse-arquivos. Documentos previstos 105632–105658 e nossos números 1564–1590 permitem reconciliação com o ledger. Erro intermediário não prova pendência atual; emissão, geração, envio de e-mail e transmissão bancária são efeitos separados. Fonte: unidades 3411.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
