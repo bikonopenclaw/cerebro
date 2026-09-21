@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:46:44.672892Z'
 ---
 
 # Skill Notaas NFS-e
@@ -338,3 +338,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch12-2026
 Em03/08/2026, um recibo do lote fiscal relatou autorização da posição01 após retentativa (invoice254af27a-8f4c-4f51-a2ec-291c668daebb), posições01–07 emitidas com PDF/XML, e interrupção na posição08 (invoicefcc65f27-a93b-4736-b381-774766878a98) por resposta nãoJSON HTTP503 do SNNFSE, sem número/chave/PDF/XML para essa tentativa. Envio externo permanecia bloqueado. Posição do lote não é número oficial deNFS-e; erro de resposta não prova inexistência de emissão remota. Conferir esses identificadores no registro/provider antes de qualquer retry autorizado. A chave fiscal e os documentos operacionais permanecem fora desta memória cognitiva e do escopo de exclusão de históricos. Fonte: unidades 3405.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 19 de 2026-09-21
+
+O cadastro operacional deve preservar todos os e-mails financeiros como lista e distinguir unidades/endereço quando o mesmo CPF/CNPJ aparece mais de uma vez; agrupar envio por cliente_id, não apenas documento. Na importação histórica de 17/06/2026, 21 cadastros e 37 e-mails foram estruturados em JSON, CSV e SQLite, com ferramenta de manutenção; uma correção de cidade foi explicitamente solicitada e aplicada. Para consulta corrente, usar a fonte operacional protegida em /data/.openclaw/workspace-darth-vader/cadastros/clientes/clientes_ativos.json e revalidar seus dados. Brain guarda regras e proveniência, não uma réplica dos dados pessoais. O total histórico não é contagem atual. Fonte: unidades 30847.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch19-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

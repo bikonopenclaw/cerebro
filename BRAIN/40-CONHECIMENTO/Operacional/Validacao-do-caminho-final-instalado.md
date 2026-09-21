@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:46:44.672892Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -114,3 +114,9 @@ Na validação histórica EP-02, null na raiz é um valor JSON materializado vá
 No EP-02A, run1 e run2 byte-idênticos, contagens corretas e hashes reproduzíveis não bastavam quando o commitment usava preimage diferente da ADR congelada. A regra do preimage deve ser ligada ao hash e à versão da fonte normativa, evitando misturar revisões posteriores. Pacote anunciado como congelado que muda durante a revisão exige nova submissão coerente. Correções já verificadas de LEFT/RIGHT e inclusão de semantic_commitment não permanecem como bloqueadores; os checkpoints posteriores do projeto substituem os FAIL intermediários. Fonte: unidades 9755.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 20 de 2026-09-21
+
+No DRE v1 de 01/08, duas árvores idênticas e 75 testes não bastaram para o commit: a regra bin/ do .gitignore excluía o launcher, deixando somente 11 dos 12 paths no stage simulado. Comparar inventário físico autorizado, regras de ignore e conteúdo efetivamente commitado antes de empacotar. A nova tentativa autorizou force-add apenas do launcher, sem alterar a política global; o commit de 12 paths ainda precisava de instalação e teste pela rota real, que depois revelou outro problema. Não confundir autorização de force-add restrito com liberação de arquivos ignorados em geral. Fonte: unidades 33089.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

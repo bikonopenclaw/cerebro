@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:46:44.672892Z'
 ---
 
 # SENTINEL, Controller de Operações e SNOC
@@ -340,3 +340,9 @@ Após o fechamento da diferença continue/pause como SEMANTIC_MAPPING_DIFFERENCE
 Em 19/07, a implementação já aplicada do mapa operacional foi inspecionada: 21 IDs exatos, 13 owners padrão e 8 overrides por aliases, SLA completo, modo 0600 e ausência de PII. A associação usou client_id, sem alterar cadastro mestre; o defeito estava na apresentação safe_client. Manutenção permaneceu opcional e G6 órfão fora do piloto. A existência do patch não bastou: foi necessária validação contra manifesto em memória antes de nova rodada. Este fechamento supera a pendência de reconciliação anterior, mas não comprova execução do piloto seguinte nem produção 24x7. Fonte: unidades 41480.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 18 de 2026-09-21
+
+Na auditoria interna de 19/07, owner/SLA estavam completos para 21/21 clientes (13 padrão e 8 exceções), enquanto o vínculo determinístico completo entre client_id e as três plataformas era 0/21 nas fontes autorizadas inspecionadas. Havia 21 valores fiscais preenchidos, mas somente 20 únicos; nem nome nem esse campo podiam funcionar como chave universal. ninjaone-client-map.json era política de encaminhar ARX à triagem interna Bikon, não cadastro de organizações de clientes. Atribuição pontual de um incidente não prova crosswalk geral. Manutenção continuava opcional, e célula órfã G6 não deveria ser promovida por inferência. Esse é resultado delimitado às fontes/data, não afirmação de inexistência global ou estado atual. Fonte: unidades 8649.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

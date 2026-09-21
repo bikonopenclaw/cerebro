@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:46:44.672892Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/SENTINEL.md
@@ -106,3 +106,9 @@ Em um checkpoint histórico de julho, praxis-gws foi relatada instalada e com ga
 Na preparação documental Prov213 em 28/07, uma rota local falhou por dependência googleapis ausente; outra conseguia ler o Drive, mas a criação devolveu 403 por escopo insuficiente. Compartilhamento amplo de pasta não concede automaticamente o scope OAuth de escrita do conector. Separar dependência de execução, ACL do recurso e escopo da credencial ao diagnosticar. Não persistir callback ou segredo histórico como memória nem ampliar credenciais sem escopo autorizado. Naquele pacote, seis documentos normativos precediam EP-01; o governance pack era auxiliar, não uma etapa sequencial adicional. Fonte: unidades 32376.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 17 de 2026-09-21
+
+No diagnóstico histórico da integração Meta, o erro de interpretação do token foi resolvido antes de surgir uma lista vazia de páginas. Uma resposta vazia não demonstrava inexistência da Página ou do vínculo Instagram: era necessário conferir identidade, host/rota, permissões e associação de ativos. Distinguir código OAuth, token e credencial do recurso; não converter receitas de versão antiga da API nem códigos transitórios em instrução atual. A evidência posterior de Página conectada substitui a inferência inicial de ausência. Fonte: unidades 32969.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch17-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

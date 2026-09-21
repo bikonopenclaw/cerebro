@@ -3,7 +3,7 @@ id: brain-8e9ec44fd0edd87d039d
 type: state
 title: Prov213 — Business Completion Addendum v1 histórico
 created: '2026-09-21T19:43:12.426265Z'
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:46:44.672892Z'
 schema_version: '1.0'
 created_semantics: Registro de proposta histórica; não data de aceite ou implementação.
 relationships:
@@ -89,3 +89,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-2026
 A fonte 8910 confirma o BCA consolidado f4a9afcbc88ac8d38d234e07cffdc2ec0d633ead5d41fd7698046d6020d1cb6b, 13.488 bytes, nos dois roots v2, mas sua rodada do pacote fechou FAIL_CLOSED: o implementation manifest declarado df37ec… não correspondia aos bytes estáveis b435060aa8cdf06f41e6b5f96cb78e1e85f856e5f18d9362ad8b58360f009906. Testes 27/23/12 e igualdade entre roots não corrigiam o binding errado. Distinguir READY/PASS do documento, identidade do pacote e efeito operacional. A evidência posterior 8925 registra evolução; não perpetuar o erro intermediário como bloqueio atual nem apagar sua causa histórica. Fonte: unidades 8910.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 20 de 2026-09-21
+
+A rechecagem histórica 8916 superou implementation_manifest_hash_mismatch: manifesto b435060a… estável, 23 paths iguais aos dois roots e PASS_BY_KOWALSKI. A materialização colocou 23 arquivos ainda untracked, sem stage/commit/push. A suíte operacional falhou quando PROV213_ADDENDUM_PATH estava ausente e passou com o caminho explícito ao addendum f4a9afcb…; falha de invocação não provava regressão do código. PASS de identidade do endpoint Kowalski era gate separado, sem validar o repositório ou autorizar alterar resolver. A nova revisão RIC começada na cauda ainda não tinha resultado nessa unidade; consultar o parecer posterior 8925. Fonte: unidades 8916.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

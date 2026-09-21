@@ -1,0 +1,400 @@
+{
+  "method": "Direct DB character coverage over exact and novel blocks, including all inter-block gaps and tail, and SHA256 of every block. No inventory splitter assumptions. C20/C22/C23 full or full contextual diff reviews did not rely on v2 novel-only extraction.",
+  "reports_audited": 3,
+  "units": 49,
+  "failures": 0,
+  "items": [
+    {
+      "id": 8768,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "6adee3d0800b18a3979964664a7cb07d2f40370931dc396664b2ab7d41deafe0",
+      "characters": 14344,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 28880,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "63ecff5e44732ee9a580169dcd37a4b822dbf3f469b40b6b6f05651b50719061",
+      "characters": 14286,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 29288,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "08ab691ea826fed433146e26daced85dbf14b4956e1ebb42293d40685f6b67c6",
+      "characters": 10682,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 33035,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "a446302ae89b1d6a0f2fe8aceb32e2b22d78551e284c0b925a75e4867395b206",
+      "characters": 13416,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 33041,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "13e02e1c4b8ab3cf706511a923c709e51d8bec219f77499593a32f2a78c5e991",
+      "characters": 19960,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 33062,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "1e4edf0283df35968c18b05a135533df61f0c5daabd0f3cb50565808b022462e",
+      "characters": 19998,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 33065,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "f90a4564667ff4efa4f390d2818824605adb69005ddccfbe1e2d56c6aab2fb93",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 33077,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "81d08651b7e0a6d2fa2629574498cd44f7f2eef8a572e8f04afc85dfe7b3852a",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 33086,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "639641ed2e49aff782bed0b0241109ec4ce42c88d8c89fda587cb0540306829a",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 33620,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "3c6d3fd3c11ddbcb9904f97aa40f1227c8f427c8f10fef7e1889f2cfb4985d25",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 33698,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "984cc38c4a4981b515a33c13d145e4dfcfa183d068a2ac07f2989672df2002a3",
+      "characters": 11538,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 34145,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "b950ad4800b33d9356e9079327d99e598c3794f2a47f9dc9637bc19745be4ce8",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 34148,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "58badae72f4d38fd951fbcb682530ffe03ea5656cc4bc4de545137497d452172",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 34151,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "f17572c4805d480982b05173528ee225d534ff280a1957acecbd21961735bd45",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 34154,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "9963f4e727b6fa846b2b86871bed839f4321e262b06d2207c2c42024fc16508d",
+      "characters": 17894,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 34157,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "c159c6cb44c769583534c5e284bcf74fb7f9a2cdd8d885512c025ae80360d477",
+      "characters": 19005,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 34781,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "f83906ba0055d35bfeb809c009674b1af2b572b731e9ba699b3d9dde6500a945",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36140,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "34ad92a8e0d13c3ee162f2d26b3856e4b7b165719c4b895f2c1b3a0356353178",
+      "characters": 10959,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36677,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "0c8a045c108467d52d901bc877fba8be8f0040b6affbd48de4935dcd8b0826ab",
+      "characters": 12308,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36683,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "c028095af6731e71f24c4806b448588e4ed3db6f70bd8cd9e3016a372654772d",
+      "characters": 11632,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36707,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "be34bd16d815faae1550d9df998a9e1a9d60d5400322e7d6991ae83fa433d784",
+      "characters": 12687,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36713,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "096b44c62bb87edbcd69b84282dca08a803c28c43815935860f6591b1ea45420",
+      "characters": 11693,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36737,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "8cbfd514921ec320a65ac01a294a45185f1eedc50a91ac27d3d3fc02b291cf9f",
+      "characters": 11238,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36743,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "6b082ed358bf23f6c1da7be305b4ef809deecd085a256e90a08adac7b2b24312",
+      "characters": 15461,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36764,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "8c6721fecc17065cbbebcbfc930bfe99dde9b9571f81ef1b25b7a33d7dd61d30",
+      "characters": 11643,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36791,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "83a784f572787df3e20efa633689f2d9f5f3104d7b4efd68ec2d57f1b71bd6c7",
+      "characters": 16715,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36809,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "7bf45a898072e9431c9489634453d4f832a057354653d29b8f58a39e373d5a13",
+      "characters": 14389,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36899,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "b1c99327bc37e7edc50145f1ad4569e88bbd1e3b44fa7f281b7518a53ff1070a",
+      "characters": 12318,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36923,
+      "report": "review-agent-c-21-normalized.json",
+      "sha256": "5b35573056de7151d13b937db2dc6a78001a136bb41f18380b3357a5c6253f1f",
+      "characters": 13892,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 30101,
+      "report": "review-agent-c-24.json",
+      "sha256": "749960822e7850418f3ebbe431b2886ab24ef7141745e192f0637c89d5976662",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 32378,
+      "report": "review-agent-c-24.json",
+      "sha256": "41a9ff73667b62cfccb31aae2036b45f3d9e69bc995f45cb1f737429c2abb370",
+      "characters": 11855,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 32804,
+      "report": "review-agent-c-24.json",
+      "sha256": "1d0d2e92fee55be50a165e1a38f9f75e6f389e7f8f8bd658950aa6b2d2396031",
+      "characters": 19997,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 32825,
+      "report": "review-agent-c-24.json",
+      "sha256": "f0011fbdd0e8439f35dc45f5c1362cee6fc596158ee374fdb7713bb891829d37",
+      "characters": 19997,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 32969,
+      "report": "review-agent-c-24.json",
+      "sha256": "e21cabc11f18dba752437305de6dbd2b93fedb9b7eb1d6610ef1077675d6b5b0",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 34406,
+      "report": "review-agent-c-24.json",
+      "sha256": "0a4c4f44ffc01e2282844e7a92431ab925be318aa793f9b93c6634e4733f073f",
+      "characters": 13498,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 34409,
+      "report": "review-agent-c-24.json",
+      "sha256": "aa51df85e883591c0ccea27b1f772235601270f0a7c59afd0a783808a58c4a10",
+      "characters": 12932,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 34418,
+      "report": "review-agent-c-24.json",
+      "sha256": "773a9522d1ef2effc2b0302eaa6f6dbf0450ad4a84a33746bd4304faaf3b8aa6",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 34928,
+      "report": "review-agent-c-24.json",
+      "sha256": "d98ea966fb0f94279e2d000cc55fc4f0348db7f4a87219ca310c00549e3be93c",
+      "characters": 11244,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36767,
+      "report": "review-agent-c-24.json",
+      "sha256": "5b1a1505d5746e13e0e831f51580c2594ae6ce31036c1fcfe809023700674c8f",
+      "characters": 14901,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 32813,
+      "report": "review-agent-c-25.json",
+      "sha256": "00f6702a88db15f026379bb466d9fd6f9ffbca73937f51877459619bd334ff76",
+      "characters": 19997,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 32816,
+      "report": "review-agent-c-25.json",
+      "sha256": "945ca8751b76056d8f0dd2199a8ca10560760a90ee033ab8330da17d9076dab4",
+      "characters": 19997,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 33047,
+      "report": "review-agent-c-25.json",
+      "sha256": "09cc30e43dac2fe4c58d5606c6dea999103d832f473532b580ac021957bad482",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 34160,
+      "report": "review-agent-c-25.json",
+      "sha256": "34e215efaafa259ef66092b4cffea0ac2ddb7ca74a8a2a98ff6e00147550052b",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 35633,
+      "report": "review-agent-c-25.json",
+      "sha256": "1e5c677af75ed72549a1cbe5440cd807b82b744f8aa7a718473958f1c993c4de",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36668,
+      "report": "review-agent-c-25.json",
+      "sha256": "b027dae3c9ee47dbf6b3e17d4ceb76ce68fbb9468c1f67ab167fc4dbbff4b71c",
+      "characters": 19871,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36689,
+      "report": "review-agent-c-25.json",
+      "sha256": "d4169f724be313b36f941654aa0905bbaea189c5db8a3bad31e49446e0def044",
+      "characters": 11716,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36785,
+      "report": "review-agent-c-25.json",
+      "sha256": "f5ed93cf642545e70217b03154ef4642663773f4411300ac4a3726803ba34314",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36902,
+      "report": "review-agent-c-25.json",
+      "sha256": "fac27a6ee70f7c569b18b04f7570b021550cb54270e80ba5a925c5309215f1b3",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    },
+    {
+      "id": 36932,
+      "report": "review-agent-c-25.json",
+      "sha256": "686de4047f903badbee82f63261b13e77c376c54ee6ebeb899b68675fa82b0d1",
+      "characters": 20001,
+      "uncovered_nonwhitespace_ranges": [],
+      "complete": true
+    }
+  ]
+}

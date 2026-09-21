@@ -1,0 +1,79 @@
+{
+  "text_id": 30847,
+  "reviewer": "coverage_b",
+  "raw_values_printed": false,
+  "operational_source": "/data/.openclaw/workspace-darth-vader/cadastros/clientes/clientes_ativos.json",
+  "operational_source_sha256": "8721f2f4b5c0b4f5164715a8a5b3297e23c5ae5290d2d05c3985d116c0cad67c",
+  "live_receipt": "cadastro-30847-live-proof-v2.json",
+  "live_receipt_sha256": "2cf031c317060f9441975ebf91f6cfe09ed7f34f1a3abf45a4aa7e0f6d89dca5",
+  "expected_records": 21,
+  "current_candidates": 23,
+  "fully_contained_normalized_rows": 19,
+  "reconciled_rows": 2,
+  "conclusion": "Os 21 registros históricos têm informação operacional útil preservada; 19 têm todos os campos normalizados contidos, 1 contém correção explícita do usuário e 1 tem prefixo de tipo de via acrescentado, sem mudança nos demais 12 campos. Isto não é igualdade literal do CSV, auditoria da correção cadastral atual nem cobertura dos dados pessoais no Brain. A fonte operacional deve permanecer na VPS.",
+  "differences": [
+    {
+      "identity_sha256": "04466c78e41e4e79530e7e4e6c3d9aa39fd09d69434286144b36d89dff61bc1d",
+      "field": "cidade",
+      "resolution": "Correção ortográfica explicitamente solicitada pelo usuário na unidade 30856; confirmação nos três formatos em 30857. Hash do valor atual coincide com o destino da correção. Não restaurar erro antigo.",
+      "current_value_sha256": "0cca13c42bdf28b5085bfc82720fb8eca59288952ffadca9783b564b02cd3780",
+      "evidence_text_ids": [
+        30855,
+        30856,
+        30857
+      ]
+    },
+    {
+      "identity_sha256": "fbb245ad19d00ebdccc09c0a937570bf25dd543b74732b004b6b2599d77d0115",
+      "field": "logradouro",
+      "resolution": "Valor atual conserva integralmente o nome antigo normalizado e acrescenta apenas o tipo de via RUA. Os outros 12 campos coincidem; equivalência de informação cadastral, sem afirmar identidade byte a byte.",
+      "current_value_sha256": "51cd24fc0a62afda2da0d7c16450a06eae271dc93eb82f3b20bc63bc263e8285"
+    }
+  ],
+  "source_proofs": [
+    {
+      "text_id": 30847,
+      "sha256": "e0a487e72d7279660b61bfbe98df8e1637d06ce8b129a8816767c6ddf8798b67",
+      "source": {
+        "path": "main/sessions/42e691c4-7219-4547-b6d3-b169d509e5b2.checkpoint.6fffe929-c1f0-4c80-9ab3-236fbfac1bbe.jsonl",
+        "line": 187
+      }
+    },
+    {
+      "text_id": 30851,
+      "sha256": "b905c4b61d03e88e117307b99f2f33a13bb0703b566a78804bf89c73ccc10ab2",
+      "source": {
+        "path": "main/sessions/42e691c4-7219-4547-b6d3-b169d509e5b2.checkpoint.6fffe929-c1f0-4c80-9ab3-236fbfac1bbe.jsonl",
+        "line": 197
+      }
+    },
+    {
+      "text_id": 30855,
+      "sha256": "f94681426118714b100bb15103940f2e079c5f25de6a1c261c243fa3c44cccf2",
+      "source": {
+        "path": "main/sessions/42e691c4-7219-4547-b6d3-b169d509e5b2.checkpoint.6fffe929-c1f0-4c80-9ab3-236fbfac1bbe.jsonl",
+        "line": 212
+      }
+    },
+    {
+      "text_id": 30856,
+      "sha256": "7a3737a06e959a79807853c5ecfa156b9884227fa7d66273783c4cee4a4d43d7",
+      "source": {
+        "path": "main/sessions/42e691c4-7219-4547-b6d3-b169d509e5b2.checkpoint.6fffe929-c1f0-4c80-9ab3-236fbfac1bbe.jsonl",
+        "line": 213
+      }
+    },
+    {
+      "text_id": 30857,
+      "sha256": "5115e6bd438bb752145a59a4db7d50c37e3c9eb2099b3c562ba61b8ba654ee2e",
+      "source": {
+        "path": "main/sessions/42e691c4-7219-4547-b6d3-b169d509e5b2.checkpoint.6fffe929-c1f0-4c80-9ab3-236fbfac1bbe.jsonl",
+        "line": 219
+      }
+    }
+  ],
+  "proposal_target": "BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md",
+  "proposal_text": "O cadastro operacional deve preservar todos os e-mails financeiros como lista e distinguir unidades/endereço quando o mesmo CPF/CNPJ aparece mais de uma vez; agrupar envio por cliente_id, não apenas documento. Na importação histórica de 17/06/2026, 21 cadastros e 37 e-mails foram estruturados em JSON, CSV e SQLite, com ferramenta de manutenção; uma correção de cidade foi explicitamente solicitada e aplicada. Para consulta corrente, usar a fonte operacional protegida em /data/.openclaw/workspace-darth-vader/cadastros/clientes/clientes_ativos.json e revalidar seus dados. Brain guarda regras e proveniência, não uma réplica dos dados pessoais. O total histórico não é contagem atual.",
+  "deletion_authorized": false,
+  "dependency_rule": "Preservar a fonte operacional na VPS; não precisa preservar o CSV histórico errado como autoridade. Qualquer remoção/mudança relevante exige prova equivalente antes de concluir a cobertura."
+}

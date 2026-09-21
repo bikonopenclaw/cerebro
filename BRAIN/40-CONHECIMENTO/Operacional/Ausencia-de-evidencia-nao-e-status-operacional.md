@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:46:44.672892Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md
@@ -212,3 +212,9 @@ Um recibo pode usar CUSTOMER_CONTACTED=PASS, EMAIL_SENT=PASS ou DRE_EXECUTED=PAS
 Na homologação histórica EDC v1.1.0, ZIP e hashes individuais foram conferidos, mas o algoritmo exato do agregado da baseline não estava documentado. Relatar o limite: valor declarado consistente entre artefatos é evidência diferente de agregado recalculado independentemente. Quando o agregado é critério de aceite, registrar escopo de arquivos, ordenação, serialização e algoritmo para permitir reprodução. Correção de schemas foi validada sem afrouxar restrições; prontidão v1.1.1 em fixture não era ativação real. Fonte: unidades 8828.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 17 de 2026-09-21
+
+No rollback histórico DRE, a primeira leitura de uma captura foi anunciada como PASS, mas o prompt de continuação indicava aspa aberta e nenhum comando executado. A inspeção mostrou os alvos ainda presentes; só depois de execução concluída e verificação direta da ausência houve fechamento. Separar comando digitado, saída efetiva, retorno ao prompt e estado pós-ação. Não reutilizar comandos destrutivos do histórico nem remover validações para contornar erro de quoting. Fonte: unidades 32825.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch17-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

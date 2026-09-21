@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:46:44.672892Z'
 ---
 
 # ARX Backup diário → tickets NinjaOne
@@ -288,3 +288,21 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-2026
 Em 18/07, após OAuth válido e dry-run, foi relatado teste isolado no NinjaOne: um POST criou o ticket 1502 na organização interna Bikon e um GET por ID confirmou NEW, sem nodeId de cliente, sem retry/refresh e sem alteração dos arquivos protegidos no one-shot. A rota ampla --create foi evitada porque também podia processar/fechar outros tickets e gravar deduplicação. O dry-run havia escrito apenas seu log por design, distinguindo fases. Pedido posterior autorizou resolver apenas esse ticket e conferir por GET; esta fonte termina antes da execução do fechamento e não comprova status RESOLVED nem estado atual do ticket. Nenhum token, callback ou hash de segredo integra esta memória. Fonte: unidades 8751.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 18 de 2026-09-21
+
+Na recuperação histórica OAuth de 18/07, a alegação inicial de parada antes do POST foi corrigida para uma tentativa HTTP 400 invalid_token, sem retry nem persistência de token. Esse retorno isolado não provava a causa específica de expiração. Uma tentativa posterior com novo callback retornou HTTP 200 e leitura de 34 organizações; isso comprovava acesso de leitura naquele momento, não retomada do processamento de tickets. O dry-run não oferecia criação unitária: --create também podia fechar tickets e gravar deduplicação, razão para separar a rota one-shot depois autorizada e registrada na unidade 8751. Não preservar credenciais nem tratar contagens antigas como estado atual. Fonte: unidades 36932.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 19 de 2026-09-21
+
+Após a recuperação OAuth de 18/07/2026, o teste interno criou e conferiu um ticket; o fechamento recebeu autorização separada. A inspeção mostrou que resolve_ticket fazia GET→PUT→GET e ninja_request tinha retry/refresh padrão, incompatíveis com a ordem de uma atualização e um GET. Validar orçamento de chamadas e efeitos implícitos dos helpers, além do endpoint principal, antes de execução limitada. O checkpoint não comprova fechamento; não reexecutar o ticket histórico nem guardar credenciais. Fonte: unidades 8752.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch19-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 20 de 2026-09-21
+
+Após criar o ticket interno 1502 em 18/07, a tentativa autorizada de fechamento fez um PUT com retry=False e recebeu HTTP 400; parou antes do GET. O último estado confirmado era NEW antes da tentativa, mas o estado posterior ainda não havia sido relido, portanto nem NEW atual nem RESOLVED estavam provados. O helper resolve_ticket faria GET/PUT/GET e o wrapper tinha retry/refresh por padrão, excedendo o orçamento daquela ordem; o one-shot exigia controlar explicitamente método e número de chamadas. A nova autorização era apenas diagnóstico e um GET, não segundo PUT. Nenhum segredo ou hash de segredo precisa ser preservado como memória. Fonte: unidades 8754.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

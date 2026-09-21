@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-21T20:46:44.672892Z'
 ---
 
 # OpenClaw Operational Data Platform
@@ -112,3 +112,15 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch13-2026
 A JanelaA de16/07 foi depois concluída: três cópiasSQLite passaram integrity_check, zero violaçõesFK e igualdade lógica às fontes; JSONmestre e manifesto5/5 conferiram. KitFamiliar era referência de schema/pipeline, não fonteprodutiva migrada. Consolidar junto29489, removendo pendência histórica de criação debackup; aceite daJanelaA não autorizou instalação, resize oucutover, nem prova que esses backups ainda existam hoje. Fonte: unidades 29540.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch14-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 19 de 2026-09-21
+
+No Day 3 histórico, corrigir somente um runner externo não resolveria o ledger porque o executor V1 aceito chamava SQL diretamente e não invocava esse runner. A substituição exigia rota V2 autorizada, com contrato, executor, rollback e hashes próprios; testes do componente isolado não provavam efeito no caminho produtivo. O V2 posteriormente aceito supera o bloqueio, sem autorizar modificar novos executores por herança. Fonte: unidades 9649.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch19-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 20 de 2026-09-21
+
+Na revisão Day 3 de 11/08, corrigir um runner externo não resolveria o executor V1 imutável: a rota canônica chamava psql nos SQLs fixados e não usava o runner que escreveria o ledger. A solução V2 vinculou módulo production_runner ao LedgerAwareMigrationRunner, verificando checksum, ordem, identidade e drift; não contornar com hash autorreferente dentro do SQL. O dossiê passou readiness com 72 testes e 2 adiados para produção, mas instalação e promoção eram etapas posteriores. Na cauda surgiu alegação de privilégio P0/ausência de resíduo ainda sem relatório localizado; ela não prova causa ou rollback desnecessário. O PASS_ACCEPTED posterior da nota supera esse checkpoint. Fonte: unidades 9651.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

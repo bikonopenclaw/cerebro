@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:46:44.672892Z'
 ---
 
 # Validacao tecnica nao substitui aceite humano
@@ -68,3 +68,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260
 Em 08/08, após a revisão que detectara escrita por GET, o gate multi-CNS relatou PASS em oito rotas HTTPS reais, export pelo registro do CNS, zero mutações em GET repetido e ausência de Chromium tratada como 503. A igualdade do conteúdo PDF foi avaliada também com normalização de metadados dinâmicos de geração. Declarar se a prova é equivalência semântica normalizada ou identidade exata de bytes; uma não substitui a outra em manifesto selado. PASS staged não basta para o endereço externo, e este gate de exportação não equivale a aceite posterior do Mini App pelo usuário. Fonte: unidades 9591.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 19 de 2026-09-21
+
+Em 17/07/2026, o Chromium fixado produziu PDF com metadados compatíveis, mas o teste visual perdeu logo e deslocou cabeçalho. Depois da adaptação com brand pack, o agente anunciou DOCX/PDF validados; Hebert rejeitou a configuração do DOCX e o timbrado/padrão do PDF e pediu para não continuar naquele momento. Preservar o aceite negativo como desfecho: paginação e metadados corretos não comprovam fidelidade visual entre formatos. Não reabrir a tarefa nem reinstalar a versão antiga por esta memória. Fonte: unidades 36688, 36691.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch19-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

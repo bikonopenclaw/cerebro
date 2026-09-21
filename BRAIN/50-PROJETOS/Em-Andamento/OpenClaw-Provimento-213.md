@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:46:44.672892Z'
 relationships:
 - type: references
   target: BRAIN/01-DIARIO/2026/2026-07-28.md
@@ -77,7 +77,7 @@ O Brain registra somente o estado consolidado. Artefatos autoritativos, arquivos
 - Commit da definição documental do EP-01: `6e55b0cfc2bcc766d2e3f65f059127aabf5d325e`.
 - SHA-256 do documento EP-01: `4e5eac2aecf03c3cedd25bd954a42989f213dc62fe38d083928cd0b9f403bbca`.
 - Validação independente Kowalski: `PASS`, conforme mensagem final de 2026-07-28.
-- Implementação técnica do EP-01: `EXECUTION_BLOCKED` até nova autorização explícita.
+- Checkpoint inicial do EP-01: `EXECUTION_BLOCKED` até nova autorização. Superado pela implementação histórica no commit `ad59ba1e81b5fe53a1044e8ef5eb9aa159d043e8`, com 12/12 expectativas aprovadas (unidade 9711). Não transportar o bloqueio inicial para o estado posterior nem inferir nova autorização a partir desta memória.
 - EP-02 Inventory Freeze: `READY` documental em 2026-07-29.
 - Commit do EP-02 Inventory Freeze: `1154ef13b2273ee343bdcb0eddaf24b1f8328fb1`.
 - Tree do commit do EP-02 Inventory Freeze: `71975d446db76c1e7bbd70196cce4f2f9d6bc53c`.
@@ -648,3 +648,25 @@ Na transferência de 31/07, as sete superfícies do donor passaram após corrigi
 Na validação histórica EP-02, contagem de linhas por prefixo encontrou também o resumo de correções e inflou o inventário. Confinar parsing à seção correta. O agregado CTM era hash do objeto canônico com inventory_id, inventory_version e rows, não da lista rows isolada; a identidade deve usar exatamente o contrato de serialização. CTM-016/022 foram corrigidos documentalmente sem afrouxar ADR nem transformar o arquivo de evidência em implementação ativa. Fonte: unidades 8857.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 18 de 2026-09-21
+
+No checkpoint histórico ad59ba1e81b5fe53a1044e8ef5eb9aa159d043e8, a implementação do Command Envelope EP-01 já existia em 15 caminhos, com 2 casos válidos aceitos, 10 inválidos rejeitados e 12/12 expectativas aprovadas. O PASS de revisão EP-02 significava confirmar que o pacote ainda era não executável por ausência de objetivo e escopo normativos, não autorizar a próxima implementação. Essa fase supera o bloqueio inicial do EP-01, mas antecede a definição posterior do EP-02. A reconciliação documental que começou ao final do trecho ainda não tinha veredito: declarar 34 arquivos idênticos no relatório não substitui sua validação independente. Fonte: unidades 9711.
+
+A primeira revisão Stage 1A de 13/08 fechou BLOCKED por fixtures contendo identificadores CNS reais apesar da declaração REAL_CNS_DATA_EXPOSURE=ZERO. Os 70 testes e o comportamento esperado de BLOCKED_MISSING_SUPPORTED_HTTP_RUNTIME não removiam essa contradição. A cauda iniciou revisão do pacote corrigido 263708f0182570d3bc931a19f41300d5226714fce99ff1d4c5ffb40d06bf98d6, cujo PASS posterior já está registrado nesta nota; não tratar o defeito inicial como ativo. A revisão de readiness não autorizava instalar runtime, ativar Stage 1B ou executar o corpus inteiro. Fonte: unidades 9879.
+
+Na validação de seleção de 30/07, corrigir o nome truncado do arquivo resolveu somente a identidade do artefato. Consulta oficial confirmou identidade, localização e estado institucional, mas a rodada terminou FAIL_CLOSED porque Classe 2 não tinha fonte/regra autoritativa verificada; a minimização do nome do responsável também não passou. Documentos locais/Drive não substituíam autoridade de classificação. A posterior revisão 3 aceitou declaração do Owner, já registrada nesta nota, sem convertê-la em classificação oficial CNJ. Os dados pessoais e valores de titularidade do snapshot não são cadastro atual nem precisam ser replicados no Brain. Fonte: unidades 8988.
+
+Em 31/07, os dois registros finais multi-Serventia mudaram nos mesmos inodes depois do handoff para validação. Os bytes esperados não foram encontrados em backup, e a operação que gerou os bytes atuais não estava rastreada; portanto semântica, autoria e par canônico não puderam ser reconciliados com segurança. A suíte 85/85 podia ser reutilizada porque os registros foram produzidos depois e não eram entrada dos testes, mas isso não liberava os documentos. O fechamento deixou controlador IDLE e nenhum par selecionado; regeneração atômica a partir de template aprovado era próxima autorização proposta, não resultado executado. Mensagem interna atrasada no chat do usuário foi erro de roteamento, não novo anúncio. Fonte: unidades 33057.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 20 de 2026-09-21
+
+Na arqueologia de Capixaba/Celi, o hash do tar inicialmente citado estava errado: o correto foi 59f6297878d7ceed6114923e7429d4fbb1cfc3792dc17e0a904af8da95596571, e o parecer virou PASS_COM_RESSALVA. O pacote complementar ainda citava o PASS antigo em metadata, embora estivesse ligado ao hash corrigido. A validação posterior do estado parcial confirmou 149 testes, 28/47 e 29/47 respostas, retomada Q-CONTROL-P-03 e nenhuma repetição de pergunta histórica; ausência do template era proveniência própria, não falha do cliente. O apply então permaneceu PARTIAL_BLOCKED porque a rota CPIW V4 estava vinculada somente a CNS 023689; PASS da validação do bloqueio não significa commit dos outros CNS nem autoriza aplicação manual. Essas etapas antecedem a hidratação/Golden Baseline posteriores já registradas. Fonte: unidades 8787, 8793.
+
+Na convergência visual ICD de 08/08, fórmulas e gráficos eram projeções por dimensão; denominador ausente gerava texto/status, sem inventar 0% ou 100%. Portfolio Attention View era ordenação determinística de pendências/remediação/compliance/entrevista/CNS, não score global de risco. O primeiro harness falhou por assumir campos inexistentes; após usar approved_visual_baseline.status e portfolio_kpis/rows/attention_rank reais, staging e seis rotas HTTPS passaram com zero mutação. A etapa PDF seguinte já usava record por CNS e falha fechada sem Chromium, mas exitCode 0 sem marcador visível e testes truncados ainda não eram gate final emitido. O bloqueio 403 do dashboard anterior não contradiz a nova exportação separada e autorizada; resultados posteriores exigem seus próprios recibos. Fonte: unidades 9579.
+
+Na implementação inicial da entrevista adaptativa de 31/07, eventos append-only eram autoridade do negócio; dashboard reconstruível e memória de agente eram projeções não autoritativas. O checkpoint registrava 48 controles, 1 conforme e 47 não avaliados, além de 1,32% de evidência e 0% de entrevista. O indicador 1/1=100% considerava apenas avaliados e foi explicitamente rotulado como não sendo conformidade legal; ele não significa 48/48 completos. UNKNOWN, conflito, evidência técnica e atestado humano permaneciam distintos, com origem e versão. Sete artefatos e 23 testes passaram no aceite do autor, enquanto independent_validation_result ainda era NOT_COMPLETED; o parecer posterior da nota fecha outro gate. Fonte: unidades 41598.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:46:44.672892Z'
 relationships:
 - type: references
   target: BRAIN/50-PROJETOS/Planejamento/Migracao-Hostinger-VPS-OpenClaw.md
@@ -185,3 +185,15 @@ Em 17/07/2026, após a incerteza sobre a origem do Chromium anterior, foi instal
 No diagnóstico histórico Praxis/Drive em 27/07, Gmail/Drive/Calendar passaram via API, mas a auditoria autorizada pelo visualizador continuou parada: Chromium/CDP respondia e a página chegava ao login, sem sessão Google utilizável. Restauração do navegador não comprova autenticação nem leitura do documento. Autenticação interativa foi a opção aprovada; não ampliar a permissão da pasta nem substituir pela API silenciosamente. Inventário de 1.000 itens não prova leitura do conteúdo; não preservar callbacks, códigos ou tokens no Brain. Fonte: unidades 32654.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 18 de 2026-09-21
+
+Após a instalação histórica da rota Chromium em 17/07, o PDF reproduziu metadados HeadlessChrome 149/Skia m149 e página A4, mas o gate visual falhou de forma repetível: logo PNG omitido e cabeçalho deslocado. Metadados compatíveis não provam equivalência visual. Hebert autorizou adaptar o template usando o brand pack já salvo; a fonte termina nessa autorização e não comprova correção aplicada ou relatório real entregue. Não retomar a sugestão Snap anteriormente revogada. Fonte: unidades 36687.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 20 de 2026-09-21
+
+Na implementação histórica EP-02, a primeira clean room passou os inventários e correções de tipo/null, mas terminou com 22 testes aprovados e um erro: o teste de isolamento precisava do documento canônico EP-02, que o harness não havia incluído entre os insumos de leitura. Definir separadamente inventário de código extraído e dependências documentais de validação; autenticar ambos antes da suíte. Não enfraquecer o teste nem declarar defeito produtivo para compensar fixture incompleta. O checkpoint foi anterior à homologação posterior e não descreve bloqueio atual. Fonte: unidades 31709.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

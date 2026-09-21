@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:46:44.672892Z'
 ---
 
 # Instagram Bikon, Robotnik
@@ -244,3 +244,15 @@ A auditoria posterior da campanha de 20/07/2026 classificou a conclusão anterio
 No diagnóstico histórico Meta de 09/07/2026, erro de parsing de token, host/API incorreto, lista de Páginas vazia, vinculação da conta profissional e scope de publicação eram hipóteses distintas. Token aceito ou leitura de perfil não prova acesso ao ativo nem capacidade de publicar. Conferir contrato vigente, identidade, vínculo e permissões antes de ampliar escopo; código OAuth não é access token. Essa lembrança não autoriza reutilizar segredos, coletar payload sensível nem reativar a integração antiga. Fonte: unidades 32971.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 18 de 2026-09-21
+
+Na avaliação histórica de 16/07, o guia Kling não deveria substituir o pacote criativo Robotnik: a proposta era um motor opcional de vídeo atrás do roteador de custo, mantendo planejamento/copy, hard blocks Bikon, composição local, revisão independente e aprovação de publicação. O inventário portátil identificou dependência Sharp em /tmp, credenciais Meta ainda não validadas, presença de --force e ausência de suíte automatizada; exportação exigiria dependências estáveis, assets oficiais, checksums, gates e rollback reversível. Naquele carrossel, os ajustes pedidos haviam sido aplicados, mas o parecer atrasado anterior não validava a nova versão. Tudo é histórico; não reativar Kling, Meta Graph ou métodos de custo antigos contra a rota canônica vigente. Fonte: unidades 39639.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 20 de 2026-09-21
+
+No preflight local histórico da campanha de 20/07, max_cost=2 era valor documentado, sem enforcement antes da chamada; preço, saldo e disponibilidade permaneciam dinâmicos e não foram consultados. Alterar prompt/parâmetros invalidou o hash anterior, e quatro cópias textuais foram alinhadas antes do novo hash. Adapter dry-run retornou execute=false, sem invocar Kling nem consumir Approval/crédito. O schema exigia destination=kling, e o caminho local era documental; não inventar campo incompatível para aparentar validação. Materiais antigos movidos a archive/noncanonical-pre-freeze não eram os artefatos vigentes. Isto descreve contrato histórico, não rota atual de produção ou autorização de gasto. Fonte: unidades 39423.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

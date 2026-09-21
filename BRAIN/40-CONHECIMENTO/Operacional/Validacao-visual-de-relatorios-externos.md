@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:46:44.672892Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
@@ -151,3 +151,15 @@ A validação posterior do PDF multi-CNS em 08/08 registrou suite de 202 testes 
 No portfólio Prov213, a visão de atenção ordena pendências, remediações, itens não resolvidos, entrevista e CNS; isso não constitui um score global combinado de risco. Preservar os eixos e denominadores de cada dimensão, exibindo N/A quando faltam dados. Harness deve ler as chaves reais do modelo antes de alegar falha; validação HTML/HTTPS e staging do PDF têm gates próprios. A aprovação posterior do PDF deve ser ligada ao checkpoint final, sem projetá-la retroativamente sobre o staging. Fonte: unidades 9572.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 18 de 2026-09-21
+
+No caso de 17/07/2026, Chromium headless e metadados de PDF passaram, mas o primeiro relatório perdeu logo/timbrado. A entrega refeita foi anunciada como validada; o usuário ainda relatou DOCX mal configurado e PDF fora do padrão, embora capa/fontes/cores do DOCX e paginação do PDF estivessem corretas. Validar cada formato e o artefato real contra o modelo canônico, com inspeção renderizada; instalação do gerador e sucesso técnico não comprovam fidelidade visual. O pedido final foi parar, não nova autorização de correção. Não conservar o PASS unilateral como aceite do usuário. Fonte: unidades 36689.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 20 de 2026-09-21
+
+Complemento à unidade 36689: após a rejeição do DOCX/PDF de 17/07, o executor reconheceu que confundira validação técnica e aprovação visual e confirmou a parada solicitada. A avaliação seguinte de Instagram incidia sobre um guia marcado substituído, não sobre a skill canônica instalada; críticas daquele guia não demonstram defeito da versão atual. Separar identidade/versão do material avaliado, prova visual dos bytes e aceite humano, sem reativar receitas antigas de Chromium ou Kling. Fonte: unidades 36695.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.

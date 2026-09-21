@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-21T20:09:11.818858+00:00",
+  "window_days": 7,
+  "since_epoch": 1789416549.4382505,
+  "coverage_complete": false,
+  "scope": "Recent local memories and session histories only; older gaps require an explicit earlier window. Stat inventory is not content coverage.",
+  "surfaces": [
+    {
+      "agent": "main",
+      "kind": "memory",
+      "path": "/data/.openclaw/workspace/memory",
+      "resolved": "/data/.openclaw/workspace/memory",
+      "exists": true
+    },
+    {
+      "agent": "main",
+      "kind": "memory",
+      "path": "/data/.openclaw/workspace/MEMORY.md",
+      "resolved": "/data/.openclaw/workspace/MEMORY.md",
+      "exists": true
+    },
+    {
+      "agent": "main",
+      "kind": "openclaw_history",
+      "path": "/data/.openclaw/agents/main/sessions",
+      "resolved": "/data/.openclaw/agents/main/sessions",
+      "exists": true
+    },
+    {
+      "agent": "main",
+      "kind": "codex_history",
+      "path": "/data/.openclaw/agents/main/codex-home/sessions",
+      "resolved": "/data/.openclaw/agents/main/codex-home/sessions",
+      "exists": true
+    },
+    {
+      "agent": "main",
+      "kind": "openclaw_history",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/main/sessions",
+      "resolved": "/home/openclaw/.openclaw-kowalski/agents/main/sessions",
+      "exists": true
+    },
+    {
+      "agent": "main",
+      "kind": "codex_history",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/main/codex-home/sessions",
+      "exists": false
+    },
+    {
+      "agent": "main",
+      "kind": "openclaw_history",
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/main/sessions",
+      "exists": false
+    },
+    {
+      "agent": "main",
+      "kind": "codex_history",
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/main/codex-home/sessions",
+      "exists": false
+    },
+    {
+      "agent": "kowalski",
+      "kind": "memory",
+      "path": "/data/.openclaw/workspace-kowalski/memory",
+      "resolved": "/data/.openclaw/workspace-kowalski/memory",
+      "exists": true
+    },
+    {
+      "agent": "kowalski",
+      "kind": "memory",
+      "path": "/data/.openclaw/workspace-kowalski/MEMORY.md",
+      "exists": false
+    },
+    {
+      "agent": "kowalski",
+      "kind": "openclaw_history",
+      "path": "/data/.openclaw/agents/kowalski/sessions",
+      "resolved": "/data/.openclaw/agents/kowalski/sessions",
+      "exists": true
+    },
+    {
+      "agent": "kowalski",
+      "kind": "codex_history",
+      "path": "/data/.openclaw/agents/kowalski/codex-home/sessions",
+      "resolved": "/data/.openclaw/agents/kowalski/codex-home/sessions",
+      "exists": true
+    },
+    {
+      "agent": "kowalski",
+      "kind": "openclaw_history",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions",
+      "resolved": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions",
+      "exists": true
+    },
+    {
+      "agent": "kowalski",
+      "kind": "codex_history",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/codex-home/sessions",
+      "exists": false
+    },
+    {
+      "agent": "kowalski",
+      "kind": "openclaw_history",
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/kowalski/sessions",
+      "exists": false
+    },
+    {
+      "agent": "kowalski",
+      "kind": "codex_history",
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/kowalski/codex-home/sessions",
+      "exists": false
+    },
+    {
+      "agent": "darth-vader",
+      "kind": "memory",
+      "path": "/data/.openclaw/workspace-darth-vader/memory",
+      "resolved": "/data/.openclaw/workspace-darth-vader/memory",
+      "exists": true
+    },
+    {
+      "agent": "darth-vader",
+      "kind": "memory",
+      "path": "/data/.openclaw/workspace-darth-vader/MEMORY.md",
+      "exists": false
+    },
+    {
+      "agent": "darth-vader",
+      "kind": "openclaw_history",
+      "path": "/data/.openclaw/agents/darth-vader/sessions",
+      "resolved": "/data/.openclaw/agents/darth-vader/sessions",
+      "exists": true
+    },
+    {
+      "agent": "darth-vader",
+      "kind": "codex_history",
+      "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions",
+      "resolved": "/data/.openclaw/agents/darth-vader/codex-home/sessions",
+      "exists": true
+    },
+    {
+      "agent": "darth-vader",
+      "kind": "openclaw_history",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/sessions",
+      "resolved": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/sessions",
+      "exists": true
+    },
+    {
+      "agent": "darth-vader",
+      "kind": "codex_history",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/codex-home/sessions",
+      "exists": false
+    },
+    {
+      "agent": "darth-vader",
+      "kind": "openclaw_history",
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions",
+      "resolved": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions",
+      "exists": true
+    },
+    {
+      "agent": "darth-vader",
+      "kind": "codex_history",
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/codex-home/sessions",
+      "exists": false
+    },
+    {
+      "agent": "robotnik",
+      "kind": "memory",
+      "path": "/data/.openclaw/workspace-robotnik/memory",
+      "resolved": "/data/.openclaw/workspace-robotnik/memory",
+      "exists": true
+    },
+    {
+      "agent": "robotnik",
+      "kind": "memory",
+      "path": "/data/.openclaw/workspace-robotnik/MEMORY.md",
+      "exists": false
+    },
+    {
+      "agent": "robotnik",
+      "kind": "openclaw_history",
+      "path": "/data/.openclaw/agents/robotnik/sessions",
+      "resolved": "/data/.openclaw/agents/robotnik/sessions",
+      "exists": true
+    },
+    {
+      "agent": "robotnik",
+      "kind": "codex_history",
+      "path": "/data/.openclaw/agents/robotnik/codex-home/sessions",
+      "resolved": "/data/.openclaw/agents/robotnik/codex-home/sessions",
+      "exists": true
+    },
+    {
+      "agent": "robotnik",
+      "kind": "openclaw_history",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/robotnik/sessions",
+      "exists": false
+    },
+    {
+      "agent": "robotnik",
+      "kind": "codex_history",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/robotnik/codex-home/sessions",
+      "exists": false
+    },
+    {
+      "agent": "robotnik",
+      "kind": "openclaw_history",
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/robotnik/sessions",
+      "exists": false
+    },
+    {
+      "agent": "robotnik",
+      "kind": "codex_history",
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/robotnik/codex-home/sessions",
+      "exists": false
+    },
+    {
+      "agent": "sentinel",
+      "kind": "memory",
+      "path": "/data/.openclaw/workspace-sentinel/memory",
+      "resolved": "/data/.openclaw/workspace-sentinel/memory",
+      "exists": true
+    },
+    {
+      "agent": "sentinel",
+      "kind": "memory",
+      "path": "/data/.openclaw/workspace-sentinel/MEMORY.md",
+      "exists": false
+    },
+    {
+      "agent": "sentinel",
+      "kind": "openclaw_history",
+      "path": "/data/.openclaw/agents/sentinel/sessions",
+      "resolved": "/data/.openclaw/agents/sentinel/sessions",
+      "exists": true
+    },
+    {
+      "agent": "sentinel",
+      "kind": "codex_history",
+      "path": "/data/.openclaw/agents/sentinel/codex-home/sessions",
+      "resolved": "/data/.openclaw/agents/sentinel/codex-home/sessions",
+      "exists": true
+    },
+    {
+      "agent": "sentinel",
+      "kind": "openclaw_history",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/sentinel/sessions",
+      "resolved": "/home/openclaw/.openclaw-kowalski/agents/sentinel/sessions",
+      "exists": true
+    },
+    {
+      "agent": "sentinel",
+      "kind": "codex_history",
+      "path": "/home/openclaw/.openclaw-kowalski/agents/sentinel/codex-home/sessions",
+      "exists": false
+    },
+    {
+      "agent": "sentinel",
+      "kind": "openclaw_history",
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/sentinel/sessions",
+      "exists": false
+    },
+    {
+      "agent": "sentinel",
+      "kind": "codex_history",
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/sentinel/codex-home/sessions",
+      "exists": false
+    }
+  ],
+  "errors": [],
+  "source_counts": {
+    "main": 335,
+    "kowalski": 304,
+    "darth-vader": 0,
+    "robotnik": 8,
+    "sentinel": 202
+  },
+  "tested_as": "openclaw",
+  "implementation_sha256": "872c927eff2d067cf9db6400d41ee4bd103386a80e456925030d5931b64fe5e7",
+  "existing_scheduled_payloads_reference_routine": true,
+  "scheduler_jobs_changed": false,
+  "future_execution_proven": false
+}

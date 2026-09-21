@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-09-21T20:46:44.672892Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
@@ -115,3 +115,9 @@ Na seleção de serventia revision 3 em 30/07, a minimização encontrou duas oc
 Em OAuth, distinguir URL de autorização de callback recebido e validar os parâmetros obrigatórios antes de trocar o código. Resultado vazio de parser pode ser falso negativo: conferir formato e integridade do artefato antes de concluir ausência ou mutação. Restaurar o arquivo local de token preserva seus bytes, mas não garante que o provedor aceite novamente a credencial anterior; não declarar rollback externo apenas com prova de rollback local. Nunca consolidar códigos, estados ou tokens brutos no Brain. Fonte: unidades 36890.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch15-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Complementos reconciliados — lote 18 de 2026-09-21
+
+No fluxo histórico OAuth NinjaOne de 18/07, a mensagem de state validado foi corrigida após constatar que o processo de stdin encerrou antes de receber o callback. Conhecer visualmente o valor esperado não prova que o executor recebeu, comparou e vinculou o callback. Registrar precisamente a etapa alcançada, número de POSTs e efeitos persistidos; não consumir ou repetir código com base apenas no resumo. O bloqueio desse pré-check foi superado por tentativa posterior independente, sem tornar o token daquela data uma credencial atual. Fonte: unidades 36902.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch18-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
