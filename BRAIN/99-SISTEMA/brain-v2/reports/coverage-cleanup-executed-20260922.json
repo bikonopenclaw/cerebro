@@ -1,0 +1,59 @@
+{
+  "executed": true,
+  "brain_commit": "61138c5ee8669d60890566ea2cd9c71483cd0550",
+  "manifest_sha256": "e5537ee82cc2e5628573ec13e68ed4fc05bc1f3b7e89e8684f76dead34ebbd72",
+  "checked_at_epoch": 1790081656.3633585,
+  "protected_proof_files_verified": 7310,
+  "fresh_reference_errors": [],
+  "candidates_verified": 26329,
+  "files_removed": 26329,
+  "allocated_bytes_removed": 1944064000,
+  "logical_bytes_removed": 1872687304,
+  "skipped_count": 0,
+  "services_verified": [
+    {
+      "unit": "openclaw-gateway.service",
+      "same_pid": true,
+      "active": true,
+      "frozen": false
+    },
+    {
+      "unit": "openclaw-gateway-kowalski.service",
+      "same_pid": true,
+      "active": true,
+      "frozen": false
+    },
+    {
+      "unit": "openclaw-gateway-darth-vader.service",
+      "same_pid": true,
+      "active": true,
+      "frozen": false
+    },
+    {
+      "unit": "openclaw-storage-guard.timer",
+      "restored_state": "active"
+    },
+    {
+      "unit": "sentinel-adhoc-ack-watchdog.timer",
+      "restored_state": "active"
+    },
+    {
+      "unit": "openclaw-long-running-supervisor.timer",
+      "restored_state": "active"
+    },
+    {
+      "unit": "prov213-handoff-autoresume.timer",
+      "restored_state": "active"
+    }
+  ],
+  "duration_seconds": 145.6585807800293,
+  "status": "cleanup_completed",
+  "coverage_units": 11188,
+  "editorial_pending": 0,
+  "coverage_scope": "Historical export reviewed in task; exact-coverage source dependencies remain on VPS.",
+  "deletion_scope": "Exact approved manifest only; live references and preserved proof files excluded.",
+  "historical_raw_mac_copies_removed_before_this_execution": true,
+  "current_daily_visibility_issue": "2026-09-22 daily cron namespace cannot see all approved historical source roots; repair tracked separately.",
+  "semantic_capability": "Shared skill and local vector index installed; agent sandbox accessibility being verified separately.",
+  "source_receipt_sha256": "da065907ce4261a6f20205937a8a24e9ef69845d2495253e28fdbae78625190c"
+}

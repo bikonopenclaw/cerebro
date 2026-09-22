@@ -921,3 +921,8 @@ relationships: []
 ## 2026-09-21 — cobertura histórica e pesquisa persistente
 
 Triagem de11.187 unidades concluída no recorte exportado; índice de disposições e recibos por lote preservados. Conhecimento reconciliado nas notas, com fontes e relações. Pesquisa local persistente e inventário dos5 agentes/3 perfis incorporados às rotinas existentes. Corrigidos erros silenciosos de acesso no inventário. Limpeza de históricos ainda não executada neste registro; dependências retidas e janela de concorrência são gates separados. Ver [[01-DIARIO/2026/2026-09-21|diário]].
+
+### 2026-09-22 — limpeza histórica executada
+
+- 26.329 históricos elegíveis removidos (1,81 GiB), 7.310 provas mantidas e verificadas, gateways e timers restaurados. Recibo `brain-v2/reports/coverage-cleanup-executed-20260922.json`.
+- Consolidação diária anterior publicada em `61138c5`; sua lacuna explícita de visibilidade continua em reparo separado.
