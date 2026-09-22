@@ -1,0 +1,60 @@
+--- a/thread-lifecycle-qWE88Dn2.js
++++ b/thread-lifecycle-qWE88Dn2.js
+@@ -2359,7 +2359,56 @@
+ 		webSearchAllowed: options.webSearchAllowed
+ 	}).threadConfig;
+ 	const baseConfig = buildCodexRuntimeThreadConfig(mergeCodexThreadConfigs(config, webSearchConfig), options);
+-	const runtimeConfig = mergeCodexThreadConfigs(baseConfig, options.appServer?.networkProxy?.configPatch, shouldDisableCodexToolSearchForModel(params.modelId) ? CODEX_TOOL_SEARCH_UNSUPPORTED_THREAD_CONFIG : void 0) ?? baseConfig;
++	let runtimeConfig = mergeCodexThreadConfigs(baseConfig, options.appServer?.networkProxy?.configPatch, shouldDisableCodexToolSearchForModel(params.modelId) ? CODEX_TOOL_SEARCH_UNSUPPORTED_THREAD_CONFIG : void 0) ?? baseConfig;
++	// BRAIN_READ_SCOPE_V1: agent search assets and exact scheduler source identities.
++	// Turn-local copies only; never mutate the app-server/global permission profile.
++	const brainAgents = ["main", "kowalski", "darth-vader", "robotnik", "sentinel"];
++	if (brainAgents.includes(params.agentId) && options.appServer?.networkProxy) {
++		const profileName = runtimeConfig?.default_permissions;
++		const profile = typeof profileName === "string" ? runtimeConfig?.permissions?.[profileName] : void 0;
++		if (!options.appServer?.networkProxy || !profile || typeof profile !== "object" ||
++			!profile.filesystem || typeof profile.filesystem !== "object" || Array.isArray(profile.filesystem)) {
++			throw new Error("Brain read scope requires the expected managed filesystem profile; no access granted.");
++		}
++		const filesystem = { ...profile.filesystem };
++		const grantRead = (path) => {
++			// Preserve pre-existing workspace writes (main must still curate Brain).
++			const alreadyWritable = Object.entries(profile.filesystem).some(([root, access]) =>
++				root.startsWith("/") && access === "write" && (path === root || path.startsWith(`${root}/`)));
++			if (!alreadyWritable) filesystem[path] = "read";
++		};
++		grantRead("/data/.openclaw/skills/brain-semantic-search");
++		grantRead("/data/.openclaw/local/brain-semantic");
++		grantRead("/data/.openclaw/workspace/Brain");
++		const brainCronIds = new Set([
++			"d95bbe73-24d9-4e2b-ba57-0032082bb54b",
++			"1a1ed29a-fd45-4c5f-93f6-c3b556a2743c",
++			"c8410fc9-1d2f-4ce0-8847-70e69db6f405"
++		]);
++		const key = typeof params.sessionKey === "string" ? params.sessionKey.split(":") : [];
++		const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
++		const isBrainCurationRun = params.agentId === "main" && key.length === 6 &&
++			key[0] === "agent" && key[1] === "main" && key[2] === "cron" &&
++			brainCronIds.has(key[3]) && key[4] === "run" && key[5].length === 36 && uuid.test(key[5]);
++		if (isBrainCurationRun) {
++			const roots = ["/data/.openclaw", "/home/openclaw/.openclaw-kowalski", "/home/openclaw/.openclaw-darth-vader"];
++			for (const agent of brainAgents) {
++				const workspace = agent === "main" ? "/data/.openclaw/workspace" : `/data/.openclaw/workspace-${agent}`;
++				grantRead(`${workspace}/memory`);
++				grantRead(`${workspace}/MEMORY.md`);
++				for (const root of roots) {
++					grantRead(`${root}/agents/${agent}/sessions`);
++					grantRead(`${root}/agents/${agent}/codex-home/sessions`);
++				}
++			}
++		}
++		const scopedName = `${profileName}-brain-${isBrainCurationRun ? key[3] : "search"}`;
++		runtimeConfig = {
++			...runtimeConfig,
++			default_permissions: scopedName,
++			permissions: { ...runtimeConfig.permissions, [scopedName]: { ...profile, filesystem } }
++		};
++	}
+ 	if (params.bootstrapContextMode !== "lightweight") return runtimeConfig;
+ 	return mergeCodexThreadConfigs(runtimeConfig, CODEX_LIGHTWEIGHT_CONTEXT_THREAD_CONFIG) ?? {
+ 		...runtimeConfig,

@@ -926,3 +926,9 @@ Triagem de11.187 unidades concluída no recorte exportado; índice de disposiç�
 
 - 26.329 históricos elegíveis removidos (1,81 GiB), 7.310 provas mantidas e verificadas, gateways e timers restaurados. Recibo `brain-v2/reports/coverage-cleanup-executed-20260922.json`.
 - Consolidação diária anterior publicada em `61138c5`; sua lacuna explícita de visibilidade continua em reparo separado.
+
+### 2026-09-22 — consulta sem escrita e leitura de consolidação
+
+- Runtime v3 e habilidade persistente: consulta de índice pronto, sem cache/lock/reconstrução pelos agentes; atualização isolada após mudanças Git.
+- Acesso adicional às fontes somente para os três crons autorizados do main; modo legado de Kowalski/Darth preservado. Três plugins versionados e testes ligados aos ambientes reais.
+- Recibo `brain-v2/reports/semantic-runtime-readonly-installed-20260922.json`; nenhuma nova exclusão automática de históricos.

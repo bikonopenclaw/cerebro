@@ -1,2 +1,2 @@
 #!/bin/sh
-exec /data/.openclaw/local/brain-semantic/venv/bin/python /data/.openclaw/local/brain-semantic/current/brain_semantic_runtime.py --config /data/.openclaw/local/brain-semantic/config.json "$@"
+exec /data/.openclaw/local/brain-semantic/venv/bin/python -B /data/.openclaw/local/brain-semantic/current/brain_semantic_runtime.py --config /data/.openclaw/local/brain-semantic/config.json --no-refresh "$@"

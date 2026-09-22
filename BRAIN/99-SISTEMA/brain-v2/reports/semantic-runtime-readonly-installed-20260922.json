@@ -1,0 +1,102 @@
+{
+  "status": "installed_and_validated",
+  "at": 1790087434.6952848,
+  "runtime_release": "20260922-v3",
+  "runtime_sha256": "56d23b891717e8b01e2ce8ae2d7f33b7b4952718c62653cd597b272f9b9fc6d5",
+  "query_mode": "read_only",
+  "postdeployment_validation": {
+    "checked_at": "2026-09-22T14:04:30.706184+00:00",
+    "query_agents_passed": [
+      "main",
+      "robotnik",
+      "sentinel",
+      "kowalski",
+      "darth-vader"
+    ],
+    "cron_profiles_passed": [
+      "main-daily",
+      "main-weekly",
+      "main-monthly"
+    ],
+    "query_launcher": "/data/.openclaw/skills/brain-semantic-search/scripts/search",
+    "temporary_runtime_grants": false,
+    "index_mode": "read_only",
+    "top3_equal_paths_hashes_scores": true,
+    "top3": [
+      {
+        "path": "BRAIN/40-CONHECIMENTO/Financeiro/Natureza-economica-provada-antes-de-PnL.md",
+        "source_sha256": "0523ea6afad34c40d6dad7d3509bbf709d36907da43f4349a2b732878097be2d",
+        "cosine": 0.6068097352981567,
+        "declared_link_count": 6,
+        "typed_relationship_count": 0
+      },
+      {
+        "path": "BRAIN/40-CONHECIMENTO/Financeiro/Settlement-de-fatura-nao-classifica-natureza-economica.md",
+        "source_sha256": "a04f31bf6e74a7d0ed73087080f41595c3e095ae8d58affac227e3660719006a",
+        "cosine": 0.5739837884902954,
+        "declared_link_count": 4,
+        "typed_relationship_count": 0
+      },
+      {
+        "path": "BRAIN/40-CONHECIMENTO/Financeiro/Total-fechado-nao-prova-integridade.md",
+        "source_sha256": "6d3fb7f32d0ebe569be0becd896112fb4c7f2454223f09dbc6996c67fe8ac106",
+        "cosine": 0.5655417442321777,
+        "declared_link_count": 4,
+        "typed_relationship_count": 0
+      }
+    ],
+    "main_proxy_expected_access_pass": true,
+    "legacy_kowalski_darth_vader": {
+      "production_policy_unchanged": true,
+      "test_method": "Equivalent named profile translated from installed WorkspaceWrite: root read, exact writable roots plus temp according to exclusions; test network disabled",
+      "write_denied_outside_workspace": [
+        "skill",
+        "runtime",
+        "config",
+        "index",
+        "Brain"
+      ],
+      "sensitive_read_allowed_preexisting": true,
+      "sensitive_content_read": false
+    },
+    "limitations": [
+      "No LLM/business turn invoked. Tests use installed functions and actual Codex sandbox CLI, not a new agent conversation.",
+      "Main retains existing Brain workspace write. Four auxiliary query tests deny Brain write.",
+      "Kowalski/Darth Vader legacy broad read was preserved; do not state secrets denied for all five."
+    ],
+    "receipts": [
+      {
+        "path": "agent-c-main-postdeploy-results.json",
+        "sha256": "fa4862413caa4677edcfc2ca623cb2af47df0fec2cdb31b4343f19329193ca93"
+      },
+      {
+        "path": "agent-c-legacy-equivalent-postdeploy-results.json",
+        "sha256": "ab78b785d44dea53836f294e2f9ea06fe8515e4458bef12cefc01fef4698d13f"
+      },
+      {
+        "path": "agent-c-cron-postdeploy-results.json",
+        "sha256": "1b880c2198436075bcd2eaed56decbdf1e101386e0073c30e9d7198d90fe74e9"
+      }
+    ]
+  },
+  "plugin_cases_per_installed_target": 41,
+  "readonly_runtime_unit_cases": 10,
+  "gateways_reloaded_healthy": 3,
+  "gateway_plugin_hashes": {
+    "main": "475a13433cde71128412fdc44337016b80fdcfda1a6018caa96b50d1d890ac9c",
+    "kowalski": "567946e6058e88b33933cf25c457d927f9c76355ee8f846c61bd2b35ec1de6ef",
+    "darth-vader": "567946e6058e88b33933cf25c457d927f9c76355ee8f846c61bd2b35ec1de6ef"
+  },
+  "index_maintenance": {
+    "path_unit": "brain-semantic-index-refresh.path",
+    "service": "brain-semantic-index-refresh.service",
+    "network": false,
+    "source_write": false,
+    "write_directory": "/data/.openclaw/local/brain-semantic/index",
+    "initial_service_result": "success",
+    "git_event_check_recorded_separately_after_publication": true
+  },
+  "scheduled_editorial_coverage": "Read access validated; future daily/weekly/monthly runs must produce per-source receipts.",
+  "upgrade_condition": "Local patches persist across restart; revalidate/rebase against known hashes after package upgrades.",
+  "historical_cleanup_receipt": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-cleanup-executed-20260922.json"
+}

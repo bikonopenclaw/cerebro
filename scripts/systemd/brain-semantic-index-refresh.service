@@ -1,0 +1,27 @@
+[Unit]
+Description=Refresh the local Brain semantic index after publication
+StartLimitIntervalSec=600
+StartLimitBurst=3
+
+[Service]
+Type=oneshot
+User=openclaw
+Group=openclaw
+UMask=0077
+ExecStart=/data/.openclaw/local/brain-semantic/venv/bin/python -B /data/.openclaw/local/brain-semantic/current/brain_semantic_runtime.py --config /data/.openclaw/local/brain-semantic/config.json --refresh-only
+TimeoutStartSec=300
+Restart=on-failure
+RestartSec=30
+Nice=10
+IOSchedulingClass=idle
+CPUQuota=100%
+MemoryMax=1G
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+PrivateNetwork=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/data/.openclaw/local/brain-semantic/index
+RestrictAddressFamilies=AF_UNIX
+

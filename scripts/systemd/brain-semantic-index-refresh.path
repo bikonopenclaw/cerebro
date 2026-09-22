@@ -1,0 +1,11 @@
+[Unit]
+Description=Watch Brain Git revisions for local semantic index refresh
+
+[Path]
+PathChanged=/data/.openclaw/workspace/Brain/.git/refs/heads/main
+PathChanged=/data/.openclaw/workspace/Brain/.git/HEAD
+PathChanged=/data/.openclaw/workspace/Brain/.git/packed-refs
+Unit=brain-semantic-index-refresh.service
+
+[Install]
+WantedBy=multi-user.target

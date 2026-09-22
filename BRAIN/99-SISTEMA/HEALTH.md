@@ -191,3 +191,7 @@ Zero unidades editoriais pendentes no recorte histórico exportado desta tarefa.
 ## Verificação de cobertura — 2026-09-22
 
 Consolidacao diaria com cobertura parcial. Uma fonte recente do workspace principal foi lida integralmente e disposta como ja representada; as superficies de sessoes e memorias dos demais agentes/perfis nao estavam visiveis na execucao e permanecem pendentes, sem inferencia de ausencia. Ver [[01-DIARIO/2026/2026-09-22|diario]] e `brain-v2/reports/coverage-2026-09-22-daily.json`.
+
+## Capacidade semântica verificada — 2026-09-22
+
+Cinco consultas em sandbox passaram com o launcher instalado e resultados equivalentes. Três rotinas tiveram leitura das fontes verificada, sem escrita adicional. Gateways saudáveis após recarga. O histórico de cobertura parcial do ciclo anterior continua válido; não declarar futuros ciclos completos antecipadamente. Ver [[99-SISTEMA/brain-v2/governance/semantic-runtime-operations|operação e limites]].
