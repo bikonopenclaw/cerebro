@@ -86,6 +86,8 @@ Este MOC liga os registros cronologicos do Brain sem mover notas historicas. Ele
 - [[2026-09-17]]
 - [[2026-09-18]]
 - [[2026-09-19]]
+- [[01-DIARIO/2026/2026-09-21|2026-09-21]]
+- [[01-DIARIO/2026/2026-09-22|2026-09-22]]
 
 ## Consolidados Semanais
 
@@ -117,5 +119,3 @@ Este MOC liga os registros cronologicos do Brain sem mover notas historicas. Ele
 - [[INDEX]]
 - [[Brain-Enterprise|Brain Enterprise]]
 - [[Brain-como-sistema-de-memoria|Brain como sistema de memoria]]
-
-- [[01-DIARIO/2026/2026-09-21|2026-09-21]]: cobertura histórica, reconciliação temporal e pesquisa semântica persistente.

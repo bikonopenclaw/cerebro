@@ -12,6 +12,14 @@ relationships: []
 
 # CHANGELOG.md
 
+## 2026-09-22, consolidacao diaria
+
+- Criado diario `BRAIN/01-DIARIO/2026/2026-09-22.md`, atualizado o MOC cronologico e registrado o recibo `coverage-2026-09-22-daily.json`.
+- Executado o inventario obrigatorio de sete dias. A unica fonte recente legivel foi revisada integralmente e ja estava representada em ARX, Sentinel e nos diarios de 15 a 17/09; nenhuma nota permanente foi duplicada.
+- Cobertura marcada como parcial: sessoes e memorias dos demais agentes/perfis nao estavam visiveis nesta execucao e permanecem pendentes de reinventario, sem inferir ausencia de conhecimento.
+- Atualizado `HEALTH.md`; nao houve nova pessoa, empresa, projeto, arquivamento ou acesso a sistema externo.
+- Commit Link Gate validado: `ok=True`, `409` Markdown, `0` links internos quebrados, `0` uncategorized, `0` unreachable cognitive markdown, `0` isolated cognitive markdown, `1` componente de grafo e health estimate `1`.
+
 ## 2026-09-20, consolidacao semanal
 
 - Criado resumo `BRAIN/01-DIARIO/Semanal/2026-W38.md` com cobertura parcial de 2026-09-14 a 2026-09-20, baseado nas daily notes disponiveis de 15 a 19/09.

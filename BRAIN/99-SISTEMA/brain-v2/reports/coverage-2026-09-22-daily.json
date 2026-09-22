@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "generated_at": "2026-09-22T02:00:59.893080+00:00",
+  "window": {
+    "days": 7,
+    "timezone": "UTC",
+    "coverage_complete": false
+  },
+  "inventory_command": "python3 /data/.openclaw/workspace/Brain/scripts/brain-source-inventory.py --days 7",
+  "sources_reviewed": [
+    {
+      "agent": "main",
+      "profile": "shared_workspace",
+      "kind": "memory",
+      "path": "/data/.openclaw/workspace/memory/2026-09-15.md",
+      "size": 2234,
+      "mtime_ns": 1789511549573918986,
+      "sha256": "023852a46ef87f0189887f2cceb9b0ab071cfeb4e6811c72b1eb0d2adc6807fb",
+      "units_read": "entire_file",
+      "disposition": "already_represented",
+      "targets": [
+        "BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md",
+        "BRAIN/60-AGENTES/SENTINEL.md",
+        "BRAIN/01-DIARIO/2026/2026-09-15.md",
+        "BRAIN/01-DIARIO/2026/2026-09-16.md",
+        "BRAIN/01-DIARIO/2026/2026-09-17.md"
+      ],
+      "pending": false
+    }
+  ],
+  "unavailable_surfaces": {
+    "agents": [
+      "main",
+      "kowalski",
+      "darth-vader",
+      "robotnik",
+      "sentinel"
+    ],
+    "profiles": [
+      "main",
+      "kowalski",
+      "darth-vader",
+      "shared_workspace_agent_specific"
+    ],
+    "kinds": [
+      "openclaw_history",
+      "codex_history",
+      "agent_memory"
+    ],
+    "disposition": "deferred_inaccessible",
+    "pending": "Reinventory when these already-authorized local surfaces are visible; do not infer absence of knowledge."
+  },
+  "promotion": {
+    "new_permanent_notes": 0,
+    "updated_permanent_notes": 0,
+    "reason": "The only readable recent source was already represented and later superseded by a recorded outcome."
+  },
+  "journal": "BRAIN/01-DIARIO/2026/2026-09-22.md",
+  "publication": {
+    "local_commit_required": true,
+    "remote_publication_attempted": false,
+    "remote_publication_confirmed": false
+  }
+}
