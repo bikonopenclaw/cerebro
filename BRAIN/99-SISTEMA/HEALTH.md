@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-09-21T21:52:39.723601Z'
+updated: '2026-09-23T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,13 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-09-23
+
+- Inventário de sete dias: 766 arquivos, 480 históricos OpenClaw e 286 rollouts Codex, sem erros de inventário. As pastas de memória dos cinco agentes estão visíveis, mas nenhuma memória foi modificada dentro da janela; a fonte main de 15/09 foi relida como pendência anterior e mantém o hash conhecido.
+- A invisibilidade documentada no ciclo anterior não persiste para todas essas superfícies. A leitura voltou a ser possível, sem que isso encerre automaticamente a cobertura. Recibo `brain-v2/reports/coverage-2026-09-23-daily.json` discrimina leituras integrais, trechos revisados e fontes ainda não reconciliadas neste ciclo.
+- Histórico de cobertura encerrada e dependências de retenção anteriores preservados; a fila da janela atual não invalida recibos históricos nem autoriza excluir fontes. Não houve acesso externo ou publicação remota.
+- Health Score legado 96/100 mantido, não recalculado como medida de qualidade semântica ou percentual de cobertura. Ver [[01-DIARIO/2026/2026-09-23|diário do ciclo]].
 
 ## Status atual
 

@@ -4,13 +4,21 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-09-21T21:52:39.723601Z'
+updated: '2026-09-23T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-09-23, consolidação diária silenciosa
+
+- Criado diário `BRAIN/01-DIARIO/2026/2026-09-23.md` e atualizado o MOC cronológico; data UTC preservada, com correspondência local de 22/09 às 23:00 explícita.
+- Inventário obrigatório de sete dias: 766 arquivos locais, sem erros. Visibilidade de históricos restabelecida em relação à execução anterior; cobertura editorial permanece parcial, com fila individualizada em `coverage-2026-09-23-daily.json`.
+- Atualizada a nota existente de Durable Work com as recusas protegidas de inspeção da ordem Bitdefender de 22/09, sem inferir falha de provider, conclusão de negócio ou autorização de recovery.
+- Memória main de 15/09 relida e reconciliada pelo mesmo hash/disposição do recibo anterior. Canários e confirmações rotineiras não promovidos. Nenhuma nova nota permanente duplicada.
+- `HEALTH.md` atualizado com limites de cobertura; sem arquivamento, exclusão, publicação remota, acesso a sistema externo ou comunicação ao Hebert.
 
 ## 2026-09-22, consolidacao diaria
 

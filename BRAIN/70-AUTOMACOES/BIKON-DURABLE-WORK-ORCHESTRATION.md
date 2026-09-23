@@ -7,16 +7,16 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-09-23T02:00:00Z'
 ---
 
 # Bikon Durable Work Orchestration
 
 ```yaml
 categoria: automacao_operacional
-fonte: contrato canonico e requests duraveis observados em 2026-09-16/19
-confiabilidade: alta
-ultima_revisao: 2026-09-19
+fonte: contrato canonico, requests de 2026-09-16/19 e recusas protegidas de 2026-09-22
+confiabilidade: alta para os eventos citados, sem inferir estado produtivo atual
+ultima_revisao: 2026-09-23
 tags: [bikon, durable-work, relatorios, documentos, sentinel, kowalski, lifecycle, idempotencia]
 ```
 
@@ -52,6 +52,16 @@ Preservar pedidos assíncronos de relatórios e documentos além do turno conver
 - A request de Alfredo Chaves usou `31` sessões autenticadas retidas com cobertura parcial explicitada. Capixaba e Camburi usaram `190` registros autenticados cada; Vila Velha usou `134` registros, incluindo `122` execuções, `121` sucessos, `1` com erro e `12` skips. Esses números permanecem vinculados às datas/cobertura dos recibos e não devem ser generalizados para o mês inteiro.
 - A request Alzira posterior usou `192` execucoes autenticadas (`191` sucessos e `1` falha), terminou `SUCCESS` e teve entrega privada reconhecida apos uma recuperacao causal de QA visual.
 - A request Capixaba posterior preservou `190` execucoes com sucesso no recorte e chegou a uma apresentacao revisada por cinco recuperacoes causais limitadas. Versoes/recibos anteriores foram mantidos, provider nao foi reconsultado e o aceite de negocio continuou separado do terminal tecnico.
+
+## Reconciliação interna bloqueada — 2026-09-22
+
+A ordem `ORDER-SENTINEL-LATE-BITDEFENDER-20260918-20260922T002540Z` tinha pedido de reconciliação exclusivamente pelo `puppet_control` protegido, preservando identidade, período e autorização, sem entrega externa nem repetição de efeito incerto. No recorte lido, duas chamadas `scoped_inspect` foram recusadas pelo hook `PreToolUse` com `REGISTERED_INTERNAL_PROJECTION_REQUIRED`; o agente encerrou sem avançar admissão, retomada, revisão ou fechamento.
+
+A distinção útil é entre operação anunciada no catálogo e projeção administrativa autenticada no runtime: a primeira não prova a segunda. O bloqueio aconteceu antes da inspeção canônica; não demonstra ausência de dados Bitdefender, defeito do provider ou estado terminal de negócio. Este registro preserva o impedimento observado, não autoriza corrigir permissões, trocar rota, refazer coleta ou retomar a ordem por memória.
+
+Fonte: sessão main `39bfe49e-6317-4005-9e8f-a97b93197adf`, linhas 2–3, e rollout Codex `01a0c8ae-38dc-72b3-98a2-612e7cff8e67`, chamadas/recusas nas linhas 18–19 e 36–37. Identidades SHA-256 e limites da leitura em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-23-daily.json`.
+
+- [[01-DIARIO/2026/2026-09-23|Consolidação e limites de cobertura]].
 
 ## Relações
 
