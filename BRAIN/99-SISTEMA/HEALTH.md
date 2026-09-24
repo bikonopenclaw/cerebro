@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-09-23T02:00:00Z'
+updated: '2026-09-24T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -14,7 +14,15 @@ relationships: []
 
 Health Score: 96/100
 
-## Verificação de cobertura — 2026-09-23
+## Verificação de cobertura — 2026-09-24
+
+- Inventário móvel de sete dias: 542 arquivos, 342 históricos OpenClaw e 200 rollouts Codex, sem erros de inventário. Memórias recentes: zero pelo filtro de modificação, não ausência de contexto. Cobertura continua parcial por seleção editorial; os cinco agentes/perfis e as superfícies ausentes estão discriminados no recibo atual.
+- Encontrada lacuna de rastreabilidade: o recibo `coverage-2026-09-23-daily.json` citado anteriormente não existe no HEAD examinado. Revisões parciais locais foram retomadas por identidade, com fila anterior preservada; não se declara retrospectivamente fechamento integral. Diário de 23/09 e referência de Durable Work corrigidos.
+- Busca semântica retornou `not_ready` por índice desatualizado. Mantida consulta somente leitura e deduplicação lexical, sem rebuild ou troca de provedor. Não atribuir sucesso semântico ao `memory_search` lexical.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-09-24-daily.json`. Separa revisão atual, reutilização por hash, pendência não lida e publicação. Nenhuma exclusão, acesso externo ou publicação remota nesta execução.
+- Health Score legado 96/100 mantido sem recalcular cobertura ou significado. Ver [[01-DIARIO/2026/2026-09-24|diário do ciclo]].
+
+## Verificação de cobertura — 2026-09-23 (histórico; rastreabilidade corrigida acima)
 
 - Inventário de sete dias: 766 arquivos, 480 históricos OpenClaw e 286 rollouts Codex, sem erros de inventário. As pastas de memória dos cinco agentes estão visíveis, mas nenhuma memória foi modificada dentro da janela; a fonte main de 15/09 foi relida como pendência anterior e mantém o hash conhecido.
 - A invisibilidade documentada no ciclo anterior não persiste para todas essas superfícies. A leitura voltou a ser possível, sem que isso encerre automaticamente a cobertura. Recibo `brain-v2/reports/coverage-2026-09-23-daily.json` discrimina leituras integrais, trechos revisados e fontes ainda não reconciliadas neste ciclo.
