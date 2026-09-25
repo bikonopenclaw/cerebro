@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-24T02:00:00Z'
+updated: '2026-09-25T02:00:00Z'
 ---
 
 # Bikon Durable Work Orchestration
@@ -59,7 +59,7 @@ A ordem `ORDER-SENTINEL-LATE-BITDEFENDER-20260918-20260922T002540Z` tinha pedido
 
 A distinção útil é entre operação anunciada no catálogo e projeção administrativa autenticada no runtime: a primeira não prova a segunda. O bloqueio aconteceu antes da inspeção canônica; não demonstra ausência de dados Bitdefender, defeito do provider ou estado terminal de negócio. Este registro preserva o impedimento observado, não autoriza corrigir permissões, trocar rota, refazer coleta ou retomar a ordem por memória.
 
-Fonte: sessão main `39bfe49e-6317-4005-9e8f-a97b93197adf`, linhas 2–3, e rollout Codex `01a0c8ae-38dc-72b3-98a2-612e7cff8e67`, chamadas/recusas nas linhas 18–19 e 36–37. As disposições e identidades SHA-256 da revisão parcial foram reaproveitadas após conferência dos hashes em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-24-daily.json`. O recibo de 23/09 citado anteriormente não foi localizado; a correção não amplia o recorte lido nem atesta estado atual.
+Fonte: sessão main `39bfe49e-6317-4005-9e8f-a97b93197adf`, linhas 2–3, e rollout Codex `01a0c8ae-38dc-72b3-98a2-612e7cff8e67`, chamadas/recusas nas linhas 18–19 e 36–37. A revisão anterior relatou conferência dos hashes, mas os recibos finais de 23/09 e 24/09 citados não foram localizados no HEAD examinado em 25/09. As revisões temporárias permanecem como pendência de reconciliação, identificada no recibo efetivo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-25-daily.json`; esta correção não autentica retroativamente as fontes nem amplia o recorte lido ou atesta estado atual.
 
 - [[01-DIARIO/2026/2026-09-23|Consolidação e limites de cobertura]].
 

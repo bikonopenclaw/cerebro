@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:07:33.285014Z'
+updated: '2026-09-25T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md
@@ -41,7 +41,7 @@ categoria: operacional
 tipo: aprendizado_permanente
 fonte: consolidação semanal 2026-W28; Portal 213 Stage 1B R2.4 em 2026-08-20; qualificacao mensal ARX em 2026-09-08/09; fechamento semanal Relatorios Operacionais em 2026-09-14; consolidacao semanal 2026-W38
 confiabilidade: alta
-ultima_revisao: 2026-09-20
+ultima_revisao: 2026-09-25
 tags: [monitoramento, evidencia, recencia, revalidacao, ninjaone, backup, hyper-v, operacao, checkpoint, cobertura-temporal, paginacao]
 ```
 
@@ -224,3 +224,12 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch17-2026
 A proposta histórica de confiança Sentinel em 23/07 definiu G1 fonte direta autorizada; G2 atribuição única; G3 recência válida; G4 regra determinística P1–P4 sem conflito; G5 impacto ou intenção operacional confirmados. Alta exigia todos; média permitia uma lacuna contextual; ausência de atribuição ou evidência vencida limitava a baixa, e sinais críticos conflitantes impediam downgrade automático. Definitividade exigia fechar gates ou aceitar explicitamente risco residual. Era proposta de método, sem comprovação de adoção automática. No snapshot, 194/196 alertas Ninja foram classificados e dois Spooler ficaram dependentes de contexto; ARX other não sustentava P2 atual, diferente do P2 histórico que interrompeu canário. Bitdefender estava completo somente no contrato agregado, não inventário detalhado; sete ciclos com pausa segura não provavam 24 horas contínuas nem autorizavam 24x7. Fonte: unidades 41593.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+
+## Entrada, processamento e resposta são provas distintas — 2026-09-24
+
+No incidente do [[70-AUTOMACOES/FATURAMENTO-TELEGRAM|grupo Faturamento Bikon]], ausência de mensagem no histórico consultado e sucesso de envio outbound levaram inicialmente a uma conclusão incorreta de falha de entrada. O log fornecido depois mostrava ingresso no conector e erro de compactação da sessão, sem resposta enfileirada. A confirmação humana de resposta veio após orientação de reset do contexto.
+
+Um smoke de saída não valida o caminho de entrada; um histórico parcial não prova que o provedor descartou updates. Atribuição causal exige distinguir evidência do conector, roteamento, processamento/compactação e transporte da resposta. Hipóteses anteriores devem ser qualificadas como superadas quando evidência posterior as contradiz. Não ampliar permissões com base apenas na ausência de resposta.
+
+Fonte: unidades main M1–M3 no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-25-daily.json`; revisão de evidência histórica, sem teste live nesta consolidação.

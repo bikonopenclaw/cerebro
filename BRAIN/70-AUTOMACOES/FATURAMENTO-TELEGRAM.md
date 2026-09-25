@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T18:55:38.578515Z'
+updated: '2026-09-25T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/20-EMPRESAS/BIKON/README.md
@@ -32,7 +32,7 @@ relationships:
 categoria: automacao_operacional
 fonte: sessões Telegram visíveis em 2026-06-17, correções operacionais em 2026-06-18/19/25/26, remoção FN Souza em 2026-06-25 e lote Bikon agosto/2026 em 2026-08-03
 confiabilidade: alta
-ultima_revisao: 2026-08-03
+ultima_revisao: 2026-09-25
 tags: [telegram, faturamento, bikon, fn-souza, nfse, boletos, remessa, darth-vader]
 ```
 
@@ -98,3 +98,14 @@ O caso preserva a regra de etapas: emissão fiscal, boleto/remessa, conferência
 Histórico de 18/06/2026: as pastas vinculadas aos grupos de faturamento foram definidas como entrada de arquivos das notas a serem faturadas. A presença de um documento nesse espaço é insumo para preparação e conferência, não evidência de emissão concluída ou autorização automática de envio. FN Souza foi depois desativado em 25/06; esta finalidade histórica não reativa seu grupo, pasta ou fluxo. Fonte: unidades 34708.
 
 Hashes e posições constam em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch3-20260921.json`. Estes registros preservam decisões e aprendizados históricos; não comprovam configuração atual nem reativam operações.
+
+
+## Incidente de resposta no grupo — 2026-09-24
+
+A revisão do registro fornecido por Hebert mostra entrada de mensagem do grupo às 18:58:24 UTC e falha da mesma lane às 18:59:34 UTC com `CONTEXT_COMPACTION_FAILED`, seguida de despacho sem resposta enfileirada. A indisponibilidade estava demonstrada no processamento do contexto, não na entrega do Telegram. As hipóteses anteriores de privacidade, allowlist ou ausência de ingestão foram superadas por essa evidência; não devem ser reutilizadas como diagnóstico vigente.
+
+O histórico relata teste temporário de `ingest=true` e rollback, sem resolução por esse caminho. Após a orientação de reset limitado à sessão do grupo, Hebert informou que voltou a responder. Essa confirmação humana sustenta a recuperação observada, mas não representa validação integral da configuração, de todos os canais ou do fluxo fiscal/financeiro. Não houve reexecução deste incidente na consolidação.
+
+Aprendizado conectado: [[40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional|ausência de resposta não prova ausência de entrada]]. Conferir ingresso, processamento e saída separadamente antes de atribuir causa ou propor mudanças de permissão.
+
+Fontes: sessão main `ac87bb64-7ef3-4bfc-bae6-7a2ee976e8d0`, linha JSONL 206 (linhas internas 40, 45–46 do anexo citado), 224–225; mirror `808b6c2a-783e-41ab-9ace-f17a844f01fe`, linhas 9–30. Identidades e limites no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-25-daily.json`.
