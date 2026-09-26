@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:39:24.440350Z'
+updated: '2026-09-26T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
@@ -31,9 +31,9 @@ relationships:
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidação semanal 2026-W26; revisão visual Bikon em 2026-07-09; bloqueio de transporte em 2026-09-07; reparo causal Capixaba em 2026-09-18/19
+fonte: consolidação semanal 2026-W26; revisão visual Bikon em 2026-07-09; bloqueio de transporte em 2026-09-07; reparo causal Capixaba em 2026-09-18/19; revisão da proposta Business Gestão de 24/09 consolidada em 26/09/2026
 confiabilidade: alta
-ultima_revisao: 2026-09-19
+ultima_revisao: 2026-09-26
 tags: [relatorios, pdf, bikon, kowalski, robotnik, qualidade, identidade-visual, integridade, transporte]
 ```
 
@@ -60,6 +60,14 @@ O mesmo princípio vale para materiais públicos ou semi-públicos da Bikon: pos
 - Transcript espelhado pode omitir chamadas nativas de imagem. Ausencia no espelho nao prova ausencia de inspecao; a validacao deve conferir rollout nativo, payloads de imagem, hashes e identidade do runtime vivo.
 - Prova visual precisa ser executavel no momento do gate. Identificador publicado apenas depois do terminal nao pode ser exigido de uma sessao ainda viva sem uma regra autenticada equivalente.
 - Recuperacao de QA visual exige causa precisa, contrato ou evidencia alterados e nova execucao limitada. Nao reutilizar inspecao antiga nem repetir o mesmo input depois do inicio de efeitos.
+
+## Premissas comerciais são um gate separado — caso de 24/09/2026
+
+A proposta de firewall e suporte para Business Gestão recebeu PASS técnico/visual declarado pelo produtor, mas Hebert rejeitou o conteúdo como superficial. O executor reconheceu ter somado valores sem confirmar a composição do pacote, reutilizado quantidades antigas, convertido monitoramento em suporte amplo e acrescentado validade comercial não fornecida. As respostas posteriores do proprietário corrigiram quantidade, modalidade de atendimento, implantação, razão social e SLA; o suporte Microsoft 365 com preço próprio foi acrescentado em revisão separada.
+
+O aprendizado é distinguir **acabamento visual, coerência comercial, aceite humano e entrega**. Contrato anterior é referência histórica, não prova da quantidade ou oferta atuais. Conferir a unidade cobrada, escopo, limites do suporte e componentes do preço antes de apresentar a proposta como pronta; não inventar validade, cobertura ou condições para preencher lacunas. Uma alteração posterior de escopo requer reconciliação do conteúdo e dos totais, sem herdar automaticamente o QA ou aceite da versão anterior.
+
+Este registro não valida o PDF, não atesta entrega/aceite final e não transforma condições desse cliente em política comercial geral. Fonte: sessão Kowalski `b9859a9b-8b78-483e-a15f-3e2831bcbe19`, linhas JSONL 2, 97, 112, 115, 117, 122, 124 e 215; hash e caminho após reset em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-26-daily.json` (K2–K215). Candidato pendente da revisão anterior, agora reconciliado com a fonte primária.
 
 ## Relações
 

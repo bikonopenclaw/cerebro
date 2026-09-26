@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-09-25T02:00:00Z'
+updated: '2026-09-26T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,15 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-09-26
+
+- Inventário obrigatório de sete dias: 327 arquivos (214 entradas OpenClaw, incluindo índices/trajectories, e 113 rollouts Codex), sem erros; nenhuma memória modificada no filtro. Cinco agentes/perfis discriminados; contagem de arquivos não mede conversas ou conhecimento consolidado.
+- Recibo de 25/09 encontrado e referenciado por hash. Suas pendências, dependências anteriores e fontes fora da janela são carregadas no recibo atual, sem presumir cobertura por idade, reset ou existência de resumo. A lacuna histórica dos recibos finais de 23/09 e 24/09 continua explícita.
+- Pendência comercial da revisão anterior retomada: fonte Kowalski localizada após reset com o mesmo SHA-256, oito unidades textuais relidas e aprendizado promovido à nota existente. Demais unidades, anexos e inspeção dos PDFs não estão cobertos por essa promoção.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-09-26-daily.json`. Revisão seletiva, commit local e publicação remota são provas separadas; não há alegação de cobertura integral ou elegibilidade de exclusão. Sem publicação remota neste ciclo.
+- Busca semântica local disponível antes das edições, índice de 25/09 09:01 UTC, somente leitura. O `memory_search` nativo retornou resultados lexicais antigos e não substituiu a busca local.
+- Health Score legado 96/100 mantido sem recálculo: não é percentual de cobertura nem avaliação semântica. Ver [[01-DIARIO/2026/2026-09-26|diário do ciclo]].
 
 ## Verificação de cobertura — 2026-09-25
 

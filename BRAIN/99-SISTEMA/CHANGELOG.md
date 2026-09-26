@@ -4,13 +4,20 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-09-25T02:00:00Z'
+updated: '2026-09-26T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-09-26, consolidação diária silenciosa
+
+- Criado diário de 26/09 (25/09 às 23:00 BRT) e ligado ao MOC cronológico; inventário obrigatório de sete dias com 327 arquivos e cobertura parcial explícita.
+- Atualizada a nota existente de validação visual: reconciliação comercial de proposta é distinta de PASS visual, aceite humano e entrega. Candidato anterior retomado com releitura de oito unidades da fonte primária, localizada após reset pelo mesmo hash; nenhum preço ou condição de cliente generalizado.
+- Persistido recibo sanitizado `brain-v2/reports/coverage-2026-09-26-daily.json` e atualizado HEALTH com identidades, escopo e pendências carregadas. Não se fabricou fechamento retroativo para 23/09 ou 24/09.
+- Consulta semântica local disponível antes das edições. Sem nova nota permanente duplicada, exclusão, acesso externo, configuração, agente Brain, mensagem ao Hebert ou publicação remota.
 
 ## 2026-09-25, consolidação diária silenciosa
 
