@@ -6,8 +6,12 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-25T02:00:00Z'
+updated: '2026-09-27T06:00:00Z'
 relationships:
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W39.md
+  reason: Reconcilia visibilidade, ingresso e processamento como limites distintos da evidência observada.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-27-weekly.json#daily-22-25
 - type: references
   target: BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md
   reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
@@ -41,7 +45,7 @@ categoria: operacional
 tipo: aprendizado_permanente
 fonte: consolidação semanal 2026-W28; Portal 213 Stage 1B R2.4 em 2026-08-20; qualificacao mensal ARX em 2026-09-08/09; fechamento semanal Relatorios Operacionais em 2026-09-14; consolidacao semanal 2026-W38
 confiabilidade: alta
-ultima_revisao: 2026-09-25
+ultima_revisao: 2026-09-27
 tags: [monitoramento, evidencia, recencia, revalidacao, ninjaone, backup, hyper-v, operacao, checkpoint, cobertura-temporal, paginacao]
 ```
 
@@ -79,6 +83,12 @@ Evidência antiga também não comprova estado atual. Toda conclusão operaciona
 - Artefato valido, submissao ao transporte, ACK do provider, entrega na caixa e leitura humana sao estados separados; ausencia do recibo de um deles nao pode ser preenchida pelo outro.
 - Coleta upstream, composicao do relatorio, materializacao no cache e consumo pelo cron sao estados separados. Cache semanal ausente ou invalido prova indisponibilidade no ponto de consumo, mas nao autoriza afirmar que a coleta nao ocorreu nem que o provider estava indisponivel.
 - Dados autenticados disponiveis podem sustentar uma saida parcial quando o pedido autoriza esse recorte, mas datas, populacao observada e limitacoes precisam acompanhar cada metrica. Essa excecao por request nao converte ausencia em zero nem relaxa o gate de cobertura mensal.
+
+## Reconciliação entre contextos — semana 2026-W39
+
+A falta de acesso às fontes do Brain em 22/09, a recusa de inspeção protegida registrada no diário de 23/09 e a ausência de resposta do Faturamento reconciliada em 25/09 não são o mesmo tipo de falha. O padrão comum é limitar o diagnóstico à etapa observada: visibilidade do revisor, admissão da inspeção e processamento da mensagem, respectivamente. Visibilidade posteriormente restaurada não encerra cobertura editorial; inspeção recusada não diagnostica o provider; ingresso comprovado seguido de falha de compactação supera a hipótese de ausência de entrada, mas não atesta toda a saúde do canal.
+
+Preservar hipótese anterior como histórica e ligar a correção à evidência posterior evita ampliar permissões ou repetir operações com base no sintoma errado. Fontes desta síntese: [[01-DIARIO/2026/2026-09-22|22/09]], [[01-DIARIO/2026/2026-09-23|23/09]] e [[01-DIARIO/2026/2026-09-25|25/09]], lidas na [[01-DIARIO/Semanal/2026-W39|revisão semanal]]. O caso de inspeção mantém a ressalva dos recibos ausentes; não foi reautenticado nem reexecutado nesta revisão.
 
 ## Exemplo conectado
 

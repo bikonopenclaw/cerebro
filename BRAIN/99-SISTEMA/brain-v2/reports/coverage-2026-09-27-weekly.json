@@ -1,0 +1,5663 @@
+{
+  "schema_version": "1.0",
+  "cycle": "weekly",
+  "cycle_at": "2026-09-27T06:00:00Z",
+  "timezone": "America/Sao_Paulo",
+  "week": "2026-W39",
+  "base_commit": "8ca0fb5536883d17e0c5777fcfd6f1bf9513ea3f",
+  "coverage_complete": false,
+  "scope": "Weekly reconciliation of all six available Brain daily notes; metadata inventory is not raw-history coverage.",
+  "window": {
+    "daily_filename_dates": "2026-09-20 through 2026-09-26",
+    "cutoff_utc": "2026-09-27T06:00:00Z",
+    "daily_missing": [
+      "2026-09-20"
+    ],
+    "cutoff_date_note_absent": "2026-09-27 (day still open)",
+    "reviewed_notes": 6,
+    "available_notes": 6,
+    "inventory_since_epoch": 1789884043.5871978,
+    "inventory_at": "2026-09-27T06:00:44.123984+00:00"
+  },
+  "sources_reviewed": [
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-09-21.md",
+      "sha256": "d0b2919e2e158613b8cb6018e2f4f5f4374424c3c7bb542377e1132b87e4601d",
+      "size": 2711,
+      "lines": 40,
+      "mtime_ns": 1790028048328229982,
+      "id": "daily-21",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "consolidated_daily_note",
+      "read_scope": "entire_file",
+      "coverage_complete_for_note": true,
+      "coverage_complete_for_underlying_sessions": false,
+      "units_read": [
+        {
+          "section": "Projetos",
+          "lines": [
+            15,
+            18
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Problemas",
+          "lines": [
+            19,
+            22
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Decisões",
+          "lines": [
+            23,
+            26
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Aprendizados",
+          "lines": [
+            27,
+            30
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Próximas ações",
+          "lines": [
+            31,
+            34
+          ],
+          "disposition": "retained_context_and_pending",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md"
+          ],
+          "reason": "Preservadas proveniência, limitações e pendências; não executadas como instruções atuais."
+        },
+        {
+          "section": "Conexões",
+          "lines": [
+            35,
+            40
+          ],
+          "disposition": "retained_context_and_pending",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md"
+          ],
+          "reason": "Preservadas proveniência, limitações e pendências; não executadas como instruções atuais."
+        }
+      ],
+      "metadata_disposition": "Identidade e data preservadas; frontmatter e introdução lidos como contexto, não como autoridade operacional.",
+      "stable_after_read": true
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-09-22.md",
+      "sha256": "a458a995318873d06e876ce9fda68ab800308dfdad07d391760ce0ce727eed3c",
+      "size": 3537,
+      "lines": 59,
+      "mtime_ns": 1790087629737816840,
+      "id": "daily-22",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "consolidated_daily_note",
+      "read_scope": "entire_file",
+      "coverage_complete_for_note": true,
+      "coverage_complete_for_underlying_sessions": false,
+      "units_read": [
+        {
+          "section": "Pessoas",
+          "lines": [
+            16,
+            17
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Empresas",
+          "lines": [
+            18,
+            19
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Projetos",
+          "lines": [
+            20,
+            21
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Oportunidades",
+          "lines": [
+            22,
+            23
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Problemas",
+          "lines": [
+            24,
+            27
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Decisoes",
+          "lines": [
+            28,
+            31
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Aprendizados",
+          "lines": [
+            32,
+            35
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Ideias",
+          "lines": [
+            36,
+            37
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Proximas acoes",
+          "lines": [
+            38,
+            41
+          ],
+          "disposition": "retained_context_and_pending",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md"
+          ],
+          "reason": "Preservadas proveniência, limitações e pendências; não executadas como instruções atuais."
+        },
+        {
+          "section": "Conexoes",
+          "lines": [
+            42,
+            48
+          ],
+          "disposition": "retained_context_and_pending",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md"
+          ],
+          "reason": "Preservadas proveniência, limitações e pendências; não executadas como instruções atuais."
+        },
+        {
+          "section": "Limpeza histórica verificada",
+          "lines": [
+            49,
+            54
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Pesquisa persistente e acesso das rotinas corrigidos",
+          "lines": [
+            55,
+            59
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        }
+      ],
+      "metadata_disposition": "Identidade e data preservadas; frontmatter e introdução lidos como contexto, não como autoridade operacional.",
+      "stable_after_read": true
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-09-23.md",
+      "sha256": "0be9fef8d23736c2a4c648c6ac5daa5cdb4f171940b51386b4257305fc1f71b3",
+      "size": 4720,
+      "lines": 62,
+      "mtime_ns": 1790215439280101128,
+      "id": "daily-23",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "consolidated_daily_note",
+      "read_scope": "entire_file",
+      "coverage_complete_for_note": true,
+      "coverage_complete_for_underlying_sessions": false,
+      "units_read": [
+        {
+          "section": "Pessoas",
+          "lines": [
+            19,
+            20
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Empresas",
+          "lines": [
+            21,
+            22
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Projetos",
+          "lines": [
+            23,
+            26
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Oportunidades",
+          "lines": [
+            27,
+            28
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Problemas",
+          "lines": [
+            29,
+            34
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Decisões",
+          "lines": [
+            35,
+            40
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Aprendizados",
+          "lines": [
+            41,
+            44
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Ideias",
+          "lines": [
+            45,
+            46
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Próximas ações",
+          "lines": [
+            47,
+            51
+          ],
+          "disposition": "retained_context_and_pending",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md"
+          ],
+          "reason": "Preservadas proveniência, limitações e pendências; não executadas como instruções atuais."
+        },
+        {
+          "section": "Fontes e conexões",
+          "lines": [
+            52,
+            59
+          ],
+          "disposition": "retained_context_and_pending",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md"
+          ],
+          "reason": "Preservadas proveniência, limitações e pendências; não executadas como instruções atuais."
+        },
+        {
+          "section": "Correção de rastreabilidade — 2026-09-24",
+          "lines": [
+            60,
+            62
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        }
+      ],
+      "metadata_disposition": "Identidade e data preservadas; frontmatter e introdução lidos como contexto, não como autoridade operacional.",
+      "stable_after_read": true
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-09-24.md",
+      "sha256": "861fcdce71b254dc2096187ce3cb9b1821ba6cf71debd0d2e46dc8157b78b221",
+      "size": 3643,
+      "lines": 55,
+      "mtime_ns": 1790301926119892967,
+      "id": "daily-24",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "consolidated_daily_note",
+      "read_scope": "entire_file",
+      "coverage_complete_for_note": true,
+      "coverage_complete_for_underlying_sessions": false,
+      "units_read": [
+        {
+          "section": "Pessoas",
+          "lines": [
+            19,
+            20
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Empresas",
+          "lines": [
+            21,
+            22
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Projetos",
+          "lines": [
+            23,
+            24
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Oportunidades",
+          "lines": [
+            25,
+            26
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Problemas",
+          "lines": [
+            27,
+            32
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Decisões",
+          "lines": [
+            33,
+            37
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Aprendizados",
+          "lines": [
+            38,
+            41
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Ideias",
+          "lines": [
+            42,
+            43
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Próximas ações",
+          "lines": [
+            44,
+            47
+          ],
+          "disposition": "retained_context_and_pending",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md"
+          ],
+          "reason": "Preservadas proveniência, limitações e pendências; não executadas como instruções atuais."
+        },
+        {
+          "section": "Fontes e conexões",
+          "lines": [
+            48,
+            55
+          ],
+          "disposition": "retained_context_and_pending",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md"
+          ],
+          "reason": "Preservadas proveniência, limitações e pendências; não executadas como instruções atuais."
+        }
+      ],
+      "metadata_disposition": "Identidade e data preservadas; frontmatter e introdução lidos como contexto, não como autoridade operacional.",
+      "stable_after_read": true
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-09-25.md",
+      "sha256": "8d6e89ed90448683ae20ada0c4cfb0b5a98e69d8e5762dd3cc97fe99f1c0fc61",
+      "size": 3849,
+      "lines": 62,
+      "mtime_ns": 1790301960957921557,
+      "id": "daily-25",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "consolidated_daily_note",
+      "read_scope": "entire_file",
+      "coverage_complete_for_note": true,
+      "coverage_complete_for_underlying_sessions": false,
+      "units_read": [
+        {
+          "section": "Pessoas",
+          "lines": [
+            23,
+            26
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Empresas",
+          "lines": [
+            27,
+            28
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Projetos",
+          "lines": [
+            29,
+            30
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Oportunidades",
+          "lines": [
+            31,
+            32
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Problemas",
+          "lines": [
+            33,
+            37
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Decisões",
+          "lines": [
+            38,
+            42
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Aprendizados",
+          "lines": [
+            43,
+            47
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Ideias",
+          "lines": [
+            48,
+            49
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Próximas ações",
+          "lines": [
+            50,
+            53
+          ],
+          "disposition": "retained_context_and_pending",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md"
+          ],
+          "reason": "Preservadas proveniência, limitações e pendências; não executadas como instruções atuais."
+        },
+        {
+          "section": "Fontes e conexões",
+          "lines": [
+            54,
+            62
+          ],
+          "disposition": "retained_context_and_pending",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md"
+          ],
+          "reason": "Preservadas proveniência, limitações e pendências; não executadas como instruções atuais."
+        }
+      ],
+      "metadata_disposition": "Identidade e data preservadas; frontmatter e introdução lidos como contexto, não como autoridade operacional.",
+      "stable_after_read": true
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-09-26.md",
+      "sha256": "de643835e492500258b04d2fc18a610ae02ba7d665a24800aaea519e3b12c6cc",
+      "size": 3753,
+      "lines": 60,
+      "mtime_ns": 1790388305317899622,
+      "id": "daily-26",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "consolidated_daily_note",
+      "read_scope": "entire_file",
+      "coverage_complete_for_note": true,
+      "coverage_complete_for_underlying_sessions": false,
+      "units_read": [
+        {
+          "section": "Pessoas",
+          "lines": [
+            23,
+            24
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Empresas",
+          "lines": [
+            25,
+            28
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Projetos",
+          "lines": [
+            29,
+            30
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Oportunidades",
+          "lines": [
+            31,
+            32
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Problemas",
+          "lines": [
+            33,
+            37
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Decisões",
+          "lines": [
+            38,
+            41
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Aprendizados",
+          "lines": [
+            42,
+            45
+          ],
+          "disposition": "reconciled_in_weekly",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+            "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+            "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+          ],
+          "reason": "Conhecimento já consolidado nos diários, reconciliado por data e escopo; estado histórico não revalidado operacionalmente."
+        },
+        {
+          "section": "Ideias",
+          "lines": [
+            46,
+            47
+          ],
+          "disposition": "non_durable_empty_section",
+          "targets": [],
+          "reason": "Seção vazia do template; não promovida."
+        },
+        {
+          "section": "Próximas ações",
+          "lines": [
+            48,
+            51
+          ],
+          "disposition": "retained_context_and_pending",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md"
+          ],
+          "reason": "Preservadas proveniência, limitações e pendências; não executadas como instruções atuais."
+        },
+        {
+          "section": "Fontes e conexões",
+          "lines": [
+            52,
+            60
+          ],
+          "disposition": "retained_context_and_pending",
+          "targets": [
+            "BRAIN/01-DIARIO/Semanal/2026-W39.md"
+          ],
+          "reason": "Preservadas proveniência, limitações e pendências; não executadas como instruções atuais."
+        }
+      ],
+      "metadata_disposition": "Identidade e data preservadas; frontmatter e introdução lidos como contexto, não como autoridade operacional.",
+      "stable_after_read": true
+    }
+  ],
+  "supporting_notes_read": [
+    {
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W38.md",
+      "sha256": "8157eefa921e8c4abc38f1565a18bff7e281c4cc7951e4129851140893e6f95a",
+      "size": 5535,
+      "lines": 61,
+      "mtime_ns": 1789884253987281500,
+      "read_scope": "entire_file",
+      "disposition": "read_for_continuity_or_deduplication",
+      "identity_semantics": "pre-edit bytes at base_commit"
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+      "sha256": "27945a2d7c18d9241486552d8f6b6e60241c2c0af7e6a54d106da73f733b0c24",
+      "size": 1278,
+      "lines": 41,
+      "mtime_ns": 1785869228677924217,
+      "read_scope": "entire_file",
+      "disposition": "read_for_continuity_or_deduplication",
+      "identity_semantics": "pre-edit bytes at base_commit"
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "sha256": "5e35aee2bc50a1f6f2ab4ac2bc065e622b203226a8e637ac3fcd2ec08dcbeb7b",
+      "size": 27350,
+      "lines": 235,
+      "mtime_ns": 1790301833181816699,
+      "read_scope": "entire_file",
+      "disposition": "read_for_continuity_or_deduplication",
+      "identity_semantics": "pre-edit bytes at base_commit"
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md",
+      "sha256": "c9e8f6b815044847a86fd2e4e8591defbb7b49d9228a73ae5132b039d6025648",
+      "size": 7283,
+      "lines": 82,
+      "mtime_ns": 1790024136824137191,
+      "read_scope": "entire_file",
+      "disposition": "read_for_continuity_or_deduplication",
+      "identity_semantics": "pre-edit bytes at base_commit"
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md",
+      "sha256": "1335c69a5edd53ebff55a94c21305246845d7cc1fefe0aed8451ea8249b1749b",
+      "size": 26542,
+      "lines": 205,
+      "mtime_ns": 1790388232710820160,
+      "read_scope": "entire_file",
+      "disposition": "read_for_continuity_or_deduplication",
+      "identity_semantics": "pre-edit bytes at base_commit"
+    }
+  ],
+  "inventory": {
+    "command": "python3 scripts/brain-source-inventory.py --days 7",
+    "source_count": 312,
+    "by_kind": {
+      "codex_history": 99,
+      "openclaw_history": 211,
+      "memory": 2
+    },
+    "surfaces": [
+      {
+        "agent": "main",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace/memory",
+        "resolved": "/data/.openclaw/workspace/memory",
+        "exists": true
+      },
+      {
+        "agent": "main",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace/MEMORY.md",
+        "resolved": "/data/.openclaw/workspace/MEMORY.md",
+        "exists": true
+      },
+      {
+        "agent": "main",
+        "profile": "main",
+        "kind": "openclaw_history",
+        "path": "/data/.openclaw/agents/main/sessions",
+        "resolved": "/data/.openclaw/agents/main/sessions",
+        "exists": true
+      },
+      {
+        "agent": "main",
+        "profile": "main",
+        "kind": "codex_history",
+        "path": "/data/.openclaw/agents/main/codex-home/sessions",
+        "resolved": "/data/.openclaw/agents/main/codex-home/sessions",
+        "exists": true
+      },
+      {
+        "agent": "main",
+        "profile": "kowalski",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/main/sessions",
+        "resolved": "/home/openclaw/.openclaw-kowalski/agents/main/sessions",
+        "exists": true
+      },
+      {
+        "agent": "main",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/main/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "main",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/main/sessions",
+        "exists": false
+      },
+      {
+        "agent": "main",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/main/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "kowalski",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-kowalski/memory",
+        "resolved": "/data/.openclaw/workspace-kowalski/memory",
+        "exists": true
+      },
+      {
+        "agent": "kowalski",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-kowalski/MEMORY.md",
+        "exists": false
+      },
+      {
+        "agent": "kowalski",
+        "profile": "main",
+        "kind": "openclaw_history",
+        "path": "/data/.openclaw/agents/kowalski/sessions",
+        "resolved": "/data/.openclaw/agents/kowalski/sessions",
+        "exists": true
+      },
+      {
+        "agent": "kowalski",
+        "profile": "main",
+        "kind": "codex_history",
+        "path": "/data/.openclaw/agents/kowalski/codex-home/sessions",
+        "resolved": "/data/.openclaw/agents/kowalski/codex-home/sessions",
+        "exists": true
+      },
+      {
+        "agent": "kowalski",
+        "profile": "kowalski",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions",
+        "resolved": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions",
+        "exists": true
+      },
+      {
+        "agent": "kowalski",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "kowalski",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/kowalski/sessions",
+        "exists": false
+      },
+      {
+        "agent": "kowalski",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/kowalski/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-darth-vader/memory",
+        "resolved": "/data/.openclaw/workspace-darth-vader/memory",
+        "exists": true
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-darth-vader/MEMORY.md",
+        "exists": false
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "main",
+        "kind": "openclaw_history",
+        "path": "/data/.openclaw/agents/darth-vader/sessions",
+        "resolved": "/data/.openclaw/agents/darth-vader/sessions",
+        "exists": true
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "main",
+        "kind": "codex_history",
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions",
+        "resolved": "/data/.openclaw/agents/darth-vader/codex-home/sessions",
+        "exists": true
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "kowalski",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/sessions",
+        "resolved": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/sessions",
+        "exists": true
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions",
+        "resolved": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions",
+        "exists": true
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "robotnik",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-robotnik/memory",
+        "resolved": "/data/.openclaw/workspace-robotnik/memory",
+        "exists": true
+      },
+      {
+        "agent": "robotnik",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-robotnik/MEMORY.md",
+        "exists": false
+      },
+      {
+        "agent": "robotnik",
+        "profile": "main",
+        "kind": "openclaw_history",
+        "path": "/data/.openclaw/agents/robotnik/sessions",
+        "resolved": "/data/.openclaw/agents/robotnik/sessions",
+        "exists": true
+      },
+      {
+        "agent": "robotnik",
+        "profile": "main",
+        "kind": "codex_history",
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions",
+        "resolved": "/data/.openclaw/agents/robotnik/codex-home/sessions",
+        "exists": true
+      },
+      {
+        "agent": "robotnik",
+        "profile": "kowalski",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/robotnik/sessions",
+        "exists": false
+      },
+      {
+        "agent": "robotnik",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/robotnik/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "robotnik",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/robotnik/sessions",
+        "exists": false
+      },
+      {
+        "agent": "robotnik",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/robotnik/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "sentinel",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-sentinel/memory",
+        "resolved": "/data/.openclaw/workspace-sentinel/memory",
+        "exists": true
+      },
+      {
+        "agent": "sentinel",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-sentinel/MEMORY.md",
+        "exists": false
+      },
+      {
+        "agent": "sentinel",
+        "profile": "main",
+        "kind": "openclaw_history",
+        "path": "/data/.openclaw/agents/sentinel/sessions",
+        "resolved": "/data/.openclaw/agents/sentinel/sessions",
+        "exists": true
+      },
+      {
+        "agent": "sentinel",
+        "profile": "main",
+        "kind": "codex_history",
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions",
+        "resolved": "/data/.openclaw/agents/sentinel/codex-home/sessions",
+        "exists": true
+      },
+      {
+        "agent": "sentinel",
+        "profile": "kowalski",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/sentinel/sessions",
+        "resolved": "/home/openclaw/.openclaw-kowalski/agents/sentinel/sessions",
+        "exists": true
+      },
+      {
+        "agent": "sentinel",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/sentinel/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "sentinel",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/sentinel/sessions",
+        "exists": false
+      },
+      {
+        "agent": "sentinel",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/sentinel/codex-home/sessions",
+        "exists": false
+      }
+    ],
+    "errors": [],
+    "content_read": false
+  },
+  "pending_inventory": [
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/20/rollout-2026-09-20T06-00-13-01a0bd66-9ab4-7fa3-959a-f19b189051dc.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 461719,
+      "mtime_ns": 1789884473164222138,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/750ef2d2-f4af-4626-858e-18a162bd5c43.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 248387,
+      "mtime_ns": 1789884473409222150,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/750ef2d2-f4af-4626-858e-18a162bd5c43.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 460002,
+      "mtime_ns": 1789884473445222151,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/20/rollout-2026-09-20T09-00-20-01a0be0b-8086-7540-b9bb-8639317225ca.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 98100,
+      "mtime_ns": 1789894849750226343,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/e57f07cb-914c-4b68-981b-c848bb221264.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 4348,
+      "mtime_ns": 1789894849774226369,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/e57f07cb-914c-4b68-981b-c848bb221264.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 45195,
+      "mtime_ns": 1789894849795226391,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/20/rollout-2026-09-20T15-00-16-01a0bf55-0b7b-7af1-94a2-76f41f4ed872.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 99134,
+      "mtime_ns": 1789916445044193977,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/7873c60b-1868-4818-8dff-b3b169e2aebc.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 4215,
+      "mtime_ns": 1789916445069194073,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/7873c60b-1868-4818-8dff-b3b169e2aebc.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 44982,
+      "mtime_ns": 1789916445090194154,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/20/rollout-2026-09-20T20-00-14-01a0c067-aaa3-76d0-81e9-bec23117f097.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 98963,
+      "mtime_ns": 1789934450589010223,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/c891263e-81a2-41ca-aa93-1937784383d2.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 4139,
+      "mtime_ns": 1789934450610010240,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/c891263e-81a2-41ca-aa93-1937784383d2.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 44830,
+      "mtime_ns": 1789934450626010254,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/20/rollout-2026-09-20T21-00-09-01a0c09e-8489-7302-9fda-496e52f70611.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 725887,
+      "mtime_ns": 1789938611092165149,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/e2817950-7794-4252-863b-053f2ff66a6b.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 733669,
+      "mtime_ns": 1789938611555165590,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/e2817950-7794-4252-863b-053f2ff66a6b.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 525870,
+      "mtime_ns": 1789938611606165639,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/367ae54c-b022-43a5-950e-751507745555.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 159941,
+      "mtime_ns": 1789938613470167417,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/21/rollout-2026-09-21T01-00-09-01a0c17a-3d49-7580-a0a7-a05e37874d46.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 96957,
+      "mtime_ns": 1789952436405736297,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f3374a12-fdf4-432f-a080-dde2485cfdea.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3398,
+      "mtime_ns": 1789952436430736318,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f3374a12-fdf4-432f-a080-dde2485cfdea.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 44394,
+      "mtime_ns": 1789952436456736340,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/20/rollout-2026-09-20T22-26-48-01a0c0ed-d884-7d63-95a6-33721e757f27.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 275285,
+      "mtime_ns": 1789958148604459506,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/e6d024fb-220b-4181-85b7-37bd596e5566.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 151473,
+      "mtime_ns": 1789958148688459545,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/21/rollout-2026-09-21T09-00-07-01a0c331-ac1a-73b2-8b21-4c5f426f5fde.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 99092,
+      "mtime_ns": 1789981250400365415,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0b628b1a-43f3-401b-acc6-d0541a1dd022.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 4210,
+      "mtime_ns": 1789981250425365446,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0b628b1a-43f3-401b-acc6-d0541a1dd022.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 44972,
+      "mtime_ns": 1789981250462365493,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/codex-home/sessions/2026/09/21/rollout-2026-09-21T10-45-07-01a0c391-cebc-7062-8a07-cff7c11ea298.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 73305,
+      "mtime_ns": 1789987567932859370,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/0c38ad23-2d45-492f-9cb4-0d9b7d5c99d5.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 13289,
+      "mtime_ns": 1789987567954859393,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/0c38ad23-2d45-492f-9cb4-0d9b7d5c99d5.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 32454,
+      "mtime_ns": 1789987567969859408,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/codex-home/sessions/2026/09/21/rollout-2026-09-21T10-46-13-01a0c392-cde6-7f92-b4a2-7631815c93bf.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 74470,
+      "mtime_ns": 1789987631340924523,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/71e128e9-f052-42f4-8d66-a9e1250ff215.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 18125,
+      "mtime_ns": 1789987631365924548,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/71e128e9-f052-42f4-8d66-a9e1250ff215.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 40459,
+      "mtime_ns": 1789987631384924568,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/codex-home/sessions/2026/09/21/rollout-2026-09-21T10-47-16-01a0c393-c4c5-7763-bd11-dc12cb54cb63.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 65988,
+      "mtime_ns": 1789987672815967172,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/0a3b828f-f0a9-4b07-8a6a-fc7207ef7aa4.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 8982,
+      "mtime_ns": 1789987672837967194,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/0a3b828f-f0a9-4b07-8a6a-fc7207ef7aa4.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 25293,
+      "mtime_ns": 1789987672858967216,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/a3b5d1dc-02c3-4a7b-832d-c4d4e52c8126.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 74402,
+      "mtime_ns": 1789987674018968409,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/21/rollout-2026-09-21T15-00-37-01a0c47b-b5ec-7972-a64d-e8e8941f4974.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 99992,
+      "mtime_ns": 1790002897729342947,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/ea72cbed-0919-4c13-8d84-51174623e51d.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 4217,
+      "mtime_ns": 1790002897773342966,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/ea72cbed-0919-4c13-8d84-51174623e51d.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 44986,
+      "mtime_ns": 1790002897793342974,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/21/rollout-2026-09-21T20-00-23-01a0c58e-2828-7491-ae83-619e74f9bab4.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 97254,
+      "mtime_ns": 1790020852474686089,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/c5c326bf-de01-491f-b2ba-c6f1ff315998.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 4138,
+      "mtime_ns": 1790020852511686064,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/c5c326bf-de01-491f-b2ba-c6f1ff315998.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 44828,
+      "mtime_ns": 1790020852527686053,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/22/rollout-2026-09-22T00-27-04-01a0c682-51c9-7790-b868-77ee8bd41b74.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 168739,
+      "mtime_ns": 1790036904155207306,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/de356aab-b245-4a8b-bc37-cf2f9fad5459.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 2468,
+      "mtime_ns": 1790036904183207336,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/de356aab-b245-4a8b-bc37-cf2f9fad5459.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 68490,
+      "mtime_ns": 1790036904267207426,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/22/rollout-2026-09-22T01-00-16-01a0c6a0-b8cb-73b0-9e71-7f437daea048.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 95906,
+      "mtime_ns": 1790038842688498378,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/9ea87dc1-926c-43d7-ac41-516910b10aff.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3399,
+      "mtime_ns": 1790038842722498420,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/9ea87dc1-926c-43d7-ac41-516910b10aff.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 44397,
+      "mtime_ns": 1790038842769498478,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/22/rollout-2026-09-22T02-00-10-01a0c6d7-8cd3-77d1-b21e-39128cc8d132.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 374390,
+      "mtime_ns": 1790042865170729406,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/070a5fe2-e654-4d16-bf8b-2aac974ee222.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 253264,
+      "mtime_ns": 1790042865332729590,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/070a5fe2-e654-4d16-bf8b-2aac974ee222.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 451062,
+      "mtime_ns": 1790042865370729634,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/22/rollout-2026-09-22T10-34-16-01a0c8ae-38dc-72b3-98a2-612e7cff8e67.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 172717,
+      "mtime_ns": 1790073332742783493,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/39bfe49e-6317-4005-9e8f-a97b93197adf.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 2166,
+      "mtime_ns": 1790073332763783518,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/39bfe49e-6317-4005-9e8f-a97b93197adf.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 68156,
+      "mtime_ns": 1790073332838783608,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/codex-home/sessions/2026/09/22/rollout-2026-09-22T13-31-22-01a0c950-5c97-73b0-8ffc-0fd9178c233b.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 242005,
+      "mtime_ns": 1790084382379114447,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/4f4bf76f-4dcf-40d3-b596-e99cd1c704a2.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 60728,
+      "mtime_ns": 1790084382477114498,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/4f4bf76f-4dcf-40d3-b596-e99cd1c704a2.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 167936,
+      "mtime_ns": 1790084382555114539,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/22/rollout-2026-09-22T15-00-50-01a0c9a2-483b-7800-85c9-ceb974ae9c39.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 97736,
+      "mtime_ns": 1790089290338070762,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/00b9d3d7-9b1f-4fe8-83ea-289b199b5e7c.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3399,
+      "mtime_ns": 1790089290387070801,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/00b9d3d7-9b1f-4fe8-83ea-289b199b5e7c.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 44397,
+      "mtime_ns": 1790089290451070850,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/22/rollout-2026-09-22T20-00-32-01a0cab4-aa41-7f80-bda5-fcb8969f83e0.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 100850,
+      "mtime_ns": 1790107282419231501,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/124d74f6-343c-4955-b959-309a1e6c607f.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 4222,
+      "mtime_ns": 1790107282473231419,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/124d74f6-343c-4955-b959-309a1e6c607f.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 44997,
+      "mtime_ns": 1790107282498231381,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/af9db9dc-803e-4921-8fd4-5dce498ab347.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 1116,
+      "mtime_ns": 1790124844436080346,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/d63bf943-02f0-4f63-89d7-c95d5655cb69.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 1522,
+      "mtime_ns": 1790125005258424421,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/d63bf943-02f0-4f63-89d7-c95d5655cb69.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 121846,
+      "mtime_ns": 1790125005290424489,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T01-00-23-01a0cbc7-2dcc-7242-99fa-a32c9ae881ae.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 99815,
+      "mtime_ns": 1790125268277158259,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/3cf45c4f-f4da-4b62-9c15-0e3fb092f9b8.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 4220,
+      "mtime_ns": 1790125269603148497,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/3cf45c4f-f4da-4b62-9c15-0e3fb092f9b8.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 44995,
+      "mtime_ns": 1790125269847146703,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/7d3edd23-8ffc-4075-a89b-4adbe6ab7073.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1521,
+      "mtime_ns": 1790125577698503889,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/7d3edd23-8ffc-4075-a89b-4adbe6ab7073.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 145817,
+      "mtime_ns": 1790125577744503719,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/9094cae6-bfa3-400c-83c6-f5cd5bad1589.trajectory.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 738,
+      "mtime_ns": 1790126894432388194,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/9aecbd92-5df1-4b5a-bf82-4b6b5adc3b3e.trajectory.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1122,
+      "mtime_ns": 1790127075307471193,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/583d7b76-9205-4183-8a04-f2937a1fc104.trajectory.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1125,
+      "mtime_ns": 1790127236372558144,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/7773b680-b95e-4852-a297-6fa80a551582.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1134,
+      "mtime_ns": 1790127528876737011,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/09/23/rollout-2026-09-23T01-38-43-01a0cbea-4560-7a22-96d5-fe74f03a8895.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 162313,
+      "mtime_ns": 1790127530427738005,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/7773b680-b95e-4852-a297-6fa80a551582.trajectory.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 75944,
+      "mtime_ns": 1790127530495738048,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/eef746e9-8730-4d83-9f3a-92112dc25c8e.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1131,
+      "mtime_ns": 1790127681766836709,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/codex-home/sessions/2026/09/23/rollout-2026-09-23T01-41-16-01a0cbec-9ce2-7c90-ad66-baa845b752e5.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 192326,
+      "mtime_ns": 1790127683380837778,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/eef746e9-8730-4d83-9f3a-92112dc25c8e.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 82890,
+      "mtime_ns": 1790127683421837805,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/6ebc151a-b5c9-4588-aba3-7dfceb02a915.trajectory.jsonl",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 736,
+      "mtime_ns": 1790127799693915572,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/51e218a3-f95a-465f-8605-f0e2e5168591.trajectory.jsonl",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1120,
+      "mtime_ns": 1790128006115056665,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/142a8b7d-9ce2-450e-82f4-3f468495e498.jsonl",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1131,
+      "mtime_ns": 1790128201302192713,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/09/23/rollout-2026-09-23T01-49-55-01a0cbf4-88ba-7533-8591-0675259cb7b4.jsonl",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 159860,
+      "mtime_ns": 1790128202980193890,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/142a8b7d-9ce2-450e-82f4-3f468495e498.trajectory.jsonl",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 85418,
+      "mtime_ns": 1790128203096193971,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/09/23/rollout-2026-09-23T01-51-33-01a0cbf6-080d-7031-9da1-9c636ba9de25.jsonl",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 111185,
+      "mtime_ns": 1790128298149260905,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/65a87b2c-a15a-4c46-b937-b7fdc904fbfc.jsonl",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1375,
+      "mtime_ns": 1790128298175260923,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/65a87b2c-a15a-4c46-b937-b7fdc904fbfc.trajectory.jsonl",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 42940,
+      "mtime_ns": 1790128298204260943,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/272e73ec-5312-4842-8600-3dd511e8e474.trajectory.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1128,
+      "mtime_ns": 1790128516299415694,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/09/23/rollout-2026-09-23T01-57-11-01a0cbfb-3020-7f83-8427-59f982cf4369.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 108969,
+      "mtime_ns": 1790128636919501802,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/d83b50c7-5b34-40ba-bddb-a3c017acab2b.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1382,
+      "mtime_ns": 1790128636940501817,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/d83b50c7-5b34-40ba-bddb-a3c017acab2b.trajectory.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 38216,
+      "mtime_ns": 1790128636971501840,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/fd2c2f84-028a-4423-b01e-837a886b9030.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 406879,
+      "mtime_ns": 1790129194208902435,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/fd2c2f84-028a-4423-b01e-837a886b9030.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 191055,
+      "mtime_ns": 1790129194334902526,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/8b160080-bc0a-4a54-9046-e651408e8d2b.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 461624,
+      "mtime_ns": 1790129624698683029,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/8b160080-bc0a-4a54-9046-e651408e8d2b.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 132548,
+      "mtime_ns": 1790129624823683252,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/66c84d6b-a596-4b69-ad95-10b4c954ac30.trajectory.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1122,
+      "mtime_ns": 1790136581227929140,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/09/23/rollout-2026-09-23T04-15-33-01a0cc79-dd32-7a71-818c-e99f7d45a620.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 112287,
+      "mtime_ns": 1790136939072286103,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/4e15f629-72fd-442f-8eb2-1fa9649311b2.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1374,
+      "mtime_ns": 1790136939098286130,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/4e15f629-72fd-442f-8eb2-1fa9649311b2.trajectory.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 40324,
+      "mtime_ns": 1790136939135286167,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/3953a84f-416f-4419-b418-5333b317a29e.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1532,
+      "mtime_ns": 1790137020131369078,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/3953a84f-416f-4419-b418-5333b317a29e.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 130440,
+      "mtime_ns": 1790137020165369113,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/bf91b25f-b8cd-4ce8-b3e8-4e7e7ffba924.trajectory.jsonl",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1127,
+      "mtime_ns": 1790137702576104526,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/6c2f21cb-75e8-455c-96d6-eb72cfb886a7.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3931,
+      "mtime_ns": 1790154026666067118,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/6c2f21cb-75e8-455c-96d6-eb72cfb886a7.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 188095,
+      "mtime_ns": 1790154026686067154,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/8d4fbae6-21c9-4b4c-9e2a-097bf4be5dea.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 43328,
+      "mtime_ns": 1790170549814264501,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/8d4fbae6-21c9-4b4c-9e2a-097bf4be5dea.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 338300,
+      "mtime_ns": 1790170549865264397,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T13-32-18-01a0ce77-93bc-7383-a228-1a0bcb7a11ba.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 462225,
+      "mtime_ns": 1790170764293934601,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/main/sessions/3b11906d-d497-480a-9d6a-c83aa323dd6d.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 113165,
+      "mtime_ns": 1790170764404934479,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/main/sessions/3b11906d-d497-480a-9d6a-c83aa323dd6d.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 309166,
+      "mtime_ns": 1790170764420934462,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/main/sessions/sessions.json",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 103551,
+      "mtime_ns": 1790170764475934401,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/codex-home/sessions/2026/09/23/rollout-2026-09-23T12-24-34-01a0ce39-91a4-78c0-9236-5afd01f79110.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 2005812,
+      "mtime_ns": 1790171737596850545,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/aa1379ed-4907-45cc-b80f-2a5cad584ffa.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 777276,
+      "mtime_ns": 1790171737657850573,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f19d67cb-4fe0-45a7-b28f-9fbfe7fdd375.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 5455,
+      "mtime_ns": 1790175637036272994,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f19d67cb-4fe0-45a7-b28f-9fbfe7fdd375.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 189600,
+      "mtime_ns": 1790175637145273074,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T17-59-56-01a0cf6c-9ad8-7503-816a-9421c1e18ee7.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 938414,
+      "mtime_ns": 1790187431575673229,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T18-17-17-01a0cf7c-7d39-70d3-847e-0cd2f2df644b.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 241328,
+      "mtime_ns": 1790187532846750757,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T18-18-39-01a0cf7d-bde1-7503-98d8-0b3c6584d1bf.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 741433,
+      "mtime_ns": 1790188138341317155,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/15eec7ee-4c55-483a-8a4b-55f0bca37740.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 349041,
+      "mtime_ns": 1790188138596317417,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/15eec7ee-4c55-483a-8a4b-55f0bca37740.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 282869,
+      "mtime_ns": 1790188139040317873,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T19-01-23-01a0cfa4-dddd-7d82-8dcb-23d00fe1b5f4.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 740291,
+      "mtime_ns": 1790191295198471736,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2026-09-23T19-01-18-716Z_d7b98a0d-682d-4f81-9921-a9b6d9e41977.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 687372,
+      "mtime_ns": 1790191295448471992,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2026-09-23T19-01-18-716Z_d7b98a0d-682d-4f81-9921-a9b6d9e41977.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 311728,
+      "mtime_ns": 1790191295481472025,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/09/23/rollout-2026-09-23T18-04-47-01a0cf71-0da2-7a41-b71f-96778541e253.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 1389487,
+      "mtime_ns": 1790191491489677953,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/83a7827f-e48d-4e15-af6f-ad8b1c4cea7a.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 901925,
+      "mtime_ns": 1790191491607678080,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/83a7827f-e48d-4e15-af6f-ad8b1c4cea7a.trajectory.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1289355,
+      "mtime_ns": 1790191491644678120,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T19-24-58-01a0cfba-7374-7dc1-acab-73418d16d3b7.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 288580,
+      "mtime_ns": 1790192181893456348,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/c63c4a52-f3ef-4ae9-8fcc-46eb74676870.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 30266,
+      "mtime_ns": 1790192181902456359,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/c63c4a52-f3ef-4ae9-8fcc-46eb74676870.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 87071,
+      "mtime_ns": 1790192181928456389,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T19-46-48-01a0cfce-7098-70e0-9eab-e56e84261eeb.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 575146,
+      "mtime_ns": 1790194238139369034,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0f2818d7-6056-4fb4-9669-f219892d4c8a.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 411621,
+      "mtime_ns": 1790194238331369235,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0f2818d7-6056-4fb4-9669-f219892d4c8a.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 291294,
+      "mtime_ns": 1790194238359369264,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T22-24-27-01a0d05e-c547-7632-83fa-e4bab5693eba.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 269473,
+      "mtime_ns": 1790202852485355092,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/bd8761f3-e150-410c-9ce0-512ab2c47ef7.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 50549,
+      "mtime_ns": 1790202852565355179,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/bd8761f3-e150-410c-9ce0-512ab2c47ef7.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 116726,
+      "mtime_ns": 1790202852634355254,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T18-57-09-01a0cfa0-fe71-70e2-a425-c2ac0b48f6b7.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 1330854,
+      "mtime_ns": 1790206855352903380,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T23-41-09-01a0d0a4-fe6c-70e1-883c-adfe88357e6e.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 718104,
+      "mtime_ns": 1790207892975317881,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T23-58-19-01a0d0b4-b68d-7e91-a53e-cd91f3297e7c.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 525987,
+      "mtime_ns": 1790208000103460468,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/3f3840eb-cda0-4963-ba94-d8cfc33fd8fb.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3546,
+      "mtime_ns": 1790212360509067265,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/3f3840eb-cda0-4963-ba94-d8cfc33fd8fb.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 187166,
+      "mtime_ns": 1790212360523067282,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0c7b7bee-424f-40f4-8497-18b5e37a67e4.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 228678,
+      "mtime_ns": 1790212390623095262,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/23/rollout-2026-09-23T11-30-22-01a0ce07-f0cc-7563-bb06-d9049bd476d5.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 347267,
+      "mtime_ns": 1790212390639095274,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/214ee61f-7e5e-4f1f-932d-135b46332eee.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 10465374,
+      "mtime_ns": 1790212701148817545,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0de6cd54-ff7d-45b1-a372-2e9a7d8d8ad8.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 412010,
+      "mtime_ns": 1790215540291221477,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0de6cd54-ff7d-45b1-a372-2e9a7d8d8ad8.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 190036,
+      "mtime_ns": 1790215540446221662,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/03f3e468-2a36-4b0d-95ad-b195c3b66530.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 305417,
+      "mtime_ns": 1790215780347508638,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/03f3e468-2a36-4b0d-95ad-b195c3b66530.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 130702,
+      "mtime_ns": 1790215780425508731,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/51317798-ca0f-48ee-8ed4-26644a9cfd9a.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 223994,
+      "mtime_ns": 1790215955896719407,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/51317798-ca0f-48ee-8ed4-26644a9cfd9a.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 280218,
+      "mtime_ns": 1790215955954719477,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/9f9ad26a-7eba-4995-8675-dff4b2ceab26.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3930,
+      "mtime_ns": 1790240425981436252,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/9f9ad26a-7eba-4995-8675-dff4b2ceab26.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 187550,
+      "mtime_ns": 1790240426012436283,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/24/rollout-2026-09-24T09-52-09-01a0d2d4-6193-71e3-8d85-1a034b860681.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 940970,
+      "mtime_ns": 1790245336084666797,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/80a3f151-f654-45a7-9f75-a5ad24052bcd.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 285157,
+      "mtime_ns": 1790245336448667424,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/80a3f151-f654-45a7-9f75-a5ad24052bcd.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 393692,
+      "mtime_ns": 1790245336535667574,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/24/rollout-2026-09-24T10-25-32-01a0d2f2-f1e8-7500-9db1-8179601a73d8.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 705053,
+      "mtime_ns": 1790246368104107232,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/aabdaf7d-e691-4a9f-9f07-cb886f0cba5a.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 445548,
+      "mtime_ns": 1790246368343107525,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/aabdaf7d-e691-4a9f-9f07-cb886f0cba5a.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 307947,
+      "mtime_ns": 1790246368505107723,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/24/rollout-2026-09-24T13-52-10-01a0d3b0-2283-7361-8acb-48c7ecfae883.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 545492,
+      "mtime_ns": 1790258411311279511,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/24/rollout-2026-09-24T14-01-23-01a0d3b8-9281-7161-ac5f-49fead4397b5.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 364838,
+      "mtime_ns": 1790258961970796020,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/93c2ab3e-9e12-469b-a5b6-248098ec2ac0.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 367335,
+      "mtime_ns": 1790258962074796120,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/93c2ab3e-9e12-469b-a5b6-248098ec2ac0.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 713286,
+      "mtime_ns": 1790258962101796146,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/24/rollout-2026-09-24T14-09-24-01a0d3bf-e802-7ba2-8969-c7fe81005fdd.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 476125,
+      "mtime_ns": 1790259535859347074,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0bfe6fa6-92a5-4e82-aa99-5816260188bc.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 93699,
+      "mtime_ns": 1790259535964347175,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0bfe6fa6-92a5-4e82-aa99-5816260188bc.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 178593,
+      "mtime_ns": 1790259535991347201,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/13ce27e9-ad6a-4829-b517-605dc831ade4.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3546,
+      "mtime_ns": 1790262028223726372,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/13ce27e9-ad6a-4829-b517-605dc831ade4.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 187166,
+      "mtime_ns": 1790262028265726446,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/041ac9e8-e59d-4324-a2d1-6b0c6980926b.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 44932,
+      "mtime_ns": 1790272126715713360,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/808b6c2a-783e-41ab-9ace-f17a844f01fe.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 151311,
+      "mtime_ns": 1790272262332733403,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/codex-home/sessions/2026/09/24/rollout-2026-09-24T13-56-22-01a0d3b3-f981-7af2-9e05-addc580a0ea1.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 6725572,
+      "mtime_ns": 1790273945955704582,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/b9859a9b-8b78-483e-a15f-3e2831bcbe19.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 1499869,
+      "mtime_ns": 1790273946280705575,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/109e5a95-e0c1-4d61-802c-b69118e5ffd6.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 2651,
+      "mtime_ns": 1790276383014986029,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/109e5a95-e0c1-4d61-802c-b69118e5ffd6.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 192699,
+      "mtime_ns": 1790276383025986037,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/50b81d4d-8604-4f25-995a-145f43608024.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 10433835,
+      "mtime_ns": 1790279417753936523,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/24/rollout-2026-09-24T17-43-15-01a0d483-b2c4-7e81-91c0-115b9cb6682f.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 1998619,
+      "mtime_ns": 1790279513665034668,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/24/rollout-2026-09-24T19-51-55-01a0d4f9-7b7f-7120-92ca-fa171b022a8e.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 248943,
+      "mtime_ns": 1790279531989053424,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/73c88c68-a388-444e-bcee-e5dca9cff255.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3546,
+      "mtime_ns": 1790280027317304349,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/73c88c68-a388-444e-bcee-e5dca9cff255.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 187676,
+      "mtime_ns": 1790280027393304364,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/24/rollout-2026-09-24T19-53-02-01a0d4fa-838e-73e0-867d-b3b7dc5b755b.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 769452,
+      "mtime_ns": 1790280051706309752,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/ac87bb64-7ef3-4bfc-bae6-7a2ee976e8d0.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3038463,
+      "mtime_ns": 1790280070188314301,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/24/rollout-2026-09-24T20-00-53-01a0d501-b16e-7953-a3be-aeab2d290b83.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 398228,
+      "mtime_ns": 1790280070225314311,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f2582613-2666-4c76-bdb2-cfdd9aa5a0c9.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 94999,
+      "mtime_ns": 1790280334527415594,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f2582613-2666-4c76-bdb2-cfdd9aa5a0c9.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 260587,
+      "mtime_ns": 1790280334575415617,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/09/24/rollout-2026-09-24T10-22-21-01a0d2f0-0843-7cb2-a6df-122439f51836.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 1410232,
+      "mtime_ns": 1790297027707066777,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/cc997b3a-7e1f-4586-a9ca-f1b96906eb42.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1814678,
+      "mtime_ns": 1790297027802066791,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/cc997b3a-7e1f-4586-a9ca-f1b96906eb42.trajectory.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1515087,
+      "mtime_ns": 1790297027822066794,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2fe3f067-08a0-4cdf-b623-6f01ed92de02.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3536,
+      "mtime_ns": 1790298022232892366,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2fe3f067-08a0-4cdf-b623-6f01ed92de02.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 187808,
+      "mtime_ns": 1790298022257892358,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/39a095f9-b423-457f-a4c5-8872a9a12c92.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 10405983,
+      "mtime_ns": 1790299852129067658,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/edc05013-b3d8-455a-a93b-9a7cc6467ec9.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 428602,
+      "mtime_ns": 1790302046671991893,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/edc05013-b3d8-455a-a93b-9a7cc6467ec9.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 191922,
+      "mtime_ns": 1790302046782991984,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/6ab2aa8b-0866-476c-8894-5df422900a90.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 264544,
+      "mtime_ns": 1790302288136190039,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/6ab2aa8b-0866-476c-8894-5df422900a90.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 131992,
+      "mtime_ns": 1790302288218190106,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/7956d5a8-56b2-4b94-9dec-71f5ddd0d0a5.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 296136,
+      "mtime_ns": 1790302509563070705,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/7956d5a8-56b2-4b94-9dec-71f5ddd0d0a5.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 386184,
+      "mtime_ns": 1790302509650070670,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/8371a518-1e8c-4fb2-8013-a0cc96a3112d.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 4106,
+      "mtime_ns": 1790326826996628426,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/8371a518-1e8c-4fb2-8013-a0cc96a3112d.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 188258,
+      "mtime_ns": 1790326827022628457,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/09/25/rollout-2026-09-25T10-42-23-01a0d828-bac9-7b23-9cf1-f35a2606a2e2.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 162954,
+      "mtime_ns": 1790333496199270585,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/5df1f096-e955-4ff3-a30f-869f7479eab9.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "darth-vader"
+      ],
+      "kind": "openclaw_history",
+      "size": 11562,
+      "mtime_ns": 1790333496224270607,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/5df1f096-e955-4ff3-a30f-869f7479eab9.trajectory.jsonl",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "darth-vader"
+      ],
+      "kind": "openclaw_history",
+      "size": 91657,
+      "mtime_ns": 1790333496241270622,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/sessions/sessions.json",
+      "agents": [
+        "darth-vader"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 306558,
+      "mtime_ns": 1790333496341270712,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T10-55-56-01a0d835-245a-7683-99ee-e5e523b05750.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 2205183,
+      "mtime_ns": 1790335950579370682,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f6e99a0c-4959-4768-9ebf-03210d21234f.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1456055,
+      "mtime_ns": 1790335951401371829,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f6e99a0c-4959-4768-9ebf-03210d21234f.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1049863,
+      "mtime_ns": 1790335951685372224,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T12-19-32-01a0d881-ad17-70b0-9c44-6db98cec8a7b.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 2314174,
+      "mtime_ns": 1790341471069334739,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T13-04-39-01a0d8aa-fe14-7d61-ae37-04ca9260e024.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 399165,
+      "mtime_ns": 1790341719058427136,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/5707cae4-75b0-4c8b-925e-f0937c7942e8.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1244968,
+      "mtime_ns": 1790341719529427377,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/5707cae4-75b0-4c8b-925e-f0937c7942e8.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1653921,
+      "mtime_ns": 1790341723050429185,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T13-27-50-01a0d8c0-35d7-79a3-b860-2e8502f726b3.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 310858,
+      "mtime_ns": 1790343881480671491,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T13-44-30-01a0d8cf-799c-7d20-af49-a92642f181ac.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 823894,
+      "mtime_ns": 1790344684045637801,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/822486cb-6f82-4535-93bc-e08e08d0e4f5.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 525417,
+      "mtime_ns": 1790344684593638423,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/822486cb-6f82-4535-93bc-e08e08d0e4f5.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 392144,
+      "mtime_ns": 1790344684675638516,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T13-58-10-01a0d8db-fb0b-7921-872c-5ed288f65bbb.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 202976,
+      "mtime_ns": 1790344707772664729,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/83f05411-5d39-4bba-a099-b3355c0c8269.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 748172,
+      "mtime_ns": 1790348405069294928,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/83f05411-5d39-4bba-a099-b3355c0c8269.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 10258782,
+      "mtime_ns": 1790348408373298408,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f25e44e7-f01c-4361-b749-4a88d04eb6eb.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 5452,
+      "mtime_ns": 1790348424059314924,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f25e44e7-f01c-4361-b749-4a88d04eb6eb.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 189585,
+      "mtime_ns": 1790348424113314981,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T15-01-30-01a0d915-f821-7841-b084-e91ffa8668a7.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 228025,
+      "mtime_ns": 1790348517289412784,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T15-01-58-01a0d916-6502-77f3-8966-f34188600ce9.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 404547,
+      "mtime_ns": 1790348731888636478,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T15-05-37-01a0d919-bb42-7a23-a05b-06d632bc933c.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 318791,
+      "mtime_ns": 1790348879251789259,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T15-08-01-01a0d91b-eef3-73e2-90b4-1630fa667176.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 252656,
+      "mtime_ns": 1790348918581829945,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T15-52-57-01a0d945-119a-7842-afdd-85672d2ac1ad.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 424387,
+      "mtime_ns": 1790352071877446541,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T15-05-19-01a0d919-7445-78d0-a020-f8871361a226.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 3421385,
+      "mtime_ns": 1790353708352187444,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T16-28-37-01a0d965-b784-7cd1-9cf5-21ddfdf10c45.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 260240,
+      "mtime_ns": 1790353736994225531,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/3aadfb5e-37ec-4f54-83a0-c1bbdd56db63.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1769191,
+      "mtime_ns": 1790353737162225754,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/3aadfb5e-37ec-4f54-83a0-c1bbdd56db63.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 2635049,
+      "mtime_ns": 1790353741486231475,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T16-28-36-01a0d965-b683-7712-94d5-694b124d494f.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 280650,
+      "mtime_ns": 1790353775866276702,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T16-48-42-01a0d978-1aa6-70a1-b25a-55f7f7207a45.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 310311,
+      "mtime_ns": 1790354988518721460,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T16-49-38-01a0d978-f6d7-7b62-b094-6d25201eeccb.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 594754,
+      "mtime_ns": 1790355682227603791,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2026-09-25T16-49-35-420Z_2bc3d9a3-f71d-4a9d-928a-2a067df4fb42.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 346449,
+      "mtime_ns": 1790355682642604554,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2026-09-25T16-49-35-420Z_2bc3d9a3-f71d-4a9d-928a-2a067df4fb42.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 250139,
+      "mtime_ns": 1790355683089605376,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T17-01-33-01a0d983-deb5-7133-814f-cc1bfdc00d2d.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 249651,
+      "mtime_ns": 1790355739515707179,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T17-19-39-01a0d994-72f6-7952-939a-7f28d76b899e.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 2486427,
+      "mtime_ns": 1790361117058030401,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T18-33-20-01a0d9d7-e7af-7ca3-9c84-f047fdf054fc.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 1206562,
+      "mtime_ns": 1790362023054792708,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T19-13-06-01a0d9fc-4dcb-7620-a820-a4687b973229.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 583197,
+      "mtime_ns": 1790363605821197839,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/05c99be4-ed71-4c98-8121-a6cfdda53ca9.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3544,
+      "mtime_ns": 1790366418749866888,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/05c99be4-ed71-4c98-8121-a6cfdda53ca9.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 187696,
+      "mtime_ns": 1790366418806866942,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T19-17-17-01a0da00-24eb-7b13-9b02-9f4b232c5780.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 3029861,
+      "mtime_ns": 1790370427125233511,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T21-06-55-01a0da64-8543-7f20-882a-fed570299edf.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 893750,
+      "mtime_ns": 1790371955135583018,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/18b518cd-2c03-43fb-b888-874be00b7ae5.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 509571,
+      "mtime_ns": 1790371955517583710,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/18b518cd-2c03-43fb-b888-874be00b7ae5.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 356086,
+      "mtime_ns": 1790371955702584045,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T21-32-44-01a0da7c-25d2-70b2-bbce-e0cbb133185a.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 375650,
+      "mtime_ns": 1790371984938636399,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/codex-home/sessions/2026/09/25/rollout-2026-09-25T23-34-21-01a0daeb-7d1f-7851-9473-f8a842d41520.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 189834,
+      "mtime_ns": 1790382956262544368,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/900c3610-fa50-4fd5-a83c-b9e37238ac13.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 97015,
+      "mtime_ns": 1790382956323544420,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/d552943e-d2ae-435a-8f61-c38bbac03cdc.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3546,
+      "mtime_ns": 1790384432948851487,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/d552943e-d2ae-435a-8f61-c38bbac03cdc.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 187706,
+      "mtime_ns": 1790384432982851502,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/7dc6f712-aae6-4fc9-b7e6-f341e2d94fc5.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 10611904,
+      "mtime_ns": 1790385079350283330,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/25/rollout-2026-09-25T22-22-25-01a0daa9-a317-7aa0-b9b1-a19b0330ed4a.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 2025654,
+      "mtime_ns": 1790385079361283339,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/d047bbfa-a5a0-4276-87df-7cb776cf9e62.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 461049,
+      "mtime_ns": 1790388379998008336,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/d047bbfa-a5a0-4276-87df-7cb776cf9e62.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 191182,
+      "mtime_ns": 1790388380106008509,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/c11b8733-b4d5-46b1-a578-a78dc249c8da.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 322153,
+      "mtime_ns": 1790388638640396620,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/c11b8733-b4d5-46b1-a578-a78dc249c8da.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 131116,
+      "mtime_ns": 1790388638699396704,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/09/26/rollout-2026-09-26T03-15-39-01a0dbb6-1af9-7960-881f-9c818f8dd805.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 80777,
+      "mtime_ns": 1790392545292844739,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/7327a052-3229-4e79-ac5d-19b6a78d790e.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3161,
+      "mtime_ns": 1790392545321844738,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/7327a052-3229-4e79-ac5d-19b6a78d790e.trajectory.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 33051,
+      "mtime_ns": 1790392545366844736,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/09/26/rollout-2026-09-26T03-35-02-01a0dbc7-d6ef-7ef3-bf2d-abe14cf11dbe.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 414798,
+      "mtime_ns": 1790394222907949724,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/511c937c-1680-40ad-94c1-bebede852ebc.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 371456,
+      "mtime_ns": 1790394223124949922,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/511c937c-1680-40ad-94c1-bebede852ebc.trajectory.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 255872,
+      "mtime_ns": 1790394223365950142,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/09/26/rollout-2026-09-26T03-55-02-01a0dbda-27e1-70d3-8266-1c77b69ef154.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 161745,
+      "mtime_ns": 1790395087692979032,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/fab86d18-c157-44c0-b272-c42b0def0bab.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 48880,
+      "mtime_ns": 1790395087773979127,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/fab86d18-c157-44c0-b272-c42b0def0bab.trajectory.jsonl",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 103556,
+      "mtime_ns": 1790395088002979395,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/sessions.json",
+      "agents": [
+        "sentinel"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 857236,
+      "mtime_ns": 1790395088079979485,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f4ee95cc-c2c0-426a-bf76-58a72b97dc92.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 4120,
+      "mtime_ns": 1790413226647903312,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f4ee95cc-c2c0-426a-bf76-58a72b97dc92.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 188240,
+      "mtime_ns": 1790413226705903393,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/4fc73001-0d14-4b6b-b50d-bc0857fbf0a9.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 175882,
+      "mtime_ns": 1790424198510642359,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/4fc73001-0d14-4b6b-b50d-bc0857fbf0a9.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 310890,
+      "mtime_ns": 1790424198570642440,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/8b3848b2-2242-4a89-8599-01face8293d5.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 11112,
+      "mtime_ns": 1790424200633645209,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/sessions.json",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 194836,
+      "mtime_ns": 1790424200639645217,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/bd3da038-ac81-44d7-b528-851d5e8aa630.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3546,
+      "mtime_ns": 1790434826533544591,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/bd3da038-ac81-44d7-b528-851d5e8aa630.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 187706,
+      "mtime_ns": 1790434826624544681,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/26/rollout-2026-09-26T12-25-37-01a0ddad-9bc1-7e30-a29a-61b1d17046db.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 2918528,
+      "mtime_ns": 1790447077759597633,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/26/rollout-2026-09-26T18-24-26-01a0def6-1d1c-7ae1-b48b-6478a0da0b00.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 1349773,
+      "mtime_ns": 1790449136721009049,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2026-09-26T18-24-23-595Z_591033bb-2c2a-405a-8bfd-858d7731c1d4.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 905397,
+      "mtime_ns": 1790449137231009357,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2026-09-26T18-24-23-595Z_591033bb-2c2a-405a-8bfd-858d7731c1d4.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 558113,
+      "mtime_ns": 1790449137513009528,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/26/rollout-2026-09-26T18-59-08-01a0df15-e192-73e3-8481-5dfc5e88cd35.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 312801,
+      "mtime_ns": 1790449222298062109,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0cad541f-f9f3-4a6c-a467-227ec059b13a.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3546,
+      "mtime_ns": 1790452823760383653,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0cad541f-f9f3-4a6c-a467-227ec059b13a.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 187706,
+      "mtime_ns": 1790452823806383748,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/26/rollout-2026-09-26T19-18-18-01a0df27-6c74-70d2-9c98-73320b99bf4b.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 2240282,
+      "mtime_ns": 1790455244745406818,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/26/rollout-2026-09-26T20-40-32-01a0df72-b77a-75d3-853e-b33093734ef4.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 894302,
+      "mtime_ns": 1790456826106851994,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/ef2abed9-34da-4d08-9d06-b74fa18d0527.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 374578,
+      "mtime_ns": 1790456827243853732,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/ef2abed9-34da-4d08-9d06-b74fa18d0527.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 291338,
+      "mtime_ns": 1790456827307853830,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/26/rollout-2026-09-26T21-07-14-01a0df8b-297a-7771-994c-4121d296b7c6.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 392215,
+      "mtime_ns": 1790456883895939603,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/codex-home/sessions/2026/09/26/rollout-2026-09-26T20-58-50-01a0df83-7781-7f01-b19c-00821719e71f.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 429474,
+      "mtime_ns": 1790457000898112889,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/b0387ea0-1e23-4808-b4a4-77d6a59fd89b.trajectory.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 311216,
+      "mtime_ns": 1790457001049113110,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/b0387ea0-1e23-4808-b4a4-77d6a59fd89b.jsonl",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 116918,
+      "mtime_ns": 1790457007582122642,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/sessions.json",
+      "agents": [
+        "kowalski"
+      ],
+      "profiles": [
+        "kowalski"
+      ],
+      "kind": "openclaw_history",
+      "size": 1425430,
+      "mtime_ns": 1790457007604122674,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/workspace/memory/2026-09-26.md",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "shared_workspace"
+      ],
+      "kind": "memory",
+      "size": 994,
+      "mtime_ns": 1790459492856410317,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/26/rollout-2026-09-26T21-12-14-01a0df8f-bd3e-75e2-a970-8ad1f1451535.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 2469632,
+      "mtime_ns": 1790460603010549899,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/26/rollout-2026-09-26T22-09-52-01a0dfc4-8097-7f50-b138-87f0990c4498.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 758331,
+      "mtime_ns": 1790461547143219308,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/32fcb528-6ac8-459e-a88d-785afeb9b964.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 494236,
+      "mtime_ns": 1790461547498219850,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/32fcb528-6ac8-459e-a88d-785afeb9b964.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 360693,
+      "mtime_ns": 1790461547549219927,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/26/rollout-2026-09-26T22-25-53-01a0dfd3-2d1a-7072-aa08-af8aa3c8704a.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 419943,
+      "mtime_ns": 1790461573255259096,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/26/rollout-2026-09-26T22-45-18-01a0dfe4-f31f-7492-813d-bf0c2f697e6f.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 854869,
+      "mtime_ns": 1790463320995876134,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/26/rollout-2026-09-26T22-55-06-01a0dfed-ec05-7be1-8ffe-a54a985666e6.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 2424733,
+      "mtime_ns": 1790469085698244695,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2026-09-26T22-55-01-053Z_26b64df3-2b6e-41ad-bf36-a2a4866dc223.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1878082,
+      "mtime_ns": 1790469085797244777,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2026-09-26T22-55-01-053Z_26b64df3-2b6e-41ad-bf36-a2a4866dc223.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 1184987,
+      "mtime_ns": 1790469085810244788,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/27/rollout-2026-09-27T00-31-27-01a0e046-1f57-7cf0-a918-08915f40278d.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 431206,
+      "mtime_ns": 1790469104639260560,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/09/26/rollout-2026-09-26T23-30-42-01a0e00e-81c7-7f41-822f-662e3dea91a0.jsonl",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 46525413,
+      "mtime_ns": 1790469394512515062,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/250b8d75-9a3e-47d3-80cd-1a67f58bf3b1.trajectory.jsonl",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 691375,
+      "mtime_ns": 1790469394616515157,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/250b8d75-9a3e-47d3-80cd-1a67f58bf3b1.jsonl",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 451950,
+      "mtime_ns": 1790469394765515292,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/sessions.json",
+      "agents": [
+        "robotnik"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 791398,
+      "mtime_ns": 1790469394773515299,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/102aee55-f5b4-4d8c-ae04-a9bad2e1622d.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 3542,
+      "mtime_ns": 1790470822701939173,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/102aee55-f5b4-4d8c-ae04-a9bad2e1622d.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 187654,
+      "mtime_ns": 1790470822760939234,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/workspace/memory/2026-09-27.md",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "shared_workspace"
+      ],
+      "kind": "memory",
+      "size": 2753,
+      "mtime_ns": 1790472353611461537,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/27/rollout-2026-09-27T01-24-50-01a0e077-029a-72c2-8d09-b12d3fbb6aec.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 406310,
+      "mtime_ns": 1790472356459462211,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/808b6c2a-783e-41ab-9ace-f17a844f01fe.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 219067,
+      "mtime_ns": 1790472660817585737,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/27/rollout-2026-09-27T01-18-26-01a0e071-23f8-7f70-a9be-09d9153fc470.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 909957,
+      "mtime_ns": 1790472661128585906,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/27/rollout-2026-09-27T01-30-47-01a0e07c-7252-75a0-b7b9-bac0915a2815.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 1043235,
+      "mtime_ns": 1790473598774284985,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/15494b26-ab25-4b48-bfc1-699442b9cf80.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 703368,
+      "mtime_ns": 1790473599219285367,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/15494b26-ab25-4b48-bfc1-699442b9cf80.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 511086,
+      "mtime_ns": 1790473599550285650,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/27/rollout-2026-09-27T01-46-45-01a0e08b-11bc-7932-84f7-024533f1bd9b.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "codex_history",
+      "size": 627421,
+      "mtime_ns": 1790473793228453613,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/fe966be6-4dcc-4ffb-856b-4a3303d9d601.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 2668509,
+      "mtime_ns": 1790473793343453714,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/fe966be6-4dcc-4ffb-856b-4a3303d9d601.trajectory.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 10194579,
+      "mtime_ns": 1790473793395453760,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/sessions.json",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 2197892,
+      "mtime_ns": 1790488805553924652,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/a3d33231-bd18-4dfd-8bfa-8dcaf2cce19f.jsonl",
+      "agents": [
+        "main"
+      ],
+      "profiles": [
+        "main"
+      ],
+      "kind": "openclaw_history",
+      "size": 122402,
+      "mtime_ns": 1790488843445958261,
+      "content_read": false,
+      "disposition": "pending_not_reviewed_in_weekly_cycle"
+    }
+  ],
+  "prior_receipt_backlog": {
+    "receipt": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-26-daily.json",
+    "sha256": "a1842d2683d1a7e23688ac666b9496d3cb3daeb787acf9a70dbfd519bf2ad7e5",
+    "disposition": "carried_forward_without_new_raw_source_resolution",
+    "scope": "All remaining units, attachments, alternative formats, prior temporary reviews, sources outside window and earlier retention dependencies remain pending as specified in referenced receipt. No raw-source coverage claimed from weekly note review.",
+    "prior_inventory_pending_count": 326,
+    "prior_outside_inventory_count": 87
+  },
+  "traceability": {
+    "missing_final_receipts": [
+      "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-23-daily.json",
+      "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-24-daily.json"
+    ],
+    "finding": "Paths absent in base HEAD and initial worktree; weekly review preserves existing corrections, not retroactive receipts.",
+    "historical_cleanup": "Recorded in 22/09 diary; not reaudited or reauthorized.",
+    "daily_first_added_commits": {
+      "2026-09-23": "356b230",
+      "2026-09-24": "cc1812c",
+      "2026-09-25": "1e5961b",
+      "2026-09-26": "8ca0fb5"
+    }
+  },
+  "promotion": {
+    "new_permanent_notes": 0,
+    "updated_permanent_notes": [
+      "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+    ],
+    "count": 3,
+    "method": "Update existing knowledge with cross-context synthesis and justified relationships, without duplicating source narratives."
+  },
+  "archive": {
+    "moved": [],
+    "deleted": [],
+    "disposition": "retain_reviewed_notes",
+    "reason": "Recent diaries preserve chronology, traceability corrections and unresolved coverage; permanent notes remain useful. No trivial content copied to archive for quota."
+  },
+  "semantic_search": {
+    "status": "available_read_only_before_edits",
+    "index_at": "2026-09-26T09:01:50.580376Z",
+    "source_digest": "9588e62385f5e20b76ad7146011205e356d75210d1282e0e4aa86a457e5040c1",
+    "raw_history_access": false,
+    "rebuild": false
+  },
+  "publication": {
+    "status": "pending_at_receipt_creation",
+    "local_commit_required": true,
+    "remote_push_requested": true,
+    "remote_publication_confirmed": false,
+    "evidence": "Actual content commit and successful configured origin/main push are recorded after execution in a separate publication receipt; no self-referential future hash is asserted here."
+  },
+  "safety": {
+    "silent": true,
+    "user_messages": 0,
+    "brain_agent_created": false,
+    "external_access": "configured Git push only, after validation",
+    "raw_history_deletion": false,
+    "configuration_changes": false
+  }
+}

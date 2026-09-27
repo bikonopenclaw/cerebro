@@ -6,8 +6,16 @@ created: '2026-09-21T19:35:12.394147Z'
 created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-relationships: []
-updated: '2026-09-21T20:54:07.904960Z'
+relationships:
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md
+  reason: O caso comercial distingue premissas da oferta, parecer visual e aceite humano.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-26-daily.json#K2-K215
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W39.md
+  reason: A semana reforça que uma correção humana não valida dimensões não testadas.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-27-weekly.json#daily-25-26
+updated: '2026-09-27T06:00:00Z'
 ---
 
 # Validacao tecnica nao substitui aceite humano
@@ -17,7 +25,7 @@ categoria: operacional
 tipo: guardrail
 fonte: consolidacao semanal 2026-W33; consolidacao semanal 2026-W37; lote 365 Control em 2026-09-14; consolidacao semanal 2026-W38
 confiabilidade: alta
-ultima_revisao: 2026-09-20
+ultima_revisao: 2026-09-27
 tags: [aceite, validacao, fail-closed, provimento-213, fip, kowalski, versao, artefato, entrega]
 ```
 
@@ -48,6 +56,12 @@ Na semana 2026-W37, os rascunhos A/B da Bikon foram revisados e entregues sem ac
 Em 2026-09-14, carrossel e Reel 365 Control chegaram a `APPROVED_FOR_TECHNICAL_DELIVERY` e foram entregues privadamente, mas permaneceram com `approval=null`, `publication=null` e `publication_authority=false`. No Reel, Robotnik validou o MP4 integral enquanto Kowalski cobriu apenas o pacote visual; as duas evidencias foram mantidas separadas.
 
 Em 2026-W38, o primeiro PDF ARX do cliente 2111 passou pipeline e QA, mas foi rejeitado porque a fonte nao comprovava os backups realizados. O predecessor preservou o sucesso tecnico e o aceite negativo; nova apresentacao ou nova coleta nao poderia apagar nenhum desses fatos.
+
+## Reconciliação de escopo do aceite — semana 2026-W39
+
+O caso Business Gestão de 24/09, consolidado no [[01-DIARIO/2026/2026-09-26|diário de 26/09]], acrescenta um limite comercial ao padrão: PASS técnico/visual declarado não comprova quantidade atual, composição do pacote, preço, suporte ou SLA. Corrigir a oferta exige reconciliar as premissas fornecidas pelo proprietário e a versão do documento; não basta melhorar o acabamento. O caso permanece detalhado em [[40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos|validação visual e premissas comerciais]], sem transformar condições de um cliente em política geral nem atestar aceite final.
+
+O inverso também importa: a confirmação humana de que o grupo voltou a responder, registrada em [[01-DIARIO/2026/2026-09-25|25/09]], comprova o retorno observado, não homologação financeira, auditoria de canais ou aprovação de outras operações. Parecer técnico e confirmação humana precisam ambos declarar objeto, versão quando aplicável e dimensão efetivamente verificada. Fontes e limites da reconciliação: [[01-DIARIO/Semanal/2026-W39|semana 2026-W39]].
 
 ## Relacoes
 

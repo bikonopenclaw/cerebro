@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-09-26T02:00:00Z'
+updated: '2026-09-27T06:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,14 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação semanal — 2026-09-27
+
+- [[01-DIARIO/Semanal/2026-W39|W39]]: seis de seis diários disponíveis na janela lidos integralmente (21–26/09). Sem diário de 20/09 e sem diário de 27/09 no corte de 06:00 UTC; domingo ainda aberto. Isto mede revisão de notas, não cobertura das conversas.
+- Inventário móvel: 312 arquivos, sem erros; 211 entradas OpenClaw, 99 rollouts Codex e duas memórias main. Agentes/perfis e superfícies ausentes preservados no recibo; nenhuma cobertura nova das fontes brutas por esta revisão semanal.
+- Três notas permanentes existentes atualizadas; cronologia e conflitos reconciliados. Fila do recibo de 26/09 carregada por hash, inclusive dependências anteriores e fontes fora da janela; recibos finais de 23/24 continuam ausentes, sem fechamento retroativo.
+- Recibo semanal efetivo: `brain-v2/reports/coverage-2026-09-27-weekly.json`. Pesquisa semântica local disponível somente leitura antes das edições, índice de 26/09 09:01 UTC; complementada por leitura direta. Sem rebuild ou acesso a provedor externo.
+- Nenhum arquivo movido ou excluído: notas examinadas retêm valor de contexto, auditoria ou pendência. Health Score 96/100 não recalculado e não convertido em percentual semântico. Commit e publicação remota são verificados após a gravação, não presumidos pelo cron.
 
 ## Verificação de cobertura — 2026-09-26
 

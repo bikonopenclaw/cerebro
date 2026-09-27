@@ -4,13 +4,21 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-09-26T02:00:00Z'
+updated: '2026-09-27T06:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-09-27, consolidação semanal silenciosa — W39
+
+- Revisados integralmente os seis diários disponíveis de 21 a 26/09; criado `01-DIARIO/Semanal/2026-W39.md` e ligado ao MOC. Ausências de 20/09 e de 27/09 no corte explícitas, sem inferir ausência de atividade.
+- Reconciliados três padrões em notas permanentes existentes: rastreabilidade de memória/publicação, diagnóstico restrito à etapa observada e aceite técnico/humano/comercial com escopo próprio. Nenhuma nota permanente duplicada.
+- Persistido `brain-v2/reports/coverage-2026-09-27-weekly.json` com hashes/posições dos diários, disposições, inventário de 312 arquivos e fila anterior preservada por referência verificável. Inventário não tratado como cobertura das sessões.
+- Atualizado HEALTH, sem recalcular o score legado. Recibos ausentes de 23/24 permanecem lacunas históricas; visibilidade restaurada não foi confundida com cobertura completa.
+- Nenhum item arquivado: registros examinados conservam contexto decisório, correções ou dependências úteis. Sem exclusão, configuração, operação externa de negócio, agente Brain ou mensagem ao Hebert. Commit e push Git conferidos separadamente após a revisão.
 
 ## 2026-09-26, consolidação diária silenciosa
 
