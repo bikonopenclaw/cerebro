@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-09-29T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/KOWALSKI.md
@@ -28,7 +28,7 @@ relationships:
 categoria: canal_operacional
 fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14 e qualificacao do fluxo universal em 2026-09-16
 confiabilidade: alta
-ultima_revisao: 2026-09-17
+ultima_revisao: 2026-09-29
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
@@ -205,6 +205,21 @@ Regra reforcada: ausencia de saida no transcript nao autoriza repetir coleta, ge
 - O comparativo preservou `evidence=INSUFFICIENT`: Bitdefender estava autenticado, mas NinjaOne nao possuia terminal produtivo com a validacao exigida. O PDF documenta a disponibilidade de evidencia e nao deve ser tratado como comparacao integral.
 - A Torre Operacional de 12/09 tambem fechou separadamente em `SUCCESS`, com QA aprovado e entrega somente interna ao Hebert. Em ambos os dias, ausencia de registro foi mantida como limitacao, nao como prova de ausencia de atividade.
 - Regra operacional: sucesso do produto significa que o documento representa honestamente a evidencia disponivel; nao converte fonte incompleta em cobertura integral nem autoriza entrega externa.
+
+## Recuperação semanal de 21–25/09 — recortes observados em 28/09/2026
+
+A memória de 27/09 deixava a recuperação inconclusa. Relatos terminais Sentinel de 28/09 avançam essa cronologia: WhatsApp Wv4 informa `SUCCESS`, coleta tardia apenas da sexta com reutilização das coortes anteriores; NinjaOne informa `PRODUCTIVE_RESULT=PASS` e `MANDATORY_VALIDATION=PASS` para o mesmo ciclo; Bitdefender informa os mesmos gates com `SOURCE_COVERAGE=AUTHENTICATED_EXPLICIT_LIMITS`. São relatos de execução de escopo próprio, não prova de fechamento integral da cadeia ou de entrega ao usuário. Esta consolidação não reconsultou providers nem controlador.
+
+O texto WhatsApp registra coleta da sexta em 28/09 às 02:29:25 UTC: não é fotografia tirada na sexta. A evidência disponível também inclui uma mensagem de indisponibilidade no consumo semanal; materialização e consumo são etapas diferentes. Sem reconciliação específica do envio, não declarar a entrega WhatsApp concluída.
+
+No histórico do grupo, os resumos ARX e NinjaOne preservam limites importantes:
+
+- ARX: cobertura histórica de cinco das onze contas correntes, lacuna formal em 22/09 e quatro exceções concentradas no Cartório Camburi. Sucessos observados na sexta não encerram a recorrência nem demonstram saúde da base inteira. Pendem identificação da conta em estado `other`, ampliação do vínculo histórico e validação posterior de recuperação.
+- NinjaOne: 37 tickets no snapshot de 26/09, sem histórico exposto suficiente para saldo líquido, eventos removidos ou encerramentos sem timestamp. Uma janela rotulada semanal não transforma snapshot em histórico completo; não correlacionar tickets a ARX sem cliente/ativo/assunto demonstrados.
+
+A mensagem Bitdefender de 28/09 às 17:57 BRT é expressamente **parcial**, relativa a 21–25/09. Registra cinco incidentes criados no período e dois anteriores atualizados, sem usar os sete como novas detecções semanais. Na consulta ali relatada, incidentes bloqueados ainda estavam abertos: ação automática e encerramento humano são dimensões distintas. O Security Audit auxiliar cobre 21–27/09; suas ocorrências agrupadas não podem ser atribuídas à semana útil, à sexta ou a detecções únicas. O fechamento completo continua pendente de eventos históricos com cobertura e distribuição diária. A autorização de entrega parcial relatada pertence àquela entrega; não autoriza novo envio ou operação nesta rotina.
+
+Fontes: duas memórias main de 26/27, unidades textuais Sentinel e espelhos do grupo identificados por hash/linha no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-29-daily.json`. Espelho de mensagem documenta o conteúdo registrado, não leitura ou aceite humano. O `PASS` técnico e a entrega parcial não se contradizem quando seus objetos e limitações são mantidos separados; ver [[40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano|gates de aceite]] e [[70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION|continuidade durável]].
 
 ## Padrão visual para relatórios externos
 

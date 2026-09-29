@@ -15,7 +15,7 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W39.md
   reason: A semana reforça que uma correção humana não valida dimensões não testadas.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-27-weekly.json#daily-25-26
-updated: '2026-09-27T06:00:00Z'
+updated: '2026-09-29T02:00:00Z'
 ---
 
 # Validacao tecnica nao substitui aceite humano
@@ -25,7 +25,7 @@ categoria: operacional
 tipo: guardrail
 fonte: consolidacao semanal 2026-W33; consolidacao semanal 2026-W37; lote 365 Control em 2026-09-14; consolidacao semanal 2026-W38
 confiabilidade: alta
-ultima_revisao: 2026-09-27
+ultima_revisao: 2026-09-29
 tags: [aceite, validacao, fail-closed, provimento-213, fip, kowalski, versao, artefato, entrega]
 ```
 
@@ -62,6 +62,12 @@ Em 2026-W38, o primeiro PDF ARX do cliente 2111 passou pipeline e QA, mas foi re
 O caso Business Gestão de 24/09, consolidado no [[01-DIARIO/2026/2026-09-26|diário de 26/09]], acrescenta um limite comercial ao padrão: PASS técnico/visual declarado não comprova quantidade atual, composição do pacote, preço, suporte ou SLA. Corrigir a oferta exige reconciliar as premissas fornecidas pelo proprietário e a versão do documento; não basta melhorar o acabamento. O caso permanece detalhado em [[40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos|validação visual e premissas comerciais]], sem transformar condições de um cliente em política geral nem atestar aceite final.
 
 O inverso também importa: a confirmação humana de que o grupo voltou a responder, registrada em [[01-DIARIO/2026/2026-09-25|25/09]], comprova o retorno observado, não homologação financeira, auditoria de canais ou aprovação de outras operações. Parecer técnico e confirmação humana precisam ambos declarar objeto, versão quando aplicável e dimensão efetivamente verificada. Fontes e limites da reconciliação: [[01-DIARIO/Semanal/2026-W39|semana 2026-W39]].
+
+## Observação natural não se encerra apenas pelo relógio — 28/09/2026
+
+O checkpoint de qualificação natural registrou a janela original de 24 horas encerrada, mas `0/3` tarefas naturais elegíveis, exposição insuficiente das propriedades alteradas e `ready_for_review=false`. A lição é separar tempo decorrido, exposição efetiva por propriedade, representatividade da amostra e inspeção do produto. Uma extensão passiva da observação não é aprovação; tarefas artificiais ou repetição de efeitos não preenchem legitimamente uma quota de uso natural.
+
+Fonte: chamadas de checkpoint e espera da sessão main `ca07a16c-ab62-48e4-8bd5-9e06138d0e31`, linhas 16 e 18, em 28/09. Este registro preserva o estado declarado naquele corte, sem verificar novamente o observador nem antecipar o resultado de uma revisão posterior. Identidades e limites no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-29-daily.json`.
 
 ## Relacoes
 

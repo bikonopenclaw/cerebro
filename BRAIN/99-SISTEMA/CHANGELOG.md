@@ -4,13 +4,20 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-09-27T06:00:00Z'
+updated: '2026-09-29T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-09-29, consolidação diária silenciosa
+
+- Criado diário UTC de 29/09 (28/09 às 23h BRT), ligado ao MOC cronológico, com cobertura seletiva explícita e inventário de 523 arquivos.
+- Atualizadas notas existentes: checkpoint Cresol sem confundir preflight e OAuth com homologação; cronologia da recuperação semanal preservando cobertura parcial, consumo e entrega distintos; qualificação natural dependente de exposição/amostra, não só tempo decorrido.
+- Persistido `brain-v2/reports/coverage-2026-09-29-daily.json` com identidades, unidades, disposições e fila anterior por hash. Não fabricados recibos de 23/24 nem encerradas propostas financeiras sem releitura primária.
+- HEALTH atualizado; gate estrutural validado sem converter score em cobertura semântica. Nenhuma nova nota permanente duplicada, exclusão, configuração, operação externa, agente Brain ou mensagem ao Hebert. Somente commit local; sem push neste ciclo.
 
 ## 2026-09-27, consolidação semanal silenciosa — W39
 

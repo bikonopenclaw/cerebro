@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-09-27T06:00:00Z'
+updated: '2026-09-29T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,15 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-09-29
+
+- Ciclo UTC de 29/09, correspondente a 28/09 às 23h BRT. Inventário móvel de sete dias: 523 arquivos, sem erros, sendo 364 entradas OpenClaw, 157 rollouts Codex e duas memórias main. Contagem de arquivos não mede conversas nem cobertura semântica.
+- Duas memórias main lidas integralmente e recortes de sessões selecionados por unidade. O contexto Cresol do Darth foi revisado em memórias main; não se declara cobertura das sessões próprias do Darth. Recibo efetivo: `brain-v2/reports/coverage-2026-09-29-daily.json`.
+- Fila anterior de 27/09 → 26/09 preservada por hash, incluindo fontes fora da janela, revisões temporárias e dependências de retenção. Candidatos financeiros antigos consultados, mas não encerrados sem releitura primária. Lacuna dos recibos finais de 23/24 permanece histórica.
+- Notas existentes atualizadas, sem duplicar conhecimento permanente. Pesquisa semântica local disponível somente leitura antes das edições; nenhum rebuild, provedor externo ou mudança de configuração.
+- Gate estrutural local nesta revisão: 416 Markdown, zero links internos quebrados, zero uncategorized, zero notas cognitivas inalcançáveis/isoladas e um componente. Isso não demonstra suficiência semântica ou cobertura das transcrições. Health Score legado 96/100 mantido, sem recálculo.
+- Commit local e publicação remota são provas separadas; nenhuma publicação remota neste ciclo. Sem exclusão, reexecução operacional ou mensagem ao Hebert. Ver [[01-DIARIO/2026/2026-09-29|diário e limites]].
 
 ## Verificação semanal — 2026-09-27
 
