@@ -4,13 +4,21 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-09-29T02:00:00Z'
+updated: '2026-10-01T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-01, consolidação diária silenciosa
+
+- Criado diário UTC de 01/10 (30/09 às 23h BRT) e ligado ao MOC, com inventário de 467 arquivos e cobertura seletiva explícita.
+- Retomada a revisão visual de 28/09 por releitura primária: atualizadas notas existentes de Instagram Bikon e validação visual, preservando reprovação humana, QA por hash e separação de transporte/aceite/publicação.
+- Atualizado Relatórios Operacionais com o aviso posterior de falha em duas ocorrências naturais, sem atribuir causa ao provider nem encerrar a recuperação geral.
+- Registrada lacuna do ciclo de 30/09: os dois históricos examinados terminaram por limite de uso antes de ferramentas, sem diário ou recibo final encontrado. Não fabricados fechamentos retroativos; ausências históricas de 23/24 preservadas.
+- Recibo `brain-v2/reports/coverage-2026-10-01-daily.json` e HEALTH documentam fontes/disposições e fila anterior por hash. Sem duplicar nota permanente, excluir fontes, operar sistemas externos, alterar configuração, criar agente Brain ou enviar mensagem ao Hebert. Commit apenas local; sem push neste ciclo.
 
 ## 2026-09-29, consolidação diária silenciosa
 

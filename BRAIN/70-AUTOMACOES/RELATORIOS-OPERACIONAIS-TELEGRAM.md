@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-29T02:00:00Z'
+updated: '2026-10-01T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/KOWALSKI.md
@@ -28,7 +28,7 @@ relationships:
 categoria: canal_operacional
 fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14 e qualificacao do fluxo universal em 2026-09-16
 confiabilidade: alta
-ultima_revisao: 2026-09-29
+ultima_revisao: 2026-10-01
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
@@ -220,6 +220,12 @@ No histórico do grupo, os resumos ARX e NinjaOne preservam limites importantes:
 A mensagem Bitdefender de 28/09 às 17:57 BRT é expressamente **parcial**, relativa a 21–25/09. Registra cinco incidentes criados no período e dois anteriores atualizados, sem usar os sete como novas detecções semanais. Na consulta ali relatada, incidentes bloqueados ainda estavam abertos: ação automática e encerramento humano são dimensões distintas. O Security Audit auxiliar cobre 21–27/09; suas ocorrências agrupadas não podem ser atribuídas à semana útil, à sexta ou a detecções únicas. O fechamento completo continua pendente de eventos históricos com cobertura e distribuição diária. A autorização de entrega parcial relatada pertence àquela entrega; não autoriza novo envio ou operação nesta rotina.
 
 Fontes: duas memórias main de 26/27, unidades textuais Sentinel e espelhos do grupo identificados por hash/linha no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-29-daily.json`. Espelho de mensagem documenta o conteúdo registrado, não leitura ou aceite humano. O `PASS` técnico e a entrega parcial não se contradizem quando seus objetos e limitações são mantidos separados; ver [[40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano|gates de aceite]] e [[70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION|continuidade durável]].
+
+## Observação natural posterior — registro de 30/09/2026
+
+A mensagem automática registrada em main em 30/09 às 12:07 UTC informa `FAIL / NATIVE_RUN_FAILED` nas ocorrências `bitdefender-retention-29set` e `helpdesk-29set`, preservando o resultado original e as demais ocorrências como pendentes. É evidência do relato do observador, não diagnóstico independente da causa ou do estado dos providers.
+
+Esse checkpoint impede tratar a recuperação controlada de 21–25/09 como aceitação natural de toda a rotina. Preservar separadas a recuperação específica, a ocorrência agendada e a prova de entrega. Não inferir falha em todas as fontes, recuperação posterior, autorização de retry ou fechamento a partir desse aviso. Fonte: sessão main `21d770e9-3018-48f4-ac7e-aae528cb4694`, unidade `38ea21b7-bcfb-4299-a00c-4d65435f7ebc`, linha 58; identidade no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-01-daily.json`.
 
 ## Padrão visual para relatórios externos
 

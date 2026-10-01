@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-26T02:00:00Z'
+updated: '2026-10-01T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md
@@ -31,9 +31,9 @@ relationships:
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidação semanal 2026-W26; revisão visual Bikon em 2026-07-09; bloqueio de transporte em 2026-09-07; reparo causal Capixaba em 2026-09-18/19; revisão da proposta Business Gestão de 24/09 consolidada em 26/09/2026
+fonte: consolidação semanal 2026-W26; revisão visual Bikon em 2026-07-09; bloqueio de transporte em 2026-09-07; reparo causal Capixaba em 2026-09-18/19; revisão da proposta Business Gestão de 24/09 consolidada em 26/09/2026; QA versionado da campanha de 28/09 consolidado em 01/10/2026
 confiabilidade: alta
-ultima_revisao: 2026-09-26
+ultima_revisao: 2026-10-01
 tags: [relatorios, pdf, bikon, kowalski, robotnik, qualidade, identidade-visual, integridade, transporte]
 ```
 
@@ -68,6 +68,19 @@ A proposta de firewall e suporte para Business Gestão recebeu PASS técnico/vis
 O aprendizado é distinguir **acabamento visual, coerência comercial, aceite humano e entrega**. Contrato anterior é referência histórica, não prova da quantidade ou oferta atuais. Conferir a unidade cobrada, escopo, limites do suporte e componentes do preço antes de apresentar a proposta como pronta; não inventar validade, cobertura ou condições para preencher lacunas. Uma alteração posterior de escopo requer reconciliação do conteúdo e dos totais, sem herdar automaticamente o QA ou aceite da versão anterior.
 
 Este registro não valida o PDF, não atesta entrega/aceite final e não transforma condições desse cliente em política comercial geral. Fonte: sessão Kowalski `b9859a9b-8b78-483e-a15f-3e2831bcbe19`, linhas JSONL 2, 97, 112, 115, 117, 122, 124 e 215; hash e caminho após reset em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-26-daily.json` (K2–K215). Candidato pendente da revisão anterior, agora reconciliado com a fonte primária.
+
+## QA de vídeo vinculado ao pacote — caso de 28/09/2026
+
+Na campanha Bikon “Sistemas governados por IA”, Hebert rejeitou títulos/subtítulos embaralhados e fonte fina, pedindo Reel com movimento. A revisão técnica posterior relatou alteração concorrente da pasta e restringiu o veredito **AJUSTAR** ao ZIP preservado `e0a5fa511225f69e7df0dafac3111631b25fa0ccfb89d270be9925f6122700a5`. O próprio revisor declarou não ter auditado o ZIP seguinte. Esta ocorrência reforça a regra já consolidada: parecer acompanha os bytes examinados, não nome de pasta, rótulo V2 ou anúncio de correção.
+
+O revisor relatou fonte variável efetivamente Light engrossada por contorno, texto/logo incorporados à imagem que recebia zoom e corte real da marca ao longo do vídeo. Também distinguiu exportação 1080×1920/30 fps de animação intermediária 540×960/15 fps. Aprendizados específicos:
+
+- Conferir peso tipográfico efetivamente renderizado, não apenas nome da fonte ou parâmetro solicitado.
+- Inspecionar quadros ao longo do tempo e manter texto/logo estáveis quando esse for o requisito do briefing; metadados finais não provam resolução nativa, legibilidade ou ausência de clipping.
+- Distinguir movimento de câmera sobre fotografia de movimento independente de pessoas/objetos. Nenhum dos dois implica, sozinho, atendimento ao briefing.
+- Não converter margens numéricas daquele episódio em safe area universal, nem transferir aprovação ou reprovação para um novo hash.
+
+Fonte: Robotnik R54 e Kowalski K56/K60/K62, relidos nas fontes primárias e identificados em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-01-daily.json`. Constatações técnicas são atribuídas ao revisor; esta consolidação não abriu mídia nem recalculou hashes dos ZIPs. Continuidade e limites de aceite em [[70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK|Instagram Bikon]].
 
 ## Relações
 

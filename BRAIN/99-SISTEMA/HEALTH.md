@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-09-29T02:00:00Z'
+updated: '2026-10-01T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,16 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-10-01
+
+- Ciclo UTC de 01/10, correspondente a 30/09 às 23h BRT. Inventário de sete dias: 467 arquivos, sem erros — 329 entradas OpenClaw, 136 rollouts Codex e duas memórias main. Não é denominador de conversas nem percentual semântico.
+- Cobertura seletiva: duas memórias main relidas e reconciliadas por identidade/disposição; unidades primárias da campanha de 28/09 e aviso operacional de 30/09 revistos. QA/aceite e recuperação/observação natural mantidos separados; nenhuma nova nota permanente duplicada.
+- Nova lacuna comprovada no escopo: históricos das tentativas de 30/09 às 02:00/02:30 UTC encerraram com `usage_limit_reached` e sem chamadas de ferramenta; diário e recibo final não encontrados. Não se criou evidência retroativa. Ausências dos recibos de 23/24 permanecem históricas.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-10-01-daily.json`. Pendências de 29/09 → 27/09 → 26/09 carregadas por hash, inclusive fontes fora da janela e candidatos ainda não reconciliados; inventário não concede cobertura ou elegibilidade para exclusão.
+- Pesquisa semântica local disponível em modo somente leitura; sem reconstrução do índice ou troca de provedor. Health Score legado 96/100 mantido sem recálculo: não mede cobertura nem suficiência de significado.
+- Gate estrutural local: 417 Markdown, zero links quebrados, zero uncategorized, zero notas cognitivas inalcançáveis/isoladas, um componente e nenhuma candidata a segredo detectada. Isso mede estrutura, não cobertura ou validação independente de conteúdo.
+- Commit local e publicação remota são provas independentes; nenhuma publicação remota neste ciclo. Ver [[01-DIARIO/2026/2026-10-01|diário e limites]].
 
 ## Verificação de cobertura — 2026-09-29
 

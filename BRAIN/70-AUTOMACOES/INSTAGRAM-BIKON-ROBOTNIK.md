@@ -6,8 +6,12 @@ created: '2026-09-21T19:31:17.466455Z'
 created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-relationships: []
-updated: '2026-09-21T21:52:39.723601Z'
+relationships:
+- type: references
+  target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md
+  reason: A campanha de 28/09 evidencia QA vinculado aos bytes e separação de aceite humano e transporte.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-01-daily.json
+updated: '2026-10-01T02:00:00Z'
 ---
 
 # Instagram Bikon, Robotnik
@@ -16,7 +20,7 @@ updated: '2026-09-21T21:52:39.723601Z'
 nome: Instagram Bikon Robotnik
 status: contrato_criativo_v1_ativo_primeira_publicacao_confirmada_fechamento_pendente
 responsavel: Robotnik sob coordenação do Puppet Master
-ultima_revisao: 2026-09-15
+ultima_revisao: 2026-10-01
 fonte: conversa Hebert/Puppet Master e workspace Robotnik
 tags: [instagram, meta, robotnik, marketing, bikon]
 ```
@@ -220,6 +224,15 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 - O lote seguinte substituiu repeticao de template por cenas, pessoas, enquadramentos e mensagens distintas. Os manifests correntes de carrossel e Reel fecharam `REVIEW_COMPLETE / APPROVED_FOR_TECHNICAL_DELIVERY` e foram consumidos somente como gates de entrega privada.
 - Robotnik validou estrategia, precisao editorial, arquivos e o MP4 integral de 24 segundos. Kowalski validou o pacote visual, narrativa, variedade, composicao, marca e legendas. As duas coberturas foram registradas separadamente.
 - Estado apos a entrega privada: `approval=null`, `publication=null` e `publication_authority=false`; nao houve publicacao, agendamento ou impulsionamento.
+
+## Campanha Sistemas governados por IA — checkpoint de 28/09, consolidado em 01/10/2026
+
+- Hebert reprovou a campanha por títulos/subtítulos embaralhados e fonte muito fina, pedindo um Reel com movimento. É uma decisão sobre essa campanha, não aceite das versões posteriores nem nova autorização de publicação.
+- O revisor técnico preservou o ZIP `e0a5fa511225f69e7df0dafac3111631b25fa0ccfb89d270be9925f6122700a5` após observar alterações concorrentes na pasta. Seu parecer **AJUSTAR**, com corte de logo durante o movimento e problemas tipográficos, vale exclusivamente para esses bytes. Declarou não ter auditado o ZIP seguinte `e6146a904a8c01ff43db4736550b2477cefa8fb36fdadb5c7feac1a2c8f9e65d`.
+- Posteriormente, Robotnik anunciou outro pacote V2, hash `252d8e102d0f2c940b17b416f14b50b4fb0c05ca7dd86dbcc59358b84238c38f`, com textos/logo fixos e QA técnico aprovado. Isso é relato do produtor; o parecer antigo não valida nem reprova esse hash final. A existência de três hashes sob a mesma denominação exige reconciliação por artefato, não por nome.
+- Hebert autorizou fracionar o ZIP final. O produtor relatou sete partes; o recorte revisto não comprova recebimento íntegro no destino, QA independente desse hash ou aceite criativo. Pedido de transporte não é aprovação artística nem autorização de publicar/agendar. Nenhuma publicação foi verificada nesta consolidação.
+
+Fontes primárias: Robotnik R54/R215/R217/R222/R223 e Kowalski K56/K60/K62, com hashes/linhas no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-01-daily.json`. Revisão temporária anterior retomada seletivamente; mídias não reinspecionadas e os demais candidatos permanecem pendentes. Os aprendizados de tipografia, camadas e QA concorrente estão em [[40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos|validação visual]]. Não retomar renderização, enviar ou publicar a partir deste registro histórico.
 
 ## Complementos reconciliados — lote 8 de 2026-09-21
 
