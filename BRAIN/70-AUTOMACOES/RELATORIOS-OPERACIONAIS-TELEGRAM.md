@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-01T02:00:00Z'
+updated: '2026-10-02T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/KOWALSKI.md
@@ -28,7 +28,7 @@ relationships:
 categoria: canal_operacional
 fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14 e qualificacao do fluxo universal em 2026-09-16
 confiabilidade: alta
-ultima_revisao: 2026-10-01
+ultima_revisao: 2026-10-02
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
@@ -226,6 +226,14 @@ Fontes: duas memórias main de 26/27, unidades textuais Sentinel e espelhos do g
 A mensagem automática registrada em main em 30/09 às 12:07 UTC informa `FAIL / NATIVE_RUN_FAILED` nas ocorrências `bitdefender-retention-29set` e `helpdesk-29set`, preservando o resultado original e as demais ocorrências como pendentes. É evidência do relato do observador, não diagnóstico independente da causa ou do estado dos providers.
 
 Esse checkpoint impede tratar a recuperação controlada de 21–25/09 como aceitação natural de toda a rotina. Preservar separadas a recuperação específica, a ocorrência agendada e a prova de entrega. Não inferir falha em todas as fontes, recuperação posterior, autorização de retry ou fechamento a partir desse aviso. Fonte: sessão main `21d770e9-3018-48f4-ac7e-aae528cb4694`, unidade `38ea21b7-bcfb-4299-a00c-4d65435f7ebc`, linha 58; identidade no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-01-daily.json`.
+
+## Observação natural de 01/10/2026 — resultados por ocorrência
+
+Três avisos do observador registrados em main informam `bitdefender-daily-01out=PASS` (conteúdo/evidência verificados pelo observador), `helpdesk-daily-01out=FAIL` e `ninjaone-daily-01out=FAIL`, ambos com `NATIVE_RUN_FAILED`. Os resultados originais e as demais ocorrências pendentes foram preservados.
+
+O PASS é somente daquela ocorrência Bitdefender; não encerra a falha de retention de 29/09, os semanais ou a aceitação natural de toda a cadeia. As duas falhas nativas tampouco diagnosticam indisponibilidade dos providers. Esta revisão leu os avisos, não as evidências operacionais subjacentes; não comprova entrega, aceite humano ou reparo posterior e não autoriza reexecução.
+
+Fonte: sessão main `30fd50ca-d37b-4277-9db6-892556d62d7f`, linhas 3–5, unidades `c1aa06ab-835b-4529-9845-6af481c26e7b`, `b321b9ef-5da4-4467-bb90-2485b5cc6586` e `cdb43180-ac0f-4e61-96b4-f32f0215541f`; identidades em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-02-daily.json`.
 
 ## Padrão visual para relatórios externos
 

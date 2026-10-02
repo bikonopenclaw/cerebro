@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-01T02:00:00Z'
+updated: '2026-10-02T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,15 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-10-02
+
+- Ciclo UTC de 02/10, correspondente a 01/10 às 23h BRT. Inventário de sete dias: 490 arquivos, sem erros — 353 entradas OpenClaw, 135 rollouts Codex e duas memórias main. Metadados de arquivo não medem cobertura de conversas.
+- Revisão seletiva com fontes identificadas por agente/perfil, hashes e posições; memórias main relidas sem nova promoção. Checkpoints de negócio atribuídos às fontes, sem reexecução ou auditoria dos providers. Recibo: `brain-v2/reports/coverage-2026-10-02-daily.json`; cobertura global permanece parcial e sem elegibilidade de exclusão.
+- Lacuna adicional de rastreabilidade: a síntese mensal de setembro está em `0e69851`, mas `coverage-2026-10-01-monthly.json` não foi localizado no HEAD/árvore de trabalho. Corrigida a ressalva no resumo e acrescentado acesso pelo MOC Diário; revisões temporárias ficam pendentes, sem fabricar encerramento mensal. Lacunas de 23/24 e do ciclo de 30/09 preservadas.
+- `0e69851` também contém diário/recibo diário de 01/10: prova de persistência local pelo sync posterior, não prova de commit próprio da rotina diária. Publicação remota não consultada nem executada neste ciclo.
+- Fila de 01/10 → 29/09 → 27/09 → 26/09 carregada por hash, inclusive fontes fora da janela. Pesquisa semântica disponível somente leitura, com índice de 01/10 às 09:02 UTC; sem rebuild ou provedor externo.
+- Health Score legado 96/100 mantido sem recálculo; não é percentual de cobertura ou qualidade semântica. Ver [[01-DIARIO/2026/2026-10-02|diário e limites]].
 
 ## Verificação de cobertura — 2026-10-01
 

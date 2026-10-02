@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-27T06:00:00Z'
+updated: '2026-10-02T02:00:00Z'
 relationships:
 - type: derived_from
   target: BRAIN/01-DIARIO/Semanal/2026-W39.md
@@ -45,7 +45,7 @@ categoria: operacional
 tipo: aprendizado_permanente
 fonte: consolidação semanal 2026-W28; Portal 213 Stage 1B R2.4 em 2026-08-20; qualificacao mensal ARX em 2026-09-08/09; fechamento semanal Relatorios Operacionais em 2026-09-14; consolidacao semanal 2026-W38
 confiabilidade: alta
-ultima_revisao: 2026-09-27
+ultima_revisao: 2026-10-02
 tags: [monitoramento, evidencia, recencia, revalidacao, ninjaone, backup, hyper-v, operacao, checkpoint, cobertura-temporal, paginacao]
 ```
 
@@ -89,6 +89,14 @@ Evidência antiga também não comprova estado atual. Toda conclusão operaciona
 A falta de acesso às fontes do Brain em 22/09, a recusa de inspeção protegida registrada no diário de 23/09 e a ausência de resposta do Faturamento reconciliada em 25/09 não são o mesmo tipo de falha. O padrão comum é limitar o diagnóstico à etapa observada: visibilidade do revisor, admissão da inspeção e processamento da mensagem, respectivamente. Visibilidade posteriormente restaurada não encerra cobertura editorial; inspeção recusada não diagnostica o provider; ingresso comprovado seguido de falha de compactação supera a hipótese de ausência de entrada, mas não atesta toda a saúde do canal.
 
 Preservar hipótese anterior como histórica e ligar a correção à evidência posterior evita ampliar permissões ou repetir operações com base no sintoma errado. Fontes desta síntese: [[01-DIARIO/2026/2026-09-22|22/09]], [[01-DIARIO/2026/2026-09-23|23/09]] e [[01-DIARIO/2026/2026-09-25|25/09]], lidas na [[01-DIARIO/Semanal/2026-W39|revisão semanal]]. O caso de inspeção mantém a ressalva dos recibos ausentes; não foi reautenticado nem reexecutado nesta revisão.
+
+## Saúde do gateway não comprova execução nem API — caso de 01/10/2026
+
+No reteste Cresol, o pai registrou `health.ok` e plugin carregado; uma execução curta conseguiu responder sobre o catálogo, mas a tentativa posterior com ferramentas voltou a terminar em `gateway_draining` antes da chamada ao banco. São provas de camadas diferentes: saúde RPC, capacidade efetiva da ferramenta, conclusão do executor e comunicação/autenticação remota. Uma não substitui a outra.
+
+`cresol_secret_preflight` era uma verificação local de metadados, não teste de API. O relato permite localizar o bloqueio antes da rede; não permite declarar a Cresol saudável ou indisponível, reutilizar o HTTP 502 histórico como resultado novo ou tratar a descoberta curta como recuperação estável. Reconciliar o que ocorreu e exigir mudança causal antes de repetir evita testes cegos e efeitos duplicados. Reparo/restart não herda autorização de um teste bancário.
+
+Fonte: checkpoints selecionados do grupo Faturamento e resposta do Darth dedicada, com hashes/posições no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-02-daily.json`; cronologia preservada em [[40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao|homologação bancária]]. Não houve validação live nesta revisão.
 
 ## Exemplo conectado
 

@@ -4,13 +4,21 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-01T02:00:00Z'
+updated: '2026-10-02T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-02, consolidação diária silenciosa
+
+- Criado diário UTC de 02/10 (01/10 às 23h BRT) e vinculado ao MOC, com inventário de 490 arquivos e cobertura seletiva explícita.
+- Atualizadas notas existentes de homologação bancária e ausência de evidência: pedido pontual Cresol, preflight metadata-only, bloqueio interno anterior à API e distinção entre health RPC e conclusão do executor. Não inferida nova falha bancária nem autorização de reparo.
+- Atualizado Relatórios Operacionais com os três avisos naturais de 01/10, mantendo PASS/FAIL por ocorrência separados de recuperação, causa no provider, entrega e aceite geral.
+- Corrigida a rastreabilidade da síntese mensal de setembro: texto versionado, mas recibo mensal citado ausente. Acrescentadas ressalva no resumo e ligação no MOC; nenhuma cobertura ou promoção permanente retroativa fabricada.
+- HEALTH e recibo `brain-v2/reports/coverage-2026-10-02-daily.json` registram fontes/disposições, fila anterior por hash e limites. Sem nova nota permanente duplicada, exclusão, sistema externo, alteração de configuração, agente Brain ou mensagem ao Hebert. Somente commit local, sem push.
 
 ## 2026-10-01, consolidação diária silenciosa
 

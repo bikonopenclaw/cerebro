@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-29T02:00:00Z'
+updated: '2026-10-02T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/boletos-malote/README.md
@@ -33,7 +33,7 @@ categoria: financeiro
 tipo: guardrail
 fonte: consolidação semanal 2026-W28
 confiabilidade: alta
-ultima_revisao: 2026-09-29
+ultima_revisao: 2026-10-02
 tags: [cresol, homologacao, boletos, remessa, baixa, producao]
 ```
 
@@ -60,6 +60,18 @@ As memórias main de 26 e 27/09 registram o broker `cresol-preflight-broker` 0.1
 A orientação registrada é preservar o pacote e o snapshot, aguardar a resposta oficial da Cresol e retomar do checkpoint, sem reinstalar, fazer rollback ou repetir testes live em loop por mera falha remota. Alterações de contrato, plugin, credencial ou rota continuam dependentes de aprovação explícita. O limite é importante: validação local, visibilidade do segredo por metadados, autenticação remota e operação bancária são provas separadas; indisponibilidade de OAuth não invalida automaticamente a integridade do pacote.
 
 Fontes: `memory/2026-09-26.md` e primeira seção de `memory/2026-09-27.md`, lidas integralmente; hashes/posições no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-29-daily.json`. São checkpoints documentados, não revalidação do runtime ou do provedor nesta consolidação. Evidência técnica referenciada, não auditada aqui: `artifacts/cresol-api-homologation-isolated-20260923/CRESOL_OAUTH_PROVIDER_RESPONSE_CHECKPOINT_20260926T2142Z.json`.
+
+## Reteste solicitado em 01/10/2026 — bloqueio antes da API
+
+Hebert solicitou novo teste de comunicação no grupo Faturamento Bikon. Isso acrescenta autorização pontual ao histórico de espera pela Cresol; não autoriza produção, operação financeira, mudança de credencial/rota ou reparo do runtime. A nova solicitação não transforma o HTTP 502 de setembro em resultado atual.
+
+A execução curta do Darth Vader às 23:56 UTC informou que o catálogo expunha somente `cresol_secret_preflight`, para metadados locais do SecretRef, não uma ferramenta de teste de rede/autenticação. A ferramenta não foi executada nessa rodada por não cumprir o pedido. Plugin carregado e preflight local não comprovam conectividade, autenticação ou homologação.
+
+O checkpoint do pai, já em 02/10 às 00:03 UTC (01/10 BRT), registrou três interrupções por `gateway_draining`, inclusive depois de `health.ok`, e reconciliou a última tentativa como leitura de duas skills antes de qualquer chamada Cresol. **Comunicação e autenticação continuavam não testadas**, sem resultado bancário novo; o bloqueio documentado é interno, não uma falha atual atribuída ao banco. A descoberta curta concluída não comprova capacidade de concluir o teste com ferramentas.
+
+O pedido foi mantido pendente pelo mesmo responsável, com novas tentativas suspensas e próxima revisão registrada para 02/10 às 08h BRT. Este registro não agenda nem executa essa revisão. Retomar depende de evidência de resolução e reconciliação dos efeitos anteriores; autorização para testar API não autoriza reiniciar ou alterar serviços.
+
+Fontes: sessão do grupo `056cb7b4-ab96-44b7-ab51-80559a8a32a4`, pedido linha 5 e checkpoints selecionados; sessão Darth dedicada `3b82ce3d-7ed3-43a0-bde2-2edf1571d306`, resposta linha 5. Hashes, posições e disposições em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-02-daily.json`. Checkpoints são relatos persistidos revisados, não revalidação do executor ou da API nesta consolidação. Relaciona-se ao limite de [[40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional|diagnóstico por etapa]].
 
 ## Relações
 
