@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-25T02:00:00Z'
+updated: '2026-10-03T02:00:00Z'
 ---
 
 # Bikon Durable Work Orchestration
@@ -16,7 +16,7 @@ updated: '2026-09-25T02:00:00Z'
 categoria: automacao_operacional
 fonte: contrato canonico, requests de 2026-09-16/19 e recusas protegidas de 2026-09-22
 confiabilidade: alta para os eventos citados, sem inferir estado produtivo atual
-ultima_revisao: 2026-09-23
+ultima_revisao: 2026-10-03
 tags: [bikon, durable-work, relatorios, documentos, sentinel, kowalski, lifecycle, idempotencia]
 ```
 
@@ -100,3 +100,11 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch9-20260
 Em preparação da adoção PGL, evidência root-owned0700 não era legível ao usuário openclaw; um selo independente acessível foi usado para autenticar baseline, com limite de evidência explícito. Propôs-se contrato compartilhado único e ponteiros nos agentes, em vez de semânticas duplicadas ou ledger concorrente. Bindings PFE que diziam PGL deferred/unavailable exigiam reconciliação, não evento histórico inventado; projetos existentes adotariam na transição de ciclo apropriada. Este trecho era descoberta read-only, não prova de adoção concluída ou saúde atual. Fonte: unidades 30968.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Incidente de acompanhamento financeiro — 02/10/2026
+
+O goal `FATURAMENTO-LOTE51-RESTART-LIMPO-20261002-17782` manteve `ACTIVE/waiting` e mensagens periódicas após interrupção do trabalho. A repetição motivou questionamento e cancelamento reiterado pelo proprietário. No encerramento registrado, cinco operações estavam `RETURNED` e duas `FAILED`; `close` iniciou entrega pendente e a inspeção posterior confirmou `COMPLETED`, sem próximo check-in.
+
+Esse resultado fecha o acompanhamento por decisão humana; não comprova entrega das 22 cobranças, não resolve os efeitos locais incertos do preparo P02 e não deve ser retomado a partir de instruções históricas. Não confundir silêncio do executor com cancelamento de toda a cadeia, nem o PASS da revisão de cancelamento com aceite fiscal. A lição reforça [[40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle|convergência de lifecycle]], sem afirmar que um reparo geral do supervisor foi instalado.
+
+Fonte primária: sessão main `a7273403-8c6d-4d1c-8cbc-4bcbba62c37c`, linhas 343–361; recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-daily.json`. Estado observado no histórico de 02/10, não revalidação live nesta consolidação.

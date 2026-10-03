@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T21:07:33.285014Z'
+updated: '2026-10-03T02:00:00Z'
 ---
 
 # Estado terminal requer convergencia do lifecycle
@@ -17,7 +17,7 @@ categoria: operacional
 tipo: aprendizado_permanente
 fonte: consolidacao semanal 2026-W35, teste controlado de relatorios operacionais em 2026-09-02, publicacao Instagram Bikon em 2026-09-10, lifecycle ad-hoc ARX em 2026-09-16 e consolidacao semanal 2026-W38
 confiabilidade: alta
-ultima_revisao: 2026-09-20
+ultima_revisao: 2026-10-03
 tags: [lifecycle, execucao, registry, cgroup, terminalidade, reconciliacao, supervisao, transcript]
 ```
 
@@ -118,3 +118,11 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch21-2026
 Na Fase A Sentinel de 26/07/2026, o approval foi validado, seis GETs ocorreram e o resultado fechou BLOCKED_BY_PAGINATION antes de chegar um STOP associado à falta de receipt. O STOP impede ações futuras, mas não pode reclassificar a execução comprovada como não iniciada ou não autorizada: preservar fatos e timestamps, entrega pendente e resultado terminal separadamente. A Fase A.1 posterior tinha nova identidade e falhou antes do consumo e de qualquer GET porque ensure_ascii=True divergia da serialização UTF-8/jq contratada. Não transportar o zero GET da segunda tentativa para apagar a primeira, nem o sucesso de propagação da primeira para aprovar a segunda. Fonte: unidades 37815.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch23-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Cancelamento do executor e encerramento do acompanhamento — 02/10/2026
+
+No faturamento lote 5.1, interromper a execução não encerrou o objetivo residual: o controlador ainda mostrava `ACTIVE/waiting` e o supervisor repetia o mesmo bloqueio sem avanço. Hebert questionou as repetições e reiterou o cancelamento. A revisão final encontrou sete operações terminais (cinco `RETURNED`, duas `FAILED`), registrou cancelamento e encaminhou a confirmação pelo outbox. O primeiro retorno de `close` ainda era `ACTIVE/delivery`, com entrega `PENDING`; somente a inspeção posterior mostrou `COMPLETED` e `next_checkin_at_ms=null`.
+
+O aprendizado é verificar separadamente executor, objetivo, callbacks/check-ins e entrega terminal. `COMPLETED` nesse episódio significa **encerramento administrativo por cancelamento**, não faturamento entregue ou NFS-e emitida. A narrativa de ausência de emissão não elimina a incerteza de efeitos locais P02 registrada após timeout. Cancelar não apaga histórico, não valida produto pendente e não autoriza replay. Status repetido sem mudança material é ruído de supervisão, não progresso.
+
+Fonte: sessão main `a7273403-8c6d-4d1c-8cbc-4bcbba62c37c`, textos e resultados do controlador nas linhas 327–361 discriminados em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-daily.json`. Leitura histórica, sem nova inspeção operacional. Ver [[70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION|orquestração durável]] e [[01-DIARIO/2026/2026-10-03|diário do ciclo]].

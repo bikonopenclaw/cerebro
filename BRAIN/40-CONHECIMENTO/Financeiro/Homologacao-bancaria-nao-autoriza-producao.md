@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-02T02:00:00Z'
+updated: '2026-10-03T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/boletos-malote/README.md
@@ -33,7 +33,7 @@ categoria: financeiro
 tipo: guardrail
 fonte: consolidação semanal 2026-W28
 confiabilidade: alta
-ultima_revisao: 2026-10-02
+ultima_revisao: 2026-10-03
 tags: [cresol, homologacao, boletos, remessa, baixa, producao]
 ```
 
@@ -87,3 +87,11 @@ No teste Cresol histórico, HTTP400 informou Nosso Número já cadastrado antes 
 Proposta histórica FBCP: integrar Cresol por adapter atrás do controlador, registrando intenção, autorização, identidade e idempotência. PDF oficial pode existir antes de aceite final e estado remoto pode continuar em processamento. Antes de repetir POST, reconciliar ledger local, referência externa, Nosso Número e estado remoto. CNAB não seria removido por um teste API; mudança de caminho exige provar consulta/ocorrências, rejeição e recuperação, mantendo homologação separada de produção. Fonte: unidades 31588.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Cancelamento posterior do reteste — 02/10/2026
+
+Hebert pediu explicitamente encerrar a tarefa da API Cresol. A fonte registra fechamento do objetivo `CRESOL-API-COMM-RETEST-20261001T233345Z`; a inspeção terminal retornou `COMPLETED`, `next_checkin_at_ms=null`, quatro operações no histórico e nenhuma dependência ativa. Trata-se de **cancelamento do teste solicitado**, não homologação bem-sucedida nem prova de comunicação/autenticação. A espera/revisão descrita na seção de 01/10 passou a ser histórica e não é autorização de retomada.
+
+Fonte: sessão main `a7273403-8c6d-4d1c-8cbc-4bcbba62c37c`, pedido linha 4, narrativas linhas 5/32 e resultado terminal linha 31; hashes no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-daily.json`. A diária não chamou o banco ou o controlador.
+
+Rastreabilidade: o recibo diário de 02/10 citado na seção anterior não foi localizado no HEAD `f399037` nem na árvore examinada em 03/10. O texto anterior está versionado, mas a referência prevista não prova cobertura por fonte; a lacuna fica preservada no recibo atual, sem inventar fechamento retroativo.

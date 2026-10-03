@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-10-03T02:00:00Z'
 ---
 
 # MEMORY.md
@@ -154,3 +154,9 @@ Memória institucional consolidada do Brain.
 Atalhos históricos de consulta de limites Codex: limite codex como gatilho principal e uso codex como alias; retorno esperado diferencia janelas de5h e semanal, informa recência/fonte e reset em Brasília. Ausência de uma janela no evento local deve ser declarada, não preenchida por inferência; isso não equivale a saldo financeiro oficial e exige rota atual validada. Fonte: unidades 35319.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Correção de escopo de análise — 02/10/2026
+
+Hebert pediu opinião sobre um contrato isolado e explicitou que não era para instalar na infraestrutura. A primeira análise deslocou o foco para adoção pela Bikon; ele corrigiu o escopo e pediu nova análise. Aprendizado: avaliar o objeto segundo a finalidade solicitada, sem transformar análise documental em proposta de implantação nem usar incompatibilidade com a Bikon como critério quando a avaliação é independente. Isso não estabelece adoção, nova política financeira ou relação comercial com entidades citadas no anexo.
+
+Fonte: sessão main `a7273403-8c6d-4d1c-8cbc-4bcbba62c37c`, mensagens do usuário nas linhas 277 e 317; identidades em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-daily.json`.
