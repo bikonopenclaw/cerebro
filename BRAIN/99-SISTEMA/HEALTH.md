@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-03T02:00:00Z'
+updated: '2026-10-03T16:57:27.613308+00:00'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -271,3 +271,9 @@ Consolidacao diaria com cobertura parcial. Uma fonte recente do workspace princi
 ## Capacidade semântica verificada — 2026-09-22
 
 Cinco consultas em sandbox passaram com o launcher instalado e resultados equivalentes. Três rotinas tiveram leitura das fontes verificada, sem escrita adicional. Gateways saudáveis após recarga. O histórico de cobertura parcial do ciclo anterior continua válido; não declarar futuros ciclos completos antecipadamente. Ver [[99-SISTEMA/brain-v2/governance/semantic-runtime-operations|operação e limites]].
+
+## Reconciliação mensal de setembro — observação de 03/10/2026
+
+Produto mensal reconciliado localmente com cobertura parcial, conforme `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-monthly-reconciliation.json`. Foram avaliados os retornos auxiliares duráveis e relidos os três semanais disponíveis. O recibo originalmente anunciado permanece ausente; não se reescreveu o resultado do cron. O MOC Diário já contém o acesso ao mês; nenhuma promoção duplicada ou exclusão foi necessária.
+
+Scan estrutural canônico desta observação: 420 Markdown, 921 links internos, 0 quebrados, 0 sem classificação. Health Score legado mantido sem recálculo; métricas não demonstram cobertura de conversas. Commit/push desta reconciliação não executados; ciclos futuros permanecem pendentes de observação.

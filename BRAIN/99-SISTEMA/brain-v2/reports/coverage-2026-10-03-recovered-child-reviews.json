@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "record_kind": "current_local_reconciliation_of_late_child_reviews",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "observed_at": "2026-10-03T19:10:37.530631+00:00",
+  "parent_job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "parent_runs_preserved": [
+    {
+      "seq": 97,
+      "run_at_ms": 1790906400097,
+      "session_id": "c210e7e9-e8ca-4c1b-82d3-db645a9ddc37",
+      "status": "error",
+      "error": "⚠️ 🛠️ Exec failed: `search \"2026-09-2|2026-10|health|gateway|HTTP|Cresol\" in Brain/BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md → print lines 1-110 from Brain/BRAIN/99-SISTEMA/brain-v2/tools/brain_link_gate.py → run git config`"
+    },
+    {
+      "seq": 98,
+      "run_at_ms": 1790992800133,
+      "session_id": "0fd1268c-51cb-4cec-810d-18b2ae45664b",
+      "status": "ok",
+      "error": null
+    }
+  ],
+  "status": "LOCAL_EDITORIAL_CONSOLIDATION_COMPLETED_FOR_RECOVERED_CHILD_REVIEWS",
+  "coverage_complete": false,
+  "source_reviews": [
+    {
+      "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-daily-20261002/arx-review.json",
+      "sha256": "1550ad3a3ec7abad955f49042ec6975ced3cdce09a877d72f317c8877a992030",
+      "bytes": 73288,
+      "read_scope": "complete_sanitized_child_review_and_its_candidates",
+      "raw_primary_sources_newly_read": false,
+      "acceptance": "Authenticated completed child review, not independent live business/transport verification"
+    },
+    {
+      "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-daily-20261002/robotnik-review.json",
+      "sha256": "2702336e4f4710049e71a208f3a76fedff6ae647fd1910b83b678f76e77a9eae",
+      "bytes": 47236,
+      "read_scope": "complete_sanitized_child_review_and_its_candidates",
+      "raw_primary_sources_newly_read": false,
+      "acceptance": "Authenticated completed child review, not independent live business/transport verification"
+    },
+    {
+      "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-daily-20261002/finance-review.json",
+      "sha256": "632b5af74661495e915038523e339b675ffd7bf48c8296534fa08d72dddaa983",
+      "bytes": 74503,
+      "read_scope": "complete_sanitized_child_review_and_its_candidates",
+      "raw_primary_sources_newly_read": false,
+      "acceptance": "Authenticated completed child review, not independent live business/transport verification"
+    }
+  ],
+  "candidate_dispositions": [
+    {
+      "review": "arx",
+      "candidate": "C1",
+      "disposition": "INCORPORATED_DATED_PARTIAL_COVERAGE",
+      "target": "ARX-BACKUP-NINJAONE.md"
+    },
+    {
+      "review": "arx",
+      "candidate": "C2",
+      "disposition": "ALREADY_REPRESENTED; gateway/terminal distinction retained; no current cause inferred"
+    },
+    {
+      "review": "arx",
+      "candidate": "C3",
+      "disposition": "INCORPORATED_ATTRIBUTED_HISTORICAL_SMTP; no live receipt certification"
+    },
+    {
+      "review": "arx",
+      "candidate": "C4",
+      "disposition": "INCORPORATED_RETURN_VS_HANDOFF_WITH_LIMITS"
+    },
+    {
+      "review": "arx",
+      "candidate": "C5",
+      "disposition": "ALREADY_REPRESENTED; historical shell failure not promoted to current diagnosis"
+    },
+    {
+      "review": "robotnik",
+      "candidate": "C1",
+      "disposition": "INCORPORATED_RECIPIENT_REPORTED_INTEGRITY_ONLY"
+    },
+    {
+      "review": "robotnik",
+      "candidate": "C2",
+      "disposition": "DOCUMENTARY_RECOMMENDATION_ACCEPTED; no manifest implementation or send"
+    },
+    {
+      "review": "robotnik",
+      "candidate": "H1",
+      "disposition": "HISTORICAL_ALREADY_GOVERNED_BY_CURRENT_CREATIVE_CONTRACT; no new active production instruction"
+    },
+    {
+      "review": "robotnik",
+      "candidate": "H2",
+      "disposition": "HISTORICAL_NO_PATTERN_CHANGE; old visual/domain details not promoted"
+    },
+    {
+      "review": "finance",
+      "candidate": "boletos-malote",
+      "disposition": "INCORPORATED_DATED_DECISIONS_WITH_CANCELLED_WORK_PRESERVED"
+    },
+    {
+      "review": "finance",
+      "candidate": "NOTAAS-NFSE",
+      "disposition": "CONSOLIDATED_ONCE_IN_EXISTING_BOLETOS_NOTE; duplicate append avoided"
+    },
+    {
+      "review": "finance",
+      "candidate": "Autorizacao-atomica-nao-herda-escopo",
+      "disposition": "EXISTING_PRINCIPLE_REUSED; dated P02P03example inboletos only"
+    },
+    {
+      "review": "finance",
+      "candidate": "DARTH-VADER",
+      "disposition": "EXISTING_ROLE_PRESERVED; no global capability claim; datedcheckpoint inboletos only"
+    }
+  ],
+  "products": [
+    {
+      "path": "BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md",
+      "sha256": "9544fbed69cc038de8785875e6608e197a1540b06959046f8e76a5b0bb3982fb"
+    },
+    {
+      "path": "BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md",
+      "sha256": "cb101bb7a3548d4378cbd148789cecac5be6cd20f403bb4ce67926edf0b8d5b7"
+    },
+    {
+      "path": "BRAIN/70-AUTOMACOES/boletos-malote/README.md",
+      "sha256": "32e3621e5c9021ec04135261ec97376077fe919adfba48127d08ecb06010688e"
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-10-02.md",
+      "sha256": "c25de23f49c9143c1c4aef55e28a92bc036154a9760330392a170ee4aedbece6"
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-10-03.md",
+      "sha256": "a1f106a4c0514a380b6add1574de092985279acee23efa883721cef5efeb5dc0"
+    }
+  ],
+  "prior_diary_oct3_receipt": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-daily.json",
+  "missing_original_oct2_receipt_preserved": true,
+  "historical_child_delivery_status_preserved": "failed",
+  "new_external_delivery": "NOT_REQUESTED",
+  "git_commit_and_sync": "NOT_EXECUTED; current instruction forbids Git writes; existing scheduled sync not invoked",
+  "source_coverage": "Recovered full sanitized child reports read; primary source identities/units remain those reports historical scope; no fresh provider/raw-history coverage inferred",
+  "residuals": [
+    "Unselected primary-source and inventory backlog retained; no archive/deletion eligibility gained.",
+    "Financial/creative/transport outcomes remain domain-controlled and not certified by editorial consolidation.",
+    "Original Oct2 missing receipt and historic cron error preserved; current receipt never backdated."
+  ],
+  "child_identities": [
+    {
+      "source_run_id": "b43fdccb-1c93-4ae5-8458-abe497428aa1",
+      "task_id": "cbe7e630-e516-40a6-b166-de5dded89955",
+      "parent_session_id": "c210e7e9-e8ca-4c1b-82d3-db645a9ddc37",
+      "review": "arx-review.json"
+    },
+    {
+      "source_run_id": "84beb78c-e3fb-4d1a-8c4b-4c3429de7eb8",
+      "task_id": "5d5f76c9-35c1-4d70-9447-a1efc6f5d266",
+      "parent_session_id": "0fd1268c-51cb-4cec-810d-18b2ae45664b",
+      "review": "robotnik-review.json"
+    },
+    {
+      "source_run_id": "7898480c-70b4-4973-8de4-d8cf43d98bd1",
+      "task_id": "22f023d2-770e-40ae-bd03-78af2b695820",
+      "parent_session_id": "0fd1268c-51cb-4cec-810d-18b2ae45664b",
+      "review": "finance-review.json"
+    }
+  ]
+}

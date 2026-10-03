@@ -312,3 +312,14 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch20-2026
 O fechamento histórico do teste interno NinjaOne 1502 foi concluído após as falhas 400/401 descritas antes: autorização específica permitiu um refresh e GET→PUT→GET, quatro requisições no total, todas HTTP 200, retry=False e nenhum fallback. O último GET confirmou RESOLVED naquela data. O payload preservou version e requesterUid obtidos só em memória e enviou status como string; a mensagem exata do primeiro HTTP 400 não estava disponível, portanto não atribuir a causa definitiva a um campo isolado. Somente o tokenfile autorizado mudou; outros tickets e deduplicação ficaram intactos. Isso supera a pendência histórica, sem afirmar estado atual, reabrir autorização ou persistir token, callback ou hash de segredo no Brain. Fonte: unidades 8755.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch25-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+
+## Retorno documental recuperado em 03/10 — ciclo mensal de 01/10/2026
+
+O parecer auxiliar `arx-review.json`, concluído após o retorno do pai, registra cronologia posterior aos checkpoints iniciais: retornos Sentinel entre 19:11 e 19:14 UTC passaram a `COMPLETE/SUCCESS_NO_SEND`. Nos handoffs examinados, COMPLETE significa consulta do catálogo autenticado, não prova de todos os ciclos esperados, SLA ou restauração. A lacuna de 07/09 de Vila Velha e os 29 dias com registros continuam explícitos. Não converter setembro em cobertura integral nem alterar estados de agosto/2111 por analogia.
+
+O mesmo parecer leu dentro de uma sessão um extrato com quatro aceitações SMTP250 entre 19:29:59 e 19:30:16 UTC. Trata-se de evidência histórica recuperada pelo revisor; esta consolidação não revalidou o log operacional vivo, PDFs, MIME, QA ou a aprovação original. Não certifica entrega na caixa, leitura, sucesso de ciclos seguintes nem autoriza reenvio.
+
+No caso de `archive_enrollment`, ausência no retorno resumido foi distinguida de presença no handoff identificado pelo revisor. A semântica registrada é captura de observações autenticadas com lacunas explícitas; contagem de fontes não demonstra quantidade de contas novas nem fechamento mensal integral. Outros diagnósticos de shell/runtime permanecem históricos e não são causas presumidas das falhas atuais.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-recovered-child-reviews.json`, que identifica hashes dos três pareceres locais recuperados e suas disposições. Esta incorporação é documental, datada de 03/10; não reexecuta fontes, não cria recibo retroativo, não amplia cobertura primária nem executa efeito financeiro, criativo ou transporte.

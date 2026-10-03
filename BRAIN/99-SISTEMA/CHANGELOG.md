@@ -4,7 +4,7 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-03T02:00:00Z'
+updated: '2026-10-03T16:57:27.613308+00:00'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -993,3 +993,7 @@ Triagem de11.187 unidades concluída no recorte exportado; índice de disposiç�
 - Runtime v3 e habilidade persistente: consulta de índice pronto, sem cache/lock/reconstrução pelos agentes; atualização isolada após mudanças Git.
 - Acesso adicional às fontes somente para os três crons autorizados do main; modo legado de Kowalski/Darth preservado. Três plugins versionados e testes ligados aos ambientes reais.
 - Recibo `brain-v2/reports/semantic-runtime-readonly-installed-20260922.json`; nenhuma nova exclusão automática de históricos.
+
+## 2026-10-03 — reconciliação local da mensal de setembro
+
+Recuperados e avaliados localmente os dois pareceres auxiliares concluídos do run mensal de 01/10. A síntese existente foi aceita com limites documentais explícitos e recebeu adendo datado de hoje; criado recibo atual `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-monthly-reconciliation.json`, sem fabricar o recibo mensal antigo. Preservadas as correções posteriores, a cobertura parcial, a fila de fontes não revistas e os resultados históricos de cron/retorno. Atualizado HEALTH com scan estrutural limitado. Sem commit, push, sync, arquivamento, exclusão ou mensagem externa.

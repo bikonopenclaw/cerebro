@@ -297,3 +297,12 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch30-2026
 Na revisão histórica das cinco capas de 20–24/07, a sexta-feira v2 foi marcada AJUSTAR por usar desfoque excessivo para esconder elementos proibidos do fundo gerado. A alternativa proposta era reutilizar o fundo original já aprovado sem custo; outra geração exigia autorização específica de gasto. A autorização para produzir e entregar internamente não abrangia publicação ou criação de contêineres. Naquela ordem, o teto informado era 250 créditos e o consumo relatado foi 10 para cinco fundos, grandezas que não concediam autorização permanente. Esse era checkpoint anterior ao pacote v4 canônico já reconciliado nesta nota: não manter a pendência v2 como estado atual nem reativar a rota Kling legada. Fonte: unidades 8697.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch41-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+
+## Retorno documental recuperado em 03/10 — recebimento relatado em 02/10/2026
+
+O parecer auxiliar Robotnik registra que, em 02/10, Hebert informou o mesmo SHA-256 `252d8e102d0f2c940b17b416f14b50b4fb0c05ca7dd86dbcc59358b84238c38f` do ZIPV2 remontado, seguido de listagem de extração. Isso acrescenta integridade e extração relatadas pelo destinatário ao checkpoint de 28/09; não comprova QA independente dos bytes, revisão criativa, aceite artístico ou publicação. O pacote continua sujeito aos gates existentes.
+
+O candidato histórico V4 foi convertido em recomendação documental delimitada: em pacotes fracionados, conferir ordem, tamanho e hash de cada parte e o hash final; nomes divergentes ou glob sem correspondência não demonstram ausência dos bytes. A revisão não abriu o ZIP nem implantou manifesto ou fluxo novo. Recomendações antigas de caption e diferenças de padrão visual não substituem o contrato criativo vigente e não autorizam produção ou envio.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-recovered-child-reviews.json`, que identifica hashes dos três pareceres locais recuperados e suas disposições. Esta incorporação é documental, datada de 03/10; não reexecuta fontes, não cria recibo retroativo, não amplia cobertura primária nem executa efeito financeiro, criativo ou transporte.

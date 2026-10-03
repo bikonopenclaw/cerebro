@@ -1,0 +1,467 @@
+{
+  "schema_version": "1.0",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "observed_at": "2026-10-03T16:57:27.613308+00:00",
+  "record_kind": "CURRENT_RECONCILIATION_NOT_RETROACTIVE_COVERAGE",
+  "monthly_job_id": "c8410fc9-1d2f-4ce0-8847-70e69db6f405",
+  "original_run_id": "ce7f0e4c-4862-4bf7-82f4-6b6fc89d0048",
+  "period": "2026-09-01..2026-09-30 America/Sao_Paulo",
+  "status": "PARTIAL_LOCAL_PRODUCT_RECONCILED",
+  "coverage_complete": false,
+  "original_expected_receipt": {
+    "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-01-monthly.json",
+    "exists": false,
+    "disposition": "missing preserved; not fabricated or backdated"
+  },
+  "product": {
+    "path": "BRAIN/01-DIARIO/Mensal/2026-09.md",
+    "before_reconciliation_sha256": "0be6f756116514069d902e681764e0ee54b53d2d9a1d079023f618b371fc268a",
+    "acceptance": "The partial synthesis accurately preserves themes from three available weekly notes; original editorial promises are expressly limited by Oct2 and current addenda. No completeness claim for provider facts/raw histories.",
+    "after_supplement_sha256": "3807a3074f9f644377f8f5c92a9bab3f692fb841069442b5d739cb73e98f0572"
+  },
+  "source_reviews": [
+    {
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W37.md",
+      "sha256": "9368928bb1f7b53d1c695ed394313f50147aa3f1a56cf50f37c3aadaf8907b70",
+      "size": 5755,
+      "lines": [
+        1,
+        61
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "9368928bb1f7b53d1c695ed394313f50147aa3f1a56cf50f37c3aadaf8907b70",
+      "historical_identity_unchanged": true,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": true
+    },
+    {
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W38.md",
+      "sha256": "8157eefa921e8c4abc38f1565a18bff7e281c4cc7951e4129851140893e6f95a",
+      "size": 5535,
+      "lines": [
+        1,
+        61
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "8157eefa921e8c4abc38f1565a18bff7e281c4cc7951e4129851140893e6f95a",
+      "historical_identity_unchanged": true,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": true
+    },
+    {
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W39.md",
+      "sha256": "8e8414f35ab680d8cb4079b79d1354886b5cb99a92640959b2f7a9077d360c95",
+      "size": 7798,
+      "lines": [
+        1,
+        72
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "8e8414f35ab680d8cb4079b79d1354886b5cb99a92640959b2f7a9077d360c95",
+      "historical_identity_unchanged": true,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": true
+    },
+    {
+      "path": "BRAIN/01-DIARIO/Mensal/2026-08.md",
+      "sha256": "1f090090fb70b0e24bee8e509764eb6362a21258cb3139e45b1c1cb647fdf400",
+      "size": 8269,
+      "lines": [
+        1,
+        69
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "1f090090fb70b0e24bee8e509764eb6362a21258cb3139e45b1c1cb647fdf400",
+      "historical_identity_unchanged": true,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": false
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-09-01.md",
+      "sha256": "4e81c55b35ca2f7cdad644cd1b6922baefd79c3db3f316d8515b81164a6c9af0",
+      "size": 1480,
+      "lines": [
+        1,
+        34
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "4e81c55b35ca2f7cdad644cd1b6922baefd79c3db3f316d8515b81164a6c9af0",
+      "historical_identity_unchanged": true,
+      "disposition": "PARTIAL_W36_DOCUMENTARY_GAP_RECOVERY; historical authority not reactivated",
+      "independently_read_now": true,
+      "observed_at": "2026-10-03T18:58:19.489023+00:00"
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-09-02.md",
+      "sha256": "fd8f7f797a493896a33d803060c67054eca09680bb365d117b2c4677f972f034",
+      "size": 875,
+      "lines": [
+        1,
+        28
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "fd8f7f797a493896a33d803060c67054eca09680bb365d117b2c4677f972f034",
+      "historical_identity_unchanged": true,
+      "disposition": "PARTIAL_W36_DOCUMENTARY_GAP_RECOVERY; historical authority not reactivated",
+      "independently_read_now": true,
+      "observed_at": "2026-10-03T18:58:19.489023+00:00"
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-09-03.md",
+      "sha256": "40a553348ecb49068bb5df31d53ad252f329de7f4db29f95f4804806fb1ea323",
+      "size": 1469,
+      "lines": [
+        1,
+        30
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "40a553348ecb49068bb5df31d53ad252f329de7f4db29f95f4804806fb1ea323",
+      "historical_identity_unchanged": true,
+      "disposition": "PARTIAL_W36_DOCUMENTARY_GAP_RECOVERY; historical authority not reactivated",
+      "independently_read_now": true,
+      "observed_at": "2026-10-03T18:58:19.489023+00:00"
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-09-29.md",
+      "sha256": "7ade016d4265bc5c2a2b498c83510128408b87455050c37e0739e976c0ca834a",
+      "size": 5152,
+      "lines": [
+        1,
+        48
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "7ade016d4265bc5c2a2b498c83510128408b87455050c37e0739e976c0ca834a",
+      "historical_identity_unchanged": true,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": false
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-10-01.md",
+      "sha256": "a9e94b6df61ebd35d6cc5c4d43733abbe5f9ddfcb7d9f846da01bc31b7cb7d55",
+      "size": 4637,
+      "lines": [
+        1,
+        47
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "a9e94b6df61ebd35d6cc5c4d43733abbe5f9ddfcb7d9f846da01bc31b7cb7d55",
+      "historical_identity_unchanged": true,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": false
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/IA/Brain-como-sistema-de-memoria.md",
+      "sha256": "efbd5fda1fbab0800bf7e0c6f24ca052e8f9c1beb96c1b5e273a4a3a023febe0",
+      "size": 4028,
+      "lines": [
+        1,
+        70
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "efbd5fda1fbab0800bf7e0c6f24ca052e8f9c1beb96c1b5e273a4a3a023febe0",
+      "historical_identity_unchanged": true,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": true
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md",
+      "sha256": "ea86d9ffcc1fd61db67b3c92605a71ce966dca279561ae6afd6772de7185ea50",
+      "size": 8251,
+      "lines": [
+        1,
+        101
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "ea86d9ffcc1fd61db67b3c92605a71ce966dca279561ae6afd6772de7185ea50",
+      "historical_identity_unchanged": true,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": false
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "sha256": "cc65b1fea2d77cfe891a4a12dccbb527bab2d2b2daf41a255a119d34c34ad9d1",
+      "size": 28773,
+      "lines": [
+        1,
+        245
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "05b2f918d307c9551bc0fd164312519048dd33cd9867b378bdaf396f5884daf2",
+      "historical_identity_unchanged": false,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": false
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md",
+      "sha256": "efe0dd9e916729403a9eb15199b718ff5dc7adbfce107b610ab9be731587b356",
+      "size": 9904,
+      "lines": [
+        1,
+        102
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "efe0dd9e916729403a9eb15199b718ff5dc7adbfce107b610ab9be731587b356",
+      "historical_identity_unchanged": true,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": false
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle.md",
+      "sha256": "54c18cd64a2f336ea731d570c746a32a825851a1653b59313f8d11504e31cc38",
+      "size": 13359,
+      "lines": [
+        1,
+        120
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "1510c8d9c41297738583c3da0a54fbd300d233b74399f73dde5d1f7f7925fdbb",
+      "historical_identity_unchanged": false,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": false
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel.md",
+      "sha256": "5d6ef4b10f4db7fff4597e0b56dfa728913eac5d030c5b7985228fe1bf48003d",
+      "size": 8852,
+      "lines": [
+        1,
+        100
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "5d6ef4b10f4db7fff4597e0b56dfa728913eac5d030c5b7985228fe1bf48003d",
+      "historical_identity_unchanged": true,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": false
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Financeiro/Total-fechado-nao-prova-integridade.md",
+      "sha256": "6d3fb7f32d0ebe569be0becd896112fb4c7f2454223f09dbc6996c67fe8ac106",
+      "size": 3484,
+      "lines": [
+        1,
+        56
+      ],
+      "read_scope": "complete_note",
+      "agent": "main",
+      "profile": "main",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "current_sha256": "6d3fb7f32d0ebe569be0becd896112fb4c7f2454223f09dbc6996c67fe8ac106",
+      "historical_identity_unchanged": true,
+      "disposition": "HISTORICAL_REVIEW_TRACE_RECONCILED; no new raw conversation coverage",
+      "independently_read_now": false
+    },
+    {
+      "path": "BRAIN/60-AGENTES/versionados/workspaces/robotnik/memory/2026-09-06.md",
+      "sha256": "20e6c8d8133734d9b7d45abf5b5182b76017306659ce4daa0a4b97c77983a1de",
+      "size": 1014,
+      "lines": [
+        1,
+        8
+      ],
+      "read_scope": "complete_note",
+      "source_layer": "consolidated_Brain_note_not_raw_history",
+      "independently_read_now": true,
+      "observed_at": "2026-10-03T18:58:19.489023+00:00",
+      "disposition": "PARTIAL_W36_DOCUMENTARY_GAP_RECOVERY; historical authority not reactivated"
+    }
+  ],
+  "completed_child_reviews": [
+    {
+      "task_id": "1f86fc79-9fb1-4c6d-ac6c-7f649d9ea4d3",
+      "source_id": "0269dc04-56e3-4768-be4e-c33d8274792e",
+      "status": "succeeded",
+      "delivery_status": "failed",
+      "output_sha256": "b7b2f743d327861556cc4910c4d4bcccf570e670b3acc33a7c04107deea6e626",
+      "read_complete_now": true,
+      "acceptance": "accepted as limited advisory review; original completion delivery remains failed"
+    },
+    {
+      "task_id": "be11962e-f154-4e9c-8b22-40f5652575d3",
+      "source_id": "59df663d-0dd1-414d-9494-2c1ce559004e",
+      "status": "succeeded",
+      "delivery_status": "failed",
+      "output_sha256": "158d6f800a146d8c72da7ae63269a60f0b5530394519159940ee6135165f8d6a",
+      "read_complete_now": true,
+      "acceptance": "accepted as limited advisory review; original completion delivery remains failed"
+    }
+  ],
+  "inventories": [
+    {
+      "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-monthly-202609/inventory-7.json",
+      "sha256": "a0a90114a9a42de9bb818ef8e235d9aa57db108ff4b35fa0e76913a57f3b7239",
+      "generated_at": "2026-10-01T07:00:45.925842+00:00",
+      "window_days": 7,
+      "source_count": 465,
+      "errors": [],
+      "disposition": "historical metadata inventory only; no replay/no fresh coverage claim"
+    },
+    {
+      "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-monthly-202609/inventory-35.json",
+      "sha256": "a490bed774f3bc2693d373e70b8cafec1fd05fbf263d1eee689724723dd24a44",
+      "generated_at": "2026-10-01T07:00:46.568210+00:00",
+      "window_days": 35,
+      "source_count": 6666,
+      "errors": [],
+      "disposition": "historical metadata inventory only; no replay/no fresh coverage claim"
+    }
+  ],
+  "stage_dispositions": {
+    "weekly_review": "W37 W38 W39 reread; W36 canonical job6Sept seq13 failed missing workspace and no file in all retained Git history. Four available first-week documentary notes reread now and honestly added to monthly partial synthesis.",
+    "learning_synthesis": "accepted partial documentary synthesis; themes identity/coverage/authority/consumer verified in three weekly notes",
+    "permanent_promotion": "existing memory note already preserves the relevant distinction; no redundant promotion required; original promised extra update not proved",
+    "moc_diary": "existing September link confirmed; preserve later Oct2 update",
+    "other_moc_suggestions": "optional navigational changes from child are not operational recovery prerequisites; no automatic promotion or domain authority",
+    "retention": "no archive/deletion; producer reviewed bounded selection with explicit usefulness; remaining universe unreviewed and retained",
+    "metrics": "canonical structural scan current; not semantic coverage or new Health Score",
+    "historical_git": "read-only history confirms0e69851 initial monthly andf399037 subsequent correction; not a monthly-run commit or remote receipt",
+    "new_git": "not executed, forbidden in current recovery; preserve standing future jobs",
+    "child_returns": "read and evaluated locally now; original transport statuses remain failed",
+    "completion": "local partial product may be accepted when this current receipt and addenda are persisted; scheduled historical cron error not overwritten"
+  },
+  "structural_metrics": {
+    "markdown_total": 420,
+    "internal_links": 921,
+    "broken_internal_links": 0,
+    "uncategorized_markdown": 0,
+    "duplicate_ids": {},
+    "duplicate_aliases": {},
+    "secret_candidates": [],
+    "cognitive_excluded_markdown": 194,
+    "graph": {
+      "entry_points": [
+        "BRAIN/99-SISTEMA/INDEX.md",
+        "BRAIN/01-DIARIO/README.md",
+        "BRAIN/99-SISTEMA/brain-v2/governance/README.md"
+      ],
+      "cognitive_markdown": 226,
+      "reachable_cognitive_markdown": 226,
+      "unreachable_cognitive_markdown": 0,
+      "unreachable_files": [],
+      "isolated_cognitive_markdown": 0,
+      "isolated_files": [],
+      "graph_components": 1,
+      "reachability_rate": 1.0
+    },
+    "knowledge_health_estimate": 1
+  },
+  "residuals": [
+    "Original W36 missing; four available first-week notes recovered in current supplement; September4–5 consolidated diary and source-level unread history remain coverage gaps.",
+    "Original monthly coverage receipt and original parent return never captured; preserve historical failure.",
+    "No independent remote publication proof for monthly; no Git writes or sync invoked.",
+    "Financial review candidates and unresolved historical raw-source reviews retain their existing owner/gates."
+  ],
+  "external_effects": false,
+  "notification": "not requested; monthly is silent",
+  "w36_supplement": {
+    "observed_at": "2026-10-03T18:58:19.489023+00:00",
+    "original_weekly_job_id": "1a1ed29a-fd45-4c5f-93f6-c3b556a2743c",
+    "original_run_seq": 13,
+    "original_session_id": "2e20cf41-fc9f-45a1-ba09-cb46e4f63269",
+    "original_outcome": "PRODUCTIVE_EXECUTION_FAILED workspace not mounted",
+    "historical_weekly_product_created": false,
+    "raw_history_coverage_claimed": false,
+    "source_reviews": [
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-09-01.md",
+        "sha256": "4e81c55b35ca2f7cdad644cd1b6922baefd79c3db3f316d8515b81164a6c9af0",
+        "size": 1480,
+        "lines": [
+          1,
+          34
+        ],
+        "read_scope": "complete_note",
+        "source_layer": "consolidated_Brain_note_not_raw_history",
+        "independently_read_now": true,
+        "observed_at": "2026-10-03T18:58:19.489023+00:00",
+        "disposition": "PARTIAL_W36_DOCUMENTARY_GAP_RECOVERY; historical authority not reactivated"
+      },
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-09-02.md",
+        "sha256": "fd8f7f797a493896a33d803060c67054eca09680bb365d117b2c4677f972f034",
+        "size": 875,
+        "lines": [
+          1,
+          28
+        ],
+        "read_scope": "complete_note",
+        "source_layer": "consolidated_Brain_note_not_raw_history",
+        "independently_read_now": true,
+        "observed_at": "2026-10-03T18:58:19.489023+00:00",
+        "disposition": "PARTIAL_W36_DOCUMENTARY_GAP_RECOVERY; historical authority not reactivated"
+      },
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-09-03.md",
+        "sha256": "40a553348ecb49068bb5df31d53ad252f329de7f4db29f95f4804806fb1ea323",
+        "size": 1469,
+        "lines": [
+          1,
+          30
+        ],
+        "read_scope": "complete_note",
+        "source_layer": "consolidated_Brain_note_not_raw_history",
+        "independently_read_now": true,
+        "observed_at": "2026-10-03T18:58:19.489023+00:00",
+        "disposition": "PARTIAL_W36_DOCUMENTARY_GAP_RECOVERY; historical authority not reactivated"
+      },
+      {
+        "path": "BRAIN/60-AGENTES/versionados/workspaces/robotnik/memory/2026-09-06.md",
+        "sha256": "20e6c8d8133734d9b7d45abf5b5182b76017306659ce4daa0a4b97c77983a1de",
+        "size": 1014,
+        "lines": [
+          1,
+          8
+        ],
+        "read_scope": "complete_note",
+        "source_layer": "consolidated_Brain_note_not_raw_history",
+        "independently_read_now": true,
+        "observed_at": "2026-10-03T18:58:19.489023+00:00",
+        "disposition": "PARTIAL_W36_DOCUMENTARY_GAP_RECOVERY; historical authority not reactivated"
+      }
+    ]
+  }
+}

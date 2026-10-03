@@ -166,3 +166,14 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch16-2026
 Em 17/06/2026, Hebert forneceu o layout do sistema antigo e pediu reprodução fiel. O fragmento era FastReport 4.8.36/PascalScript, A4 (210×297 mm), margens 10 mm, dataset Boleto133/Boleto, com comprovante de entrega, recibo e ficha de compensação; incluía código de barras Interleaved 2 of 5 e campos dinâmicos do pagador/beneficiário, datas, valor, instruções e linha digitável. Nosso Número era composto de carteira/número-dígito; agência/conta tinha dígitos próprios. O texto de conversa termina no meio de um elemento XML e não é template integral nem prova de reprodução exata. O aceite visual posterior e a correção de nome para Cresol/Bikon são autoridade histórica superior para apresentação; para reconstruir fielmente, usar o modelo canônico completo aprovado, não completar esse fragmento por inferência. Layout visual, checksum e registro/homologação bancária permanecem validações distintas; nenhuma conta, pagador ou segredo deve virar exemplo real publicado. Fonte: unidades 30800.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+
+## Retorno documental recuperado em 03/10 — decisões de 02/10/2026
+
+O parecer financeiro recuperado identifica a mensagem17806 como correção da competência do lote5.1 para outubro/2026. A competência setembro da planilha permanece proveniência histórica; não demonstra duplicidade de outubro. A recomendação anterior de cancelar NF262 foi indevida e não constitui autorização de cancelamento.
+
+A revisão final de Darth distinguiu preparação de intenção P02 de vinculação a manifesto P03 exato e assinado por autoridade administrativa externa. Aprovação comercial não substitui essa assinatura nem permite autoassinatura. A API bancária adiada para homologação não deve ser tratada como diagnóstico fiscal; erro intermediário de chave não prova perda de credencial e não justifica restaurá-la ou inventar healthcheck.
+
+O parecer registra relato de sete intenções P02 gravadas antes da interrupção, sem produto final aceito; isso preserva a incerteza de efeitos, não é readback do banco operacional. O cancelamento posterior do objetivo, já consolidado no diário03/10 e em Orquestração Durável, permanece superior: não retomar, reemitir, transmitir ou consultar segredos a partir desta nota. O fluxo financeiro preserva remessa validada seguida da transmissão manual por Hebert.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-recovered-child-reviews.json`, que identifica hashes dos três pareceres locais recuperados e suas disposições. Esta incorporação é documental, datada de 03/10; não reexecuta fontes, não cria recibo retroativo, não amplia cobertura primária nem executa efeito financeiro, criativo ou transporte.
