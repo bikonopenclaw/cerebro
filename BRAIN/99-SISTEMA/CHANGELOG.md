@@ -4,13 +4,21 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-03T16:57:27.613308+00:00'
+updated: '2026-10-04T06:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-04, consolidação semanal silenciosa — W40
+
+- Criada síntese W40 com leitura integral dos quatro diários disponíveis de 27/09–03/10. Ausências de 27/28/30 explicitadas; domingo 04/10 aberto. MOC Diário ligado ao produto.
+- Atualizadas três notas permanentes existentes: eixos do cancelamento, evidência por dimensão/identidade e verificação do recibo persistido. Não repetidas promoções diárias/mensais já aceitas.
+- Nove hashes dos produtos/pareceres da recuperação de 03/10 conferidos e coincidentes. Inventário de 482 arquivos apenas de metadados; fila anterior preservada, sem alegar cobertura primária nova.
+- Recibo deste ciclo em `brain-v2/reports/coverage-2026-10-04-weekly.json`; checkpoint local separa síntese produzida, validação e cobertura integral bloqueada (`PRODUCT_INCOMPLETE`). HEALTH atualizado sem recalcular score legado.
+- Nenhum candidato justificou arquivamento: contexto, restrições PGL/Golden, cancelamentos e dependências preservados. Sem exclusão, mensagem, agente Brain, configuração, delegação ou sistema externo. Commit/push/sync não executados por proibição da correção operacional vigente.
 
 ## 2026-10-03, consolidação diária silenciosa
 

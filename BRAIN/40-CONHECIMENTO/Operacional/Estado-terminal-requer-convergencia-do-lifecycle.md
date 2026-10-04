@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-10-03T02:00:00Z'
+updated: '2026-10-04T06:00:00Z'
 ---
 
 # Estado terminal requer convergencia do lifecycle
@@ -17,7 +17,7 @@ categoria: operacional
 tipo: aprendizado_permanente
 fonte: consolidacao semanal 2026-W35, teste controlado de relatorios operacionais em 2026-09-02, publicacao Instagram Bikon em 2026-09-10, lifecycle ad-hoc ARX em 2026-09-16 e consolidacao semanal 2026-W38
 confiabilidade: alta
-ultima_revisao: 2026-10-03
+ultima_revisao: 2026-10-04
 tags: [lifecycle, execucao, registry, cgroup, terminalidade, reconciliacao, supervisao, transcript]
 ```
 
@@ -126,3 +126,9 @@ No faturamento lote 5.1, interromper a execução não encerrou o objetivo resid
 O aprendizado é verificar separadamente executor, objetivo, callbacks/check-ins e entrega terminal. `COMPLETED` nesse episódio significa **encerramento administrativo por cancelamento**, não faturamento entregue ou NFS-e emitida. A narrativa de ausência de emissão não elimina a incerteza de efeitos locais P02 registrada após timeout. Cancelar não apaga histórico, não valida produto pendente e não autoriza replay. Status repetido sem mudança material é ruído de supervisão, não progresso.
 
 Fonte: sessão main `a7273403-8c6d-4d1c-8cbc-4bcbba62c37c`, textos e resultados do controlador nas linhas 327–361 discriminados em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-daily.json`. Leitura histórica, sem nova inspeção operacional. Ver [[70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION|orquestração durável]] e [[01-DIARIO/2026/2026-10-03|diário do ciclo]].
+
+## Três eixos no fechamento por cancelamento — semana 2026-W40
+
+A sequência Cresol e o cancelamento do faturamento nos diários de 02/10–03/10 reforçam uma prática transversal: registrar separadamente **estado do acompanhamento**, **resultado de negócio** e **efeitos conhecidos ou incertos**. Um objetivo pode estar encerrado por decisão do proprietário, o teste/serviço não ter sido aceito e ainda restar incerteza sobre efeitos intermediários. Nenhum desses eixos deve ser preenchido a partir do rótulo do outro.
+
+Na síntese [[01-DIARIO/Semanal/2026-W40|W40]], a espera do reteste passa a história diante do cancelamento explícito, enquanto relato P02 não vira confirmação independente nem desaparece por timeout. A curadoria preserva os três eixos; não reabre tarefa, não repete efeito e não assume a autoridade financeira/PGL. O detalhamento diário e as reconciliações aceitas foram reutilizados, não reexecutados.

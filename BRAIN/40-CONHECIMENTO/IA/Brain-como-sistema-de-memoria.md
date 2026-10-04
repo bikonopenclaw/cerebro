@@ -4,7 +4,7 @@ type: knowledge
 title: Brain como sistema de memória
 created: '2026-09-27T06:00:00Z'
 created_semantics: Registro estruturado; nota original criada em 2026-06-14, preservada abaixo.
-updated: '2026-09-27T06:00:00Z'
+updated: '2026-10-04T06:00:00Z'
 schema_version: '1.0'
 relationships:
 - type: derived_from
@@ -68,3 +68,9 @@ Fontes: [[01-DIARIO/2026/2026-09-21|21/09]], [[01-DIARIO/2026/2026-09-22|22/09]]
 - [[50-PROJETOS/Em-Andamento/Brain-Enterprise|Brain Enterprise]]
 - [[40-CONHECIMENTO/Operacional/Consolidacao-silenciosa-sem-ruido|Consolidação silenciosa sem ruído]]
 - [[FILOSOFIA]]
+
+## Recibo gravado e recuperação sem apagar a lacuna — semana 2026-W40
+
+Os diários de 02/10 e 03/10 e a reconciliação mensal repetem a distinção entre texto persistido e fechamento comprovado. Para uma síntese reutilizável, gravar o recibo, relê-lo, conferir o hash do produto e a existência das referências usadas como prova; registrar ausências como lacunas, não como fontes válidas. Um checkpoint pode vincular o hash do recibo final sem criar dependência circular entre dois arquivos que tentam conter o hash final um do outro.
+
+Uma reconciliação posterior com data própria preserva o produto recuperado e suas disposições aceitas, mas não fabrica o recibo original perdido nem converte erro histórico em sucesso. Reutilizar por identidade/disposição evita reconsolidar trabalho aceito; fila sem leitura continua pendente. Aplicação semanal em [[01-DIARIO/Semanal/2026-W40|W40]], com quatro diários revistos e cobertura primária parcial. Não se alterou automação, retenção ou autoridade operacional.

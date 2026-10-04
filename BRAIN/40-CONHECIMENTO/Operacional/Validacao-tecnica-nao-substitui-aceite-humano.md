@@ -15,7 +15,7 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W39.md
   reason: A semana reforça que uma correção humana não valida dimensões não testadas.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-27-weekly.json#daily-25-26
-updated: '2026-09-29T02:00:00Z'
+updated: '2026-10-04T06:00:00Z'
 ---
 
 # Validacao tecnica nao substitui aceite humano
@@ -25,7 +25,7 @@ categoria: operacional
 tipo: guardrail
 fonte: consolidacao semanal 2026-W33; consolidacao semanal 2026-W37; lote 365 Control em 2026-09-14; consolidacao semanal 2026-W38
 confiabilidade: alta
-ultima_revisao: 2026-09-29
+ultima_revisao: 2026-10-04
 tags: [aceite, validacao, fail-closed, provimento-213, fip, kowalski, versao, artefato, entrega]
 ```
 
@@ -100,3 +100,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch19-2026
 No Portal 213 de 21/08, build versionado, HTML loopback/HTTPS idêntico, probes assinados e Chromium renderizado coexistiram com os dois botões reais falhando no Telegram/iOS do usuário. O aceite precisava reabrir e localizar a quebra entre tap, WebView, HTTPS/build, initData e render, sem pedir repetição antes de hipótese/build corrigidos. A afirmação inicial de unit inexistente foi contradita pelo journal do user manager com loop de restart; healthz nomeando serviço também não prova ownership. Registrar restart loop como evidência operacional e hipótese causal naquele checkpoint, sem afirmar causa conclusiva ou estado atual. Fonte: unidades 30217.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch22-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Evidência incremental não transfere aceite — semana 2026-W40
+
+A campanha revisada em 01/10 e o retorno documental incorporado em 03/10 mostram por que cada prova deve declarar **objeto/hash, dimensão, autor e momento**. Hash/extração relatados pelo destinatário acrescentam integridade de transporte; não se tornam inspeção independente do ZIP, aceite criativo ou autorização de publicação. A rejeição anterior continua na cronologia da versão correspondente, sem impor por inferência o mesmo resultado a bytes não examinados.
+
+O mesmo limite aparece nos relatórios e na qualificação natural do diário de 29/09: PASS técnico limitado, ocorrência natural e amostra suficiente respondem a perguntas diferentes. Registrar o gate que falta, em vez de promover evidência de outra dimensão a conclusão geral. Síntese e fontes em [[01-DIARIO/Semanal/2026-W40|W40]]. PGL/Golden e gates de negócio não foram alterados; a revisão foi documental, sem teste ou envio novo.
