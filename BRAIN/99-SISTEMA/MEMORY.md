@@ -7,12 +7,20 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-10-03T02:00:00Z'
+updated: '2026-10-06T02:00:00Z'
 ---
 
 # MEMORY.md
 
 Memória institucional consolidada do Brain.
+
+## Determinação de 04/10/2026 — fechamento tratado pelo proprietário
+
+Os **22 documentos financeiros** do fechamento referido por Hebert estão **TRATADO_PELO_PROPRIETARIO**. Não reapresentar como pendência, reinvestigar, reprocessar nem pedir confirmação/comprovante. Esse encerramento de acompanhamento não infere transmissão, pagamento, liquidação ou baixa contábil; a falta desses detalhes no acervo não reabre o conjunto. Preservar os terminais de lote 5.1 e Cresol, inclusive `FATURAMENTO-LOTE5-RESUMO-20261002-17723=CANCELLED`; **não cancelar NF262**.
+
+No Suporte, evidência incompleta permite instrução factual apenas no **ciclo canônico agendado**. Reparo, status, teste e recuperação não autorizam envio extraordinário. A mensagem 496 de 04/10 foi classificada por Hebert como desvio de escopo: não apagar, repetir ou complementar. Robotnik ficou fora desse reparo.
+
+Fontes locais lidas: `workspace/MEMORY.md`, linhas 1–8, e `recovery/operational-recovery-20261003/executive-20261004/evidence/administrative-state.json`; identidades em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-06-daily.json`. O recibo administrativo registra disposição do owner, não prova financeira independente. Ver [[70-AUTOMACOES/boletos-malote/README|contexto financeiro]] e [[70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM|comunicação operacional]].
 
 ## Diretrizes permanentes
 

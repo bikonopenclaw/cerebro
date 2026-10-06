@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-10-03T02:00:00Z'
+updated: '2026-10-06T02:00:00Z'
 ---
 
 # Bikon Durable Work Orchestration
@@ -16,7 +16,7 @@ updated: '2026-10-03T02:00:00Z'
 categoria: automacao_operacional
 fonte: contrato canonico, requests de 2026-09-16/19 e recusas protegidas de 2026-09-22
 confiabilidade: alta para os eventos citados, sem inferir estado produtivo atual
-ultima_revisao: 2026-10-03
+ultima_revisao: 2026-10-06
 tags: [bikon, durable-work, relatorios, documentos, sentinel, kowalski, lifecycle, idempotencia]
 ```
 
@@ -108,3 +108,11 @@ O goal `FATURAMENTO-LOTE51-RESTART-LIMPO-20261002-17782` manteve `ACTIVE/waiting
 Esse resultado fecha o acompanhamento por decisão humana; não comprova entrega das 22 cobranças, não resolve os efeitos locais incertos do preparo P02 e não deve ser retomado a partir de instruções históricas. Não confundir silêncio do executor com cancelamento de toda a cadeia, nem o PASS da revisão de cancelamento com aceite fiscal. A lição reforça [[40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle|convergência de lifecycle]], sem afirmar que um reparo geral do supervisor foi instalado.
 
 Fonte primária: sessão main `a7273403-8c6d-4d1c-8cbc-4bcbba62c37c`, linhas 343–361; recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-daily.json`. Estado observado no histórico de 02/10, não revalidação live nesta consolidação.
+
+## Disposição posterior do owner e proposta de correção — 04/10/2026
+
+A determinação posterior registrada em [[99-SISTEMA/MEMORY|memória institucional]] encerra o acompanhamento dos 22 documentos como **TRATADO_PELO_PROPRIETARIO**, sem inferir efeitos financeiros e sem pedir novos comprovantes. O recibo administrativo local preserva os terminais do lote 5.1/Cresol e registra `FATURAMENTO-LOTE5-RESUMO-20261002-17723` de `ACTIVE` para `CANCELLED`. As incertezas históricas acima não são uma nova fila de trabalho.
+
+Hebert pediu um **prompt único para rodar no Codex, excluindo Robotnik**. O texto preparado exige cancelamento persistente, invalidação de leases/callbacks/retries, fencing por owner/geração, deduplicação de status por mudança material e separação entre execução, produto, aceite e transporte. `delivery_pending` reconcilia somente transporte autorizado; timeout com efeito incerto não autoriza replay. As ordens Sentinel de diagnóstico `ORDER-SENTINEL-RUNNERS-DIAG-20260919T133913Z` e recuperação `ORDER-SENTINEL-RUNNERS-RECOVERY-20260919T195939Z` permanecem encerradas.
+
+Isso documenta **pedido e especificação de correção**, não implementação/testes concluídos. O prompt limita o trabalho aos componentes canônicos, sem ledger/scheduler paralelo, efeitos de negócio, deploy, restart ou envio externo. A diária não o executou nem reabriu objetivos. Fonte: sessão main `c51081ed-2bf7-4759-9256-c5095a1982b6`, pedido e chamada de composição/envio histórica; unidades e hashes no recibo de 06/10.

@@ -4,13 +4,22 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-04T06:00:00Z'
+updated: '2026-10-06T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-06, consolidação diária silenciosa
+
+- Criado diário UTC de 06/10 (05/10 às 23h BRT) e ligação no MOC; inventário de sete dias com 297 arquivos, sem confundir metadados com cobertura.
+- Atualizados MEMORY institucional, Boletos/Malote e Orquestração Durável com a disposição posterior dos 22 documentos tratados pelo proprietário: não reabrir nem exigir comprovação, sem inferir efeitos financeiros. Terminais e NF262 preservados.
+- Registrados o pedido de prompt de correção que exclui Robotnik (sem afirmar implementação) e o resultado natural relatado em 05/10 para Relatórios Operacionais, mantendo limites de envio e diferenças entre run, produto, consumo e transporte.
+- Atualizada nota permanente existente de validação do caminho final: configuração local não prova autenticação no serviço; afirmação inicial de causa foi qualificada pela ausência de evidência posterior. Sem credenciais ou diagnóstico live.
+- Recibo `brain-v2/reports/coverage-2026-10-06-daily.json` identifica unidades lidas, produtos e pendências herdadas. HEALTH atualizado sem recálculo do score; cobertura global parcial.
+- Sem delegação, configuração, exclusão, sistema externo ou mensagem. Commit somente local autorizado neste ciclo; resultado final e hashes conferidos em checkpoint local, sem push/sync.
 
 ## 2026-10-04, consolidação semanal silenciosa — W40
 

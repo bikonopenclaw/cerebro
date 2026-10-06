@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-02T02:00:00Z'
+updated: '2026-10-06T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/KOWALSKI.md
@@ -28,13 +28,23 @@ relationships:
 categoria: canal_operacional
 fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14 e qualificacao do fluxo universal em 2026-09-16
 confiabilidade: alta
-ultima_revisao: 2026-10-02
+ultima_revisao: 2026-10-06
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
 ## Finalidade
 
 Registrar o canal Telegram `relatórios operacionais` como grupo de consulta e produção de relatórios do dia a dia da Bikon.
+
+## Limite de comunicação e observação posterior — 04–05/10/2026
+
+A determinação de Hebert registrada em 04/10 permite instrução factual de Suporte com evidência incompleta **no ciclo canônico agendado**, não envio extraordinário por reparo, status, teste ou recuperação. A mensagem 496 foi classificada como desvio de escopo; não apagar, repetir ou complementar. Isso não muda a agenda nem autoriza replay de relatórios históricos. Ver [[99-SISTEMA/MEMORY|determinação vigente]].
+
+No histórico main de 05/10, a observação natural da recuperação semanal de 28/09 informa resultado agregado **FAIL**. Para as ocorrências de 05/10: WhatsApp `PASS`; Bitdefender `FAIL / NATIVE_RUN_FAILED`; Helpdesk `FAIL / EXACT_PROVIDER_CONTENT_RECEIPT_NOT_FOUND`. O consolidado também distingue ocorrências intermediárias aprovadas, outras falhas e produtores Ninja/WhatsApp de 03/10 em `OBSERVED_SOURCE_PENDING_CONSUMER`. Não reduzir essa matriz a “tudo falhou” ou “tudo recuperado”.
+
+Esses são **resultados relatados pelo observador no histórico**, sem revalidação dos artefatos/providers pela diária. Falha de run ou ausência de recibo exato não prova falha do serviço externo; produtor observado não prova consumo. Aceitação pelo transporte, quando registrada, não comprova leitura pelo destinatário. Nenhum aviso novo ou envio de teste foi disparado.
+
+Fontes: cabeçalho de `workspace/MEMORY.md` e sessão main `c51081ed-2bf7-4759-9256-c5095a1982b6`, linhas 9–12, com identidades/disposições em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-06-daily.json`.
 
 ## Grupo
 

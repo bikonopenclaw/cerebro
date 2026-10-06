@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T21:33:26.060207Z'
+updated: '2026-10-06T02:00:00Z'
 ---
 
 # Boletos e malote bancário
@@ -16,6 +16,12 @@ Backup e documentação da futura habilidade do Darth Vader para gerar remessa/m
 
 Espelho operacional:
 `/data/.openclaw/workspace-darth-vader/boletos`
+
+## Disposição vigente do fechamento — determinação de 04/10/2026
+
+Os 22 documentos financeiros do fechamento foram **TRATADOS PELO PROPRIETÁRIO**. Isso supera sua apresentação como pendência de acompanhamento: não reinvestigar, reprocessar, pedir confirmação/comprovante ou retomar o lote. Não inferir transmissão, pagamento, liquidação ou baixa contábil, e não cancelar NF262. Os eventos históricos e efeitos incertos abaixo continuam como proveniência, não como autorização para reabrir o conjunto. Terminais do lote 5.1 e Cresol preservados; API Cresol em homologação não é falha produtiva.
+
+Fonte: determinação registrada no cabeçalho de `workspace/MEMORY.md` e recibo administrativo local de 04/10, conferidos na consolidação de 06/10. Ver [[99-SISTEMA/MEMORY|determinação e limites]] e `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-06-daily.json`. Não houve consulta ao banco operacional ou efeito financeiro nesta revisão.
 
 ## Estado em 2026-07-11
 

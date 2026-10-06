@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-04T06:00:00Z'
+updated: '2026-10-06T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,14 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-10-06
+
+- Inventário móvel de sete dias: 297 arquivos, sem erros — 238 entradas OpenClaw, 58 Codex e uma memória main. Contagens incluem índices/trajectories e não medem cobertura semântica.
+- Revisão seletiva de unidades main/Robotnik, cabeçalho vigente de MEMORY e recibo administrativo local. Kowalski, Darth Vader e Sentinel apenas inventariados neste ciclo; nenhuma cobertura primária nova atribuída a seus históricos. Fontes não lidas e fila semanal de 04/10, inclusive anteriores à janela, preservadas por identidade/referência.
+- Determinação posterior de Hebert incorporada para evitar falsa pendência financeira: os 22 documentos estão tratados pelo proprietário e não devem ser reabertos. Pendência de curadoria de fontes não é permissão para reprocessar negócio.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-10-06-daily.json`. Síntese local produzida, cobertura global parcial; lacunas históricas de recibos/diários não preenchidas por inferência. Pesquisa semântica local somente leitura antes das edições, sem atualização do índice.
+- Score legado 96/100 mantido sem recálculo e sem equivalência com cobertura. Conferência estrutural/hash e Git registrada separadamente no checkpoint local. Nenhuma publicação remota, mensagem ou mutação protegida.
 
 ## Verificação semanal — 2026-10-04
 

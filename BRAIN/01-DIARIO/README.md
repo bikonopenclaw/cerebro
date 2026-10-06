@@ -4,7 +4,7 @@ type: state
 title: MOC Diario
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-04T06:00:00Z'
+updated: '2026-10-06T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -96,6 +96,7 @@ Este MOC liga os registros cronologicos do Brain sem mover notas historicas. Ele
 - [[01-DIARIO/2026/2026-10-01|2026-10-01]]
 - [[01-DIARIO/2026/2026-10-02|2026-10-02]]
 - [[01-DIARIO/2026/2026-10-03|2026-10-03]]
+- [[01-DIARIO/2026/2026-10-06|2026-10-06]]
 
 ## Consolidados Semanais
 

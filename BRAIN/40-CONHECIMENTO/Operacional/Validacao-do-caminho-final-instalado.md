@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:39:24.440350Z'
+updated: '2026-10-06T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -29,7 +29,7 @@ categoria: operacional
 tipo: aprendizado_permanente
 fonte: consolidacao semanal 2026-W31
 confiabilidade: alta
-ultima_revisao: 2026-08-02
+ultima_revisao: 2026-10-06
 tags: [instalacao, launcher, black-box, dre, runtime, validacao]
 ```
 
@@ -44,6 +44,14 @@ Teste em clean root, pre-install ou commit preservado nao comprova que a ferrame
 3. Confirmar que caminhos internos sao relocatable ou calculados a partir do local correto.
 4. Validar saida, exit code, logs e ausencia de dependencia acidental do diretorio de build.
 5. Reverter a instalacao se o caminho final resolver artefato incorreto.
+
+## Configuração persistida não prova autenticação no serviço — 05/10/2026
+
+No recorte Robotnik, a verificação local de configuração de autenticação foi inicialmente apresentada como causa confirmada de falha de login no serviço. A resposta posterior delimitou corretamente o que ainda faltava: provar qual arquivo o processo publicado carrega, se a mudança foi carregada pelo processo e se o login pela rota publicada autentica e cria sessão. O endereço interno estava inacessível no ambiente do executor; portanto, a hipótese de configuração antiga em memória **não ficou comprovada como causa do serviço real**.
+
+Regra reutilizável: separar validade do arquivo, identidade do arquivo consumido, estado carregado pelo processo e teste funcional no caminho usado pelo usuário. Não declarar correção ou causa definitiva a partir de hash/configuração local nem prescrever restart como solução confirmada sem a evidência correspondente. Qualquer intervenção depende de autorização própria.
+
+Fonte: sessão Robotnik `328d630b-b4dc-4cce-9b56-1abadb0c070b`, resposta inicial e delimitação posterior de 05/10, unidades 88/89/92–93 no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-06-daily.json`. Leitura documental, sem acessar autenticação, copiar credenciais, testar login ou reiniciar serviço. Este caso é independente do reparo Puppet que exclui Robotnik.
 
 ## Exemplo conectado
 
