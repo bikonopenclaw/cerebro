@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-10-06T02:00:00Z'
+updated: '2026-10-07T02:00:00Z'
 ---
 
 # Bikon Durable Work Orchestration
@@ -16,7 +16,7 @@ updated: '2026-10-06T02:00:00Z'
 categoria: automacao_operacional
 fonte: contrato canonico, requests de 2026-09-16/19 e recusas protegidas de 2026-09-22
 confiabilidade: alta para os eventos citados, sem inferir estado produtivo atual
-ultima_revisao: 2026-10-06
+ultima_revisao: 2026-10-07
 tags: [bikon, durable-work, relatorios, documentos, sentinel, kowalski, lifecycle, idempotencia]
 ```
 
@@ -116,3 +116,9 @@ A determinação posterior registrada em [[99-SISTEMA/MEMORY|memória institucio
 Hebert pediu um **prompt único para rodar no Codex, excluindo Robotnik**. O texto preparado exige cancelamento persistente, invalidação de leases/callbacks/retries, fencing por owner/geração, deduplicação de status por mudança material e separação entre execução, produto, aceite e transporte. `delivery_pending` reconcilia somente transporte autorizado; timeout com efeito incerto não autoriza replay. As ordens Sentinel de diagnóstico `ORDER-SENTINEL-RUNNERS-DIAG-20260919T133913Z` e recuperação `ORDER-SENTINEL-RUNNERS-RECOVERY-20260919T195939Z` permanecem encerradas.
 
 Isso documenta **pedido e especificação de correção**, não implementação/testes concluídos. O prompt limita o trabalho aos componentes canônicos, sem ledger/scheduler paralelo, efeitos de negócio, deploy, restart ou envio externo. A diária não o executou nem reabriu objetivos. Fonte: sessão main `c51081ed-2bf7-4759-9256-c5095a1982b6`, pedido e chamada de composição/envio histórica; unidades e hashes no recibo de 06/10.
+
+## Recorrência observada — 06/10/2026
+
+No caso do login do painel de medições, uma continuação informou falha de `executive-resume`, depois repetiu duas vezes a mesma condição de `executive-reconcile` sem marco material. Hebert precisou perguntar o significado do status; a resposta posterior delimitou corretamente que a automação de continuação falhou, não que o painel havia sido corrigido ou que a senha estava errada.
+
+Esta ocorrência é evidência de que a correção sistêmica especificada em 04/10 **não pode ser considerada instalada ou validada**. Status automático deve dizer qual camada falhou e não converter falha do supervisor em estado do produto. Repetição sem mudança material deve ser suprimida. Fonte: sessões main `6ce7cb5a-d96d-4ca5-94f3-b601293d50eb` e `fe9b657b-d283-4f64-929a-dc7b1dbb4b80`; unidades/hashes no recibo de 07/10.

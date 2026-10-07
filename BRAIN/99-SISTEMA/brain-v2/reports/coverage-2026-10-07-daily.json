@@ -1,0 +1,4861 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_at": "2026-10-07T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "693b4d55-9d3c-4304-856f-2d518129834c",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "base_commit": "d1acd04",
+  "window": {
+    "reference_utc": "2026-10-07T02:00:00Z",
+    "local_date": "2026-10-06",
+    "timezone": "America/Sao_Paulo",
+    "inventory_days": 7,
+    "older_backlog": "Preserved through prior receipt and its continuity chain"
+  },
+  "execution": {
+    "state": "REVIEW_AND_CONSOLIDATION_EXECUTED_LOCALLY",
+    "delegation": false,
+    "scope": "Revisão documental seletiva; nenhum replay, deploy, restart, teste externo ou operação de negócio nesta consolidação."
+  },
+  "product": {
+    "state": "PRODUCED_DOCUMENTARY_PARTIAL",
+    "coverage_complete": false,
+    "business_acceptance": "NOT_ASSERTED",
+    "notes": [
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-10-07.md",
+        "path_base": "brain",
+        "sha256": "318db1648eb5885ed9dcd996dfe9db5dd71290e5edc1e24bd29a0538b8908e68",
+        "bytes": 3889,
+        "mtime_ns": 1791338626606743755
+      },
+      {
+        "path": "BRAIN/01-DIARIO/README.md",
+        "path_base": "brain",
+        "sha256": "263271f04dc25e762d4d013d6e38354cb985621e9850943fc83a42dcbf7ea3f2",
+        "bytes": 2964,
+        "mtime_ns": 1791338626588743735
+      },
+      {
+        "path": "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+        "path_base": "brain",
+        "sha256": "4a0da3dcd15ed9e947ecd21ea7fa1391eb7df2c941481a473e1af7909ab10806",
+        "bytes": 5359,
+        "mtime_ns": 1791338626539743678
+      },
+      {
+        "path": "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md",
+        "path_base": "brain",
+        "sha256": "1e4cdf973164e2f8497b86a2a11486dd35d858c01b8a31457f326cf91445e31d",
+        "bytes": 13865,
+        "mtime_ns": 1791338712146842709
+      },
+      {
+        "path": "BRAIN/70-AUTOMACOES/boletos-malote/README.md",
+        "path_base": "brain",
+        "sha256": "d7df726730012c107d1bf8dec9fc0679375e94d3cc1188e7de578b64411325e8",
+        "bytes": 23625,
+        "mtime_ns": 1791338626558743700
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+        "path_base": "brain",
+        "sha256": "88e65d4cd7f01e2e8226edcb054a230706badabe86c89a5c1003679575dcc447",
+        "bytes": 119573,
+        "mtime_ns": 1791338626624743776
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/HEALTH.md",
+        "path_base": "brain",
+        "sha256": "f1d4e02785e51f105ae9dfc0948a4d141051e365f88c71a89a427e5158a84ca1",
+        "bytes": 56032,
+        "mtime_ns": 1791338626635743789
+      }
+    ]
+  },
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/bd1ee6b2-6c55-4068-9cfc-0bf597992197.jsonl",
+      "path_base": "absolute",
+      "sha256": "9a6ce828742c177858661cef84a074cf9e75f6e23457bd797ec92085ec7bea51",
+      "bytes": 246835,
+      "mtime_ns": 1791287666222242216,
+      "agent": "robotnik",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 2,
+            "record_timestamp": "2026-10-06T11:32:06.990Z",
+            "line_sha256": "672d219a5aacef3d23433ebd166f0c7b11515fe329a82357b53bad30f81ef6e2",
+            "disposition": "Relato do owner: login publicado continua falhando; nenhum segredo promovido.",
+            "target_notes": [
+              "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+              "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"
+            ]
+          },
+          {
+            "line": 51,
+            "record_timestamp": "2026-10-06T11:38:54.225Z",
+            "line_sha256": "fe7b2dc372c537f2ec439c31013f7416d16ad40d5761673ee5f3c89a0523ffe5",
+            "disposition": "Resultado local qualificado: autenticação em teste não prova instância publicada; senha textual excluída da promoção.",
+            "target_notes": [
+              "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+              "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"
+            ]
+          },
+          {
+            "line": 52,
+            "record_timestamp": "2026-10-06T11:52:33.218Z",
+            "line_sha256": "906dc28f456cea77c752ff7955690a51628b708b4a7fd570dcb031d0fc6b155d",
+            "disposition": "Pedido interno read-only contextual; não tratado como autorização de restart/deploy.",
+            "target_notes": [
+              "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+              "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local por linha JSONL; textos históricos não foram executados como instruções."
+      },
+      "pending": "Demais unidades, tool payloads, anexos e rollout Codex não revisados."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/6ce7cb5a-d96d-4ca5-94f3-b601293d50eb.jsonl",
+      "path_base": "absolute",
+      "sha256": "a74640119cf3126310202c9a62fcc170c16b132d379956a1cc490bf19a6fdae1",
+      "bytes": 497326,
+      "mtime_ns": 1791292387779680963,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 2,
+            "record_timestamp": "2026-10-06T11:38:41.167Z",
+            "line_sha256": "6657bfc0efeff25857390f156b54c66806186b3fc7b67ec3e09d49d1a2d9cf0f",
+            "disposition": "Contexto técnico do handoff: local passou, endpoint publicado não verificável e sem processo local na porta.",
+            "target_notes": [
+              "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+              "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"
+            ]
+          },
+          {
+            "line": 81,
+            "record_timestamp": "2026-10-06T11:51:44.684Z",
+            "line_sha256": "9458fce2ef8ba0a390d8ffbf2a7d0b72ef1a47bd552534b2c48a0b8ffdff6595",
+            "disposition": "Objetivo/critério preservados como contexto; não prova execução.",
+            "target_notes": [
+              "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+              "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"
+            ]
+          },
+          {
+            "line": 82,
+            "record_timestamp": "2026-10-06T11:59:20.517Z",
+            "line_sha256": "d6e99806559e7c2069a4ab568cc2a4036b91a90d6a68b3d6c303c662a6b0cef6",
+            "disposition": "Falha da continuação registrada sem atribuí-la ao produto.",
+            "target_notes": [
+              "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+              "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"
+            ]
+          },
+          {
+            "line": 83,
+            "record_timestamp": "2026-10-06T12:07:55.014Z",
+            "line_sha256": "727dc3ed385987f4e72ab41541b2c4008aa79b05a6f6fd913bee4bfa9e5a7bf8",
+            "disposition": "Primeira repetição sem marco material.",
+            "target_notes": [
+              "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+              "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"
+            ]
+          },
+          {
+            "line": 84,
+            "record_timestamp": "2026-10-06T12:17:13.185Z",
+            "line_sha256": "ab50e0aae18ef7202ca22e995f61c81137e12655ba6cbb8f6375ec855f28ed2c",
+            "disposition": "Segunda repetição sem marco material.",
+            "target_notes": [
+              "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+              "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"
+            ]
+          },
+          {
+            "line": 85,
+            "record_timestamp": "2026-10-06T13:11:36.797Z",
+            "line_sha256": "d25baa2d06e649e6f70ac70e34db7e097a0f5267acdc8aa027f4d5d60357d7eb",
+            "disposition": "Dúvida do owner evidencia baixa clareza do status.",
+            "target_notes": [
+              "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+              "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local por linha JSONL; textos históricos não foram executados como instruções."
+      },
+      "pending": "Tool calls/results intermediários, anexos e demais unidades não revisados."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/fe9b657b-d283-4f64-929a-dc7b1dbb4b80.jsonl",
+      "path_base": "absolute",
+      "sha256": "c1493a2561d67b64ac9ace637edea63a9795b36fd944d84b0ed44129c3c61e46",
+      "bytes": 868283,
+      "mtime_ns": 1791292387589680704,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 213,
+            "record_timestamp": "2026-10-06T13:13:07.514Z",
+            "line_sha256": "fa947e9435f59f184dcf9e1960f3c1e24c0b1d1a0e4c6a96b11f54f571a9df36",
+            "disposition": "Resposta posterior separa falha da automação, estado do painel e login não validado.",
+            "target_notes": [
+              "BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md",
+              "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local por linha JSONL; textos históricos não foram executados como instruções."
+      },
+      "pending": "Arquivo histórico contém amplo contexto financeiro anterior; somente a unidade nova de 06/10 foi revista neste ciclo."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/68972a06-7741-430f-8e5a-da14595cafa2.jsonl",
+      "path_base": "absolute",
+      "sha256": "9525d47b26adcda413f268600cae222d5631b1afcac88470cadfe61d92d6884d",
+      "bytes": 10646,
+      "mtime_ns": 1791312381610682106,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 5,
+            "record_timestamp": "2026-10-06T18:46:12.068Z",
+            "line_sha256": "3c867bcedbb6e838a8cbb10efc842ed8b1c9f351ac00ef1ffecd66015b3b4fea",
+            "disposition": "Escopo autorizado e delimitado do probe; não reutilizado como ordem nesta consolidação.",
+            "target_notes": [
+              "BRAIN/70-AUTOMACOES/boletos-malote/README.md"
+            ]
+          },
+          {
+            "line": 7,
+            "record_timestamp": "2026-10-06T18:46:17.743Z",
+            "line_sha256": "284f3c1d9924a72dedf12323a5f644da4c25d5f5cde9726bb65254e002c4cb58",
+            "disposition": "Resultado sanitizado: OAuth 200, GET /especies 200, 26 itens, zero mutações, aliases apenas em memória.",
+            "target_notes": [
+              "BRAIN/70-AUTOMACOES/boletos-malote/README.md"
+            ]
+          },
+          {
+            "line": 8,
+            "record_timestamp": "2026-10-06T18:46:21.593Z",
+            "line_sha256": "b15bce5a6bed0e392206f17717be5343a37e0a9627c7b86b6b8a76fafc6829b9",
+            "disposition": "Síntese coerente com o resultado; incompatibilidade persistente não corrigida.",
+            "target_notes": [
+              "BRAIN/70-AUTOMACOES/boletos-malote/README.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local por linha JSONL; textos históricos não foram executados como instruções."
+      },
+      "pending": "Nenhum segredo lido ou promovido; rollout Codex e arquivo secreto não revisados."
+    }
+  ],
+  "semantic_search": {
+    "state": "UNAVAILABLE_LOCAL_DEPENDENCY_MISSING",
+    "attempt": "python3 scripts/brain-semantic-search.py --help",
+    "error_sanitized": "ModuleNotFoundError: numpy",
+    "index_or_dependencies_changed": false,
+    "fallback": "Pesquisa lexical local e leitura direta explícita."
+  },
+  "continuity_receipt": {
+    "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-06-daily.json",
+    "path_base": "brain",
+    "read_scope": "JSON integral anteriormente lido; identidade conferida nesta execução",
+    "disposition": "Pendências e limites carregados; nenhuma cobertura primária herdada como nova.",
+    "sha256": "76dd63ad652e58f84e05349b6e6dee556a5261f0b1ebc7a9533c3e7783041d4f",
+    "bytes": 153363,
+    "mtime_ns": 1791252350704734977
+  },
+  "inventory": {
+    "artifact": {
+      "path": ".openclaw/tmp/brain-20261007/inventory.json",
+      "path_base": "workspace",
+      "sha256": "cf41ebed52892c0f7e692b10da47d01303de2576fa66cef3107de4c281e8b0f7",
+      "bytes": 129550,
+      "mtime_ns": 1791338517929619530
+    },
+    "generated_at": "2026-10-07T02:01:57.917211+00:00",
+    "since_epoch": 1790733717.3381479,
+    "window_days": 7,
+    "source_count": 302,
+    "by_kind": {
+      "openclaw_history": 241,
+      "codex_history": 60,
+      "memory": 1
+    },
+    "by_agent": {
+      "main": 124,
+      "kowalski": 33,
+      "sentinel": 46,
+      "darth-vader": 43,
+      "robotnik": 56
+    },
+    "surfaces": [
+      {
+        "agent": "main",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace/memory",
+        "resolved": "/data/.openclaw/workspace/memory",
+        "exists": true
+      },
+      {
+        "agent": "main",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace/MEMORY.md",
+        "resolved": "/data/.openclaw/workspace/MEMORY.md",
+        "exists": true
+      },
+      {
+        "agent": "main",
+        "profile": "main",
+        "kind": "openclaw_history",
+        "path": "/data/.openclaw/agents/main/sessions",
+        "resolved": "/data/.openclaw/agents/main/sessions",
+        "exists": true
+      },
+      {
+        "agent": "main",
+        "profile": "main",
+        "kind": "codex_history",
+        "path": "/data/.openclaw/agents/main/codex-home/sessions",
+        "resolved": "/data/.openclaw/agents/main/codex-home/sessions",
+        "exists": true
+      },
+      {
+        "agent": "main",
+        "profile": "kowalski",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/main/sessions",
+        "resolved": "/home/openclaw/.openclaw-kowalski/agents/main/sessions",
+        "exists": true
+      },
+      {
+        "agent": "main",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/main/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "main",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/main/sessions",
+        "exists": false
+      },
+      {
+        "agent": "main",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/main/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "kowalski",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-kowalski/memory",
+        "resolved": "/data/.openclaw/workspace-kowalski/memory",
+        "exists": true
+      },
+      {
+        "agent": "kowalski",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-kowalski/MEMORY.md",
+        "exists": false
+      },
+      {
+        "agent": "kowalski",
+        "profile": "main",
+        "kind": "openclaw_history",
+        "path": "/data/.openclaw/agents/kowalski/sessions",
+        "resolved": "/data/.openclaw/agents/kowalski/sessions",
+        "exists": true
+      },
+      {
+        "agent": "kowalski",
+        "profile": "main",
+        "kind": "codex_history",
+        "path": "/data/.openclaw/agents/kowalski/codex-home/sessions",
+        "resolved": "/data/.openclaw/agents/kowalski/codex-home/sessions",
+        "exists": true
+      },
+      {
+        "agent": "kowalski",
+        "profile": "kowalski",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions",
+        "resolved": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions",
+        "exists": true
+      },
+      {
+        "agent": "kowalski",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "kowalski",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/kowalski/sessions",
+        "exists": false
+      },
+      {
+        "agent": "kowalski",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/kowalski/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-darth-vader/memory",
+        "resolved": "/data/.openclaw/workspace-darth-vader/memory",
+        "exists": true
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-darth-vader/MEMORY.md",
+        "exists": false
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "main",
+        "kind": "openclaw_history",
+        "path": "/data/.openclaw/agents/darth-vader/sessions",
+        "resolved": "/data/.openclaw/agents/darth-vader/sessions",
+        "exists": true
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "main",
+        "kind": "codex_history",
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions",
+        "resolved": "/data/.openclaw/agents/darth-vader/codex-home/sessions",
+        "exists": true
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "kowalski",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/sessions",
+        "resolved": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/sessions",
+        "exists": true
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions",
+        "resolved": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions",
+        "exists": true
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "robotnik",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-robotnik/memory",
+        "resolved": "/data/.openclaw/workspace-robotnik/memory",
+        "exists": true
+      },
+      {
+        "agent": "robotnik",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-robotnik/MEMORY.md",
+        "exists": false
+      },
+      {
+        "agent": "robotnik",
+        "profile": "main",
+        "kind": "openclaw_history",
+        "path": "/data/.openclaw/agents/robotnik/sessions",
+        "resolved": "/data/.openclaw/agents/robotnik/sessions",
+        "exists": true
+      },
+      {
+        "agent": "robotnik",
+        "profile": "main",
+        "kind": "codex_history",
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions",
+        "resolved": "/data/.openclaw/agents/robotnik/codex-home/sessions",
+        "exists": true
+      },
+      {
+        "agent": "robotnik",
+        "profile": "kowalski",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/robotnik/sessions",
+        "resolved": "/home/openclaw/.openclaw-kowalski/agents/robotnik/sessions",
+        "exists": true
+      },
+      {
+        "agent": "robotnik",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/robotnik/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "robotnik",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/robotnik/sessions",
+        "exists": false
+      },
+      {
+        "agent": "robotnik",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/robotnik/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "sentinel",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-sentinel/memory",
+        "resolved": "/data/.openclaw/workspace-sentinel/memory",
+        "exists": true
+      },
+      {
+        "agent": "sentinel",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-sentinel/MEMORY.md",
+        "exists": false
+      },
+      {
+        "agent": "sentinel",
+        "profile": "main",
+        "kind": "openclaw_history",
+        "path": "/data/.openclaw/agents/sentinel/sessions",
+        "resolved": "/data/.openclaw/agents/sentinel/sessions",
+        "exists": true
+      },
+      {
+        "agent": "sentinel",
+        "profile": "main",
+        "kind": "codex_history",
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions",
+        "resolved": "/data/.openclaw/agents/sentinel/codex-home/sessions",
+        "exists": true
+      },
+      {
+        "agent": "sentinel",
+        "profile": "kowalski",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/sentinel/sessions",
+        "resolved": "/home/openclaw/.openclaw-kowalski/agents/sentinel/sessions",
+        "exists": true
+      },
+      {
+        "agent": "sentinel",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/sentinel/codex-home/sessions",
+        "exists": false
+      },
+      {
+        "agent": "sentinel",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/sentinel/sessions",
+        "exists": false
+      },
+      {
+        "agent": "sentinel",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/sentinel/codex-home/sessions",
+        "exists": false
+      }
+    ],
+    "errors": [],
+    "scope": "Metadados apenas. Somente sources_reviewed possuem disposição editorial nova.",
+    "sources": [
+      {
+        "path": "/data/.openclaw/agents/main/sessions/ad86383f-3f0a-4fe8-ace5-ccda2cd770f8.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 2633,
+        "mtime_ns": 1790735416617007195,
+        "inode": 2107802,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/ad86383f-3f0a-4fe8-ace5-ccda2cd770f8.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 187880,
+        "mtime_ns": 1790735416634007219,
+        "inode": 2106921,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/1b693732-4b04-4253-9e80-c9c716514393.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 5455,
+        "mtime_ns": 1790758824022855203,
+        "inode": 2173484,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/1b693732-4b04-4253-9e80-c9c716514393.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 189094,
+        "mtime_ns": 1790758824058855253,
+        "inode": 2173386,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/ffca6b45-ecf5-4a34-a0c7-dcf62b8c096a.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 91669,
+        "mtime_ns": 1790771243638853654,
+        "inode": 1848103,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/ffca6b45-ecf5-4a34-a0c7-dcf62b8c096a.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 254289,
+        "mtime_ns": 1790771243725853725,
+        "inode": 1848092,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/09/30/rollout-2026-09-30T12-27-35-01a0f248-d770-7592-a9a2-f31e84b70b7f.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 289460,
+        "mtime_ns": 1790771529310133205,
+        "inode": 3414369,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/main/sessions/fee9eb93-b839-402b-b77b-29a5c1b5052c.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 53160,
+        "mtime_ns": 1790771529387133368,
+        "inode": 1848110,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/main/sessions/fee9eb93-b839-402b-b77b-29a5c1b5052c.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 172963,
+        "mtime_ns": 1790771529418133434,
+        "inode": 1848108,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/main/sessions/sessions.json",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 136695,
+        "mtime_ns": 1790771529479133563,
+        "inode": 1848047,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/791cbee4-63ea-4466-8ced-4f4c341761c3.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 83239,
+        "mtime_ns": 1790772293911397251,
+        "inode": 1848111,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/791cbee4-63ea-4466-8ced-4f4c341761c3.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 240416,
+        "mtime_ns": 1790772294004397379,
+        "inode": 1848098,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/6df838a7-c3bb-4ad9-9bfd-6f70e6995cc4.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3547,
+        "mtime_ns": 1790780431340553316,
+        "inode": 2173473,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/6df838a7-c3bb-4ad9-9bfd-6f70e6995cc4.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 187205,
+        "mtime_ns": 1790780431380553313,
+        "inode": 2097466,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/9ab2224c-6eb0-44e4-8600-dcea0ae521f5.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3547,
+        "mtime_ns": 1790798426110852960,
+        "inode": 2173503,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/9ab2224c-6eb0-44e4-8600-dcea0ae521f5.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 187205,
+        "mtime_ns": 1790798426134853038,
+        "inode": 2173402,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/b0e2a797-97ab-45e7-aa85-067245dfddac.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3543,
+        "mtime_ns": 1790816419761146590,
+        "inode": 2173475,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/b0e2a797-97ab-45e7-aa85-067245dfddac.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 187185,
+        "mtime_ns": 1790816419790146623,
+        "inode": 2171471,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/7a0ca198-cba7-4382-be30-1e9a293f96fa.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 510251,
+        "mtime_ns": 1790820404336047124,
+        "inode": 2128876,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/7a0ca198-cba7-4382-be30-1e9a293f96fa.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 189972,
+        "mtime_ns": 1790820404462047283,
+        "inode": 2106050,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/74b1587c-4a6a-4a9b-bd0c-1c2730bc588a.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 225149,
+        "mtime_ns": 1790820599262291019,
+        "inode": 2106920,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/74b1587c-4a6a-4a9b-bd0c-1c2730bc588a.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 355155,
+        "mtime_ns": 1790820599333291108,
+        "inode": 2106384,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/ce7f0e4c-4862-4bf7-82f4-6b6fc89d0048.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 363111,
+        "mtime_ns": 1790838301563658491,
+        "inode": 2173476,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/ce7f0e4c-4862-4bf7-82f4-6b6fc89d0048.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 190402,
+        "mtime_ns": 1790838301779658772,
+        "inode": 2106137,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/eab1c03f-af96-4702-86f5-9c13e8f6ee63.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 213347,
+        "mtime_ns": 1790838478211888850,
+        "inode": 2173578,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/eab1c03f-af96-4702-86f5-9c13e8f6ee63.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 364588,
+        "mtime_ns": 1790838478273888931,
+        "inode": 2173533,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/0919b918-3277-40e2-a7d5-7c5357d646d1.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 228415,
+        "mtime_ns": 1790838711788193308,
+        "inode": 2173587,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/0919b918-3277-40e2-a7d5-7c5357d646d1.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 293602,
+        "mtime_ns": 1790838711831193364,
+        "inode": 2173579,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/474337d7-fdb3-47bb-8f85-b6caab743b02.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 4215,
+        "mtime_ns": 1790845222427557037,
+        "inode": 2173596,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/474337d7-fdb3-47bb-8f85-b6caab743b02.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 187857,
+        "mtime_ns": 1790845222492557118,
+        "inode": 2106421,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/f6cfddc8-9980-4a8f-99eb-4cc21ead9317.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 35143,
+        "mtime_ns": 1790852459853136875,
+        "inode": 2135028,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/f6cfddc8-9980-4a8f-99eb-4cc21ead9317.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 182974,
+        "mtime_ns": 1790852459906136947,
+        "inode": 2106407,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/eb6806fa-d29d-47b5-87ad-4315d80bf926.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 82641,
+        "mtime_ns": 1790852728973500116,
+        "inode": 2106448,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/10/01/rollout-2026-10-01T10-44-29-01a0f710-d108-78c2-bced-061275bf9fd6.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 875520,
+        "mtime_ns": 1790852729247500486,
+        "inode": 2106575,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/30fd50ca-d37b-4277-9db6-892556d62d7f.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 429090,
+        "mtime_ns": 1790852729843501290,
+        "inode": 2106123,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/1736f9e9-8941-4fe6-a73c-8ea999fedd63.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 23806,
+        "mtime_ns": 1790853623241730994,
+        "inode": 2173589,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/1736f9e9-8941-4fe6-a73c-8ea999fedd63.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 171849,
+        "mtime_ns": 1790853623267731031,
+        "inode": 2135024,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/8cbe5cbd-4e58-4291-9f71-5f37dc934b86.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 28701,
+        "mtime_ns": 1790854837373433996,
+        "inode": 2173630,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/8cbe5cbd-4e58-4291-9f71-5f37dc934b86.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 176698,
+        "mtime_ns": 1790854837398434031,
+        "inode": 2107551,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/c8d8f2b8-9f1c-46aa-bb0c-9307592594f7.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 37841,
+        "mtime_ns": 1790856048463175352,
+        "inode": 2173594,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/c8d8f2b8-9f1c-46aa-bb0c-9307592594f7.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 184372,
+        "mtime_ns": 1790856048510175421,
+        "inode": 2173489,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/0fbdff5c-64d0-4d84-afd1-bbc48c460852.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3779234,
+        "mtime_ns": 1790856049505176870,
+        "inode": 2168707,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/01/rollout-2026-10-01T12-36-46-01a0f777-9d8f-7873-8a07-0389c481bdf0.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 147452,
+        "mtime_ns": 1790858305084972204,
+        "inode": 2107481,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/3f35437f-975e-437e-aebb-7f9d3dc1a10a.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 10550,
+        "mtime_ns": 1790858305158972288,
+        "inode": 2135095,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/3f35437f-975e-437e-aebb-7f9d3dc1a10a.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 55373,
+        "mtime_ns": 1790858305195972329,
+        "inode": 2106612,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/3a9fd362-7c2f-48f9-9392-8215490418b0.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 47681,
+        "mtime_ns": 1790859258002137648,
+        "inode": 1848118,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/3a9fd362-7c2f-48f9-9392-8215490418b0.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 166775,
+        "mtime_ns": 1790859258073137738,
+        "inode": 1848104,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/f8271348-f4c2-4f55-a53b-038f33871d0a.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 35497,
+        "mtime_ns": 1790859379184292258,
+        "inode": 1848121,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/f8271348-f4c2-4f55-a53b-038f33871d0a.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 153388,
+        "mtime_ns": 1790859379244292335,
+        "inode": 1848119,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/e6d38f3b-97ef-4162-9444-347e58107ac6.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 5125,
+        "mtime_ns": 1790859690914598510,
+        "inode": 2173657,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/e6d38f3b-97ef-4162-9444-347e58107ac6.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 135886,
+        "mtime_ns": 1790859690941598525,
+        "inode": 2134162,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/b242d5fb-ff92-4953-ae6e-df872ef8a6af.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 1548,
+        "mtime_ns": 1790859701889604684,
+        "inode": 2173658,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/b242d5fb-ff92-4953-ae6e-df872ef8a6af.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 201010,
+        "mtime_ns": 1790859701920604702,
+        "inode": 2135279,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/ce8ade4a-6364-4f23-891c-f363b01a6619.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 677208,
+        "mtime_ns": 1790859978037801526,
+        "inode": 2107718,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/ce8ade4a-6364-4f23-891c-f363b01a6619.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 190169,
+        "mtime_ns": 1790859978219801677,
+        "inode": 2135250,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/ca383694-8e64-4bdc-b939-2d2de382b1a7.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3543,
+        "mtime_ns": 1790866831043517464,
+        "inode": 2135262,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/ca383694-8e64-4bdc-b939-2d2de382b1a7.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 187185,
+        "mtime_ns": 1790866831075517509,
+        "inode": 2106917,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/01/rollout-2026-10-01T12-47-32-01a0f781-776b-7423-b983-b895f6366f9c.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 218315,
+        "mtime_ns": 1790881942981777302,
+        "inode": 2173637,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/3e066562-54d7-4fe7-8388-e1f1d32aeec5.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 22959,
+        "mtime_ns": 1790881943037777372,
+        "inode": 2135102,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/3e066562-54d7-4fe7-8388-e1f1d32aeec5.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 157657,
+        "mtime_ns": 1790881943064777405,
+        "inode": 2173636,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/01/rollout-2026-10-01T12-48-28-01a0f782-517a-7561-beec-1cf58c5f66ab.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 226871,
+        "mtime_ns": 1790882005409854700,
+        "inode": 2173642,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/8decca5c-8526-4147-9163-5460c8b22466.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 21794,
+        "mtime_ns": 1790882005458854761,
+        "inode": 2173645,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/8decca5c-8526-4147-9163-5460c8b22466.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 157905,
+        "mtime_ns": 1790882005485854795,
+        "inode": 2173641,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/01/rollout-2026-10-01T12-49-32-01a0f783-4b65-7d43-ae16-8e864a7012ae.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 222922,
+        "mtime_ns": 1790882067725932172,
+        "inode": 2173647,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/2e145780-2b71-4335-ac7e-e8efce7e62d8.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 21847,
+        "mtime_ns": 1790882067789932251,
+        "inode": 2173649,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/2e145780-2b71-4335-ac7e-e8efce7e62d8.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 158044,
+        "mtime_ns": 1790882067824932295,
+        "inode": 2173646,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/01/rollout-2026-10-01T12-44-11-01a0f77e-6836-7ae0-b41f-74bac0cbbbaa.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 342734,
+        "mtime_ns": 1790882337191780345,
+        "inode": 2135253,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/3ed18722-75c5-453d-b388-458c9d86d50d.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 37603,
+        "mtime_ns": 1790882337257780313,
+        "inode": 2173633,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/3ed18722-75c5-453d-b388-458c9d86d50d.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 305454,
+        "mtime_ns": 1790882337284780300,
+        "inode": 2173480,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/71203505-50cc-47f1-b1fc-7b627f974042.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 97881,
+        "mtime_ns": 1790883039909913451,
+        "inode": 1848124,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/71203505-50cc-47f1-b1fc-7b627f974042.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 998677,
+        "mtime_ns": 1790883040086913560,
+        "inode": 1839664,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/a5b8b915-466a-4013-9ba1-f88825b3745b.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3535,
+        "mtime_ns": 1790884826062862799,
+        "inode": 2135080,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/a5b8b915-466a-4013-9ba1-f88825b3745b.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 187297,
+        "mtime_ns": 1790884826111862904,
+        "inode": 2107582,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/01/rollout-2026-10-01T23-36-25-01a0f9d3-895e-79c2-a4cb-4d340824daf0.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 221369,
+        "mtime_ns": 1790897872052903830,
+        "inode": 2135068,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/7c127235-b557-4126-bbb3-11a9696acef8.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 65010,
+        "mtime_ns": 1790897872080903861,
+        "inode": 1092534,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/7c127235-b557-4126-bbb3-11a9696acef8.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 145414,
+        "mtime_ns": 1790897872097903879,
+        "inode": 1051246,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/01/rollout-2026-10-01T23-40-43-01a0f9d7-7b4a-7403-8419-71b5f955187e.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 169849,
+        "mtime_ns": 1790898172066236950,
+        "inode": 2135103,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/9e83e635-5a64-41d7-a9dc-64c8b8a58e27.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 118807,
+        "mtime_ns": 1790898172142237035,
+        "inode": 1092539,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/9e83e635-5a64-41d7-a9dc-64c8b8a58e27.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 222322,
+        "mtime_ns": 1790898172156237050,
+        "inode": 1092537,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/01/rollout-2026-10-01T23-57-08-01a0f9e6-8310-7470-82f6-28e78234f2c8.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 136787,
+        "mtime_ns": 1790899055175432273,
+        "inode": 2134362,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/3b82ce3d-7ed3-43a0-bde2-2edf1571d306.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 23868,
+        "mtime_ns": 1790899055221432335,
+        "inode": 1092542,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/3b82ce3d-7ed3-43a0-bde2-2edf1571d306.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 75156,
+        "mtime_ns": 1790899055234432353,
+        "inode": 1092540,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/366fa5d8-92bb-41ce-8296-7a1eef16ee9d.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 30501,
+        "mtime_ns": 1790899282438732871,
+        "inode": 1092545,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/02/rollout-2026-10-02T00-00-39-01a0f9e9-bb11-7482-a24b-1af351a2c972.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 144260,
+        "mtime_ns": 1790899282443732877,
+        "inode": 2135285,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/366fa5d8-92bb-41ce-8296-7a1eef16ee9d.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 95091,
+        "mtime_ns": 1790899282513732968,
+        "inode": 1092543,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/056cb7b4-ab96-44b7-ab51-80559a8a32a4.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 293596,
+        "mtime_ns": 1790899464277965486,
+        "inode": 2135223,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/056cb7b4-ab96-44b7-ab51-80559a8a32a4.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 2463095,
+        "mtime_ns": 1790899464446965700,
+        "inode": 2106683,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/48c6812b-8a5e-413b-8cf2-8565da415373.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3541,
+        "mtime_ns": 1790902820936587350,
+        "inode": 2135030,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/48c6812b-8a5e-413b-8cf2-8565da415373.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 187175,
+        "mtime_ns": 1790902820975587402,
+        "inode": 2106937,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/c210e7e9-e8ca-4c1b-82d3-db645a9ddc37.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 530322,
+        "mtime_ns": 1790906883646480693,
+        "inode": 2135070,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/c210e7e9-e8ca-4c1b-82d3-db645a9ddc37.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 192715,
+        "mtime_ns": 1790906883829481007,
+        "inode": 2106382,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/04ddb1ab-8bac-4633-886c-f96aec8d983d.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 395648,
+        "mtime_ns": 1790907365915227532,
+        "inode": 2135305,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/04ddb1ab-8bac-4633-886c-f96aec8d983d.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 134236,
+        "mtime_ns": 1790907366045227717,
+        "inode": 2106383,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/3e4589b7-b7b5-4fba-878b-e8842e7885dc.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3929,
+        "mtime_ns": 1790931624815098918,
+        "inode": 2135387,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/3e4589b7-b7b5-4fba-878b-e8842e7885dc.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 187563,
+        "mtime_ns": 1790931624852098981,
+        "inode": 2135567,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/02/rollout-2026-10-02T12-56-26-01a0fcaf-fc70-76f3-8798-f494546e4f78.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 227339,
+        "mtime_ns": 1790945992301790053,
+        "inode": 2128756,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/97faab6a-113b-4d83-be22-cd5c7a8a8c4d.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 93498,
+        "mtime_ns": 1790945992329790130,
+        "inode": 1092548,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/97faab6a-113b-4d83-be22-cd5c7a8a8c4d.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 188659,
+        "mtime_ns": 1790945992349790185,
+        "inode": 1092546,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/9daefa00-b5db-439d-8e3e-b9aea34ec466.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 55225,
+        "mtime_ns": 1790946599427095775,
+        "inode": 1848087,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/9daefa00-b5db-439d-8e3e-b9aea34ec466.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 215912,
+        "mtime_ns": 1790946599483095873,
+        "inode": 1839634,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/02/rollout-2026-10-02T13-16-33-01a0fcc2-669d-76a2-81b1-6524a527a18a.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 532885,
+        "mtime_ns": 1790948276472170820,
+        "inode": 2097548,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/49930844-5bba-4873-859c-9ee8ecd37c21.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 431686,
+        "mtime_ns": 1790948276549170898,
+        "inode": 2097544,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/04554961-dfad-46e1-910f-1947f79a3088.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 83826,
+        "mtime_ns": 1790948366401262998,
+        "inode": 1848128,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/04554961-dfad-46e1-910f-1947f79a3088.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 174693,
+        "mtime_ns": 1790948366450263049,
+        "inode": 1848122,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/2ec980b4-8055-4a5b-a5ba-50cef2a265f6.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3533,
+        "mtime_ns": 1790953222944210523,
+        "inode": 2097320,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/2ec980b4-8055-4a5b-a5ba-50cef2a265f6.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 187287,
+        "mtime_ns": 1790953222987210584,
+        "inode": 2097318,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/02/rollout-2026-10-02T16-22-48-01a0fd6c-e89e-7c50-a81d-853529c308fc.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 481797,
+        "mtime_ns": 1790958412402427512,
+        "inode": 2106423,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/cfcb84e1-f3fa-4724-834b-cdec8c1d31e9.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 311807,
+        "mtime_ns": 1790958412503427641,
+        "inode": 1092551,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/cfcb84e1-f3fa-4724-834b-cdec8c1d31e9.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 269897,
+        "mtime_ns": 1790958412531427677,
+        "inode": 1092549,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/a80ab48c-99dc-41a0-b482-ebccdfdfb25c.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 9159788,
+        "mtime_ns": 1790958628881698561,
+        "inode": 2097564,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/02/rollout-2026-10-02T16-57-07-01a0fd8c-52fe-7772-a97d-c7b4a366a588.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 502691,
+        "mtime_ns": 1790960729835681060,
+        "inode": 2097572,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/4ee0d1c1-bf2d-4995-8b31-f0630ef15160.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 324086,
+        "mtime_ns": 1790960730130681300,
+        "inode": 1092554,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/4ee0d1c1-bf2d-4995-8b31-f0630ef15160.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 262436,
+        "mtime_ns": 1790960730163681327,
+        "inode": 1092550,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/02/rollout-2026-10-02T17-39-29-01a0fdb3-1f0e-7803-8473-10c3d0663f46.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 568556,
+        "mtime_ns": 1790963208379030812,
+        "inode": 2107788,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/3c7ea1d5-bc5c-47ce-8360-72c3cc3b0a51.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 313823,
+        "mtime_ns": 1790963208558031050,
+        "inode": 1092557,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/3c7ea1d5-bc5c-47ce-8360-72c3cc3b0a51.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 268682,
+        "mtime_ns": 1790963208588031090,
+        "inode": 1092555,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/02/rollout-2026-10-02T17-51-29-01a0fdbe-1a9a-7061-92c6-3904027c3b95.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 382582,
+        "mtime_ns": 1790963872538871076,
+        "inode": 2106367,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/72ba64b7-eb24-4e50-8656-ef5836a7c37d.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 229019,
+        "mtime_ns": 1790963872687871258,
+        "inode": 1092560,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/72ba64b7-eb24-4e50-8656-ef5836a7c37d.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 409106,
+        "mtime_ns": 1790963872722871301,
+        "inode": 1092558,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/02/rollout-2026-10-02T18-07-53-01a0fdcd-1e94-7c61-9c27-ff22e864514a.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 275172,
+        "mtime_ns": 1790964720488207119,
+        "inode": 2135577,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/741559b4-962b-42f1-8c5c-db96696c4ca7.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 133213,
+        "mtime_ns": 1790964720796207310,
+        "inode": 1092563,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/741559b4-962b-42f1-8c5c-db96696c4ca7.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 258063,
+        "mtime_ns": 1790964721050207467,
+        "inode": 1092561,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/02/rollout-2026-10-02T18-22-31-01a0fdda-83ba-71b2-bb9a-c80580227f59.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 296268,
+        "mtime_ns": 1790965532548864523,
+        "inode": 2097561,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/f8d4ea20-c9e3-4187-bd3c-9f8e0c7b4509.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 123831,
+        "mtime_ns": 1790965532682864646,
+        "inode": 1092566,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/f8d4ea20-c9e3-4187-bd3c-9f8e0c7b4509.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 236940,
+        "mtime_ns": 1790965532716864677,
+        "inode": 1092564,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/02/rollout-2026-10-02T18-29-10-01a0fde0-9b6e-7ad3-82fb-9fab220df448.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 222511,
+        "mtime_ns": 1790965879193191656,
+        "inode": 2135403,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/f224e2d2-5e22-46f3-9d17-e864157572fa.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 83208,
+        "mtime_ns": 1790965879285191745,
+        "inode": 1092569,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/f224e2d2-5e22-46f3-9d17-e864157572fa.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 168930,
+        "mtime_ns": 1790965879300191759,
+        "inode": 1092567,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/02/rollout-2026-10-02T18-35-23-01a0fde6-4b75-77a2-b356-c5328adcd07c.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 434280,
+        "mtime_ns": 1790966313190866413,
+        "inode": 2097566,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/e7362840-9bb2-4719-a43b-a3af9632425b.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 215187,
+        "mtime_ns": 1790966313314866647,
+        "inode": 1092572,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/e7362840-9bb2-4719-a43b-a3af9632425b.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 406608,
+        "mtime_ns": 1790966313341866698,
+        "inode": 1092570,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/sessions/sessions.json",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 345822,
+        "mtime_ns": 1790967172528158697,
+        "inode": 2135018,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/02/rollout-2026-10-02T18-41-43-01a0fdec-1710-7352-94dc-e102766cb24f.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 941758,
+        "mtime_ns": 1790967172576158758,
+        "inode": 2106889,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/1425841b-062b-4af8-8461-23b243942106.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 526869,
+        "mtime_ns": 1790967172756158989,
+        "inode": 1092575,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/1425841b-062b-4af8-8461-23b243942106.trajectory.jsonl",
+        "agents": [
+          "darth-vader"
+        ],
+        "profiles": [
+          "darth-vader"
+        ],
+        "kind": "openclaw_history",
+        "size": 413927,
+        "mtime_ns": 1790967172801159047,
+        "inode": 1092573,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/fe9b657b-d283-4f64-929a-dc7b1dbb4b80.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 8431575,
+        "mtime_ns": 1790968754185756747,
+        "inode": 2097279,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/c172812f-648e-41aa-84a2-19d14be2f153.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3533,
+        "mtime_ns": 1790971237866156880,
+        "inode": 2173789,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/c172812f-648e-41aa-84a2-19d14be2f153.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 150245,
+        "mtime_ns": 1790971237962156934,
+        "inode": 2097543,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/10/02/rollout-2026-10-02T16-14-34-01a0fd65-615e-7190-9b1f-a183c252327b.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 3582010,
+        "mtime_ns": 1790976565711828439,
+        "inode": 2097567,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/10/02/rollout-2026-10-02T21-29-27-01a0fe85-a8bb-7001-b25b-057b2404e8f9.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 333384,
+        "mtime_ns": 1790976648043872859,
+        "inode": 2174168,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/10/02/rollout-2026-10-02T23-34-23-01a0fef8-0bac-74a0-a2c0-a0288a7c05c7.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 388175,
+        "mtime_ns": 1790984241646863238,
+        "inode": 2145016,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/a7273403-8c6d-4d1c-8cbc-4bcbba62c37c.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3954948,
+        "mtime_ns": 1790984241846863452,
+        "inode": 2097565,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/7e851bbc-2f14-4cfa-a889-2abf343b6458.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3543,
+        "mtime_ns": 1790989235793106030,
+        "inode": 2174031,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/7e851bbc-2f14-4cfa-a889-2abf343b6458.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 187185,
+        "mtime_ns": 1790989235823106029,
+        "inode": 2139425,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/0fd1268c-51cb-4cec-810d-18b2ae45664b.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 597660,
+        "mtime_ns": 1790993274001179798,
+        "inode": 2174158,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/0fd1268c-51cb-4cec-810d-18b2ae45664b.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 190120,
+        "mtime_ns": 1790993274190180007,
+        "inode": 2107500,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/efb8a55e-2dfb-413e-b8f0-2a81530f0868.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 405573,
+        "mtime_ns": 1790993562665502652,
+        "inode": 2145014,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/efb8a55e-2dfb-413e-b8f0-2a81530f0868.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 130004,
+        "mtime_ns": 1790993562786502789,
+        "inode": 2134497,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/7bf46a76-dab1-45ac-a9f1-62a6b8987177.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 398531,
+        "mtime_ns": 1790994068860079848,
+        "inode": 2174260,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/7bf46a76-dab1-45ac-a9f1-62a6b8987177.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 130905,
+        "mtime_ns": 1790994068981079987,
+        "inode": 2174164,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/03/rollout-2026-10-03T03-15-10-01a0ffc2-2a3d-79e0-a4e3-c77b5d6fd72f.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 106869,
+        "mtime_ns": 1790997380643693644,
+        "inode": 2174463,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/9efa6ef3-a5af-4f67-a04c-3427dd9f5e19.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 9286,
+        "mtime_ns": 1790997380689693666,
+        "inode": 2174459,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/9efa6ef3-a5af-4f67-a04c-3427dd9f5e19.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 42219,
+        "mtime_ns": 1790997380925693779,
+        "inode": 2174457,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/03/rollout-2026-10-03T03-35-04-01a0ffd4-6446-7a10-b51e-4585bfea297a.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 362952,
+        "mtime_ns": 1790999239080907855,
+        "inode": 2174522,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/afc20335-cf63-4fc7-b6e4-2b4be194e0d0.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 232257,
+        "mtime_ns": 1790999239268908250,
+        "inode": 2174521,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/afc20335-cf63-4fc7-b6e4-2b4be194e0d0.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 389566,
+        "mtime_ns": 1790999239534908809,
+        "inode": 2174506,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/03/rollout-2026-10-03T03-55-04-01a0ffe6-b243-7d81-97ac-4b95feb695ca.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 114791,
+        "mtime_ns": 1790999809760913913,
+        "inode": 2174527,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/2ba22758-a072-49d4-a842-edd82ad7f006.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 11321,
+        "mtime_ns": 1790999809821914007,
+        "inode": 2174526,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/2ba22758-a072-49d4-a842-edd82ad7f006.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 45177,
+        "mtime_ns": 1790999810073914392,
+        "inode": 2174523,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/3ba5e3ee-e214-4814-a341-10391d1db375.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6029,
+        "mtime_ns": 1791018027382898179,
+        "inode": 2174505,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/3ba5e3ee-e214-4814-a341-10391d1db375.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 189652,
+        "mtime_ns": 1791018027465898287,
+        "inode": 2173626,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/8c814d80-c850-44a2-be42-6f4d075dc490.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 213145,
+        "mtime_ns": 1791029083091994999,
+        "inode": 2174643,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/8c814d80-c850-44a2-be42-6f4d075dc490.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 356401,
+        "mtime_ns": 1791029083180995101,
+        "inode": 2173659,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/8b3848b2-2242-4a89-8599-01face8293d5.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 16823,
+        "mtime_ns": 1791029084859997032,
+        "inode": 2184195,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/sessions/sessions.json",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 221251,
+        "mtime_ns": 1791029084865997039,
+        "inode": 2174644,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/4aa41138-b25e-4181-bb2b-1967e3539d5f.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 3535,
+        "mtime_ns": 1791039626878489836,
+        "inode": 2145233,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/4aa41138-b25e-4181-bb2b-1967e3539d5f.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 187297,
+        "mtime_ns": 1791039626899489853,
+        "inode": 2145211,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/kowalski/codex-home/sessions/2026/10/03/rollout-2026-10-03T15-07-32-01a1024e-5c09-76e1-b73d-66715f6f58fc.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 269490,
+        "mtime_ns": 1791040458826528972,
+        "inode": 2174649,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/7a0f9aad-e445-4042-8c35-0ec86317552e.trajectory.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 148580,
+        "mtime_ns": 1791040458903529134,
+        "inode": 1848132,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/7a0f9aad-e445-4042-8c35-0ec86317552e.jsonl",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 40512,
+        "mtime_ns": 1791040464487540915,
+        "inode": 1848135,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/sessions.json",
+        "agents": [
+          "kowalski"
+        ],
+        "profiles": [
+          "kowalski"
+        ],
+        "kind": "openclaw_history",
+        "size": 1491205,
+        "mtime_ns": 1791040464500540942,
+        "inode": 1839475,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/03/rollout-2026-10-03T16-30-36-01a1029a-6a3b-73c3-ba7e-b2df4c57d4af.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 227407,
+        "mtime_ns": 1791045933654092675,
+        "inode": 2174746,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/f699b48b-ac97-4ce5-8c91-3f5ecb7e5d8e.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 43490,
+        "mtime_ns": 1791045933778092815,
+        "inode": 2174744,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/f699b48b-ac97-4ce5-8c91-3f5ecb7e5d8e.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 94754,
+        "mtime_ns": 1791045934053093126,
+        "inode": 2174742,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/03/rollout-2026-10-03T16-46-06-01a102a8-9aac-7ae2-a349-2357b3fa5966.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 119422,
+        "mtime_ns": 1791046128331453947,
+        "inode": 2174803,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/42d2e661-a9c4-49a0-b916-7c8d099bb77f.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 12823,
+        "mtime_ns": 1791046128728454696,
+        "inode": 2174802,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/42d2e661-a9c4-49a0-b916-7c8d099bb77f.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 50350,
+        "mtime_ns": 1791046129093455385,
+        "inode": 2174800,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/03/rollout-2026-10-03T17-03-16-01a102b8-5220-7190-865a-6234b7139552.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 101681,
+        "mtime_ns": 1791047022866843336,
+        "inode": 2174933,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/7d765194-7463-4bba-8557-f72a9a815120.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 8858,
+        "mtime_ns": 1791047022894843374,
+        "inode": 2174932,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/7d765194-7463-4bba-8557-f72a9a815120.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 43212,
+        "mtime_ns": 1791047023174843756,
+        "inode": 2174930,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/03/rollout-2026-10-03T17-12-29-01a102c0-c178-7fc2-9bb7-f3c24534af5c.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 178409,
+        "mtime_ns": 1791048129393048756,
+        "inode": 2174975,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/95d028a0-95f0-4e2e-84be-f8604a2aa6e9.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 33719,
+        "mtime_ns": 1791048129492048702,
+        "inode": 2174978,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/95d028a0-95f0-4e2e-84be-f8604a2aa6e9.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 80216,
+        "mtime_ns": 1791048129721048577,
+        "inode": 2174971,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/03/rollout-2026-10-03T17-45-36-01a102df-13cf-7542-a99f-5de5eacbd260.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 126982,
+        "mtime_ns": 1791049597036779646,
+        "inode": 2175109,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/d6197f16-7d03-4081-b149-44b8209bff2d.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 11169,
+        "mtime_ns": 1791049597067779674,
+        "inode": 2175110,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/d6197f16-7d03-4081-b149-44b8209bff2d.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 46569,
+        "mtime_ns": 1791049597291779881,
+        "inode": 2175108,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/03/rollout-2026-10-03T19-09-33-01a1032b-eee5-7891-99d8-69bdca52ceee.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 108420,
+        "mtime_ns": 1791054655150542326,
+        "inode": 2175378,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/9dd1ec6c-f565-49ac-856b-4012386d1997.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 11057,
+        "mtime_ns": 1791054655201542351,
+        "inode": 2175377,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/9dd1ec6c-f565-49ac-856b-4012386d1997.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 46401,
+        "mtime_ns": 1791054655471542483,
+        "inode": 2175374,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/172e0b13-f7a2-478d-9ba3-19235945189f.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 4808,
+        "mtime_ns": 1791057631268612182,
+        "inode": 2146116,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/172e0b13-f7a2-478d-9ba3-19235945189f.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 190626,
+        "mtime_ns": 1791057631317612236,
+        "inode": 2145208,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/03/rollout-2026-10-03T20-18-17-01a1036a-dd76-7b92-8ae4-e04a038c2594.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 114571,
+        "mtime_ns": 1791058773720180502,
+        "inode": 2175541,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/671d732e-775a-4eed-9d33-c5109b8d2021.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 11365,
+        "mtime_ns": 1791058773768180574,
+        "inode": 2175539,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/671d732e-775a-4eed-9d33-c5109b8d2021.trajectory.jsonl",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 46821,
+        "mtime_ns": 1791058774020180954,
+        "inode": 2175536,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/8231a8a9-109a-43df-a9aa-dc55bac50eda.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 7415,
+        "mtime_ns": 1791075641109321660,
+        "inode": 2175578,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/8231a8a9-109a-43df-a9aa-dc55bac50eda.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 191780,
+        "mtime_ns": 1791075641158321696,
+        "inode": 2173685,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/6e2b56a1-722d-4e86-a1dc-b5d51561a5a4.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 451399,
+        "mtime_ns": 1791094234493622930,
+        "inode": 2174656,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/6e2b56a1-722d-4e86-a1dc-b5d51561a5a4.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 127072,
+        "mtime_ns": 1791094234600623062,
+        "inode": 2146175,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/675a3e3f-713f-4243-aa26-fc62db4ef395.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 4750,
+        "mtime_ns": 1791104423246262435,
+        "inode": 2146201,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/675a3e3f-713f-4243-aa26-fc62db4ef395.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 190662,
+        "mtime_ns": 1791104423270262464,
+        "inode": 2146196,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/6e47ffd1-f936-4043-ac21-a3e89c3dea85.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 7407,
+        "mtime_ns": 1791126038348922506,
+        "inode": 2146120,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/6e47ffd1-f936-4043-ac21-a3e89c3dea85.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 192036,
+        "mtime_ns": 1791126038377922547,
+        "inode": 2135625,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/5a608bea-ba8f-4c62-86ef-3ae0c0c7ac17.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6198,
+        "mtime_ns": 1791144024061576482,
+        "inode": 2146211,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/5a608bea-ba8f-4c62-86ef-3ae0c0c7ac17.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 190612,
+        "mtime_ns": 1791144024082576506,
+        "inode": 2146182,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/46e2596d-50f2-4a43-a2ab-08e69ed61b2f.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 433528,
+        "mtime_ns": 1791147805592750031,
+        "inode": 2146225,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/46e2596d-50f2-4a43-a2ab-08e69ed61b2f.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 141000,
+        "mtime_ns": 1791147805718750162,
+        "inode": 2146199,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/c51081ed-2bf7-4759-9256-c5095a1982b6.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 150246,
+        "mtime_ns": 1791157044393488214,
+        "inode": 2146245,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/10/04/rollout-2026-10-04T23-33-24-01a10943-dd53-72b3-9d07-7722e5ca3ec7.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 316093,
+        "mtime_ns": 1791157044420488227,
+        "inode": 2146247,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/workspace/MEMORY.md",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "shared_workspace"
+        ],
+        "kind": "memory",
+        "size": 85525,
+        "mtime_ns": 1791161016264960175,
+        "inode": 2144210,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/a54910ed-a6f3-47cb-940c-02ef28676a81.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6330,
+        "mtime_ns": 1791162036186639257,
+        "inode": 2175697,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/a54910ed-a6f3-47cb-940c-02ef28676a81.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 153796,
+        "mtime_ns": 1791162036243639312,
+        "inode": 2146212,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/fdd650de-73f7-432f-a23e-78684bf2d38d.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 7362,
+        "mtime_ns": 1791190849420527340,
+        "inode": 2175776,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/fdd650de-73f7-432f-a23e-78684bf2d38d.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 154796,
+        "mtime_ns": 1791190849483527413,
+        "inode": 2124805,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/c51081ed-2bf7-4759-9256-c5095a1982b6.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 39155,
+        "mtime_ns": 1791198052648620324,
+        "inode": 2146231,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T13-50-11-01a10c54-44c4-7b01-96db-a222449022ac.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 218671,
+        "mtime_ns": 1791208326270742579,
+        "inode": 2175953,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/6b83e3d6-be04-4798-a835-f086fc78ce5d.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 79799,
+        "mtime_ns": 1791208326378742686,
+        "inode": 2175948,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T14-38-15-01a10c80-46b4-7a90-8512-8aa6a59bef20.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 128248,
+        "mtime_ns": 1791211155431659787,
+        "inode": 2175966,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/0cb51a95-8d25-4274-9d2d-a2dbafaf3db6.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6574,
+        "mtime_ns": 1791211155478659839,
+        "inode": 2175968,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/0cb51a95-8d25-4274-9d2d-a2dbafaf3db6.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 52061,
+        "mtime_ns": 1791211155520659884,
+        "inode": 2175951,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T14-40-20-01a10c82-2f20-7330-bd0f-f901dde989bf.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 125303,
+        "mtime_ns": 1791211263539777802,
+        "inode": 2175971,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/737df3dd-2c7c-45fd-b45c-fd44c5f63149.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6411,
+        "mtime_ns": 1791211263629777901,
+        "inode": 2175974,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/737df3dd-2c7c-45fd-b45c-fd44c5f63149.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 52118,
+        "mtime_ns": 1791211263678777954,
+        "inode": 2175970,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/9446f514-7a9d-4637-84b7-7498bb7f14a4.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 7407,
+        "mtime_ns": 1791212445675712939,
+        "inode": 2175924,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/9446f514-7a9d-4637-84b7-7498bb7f14a4.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 191895,
+        "mtime_ns": 1791212445715712966,
+        "inode": 2175694,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T16-11-26-01a10cd5-96af-7941-abe1-9a140696358e.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 126920,
+        "mtime_ns": 1791216748202321675,
+        "inode": 2175978,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/0ce307cf-0530-4e97-aa08-3e4ae8d61576.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6575,
+        "mtime_ns": 1791216748291321866,
+        "inode": 2175947,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/0ce307cf-0530-4e97-aa08-3e4ae8d61576.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 52768,
+        "mtime_ns": 1791216748487322286,
+        "inode": 2175976,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T16-12-47-01a10cd6-d32e-78c1-a0d8-119d37fd38b8.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 124476,
+        "mtime_ns": 1791216802556436261,
+        "inode": 2175983,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/5a4c66a7-2057-4cee-86f1-c5ec926daec0.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 5938,
+        "mtime_ns": 1791216802706436573,
+        "inode": 2175986,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/5a4c66a7-2057-4cee-86f1-c5ec926daec0.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 51780,
+        "mtime_ns": 1791216802753436670,
+        "inode": 2175981,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T17-10-18-01a10d0b-7aac-7572-93a1-b60267d73f09.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 128704,
+        "mtime_ns": 1791220277828403500,
+        "inode": 2175965,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/e79a5922-9a68-449b-813d-0a96681c7935.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6533,
+        "mtime_ns": 1791220277897403476,
+        "inode": 2175988,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/e79a5922-9a68-449b-813d-0a96681c7935.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 50956,
+        "mtime_ns": 1791220277972403450,
+        "inode": 2175984,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T17-19-20-01a10d13-bde9-7a81-81da-568e9a284eb9.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 128356,
+        "mtime_ns": 1791220814101480087,
+        "inode": 2175995,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/3f045e34-4f17-4908-b472-0924ddb8f070.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6426,
+        "mtime_ns": 1791220814168480120,
+        "inode": 2175997,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/3f045e34-4f17-4908-b472-0924ddb8f070.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 50983,
+        "mtime_ns": 1791220814224480147,
+        "inode": 2175994,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T17-22-59-01a10d17-18d7-7663-9370-648dfaf83308.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 121367,
+        "mtime_ns": 1791221010566591215,
+        "inode": 2175996,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/f6a3514b-fe63-42c3-b97d-1d080bea5005.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 4353,
+        "mtime_ns": 1791221010617591247,
+        "inode": 2175967,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/f6a3514b-fe63-42c3-b97d-1d080bea5005.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 47823,
+        "mtime_ns": 1791221010643591264,
+        "inode": 2175998,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T17-26-31-01a10d1a-51dc-7e42-be64-b8f812a32bcb.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 126192,
+        "mtime_ns": 1791221238175748726,
+        "inode": 2176005,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/aa87fa20-db7c-4020-90b4-804ce755ab1d.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6574,
+        "mtime_ns": 1791221238271748797,
+        "inode": 2176002,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/aa87fa20-db7c-4020-90b4-804ce755ab1d.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 51210,
+        "mtime_ns": 1791221238306748823,
+        "inode": 2176004,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T17-35-33-01a10d22-99b6-7bd2-834f-a324ef2a5e73.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 129076,
+        "mtime_ns": 1791221798361208271,
+        "inode": 2176010,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/04d4271b-a328-4878-852f-81d27a042808.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6426,
+        "mtime_ns": 1791221798412208315,
+        "inode": 2176016,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/04d4271b-a328-4878-852f-81d27a042808.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 51436,
+        "mtime_ns": 1791221798463208360,
+        "inode": 2176013,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T17-41-08-01a10d27-b3e6-7270-af51-dadc6335c3dc.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 121920,
+        "mtime_ns": 1791222116513491662,
+        "inode": 2176018,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/074c48ca-4c92-488b-a37b-0aef296fab1a.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 4292,
+        "mtime_ns": 1791222116629491767,
+        "inode": 2176020,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/074c48ca-4c92-488b-a37b-0aef296fab1a.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 48354,
+        "mtime_ns": 1791222116670491804,
+        "inode": 2176017,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T18-01-10-01a10d3a-0d83-7b31-b9d5-661759b1ea01.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 129083,
+        "mtime_ns": 1791223319819200344,
+        "inode": 2176021,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/a2e6a249-3782-4b10-a845-5a6c1f03afaa.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6426,
+        "mtime_ns": 1791223319979200587,
+        "inode": 2176023,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/a2e6a249-3782-4b10-a845-5a6c1f03afaa.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 51436,
+        "mtime_ns": 1791223320097200765,
+        "inode": 2176019,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T18-23-53-01a10d4e-d8b3-7643-9d1e-9418b4ab31f1.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 128692,
+        "mtime_ns": 1791224694354884008,
+        "inode": 2176028,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/5caecaae-a11b-4026-818c-2490225b7329.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6426,
+        "mtime_ns": 1791224694423884082,
+        "inode": 2176032,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/5caecaae-a11b-4026-818c-2490225b7329.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 51436,
+        "mtime_ns": 1791224694512884176,
+        "inode": 2176027,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T18-25-28-01a10d50-4c9b-7973-b6c7-3c5d22208123.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 120035,
+        "mtime_ns": 1791224757293951553,
+        "inode": 2176034,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/6664f1fc-e4b5-4dd3-98ac-0eeb5959d1c5.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 4268,
+        "mtime_ns": 1791224757364951630,
+        "inode": 2097204,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/6664f1fc-e4b5-4dd3-98ac-0eeb5959d1c5.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 48306,
+        "mtime_ns": 1791224757395951664,
+        "inode": 2176033,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T18-26-21-01a10d51-1c30-7e90-91bd-84ca3cc743da.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 126807,
+        "mtime_ns": 1791224846941049483,
+        "inode": 2176050,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/f5d1f094-f99d-4bae-bd44-594ee0b6fac7.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6613,
+        "mtime_ns": 1791224847036049587,
+        "inode": 2176052,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/f5d1f094-f99d-4bae-bd44-594ee0b6fac7.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 51759,
+        "mtime_ns": 1791224847082049638,
+        "inode": 2176049,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T18-28-15-01a10d52-d9c7-7c61-8af2-ae7aef78efc9.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 129913,
+        "mtime_ns": 1791224978404196134,
+        "inode": 2176055,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/f92e406c-96d0-4134-a7f3-7d5b4ddfcd80.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6567,
+        "mtime_ns": 1791224978513196257,
+        "inode": 2176036,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/f92e406c-96d0-4134-a7f3-7d5b4ddfcd80.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 51789,
+        "mtime_ns": 1791224978923196719,
+        "inode": 2176054,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/a99363af-7c07-4b27-9afc-8fc4da953be4.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 7525,
+        "mtime_ns": 1791230450692351142,
+        "inode": 2176057,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/a99363af-7c07-4b27-9afc-8fc4da953be4.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 192891,
+        "mtime_ns": 1791230450733351166,
+        "inode": 2175698,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/05/rollout-2026-10-05T13-54-38-01a10c58-572d-7652-9918-f5e0ea0c7db4.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 972586,
+        "mtime_ns": 1791236834359075267,
+        "inode": 2175956,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/328d630b-b4dc-4cce-9b56-1abadb0c070b.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 916881,
+        "mtime_ns": 1791236834433075367,
+        "inode": 2175955,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/0044df76-3065-4282-be88-af37f8d217ce.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 7740,
+        "mtime_ns": 1791248443421258267,
+        "inode": 2175989,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/0044df76-3065-4282-be88-af37f8d217ce.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 192815,
+        "mtime_ns": 1791248443462258314,
+        "inode": 2139388,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/14210958-5ec6-4087-b0ee-a26d9d25e157.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 690411,
+        "mtime_ns": 1791252424279840253,
+        "inode": 2176007,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/14210958-5ec6-4087-b0ee-a26d9d25e157.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 127110,
+        "mtime_ns": 1791252424639840766,
+        "inode": 2097254,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/0ce82e8d-b914-4f58-80ac-f52c7a2d9fd6.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6188,
+        "mtime_ns": 1791277224242271294,
+        "inode": 2176098,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/0ce82e8d-b914-4f58-80ac-f52c7a2d9fd6.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 191725,
+        "mtime_ns": 1791277224267271330,
+        "inode": 2147286,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/06/rollout-2026-10-06T11-32-05-01a110fc-2efa-7223-9874-54026dab471a.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 396270,
+        "mtime_ns": 1791286734009309528,
+        "inode": 2176188,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/10/06/rollout-2026-10-06T11-38-37-01a11102-2b6c-7842-a4c3-cf9d2023736b.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 537893,
+        "mtime_ns": 1791287488662056757,
+        "inode": 2176191,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/06/rollout-2026-10-06T11-52-31-01a1110e-e6d5-7d00-b51a-36247005f13d.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 150053,
+        "mtime_ns": 1791287665997241980,
+        "inode": 2176196,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/bd1ee6b2-6c55-4068-9cfc-0bf597992197.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 246835,
+        "mtime_ns": 1791287666222242216,
+        "inode": 2176186,
+        "disposition": "REVIEWED_BY_UNIT_IN_SOURCES_REVIEWED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/bd1ee6b2-6c55-4068-9cfc-0bf597992197.trajectory.jsonl",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 486117,
+        "mtime_ns": 1791287666246242241,
+        "inode": 2176161,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/robotnik/sessions/sessions.json",
+        "agents": [
+          "robotnik"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 950072,
+        "mtime_ns": 1791287682115267199,
+        "inode": 2176204,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/sentinel/sessions/sessions.json",
+        "agents": [
+          "sentinel"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 917538,
+        "mtime_ns": 1791287773906461228,
+        "inode": 2176197,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/fe9b657b-d283-4f64-929a-dc7b1dbb4b80.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 868283,
+        "mtime_ns": 1791292387589680704,
+        "inode": 2106430,
+        "disposition": "REVIEWED_BY_UNIT_IN_SOURCES_REVIEWED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/6ce7cb5a-d96d-4ca5-94f3-b601293d50eb.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 497326,
+        "mtime_ns": 1791292387779680963,
+        "inode": 2176193,
+        "disposition": "REVIEWED_BY_UNIT_IN_SOURCES_REVIEWED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/6ce7cb5a-d96d-4ca5-94f3-b601293d50eb.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 493236,
+        "mtime_ns": 1791292387825681026,
+        "inode": 2097298,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/10/06/rollout-2026-10-06T13-11-34-01a11157-4452-7593-9a5e-36b1d8f19235.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 261792,
+        "mtime_ns": 1791292387882681103,
+        "inode": 2176157,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/0d3d8281-5854-4835-84b9-37b0cc45fb9a.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 6254,
+        "mtime_ns": 1791298853793844830,
+        "inode": 2173943,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/0d3d8281-5854-4835-84b9-37b0cc45fb9a.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 191817,
+        "mtime_ns": 1791298853851844893,
+        "inode": 2097296,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/7dfcd5de-258c-464e-8edd-1f86a0d54aec.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 5845,
+        "mtime_ns": 1791309909805430449,
+        "inode": 2175524,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/7dfcd5de-258c-464e-8edd-1f86a0d54aec.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 151329,
+        "mtime_ns": 1791309909857430517,
+        "inode": 2173500,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/10/06/rollout-2026-10-06T18-40-18-01a11284-3b43-77d0-ba6d-a8da817968fd.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 192693,
+        "mtime_ns": 1791312041325343306,
+        "inode": 2176127,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/e37a2242-5ce6-4758-869d-2d23d82cae21.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 7114,
+        "mtime_ns": 1791312041405343413,
+        "inode": 2176209,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/e37a2242-5ce6-4758-869d-2d23d82cae21.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 71031,
+        "mtime_ns": 1791312041453343478,
+        "inode": 2176201,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/eb4a2efe-354d-4942-a616-d2e5715d7ee2.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 4528,
+        "mtime_ns": 1791312242988615612,
+        "inode": 2176216,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/codex-home/sessions/2026/10/06/rollout-2026-10-06T18-43-58-01a11287-96a0-7ee3-8297-eaf98c0af833.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "codex_history",
+        "size": 263512,
+        "mtime_ns": 1791312243830616749,
+        "inode": 2176213,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/eb4a2efe-354d-4942-a616-d2e5715d7ee2.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 129412,
+        "mtime_ns": 1791312244035617025,
+        "inode": 2176212,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/68972a06-7741-430f-8e5a-da14595cafa2.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 10646,
+        "mtime_ns": 1791312381610682106,
+        "inode": 2173501,
+        "disposition": "REVIEWED_BY_UNIT_IN_SOURCES_REVIEWED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/68972a06-7741-430f-8e5a-da14595cafa2.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 166754,
+        "mtime_ns": 1791312381658682131,
+        "inode": 2175500,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/c2e399f5-f22b-49c1-8e5a-f4ad80546e78.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 8030,
+        "mtime_ns": 1791316826127494617,
+        "inode": 2176232,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/c2e399f5-f22b-49c1-8e5a-f4ad80546e78.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 200046,
+        "mtime_ns": 1791316826158494659,
+        "inode": 2176190,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/0eb1fcc8-61ab-4dae-bb20-1d9ca7d0e206.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 11282,
+        "mtime_ns": 1791334825580814472,
+        "inode": 2176236,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/0eb1fcc8-61ab-4dae-bb20-1d9ca7d0e206.trajectory.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 202976,
+        "mtime_ns": 1791334825654814711,
+        "inode": 2107796,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/sessions.json",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 1711652,
+        "mtime_ns": 1791338402411489664,
+        "inode": 2176219,
+        "disposition": "PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED"
+      },
+      {
+        "path": "/data/.openclaw/agents/main/sessions/693b4d55-9d3c-4304-856f-2d518129834c.jsonl",
+        "agents": [
+          "main"
+        ],
+        "profiles": [
+          "main"
+        ],
+        "kind": "openclaw_history",
+        "size": 440029,
+        "mtime_ns": 1791338517241618749,
+        "inode": 2176239,
+        "disposition": "CURRENT_OPEN_CRON_EXCLUDED_FROM_CONTENT_COVERAGE"
+      }
+    ]
+  },
+  "limits_and_pending": [
+    "Cobertura global parcial; históricos próprios de Kowalski, Darth Vader e Sentinel não receberam leitura primária nova.",
+    "Demais sessões, trajectories, rollouts Codex, anexos e backlog anterior permanecem pendentes de curadoria.",
+    "O login publicado do painel não foi validado; host/processo/origem de auth.json e mecanismo de restart/deploy permanecem não identificados.",
+    "O teste Cresol comprova somente comunicação read-only em homologação naquele instante; incompatibilidade persistente CRESOL_* versus CRESOL_API_* não foi corrigida.",
+    "A recorrência de status não prova que a correção sistêmica foi instalada; nenhuma reexecução foi autorizada."
+  ],
+  "git_sync_transport": {
+    "commit_local": "PENDING_POST_WRITE_VERIFICATION",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_EXECUTED",
+    "external_messages": "NONE",
+    "protected_mutations": "NONE"
+  }
+}

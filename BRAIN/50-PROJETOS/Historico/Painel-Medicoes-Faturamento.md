@@ -19,7 +19,7 @@ relationships:
   target: BRAIN/40-CONHECIMENTO/Operacional/Leitura-read-only-deve-provar-nao-mutacao.md
   reason: O teste histórico atingiu banco real; ambiente de teste precisa de isolamento comprovado.
   source: BRAIN/50-PROJETOS/Historico/Painel-Medicoes-Faturamento.md#relações
-updated: '2026-09-21T19:32:09.804705Z'
+updated: '2026-10-07T02:00:00Z'
 ---
 
 # Painel de medições e faturamento — histórico
@@ -43,3 +43,11 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch7-20260
 Painel de Medições e Faturamento foi desenvolvido em18/08/2026 por Robotnik como owner, Codex executor/revisor, em workspace-robotnik/painel-medicoes-faturamento: React/TypeScript, Node/Express e SQLite. Fechamento relatou21 testes,5 clientes/60 ciclos, persistência,CSV/HTML e correções de datas inválidas, pagamento fora de ordem,status histórico enganoso e teste tocando DB real. Preview local4175 não era publicação pública; acesso tailnet foi entregue. Hebert aprovou aparência e pediu área para atualizar informações. Login por cookie HTTP-only/API protegida foi proposta posterior, sem conclusão demonstrada pelos trechos aqui revistos; verificar runtime antes de presumir proteção atual. Fonte: unidades 39779, 39524, 39536, 39542, 39545.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch8-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Reativação pontual de autenticação — 06/10/2026
+
+Hebert informou que o login de uma usuária continuava sem funcionar no painel publicado. No recorte revisado, o hash no `data/auth.json` do workspace passou na verificação local e um servidor local de teste respondeu `200` com sessão, mas não havia processo local atendendo a porta publicada `4175`; o endpoint tailnet estava bloqueado pela política de rede do ambiente de investigação. A instância, o arquivo efetivamente carregado e o mecanismo de restart/deploy **não foram identificados com evidência**.
+
+Portanto, não classificar o caso como senha incorreta nem como correção publicada. O critério de pronto permanece testar o login no processo que realmente atende a porta `4175`, após identificar host, processo e origem do `auth.json` e obter autorização aplicável para qualquer atualização/restart. Nenhuma senha foi persistida no Brain. A continuação automática usada para investigar o caso falhou e repetiu estados sem marco; isso também não prova falha da aplicação.
+
+Fontes: sessões Robotnik `bd1ee6b2-6c55-4068-9cfc-0bf597992197` e main `6ce7cb5a-d96d-4ca5-94f3-b601293d50eb`; unidades e hashes no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-07-daily.json`. Estado observado em 06/10, sem revalidação live nesta consolidação.

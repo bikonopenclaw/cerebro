@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-06T02:00:00Z'
+updated: '2026-10-07T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,14 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-10-07
+
+- Inventário móvel de sete dias: 302 arquivos, sem erros — 241 entradas OpenClaw, 60 Codex e uma memória main. Contagens incluem índices/trajectories e não medem cobertura semântica.
+- Revisão seletiva de unidades main/Robotnik sobre painel publicado, falha de continuação e probe Cresol. Kowalski, Darth Vader e Sentinel apenas inventariados neste ciclo; fontes não lidas e backlog dos recibos anteriores permanecem pendentes por identidade/referência.
+- Dois estados operacionais foram qualificados sem mutação: login local não prova a instância publicada; comunicação Cresol read-only bem-sucedida não corrige configuração nem autoriza produção. Nenhuma credencial foi promovida.
+- Busca semântica local bloqueada por `numpy` ausente; não houve instalação, refresh ou troca de provedor. Pesquisa lexical e leitura direta evitaram duplicar notas.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-10-07-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Git local e transporte verificados separadamente; nenhuma publicação remota, mensagem ou mutação protegida.
 
 ## Verificação de cobertura — 2026-10-06
 

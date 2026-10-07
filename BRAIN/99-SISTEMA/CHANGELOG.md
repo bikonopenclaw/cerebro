@@ -4,13 +4,21 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-06T02:00:00Z'
+updated: '2026-10-07T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-07, consolidação diária silenciosa
+
+- Criado diário UTC de 07/10 (06/10 às 23h BRT) e ligação no MOC; inventário de sete dias com 302 arquivos, sem confundir metadados com cobertura.
+- Atualizado o registro existente do Painel de Medições: teste local de login passou, mas instância/arquivo carregado/restart da porta publicada `4175` não foram identificados e o login ao vivo continua sem validação. Nenhuma senha persistida.
+- Atualizada Orquestração Durável com recorrência de status sem marco no caso do painel; a correção sistêmica especificada em 04/10 permanece sem prova de instalação ou validação.
+- Atualizado Boletos/Malote com probe Cresol read-only em homologação: OAuth e `/especies` responderam `200`, 26 itens, zero mutações declaradas. A adaptação de nomes de variáveis ocorreu só em memória; configuração persistente não corrigida.
+- Recibo `brain-v2/reports/coverage-2026-10-07-daily.json` identifica unidades lidas, produtos e lacunas. HEALTH atualizado sem recálculo do score. Sem delegação, mensagem, exclusão, configuração ou operação externa nesta consolidação; commit somente local, sem push/sync.
 
 ## 2026-10-06, consolidação diária silenciosa
 

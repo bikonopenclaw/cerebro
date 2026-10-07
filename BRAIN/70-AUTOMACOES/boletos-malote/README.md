@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-10-06T02:00:00Z'
+updated: '2026-10-07T02:00:00Z'
 ---
 
 # Boletos e malote bancário
@@ -22,6 +22,12 @@ Espelho operacional:
 Os 22 documentos financeiros do fechamento foram **TRATADOS PELO PROPRIETÁRIO**. Isso supera sua apresentação como pendência de acompanhamento: não reinvestigar, reprocessar, pedir confirmação/comprovante ou retomar o lote. Não inferir transmissão, pagamento, liquidação ou baixa contábil, e não cancelar NF262. Os eventos históricos e efeitos incertos abaixo continuam como proveniência, não como autorização para reabrir o conjunto. Terminais do lote 5.1 e Cresol preservados; API Cresol em homologação não é falha produtiva.
 
 Fonte: determinação registrada no cabeçalho de `workspace/MEMORY.md` e recibo administrativo local de 04/10, conferidos na consolidação de 06/10. Ver [[99-SISTEMA/MEMORY|determinação e limites]] e `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-06-daily.json`. Não houve consulta ao banco operacional ou efeito financeiro nesta revisão.
+
+## Teste de comunicação read-only — 06/10/2026
+
+Um probe autorizado e delimitado à homologação obteve `HTTP 200` no OAuth e `HTTP 200` em `GET /especies`, com certificado TLS verificado e 26 itens retornados. O recibo sanitizado declarou zero mutações financeiras e nenhuma mudança remota persistente. Isso comprova comunicação read-only naquele instante; não autoriza emissão, registro, baixa, produção ou transmissão bancária.
+
+O teste só passou após adaptar, **em memória**, os nomes `CRESOL_*` esperados no arquivo secreto para `CRESOL_API_*` esperados pelo cliente. A incompatibilidade persistente de configuração não foi corrigida. Não registrar valores, tokens ou conteúdo do arquivo secreto no Brain. Fonte: sessão main `68972a06-7741-430f-8e5a-da14595cafa2`, resultado concluído em `2026-10-06T18:46:17Z`; identidade no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-07-daily.json`.
 
 ## Estado em 2026-07-11
 
