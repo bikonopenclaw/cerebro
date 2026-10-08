@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-07T02:00:00Z'
+updated: '2026-10-08T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,14 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-10-08
+
+- Inventário móvel de sete dias: 294 arquivos, sem erros — 234 entradas OpenClaw, 59 Codex e uma memória main. Contagens incluem índices/trajectories e não medem cobertura semântica.
+- Revisão seletiva das quatro sessões de sync posteriores ao commit anterior: publicação de `fa757fa` às 09:00 UTC de 07/10 e três checkpoints posteriores sem delta. Isso prova somente o transporte daquele checkpoint; não acrescenta cobertura temática.
+- Nenhuma nova informação sobre pessoas, empresas, projetos, decisões de negócio ou automações justificou promoção. Kowalski, Darth Vader, Robotnik e Sentinel apenas inventariados; fontes não lidas e backlog anterior permanecem pendentes por identidade/referência.
+- Busca semântica local bloqueada por `numpy` ausente; não houve instalação, refresh ou troca de provedor. Pesquisa lexical e leitura direta evitaram duplicidade.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-10-08-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Commit local, sync anterior e transporte foram separados; nenhuma publicação remota ou mensagem ocorreu nesta consolidação.
 
 ## Verificação de cobertura — 2026-10-07
 

@@ -4,13 +4,20 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-07T02:00:00Z'
+updated: '2026-10-08T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-08, consolidação diária silenciosa
+
+- Criado diário UTC de 08/10 (07/10 às 23h BRT) e ligação no MOC; inventário de sete dias com 294 arquivos, sem confundir metadados com cobertura.
+- Revisadas quatro execuções rotineiras de sync posteriores ao ciclo anterior: `fa757fa` foi publicado às 09:00 UTC de 07/10; três execuções seguintes encontraram tudo atualizado. Nenhum novo conhecimento temático justificou promoção ou duplicação.
+- Recibo `brain-v2/reports/coverage-2026-10-08-daily.json` identifica fontes, unidades, disposições e lacunas. HEALTH atualizado sem recálculo do score; cobertura global parcial.
+- Sem delegação, exclusão, configuração, sistema externo, agente Brain ou mensagem nesta consolidação. Commit somente local deste ciclo; sem push/sync próprio.
 
 ## 2026-10-07, consolidação diária silenciosa
 
