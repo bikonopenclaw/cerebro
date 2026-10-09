@@ -1,0 +1,554 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_at": "2026-10-09T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "49756061-ca85-4dc6-ba13-c96c73a98134",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "base_commit": "dcf39806fc264e3d74220b9ae9fecaefb411d62f",
+  "window": {
+    "reference_utc": "2026-10-09T02:00:00Z",
+    "local_date": "2026-10-08",
+    "timezone": "America/Sao_Paulo",
+    "inventory_days": 7,
+    "older_backlog": "Preserved through coverage-2026-10-08-daily.json and its continuity chain"
+  },
+  "execution": {
+    "state": "REVIEW_AND_CONSOLIDATION_EXECUTED_LOCALLY",
+    "delegation": false,
+    "scope": "Revisão documental seletiva; nenhum replay, deploy, restart, teste externo ou operação de negócio."
+  },
+  "product": {
+    "state": "PRODUCED_DOCUMENTARY_PARTIAL_NO_NEW_THEMATIC_KNOWLEDGE",
+    "coverage_complete": false,
+    "business_acceptance": "NOT_ASSERTED",
+    "notes": [
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-10-09.md",
+        "path_base": "brain",
+        "sha256": "9ef41ea8ac29e2fb00b4cde68164ee0775add12d46e0c8a06482d67380d799bc",
+        "bytes": 3272,
+        "mtime_ns": 1791511355813632943
+      },
+      {
+        "path": "BRAIN/01-DIARIO/README.md",
+        "path_base": "brain",
+        "sha256": "6156066261c9b0ab28fc7280e7087bef91b90a965ca3eda5d79d67d59a75cc64",
+        "bytes": 3050,
+        "mtime_ns": 1791511360888640034
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+        "path_base": "brain",
+        "sha256": "58c9e108ccf9fe845359d495f67987b0335ee5935b16a7b50dd8fa57a8482f54",
+        "bytes": 121387,
+        "mtime_ns": 1791511366747648217
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/HEALTH.md",
+        "path_base": "brain",
+        "sha256": "40f1a68b8419bc38ce8b2b215f489167d7685cc35c1b35397665959caee84263",
+        "bytes": 58752,
+        "mtime_ns": 1791511374617659198
+      }
+    ],
+    "thematic_notes_changed": []
+  },
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/bde23a73-381a-4b3f-9e14-9b925cb2b8db.jsonl",
+      "path_base": "absolute",
+      "sha256": "a26b5bfe18a34899b949ecb9143277e56503842a024b396c9b7be9c34476854d",
+      "bytes": 448930,
+      "mtime_ns": 1791425102303293246,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 65,
+            "record_timestamp": "2026-10-08T02:04:40.019Z",
+            "line_sha256": "bfd16197d0911001246a98f34bd923f6e9d255ac7db2f5bd4286a20849a6b97c",
+            "disposition": "Commit local `dcf3980` do ciclo anterior registrado.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          },
+          {
+            "line": 67,
+            "record_timestamp": "2026-10-08T02:04:54.157Z",
+            "line_sha256": "f67776ab5edc2369845a96938fcb1aec52e9471efa302c6a6023b18ab5da968c",
+            "disposition": "Checkpoint local do ciclo anterior separou commit e sync.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          },
+          {
+            "line": 68,
+            "record_timestamp": "2026-10-08T02:05:01.823Z",
+            "line_sha256": "ed01929f6cfcdc0e862261465524aec6831567927d693a1064dfb9a8378936eb",
+            "disposition": "Encerramento silencioso anterior observado.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local de unidades textuais selecionadas; tool payloads e instruções históricas não foram promovidos."
+      },
+      "disposition": "Continuidade do ciclo anterior confirmada; nenhum conhecimento temático novo.",
+      "pending": "Demais unidades técnicas continuam cobertas apenas pelo recibo anterior."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/564761a4-bcd9-4126-b103-1ccae3ac62cd.jsonl",
+      "path_base": "absolute",
+      "sha256": "6d0fa541c3a284ca91f079f6f82aba81f9a6fc0bd896bf27d8b13023f3264990",
+      "bytes": 8483,
+      "mtime_ns": 1791450020718344128,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 5,
+            "record_timestamp": "2026-10-08T09:00:05.845Z",
+            "line_sha256": "8e774a4022bc8e4dfe4efa02240f3ec442e8f4dab34f7e09dbcdd5ac5f4017e9",
+            "disposition": "Solicitação agendada de sync tratada como contexto, não como conhecimento temático.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          },
+          {
+            "line": 7,
+            "record_timestamp": "2026-10-08T09:00:15.162Z",
+            "line_sha256": "31695935ff75331c10941b830910fa2bef8955874d4f7dd823a27e1670f5a920",
+            "disposition": "Sync publicou `dcf3980` no remoto.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          },
+          {
+            "line": 8,
+            "record_timestamp": "2026-10-08T09:00:20.697Z",
+            "line_sha256": "d999f1566174e344ffbe6c8bb035327706293e08b314ad64cba9a54fbfdadc76",
+            "disposition": "Fechamento confirmou push sem erro.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local por linha JSONL."
+      },
+      "disposition": "Transporte/checkpoint registrado; nenhuma promoção temática.",
+      "pending": "Trajectories e metadados de ferramenta sem utilidade futura não receberam cobertura editorial."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/575eabc9-65f0-4b97-b95c-26268fb6a8ca.jsonl",
+      "path_base": "absolute",
+      "sha256": "2ae4848b0002a859da0c2a4eff0f02491bb8a2843dd4b88f3fa47e32eecad207",
+      "bytes": 7928,
+      "mtime_ns": 1791471625764734510,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 5,
+            "record_timestamp": "2026-10-08T15:00:11.436Z",
+            "line_sha256": "547932d112c586d1a7aa1ad81e63ca60aaf99953156397b7bb4004c09a5f1ab3",
+            "disposition": "Solicitação agendada de sync tratada como contexto, não como conhecimento temático.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          },
+          {
+            "line": 7,
+            "record_timestamp": "2026-10-08T15:00:22.755Z",
+            "line_sha256": "6aa53f77c52097df97aebf942e89bab6510544824411bb48995f775f1e781375",
+            "disposition": "Sync encontrou árvore sem mudanças e remoto atualizado.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          },
+          {
+            "line": 8,
+            "record_timestamp": "2026-10-08T15:00:25.739Z",
+            "line_sha256": "1dabfe1219a35b39891b5d676c4782180a4bec7b309ad245501f537806cee0b1",
+            "disposition": "Fechamento confirmou ausência de delta.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local por linha JSONL."
+      },
+      "disposition": "Transporte/checkpoint registrado; nenhuma promoção temática.",
+      "pending": "Trajectories e metadados de ferramenta sem utilidade futura não receberam cobertura editorial."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/49d4074a-3d51-47aa-b565-e93a3db34481.jsonl",
+      "path_base": "absolute",
+      "sha256": "446299b9c46e5d22b026b2185e32851e57934416b8dd33539e6c3e67c57714e1",
+      "bytes": 7943,
+      "mtime_ns": 1791489622304236122,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 5,
+            "record_timestamp": "2026-10-08T20:00:10.291Z",
+            "line_sha256": "957c6e0a0f45f48896f43ece50b3d81661f0e431a808795a99cae0dff5b32910",
+            "disposition": "Solicitação agendada de sync tratada como contexto, não como conhecimento temático.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          },
+          {
+            "line": 7,
+            "record_timestamp": "2026-10-08T20:00:17.724Z",
+            "line_sha256": "47fed63987cb0222fa080f0ed483fca7e4eb436c500152e7ca89d04a3effe74f",
+            "disposition": "Sync encontrou árvore sem mudanças e remoto atualizado.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          },
+          {
+            "line": 8,
+            "record_timestamp": "2026-10-08T20:00:22.242Z",
+            "line_sha256": "20b2b31789e3d1a14dabda0c0aa66065501556188c0750822053d5fab66e7fe4",
+            "disposition": "Fechamento confirmou ausência de delta.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local por linha JSONL."
+      },
+      "disposition": "Transporte/checkpoint registrado; nenhuma promoção temática.",
+      "pending": "Trajectories e metadados de ferramenta sem utilidade futura não receberam cobertura editorial."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/6f6327ed-84b0-4d7b-8803-ef9f1d623a28.jsonl",
+      "path_base": "absolute",
+      "sha256": "52dfe437217b7c990e152c8445283638e21c7c72bbce5dbd8731c967e534ba05",
+      "bytes": 8179,
+      "mtime_ns": 1791507621542948955,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 5,
+            "record_timestamp": "2026-10-09T01:00:09.793Z",
+            "line_sha256": "695bd13d2600d9e6ab86090e87945782906413ecf02a8cda97a23a4b1ee248f4",
+            "disposition": "Solicitação agendada de sync tratada como contexto, não como conhecimento temático.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          },
+          {
+            "line": 7,
+            "record_timestamp": "2026-10-09T01:00:17.127Z",
+            "line_sha256": "af1bc1546f992a454e50e45c8500730e495c36e7d31f7e416774fd741e0113b7",
+            "disposition": "Sync encontrou árvore sem mudanças e remoto atualizado.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          },
+          {
+            "line": 8,
+            "record_timestamp": "2026-10-09T01:00:21.505Z",
+            "line_sha256": "99d90f2e9f414f4449dd657ddaaa0e26ec729170639583fecf846485fe75534d",
+            "disposition": "Fechamento confirmou ausência de delta.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-09.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local por linha JSONL."
+      },
+      "disposition": "Transporte/checkpoint registrado; nenhuma promoção temática.",
+      "pending": "Trajectories e metadados de ferramenta sem utilidade futura não receberam cobertura editorial."
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/sessions.json",
+      "path_base": "absolute",
+      "sha256": "34e349db00d8e33b8a89dee6053f74939f5f11766cf0a292d47b903aa8d0f95a",
+      "bytes": 835714,
+      "mtime_ns": 1791477778513541866,
+      "agent": "robotnik",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "selector": "key agent:robotnik:main; sanitized projection only",
+        "projection": {
+          "sessionId": "e780adba-d8de-4295-b2d0-62e9413346fd",
+          "updatedAt": 1791477778501,
+          "abortedLastRun": true,
+          "status": "killed",
+          "startedAt": 1791477763492,
+          "endedAt": 1791477763492,
+          "runtimeMs": 0,
+          "totalTokens": 0,
+          "sessionFile": "/data/.openclaw/agents/robotnik/sessions/e780adba-d8de-4295-b2d0-62e9413346fd.jsonl"
+        },
+        "projection_sha256": "36889948098d19da5cbb303ed616163930159e6f6e2d74a7067408e3bb2bc0bd",
+        "method": "Leitura lexical local do índice; sem payload de conversa."
+      },
+      "disposition": "Lacuna preservada: sessão killed/aborted, zero runtime/tokens; transcript apontado ausente. Nenhum pedido, causa, resposta ou efeito inferido.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-09.md",
+        "BRAIN/99-SISTEMA/HEALTH.md"
+      ],
+      "pending": "Revisar somente se o transcript/trajectory autêntico vier a existir; não reexecutar por inferência."
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/e780adba-d8de-4295-b2d0-62e9413346fd.trajectory-path.json",
+      "path_base": "absolute",
+      "sha256": "c4d2717c83311cbf7133b1cccac1f72b78163b3e5986bd4dfb73e7d93f8b9e4d",
+      "bytes": 243,
+      "mtime_ns": 1791477407258491549,
+      "agent": "robotnik",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": true
+      },
+      "disposition": "Ponteiro lido; runtimeFile apontado também ausente.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-09.md",
+        "BRAIN/99-SISTEMA/HEALTH.md"
+      ],
+      "pending": "Payload indisponível."
+    }
+  ],
+  "semantic_search": {
+    "native_memory_search": "AVAILABLE; consulta executada, somente resultados históricos sem novidade atual",
+    "local_persistent_runtime": "UNAVAILABLE_LOCAL_DEPENDENCY_MISSING",
+    "attempt": "python3 scripts/brain-semantic-search.py --help",
+    "error_sanitized": "ModuleNotFoundError: numpy",
+    "index_or_dependencies_changed": false,
+    "fallback": "Pesquisa lexical local e leitura direta explícita."
+  },
+  "continuity_receipt": {
+    "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-08-daily.json",
+    "path_base": "brain",
+    "sha256": "37ce9981454d9a10e882edba7c6e1973fe81656306a977962b67b2b69ceab287",
+    "bytes": 159384,
+    "mtime_ns": 1791425017653059109,
+    "read_scope": "Documento integral lido anteriormente; identidade conferida nesta execução.",
+    "disposition": "Pendências e limites carregados; nenhuma cobertura primária herdada como nova."
+  },
+  "inventory": {
+    "artifact": {
+      "path": ".openclaw/tmp/brain-source-inventory-2026-10-09.json",
+      "path_base": "brain-worktree",
+      "sha256": "800f1662587fff65e915cd5b6707d9a957aebbe475b60be67927e9c92688f224",
+      "bytes": 101556,
+      "mtime_ns": 1791511259282497093,
+      "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT"
+    },
+    "generated_at": "2026-10-09T02:00:59.281137+00:00",
+    "since_epoch": 1790906458.732574,
+    "window_days": 7,
+    "source_count": 232,
+    "by_kind": {
+      "openclaw_history": 182,
+      "codex_history": 49,
+      "memory": 1
+    },
+    "by_agent": {
+      "main": 103,
+      "darth-vader": 31,
+      "kowalski": 12,
+      "robotnik": 55,
+      "sentinel": 31
+    },
+    "surface_count": 40,
+    "missing_surfaces": [
+      {
+        "agent": "main",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/main/codex-home/sessions"
+      },
+      {
+        "agent": "main",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/main/sessions"
+      },
+      {
+        "agent": "main",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/main/codex-home/sessions"
+      },
+      {
+        "agent": "kowalski",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-kowalski/MEMORY.md"
+      },
+      {
+        "agent": "kowalski",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/codex-home/sessions"
+      },
+      {
+        "agent": "kowalski",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/kowalski/sessions"
+      },
+      {
+        "agent": "kowalski",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/kowalski/codex-home/sessions"
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-darth-vader/MEMORY.md"
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/codex-home/sessions"
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/codex-home/sessions"
+      },
+      {
+        "agent": "robotnik",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-robotnik/MEMORY.md"
+      },
+      {
+        "agent": "robotnik",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/robotnik/codex-home/sessions"
+      },
+      {
+        "agent": "robotnik",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/robotnik/sessions"
+      },
+      {
+        "agent": "robotnik",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/robotnik/codex-home/sessions"
+      },
+      {
+        "agent": "sentinel",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-sentinel/MEMORY.md"
+      },
+      {
+        "agent": "sentinel",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/sentinel/codex-home/sessions"
+      },
+      {
+        "agent": "sentinel",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/sentinel/sessions"
+      },
+      {
+        "agent": "sentinel",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/sentinel/codex-home/sessions"
+      }
+    ],
+    "errors": [],
+    "scope": "Metadados apenas. Somente sources_reviewed possuem disposição editorial nova. As demais fontes permanecem PENDING_OR_PRIOR_DISPOSITION_NOT_REASSESSED."
+  },
+  "recent_selection": {
+    "changed_inventory_entries_since_previous_cycle": 13,
+    "reviewed_or_reconciled_primary_identities": 7,
+    "excluded_live_entries": [
+      "current run transcript 49756061-ca85-4dc6-ba13-c96c73a98134.jsonl",
+      "main sessions.json updated by current run"
+    ],
+    "trajectory_policy": "Trajectories duplicadas/telemetria não foram tratadas como conteúdo editorial; ponteiro Robotnik foi lido porque o payload estava ausente."
+  },
+  "pending": {
+    "coverage_complete": false,
+    "items": [
+      "Históricos não lidos dos cinco agentes/perfis e backlog do recibo anterior.",
+      "Transcript e trajectory da sessão Robotnik e780adba-d8de-4295-b2d0-62e9413346fd ausentes.",
+      "Runtime semântico local depende de numpy; nenhuma dependência ou índice foi alterado."
+    ],
+    "deletion_eligible": false
+  },
+  "git_sync": {
+    "state_at_receipt_generation": "PRODUCT_WRITTEN_LOCAL_COMMIT_NOT_YET_CREATED",
+    "base_head": "dcf39806fc264e3d74220b9ae9fecaefb411d62f",
+    "base_equal_origin_main": true,
+    "prior_transport_observed": "Sync de 2026-10-08T09:00Z publicou dcf3980; três syncs posteriores sem delta.",
+    "current_cycle_push_fetch_sync": false
+  },
+  "transport": {
+    "messages_to_hebert": 0,
+    "test_notifications": 0,
+    "history_replays": 0,
+    "external_system_access": false
+  },
+  "validation": {
+    "receipt_json": "PASS",
+    "frontmatter_schema": {
+      "state": "PASS",
+      "notes_tested": 4
+    },
+    "inventory_unit_tests": {
+      "state": "PASS",
+      "tests": 3
+    },
+    "structural_gate": {
+      "state": "PASS",
+      "markdown_total": 425,
+      "internal_links": 955,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": 0,
+      "duplicate_aliases": 0,
+      "secret_candidates": 0,
+      "knowledge_health_estimate": 1
+    },
+    "semantic_completeness": "NOT_MEASURED"
+  }
+}

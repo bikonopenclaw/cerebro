@@ -4,13 +4,21 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-08T02:00:00Z'
+updated: '2026-10-09T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-09, consolidação diária silenciosa
+
+- Criado diário UTC de 09/10 (08/10 às 23h BRT) e ligação no MOC; inventário de sete dias com 232 arquivos, sem confundir metadados com cobertura.
+- Revisadas quatro execuções rotineiras de sync: `dcf3980` foi publicado às 09:00 UTC de 08/10 e os três checkpoints seguintes não tinham delta. Nenhum conhecimento temático novo justificou promoção.
+- Preservada lacuna do Robotnik: índice registra sessão direta `killed` com zero runtime/tokens e `abortedLastRun`, mas transcript e trajectory apontados não existem. Nenhum pedido, resposta, efeito ou causa foi inferido.
+- Recibo `brain-v2/reports/coverage-2026-10-09-daily.json` identifica fontes, unidades, disposições e pendências. HEALTH atualizado sem recálculo do score; cobertura global parcial.
+- Sem delegação, exclusão, configuração, sistema externo, agente Brain ou mensagem nesta consolidação. Commit somente local exigido para o produto; sem push/sync próprio.
 
 ## 2026-10-08, consolidação diária silenciosa
 
