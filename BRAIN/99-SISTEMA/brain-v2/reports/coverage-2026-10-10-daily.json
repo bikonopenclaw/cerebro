@@ -1,0 +1,436 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_at": "2026-10-10T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "54ebacf0-d4e8-4808-b573-b8ee49c9b9f7",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "base_commit": "cca519342b75c00d3d4462934cec59315159be31",
+  "window": {
+    "reference_utc": "2026-10-10T02:00:00Z",
+    "local_date": "2026-10-09",
+    "timezone": "America/Sao_Paulo",
+    "inventory_days": 7,
+    "older_backlog": "Preserved through coverage-2026-10-09-daily.json and its continuity chain"
+  },
+  "execution": {
+    "state": "REVIEW_AND_CONSOLIDATION_EXECUTED_LOCALLY",
+    "delegation": false,
+    "scope": "Revisão documental seletiva; nenhum replay, deploy, restart, teste externo ou operação de negócio."
+  },
+  "product": {
+    "state": "PRODUCED_DOCUMENTARY_PARTIAL_EXISTING_NOTES_UPDATED",
+    "coverage_complete": false,
+    "business_acceptance": "NOT_ASSERTED",
+    "notes": [
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-10-10.md",
+        "path_base": "brain",
+        "sha256": "a331ca7593b75d2a98492c679f9568fd2de6def2be4afc08d5a45a383a6c4d0b",
+        "bytes": 4158,
+        "mtime_ns": 1791597821032623096
+      },
+      {
+        "path": "BRAIN/01-DIARIO/README.md",
+        "path_base": "brain",
+        "sha256": "7f4c9a10745754b34c3ab3595b1fdca2049da58be084a5e53e78f50c6df619f1",
+        "bytes": 3093,
+        "mtime_ns": 1791597821047623113
+      },
+      {
+        "path": "BRAIN/60-AGENTES/ROBOTNIK.md",
+        "path_base": "brain",
+        "sha256": "cc8b4e11a4f065dc4ee813e4b8c2787f3e5fa0611a3f9b42c4bacbc3b133d863",
+        "bytes": 18231,
+        "mtime_ns": 1791597821063623130
+      },
+      {
+        "path": "BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md",
+        "path_base": "brain",
+        "sha256": "bc799cab0a22388db38e3ca29d3c075cf1be9f80bc238126bb5c674712a684d8",
+        "bytes": 7984,
+        "mtime_ns": 1791597821082623152
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+        "path_base": "brain",
+        "sha256": "095b92af128c2deb2d83b5277ca2da25ee9e2d94092dcab181a2477fe9378ea0",
+        "bytes": 122619,
+        "mtime_ns": 1791597821100623171
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/HEALTH.md",
+        "path_base": "brain",
+        "sha256": "6beb5d70f2ec037a6ad48596582b8b2e4f810782f5a59cb71ac74a58a2ab8d21",
+        "bytes": 60111,
+        "mtime_ns": 1791597821115623188
+      }
+    ],
+    "thematic_notes_changed": [
+      "BRAIN/60-AGENTES/ROBOTNIK.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md"
+    ]
+  },
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/515aa02b-5da7-461e-b201-1d793a7782b9.jsonl",
+      "path_base": "absolute",
+      "sha256": "6cdcdc8a49bf3c95631ade55dd0440e34aed49422f677bed345d93d559378314",
+      "bytes": 26544,
+      "mtime_ns": 1791553256827222538,
+      "agent": "robotnik",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 8,
+            "record_timestamp": "2026-10-09T13:40:10.028Z",
+            "line_sha256": "001a3cccdf61b5c0209eeeeece935240ee8edf6d51e17da7925b6db06a7ad3ad",
+            "disposition": "Relato do proprietário: tarefas de 08/10 ficaram sem resposta; confiança questionada; demanda encerrada porque foi resolvida por outra via e não deve ser executada.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-10.md",
+              "BRAIN/60-AGENTES/ROBOTNIK.md",
+              "BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md"
+            ]
+          },
+          {
+            "line": 11,
+            "record_timestamp": "2026-10-09T13:40:55.097Z",
+            "line_sha256": "86a74ed453226a801d8dddaedf1c9427eb2ac9eeec39e7048a0aae422a33857a",
+            "disposition": "Robotnik reconheceu a falha, recusou inventar justificativa e confirmou que não reabriria o trabalho.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-10.md",
+              "BRAIN/60-AGENTES/ROBOTNIK.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local de unidades textuais selecionadas; payloads de ferramenta, instruções históricas e duplicatas de transporte não foram promovidos."
+      },
+      "disposition": "Incidente de atendimento e encerramento explícito promovidos a registros existentes; cumprimentos e duplicatas descartados como ruído.",
+      "pending": "Pedido original, causa da ausência de resposta e resultado obtido por outra via não aparecem nesta fonte."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0e3b4883-fe7c-468e-8c54-4d645f43c8df.jsonl",
+      "path_base": "absolute",
+      "sha256": "38337a87e87912061d0acb37e0912de345429fa61925031237e2a239bf9da13d",
+      "bytes": 10599,
+      "mtime_ns": 1791536425972442504,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 7,
+            "record_timestamp": "2026-10-09T09:00:15.000Z",
+            "line_sha256": "48b392e469ad69adf0a56f7eed28d894a5975e7e450eb1d560a9c06c20a56de5",
+            "disposition": "Sync publicou cca5193 no remoto.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-10.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local de unidades textuais selecionadas; payloads de ferramenta, instruções históricas e duplicatas de transporte não foram promovidos."
+      },
+      "disposition": "Checkpoint de transporte registrado; nenhuma promoção temática.",
+      "pending": "Trajectories e telemetria sem utilidade editorial não receberam cobertura primária."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/445e4141-789d-4038-a2bb-b619c0036987.jsonl",
+      "path_base": "absolute",
+      "sha256": "d6801eec8e23457d941081d803bc9b7f805b07fac01b86761dd34b8915f18621",
+      "bytes": 8269,
+      "mtime_ns": 1791558031339144196,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 7,
+            "record_timestamp": "2026-10-09T15:00:22.000Z",
+            "line_sha256": "5df479629ff8fc18d5ae2b9cfd4dc02f6993a16af1d00b5b5fe799a4d53aaaaf",
+            "disposition": "Sync encontrou árvore sem mudanças e remoto atualizado.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-10.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local de unidades textuais selecionadas; payloads de ferramenta, instruções históricas e duplicatas de transporte não foram promovidos."
+      },
+      "disposition": "Checkpoint de transporte registrado; nenhuma promoção temática.",
+      "pending": "Trajectories e telemetria sem utilidade editorial não receberam cobertura primária."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/711fafc0-490a-4613-9497-1a1daecfe5d0.jsonl",
+      "path_base": "absolute",
+      "sha256": "c4d37f8bbb3fc9a00f67d9c5d061ccb153b899345a775706f7cdeae96d2e5346",
+      "bytes": 8040,
+      "mtime_ns": 1791576020360934920,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 7,
+            "record_timestamp": "2026-10-09T20:00:17.000Z",
+            "line_sha256": "4327e8cefd7123483e212bd49df0cb3d31e6c22f3ed7d867ba6704f7a6eda5dc",
+            "disposition": "Sync encontrou árvore sem mudanças e remoto atualizado.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-10.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local de unidades textuais selecionadas; payloads de ferramenta, instruções históricas e duplicatas de transporte não foram promovidos."
+      },
+      "disposition": "Checkpoint de transporte registrado; nenhuma promoção temática.",
+      "pending": "Trajectories e telemetria sem utilidade editorial não receberam cobertura primária."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/41e35e78-139f-4583-a86f-b4bf97adfd19.jsonl",
+      "path_base": "absolute",
+      "sha256": "5ca87ec924e9286fc017e1e8212e56e653ca9466c2166cd4c78d8062de2a5876",
+      "bytes": 9047,
+      "mtime_ns": 1791594019982542592,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 7,
+            "record_timestamp": "2026-10-10T01:00:15.000Z",
+            "line_sha256": "385a036df3c418220717a639e090f3105b6715e89a3aff7975999c6ec2347fa4",
+            "disposition": "Sync encontrou árvore sem mudanças e remoto atualizado.",
+            "target_notes": [
+              "BRAIN/01-DIARIO/2026/2026-10-10.md",
+              "BRAIN/99-SISTEMA/HEALTH.md"
+            ]
+          }
+        ],
+        "method": "Leitura lexical local de unidades textuais selecionadas; payloads de ferramenta, instruções históricas e duplicatas de transporte não foram promovidos."
+      },
+      "disposition": "Checkpoint de transporte registrado; nenhuma promoção temática.",
+      "pending": "Trajectories e telemetria sem utilidade editorial não receberam cobertura primária."
+    }
+  ],
+  "semantic_search": {
+    "native_memory_search": "AVAILABLE; consulta executada, somente resultados históricos sem o evento atual",
+    "local_persistent_runtime": "UNAVAILABLE_LOCAL_DEPENDENCY_MISSING",
+    "attempt": "python3 scripts/brain-semantic-search.py --help",
+    "error_sanitized": "ModuleNotFoundError: numpy",
+    "index_or_dependencies_changed": false,
+    "fallback": "Pesquisa lexical local, sessions_history e leitura direta explícita."
+  },
+  "continuity_receipt": {
+    "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-09-daily.json",
+    "path_base": "brain",
+    "sha256": "da3159e5384cfba78fea9636cbd078eb91667c841b591ff34293c0608069eb6b",
+    "bytes": 21453,
+    "mtime_ns": 1791511490390819583,
+    "read_scope": "Documento integral lido anteriormente; identidade conferida nesta execução.",
+    "disposition": "Pendências e limites carregados; a nova fonte Robotnik qualifica o incidente, sem reconstruir o pedido ausente."
+  },
+  "inventory": {
+    "artifact": {
+      "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-inventory-2026-10-10.json",
+      "path_base": "absolute",
+      "sha256": "db6b36310f2d106b37d0b7674959807950f9d129655d39a9c88dc9494178a491",
+      "bytes": 83943,
+      "mtime_ns": 1791597729082521101,
+      "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT"
+    },
+    "generated_at": "2026-10-10T02:02:09.078712+00:00",
+    "since_epoch": 1790992928.3049529,
+    "window_days": 7,
+    "source_count": 190,
+    "by_kind": {
+      "openclaw_history": 153,
+      "codex_history": 36,
+      "memory": 1
+    },
+    "by_agent": {
+      "main": 95,
+      "sentinel": 31,
+      "kowalski": 8,
+      "robotnik": 56
+    },
+    "surface_count": 40,
+    "missing_surfaces": [
+      {
+        "agent": "main",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/main/codex-home/sessions"
+      },
+      {
+        "agent": "main",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/main/sessions"
+      },
+      {
+        "agent": "main",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/main/codex-home/sessions"
+      },
+      {
+        "agent": "kowalski",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-kowalski/MEMORY.md"
+      },
+      {
+        "agent": "kowalski",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/codex-home/sessions"
+      },
+      {
+        "agent": "kowalski",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/kowalski/sessions"
+      },
+      {
+        "agent": "kowalski",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/kowalski/codex-home/sessions"
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-darth-vader/MEMORY.md"
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/darth-vader/codex-home/sessions"
+      },
+      {
+        "agent": "darth-vader",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/codex-home/sessions"
+      },
+      {
+        "agent": "robotnik",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-robotnik/MEMORY.md"
+      },
+      {
+        "agent": "robotnik",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/robotnik/codex-home/sessions"
+      },
+      {
+        "agent": "robotnik",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/robotnik/sessions"
+      },
+      {
+        "agent": "robotnik",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/robotnik/codex-home/sessions"
+      },
+      {
+        "agent": "sentinel",
+        "profile": "shared_workspace",
+        "kind": "memory",
+        "path": "/data/.openclaw/workspace-sentinel/MEMORY.md"
+      },
+      {
+        "agent": "sentinel",
+        "profile": "kowalski",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-kowalski/agents/sentinel/codex-home/sessions"
+      },
+      {
+        "agent": "sentinel",
+        "profile": "darth-vader",
+        "kind": "openclaw_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/sentinel/sessions"
+      },
+      {
+        "agent": "sentinel",
+        "profile": "darth-vader",
+        "kind": "codex_history",
+        "path": "/home/openclaw/.openclaw-darth-vader/agents/sentinel/codex-home/sessions"
+      }
+    ],
+    "errors": [],
+    "scope": "Recent local memories and session histories only; older gaps require an explicit earlier window. Stat inventory is not content coverage."
+  },
+  "recent_selection": {
+    "changed_inventory_entries_since_previous_cycle": 16,
+    "reviewed_or_reconciled_primary_identities": 5,
+    "excluded_live_entries": [
+      "current run transcript 54ebacf0-d4e8-4808-b573-b8ee49c9b9f7.jsonl",
+      "main sessions.json updated by current run",
+      "previous run transcript 49756061-ca85-4dc6-ba13-c96c73a98134.jsonl represented by persisted continuity receipt"
+    ],
+    "trajectory_policy": "Trajectories duplicadas e telemetria não foram tratadas como conteúdo editorial."
+  },
+  "pending": {
+    "coverage_complete": false,
+    "items": [
+      "Históricos não lidos dos cinco agentes/perfis e backlog do recibo anterior.",
+      "Pedido original de 08/10, causa da falta de resposta e resultado pela outra via não estão na fonte revisada.",
+      "Transcript e trajectory da sessão Robotnik e780adba-d8de-4295-b2d0-62e9413346fd continuam ausentes; não há prova de identidade com a tarefa relatada.",
+      "Runtime semântico local depende de numpy; nenhuma dependência ou índice foi alterado."
+    ],
+    "deletion_eligible": false
+  },
+  "git_sync": {
+    "state_at_receipt_generation": "PRODUCT_WRITTEN_LOCAL_COMMIT_NOT_YET_CREATED",
+    "base_head": "cca519342b75c00d3d4462934cec59315159be31",
+    "base_equal_origin_main": true,
+    "prior_transport_observed": "Sync de 2026-10-09T09:00Z publicou cca5193; três syncs posteriores sem delta.",
+    "current_cycle_push_fetch_sync": false
+  },
+  "transport": {
+    "messages_to_hebert": 0,
+    "test_notifications": 0,
+    "history_replays": 0,
+    "external_system_access": false
+  },
+  "validation": {
+    "receipt_json": "PASS",
+    "frontmatter_schema": {
+      "state": "PASS",
+      "notes_tested": 6
+    },
+    "inventory_unit_tests": {
+      "state": "PASS",
+      "tests": 3
+    },
+    "structural_gate": {
+      "state": "PASS",
+      "markdown_total": 426,
+      "internal_links": 956,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": 0,
+      "duplicate_aliases": 0,
+      "secret_candidates": 0,
+      "unreachable_cognitive_markdown": 0,
+      "isolated_cognitive_markdown": 0,
+      "graph_components": 1,
+      "knowledge_health_estimate": 1
+    },
+    "semantic_completeness": "NOT_MEASURED"
+  }
+}

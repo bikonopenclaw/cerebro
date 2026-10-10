@@ -4,13 +4,22 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-09T02:00:00Z'
+updated: '2026-10-10T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-10, consolidação diária silenciosa
+
+- Criado diário UTC de 10/10 (09/10 às 23h BRT) e ligação no MOC; inventário de sete dias com 190 arquivos, sem confundir metadados com cobertura.
+- Atualizado o registro existente do Robotnik: Hebert relatou tarefas de 08/10 sem resposta, questionou a confiabilidade e encerrou a demanda porque já a resolvera por outra via. Conteúdo e causa ausentes não foram inferidos; a sessão `killed` anterior não foi correlacionada sem prova.
+- Atualizado o guardrail existente de confirmação: recebimento e andamento devem ser explícitos; encerramento posterior do proprietário bloqueia replay ou retomada da tarefa específica.
+- Revisadas quatro sessões rotineiras de sync: `cca5193` foi publicado às 09:00 UTC de 09/10 e os três checkpoints seguintes não tinham delta.
+- Recibo `brain-v2/reports/coverage-2026-10-10-daily.json` identifica fontes, unidades, disposições e pendências. HEALTH atualizado sem recálculo do score; cobertura global parcial.
+- Sem delegação, reexecução da tarefa encerrada, exclusão, configuração, sistema externo, agente Brain ou mensagem nesta consolidação. Commit somente local exigido para o produto; sem push/sync próprio.
 
 ## 2026-10-09, consolidação diária silenciosa
 

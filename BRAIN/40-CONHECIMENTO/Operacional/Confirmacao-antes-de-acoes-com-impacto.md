@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:39:24.440350Z'
+updated: '2026-10-10T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
@@ -29,7 +29,7 @@ categoria: operacional
 tipo: guardrail
 fonte: orientação de Hebert em 2026-06-18/19
 confiabilidade: alta
-ultima_revisao: 2026-07-28
+ultima_revisao: 2026-10-10
 tags: [guardrails, confirmacao, telegram, execucao, mensagens, follow-up, seguranca-operacional, approval, checkpoints]
 ```
 
@@ -68,6 +68,12 @@ A regra foi reforçada por novos fluxos com impacto externo: envio de NFS-e/bole
 ## Follow-up prometido
 
 Em 2026-07-13, Hebert determinou uma regra operacional adicional: quando o Puppet Master prometer retorno futuro sem resposta imediata, deve agendar follow-up no Telegram antes de encerrar a interação. Essa regra reduz perda de acompanhamento em execuções delegadas a agentes e vale especialmente para tarefas com Kowalski/Darth Vader/Robotnik que dependam de retorno posterior.
+
+## Confirmação de recebimento e encerramento explícito
+
+O incidente Robotnik relatado por Hebert em 09/10/2026 reforça o mesmo princípio no atendimento direto: tarefa recebida precisa de confirmação e, se não houver resposta final imediata, de andamento ou follow-up explícito. Silêncio não deve ser tratado como fila válida nem como promessa implícita de execução.
+
+Quando o proprietário informar depois que já resolveu por outra via e pedir que a tarefa não seja executada, a demanda específica fica encerrada. Não reconstruir, reenviar, repetir ou retomar o trabalho por inferência. Se o pedido original ou a causa da falha não estiverem disponíveis, preservar a lacuna em vez de inventar justificativa ou conteúdo.
 
 ## Checkpoints e Approval
 

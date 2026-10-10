@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-09T02:00:00Z'
+updated: '2026-10-10T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,15 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-10-10
+
+- Inventário móvel de sete dias: 190 arquivos, sem erros — 153 entradas OpenClaw, 36 Codex e uma memória main. Contagens incluem índices/trajectories e não medem cobertura semântica.
+- Revisão seletiva da conversa direta Robotnik/Hebert: comprovados o relato de tarefas de 08/10 sem resposta, o impacto de confiança e o encerramento expresso porque Hebert já resolvera por outra via. Pedido original, causa e resultado externo continuam indisponíveis e não foram inferidos.
+- A sessão Robotnik `killed` sem transcript registrada em 09/10 continua uma lacuna distinta; proximidade temporal não comprova identidade com a tarefa relatada. Nenhuma reexecução foi disparada.
+- Quatro sessões de sync revisadas: publicação de `cca5193` às 09:00 UTC de 09/10 e três checkpoints posteriores sem delta. Isso prova somente transporte daquele checkpoint.
+- Históricos não selecionados dos cinco agentes/perfis e backlog anterior permanecem pendentes. Busca nativa disponível, mas sem recuperar o evento novo; runtime semântico local bloqueado por `numpy` ausente, sem instalação ou refresh.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-10-10-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Execução, produto, Git/sync e transporte permanecem separados.
 
 ## Verificação de cobertura — 2026-10-09
 

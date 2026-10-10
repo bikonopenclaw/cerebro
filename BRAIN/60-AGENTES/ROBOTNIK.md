@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:07:33.285014Z'
+updated: '2026-10-10T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md
@@ -29,7 +29,7 @@ categoria: agente_operacional
 papel: marketing, conteúdo e campanhas
 fonte: configuração OpenClaw, AGENTS.md do workspace Robotnik, contrato criativo Bikon implantado em 2026-09-08 e projeto LinkedIn preparado em 2026-09-17
 confiabilidade: alta
-ultima_revisao: 2026-09-18
+ultima_revisao: 2026-10-10
 tags: [agente, marketing, robotnik, instagram, linkedin, conteudo]
 ```
 
@@ -57,6 +57,13 @@ Responsabilidades principais:
 - Na produção Instagram, Robotnik prepara; Puppet Master coordena os portões; Hebert aprova gastos e ações externas.
 - Desde 2026-09-08, `content-production-contract` v1 e a unica autoridade criativa ativa para marketing Bikon, inclusive apos nova sessao; direcoes anteriores permanecem apenas como historico.
 - Para LinkedIn, Robotnik prepara conteúdo, mas não escolhe a organização alvo, não recebe token e não publica por herança; Puppet Master mantém orquestração e Hebert aprova cada efeito externo.
+
+### Incidente de atendimento de 08–09/10/2026
+
+- Em 09/10, Hebert relatou diretamente ao Robotnik que tarefas enviadas em 08/10 ficaram sem resposta e questionou a confiabilidade do atendimento.
+- Hebert também encerrou expressamente a demanda: já a resolvera por outra via e pediu que não fosse mais executada. O Robotnik reconheceu a falha e informou que não reabriria o trabalho.
+- O conteúdo original das tarefas e a causa da ausência de resposta não aparecem na fonte disponível. A sessão `killed` sem transcript registrada no ciclo anterior não pode ser correlacionada por mera proximidade temporal.
+- Disposição operacional: não reconstruir nem retomar essa demanda. Para pedidos futuros, confirmar recebimento e manter andamento ou follow-up explícito até resposta final; confiança deve ser sustentada por resposta e acompanhamento, não por promessa isolada.
 
 ## Workspace
 
