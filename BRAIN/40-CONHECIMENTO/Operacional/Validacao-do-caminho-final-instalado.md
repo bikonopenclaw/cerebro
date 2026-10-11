@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-06T02:00:00Z'
+updated: '2026-10-11T06:00:00Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -29,7 +29,7 @@ categoria: operacional
 tipo: aprendizado_permanente
 fonte: consolidacao semanal 2026-W31
 confiabilidade: alta
-ultima_revisao: 2026-10-06
+ultima_revisao: 2026-10-11
 tags: [instalacao, launcher, black-box, dre, runtime, validacao]
 ```
 
@@ -52,6 +52,12 @@ No recorte Robotnik, a verificação local de configuração de autenticação f
 Regra reutilizável: separar validade do arquivo, identidade do arquivo consumido, estado carregado pelo processo e teste funcional no caminho usado pelo usuário. Não declarar correção ou causa definitiva a partir de hash/configuração local nem prescrever restart como solução confirmada sem a evidência correspondente. Qualquer intervenção depende de autorização própria.
 
 Fonte: sessão Robotnik `328d630b-b4dc-4cce-9b56-1abadb0c070b`, resposta inicial e delimitação posterior de 05/10, unidades 88/89/92–93 no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-06-daily.json`. Leitura documental, sem acessar autenticação, copiar credenciais, testar login ou reiniciar serviço. Este caso é independente do reparo Puppet que exclui Robotnik.
+
+## A prova precisa percorrer a rota declarada — semana 2026-W41
+
+Os casos do painel publicado e do probe Cresol em homologação reforçam a mesma cadeia: **configuração local → identidade consumida pelo processo → ambiente/rota exercitados → efeito observado**. Login em servidor local não prova autenticação na instância publicada; OAuth e `GET /especies` com resposta `200` demonstram comunicação read-only naquele instante, não correção da configuração persistente, autorização de produção ou homologação bancária.
+
+A evidência deve nomear a última seta efetivamente atravessada e manter as demais como gates pendentes. Transporte Git ou ACK também pertencem a outra dimensão e não ampliam essa prova. Síntese em [[01-DIARIO/Semanal/2026-W41|W41]], sem restart, deploy, credencial, mutação ou teste externo novo.
 
 ## Exemplo conectado
 

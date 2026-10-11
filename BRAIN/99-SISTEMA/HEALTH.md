@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-10T02:00:00Z'
+updated: '2026-10-11T06:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,15 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação semanal — 2026-10-11
+
+- [[01-DIARIO/Semanal/2026-W41|W41]]: cinco diários disponíveis de 04–10/10 lidos integralmente; faltam 04/10 e 05/10, e 11/10 ainda estava aberto. Isso mede revisão dos diários, não cobertura de todas as conversas.
+- Inventário móvel: 224 arquivos, sem erros — 179 OpenClaw, 43 Codex e duas memórias. Por atribuição: main 104, Robotnik 59, Sentinel 47 e Kowalski 14; nenhum arquivo Darth Vader caiu no filtro. Conteúdo bruto não relido nesta semanal.
+- Quatro padrões reconciliados e três notas permanentes existentes atualizadas. Restrições PGL/Golden, owners, terminais financeiros e gates vigentes permanecem intactos; nenhuma correção operacional foi declarada instalada.
+- Síntese documental local produzida; cobertura integral bloqueada (`PRODUCT_INCOMPLETE`) por diários ausentes, 224 fontes não lidas e backlog dos recibos anteriores. Recibo efetivo: `brain-v2/reports/coverage-2026-10-11-weekly.json`.
+- Pesquisa semântica local respondeu em modo somente leitura com índice de 10/10 02:07 UTC, antes das edições; sem refresh. Busca nativa retornou material histórico e não foi usada como prova atual. Validação estrutural e hashes ficam no checkpoint local e não medem completude semântica.
+- Nenhum arquivamento/exclusão, commit, push ou sync nesta recuperação. Score legado 96/100 mantido sem recálculo e sem equivalência com cobertura.
 
 ## Verificação de cobertura — 2026-10-10
 

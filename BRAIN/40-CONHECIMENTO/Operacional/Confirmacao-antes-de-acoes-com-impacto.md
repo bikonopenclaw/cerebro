@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-10T02:00:00Z'
+updated: '2026-10-11T06:00:00Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md
@@ -29,7 +29,7 @@ categoria: operacional
 tipo: guardrail
 fonte: orientação de Hebert em 2026-06-18/19
 confiabilidade: alta
-ultima_revisao: 2026-10-10
+ultima_revisao: 2026-10-11
 tags: [guardrails, confirmacao, telegram, execucao, mensagens, follow-up, seguranca-operacional, approval, checkpoints]
 ```
 
@@ -74,6 +74,12 @@ Em 2026-07-13, Hebert determinou uma regra operacional adicional: quando o Puppe
 O incidente Robotnik relatado por Hebert em 09/10/2026 reforça o mesmo princípio no atendimento direto: tarefa recebida precisa de confirmação e, se não houver resposta final imediata, de andamento ou follow-up explícito. Silêncio não deve ser tratado como fila válida nem como promessa implícita de execução.
 
 Quando o proprietário informar depois que já resolveu por outra via e pedir que a tarefa não seja executada, a demanda específica fica encerrada. Não reconstruir, reenviar, repetir ou retomar o trabalho por inferência. Se o pedido original ou a causa da falha não estiverem disponíveis, preservar a lacuna em vez de inventar justificativa ou conteúdo.
+
+## Atendimento como transição rastreável — semana 2026-W41
+
+Confirmação de recebimento, atualização de andamento e resposta final são estados distintos. O silêncio não equivale a admissão durável nem mantém uma promessa válida; repetição automática sem mudança material tampouco substitui acompanhamento compreensível. Quando houver falha, registrá-la na camada de atendimento/supervisão, sem convertê-la em conclusão sobre o produto.
+
+Uma ordem posterior explícita de **não executar** é terminal para a demanda identificada, ainda que faltem o pedido original, transcript ou causa. A lacuna permanece documental; ela não autoriza reconstrução, replay ou nova ação para “completar” o histórico. Síntese em [[01-DIARIO/Semanal/2026-W41|W41]].
 
 ## Checkpoints e Approval
 
