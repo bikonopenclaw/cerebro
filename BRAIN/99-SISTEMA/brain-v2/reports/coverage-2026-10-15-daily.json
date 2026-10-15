@@ -1,0 +1,439 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_at": "2026-10-15T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "498bd8dd-0071-4baf-ba21-9820a6387bf9",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "base_commit": "ac8df770da123554d994ca50dc2bbae4b214a98a",
+  "product_state": "PRODUCED_DOCUMENTARY_PARTIAL_EXISTING_NOTES_UPDATED",
+  "coverage_complete": false,
+  "window": {
+    "reference_utc": "2026-10-15T02:00:00Z",
+    "local_date": "2026-10-14",
+    "timezone": "America/Sao_Paulo",
+    "inventory_days": 7,
+    "continuity": "Última diária persistida em 2026-10-10; semanal de 2026-10-11 reutilizada por identidade; tentativas diárias de 13/10 e 14/10 sem produto."
+  },
+  "execution": {
+    "state": "REVIEW_AND_CONSOLIDATION_EXECUTED_LOCALLY",
+    "delegation": false,
+    "scope": "Leitura local seletiva e atualização documental; sem reexecução de contrato, fechamento executivo, sync, configuração ou operação de negócio."
+  },
+  "product": {
+    "state": "PRODUCED_DOCUMENTARY_PARTIAL_EXISTING_NOTES_UPDATED",
+    "business_acceptance": "NOT_ASSERTED",
+    "notes": [
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-10-15.md",
+        "path_base": "brain",
+        "sha256": "3f617b26966c0f62bb3aa9717ab15d9f926f9695a4747d4dea748d873d34ce8c",
+        "bytes": 6180,
+        "mtime_ns": 1792030032924079198
+      },
+      {
+        "path": "BRAIN/01-DIARIO/README.md",
+        "path_base": "brain",
+        "sha256": "92530a99ec4d676f1bf5b7d13010cc6830ec245dfd28c122d93c00d43c9dc5d0",
+        "bytes": 3236,
+        "mtime_ns": 1792030032944079224
+      },
+      {
+        "path": "BRAIN/40-CONHECIMENTO/Operacional/Proposta-nao-e-contrato-congelado.md",
+        "path_base": "brain",
+        "sha256": "cd37fabd659a425c43504152871f7e9d8806c2b8a6cde5b57940aa8ffccb7a80",
+        "bytes": 6666,
+        "mtime_ns": 1792030032881079143
+      },
+      {
+        "path": "BRAIN/40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle.md",
+        "path_base": "brain",
+        "sha256": "9d961cb9c0e46b018cf60567c39f7c738b2a6892ac3c33cb919f9c590d05de4a",
+        "bytes": 17924,
+        "mtime_ns": 1792030032901079169
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+        "path_base": "brain",
+        "sha256": "24a75f4b8c123e935e31ab1370237f851ed972569971ff3796b1e2f83078099b",
+        "bytes": 125434,
+        "mtime_ns": 1792030032960079245
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/HEALTH.md",
+        "path_base": "brain",
+        "sha256": "6018d0408f06264f720f04d21a20fa7a48912c93d95cb79d96025e04330490c8",
+        "bytes": 63335,
+        "mtime_ns": 1792030032978079268
+      }
+    ],
+    "thematic_notes_changed": [
+      "BRAIN/40-CONHECIMENTO/Operacional/Proposta-nao-e-contrato-congelado.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle.md"
+    ],
+    "new_entity_or_project_notes": [],
+    "disposition": "Nenhum registro de empresa/projeto criado: o encaminhamento isolado não comprova relação atual ou adoção pela BIKON."
+  },
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/workspace/media/inbound/openclaw-staged-6ddccfb8-fa34-4bf1-bdd7-ef1174d101ca/contrato-canonico-operacao-trafego---733e45a0-9d85-4936-87c9-46ebe1db7b19.md",
+      "path_base": "absolute",
+      "sha256": "fc00600f2cbe21441a27f0ad6bf0dedce643f2d20e5ae796b5f6bc974ea087ff",
+      "bytes": 574239,
+      "mtime_ns": 1791717558030863261,
+      "agent": "main",
+      "profile": "shared_workspace",
+      "kind": "inbound_document",
+      "read_scope": {
+        "complete_semantic_reread_in_current_cron": false,
+        "whole_file_structural_scan": true,
+        "lines": 6152,
+        "verified_facts": [
+          "574239 bytes",
+          "450 definições",
+          "449 IDs únicos",
+          "R-META-243 duplicado",
+          "ordem de capítulos irregular"
+        ]
+      },
+      "disposition": "Achados de governança promovidos a notas existentes; conteúdo comercial específico não adotado como autoridade operacional.",
+      "pending": "Parecer integral não foi persistido nem transportado de forma completa na execução de origem."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/31dd0ca9-3e52-4687-b25e-f8e47ff398b3.jsonl",
+      "path_base": "absolute",
+      "sha256": "96219193dd4595cfe0613bc424ba2f7f8d216a93fd05f14cf8f6deff0ab6b493",
+      "bytes": 478809,
+      "mtime_ns": 1791718821859632017,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 5,
+            "line_sha256": "510c485801d87f6f15dcbcbe1751669c515d86f0d3754ee99256176bc582a39f"
+          },
+          {
+            "line": 8,
+            "line_sha256": "52e146e4dd2efde1462f9ad60a345eae87efab90c8ec49725174ea52135aefd1"
+          },
+          {
+            "line": 25,
+            "line_sha256": "640adf3d31791e489bbbd96b5fc06212449a1c53ac672ae32125c9886bc495d8"
+          },
+          {
+            "line": 58,
+            "line_sha256": "0c0245e74700b2f3c1c6164e1f4471e294cc23c662fdf833cb8a410d849365a4"
+          },
+          {
+            "line": 60,
+            "line_sha256": "dda159298e7a28ae3e43984aef92bc25983296fc80e39b16250d890768b97806"
+          },
+          {
+            "line": 61,
+            "line_sha256": "838105d449f1723409b4563e7ec8d756b265ac0218795a3403c2cf34fbfa8782"
+          },
+          {
+            "line": 62,
+            "line_sha256": "21372f7f449f8901e453978bafa08cb6984035e6dd3955b2b0a7d359d826a97a"
+          }
+        ],
+        "method": "Leitura de pedido, admissão, parecer parcial e estados de acompanhamento."
+      },
+      "disposition": "Pedido e achados úteis consolidados; truncamento e divergência de lifecycle preservados.",
+      "pending": "A linha 58 termina com marcador literal de truncamento; linhas 60–62 não demonstram fechamento terminal."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/5a18c001-e970-4499-9420-35dfe73e60ab.jsonl",
+      "path_base": "absolute",
+      "sha256": "aa998736cfb1391e38aa87225e3f5e2b958cd73f462dd4214a3a9b9c630e1729",
+      "bytes": 464814,
+      "mtime_ns": 1791718231455835102,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 5,
+            "line_sha256": "24b0cf1fdd01cbc4edcbe3795779be926da1a2a59c2d842f4a39487bf8897c0a"
+          },
+          {
+            "line": 68,
+            "line_sha256": "6dc704f25c7eef5a9426699cf2189c065dec814ed54a801e7af4da65d734b161"
+          }
+        ],
+        "method": "Leitura da retomada e do término abortado."
+      },
+      "disposition": "Continuação sem produto terminal; nenhuma conclusão adicional promovida."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/7d3fc8c8-c687-47bb-bd2a-f15033ea4671.jsonl",
+      "path_base": "absolute",
+      "sha256": "e8e0ffc3cecf35bae3a1e56c0e5830633039b1c459c83352a5ad1f91fc590472",
+      "bytes": 803829,
+      "mtime_ns": 1791752608497875594,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 5,
+            "line_sha256": "0fd3de4cd86fab28c050bccd8fad7a6427bda5aaa5cb26c2759304b0da193cf6"
+          },
+          {
+            "line": 61,
+            "line_sha256": "b12ddb2e7dfa546166866db89020156f634c1cb65d77288f01b06a33b551714a"
+          }
+        ],
+        "method": "Leitura do escopo do cron e do erro final."
+      },
+      "disposition": "Fechamento executivo não concluído; observações intermediárias não promovidas como plano executivo."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/bedb062c-2374-47c7-9a17-a37ca6931286.jsonl",
+      "path_base": "absolute",
+      "sha256": "f66a0d45c1db5160f1bfa40daadc8bcb9922db74325fe5a1f1a33b33cdda2e45",
+      "bytes": 646282,
+      "mtime_ns": 1791856995432017471,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 5,
+            "line_sha256": "ff7b4b9c1853745bb8641559e709a1654820fcff531ed8338525b51730cd769e"
+          },
+          {
+            "line": 75,
+            "line_sha256": "f82bcd69ee813fd080379aade0b3c023cab9be3a2a8588986917c4d2287a1096"
+          }
+        ],
+        "method": "Leitura da solicitação e erro terminal."
+      },
+      "disposition": "Tentativa sem produto por context overflow; nenhuma cobertura atribuída."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/4c0aadd1-c0ac-46be-9eca-f7dbccf42cc3.jsonl",
+      "path_base": "absolute",
+      "sha256": "29dd8c629464cbcff7b459c41f127610b6f96caf89e138b0e268c61b82691635",
+      "bytes": 813564,
+      "mtime_ns": 1791943541606260394,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 5,
+            "line_sha256": "5c66e520c1eb27c9f775952266d4dc94f20e35bee9695ae476d846a487dfe70f"
+          },
+          {
+            "line": 79,
+            "line_sha256": "6c3115816ae5e2c0c1479b0b1ccc59f4e4ef84a32150641976828aa3d255cfdb"
+          }
+        ],
+        "method": "Leitura da solicitação e erro terminal."
+      },
+      "disposition": "Tentativa sem produto por context overflow; nenhuma cobertura atribuída."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/d6d366dc-2cd3-4b3e-aa24-36c2c6d5f53e.jsonl",
+      "path_base": "absolute",
+      "sha256": "6cbd063d28157f34cb8d13ab04c9c619466389225f4f092fbdb2fc7bf3c7de39",
+      "bytes": 14045,
+      "mtime_ns": 1791990057749411991,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 9,
+            "line_sha256": "8eb125a4d31d84c9c0552ec37b8484b32a94ab37439f814a6f37c9279c5aa881"
+          },
+          {
+            "line": 10,
+            "line_sha256": "eabd42daee66ef9a9cacb905bec06b243d1d43b701d09c82ff373d45e331e8d1"
+          }
+        ],
+        "method": "Leitura do erro SSH e fechamento do ciclo."
+      },
+      "disposition": "Falha de transporte registrada; sem delta local ou commit vazio."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/d2856d4f-d7ee-4ea7-925e-18cb30d70d86.jsonl",
+      "path_base": "absolute",
+      "sha256": "737e82b3f748a58e0c4721ca8cb99698afc5feca2d0c5ee78bee2ee74da76709",
+      "bytes": 8857,
+      "mtime_ns": 1792008021184763055,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 7,
+            "line_sha256": "41a666e2086d69f2a975913cbd22018f8448a8427c2226fc8747e2e66b0eccda"
+          },
+          {
+            "line": 8,
+            "line_sha256": "c356aefa3d717171df40b5956fe8651a8d9bf2f97005b24c0b13f26b8b5366db"
+          }
+        ],
+        "method": "Leitura do sync posterior."
+      },
+      "disposition": "Transporte voltou a Everything up-to-date; não prova correção persistente da chave."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0c273220-f7d2-4f7e-9667-fb07d032be2b.jsonl",
+      "path_base": "absolute",
+      "sha256": "7f7c58cbc8f9acdd8184f8ffec897a4d19a00cf06ea19323eb4f6eda0e8c809c",
+      "bytes": 11981,
+      "mtime_ns": 1792026027979370128,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": false,
+        "units": [
+          {
+            "line": 9,
+            "line_sha256": "1beec75f231734d5dce9ba167702b60aa8e462101dfd68a1a8425ac73f2d7d5b"
+          },
+          {
+            "line": 10,
+            "line_sha256": "7ad5f91d60d9fb4b12797e6069be82f9d20b97b199cc384598cd960cf2467d96"
+          }
+        ],
+        "method": "Leitura do checkpoint imediatamente anterior à diária."
+      },
+      "disposition": "Base ac8df77 confirmada sem delta às 01:00 UTC."
+    }
+  ],
+  "derived_evidence": {
+    "path": "/data/.openclaw/workspace/.openclaw/tmp/contract-audit-pinheiro-report.txt",
+    "path_base": "absolute",
+    "sha256": "a39601fb5a374ad9fcc11fcb18e7643b986899647492e80886c7e834ad7574cd",
+    "bytes": 8358,
+    "mtime_ns": 1792029816198796265,
+    "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT",
+    "disposition": "Extração local da unidade textual do parecer para confirmar o término truncado; não é parecer completo."
+  },
+  "continuity_receipt": {
+    "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-11-weekly.json",
+    "path_base": "brain",
+    "sha256": "45f85f8fbac78feb90a0a8f7a172b25ceea6a318a327c15a11028d6d0362b75a",
+    "bytes": 14464,
+    "mtime_ns": 1791698763629172655,
+    "read_scope": "Campos de escopo, fontes, produtos, pendências e publicação.",
+    "disposition": "Fila e limites preservados; nenhuma fonte primária foi reclassificada apenas pela semanal."
+  },
+  "inventory": {
+    "artifact": {
+      "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-inventory-2026-10-15.json",
+      "path_base": "absolute",
+      "sha256": "05299c9555453edde7f51224a10ec68d5b6e1db9da22c3735faa1e4ac5fa2468",
+      "bytes": 70723,
+      "mtime_ns": 1792029796877770641,
+      "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT"
+    },
+    "generated_at": "2026-10-15T02:03:16.876522+00:00",
+    "window_days": 7,
+    "source_count": 157,
+    "by_kind": {
+      "openclaw_history": 137,
+      "codex_history": 19,
+      "memory": 1
+    },
+    "by_agent": {
+      "main": 89,
+      "sentinel": 47,
+      "kowalski": 14,
+      "robotnik": 7
+    },
+    "surface_count": 40,
+    "missing_surfaces": 18,
+    "errors": [],
+    "scope": "Metadados de arquivos recentes; não equivalem a leitura de conteúdo ou cobertura semântica."
+  },
+  "semantic_search": {
+    "native_memory_search": "AVAILABLE; retornou apenas material histórico sem prova de atualidade para o evento novo.",
+    "fallback": "Leitura direta, pesquisa lexical e verificação estrutural local.",
+    "index_or_dependencies_changed": false,
+    "post_edit_index_currentness": "NOT_ASSERTED"
+  },
+  "pending": {
+    "coverage_complete": false,
+    "deletion_eligible": false,
+    "items": [
+      "Parecer integral do contrato não foi persistido/transportado; o texto disponível termina truncado.",
+      "Fechamento executivo de 11/10 não produziu resposta final.",
+      "Diárias de 13/10 e 14/10 não produziram diário/recibo por context overflow.",
+      "Históricos não selecionados dos agentes/perfis e backlog da semanal de 11/10 permanecem pendentes.",
+      "Ausência de arquivos Darth Vader no filtro temporal não prova ausência de conhecimento."
+    ]
+  },
+  "git_sync": {
+    "state_at_receipt_generation": "PRODUCT_WRITTEN_LOCAL_COMMIT_NOT_YET_CREATED",
+    "base_head": "ac8df770da123554d994ca50dc2bbae4b214a98a",
+    "base_equal_origin_main": true,
+    "observed_transport": "Falha SSH às 15:00 UTC de 14/10; Everything up-to-date às 20:00 e às 01:00 de 15/10.",
+    "current_cycle_push_fetch_sync": false
+  },
+  "transport": {
+    "messages_to_hebert": 0,
+    "test_notifications": 0,
+    "history_replays": 0,
+    "external_system_access": false
+  },
+  "validation": {
+    "receipt_json": "PASS",
+    "frontmatter_schema": {
+      "state": "PASS",
+      "notes_tested": 6
+    },
+    "structural_gate": {
+      "state": "PASS",
+      "artifact": {
+        "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-link-gate-2026-10-15.json",
+        "path_base": "absolute",
+        "sha256": "21f0ea92533691809c9be97c5c0aa40c41a22f467c0af3f7d1496fc1aea1bdd4",
+        "bytes": 22250,
+        "mtime_ns": 1792030059454113371,
+        "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT"
+      },
+      "markdown_total": 428,
+      "internal_links": 975,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": 0,
+      "duplicate_aliases": 0,
+      "secret_candidates": 0,
+      "unreachable_cognitive_markdown": 0,
+      "isolated_cognitive_markdown": 0,
+      "graph_components": 1,
+      "knowledge_health_estimate": 1
+    },
+    "semantic_completeness": "NOT_MEASURED"
+  },
+  "safety": {
+    "silent": true,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "dependency_or_index_changes": false,
+    "business_effects": false
+  }
+}

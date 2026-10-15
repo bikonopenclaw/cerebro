@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-10-11T06:00:00Z'
+updated: '2026-10-15T02:00:00Z'
 ---
 
 # Estado terminal requer convergencia do lifecycle
@@ -15,9 +15,9 @@ updated: '2026-10-11T06:00:00Z'
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidacao semanal 2026-W35, teste controlado de relatorios operacionais em 2026-09-02, publicacao Instagram Bikon em 2026-09-10, lifecycle ad-hoc ARX em 2026-09-16 e consolidacao semanal 2026-W38
+fonte: consolidacao semanal 2026-W35, teste controlado de relatorios operacionais em 2026-09-02, publicacao Instagram Bikon em 2026-09-10, lifecycle ad-hoc ARX em 2026-09-16, consolidacao semanal 2026-W38 e revisão documental de 2026-10-11
 confiabilidade: alta
-ultima_revisao: 2026-10-11
+ultima_revisao: 2026-10-15
 tags: [lifecycle, execucao, registry, cgroup, terminalidade, reconciliacao, supervisao, transcript]
 ```
 
@@ -138,3 +138,9 @@ Na síntese [[01-DIARIO/Semanal/2026-W40|W40]], a espera do reteste passa a hist
 A semana reuniu duas distinções complementares. Primeiro, falha de `resume/reconcile`, status repetido ou silêncio do executor descrevem a camada de observação/atendimento; não determinam se o produto passou, falhou ou sequer foi exercitado. Segundo, a decisão posterior do proprietário — documentos tratados ou tarefa já resolvida por outra via e não mais executável — encerra o acompanhamento específico sem fabricar prova do resultado nem apagar efeitos desconhecidos.
 
 O fechamento deve registrar separadamente **estado do observador**, **decisão do proprietário**, **resultado do produto** e **efeitos conhecidos/incertos**. Uma sessão `killed` sem transcript permanece lacuna e não pode ser ligada a uma tarefa apenas por proximidade temporal. Síntese em [[01-DIARIO/Semanal/2026-W41|W41]]; não há autorização de replay, retomada ou inferência financeira.
+
+## Produto parcial transportado com acompanhamento divergente — 11/10/2026
+
+Na análise do contrato de tráfego da Insurance & Investments Pinheiro, uma mensagem com o parecer foi emitida às 11:27 UTC, mas terminou no meio de uma frase com marcador literal de truncamento. Depois disso, o acompanhamento passou a relatar a delegação como `UNCERTAIN / NATIVE_REGISTRATION_MISSING` e o objetivo como pendente, embora uma parte substancial do parecer já tivesse sido transportada. A continuação também terminou sem produto terminal recuperável.
+
+Uma mensagem visível ou um resumo parcial não comprova produto completo. Para saídas longas, persistir o artefato final, relê-lo, conferir identidade/hash, revisar a qualidade, fechar o objetivo e somente então registrar o recibo de entrega. O status do controlador não pode apagar bytes já entregues nem transformar conteúdo truncado em conclusão. Neste caso read-only, nenhum efeito de negócio precisava ser repetido; faltou convergência documental e de lifecycle. Ver [[01-DIARIO/2026/2026-10-15|diário e limites do ciclo]].

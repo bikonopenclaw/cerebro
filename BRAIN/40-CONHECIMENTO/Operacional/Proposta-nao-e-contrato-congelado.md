@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T20:06:54.602140Z'
+updated: '2026-10-15T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md
@@ -20,6 +20,10 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W31.md
   reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
   source: BRAIN/40-CONHECIMENTO/Operacional/Proposta-nao-e-contrato-congelado.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-10-15.md
+  reason: Caso recente em que um documento dito oficial permanecia em formação e misturava regras vigentes, propostas e estados não normalizados.
+  source: cron:d95bbe73-24d9-4e2b-ba57-0032082bb54b
 ---
 
 # Proposta nao e contrato congelado
@@ -27,9 +31,9 @@ relationships:
 ```yaml
 categoria: operacional
 tipo: guardrail
-fonte: consolidacao semanal 2026-W31
+fonte: consolidacao semanal 2026-W31; revisão documental local de 2026-10-11
 confiabilidade: alta
-ultima_revisao: 2026-08-02
+ultima_revisao: 2026-10-15
 tags: [documentacao, contratos, freeze, validacao, cadeia-de-custodia]
 ```
 
@@ -53,6 +57,15 @@ Na semana 2026-W31, documentos como `Serventia_Identity_Contract_v1_PROPOSED_NOT
 - [[40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo|Autorizacao atomica nao herda escopo]]
 - [[50-PROJETOS/Em-Andamento/OpenClaw-Provimento-213|OpenClaw - Provimento 213]]
 - [[01-DIARIO/Semanal/2026-W31|Semana 2026-W31, cobertura parcial]]
+- [[01-DIARIO/2026/2026-10-15|Diário 2026-10-15 — contrato de tráfego em formação]]
+
+## Documento oficial ainda em formação — 11/10/2026
+
+Um documento pode ser oficial como acervo de estudo e, ao mesmo tempo, não estar apto a governar execução. No contrato de tráfego v0.65 encaminhado para análise, o próprio cabeçalho dizia `Em formação`; a leitura local encontrou 450 definições de regra, 449 IDs únicos e duas regras diferentes com o ID `R-META-243`. A ordem dos capítulos também não era estável: depois de 1–10 surgiam outro 8, 12, 13, 14 e 11.
+
+O corpo misturava regras validadas, propostas, estados fora da taxonomia declarada e itens sem estado. Por isso, chamar o arquivo de fonte oficial não cria uma visão executável inequívoca nem autorização para publicar, alterar orçamento, segmentação, tracking, site, dados pessoais ou identidade de terceiros.
+
+Antes de automação, separar política vigente, estudo, catálogo ativo, changelog e auditoria; normalizar IDs e estados; resolver conflitos de fórmula e escopo; materializar as evidências referenciadas; definir objetivo e owner; fazer revisão jurídica/regulatória; e congelar a versão efetivamente aprovada por hash. A solicitação de Hebert foi análise de conteúdo primeiro e encaixe secundário, não adoção do contrato pela BIKON.
 
 ## Complementos reconciliados — lote 15 de 2026-09-21
 

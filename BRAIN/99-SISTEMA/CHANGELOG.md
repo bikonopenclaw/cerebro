@@ -4,13 +4,23 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-11T06:00:00Z'
+updated: '2026-10-15T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-15, consolidação diária silenciosa
+
+- Criado diário UTC de 15/10 como retomada desde a última diária persistida, sem fabricar notas retroativas para os ciclos ausentes; MOC cronológico atualizado.
+- Revisado o contrato de tráfego v0.65 da Insurance & Investments Pinheiro: acervo útil para pesquisa, mas ainda em formação e não apto a governar produção autônoma. Confirmadas 450 definições, 449 IDs únicos, duplicidade de `R-META-243` e ordem irregular de capítulos.
+- Atualizadas duas notas existentes: proposta versus contrato congelado e convergência de lifecycle. O parecer anterior foi transportado truncado e seguido por acompanhamento divergente; conteúdo parcial não foi promovido a produto terminal.
+- Registradas as falhas sem produto do fechamento executivo de 11/10 e das diárias de 13/10 e 14/10, todas por estouro de contexto. Nenhuma conclusão planejada ou cobertura foi inferida dessas tentativas.
+- Sync de 14/10 às 15:00 UTC falhou por SSH e se recuperou nos ciclos das 20:00 e 01:00, sem delta local; isso não prova correção persistente da configuração.
+- Inventário de sete dias com 157 arquivos e 18 superfícies ausentes. Recibo `brain-v2/reports/coverage-2026-10-15-daily.json`; HEALTH atualizado, cobertura global parcial e score legado mantido.
+- Sem exclusão, alteração de cron/configuração, dependência, índice, sistema externo, agente Brain, mensagem ou publicação remota. Commit somente local.
 
 ## 2026-10-11, consolidação semanal silenciosa — W41
 

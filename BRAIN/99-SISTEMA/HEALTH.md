@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-11T06:00:00Z'
+updated: '2026-10-15T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,16 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-10-15
+
+- Retomada desde a última diária persistida, de 10/10. As execuções diárias de 13/10 e 14/10 excederam o contexto e não deixaram diário, recibo ou delta Git; as lacunas permanecem explícitas, sem reconstrução retroativa.
+- Inventário móvel: 157 arquivos, sem erros — 137 históricos OpenClaw, 19 Codex e uma memória main. Por atribuição: main 89, Sentinel 47, Kowalski 14 e Robotnik 7; nenhum arquivo Darth Vader caiu no filtro. De 40 superfícies, 18 estavam ausentes. Contagem não mede cobertura semântica.
+- Revisão seletiva do contrato de tráfego encaminhado, da sessão que produziu parecer truncado, do fechamento executivo e das duas diárias sem produto, além do incidente de sync SSH e recuperação posterior. Duas notas permanentes existentes foram atualizadas; nenhum registro de empresa/projeto foi criado sem prova de relação atual ou adoção.
+- O fechamento executivo de 11/10 também excedeu o contexto sem resposta final. O parecer contratual parcial não é produto terminal: terminou truncado e foi seguido por estados de acompanhamento divergentes.
+- Sync falhou às 15:00 UTC de 14/10 por chave SSH e voltou a `Everything up-to-date` às 20:00 e 01:00; nenhuma perda ou correção persistente foi inferida. Base inicial desta diária: `ac8df77`, alinhada a `origin/main`.
+- Busca nativa trouxe apenas material histórico; leitura lexical/direta complementou a deduplicação, sem instalar dependências ou atualizar índice. Históricos não selecionados e backlog anterior permanecem pendentes.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-10-15-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Execução, produto, Git/sync e transporte permanecem separados.
 
 ## Verificação semanal — 2026-10-11
 
