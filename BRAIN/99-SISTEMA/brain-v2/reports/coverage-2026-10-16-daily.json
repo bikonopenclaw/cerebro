@@ -1,0 +1,274 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_at": "2026-10-16T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "76f06279-eb72-4366-9857-da7ffa0b4bce",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "base_commit": "caffed69a28ca7f53c309473f3ab06ac92ab97ce",
+  "product_state": "PRODUCED_DOCUMENTARY_PARTIAL_NO_THEMATIC_PROMOTION",
+  "coverage_complete": false,
+  "window": {
+    "reference_utc": "2026-10-16T02:00:00Z",
+    "local_date": "2026-10-15",
+    "timezone": "America/Sao_Paulo",
+    "inventory_days": 7,
+    "continuity": "Diária de 15/10 reutilizada por identidade; fontes estáveis novas limitadas a quatro execuções de sync."
+  },
+  "execution": {
+    "state": "REVIEW_AND_CONSOLIDATION_EXECUTED_LOCALLY",
+    "delegation": false,
+    "scope": "Leitura local seletiva e atualização documental; sem sync, configuração, reexecução operacional ou efeito de negócio nesta consolidação."
+  },
+  "product": {
+    "state": "PRODUCED_DOCUMENTARY_PARTIAL_NO_THEMATIC_PROMOTION",
+    "business_acceptance": "NOT_APPLICABLE",
+    "notes": [
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-10-16.md",
+        "path_base": "brain",
+        "sha256": "319a4ac27331ab2102e73750f2065b07e38b217eb26c21138e558e0861b7c367",
+        "bytes": 3939,
+        "mtime_ns": 1792116159018996537
+      },
+      {
+        "path": "BRAIN/01-DIARIO/README.md",
+        "path_base": "brain",
+        "sha256": "c6b89eeb2ad92906d1f9eb6ce0c813958e4d7a4e032ecd8afb8a411f19005821",
+        "bytes": 3279,
+        "mtime_ns": 1792116159046996562
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+        "path_base": "brain",
+        "sha256": "8f3ec210aef806877bd664f08eb1a43552d939f4991be9b11a289a661afb565f",
+        "bytes": 126394,
+        "mtime_ns": 1792116159080996593
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/HEALTH.md",
+        "path_base": "brain",
+        "sha256": "80c104d7fdef79a1b3f312b2d4df50c47ed5aeff8ede47daab661791baa1cfd9",
+        "bytes": 64648,
+        "mtime_ns": 1792116159109996619
+      }
+    ],
+    "thematic_notes_changed": [],
+    "new_entity_or_project_notes": [],
+    "disposition": "Nenhum conhecimento temático novo com utilidade futura; não houve promoção ou duplicação."
+  },
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/98aa6117-76c7-46f2-a5ae-1af36d63d1c3.jsonl",
+      "path_base": "absolute",
+      "sha256": "f744c88b4f1135d6be6bc4b0ea263950b6928aed70843c8f40982417d8344bc2",
+      "bytes": 11655,
+      "mtime_ns": 1792054824517485565,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 10,
+        "units": [
+          {
+            "line": 7,
+            "line_sha256": "acbef2873d7ae42e92baab0c79de33bfd2dfe248e0c8d79b9a2427de4dc99cb0"
+          },
+          {
+            "line": 9,
+            "line_sha256": "988907f25514208b60d5ac949cd399dc83e73ef31299fc7a8b3e2511869cde7a"
+          },
+          {
+            "line": 10,
+            "line_sha256": "d335569a280c1d07ff639a592ff70fc540711ee2f5c3c0ce29751e6be6cc3062"
+          }
+        ],
+        "method": "Todos os registros JSONL foram percorridos; pedido, resultado do comando e fechamento foram lidos."
+      },
+      "disposition": "Publicação de caffed6 e alinhamento com origin/main confirmados às 09:00:22 UTC."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/47d9b40d-d272-49dc-b360-31abde9d5511.jsonl",
+      "path_base": "absolute",
+      "sha256": "69533138770f768f7d76d5272f0c8fefc00ca4a421c3331d75b28fa23f178cd6",
+      "bytes": 8875,
+      "mtime_ns": 1792076425496064974,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "units": [
+          {
+            "line": 7,
+            "line_sha256": "08bbacbaafbfbec004924b78434a06b8671b83e64f2c96db060735a3cf77da56"
+          },
+          {
+            "line": 8,
+            "line_sha256": "eba323203613044540156f01bd18ce35a26123a5ac918458ed3c3d4da9194220"
+          }
+        ],
+        "method": "Todos os registros JSONL foram percorridos; pedido, resultado do comando e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint de 15:00 UTC sem delta; remoto atualizado."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/b8944661-0c45-4e10-bbd3-5679627e5012.jsonl",
+      "path_base": "absolute",
+      "sha256": "373a28d52b80cf5a3138dfa81f45f6758ee84f44aa6382dedeeee5f00e48d312",
+      "bytes": 6334,
+      "mtime_ns": 1792094429691701292,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "units": [
+          {
+            "line": 7,
+            "line_sha256": "e61c2aceedc26f498244e1f004d1ba5564f8f12bf1449cd9affa975607d1a5a3"
+          },
+          {
+            "line": 8,
+            "line_sha256": "2c23e7c1f84ba215ec127a80b35b3465a89757a46e00b99fc9f9156378a86a74"
+          }
+        ],
+        "method": "Todos os registros JSONL foram percorridos; pedido, resultado do comando e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint de 20:00 UTC sem delta; remoto atualizado."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/5df218b8-596c-4213-9cbd-7da5b87ac820.jsonl",
+      "path_base": "absolute",
+      "sha256": "e87c6e875e7e79439afab9a55cf64f06826f9d646e9db14bbfb87b9dc20242c7",
+      "bytes": 9084,
+      "mtime_ns": 1792112427387269702,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "units": [
+          {
+            "line": 7,
+            "line_sha256": "64e6721809094362f58c230e04eb39aecf9b641735612cbb83c0e85ab941779e"
+          },
+          {
+            "line": 8,
+            "line_sha256": "9e55d26ca3b646bd06674e19faffda20760829eaad80a627954722fab97fee23"
+          }
+        ],
+        "method": "Todos os registros JSONL foram percorridos; pedido, resultado do comando e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint de 01:00 UTC sem delta; remoto atualizado."
+    }
+  ],
+  "continuity_receipt": {
+    "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-15-daily.json",
+    "path_base": "brain",
+    "sha256": "1bc6af9085eb8193788be235d4b6857d80559b968a478c163faf5c7917939eb6",
+    "bytes": 16850,
+    "mtime_ns": 1792030135746211178,
+    "read_scope": "Documento integral, 439 linhas.",
+    "disposition": "Produtos, fontes e lacunas anteriores preservados por identidade; nenhuma promoção repetida."
+  },
+  "inventory": {
+    "artifact": {
+      "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-inventory-2026-10-16.json",
+      "path_base": "absolute",
+      "sha256": "8c58eea032a4d2db920106a202b33a316ab98f1e73113744a8dde07ac50bcbbf",
+      "bytes": 70724,
+      "mtime_ns": 1792116057791905873,
+      "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT"
+    },
+    "generated_at": "2026-10-16T02:00:57.790476+00:00",
+    "window_days": 7,
+    "source_count": 157,
+    "by_kind": {
+      "openclaw_history": 137,
+      "codex_history": 19,
+      "memory": 1
+    },
+    "by_agent": {
+      "main": 89,
+      "sentinel": 47,
+      "kowalski": 14,
+      "robotnik": 7
+    },
+    "surface_count": 40,
+    "missing_surfaces": 18,
+    "errors": [],
+    "scope": "Metadados de arquivos recentes; não equivalem a leitura de conteúdo ou cobertura semântica."
+  },
+  "semantic_search": {
+    "native_memory_search": "AVAILABLE; resultados restritos a material histórico de julho, sem prova de atualidade para esta janela.",
+    "fallback": "Leitura direta e pesquisa lexical local.",
+    "index_or_dependencies_changed": false,
+    "post_edit_index_currentness": "NOT_ASSERTED"
+  },
+  "pending": {
+    "coverage_complete": false,
+    "deletion_eligible": false,
+    "items": [
+      "Históricos não selecionados dos agentes/perfis e backlog do recibo de 15/10 permanecem pendentes.",
+      "Ausência de arquivos Darth Vader no filtro temporal não prova ausência de conhecimento.",
+      "A transcrição viva desta execução não foi tratada como fonte congelada; o produto e este recibo são a evidência persistida."
+    ]
+  },
+  "git_sync": {
+    "state_at_receipt_generation": "PRODUCT_WRITTEN_LOCAL_COMMIT_NOT_YET_CREATED",
+    "base_head": "caffed69a28ca7f53c309473f3ab06ac92ab97ce",
+    "base_equal_origin_main": true,
+    "observed_transport": "caffed6 publicado às 09:00:22 UTC; três checkpoints posteriores sem delta.",
+    "current_cycle_push_fetch_sync": false
+  },
+  "transport": {
+    "messages_to_hebert": 0,
+    "test_notifications": 0,
+    "history_replays": 0,
+    "external_system_access": false
+  },
+  "validation": {
+    "receipt_json": "PASS",
+    "frontmatter_schema": {
+      "state": "PASS",
+      "notes_tested": 4
+    },
+    "structural_gate": {
+      "state": "PASS",
+      "artifact": {
+        "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-link-gate-2026-10-16.json",
+        "path_base": "absolute",
+        "sha256": "a0999dbde06f0ce08ec557ff6cf7fb045c20e418106f8ccbd0de6e7eb6212ede",
+        "bytes": 22250,
+        "mtime_ns": 1792116197588031386,
+        "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT"
+      },
+      "markdown_total": 429,
+      "internal_links": 976,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": 0,
+      "duplicate_aliases": 0,
+      "secret_candidates": 0,
+      "unreachable_cognitive_markdown": 0,
+      "isolated_cognitive_markdown": 0,
+      "graph_components": 1,
+      "knowledge_health_estimate": 1
+    },
+    "semantic_completeness": "NOT_MEASURED"
+  },
+  "safety": {
+    "silent": true,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "dependency_or_index_changes": false,
+    "business_effects": false
+  }
+}
