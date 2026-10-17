@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_at": "2026-10-17T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "a29bc3d2-ca54-44d8-bc7b-df1594aa8f99",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "base_commit": "e9ae55ae1c474128116baf36784ddfff36231491",
+  "product_state": "PRODUCED_DOCUMENTARY_PARTIAL_NO_THEMATIC_PROMOTION",
+  "coverage_complete": false,
+  "window": {
+    "reference_utc": "2026-10-17T02:00:00Z",
+    "local_date": "2026-10-16",
+    "timezone": "America/Sao_Paulo",
+    "inventory_days": 7,
+    "continuity": "Diária de 16/10 reutilizada por identidade; fontes estáveis novas limitadas à sua transcrição congelada e a quatro execuções de sync."
+  },
+  "execution": {
+    "state": "REVIEW_AND_CONSOLIDATION_EXECUTED_LOCALLY",
+    "delegation": false,
+    "scope": "Leitura local seletiva e atualização documental; sem sync, configuração, reexecução operacional ou efeito de negócio nesta consolidação."
+  },
+  "product": {
+    "state": "PRODUCED_DOCUMENTARY_PARTIAL_NO_THEMATIC_PROMOTION",
+    "business_acceptance": "NOT_APPLICABLE",
+    "notes": [
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-10-17.md",
+        "path_base": "brain",
+        "sha256": "64e737dc2e2c2e68c9b0181b0f6a3529bfce66a78b00803efb71d700ae0d307b",
+        "bytes": 4222,
+        "mtime_ns": 1792202544596774826
+      },
+      {
+        "path": "BRAIN/01-DIARIO/README.md",
+        "path_base": "brain",
+        "sha256": "9c1bed8655c6e081a86a8ab9730556c8478c310c8fbb3b7162bfe4d4454b5afb",
+        "bytes": 3322,
+        "mtime_ns": 1792202544633774917
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+        "path_base": "brain",
+        "sha256": "ff099b79c5c15fad1c3856a40f4b3dede962d4d68e76cc3aadf087be74257e67",
+        "bytes": 127600,
+        "mtime_ns": 1792202544667775034
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/HEALTH.md",
+        "path_base": "brain",
+        "sha256": "7737c6fbaaed53fd9ded4d2ee6e9deabf0df04be0de368386563a2ea9b2f1d24",
+        "bytes": 66150,
+        "mtime_ns": 1792202544709775179
+      }
+    ],
+    "thematic_notes_changed": [],
+    "new_entity_or_project_notes": [],
+    "disposition": "Nenhum conhecimento temático novo com utilidade futura; não houve promoção ou duplicação."
+  },
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/76f06279-eb72-4366-9857-da7ffa0b4bce.jsonl",
+      "path_base": "absolute",
+      "sha256": "66d114a779df7f054cf5a4e8028f5f5dcc7d0b92d5b7de966ff2c745ce137cdb",
+      "bytes": 572346,
+      "mtime_ns": 1792116253945082577,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 76,
+        "units": [
+          {
+            "line": 71,
+            "line_sha256": "3c7fb67318cefe93e74c1db54cb09516f8e5ec9a6d480916418a68c3a8f61b1d"
+          },
+          {
+            "line": 73,
+            "line_sha256": "fc7cd803aca742e92e75c25a35c65b9adc6c816ee9df52861ad9f4a8fc732066"
+          },
+          {
+            "line": 75,
+            "line_sha256": "6b5316882782ee0efb90d9cf876f2e52a5a694b0268b115eb40275f15edf7492"
+          },
+          {
+            "line": 76,
+            "line_sha256": "3145aa3e9394f3f05fa862f4324102a7813afa812658866450d0025de5045c96"
+          }
+        ],
+        "method": "Todos os registros JSONL foram percorridos; pedido, resultados de ferramenta e fechamento foram lidos."
+      },
+      "disposition": "Transcrição congelada da diária de 16/10; converge com diário, MOC, CHANGELOG, HEALTH e recibo persistidos, sem conhecimento temático adicional."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2c907181-2825-43df-8548-1df51075f088.jsonl",
+      "path_base": "absolute",
+      "sha256": "7626e2c0249d66e9323837c1445414a165007ad35c90952398fed8ee22910128",
+      "bytes": 11016,
+      "mtime_ns": 1792141224045153699,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 10,
+        "units": [
+          {
+            "line": 7,
+            "line_sha256": "4c0a811483639561be5a6391ff4b3426ad914ff5d7525411c552de3c1f27e243"
+          },
+          {
+            "line": 9,
+            "line_sha256": "42643797c7a698faf73b6d9ac272a0ed17a10e9b8a868dc86722b9abaada02e3"
+          },
+          {
+            "line": 10,
+            "line_sha256": "ae36a5c2f8faaf7ee6dbda4412bb226bab353f2afa4d65c06177edf76e4dc5b5"
+          }
+        ],
+        "method": "Todos os registros JSONL foram percorridos; pedido, resultados de ferramenta e fechamento foram lidos."
+      },
+      "disposition": "Publicação de e9ae55a e alinhamento com origin/main confirmados às 09:00 UTC."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/9e073b4d-a380-4bbd-b12d-fde507fffe1b.jsonl",
+      "path_base": "absolute",
+      "sha256": "9db3b55973be630b4ce7f50106a721609615f1cae19d90763ce9314df6ce2a74",
+      "bytes": 9195,
+      "mtime_ns": 1792162828174058456,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "units": [
+          {
+            "line": 7,
+            "line_sha256": "e752a55e95440d713f80398d77ba7a2c5c97e285e9957fc50821b04fa1718213"
+          },
+          {
+            "line": 8,
+            "line_sha256": "1238cbe0626bbbf6f3beb6430d04df768354b979269a25c4e4c51eae0d226702"
+          }
+        ],
+        "method": "Todos os registros JSONL foram percorridos; pedido, resultados de ferramenta e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint de 15:00 UTC sem delta; remoto atualizado. O identificador textual do fechamento não substitui o resultado Git observado."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/02467649-678e-434e-bca2-e8e901ee707b.jsonl",
+      "path_base": "absolute",
+      "sha256": "d2b66261e72824ebfa8caed06cb3b9456806fb2cca9710bd06f52a6698d3d569",
+      "bytes": 9110,
+      "mtime_ns": 1792180820194715476,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "units": [
+          {
+            "line": 7,
+            "line_sha256": "73f0bd4e7269bf9b2733b124232988be8aaa5dafdd1b0145debe31f3f528a190"
+          },
+          {
+            "line": 8,
+            "line_sha256": "239df49055b1151e24733b47c76063a1725484b47cc8be431c8424db8f9a0857"
+          }
+        ],
+        "method": "Todos os registros JSONL foram percorridos; pedido, resultados de ferramenta e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint de 20:00 UTC sem delta; remoto atualizado."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/94cbc1a9-7019-40fb-ae1e-b39e43a5c855.jsonl",
+      "path_base": "absolute",
+      "sha256": "c9f7748ef87adc39f98e7c044b68ffbf8b97325647ceefc300cb27f09a2b9a7e",
+      "bytes": 11245,
+      "mtime_ns": 1792198820347304731,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 10,
+        "units": [
+          {
+            "line": 7,
+            "line_sha256": "293d1696cc3c51b7b63aefc59f0c591243a9cd2af83af2a50a4e64b279c91508"
+          },
+          {
+            "line": 9,
+            "line_sha256": "5b6a51b0676ca85519a68c09826d40ea807e886c42c249b656396fb1ba9e00ce"
+          },
+          {
+            "line": 10,
+            "line_sha256": "b24328a62f40ce1733c3a1ad904af55bbad36302cda46a5380381c1af9a0b5eb"
+          }
+        ],
+        "method": "Todos os registros JSONL foram percorridos; pedido, resultados de ferramenta e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint de 01:00 UTC sem delta; e9ae55a alinhado a origin/main."
+    }
+  ],
+  "continuity_receipt": {
+    "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-16-daily.json",
+    "path_base": "brain",
+    "sha256": "2f5b713cb857826c5be1728bcf51ef09cd013074e10a32a96ffb95cc58fd9f84",
+    "bytes": 10117,
+    "mtime_ns": 1792116211770044238,
+    "read_scope": "Documento integral, 274 linhas.",
+    "disposition": "Produtos, fontes e lacunas anteriores preservados por identidade; nenhuma promoção repetida."
+  },
+  "prior_product_verification": {
+    "state": "PASS",
+    "checked_against_base_commit": true,
+    "items": [
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-10-16.md",
+        "expected_sha256": "319a4ac27331ab2102e73750f2065b07e38b217eb26c21138e558e0861b7c367",
+        "observed_sha256": "319a4ac27331ab2102e73750f2065b07e38b217eb26c21138e558e0861b7c367",
+        "match": true,
+        "bytes": 3939
+      },
+      {
+        "path": "BRAIN/01-DIARIO/README.md",
+        "expected_sha256": "c6b89eeb2ad92906d1f9eb6ce0c813958e4d7a4e032ecd8afb8a411f19005821",
+        "observed_sha256": "c6b89eeb2ad92906d1f9eb6ce0c813958e4d7a4e032ecd8afb8a411f19005821",
+        "match": true,
+        "bytes": 3279
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+        "expected_sha256": "8f3ec210aef806877bd664f08eb1a43552d939f4991be9b11a289a661afb565f",
+        "observed_sha256": "8f3ec210aef806877bd664f08eb1a43552d939f4991be9b11a289a661afb565f",
+        "match": true,
+        "bytes": 126394
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/HEALTH.md",
+        "expected_sha256": "80c104d7fdef79a1b3f312b2d4df50c47ed5aeff8ede47daab661791baa1cfd9",
+        "observed_sha256": "80c104d7fdef79a1b3f312b2d4df50c47ed5aeff8ede47daab661791baa1cfd9",
+        "match": true,
+        "bytes": 64648
+      }
+    ],
+    "disposition": "Os quatro produtos do ciclo anterior coincidem, no commit-base e9ae55a, com os hashes declarados no recibo."
+  },
+  "inventory": {
+    "artifact": {
+      "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-inventory-2026-10-17.json",
+      "path_base": "absolute",
+      "sha256": "2558f93f69998b321bc126887bd1221055083c779ae28d5da18c18b867d012b9",
+      "bytes": 69519,
+      "mtime_ns": 1792202555453127840,
+      "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT"
+    },
+    "generated_at": "2026-10-17T02:02:35.450914+00:00",
+    "window_days": 7,
+    "source_count": 154,
+    "by_kind": {
+      "openclaw_history": 135,
+      "codex_history": 18,
+      "memory": 1
+    },
+    "by_agent": {
+      "main": 89,
+      "sentinel": 47,
+      "kowalski": 14,
+      "robotnik": 4
+    },
+    "surface_count": 40,
+    "missing_surfaces": 18,
+    "errors": [],
+    "scope": "Metadados de arquivos recentes; não equivalem a leitura de conteúdo ou cobertura semântica."
+  },
+  "semantic_search": {
+    "native_memory_search": "AVAILABLE; resultados restritos a material histórico, sem prova de atualidade para esta janela.",
+    "fallback": "Leitura direta e pesquisa lexical local.",
+    "index_or_dependencies_changed": false,
+    "post_edit_index_currentness": "NOT_ASSERTED"
+  },
+  "pending": {
+    "coverage_complete": false,
+    "deletion_eligible": false,
+    "items": [
+      "Históricos não selecionados dos agentes/perfis e backlog do recibo de 16/10 permanecem pendentes.",
+      "Ausência de arquivos Darth Vader no filtro temporal não prova ausência de conhecimento.",
+      "A transcrição viva desta execução não foi tratada como fonte congelada; o produto e este recibo são a evidência persistida."
+    ]
+  },
+  "git_sync": {
+    "state_at_receipt_generation": "PRODUCT_WRITTEN_LOCAL_COMMIT_NOT_YET_CREATED",
+    "base_head": "e9ae55ae1c474128116baf36784ddfff36231491",
+    "base_equal_origin_main": true,
+    "observed_transport": "e9ae55a publicado às 09:00 UTC; três checkpoints posteriores sem delta.",
+    "current_cycle_push_fetch_sync": false
+  },
+  "transport": {
+    "messages_to_hebert": 0,
+    "test_notifications": 0,
+    "history_replays": 0,
+    "external_system_access": false
+  },
+  "validation": {
+    "receipt_json": "PASS",
+    "frontmatter_schema": {
+      "state": "PASS",
+      "notes_tested": 4
+    },
+    "structural_gate": {
+      "state": "PASS",
+      "artifact": {
+        "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-link-gate-2026-10-17.json",
+        "path_base": "absolute",
+        "sha256": "3ea07c96e40fcb43b2b4829c8b7224c076d18d2befbf03944387095b63cfc303",
+        "bytes": 22250,
+        "mtime_ns": 1792202566815502987,
+        "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT"
+      },
+      "markdown_total": 430,
+      "internal_links": 977,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": 0,
+      "duplicate_aliases": 0,
+      "secret_candidates": 0,
+      "unreachable_cognitive_markdown": 0,
+      "isolated_cognitive_markdown": 0,
+      "graph_components": 1,
+      "knowledge_health_estimate": 1
+    },
+    "semantic_completeness": "NOT_MEASURED"
+  },
+  "safety": {
+    "silent": true,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "dependency_or_index_changes": false,
+    "business_effects": false
+  }
+}
