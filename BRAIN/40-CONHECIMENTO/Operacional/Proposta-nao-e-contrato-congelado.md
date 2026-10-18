@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-15T02:00:00Z'
+updated: '2026-10-18T06:00:00Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo.md
@@ -24,6 +24,10 @@ relationships:
   target: BRAIN/01-DIARIO/2026/2026-10-15.md
   reason: Caso recente em que um documento dito oficial permanecia em formação e misturava regras vigentes, propostas e estados não normalizados.
   source: cron:d95bbe73-24d9-4e2b-ba57-0032082bb54b
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W42.md
+  reason: Consolida o padrão de que riqueza e detalhamento documental não substituem versão, estado e autoridade executáveis.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-18-weekly.json
 ---
 
 # Proposta nao e contrato congelado
@@ -31,9 +35,9 @@ relationships:
 ```yaml
 categoria: operacional
 tipo: guardrail
-fonte: consolidacao semanal 2026-W31; revisão documental local de 2026-10-11
+fonte: consolidacao semanal 2026-W31; revisão documental local de 2026-10-11; consolidação semanal 2026-W42
 confiabilidade: alta
-ultima_revisao: 2026-10-15
+ultima_revisao: 2026-10-18
 tags: [documentacao, contratos, freeze, validacao, cadeia-de-custodia]
 ```
 
@@ -66,6 +70,12 @@ Um documento pode ser oficial como acervo de estudo e, ao mesmo tempo, não esta
 O corpo misturava regras validadas, propostas, estados fora da taxonomia declarada e itens sem estado. Por isso, chamar o arquivo de fonte oficial não cria uma visão executável inequívoca nem autorização para publicar, alterar orçamento, segmentação, tracking, site, dados pessoais ou identidade de terceiros.
 
 Antes de automação, separar política vigente, estudo, catálogo ativo, changelog e auditoria; normalizar IDs e estados; resolver conflitos de fórmula e escopo; materializar as evidências referenciadas; definir objetivo e owner; fazer revisão jurídica/regulatória; e congelar a versão efetivamente aprovada por hash. A solicitação de Hebert foi análise de conteúdo primeiro e encaixe secundário, não adoção do contrato pela BIKON.
+
+## Riqueza documental não substitui contrato executável — semana 2026-W42
+
+Um acervo volumoso, detalhado ou chamado de oficial pode ser excelente para pesquisa e ainda ser inadequado como instrução de produção. A revisão semanal combinou o estado `Em formação`, IDs conflitantes, ordem instável de capítulos e taxonomia misturada com a ausência de aceite ou adoção pela BIKON. Quantidade de regras não resolve qual versão vigora, quem possui autoridade nem quais estados são executáveis.
+
+Antes de promover esse tipo de fonte, exigir separação entre política vigente, propostas, catálogo, changelog e auditoria; resolver conflitos; definir owner e alçadas; materializar evidências; e congelar a versão aprovada por hash. Analisar, transportar ou resumir o documento não autoriza publicação, orçamento, dados pessoais, identidade de terceiros ou promessa comercial. Síntese em [[01-DIARIO/Semanal/2026-W42|W42]].
 
 ## Complementos reconciliados — lote 15 de 2026-09-21
 

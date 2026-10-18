@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-02T02:00:00Z'
+updated: '2026-10-18T06:00:00Z'
 relationships:
 - type: derived_from
   target: BRAIN/01-DIARIO/Semanal/2026-W39.md
@@ -36,6 +36,10 @@ relationships:
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
   reason: Aplica a distinção entre evidência ausente e falha confirmada ao timeout histórico de emissão fiscal.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-20260921.json#text-3515-3518
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W42.md
+  reason: Reconcila diário ausente, inventário de metadados e transporte Git como limites de evidência distintos.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-18-weekly.json
 ---
 
 # Ausência de evidência não é status operacional
@@ -43,9 +47,9 @@ relationships:
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidação semanal 2026-W28; Portal 213 Stage 1B R2.4 em 2026-08-20; qualificacao mensal ARX em 2026-09-08/09; fechamento semanal Relatorios Operacionais em 2026-09-14; consolidacao semanal 2026-W38
+fonte: consolidação semanal 2026-W28; Portal 213 Stage 1B R2.4 em 2026-08-20; qualificacao mensal ARX em 2026-09-08/09; fechamento semanal Relatorios Operacionais em 2026-09-14; consolidacao semanal 2026-W38; consolidação semanal 2026-W42
 confiabilidade: alta
-ultima_revisao: 2026-10-02
+ultima_revisao: 2026-10-18
 tags: [monitoramento, evidencia, recencia, revalidacao, ninjaone, backup, hyper-v, operacao, checkpoint, cobertura-temporal, paginacao]
 ```
 
@@ -251,3 +255,9 @@ No incidente do [[70-AUTOMACOES/FATURAMENTO-TELEGRAM|grupo Faturamento Bikon]], 
 Um smoke de saída não valida o caminho de entrada; um histórico parcial não prova que o provedor descartou updates. Atribuição causal exige distinguir evidência do conector, roteamento, processamento/compactação e transporte da resposta. Hipóteses anteriores devem ser qualificadas como superadas quando evidência posterior as contradiz. Não ampliar permissões com base apenas na ausência de resposta.
 
 Fonte: unidades main M1–M3 no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-25-daily.json`; revisão de evidência histórica, sem teste live nesta consolidação.
+
+## Diário, inventário e transporte não preenchem a lacuna uns dos outros — semana 2026-W42
+
+Na janela de 11–17/10, apenas três diários existiam; quatro datas estavam sem nota. O inventário listou arquivos por metadados e os syncs provaram o transporte de commits específicos, mas nenhuma dessas evidências reconstrói o conteúdo ausente. Da mesma forma, execução que excedeu o contexto sem diário ou recibo não pode ser promovida a consolidação concluída.
+
+Registrar separadamente: **artefato cognitivo disponível**, **fonte apenas inventariada**, **execução sem produto** e **commit transportado**. Ausência de diário não significa ausência de atividade; arquivo no inventário não significa leitura; sync atualizado não significa cobertura semântica. Recuperar fonte autêntica se aparecer ou manter a dependência explícita, sem fabricar diário retroativo, zero ou conclusão. Síntese em [[01-DIARIO/Semanal/2026-W42|W42]].

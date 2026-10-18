@@ -123,6 +123,7 @@ Este MOC liga os registros cronologicos do Brain sem mover notas historicas. Ele
 
 - [[01-DIARIO/Semanal/2026-W40|2026-W40 — quatro diários revistos; cobertura integral bloqueada]]
 - [[01-DIARIO/Semanal/2026-W41|2026-W41 — cinco diários revistos; cobertura integral bloqueada]]
+- [[01-DIARIO/Semanal/2026-W42|2026-W42 — três diários revistos; cobertura integral bloqueada]]
 
 ## Consolidados Mensais
 
