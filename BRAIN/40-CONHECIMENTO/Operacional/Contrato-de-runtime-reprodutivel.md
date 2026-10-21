@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:07:33.285014Z'
+updated: '2026-10-21T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -31,10 +31,10 @@ relationships:
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidacao semanal 2026-W31; bootstrap RSE M2 em 2026-08-28/29; precheck Sentinel em 2026-09-07; reparo do relay nativo em 2026-09-08; handoffs Robotnik/Kowalski em 2026-09-11 e Puppet/Kowalski em 2026-09-16
+fonte: consolidacao semanal 2026-W31; bootstrap RSE M2 em 2026-08-28/29; precheck Sentinel em 2026-09-07; reparo do relay nativo em 2026-09-08; handoffs Robotnik/Kowalski em 2026-09-11 e Puppet/Kowalski em 2026-09-16; delegacao Bitdefender Puppet/Sentinel em 2026-10-20
 confiabilidade: alta
-ultima_revisao: 2026-09-17
-tags: [runtime, python, reproducibilidade, checksums, supply-chain, drift, cgroup, executor, lifecycle, sandbox, mounts, handoff, materializacao, timeout, process-group]
+ultima_revisao: 2026-10-21
+tags: [runtime, python, reproducibilidade, checksums, supply-chain, drift, cgroup, executor, lifecycle, sandbox, mounts, workspace, ordem-ativa, handoff, materializacao, timeout, process-group]
 ```
 
 ## Principio
@@ -61,6 +61,7 @@ Runtime operacional nao deve depender de caminho conveniente, instalacao local i
 - Separar durabilidade do trabalho da vida da conversa/control-plane: clone, checkpoints, logs e identidade precisam sobreviver ao encerramento do turno.
 - Nao declarar isolamento de recursos quando o scope limitado esta inativo e o processo real pertence a outro cgroup.
 - Autenticar a superficie efetivamente visivel ao executor: mudar `cwd` nao cria mounts nem concede acesso a state dir, workspace de outro agente, SQLite, CLI, supervisor ou systemd.
+- A delegacao deve vincular a superficie real do executor e seus gates de entrada. Aceite conversacional ou despacho pelo supervisor nao cria arquivo, mount ou ordem ativa no controlador local; sem esses bindings, a execucao deve bloquear antes da consulta ou mutacao.
 - Falha de acesso dentro de um sandbox prova apenas a limitacao daquela superficie; nao comprova ausencia, defeito ou estado terminal do alvo vivo.
 - Timeout de subprocesso deve envolver o bootstrap externo e seu grupo de processos. Um limite iniciado somente depois do runtime carregar nao contem travamento anterior ao startup nem relay abandonado.
 - Sucesso de escrita ou copia dentro da visao gerenciada do produtor nao prova materializacao duravel no host nem visibilidade para o consumidor. Handoff entre agentes precisa de leitura real pelo destino, identidade/hash dos mesmos bytes e recibo terminal separado da mera aceitacao da solicitacao.
@@ -79,6 +80,8 @@ No reparo Puppet/Robotnik de 2026-09-08, o relay nativo precisava limitar o CLI 
 No handoff Robotnik/Kowalski de 2026-09-11, a copia reportada no workspace principal nao apareceu de forma duravel e, mesmo depois de criada no host, permaneceu invisivel ao filesystem gerenciado do revisor. A rota funcional materializou copia byte a byte no workspace proprio do Kowalski e exigiu abertura/revisao real dos assets; configuracao, permissoes e servicos permaneceram inalterados.
 
 No handoff documental Puppet/Kowalski de 2026-09-16, os PDFs-base nao estavam visiveis pelo caminho compartilhado e o servidor em `127.0.0.1` do produtor nao era alcancavel no namespace de rede do Kowalski. Hash declarado e aceite do job nao provaram download. A continuacao segura ficou dependente de materializacao autenticada no workspace do consumidor e confirmacao dos mesmos bytes antes de gerar ou revisar os documentos.
+
+Na delegacao Puppet/Sentinel do relatorio Bitdefender de 2026-10-20, a primeira tentativa presumiu um arquivo do workspace principal que nao existia na superficie Sentinel e, apos localizar o runtime proprio, parou porque o controlador estava `IDLE`, sem ordem ativa. A segunda tentativa corrigiu a orientacao de workspace, mas expirou durante descoberta local sem dataset ou produto terminal. O caso reforca que corrigir `cwd` ou prompt nao substitui ativar a ordem exata, provar os bindings do Goal e materializar o produto no lado que precisa revisa-lo.
 
 ## Relacoes
 

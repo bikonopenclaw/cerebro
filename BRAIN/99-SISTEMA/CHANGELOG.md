@@ -4,13 +4,23 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-18T06:00:00Z'
+updated: '2026-10-21T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-21, consolidação diária silenciosa
+
+- Criado diário UTC de 21/10 como retomada desde 17/10, sem fabricar diários retroativos para 18–20/10; MOC cronológico atualizado. A síntese semanal W42 e seu recibo foram reutilizados por identidade.
+- Atualizado o registro existente do Bitdefender: pedido de Hebert por XLSX detalhado de licenças, inclusive vencidas; duas operações Sentinel não produziram dataset nem planilha. A primeira bloqueou sem ordem ativa após pressupor caminho de outro workspace; a segunda expirou durante descoberta local.
+- Atualizada a nota existente de contrato de runtime: delegação precisa vincular superfície real e gate de ordem ativa; aceite/despacho não cria mount, arquivo ou transição no controlador do executor.
+- Revisados o fechamento executivo do fim de semana, a torre Kowalski, a conversa principal do pedido e os dois executores Sentinel. Estados operacionais do fim de semana foram preservados como observações datadas, sem declarar normalização atual.
+- Dezesseis ciclos de sync revisados: `5b01651` foi publicado em 17/10 às 09:00 UTC, `4cd9793` em 18/10 às 09:00 UTC, e os demais 14 checkpoints não tinham delta. Isso prova transporte observado, não cobertura cognitiva.
+- Inventário de sete dias com 119 arquivos e 18 superfícies ausentes. Recibo `brain-v2/reports/coverage-2026-10-21-daily.json`; HEALTH atualizado, cobertura global parcial e score legado mantido.
+- Sem exclusão, reexecução do pedido, alteração de cron/configuração, acesso externo, agente Brain, mensagem ou publicação remota nesta consolidação. Commit somente local.
 
 ## 2026-10-18, consolidação semanal silenciosa — W42
 

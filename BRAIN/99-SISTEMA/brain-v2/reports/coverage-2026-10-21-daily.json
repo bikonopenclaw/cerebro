@@ -1,0 +1,663 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_at": "2026-10-21T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "993d3521-78e8-407d-b5f6-01dde471f4ae",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "base_commit": "4cd97931436d1a056ca6acd8bf579b71f6e97675",
+  "product_state": "PRODUCED_DOCUMENTARY_PARTIAL_WITH_THEMATIC_UPDATES",
+  "coverage_complete": false,
+  "window": {
+    "reference_utc": "2026-10-21T02:00:00Z",
+    "local_date": "2026-10-20",
+    "timezone": "America/Sao_Paulo",
+    "inventory_days": 7,
+    "continuity": "Retomada desde a diária de 17/10; sem diários de 18–20/10. A semanal W42 foi reutilizada por identidade e as fontes recentes foram revistas seletivamente."
+  },
+  "execution": {
+    "state": "REVIEW_AND_CONSOLIDATION_EXECUTED_LOCALLY",
+    "delegation": false,
+    "scope": "Leitura local seletiva e atualização documental; sem reexecução Bitdefender, sync, configuração, ação de negócio ou acesso externo nesta consolidação."
+  },
+  "product": {
+    "state": "PRODUCED_DOCUMENTARY_PARTIAL_WITH_THEMATIC_UPDATES",
+    "business_acceptance": "NOT_APPLICABLE",
+    "notes": [
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-10-21.md",
+        "path_base": "brain",
+        "sha256": "3de430363df43c4c417c43aea949eb05c1f9fd5bb7e7a559b00fb487bad172d7",
+        "bytes": 5996,
+        "mtime_ns": 1792548277225187076
+      },
+      {
+        "path": "BRAIN/01-DIARIO/README.md",
+        "path_base": "brain",
+        "sha256": "0877eb2acd1346f8541db16882dff7707454848bf27326460899efc41891977b",
+        "bytes": 3465,
+        "mtime_ns": 1792548277120186819
+      },
+      {
+        "path": "BRAIN/40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel.md",
+        "path_base": "brain",
+        "sha256": "8769087ef23e7c107b8f0894c152e30b69b63a0100eca82d604bb47b9cc442f6",
+        "bytes": 9749,
+        "mtime_ns": 1792548277072186701
+      },
+      {
+        "path": "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md",
+        "path_base": "brain",
+        "sha256": "cd78203ca8d733d005336c0c582ed7b2294c9dcc2a8d42a1c7f59a9093d747a7",
+        "bytes": 16234,
+        "mtime_ns": 1792548277039186620
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+        "path_base": "brain",
+        "sha256": "a0ea727a657808a26a79239ba889f514e7db2601c1d276f201b1e4c69165488a",
+        "bytes": 130605,
+        "mtime_ns": 1792548277179186963
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/HEALTH.md",
+        "path_base": "brain",
+        "sha256": "d3b8f7e253de375c6a0edfd4e95d2b7cde57db82ba8e909165501b5e1b4873f3",
+        "bytes": 69311,
+        "mtime_ns": 1792548277201187017
+      }
+    ],
+    "thematic_notes_changed": [
+      "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel.md"
+    ],
+    "new_entity_or_project_notes": [],
+    "disposition": "Pedido Bitdefender e aprendizado de runtime promovidos em registros existentes; estados operacionais transitórios mantidos no diário."
+  },
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f4d8405f-e2fd-41aa-8513-746813b1ea28.jsonl",
+      "path_base": "absolute",
+      "sha256": "0cf1754280818a7ee55f9b2ec7c555409b8d46094c2f4715e92abe85ec902300",
+      "bytes": 103090,
+      "mtime_ns": 1792357291611257175,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 16,
+        "method": "Todos os registros JSONL foram percorridos; mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Fechamento executivo de 18/10: síntese operacional e limites de evidência preservados como observação datada; nenhuma recomendação virou autorização.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/kowalski/sessions/4386614c-ee9b-49dd-89c2-f37a30ee84f7.jsonl",
+      "path_base": "absolute",
+      "sha256": "60ef4d2988f917760132e251267e4ad66098209a26d551029755919582f29df1",
+      "bytes": 71213,
+      "mtime_ns": 1792272429069410014,
+      "agent": "kowalski",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 18,
+        "method": "Todos os registros JSONL foram percorridos; mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Torre ampliada de 17/10: estado AMARELO, falhas de ticketing e distinção entre envio/leitura; consolidado sem promover métricas transitórias a estado atual.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/003a910f-8874-454d-be30-d109727b24a5.jsonl",
+      "path_base": "absolute",
+      "sha256": "e67f26a991e5044c1bdd73bde44eadedda2f0de7a7db875b31c1916c2cda84c8",
+      "bytes": 125717,
+      "mtime_ns": 1792523512360456666,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 41,
+        "method": "Todos os registros JSONL foram percorridos; mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Pedido de XLSX Bitdefender, admissão, supervisão, rejeição da primeira operação e reatribuição da segunda; entrega permaneceu pendente.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md",
+        "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/51c2d4e3-b1a1-45c7-ab75-3c2985fc6c1f.jsonl",
+      "path_base": "absolute",
+      "sha256": "ce8ff19f8393906fd16582497405b39fa86902015b2806ea643151a497e43b10",
+      "bytes": 71737,
+      "mtime_ns": 1792521051363415964,
+      "agent": "sentinel",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 13,
+        "method": "Todos os registros JSONL foram percorridos; mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Primeira operação Bitdefender: fail-closed com controlador IDLE/sem ordem ativa; nenhuma consulta e nenhum artefato.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md",
+        "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md",
+        "BRAIN/40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/3d15707d-e6b5-488c-b460-ee72d352f009.jsonl",
+      "path_base": "absolute",
+      "sha256": "c28ffc47b40b52976c43c5dd739587bd0c55558b207a948113d582b97db5aebf",
+      "bytes": 134038,
+      "mtime_ns": 1792523804702664060,
+      "agent": "sentinel",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 24,
+        "method": "Todos os registros JSONL foram percorridos; mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Segunda operação Bitdefender: descoberta local e catálogo, seguida de timeout sem resposta terminal, dataset ou XLSX.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md",
+        "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md",
+        "BRAIN/40-CONHECIMENTO/Operacional/Contrato-de-runtime-reprodutivel.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/4ffd9381-242a-4e21-a88f-e815a9d3cfcf.jsonl",
+      "path_base": "absolute",
+      "sha256": "29caf15513d363f06ad8b361463ff7838587a6f6275ee00f411da5448b874d5e",
+      "bytes": 11710,
+      "mtime_ns": 1792227628342615338,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 10,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Publicou 5b01651 e alinhou HEAD/origin/main em 17/10 09:00 UTC.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/4d90e8e5-6a48-406c-a612-48ad0308891c.jsonl",
+      "path_base": "absolute",
+      "sha256": "b7c5f30b206ae0a35bd1eed052d68764a320f5e68f91f957dea2bb97516dbaf6",
+      "bytes": 9770,
+      "mtime_ns": 1792249223365260502,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 17/10 15:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/4c588bea-0962-4ccb-b401-520a0865ae15.jsonl",
+      "path_base": "absolute",
+      "sha256": "b775a08395ce02e0dd9917f8af695251e810d2a47bcb5fda6e9af9591cc9c377",
+      "bytes": 8823,
+      "mtime_ns": 1792267229830360870,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 17/10 20:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/593f152e-cdd6-4dbd-a30f-70a918dc2e31.jsonl",
+      "path_base": "absolute",
+      "sha256": "9414cbcaee87eeefd6c18e11381eeaa4072f69de96760ceda412309a4b3f47e5",
+      "bytes": 8941,
+      "mtime_ns": 1792285217259873870,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 18/10 01:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2c818d90-870f-412b-b9af-bf951cb7ee4d.jsonl",
+      "path_base": "absolute",
+      "sha256": "bb4fe5d9e0f5bd278314c1afd80aae24f01708d8b723ac04732366adce8321f9",
+      "bytes": 9039,
+      "mtime_ns": 1792314015336499592,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Publicou 4cd9793 e alinhou origin/main em 18/10 09:00 UTC.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/006d6273-98e5-4787-ba25-a33846ad57e5.jsonl",
+      "path_base": "absolute",
+      "sha256": "27901a6c3326f02c3169f339f9e4a16aee007593b3024da8c1bcadc9cdd74baa",
+      "bytes": 8956,
+      "mtime_ns": 1792335619406471050,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 18/10 15:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/6dea72e4-cd9e-4cb6-8d2e-5fb76dc6a1a6.jsonl",
+      "path_base": "absolute",
+      "sha256": "cbd5843edc5452104485915dfd88190e20b68490584fecc267af9d20aa894d54",
+      "bytes": 8879,
+      "mtime_ns": 1792353616449346822,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 18/10 20:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/dbf59149-ced1-4c8c-b092-c6ebfbe938e2.jsonl",
+      "path_base": "absolute",
+      "sha256": "a0cd357bd7e0ed9cdd681c460c9a0b5cb7dad80c78b592a30309848d7583b359",
+      "bytes": 9496,
+      "mtime_ns": 1792371619948869998,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 19/10 01:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/8ae76570-ccdc-4ef2-84f5-31d4dd619ac8.jsonl",
+      "path_base": "absolute",
+      "sha256": "79556204b556a7cf6a9f919bed17210ffddf6f22de9389cf7a4654b9652ab63f",
+      "bytes": 9045,
+      "mtime_ns": 1792400416744476184,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 19/10 09:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/39c1087f-c253-4274-aa8e-7499f9e4c94d.jsonl",
+      "path_base": "absolute",
+      "sha256": "ca45d4a698a76b3c4536f14b7d33d008314ee9f6e1a72a240f77ce612a2f67c7",
+      "bytes": 10014,
+      "mtime_ns": 1792422021781142739,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 19/10 15:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f8484607-30a9-460e-91b3-a1c8e1111f22.jsonl",
+      "path_base": "absolute",
+      "sha256": "609343e70344e1188c9a3958a498cb3bc6a362f40d81af198cf993912789ce1d",
+      "bytes": 12652,
+      "mtime_ns": 1792440023618671899,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 10,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 19/10 20:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/d3a5b1cd-0fc5-4ade-93d3-da8968532382.jsonl",
+      "path_base": "absolute",
+      "sha256": "2cf1ba59675f58e686693ca4befdcd5ad76817f448f38cb0edb3e53b8280eb30",
+      "bytes": 8722,
+      "mtime_ns": 1792458017728256283,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 20/10 01:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f8bea596-c2d5-4a2a-88a3-8395d0959f57.jsonl",
+      "path_base": "absolute",
+      "sha256": "20270fd3124dc90c7ad9326204eb2cf9e306d8216ecb820cf3d735d209b34196",
+      "bytes": 8802,
+      "mtime_ns": 1792486819164350795,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 20/10 09:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/119eb549-ecad-466f-a338-47aa3a8a93be.jsonl",
+      "path_base": "absolute",
+      "sha256": "7f4b9cb4d1bea8ab8183fbbe4fc0570ff160f54c3f2efaca6df9ed8189ba688d",
+      "bytes": 9102,
+      "mtime_ns": 1792508422329243734,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 20/10 15:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f1f33a8f-2e28-4635-b00d-b961ff7ce659.jsonl",
+      "path_base": "absolute",
+      "sha256": "786c842ccfede0838bc2e52925926faab401057910d695244cd24a99784546a4",
+      "bytes": 11060,
+      "mtime_ns": 1792526423771255578,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 10,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 20/10 20:00 UTC sem delta; HEAD 4cd9793.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/9c8cc4e9-23cc-4eaf-8a01-2aa06b049a74.jsonl",
+      "path_base": "absolute",
+      "sha256": "c296257452c80fa168c2bfcc5b9ebbceac76150bbbafc6775abb0010d0ecf892",
+      "bytes": 9000,
+      "mtime_ns": 1792544423611927379,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido de sync, resultado Git e fechamento foram lidos."
+      },
+      "disposition": "Checkpoint 21/10 01:00 UTC sem delta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-21.md"
+      ]
+    }
+  ],
+  "continuity_documents": [
+    {
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W42.md",
+      "path_base": "brain",
+      "sha256": "71e0473b3d0589105f50ce3adc8cee3877e13d7fd9b254037029587d3e194905",
+      "bytes": 7503,
+      "mtime_ns": 1792303375972057460,
+      "read_scope": "Documento integral",
+      "disposition": "Síntese W42 reutilizada por identidade; nenhuma promoção semanal repetida."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-18-weekly.json",
+      "path_base": "brain",
+      "sha256": "2f54b1e5b0b889def4b3bfa8127282f67104c7ef96fa1cdfc0213efc908a9957",
+      "bytes": 13472,
+      "mtime_ns": 1792303528295227211,
+      "read_scope": "Documento integral",
+      "disposition": "Escopo, produtos e lacunas semanais preservados."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-17-daily.json",
+      "path_base": "brain",
+      "sha256": "d90f05966f4eeef9c629622c6c47f01f427304f37774d404a20ab0335906863e",
+      "bytes": 13198,
+      "mtime_ns": 1792202614239990878,
+      "read_scope": "Campos de produto, fontes, publicação e pendências",
+      "disposition": "Continuidade desde a última diária persistida; backlog preservado."
+    }
+  ],
+  "prior_product_verification": {
+    "state": "PASS",
+    "checked_against_base_commit": "4cd97931436d1a056ca6acd8bf579b71f6e97675",
+    "items": [
+      {
+        "path": "BRAIN/01-DIARIO/Semanal/2026-W42.md",
+        "expected_sha256": "71e0473b3d0589105f50ce3adc8cee3877e13d7fd9b254037029587d3e194905",
+        "observed_sha256": "71e0473b3d0589105f50ce3adc8cee3877e13d7fd9b254037029587d3e194905",
+        "match": true,
+        "bytes": 7503
+      },
+      {
+        "path": "BRAIN/40-CONHECIMENTO/Operacional/Proposta-nao-e-contrato-congelado.md",
+        "expected_sha256": "3e1dcaa40d1199e3d4ac06c7bd1e26e6658e47a347b46edbf747ff547fd27c57",
+        "observed_sha256": "3e1dcaa40d1199e3d4ac06c7bd1e26e6658e47a347b46edbf747ff547fd27c57",
+        "match": true,
+        "bytes": 7917
+      },
+      {
+        "path": "BRAIN/40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle.md",
+        "expected_sha256": "373c48b1115b482c3170b5aee187fa772c969855d1c6eeea3927799e4688db92",
+        "observed_sha256": "373c48b1115b482c3170b5aee187fa772c969855d1c6eeea3927799e4688db92",
+        "match": true,
+        "bytes": 19032
+      },
+      {
+        "path": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+        "expected_sha256": "432f2fe454502de50e55fbf3e127bc781c34050ed60cbbf6c03b2c0dce37b88d",
+        "observed_sha256": "432f2fe454502de50e55fbf3e127bc781c34050ed60cbbf6c03b2c0dce37b88d",
+        "match": true,
+        "bytes": 31348
+      },
+      {
+        "path": "BRAIN/01-DIARIO/README.md",
+        "expected_sha256": "9a20e6812c823325f7a83872590e436155f3f92486eb472b0416d9c5f082c693",
+        "observed_sha256": "9a20e6812c823325f7a83872590e436155f3f92486eb472b0416d9c5f082c693",
+        "match": true,
+        "bytes": 3422
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+        "expected_sha256": "22c4b5b245ec56665c80c94f7f29e14545ad2fdd6f54c16303797247ea04742a",
+        "observed_sha256": "22c4b5b245ec56665c80c94f7f29e14545ad2fdd6f54c16303797247ea04742a",
+        "match": true,
+        "bytes": 128973
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/HEALTH.md",
+        "expected_sha256": "07a9776e5c424f6e5870cb30fa3c0e5912c377bc7ab0e2cd04acce7c86e71f11",
+        "observed_sha256": "07a9776e5c424f6e5870cb30fa3c0e5912c377bc7ab0e2cd04acce7c86e71f11",
+        "match": true,
+        "bytes": 67584
+      }
+    ],
+    "disposition": "Os sete produtos da semanal W42 coincidiam no commit-base 4cd9793 com os hashes declarados antes das edições atuais."
+  },
+  "inventory": {
+    "artifact": {
+      "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-inventory-2026-10-21.json",
+      "path_base": "absolute",
+      "sha256": "bbc73b4fa149dcc0538124320c02d5bf40f94ec670229f53919abf8b26d7cbe2",
+      "bytes": 55583,
+      "mtime_ns": 1792548082887696432,
+      "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT"
+    },
+    "generated_at": "2026-10-21T02:01:22.879311+00:00",
+    "window_days": 7,
+    "source_count": 119,
+    "by_kind": {
+      "openclaw_history": 107,
+      "codex_history": 12
+    },
+    "by_agent": {
+      "main": 74,
+      "sentinel": 31,
+      "kowalski": 6,
+      "darth-vader": 4,
+      "robotnik": 4
+    },
+    "surface_count": 40,
+    "missing_surfaces": 18,
+    "errors": [],
+    "scope": "Metadados de arquivos recentes; não equivalem a leitura de conteúdo ou cobertura semântica."
+  },
+  "semantic_search": {
+    "native_memory_search": "AVAILABLE; resultados restritos a material histórico, sem prova de atualidade para esta janela.",
+    "fallback": "Leitura direta e pesquisa lexical local.",
+    "index_or_dependencies_changed": false,
+    "post_edit_index_currentness": "NOT_ASSERTED"
+  },
+  "pending": {
+    "coverage_complete": false,
+    "deletion_eligible": false,
+    "items": [
+      "Históricos não selecionados, trajectories potencialmente duplicadas e backlog dos recibos de 17/10 e W42 permanecem pendentes.",
+      "O Goal Bitdefender continua sem dataset/XLSX ou terminal aceito; esta consolidação não o reexecutou.",
+      "A transcrição viva desta execução não foi tratada como fonte congelada; os produtos e este recibo são a evidência persistida."
+    ]
+  },
+  "git_sync": {
+    "state_at_receipt_generation": "PRODUCT_WRITTEN_LOCAL_COMMIT_NOT_YET_CREATED",
+    "base_head": "4cd97931436d1a056ca6acd8bf579b71f6e97675",
+    "base_equal_origin_main": true,
+    "observed_transport": "5b01651 publicado em 17/10 09:00 UTC; 4cd9793 publicado em 18/10 09:00 UTC; 14 checkpoints posteriores/adjacentes sem delta até 21/10 01:00 UTC.",
+    "current_cycle_push_fetch_sync": false
+  },
+  "transport": {
+    "messages_to_hebert": 0,
+    "test_notifications": 0,
+    "history_replays": 0,
+    "external_system_access": false
+  },
+  "validation": {
+    "receipt_json": "PASS",
+    "frontmatter_schema": {
+      "state": "PASS",
+      "notes_tested": 6
+    },
+    "structural_gate": {
+      "state": "PASS",
+      "artifact": {
+        "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-link-gate-2026-10-21.json",
+        "path_base": "absolute",
+        "sha256": "3b15a41aec42965d1446a179cdd2a4f06165b1a230a8a7712126c35dcbf9cc5e",
+        "bytes": 22250,
+        "mtime_ns": 1792548286683210250,
+        "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT"
+      },
+      "markdown_total": 432,
+      "internal_links": 992,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": 0,
+      "duplicate_aliases": 0,
+      "secret_candidates": 0,
+      "unreachable_cognitive_markdown": 0,
+      "isolated_cognitive_markdown": 0,
+      "graph_components": 1,
+      "knowledge_health_estimate": 1
+    },
+    "semantic_completeness": "NOT_MEASURED"
+  },
+  "safety": {
+    "silent": true,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "dependency_or_index_changes": false,
+    "business_effects": false
+  }
+}

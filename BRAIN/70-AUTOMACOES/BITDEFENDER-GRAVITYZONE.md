@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T21:59:38.438442Z'
+updated: '2026-10-21T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/20-EMPRESAS/BIKON/README.md
@@ -26,10 +26,10 @@ relationships:
 
 ```yaml
 categoria: automacao_seguranca
-fonte: conversa com Hebert em 2026-06-18/19, documentação pública Bitdefender consultada na sessão, relatório executivo gerado em 2026-06-19 e relatórios operacionais read-only até 2026-08-12
+fonte: conversa com Hebert em 2026-06-18/19, documentação pública Bitdefender consultada na sessão, relatório executivo gerado em 2026-06-19, relatórios operacionais read-only até 2026-08-12 e solicitação/reconciliação do relatório de licenciamento em 2026-10-20
 confiabilidade: media
-ultima_revisao: 2026-08-13
-tags: [bikon, bitdefender, gravityzone, seguranca, inventario, endpoints, relatorios, ninjaone, tickets]
+ultima_revisao: 2026-10-21
+tags: [bikon, bitdefender, gravityzone, seguranca, inventario, endpoints, licenciamento, relatorios, ninjaone, tickets]
 ```
 
 ## Finalidade
@@ -94,6 +94,18 @@ Resumo agregado:
 - 112 dispositivos não gerenciados.
 
 Observação: manter apenas métricas agregadas no Brain; não registrar API keys, respostas sensíveis ou inventário detalhado de clientes/endpoints.
+
+## Relatório detalhado de licenciamento solicitado em 2026-10-20
+
+Hebert solicitou um XLSX com uma linha por empresa/licença e, no mínimo, empresa, licença, quantidade, faltam licenciar e validade, incluindo licenças vencidas. O escopo admitido foi somente leitura, sem alterar provider, licença, tenant, endpoint, política, credencial ou agenda.
+
+Estado verificado na consolidação de 21/10 às 02:00 UTC:
+
+- A primeira operação delegada ao Sentinel terminou sem consulta ao Bitdefender e sem artefato. O executor tentou inicialmente um caminho do workspace principal que não existia na sua superfície e depois bloqueou corretamente porque o controlador estava `IDLE`, sem ordem ativa vinculada ao Goal.
+- A segunda operação foi orientada a usar somente o workspace e as integrações reais do Sentinel. Ela avançou por descoberta local, catálogo e inspeção de evidência existente, mas encerrou por timeout sem resposta terminal, dataset ou XLSX.
+- Busca local pelos nomes do Goal/relatório e por XLSX recente não encontrou produto. Portanto, o pedido permanece **pendente**; admissão, descoberta de ferramentas ou existência de coleta diária anterior não equivalem à entrega solicitada.
+
+Retomada segura: reconciliar o mesmo Goal antes de nova execução, registrar/ativar a ordem exata exigida pelo Sentinel ou usar rota já autorizada que comprove a superfície real, coletar inclusive expiradas, explicitar a fórmula de `faltam licenciar`, validar totais/cobertura e só então gerar e revisar o XLSX. Não preencher campo indisponível com zero e não repetir uma operação terminal como se fosse continuação.
 
 
 ## Relatório diário de ameaças 2026-07-02

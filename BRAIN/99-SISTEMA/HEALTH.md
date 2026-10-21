@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-18T06:00:00Z'
+updated: '2026-10-21T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,16 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-10-21
+
+- Retomada desde a diária de 17/10; não existem diários de 18–20/10 e nenhum foi reconstruído. A semanal W42 de 18/10 e seu recibo preservam a continuidade documental disponível.
+- Inventário móvel: 119 arquivos, sem erros — 107 históricos OpenClaw e 12 Codex. Por atribuição: main 74, Sentinel 31, Kowalski seis, Darth Vader quatro e Robotnik quatro. Há 18 superfícies ausentes entre 40; contagem não mede cobertura semântica.
+- Revisão seletiva do fechamento executivo, da torre ampliada Kowalski, do pedido de relatório Bitdefender e de duas operações Sentinel. O pedido por XLSX segue sem produto: primeira operação sem ordem ativa; segunda em timeout sem resposta terminal, dataset ou planilha.
+- Duas notas existentes receberam atualização temática: Bitdefender GravityZone e contrato de runtime reproduzível. Nenhuma entidade ou projeto novo foi criado; estados transitórios de tickets, clientes, agentes e crons permaneceram observações datadas no diário.
+- Dezesseis históricos de sync foram lidos integralmente. `5b01651` e `4cd9793` foram publicados nos checkpoints observados; os outros 14 não tinham delta. Transporte não foi convertido em cobertura ou aceite.
+- Busca nativa disponível, mas retornou material histórico sem atualidade suficiente; leitura direta e pesquisa lexical complementaram a deduplicação, sem refresh de índice ou dependências. Históricos não selecionados e backlog anterior permanecem pendentes.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-10-21-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Execução, produto, Git/sync e transporte permanecem separados.
 
 ## Verificação semanal — 2026-10-18
 
