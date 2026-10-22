@@ -4,13 +4,22 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-21T02:00:00Z'
+updated: '2026-10-22T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-22, consolidação diária silenciosa
+
+- Criado diário UTC de 22/10 e atualizado o MOC cronológico. As fontes estáveis novas se limitaram à transcrição congelada do ciclo anterior e a quatro execuções rotineiras do sync; nenhuma promoção temática, entidade ou projeto foi necessária.
+- Os seis produtos declarados no recibo de 21/10 foram conferidos por hash no commit-base `ffac6ed` e coincidiram. A transcrição anterior não acrescentou conhecimento além dos produtos persistidos.
+- Confirmada a publicação de `ffac6ed` às 09:00 UTC de 21/10 e três checkpoints posteriores sem delta. Isso prova transporte observado, não cobertura cognitiva, aceite de negócio ou mudança do pedido Bitdefender.
+- Inventário de sete dias com 119 arquivos e 18 superfícies ausentes. Busca nativa retornou somente material histórico; deduplicação complementada por leitura direta e lexical local, sem refresh de índice ou dependências.
+- Recibo `brain-v2/reports/coverage-2026-10-22-daily.json`; HEALTH atualizado, cobertura global parcial e score legado mantido.
+- Sem exclusão, alteração de cron/configuração, sistema externo, agente Brain, mensagem ou publicação remota nesta consolidação. Commit somente local.
 
 ## 2026-10-21, consolidação diária silenciosa
 
