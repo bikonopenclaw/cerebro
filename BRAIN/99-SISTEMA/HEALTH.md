@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-22T02:00:00Z'
+updated: '2026-10-23T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,16 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-10-23
+
+- Inventário móvel: 133 arquivos, sem erros — 117 históricos OpenClaw e 16 Codex. Por atribuição: main 76, Sentinel 35, Kowalski oito, Darth Vader sete e Robotnik sete. Há 18 superfícies ausentes entre 40; contagem não mede cobertura semântica.
+- A transcrição agora estável da diária anterior foi lida integralmente. Os cinco produtos do ciclo de 22/10 foram conferidos por hash no commit-base `4368593` e coincidiram; nenhum conhecimento adicional justificou promoção.
+- Quatro históricos estáveis de sync foram lidos integralmente: o ciclo das 09:00 UTC publicou `4368593`; 15:00, 20:00 e 01:00 não encontraram mudanças. Isso prova somente transporte e checkpoints observados.
+- Cinco probes mínimos responderam `OK`; um canário Sentinel/Codex devolveu o nonce exato e `synthetic_readonly=true`. Essas evidências são pontuais e não comprovam saúde geral, não regressão, configuração persistente, integrações produtivas ou autorização operacional.
+- Nenhuma informação temática nova justificou atualização de nota permanente, empresa, pessoa, projeto, agente ou automação. Trajectories potencialmente duplicadas, índices mutáveis, históricos não selecionados e backlog anterior permanecem pendentes.
+- Busca nativa disponível, mas sem recuperar especificamente o evento atual. Leitura direta e lexical complementou a deduplicação, sem instalar dependências ou atualizar índice. A transcrição viva desta execução não foi tratada como fonte congelada.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-10-23-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Execução, produto, Git/sync e transporte permanecem separados.
 
 ## Verificação de cobertura — 2026-10-22
 

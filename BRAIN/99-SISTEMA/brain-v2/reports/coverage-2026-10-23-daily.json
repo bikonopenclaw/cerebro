@@ -1,0 +1,486 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_at": "2026-10-23T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "1ea915a8-a075-4cde-a5be-49da6713dfa1",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "base_commit": "436859394aa6c7f81ac32103a81e7cb733f8ac53",
+  "product_state": "PRODUCED_DOCUMENTARY_PARTIAL_DIAGNOSTIC_EVIDENCE_NO_THEMATIC_PROMOTION",
+  "coverage_complete": false,
+  "window": {
+    "reference_utc": "2026-10-23T02:00:00Z",
+    "local_date": "2026-10-22",
+    "timezone": "America/Sao_Paulo",
+    "inventory_days": 7,
+    "continuity": "Diária de 22/10 reutilizada por identidade; fontes estáveis novas limitadas a quatro syncs, cinco probes mínimos e um canário sintético Sentinel/Codex."
+  },
+  "execution": {
+    "state": "REVIEW_AND_CONSOLIDATION_EXECUTED_LOCALLY",
+    "delegation": false,
+    "scope": "Leitura local seletiva e atualização documental; sem sync, configuração, reexecução operacional, efeito de negócio ou acesso externo nesta consolidação."
+  },
+  "product": {
+    "state": "PRODUCED_DOCUMENTARY_PARTIAL_DIAGNOSTIC_EVIDENCE_NO_THEMATIC_PROMOTION",
+    "business_acceptance": "NOT_APPLICABLE",
+    "notes": [
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-10-23.md",
+        "path_base": "brain",
+        "sha256": "76bc70258a43f6a09f50312d8c9a860e585f49f0a891c88f877e0aa072582602",
+        "bytes": 4865,
+        "mtime_ns": 1792721002598274237
+      },
+      {
+        "path": "BRAIN/01-DIARIO/README.md",
+        "path_base": "brain",
+        "sha256": "ff6da453b954023c1aae2c2168d35e29fd87903638cb0da4681e98e9633730e7",
+        "bytes": 3551,
+        "mtime_ns": 1792721002627274223
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+        "path_base": "brain",
+        "sha256": "83c32140ec57ad46b7fd8ae19655a50ae7973cb154a8ba3339082c01fcb35d0e",
+        "bytes": 133209,
+        "mtime_ns": 1792721002654274210
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/HEALTH.md",
+        "path_base": "brain",
+        "sha256": "514aa72afaf4049b0f1c142bd0a6f1e5fcf96db60641a72cffda48acd9317c19",
+        "bytes": 72525,
+        "mtime_ns": 1792721002682274197
+      }
+    ],
+    "thematic_notes_changed": [],
+    "new_entity_or_project_notes": [],
+    "disposition": "Probes e canário preservados como evidência estreita e datada; nenhum conhecimento temático justificou promoção permanente."
+  },
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/fd4e5ca3-f59e-40dd-bfe9-a3a18fd22a41.jsonl",
+      "path_base": "absolute",
+      "sha256": "757a205241351a1fc85f29c9486f7d1c9484024c1705af128f0b2821bca1049a",
+      "bytes": 609005,
+      "mtime_ns": 1792634675525192273,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 76,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Transcrição congelada da diária de 22/10; converge com os cinco produtos persistidos e não acrescenta conhecimento temático.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/eeaac8e1-d359-4a5d-a866-614c8f472738.jsonl",
+      "path_base": "absolute",
+      "sha256": "a7b1e4e3cd2b6f607294f838351dfe878185064ee2bc5f029e0dfd171d1cacbf",
+      "bytes": 8983,
+      "mtime_ns": 1792659620095856601,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Publicou 4368593 e alinhou HEAD/origin/main em 22/10 às 09:00 UTC.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/a2914943-b4d0-4473-a367-75ff263c9e7c.jsonl",
+      "path_base": "absolute",
+      "sha256": "dd7190d068920594bdc72d03236b8e8d4af230316675aba65ce1cae1f9da2997",
+      "bytes": 8777,
+      "mtime_ns": 1792681220698912443,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Checkpoint de 22/10 às 15:00 UTC sem delta; remoto atualizado.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/c2e76186-0c07-4c71-9f29-deed5f4e0c60.jsonl",
+      "path_base": "absolute",
+      "sha256": "f443f1b6979ca37d848e33f645be19cd124cfe6ad0113633a8d51c21477f6559",
+      "bytes": 11079,
+      "mtime_ns": 1792699233676323389,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 10,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Checkpoint de 22/10 às 20:00 UTC sem delta; HEAD 4368593 e remoto atualizado.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/f5890bee-d6e1-48a6-a2dd-75e0162293e2.jsonl",
+      "path_base": "absolute",
+      "sha256": "84804d9a8d0e26584f02a973dc89ca4985323e8e0a32ec52d3a743e094e19451",
+      "bytes": 10582,
+      "mtime_ns": 1792717222317551677,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 8,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Checkpoint de 23/10 às 01:00 UTC sem delta; remoto atualizado.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/probe-openai-8f2cf54a-e431-4363-a39b-050fccf8cec1.jsonl",
+      "path_base": "absolute",
+      "sha256": "f3c878cb2cbc1a32e9e84e65c83776a53c409f475c8fde386d9636de881b59b5",
+      "bytes": 1301,
+      "mtime_ns": 1792689054374766132,
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 5,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Probe mínimo respondeu OK; evidência limitada à rota sintética, sem promoção a saúde geral ou capacidade operacional.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/probe-openai-c6ca1614-ef20-4bfb-ad3b-c39dc116946b.jsonl",
+      "path_base": "absolute",
+      "sha256": "08f2171c8326f70043ad40782d2e7ca565c7d59dbab1c9fe9a1dec9d241f6c86",
+      "bytes": 1303,
+      "mtime_ns": 1792689083636971990,
+      "agent": "kowalski",
+      "profile": "kowalski",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 5,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Probe mínimo respondeu OK; evidência limitada à rota sintética, sem promoção a saúde geral ou capacidade operacional.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/probe-openai-07c8e50d-17a3-4280-944c-333d0003f73d.jsonl",
+      "path_base": "absolute",
+      "sha256": "0bb95211ec5bb9e4ba058d981264f944ae8c264240ba9b8b48655a554ef22347",
+      "bytes": 1353,
+      "mtime_ns": 1792689106160205507,
+      "agent": "darth-vader",
+      "profile": "darth-vader",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 3,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Probe mínimo respondeu OK; evidência limitada à rota sintética, sem promoção a saúde geral ou capacidade operacional.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/probe-openai-eadfeece-c2b0-42c6-ab86-22326277a3f8.jsonl",
+      "path_base": "absolute",
+      "sha256": "4238b7ac08899e84c735128017514b077e7012fa6626937180845335e1a6b8ad",
+      "bytes": 1348,
+      "mtime_ns": 1792689147197762966,
+      "agent": "sentinel",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 3,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Probe mínimo respondeu OK; evidência limitada à rota sintética, sem promoção a saúde geral ou capacidade operacional.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/probe-openai-411c4d45-9daf-4c35-9c4d-8e1bd6b230c4.jsonl",
+      "path_base": "absolute",
+      "sha256": "ff686680dbf72fa10eda1e0c962f78f353b1392130b32327b30e1a254b7619e3",
+      "bytes": 1349,
+      "mtime_ns": 1792689751811940697,
+      "agent": "robotnik",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 3,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Probe mínimo respondeu OK; evidência limitada à rota sintética, sem promoção a saúde geral ou capacidade operacional.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/darth-vader/codex-home/sessions/2026/10/22/rollout-2026-10-22T17-11-41-01a16498-da39-7332-b9b8-c2b1fa69cb2b.jsonl",
+      "path_base": "absolute",
+      "sha256": "4506e21411468f363129e01d283692c68b3c4cffd0f3e0f328d4af5e2bdaffb9",
+      "bytes": 77033,
+      "mtime_ns": 1792689106129205145,
+      "agent": "darth-vader",
+      "profile": "main",
+      "kind": "codex_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 14,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Histórico Codex correspondente ao probe Darth Vader; resposta OK e nenhum uso de ferramenta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/22/rollout-2026-10-22T17-12-21-01a16499-7675-79d3-a1c9-0986741be9aa.jsonl",
+      "path_base": "absolute",
+      "sha256": "f98b714df43617d109d9116e616eb0c552c9b0f0d9a9f3fa5bf0a6b9e9413a5e",
+      "bytes": 77994,
+      "mtime_ns": 1792689147148762213,
+      "agent": "sentinel",
+      "profile": "main",
+      "kind": "codex_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 14,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Histórico Codex correspondente ao probe Sentinel; resposta OK e nenhum uso de ferramenta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/codex-home/sessions/2026/10/22/rollout-2026-10-22T17-22-27-01a164a2-b6d3-7291-a0e4-e94378cffe39.jsonl",
+      "path_base": "absolute",
+      "sha256": "fee2b599b52495d3da63821052a11632b4e1a19b215f41f0571485c4a7ab09be",
+      "bytes": 69869,
+      "mtime_ns": 1792689751754940190,
+      "agent": "robotnik",
+      "profile": "main",
+      "kind": "codex_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 12,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Histórico Codex correspondente ao probe Robotnik; resposta OK e nenhum uso de ferramenta.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/codex-home/sessions/2026/10/22/rollout-2026-10-22T17-40-55-01a164b3-9e0e-7d63-9206-1e43e91457cf.jsonl",
+      "path_base": "absolute",
+      "sha256": "5d1f48b0bb48639d645d199ba21057dda17d28b8caf1078242a132e9c691dd65",
+      "bytes": 59462,
+      "mtime_ns": 1792690860732470106,
+      "agent": "sentinel",
+      "profile": "main",
+      "kind": "codex_history",
+      "read_scope": {
+        "complete_document": true,
+        "lines": 14,
+        "method": "Todos os registros JSONL foram percorridos; pedido, mensagens, chamadas, resultados e fechamento foram classificados sem copiar payload bruto."
+      },
+      "disposition": "Canário crc-federation/1.0 devolveu nonce exato e synthetic_readonly=true; sem ferramenta ou efeito real observado, prova restrita ao payload sintético.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-10-23.md"
+      ]
+    }
+  ],
+  "continuity_documents": [
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-10-22.md",
+      "path_base": "brain",
+      "sha256": "2aedc5fa108a5413cb86ed14e612a1c6f658804fd9f8e7cf32cd1e61cdef37fe",
+      "bytes": 4181,
+      "mtime_ns": 1792634540058349214,
+      "read_scope": "Documento integral",
+      "disposition": "Continuidade temática e limites do ciclo anterior preservados."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-22-daily.json",
+      "path_base": "brain",
+      "sha256": "8eed87eec05078cc17cd34beddb279c73f719aab62cc3ac8bd0d1a168ab82dac",
+      "bytes": 12749,
+      "mtime_ns": 1792634626957584295,
+      "read_scope": "Documento integral",
+      "disposition": "Fontes, produtos, hashes e pendências do ciclo anterior relidos."
+    }
+  ],
+  "prior_product_verification": {
+    "state": "PASS",
+    "checked_against_base_commit": "436859394aa6c7f81ac32103a81e7cb733f8ac53",
+    "items": [
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-10-22.md",
+        "expected_sha256": "2aedc5fa108a5413cb86ed14e612a1c6f658804fd9f8e7cf32cd1e61cdef37fe",
+        "observed_sha256": "2aedc5fa108a5413cb86ed14e612a1c6f658804fd9f8e7cf32cd1e61cdef37fe",
+        "match": true,
+        "bytes": 4181
+      },
+      {
+        "path": "BRAIN/01-DIARIO/README.md",
+        "expected_sha256": "8355c64da5e64510b1c577172c9c4f7cb4b3f8de26550a06998ec3fc63c8f873",
+        "observed_sha256": "8355c64da5e64510b1c577172c9c4f7cb4b3f8de26550a06998ec3fc63c8f873",
+        "match": true,
+        "bytes": 3508
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+        "expected_sha256": "e6702c60d9e7b0360a2283a17dd1b214ff266196cfbf1f25838db8e76e46fc8e",
+        "observed_sha256": "e6702c60d9e7b0360a2283a17dd1b214ff266196cfbf1f25838db8e76e46fc8e",
+        "match": true,
+        "bytes": 131852
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/HEALTH.md",
+        "expected_sha256": "cc59e1fbd049440c012c372ef13bde0a7e168a87480043ebc010790bbc6ba098",
+        "observed_sha256": "cc59e1fbd049440c012c372ef13bde0a7e168a87480043ebc010790bbc6ba098",
+        "match": true,
+        "bytes": 70766
+      },
+      {
+        "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-22-daily.json",
+        "expected_sha256": "8eed87eec05078cc17cd34beddb279c73f719aab62cc3ac8bd0d1a168ab82dac",
+        "observed_sha256": "8eed87eec05078cc17cd34beddb279c73f719aab62cc3ac8bd0d1a168ab82dac",
+        "match": true,
+        "bytes": 12749
+      }
+    ],
+    "disposition": "Os cinco produtos do ciclo anterior coincidem, no commit-base 4368593, com os hashes declarados ou conferidos no fechamento."
+  },
+  "inventory": {
+    "artifact": {
+      "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-inventory-2026-10-23.json",
+      "path_base": "absolute",
+      "sha256": "01d82ee701f051c567f0694823d727cde6158e1593f96f94745eadaf1362acb9",
+      "bytes": 61401,
+      "mtime_ns": 1792720887994325422,
+      "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT"
+    },
+    "generated_at": "2026-10-23T02:01:27.993171+00:00",
+    "window_days": 7,
+    "source_count": 133,
+    "by_kind": {
+      "openclaw_history": 117,
+      "codex_history": 16
+    },
+    "by_agent": {
+      "main": 76,
+      "sentinel": 35,
+      "kowalski": 8,
+      "darth-vader": 7,
+      "robotnik": 7
+    },
+    "surface_count": 40,
+    "missing_surfaces": 18,
+    "errors": [],
+    "scope": "Metadados de arquivos recentes; não equivalem a leitura de conteúdo ou cobertura semântica."
+  },
+  "semantic_search": {
+    "native_memory_search": "AVAILABLE; não recuperou especificamente o evento atual e retornou somente material CRC histórico.",
+    "fallback": "Leitura direta e pesquisa lexical local.",
+    "index_or_dependencies_changed": false,
+    "post_edit_index_currentness": "NOT_ASSERTED"
+  },
+  "pending": {
+    "coverage_complete": false,
+    "deletion_eligible": false,
+    "items": [
+      "Trajectories potencialmente duplicadas, índices mutáveis, históricos não selecionados e backlog do recibo de 22/10 permanecem pendentes.",
+      "Os probes e o canário são evidência estreita; não demonstram saúde geral, não regressão, configuração persistente, integrações produtivas ou autorização operacional.",
+      "O pedido Bitdefender mantém somente o estado já consolidado em 21/10; não houve nova evidência de dataset, XLSX ou terminal aceito nesta janela.",
+      "A transcrição viva desta execução não foi tratada como fonte congelada; os produtos e este recibo são a evidência persistida."
+    ]
+  },
+  "git_sync": {
+    "state_at_receipt_generation": "PRODUCT_WRITTEN_LOCAL_COMMIT_NOT_YET_CREATED",
+    "base_head": "436859394aa6c7f81ac32103a81e7cb733f8ac53",
+    "base_equal_origin_main": true,
+    "observed_transport": "4368593 publicado em 22/10 às 09:00 UTC; três checkpoints posteriores sem delta até 23/10 às 01:00 UTC.",
+    "current_cycle_push_fetch_sync": false
+  },
+  "transport": {
+    "messages_to_hebert": 0,
+    "test_notifications": 0,
+    "history_replays": 0,
+    "external_system_access": false
+  },
+  "validation": {
+    "receipt_json": "PASS",
+    "frontmatter_schema": {
+      "state": "PASS",
+      "notes_tested": 4
+    },
+    "structural_gate": {
+      "state": "PASS",
+      "artifact": {
+        "path": "/data/.openclaw/workspace/.openclaw/tmp/brain-link-gate-2026-10-23.json",
+        "path_base": "absolute",
+        "sha256": "a4e708bc25f5a014d05563c6666a371ec5ada40e324c939eb309fad776000dcc",
+        "bytes": 22250,
+        "mtime_ns": 1792721060344245467,
+        "persistence": "EPHEMERAL_WORKFILE_NOT_GIT_PRODUCT"
+      },
+      "markdown_total": 434,
+      "internal_links": 994,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": 0,
+      "duplicate_aliases": 0,
+      "secret_candidates": 0,
+      "unreachable_cognitive_markdown": 0,
+      "isolated_cognitive_markdown": 0,
+      "graph_components": 1,
+      "knowledge_health_estimate": 1
+    },
+    "semantic_completeness": "NOT_MEASURED"
+  },
+  "safety": {
+    "silent": true,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "dependency_or_index_changes": false,
+    "business_effects": false
+  }
+}

@@ -4,13 +4,23 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-22T02:00:00Z'
+updated: '2026-10-23T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-23, consolidação diária silenciosa
+
+- Criado diário UTC de 23/10 e atualizado o MOC cronológico. A transcrição congelada da diária anterior convergiu com seus cinco produtos, conferidos por hash no commit-base `4368593`.
+- Confirmada a publicação de `4368593` às 09:00 UTC de 22/10 e três checkpoints posteriores sem delta. Isso prova transporte observado, não cobertura cognitiva ou aceite operacional.
+- Revisados cinco probes mínimos com resposta `OK` em main, Kowalski, Darth Vader, Sentinel e Robotnik. A prova foi delimitada à resposta sintética, sem inferir saúde geral, configuração persistente ou capacidade operacional.
+- Revisado um canário Sentinel/Codex sob `crc-federation/1.0`: nonce exato e `synthetic_readonly=true`, sem ferramenta ou efeito real observado. O resultado não foi promovido a estado canônico amplo.
+- Inventário de sete dias com 133 arquivos e 18 superfícies ausentes. Busca nativa sem recuperação específica do evento atual; leitura direta e lexical local, sem refresh de índice ou dependências.
+- Recibo `brain-v2/reports/coverage-2026-10-23-daily.json`; HEALTH atualizado, cobertura global parcial e score legado mantido.
+- Sem exclusão, alteração de cron/configuração, sistema externo, agente Brain, mensagem ou publicação remota nesta consolidação. Commit somente local.
 
 ## 2026-10-22, consolidação diária silenciosa
 
