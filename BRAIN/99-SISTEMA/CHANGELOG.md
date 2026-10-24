@@ -4,13 +4,22 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-23T02:00:00Z'
+updated: '2026-10-24T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-24, consolidação diária silenciosa
+
+- Criado diário UTC de 24/10 e atualizado o MOC cronológico. As fontes estáveis novas se limitaram à transcrição congelada do ciclo anterior e a quatro execuções rotineiras do sync; nenhuma promoção temática, entidade ou projeto foi necessária.
+- Os quatro produtos declarados no recibo de 23/10 foram conferidos por hash no commit-base `bcbe155` e coincidiram. A transcrição anterior não acrescentou conhecimento além dos produtos persistidos.
+- Confirmada a publicação de `bcbe155` às 09:00 UTC de 23/10 e três checkpoints posteriores sem delta. Isso prova transporte observado, não cobertura cognitiva, aceite operacional ou mudança de estado temático.
+- Inventário de sete dias com 133 arquivos e 18 superfícies ausentes. Busca nativa retornou somente material histórico; deduplicação complementada por leitura direta e lexical local, sem refresh de índice ou dependências.
+- Recibo `brain-v2/reports/coverage-2026-10-24-daily.json`; HEALTH atualizado, cobertura global parcial e score legado mantido.
+- Sem exclusão, alteração de cron/configuração, sistema externo, agente Brain, mensagem ou publicação remota nesta consolidação. Commit somente local.
 
 ## 2026-10-23, consolidação diária silenciosa
 
