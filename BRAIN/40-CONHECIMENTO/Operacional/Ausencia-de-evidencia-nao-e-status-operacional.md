@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-18T06:00:00Z'
+updated: '2026-10-25T06:00:00Z'
 relationships:
 - type: derived_from
   target: BRAIN/01-DIARIO/Semanal/2026-W39.md
@@ -40,6 +40,10 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W42.md
   reason: Reconcila diário ausente, inventário de metadados e transporte Git como limites de evidência distintos.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-18-weekly.json
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W43.md
+  reason: Reconcila evidência positiva estreita, canário sintético e transporte como provas não transitivas.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-25-weekly.json
 ---
 
 # Ausência de evidência não é status operacional
@@ -47,10 +51,10 @@ relationships:
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidação semanal 2026-W28; Portal 213 Stage 1B R2.4 em 2026-08-20; qualificacao mensal ARX em 2026-09-08/09; fechamento semanal Relatorios Operacionais em 2026-09-14; consolidacao semanal 2026-W38; consolidação semanal 2026-W42
+fonte: consolidação semanal 2026-W28; Portal 213 Stage 1B R2.4 em 2026-08-20; qualificacao mensal ARX em 2026-09-08/09; fechamento semanal Relatorios Operacionais em 2026-09-14; consolidacao semanal 2026-W38; consolidação semanal 2026-W42; consolidação semanal 2026-W43
 confiabilidade: alta
-ultima_revisao: 2026-10-18
-tags: [monitoramento, evidencia, recencia, revalidacao, ninjaone, backup, hyper-v, operacao, checkpoint, cobertura-temporal, paginacao]
+ultima_revisao: 2026-10-25
+tags: [monitoramento, evidencia, recencia, revalidacao, ninjaone, backup, hyper-v, operacao, checkpoint, cobertura-temporal, paginacao, canario, prova-estreita]
 ```
 
 ## Princípio
@@ -113,6 +117,12 @@ Em 2026-09-08/09, a qualificacao ARX demonstrou que estatistica corrente e barra
 Em 2026-09-14, o cron semanal Bitdefender encontrou o cache esperado ausente ou invalido e respondeu fail-closed. O registro correto foi indisponibilidade do relatorio no ponto de consumo; a mensagem padrao nao foi promovida a diagnostico da coleta Sentinel nem do provider.
 
 Em 2026-W38, relatorios ARX por dados autenticados disponiveis foram aceitos apenas para os recortes explicitamente observados. O caso 2111 de agosto permaneceu insuficiente para performance mensal, enquanto requests novas puderam declarar datas, contagens e lacunas sem reescrever o predecessor.
+
+## Evidência positiva estreita também não é transitiva — semana 2026-W43
+
+Cinco probes mínimos responderam `OK` e um canário Sentinel/Codex devolveu o nonce solicitado com `synthetic_readonly=true`, sem ferramenta ou efeito real. Isso demonstra apenas que aqueles payloads percorreram a rota observada nos instantes testados. Não demonstra saúde geral, configuração persistente, não regressão, integração com providers ou autorização de produção.
+
+A mesma separação vale para transporte: commit publicado e checkpoints sem delta comprovam os bytes transportados, não cobertura cognitiva ou correção operacional. Para cada conclusão, nomear a dimensão efetivamente observada e manter as demais como pendências; evidência positiva em uma camada não preenche ausência de evidência em outra. Síntese em [[01-DIARIO/Semanal/2026-W43|W43]].
 
 ## Relações
 

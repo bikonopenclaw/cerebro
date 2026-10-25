@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-11T06:00:00Z'
+updated: '2026-10-25T06:00:00Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -20,6 +20,10 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W31.md
   reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
   source: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado.md#relações
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W43.md
+  reason: Delimita probes mínimos e canários sintéticos à rota e ao efeito realmente exercitados.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-25-weekly.json
 ---
 
 # Validacao do caminho final instalado
@@ -27,10 +31,10 @@ relationships:
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidacao semanal 2026-W31
+fonte: consolidacao semanal 2026-W31; revisão documental 2026-W41; consolidação semanal 2026-W43
 confiabilidade: alta
-ultima_revisao: 2026-10-11
-tags: [instalacao, launcher, black-box, dre, runtime, validacao]
+ultima_revisao: 2026-10-25
+tags: [instalacao, launcher, black-box, dre, runtime, validacao, canario, rota-final]
 ```
 
 ## Principio
@@ -58,6 +62,12 @@ Fonte: sessão Robotnik `328d630b-b4dc-4cce-9b56-1abadb0c070b`, resposta inicial
 Os casos do painel publicado e do probe Cresol em homologação reforçam a mesma cadeia: **configuração local → identidade consumida pelo processo → ambiente/rota exercitados → efeito observado**. Login em servidor local não prova autenticação na instância publicada; OAuth e `GET /especies` com resposta `200` demonstram comunicação read-only naquele instante, não correção da configuração persistente, autorização de produção ou homologação bancária.
 
 A evidência deve nomear a última seta efetivamente atravessada e manter as demais como gates pendentes. Transporte Git ou ACK também pertencem a outra dimensão e não ampliam essa prova. Síntese em [[01-DIARIO/Semanal/2026-W41|W41]], sem restart, deploy, credencial, mutação ou teste externo novo.
+
+## Canário sintético valida somente a rota exercitada — semana 2026-W43
+
+Cinco probes mínimos devolveram `OK`, e um canário Sentinel/Codex respondeu o nonce exato sob contrato `synthetic_readonly=true`, sem uso observado de ferramenta ou efeito real. A prova cobre interpretação e resposta desses payloads nos instantes testados. Não percorreu consulta de provider, persistência de configuração, materialização de produto, transporte externo ou caminho operacional completo.
+
+Antes de ampliar o veredito, exigir um teste que atravesse a mesma entrada, bindings, ferramentas, destino e efeito esperados da rota final, com gates próprios e leitura posterior. Canário sem efeito é útil para localizar uma camada, mas não autoriza concluir saúde geral, não regressão ou prontidão produtiva. Síntese em [[01-DIARIO/Semanal/2026-W43|W43]].
 
 ## Exemplo conectado
 

@@ -11,7 +11,11 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W42.md
   reason: Consolida os limites de produto truncado, execução sem artefato e transporte separado de terminalidade.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-18-weekly.json
-updated: '2026-10-18T06:00:00Z'
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W43.md
+  reason: Consolida a independência entre encerramento do executor, produto materializado e aceite aplicável.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-25-weekly.json
+updated: '2026-10-25T06:00:00Z'
 ---
 
 # Estado terminal requer convergencia do lifecycle
@@ -19,10 +23,10 @@ updated: '2026-10-18T06:00:00Z'
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidacao semanal 2026-W35, teste controlado de relatorios operacionais em 2026-09-02, publicacao Instagram Bikon em 2026-09-10, lifecycle ad-hoc ARX em 2026-09-16, consolidacao semanal 2026-W38, revisão documental de 2026-10-11 e consolidação semanal 2026-W42
+fonte: consolidacao semanal 2026-W35, teste controlado de relatorios operacionais em 2026-09-02, publicacao Instagram Bikon em 2026-09-10, lifecycle ad-hoc ARX em 2026-09-16, consolidacao semanal 2026-W38, revisão documental de 2026-10-11 e consolidações semanais 2026-W42/W43
 confiabilidade: alta
-ultima_revisao: 2026-10-18
-tags: [lifecycle, execucao, registry, cgroup, terminalidade, reconciliacao, supervisao, transcript]
+ultima_revisao: 2026-10-25
+tags: [lifecycle, execucao, registry, cgroup, terminalidade, reconciliacao, supervisao, transcript, produto-duravel, aceite]
 ```
 
 ## Principio
@@ -55,6 +59,12 @@ Na publicação Instagram Bikon de 2026-09-10, o Graph confirmou o `media_id` e 
 No request ARX/Cove ad-hoc de 2026-09-15/16, tentativas intermediarias nao autorizaram sucessores em loop. A reconciliacao reteve uma unica linhagem canonica, fechou `FAIL_CLOSED_EXTERNAL_OWNER_GATE` antes do provider e congelou a mesma request ate existirem binding numerico aprovado e gate de rede proprio.
 
 Em 2026-W38, as revisoes do relatorio Capixaba permaneceram na mesma request e corrigiram contrato visual, prova do runtime e apresentacao sem recoleta. No caso 2111, o esgotamento das fontes autorizadas fechou a linhagem por evidencia insuficiente e bloqueou repeticao identica.
+
+## Terminalidade do executor não substitui produto — semana 2026-W43
+
+No pedido Bitdefender de 20/10, a primeira operação teve encerramento autenticado, mas bloqueou sem ordem ativa e produziu zero consulta, dataset ou XLSX. A segunda mostrou atividade de descoberta e expirou sem resposta terminal nem artefato. Os dois casos ocupam estados diferentes do lifecycle e chegam à mesma conclusão de negócio: a entrega permanece pendente.
+
+Registrar separadamente **terminal do executor**, **produto integral materializado**, **identidade/hash conferidos** e **aceite aplicável**. Nenhuma dessas dimensões herda conclusão das demais. Timeout ou atividade observável não é entrega; resposta terminal sem produto também não é entrega. Repetição exige mudança causal e reconciliação da mesma linhagem, não simples ausência do artefato. Síntese em [[01-DIARIO/Semanal/2026-W43|W43]].
 
 ## Relacoes
 
