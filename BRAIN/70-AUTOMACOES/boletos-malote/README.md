@@ -7,7 +7,7 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-10-07T02:00:00Z'
+updated: '2026-10-27T02:00:00Z'
 ---
 
 # Boletos e malote bancário
@@ -28,6 +28,14 @@ Fonte: determinação registrada no cabeçalho de `workspace/MEMORY.md` e recibo
 Um probe autorizado e delimitado à homologação obteve `HTTP 200` no OAuth e `HTTP 200` em `GET /especies`, com certificado TLS verificado e 26 itens retornados. O recibo sanitizado declarou zero mutações financeiras e nenhuma mudança remota persistente. Isso comprova comunicação read-only naquele instante; não autoriza emissão, registro, baixa, produção ou transmissão bancária.
 
 O teste só passou após adaptar, **em memória**, os nomes `CRESOL_*` esperados no arquivo secreto para `CRESOL_API_*` esperados pelo cliente. A incompatibilidade persistente de configuração não foi corrigida. Não registrar valores, tokens ou conteúdo do arquivo secreto no Brain. Fonte: sessão main `68972a06-7741-430f-8e5a-da14595cafa2`, resultado concluído em `2026-10-06T18:46:17Z`; identidade no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-07-daily.json`.
+
+## Auditoria instalada read-only — 26/10/2026
+
+O teste `TESTE-FATURAMENTO-20261026-E2E-01` encerrou com timeout e incerteza de efeito; não foi reaberto nem repetido. O teste distinto `E2E-02` executou uma única vez o pacote isolado `billing-e2e02-readonly-audit-20261026`, autenticado pelo SHA-256 `461f39b776a71b937191af1600154e60f78137e2f084e0d7fa0d01e3d898aff1`, e terminou com exit code 0 e status `PASS`.
+
+No escopo exercitado, a consulta local do controlador encontrou banco e schema disponíveis, nenhuma tabela ausente e uma operação `UNRESOLVED`, apenas observada e não alterada. A suíte de PDF passou em 13 fixtures sintéticas: extração e geometria de texto visível, rejeição de texto vazio, PDF truncado e excesso/múltiplas páginas, tratamento de texto oculto como não confiável, roundtrip raster I2of5 e identidade das ferramentas instaladas. O recibo declarou zero mutações financeiras, zero chamadas de provider e zero mudanças instaladas.
+
+O resultado comprova somente o caminho offline instalado e testado com fixtures e scratch isolado. Não verificou conectividade Notaas, Cresol ou SMTP, não certifica prontidão fiscal/billing ao vivo e não concede autorização para emissão, registro, baixa, remessa, e-mail ou qualquer outro efeito. O guard Python usado no teste não é sandbox de rede do sistema inteiro. A operação `UNRESOLVED` permanece observação local, não autorização de reconciliação ou replay.
 
 ## Estado em 2026-07-11
 

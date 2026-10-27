@@ -4,13 +4,22 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-25T06:00:00Z'
+updated: '2026-10-27T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-26, consolidação diária silenciosa — ciclo de 27/10 às 02:00 UTC
+
+- Criado o diário da data de ciclo em America/Sao_Paulo e atualizado o MOC cronológico. A data UTC da execução foi preservada separadamente.
+- Consumido por identidade o recibo de reconciliação operacional de 26/10, sem repetir reparos: correções técnicas verificadas, cobertura histórica Bitdefender ainda incompleta, probes estreitos sem prova de saúde viva e ausência de autorização para operação financeira, ticket ou publicação.
+- Atualizado o registro Bitdefender com a recuperação semanal: produto local validado para 19–23/10, cobertura histórica incompleta, pós-checagem em warning e nenhuma entrega externa. O XLSX detalhado solicitado em 20/10 continua uma pendência distinta.
+- Atualizado o registro de boletos/malote com o `E2E-02`: pacote autenticado, exit code 0, controlador/schema local read-only e 13 fixtures PDF aprovadas, com zero mutações, providers ou mudanças instaladas. O resultado não certifica prontidão ao vivo; o `E2E-01` permaneceu encerrado com incerteza e não foi repetido.
+- Inventário de sete dias com 148 arquivos, sem erros, e 18 superfícies ausentes. Pesquisa semântica local executada em modo read-only/sem refresh; cobertura global permaneceu parcial.
+- HEALTH e recibo `brain-v2/reports/coverage-2026-10-26-daily.json` atualizados. Nenhuma exclusão, configuração, reexecução de efeito incerto, mensagem, push ou sync foi feita por esta consolidação; commit somente local.
 
 ## 2026-10-25, consolidação semanal silenciosa — W43
 

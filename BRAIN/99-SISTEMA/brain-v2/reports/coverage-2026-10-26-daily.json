@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_date": "2026-10-26",
+  "cycle_timezone": "America/Sao_Paulo",
+  "cycle_at": "2026-10-27T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "07665fed-2bef-4936-a2f0-672f678f8f65",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1 + BRAIN_DAILY_RELIABILITY_20261026",
+  "base_commit": "73b75f935c002bf07563c4dad2c59e7ddc6e9573",
+  "product_state": "PRODUCT_INCOMPLETE",
+  "local_synthesis_state": "PRODUCED_DOCUMENTARY_PARTIAL",
+  "coverage_complete": false,
+  "scope": "Revisão seletiva das fontes estáveis com novidade material desde W43, continuidade documental e checkpoints Git; não revisão integral dos 148 arquivos inventariados.",
+  "inventory": {
+    "path": ".openclaw/tmp/brain-source-inventory-2026-10-27.json",
+    "path_base": "workspace",
+    "sha256": "f0b9338aa93684083ed03a19e77e7dab26bf536c060abaf35ea761256cdccee5",
+    "bytes": 67672,
+    "generated_at": "2026-10-27T02:00:28.709019+00:00",
+    "window_days": 7,
+    "source_count": 148,
+    "by_kind": {"openclaw_history": 129, "codex_history": 19},
+    "by_agent": {"main": 84, "sentinel": 29, "kowalski": 6, "darth-vader": 22, "robotnik": 7},
+    "surfaces": 40,
+    "missing_surfaces": 18,
+    "errors": [],
+    "content_read": false,
+    "disposition": "Inventário é metadado, não cobertura; fontes não selecionadas permanecem pendentes."
+  },
+  "sources_reviewed": [
+    {
+      "path": "operational-repair-20261026-v2.json",
+      "path_base": "workspace",
+      "sha256": "ba7f91b9c5920b1da4b0352a7f26edef75ffaef40dbcd5f0f4c1e5ce557ec8c5",
+      "bytes": 4353,
+      "read_scope": {"lines": [1, 40], "complete_document": true},
+      "disposition": "Reconciliação consumida por identidade; correções, limites, saúde não geral e proibições preservados sem reexecução.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-10-26.md", "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/5987e285-0392-4b45-a463-1d6bfe11f285.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "6f877ce36f0a03de5899d3260181a2a6e80fe724f380cf6c772339711fa7d2f7",
+      "bytes": 15188,
+      "agent": "sentinel",
+      "profile": "main",
+      "read_scope": {"lines": [1, 11], "messages": [2, 11], "complete_document_parsed": true},
+      "disposition": "Fechamento semanal local passou validação obrigatória, com cobertura histórica incompleta, warning opcional e nenhuma entrega externa.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-10-26.md", "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/d22dd50f-0556-4edb-ba45-cd47da981c92.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "3667d062c4d000dc2c8c0599e60d1fffe6a864eab3ab7c8e7db68045780db060",
+      "bytes": 395963,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"lines": [1, 103], "message_lines": [5, 7, 24, 44, 62, 67, 68, 71, 72, 77, 78, 80, 90, 91, 102, 103], "tool_payloads_complete": false},
+      "disposition": "E2E-01 preservado como timeout incerto sem replay; E2E-02 separado terminou PASS e foi delimitado ao escopo offline/read-only.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-10-26.md", "BRAIN/70-AUTOMACOES/boletos-malote/README.md"]
+    },
+    {
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/21f6cdba-ba66-4b76-8bc9-b7e4a0de334b.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "2834d32a395f147e7aaeec759ab40413ea49a2ca0cf714407960ce2f5da13c2a",
+      "bytes": 11324,
+      "agent": "darth-vader",
+      "profile": "darth-vader",
+      "read_scope": {"lines": [1, 5], "messages": [2, 5], "complete_document_parsed": true},
+      "disposition": "Retorno executor confirma execução única, exit code 0, PASS e zero efeitos declarados; não certifica providers ou prontidão fiscal.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-10-26.md", "BRAIN/70-AUTOMACOES/boletos-malote/README.md"]
+    }
+  ],
+  "continuity_documents": [
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-25-weekly.json",
+      "path_base": "brain",
+      "sha256": "940b2c0d47ea9f6216799ed9bc2c194a40cff70e941b99182e1fcf1885bc8d59",
+      "bytes": 14194,
+      "read_scope": "Documento completo",
+      "disposition": "Continuidade W43 e backlog preservados; nenhuma fonte já disposta foi reprocessada."
+    }
+  ],
+  "git_transport_sources": [
+    {"path": "/data/.openclaw/agents/main/sessions/4308a27c-ec66-4ed6-b99c-df14e55d7f4c.jsonl", "sha256": "c4fae9985ded9f83b81f4687050b855bfd69edacbdff63e6d9603eb7b0908fc7", "bytes": 10103, "read_scope": "mensagens user/final; 8 linhas"},
+    {"path": "/data/.openclaw/agents/main/sessions/7fda622e-23df-4ff6-b81e-4662edd76cf0.jsonl", "sha256": "8a7563c7daf4d6a705d5786c8a456f45b34d59d3701e252fbd4af79f99aca1cc", "bytes": 9051, "read_scope": "mensagens user/final; 8 linhas"},
+    {"path": "/data/.openclaw/agents/main/sessions/571749f4-61f0-46bf-8cac-9e9c61320ab5.jsonl", "sha256": "cfc21e99b530f77ef930bf019d8f13167998b0fa1978a71f12c6e0a56415e47c", "bytes": 8961, "read_scope": "mensagens user/final; 8 linhas"},
+    {"path": "/data/.openclaw/agents/main/sessions/105d4cf1-0798-4e23-b377-9e55b7c5197b.jsonl", "sha256": "04a6d43b1537ae6a4e5fade2567041ed04df65a5f239649a1855f7dc33430194", "bytes": 11905, "read_scope": "mensagens user/final; 10 linhas"},
+    {"path": "/data/.openclaw/agents/main/sessions/8a713705-3c49-4c63-8b51-968acfc9999b.jsonl", "sha256": "1e4cafc2c77632b243ba830f00fb208fd4fdafa51a8352fb493ba14c3f494180", "bytes": 9195, "read_scope": "mensagens user/final; 8 linhas"},
+    {"path": "/data/.openclaw/agents/main/sessions/1362ebf2-0c1c-4d0f-b2ea-29ceb2ba0b04.jsonl", "sha256": "99166aef0262c39bfe4c8d45cd5c3b0d2aeeb7340798789cbcd1b0b5d81792b2", "bytes": 10111, "read_scope": "mensagens user/final; 8 linhas"},
+    {"path": "/data/.openclaw/agents/main/sessions/741954e8-cd45-4cfd-9405-321b873641ec.jsonl", "sha256": "b90d83c255972c1b27c27309c8352ee478a0801901800a6c6b4d378a1fa869ef", "bytes": 9437, "read_scope": "mensagens user/final; 8 linhas"},
+    {"path": "/data/.openclaw/agents/main/sessions/22a2cc86-7e76-49e6-8d62-87e8fa0696d4.jsonl", "sha256": "5a5ee42761368c9f79ebab099b9c802c232939f905f056c00b42ca6196c1a79d", "bytes": 9559, "read_scope": "mensagens user/final; 8 linhas"}
+  ],
+  "git_transport_disposition": "O sync de 25/10 às 09:00 UTC publicou 73b75f9; sete checkpoints posteriores até 27/10 às 01:00 UTC não tinham delta. Isso prova transporte observado, não cobertura ou aceite.",
+  "semantic_search": {
+    "executable": "/data/.openclaw/skills/brain-semantic-search/scripts/search",
+    "mode": "read_only_no_refresh",
+    "index_at": "2026-10-25T09:02:14.945892Z",
+    "queries": [
+      "consolidação diária, reconciliação de 26/10, cobertura parcial, saúde viva e transporte Git",
+      "skill de emissão NFS-e, boleto, remessa, e-mail, controlador e homologação Cresol"
+    ],
+    "disposition": "Localizou notas existentes; índice anterior às edições e similaridade não foram usados como prova de atualidade ou cobertura.",
+    "index_refresh_executed": false
+  },
+  "products": [
+    {"path": "BRAIN/01-DIARIO/2026/2026-10-26.md", "path_base": "brain", "sha256": "4b76e8c9a78a26eb4f0bb2aff802d5f58515e84487b83ddddf5b42a560201ad5", "bytes": 6369},
+    {"path": "BRAIN/01-DIARIO/README.md", "path_base": "brain", "sha256": "e70528d72d02376bff2c58cde66e5983b720641f02400baedf012df65332269d", "bytes": 3738},
+    {"path": "BRAIN/70-AUTOMACOES/BITDEFENDER-GRAVITYZONE.md", "path_base": "brain", "sha256": "e25a35278560d4fc4fed39f21b9475201a447bb0684d9ae672075a09cf35e229", "bytes": 17816},
+    {"path": "BRAIN/70-AUTOMACOES/boletos-malote/README.md", "path_base": "brain", "sha256": "f1b62de4748d0ab51ff1562039735f584078dd35002a6b3045369262c70a5d8a", "bytes": 25085},
+    {"path": "BRAIN/99-SISTEMA/CHANGELOG.md", "path_base": "brain", "sha256": "b1c2f87210badd65c13f4defe73dc068f4a8113eb6aa2f8b9c3f6b0692ba3504", "bytes": 137351},
+    {"path": "BRAIN/99-SISTEMA/HEALTH.md", "path_base": "brain", "sha256": "1599de8b8aac3723e254e5cfe8e6fedea51cbdbbcc82c31553aa90b797b75119", "bytes": 77221}
+  ],
+  "validation": {
+    "schema_and_relationships": {
+      "status": "PASS",
+      "command": "python3 local validator using note.schema.json and relationship-types.yaml for the six changed Markdown notes",
+      "notes": 6,
+      "relationships": 6,
+      "errors": []
+    },
+    "link_gate": {
+      "status": "PASS",
+      "command": "python3 BRAIN/99-SISTEMA/brain-v2/tools/brain_link_gate.py --root . --json",
+      "markdown_total": 437,
+      "internal_links": 1011,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": {},
+      "duplicate_aliases": {},
+      "secret_candidates": []
+    },
+    "content_or_coverage_certified": false,
+    "limitation": "Os gates reais certificam schema, vínculos e integridade estrutural; não certificam conteúdo, completude semântica, saúde viva ou cobertura histórica."
+  },
+  "pending": [
+    {"id": "PRIMARY_WINDOW_BACKLOG", "dependency": "Fontes inventariadas não selecionadas, trajectories e índices mutáveis permanecem não lidos."},
+    {"id": "BITDEFENDER_HISTORICAL_COVERAGE", "dependency": "Continuidade integral de 19–23/10 não comprovada após reinícios reais; produto local não fecha a lacuna."},
+    {"id": "BITDEFENDER_XLSX", "dependency": "Pedido detalhado de 20/10 segue sem dataset/XLSX comprovado e não foi satisfeito pelo fechamento semanal."},
+    {"id": "FISCAL_UNRESOLVED_OPERATION", "dependency": "Uma operação local UNRESOLVED foi observada em read-only; investigar exige objetivo e autorização próprios, sem replay do E2E-01."},
+    {"id": "HISTORICAL_BRAIN_GAPS", "dependency": "Certificação de 23/10 e cobertura mensal de setembro permanecem parciais; não foram reprocessadas."}
+  ],
+  "publication": {
+    "local_commit": "PENDING_AT_RECEIPT_CREATION",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_INVOKED",
+    "remote_confirmation": "NOT_QUERIED",
+    "scheduled_git_routines": "UNCHANGED"
+  },
+  "safety": {
+    "silent": true,
+    "messages_sent": 0,
+    "external_access": false,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "financial_operations": false,
+    "tickets_created_or_changed": false,
+    "publications": false,
+    "uncertain_effect_replayed": false
+  }
+}

@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-25T06:00:00Z'
+updated: '2026-10-27T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,15 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-10-26 (execução em 27/10 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 26/10; a execução ocorreu em 27/10 às 02:00 UTC. Inventário móvel: 148 arquivos, sem erros — 129 OpenClaw e 19 Codex; main 84, Sentinel 29, Darth Vader 22, Robotnik sete e Kowalski seis. Há 18 superfícies ausentes entre 40; contagem não mede cobertura semântica.
+- Revisão seletiva do recibo de reconciliação de 26/10, da recuperação semanal Bitdefender, do fluxo `E2E-01/E2E-02`, do retorno executor do Darth Vader, da continuidade W43 e dos checkpoints de sync. Trajectories, índices mutáveis e demais fontes inventariadas não foram promovidos sem leitura e permanecem backlog.
+- Bitdefender produziu fechamento local validado para 19–23/10, mas com cobertura histórica explicitamente incompleta e sem entrega externa. O pedido de XLSX de licenças continua separado e pendente. Probes de resposta e leitura de organizações não certificam saúde geral, integrações ou ciclos futuros.
+- O `E2E-02` comprovou o caminho offline instalado do controlador/PDF: pacote autenticado, exit code 0, 13 fixtures aprovadas e zero mutações/providers/mudanças. Não mede conectividade ao vivo, prontidão fiscal ou autorização financeira; uma operação local `UNRESOLVED` foi somente observada.
+- Pesquisa semântica local respondeu em modo read-only com índice de 25/10, antes das edições, sem refresh. Validação estrutural e de schema/vínculos mede integridade documental, não conteúdo, cobertura histórica ou saúde operacional.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-10-26-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Execução, produto, commit local e transporte remoto permanecem dimensões separadas.
 
 ## Verificação semanal — 2026-10-25
 

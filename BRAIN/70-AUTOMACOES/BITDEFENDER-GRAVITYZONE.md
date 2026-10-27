@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-21T02:00:00Z'
+updated: '2026-10-27T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/20-EMPRESAS/BIKON/README.md
@@ -26,9 +26,9 @@ relationships:
 
 ```yaml
 categoria: automacao_seguranca
-fonte: conversa com Hebert em 2026-06-18/19, documentação pública Bitdefender consultada na sessão, relatório executivo gerado em 2026-06-19, relatórios operacionais read-only até 2026-08-12 e solicitação/reconciliação do relatório de licenciamento em 2026-10-20
+fonte: conversa com Hebert em 2026-06-18/19, documentação pública Bitdefender consultada na sessão, relatório executivo gerado em 2026-06-19, relatórios operacionais read-only até 2026-08-12, solicitação de licenciamento em 2026-10-20 e recuperação semanal reconciliada em 2026-10-26
 confiabilidade: media
-ultima_revisao: 2026-10-21
+ultima_revisao: 2026-10-26
 tags: [bikon, bitdefender, gravityzone, seguranca, inventario, endpoints, licenciamento, relatorios, ninjaone, tickets]
 ```
 
@@ -106,6 +106,14 @@ Estado verificado na consolidação de 21/10 às 02:00 UTC:
 - Busca local pelos nomes do Goal/relatório e por XLSX recente não encontrou produto. Portanto, o pedido permanece **pendente**; admissão, descoberta de ferramentas ou existência de coleta diária anterior não equivalem à entrega solicitada.
 
 Retomada segura: reconciliar o mesmo Goal antes de nova execução, registrar/ativar a ordem exata exigida pelo Sentinel ou usar rota já autorizada que comprove a superfície real, coletar inclusive expiradas, explicitar a fórmula de `faltam licenciar`, validar totais/cobertura e só então gerar e revisar o XLSX. Não preencher campo indisponível com zero e não repetir uma operação terminal como se fosse continuação.
+
+## Recuperação do fechamento semanal — 2026-10-26
+
+O recibo de reconciliação de 26/10 registrou correções na inicialização do agendador, na autoridade do período e numa referência fixa a cliente antigo. A recuperação nativa observada às 10:49 BRT reutilizou 541 consultas e três exportações e fez 38 leituras adicionais, sem nova exportação. No qualificador, 636 status de tarefas sem campo temporal permaneceram visíveis, mas fora dos totais por data; assinaturas, hashes e seleção foram conferidos nos 1.816 registros retidos, com 21 verificações independentes aprovadas.
+
+Uma execução posterior do fechamento semanal terminou com `PRODUCTIVE_RESULT=PASS`, `MANDATORY_VALIDATION=PASS`, `OPTIONAL_POSTCHECK=WARNING` e `CLEANUP=PASS` para o ciclo lógico `weekly:2026-10-19:2026-10-23`. O produto declarou `SOURCE_COVERAGE=INCOMPLETE_HISTORICAL_COVERAGE`, hash de geração `cd472bc13a8434eb945bff925eb8d0d8cd327379d196692a0f2241283e87a0a7` e `EXTERNAL_DELIVERY=NONE`.
+
+Portanto, existe produto local autenticado com validação obrigatória aprovada, mas não há prova de continuidade histórica integral nem de entrega externa. Reinícios reais impedem fechar a cobertura completa; a ausência de data nos status de tarefa deixou de contaminar os totais AV, mas não virou evento temporal. Este fechamento também não satisfaz o pedido distinto de XLSX detalhado por empresa/licença de 20/10, não certifica ciclos futuros de tickets e não autoriza remediação, ticket, mudança de endpoint/política ou comunicação externa.
 
 
 ## Relatório diário de ameaças 2026-07-02
