@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_date": "2026-10-28",
+  "cycle_timezone": "America/Sao_Paulo",
+  "cycle_at": "2026-10-29T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "5375b258-acd3-4bec-83da-2fccb6077138",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1 + BRAIN_DAILY_RELIABILITY_20261026",
+  "base_commit": "8a6db2a62244e31b07f895412888749c77e88479",
+  "product_state": "PRODUCT_INCOMPLETE",
+  "local_synthesis_state": "PRODUCED_DOCUMENTARY_PARTIAL",
+  "coverage_complete": false,
+  "scope": "Revisão seletiva da transcrição estável do ciclo anterior e dos quatro históricos de sync posteriores; não revisão integral dos 141 arquivos inventariados.",
+  "inventory": {
+    "path": ".openclaw/tmp/brain-source-inventory-2026-10-28-daily.json",
+    "path_base": "workspace",
+    "sha256": "9029c6855ba112b2d4f310fd65215f4cb487710eb5026b027aa1829299ffeb5e",
+    "bytes": 64872,
+    "generated_at": "2026-10-29T02:00:31.025893+00:00",
+    "window_days": 7,
+    "source_count": 141,
+    "by_kind": {"openclaw_history": 124, "codex_history": 17},
+    "by_agent": {"main": 83, "sentinel": 23, "kowalski": 6, "darth-vader": 22, "robotnik": 7},
+    "surfaces": 40,
+    "missing_surfaces": 18,
+    "errors": [],
+    "content_read": false,
+    "disposition": "Inventário é metadado, não cobertura; fontes não selecionadas permanecem pendentes. A primeira saída nativa foi truncada pela apresentação; uma segunda invocação isolada persistiu o JSON completo para leitura, sem mutação de fonte ou encadeamento com Git."
+  },
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/b90dd70e-531c-4bd6-aaf7-c222a6832c64.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "660cdfd2b8eccca19227026711b1842583b465c37216a82f580af6639137fe7a",
+      "bytes": 545746,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"lines": [1, 86], "complete_jsonl_parsed": true, "tool_payloads_semantically_reviewed_in_full": false},
+      "disposition": "Fechamento anterior consumido por identidade: validações e conferência pós-commit PASS, commit 8a6db2a e quatro produtos conferidos; nenhum produto já verificado foi reprocessado.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-10-28.md", "BRAIN/99-SISTEMA/HEALTH.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/359d6c1e-60d5-4aef-ace2-7a1685b0a321.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "8f62cdd5c9949c0b71847a35ba1c7ca3f0607ada1ebd3bf4f1ca9e53fd84e6a1",
+      "bytes": 8859,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"lines": [1, 8], "complete_document_parsed": true},
+      "disposition": "Sync de 28/10 às 09:00 UTC publicou 8a6db2a; transporte confirmado sem criar commit vazio.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-10-28.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/650bf220-3eea-4ce2-ae1f-3bc0695eaf47.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "33189bf5af1a628b8b260fc9213e31314e7bc846a67bd8823d4e7573dbb4e3c0",
+      "bytes": 8836,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"lines": [1, 8], "complete_document_parsed": true},
+      "disposition": "Sync de 28/10 às 15:00 UTC sem mudanças locais; Everything up-to-date.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-10-28.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/3ee9bc77-cfad-45cb-832b-af45f30987b1.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "60df5293b956b8b98fd3dc733e0acecc0b9b6e85eb1b3bf34d9b61e1b2c1dcaa",
+      "bytes": 11180,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"lines": [1, 10], "complete_document_parsed": true},
+      "disposition": "Sync de 28/10 às 20:00 UTC sem mudanças locais; HEAD 8a6db2a alinhado a origin/main.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-10-28.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/c94d98dd-c291-4343-a02a-5f2a360b7022.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "aa89da2977d951f65ba19dc7fd9c0c61d294125ead70e16ed521d34a9a228679",
+      "bytes": 9619,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"lines": [1, 8], "complete_document_parsed": true},
+      "disposition": "Sync de 29/10 às 01:00 UTC sem mudanças locais; Everything up-to-date.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-10-28.md"]
+    }
+  ],
+  "continuity_documents": [
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-10-27.md",
+      "path_base": "brain",
+      "sha256": "c025717856aa1dec38866019f709eeb009bb2d7e662cc54ee1b4a4bb1e767caa",
+      "bytes": 5013,
+      "read_scope": "Documento completo",
+      "disposition": "Continuidade operacional lida; pendências preservadas sem reabertura."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-27-daily.json",
+      "path_base": "brain",
+      "sha256": "6c934cf03e5564294c43df309abb490f67c6b90214bfb953bd5adce05c0579b1",
+      "bytes": 8970,
+      "read_scope": "Documento completo",
+      "disposition": "Disposições e backlog do ciclo anterior reutilizados por identidade; publicação atualizada apenas pelas fontes de sync posteriores."
+    }
+  ],
+  "prior_commit_reconciliation": {
+    "status": "PASS",
+    "commit": "8a6db2a62244e31b07f895412888749c77e88479",
+    "receipt_path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-27-daily.json",
+    "receipt_sha256": "6c934cf03e5564294c43df309abb490f67c6b90214bfb953bd5adce05c0579b1",
+    "receipt_bytes": 8970,
+    "run_id": "b90dd70e-531c-4bd6-aaf7-c222a6832c64",
+    "products_checked_from_commit": 4,
+    "disposition": "Recibo e produtos do ciclo anterior conferidos no commit exato; reconciliação consumida por identidade, sem reprocessamento."
+  },
+  "semantic_search": {
+    "executable": "/data/.openclaw/skills/brain-semantic-search/scripts/search",
+    "mode": "read_only_no_refresh",
+    "index_at": "2026-10-28T02:05:27.323042Z",
+    "query": "Quais decisões, pendências e consolidações já existem para 27 e 28 de outubro de 2026 sobre cobertura diária, transporte Git, Bitdefender e saúde dos agentes?",
+    "disposition": "Localizou princípios e notas existentes; similaridade não foi usada como prova de atualidade, equivalência ou cobertura.",
+    "index_refresh_executed": false
+  },
+  "products": [
+    {"path": "BRAIN/01-DIARIO/2026/2026-10-28.md", "path_base": "brain", "sha256": "95c9c671ba75ef2c6d1afbf5dd994bcafbba1a8788d63f5f9ca802bafea19bcd", "bytes": 4951},
+    {"path": "BRAIN/01-DIARIO/README.md", "path_base": "brain", "sha256": "2a2f1d6342af9c9ec2699f5bee69836c37c634b1b2f9e5daa0cb608567400e11", "bytes": 3824},
+    {"path": "BRAIN/99-SISTEMA/CHANGELOG.md", "path_base": "brain", "sha256": "4afd7021d5f2c4301793d96f70dbbf46366440bb8ba7af4948bcd90d7d2f7080", "bytes": 139507},
+    {"path": "BRAIN/99-SISTEMA/HEALTH.md", "path_base": "brain", "sha256": "8913133d1cbc2a71702a3d89f145e0f072e2decc35f6be33a391c3c3474bf67e", "bytes": 80473}
+  ],
+  "execution_diagnostics": [
+    {
+      "objective": "Extrair texto das fontes JSONL selecionadas",
+      "initial_status": "FAIL",
+      "initial_error": "AttributeError: 'str' object has no attribute 'get' ao presumir que message.content era sempre lista de objetos.",
+      "recovery": "A leitura foi repetida uma única vez com parser que aceita conteúdo string e lista; as cinco fontes selecionadas foram analisadas sem repetir escrita, commit, sync ou operação externa.",
+      "final_status": "PASS"
+    }
+  ],
+  "validation": {
+    "schema_and_relationships": {
+      "status": "PASS",
+      "command": "python3 local validator using note.schema.json and relationship-types.yaml for the four changed Markdown notes",
+      "notes": 4,
+      "relationships": 2,
+      "errors": []
+    },
+    "link_gate": {
+      "status": "PASS",
+      "command": "python3 BRAIN/99-SISTEMA/brain-v2/tools/brain_link_gate.py --root . --json",
+      "markdown_total": 439,
+      "internal_links": 1013,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": {},
+      "duplicate_aliases": {},
+      "secret_candidates": [],
+      "graph_components": 1,
+      "reachability_rate": 1.0,
+      "failures": []
+    },
+    "content_or_coverage_certified": false,
+    "limitation": "Os gates reais certificam schema, vínculos e integridade estrutural; não certificam conteúdo, completude semântica, saúde viva ou cobertura histórica."
+  },
+  "pending": [
+    {"id": "PRIMARY_WINDOW_BACKLOG", "dependency": "Fontes inventariadas não selecionadas, trajectories e índices mutáveis permanecem não lidos."},
+    {"id": "BITDEFENDER_HISTORICAL_COVERAGE", "dependency": "Continuidade integral de 19–23/10 não comprovada após reinícios reais; produto local não fecha a lacuna."},
+    {"id": "BITDEFENDER_XLSX", "dependency": "Pedido detalhado de 20/10 segue sem dataset/XLSX comprovado."},
+    {"id": "FISCAL_UNRESOLVED_OPERATION", "dependency": "Uma operação local UNRESOLVED foi observada em read-only; investigar exige objetivo e autorização próprios, sem replay."},
+    {"id": "HISTORICAL_BRAIN_GAPS", "dependency": "Certificação de 23/10 e cobertura mensal de setembro permanecem parciais; não foram reprocessadas."}
+  ],
+  "publication": {
+    "previous_commit_remote_transport": "8a6db2a published by scheduled sync at 2026-10-28T09:00:19Z",
+    "current_local_commit": "PENDING_AT_RECEIPT_CREATION",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_INVOKED",
+    "remote_confirmation_for_current_cycle": "NOT_QUERIED",
+    "scheduled_git_routines": "UNCHANGED"
+  },
+  "safety": {
+    "silent": true,
+    "messages_sent": 0,
+    "external_access_by_consolidation": false,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "financial_operations": false,
+    "tickets_created_or_changed": false,
+    "publications_by_consolidation": false,
+    "uncertain_effect_replayed": false
+  }
+}

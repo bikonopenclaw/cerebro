@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-28T02:00:00Z'
+updated: '2026-10-29T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,15 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-10-28 (execução em 29/10 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 28/10; a execução ocorreu em 29/10 às 02:00 UTC. Inventário móvel: 141 arquivos, sem erros — 124 OpenClaw e 17 Codex; main 83, Sentinel 23, Darth Vader 22, Robotnik sete e Kowalski seis. Há 18 superfícies ausentes entre 40; contagem não mede cobertura semântica.
+- A transcrição estável da diária anterior foi analisada. Seu fechamento pós-commit comprova, no commit `8a6db2a`, correspondência do recibo e dos quatro produtos declarados; essa reconciliação foi consumida por identidade, sem reprocessamento.
+- Quatro históricos de sync foram lidos integralmente: o ciclo das 09:00 UTC publicou `8a6db2a`; 15:00, 20:00 e 01:00 não encontraram mudanças. Isso prova somente transporte e checkpoints observados.
+- Nenhuma informação temática nova justificou atualização de nota permanente, empresa, pessoa, projeto, agente ou automação. Ausência de fonte estável nova de agentes não-main na seleção não certifica saúde, indisponibilidade ou filas; pendências anteriores permanecem abertas por identidade.
+- Pesquisa semântica local respondeu em modo read-only com índice de 28/10 às 02:05 UTC, sem refresh. Validação estrutural e de schema/vínculos mede integridade documental, não conteúdo, cobertura histórica ou saúde operacional.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-10-28-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Execução, produto, commit local e transporte remoto permanecem dimensões separadas.
 
 ## Verificação de cobertura — 2026-10-27 (execução em 28/10 às 02:00 UTC)
 

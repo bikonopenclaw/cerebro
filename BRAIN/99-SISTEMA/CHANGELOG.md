@@ -4,13 +4,21 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-28T02:00:00Z'
+updated: '2026-10-29T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-10-28, consolidação diária silenciosa — ciclo de 29/10 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico; data UTC da execução preservada separadamente.
+- Consumida por identidade a transcrição estável do ciclo anterior. Ela comprova que recibo e quatro produtos de 27/10 coincidiram no commit exato `8a6db2a`; nenhum produto já verificado foi reprocessado.
+- Revisados quatro históricos estáveis de sync: `8a6db2a` foi publicado às 09:00 UTC de 28/10; 15:00, 20:00 e 01:00 UTC não tinham delta. Transporte observado não foi promovido a cobertura, aceite ou saúde operacional.
+- Inventário de sete dias com 141 arquivos, sem erros, e 18 superfícies ausentes. Pesquisa semântica local executada em modo read-only/sem refresh; cobertura global permaneceu parcial.
+- HEALTH e recibo `brain-v2/reports/coverage-2026-10-28-daily.json` atualizados. Nenhuma promoção temática, exclusão, configuração, reexecução, mensagem, push ou sync foi feita por esta consolidação; commit somente local.
 
 ## 2026-10-27, consolidação diária silenciosa — ciclo de 28/10 às 02:00 UTC
 
