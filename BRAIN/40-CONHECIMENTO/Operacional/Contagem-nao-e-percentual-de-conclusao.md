@@ -10,7 +10,7 @@ tags:
 - provimento-213
 - qualidade
 - semantica
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-11-01T06:00:00Z'
 id: brain-753db6fa62413010ae52
 type: knowledge
 title: Contagem não é percentual de conclusão
@@ -18,7 +18,11 @@ created: '2026-09-21T19:46:23.314357Z'
 created_semantics: Data de registro estruturado; data de origem permanece em ultima_revisao legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-relationships: []
+relationships:
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W44.md
+  reason: Aplica o princípio a inventários temporais cuja contagem não prova identidade, leitura ou cobertura.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-01-weekly.json
 ---
 
 # Contagem nao e percentual de conclusao
@@ -61,3 +65,9 @@ Relatorio, dashboard, Mini App, PDF ou KPI operacional deve carregar contrato se
 No shadow histórico, resultado observado não podia alterar rota ativa. UNKNOWN era excluído da concordância mas reduzia cobertura: comparáveis=MATCH+OVER+UNDER; concordância=MATCH/comparáveis; cobertura=comparáveis/total, denominador zero explicitamente tratado. Falha/timeout não é acordo. Persistência precisava deduplicar execution_id em primário+fallback; duplicata conflitante ou JSON truncado tornava relatório incompleto/erro, sem métricas de sucesso enganadoras. Timeout de worker isolado precisava provar ausência de processos residuais; estes relatos de teste não comprovam ativação real. Fonte: unidades 34546, 34558.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch10-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Inventário móvel exige identidade e disposição — semana 2026-W44
+
+Em uma janela temporal móvel, contagem menor pode significar apenas expiração de arquivos antigos; contagem estável pode ocultar troca de composição. Nenhum dos casos demonstra descarte, leitura, cobertura ou melhora. Para concluir sobre processamento, comparar a identidade das fontes e sua disposição, preservando separadamente superfícies ausentes, índices mutáveis e duplicação potencial entre history e trajectory.
+
+Assim, `126 arquivos inventariados` é metadado de escopo, não denominador de conclusão nem prova de 126 conversas distintas. Síntese em [[01-DIARIO/Semanal/2026-W44|W44]].

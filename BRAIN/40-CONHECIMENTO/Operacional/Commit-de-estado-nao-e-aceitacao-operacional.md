@@ -34,3 +34,9 @@ Em 2026-08-08, o commit CPIW V4 para CNS `023689` passou com `311` operacoes, AI
 - [[40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado|Validacao do caminho final instalado]]
 - [[40-CONHECIMENTO/Operacional/Autorizacao-atomica-nao-herda-escopo|Autorizacao atomica nao herda escopo]]
 - [[01-DIARIO/Semanal/2026-W32|Semana 2026-W32]]
+
+## Commit conferido, publicação e ausência de delta — semana 2026-W44
+
+Três evidências devem permanecer separadas: **bytes conferidos em um commit**, **publicação desse commit no remoto** e **checkpoint posterior sem delta**. A sequência observada de 27 a 30/10 confirmou commits específicos e syncs posteriores estáveis, mas não criou conhecimento temático, cobertura cognitiva ou aceite operacional.
+
+`Everything up-to-date` ou equivalente descreve somente a relação Git naquele instante. Não prova que fontes vivas foram lidas, que o produto está correto fora do escopo validado, que integrações estão saudáveis ou que uma pendência de negócio foi encerrada. Síntese em [[01-DIARIO/Semanal/2026-W44|W44]].

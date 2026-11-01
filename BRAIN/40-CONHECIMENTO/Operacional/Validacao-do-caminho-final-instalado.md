@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-25T06:00:00Z'
+updated: '2026-11-01T06:00:00Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -24,6 +24,10 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W43.md
   reason: Delimita probes mínimos e canários sintéticos à rota e ao efeito realmente exercitados.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-25-weekly.json
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W44.md
+  reason: Delimita PASS offline aos bytes, fixtures e rota realmente exercitados.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-01-weekly.json
 ---
 
 # Validacao do caminho final instalado
@@ -31,9 +35,9 @@ relationships:
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidacao semanal 2026-W31; revisão documental 2026-W41; consolidação semanal 2026-W43
+fonte: consolidacao semanal 2026-W31; revisão documental 2026-W41; consolidações semanais 2026-W43 e W44
 confiabilidade: alta
-ultima_revisao: 2026-10-25
+ultima_revisao: 2026-11-01
 tags: [instalacao, launcher, black-box, dre, runtime, validacao, canario, rota-final]
 ```
 
@@ -194,3 +198,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch29-2026
 No bloqueio CPIW de 07/08 às 18:42, production-apply recalculava a identidade do preflight com transaction id e token de commit, em vez de verificar o registro read-only congelado 662aac832c91bd81d8578ccafceffe266579d192eb3fc8dabae12e3cbbd614e7. FAIL_CLOSED_PREFLIGHT_APPLY_PATH_DRIFT ocorreu antes de AIR/ICD/journal/lock/staging, com commit false e zero mutação. A correção proposta exigia o próprio caminho de apply até a barreira da primeira escrita, sem aproximar sua lógica em outro comando. Esse bloqueio antecede a reconciliação e o commit de 311 operações já registrados; não é impedimento atual nem autoriza retry. Fonte: unidades 32639.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch31-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## PASS offline não herda conectividade ou autorização — semana 2026-W44
+
+Um teste offline pode autenticar pacote, controlador, schema e fixtures e ainda assim não exercer provider, rede, credenciais ou efeito de negócio. O `E2E-02` de 26/10 passou com 13 fixtures, zero chamadas de provider, zero mutações financeiras e zero mudanças instaladas. Essa evidência valida somente o caminho local observado; não demonstra conectividade Notaas/Cresol/SMTP, prontidão fiscal ao vivo, saúde geral do agente nem autorização para emitir, registrar, baixar, remeter ou enviar.
+
+Registrar explicitamente **ambiente exercitado**, **dependências ausentes**, **efeitos iguais a zero** e **gates ainda necessários**. Um PASS estreito não deve ser transportado para produção por semelhança de código ou pacote. Síntese em [[01-DIARIO/Semanal/2026-W44|W44]].

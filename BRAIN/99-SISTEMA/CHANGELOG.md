@@ -4,13 +4,30 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-31T02:00:00Z'
+updated: '2026-11-01T07:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-01, consolidação mensal silenciosa — outubro de 2026
+
+- Criado `BRAIN/01-DIARIO/Mensal/2026-10.md` a partir da leitura integral de W40–W44, com sete aprendizados consolidados e cinco padrões de longo prazo; curadorias semanais aceitas foram reutilizadas sem replay.
+- Atualizado o MOC Diário. O MOC Conhecimento já continha todos os alvos e permaneceu estável; nenhuma nota permanente nova foi criada apenas para registrar atividade.
+- Inventário de 35 dias registrou 933 arquivos e 18 superfícies ausentes entre 40. Busca nativa sem resultado atual suficiente; leitura direta e lexical foram usadas com cobertura global parcial.
+- Triagem lexical avaliou 42 candidatos, 19 sem wikilinks de entrada e saída; nenhum foi arquivado ou excluído porque dependências e desuso não foram demonstrados.
+- HEALTH atualizado. Produto documental parcial, recibo `brain-v2/reports/coverage-2026-11-01-monthly.json` e checkpoint local preservam hashes, referências e dependências exatas.
+- Sem commit, push ou sync por determinação da recuperação operacional; sem mensagem externa, agente Brain, scheduler novo ou mudança de gates PGL/Golden.
+
+## 2026-11-01, consolidação semanal silenciosa — 2026-W44
+
+- Revisados integralmente os cinco diários disponíveis de 25–31/10; 25 e 31/10 não possuem nota, e nenhuma fonte retroativa foi fabricada.
+- Criado `BRAIN/01-DIARIO/Semanal/2026-W44.md` com cinco padrões: separação entre produto/cobertura/transporte, escopo estreito do PASS offline, transporte Git sem ampliação semântica, limite das contagens móveis e estabilidade sem promoção artificial.
+- Atualizadas três notas permanentes existentes: validação do caminho final, commit de estado versus aceitação e contagem versus conclusão. O MOC Diário e HEALTH foram atualizados.
+- Inventário de sete dias com 126 arquivos, sem erros, e 18 superfícies ausentes. Busca nativa sem resultado atual útil e índice persistente local não localizado; leitura direta e busca lexical foram usadas com cobertura global parcial.
+- Nenhum candidato seguro a arquivamento. Recibo `brain-v2/reports/coverage-2026-11-01-weekly.json` e checkpoint local preservam hashes e dependências. Sem commit, push, sync, mensagem externa ou alteração de scheduler nesta recuperação.
 
 ## 2026-10-30, consolidação diária silenciosa — ciclo de 31/10 às 02:00 UTC
 

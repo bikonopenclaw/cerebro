@@ -1,0 +1,331 @@
+{
+  "schema_version": "1.0",
+  "cycle": "monthly",
+  "cycle_at": "2026-11-01T07:00:00Z",
+  "competence": "2026-10",
+  "timezone": "America/Sao_Paulo",
+  "job_id": "c8410fc9-1d2f-4ce0-8847-70e69db6f405",
+  "run_id": "84792b90-9f9c-4eb7-9774-ffff764f6c0f",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "base_commit": "cb98f1f2583e60d8406a8e4975c5de5c9f35ef30",
+  "product_state": "PRODUCT_INCOMPLETE",
+  "local_synthesis_state": "PRODUCED_DOCUMENTARY_PARTIAL",
+  "coverage_complete": false,
+  "blocked_product": "Cobertura integral de outubro e das fontes primárias inventariadas. Dependências: 11 diários ausentes, unidades primárias não revistas integralmente e backlog individualizado dos recibos semanais/diários.",
+  "scope": "Leitura integral de W40-W44, comparação com setembro, consolidação documental, triagem lexical de retenção e validação estrutural. Sem nova leitura integral das conversas brutas, trajectories, payloads, anexos, serviços ou providers.",
+  "working_tree_at_start": {
+    "state": "DIRTY_WITH_ACCEPTED_WEEKLY_PRODUCTS",
+    "base_commit": "cb98f1f2583e60d8406a8e4975c5de5c9f35ef30",
+    "disposition": "Alterações W44 existentes foram preservadas e consumidas por identidade; não foram revertidas, refeitas, commitadas ou publicadas pela mensal."
+  },
+  "weekly_sources_reviewed": [
+    {
+      "id": "weekly-W40",
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W40.md",
+      "path_base": "brain",
+      "sha256": "29ee84c9ab4314cb5f2820c738b8074e1984e65bddd695d9a4f6d41e49d24436",
+      "bytes": 8051,
+      "read_scope": "Documento completo",
+      "disposition": "Síntese e disposições aceitas reutilizadas; nenhuma operação de origem repetida.",
+      "receipt": {
+        "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-04-weekly.json",
+        "path_base": "brain",
+        "sha256": "531da0e508ddbf91d3f6d83a5114894b211a57ae9a5da34fe3b87f501bed4487",
+        "bytes": 18155
+      }
+    },
+    {
+      "id": "weekly-W41",
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W41.md",
+      "path_base": "brain",
+      "sha256": "23f41a5ff932133c8265c44643679d9848344e90f88d2685fe6919408b981d71",
+      "bytes": 7932,
+      "read_scope": "Documento completo",
+      "disposition": "Síntese e disposições aceitas reutilizadas; nenhuma operação de origem repetida.",
+      "receipt": {
+        "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-11-weekly.json",
+        "path_base": "brain",
+        "sha256": "45f85f8fbac78feb90a0a8f7a172b25ceea6a318a327c15a11028d6d0362b75a",
+        "bytes": 14464
+      }
+    },
+    {
+      "id": "weekly-W42",
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W42.md",
+      "path_base": "brain",
+      "sha256": "71e0473b3d0589105f50ce3adc8cee3877e13d7fd9b254037029587d3e194905",
+      "bytes": 7503,
+      "read_scope": "Documento completo",
+      "disposition": "Síntese e disposições aceitas reutilizadas; nenhuma operação de origem repetida.",
+      "receipt": {
+        "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-18-weekly.json",
+        "path_base": "brain",
+        "sha256": "2f54b1e5b0b889def4b3bfa8127282f67104c7ef96fa1cdfc0213efc908a9957",
+        "bytes": 13472
+      }
+    },
+    {
+      "id": "weekly-W43",
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W43.md",
+      "path_base": "brain",
+      "sha256": "40cd54f3af4588f8d7e27df47c4cce722995e39993495b0e4a5c4bb21a10e92f",
+      "bytes": 7555,
+      "read_scope": "Documento completo",
+      "disposition": "Síntese e disposições aceitas reutilizadas; nenhuma operação de origem repetida.",
+      "receipt": {
+        "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-25-weekly.json",
+        "path_base": "brain",
+        "sha256": "940b2c0d47ea9f6216799ed9bc2c194a40cff70e941b99182e1fcf1885bc8d59",
+        "bytes": 14194
+      }
+    },
+    {
+      "id": "weekly-W44",
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W44.md",
+      "path_base": "brain",
+      "sha256": "4bd4c1456e5d56e0a7e32d02f4a5e87d55fc513e5ba34afe130c776fd59cb121",
+      "bytes": 7870,
+      "read_scope": "Documento completo",
+      "disposition": "Síntese e disposições aceitas reutilizadas; nenhuma operação de origem repetida.",
+      "receipt": {
+        "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-01-weekly.json",
+        "path_base": "brain",
+        "sha256": "f1eb3d1169f5e98843222053fc007d65bd376f7c7ac6532e1a2c3e96df7f1bc0",
+        "bytes": 14862
+      }
+    }
+  ],
+  "previous_month": {
+    "path": "BRAIN/01-DIARIO/Mensal/2026-09.md",
+    "path_base": "brain",
+    "sha256": "3807a3074f9f644377f8f5c92a9bab3f692fb841069442b5d739cb73e98f0572",
+    "bytes": 15589,
+    "read_scope": "Documento completo",
+    "disposition": "Comparação longitudinal; estados e lacunas históricas não revalidados."
+  },
+  "diary_presence": {
+    "existing_october_files": 20,
+    "missing_dates": [
+      "2026-10-04",
+      "2026-10-05",
+      "2026-10-11",
+      "2026-10-12",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-18",
+      "2026-10-19",
+      "2026-10-20",
+      "2026-10-25",
+      "2026-10-31"
+    ],
+    "meaning": "Presença documental, não percentual de atividade ou cobertura. Recuperar somente fonte autêntica; nenhum diário retroativo foi criado."
+  },
+  "inventory": {
+    "seven_day": {
+      "artifact": {
+        "path": ".openclaw/tmp/brain-monthly-2026-11-01/inventory-7d.json",
+        "path_base": "workspace",
+        "sha256": "a8a7327ce65a5ded271eddd52fc7d2193e88dbb129d001a6299a34048c9ad5b8",
+        "bytes": 58584
+      },
+      "generated_at": "2026-11-01T07:03:08.437831+00:00",
+      "window_days": 7,
+      "source_count": 126,
+      "by_kind": {
+        "openclaw_history": 113,
+        "codex_history": 13
+      },
+      "by_agent": {
+        "main": 80,
+        "sentinel": 22,
+        "darth-vader": 16,
+        "robotnik": 4,
+        "kowalski": 4
+      },
+      "missing_surfaces": 18,
+      "errors": [],
+      "coverage_complete": false
+    },
+    "thirty_five_day": {
+      "artifact": {
+        "path": ".openclaw/tmp/brain-monthly-2026-11-01/inventory-35d.json",
+        "path_base": "workspace",
+        "sha256": "44ead8d6b2190a439c359909253f2c0c69bd55366e8edb0ca721e1d626d05ed6",
+        "bytes": 378649
+      },
+      "generated_at": "2026-11-01T07:00:35.594721+00:00",
+      "window_days": 35,
+      "source_count": 933,
+      "by_kind": {
+        "codex_history": 189,
+        "openclaw_history": 741,
+        "memory": 3
+      },
+      "by_agent": {
+        "main": 461,
+        "kowalski": 70,
+        "sentinel": 240,
+        "robotnik": 85,
+        "darth-vader": 77
+      },
+      "missing_surfaces": 18,
+      "errors": [],
+      "coverage_complete": false
+    },
+    "disposition": "Inventário somente de metadados. Fontes não selecionadas continuam pendentes; contagem não representa conversas distintas, leitura, descarte ou cobertura."
+  },
+  "semantic_search": {
+    "native_memory_search": "Executada; backend builtin com provider none, resultados históricos de julho sem atualidade suficiente para outubro.",
+    "local_persistent_search": "Atualidade não estabelecida; a indisponibilidade aceita em W44 foi preservada, sem refresh ou instalação.",
+    "status": "LIMITED_NATIVE_RESULTS_LOCAL_INDEX_CURRENTNESS_UNESTABLISHED",
+    "fallback": "Leitura direta de W40-W44 e setembro, navegação das notas-alvo e triagem lexical local.",
+    "index_refresh_executed": false,
+    "external_provider_used": false
+  },
+  "monthly_learnings": [
+    "terminality_requires_lifecycle_product_and_acceptance_convergence",
+    "test_proves_only_exercised_path_environment_and_effect",
+    "git_or_transport_does_not_expand_meaning",
+    "metadata_count_or_silence_does_not_fill_evidence_gap",
+    "detailed_document_is_not_frozen_executable_contract",
+    "recovery_preserves_effects_and_blocks_replay",
+    "no_durable_novelty_is_valid_disposition"
+  ],
+  "long_term_patterns": [
+    "dimension_specific_governance",
+    "narrow_signals_create_false_convergence",
+    "observability_must_preserve_limits",
+    "safe_recovery_preserves_history_and_effects",
+    "selective_synthesis_improves_memory"
+  ],
+  "mocs": {
+    "updated": [
+      "BRAIN/01-DIARIO/README.md"
+    ],
+    "reviewed_unchanged": [
+      "BRAIN/40-CONHECIMENTO/README.md"
+    ],
+    "reason": "Todos os conhecimentos citados já estavam indexados; não se cria alteração vazia para registrar atividade."
+  },
+  "archive": {
+    "scan_artifact": {
+      "path": ".openclaw/tmp/brain-monthly-2026-11-01/archive-candidates.json",
+      "path_base": "workspace",
+      "sha256": "d8ce03256c7aa843c469aeafb3cfff8438e7c5a8bdeb9ff06a14d3963de3884c",
+      "bytes": 15063
+    },
+    "candidate_count": 42,
+    "zero_in_zero_out": 19,
+    "moved": [],
+    "deleted": [],
+    "disposition": "Retidos: desconexão lexical não prova desuso; pacote/histórico controlado, referências de domínio, falta de telemetria e cobertura parcial preservam dependências.",
+    "eligible_for_raw_deletion": false
+  },
+  "products": [
+    {
+      "path": "BRAIN/01-DIARIO/Mensal/2026-10.md",
+      "path_base": "brain",
+      "sha256": "f4f01796a1bb061d5b2bf76cdc7f3528b7aed6ec84e6ff891c211149b39ccd3a",
+      "bytes": 10558
+    },
+    {
+      "path": "BRAIN/01-DIARIO/README.md",
+      "path_base": "brain",
+      "sha256": "3693984d9b1adcf30c13cf7c798930903859627203403766ce6261453a05c8f2",
+      "bytes": 4111
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/HEALTH.md",
+      "path_base": "brain",
+      "sha256": "ed31d3a3c7c5ad51b08e519baae118bbbb1b00997671dbfb0ae25d2cccf437b4",
+      "bytes": 87040
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+      "path_base": "brain",
+      "sha256": "82422871ce220cd9402528552c2139682d80411ee050af76caab5e9918cc7e20",
+      "bytes": 144166
+    }
+  ],
+  "pending": [
+    {
+      "id": "PRIMARY_SOURCE_BACKLOG",
+      "dependency": "Dispor por identidade as unidades relevantes ainda não revistas das 933 entradas inventariadas; metadados e curadorias semanais não equivalem à leitura integral do histórico vivo."
+    },
+    {
+      "id": "MISSING_DAILY_PRODUCTS",
+      "dependency": "11 datas de outubro sem diário, discriminadas em diary_presence; recuperar apenas fonte autêntica, sem reconstrução por silêncio ou proximidade."
+    },
+    {
+      "id": "PRIOR_RECEIPT_BACKLOG",
+      "dependency": "Manter as filas individualizadas dos recibos W40-W44 e diários anteriores, inclusive histories não selecionados, trajectories potencialmente duplicadas e índices mutáveis."
+    },
+    {
+      "id": "BITDEFENDER_PRODUCT",
+      "dependency": "Continuidade histórica integral, entrega externa e XLSX detalhado por empresa/licença continuam sem prova no material revisado; não repetir por inferência."
+    },
+    {
+      "id": "FISCAL_UNRESOLVED",
+      "dependency": "Operação fiscal local UNRESOLVED continua apenas observada; investigação ou replay exigem identidade, escopo e autorização próprios."
+    },
+    {
+      "id": "BUSINESS_GATES",
+      "dependency": "PGL/Golden, owners, terminais financeiros, deploy, produção, homologação e aceite permanecem sujeitos aos gates próprios."
+    }
+  ],
+  "validation": {
+    "structural_gate_before": {
+      "path": ".openclaw/tmp/brain-monthly-2026-11-01/gate-before.json",
+      "path_base": "workspace",
+      "sha256": "57b8fa667036c98bbab98b61557bf316c92468686ce0ea719b7d608b47e0f7cf",
+      "bytes": 353
+    },
+    "structural_gate_after": {
+      "path": ".openclaw/tmp/brain-monthly-2026-11-01/gate-after.json",
+      "path_base": "workspace",
+      "sha256": "6325ac53c1525c268e8fd6fcc9cc83854d7c528d85015d84ccb6082c0ab66940",
+      "bytes": 354
+    },
+    "structural_gate_ok": true,
+    "baseline_structural_metrics": {
+      "markdown_total": 443,
+      "internal_links": 993,
+      "broken_internal_links": 0,
+      "broken_links": [],
+      "uncategorized_markdown": 0,
+      "duplicate_ids": {},
+      "duplicate_aliases": {},
+      "secret_candidates": []
+    },
+    "structural_metrics": {
+      "markdown_total": 444,
+      "internal_links": 1011,
+      "broken_internal_links": 0,
+      "broken_links": [],
+      "uncategorized_markdown": 0,
+      "duplicate_ids": {},
+      "duplicate_aliases": {},
+      "secret_candidates": []
+    },
+    "coverage_not_measured_by_gate": true,
+    "final_readback": "Checkpoint local separado deve registrar releitura deste recibo e verificar referências/hash após persistência; este campo não autoatesta a etapa."
+  },
+  "publication": {
+    "local_commit": "NOT_EXECUTED_FORBIDDEN_BY_CURRENT_RECOVERY",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_INVOKED",
+    "remote_confirmation": "NOT_QUERIED",
+    "scheduled_git_routines": "UNCHANGED"
+  },
+  "safety": {
+    "silent": true,
+    "messages_sent": 0,
+    "external_access": false,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "business_effects": false,
+    "PGL_Golden_gates": "PRESERVED"
+  }
+}

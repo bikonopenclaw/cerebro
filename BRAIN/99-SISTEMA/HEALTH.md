@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-10-31T02:00:00Z'
+updated: '2026-11-01T07:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,25 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação mensal — outubro de 2026 (01/11/2026)
+
+- [[01-DIARIO/Mensal/2026-10|Outubro]]: cinco resumos semanais lidos integralmente e 20 diários existentes representados por suas sínteses aceitas; contagens não são percentual de atividade ou cobertura.
+- Inventário de 35 dias: 933 arquivos, sem erros — 741 OpenClaw, 189 Codex e três memórias; main 461, Sentinel 240, Robotnik 85, Darth Vader 77 e Kowalski 70. Há 18 superfícies ausentes entre 40; conteúdo primário não foi declarado lido por inventário.
+- Sete aprendizados mensais reconciliados sem criar nota permanente nova; o MOC Diário foi atualizado e o MOC Conhecimento permaneceu estável porque os alvos já estavam indexados.
+- Triagem de retenção: 42 candidatos lexicais com pelo menos um lado de wikilink vazio, 19 sem links de entrada e saída; zero movidos e zero excluídos. Dependências de pacote/histórico, falta de telemetria de uso e cobertura parcial impedem arquivamento seguro por contagem.
+- Produto documental local produzido; cobertura integral bloqueada (`PRODUCT_INCOMPLETE`) pelas fontes primárias não lidas, diários ausentes e backlog dos recibos anteriores. Busca nativa sem provedor semântico e sem resultado atual suficiente; leitura direta e lexical foram o fallback.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-01-monthly.json`. Validação estrutural e hashes ficam no checkpoint local; score legado 96/100 mantido sem recálculo e sem equivalência com cobertura.
+- Nenhum commit, push, sync, arquivamento, exclusão, mensagem externa ou mudança de scheduler nesta recuperação. Restrições PGL/Golden e gates vigentes preservados.
+
+## Verificação semanal — 2026-11-01
+
+- [[01-DIARIO/Semanal/2026-W44|W44]]: cinco diários disponíveis de 25–31/10 lidos integralmente; faltam 25 e 31/10, datas de fim de semana, sem inferência de ausência de atividade.
+- Inventário móvel: 126 arquivos, sem erros — 113 OpenClaw e 13 Codex; main 80, Sentinel 22, Darth Vader 16, Kowalski quatro e Robotnik quatro. Há 18 superfícies ausentes entre 40; conteúdo bruto não foi relido nesta semanal.
+- Cinco padrões reconciliados e três notas permanentes existentes atualizadas. Produto local, cobertura histórica, transporte, teste offline e aceite continuam dimensões independentes; restrições PGL/Golden e gates vigentes foram preservados.
+- Síntese documental local produzida; cobertura integral bloqueada (`PRODUCT_INCOMPLETE`) por dois diários ausentes, 126 fontes apenas inventariadas e backlog dos recibos anteriores. Recibo efetivo: `brain-v2/reports/coverage-2026-11-01-weekly.json`.
+- Busca nativa respondeu sem provedor semântico e sem resultado atual útil; artefatos do índice persistente não foram localizados. Leitura direta e busca lexical foram usadas sem refresh. Validação estrutural e hashes ficam no checkpoint local e não medem completude semântica.
+- Nenhum arquivamento/exclusão, commit, push ou sync nesta recuperação. Score legado 96/100 mantido sem recálculo e sem equivalência com cobertura.
 
 ## Verificação de cobertura — 2026-10-30 (execução em 31/10 às 02:00 UTC)
 
