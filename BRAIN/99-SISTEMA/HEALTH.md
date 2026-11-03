@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-01T07:00:00Z'
+updated: '2026-11-03T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,16 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-02 (execução em 03/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 02/11; a execução ocorreu em 03/11 às 02:00 UTC. Inventário móvel: 117 arquivos, sem erros — 109 OpenClaw e oito Codex; main 85, Sentinel 25 e Kowalski sete. Há 18 superfícies ausentes entre 40. Darth Vader e Robotnik sem arquivo na janela não equivalem a inatividade comprovada.
+- A semanal W44 e a mensal de outubro foram consumidas por identidade. O sync de 01/11 às 09:00 UTC publicou `f28602c`; sete checkpoints posteriores examinados permaneceram sem delta. Isso prova transporte observado, não cobertura cognitiva ou saúde operacional geral.
+- Recuperação ARX mensal: quatro handoffs existentes foram reutilizados sem recoleta; quatro PDFs/rascunhos chegaram a `SUCCESS_NO_SEND` e `VALIDATED_NO_SEND`, com inspeção visual sem defeito de layout identificado. A validação nativa adotou os quatro como `PREPARED_NO_SEND`, zero dispatch, zero redispatch e zero envio.
+- O produto ARX está preparado, mas não aprovado para entrega. Permanecem revisões de grafia/gramática e interpretação do recorte; aprovação humana, deduplicação SMTP, submissão, entrega e leitura são gates distintos.
+- O reparo ARX não certifica saúde viva geral nem resolve a falha Bitdefender→NinjaOne observada no fechamento de 01/11. Pendências Bitdefender, XLSX detalhado, operação fiscal `UNRESOLVED` e backlog histórico continuam separadas.
+- Pesquisa semântica local respondeu em modo read-only com índice de 01/11 às 09:02 UTC, sem refresh. Gates estruturais medem schema/vínculos, não conteúdo, cobertura ou saúde viva.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-02-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Execução, produto, commit local e transporte remoto permanecem dimensões separadas.
 
 ## Verificação mensal — outubro de 2026 (01/11/2026)
 

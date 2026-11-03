@@ -113,6 +113,7 @@ Este MOC liga os registros cronologicos do Brain sem mover notas historicas. Ele
 - [[01-DIARIO/2026/2026-10-28|2026-10-28]]
 - [[01-DIARIO/2026/2026-10-29|2026-10-29]]
 - [[01-DIARIO/2026/2026-10-30|2026-10-30]]
+- [[01-DIARIO/2026/2026-11-02|2026-11-02]]
 
 ## Consolidados Semanais
 

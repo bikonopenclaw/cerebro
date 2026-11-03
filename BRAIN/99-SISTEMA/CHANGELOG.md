@@ -4,13 +4,22 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-01T07:00:00Z'
+updated: '2026-11-03T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-02, consolidação diária silenciosa — execução em 03/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico; data UTC da execução preservada separadamente.
+- Atualizado o registro ARX existente: quatro handoffs mensais de outubro foram reutilizados sem recoleta; Kowalski gerou e inspecionou quatro PDFs/rascunhos com `SUCCESS_NO_SEND` e `VALIDATED_NO_SEND`.
+- Registrada a validação nativa posterior: quatro resultados adotados como `PREPARED_NO_SEND`, coleta `COLLECTED`, render `VALIDATED_NO_SEND`, `adopted_existing=true`, zero tentativas de dispatch, zero redispatch e zero envio. Aprovação humana de layout/texto continua pendente.
+- Consumidas por identidade a semanal W44 e a mensal de outubro. O commit `f28602c` foi publicado em 01/11 às 09:00 UTC; sete checkpoints seguintes não tinham delta. Transporte Git não foi promovido a cobertura ou saúde geral.
+- Inventário de sete dias com 117 arquivos, sem erros, e 18 superfícies ausentes. Pesquisa semântica local executada em modo read-only/sem refresh; cobertura global permaneceu parcial.
+- HEALTH e recibo `brain-v2/reports/coverage-2026-11-02-daily.json` atualizados. Nenhuma recoleta, rerender, envio, ticket, exclusão, configuração, mensagem, push ou sync foi feita por esta consolidação; commit somente local.
 
 ## 2026-11-01, consolidação mensal silenciosa — outubro de 2026
 

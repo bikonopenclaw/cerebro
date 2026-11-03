@@ -7,17 +7,17 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-09-21T21:07:33.285014Z'
+updated: '2026-11-03T02:00:00Z'
 ---
 
 # ARX Backup diário → tickets NinjaOne
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15 e requests mensais/qualificacao nativa reconciliadas em 2026-09-16/19
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15, requests mensais/qualificacao nativa reconciliadas em 2026-09-16/19 e recuperacao mensal NO_SEND de outubro validada em 2026-11-02
 confiabilidade: alta
-ultima_revisao: 2026-09-19
-tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski]
+ultima_revisao: 2026-11-02
+tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski, relatorio-mensal, no-send]
 ```
 
 ## Finalidade
@@ -200,6 +200,16 @@ A investigacao separou coleta, render, transporte e leitura humana e preservou o
 - O pedido Alzira terminou `SUCCESS`, QA `PASS` e delivery privado `ACKNOWLEDGED`, usando `192` execucoes autenticadas do recorte de setembro: `191` sucessos, `1` falha e taxa de `99,4792%`. Houve uma recuperacao causal depois de falha no QA visual.
 - O pedido Cartorio Capixaba terminou `SUCCESS`, QA `PASS` e delivery privado `ACKNOWLEDGED`, com `190` execucoes autenticadas e `100%` de sucesso no recorte observado. Cinco recuperacoes causais preservaram a mesma request, as versoes anteriores e os recibos enquanto corrigiam contrato/prova visual e revisoes de apresentacao.
 - No Capixaba, a versao final entregue separou o placar verde `SEM FALHAS NO RECORTE · 01–08/09` da posicao historica de armazenamento em vermelho. Essa correcao de negocio nao alterou a evidencia do provider e nao converteu o terminal tecnico em aceite de negocio automatico.
+
+## Ciclo mensal outubro/2026 — recuperação NO_SEND em 02/11
+
+- Os quatro jobs mensais de Alzira, Camburi, Capixaba e Vila Velha tiveram exceções distintas na agenda de 01/11. A recuperação de engenharia reutilizou handoffs já coletados e reconciliados; não houve nova coleta.
+- Kowalski executou os quatro fluxos com `--no-send`. Todos fecharam `SUCCESS_NO_SEND` e `VALIDATED_NO_SEND`, com quatro PDFs A4 de uma página e rascunhos HTML/texto. A inspeção visual não encontrou corte, sobreposição ou quebra de layout.
+- A ferramenta nativa `puppet_arx_monthly` adotou depois os quatro resultados existentes como `PREPARED_NO_SEND`: coleta `COLLECTED`, render `VALIDATED_NO_SEND`, `adopted_existing=true` e `dispatch_attempt_count=0` nos dois estágios. Nenhum redispatch ou envio externo ocorreu.
+- Aprovação humana continua pendente. Antes de eventual SMTP, revisar: grafia inconsistente de Camburi; frase gramatical nos rascunhos Alzira/Capixaba; leitura de 100% Capixaba restrita às sessões elegíveis observadas; e apresentação da ocorrência recuperada/55 sessões ignoradas de Vila Velha.
+- Os PDFs e rascunhos permanecem fora do Brain/Git. Seus caminhos e hashes estão identificados no recibo diário de 02/11; validação local não equivale a autorização de envio, aceitação SMTP, entrega na caixa ou leitura pelo destinatário.
+
+Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-02-daily.json`. O reparo supera somente a disponibilidade e validação desses produtos; não apaga falhas históricas nem certifica saúde geral do pipeline.
 
 ## Guardrails
 
