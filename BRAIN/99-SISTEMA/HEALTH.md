@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-03T02:00:00Z'
+updated: '2026-11-04T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,15 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-03 (execução em 04/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 03/11; a execução ocorreu em 04/11 às 02:00 UTC. Inventário móvel: 117 arquivos, sem erros — 109 OpenClaw e oito Codex; main 85, Sentinel 25 e Kowalski sete. Há 18 superfícies ausentes entre 40. Ausência de Darth Vader e Robotnik na janela não equivale a inatividade comprovada.
+- A transcrição estável da diária anterior foi consumida por identidade. Seu fechamento pós-commit comprova, no commit `7be83ab`, correspondência do recibo e dos cinco produtos declarados; nenhum produto já verificado foi reprocessado.
+- Quatro históricos estáveis de sync foram lidos integralmente: o ciclo das 09:00 UTC publicou `7be83ab`; 15:00, 20:00 e 01:00 UTC não encontraram mudanças. Isso prova somente transporte e checkpoints observados, não aprovação ARX, cobertura cognitiva ou saúde operacional geral.
+- Nenhuma informação temática nova justificou atualização de pessoa, empresa, projeto, agente, automação ou conhecimento permanente. Pendências ARX, Bitdefender→NinjaOne, cobertura Bitdefender, XLSX, operação fiscal `UNRESOLVED` e backlog histórico continuam abertas por identidade.
+- Uma tentativa de leitura nativa do primeiro histórico de sync foi bloqueada pelo sandbox por caminho fora do workspace; a leitura foi recuperada por parser lexical local somente leitura e o documento completo foi identificado. Pesquisa semântica local respondeu em modo read-only com índice de 03/11 às 02:07 UTC, sem refresh.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-03-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Gates estruturais não certificam conteúdo, completude semântica ou saúde viva.
 
 ## Verificação de cobertura — 2026-11-02 (execução em 03/11 às 02:00 UTC)
 
