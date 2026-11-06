@@ -4,13 +4,22 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-05T02:00:00Z'
+updated: '2026-11-06T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-05, consolidação diária silenciosa — execução em 06/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico; data UTC da execução preservada separadamente.
+- Atualizado o registro existente do Instagram/Robotnik com o rascunho privado FORT: v1 rejeitada como prova de fidelidade, correção com pixels originais e máscaras locais, v5 1080 × 1350 preservada como `DRAFT`, sem aprovação ou publicação.
+- Registrados os limites das revisões Kowalski v2/v3 (`AJUSTAR`): ferramentas canônicas de review indisponíveis, parecer não persistido e ausência de validação da v5 posterior. Nenhuma empresa ou projeto novo foi criado apenas por um job isolado.
+- Consumida por identidade a transcrição estável do ciclo anterior e conferido o commit exato `b40dad2`: recibo e quatro produtos coincidem. O sync de 09:00 UTC publicou o commit; três checkpoints seguintes não tinham delta.
+- Inventário de sete dias com 129 arquivos, sem erros, e 18 superfícies ausentes. Cinco leituras inicialmente inválidas por ausência de `path` foram refeitas individualmente antes da análise. Pesquisa semântica local em read-only/sem refresh não encontrou registro FORT existente; cobertura global permaneceu parcial.
+- HEALTH e recibo `brain-v2/reports/coverage-2026-11-05-daily.json` atualizados. Nenhuma geração, correção de mídia, revisão operacional, exclusão, configuração, mensagem, entrega, publicação, push ou sync foi feita por esta consolidação; commit somente local.
 
 ## 2026-11-04, consolidação diária silenciosa — execução em 05/11 às 02:00 UTC
 

@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-05T02:00:00Z'
+updated: '2026-11-06T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,16 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-05 (execução em 06/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 05/11; a execução ocorreu em 06/11 às 02:00 UTC. Inventário móvel persistido: 129 arquivos, sem erros — 118 OpenClaw e 11 Codex; main 85, Sentinel 25, Robotnik dez e Kowalski nove. Há 18 superfícies ausentes entre 40. Ausência de Darth Vader na janela não equivale a inatividade comprovada.
+- A transcrição estável da diária anterior foi consumida por identidade. Conferência direta no commit `b40dad2` confirmou a correspondência do recibo e dos quatro produtos declarados; nenhum produto já verificado foi reprocessado.
+- Quatro históricos estáveis de sync foram lidos integralmente: 09:00 UTC publicou `b40dad2`; 15:00, 20:00 e 01:00 UTC não encontraram mudanças. Isso prova somente transporte e checkpoints observados.
+- O job FORT produziu uma v5 privada em `DRAFT`, 1080 × 1350, após abandonar a v1 como prova de fidelidade e corrigir a composição com pixels originais e máscaras locais. `approval: null` e `publication: null` foram preservados; alpha manual continua sujeita a contorno/halo.
+- Revisões Kowalski de v2/v3 pediram ajustes, mas as ferramentas canônicas de review estavam indisponíveis e nenhum parecer foi persistido. Não há revisão independente da v5 nesta seleção; produtor, revisor e aceite humano permanecem evidências distintas.
+- Cinco chamadas de leitura falharam por ausência do argumento `path`; todas foram refeitas individualmente com argumentos completos antes da análise, sem derivar conclusão das chamadas inválidas ou repetir mutação. Pesquisa semântica local respondeu em read-only com índice de 05/11 às 02:07 UTC, sem refresh, e não encontrou registro FORT existente.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-05-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Gates estruturais não certificam conteúdo, fidelidade visual, aceite, completude semântica ou saúde viva.
 
 ## Verificação de cobertura — 2026-11-04 (execução em 05/11 às 02:00 UTC)
 

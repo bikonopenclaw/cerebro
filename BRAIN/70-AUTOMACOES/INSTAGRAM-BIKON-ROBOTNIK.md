@@ -11,7 +11,11 @@ relationships:
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos.md
   reason: A campanha de 28/09 evidencia QA vinculado aos bytes e separação de aceite humano e transporte.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-01-daily.json
-updated: '2026-10-01T02:00:00Z'
+- type: derived_from
+  target: BRAIN/01-DIARIO/2026/2026-11-05.md
+  reason: Registra o uso controlado do pipeline em rascunho privado de marca externa, sem ampliar autoridade de publicação.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-05-daily.json
+updated: '2026-11-06T02:00:00Z'
 ---
 
 # Instagram Bikon, Robotnik
@@ -20,7 +24,7 @@ updated: '2026-10-01T02:00:00Z'
 nome: Instagram Bikon Robotnik
 status: contrato_criativo_v1_ativo_primeira_publicacao_confirmada_fechamento_pendente
 responsavel: Robotnik sob coordenação do Puppet Master
-ultima_revisao: 2026-10-01
+ultima_revisao: 2026-11-05
 fonte: conversa Hebert/Puppet Master e workspace Robotnik
 tags: [instagram, meta, robotnik, marketing, bikon]
 ```
@@ -233,6 +237,16 @@ Em 2026-07-10, foi observado rascunho editorial local para tema KEV/PME. A peça
 - Hebert autorizou fracionar o ZIP final. O produtor relatou sete partes; o recorte revisto não comprova recebimento íntegro no destino, QA independente desse hash ou aceite criativo. Pedido de transporte não é aprovação artística nem autorização de publicar/agendar. Nenhuma publicação foi verificada nesta consolidação.
 
 Fontes primárias: Robotnik R54/R215/R217/R222/R223 e Kowalski K56/K60/K62, com hashes/linhas no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-01-daily.json`. Revisão temporária anterior retomada seletivamente; mídias não reinspecionadas e os demais candidatos permanecem pendentes. Os aprendizados de tipografia, camadas e QA concorrente estão em [[40-CONHECIMENTO/Operacional/Validacao-visual-de-relatorios-externos|validação visual]]. Não retomar renderização, enviar ou publicar a partir deste registro histórico.
+
+## Rascunho privado FORT INDÚSTRIA — 2026-11-05
+
+- O job `fort-industria-comparacao-20261105` foi autorizado somente para criação comparativa e revisão internas. A autorização excluiu publicação, agendamento, envio por canal e alteração de políticas, serviços, skills, autenticação ou permissões.
+- O contrato Bikon foi consultado como contrato de processo, mas sua direção visual não foi aplicada à FORT: outra marca não herda logo, paleta, fotografia ou slogan Bikon. Gates de integridade, versão, revisão, aceite e publicação permaneceram separados.
+- A geração v1 alterou geometria/acabamento das arruelas e não serviu como prova de fidelidade. A correção manteve o mesmo job e usou pixels das fotos originais com máscaras locais, sem nova geração.
+- A versão de produtor v5 ficou em 1080 × 1350, sRGB, SHA-256 `f1c014fc67515c56e573148239a39fa37ab31fda3e99ba32ca7de2d44aae4db5`; prévia 360 × 450 `d1465989b9385c5262dbd520470375255715190ae95f5d862158955fd97dcce0`; legenda `da9ddd3323d1b5b455fec0b383a0a2f1d8fe886375586527aa27bfcd9037ec12`.
+- A inspeção do produtor registrou cinco peças separadas, 13 dentes conectados e CTA/contato legíveis. Como a alpha depende de traçados MVG manuais, diferenças de contorno ou halo continuam limitação do artefato.
+- Kowalski revisou as versões v2 e v3 como `AJUSTAR`, mas `media_review_open` e `media_review_verdict` estavam indisponíveis e nenhum parecer canônico foi persistido. Esses pareceres anteriores não validam a v5.
+- Estado preservado: `DRAFT`, `approval: null`, `publication: null`. A v5 requer conferência/aceite humano e, se exigida, revisão independente ligada ao hash final. Não retomar geração, corrigir, entregar ou publicar a partir deste registro.
 
 ## Complementos reconciliados — lote 8 de 2026-09-21
 
