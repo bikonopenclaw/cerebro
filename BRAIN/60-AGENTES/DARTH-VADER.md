@@ -6,8 +6,12 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:50:50.519705Z'
+updated: '2026-11-07T02:00:00Z'
 relationships:
+- type: references
+  target: BRAIN/20-EMPRESAS/BIKON/README.md
+  reason: A integração Asaas e os fluxos fiscal e bancário descritos pertencem à operação da Bikon.
+  source: BRAIN/60-AGENTES/DARTH-VADER.md#asaas-produção-clientes-e-boleto-2026-11-06
 - type: references
   target: BRAIN/70-AUTOMACOES/NOTAAS-NFSE.md
   reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
@@ -30,10 +34,10 @@ relationships:
 
 ```yaml
 categoria: agente_operacional
-fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17, snapshot versionado em 2026-07-11, fechamento/paridade dedicada em 2026-08-23/24 e lote BIKON 4.1 em 2026-08-27
-confiabilidade: alta
-ultima_revisao: 2026-08-28
-tags: [agente, financeiro, faturamento, nfse, boleto, remessa, cresol-api, fip]
+fonte: sessões operacionais visíveis, configuração de skills em 2026-06-17, snapshot versionado em 2026-07-11, fechamento/paridade dedicada em 2026-08-23/24, lote BIKON 4.1 em 2026-08-27 e validações nativas Asaas de 2026-11-06
+confiabilidade: alta para os estados e limites datados; saúde viva e efeitos financeiros futuros exigem evidência própria
+ultima_revisao: 2026-11-06
+tags: [agente, financeiro, faturamento, nfse, boleto, remessa, cresol-api, asaas, fip]
 ```
 
 ## Papel
@@ -44,6 +48,7 @@ Agente operacional financeiro usado para tarefas de faturamento, NFS-e, boletos,
 
 - `notaas-nfse`: uso exclusivo da Darth Vader para NFS-e da Bikon, com segredos fora do Brain/Git.
 - `emitir-nfse-boleto-remessa`: skill geral relacionada a NFS-e, boletos, remessas e API Cresol.
+- `emitir-nfse-boleto-asaas`: skill paralela para boleto Asaas; não substitui a emissão fiscal canônica nem cria fallback automático entre provedores.
 - `boletos-cresol`: skill técnica relacionada a boletos Cresol.
 
 ## Contextos removidos / históricos
@@ -96,6 +101,27 @@ Nova rodada Cresol API em homologacao criou o titulo `22394650` para teste BIKON
 - PDF oficial baixado via API, SHA-256 `7bb77b5480623ac7b0505a5fefbd0b977a0fb311b1e45ff21de7f8e99b309066`;
 - remessa CNAB400 local `cb110857-titulo-22394650-homologacao.rem`, sequencial `2394650`, 3 linhas de 400 posicoes, tipos `0/1/9`, valor total R$ 1,00, validacao estrutural OK e SHA-256 `5602b5efeec58a1e033d2a77cee36644901d15b394ddcdf328848227c76ac2e8`;
 - nenhum uso de producao, upload de remessa, baixa ou envio a cliente.
+
+## Asaas: produção, clientes e boleto — 2026-11-06
+
+A integração Asaas passou a estar disponível por ferramenta nativa `asaas_api`, exclusiva de Darth Vader. Duas leituras nativas registraram conta Bikon autenticada no ambiente de produção, catálogo com 213 operações e 159 paths e estágio `CUSTOMERS_ONLY`. Nesse estágio, `financial_mutations_authorized=false`; autenticação e catálogo não autorizam emissão real.
+
+A carga inicial de 31 clientes foi informada como já concluída e confirmada no escopo das validações. Ela não foi repetida. Esse número é checkpoint declarado do carregamento, não reconciliação independente do cadastro nesta consolidação.
+
+As skills `emitir-nfse-boleto-remessa` (Cresol) e `emitir-nfse-boleto-asaas` (Asaas) coexistem. Hebert escolhe explicitamente o provedor; não há fallback automático. O emissor fiscal canônico foi preservado, portanto selecionar Asaas para boleto não migra nem autoriza NFS-e.
+
+O capability check de boleto Asaas registrou ledger canônico compartilhado, reserva entre provedores e P08 instalado, mas estado `INSTALLED_NOT_LIVE_ISSUANCE_QUALIFIED`: emissão real e recuperação/validação do PDF oficial não foram executadas. Retry automático permanece desabilitado.
+
+Tentativas anteriores pelo executor genérico falharam primeiro no transporte e depois antes do comando por indisponibilidade do executor. Esses bloqueios não foram convertidos em estado do provedor; a validação posterior veio da ferramenta nativa com transporte próprio.
+
+Guardrails adicionais:
+
+- não repetir `sync_customers` apenas para confirmar status;
+- não transferir autorização de Cresol para Asaas, nem o inverso;
+- preparar, autorizar, executar, reconciliar e recuperar artefatos são etapas separadas e vinculadas à mesma identidade de operação;
+- emissão real, cobrança, PDF oficial, baixa, envio e qualquer mutação financeira exigem escopo e evidência próprios.
+
+Fontes: sessões Darth `f64561e0-e7aa-4135-a9ad-9eaaab818176`, `5c69302d-92be-4983-a457-56c737635e0e` e `3ed48f05-7a3d-4db2-b0d8-b06378c18e06`; identidades e limites no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-06-daily.json`.
 
 ## BI financeiro Bikon, 2026-07-10/11
 
@@ -209,6 +235,7 @@ A auditoria de paridade funcional em 2026-08-24 fechou `DARTH_FULL_FUNCTIONAL_PA
 - [[70-AUTOMACOES/boletos-malote/README|Boletos e malote bancário]]
 - [[70-AUTOMACOES/FATURAMENTO-TELEGRAM|Grupos Telegram de faturamento]]
 - [[50-PROJETOS/Em-Andamento/FIP-Bikon-Financial-Intelligence|FIP Bikon Financial Intelligence]]
+- [[20-EMPRESAS/BIKON/README|BIKON]]
 
 ## Conhecimento recuperado dos históricos — revisão 2026-09-21
 

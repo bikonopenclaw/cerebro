@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_date": "2026-11-06",
+  "cycle_timezone": "America/Sao_Paulo",
+  "cycle_at": "2026-11-07T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "284c59b7-5e68-4e5c-98d8-a70f4b6804ef",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1 + BRAIN_DAILY_RELIABILITY_20261026",
+  "base_commit": "9c44af90866486906c64f66cc691de96743ddb37",
+  "product_state": "PRODUCT_INCOMPLETE",
+  "local_synthesis_state": "PRODUCED_DOCUMENTARY_PARTIAL",
+  "coverage_complete": false,
+  "scope": "Revisão seletiva de quatro históricos de sync, três sessões Darth, uma sessão main da Ronda, eventos 3998–4028 do audit canônico e três snapshots locais finais; não revisão integral dos 145 arquivos inventariados.",
+  "inventory": {
+    "path": ".openclaw/tmp/brain-source-inventory-2026-11-06-daily.json",
+    "path_base": "workspace",
+    "sha256": "cc9be0bdc7ce179d22331e5832a6ca8a2299cf8693b0884c4e2f4738a13a6da2",
+    "bytes": 66016,
+    "generated_at": "2026-11-07T02:04:08.390123+00:00",
+    "window_days": 7,
+    "source_count": 145,
+    "by_kind": {"openclaw_history": 129, "codex_history": 16},
+    "by_agent": {"main": 87, "sentinel": 28, "darth-vader": 11, "robotnik": 10, "kowalski": 9},
+    "surfaces": 40,
+    "missing_surfaces": 18,
+    "errors": [],
+    "content_read": false,
+    "disposition": "Inventário obrigatório executado primeiro em saída direta e depois, em chamada isolada, persistido no temporário autorizado para identidade verificável. Metadados não equivalem a leitura; fontes não selecionadas, trajectories, Codex bruto, índices mutáveis e a transcrição viva permanecem pendentes."
+  },
+  "brain_context_reviewed": [
+    {"path": "BRAIN/99-SISTEMA/CONFIG.md", "sha256": "9c30d7fdd2df9e7b6b6e28b4eabdb585c6c59e5c92cdaeb02b378db9a37658bd", "bytes": 6594},
+    {"path": "BRAIN/99-SISTEMA/ROTINA-CONSOLIDACAO.md", "sha256": "53ff9e88f0d6347545eb7cf0f58b5b819cb2cd8add324b134f0f836f43f51ae8", "bytes": 6961},
+    {"path": "BRAIN/01-DIARIO/2026/2026-11-05.md", "sha256": "56351735f1ceb9fed6c53a1399e25e56ae7de09f2c64fef068158ebc885e3a5a", "bytes": 6872},
+    {"path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-05-daily.json", "sha256": "a2a66a7dc9345b99f8580379a03632de3a375817aa71b72d91f266c0d96378ca", "bytes": 15231}
+  ],
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/23ed1102-cce5-458d-90b6-acab9b2faac6.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "ef8ad722ab39189f4f0afe5358440b1b20be2a2cf29b854c40c483909acd0693",
+      "bytes": 9597,
+      "mtime_ns": 1793955622763893250,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"lines": [1, 8], "timestamp_interval": ["2026-11-06T09:00:09.924Z", "2026-11-06T09:00:22.733Z"], "complete_document_parsed": true},
+      "disposition": "Sync de 06/11 às 09:00 UTC publicou o commit 9c44af9 sem criar commit vazio.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-06.md", "BRAIN/99-SISTEMA/HEALTH.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/bdd45297-4bf1-4444-8ecf-edba5e300c62.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "bbb757511f28f91af9d490131ee613350630b1b6d2ca5c83d2d22b507e2de3e2",
+      "bytes": 10810,
+      "mtime_ns": 1793977225439115922,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"lines": [1, 8], "timestamp_interval": ["2026-11-06T15:00:10.195Z", "2026-11-06T15:00:25.312Z"], "complete_document_parsed": true},
+      "disposition": "Sync de 06/11 às 15:00 UTC sem delta; remoto já atualizado.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-06.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/fe253c58-5953-4a69-bcd9-1e391bc4e4f0.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "bbbf548e0a7a98d497eeb108b66ad058dc581251ab2d2898c0f5f9f14e3ad43d",
+      "bytes": 8794,
+      "mtime_ns": 1793995218659558196,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"lines": [1, 8], "timestamp_interval": ["2026-11-06T20:00:04.424Z", "2026-11-06T20:00:18.627Z"], "complete_document_parsed": true},
+      "disposition": "Sync de 06/11 às 20:00 UTC sem delta; Everything up-to-date.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-06.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/aef799f6-2d8b-4661-85d5-4f683e226bf3.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "351ef6109df2f3cd42809de7f1180b39456df965c0aa8ff250bc5a7f5367b74c",
+      "bytes": 9502,
+      "mtime_ns": 1794013217918683213,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"lines": [1, 8], "timestamp_interval": ["2026-11-07T01:00:06.120Z", "2026-11-07T01:00:17.894Z"], "complete_document_parsed": true},
+      "disposition": "Sync de 07/11 às 01:00 UTC sem delta; repositório atualizado.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-06.md", "BRAIN/99-SISTEMA/HEALTH.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/65f0e1ea-7e14-4c86-8ef6-3bb4b2a1e175.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "d5eda7480dc7b4f3b1e0c40f9f5c6bc221977b719f36c9bc6281ee45815760e4",
+      "bytes": 253781,
+      "mtime_ns": 1794004050345983444,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"lines": [1, 50], "timestamp_interval": ["2026-11-06T15:58:25.778Z", "2026-11-06T22:27:30.332Z"], "complete_jsonl_parsed": true, "ronda_orders_grants_and_terminal_outputs_reviewed": true, "embedded_scripts_reviewed_line_by_line": false},
+      "disposition": "Cadeia Ronda: manifests e ordens distintas, rollback por readiness, correções de Origin no Telegram, autenticação web, setup instalado/validado e grant final para acesso individual de Fábio. Resultados foram confrontados com audit, controlador e snapshots finais.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-06.md", "BRAIN/20-EMPRESAS/BIKON/README.md", "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md", "BRAIN/99-SISTEMA/HEALTH.md"]
+    },
+    {
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/f64561e0-e7aa-4135-a9ad-9eaaab818176.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "db0e3d2466834e14e0ffada579f4db1febdaf1c776ee0f5851e3fdc87aad7e91",
+      "bytes": 36967,
+      "mtime_ns": 1793972330214057222,
+      "agent": "darth-vader",
+      "profile": "darth-vader",
+      "read_scope": {"lines": [1, 11], "timestamp_interval": ["2026-11-06T13:31:55.706Z", "2026-11-06T13:38:50.213Z"], "complete_document_parsed": true},
+      "disposition": "Duas tentativas read-only pelo executor genérico falharam no transporte e depois antes do comando. Nenhuma foi promovida a falha do provider ou repetida após efeito incerto.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-06.md", "BRAIN/60-AGENTES/DARTH-VADER.md"]
+    },
+    {
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/5c69302d-92be-4983-a457-56c737635e0e.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "9d0b6e332d2e5cd6f6b11d716acfde9b7953f67e4ab378026c9b7e454d0a3716",
+      "bytes": 10132,
+      "mtime_ns": 1793973988877086130,
+      "agent": "darth-vader",
+      "profile": "darth-vader",
+      "read_scope": {"lines": [1, 7], "timestamp_interval": ["2026-11-06T14:05:36.111Z", "2026-11-06T14:06:28.874Z"], "complete_document_parsed": true},
+      "disposition": "Ferramenta nativa confirmou conta Bikon autenticada em produção, 213 operações, 159 paths, estágio CUSTOMERS_ONLY e mutações financeiras não autorizadas.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-06.md", "BRAIN/20-EMPRESAS/BIKON/README.md", "BRAIN/60-AGENTES/DARTH-VADER.md", "BRAIN/99-SISTEMA/HEALTH.md"]
+    },
+    {
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/3ed48f05-7a3d-4db2-b0d8-b06378c18e06.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "171b977da343335f8ae7a2dc254add285d10ad6a6a730812127376c37b61c564",
+      "bytes": 36604,
+      "mtime_ns": 1793989795831074015,
+      "agent": "darth-vader",
+      "profile": "darth-vader",
+      "read_scope": {"lines": [1, 9], "timestamp_interval": ["2026-11-06T18:29:03.215Z", "2026-11-06T18:29:55.829Z"], "complete_document_parsed": true},
+      "disposition": "Validou as skills Cresol/Asaas paralelas, escolha explícita de Hebert, emissor fiscal preservado e boleto Asaas instalado, mas sem emissão real ou PDF oficial qualificados.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-06.md", "BRAIN/20-EMPRESAS/BIKON/README.md", "BRAIN/60-AGENTES/DARTH-VADER.md"]
+    },
+    {
+      "path": "/data/.openclaw/workspace-sentinel/orchestration/state/audit.jsonl",
+      "path_base": "absolute_local",
+      "sha256": "31e20460871518d4baea104fdc68f5be7e7d366eefd1daaaf4430754a337eb4a",
+      "bytes": 2198452,
+      "mtime_ns": 1794004399569836862,
+      "agent": "sentinel",
+      "profile": "shared_workspace",
+      "read_scope": {"file_lines": 4028, "selected_lines": [3998, 4028], "timestamp_interval": ["2026-11-06T17:05:13.104008Z", "2026-11-06T22:33:19.569388Z"], "selected_ronda_events_parsed": true, "whole_file_semantically_reviewed": false},
+      "disposition": "Eventos Ronda selecionados confirmaram bloqueio inicial, rollback por readiness, web autenticada, setup instalado/validado e acesso de Fábio confirmado. O restante do audit não foi declarado coberto.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-06.md", "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md", "BRAIN/99-SISTEMA/HEALTH.md"]
+    },
+    {
+      "path": "/data/.openclaw/workspace-sentinel/orchestration/state/controller-state.json",
+      "path_base": "absolute_local",
+      "sha256": "1012849027d26f80fa7169221cde4dc55ea0abc08981a438cd5ab708ae5261e9",
+      "bytes": 2125,
+      "mtime_ns": 1794004399565836852,
+      "agent": "sentinel",
+      "profile": "shared_workspace",
+      "read_scope": {"complete_json_parsed": true, "selected_fields": ["active_order", "latest_terminal_order"]},
+      "disposition": "Snapshot das 22:33 UTC: sem ordem ativa; último terminal confirma acesso de Fábio e agenda preservada. Não promovido a saúde viva.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-06.md", "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"]
+    },
+    {
+      "path": "/etc/bikon-ronda/production.json",
+      "path_base": "absolute_local",
+      "sha256": "1826894058876b990c37611a211843d160ad534f7f15130a50ff1a41baa82405",
+      "bytes": 951,
+      "mtime_ns": 1794004267885514862,
+      "agent": "sentinel",
+      "profile": "host_local",
+      "read_scope": {"complete_json_parsed": true, "selected_fields": ["mode", "timezone", "weekdays", "start", "end", "cutoff", "checkpoints", "allowed_user_ids", "enable_external_writes", "catalog_verified"]},
+      "disposition": "Configuração final de produção inspecionada sem publicar IDs privados: dias úteis, 08:00–18:00, checkpoints 08:30/13:00/17:30, cutoff 18:30 e três acessos individuais.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-06.md", "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"]
+    },
+    {
+      "path": "/etc/bikon-ronda/worker-authority.json",
+      "path_base": "absolute_local",
+      "sha256": "dbc1b81129a80de0f51140ecfd394fd45edf8369bece32e0d375678a39390461",
+      "bytes": 2476,
+      "mtime_ns": 1794004268052515270,
+      "agent": "sentinel",
+      "profile": "host_local",
+      "read_scope": {"complete_json_parsed": true, "selected_fields": ["release_sha256", "config_sha256", "delegation", "workflow", "lease_seconds"]},
+      "disposition": "Grant final vincula release/configuração e ações limitadas; existência do grant não prova ciclo futuro nem provider write bem-sucedido.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-06.md", "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"]
+    }
+  ],
+  "read_recovery": {
+    "status": "RECOVERED",
+    "failed_call": {
+      "tool": "read",
+      "objective": "Ler o histórico de sync de 07/11 às 01:00 UTC.",
+      "error": "A ferramenta read recusou caminho fora do sandbox do workspace, embora o argumento path estivesse presente.",
+      "effect": "Nenhuma fonte foi lida e nenhuma mutação foi executada pela chamada bloqueada."
+    },
+    "recovery": {
+      "command": "Parser Python local somente leitura, com JSONL completo e identidade por SHA-256/tamanho.",
+      "scope": "O histórico foi lido integralmente antes da análise; o mesmo parser foi aplicado às demais sessões selecionadas.",
+      "repeated_mutations": false
+    }
+  },
+  "previous_commit_reconciliation": {
+    "status": "PASS",
+    "commit": "9c44af90866486906c64f66cc691de96743ddb37",
+    "receipt": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-05-daily.json",
+    "receipt_sha256_in_commit": "a2a66a7dc9345b99f8580379a03632de3a375817aa71b72d91f266c0d96378ca",
+    "receipt_bytes_in_commit": 15231,
+    "declared_products": 5,
+    "matched_products": 5,
+    "errors": [],
+    "disposition": "Hashes e tamanhos foram conferidos nos blobs do commit exato; working tree cumulativo não foi usado como evidência histórica."
+  },
+  "git_continuity": {
+    "status": "OBSERVED",
+    "commit": "9c44af90866486906c64f66cc691de96743ddb37",
+    "commit_subject": "Brain: consolidação diária 2026-11-05",
+    "remote_transport_observed_at": "2026-11-06T09:00:00Z",
+    "subsequent_sync_checkpoints_without_delta": 3,
+    "disposition": "Publicação e checkpoints observados; não certificam saúde Ronda, emissão Asaas, conteúdo ou cobertura cognitiva."
+  },
+  "semantic_search": {
+    "executable": "/data/.openclaw/skills/brain-semantic-search/scripts/search",
+    "mode": "read_only_no_refresh",
+    "index_at": "2026-11-06T02:10:43.501519Z",
+    "source_digest": "23a40083312aaec85f82e8f8b0cd31349291d7bbc260f1844cbc15f2b27c3566",
+    "query": "Quais registros existentes no Brain tratam das decisões, projetos, automações e riscos atualizados em 6 de novembro de 2026?",
+    "disposition": "Retornou apenas candidatos históricos por similaridade. A busca lexical encontrou os registros existentes BIKON, Darth Vader e Bikon Durable Work Orchestration, que foram atualizados em vez de criar notas temáticas novas.",
+    "index_refresh_executed": false
+  },
+  "native_memory_search": {
+    "query": "Brain consolidação 6 novembro 2026 Ronda Bikon Asaas Darth Vader decisões pendências",
+    "provider": "none",
+    "disposition": "Resultados eram históricos e sem atualidade suficiente para os eventos de 06/11; não foram promovidos. A leitura direta local determinou a seleção efetiva."
+  },
+  "products": [
+    {"path": "BRAIN/01-DIARIO/2026/2026-11-06.md", "path_base": "brain", "sha256": "57d2100c26f8bcd692051d107fb6363e4919ff6af24eab0d419ed438c98d26ac", "bytes": 8384},
+    {"path": "BRAIN/01-DIARIO/README.md", "path_base": "brain", "sha256": "13132244cae9f8d434f7ec4b2211824734c0c9fa864984ba7a5e73ba4a485e47", "bytes": 4326},
+    {"path": "BRAIN/20-EMPRESAS/BIKON/README.md", "path_base": "brain", "sha256": "625f578ce5d03db06340340c632edfc39670bf542ebed699d66ac6c705f09826", "bytes": 23804},
+    {"path": "BRAIN/60-AGENTES/DARTH-VADER.md", "path_base": "brain", "sha256": "da0d3fbc296bbb030155fddd342b07d8739adc5f05497d98681cfa2baf7b7511", "bytes": 27311},
+    {"path": "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md", "path_base": "brain", "sha256": "7213f7bc170739f8608d3a74f1e244f256588586c057c9f7a38d840c2671d70c", "bytes": 17034},
+    {"path": "BRAIN/99-SISTEMA/CHANGELOG.md", "path_base": "brain", "sha256": "ec5a7d8075ef9e0f8fc2fd5014e89ea5cfff503a615711cc65fb6b7f3d7cc0ae", "bytes": 151149},
+    {"path": "BRAIN/99-SISTEMA/HEALTH.md", "path_base": "brain", "sha256": "2ce9446df55f368b701d313280a9e82f899eac74768040a9e184d0fd8cdfc937", "bytes": 96508}
+  ],
+  "source_revalidation": {
+    "status": "PASS",
+    "command": "python3 local receipt identity validator for run/period, twelve sources, seven products and inventory",
+    "checked_sources": 12,
+    "checked_products": 7,
+    "inventory_checked": true,
+    "changed_sources": [],
+    "errors": []
+  },
+  "validation": {
+    "schema_and_relationships": {
+      "status": "PASS",
+      "command": "python3 local validator using note.schema.json and relationship-types.yaml for the seven changed Markdown notes",
+      "notes": 7,
+      "relationships": 23,
+      "errors": []
+    },
+    "link_gate": {
+      "status": "PASS",
+      "command": "python3 BRAIN/99-SISTEMA/brain-v2/tools/brain_link_gate.py --root . --json",
+      "markdown_total": 448,
+      "internal_links": 1058,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": {},
+      "duplicate_aliases": {},
+      "secret_candidates": [],
+      "graph_components": 1,
+      "reachability_rate": 1.0,
+      "failures": []
+    },
+    "content_or_coverage_certified": false,
+    "limitation": "Os gates reais certificam schema, vínculos e integridade estrutural; não certificam conteúdo, saúde viva, aceite, completude semântica, emissão financeira ou cobertura histórica."
+  },
+  "pending": [
+    {"id": "RONDA_FIRST_OPERATIONAL_CYCLE", "dependency": "Setup e acesso convergiram, mas cada ciclo ainda precisa provar ticket diário, painel/checkpoints, fechamento privado, readback e terminalidade sem replay cego."},
+    {"id": "ASAAS_LIVE_ISSUANCE_QUALIFICATION", "dependency": "Boleto real, PDF oficial, reconciliação e rollback Asaas não foram qualificados; autenticação e catálogo não autorizam mutação financeira."},
+    {"id": "FORT_V5_HUMAN_REVIEW", "dependency": "V5 permanece DRAFT; revisão independente do hash final e aceite humano não foram comprovados."},
+    {"id": "ARX_OWNER_APPROVAL", "dependency": "Quatro PDFs e rascunhos de outubro estão PREPARED_NO_SEND/VALIDATED_NO_SEND; revisão de texto/layout, aprovação humana e reconciliação SMTP ainda são gates próprios."},
+    {"id": "PRIMARY_WINDOW_BACKLOG", "dependency": "Fontes inventariadas não selecionadas, trajectories, Codex bruto, índices mutáveis e a transcrição viva permanecem não lidos."},
+    {"id": "BITDEFENDER_NINJAONE_FAILURE", "dependency": "Falha recorrente observada no fechamento de 01/11 exige diagnóstico em linhagem própria; ausência de fonte nova não prova normalização."},
+    {"id": "BITDEFENDER_HISTORICAL_COVERAGE", "dependency": "Continuidade integral de 19–23/10 não comprovada após reinícios reais; produto local não fecha a lacuna."},
+    {"id": "BITDEFENDER_XLSX", "dependency": "Pedido detalhado de 20/10 segue sem dataset/XLSX comprovado."},
+    {"id": "FISCAL_UNRESOLVED_OPERATION", "dependency": "Uma operação local UNRESOLVED foi observada em read-only; investigar exige objetivo e autorização próprios, sem replay."},
+    {"id": "HISTORICAL_BRAIN_GAPS", "dependency": "Certificação de 23/10 e cobertura mensal de setembro permanecem parciais; não foram reprocessadas."}
+  ],
+  "publication": {
+    "previous_commit_remote_transport": "9c44af9 published by scheduled sync at 2026-11-06T09:00:00Z",
+    "current_local_commit": "PENDING_AT_RECEIPT_CREATION",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_INVOKED",
+    "remote_confirmation_for_current_cycle": "NOT_QUERIED",
+    "scheduled_git_routines": "UNCHANGED"
+  },
+  "safety": {
+    "silent": true,
+    "messages_sent": 0,
+    "external_access_by_consolidation": false,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "financial_operations": false,
+    "tickets_created_or_changed": false,
+    "publications_by_consolidation": false,
+    "emails_sent_by_consolidation": false,
+    "uncertain_effect_replayed": false
+  }
+}

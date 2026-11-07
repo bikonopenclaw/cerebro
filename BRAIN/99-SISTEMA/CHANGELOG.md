@@ -4,13 +4,23 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-06T02:00:00Z'
+updated: '2026-11-07T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-06, consolidação diária silenciosa — execução em 07/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico; data UTC da execução preservada separadamente.
+- Atualizados três registros existentes, sem criar nota temática nova: BIKON, Darth Vader e Bikon Durable Work Orchestration.
+- Ronda Bikon consolidada com web autenticada, setup instalado/validado e acesso individual de Fábio confirmado. Agenda, release/config/grant finais, falhas de readiness/`Origin: null` e limites entre terminal persistido e saúde viva foram preservados.
+- Integração Asaas consolidada como ferramenta nativa exclusiva de Darth: conta Bikon autenticada em produção, estágio `CUSTOMERS_ONLY`, skills Cresol/Asaas paralelas sem fallback e emissão/PDF real ainda não qualificados. A carga declarada de 31 clientes não foi repetida.
+- Consumido por identidade o ciclo anterior e conferido o commit exato `9c44af9`: recibo e cinco produtos coincidem. O sync de 09:00 UTC publicou o commit; três checkpoints seguintes não tinham delta.
+- Inventário de sete dias com 145 arquivos, sem erros, e 18 superfícies ausentes. Uma leitura nativa fora do workspace foi bloqueada pelo sandbox e recuperada por parser local somente leitura. Pesquisas local e nativa não foram promovidas além de seus limites; cobertura global permaneceu parcial.
+- HEALTH e recibo `brain-v2/reports/coverage-2026-11-06-daily.json` atualizados. Nenhuma operação Ronda/Asaas, mensagem, ticket, emissão, configuração, push ou sync foi feita por esta consolidação; commit somente local.
 
 ## 2026-11-05, consolidação diária silenciosa — execução em 06/11 às 02:00 UTC
 

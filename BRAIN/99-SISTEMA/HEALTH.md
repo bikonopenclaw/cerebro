@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-06T02:00:00Z'
+updated: '2026-11-07T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,15 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-06 (execução em 07/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 06/11; a execução ocorreu em 07/11 às 02:00 UTC. Inventário móvel persistido: 145 arquivos, sem erros — 129 OpenClaw e 16 Codex; main 87, Sentinel 28, Darth Vader 11, Robotnik dez e Kowalski nove. Há 18 superfícies ausentes entre 40.
+- O commit anterior `9c44af9` foi conferido no objeto Git exato: recibo e cinco produtos declarados coincidem. Quatro históricos de sync foram lidos integralmente; 09:00 UTC publicou o commit, e 15:00, 20:00 e 01:00 UTC não encontraram delta. Transporte não certifica conteúdo ou saúde operacional.
+- Ronda Bikon: audit canônico registrou web autenticada, setup instalado/validado e acesso de Fábio confirmado; release/config/grant finais foram inspecionados por hash. O snapshot das 22:33 UTC estava sem ordem ativa. Essa evidência não prova saúde viva nem sucesso de tickets, provider ou mensagens futuras.
+- Asaas: ferramenta nativa confirmou conta Bikon autenticada em produção, 213 operações, 159 paths, estágio `CUSTOMERS_ONLY` e mutações financeiras não autorizadas. A carga de 31 clientes é checkpoint declarado; emissão real e PDF oficial permanecem não qualificados.
+- A ferramenta `read` foi bloqueada pelo sandbox ao tentar acessar um histórico fora do workspace; a fonte foi lida por parser Python local somente leitura antes das conclusões, sem repetir mutação. Pesquisa semântica local respondeu com índice de 06/11 às 02:10 UTC, read-only/sem refresh; busca nativa trouxe material histórico sem novidade atual promovível.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-06-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Gates estruturais não certificam conteúdo, saúde viva, completude semântica, emissão financeira ou entrega externa.
 
 ## Verificação de cobertura — 2026-11-05 (execução em 06/11 às 02:00 UTC)
 

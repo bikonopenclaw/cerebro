@@ -6,18 +6,26 @@ created: '2026-09-21T19:15:09.943981Z'
 created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-relationships: []
-updated: '2026-10-07T02:00:00Z'
+relationships:
+- type: references
+  target: BRAIN/20-EMPRESAS/BIKON/README.md
+  reason: A Ronda documentada é uma rotina operacional interna da Bikon.
+  source: BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md#ronda-bikon-instalação-e-acesso-2026-11-06
+- type: references
+  target: BRAIN/60-AGENTES/SENTINEL.md
+  reason: Sentinel é owner operacional das ordens canônicas da Ronda no recorte revisado.
+  source: BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md#ronda-bikon-instalação-e-acesso-2026-11-06
+updated: '2026-11-07T02:00:00Z'
 ---
 
 # Bikon Durable Work Orchestration
 
 ```yaml
 categoria: automacao_operacional
-fonte: contrato canonico, requests de 2026-09-16/19 e recusas protegidas de 2026-09-22
-confiabilidade: alta para os eventos citados, sem inferir estado produtivo atual
-ultima_revisao: 2026-10-07
-tags: [bikon, durable-work, relatorios, documentos, sentinel, kowalski, lifecycle, idempotencia]
+fonte: contrato canonico, requests de 2026-09-16/19, recusas protegidas de 2026-09-22 e cadeia canônica Ronda de 2026-11-06
+confiabilidade: alta para os eventos e estados persistidos citados, sem inferir saúde viva ou sucesso de ciclos futuros
+ultima_revisao: 2026-11-06
+tags: [bikon, durable-work, relatorios, documentos, sentinel, kowalski, ronda, ninjaone, telegram, lifecycle, idempotencia]
 ```
 
 ## Finalidade
@@ -63,12 +71,32 @@ Fonte: sessão main `39bfe49e-6317-4005-9e8f-a97b93197adf`, linhas 2–3, e roll
 
 - [[01-DIARIO/2026/2026-09-23|Consolidação e limites de cobertura]].
 
+## Ronda Bikon: instalação e acesso — 2026-11-06
+
+O objetivo `RONDA-BIKON-PRODUCTION-20261106` instalou uma rotina interna de acompanhamento em dias úteis, com janela de 08:00–18:00 em `America/Sao_Paulo`, checkpoints às 08:30, 13:00 e 17:30 e fechamento privado às 18:30. O desenho vincula um ticket diário de controle no NinjaOne, checklist compartilhado de seis itens, painel Kowalski no grupo Suporte Bikon e resumo privado. A configuração persistida mantém três acessos individuais aprovados: Hebert, Felipe e Fábio; não há autorização global do bot.
+
+A cadeia foi executada por ordens normais e grants de uso único sob o controlador canônico. O primeiro deploy web foi bloqueado por falta de manifesto de revisão. Uma tentativa posterior publicou o candidato, mas fez rollback confirmado após o probe imediato falhar por readiness HTTP; a recuperação adicionou espera limitada antes do probe. Duas correções de frontend ainda encontraram `Origin: null` no Telegram. A variante seguinte preservou o guard de URL e passou pela verificação real de autenticação de Hebert antes do setup do worker.
+
+Estados persistidos relevantes:
+
+- `ORDER-RONDA-WEB-DIAGNOSTIC-20261106T1825Z` terminou `RONDA_WEB_TELEGRAM_HEBERT_AUTHENTICATED`;
+- `ORDER-RONDA-WORKER-SETUP-20261106T2155Z` terminou `RONDA_SETUP_INSTALLED_VALIDATED`;
+- `ORDER-RONDA-FABIO-ACCESS-20261106T2215Z` terminou `RONDA_FABIO_ACCESS_CONFIRMED_SCHEDULE_PRESERVED`;
+- release final observado: SHA-256 `a73a4b20077b00e095d91d17f210ec739d27176331b230307d2f83f638ea7c9a`;
+- configuração final observada: SHA-256 `1826894058876b990c37611a211843d160ad534f7f15130a50ff1a41baa82405`;
+- grant final observado: SHA-256 `dbc1b81129a80de0f51140ecfd394fd45edf8369bece32e0d375678a39390461`.
+
+No snapshot local de 06/11 às 22:33 UTC, o controlador estava sem ordem ativa e o último terminal era a confirmação de acesso de Fábio. Isso comprova convergência documental daquele ciclo, não saúde viva do serviço, criação futura de tickets, envio dos lembretes, escrita bem-sucedida no NinjaOne ou entrega Telegram. O ciclo diário deve continuar exigindo identidade de ticket, readback e terminalidade próprios; timeout ou falha de transporte não autoriza replay cego.
+
+Fontes: sessão main `65f0e1ea-7e14-4c86-8ef6-3bb4b2a1e175`, eventos 3998–4028 do audit canônico, `controller-state.json`, configuração e grant finais. Identidades e limites estão no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-06-daily.json`.
+
 ## Relações
 
 - [[70-AUTOMACOES/ARX-BACKUP-NINJAONE|ARX Backup NinjaOne]]
 - [[70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM|Relatorios Operacionais Telegram]]
 - [[60-AGENTES/SENTINEL|Sentinel]]
 - [[60-AGENTES/KOWALSKI|Kowalski]]
+- [[20-EMPRESAS/BIKON/README|BIKON]]
 - [[40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle|Estado terminal requer convergencia do lifecycle]]
 
 ## Complementos reconciliados — lote 6 de 2026-09-21
