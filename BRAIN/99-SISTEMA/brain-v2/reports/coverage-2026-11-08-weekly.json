@@ -1,0 +1,399 @@
+{
+  "schema_version": "1.0",
+  "cycle": "weekly",
+  "cycle_at": "2026-11-08T06:00:00Z",
+  "job_id": "1a1ed29a-fd45-4c5f-93f6-c3b556a2743c",
+  "run_id": "9460f5fb-bd36-4e26-9875-98dbafca3ccc",
+  "session_key": "agent:main:cron:1a1ed29a-fd45-4c5f-93f6-c3b556a2743c:run:9460f5fb-bd36-4e26-9875-98dbafca3ccc",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "base_commit": "d5513cb57de67eb9c92b18a2b069ee6f2e32158c",
+  "product_state": "PRODUCT_INCOMPLETE",
+  "local_synthesis_state": "PRODUCED_DOCUMENTARY_PARTIAL",
+  "coverage_complete": false,
+  "blocked_product": "Cobertura integral dos sete dias e das fontes primárias inventariadas. A síntese documental disponível não encerra o histórico vivo.",
+  "window": {
+    "reference_utc": "2026-11-08T06:00:00Z",
+    "diary_dates_inclusive": [
+      "2026-11-02",
+      "2026-11-08"
+    ],
+    "iso_week": "2026-W45",
+    "timezone": "America/Sao_Paulo",
+    "sunday_still_open": true
+  },
+  "scope": "Leitura integral dos cinco diários existentes, continuidade W44, campos seletivos dos cinco recibos diários e deduplicação lexical. Não revisão nova de conversas brutas, payloads, anexos, serviços ou providers.",
+  "sources_reviewed": [
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-11-02.md",
+      "path_base": "brain",
+      "sha256": "1e1c14dd0ff5f624606e5ff0c9ce9ee9d5134057b7883c84caa42f6eb6e987bf",
+      "bytes": 6580,
+      "agent": "main",
+      "profile": "canonical_Brain",
+      "read_scope": {
+        "lines": [
+          1,
+          70
+        ],
+        "complete_document": true
+      },
+      "disposition": "Preparação ARX sem envio, gates humanos e pendências preservados.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/Semanal/2026-W45.md"
+      ]
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-11-03.md",
+      "path_base": "brain",
+      "sha256": "012e32a2d58c0e379dad37b08998bfc9b63ca1d3fbc919ccde640564c2d6e18c",
+      "bytes": 5223,
+      "agent": "main",
+      "profile": "canonical_Brain",
+      "read_scope": {
+        "lines": [
+          1,
+          63
+        ],
+        "complete_document": true
+      },
+      "disposition": "Continuidade por identidade e transporte Git separado de significado operacional.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/Semanal/2026-W45.md"
+      ]
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-11-04.md",
+      "path_base": "brain",
+      "sha256": "0382d272a8a14e12e64b720224ac66914771fe91c1e4c63cd1a480ba6e95b04e",
+      "bytes": 5251,
+      "agent": "main",
+      "profile": "canonical_Brain",
+      "read_scope": {
+        "lines": [
+          1,
+          63
+        ],
+        "complete_document": true
+      },
+      "disposition": "Estabilidade documental sem promoção artificial de novidade.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/Semanal/2026-W45.md"
+      ]
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-11-05.md",
+      "path_base": "brain",
+      "sha256": "56351735f1ceb9fed6c53a1399e25e56ae7de09f2c64fef068158ebc885e3a5a",
+      "bytes": 6872,
+      "agent": "main",
+      "profile": "canonical_Brain",
+      "read_scope": {
+        "lines": [
+          1,
+          72
+        ],
+        "complete_document": true
+      },
+      "disposition": "Rascunho FORT, identidade de versão, pixels originais e revisão final pendente.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/Semanal/2026-W45.md"
+      ]
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-11-06.md",
+      "path_base": "brain",
+      "sha256": "57d2100c26f8bcd692051d107fb6363e4919ff6af24eab0d419ed438c98d26ac",
+      "bytes": 8384,
+      "agent": "main",
+      "profile": "canonical_Brain",
+      "read_scope": {
+        "lines": [
+          1,
+          90
+        ],
+        "complete_document": true
+      },
+      "disposition": "Ronda instalada sem ciclo vivo comprovado e Asaas autenticado sem emissão qualificada.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/Semanal/2026-W45.md"
+      ]
+    }
+  ],
+  "continuity_documents": [
+    {
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W44.md",
+      "path_base": "brain",
+      "sha256": "4bd4c1456e5d56e0a7e32d02f4a5e87d55fc513e5ba34afe130c776fd59cb121",
+      "bytes": 7870,
+      "read_scope": "Documento completo",
+      "disposition": "Continuidade semanal lida; estágios W44 aceitos e não repetidos."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-02-daily.json",
+      "path_base": "brain",
+      "sha256": "c13b2b59f5f69cc2385759bfbdc557a91f3bdfa3e8ebd93e598b4592b08c662e",
+      "bytes": 17659,
+      "read_scope": "Campos de escopo, fontes, pendências, busca e publicação",
+      "disposition": "Disposições diárias reutilizadas sem reexecução."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-03-daily.json",
+      "path_base": "brain",
+      "sha256": "4ba73924fe38f403b5d0f5d26e593d567b7a41c8731d08d70838764dd525a274",
+      "bytes": 10844,
+      "read_scope": "Campos de escopo, fontes, pendências, busca e publicação",
+      "disposition": "Disposições diárias reutilizadas sem reexecução."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-04-daily.json",
+      "path_base": "brain",
+      "sha256": "ffc8d30c1d5defaf790d377e7aa2b61ac2e60fd47bcf216dc093c10eb8f3a8d9",
+      "bytes": 11502,
+      "read_scope": "Campos de escopo, fontes, pendências, busca e publicação",
+      "disposition": "Disposições diárias reutilizadas sem reexecução."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-05-daily.json",
+      "path_base": "brain",
+      "sha256": "a2a66a7dc9345b99f8580379a03632de3a375817aa71b72d91f266c0d96378ca",
+      "bytes": 15231,
+      "read_scope": "Campos de escopo, fontes, pendências, busca e publicação",
+      "disposition": "Disposições diárias reutilizadas sem reexecução."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-06-daily.json",
+      "path_base": "brain",
+      "sha256": "de4564792e5a56a8c2fd02f123ddb76c341b69e8e01dbe45e4152988f7613d04",
+      "bytes": 19812,
+      "read_scope": "Campos de escopo, fontes, pendências, busca e publicação",
+      "disposition": "Disposições diárias reutilizadas sem reexecução."
+    }
+  ],
+  "inventory": {
+    "command": "python3 scripts/brain-source-inventory.py --days 7",
+    "workdir": "/data/.openclaw/workspace/Brain",
+    "generated_at": "2026-11-08T06:00:15.379134+00:00",
+    "window_days": 7,
+    "coverage_complete": false,
+    "errors": [],
+    "surface_count": 40,
+    "missing_surface_count": 18,
+    "missing_surfaces": [
+      "/home/openclaw/.openclaw-kowalski/agents/main/codex-home/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/main/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/main/codex-home/sessions",
+      "/data/.openclaw/workspace-kowalski/MEMORY.md",
+      "/home/openclaw/.openclaw-kowalski/agents/kowalski/codex-home/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/kowalski/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/kowalski/codex-home/sessions",
+      "/data/.openclaw/workspace-darth-vader/MEMORY.md",
+      "/home/openclaw/.openclaw-kowalski/agents/darth-vader/codex-home/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/codex-home/sessions",
+      "/data/.openclaw/workspace-robotnik/MEMORY.md",
+      "/home/openclaw/.openclaw-kowalski/agents/robotnik/codex-home/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/robotnik/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/robotnik/codex-home/sessions",
+      "/data/.openclaw/workspace-sentinel/MEMORY.md",
+      "/home/openclaw/.openclaw-kowalski/agents/sentinel/codex-home/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/sentinel/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/sentinel/codex-home/sessions"
+    ],
+    "source_rows_disposition": "Todos os históricos e memórias emitidos pelo inventário permaneceram metadata-only, unreviewed/content_read=false nesta semanal. Nenhuma leitura de conteúdo foi alegada por inventário.",
+    "source_count": null,
+    "source_count_limitation": "A chamada obrigatória foi executada e sua saída detalhada foi transmitida, mas não persistida em artefato local; a interface truncou a lista. O total não foi reconstruído por uma segunda execução, para não repetir estágio aceito.",
+    "new_content_reviews": 0
+  },
+  "products": [
+    {
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W45.md",
+      "path_base": "brain",
+      "sha256": "d95d620e7f1e6c0819272e0ec13a8c645ce424f1a214f966663a3c0971e6e8a5",
+      "bytes": 7950
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md",
+      "path_base": "brain",
+      "sha256": "c7a0f8139f8334c8ac4fe48d845f2e3f7a19e3e20302f5a3f068360a9234e0c0",
+      "bytes": 7663
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md",
+      "path_base": "brain",
+      "sha256": "e8fdc82adb9d56382e7513e713745f957828877dca3f50ccd6cae226945c92ad",
+      "bytes": 11942
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado.md",
+      "path_base": "brain",
+      "sha256": "b622c36187959ba809e5c3fc9b3482834099b6f6d61d9898ad89d3a4b77ae808",
+      "bytes": 28332
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md",
+      "path_base": "brain",
+      "sha256": "d205267c45dc13eaf51b7e8582a26add775a0b9d02e666adea6f26b3642fafe9",
+      "bytes": 10601
+    },
+    {
+      "path": "BRAIN/01-DIARIO/README.md",
+      "path_base": "brain",
+      "sha256": "173033b4c98df94907140b56ae0f7bb6dac51f69ab829fa5e5a6fbe1a7282fd2",
+      "bytes": 4426
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+      "path_base": "brain",
+      "sha256": "140dae666f6eb1bc621bf43d81684db5c86387914e56a25bfb5f87d661ad933f",
+      "bytes": 152540
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/HEALTH.md",
+      "path_base": "brain",
+      "sha256": "43d403e556b6a157324a0147d4230b9ce12c6d618c4670a27e9b6c74dfcbefd0",
+      "bytes": 98183
+    }
+  ],
+  "patterns": [
+    "intermediate_state_does_not_transfer_authority",
+    "evidence_bound_to_version_and_dimension",
+    "setup_requires_first_natural_cycle",
+    "catalog_authentication_not_financial_mutation",
+    "identity_continuity_avoids_replay"
+  ],
+  "permanent_promotions": {
+    "count": 4,
+    "mode": "Atualização de notas existentes com síntese transversal W45; nenhuma nota permanente nova.",
+    "targets": [
+      "BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado.md",
+      "BRAIN/40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md"
+    ]
+  },
+  "archive": {
+    "moved": [],
+    "deleted": [],
+    "evaluated_notes": [
+      "BRAIN/01-DIARIO/2026/2026-11-02.md",
+      "BRAIN/01-DIARIO/2026/2026-11-03.md",
+      "BRAIN/01-DIARIO/2026/2026-11-04.md",
+      "BRAIN/01-DIARIO/2026/2026-11-05.md",
+      "BRAIN/01-DIARIO/2026/2026-11-06.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-caminho-final-instalado.md",
+      "BRAIN/40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md"
+    ],
+    "disposition": "Retidas por decisão, limite de autoridade, versão, pendência ou proveniência. Ruído de sync foi reduzido à síntese; cobertura parcial impede declarar candidato seguro.",
+    "eligible_for_raw_deletion": false
+  },
+  "missing_dependencies": [
+    {
+      "expected_path": "BRAIN/01-DIARIO/2026/2026-11-07.md",
+      "exists": false,
+      "role": "missing_dependency_not_evidence",
+      "resolution": "Fim de semana sem nota na rotina útil; recuperar somente fonte autêntica se aparecer."
+    },
+    {
+      "expected_path": "BRAIN/01-DIARIO/2026/2026-11-08.md",
+      "exists": false,
+      "role": "missing_dependency_not_evidence",
+      "resolution": "Domingo ainda aberto no corte; recuperar somente fonte autêntica se aparecer."
+    }
+  ],
+  "pending": [
+    {
+      "id": "PRIMARY_WINDOW_BACKLOG",
+      "dependency": "Ler e dispor unidades relevantes dos históricos/memórias emitidos pelo inventário; metadados não são cobertura."
+    },
+    {
+      "id": "MISSING_DAILY_PRODUCTS",
+      "dependency": "Diários de 07 e 08/11 ausentes; não fabricar retroativamente."
+    },
+    {
+      "id": "RONDA_FIRST_OPERATIONAL_CYCLE",
+      "dependency": "Comprovar ticket, checkpoints, fechamento privado, readback e terminalidade em um ciclo útil natural."
+    },
+    {
+      "id": "ASAAS_LIVE_ISSUANCE_QUALIFICATION",
+      "dependency": "Qualificar boleto real, PDF oficial, reconciliação e rollback sob autorização própria; sem fallback automático."
+    },
+    {
+      "id": "FORT_V5_HUMAN_REVIEW",
+      "dependency": "Revisão independente do hash final e aceite humano da v5 não comprovados."
+    },
+    {
+      "id": "ARX_OWNER_APPROVAL",
+      "dependency": "Quatro produtos permanecem PREPARED_NO_SEND/VALIDATED_NO_SEND; texto, layout, aprovação e SMTP são gates próprios."
+    },
+    {
+      "id": "BITDEFENDER_AND_FISCAL_BACKLOG",
+      "dependency": "Falha Bitdefender→NinjaOne, continuidade 19–23/10, XLSX detalhado e operação fiscal UNRESOLVED permanecem em linhagens próprias."
+    },
+    {
+      "id": "PRIOR_BACKLOG",
+      "dependency": "Manter filas individualizadas dos recibos de 02–06/11 e cadeia W44, inclusive sources não selecionados, trajectories e índices mutáveis."
+    },
+    {
+      "id": "BUSINESS_ACCEPTANCE",
+      "dependency": "PGL/Golden, owners e gates de negócio permanecem próprios; curadoria não concede produção, replay, deploy, homologação ou aceite."
+    }
+  ],
+  "semantic_search": {
+    "native_memory_search": "Respondeu pelo backend builtin com provider none; os resultados foram históricos e não estabeleceram busca semântica por embeddings para a janela.",
+    "status": "SEMANTIC_PROVIDER_UNAVAILABLE_LEXICAL_FALLBACK",
+    "fallback": "Leitura direta dos cinco diários, campos seletivos dos recibos aceitos e busca lexical local nas notas atuais.",
+    "index_refresh_executed": false,
+    "post_edit_index_currentness": "NOT_ESTABLISHED"
+  },
+  "validation": {
+    "structural_gate_before": {
+      "path": ".openclaw/tmp/brain-weekly-20261108/gate-before.json",
+      "path_base": "workspace",
+      "sha256": "e4302a4bca231dee1925408dc9805b1253372bf10895355d41102680c9c2fb11",
+      "bytes": 322
+    },
+    "structural_gate_after": {
+      "path": ".openclaw/tmp/brain-weekly-20261108/gate-after.json",
+      "path_base": "workspace",
+      "sha256": "c72ca626ead5718587dfb2c619635c7d5b288911eadeb7d21c523756a98fc150",
+      "bytes": 321
+    },
+    "structural_gate_ok": true,
+    "structural_metrics": {
+      "markdown_total": 450,
+      "internal_links": 1037,
+      "broken_internal_links": 0,
+      "broken_links": [],
+      "duplicate_ids": {},
+      "duplicate_aliases": {},
+      "secret_candidates": []
+    },
+    "coverage_not_measured_by_gate": true,
+    "final_readback": "VALIDATED_IN_SEPARATE_CHECKPOINT",
+    "checkpoint_path": ".openclaw/tmp/brain-weekly-20261108/checkpoint.json",
+    "checkpoint_path_base": "workspace"
+  },
+  "publication": {
+    "local_commit": "NOT_EXECUTED_FORBIDDEN_BY_CURRENT_RECOVERY",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_INVOKED",
+    "remote_confirmation": "NOT_QUERIED",
+    "scheduled_git_routines": "UNCHANGED"
+  },
+  "operational_recovery": {
+    "invalid_tool_calls": 3,
+    "detail": "Uma tentativa de paralelizar três comandos emitiu chamadas exec sem command; todas foram rejeitadas antes da execução. As consultas necessárias foram recuperadas individualmente com argumentos completos; nenhuma escrita ou transporte foi repetido."
+  },
+  "safety": {
+    "silent": true,
+    "messages_sent": 0,
+    "external_access": false,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "business_effects": false,
+    "PGL_Golden_gates": "PRESERVED"
+  }
+}

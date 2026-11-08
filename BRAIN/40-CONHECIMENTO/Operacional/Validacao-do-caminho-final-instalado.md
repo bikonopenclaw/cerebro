@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-11-01T06:00:00Z'
+updated: '2026-11-08T06:00:00Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Validacao-do-runtime-pos-migracao.md
@@ -28,6 +28,10 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W44.md
   reason: Delimita PASS offline aos bytes, fixtures e rota realmente exercitados.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-01-weekly.json
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W45.md
+  reason: Separa setup e snapshot terminal da evidência do primeiro ciclo natural completo.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-08-weekly.json
 ---
 
 # Validacao do caminho final instalado
@@ -35,9 +39,9 @@ relationships:
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidacao semanal 2026-W31; revisão documental 2026-W41; consolidações semanais 2026-W43 e W44
+fonte: consolidacao semanal 2026-W31; revisão documental 2026-W41; consolidações semanais 2026-W43, W44 e W45
 confiabilidade: alta
-ultima_revisao: 2026-11-01
+ultima_revisao: 2026-11-08
 tags: [instalacao, launcher, black-box, dre, runtime, validacao, canario, rota-final]
 ```
 
@@ -204,3 +208,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch31-2026
 Um teste offline pode autenticar pacote, controlador, schema e fixtures e ainda assim não exercer provider, rede, credenciais ou efeito de negócio. O `E2E-02` de 26/10 passou com 13 fixtures, zero chamadas de provider, zero mutações financeiras e zero mudanças instaladas. Essa evidência valida somente o caminho local observado; não demonstra conectividade Notaas/Cresol/SMTP, prontidão fiscal ao vivo, saúde geral do agente nem autorização para emitir, registrar, baixar, remeter ou enviar.
 
 Registrar explicitamente **ambiente exercitado**, **dependências ausentes**, **efeitos iguais a zero** e **gates ainda necessários**. Um PASS estreito não deve ser transportado para produção por semelhança de código ou pacote. Síntese em [[01-DIARIO/Semanal/2026-W44|W44]].
+
+## Setup não substitui o primeiro ciclo natural — semana 2026-W45
+
+A Ronda Bikon convergiu em web autenticada, release/config/grant, setup instalado e acesso individual. O snapshot terminal sem ordem ativa comprova somente o estado persistido naquele corte. Não demonstra que um dia útil futuro criará o ticket correto, executará checkpoints, produzirá fechamento privado, fará readback dos efeitos e terminará sem replay indevido.
+
+Depois do gate de instalação, exigir pelo menos um ciclo natural completo pela rota que o operador usará, com identidades e recibos para cada efeito externo relevante. Separar: **artefato instalado → processo pronto → disparo elegível → efeito no provider → readback → terminalidade**. Falha em uma seta não autoriza repetir as anteriores cegamente. Síntese e fontes em [[01-DIARIO/Semanal/2026-W45|W45]], sem acionar a Ronda neste ciclo documental.

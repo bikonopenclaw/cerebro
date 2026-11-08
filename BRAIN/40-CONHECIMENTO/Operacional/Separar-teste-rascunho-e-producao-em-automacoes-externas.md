@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-21T19:18:32.790773Z'
+updated: '2026-11-08T06:00:00Z'
 relationships:
 - type: references
   target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
@@ -28,6 +28,10 @@ relationships:
   target: BRAIN/70-AUTOMACOES/INSTAGRAM-BIKON-ROBOTNIK.md
   reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
   source: BRAIN/40-CONHECIMENTO/Operacional/Separar-teste-rascunho-e-producao-em-automacoes-externas.md#relações
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W45.md
+  reason: A semana consolida que estados intermediários não transferem autoridade para o gate seguinte.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-08-weekly.json
 ---
 
 # Separar teste, rascunho e produção em automações externas
@@ -35,9 +39,9 @@ relationships:
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidação semanal 2026-W26 e FIP Document Intake Gateway 2026-08-19
+fonte: consolidações semanais 2026-W26 e W45; FIP Document Intake Gateway 2026-08-19
 confiabilidade: alta
-ultima_revisao: 2026-08-19
+ultima_revisao: 2026-11-08
 tags: [guardrails, dry-run, rascunho, producao, automacoes, comunicacao-externa, aprovacao, hash]
 ```
 
@@ -90,3 +94,9 @@ O relato de 2026-06-26 sobre emissão de NFS-e sem e-mail externo registrou a in
 No episódio Notaas, o cliente local conservava rótulo interno homologation enquanto a configuração/destino e os documentos indicavam efeitos produtivos. Um rótulo de log, modo ou nome de diretório não prova sandbox: validar endpoint, credencial, contrato do ambiente e evidência do resultado antes de chamar uma ação de homologação. Não usar o episódio como autorização para emitir novamente. Fonte: unidades 35061, 36498.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch6-20260921.json`. Casos históricos não comprovam estado atual nem autorizam reexecução.
+
+## Estados intermediários não transferem autoridade — semana 2026-W45
+
+`PREPARED_NO_SEND`, `DRAFT`, `CUSTOMERS_ONLY` e setup instalado são estados úteis, mas cada um termina antes de um efeito diferente. O registro deve declarar o objeto, o que foi validado e o próximo gate ainda bloqueado. Preparação não autoriza envio; rascunho não autoriza publicação; autenticação ou sincronização não autoriza mutação financeira; instalação não comprova o ciclo operacional futuro.
+
+Quando o artefato muda, preservar a identidade da versão. Parecer sobre bytes anteriores não passa automaticamente à versão corrigida. Quando o caminho muda, como entre provedores bancários paralelos, não criar fallback implícito: escolha, autorização, idempotência e reconciliação pertencem ao caminho selecionado. Síntese e fontes em [[01-DIARIO/Semanal/2026-W45|W45]], sem executar qualquer efeito externo.

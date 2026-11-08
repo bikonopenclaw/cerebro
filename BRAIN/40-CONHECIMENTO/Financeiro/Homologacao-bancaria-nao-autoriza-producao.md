@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-03T02:00:00Z'
+updated: '2026-11-08T06:00:00Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/boletos-malote/README.md
@@ -24,6 +24,10 @@ relationships:
   target: BRAIN/40-CONHECIMENTO/Operacional/Confirmacao-antes-de-acoes-com-impacto.md
   reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
   source: BRAIN/40-CONHECIMENTO/Financeiro/Homologacao-bancaria-nao-autoriza-producao.md#relações
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W45.md
+  reason: Delimita catálogo, autenticação e carga de clientes da qualificação de emissão financeira.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-08-weekly.json
 ---
 
 # Homologação bancária não autoriza produção
@@ -31,10 +35,10 @@ relationships:
 ```yaml
 categoria: financeiro
 tipo: guardrail
-fonte: consolidação semanal 2026-W28
+fonte: consolidações semanais 2026-W28 e W45
 confiabilidade: alta
-ultima_revisao: 2026-10-03
-tags: [cresol, homologacao, boletos, remessa, baixa, producao]
+ultima_revisao: 2026-11-08
+tags: [cresol, asaas, homologacao, boletos, remessa, baixa, producao, provider]
 ```
 
 ## Regra
@@ -95,3 +99,9 @@ Hebert pediu explicitamente encerrar a tarefa da API Cresol. A fonte registra fe
 Fonte: sessão main `a7273403-8c6d-4d1c-8cbc-4bcbba62c37c`, pedido linha 4, narrativas linhas 5/32 e resultado terminal linha 31; hashes no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-03-daily.json`. A diária não chamou o banco ou o controlador.
 
 Rastreabilidade: o recibo diário de 02/10 citado na seção anterior não foi localizado no HEAD `f399037` nem na árvore examinada em 03/10. O texto anterior está versionado, mas a referência prevista não prova cobertura por fonte; a lacuna fica preservada no recibo atual, sem inventar fechamento retroativo.
+
+## Catálogo e autenticação não qualificam emissão — semana 2026-W45
+
+A integração Asaas confirmou conta Bikon autenticada, catálogo amplo e estágio `CUSTOMERS_ONLY`; a carga de 31 clientes permaneceu como checkpoint declarado. Isso não qualifica criação de boleto real, recuperação e validação do PDF oficial, reconciliação do estado remoto, rollback ou qualquer mutação financeira. Cada etapa precisa de autorização e evidência próprias.
+
+Cresol e Asaas são caminhos paralelos escolhidos pelo proprietário. A existência de duas skills não cria fallback automático: falha, timeout ou indisponibilidade em um provedor não autoriza submeter a mesma intenção ao outro. Antes de trocar de caminho, reconciliar identidade da intenção, idempotência, efeitos anteriores, autorização, artefatos e estado remoto. Síntese e fontes em [[01-DIARIO/Semanal/2026-W45|W45]], sem operação bancária neste ciclo.

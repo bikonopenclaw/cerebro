@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-07T02:00:00Z'
+updated: '2026-11-08T06:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,16 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação semanal — 2026-11-08
+
+- [[01-DIARIO/Semanal/2026-W45|W45]]: cinco diários disponíveis de 02–08/11 lidos integralmente; faltam 07 e 08/11, datas de fim de semana, sem inferência de ausência de atividade.
+- O inventário obrigatório declarou `coverage_complete=false`, sem erros reportados, e observou 18 superfícies ausentes entre 40. Históricos e memórias recentes foram inventariados como `unreviewed/content_read=false`; conteúdo bruto não foi relido nesta semanal.
+- Cinco padrões foram reconciliados e quatro notas permanentes existentes atualizadas. Estados `PREPARED_NO_SEND`, `DRAFT`, `CUSTOMERS_ONLY` e setup instalado permanecem anteriores a aprovação, transporte, mutação e ciclo vivo; pareceres continuam vinculados à versão e à dimensão exercitadas.
+- Produto documental local produzido; cobertura integral bloqueada (`PRODUCT_INCOMPLETE`) por dois diários ausentes, fontes primárias inventariadas sem leitura de conteúdo e backlog dos recibos anteriores. Ronda, Asaas, FORT, ARX, Bitdefender e operação fiscal `UNRESOLVED` mantêm dependências próprias.
+- Busca nativa respondeu pelo backend interno com `provider: none`; leitura direta dos diários, recibos já aceitos e busca lexical local foram o fallback. Nenhum índice foi instalado, atualizado ou refeito.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-08-weekly.json`. Validação estrutural e hashes ficam no checkpoint local; score legado 96/100 mantido sem recálculo e sem equivalência com cobertura.
+- Nenhum arquivamento/exclusão, commit, push ou sync nesta recuperação. Restrições PGL/Golden, owners e gates vigentes foram preservados.
 
 ## Verificação de cobertura — 2026-11-06 (execução em 07/11 às 02:00 UTC)
 

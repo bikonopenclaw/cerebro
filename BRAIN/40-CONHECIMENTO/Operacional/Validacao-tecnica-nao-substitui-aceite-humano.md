@@ -15,7 +15,11 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W39.md
   reason: A semana reforça que uma correção humana não valida dimensões não testadas.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-27-weekly.json#daily-25-26
-updated: '2026-10-04T06:00:00Z'
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W45.md
+  reason: A semana reforça que pareceres pertencem ao hash e à dimensão efetivamente revisados.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-08-weekly.json
+updated: '2026-11-08T06:00:00Z'
 ---
 
 # Validacao tecnica nao substitui aceite humano
@@ -23,9 +27,9 @@ updated: '2026-10-04T06:00:00Z'
 ```yaml
 categoria: operacional
 tipo: guardrail
-fonte: consolidacao semanal 2026-W33; consolidacao semanal 2026-W37; lote 365 Control em 2026-09-14; consolidacao semanal 2026-W38
+fonte: consolidacoes semanais 2026-W33, W37, W38 e W45; lote 365 Control em 2026-09-14
 confiabilidade: alta
-ultima_revisao: 2026-10-04
+ultima_revisao: 2026-11-08
 tags: [aceite, validacao, fail-closed, provimento-213, fip, kowalski, versao, artefato, entrega]
 ```
 
@@ -106,3 +110,9 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-parallel-batch22-2026
 A campanha revisada em 01/10 e o retorno documental incorporado em 03/10 mostram por que cada prova deve declarar **objeto/hash, dimensão, autor e momento**. Hash/extração relatados pelo destinatário acrescentam integridade de transporte; não se tornam inspeção independente do ZIP, aceite criativo ou autorização de publicação. A rejeição anterior continua na cronologia da versão correspondente, sem impor por inferência o mesmo resultado a bytes não examinados.
 
 O mesmo limite aparece nos relatórios e na qualificação natural do diário de 29/09: PASS técnico limitado, ocorrência natural e amostra suficiente respondem a perguntas diferentes. Registrar o gate que falta, em vez de promover evidência de outra dimensão a conclusão geral. Síntese e fontes em [[01-DIARIO/Semanal/2026-W40|W40]]. PGL/Golden e gates de negócio não foram alterados; a revisão foi documental, sem teste ou envio novo.
+
+## Parecer não atravessa versão nem dimensão — semana 2026-W45
+
+As revisões `AJUSTAR` das versões FORT v2/v3 não validam a v5 posterior, mesmo quando a correção preserva pixels originais e melhora os problemas apontados. O parecer precisa identificar hash/versão, autor, momento, superfície observada e limitações da ferramenta. Se os bytes mudam, o estado da versão anterior continua histórico e a nova versão reabre somente os gates afetados.
+
+O mesmo princípio vale para relatórios ARX: PDF sem corte ou sobreposição comprova a inspeção visual exercitada, não a correção gramatical, a interpretação factual, a aprovação humana, a submissão SMTP ou a entrega. Registrar cada dimensão separadamente evita converter uma prova estreita em aceite geral. Síntese e fontes em [[01-DIARIO/Semanal/2026-W45|W45]].
