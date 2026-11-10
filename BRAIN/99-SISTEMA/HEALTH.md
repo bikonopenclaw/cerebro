@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-08T06:00:00Z'
+updated: '2026-11-10T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,16 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-09 (execução em 10/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 09/11; a execução ocorreu em 10/11 às 02:00 UTC. O inventário móvel declarou `coverage_complete=false`, sem erros e com 18 superfícies ausentes entre 40. Metadados de inventário não comprovam leitura ou saúde viva.
+- A semanal de 08/11 foi consumida por identidade. Conferência direta no commit `c68abf5` confirmou a correspondência do recibo e dos oito produtos declarados; nenhum produto já verificado foi reprocessado.
+- O ciclo semanal ARX → tickets de 07/11 encerrou com código 1, mas `COMPLETED_WITH_BLOCKS`: 11 itens, uma issue, zero mutações e bloqueio de idempotência para Ferreira Rocha/ticket `#2196`. O audit foi identificado por hash, mas seu conteúdo não foi reaberto; reconciliação permanece pendente.
+- O job mensal Capixaba de 01/11 continua com erro de modelo e `delivery_status=unknown` no detalhe do scheduler. Essa visão não prova produto ou SMTP e não apaga a recuperação `PREPARED_NO_SEND` consolidada em 02/11; as identidades permanecem separadas.
+- Nove históricos primários main posteriores à semanal foram revisados: oito syncs e um fechamento executivo. Trajectories, Codex bruto, prompts materializados, índices mutáveis e demais fontes inventariadas permanecem não lidos. Não há evidência nova de saúde viva ou fila integral dos agentes.
+- Tentativas de leitura paralela sem argumentos foram rejeitadas antes da execução e refeitas individualmente. Uma leitura fora do workspace foi bloqueada pelo sandbox e recuperada por parser local; `rg` inexistente foi substituído por busca Python. Nenhuma escrita ou efeito externo foi repetido para apagar diagnósticos.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-09-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Gates estruturais não certificam conteúdo, saúde viva, completude semântica, produto, SMTP ou aceite.
 
 ## Verificação semanal — 2026-11-08
 

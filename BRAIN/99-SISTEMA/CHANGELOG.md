@@ -4,13 +4,22 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-08T06:00:00Z'
+updated: '2026-11-10T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-09, consolidação diária silenciosa — execução em 10/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico; data UTC da execução preservada separadamente.
+- Atualizado o registro ARX existente com o ciclo semanal de 07/11: 11 itens verificados, uma issue, zero mutações e bloqueio `IDEMPOTENCY_STATE` para Ferreira Rocha, associado ao ticket `#2196` e à auditoria `809cad7d…`.
+- Preservado o job mensal Capixaba como erro de modelo/entrega desconhecida na fonte do fechamento. Isso não invalida a recuperação separada `PREPARED_NO_SEND` de 02/11 e não autoriza SMTP, replay ou reclassificação do job original.
+- Consumida por identidade a semanal de 08/11 e conferido o commit exato `c68abf5`: recibo e oito produtos declarados coincidem. O sync de 09:00 UTC publicou o commit; sete checkpoints posteriores não tinham delta.
+- Inventário obrigatório executado com `coverage_complete=false`, sem erros e 18 superfícies ausentes. Foram lidos nove históricos primários main posteriores à semanal; trajectories, Codex bruto, prompts materializados, índices mutáveis e demais fontes inventariadas continuam pendentes. Pesquisa semântica local executada sem refresh.
+- HEALTH e recibo `brain-v2/reports/coverage-2026-11-09-daily.json` atualizados. Nenhuma mensagem, ticket, reenvio, correção operacional, publicação, push ou sync foi feita por esta consolidação; commit somente local.
 
 ## 2026-11-08, consolidação semanal silenciosa — 2026-W45
 
