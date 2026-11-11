@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_at": "2026-11-11T02:00:00Z",
+  "cycle_date": "2026-11-10",
+  "timezone": "America/Sao_Paulo",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "c5b767a7-8f97-4128-9b97-323128e72f11",
+  "session_key": "agent:main:cron:d95bbe73-24d9-4e2b-ba57-0032082bb54b:run:c5b767a7-8f97-4128-9b97-323128e72f11",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1; BRAIN_DAILY_RELIABILITY_20261026",
+  "base_commit": "2c70cfd2f9019c3a6989f93282c423826aba60fd",
+  "product_state": "PRODUCED_DOCUMENTARY_PARTIAL",
+  "coverage_complete": false,
+  "scope": "Revisão seletiva das fontes primárias posteriores ao fechamento de 09/11, continuidade Git e artefatos locais delimitados da Ronda Bikon. Não revisão integral dos sete dias, trajectories, Codex bruto, prompts materializados, índices mutáveis, payloads externos ou demais históricos inventariados.",
+  "window": {
+    "inventory_days": 7,
+    "reference_utc": "2026-11-11T02:00:00Z",
+    "cycle_date_brt": "2026-11-10",
+    "selection_after": "2026-11-10T02:09:32Z",
+    "selection_through": "2026-11-11T01:00:18Z",
+    "current_run_excluded": true
+  },
+  "inventory": {
+    "command": "python3 /data/.openclaw/workspace/Brain/scripts/brain-source-inventory.py --days 7",
+    "workdir": "/data/.openclaw/workspace/Brain",
+    "generated_at": "2026-11-11T02:00:58.094979+00:00",
+    "output_sha256": "84cfd2cae3f4f41d4f8b8552e12d89ae6e8151efbe1faaf4ec789690f434179c",
+    "output_bytes": 58978,
+    "coverage_complete": false,
+    "errors": [],
+    "surface_count": 40,
+    "missing_surface_count": 18,
+    "source_count": 127,
+    "kind_counts": {"openclaw_history": 114, "codex_history": 13},
+    "agent_counts": {"main": 78, "sentinel": 19, "darth-vader": 11, "robotnik": 10, "kowalski": 9},
+    "interpretation": "O inventário lista metadados; não lê conteúdo nem comprova saúde viva, ausência de atividade ou cobertura semântica. A primeira execução foi aceita, mas a saída transmitida ficou truncada; o mesmo inventário somente leitura foi executado novamente para persistir o JSON completo em diretório temporário autorizado e produzir este resumo verificável."
+  },
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/9e7fc978-437f-4248-b13b-fdd24bd43d6f.jsonl",
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "sha256": "6a267cd0b9087488707000f59de85f8063b972d403d100d28f46c243e25be52a",
+      "bytes": 501512,
+      "read_scope": {"lines": [1, 102], "complete_document": true},
+      "disposition": "Promovidos por identidade o defeito de readback privado, as tentativas 6000 recusadas sem efeito, a finalização UI 5000 de #2210, a ordem de correção final e a emissão do grant. Alegações intermediárias só foram aceitas quando corroboradas por audit/estado local posterior.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-10.md", "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md", "BRAIN/20-EMPRESAS/BIKON/README.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/87998e86-eaa9-42f0-9c99-004c09330fe2.jsonl",
+      "agent": "sentinel",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "sha256": "5bdcc0efb95714324a230f6d5863ac3bf7993e76794dcb5d9d8ba1906c96fa6a",
+      "bytes": 43894,
+      "read_scope": {"lines": [1, 11], "complete_document": true},
+      "disposition": "Preservado o bloqueio fail-closed do diagnóstico sem ordem ativa e a ausência de GET/provider/refresco/mutação. O bloqueio foi posteriormente resolvido por nova ordem canônica, sem reclassificar a execução bloqueada como sucesso.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-10.md", "BRAIN/99-SISTEMA/HEALTH.md"]
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/8f0c314c-a5c4-4cd5-b470-b19658e596aa.jsonl",
+      "agent": "kowalski",
+      "profile": "kowalski",
+      "kind": "openclaw_history",
+      "sha256": "e96ef0e923872ba1ca1347389990cbbfd32652b606ae68b295c5878fa8b21b2f",
+      "bytes": 39777,
+      "read_scope": {"lines": [1, 14], "complete_document": true},
+      "disposition": "Fábio Fidelis foi identificado como responsável, sem resposta aos seis itens. O reconhecimento permaneceu conversacional e não foi tratado como persistência retroativa no snapshot já congelado.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-10.md", "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/533e9139-b09f-4eca-9b23-7d31ea5c766b.jsonl",
+      "agent": "main", "profile": "main", "kind": "openclaw_history",
+      "sha256": "e979122f278998071b9845e1dc8c3aaa61ef0a399b0984fd335b80d44e32f466", "bytes": 11057,
+      "read_scope": {"lines": [1, 10], "complete_document": true},
+      "disposition": "Sync de 10/11 às 09:00 UTC publicou 2c70cfd; promovido somente como transporte Git.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-10.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/6869fa1b-d04d-43d1-89c7-9e52749f0ece.jsonl",
+      "agent": "main", "profile": "main", "kind": "openclaw_history",
+      "sha256": "301896484988575147f30a6987e97fa4af96985009d057afce28f59587805018", "bytes": 9833,
+      "read_scope": {"lines": [1, 8], "complete_document": true},
+      "disposition": "Sync de 10/11 às 15:00 UTC sem delta; continuidade Git somente.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-10.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/da6545ff-23b8-469a-8bbb-326c5711be25.jsonl",
+      "agent": "main", "profile": "main", "kind": "openclaw_history",
+      "sha256": "6f5c27e0c70761859e5f2813b23acb2e557389d03eb5cd56f137dca8cc7dc514", "bytes": 9366,
+      "read_scope": {"lines": [1, 8], "complete_document": true},
+      "disposition": "Sync de 10/11 às 20:00 UTC sem delta; continuidade Git somente.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-10.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/4f411771-6e7c-4653-90da-b377d157c94b.jsonl",
+      "agent": "main", "profile": "main", "kind": "openclaw_history",
+      "sha256": "abaef58bde046b57c02c2100d82a3c33d65cf0e4db28653cf8289536dd8494b6", "bytes": 9822,
+      "read_scope": {"lines": [1, 8], "complete_document": true},
+      "disposition": "Sync de 11/11 às 01:00 UTC sem delta; continuidade Git somente.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-10.md"]
+    },
+    {
+      "path": "/data/.openclaw/workspace-sentinel/orchestration/state/audit.jsonl",
+      "agent": "sentinel", "profile": "shared_workspace", "kind": "local_governance_audit",
+      "sha256": "c859dcb4ca46684d86653202bf2cee406e5e0294fa810a3f951bf4aecc194284", "bytes": 4739255,
+      "read_scope": {"lines": [8559, 8578], "complete_document": false, "selection": "Eventos das ordens UI, correção final e ciclos Ronda de 17:30/18:30."},
+      "disposition": "Corroborados terminais #2210, deploy/reconciliação final e SUCCESS das ordens naturais de 10/11. Eventos fora do intervalo não foram declarados lidos.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-10.md", "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md", "BRAIN/99-SISTEMA/HEALTH.md"]
+    },
+    {
+      "path": "/data/.openclaw/workspace-sentinel/orchestration/state/controller-state.json",
+      "agent": "sentinel", "profile": "shared_workspace", "kind": "local_governance_state",
+      "sha256": "f3b75752fc7ad34671f48acdffbb50ceef887fefc407f6e6ae36848a9f8acb5f", "bytes": 2086,
+      "read_scope": {"lines": [1, 1], "complete_document": true},
+      "disposition": "Snapshot local observado: controller IDLE, sem ordem ativa, último terminal C21... SUCCESS. Estado é observação e não disparou execução.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-10.md", "BRAIN/99-SISTEMA/HEALTH.md"]
+    },
+    {
+      "path": "/var/lib/bikon-ronda/orders/ORDER-RONDA-C21F749518C649D3A03362EE5A56A2AC.md",
+      "agent": "sentinel", "profile": "ronda_runtime", "kind": "local_order",
+      "sha256": "5651926259f887e6cd65646a77df3fd89b3440aeeed6402f10042373e62e60a9", "bytes": 929,
+      "read_scope": {"lines": [1, 2], "complete_document": true},
+      "disposition": "Confirmados business key de 10/11 e bindings exatos de release/config/grant na ordem natural das 18:30 BRT.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-10.md", "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"]
+    },
+    {
+      "path": "/var/lib/bikon-ronda/ronda.sqlite",
+      "agent": "sentinel", "profile": "ronda_runtime", "kind": "local_sqlite_readonly",
+      "sha256": "ea4f18f4a9e357b7091b3a7253b8ca380a10ea2303e89332c9b11d3ab6ba756a", "bytes": 114688,
+      "read_scope": {"complete_document": false, "query_scope": "PRAGMA de tabelas/colunas e dez linhas recentes de operations/rounds; chaves create/summary/close/panel/checkpoints de 09–10/11."},
+      "disposition": "Confirmados #2215, 0/6, resumo privado INCOMPLETO, close 5000 e painel confirmed; #2210 reconciliado 5000. O snapshot de 10/11 permaneceu sem responsável persistido.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-10.md", "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"]
+    },
+    {
+      "path": "/etc/bikon-ronda/production.json",
+      "agent": "sentinel", "profile": "ronda_runtime", "kind": "local_config_hash",
+      "sha256": "36714d89420609c20c267cdd4f541119c9fb631fd5862fb158e600fbebae9365", "bytes": 951,
+      "read_scope": {"lines": [1, 43], "complete_document": true, "content_promoted": "Somente identidade/hash e closed_status 5000; credenciais não registradas."},
+      "disposition": "Hash instalado corroborado; nenhum segredo foi transcrito para o Brain.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"]
+    },
+    {
+      "path": "/etc/bikon-ronda/worker-authority.json",
+      "agent": "sentinel", "profile": "ronda_runtime", "kind": "local_grant_hash",
+      "sha256": "7814d1f6fbc2f3d0925045ea55b16bfc97e37427d2554e8766b98a83426c87ae", "bytes": 2476,
+      "read_scope": {"lines": [1, 79], "complete_document": true, "content_promoted": "Somente identidade/hash; payload de autoridade não reproduzido."},
+      "disposition": "Hash instalado corroborado; o grant não foi reutilizado nem modificado pela consolidação.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"]
+    }
+  ],
+  "installed_release_observation": {
+    "path": "/opt/bikon-ronda/current",
+    "resolved_target": "/opt/bikon-ronda/releases/c727f3ae7b4f9a50ab106c335185555dc1040af4a150bc384cbc0ccea4a66b3d",
+    "observed_read_only": true,
+    "health_certified": false
+  },
+  "continuity_documents": [
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-09-daily.json",
+      "commit": "2c70cfd2f9019c3a6989f93282c423826aba60fd",
+      "sha256": "0e78024e07a482460ca54717c8f281d7ef5c6c7863e808753b8a74cccdea6cd5",
+      "bytes": 13463,
+      "disposition": "Recibo anterior consumido por identidade; os cinco produtos declarados foram conferidos no commit exato e coincidiram por hash e tamanho. Nenhum produto foi reprocessado."
+    }
+  ],
+  "products": [
+    {"path": "BRAIN/01-DIARIO/2026/2026-11-10.md", "sha256": "1e1e7b8e727e22eb2ffc4a109a392b2595ff0f6ab0f6dcb46bc1b5b92908dd91", "bytes": 8397},
+    {"path": "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md", "sha256": "97f548c6f569b724c8f3f76b8ffaa7c725fa4ee954233f01e45027f2b6311410", "bytes": 20209},
+    {"path": "BRAIN/20-EMPRESAS/BIKON/README.md", "sha256": "ec267f8bd7f89cd6c5c1237205386591ecefdb45b5d209d0daee2b804334e655", "bytes": 24409},
+    {"path": "BRAIN/01-DIARIO/README.md", "sha256": "285b95e36add104c64aeb9756481e2eb1a52441b7f799df2d777809dd0944ba5", "bytes": 4512},
+    {"path": "BRAIN/99-SISTEMA/CHANGELOG.md", "sha256": "7c60a78e5431be52c609df4fcd4bf63ab2f4f4c95acd7e709207f29ddab3aeef", "bytes": 155853},
+    {"path": "BRAIN/99-SISTEMA/HEALTH.md", "sha256": "80351a7c50e51d5a7fa4345d7fd8747789a416277badf23db079e857a0810456", "bytes": 102712}
+  ],
+  "knowledge_dispositions": {
+    "updated_existing": [
+      "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md",
+      "BRAIN/20-EMPRESAS/BIKON/README.md",
+      "BRAIN/01-DIARIO/README.md",
+      "BRAIN/99-SISTEMA/CHANGELOG.md",
+      "BRAIN/99-SISTEMA/HEALTH.md"
+    ],
+    "created_required_daily": ["BRAIN/01-DIARIO/2026/2026-11-10.md"],
+    "new_permanent_notes": [],
+    "new_people_companies_projects": [],
+    "archive_or_delete": [],
+    "reason": "A novidade útil pertence à automação e empresa existentes; o diário é produto obrigatório. A identificação tardia de responsável não justificou pessoa nova nem reescrita do snapshot."
+  },
+  "pending": [
+    {"id": "PRIMARY_WINDOW_BACKLOG", "dependency": "Trajectories, Codex bruto, prompts materializados, índices mutáveis e demais históricos/memórias inventariados não foram revisados integralmente. Saída da janela não constitui disposição."},
+    {"id": "RONDA_RESPONSIBLE_PERSISTENCE", "dependency": "Definir, se necessário, persistência explícita para responsável sem resposta e regra temporal após o cutoff; conversa solta não altera snapshot congelado."},
+    {"id": "RONDA_RESOLVED_TO_CLOSED_OBSERVATION", "dependency": "A transição automática 5000→6000 em três dias não foi aguardada ou revalidada nesta consolidação; não disparar mutação para testá-la."},
+    {"id": "PRIOR_BACKLOG", "dependency": "ARX Ferreira/idempotência, Capixaba, Asaas, FORT, ARX preparado sem envio, Bitdefender, operação fiscal e filas de cobertura anteriores continuam por identidade; este ciclo não as encerra."},
+    {"id": "LIVE_AGENT_HEALTH_UNPROVEN", "dependency": "Controller IDLE, terminal SUCCESS, hashes e operações confirmadas não comprovam saúde viva, integrações ou fila integral dos agentes."}
+  ],
+  "semantic_search": {
+    "command": "/data/.openclaw/skills/brain-semantic-search/scripts/search \"Quais decisões, projetos, riscos e aprendizados de 10 de novembro de 2026 já existem no Brain e devem ser atualizados sem duplicação?\"",
+    "mode": "read_only_no_refresh",
+    "index_at": "2026-11-10T02:11:46.031597Z",
+    "status": "COMPLETED_CANDIDATES_ONLY",
+    "disposition": "Candidatos históricos orientaram navegação; equivalência, cobertura e estado atual não foram inferidos.",
+    "index_refresh_executed": false
+  },
+  "validation": {
+    "json_parse": {"status": "PASS", "command": "python3 -m json.tool BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-10-daily.json >/dev/null"},
+    "schema_and_relationships": {"status": "PASS", "command": "python3 local validator using note.schema.json and relationship-types.yaml for the six changed Markdown notes", "notes": 6, "relationships": 18, "errors": []},
+    "link_gate": {
+      "status": "PASS",
+      "command": "python3 BRAIN/99-SISTEMA/brain-v2/tools/brain_link_gate.py --root . --json",
+      "markdown_total": 451,
+      "internal_links": 1077,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": {},
+      "duplicate_aliases": {},
+      "secret_candidates": [],
+      "graph_components": 1,
+      "reachability_rate": 1.0,
+      "failures": []
+    },
+    "content_or_coverage_certified": false,
+    "limitation": "Os gates reais certificam schema, vínculos e integridade estrutural; não certificam conteúdo, cobertura semântica, saúde viva, verificações operacionais, provider, transporte ou aceite."
+  },
+  "publication": {
+    "previous_commit_remote_transport": "2c70cfd published by scheduled sync at 2026-11-10T09:00:00Z",
+    "current_local_commit": "PENDING_AT_RECEIPT_CREATION",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_INVOKED",
+    "remote_confirmation_for_current_cycle": "NOT_QUERIED",
+    "scheduled_git_routines": "UNCHANGED"
+  },
+  "operational_recovery": {
+    "invalid_tool_calls": 4,
+    "invalid_tool_detail": "Uma tentativa de paralelização emitiu duas leituras, uma busca de memória e um exec sem argumentos; todas foram rejeitadas na validação antes de execução. Cada chamada necessária foi refeita individualmente com argumentos completos.",
+    "parser_failure": "O primeiro extrator local assumiu objetos em content e falhou ao encontrar string. A mesma leitura foi refeita com parser que aceita strings e objetos; nenhuma conclusão veio da tentativa falha.",
+    "inventory_repeated_readonly": "A saída da execução obrigatória foi truncada na transmissão; o comando somente leitura foi executado novamente, isoladamente, para persistir o JSON completo no diretório temporário autorizado.",
+    "mutation_repeated": false
+  },
+  "safety": {
+    "silent": true,
+    "messages_sent": 0,
+    "external_access": false,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "business_effects": false,
+    "tickets_or_financial_mutations": false,
+    "push_or_sync": false
+  }
+}

@@ -15,16 +15,20 @@ relationships:
   target: BRAIN/60-AGENTES/SENTINEL.md
   reason: Sentinel é owner operacional das ordens canônicas da Ronda no recorte revisado.
   source: BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md#ronda-bikon-instalação-e-acesso-2026-11-06
-updated: '2026-11-07T02:00:00Z'
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-11-10.md
+  reason: Vincula a correção do lifecycle NinjaOne e o primeiro fechamento natural observado após a correção.
+  source: BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md#ronda-bikon-lifecycle-resolvido-e-fechamento-natural-2026-11-10
+updated: '2026-11-11T02:00:00Z'
 ---
 
 # Bikon Durable Work Orchestration
 
 ```yaml
 categoria: automacao_operacional
-fonte: contrato canonico, requests de 2026-09-16/19, recusas protegidas de 2026-09-22 e cadeia canônica Ronda de 2026-11-06
+fonte: contrato canonico, requests de 2026-09-16/19, recusas protegidas de 2026-09-22 e cadeias canônicas Ronda de 2026-11-06 e 2026-11-10
 confiabilidade: alta para os eventos e estados persistidos citados, sem inferir saúde viva ou sucesso de ciclos futuros
-ultima_revisao: 2026-11-06
+ultima_revisao: 2026-11-10
 tags: [bikon, durable-work, relatorios, documentos, sentinel, kowalski, ronda, ninjaone, telegram, lifecycle, idempotencia]
 ```
 
@@ -89,6 +93,26 @@ Estados persistidos relevantes:
 No snapshot local de 06/11 às 22:33 UTC, o controlador estava sem ordem ativa e o último terminal era a confirmação de acesso de Fábio. Isso comprova convergência documental daquele ciclo, não saúde viva do serviço, criação futura de tickets, envio dos lembretes, escrita bem-sucedida no NinjaOne ou entrega Telegram. O ciclo diário deve continuar exigindo identidade de ticket, readback e terminalidade próprios; timeout ou falha de transporte não autoriza replay cego.
 
 Fontes: sessão main `65f0e1ea-7e14-4c86-8ef6-3bb4b2a1e175`, eventos 3998–4028 do audit canônico, `controller-state.json`, configuração e grant finais. Identidades e limites estão no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-06-daily.json`.
+
+## Ronda Bikon: lifecycle Resolvido e fechamento natural — 2026-11-10
+
+O primeiro ciclo de 09/11 expôs dois problemas diferentes. O readback da nota privada usava `public=false`, enquanto o NinjaOne retornava `publicEntry=false`. Depois da correção, o ticket `#2210` preservou o resumo privado `#7204` e recebeu uma única observação privada de incompletude `#7216`, mas as tentativas delimitadas de status direto `Fechado/6000` receberam HTTP 400. Leituras posteriores confirmaram ausência de efeito; cercas e recibos das tentativas permaneceram preservados.
+
+A interface autenticada do tenant demonstrou que o estado suportado para finalização operacional é `Resolvido/5000`; `Fechado/6000` é a transição automática posterior já configurada para três dias. Uma gravação pela interface, expressamente autorizada, mudou `#2210` de `Novo/1000` para `Resolvido/5000` sem duplicar notas. A ordem `ORDER-RONDA-RESOLVE-UI-20261110T1430Z` terminou `HISTORICAL_CONTROL_2210_RESOLVED_INCOMPLETE_UI_CONFIRMED`.
+
+A correção final `ORDER-RONDA-RESOLVED-FIX-20261110T1505Z` terminou às 16:43 UTC com `RONDA_RESOLVED_FIX_DEPLOYED_HISTORICAL_CLOSE_RECONCILED`. O snapshot local posterior confirmou:
+
+- release instalada `c727f3ae7b4f9a50ab106c335185555dc1040af4a150bc384cbc0ccea4a66b3d`;
+- configuração `36714d89420609c20c267cdd4f541119c9fb631fd5862fb158e600fbebae9365`;
+- grant `7814d1f6fbc2f3d0925045ea55b16bfc97e37427d2554e8766b98a83426c87ae`;
+- única mudança de configuração declarada e verificada: `closed_status` de `6000` para `5000`;
+- `5000` e `6000` aceitos como readbacks terminais; ticket já em `6000` nunca deve voltar para `5000`.
+
+No ciclo natural de 10/11, o ticket `#2215` foi criado, congelado às 18:30 BRT com `0/6`, recebeu resumo privado `INCOMPLETO` e foi finalizado em `Resolvido/5000`. Nota, fechamento e painel ficaram `confirmed`, com uma tentativa por efeito. A ordem `ORDER-RONDA-C21F749518C649D3A03362EE5A56A2AC` terminou `SUCCESS` às 21:30:15 UTC. Esse resultado valida o caminho de lifecycle exercitado, mas não transforma seis itens sem resposta em verificações executadas ou serviços saudáveis.
+
+A identificação “Fábio Fidelis” enviada depois do corte foi reconhecida somente na conversa Kowalski. O snapshot congelado e o resumo durável permaneceram com responsável não informado. Mensagem conversacional não deve retroescrever estado congelado; se responsável sem resposta precisar integrar a Ronda, deve existir persistência explícita e temporalmente qualificada.
+
+Fontes: sessão main `9e7fc978-437f-4248-b13b-fdd24bd43d6f`, sessão Kowalski `8f0c314c-a5c4-4cd5-b470-b19658e596aa`, audit canônico linhas 8559–8578, ordem final e SQLite local em modo somente leitura. Identidades e limites estão no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-10-daily.json`.
 
 ## Relações
 

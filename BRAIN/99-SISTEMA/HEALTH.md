@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-10T02:00:00Z'
+updated: '2026-11-11T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,17 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-10 (execução em 11/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 10/11; a execução ocorreu em 11/11 às 02:00 UTC. O inventário móvel persistido registrou 127 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40: 114 OpenClaw e 13 Codex; main 78, Sentinel 19, Darth Vader 11, Robotnik dez e Kowalski nove.
+- O ciclo anterior foi consumido por identidade. Conferência direta no commit `2c70cfd` confirmou a correspondência do recibo e dos cinco produtos declarados. O sync de 09:00 UTC publicou o commit; 15:00, 20:00 e 01:00 UTC não encontraram delta.
+- Ronda histórica: `#2210` preservou resumo privado e observação de incompletude; tentativas delimitadas de `6000` receberam HTTP 400 e leituras sem efeito. Uma gravação autorizada pela interface levou o ticket a `Resolvido/5000`; a ordem canônica confirmou o resultado sem duplicação de notas.
+- Ronda instalada: release `c727f3ae…`, configuração `36714d89…` e grant `7814d1f6…`; a alteração de configuração foi `closed_status 6000 → 5000`. O ciclo natural `#2215` terminou `SUCCESS`, com resumo privado, fechamento `5000` e painel confirmados, porém com `0/6`. Integridade do lifecycle não equivale a verificações realizadas ou saúde dos serviços.
+- A identificação tardia de Fábio foi reconhecida apenas na conversa Kowalski depois do corte. O snapshot e o resumo duráveis permaneceram com responsável não informado; não houve retroescrita do estado congelado.
+- Sete históricos primários foram lidos integralmente e audit/controller, ordem final, hashes instalados e SQLite foram consultados de modo delimitado e somente leitura. Trajectories, Codex bruto, prompts materializados, índices mutáveis e demais fontes inventariadas permanecem não lidos; não há evidência de saúde viva geral dos agentes.
+- Quatro chamadas paralelas sem argumentos foram rejeitadas antes da execução e refeitas individualmente. Um parser inicialmente assumiu conteúdo estruturado e falhou em string; a leitura foi refeita com tratamento de ambos os formatos. O inventário foi repetido somente para persistir a saída truncada da primeira chamada, sem mutação de negócio.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-10-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Gates estruturais não certificam conteúdo, saúde viva, completude semântica, verificações operacionais ou aceite.
 
 ## Verificação de cobertura — 2026-11-09 (execução em 10/11 às 02:00 UTC)
 

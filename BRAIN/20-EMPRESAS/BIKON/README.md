@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-11-07T02:00:00Z'
+updated: '2026-11-11T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md
@@ -88,6 +88,7 @@ relationships:
 
 ## Histórico relevante
 
+- 2026-11-10: a Ronda Bikon corrigiu o lifecycle NinjaOne para finalização operacional em `Resolvido/5000`, mantendo `Fechado/6000` como transição automática posterior do tenant. O histórico `#2210` foi reconciliado como incompleto sem duplicar notas; o ciclo natural `#2215` fechou em `5000` com resumo privado e painel confirmados, mas `0/6` respostas. Sucesso do workflow não comprova execução das verificações ou saúde dos serviços.
 - 2026-11-06: a Ronda Bikon convergiu em ordens canônicas para web autenticada, setup instalado/validado e acesso individual de Hebert, Felipe e Fábio, preservando agenda de dias úteis, checkpoints e fechamento privado. O snapshot persistido prova a instalação e o terminal daquele ciclo, não saúde viva nem sucesso de tickets, lembretes ou mensagens futuras.
 - 2026-11-06: a ferramenta nativa Asaas autenticou a conta Bikon em produção e expôs catálogo amplo, ainda no estágio `CUSTOMERS_ONLY` e sem autorização de mutação financeira. A carga de 31 clientes foi relatada como concluída e não foi repetida; boleto real e recuperação/validação do PDF oficial continuam não qualificados. Cresol e Asaas coexistem sem fallback automático, e a escolha do provedor é de Hebert.
 - 2026-09-17/18: preparado o `LinkedIn Robotnik Publisher` para a Página Bikon, somente pela API oficial e com `w_organization_social`. Mock/testes locais e genesis PGL passaram; o Gate A parou antes do portal por falta do Chrome autenticado anexável. Nenhum app, OAuth, segredo ou post foi criado, e publicação continua sujeita a aprovação própria por conteúdo.
@@ -145,7 +146,7 @@ relationships:
 - NFS-e da Bikon deve usar dados completos do tomador quando disponíveis no cadastro mestre, incluindo endereço completo.
 - Qualquer geração de remessa bancária real deve ser validada contra layout oficial do banco antes de uso operacional.
 - Cresol e Asaas são provedores paralelos: a seleção deve ser explícita e não transfere autorização, reserva, emissão, retry ou reconciliação de um provedor para o outro. Autenticação Asaas e catálogo de capacidades não autorizam boleto real.
-- A Ronda Bikon deve manter ordens/grants por identidade, readback e terminalidade. Falha de readiness, transporte ou provider não autoriza replay cego; acesso adicional exige identidade individual aprovada, nunca abertura global do bot.
+- A Ronda Bikon deve manter ordens/grants por identidade, readback e terminalidade. No tenant atual, `Resolvido/5000` é a finalização operacional e `Fechado/6000` é posterior/automático; aceitar ambos no readback sem rebaixar `6000`. Falha de readiness, transporte ou provider não autoriza replay cego; acesso adicional exige identidade individual aprovada, nunca abertura global do bot.
 - Qualquer chamada real à API GravityZone ou armazenamento de chave exige autorização explícita do Hebert e cofre local fora do Git.
 - Qualquer automação sobre contas de AD local de clientes deve começar em modo auditoria; criação, desativação, remoção de grupos ou alteração de privilégio exige aprovação explícita e escopo validado.
 - Relatórios técnicos externos devem sair com acabamento visual premium Bikon, sem caminhos internos, metadados automáticos, paginação feia ou aparência de HTML impresso.
