@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-11-11T02:00:00Z'
+updated: '2026-11-12T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md
@@ -88,6 +88,7 @@ relationships:
 
 ## Histórico relevante
 
+- 2026-11-11: uma prévia read-only de faturamento selecionou Diakonos e confirmou R$ 3.050,00 para `2026-11`, vencimento 20/11, mas a competência já estava processada. O teste preservou bloqueio absoluto de duplicidade e zero efeitos; banco continuou `PENDING/UNKNOWN`, transmissão não comprovada e SMTP aceito sem prova de inbox. A divergência entre `status-pacote` (“rascunho não enviado”) e recibo SMTP posterior deve ser conciliada sem reenvio.
 - 2026-11-10: a Ronda Bikon corrigiu o lifecycle NinjaOne para finalização operacional em `Resolvido/5000`, mantendo `Fechado/6000` como transição automática posterior do tenant. O histórico `#2210` foi reconciliado como incompleto sem duplicar notas; o ciclo natural `#2215` fechou em `5000` com resumo privado e painel confirmados, mas `0/6` respostas. Sucesso do workflow não comprova execução das verificações ou saúde dos serviços.
 - 2026-11-06: a Ronda Bikon convergiu em ordens canônicas para web autenticada, setup instalado/validado e acesso individual de Hebert, Felipe e Fábio, preservando agenda de dias úteis, checkpoints e fechamento privado. O snapshot persistido prova a instalação e o terminal daquele ciclo, não saúde viva nem sucesso de tickets, lembretes ou mensagens futuras.
 - 2026-11-06: a ferramenta nativa Asaas autenticou a conta Bikon em produção e expôs catálogo amplo, ainda no estágio `CUSTOMERS_ONLY` e sem autorização de mutação financeira. A carga de 31 clientes foi relatada como concluída e não foi repetida; boleto real e recuperação/validação do PDF oficial continuam não qualificados. Cresol e Asaas coexistem sem fallback automático, e a escolha do provedor é de Hebert.

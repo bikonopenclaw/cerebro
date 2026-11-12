@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-11T02:00:00Z'
+updated: '2026-11-12T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,17 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-11 (execução em 12/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 11/11; execução em 12/11 às 02:00 UTC. O inventário móvel persistido registrou 142 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40: 126 OpenClaw e 16 Codex; main 84, Sentinel 19, Darth Vader 17, Robotnik 13 e Kowalski nove.
+- O ciclo anterior foi consumido por identidade. Conferência direta no commit `c15f7fd` confirmou recibo e seis produtos declarados. O sync das 09:00 UTC observou o commit já publicado; 15:00, 20:00 e 01:00 UTC não encontraram delta.
+- O teste E2E do Puppet bloqueou Sentinel antes do despacho por ausência de ordem canônica e executou Robotnik uma vez com produto correto. O produto foi inspecionado/revisado; o resultado apareceu no contexto do owner, mas nenhum recibo final de transporte com identidade própria foi localizado nesta consolidação.
+- A prévia Diakonos preservou zero efeitos e bloqueio de duplicidade. Duas execuções Darth terminaram timeout/FAILED, enquanto o artefato persistido e a revisão Puppet foram recuperados por hash. Isso prova separação entre terminal do worker e produto; não prova saúde viva geral.
+- O comparativo Microsoft 365 ficou aberto no corte: Kowalski não foi despachado porque as ferramentas web requeridas eram inverificáveis; a coleta direta parcial não chegou a artefato, review, close ou entrega comprovados.
+- Dez históricos primários foram lidos integralmente. Também foram lidos o delta 103–111 de uma sessão compartilhada, após reaproveitar a disposição das linhas 1–102 do recibo anterior, e as linhas 101–149 da sessão do cron anterior para consumir o fechamento pós-commit. Trajectories, Codex bruto, prompts materializados, índices mutáveis e demais fontes inventariadas permanecem não lidos; não há evidência de saúde viva geral dos agentes.
+- Uma chamada de leitura foi enviada por engano ao tool `exec` sem `command` e refeita corretamente com `read(path=...)`. Uma busca opcional ampla foi interrompida por custo e o fallback estreito com `rg` não pôde executar porque o binário não existe neste runtime; nenhuma conclusão ou mutação dependeu dessas tentativas.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-11-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Gates estruturais não certificam conteúdo, saúde viva, completude semântica, entrega comercial, operação financeira ou transporte.
 
 ## Verificação de cobertura — 2026-11-10 (execução em 11/11 às 02:00 UTC)
 

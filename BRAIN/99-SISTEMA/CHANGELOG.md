@@ -4,13 +4,23 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-11T02:00:00Z'
+updated: '2026-11-12T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-11, consolidação diária silenciosa — execução em 12/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico; data UTC da execução preservada separadamente.
+- Atualizados os registros existentes BIKON, Faturamento Telegram e Bikon Durable Work Orchestration, sem criar empresa, pessoa, projeto ou nota temática nova.
+- Consolidada a prévia read-only Diakonos: R$ 3.050,00, competência já processada, bloqueio de duplicidade, banco `PENDING/UNKNOWN`, SMTP aceito sem inbox comprovado e zero efeitos fiscais, bancários ou de comunicação. Dois timeouts Darth e o produto recuperado foram preservados sem reclassificar execução como sucesso.
+- Registrado o teste E2E do Puppet: Sentinel recusado antes do despacho por falta de ordem canônica e Robotnik executado uma vez com produto correto. O comparativo Microsoft 365 permaneceu sem artefato/review/close no corte e não foi promovido a entrega.
+- Consumido por identidade o ciclo anterior e conferido o commit exato `c15f7fd`: recibo e seis produtos declarados coincidem. O sync de 09:00 UTC publicou o commit; três checkpoints posteriores não tinham delta.
+- Inventário obrigatório persistido com 142 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes. Dez históricos primários foram revisados integralmente; na sessão compartilhada foi lido somente o delta 103–111, e na sessão do cron anterior somente as linhas 101–149 para consumir o fechamento pós-commit. Trajectories, Codex bruto e demais fontes permanecem pendentes. Pesquisa semântica local executada sem refresh.
+- HEALTH e recibo `brain-v2/reports/coverage-2026-11-11-daily.json` atualizados. A consolidação não enviou mensagens, executou operações financeiras, acessou sistemas externos, publicou, fez push ou sync; commit somente local.
 
 ## 2026-11-10, consolidação diária silenciosa — execução em 11/11 às 02:00 UTC
 

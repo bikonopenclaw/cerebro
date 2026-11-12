@@ -19,7 +19,7 @@ relationships:
   target: BRAIN/01-DIARIO/2026/2026-11-10.md
   reason: Vincula a correção do lifecycle NinjaOne e o primeiro fechamento natural observado após a correção.
   source: BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md#ronda-bikon-lifecycle-resolvido-e-fechamento-natural-2026-11-10
-updated: '2026-11-11T02:00:00Z'
+updated: '2026-11-12T02:00:00Z'
 ---
 
 # Bikon Durable Work Orchestration
@@ -113,6 +113,16 @@ No ciclo natural de 10/11, o ticket `#2215` foi criado, congelado às 18:30 BRT 
 A identificação “Fábio Fidelis” enviada depois do corte foi reconhecida somente na conversa Kowalski. O snapshot congelado e o resumo durável permaneceram com responsável não informado. Mensagem conversacional não deve retroescrever estado congelado; se responsável sem resposta precisar integrar a Ronda, deve existir persistência explícita e temporalmente qualificada.
 
 Fontes: sessão main `9e7fc978-437f-4248-b13b-fdd24bd43d6f`, sessão Kowalski `8f0c314c-a5c4-4cd5-b470-b19658e596aa`, audit canônico linhas 8559–8578, ordem final e SQLite local em modo somente leitura. Identidades e limites estão no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-10-daily.json`.
+
+## Validação E2E do Puppet e recuperação de produto — 2026-11-11
+
+O teste isolado `PUPPET-RELIABILITY-E2E-20261111T1746Z` confirmou dois caminhos sem tocar sistemas de negócio. Uma tentativa de delegar ao Sentinel sem `requirements.domain_order` foi recusada no preflight com `PREFLIGHT_DOMAIN_ORDER_REQUIREMENT_MISSING` e `execution_dispatched=false`. Em seguida, `calculate-once` foi admitida uma única vez para Robotnik, retornou a ordem `7, 11, 13` e soma `31`, foi inspecionada e recebeu revisão PASS. O fechamento entrou no outbox protegido; o resultado final apareceu no contexto do owner, mas esta consolidação não localizou um recibo de transporte final com identidade própria e não o inventa.
+
+O caso da prévia financeira mostrou uma dimensão diferente: duas execuções Darth terminaram `timeout/FAILED`, porém a segunda persistiu o artefato antes de expirar. O Puppet verificou o arquivo, hashes e fontes, produziu revisão consolidada e fechou o goal sem repetir faturamento. Terminal do executor, produto persistido, revisão, fechamento e transporte precisam ser observados separadamente; timeout não apaga um produto existente nem autoriza replay.
+
+Já o goal `COMPARATIVO-M365-20261111-1754` permaneceu sem produto revisado no corte. O preflight não conseguiu comprovar `web_search`/`web_fetch` no Kowalski e não despachou o worker. A pesquisa direta acessou páginas oficiais da Microsoft, mas a sessão terminou durante a coleta, sem artefato, review, close ou entrega comprovados. Capacidade parcial de navegação não deve ser promovida a conclusão comercial.
+
+Fontes: sessões main `136d846c-eeb6-4f32-802f-6ae4d25d7526`, `6ea059fa-4cfa-4468-9c47-a324cae693fc`, `2ada84e2-9e07-4915-a959-4825a18126e3`, sessão Robotnik `73aec01c-e535-4c76-a5e8-835b5792c0b3` e delta da sessão compartilhada `9e7fc978-437f-4248-b13b-fdd24bd43d6f`; recibo `coverage-2026-11-11-daily.json`.
 
 ## Relações
 

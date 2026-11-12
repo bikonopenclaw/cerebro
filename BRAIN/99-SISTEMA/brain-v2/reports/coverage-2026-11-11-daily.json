@@ -1,0 +1,533 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_at": "2026-11-12T02:00:00Z",
+  "cycle_date": "2026-11-11",
+  "timezone": "America/Sao_Paulo",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "285c660e-85ca-42ae-97a1-0c7a545413d6",
+  "session_key": "agent:main:cron:d95bbe73-24d9-4e2b-ba57-0032082bb54b:run:285c660e-85ca-42ae-97a1-0c7a545413d6",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1; BRAIN_DAILY_RELIABILITY_20261026",
+  "base_commit": "c15f7fd89ccabdc08f9cc43d247825304ddc5aa3",
+  "product_state": "PRODUCED_DOCUMENTARY_PARTIAL",
+  "coverage_complete": false,
+  "scope": "Revisão seletiva das fontes posteriores ao fechamento de 10/11, incluindo teste E2E Puppet, comparativo M365 incompleto, prévia financeira read-only, continuidade Git e artefatos locais delimitados. Não revisão integral de sete dias, trajectories, Codex bruto, prompts materializados, índices mutáveis ou demais históricos inventariados.",
+  "window": {
+    "inventory_days": 7,
+    "reference_utc": "2026-11-12T02:00:00Z",
+    "cycle_date_brt": "2026-11-11",
+    "selection_after": "2026-11-11T02:12:10Z",
+    "selection_through": "2026-11-12T01:00:38Z",
+    "current_run_excluded": true
+  },
+  "inventory": {
+    "command": "python3 /data/.openclaw/workspace/Brain/scripts/brain-source-inventory.py --days 7",
+    "workdir": "/data/.openclaw/workspace/Brain",
+    "generated_at": "2026-11-12T02:00:31.478588+00:00",
+    "output_sha256": "adf78875a7584700bae14371e11ebeaf42060980ec485a9f9c7b2cfaabb8cd82",
+    "output_bytes": 65029,
+    "coverage_complete": false,
+    "errors": [],
+    "surface_count": 40,
+    "missing_surface_count": 18,
+    "source_count": 142,
+    "kind_counts": {
+      "openclaw_history": 126,
+      "codex_history": 16
+    },
+    "agent_counts": {
+      "main": 84,
+      "sentinel": 19,
+      "darth-vader": 17,
+      "robotnik": 13,
+      "kowalski": 9
+    },
+    "interpretation": "Inventário de metadados apenas. A primeira saída transmitida ficou truncada; a execução somente leitura foi repetida isoladamente para persistir o JSON completo em diretório temporário autorizado."
+  },
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/ad7efb3a-7bfe-450b-99df-184246b1f738.jsonl",
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "sha256": "cad2824d0f0e28b255243c5380d9712112ab71ece4af019a9ccf25fb80fd45e0",
+      "bytes": 10883,
+      "source_interval": {
+        "first_timestamp": "2026-11-11T09:00:07.054Z",
+        "last_timestamp": "2026-11-11T09:00:25.260Z"
+      },
+      "read_scope": {
+        "lines": [
+          1,
+          8
+        ],
+        "complete_document": true,
+        "document_lines": 8
+      },
+      "disposition": "Sync 09:00 UTC; c15f7fd já publicado; promovido somente como transporte Git.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-11.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/0181be4b-32ce-4648-84e2-1bc2c7f2a62d.jsonl",
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "sha256": "b0ec541b2f956d05c3b2e634722fece60fc4809c766d1c8047d6a17c92816895",
+      "bytes": 6558,
+      "source_interval": {
+        "first_timestamp": "2026-11-11T15:00:14.318Z",
+        "last_timestamp": "2026-11-11T15:00:27.356Z"
+      },
+      "read_scope": {
+        "lines": [
+          1,
+          8
+        ],
+        "complete_document": true,
+        "document_lines": 8
+      },
+      "disposition": "Sync 15:00 UTC; sem delta; promovido somente como transporte Git.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-11.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/e21edeed-c33d-48ec-9865-13e8846d42e9.jsonl",
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "sha256": "1c2a1a4155f986f95a83a3164577ef5d79b65df4a5e518331c03284c000dec5f",
+      "bytes": 9798,
+      "source_interval": {
+        "first_timestamp": "2026-11-11T20:00:26.818Z",
+        "last_timestamp": "2026-11-11T20:00:38.360Z"
+      },
+      "read_scope": {
+        "lines": [
+          1,
+          8
+        ],
+        "complete_document": true,
+        "document_lines": 8
+      },
+      "disposition": "Sync 20:00 UTC; sem delta; promovido somente como transporte Git.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-11.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/67368c81-eeaa-4e4c-a7f6-bd8653df12f7.jsonl",
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "sha256": "7c81750768cbcc72f1829d2a87c63160a79975ef593df4ed26bae3646c6b33b9",
+      "bytes": 12939,
+      "source_interval": {
+        "first_timestamp": "2026-11-12T01:00:17.770Z",
+        "last_timestamp": "2026-11-12T01:00:38.903Z"
+      },
+      "read_scope": {
+        "lines": [
+          1,
+          10
+        ],
+        "complete_document": true,
+        "document_lines": 10
+      },
+      "disposition": "Sync 01:00 UTC; sem delta; promovido somente como transporte Git.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-11.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/136d846c-eeb6-4f32-802f-6ae4d25d7526.jsonl",
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "sha256": "a280cdf6c7094eab787e6a690dcf2afd937f7b2e37cb6a6e9b56cf12b3803183",
+      "bytes": 103013,
+      "source_interval": {
+        "first_timestamp": "2026-11-11T17:40:21.846Z",
+        "last_timestamp": "2026-11-11T17:44:10.247Z"
+      },
+      "read_scope": {
+        "lines": [
+          1,
+          32
+        ],
+        "complete_document": true,
+        "document_lines": 32
+      },
+      "disposition": "Teste E2E: bloqueio Sentinel antes do dispatch, Robotnik uma vez, produto correto, review e close para outbox; recibo final de transporte não inventado.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-11.md",
+        "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md",
+        "BRAIN/99-SISTEMA/HEALTH.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/robotnik/sessions/73aec01c-e535-4c76-a5e8-835b5792c0b3.jsonl",
+      "agent": "robotnik",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "sha256": "4d28679df18660b7d1a3d0a89fc8d049f6d8c9a6097aee6809e1873625330512",
+      "bytes": 2589,
+      "source_interval": {
+        "first_timestamp": "2026-11-11T17:41:04.013Z",
+        "last_timestamp": "2026-11-11T17:41:11.148Z"
+      },
+      "read_scope": {
+        "lines": [
+          1,
+          3
+        ],
+        "complete_document": true,
+        "document_lines": 3
+      },
+      "disposition": "Corroborado produto único calculate-once, sem ferramentas: ordem 7,11,13 e soma 31.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-11.md",
+        "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/6ea059fa-4cfa-4468-9c47-a324cae693fc.jsonl",
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "sha256": "3385b10a3bc6ea450d71e28755aa59b2e132aac0f612f345a330b3f1276a7339",
+      "bytes": 477158,
+      "source_interval": {
+        "first_timestamp": "2026-11-11T17:50:55.755Z",
+        "last_timestamp": "2026-11-11T17:59:35.502Z"
+      },
+      "read_scope": {
+        "lines": [
+          1,
+          126
+        ],
+        "complete_document": true,
+        "document_lines": 126
+      },
+      "disposition": "Comparativo M365 admitido; Kowalski não despachado por ferramentas inverificáveis; coleta direta parcial sem artefato/review/close/entrega no corte.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-11.md",
+        "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md",
+        "BRAIN/99-SISTEMA/HEALTH.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2ada84e2-9e07-4915-a959-4825a18126e3.jsonl",
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "sha256": "47f1a05148014983705fe5ad07dcc481c4547b25b4e14eb341827945fbeb2007",
+      "bytes": 537947,
+      "source_interval": {
+        "first_timestamp": "2026-11-11T18:31:41.337Z",
+        "last_timestamp": "2026-11-11T18:49:05.768Z"
+      },
+      "read_scope": {
+        "lines": [
+          1,
+          81
+        ],
+        "complete_document": true,
+        "document_lines": 81
+      },
+      "disposition": "Prévia financeira coordenada; dois timeouts recuperados, artefatos por hash, revisão Puppet e fechamento solicitado; zero efeitos segundo histórico inspecionado.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-11.md",
+        "BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md",
+        "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md",
+        "BRAIN/20-EMPRESAS/BIKON/README.md"
+      ]
+    },
+    {
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/65f37c7e-23dc-4404-abc9-d09a9cb2c4cb.jsonl",
+      "agent": "darth-vader",
+      "profile": "darth-vader",
+      "kind": "openclaw_history",
+      "sha256": "a896030f1fe661af799d1bf033792cd121b008c17ebd65a486522e9e481a2bc2",
+      "bytes": 148841,
+      "source_interval": {
+        "first_timestamp": "2026-11-11T18:33:57.311Z",
+        "last_timestamp": "2026-11-11T18:38:21.006Z"
+      },
+      "read_scope": {
+        "lines": [
+          1,
+          16
+        ],
+        "complete_document": true,
+        "document_lines": 16
+      },
+      "disposition": "Primeira execução terminou timeout após leituras e criação da pasta, sem arquivo final nem efeito externo observado.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-11.md",
+        "BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md"
+      ]
+    },
+    {
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/e382aefb-0b42-4b39-876d-5c579025afbe.jsonl",
+      "agent": "darth-vader",
+      "profile": "darth-vader",
+      "kind": "openclaw_history",
+      "sha256": "10e475fa5ec30a36d274c932cb1d0833ba2b03dabfa37112a3541e8acc68d506",
+      "bytes": 98754,
+      "source_interval": {
+        "first_timestamp": "2026-11-11T18:41:01.564Z",
+        "last_timestamp": "2026-11-11T18:45:21.001Z"
+      },
+      "read_scope": {
+        "lines": [
+          1,
+          20
+        ],
+        "complete_document": true,
+        "document_lines": 20
+      },
+      "disposition": "Continuação corretiva terminou timeout após persistir resultado-correcao.md; falhas de consulta foram recuperadas dentro da execução fonte sem repetir obrigação.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-11.md",
+        "BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/9e7fc978-437f-4248-b13b-fdd24bd43d6f.jsonl",
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "sha256": "600d963071f548ee6164046bb7113d051dada596535db012dceb97623e73e891",
+      "bytes": 512916,
+      "source_interval": {
+        "first_timestamp": "2026-11-10T12:27:34.196Z",
+        "last_timestamp": "2026-11-11T18:49:31.681Z"
+      },
+      "read_scope": {
+        "lines": [
+          103,
+          111
+        ],
+        "complete_document": false,
+        "prior_prefix_disposition": "Linhas 1–102 lidas no ciclo anterior, hash 6a267cd0…, e consumidas pelo recibo coverage-2026-11-10-daily.json.",
+        "document_lines": 111
+      },
+      "disposition": "Lido somente o delta: status owner-facing dos goals E2E, M365 e faturamento. Conteúdo Ronda anterior não foi reprocessado.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-11.md",
+        "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"
+      ]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/c5b767a7-8f97-4128-9b97-323128e72f11.jsonl",
+      "agent": "main",
+      "profile": "main",
+      "kind": "openclaw_history",
+      "sha256": "9b8237220c4f2bcc0c6ac4790e6b99184668022408b509a05bb7370e85313504",
+      "bytes": 985081,
+      "source_interval": {
+        "first_timestamp": "2026-11-11T02:00:02.398Z",
+        "last_timestamp": "2026-11-11T02:12:40.312Z"
+      },
+      "read_scope": {
+        "lines": [
+          101,
+          149
+        ],
+        "complete_document": false,
+        "selection": "Validação, commit e fechamento pós-commit do ciclo anterior.",
+        "document_lines": 149
+      },
+      "disposition": "Consumidos por identidade o PASS documental, commit c15f7fd, hashes no commit e fechamento local ahead 1; produtos anteriores não foram reprocessados.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-11.md",
+        "BRAIN/99-SISTEMA/HEALTH.md"
+      ]
+    }
+  ],
+  "local_artifacts_verified": [
+    {
+      "path": "/data/.openclaw/workspace-darth-vader/boletos/testes-isolados/billing-preview-darth-vader-20261111-v3-01/resultado-correcao.md",
+      "sha256": "3a9f4fc927f88337a97f97661bceaf2ded79db6fd3758602b53b92ca8b432e71",
+      "bytes": 2659,
+      "mtime_utc": "2026-11-11T18:45:07.092587+00:00",
+      "read_scope": {
+        "complete_document": true
+      },
+      "disposition": "Produto corretivo Darth recuperado após timeout; fonte de revisão, não conhecimento canônico autônomo."
+    },
+    {
+      "path": "/data/.openclaw/workspace/artifacts/FATURAMENTO-PREVIA-20261111-V3-01/previa-faturamento-teste.md",
+      "sha256": "8c2b50415d5927b5d0f1d10f73b5c41ca84d628eece6d059fde7ae8c77e9965d",
+      "bytes": 7890,
+      "mtime_utc": "2026-11-11T18:48:17.726531+00:00",
+      "read_scope": {
+        "complete_document": true
+      },
+      "disposition": "Produto consolidado Puppet lido e verificado por hash; permanece fora do Brain como artefato de execução."
+    }
+  ],
+  "continuity_documents": [
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-10-daily.json",
+      "commit": "c15f7fd89ccabdc08f9cc43d247825304ddc5aa3",
+      "sha256": "902438e5fb7d9c966620a0acfae7992b138277e6d6a55524eff7a8f8a728f8f5",
+      "bytes": 17084,
+      "disposition": "Recibo anterior consumido por identidade; os seis produtos declarados foram conferidos no commit exato e coincidiram por hash e tamanho. Fechamento pós-commit foi lido nas linhas 101–149 da sessão c5b767a7…; nenhum produto foi reprocessado."
+    }
+  ],
+  "products": [
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-11-11.md",
+      "sha256": "df22c40f0361ca356681d3af3a7034c6fdf26632f183d0a28c65337e47615466",
+      "bytes": 9196
+    },
+    {
+      "path": "BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md",
+      "sha256": "ffaa4f17731b1fbce8c4219a55ca8bd139779200ad017dc6ef198cc533917402",
+      "bytes": 9721
+    },
+    {
+      "path": "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md",
+      "sha256": "10111f7a8ecf1be1c016ef54b2f8aa0981fdd0f1250fcd422fb3cdfecdd33587",
+      "bytes": 22126
+    },
+    {
+      "path": "BRAIN/20-EMPRESAS/BIKON/README.md",
+      "sha256": "dbcaba5b64ad2ecf1c8996dc19ac21cb29c1138ee554a02f470c785c4bd5fb42",
+      "bytes": 24869
+    },
+    {
+      "path": "BRAIN/01-DIARIO/README.md",
+      "sha256": "f7d81cb73a82b2be8a3196397f112c810f962812136b1eec7a6b48e4310d0021",
+      "bytes": 4555
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+      "sha256": "762761cf94be1b434725efdb9a248d65645d7630b1cda4c168a6e44832c04d26",
+      "bytes": 157727
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/HEALTH.md",
+      "sha256": "fb70988d8948456fcad22d64e122252f0d9185825f6d8dfd1bf944f1b6464f13",
+      "bytes": 105252
+    }
+  ],
+  "knowledge_dispositions": {
+    "updated_existing": [
+      "BRAIN/70-AUTOMACOES/FATURAMENTO-TELEGRAM.md",
+      "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md",
+      "BRAIN/20-EMPRESAS/BIKON/README.md",
+      "BRAIN/01-DIARIO/README.md",
+      "BRAIN/99-SISTEMA/CHANGELOG.md",
+      "BRAIN/99-SISTEMA/HEALTH.md"
+    ],
+    "created_required_daily": [
+      "BRAIN/01-DIARIO/2026/2026-11-11.md"
+    ],
+    "new_permanent_notes": [],
+    "new_people_companies_projects": [],
+    "archive_or_delete": [],
+    "reason": "As novidades cabem em registros existentes; o diário é obrigatório. Diakonos não recebeu entidade nova a partir de uma única prévia."
+  },
+  "pending": [
+    {
+      "id": "M365_COMPARISON_INCOMPLETE",
+      "dependency": "COMPARATIVO-M365-20261111-1754 não tinha artefato, review, close ou entrega comprovada no corte; retomar pelo mesmo objetivo sem usar pesquisa parcial como produto."
+    },
+    {
+      "id": "DIAKONOS_PACKAGE_SMTP_DIVERGENCE",
+      "dependency": "status-pacote descreve rascunho não enviado, enquanto recibo posterior comprova SMTP_DATA_ACCEPTED; conciliar sem reenvio."
+    },
+    {
+      "id": "DIAKONOS_BANK_UNKNOWN",
+      "dependency": "Obrigação bancária PENDING/UNKNOWN; arquivo local não prova registro, transmissão, liquidação ou pagamento."
+    },
+    {
+      "id": "OUTBOX_FINAL_RECEIPTS_NOT_IDENTIFIED",
+      "dependency": "Resultados E2E e faturamento apareceram no contexto owner-facing, mas recibos finais de transporte com identidade própria não foram localizados nesta revisão; não repetir envio."
+    },
+    {
+      "id": "PRIMARY_WINDOW_BACKLOG",
+      "dependency": "Trajectories, Codex bruto, prompts materializados, índices mutáveis e demais fontes inventariadas não foram revisados integralmente."
+    },
+    {
+      "id": "LIVE_AGENT_HEALTH_UNPROVEN",
+      "dependency": "Preflights, terminais, produtos e timeouts observados não comprovam saúde viva geral dos agentes, gateways ou integrações."
+    },
+    {
+      "id": "PRIOR_BACKLOG",
+      "dependency": "ARX, Capixaba, Asaas, FORT, Bitdefender, operação fiscal e filas de cobertura anteriores continuam por identidade; este ciclo não as encerra."
+    }
+  ],
+  "semantic_search": {
+    "command": "/data/.openclaw/skills/brain-semantic-search/scripts/search \"Quais decisões, projetos, riscos, aprendizados e alterações de agentes ou automações em 11 de novembro de 2026 já estão registrados no Brain?\"",
+    "mode": "read_only_no_refresh",
+    "index_at": "2026-11-11T02:14:00.761536Z",
+    "status": "COMPLETED_CANDIDATES_ONLY",
+    "disposition": "Candidatos históricos orientaram navegação; equivalência, cobertura e estado atual não foram inferidos.",
+    "index_refresh_executed": false
+  },
+  "validation": {
+    "json_parse": {
+      "status": "PASS",
+      "command": "python3 -m json.tool BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-11-daily.json >/dev/null"
+    },
+    "schema_and_relationships": {
+      "status": "PASS",
+      "command": "python3 local validator using note.schema.json and relationship-types.yaml for the seven changed Markdown notes",
+      "notes": 7,
+      "relationships": 23,
+      "errors": [],
+      "recovery": "Primeira execução falhou somente por target_missing do recibo ainda não criado; repetição após persistência passou."
+    },
+    "link_gate": {
+      "status": "PASS",
+      "command": "python3 BRAIN/99-SISTEMA/brain-v2/tools/brain_link_gate.py --root . --json",
+      "markdown_total": 452,
+      "internal_links": 1078,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": {},
+      "duplicate_aliases": {},
+      "secret_candidates": [],
+      "graph_components": 1,
+      "reachability_rate": 1.0,
+      "failures": []
+    },
+    "content_or_coverage_certified": false,
+    "limitation": "Gates reais certificam schema, vínculos e integridade estrutural; não certificam conteúdo, cobertura semântica, saúde viva, conclusão comercial, operação financeira, provider, transporte ou aceite."
+  },
+  "publication": {
+    "previous_commit_remote_transport": "c15f7fd observed published by scheduled sync at 2026-11-11T09:00:00Z",
+    "current_local_commit": "PENDING_AT_RECEIPT_CREATION",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_INVOKED",
+    "remote_confirmation_for_current_cycle": "NOT_QUERIED",
+    "scheduled_git_routines": "UNCHANGED"
+  },
+  "operational_recovery": {
+    "invalid_tool_calls": 1,
+    "invalid_tool_detail": "Uma leitura de BIKON/README foi enviada por engano ao tool exec sem command e rejeitada na validação; foi refeita imediatamente com read(path=...) antes de qualquer conclusão.",
+    "optional_lookup_failure": "Uma busca Python opcional e ampla por goal ID foi interrompida por custo; o fallback estreito com rg falhou porque rg não existe neste runtime. Nenhuma conclusão, escrita ou efeito dependeu dessas tentativas.",
+    "schema_validation_before_receipt": "A primeira validação de relações falhou somente porque o alvo coverage-2026-11-11-daily.json ainda não existia; o recibo foi então criado e o mesmo gate será refeito sem mascarar a falha inicial.",
+    "inventory_repeated_readonly": "A saída da execução obrigatória foi truncada na transmissão; o inventário somente leitura foi executado novamente, isoladamente, para persistir JSON completo.",
+    "mutation_repeated": false
+  },
+  "safety": {
+    "silent": true,
+    "messages_sent_by_consolidation": 0,
+    "external_access_by_consolidation": false,
+    "source_histories_contain_prior_authorized_external_access": true,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "business_effects": false,
+    "tickets_or_financial_mutations": false,
+    "push_or_sync": false
+  }
+}

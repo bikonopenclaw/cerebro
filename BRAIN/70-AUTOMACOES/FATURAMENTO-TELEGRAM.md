@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-09-25T02:00:00Z'
+updated: '2026-11-12T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/20-EMPRESAS/BIKON/README.md
@@ -32,7 +32,7 @@ relationships:
 categoria: automacao_operacional
 fonte: sessões Telegram visíveis em 2026-06-17, correções operacionais em 2026-06-18/19/25/26, remoção FN Souza em 2026-06-25 e lote Bikon agosto/2026 em 2026-08-03
 confiabilidade: alta
-ultima_revisao: 2026-09-25
+ultima_revisao: 2026-11-11
 tags: [telegram, faturamento, bikon, fn-souza, nfse, boletos, remessa, darth-vader]
 ```
 
@@ -84,6 +84,18 @@ Em 2026-08-03, o fluxo de faturamento Bikon operou a remessa 093 em produção a
 - Total do lote: R$ 86.357,06.
 
 O caso preserva a regra de etapas: emissão fiscal, boleto/remessa, conferência, envio externo e transmissão bancária não devem virar uma única esteira automática sem gates próprios.
+
+## Prévia read-only Diakonos — 2026-11-11
+
+O goal `FATURAMENTO-PREVIA-20261111-V3-01` exercitou a preparação de uma prévia sem validade fiscal e sem efeito de produção. Darth Vader escolheu o cadastro ativo de **DIAKONOS CONTADORES ASSOCIADOS LTDA** porque havia fontes atuais suficientes e porque a competência `2026-11` já estava processada, permitindo testar a trava de duplicidade.
+
+Foram confirmados dois serviços de R$ 1.500,00 e R$ 1.550,00, total de R$ 3.050,00, vencimento em 20/11/2026 e modalidade boleto. O lote local estava `COMPLETED`, com NFS-e `318`, boleto `324` e CNAB400 `9901805` identificados e artefatos locais validados. Isso **não** autoriza repetição e não prova registro/transmissão bancária: a obrigação permaneceu `PENDING`, `bank_state: UNKNOWN` e `transmission: NOT_INFERRED_FROM_FILE`.
+
+O recibo de e-mail posterior registra `SMTP_DATA_ACCEPTED`, mas não prova inbox ou leitura. `status-pacote.json` ainda dizia “rascunho não enviado”; a divergência deve ser conciliada sem reenvio. Também não foram comprovados situação cadastral oficial ao vivo, contrato assinado, IM/IE, pagamento, liquidação ou baixa.
+
+A primeira execução do Darth expirou após a leitura e antes do arquivo; a continuação corretiva também expirou, mas deixou um artefato local de 2.659 bytes, SHA-256 `3a9f4fc9…`. O Puppet o releu, conferiu as fontes e produziu a revisão de 7.890 bytes, SHA-256 `8c2b5041…`, antes do fechamento pelo outbox. Estados `FAILED/timeout` do worker e existência do produto foram preservados como dimensões distintas; nenhuma NFS-e, boleto, remessa, transmissão, autorização financeira, mensagem a cliente ou alteração bancária ocorreu no teste.
+
+Fonte: sessões main `2ada84e2-9e07-4915-a959-4825a18126e3` e Darth Vader `65f37c7e-23dc-4404-abc9-d09a9cb2c4cb`/`e382aefb-0b42-4b39-876d-5c579025afbe`; identidades e limites no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-11-daily.json`.
 
 ## Relações
 
