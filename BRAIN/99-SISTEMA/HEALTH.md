@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-12T02:00:00Z'
+updated: '2026-11-13T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,15 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-12 (execução em 13/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 12/11; execução em 13/11 às 02:00 UTC. O inventário móvel persistido registrou 132 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40: 119 OpenClaw e 13 Codex; main 84, Sentinel 19, Darth Vader 17, Kowalski oito e Robotnik quatro.
+- O ciclo anterior foi consumido por identidade. A sessão estável terminou após persistência e validação, sem commit ou resposta final; o sync das 09:00 UTC criou e publicou `267f940`. Conferência direta nesse commit confirmou o recibo e os sete produtos declarados.
+- Quatro históricos de sync foram lidos integralmente: 09:00 UTC publicou o delta; 15:00, 20:00 e 01:00 UTC não encontraram mudanças. A conversa Kowalski selecionada continha somente reconhecimento social e não foi promovida.
+- As linhas 80–134 da sessão do cron anterior foram lidas para consumir preparação, validação e término sem commit. Trajectories, Codex bruto, índices mutáveis e demais fontes inventariadas permanecem não lidos; não há evidência nova de saúde viva geral dos agentes.
+- Pesquisa semântica local respondeu em modo read-only com índice de 12/11 às 09:02 UTC, sem refresh; os candidatos foram usados somente para navegação.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-12-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Gates estruturais não certificam conteúdo, saúde viva, completude semântica ou transporte.
 
 ## Verificação de cobertura — 2026-11-11 (execução em 12/11 às 02:00 UTC)
 
