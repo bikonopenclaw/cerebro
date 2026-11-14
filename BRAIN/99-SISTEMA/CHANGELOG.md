@@ -4,13 +4,22 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-13T02:00:00Z'
+updated: '2026-11-14T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-13, consolidação diária silenciosa — execução em 14/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico; a data UTC da execução foi preservada separadamente.
+- Nenhuma novidade temática justificou criar ou atualizar registro permanente de pessoa, empresa, projeto, agente, automação ou conhecimento. O recorte contém somente o fechamento verificável do ciclo anterior e checkpoints Git.
+- Consumido por identidade o ciclo anterior no commit `73d8518`: recibo e quatro produtos declarados coincidem por SHA-256 e tamanho. O sync das 09:00 UTC publicou esse commit; os checkpoints das 15:00, 20:00 e 01:00 UTC não encontraram delta.
+- Revisados o fechamento selecionado da sessão do cron anterior e quatro históricos de sync completos. Inventário persistido com 115 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes; trajectories, Codex bruto, índices mutáveis e demais fontes permaneceram pendentes.
+- Pesquisa semântica local executada em modo read-only/sem refresh. HEALTH e recibo `brain-v2/reports/coverage-2026-11-13-daily.json` atualizados.
+- A consolidação não enviou mensagens, acessou sistemas externos, executou mutações protegidas, fez push ou sync; o commit é somente local e o agendamento de sync permanece responsável pelo transporte.
 
 ## 2026-11-12, consolidação diária silenciosa — execução em 13/11 às 02:00 UTC
 
