@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-14T02:00:00Z'
+updated: '2026-11-15T06:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,16 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação semanal — 2026-11-15
+
+- [[01-DIARIO/Semanal/2026-W46|W46]]: cinco diários existentes de 09–15/11 lidos integralmente; faltam 14 e 15/11, datas de fim de semana, sem inferência de ausência de atividade.
+- O inventário obrigatório declarou `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40. Históricos e memórias recentes foram inventariados como `unreviewed/content_read=false`; conteúdo bruto não foi relido nesta semanal.
+- Cinco padrões foram reconciliados e quatro notas permanentes existentes atualizadas. Status superficial, lifecycle do tenant, fechamento administrativo, produto persistido, transporte e aceite continuam dimensões independentes.
+- Produto documental local produzido; cobertura integral bloqueada (`PRODUCT_INCOMPLETE`) por dois diários ausentes, fontes primárias inventariadas sem leitura de conteúdo e backlog dos recibos anteriores. Ronda, Ferreira Rocha, Diakonos, comparativo M365 e pendências históricas mantêm dependências próprias.
+- A busca nativa respondeu pelo backend builtin com `provider: none`; leitura direta dos diários e busca lexical local foram o fallback. Nenhum índice foi instalado, atualizado ou refeito.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-15-weekly.json`. Validação estrutural e hashes ficam no checkpoint local; score legado 96/100 mantido sem recálculo e sem equivalência com cobertura.
+- Nenhum arquivamento/exclusão, commit, push ou sync nesta recuperação. Restrições PGL/Golden, owners e gates vigentes foram preservados.
 
 ## Verificação de cobertura — 2026-11-13 (execução em 14/11 às 02:00 UTC)
 

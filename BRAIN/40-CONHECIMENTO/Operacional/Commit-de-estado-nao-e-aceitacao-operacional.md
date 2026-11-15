@@ -40,3 +40,9 @@ Em 2026-08-08, o commit CPIW V4 para CNS `023689` passou com `311` operacoes, AI
 Três evidências devem permanecer separadas: **bytes conferidos em um commit**, **publicação desse commit no remoto** e **checkpoint posterior sem delta**. A sequência observada de 27 a 30/10 confirmou commits específicos e syncs posteriores estáveis, mas não criou conhecimento temático, cobertura cognitiva ou aceite operacional.
 
 `Everything up-to-date` ou equivalente descreve somente a relação Git naquele instante. Não prova que fontes vivas foram lidas, que o produto está correto fora do escopo validado, que integrações estão saudáveis ou que uma pendência de negócio foi encerrada. Síntese em [[01-DIARIO/Semanal/2026-W44|W44]].
+
+## Persistência, commit e publicação permanecem independentes — semana 2026-W46
+
+A sequência de 11–13/11 reforçou três estados distintos. Em um ciclo, produtos foram persistidos e validados, mas a sessão terminou sem commit; o sync posterior criou e publicou o objeto Git. No ciclo seguinte, a rotina diária criou o commit local e o sync apenas transportou esse objeto. Em ambos, checkpoints sem delta provaram somente a relação Git observada.
+
+O fechamento deve nomear quem persistiu os bytes, quem criou o commit, quem publicou o objeto e qual hash foi conferido. Transporte posterior não satisfaz retroativamente uma etapa local ausente, e silêncio de resposta não apaga execução quando produto, commit e validação ficaram persistidos. Nenhuma dessas provas amplia cobertura cognitiva ou aceite operacional. Síntese em [[01-DIARIO/Semanal/2026-W46|W46]].

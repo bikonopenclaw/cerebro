@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-11-08T06:00:00Z'
+updated: '2026-11-15T06:00:00Z'
 relationships:
 - type: references
   target: BRAIN/70-AUTOMACOES/boletos-malote/README.md
@@ -28,6 +28,10 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W45.md
   reason: Delimita catálogo, autenticação e carga de clientes da qualificação de emissão financeira.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-08-weekly.json
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W46.md
+  reason: Separa lote local, CNAB, SMTP, estado bancário e bloqueio de duplicidade por competência.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-15-weekly.json
 ---
 
 # Homologação bancária não autoriza produção
@@ -35,9 +39,9 @@ relationships:
 ```yaml
 categoria: financeiro
 tipo: guardrail
-fonte: consolidações semanais 2026-W28 e W45
+fonte: consolidações semanais 2026-W28, W45 e W46
 confiabilidade: alta
-ultima_revisao: 2026-11-08
+ultima_revisao: 2026-11-15
 tags: [cresol, asaas, homologacao, boletos, remessa, baixa, producao, provider]
 ```
 
@@ -105,3 +109,9 @@ Rastreabilidade: o recibo diário de 02/10 citado na seção anterior não foi l
 A integração Asaas confirmou conta Bikon autenticada, catálogo amplo e estágio `CUSTOMERS_ONLY`; a carga de 31 clientes permaneceu como checkpoint declarado. Isso não qualifica criação de boleto real, recuperação e validação do PDF oficial, reconciliação do estado remoto, rollback ou qualquer mutação financeira. Cada etapa precisa de autorização e evidência próprias.
 
 Cresol e Asaas são caminhos paralelos escolhidos pelo proprietário. A existência de duas skills não cria fallback automático: falha, timeout ou indisponibilidade em um provedor não autoriza submeter a mesma intenção ao outro. Antes de trocar de caminho, reconciliar identidade da intenção, idempotência, efeitos anteriores, autorização, artefatos e estado remoto. Síntese e fontes em [[01-DIARIO/Semanal/2026-W45|W45]], sem operação bancária neste ciclo.
+
+## Lote local, transporte e estado bancário — semana 2026-W46
+
+A prévia Diakonos reuniu NFS-e, boleto e remessa CNAB400 em lote local `COMPLETED`, mas a obrigação bancária permaneceu `PENDING`, com `bank_state: UNKNOWN` e transmissão não inferível do arquivo. Um recibo posterior registrou `SMTP_DATA_ACCEPTED`, sem comprovar inbox ou leitura; o `status-pacote` anterior ainda dizia rascunho não enviado.
+
+Cada evidência pertence à sua etapa: artefato local, submissão bancária, registro remoto, liquidação, aceitação SMTP, entrega e leitura. Divergência documental exige conciliação, não reenvio. Como a competência `2026-11` já estava processada, a trava de duplicidade impede repetir NFS-e, boleto, remessa ou e-mail apenas para obter estado mais conveniente. Síntese em [[01-DIARIO/Semanal/2026-W46|W46]], sem operação financeira ou comunicação nova.
