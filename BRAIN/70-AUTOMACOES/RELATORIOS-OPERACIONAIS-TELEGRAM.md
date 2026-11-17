@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-10-06T02:00:00Z'
+updated: '2026-11-17T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/KOWALSKI.md
@@ -26,9 +26,9 @@ relationships:
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14 e qualificacao do fluxo universal em 2026-09-16
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14, qualificacao do fluxo universal em 2026-09-16 e fechamento executivo somente leitura de 2026-11-15
 confiabilidade: alta
-ultima_revisao: 2026-10-06
+ultima_revisao: 2026-11-16
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
@@ -45,6 +45,15 @@ No histórico main de 05/10, a observação natural da recuperação semanal de 
 Esses são **resultados relatados pelo observador no histórico**, sem revalidação dos artefatos/providers pela diária. Falha de run ou ausência de recibo exato não prova falha do serviço externo; produtor observado não prova consumo. Aceitação pelo transporte, quando registrada, não comprova leitura pelo destinatário. Nenhum aviso novo ou envio de teste foi disparado.
 
 Fontes: cabeçalho de `workspace/MEMORY.md` e sessão main `c51081ed-2bf7-4759-9256-c5095a1982b6`, linhas 9–12, com identidades/disposições em `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-10-06-daily.json`.
+
+## Coleta semanal WhatsApp — observação de 15/11/2026
+
+- O job Sentinel de 14/11 às 00:15 BRT terminou `error` e foi classificado como `BLOCKED_OR_UNCERTAIN / NO_COMPLETE_SUPPORTED_PROJECT_VERIFICATION`. O detalhe identifica falha da chamada `exec-8379fd43-a93c-4479-b2e9-56cb97f226b4`; isso não certifica produto semanal completo nem diagnostica, sozinho, falha do WhatsApp ou do provider.
+- O próximo consumo semanal não deve tratar essa coleta como apta sem reconciliar a chamada identificada e localizar a evidência faltante do mesmo objetivo. Repetir coleta, relatório ou entrega apenas para obter `PASS` não é disposição válida.
+- O detalhe consultado listava `failure_alert_receipts=[]`. Isso prova somente ausência de recibo independente naquele recorte, não ausência universal de alerta. `delivery_status` do cron continua sendo transporte do anúncio, não validade do produto, leitura humana ou entrega de relatório.
+- O delta selecionado até 16/11 às 23:00 BRT não trouxe prova de recuperação ou de entrega posterior dessa coleta. Essa lacuna permanece separada dos ciclos de Kowalski que estavam agendados para segunda-feira.
+
+Proveniência: sessão main `bcd1f6df-d961-47c5-8035-6820a7899c62`, fechamento executivo somente leitura observado em 15/11 às 18:00 BRT; recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-16-daily.json`.
 
 ## Grupo
 

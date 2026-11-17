@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-15T06:00:00Z'
+updated: '2026-11-17T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,16 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-16 (execução em 17/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 16/11; execução em 17/11 às 02:00 UTC. O inventário obrigatório declarou `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40. Metadados de inventário não comprovam leitura, cobertura de conteúdo ou saúde viva.
+- O fechamento executivo de 15/11 foi revisado por unidades delimitadas. O ciclo ARX de 14/11 repetiu `COMPLETED_WITH_BLOCKS` para Ferreira Rocha/ticket `#2196`, com auditoria nova `eb3ec8a7…` e zero mutações. A coleta semanal WhatsApp ficou `BLOCKED_OR_UNCERTAIN`, sem produto completo certificado.
+- Oito históricos de sync foram revisados pelos resultados finais: `6df1cfa` foi publicado às 09:00 UTC de 15/11; os sete checkpoints posteriores encontraram a árvore sem mudanças e o remoto atualizado. Isso prova somente os checkpoints Git observados.
+- O delta selecionado não trouxe prova de recuperação/entrega posterior da coleta WhatsApp nem resolução do bloqueio ARX. Ausência de novo histórico temático de Kowalski, Darth Vader, Robotnik ou Sentinel não prova inatividade, fila vazia ou saúde viva.
+- Trajectories, Codex bruto, memórias, índices mutáveis e demais fontes inventariadas permaneceram não lidos. A sessão desta consolidação muda durante o run e foi mantida pendente, não usada como prova de cobertura de si própria.
+- Pesquisa semântica local executada em modo read-only com índice de 15/11 às 09:02 UTC, sem refresh. Candidatos orientaram deduplicação; não provaram equivalência ou estado atual.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-16-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Gates estruturais não certificam conteúdo, completude semântica, recuperação operacional, saúde viva ou transporte.
 
 ## Verificação semanal — 2026-11-15
 

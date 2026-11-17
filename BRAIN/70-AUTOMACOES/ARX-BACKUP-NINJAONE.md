@@ -7,16 +7,16 @@ created_semantics: Data de registro estruturado, não data de origem do conteúd
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
-updated: '2026-11-10T02:00:00Z'
+updated: '2026-11-17T02:00:00Z'
 ---
 
 # ARX Backup diário → tickets NinjaOne
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15, requests mensais/qualificacao nativa reconciliadas em 2026-09-16/19, recuperacao mensal NO_SEND de outubro validada em 2026-11-02 e fechamento executivo somente leitura de 2026-11-08
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15, requests mensais/qualificacao nativa reconciliadas em 2026-09-16/19, recuperacao mensal NO_SEND de outubro validada em 2026-11-02 e fechamentos executivos somente leitura de 2026-11-08 e 2026-11-15
 confiabilidade: alta
-ultima_revisao: 2026-11-09
+ultima_revisao: 2026-11-16
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski, relatorio-mensal, no-send]
 ```
 
@@ -219,6 +219,15 @@ Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-02-daily.json
 - O job mensal Capixaba de 01/11 às 08:40 BRT continuava `error`, com `delivery_status=unknown` e falha interna do serviço de IA. O detalhe consultado não continha resumo de produto ou SMTP. Essa limitação não invalida a recuperação separada `PREPARED_NO_SEND` de 02/11, mas também não autoriza envio nem reclassifica o job original.
 
 Proveniência: sessão main `9b628c9e-d237-4af9-8e94-17aea5f230b5`, fechamento somente leitura observado em 08/11 às 18:00 BRT; recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-09-daily.json`.
+
+## Recorrência semanal observada em 15/11/2026
+
+- O job semanal de 14/11 às 01:35 BRT voltou a terminar com código 1, enquanto o resultado interno permaneceu `COMPLETED_WITH_BLOCKS`: `11` itens verificados, `1` issue, `0` tickets criados, fechados, resolvidos ou deduplicados e `0` tentativas de mutação externa.
+- O único bloqueio continuou em `16 Ferreira Rocha / servidor_2j3wv`, com status registrado `Crítico`, motivo `IDEMPOTENCY_STATE` e ticket NinjaOne `#2196`. A nova execução é `arx-cycle-58938f60de5445148d92b439e73cd4b6`, vinculada à auditoria SHA-256 `eb3ec8a7abbead58fee12dd9a338cb070f8102831f4e278bccc6c4bdc859fa9a`.
+- A recorrência em uma identidade de ciclo nova confirma que o bloqueio ainda exige reconciliação; não prova que o estado do ticket, do dispositivo ou do backup permaneceu igual fora do recorte. A auditoria foi identificada pelo detalhe do job, mas seu arquivo não foi reaberto nesta consolidação.
+- Antes de qualquer mutação, conciliar a chave de idempotência, o ticket `#2196`, o dispositivo e a auditoria corrente. Não repetir criação ou fechamento apenas para obter status conveniente.
+
+Proveniência: sessão main `bcd1f6df-d961-47c5-8035-6820a7899c62`, fechamento executivo somente leitura observado em 15/11 às 18:00 BRT; recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-16-daily.json`.
 
 ## Guardrails
 

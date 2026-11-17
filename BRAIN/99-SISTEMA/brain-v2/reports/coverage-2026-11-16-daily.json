@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_date": "2026-11-16",
+  "cycle_timezone": "America/Sao_Paulo",
+  "executed_at_utc": "2026-11-17T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "42059355-b9e9-4511-b69a-524106c4dc67",
+  "session_key": "agent:main:cron:d95bbe73-24d9-4e2b-ba57-0032082bb54b:run:42059355-b9e9-4511-b69a-524106c4dc67",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "reliability_instruction": "BRAIN_DAILY_RELIABILITY_20261026",
+  "base_commit": "6df1cfa4c9821a9f6e13b2ab5b71f187d5f28472",
+  "product_state": "PRODUCED_DOCUMENTARY_PARTIAL",
+  "coverage_complete": false,
+  "window": {
+    "inventory_days": 7,
+    "inventory_generated_at": "2026-11-17T02:00:15.665344+00:00",
+    "selected_delta_start_utc": "2026-11-15T06:00:00Z",
+    "selected_delta_end_utc": "2026-11-17T02:00:00Z",
+    "note": "A semanal de 15/11 foi usada como continuidade. O fechamento executivo de 15/11 e checkpoints Git posteriores foram selecionados; a sessão ativa deste run permaneceu mutável e pendente."
+  },
+  "scope": "Revisão local seletiva do fechamento executivo de 15/11, continuidade semanal W46, oito resultados finais de sync e registros existentes relacionados. Não houve revisão integral de trajectories, Codex bruto, memórias, índices mutáveis, payloads, providers ou operações externas.",
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/bcd1f6df-d961-47c5-8035-6820a7899c62.jsonl",
+      "path_base": "host_local",
+      "sha256": "a7e17d454c155ee405332d2ff2020922caa923c32b750b680de66bcca000471f",
+      "bytes": 99560,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "jsonl_lines": [5, 13],
+        "complete_units": [5, 6, 8, 10, 11, 12, 13],
+        "selected_units": [7, 9],
+        "note": "Prompt, chamadas, detalhes completos dos jobs WhatsApp/ARX, telemetria e fechamento final lidos; do snapshot e da torre foram selecionados somente campos pertinentes."
+      },
+      "disposition": "Atualizar ARX e Relatórios Operacionais; registrar no diário os dois bloqueios sem replay ou inferência de falha geral.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/2026/2026-11-16.md",
+        "BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md",
+        "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md"
+      ]
+    },
+    {
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W46.md",
+      "path_base": "brain",
+      "sha256": "da7eaa4ac342c45c0458c3537f63e2004e8f9ae2933ed5205e8ba13f81b126a2",
+      "bytes": 8278,
+      "read_scope": "Documento completo",
+      "disposition": "Continuidade e pendências aceitas por identidade; produtos temáticos já consolidados não foram reprocessados."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-15-weekly.json",
+      "path_base": "brain",
+      "sha256": "33c1a26cb90e5ce9aa827e72a00bbb18be14c8d9e5f21b0104c8ed936c425858",
+      "bytes": 19510,
+      "read_scope": "Documento completo",
+      "disposition": "Janela, fontes e filas W46 preservadas; cobertura parcial não foi elevada a integral."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/CONFIG.md",
+      "path_base": "brain",
+      "sha256": "9c30d7fdd2df9e7b6b6e28b4eabdb585c6c59e5c92cdaeb02b378db9a37658bd",
+      "bytes": 6594,
+      "read_scope": "Documento completo",
+      "disposition": "Critérios de relevância, atualização e estrutura aplicados."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/ROTINA-CONSOLIDACAO.md",
+      "path_base": "brain",
+      "sha256": "53ff9e88f0d6347545eb7cf0f58b5b819cb2cd8add324b134f0f836f43f51ae8",
+      "bytes": 6961,
+      "read_scope": "Documento completo",
+      "disposition": "Rotina diária, inventário, cobertura, recibo e separação Git/transporte aplicados."
+    }
+  ],
+  "sync_sources_reviewed": [
+    {"path":"/data/.openclaw/agents/main/sessions/d73c0585-95e0-47a4-8168-176e6a8f01c0.jsonl","sha256":"2f8ffde56f579e167c37aac4abf774a6d07d3ecae48a387cb4fbe738fb0381da","bytes":9787,"read_scope":"resultado final","disposition":"Publicou 6df1cfa às 09:00 UTC de 15/11."},
+    {"path":"/data/.openclaw/agents/main/sessions/5105c4b6-ada7-4c97-bb81-0e01ab673efb.jsonl","sha256":"56b40bcda9b5f0cc3e556aa3a914aa72f9fadc8e3eb7be91fd454fd81f47bfbc","bytes":9534,"read_scope":"resultado final","disposition":"Sem mudanças; remoto atualizado às 15:00 UTC de 15/11."},
+    {"path":"/data/.openclaw/agents/main/sessions/1da898be-ac8d-4b70-8238-a6142399d8ca.jsonl","sha256":"f4515362cdca9032c97d920f9cd4feb2a7ba45239ed881ea6b779658fe7ed7e2","bytes":9118,"read_scope":"resultado final","disposition":"Sem mudanças; remoto atualizado às 20:00 UTC de 15/11."},
+    {"path":"/data/.openclaw/agents/main/sessions/fe9e6ca3-4078-4a31-81f5-7c67a38871c0.jsonl","sha256":"a4130cc25a4af80eafea0b10803ccc5c87396a7ad108a16659aedbabceea9b36","bytes":9251,"read_scope":"resultado final","disposition":"Sem mudanças; remoto atualizado às 01:00 UTC de 16/11."},
+    {"path":"/data/.openclaw/agents/main/sessions/48dfa6a2-0712-46f5-86b5-d5ec0e8f3580.jsonl","sha256":"3194f02e73c5db7a9a4316c9a9ace4a231fd03416fe6fc776f957be6cb214112","bytes":9502,"read_scope":"resultado final","disposition":"Sem mudanças; remoto atualizado às 09:00 UTC de 16/11."},
+    {"path":"/data/.openclaw/agents/main/sessions/5ddb1358-c944-494b-b075-c342b9bced6f.jsonl","sha256":"bded245f43955bcc8416d4bf64f00d41abdc28db9a2bdf7b15380005b0c0ce46","bytes":9106,"read_scope":"resultado final","disposition":"Sem mudanças; remoto atualizado às 15:00 UTC de 16/11."},
+    {"path":"/data/.openclaw/agents/main/sessions/71317220-9d48-4ea7-b9c6-bf5288686125.jsonl","sha256":"9065001450e04aac9557fd5d24fc1931f956918119311fe43291d3cd937b3088","bytes":9785,"read_scope":"resultado final","disposition":"Sem mudanças; remoto atualizado às 20:00 UTC de 16/11."},
+    {"path":"/data/.openclaw/agents/main/sessions/72e37563-7feb-45a8-a19a-15b9efa6060d.jsonl","sha256":"e112c60f1c6afd7656291c4803aa54ca28e738617c73b97d06f4cd2aa27dcd63","bytes":10365,"read_scope":"resultado final","disposition":"Sem mudanças; remoto atualizado às 01:00 UTC de 17/11."}
+  ],
+  "inventory": {
+    "command": "python3 /data/.openclaw/workspace/Brain/scripts/brain-source-inventory.py --days 7",
+    "workdir": "/data/.openclaw/workspace/Brain",
+    "generated_at": "2026-11-17T02:00:15.665344+00:00",
+    "coverage_complete": false,
+    "errors": [],
+    "surface_count": 40,
+    "missing_surface_count": 18,
+    "source_count": null,
+    "source_count_limitation": "A chamada obrigatória foi executada isoladamente e sua saída detalhada permaneceu no transcript; não foi repetida apenas para reconstruir contagem ou persistir um segundo inventário."
+  },
+  "sources_not_reviewed": {
+    "active_run_source": "/data/.openclaw/agents/main/sessions/42059355-b9e9-4511-b69a-524106c4dc67.jsonl",
+    "active_run_disposition": "PENDING_MUTABLE_SOURCE; muda durante esta execução e não pode certificar a própria cobertura.",
+    "classes": ["trajectories", "Codex bruto", "memórias não selecionadas", "índices mutáveis", "históricos fora do delta selecionado", "payloads e providers"],
+    "meaning": "Não revisado não significa ausência de conhecimento, inatividade ou saúde."
+  },
+  "knowledge_dispositions": {
+    "updated_existing": [
+      "BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md",
+      "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md",
+      "BRAIN/01-DIARIO/README.md",
+      "BRAIN/99-SISTEMA/CHANGELOG.md",
+      "BRAIN/99-SISTEMA/HEALTH.md"
+    ],
+    "created_required_daily": ["BRAIN/01-DIARIO/2026/2026-11-16.md"],
+    "new_permanent_notes": [],
+    "new_people_companies_projects_agents": [],
+    "archive_or_delete": [],
+    "reason": "Os fatos novos atualizam duas automações existentes; nenhum registro temático novo foi necessário."
+  },
+  "products": [
+    {"path":"BRAIN/01-DIARIO/2026/2026-11-16.md","sha256":"1f674346066102e83098cee4186729f6253feb755affdae93b50cce3037fd5b5","bytes":5811},
+    {"path":"BRAIN/70-AUTOMACOES/ARX-BACKUP-NINJAONE.md","sha256":"40cb1650028fda513c20d6251a4db54d497d1834fd37b2587f4de3fdf6cf5734","bytes":41005},
+    {"path":"BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md","sha256":"4c944a2eca768bccb29fd57a13723d478191a5c82004ed1e544a442968313a0b","bytes":33749},
+    {"path":"BRAIN/01-DIARIO/README.md","sha256":"d26fc0759179e14445e9fc99bfea4a90599f6f4ea5a87185d74fb405a12ce5d7","bytes":4784},
+    {"path":"BRAIN/99-SISTEMA/CHANGELOG.md","sha256":"133b8323e4421696d2af8485d99aff96917268d245f012aba64c07d33aba7301","bytes":163647},
+    {"path":"BRAIN/99-SISTEMA/HEALTH.md","sha256":"ac21edcba5f767bce6a668bbb33dec01a67a5d46010ff92ebd9b46290cc71886","bytes":112101}
+  ],
+  "pending": [
+    {"id":"WHATSAPP_WEEKLY_VERIFICATION","dependency":"Reconciliar exec-8379fd43-a93c-4479-b2e9-56cb97f226b4 e a evidência faltante antes de declarar a coleta semanal completa; não repetir operação apenas para obter PASS."},
+    {"id":"ARX_IDEMPOTENCY_RECONCILIATION","dependency":"Reconciliar ciclo arx-cycle-58938f60de5445148d92b439e73cd4b6, auditoria eb3ec8a7…, ticket #2196, dispositivo e estado real antes de qualquer mutação."},
+    {"id":"PRIMARY_WINDOW_BACKLOG","dependency":"Trajectories, Codex bruto, memórias, índices mutáveis e demais fontes inventariadas não foram revisados integralmente."},
+    {"id":"LIVE_AGENT_HEALTH_UNPROVEN","dependency":"Ausência de histórico selecionado não prova inatividade, fila vazia ou saúde viva dos agentes e integrações."},
+    {"id":"PRIOR_BACKLOG","dependency":"Filas W46 e anteriores permanecem por identidade; esta consolidação não encerra Ronda, Diakonos, M365, Capixaba, operação fiscal ou outros itens já registrados."}
+  ],
+  "semantic_search": {
+    "command": "/data/.openclaw/skills/brain-semantic-search/scripts/search \"Quais decisões, aprendizados, projetos, riscos e pendências de 14 a 16 de novembro de 2026 já existem no Brain e devem ser atualizados na consolidação diária?\"",
+    "mode": "read_only_no_refresh",
+    "index_at": "2026-11-15T09:02:39.281304Z",
+    "source_digest": "21ebf7fd31ae5d187c9f0555b37b753e08ba4eab5ee24603dc68f0484a44b5ab",
+    "status": "COMPLETED_CANDIDATES_ONLY",
+    "disposition": "Candidatos orientaram deduplicação; similaridade não foi usada como prova de equivalência, cobertura ou estado atual.",
+    "index_refresh_executed": false
+  },
+  "validation": {
+    "json_parse": {"status":"PASS","command":"python3 -m json.tool BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-16-daily.json >/dev/null"},
+    "schema_and_relationships": {
+      "status":"PASS",
+      "command":"python3 local validator using note.schema.json and relationship-types.yaml for the six changed Markdown notes",
+      "notes":6,
+      "relationships":6,
+      "errors":[]
+    },
+    "link_gate": {
+      "status":"PASS",
+      "command":"python3 BRAIN/99-SISTEMA/brain-v2/tools/brain_link_gate.py --root . --json",
+      "markdown_total":456,
+      "internal_links":1098,
+      "broken_internal_links":0,
+      "uncategorized_markdown":0,
+      "duplicate_ids":{},
+      "duplicate_aliases":{},
+      "secret_candidates":[],
+      "graph_components":1,
+      "reachability_rate":1.0,
+      "failures":[]
+    },
+    "content_or_coverage_certified": false,
+    "limitation": "Gates reais certificam schema, vínculos e integridade estrutural; não certificam conteúdo, cobertura semântica, saúde viva ou transporte."
+  },
+  "publication": {
+    "previous_commit_remote_transport": "6df1cfa published by scheduled sync at 2026-11-15T09:00Z",
+    "current_local_commit": "PENDING_AT_RECEIPT_CREATION",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_INVOKED",
+    "remote_confirmation_for_current_cycle": "NOT_QUERIED",
+    "scheduled_git_routines": "UNCHANGED"
+  },
+  "operational_recovery": {
+    "invalid_tool_calls": 0,
+    "failed_read_calls": 0,
+    "stages_repeated": [],
+    "mutation_repeated": false
+  },
+  "safety": {
+    "silent": true,
+    "messages_sent_by_consolidation": 0,
+    "external_access_by_consolidation": false,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "business_effects": false,
+    "tickets_or_financial_mutations": false,
+    "push_or_sync": false
+  }
+}

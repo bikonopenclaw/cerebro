@@ -4,13 +4,23 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-15T06:00:00Z'
+updated: '2026-11-17T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-16, consolidação diária silenciosa — execução em 17/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico; a data UTC da execução foi preservada separadamente.
+- Atualizado o registro ARX existente com a recorrência semanal de 14/11: `11` itens verificados, uma issue, zero mutações e novo ciclo/auditoria para o mesmo bloqueio `IDEMPOTENCY_STATE` de Ferreira Rocha, dispositivo `servidor_2j3wv` e ticket `#2196`.
+- Atualizado o registro existente de Relatórios Operacionais com a coleta semanal WhatsApp `BLOCKED_OR_UNCERTAIN`: falha de `exec` identificada, produto não certificado e ausência de prova de recuperação/entrega posterior no delta selecionado. Nenhuma falha geral do provider foi inferida.
+- Revisados o fechamento executivo de 15/11 e oito checkpoints de sync. O sync das 09:00 UTC de 15/11 publicou `6df1cfa`; os sete checkpoints seguintes encontraram o repositório sem mudanças e atualizado. Transporte Git não foi promovido a cobertura ou saúde operacional.
+- Inventário obrigatório executado isoladamente com `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40. Trajectories, Codex bruto, memórias e demais fontes não selecionadas permaneceram pendentes; a sessão ativa deste run permaneceu fonte mutável e não foi declarada coberta.
+- Pesquisa semântica local executada em modo read-only/sem refresh. HEALTH e recibo `brain-v2/reports/coverage-2026-11-16-daily.json` atualizados.
+- Nenhuma mensagem, reexecução, ticket, coleta, envio, configuração, operação financeira, push ou sync foi feita por esta consolidação; o commit é somente local.
 
 ## 2026-11-15, consolidação semanal silenciosa — 2026-W46
 
