@@ -1,0 +1,227 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_date": "2026-11-17",
+  "cycle_timezone": "America/Sao_Paulo",
+  "executed_at_utc": "2026-11-18T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "8ca66660-0e08-4299-8ce1-312e3d66cec8",
+  "session_key": "agent:main:cron:d95bbe73-24d9-4e2b-ba57-0032082bb54b:run:8ca66660-0e08-4299-8ce1-312e3d66cec8",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "reliability_instruction": "BRAIN_DAILY_RELIABILITY_20261026",
+  "base_commit": "a081f78b5a108f123cd3fefdc04c07496ed71ef2",
+  "product_state": "PRODUCED_DOCUMENTARY_PARTIAL",
+  "coverage_complete": false,
+  "window": {
+    "inventory_days": 7,
+    "inventory_generated_at": "2026-11-18T02:00:20.024680+00:00",
+    "selected_delta_start_utc": "2026-11-17T02:00:00Z",
+    "selected_delta_end_utc": "2026-11-18T02:00:00Z",
+    "note": "O fechamento estável do ciclo anterior e quatro checkpoints Git posteriores foram selecionados. A sessão ativa deste run permaneceu mutável e pendente."
+  },
+  "scope": "Revisão local seletiva do fechamento do ciclo anterior, conferência de seus produtos no commit exato e quatro históricos de sync do Brain. Não houve revisão integral de trajectories, Codex bruto, memórias, índices mutáveis, payloads, providers ou operações externas.",
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/42059355-b9e9-4511-b69a-524106c4dc67.jsonl",
+      "path_base": "host_local",
+      "sha256": "44dddb0aab61632453ab0a97646f85bb93f297441dfdf26df9ecbf7b06a94684",
+      "bytes": 834469,
+      "mtime_ns": 1794881425367553308,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {
+        "jsonl_lines": [5, 136],
+        "note": "Prompt e fechamento final selecionados; a fonte completa foi percorrida para identificar linhas, mas tool payloads intermediários não foram declarados semanticamente revisados."
+      },
+      "disposition": "Consumir o fechamento do ciclo anterior por identidade; validar os produtos no commit exato e não reprocessar o conteúdo temático.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-17.md"]
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-11-16.md",
+      "path_base": "brain_commit:a081f78b5a108f123cd3fefdc04c07496ed71ef2",
+      "sha256": "1f674346066102e83098cee4186729f6253feb755affdae93b50cce3037fd5b5",
+      "bytes": 5811,
+      "read_scope": "Documento completo",
+      "disposition": "Continuidade e pendências preservadas; nenhum produto temático reprocessado."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-16-daily.json",
+      "path_base": "brain_commit:a081f78b5a108f123cd3fefdc04c07496ed71ef2",
+      "sha256": "29903a328839dba2357731ad88cb6ba3e2b5454a53fbe357067930e186bb5b62",
+      "bytes": 12325,
+      "read_scope": "Documento completo e products[] verificado contra blobs do commit",
+      "disposition": "Os seis produtos declarados coincidiram por SHA-256 e tamanho; reconciliação consumida por identidade."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/CONFIG.md",
+      "path_base": "brain",
+      "sha256": "9c30d7fdd2df9e7b6b6e28b4eabdb585c6c59e5c92cdaeb02b378db9a37658bd",
+      "bytes": 6594,
+      "read_scope": "Documento completo",
+      "disposition": "Critérios de relevância, atualização e estrutura aplicados."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/ROTINA-CONSOLIDACAO.md",
+      "path_base": "brain",
+      "sha256": "53ff9e88f0d6347545eb7cf0f58b5b819cb2cd8add324b134f0f836f43f51ae8",
+      "bytes": 6961,
+      "read_scope": "Documento completo",
+      "disposition": "Rotina diária, inventário, cobertura, recibo e separação Git/transporte aplicados."
+    }
+  ],
+  "sync_sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/43336d04-8c57-467a-9ce3-da3088be95f9.jsonl",
+      "sha256": "4d32690a5ccb7f82bbaed888a7b734acfefaa98151390e5d2b715294490d659e",
+      "bytes": 14516,
+      "mtime_ns": 1794906022980365084,
+      "read_scope": "linhas 5 e 10",
+      "disposition": "Publicou a081f78 às 09:00 UTC de 17/11; árvore limpa."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/e7cddf30-16c6-4e26-86d0-c888ab2f2e68.jsonl",
+      "sha256": "77f0a6e769428d2a29937eb92fe1c4f63c622114e4ce8a909987774f857d9aee",
+      "bytes": 9273,
+      "mtime_ns": 1794927625523530872,
+      "read_scope": "linhas 5 e 8",
+      "disposition": "Sem mudanças; remoto atualizado às 15:00 UTC de 17/11."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/11dc8e2e-69c9-4f38-af46-2ac808aa338e.jsonl",
+      "sha256": "c9e89c928f50c9f47a0666cca341665b2c6aca4e6671cf97dcaa5cee2ce6078e",
+      "bytes": 9083,
+      "mtime_ns": 1794945620982647822,
+      "read_scope": "linhas 5 e 8",
+      "disposition": "Sem mudanças; remoto atualizado às 20:00 UTC de 17/11."
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2bcd559a-26d1-4861-a2eb-a0cea7f79b4f.jsonl",
+      "sha256": "67e26d8ee9785a79b21fbc5daab1dcf69edc740e85e0019b750a36a677d4e1d8",
+      "bytes": 9670,
+      "mtime_ns": 1794963622014010035,
+      "read_scope": "linhas 5 e 8",
+      "disposition": "Sem mudanças; remoto atualizado às 01:00 UTC de 18/11."
+    }
+  ],
+  "prior_commit_verification": {
+    "commit": "a081f78b5a108f123cd3fefdc04c07496ed71ef2",
+    "receipt_sha256": "29903a328839dba2357731ad88cb6ba3e2b5454a53fbe357067930e186bb5b62",
+    "receipt_bytes": 12325,
+    "declared_products_checked": 6,
+    "declared_products_matching": 6,
+    "status": "PASS",
+    "command": "python3 read-only verifier using git show <commit>:<path> and SHA-256/size comparison"
+  },
+  "inventory": {
+    "command": "python3 /data/.openclaw/workspace/Brain/scripts/brain-source-inventory.py --days 7",
+    "workdir": "/data/.openclaw/workspace/Brain",
+    "generated_at": "2026-11-18T02:00:20.024680+00:00",
+    "coverage_complete": false,
+    "errors": [],
+    "surface_count": 40,
+    "missing_surface_count": 18,
+    "source_count": null,
+    "source_count_limitation": "A chamada obrigatória foi executada isoladamente e sua saída detalhada permaneceu no transcript; não foi repetida apenas para reconstruir a contagem."
+  },
+  "sources_not_reviewed": {
+    "active_run_source": "/data/.openclaw/agents/main/sessions/8ca66660-0e08-4299-8ce1-312e3d66cec8.jsonl",
+    "active_run_disposition": "PENDING_MUTABLE_SOURCE; muda durante esta execução e não pode certificar a própria cobertura.",
+    "classes": ["trajectories", "Codex bruto", "memórias não selecionadas", "índices mutáveis", "históricos fora do delta selecionado", "payloads e providers"],
+    "meaning": "Não revisado não significa ausência de conhecimento, inatividade ou saúde."
+  },
+  "knowledge_dispositions": {
+    "updated_existing": [
+      "BRAIN/01-DIARIO/README.md",
+      "BRAIN/99-SISTEMA/CHANGELOG.md",
+      "BRAIN/99-SISTEMA/HEALTH.md"
+    ],
+    "created_required_daily": ["BRAIN/01-DIARIO/2026/2026-11-17.md"],
+    "new_permanent_notes": [],
+    "new_people_companies_projects_agents_automations": [],
+    "archive_or_delete": [],
+    "reason": "O delta selecionado contém continuidade verificável e checkpoints Git, sem novidade temática com utilidade futura suficiente para outro registro permanente."
+  },
+  "products": [
+    {"path": "BRAIN/01-DIARIO/2026/2026-11-17.md", "sha256": "6accc35d120e266af69ed3f1f417713001688c8584ac6cd1aeeaff0415916868", "bytes": 3748},
+    {"path": "BRAIN/01-DIARIO/README.md", "sha256": "4e34688a511b3f66c56680c7cff66033a6205cddb6d22259df9d8020a0d085a3", "bytes": 4827},
+    {"path": "BRAIN/99-SISTEMA/CHANGELOG.md", "sha256": "a6611b23b33f17ce3b2a4d0a6fd6d2748166827c743e738f1c1a1da6b5d2570c", "bytes": 165042},
+    {"path": "BRAIN/99-SISTEMA/HEALTH.md", "sha256": "d17640f11ebba7345a819550e3fb77feefc82ae7457814bdca4a18c9a8566e24", "bytes": 113880}
+  ],
+  "pending": [
+    {"id": "WHATSAPP_WEEKLY_VERIFICATION", "dependency": "Preservada do ciclo anterior; reconciliar a execução e a evidência faltante antes de declarar a coleta semanal completa, sem repetir operação apenas para obter PASS."},
+    {"id": "ARX_IDEMPOTENCY_RECONCILIATION", "dependency": "Preservada do ciclo anterior; reconciliar ciclo, auditoria, ticket #2196, dispositivo e estado real antes de qualquer mutação."},
+    {"id": "PRIMARY_WINDOW_BACKLOG", "dependency": "Trajectories, Codex bruto, memórias, índices mutáveis e demais fontes inventariadas não foram revisados integralmente."},
+    {"id": "LIVE_AGENT_HEALTH_UNPROVEN", "dependency": "Ausência de histórico selecionado não prova inatividade, fila vazia ou saúde viva dos agentes e integrações."},
+    {"id": "PRIOR_BACKLOG", "dependency": "Filas W46 e anteriores permanecem por identidade; esta consolidação não encerra Ronda, Diakonos, M365, Capixaba, operação fiscal ou outros itens já registrados."}
+  ],
+  "semantic_search": {
+    "command": "/data/.openclaw/skills/brain-semantic-search/scripts/search \"Quais decisões, aprendizados, projetos, riscos ou preferências relevantes de 17 de novembro de 2026 ainda precisam ser consolidados no Brain?\"",
+    "mode": "read_only_no_refresh",
+    "index_at": "2026-11-17T02:11:49.732033Z",
+    "source_digest": "25f0ff9fe87853581ab0db067984c2103e3ea53cb0e213bec2fe61147ed86157",
+    "status": "COMPLETED_CANDIDATES_ONLY",
+    "disposition": "Candidatos orientaram navegação e deduplicação; similaridade não foi usada como prova de equivalência, cobertura ou estado atual.",
+    "index_refresh_executed": false
+  },
+  "native_memory_search": {
+    "query": "decisões, projetos, aprendizados, riscos e preferências relevantes de 17 de novembro de 2026 para consolidação diária do Brain",
+    "status": "NO_CURRENT_HIT",
+    "disposition": "Resultados retornados eram históricos e não foram promovidos como novidade de 17/11."
+  },
+  "validation": {
+    "json_parse": {
+      "status": "PASS",
+      "command": "python3 -m json.tool BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-17-daily.json >/dev/null"
+    },
+    "schema_and_relationships": {
+      "status": "PASS",
+      "command": "python3 local validator using note.schema.json and relationship-types.yaml for the four changed Markdown notes",
+      "notes": 4,
+      "relationships": 2,
+      "errors": []
+    },
+    "link_gate": {
+      "status": "PASS",
+      "command": "python3 BRAIN/99-SISTEMA/brain-v2/tools/brain_link_gate.py --root . --json",
+      "markdown_total": 457,
+      "internal_links": 1099,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": {},
+      "duplicate_aliases": {},
+      "secret_candidates": [],
+      "graph_components": 1,
+      "reachability_rate": 1.0,
+      "failures": []
+    },
+    "content_or_coverage_certified": false,
+    "limitation": "Gates reais certificam schema, vínculos e integridade estrutural; não certificam conteúdo, cobertura semântica, saúde viva ou transporte."
+  },
+  "publication": {
+    "previous_commit_remote_transport": "a081f78 published by scheduled sync at 2026-11-17T09:00Z",
+    "current_local_commit": "PENDING_AT_RECEIPT_CREATION",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_INVOKED",
+    "remote_confirmation_for_current_cycle": "NOT_QUERIED",
+    "scheduled_git_routines": "UNCHANGED"
+  },
+  "operational_recovery": {
+    "invalid_tool_calls": 0,
+    "failed_read_calls": 0,
+    "failed_commands": 0,
+    "stages_repeated": [],
+    "mutation_repeated": false
+  },
+  "safety": {
+    "silent": true,
+    "messages_sent_by_consolidation": 0,
+    "external_access_by_consolidation": false,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "business_effects": false,
+    "tickets_or_financial_mutations": false,
+    "push_or_sync": false
+  }
+}
