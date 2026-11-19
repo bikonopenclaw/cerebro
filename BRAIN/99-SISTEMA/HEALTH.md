@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-18T02:00:00Z'
+updated: '2026-11-19T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,17 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-18 (execução em 19/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 18/11; execução em 19/11 às 02:00 UTC. O inventário obrigatório registrou 92 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40. Metadados de inventário não comprovam leitura, cobertura de conteúdo ou saúde viva.
+- O ciclo anterior foi consumido por identidade. Conferência direta no commit `77b69b4` confirmou que o recibo e os quatro produtos declarados coincidem por SHA-256 e tamanho; nenhum produto temático foi reprocessado.
+- Quatro históricos de sync foram revisados pelos resultados finais: o checkpoint das 09:00 UTC publicou `77b69b4`; 15:00, 20:00 e 01:00 UTC encontraram a árvore sem mudanças e o remoto atualizado. Isso prova somente os checkpoints Git observados.
+- Nenhuma fonte temática nova justificou atualização permanente. As pendências ARX, WhatsApp e filas anteriores permanecem abertas por identidade; ausência de fontes recentes de Darth Vader ou Robotnik não prova inatividade, fila vazia ou saúde viva.
+- Trajectories, Codex bruto, memórias, índices mutáveis e demais fontes inventariadas permaneceram não lidos. A sessão desta consolidação muda durante o run e não foi usada como prova de cobertura de si própria.
+- Pesquisa semântica local executada em modo read-only com índice de 18/11 às 02:07 UTC, sem refresh. Candidatos orientaram navegação e deduplicação; não provaram equivalência ou estado atual.
+- A leitura inicial de HEALTH/CHANGELOG na raiz falhou com `ENOENT` e foi recuperada pelos caminhos canônicos. A saída inicial do inventário ficou truncada no transporte; o mesmo inventário foi refeito somente para persistência temporária e inspeção completa, sem repetir mutação de negócio.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-18-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Gates estruturais não certificam conteúdo, completude semântica, recuperação operacional, saúde viva ou transporte.
 
 ## Verificação de cobertura — 2026-11-17 (execução em 18/11 às 02:00 UTC)
 
