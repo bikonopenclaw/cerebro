@@ -4,13 +4,24 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-19T02:00:00Z'
+updated: '2026-11-20T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-19, consolidação diária silenciosa — execução em 20/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico; a data UTC da execução foi preservada separadamente.
+- Nenhuma novidade temática justificou criar ou atualizar registro permanente de pessoa, empresa, projeto, agente, automação ou conhecimento. Pendências anteriores foram preservadas por identidade.
+- Consumido o ciclo anterior sem reprocessamento. Conferência no commit exato `db5a7b1` confirmou por SHA-256 e tamanho o recibo e os quatro produtos declarados.
+- Revisados quatro históricos de sync: 09:00 UTC publicou `db5a7b1`; 15:00, 20:00 e 01:00 UTC não encontraram delta. Transporte Git não foi promovido a cobertura, recuperação operacional ou saúde viva.
+- Inventário obrigatório executado isoladamente e persistido somente para resumo verificável: 89 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40. Trajectories, Codex bruto, memórias e demais fontes não selecionadas permaneceram pendentes; a sessão ativa deste run ficou como fonte mutável.
+- Pesquisa semântica local executada em modo read-only/sem refresh. HEALTH e recibo `brain-v2/reports/coverage-2026-11-19-daily.json` atualizados.
+- Cinco leituras nativas de históricos fora do workspace foram bloqueadas pelo sandbox e recuperadas individualmente por parser Python local somente leitura. Uma tentativa de recibo usou o sufixo inexistente `-diario.json`; o caminho canônico `-daily.json` foi lido antes da análise. Nenhuma escrita ou mutação de negócio foi repetida para apagar os diagnósticos.
+- Nenhuma mensagem, reexecução temática, ticket, envio, configuração, operação financeira, push ou sync foi feita por esta consolidação; o commit é somente local.
 
 ## 2026-11-18, consolidação diária silenciosa — execução em 19/11 às 02:00 UTC
 
