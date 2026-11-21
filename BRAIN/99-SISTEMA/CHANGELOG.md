@@ -4,13 +4,25 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-20T02:00:00Z'
+updated: '2026-11-21T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-20, consolidação diária silenciosa — execução em 21/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico; a data UTC da execução foi preservada separadamente.
+- Atualizados três registros existentes, sem criar nota temática: Relatórios Operacionais, ARX Backup → NinjaOne e Bikon Durable Work Orchestration.
+- Reconciliado o falso negativo WhatsApp de 14/11: o run preserva anomalia intermediária, mas produto e validação terminaram `PASS`; entrega ficou `NOT_REQUESTED`. A pendência anterior foi superada somente para essa ocorrência.
+- Requalificado o ciclo ARX de 14/11 como bloqueio controlado, com zero tentativas externas. O estado canônico observado em 20/11 já apontava ticket `#2241` e condição diferente da histórica; nenhum replay, ticket ou provider foi acionado.
+- Registrada a correção fail-closed de ownership para delegação nativa em Telegram direto. O goal da Torre aceitou fechamento após reconciliação por controller, origem, run ID, sessão filha e tarefa, sem repetir o produto.
+- O diagnóstico propôs patch read-only na Torre para separar `RUN`, `PRODUCT`, `PIPELINE` e `DELIVERY`, mas não o aplicou. Nenhuma autorização de ticket, SMTP, provider, reexecução ou envio foi inferida.
+- Consumido o ciclo anterior no commit exato `5fd229f`; recibo e quatro produtos declarados coincidiram por hash e tamanho. O sync das 09:00 UTC publicou esse commit; 15:00, 20:00 e 01:00 UTC não encontraram delta.
+- Inventário obrigatório executado isoladamente e repetido somente para persistir JSON temporário/resumo verificável: 97 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40. Pesquisa semântica executada read-only/sem refresh.
+- HEALTH e recibo `brain-v2/reports/coverage-2026-11-20-daily.json` atualizados. Nenhuma mensagem, operação externa, mutação de negócio, push ou sync foi feita por esta consolidação; o commit é somente local.
 
 ## 2026-11-19, consolidação diária silenciosa — execução em 20/11 às 02:00 UTC
 

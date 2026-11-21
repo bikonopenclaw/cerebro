@@ -6,17 +6,21 @@ created: '2026-09-21T18:53:54.531182Z'
 created_semantics: Data de registro estruturado, não data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-relationships: []
-updated: '2026-11-17T02:00:00Z'
+relationships:
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-11-20.md
+  reason: Vincula a reconciliação read-only do bloqueio ARX e a correção de classificação proposta para a Torre.
+  source: /data/.openclaw/workspace/artifacts/torre-corrections-prep-20261120.md
+updated: '2026-11-21T02:00:00Z'
 ---
 
 # ARX Backup diário → tickets NinjaOne
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15, requests mensais/qualificacao nativa reconciliadas em 2026-09-16/19, recuperacao mensal NO_SEND de outubro validada em 2026-11-02 e fechamentos executivos somente leitura de 2026-11-08 e 2026-11-15
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15, requests mensais/qualificacao nativa reconciliadas em 2026-09-16/19, recuperacao mensal NO_SEND de outubro validada em 2026-11-02, fechamentos executivos somente leitura de 2026-11-08 e 2026-11-15 e diagnóstico read-only de 2026-11-20
 confiabilidade: alta
-ultima_revisao: 2026-11-16
+ultima_revisao: 2026-11-20
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski, relatorio-mensal, no-send]
 ```
 
@@ -228,6 +232,15 @@ Proveniência: sessão main `9b628c9e-d237-4af9-8e94-17aea5f230b5`, fechamento s
 - Antes de qualquer mutação, conciliar a chave de idempotência, o ticket `#2196`, o dispositivo e a auditoria corrente. Não repetir criação ou fechamento apenas para obter status conveniente.
 
 Proveniência: sessão main `bcd1f6df-d961-47c5-8035-6820a7899c62`, fechamento executivo somente leitura observado em 15/11 às 18:00 BRT; recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-16-daily.json`.
+
+## Reconciliação read-only do bloqueio semanal — 20/11/2026
+
+- A auditoria `arx-cycle-58938f60de5445148d92b439e73cd4b6` foi aberta e confirmou `11` itens, um bloqueio `IDEMPOTENCY_STATE`, zero tentativas externas e nenhuma mutação. Código `1` representa bloqueio controlado neste ciclo, não quebra técnica do runner.
+- A observação corrente de 20/11 encontrou `servidor_2j3wv` ativo no estado canônico com ticket `#2241`, `mutation_state=SUCCESS`, chave de idempotência `otm-fffaeb569c3220167365c500f485b0aab39915d1e7b5f467e15c394b5b767785` e readback do provider às 04:15 UTC. A condição corrente `8|sources=Arquivos e Pastas` difere da condição histórica de 14/11, `1|sources=Arquivos e Pastas`.
+- Portanto, não corrigir o runner nem reutilizar automaticamente o ticket histórico `#2196`. Qualquer ação futura precisa reler o estado atual por identidade; a divergência de condição impede tratar a pendência de 14/11 como comando de replay.
+- A correção proposta é somente de classificação da Torre: `TICKET_CYCLE=COMPLETED_WITH_BLOCKS` com zero tentativas externas deve aparecer como `CONTROLLED_BLOCK`, preservando audit, ticket e próxima ação. O patch da Torre continuava não aplicado no fechamento do diagnóstico.
+
+Proveniência: diagnóstico `/data/.openclaw/workspace/artifacts/torre-corrections-prep-20261120.md`, SHA-256 `1aa3f305a6ca66e849f50a99b050f936327932200e168590e486ac41a6a749a8`; auditoria SHA-256 `eb3ec8a7abbead58fee12dd9a338cb070f8102831f4e278bccc6c4bdc859fa9a`. Estado observado, sem mutação de ticket ou provider pela consolidação.
 
 ## Guardrails
 

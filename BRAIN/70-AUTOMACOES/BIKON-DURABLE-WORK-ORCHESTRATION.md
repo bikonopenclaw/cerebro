@@ -19,16 +19,20 @@ relationships:
   target: BRAIN/01-DIARIO/2026/2026-11-10.md
   reason: Vincula a correção do lifecycle NinjaOne e o primeiro fechamento natural observado após a correção.
   source: BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md#ronda-bikon-lifecycle-resolvido-e-fechamento-natural-2026-11-10
-updated: '2026-11-12T02:00:00Z'
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-11-20.md
+  reason: Vincula a correção de ownership das delegações nativas e o diagnóstico read-only da Torre.
+  source: /data/.openclaw/agents/main/sessions/bc266bfd-5af3-4839-818e-302c9168a3f1.jsonl#L57-L85
+updated: '2026-11-21T02:00:00Z'
 ---
 
 # Bikon Durable Work Orchestration
 
 ```yaml
 categoria: automacao_operacional
-fonte: contrato canonico, requests de 2026-09-16/19, recusas protegidas de 2026-09-22 e cadeias canônicas Ronda de 2026-11-06 e 2026-11-10
+fonte: contrato canonico, requests de 2026-09-16/19, recusas protegidas de 2026-09-22, cadeias canônicas Ronda de 2026-11-06 e 2026-11-10 e reconciliação de delegação nativa de 2026-11-20
 confiabilidade: alta para os eventos e estados persistidos citados, sem inferir saúde viva ou sucesso de ciclos futuros
-ultima_revisao: 2026-11-10
+ultima_revisao: 2026-11-20
 tags: [bikon, durable-work, relatorios, documentos, sentinel, kowalski, ronda, ninjaone, telegram, lifecycle, idempotencia]
 ```
 
@@ -123,6 +127,16 @@ O caso da prévia financeira mostrou uma dimensão diferente: duas execuções D
 Já o goal `COMPARATIVO-M365-20261111-1754` permaneceu sem produto revisado no corte. O preflight não conseguiu comprovar `web_search`/`web_fetch` no Kowalski e não despachou o worker. A pesquisa direta acessou páginas oficiais da Microsoft, mas a sessão terminou durante a coleta, sem artefato, review, close ou entrega comprovados. Capacidade parcial de navegação não deve ser promovida a conclusão comercial.
 
 Fontes: sessões main `136d846c-eeb6-4f32-802f-6ae4d25d7526`, `6ea059fa-4cfa-4468-9c47-a324cae693fc`, `2ada84e2-9e07-4915-a959-4825a18126e3`, sessão Robotnik `73aec01c-e535-4c76-a5e8-835b5792c0b3` e delta da sessão compartilhada `9e7fc978-437f-4248-b13b-fdd24bd43d6f`; recibo `coverage-2026-11-11-daily.json`.
+
+## Ownership de delegação nativa em rota Telegram direta — 2026-11-20
+
+O goal `TORRE-CONTROLE-CORRECTIONS-PREP-20261120T1025Z` produziu e validou um diagnóstico read-only, mas o primeiro fechamento ficou bloqueado por `UNRESOLVED_EXECUTION_OWNERSHIP`. O produto não foi repetido. A reconciliação posterior consumiu o retorno nativo pela mesma identidade e aceitou a solicitação de fechamento no estágio de entrega; isso comprova a convergência daquele goal, não transporte humano nem saúde geral do supervisor.
+
+O reconciliador atual passou a admitir a diferença entre a sessão canônica solicitante e o controller autenticado de uma rota Telegram direta somente quando todas as identidades coincidem: contexto confiável e source da rota, `run_id`, sessão filha, tarefa, controller `agent:main:main` e origem Telegram esperada. Texto da tarefa, callback solto, timeout, incerteza ou duplicidade não bastam e continuam fail-closed.
+
+Regra operacional consolidada: admitir e vincular o goal antes da delegação, verificar capacidades específicas do executor e enviar brief curto/autocontido com apenas os trechos de fonte necessários. Não reenviar história inteira nem transformar correlação de ownership em autorização de negócio, replay ou efeito externo.
+
+Fontes: `native_delegation_ownership.py` SHA-256 `6c662da9f89642b42e843165c69691aba7837fd5a69c25908bcafab24bdc22ec`, linhas 90–121; sessões main `bc266bfd-5af3-4839-818e-302c9168a3f1`, linhas 57–85, e `5f217976-1342-478c-8f09-b9922b2aa8b6`, linhas 5–6. Estado observado em 20/11; nenhum efeito de negócio decorre deste registro.
 
 ## Relações
 

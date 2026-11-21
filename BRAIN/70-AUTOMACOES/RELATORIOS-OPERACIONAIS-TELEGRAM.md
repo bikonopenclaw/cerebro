@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-11-17T02:00:00Z'
+updated: '2026-11-21T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/KOWALSKI.md
@@ -20,15 +20,19 @@ relationships:
   target: BRAIN/20-EMPRESAS/BIKON/README.md
   reason: Relação já declarada pelo autor na seção Relações; conversão de caminho literal para link navegável.
   source: BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md#relações
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-11-20.md
+  reason: Vincula a reconciliação do falso negativo WhatsApp e o diagnóstico da Torre por camadas.
+  source: /data/.openclaw/workspace/artifacts/torre-corrections-prep-20261120.md
 ---
 
 # Relatórios Operacionais Telegram
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14, qualificacao do fluxo universal em 2026-09-16 e fechamento executivo somente leitura de 2026-11-15
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14, qualificacao do fluxo universal em 2026-09-16, fechamento executivo somente leitura de 2026-11-15 e reconciliação da Torre de 2026-11-20
 confiabilidade: alta
-ultima_revisao: 2026-11-16
+ultima_revisao: 2026-11-20
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
@@ -54,6 +58,16 @@ Fontes: cabeçalho de `workspace/MEMORY.md` e sessão main `c51081ed-2bf7-4759-9
 - O delta selecionado até 16/11 às 23:00 BRT não trouxe prova de recuperação ou de entrega posterior dessa coleta. Essa lacuna permanece separada dos ciclos de Kowalski que estavam agendados para segunda-feira.
 
 Proveniência: sessão main `bcd1f6df-d961-47c5-8035-6820a7899c62`, fechamento executivo somente leitura observado em 15/11 às 18:00 BRT; recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-16-daily.json`.
+
+## Reconciliação da coleta WhatsApp e da Torre — 20/11/2026
+
+- A ocorrência exata de 14/11 foi reconciliada. A primeira chamada usou o argumento incompatível `cmd` e recebeu `Provide a command to start.`, mas o mesmo processo terminou depois com código `0` e os marcadores `PRODUCTIVE_RESULT=PASS`, `MANDATORY_VALIDATION=PASS`, `OPTIONAL_POSTCHECK=PASS` e `CLEANUP=PASS`.
+- O produto semanal tem SHA-256 `fc46c0de6f980b22f51b8b3089863d3036fe951342dce893ab2714913780d02c`; a fonte tem SHA-256 `99ff52a6e7a532f096f231ca4c791aaf8d7bf4aa1f06c21093d1372adf994056`. `EXTERNAL_DELIVERY=NONE`: produto válido não equivale a envio.
+- A classificação anterior `BLOCKED_OR_UNCERTAIN` fica superada **somente para o produto desta ocorrência**. O envelope do cron preserva uma anomalia intermediária e não deve ser apagado: `run_state=ANOMALY`, `product_state=PASS`, `delivery_state=NOT_REQUESTED`.
+- A Torre deve separar `RUN`, `PRODUCT`, `PIPELINE` e `DELIVERY`. Para mensais ARX, journal/receipt da competência prevalece para o estado do produto; anúncio Telegram nunca prova SMTP. Para ticketing, `COMPLETED_WITH_BLOCKS` com zero tentativa externa é bloqueio controlado, não quebra técnica.
+- O patch proposto para `executive_snapshot.py` e para a skill da Torre **não foi aplicado** pelo diagnóstico. Uma mudança futura exige autorização limitada ao patch read-only e testes; não inclui ticket, provider, SMTP, reexecução ou envio.
+
+Proveniência: diagnóstico completo `/data/.openclaw/workspace/artifacts/torre-corrections-prep-20261120.md`, SHA-256 `1aa3f305a6ca66e849f50a99b050f936327932200e168590e486ac41a6a749a8`; sessão main `bc266bfd-5af3-4839-818e-302c9168a3f1`, linhas 57–85.
 
 ## Grupo
 

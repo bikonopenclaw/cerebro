@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-20T02:00:00Z'
+updated: '2026-11-21T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,17 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-20 (execução em 21/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 20/11; execução em 21/11 às 02:00 UTC. O inventário obrigatório registrou 97 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40. Metadados não comprovam leitura, cobertura de conteúdo ou saúde viva.
+- O ciclo anterior foi consumido por identidade. Conferência direta no commit `5fd229f` confirmou que o recibo e os quatro produtos declarados coincidem por SHA-256 e tamanho.
+- O diagnóstico completo da Torre foi lido e promoveu três atualizações existentes. WhatsApp de 14/11 passou a produto `PASS` com run anômalo e sem entrega; ARX ficou qualificado como bloqueio controlado, sem replay; ownership nativo passou a exigir identidade composta fail-closed.
+- Quatro históricos de sync foram revisados: 09:00 UTC publicou `5fd229f`; 15:00, 20:00 e 01:00 UTC encontraram a árvore sem mudanças e o remoto atualizado. Isso prova somente checkpoints Git observados.
+- O patch proposto da Torre permanece não aplicado. O fechamento do goal da Torre não prova transporte humano, saúde geral do supervisor, SMTP, mutação de tickets ou provider.
+- Trajectories, Codex bruto, memórias, índices mutáveis e demais fontes não selecionadas permaneceram não lidos. A sessão desta consolidação é mutável e não certifica a própria cobertura; ausência de fonte recente de outros agentes não prova inatividade.
+- Pesquisa semântica local executada em modo read-only com índice de 20/11 às 02:08 UTC, sem refresh. Candidatos orientaram navegação e deduplicação; não provaram equivalência ou estado atual.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-20-daily.json`. Cobertura global parcial; score legado 96/100 mantido sem recálculo. Gates estruturais não certificam conteúdo, completude semântica, saúde viva ou transporte.
 
 ## Verificação de cobertura — 2026-11-19 (execução em 20/11 às 02:00 UTC)
 
