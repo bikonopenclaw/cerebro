@@ -4,13 +4,23 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-21T02:00:00Z'
+updated: '2026-11-22T06:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-22, consolidação semanal silenciosa — 2026-W47
+
+- Revisados integralmente os cinco diários existentes de 16–22/11; 21 e 22/11 não possuem nota, e nenhum diário retroativo foi fabricado.
+- Criado `BRAIN/01-DIARIO/Semanal/2026-W47.md` com cinco padrões: camadas de estado não transitivas, reconciliação pelo estado corrente, ownership por identidade composta, evidência limitada ao estágio observado e continuidade sem novidade artificial.
+- Atualizadas três notas permanentes existentes: convergência do lifecycle, ausência de evidência e validação técnica versus aceite humano. O MOC Diário foi atualizado; nenhuma nota permanente nova foi criada apenas para cumprir quota.
+- Inventário obrigatório executado isoladamente com `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40. Históricos, trajectories, sessões Codex e memórias ficaram `unreviewed/content_read=false` nesta semanal.
+- A busca nativa respondeu com backend builtin e `provider: none`; os artefatos do índice semântico local não existem. Leitura direta dos diários e busca lexical local foram o fallback, sem instalação ou refresh de índice.
+- Nenhum candidato seguro a arquivamento. HEALTH e recibo `brain-v2/reports/coverage-2026-11-22-weekly.json` atualizados; checkpoint local preserva caminhos, hashes, referências e estado `PRODUCT_INCOMPLETE`.
+- Sem commit, push, sync, mensagem externa, agente Brain, scheduler novo ou alteração de gates PGL/Golden, conforme a recuperação operacional vigente.
 
 ## 2026-11-20, consolidação diária silenciosa — execução em 21/11 às 02:00 UTC
 

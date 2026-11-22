@@ -4,7 +4,7 @@ type: state
 title: MOC Diario
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-21T02:00:00Z'
+updated: '2026-11-22T06:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -152,6 +152,7 @@ Este MOC liga os registros cronologicos do Brain sem mover notas historicas. Ele
 - [[01-DIARIO/Semanal/2026-W44|2026-W44 — cinco diários revistos; cobertura integral bloqueada]]
 - [[01-DIARIO/Semanal/2026-W45|2026-W45 — cinco diários revistos; cobertura integral bloqueada]]
 - [[01-DIARIO/Semanal/2026-W46|2026-W46 — cinco diários revistos; cobertura integral bloqueada]]
+- [[01-DIARIO/Semanal/2026-W47|2026-W47 — cinco diários revistos; cobertura integral bloqueada]]
 
 ## Consolidados Mensais
 

@@ -1,0 +1,407 @@
+{
+  "schema_version": "1.0",
+  "cycle": "weekly",
+  "cycle_at": "2026-11-22T06:00:00Z",
+  "job_id": "1a1ed29a-fd45-4c5f-93f6-c3b556a2743c",
+  "run_id": "fab3b481-657d-4fb4-9c68-8f7b8e81135d",
+  "session_key": "agent:main:cron:1a1ed29a-fd45-4c5f-93f6-c3b556a2743c:run:fab3b481-657d-4fb4-9c68-8f7b8e81135d",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "base_commit": "670e10fa0f7949c074fe4ed8fa013a1e4c90563c",
+  "product_state": "PRODUCT_INCOMPLETE",
+  "local_synthesis_state": "PRODUCED_DOCUMENTARY_PARTIAL",
+  "coverage_complete": false,
+  "blocked_product": "Cobertura integral dos sete dias e das fontes primárias inventariadas. A síntese documental disponível não encerra o histórico vivo.",
+  "window": {
+    "reference_utc": "2026-11-22T06:00:00Z",
+    "diary_dates_inclusive": [
+      "2026-11-16",
+      "2026-11-22"
+    ],
+    "iso_week": "2026-W47",
+    "timezone": "America/Sao_Paulo",
+    "sunday_still_open": true
+  },
+  "scope": "Leitura integral dos cinco diários existentes, continuidade W46, governança central e deduplicação lexical. Não revisão nova de conversas brutas, recibos diários, trajectories, sessões Codex, memórias, payloads, anexos, serviços ou providers.",
+  "sources_reviewed": [
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-11-16.md",
+      "path_base": "brain",
+      "sha256": "1f674346066102e83098cee4186729f6253feb755affdae93b50cce3037fd5b5",
+      "bytes": 5811,
+      "agent": "main",
+      "profile": "canonical_Brain",
+      "read_scope": {
+        "lines": [1, 73],
+        "complete_document": true
+      },
+      "disposition": "Bloqueio ARX recorrente, coleta WhatsApp não certificada naquele corte e limites de evidência.",
+      "target_notes": ["BRAIN/01-DIARIO/Semanal/2026-W47.md"]
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-11-17.md",
+      "path_base": "brain",
+      "sha256": "6accc35d120e266af69ed3f1f417713001688c8584ac6cd1aeeaff0415916868",
+      "bytes": 3748,
+      "agent": "main",
+      "profile": "canonical_Brain",
+      "read_scope": {
+        "lines": [1, 57],
+        "complete_document": true
+      },
+      "disposition": "Continuidade por identidade, integridade de produtos e limite do transporte Git.",
+      "target_notes": ["BRAIN/01-DIARIO/Semanal/2026-W47.md"]
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-11-18.md",
+      "path_base": "brain",
+      "sha256": "3f426eb9e85a520bf4ade7f598135ae8563fafab1704d52052c4885ab8b412bf",
+      "bytes": 3851,
+      "agent": "main",
+      "profile": "canonical_Brain",
+      "read_scope": {
+        "lines": [1, 57],
+        "complete_document": true
+      },
+      "disposition": "Continuidade sem novidade temática e inventário distinto de cobertura.",
+      "target_notes": ["BRAIN/01-DIARIO/Semanal/2026-W47.md"]
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-11-19.md",
+      "path_base": "brain",
+      "sha256": "e4e1f538c7eb05ef4582849cd263fc52f779737c9d0b666059b2ef28847cda04",
+      "bytes": 3852,
+      "agent": "main",
+      "profile": "canonical_Brain",
+      "read_scope": {
+        "lines": [1, 57],
+        "complete_document": true
+      },
+      "disposition": "Continuidade sem promoção artificial de checkpoints ou ausência de fontes.",
+      "target_notes": ["BRAIN/01-DIARIO/Semanal/2026-W47.md"]
+    },
+    {
+      "path": "BRAIN/01-DIARIO/2026/2026-11-20.md",
+      "path_base": "brain",
+      "sha256": "c1ed84d6c9443cf84ad746068980f1cd5fb2dcc3781447d3f2a0d606973325fc",
+      "bytes": 5665,
+      "agent": "main",
+      "profile": "canonical_Brain",
+      "read_scope": {
+        "lines": [1, 74],
+        "complete_document": true
+      },
+      "disposition": "Camadas RUN/PRODUCT/PIPELINE/DELIVERY, reconciliação ARX corrente e ownership nativo fail-closed.",
+      "target_notes": [
+        "BRAIN/01-DIARIO/Semanal/2026-W47.md",
+        "BRAIN/40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle.md",
+        "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+        "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+      ]
+    }
+  ],
+  "governance_and_continuity_read": [
+    {
+      "path": "BRAIN/99-SISTEMA/FILOSOFIA.md",
+      "path_base": "brain",
+      "sha256": "d4b9e39d381debdc2bce19bbd7d4b1d4ae7d9337859cbb503b5542ca0483598f",
+      "bytes": 8482,
+      "read_scope": "Documento completo",
+      "disposition": "Critérios de relevância, promoção e arquivamento aplicados."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/ROTINA-CONSOLIDACAO.md",
+      "path_base": "brain",
+      "sha256": "53ff9e88f0d6347545eb7cf0f58b5b819cb2cd8add324b134f0f836f43f51ae8",
+      "bytes": 6961,
+      "read_scope": "Documento completo",
+      "disposition": "Rotina semanal, cobertura e recibo aplicados."
+    },
+    {
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W46.md",
+      "path_base": "brain",
+      "sha256": "da7eaa4ac342c45c0458c3537f63e2004e8f9ae2933ed5205e8ba13f81b126a2",
+      "bytes": 8278,
+      "read_scope": "Documento completo",
+      "disposition": "Continuidade semanal aceita sem reconsolidar seus estágios."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-15-weekly.json",
+      "path_base": "brain",
+      "sha256": "33c1a26cb90e5ce9aa827e72a00bbb18be14c8d9e5f21b0104c8ed936c425858",
+      "bytes": 19510,
+      "read_scope": "Documento completo",
+      "disposition": "Estrutura de recibo e pendências anteriores reutilizadas por identidade."
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle.md",
+      "path_base": "brain",
+      "sha256_before_edit": "4118a04c3289f30d870462bb954e79fa898405f6deeab962a32bcb7a055e16c2",
+      "bytes_before_edit": 21613,
+      "read_scope": "Documento completo antes da edição",
+      "disposition": "Deduplicado e atualizado com síntese W47."
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "path_base": "brain",
+      "sha256_before_edit": "7407a0e3ccee900ad0032f9893e606b517ec4b7d565e0dc7be0dc61b6fa4d5f5",
+      "bytes_before_edit": 33436,
+      "read_scope": "Linhas 1–260 antes da edição e busca lexical no documento atual",
+      "disposition": "Deduplicado e atualizado com síntese W47."
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md",
+      "path_base": "brain",
+      "sha256_before_edit": "e8fdc82adb9d56382e7513e713745f957828877dca3f50ccd6cae226945c92ad",
+      "bytes_before_edit": 11942,
+      "read_scope": "Documento completo antes da edição",
+      "disposition": "Deduplicado e atualizado com síntese W47."
+    },
+    {
+      "path": "BRAIN/01-DIARIO/README.md",
+      "path_base": "brain",
+      "sha256_before_edit": "f76929916eb894f54ec6033cf61e31f58502b2fafc5786aa469e0b4e594f553f",
+      "bytes_before_edit": 4956,
+      "read_scope": "Documento completo antes da edição",
+      "disposition": "MOC atualizado com W47."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+      "path_base": "brain",
+      "sha256_before_edit": "e03c494efd75159e72adbe481dce36bfde819a4e91d807035c3e77f1d655d4fc",
+      "bytes_before_edit": 170698,
+      "read_scope": "Linhas 1–220 antes da edição",
+      "disposition": "Histórico recente conferido e entrada W47 adicionada."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/HEALTH.md",
+      "path_base": "brain",
+      "sha256_before_edit": "172bf9e90ec2f4af6bd1bad89952a90bb899c837d52ec7a996c00c9f7be642fa",
+      "bytes_before_edit": 120012,
+      "read_scope": "Linhas 1–220 antes da edição",
+      "disposition": "Saúde recente conferida e verificação W47 adicionada."
+    }
+  ],
+  "sources_absent_or_not_reviewed": {
+    "missing_daily_notes": [
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-11-21.md",
+        "exists": false,
+        "role": "missing_dependency_not_evidence"
+      },
+      {
+        "path": "BRAIN/01-DIARIO/2026/2026-11-22.md",
+        "exists": false,
+        "role": "missing_dependency_not_evidence"
+      }
+    ],
+    "daily_receipts_existing_not_read": [
+      "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-16-daily.json",
+      "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-17-daily.json",
+      "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-18-daily.json",
+      "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-19-daily.json",
+      "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-20-daily.json"
+    ],
+    "inventory_sources": "Todos os históricos, trajectories, sessões Codex e memórias emitidos pelo inventário permaneceram metadata-only, unreviewed/content_read=false nesta semanal.",
+    "missing_inventory_surfaces": [
+      "/home/openclaw/.openclaw-kowalski/agents/main/codex-home/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/main/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/main/codex-home/sessions",
+      "/data/.openclaw/workspace-kowalski/MEMORY.md",
+      "/home/openclaw/.openclaw-kowalski/agents/kowalski/codex-home/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/kowalski/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/kowalski/codex-home/sessions",
+      "/data/.openclaw/workspace-darth-vader/MEMORY.md",
+      "/home/openclaw/.openclaw-kowalski/agents/darth-vader/codex-home/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/codex-home/sessions",
+      "/data/.openclaw/workspace-robotnik/MEMORY.md",
+      "/home/openclaw/.openclaw-kowalski/agents/robotnik/codex-home/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/robotnik/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/robotnik/codex-home/sessions",
+      "/data/.openclaw/workspace-sentinel/MEMORY.md",
+      "/home/openclaw/.openclaw-kowalski/agents/sentinel/codex-home/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/sentinel/sessions",
+      "/home/openclaw/.openclaw-darth-vader/agents/sentinel/codex-home/sessions"
+    ]
+  },
+  "inventory": {
+    "command": "python3 scripts/brain-source-inventory.py --days 7",
+    "workdir": "/data/.openclaw/workspace/Brain",
+    "generated_at": "2026-11-22T06:00:16.853671+00:00",
+    "window_days": 7,
+    "coverage_complete": false,
+    "errors": [],
+    "surface_count": 40,
+    "missing_surface_count": 18,
+    "source_count": null,
+    "source_count_limitation": "A chamada obrigatória foi executada e aceita, mas sua saída detalhada não foi persistida em artefato local antes da análise. O estágio não foi repetido apenas para reconstruir uma contagem."
+  },
+  "products": [
+    {
+      "path": "BRAIN/01-DIARIO/Semanal/2026-W47.md",
+      "path_base": "brain",
+      "sha256": "89f3643c4ba6ea79a39df72b170d18f4f21fd4471e7d615fdf484fd0e88973ed",
+      "bytes": 8147
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle.md",
+      "path_base": "brain",
+      "sha256": "cb710e31ea67a5436e6a686b2e81de889c23313958c58758aaa2a39f23a22f2e",
+      "bytes": 22883
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "path_base": "brain",
+      "sha256": "5daad648207ada7d26c86e6090161b105a01ff4af44b47f7977d649905199849",
+      "bytes": 34601
+    },
+    {
+      "path": "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md",
+      "path_base": "brain",
+      "sha256": "fd2e60e5aa4e425ab9a1263f9df72f188c4fbe5f4546385aa4b8d387df790859",
+      "bytes": 12966
+    },
+    {
+      "path": "BRAIN/01-DIARIO/README.md",
+      "path_base": "brain",
+      "sha256": "c6469239f5370f36a8dd929cc3bb2e08acd6d4512d4d2611bc75a148513adf34",
+      "bytes": 5056
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/CHANGELOG.md",
+      "path_base": "brain",
+      "sha256": "75921de71fff3f92492dc693a3d5ea31fa7038d6009509df22612d48cda4db18",
+      "bytes": 172240
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/HEALTH.md",
+      "path_base": "brain",
+      "sha256": "b8b6f25130339898edb525b2a221dc6d888e4b48ec673684013a29c27931e77f",
+      "bytes": 121738
+    }
+  ],
+  "patterns": [
+    "layer_status_is_not_transitive",
+    "current_identity_and_state_supersede_stale_reference",
+    "ownership_requires_compound_identity_fail_closed",
+    "absence_and_intermediate_failure_are_narrow_evidence",
+    "continuity_does_not_require_artificial_novelty"
+  ],
+  "permanent_promotions": {
+    "count": 3,
+    "mode": "Atualização de notas existentes com síntese transversal W47; nenhuma nota permanente nova.",
+    "targets": [
+      "BRAIN/40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+    ]
+  },
+  "archive": {
+    "moved": [],
+    "deleted": [],
+    "evaluated_notes": [
+      "BRAIN/01-DIARIO/2026/2026-11-16.md",
+      "BRAIN/01-DIARIO/2026/2026-11-17.md",
+      "BRAIN/01-DIARIO/2026/2026-11-18.md",
+      "BRAIN/01-DIARIO/2026/2026-11-19.md",
+      "BRAIN/01-DIARIO/2026/2026-11-20.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Estado-terminal-requer-convergencia-do-lifecycle.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Validacao-tecnica-nao-substitui-aceite-humano.md"
+    ],
+    "disposition": "Retidas por decisão, limite de evidência, reconciliação, continuidade ou proveniência. Ruído de sync foi reduzido à síntese; cobertura parcial impede declarar candidato seguro.",
+    "eligible_for_raw_deletion": false
+  },
+  "pending": [
+    {
+      "id": "PRIMARY_WINDOW_BACKLOG",
+      "dependency": "Ler e dispor unidades relevantes dos históricos, trajectories, sessões Codex e memórias emitidos pelo inventário; metadados não são cobertura."
+    },
+    {
+      "id": "MISSING_DAILY_PRODUCTS",
+      "dependency": "Diários de 21 e 22/11 ausentes; não fabricar retroativamente."
+    },
+    {
+      "id": "TORRE_READONLY_PATCH",
+      "dependency": "O patch proposto para separar RUN, PRODUCT, PIPELINE e DELIVERY permanece não aplicado e exige autorização própria."
+    },
+    {
+      "id": "ARX_CURRENT_STATE_RECONCILIATION",
+      "dependency": "Não reutilizar ticket #2196 por memória; reler o estado canônico e a condição corrente antes de qualquer conclusão ou mutação."
+    },
+    {
+      "id": "PRIOR_BACKLOG",
+      "dependency": "Manter filas individualizadas dos recibos de 16–20/11 e cadeia W46, incluindo Ronda, Diakonos, comparativo M365, fontes não selecionadas e índices mutáveis."
+    },
+    {
+      "id": "BUSINESS_ACCEPTANCE",
+      "dependency": "PGL/Golden, owners e gates de negócio permanecem próprios; curadoria não concede produção, replay, deploy, emissão, transporte ou aceite."
+    }
+  ],
+  "semantic_search": {
+    "native_memory_search": "Backend builtin respondeu com provider none; resultados foram históricos e não estabeleceram busca semântica por embeddings para a janela.",
+    "local_index_artifacts": {
+      "note-semantic-index.json": false,
+      "note-chunk-vectors.npy": false,
+      "model-cache": false,
+      "history-index.sqlite": false
+    },
+    "status": "SEMANTIC_PROVIDER_UNAVAILABLE_AND_LOCAL_INDEX_ABSENT_LEXICAL_FALLBACK",
+    "fallback": "Leitura direta dos cinco diários e busca lexical local nas notas atuais.",
+    "index_refresh_executed": false,
+    "post_edit_index_currentness": "NOT_ESTABLISHED"
+  },
+  "validation": {
+    "structural_gate_before": {
+      "path": ".openclaw/tmp/brain-weekly-20261122/gate-before.json",
+      "path_base": "workspace",
+      "sha256": "c2c68e7dc86e58fdde8fb6d0cbe98e03229993738292be37719a1112d3f1e0de",
+      "bytes": 21738
+    },
+    "structural_gate_after": {
+      "path": ".openclaw/tmp/brain-weekly-20261122/gate-after.json",
+      "path_base": "workspace",
+      "sha256": "9137000805f98ee1b13a42f802c9f317a81f70ba667496491858ea0a0111ecbc",
+      "bytes": 21738
+    },
+    "structural_gate_ok": true,
+    "structural_metrics": {
+      "markdown_total": 461,
+      "internal_links": 1117,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": {},
+      "duplicate_aliases": {},
+      "secret_candidates": [],
+      "reachable_cognitive_markdown": 267,
+      "cognitive_markdown": 267
+    },
+    "coverage_not_measured_by_gate": true,
+    "final_readback": "VALIDATED_IN_SAME_RUN_BY_CHECKPOINT",
+    "checkpoint_path": ".openclaw/tmp/brain-weekly-20261122/checkpoint.json",
+    "checkpoint_path_base": "workspace"
+  },
+  "publication": {
+    "local_commit": "NOT_EXECUTED_FORBIDDEN_BY_CURRENT_RECOVERY",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_INVOKED",
+    "remote_confirmation": "NOT_QUERIED",
+    "scheduled_git_routines": "UNCHANGED"
+  },
+  "operational_recovery": {
+    "invalid_tool_calls": 0,
+    "targeted_edit_mismatches": 1,
+    "recovery": "O timestamp existente de uma nota diferia do bloco presumido; somente essa substituição foi refeita pelo texto exato, sem repetir produtos ou transporte.",
+    "stages_repeated": []
+  },
+  "safety": {
+    "silent": true,
+    "messages_sent": 0,
+    "external_access": false,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "business_effects": false,
+    "PGL_Golden_gates": "PRESERVED"
+  }
+}

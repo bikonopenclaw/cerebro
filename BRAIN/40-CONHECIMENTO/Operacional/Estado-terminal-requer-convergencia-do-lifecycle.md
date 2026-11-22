@@ -19,7 +19,11 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W46.md
   reason: Consolida lifecycle real do tenant, artefato persistido apesar de timeout, autoridade do snapshot e reconciliação antes de replay.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-15-weekly.json
-updated: '2026-11-15T06:00:00Z'
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W47.md
+  reason: Consolida camadas independentes, identidade composta de ownership e releitura do estado corrente antes de adotar ou repetir resultado.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-22-weekly.json
+updated: '2026-11-22T06:00:00Z'
 ---
 
 # Estado terminal requer convergencia do lifecycle
@@ -27,9 +31,9 @@ updated: '2026-11-15T06:00:00Z'
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidacao semanal 2026-W35, teste controlado de relatorios operacionais em 2026-09-02, publicacao Instagram Bikon em 2026-09-10, lifecycle ad-hoc ARX em 2026-09-16, consolidacao semanal 2026-W38, revisão documental de 2026-10-11 e consolidações semanais 2026-W42/W43/W46
+fonte: consolidacao semanal 2026-W35, teste controlado de relatorios operacionais em 2026-09-02, publicacao Instagram Bikon em 2026-09-10, lifecycle ad-hoc ARX em 2026-09-16, consolidacao semanal 2026-W38, revisão documental de 2026-10-11 e consolidações semanais 2026-W42/W43/W46/W47
 confiabilidade: alta
-ultima_revisao: 2026-11-15
+ultima_revisao: 2026-11-22
 tags: [lifecycle, execucao, registry, cgroup, terminalidade, reconciliacao, supervisao, transcript, produto-duravel, aceite]
 ```
 
@@ -75,6 +79,12 @@ Registrar separadamente **terminal do executor**, **produto integral materializa
 A Ronda Bikon mostrou que o estado terminal precisa seguir o contrato efetivo do tenant: `Resolvido/5000` é a finalização operacional suportada e `Fechado/6000` é transição automática posterior. Tentativas `6000` recusadas com leitura sem efeito foram preservadas; a correção mudou o alvo sem apagar o histórico. O ciclo natural seguinte fechou corretamente em `5000`, mas com `0/6`, o que conclui o controle e não as verificações.
 
 No mesmo período, a identificação de Fábio chegou em conversa depois do corte e não alterou o snapshot congelado; em outra execução, workers Darth terminaram `timeout/FAILED`, embora um artefato persistido tenha sido recuperado por hash e revisado. Conversa, terminal do executor, artefato e estado do workflow são autoridades distintas. Antes de retry, reconciliar identidade, snapshot, bytes, efeitos e referência externa. Bloqueios de idempotência impedem duplicidade, mas não resolvem a causa nem autorizam nova linhagem. Síntese em [[01-DIARIO/Semanal/2026-W46|W46]].
+
+## Camadas e ownership reconciliados — semana 2026-W47
+
+A coleta WhatsApp de 14/11 mostrou que `RUN`, `PRODUCT`, `PIPELINE` e `DELIVERY` podem encerrar em estados diferentes: houve anomalia intermediária no run, mas o mesmo processo fechou com produto e gates produtivos `PASS`; a entrega permaneceu `NOT_REQUESTED`. Nenhuma dessas camadas deve herdar automaticamente o rótulo da outra.
+
+A mesma semana reforçou dois critérios antes de adotar fechamento ou repetir trabalho. Primeiro, ownership nativo deve coincidir por identidade composta — controller, origem, `run_id`, sessão filha e tarefa — e falhar fechado quando qualquer componente divergir. Segundo, a referência externa precisa ser relida: o histórico ARX ligado a `#2196` coexistiu com estado corrente em `#2241` e condição diferente. Callback solto, texto semelhante ou memória histórica não substituem convergência por identidade e estado atual. Síntese em [[01-DIARIO/Semanal/2026-W47|W47]].
 
 ## Relacoes
 

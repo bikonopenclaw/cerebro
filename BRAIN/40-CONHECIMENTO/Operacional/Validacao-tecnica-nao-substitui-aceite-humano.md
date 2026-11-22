@@ -19,7 +19,11 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W45.md
   reason: A semana reforça que pareceres pertencem ao hash e à dimensão efetivamente revisados.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-08-weekly.json
-updated: '2026-11-08T06:00:00Z'
+- type: derived_from
+  target: BRAIN/01-DIARIO/Semanal/2026-W47.md
+  reason: Separa produto validado, pipeline, entrega solicitada e aceite humano no fechamento por camadas.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-22-weekly.json
+updated: '2026-11-22T06:00:00Z'
 ---
 
 # Validacao tecnica nao substitui aceite humano
@@ -27,9 +31,9 @@ updated: '2026-11-08T06:00:00Z'
 ```yaml
 categoria: operacional
 tipo: guardrail
-fonte: consolidacoes semanais 2026-W33, W37, W38 e W45; lote 365 Control em 2026-09-14
+fonte: consolidacoes semanais 2026-W33, W37, W38, W45 e W47; lote 365 Control em 2026-09-14
 confiabilidade: alta
-ultima_revisao: 2026-11-08
+ultima_revisao: 2026-11-22
 tags: [aceite, validacao, fail-closed, provimento-213, fip, kowalski, versao, artefato, entrega]
 ```
 
@@ -72,6 +76,12 @@ O inverso também importa: a confirmação humana de que o grupo voltou a respon
 O checkpoint de qualificação natural registrou a janela original de 24 horas encerrada, mas `0/3` tarefas naturais elegíveis, exposição insuficiente das propriedades alteradas e `ready_for_review=false`. A lição é separar tempo decorrido, exposição efetiva por propriedade, representatividade da amostra e inspeção do produto. Uma extensão passiva da observação não é aprovação; tarefas artificiais ou repetição de efeitos não preenchem legitimamente uma quota de uso natural.
 
 Fonte: chamadas de checkpoint e espera da sessão main `ca07a16c-ab62-48e4-8bd5-9e06138d0e31`, linhas 16 e 18, em 28/09. Este registro preserva o estado declarado naquele corte, sem verificar novamente o observador nem antecipar o resultado de uma revisão posterior. Identidades e limites no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-09-29-daily.json`.
+
+## Produto aprovado não prova entrega nem aceite — semana 2026-W47
+
+Na reconciliação da coleta WhatsApp de 14/11, o mesmo processo terminou com produto e gates produtivos `PASS`, enquanto o run preservou uma anomalia intermediária e a entrega ficou `NOT_REQUESTED`. O sucesso técnico responde pela validade do produto observado; não cria solicitação de transporte, recibo de entrega, leitura humana ou aceite.
+
+Registrar cada gate separadamente evita dois erros: rebaixar produto válido por falha de envelope já superada ou promover produto válido a comunicação concluída. A cadeia mínima é objeto/identidade, produto, validação, autorização de transporte, submissão, entrega e aceite aplicável. Síntese em [[01-DIARIO/Semanal/2026-W47|W47]].
 
 ## Relacoes
 

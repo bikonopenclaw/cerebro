@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-21T02:00:00Z'
+updated: '2026-11-22T06:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,16 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação semanal — 2026-11-22
+
+- [[01-DIARIO/Semanal/2026-W47|W47]]: cinco diários existentes de 16–22/11 lidos integralmente; faltam 21 e 22/11, datas de fim de semana, sem inferência de ausência de atividade.
+- O inventário obrigatório declarou `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40. Históricos, trajectories, sessões Codex e memórias recentes foram inventariados como `unreviewed/content_read=false`; conteúdo bruto não foi relido nesta semanal.
+- Cinco padrões foram reconciliados e três notas permanentes existentes atualizadas. `RUN`, `PRODUCT`, `PIPELINE`, `DELIVERY`, aceite e cobertura permanecem dimensões independentes; ownership exige identidade composta e reconciliação do estado corrente.
+- Produto documental local produzido; cobertura integral bloqueada (`PRODUCT_INCOMPLETE`) por dois diários ausentes, fontes primárias inventariadas sem leitura de conteúdo e backlog dos recibos anteriores. A ocorrência WhatsApp de 14/11 foi reconciliada como produto `PASS`, run anômalo e entrega `NOT_REQUESTED`; o patch read-only da Torre permanece não aplicado.
+- A busca nativa respondeu pelo backend builtin com `provider: none`; os artefatos locais do índice semântico não existem. Leitura direta dos diários e busca lexical local foram o fallback, sem instalação, reindexação ou refresh.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-22-weekly.json`. Validação estrutural e hashes ficam no checkpoint local; score legado 96/100 mantido sem recálculo e sem equivalência com cobertura.
+- Nenhum arquivamento/exclusão, commit, push ou sync nesta recuperação. Restrições PGL/Golden, owners e gates vigentes foram preservados.
 
 ## Verificação de cobertura — 2026-11-20 (execução em 21/11 às 02:00 UTC)
 
