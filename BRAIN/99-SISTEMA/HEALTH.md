@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-22T06:00:00Z'
+updated: '2026-11-24T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,17 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-23 (execução em 24/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 23/11. O inventário obrigatório declarou 129 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40; metadados não comprovam leitura de conteúdo ou saúde viva.
+- A semanal W47 foi consumida por identidade no commit `b1db9df`. O sync agendado de 22/11 publicou esse checkpoint; syncs posteriores observaram árvore sem delta. Isso comprova transporte Git daquele commit, não cobertura global.
+- Foram revisadas unidades delimitadas da torre de 21/11, da reconciliação WhatsApp/Capixaba, das consultas de entrega e ARX e de três comparações WhatsApp. Dois registros existentes foram atualizados; nenhuma nota temática nova foi criada.
+- A entrega WhatsApp de 23/11 foi confirmada pelo recibo canônico. A revisão 2 do produtor ganhou observação natural posterior, mas o rótulo `16–21/11` do consumidor diverge do fechamento `16–20/11` usado nas métricas e permanece uma ressalva documental.
+- O ARX semanal segue em bloqueio controlado para Ferreira Rocha/ticket `#2241`, sem mutação externa. Capixaba `2026-10` foi reconciliado como `HISTORICAL_RECOVERY_SMTP_ACCEPTED`; SMTP `250` não prova inbox nem leitura.
+- Históricos não selecionados, trajectories, Codex bruto, memórias, payloads, providers e a sessão mutável deste run permaneceram pendentes. Ausência de fonte recente não prova inatividade ou saúde viva de agente.
+- Pesquisa semântica local executada read-only/sem refresh. O índice estava em 22/11 e serviu apenas para navegação; não certifica o delta de 23/11.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-23-daily.json`. Score legado 96/100 mantido sem recálculo; gates estruturais não certificam conteúdo, completude semântica, saúde viva ou transporte.
 
 ## Verificação semanal — 2026-11-22
 

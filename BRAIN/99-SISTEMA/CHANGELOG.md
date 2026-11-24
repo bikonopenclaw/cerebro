@@ -4,13 +4,24 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-22T06:00:00Z'
+updated: '2026-11-24T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-23, consolidação diária silenciosa — execução em 24/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico.
+- Atualizados os registros existentes de Relatórios Operacionais e ARX Backup → NinjaOne; nenhuma nota temática, pessoa, empresa, projeto, agente ou automação nova foi criada.
+- Registrada a entrega natural do fechamento WhatsApp em 23/11 às 07:45 BRT e consolidada a série de quatro recortes entre 26/10 e 20/11. O volume caiu, a taxa de espera oscilou para baixo no último recorte e a taxa de atendimento em até 4 h subiu; denominadores menores e ausência de tempos médios impedem declarar tendência geral.
+- Preservada a divergência de rotulagem entre o consumidor (`16–21/11`) e o fechamento comparado (`16–20/11`), sem ampliar o denominador por inferência.
+- Atualizada a recorrência ARX → tickets de 21/11: `11` itens, `1` ocorrência, zero tickets criados/fechados e bloqueio `IDEMPOTENCY_STATE` em Ferreira Rocha/ticket `#2241`. Nenhuma repetição foi autorizada.
+- Reconciliada a competência Capixaba `2026-10`: recuperação posterior com PDF validado e SMTP `250`, cinco destinatários aceitos e zero recusados. Aceite SMTP não comprova inbox ou leitura; reenvio permanece bloqueado.
+- Consumida por identidade a semanal W47 no commit `b1db9df`; o sync de 22/11 publicou o checkpoint e os syncs seguintes não trouxeram delta. Inventário obrigatório declarou 129 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40.
+- HEALTH e recibo `brain-v2/reports/coverage-2026-11-23-daily.json` atualizados. Sem push, sync, mensagem, ticket, provider, reenvio ou mutação financeira por esta consolidação; o commit é somente local.
 
 ## 2026-11-22, consolidação semanal silenciosa — 2026-W47
 

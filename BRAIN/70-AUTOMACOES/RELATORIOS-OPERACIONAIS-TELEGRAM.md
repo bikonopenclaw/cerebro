@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-11-21T02:00:00Z'
+updated: '2026-11-24T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/KOWALSKI.md
@@ -24,15 +24,19 @@ relationships:
   target: BRAIN/01-DIARIO/2026/2026-11-20.md
   reason: Vincula a reconciliação do falso negativo WhatsApp e o diagnóstico da Torre por camadas.
   source: /data/.openclaw/workspace/artifacts/torre-corrections-prep-20261120.md
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-11-23.md
+  reason: Vincula a entrega natural do fechamento WhatsApp e a comparação dos quatro recortes semanais.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-23-daily.json
 ---
 
 # Relatórios Operacionais Telegram
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14, qualificacao do fluxo universal em 2026-09-16, fechamento executivo somente leitura de 2026-11-15 e reconciliação da Torre de 2026-11-20
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14, qualificacao do fluxo universal em 2026-09-16, fechamento executivo somente leitura de 2026-11-15, reconciliação da Torre de 2026-11-20 e fechamentos WhatsApp reconciliados em 2026-11-23
 confiabilidade: alta
-ultima_revisao: 2026-11-20
+ultima_revisao: 2026-11-23
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
@@ -68,6 +72,25 @@ Proveniência: sessão main `bcd1f6df-d961-47c5-8035-6820a7899c62`, fechamento e
 - O patch proposto para `executive_snapshot.py` e para a skill da Torre **não foi aplicado** pelo diagnóstico. Uma mudança futura exige autorização limitada ao patch read-only e testes; não inclui ticket, provider, SMTP, reexecução ou envio.
 
 Proveniência: diagnóstico completo `/data/.openclaw/workspace/artifacts/torre-corrections-prep-20261120.md`, SHA-256 `1aa3f305a6ca66e849f50a99b050f936327932200e168590e486ac41a6a749a8`; sessão main `bc266bfd-5af3-4839-818e-302c9168a3f1`, linhas 57–85.
+
+## Fechamento WhatsApp entregue e comparação dos recortes — 23/11/2026
+
+- O ciclo consumidor de 23/11 às 07:45 BRT produziu o relatório da semana anterior e o recibo canônico registrou `deliveryStatus=delivered`. A geração havia sido validada em 21/11. Essa é a primeira observação natural posterior à revisão 2 do produtor; não houve reexecução ou reenvio para obter o resultado.
+- Há uma diferença de rotulagem que deve ser preservada: o histórico do consumidor descreve a janela como **16–21/11**, enquanto o fechamento arquivado usado nas comparações se apresenta como **16–20/11**. Não ampliar o denominador sem reconciliar o contrato do relatório.
+
+| Recorte arquivado | Atendimentos | Espera < 5 min | Atendimento ≤ 4 h |
+|---|---:|---:|---:|
+| 26–30/10 | 39 | 36/39 (92,31%) | 27/39 (69,23%) |
+| 02–06/11 | 30 | 27/30 (90,00%) | 21/30 (70,00%) |
+| 09–13/11 | 30 | 28/30 (93,33%) | 22/30 (73,33%) |
+| 16–20/11 | 11 | 9/11 (81,82%) | 10/11 (90,91%) |
+
+- Entre 26–30/10 e 02–06/11, o volume caiu 23,08%; a espera piorou 2,31 p.p. e o atendimento em até 4 h melhorou apenas 0,77 p.p. Não houve melhora clara.
+- Entre 09–13/11 e 16–20/11, o volume caiu de 30 para 11; a conformidade de espera caiu 11,51 p.p. e a de atendimento subiu 17,58 p.p. O denominador menor impede declarar tendência.
+- Entre 02–06/11 e 16–20/11, o volume caiu 63,3%; houve piora de 8,2 p.p. na espera e melhora de 20,9 p.p. no atendimento. Os fechamentos comprovam somente contagens dentro/fora dos limites, não tempos médios em minutos ou horas.
+- Referências dos produtos: 02–06/11, ordem `ORDER-SENTINEL-SCHEDULED-WHATSAPP-D72164C4C46599599084B9C7`, relatório SHA-256 `6a1fa3ec615723983eff00aa627e050be6823d1b51b3ea66d3118c107014dd5b`; 16–20/11, ordem `ORDER-SENTINEL-SCHEDULED-WHATSAPP-A00E96F8ADDD849284B37449`, relatório SHA-256 `2c7b81d63fcc7478f1a6b10d7200205dc87bc097112f392252021a3ed56f2a0c`.
+
+Proveniência: sessões main `46fa3553-8b58-45d3-b73a-8160a7109d38`, `1fede0d1-3a39-43ec-b6ce-3294d7448096`, `8b70e31e-7f68-4a41-b3d6-eb4ce982987a` e `e7a37306-9109-48fc-8e7e-71d9c1dda8dc`; identidades e intervalos no recibo diário de 23/11.
 
 ## Grupo
 

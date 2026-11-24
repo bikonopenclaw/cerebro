@@ -11,16 +11,20 @@ relationships:
   target: BRAIN/01-DIARIO/2026/2026-11-20.md
   reason: Vincula a reconciliação read-only do bloqueio ARX e a correção de classificação proposta para a Torre.
   source: /data/.openclaw/workspace/artifacts/torre-corrections-prep-20261120.md
-updated: '2026-11-21T02:00:00Z'
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-11-23.md
+  reason: Vincula a recorrência semanal de 21/11 e a reconciliação da recuperação mensal Capixaba.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-23-daily.json
+updated: '2026-11-24T02:00:00Z'
 ---
 
 # ARX Backup diário → tickets NinjaOne
 
 ```yaml
 categoria: automacao_monitoramento
-fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15, requests mensais/qualificacao nativa reconciliadas em 2026-09-16/19, recuperacao mensal NO_SEND de outubro validada em 2026-11-02, fechamentos executivos somente leitura de 2026-11-08 e 2026-11-15 e diagnóstico read-only de 2026-11-20
+fonte: execuções cron Kowalski em 2026-06-19, 2026-06-23, 2026-06-24, 2026-06-25, 2026-06-26, 2026-06-29, 2026-07-02, 2026-07-06, relatorios operacionais ate 2026-08-12, checkpoints de reativacao em 2026-08-24/25, relatorios Cartorio Gerusa em 2026-08-26, qualificacao/ciclo ARX de 2026-09-08 a 2026-09-10, fechamento semanal entregue em 2026-09-14, ciclo diario de 2026-09-15, requests mensais/qualificacao nativa reconciliadas em 2026-09-16/19, recuperacao mensal de outubro reconciliada em 2026-11-02/23, fechamentos executivos somente leitura de 2026-11-08, 2026-11-15 e 2026-11-22 e diagnóstico read-only de 2026-11-20
 confiabilidade: alta
-ultima_revisao: 2026-11-20
+ultima_revisao: 2026-11-23
 tags: [arx, backup, ninjaone, tickets, monitoramento, kowalski, relatorio-mensal, no-send]
 ```
 
@@ -210,8 +214,8 @@ A investigacao separou coleta, render, transporte e leitura humana e preservou o
 - Os quatro jobs mensais de Alzira, Camburi, Capixaba e Vila Velha tiveram exceções distintas na agenda de 01/11. A recuperação de engenharia reutilizou handoffs já coletados e reconciliados; não houve nova coleta.
 - Kowalski executou os quatro fluxos com `--no-send`. Todos fecharam `SUCCESS_NO_SEND` e `VALIDATED_NO_SEND`, com quatro PDFs A4 de uma página e rascunhos HTML/texto. A inspeção visual não encontrou corte, sobreposição ou quebra de layout.
 - A ferramenta nativa `puppet_arx_monthly` adotou depois os quatro resultados existentes como `PREPARED_NO_SEND`: coleta `COLLECTED`, render `VALIDATED_NO_SEND`, `adopted_existing=true` e `dispatch_attempt_count=0` nos dois estágios. Nenhum redispatch ou envio externo ocorreu.
-- Aprovação humana continua pendente. Antes de eventual SMTP, revisar: grafia inconsistente de Camburi; frase gramatical nos rascunhos Alzira/Capixaba; leitura de 100% Capixaba restrita às sessões elegíveis observadas; e apresentação da ocorrência recuperada/55 sessões ignoradas de Vila Velha.
-- Os PDFs e rascunhos permanecem fora do Brain/Git. Seus caminhos e hashes estão identificados no recibo diário de 02/11; validação local não equivale a autorização de envio, aceitação SMTP, entrega na caixa ou leitura pelo destinatário.
+- No corte documental de 02/11, a aprovação humana continuava pendente para os quatro produtos. Antes de eventual SMTP, deveriam ser revistas: grafia inconsistente de Camburi; frase gramatical nos rascunhos Alzira/Capixaba; leitura de 100% Capixaba restrita às sessões elegíveis observadas; e apresentação da ocorrência recuperada/55 sessões ignoradas de Vila Velha.
+- Os PDFs e rascunhos permanecem fora do Brain/Git. Seus caminhos e hashes estão identificados no recibo diário de 02/11; validação local não equivale a autorização de envio, aceitação SMTP, entrega na caixa ou leitura pelo destinatário. A reconciliação de 23/11 supera a pendência de envio **somente para Capixaba**, por evidência posterior de SMTP aceito; não altera automaticamente Alzira, Camburi ou Vila Velha.
 
 Proveniência: `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-02-daily.json`. O reparo supera somente a disponibilidade e validação desses produtos; não apaga falhas históricas nem certifica saúde geral do pipeline.
 
@@ -241,6 +245,16 @@ Proveniência: sessão main `bcd1f6df-d961-47c5-8035-6820a7899c62`, fechamento e
 - A correção proposta é somente de classificação da Torre: `TICKET_CYCLE=COMPLETED_WITH_BLOCKS` com zero tentativas externas deve aparecer como `CONTROLLED_BLOCK`, preservando audit, ticket e próxima ação. O patch da Torre continuava não aplicado no fechamento do diagnóstico.
 
 Proveniência: diagnóstico `/data/.openclaw/workspace/artifacts/torre-corrections-prep-20261120.md`, SHA-256 `1aa3f305a6ca66e849f50a99b050f936327932200e168590e486ac41a6a749a8`; auditoria SHA-256 `eb3ec8a7abbead58fee12dd9a338cb070f8102831f4e278bccc6c4bdc859fa9a`. Estado observado, sem mutação de ticket ou provider pela consolidação.
+
+## Recorrência semanal de 21/11 e recuperação Capixaba reconciliada em 23/11
+
+- O job semanal ARX → tickets de 21/11 às 01:35 BRT voltou a encerrar `status=error`, código `1`, com entrega `not-requested`. A execução `arx-cycle-c59701925cfd44d897207f72f71b3b92` verificou `11` itens, encontrou `1` ocorrência e não criou nem fechou ticket.
+- O bloqueio continuou em `16 Ferreira Rocha / servidor_2j3wv`, classificado como `Crítico`, por `IDEMPOTENCY_STATE` associado ao ticket `#2241`. A torre contou três erros consecutivos do envelope; o conteúdo observado continua sendo bloqueio controlado, sem prova de indisponibilidade geral, perda de backup ou duplicidade de ticket.
+- Antes de qualquer correção, reler o ticket `#2241`, a chave de idempotência e a condição corrente. Não repetir criação. O próximo ciclo natural informado era 28/11 às 01:35 BRT.
+- Para Cartório Capixaba, conta `5346029`, competência `2026-10`, o erro original de 01/11 permanece histórico, mas deixou de representar pendência atual: a recuperação posterior gerou PDF validado SHA-256 `80090b14a6ce585c5f679e349fb3aec5902a5ec4b6290a5b4ce04529bd145235` e o log registrou envio em 02/11 às 03:31:12 UTC.
+- A recuperação Capixaba teve SMTP `250`, cinco destinatários de envelope aceitos e zero recusados, classificação `HISTORICAL_RECOVERY_SMTP_ACCEPTED`. Isso prova aceite SMTP do artefato, não chegada à caixa ou leitura. Reenvio não está autorizado.
+
+Proveniência: sessões main `a570bf65-5582-46b5-9021-24e7f7a8fccb` e `83e132fd-aa53-41c9-b454-5fa0e69dfd9a`; torre Kowalski `bc68f63b-581b-447f-a680-fa9348f26f72`; identidades e intervalos no recibo diário de 23/11.
 
 ## Guardrails
 
