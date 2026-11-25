@@ -1,0 +1,317 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_date": "2026-11-24",
+  "cycle_timezone": "America/Sao_Paulo",
+  "executed_at_utc": "2026-11-25T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "7362104a-b35c-4347-90f2-502f57253a4e",
+  "session_key": "agent:main:cron:d95bbe73-24d9-4e2b-ba57-0032082bb54b:run:7362104a-b35c-4347-90f2-502f57253a4e",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "reliability_instruction": "BRAIN_DAILY_RELIABILITY_20261026",
+  "base_commit": "b38ab89e500b27d1d7124c24c6958726fc8d76c9",
+  "product_state": "PRODUCED_DOCUMENTARY_PARTIAL",
+  "coverage_complete": false,
+  "window": {
+    "inventory_days": 7,
+    "inventory_generated_at": "2026-11-25T02:07:11.483530+00:00",
+    "selected_delta_start_utc": "2026-11-24T02:12:07Z",
+    "selected_delta_end_utc": "2026-11-25T02:00:00Z",
+    "note": "A seleção parte do fechamento do ciclo anterior e inclui os quatro checkpoints Git, a conversa Telegram/NinjaOne, sua continuação durável, três respostas Sentinel do piloto de status e a evidência canônica diária. A sessão ativa deste run permaneceu mutável e pendente."
+  },
+  "scope": "Revisão local seletiva do fechamento anterior, quatro syncs, status do canal Telegram, consulta read-only NinjaOne, continuação durável, três respostas Sentinel e evidência canônica diária. Não houve revisão integral de trajectories, Codex bruto, memórias, payloads, providers, anexos ou fontes fora das unidades declaradas.",
+  "sources_reviewed": [
+    {
+      "path": "/data/.openclaw/agents/main/sessions/61d11357-c9e5-403d-b980-b5afb227b69c.jsonl",
+      "path_base": "host_local",
+      "sha256": "90856fe7050f20a29886902a57ac65cb643322cc101ee65f03223eb97acd3164",
+      "bytes": 774959,
+      "mtime_ns": 1795486356332717410,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [1, 120], "note": "Fechamento integral do cron diário anterior."},
+      "disposition": "Consumir execução, produtos, commit e limites do ciclo anterior sem reprocessar conteúdo temático.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-24.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/abda3237-08eb-420e-8211-9367f4c1b647.jsonl",
+      "path_base": "host_local",
+      "sha256": "63149b5dec0491803c75d82ef2190c34c570b7762b46c1109f054775a89b6ebf",
+      "bytes": 13592,
+      "mtime_ns": 1795510828195595899,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [1, 10], "note": "Sync de 24/11 às 09:00 UTC."},
+      "disposition": "Registrar publicação de b38ab89 sem promover transporte a cobertura.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-24.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/79595d11-daa7-49f1-bb5b-4ebbb7edcca1.jsonl",
+      "path_base": "host_local",
+      "sha256": "54f8bb15f9e58de534095d7574736e3a528e970fde9755d14bd3f8bdef5b689a",
+      "bytes": 9407,
+      "mtime_ns": 1795532437617857541,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [1, 8], "note": "Sync de 24/11 às 15:00 UTC."},
+      "disposition": "Checkpoint sem delta; não promover a cobertura.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-24.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/eceeec74-5262-47de-9be9-a91722fd4c88.jsonl",
+      "path_base": "host_local",
+      "sha256": "4f599cdb22ef19a0135e81a73e45a3c7cfacbee4220287d5bb189ff64a2c0470",
+      "bytes": 11662,
+      "mtime_ns": 1795550435605881902,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [1, 10], "note": "Sync de 24/11 às 20:00 UTC."},
+      "disposition": "Checkpoint sem delta; não promover a cobertura.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-24.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/a93d3da0-ccff-4f8d-bbf7-83c1fbe92101.jsonl",
+      "path_base": "host_local",
+      "sha256": "7e7add66a3dd1cf71165d75a2e9e8ed41999d8573e29652f4c1d752d188fdefb",
+      "bytes": 9037,
+      "mtime_ns": 1795568421677644595,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [1, 8], "note": "Sync de 25/11 às 01:00 UTC."},
+      "disposition": "Checkpoint sem delta; não promover a cobertura.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-24.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/12be8775-f7ab-4326-a0d7-9c3a862fa59d.jsonl",
+      "path_base": "host_local",
+      "sha256": "f38809c384e4c404fc5e328b5fe3b5206a7be3a773701fc83fd8219f24a74f7a",
+      "bytes": 286258,
+      "mtime_ns": 1795551563198185712,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [5, 82], "note": "ID Telegram deduplicado; status do canal; objetivo read-only NinjaOne, evidência, revisão, fechamento e resposta."},
+      "disposition": "Promover o snapshot NinjaOne e os limites de status/transporte; não duplicar cadastro de ID nem tratar preflight bloqueado como despacho.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md", "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md", "BRAIN/01-DIARIO/2026/2026-11-24.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/7584d2fa-09d4-45df-9876-ee79028ebc40.jsonl",
+      "path_base": "host_local",
+      "sha256": "48c0863ff859663776dff0eccc04105535e061c46b747efd8fa49fcfadc0bfee",
+      "bytes": 19719,
+      "mtime_ns": 1795551577267234659,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [1, 8], "note": "Continuação durável do objetivo NinjaOne já concluído."},
+      "disposition": "Confirmar não repetição e tratar o resultado como duplicata do produto já revisado.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-24.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/8644b8ef-bb7e-4dd6-a286-f6fdee4e8249.jsonl",
+      "path_base": "host_local",
+      "sha256": "de8058a7602befdbf9c2fbfb133fe06d3e2886b213ebc7212388931f8fc61056",
+      "bytes": 10186,
+      "mtime_ns": 1795549795800433577,
+      "agent": "sentinel",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [5, 8], "note": "Primeira consulta read-only do piloto de status."},
+      "disposition": "Preservar BLOCKED/CHANNEL_STATUS_PILOT_UNKNOWN_STATUS sem repetir ou inferir desconexão.",
+      "target_notes": ["BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md", "BRAIN/01-DIARIO/2026/2026-11-24.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/e1aa6c51-9f0a-42f8-bec3-456920cc2cbe.jsonl",
+      "path_base": "host_local",
+      "sha256": "28be3dce339e4d7c51a05c771277887edd3ed74cd3a9530e99a45ce8916aa29e",
+      "bytes": 10737,
+      "mtime_ns": 1795550109660140621,
+      "agent": "sentinel",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [5, 8], "note": "Segunda consulta read-only do piloto de status."},
+      "disposition": "Preservar bloqueio repetido como ocorrência própria, sem usar a repetição para fabricar sucesso.",
+      "target_notes": ["BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/c09e3a6a-3a36-4b64-9871-c4dee9046764.jsonl",
+      "path_base": "host_local",
+      "sha256": "ee79c313909af931c51927b67e126d06faf041731ad2243b55da6184a371a64e",
+      "bytes": 13295,
+      "mtime_ns": 1795550280231527919,
+      "agent": "sentinel",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [5, 8], "note": "Terceira consulta read-only do piloto de status."},
+      "disposition": "Registrar HTTP 200 com READ_INCONCLUSIVE/PROVIDER_STATUS_UNRECOGNIZED; não converter em estado conectado.",
+      "target_notes": ["BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md", "BRAIN/01-DIARIO/2026/2026-11-24.md"]
+    },
+    {
+      "path": "/data/.openclaw/workspace-sentinel/evidence/ninjaone/canonical-tickets-2026-11-23-daily.json",
+      "path_base": "host_local",
+      "sha256": "48e53c417dcf3bc0ee4b90f0dd4d25f8e44f1e474d04ee2d52c1a07efd60b7cb",
+      "bytes": 6872,
+      "mtime_ns": 1795491914086605222,
+      "agent": "sentinel",
+      "profile": "shared_workspace",
+      "read_scope": {"json_lines": [1, 261], "note": "Evidência canônica diária completa, incluindo escopo, três observações, paginação e autenticidade."},
+      "disposition": "Promover contagem, identidades, estado, autoria e limites do snapshot; não confundir observações com criações do dia.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md", "BRAIN/01-DIARIO/2026/2026-11-24.md"]
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/CONFIG.md",
+      "path_base": "brain",
+      "sha256": "9c30d7fdd2df9e7b6b6e28b4eabdb585c6c59e5c92cdaeb02b378db9a37658bd",
+      "bytes": 6594,
+      "read_scope": "Documento completo",
+      "disposition": "Critérios de relevância, atualização e estrutura aplicados."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/ROTINA-CONSOLIDACAO.md",
+      "path_base": "brain",
+      "sha256": "53ff9e88f0d6347545eb7cf0f58b5b819cb2cd8add324b134f0f836f43f51ae8",
+      "bytes": 6961,
+      "read_scope": "Documento completo",
+      "disposition": "Rotina diária, inventário, cobertura, recibo e separação Git/transporte aplicados."
+    }
+  ],
+  "prior_commit_verification": {
+    "commit": "b38ab89e500b27d1d7124c24c6958726fc8d76c9",
+    "receipt_path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-23-daily.json",
+    "receipt_sha256": "1e73d3b990322a76d5c970734e0f85e7992f4f32e3126bf7a04c1b10b121af20",
+    "receipt_bytes": 16548,
+    "declared_products_checked": 6,
+    "declared_products_matching": 6,
+    "status": "PASS",
+    "command": "python3 read-only verifier using git show <commit>:<path> and SHA-256/size comparison"
+  },
+  "inventory": {
+    "mandatory_command": "python3 /data/.openclaw/workspace/Brain/scripts/brain-source-inventory.py --days 7",
+    "mandatory_workdir": "/data/.openclaw/workspace/Brain",
+    "first_attempt": "TIMED_OUT_AFTER_120S_SIGTERM; no output used",
+    "successful_recovery_generated_at": "2026-11-25T02:03:26.112420+00:00",
+    "persisted_command": "python3 /data/.openclaw/workspace/Brain/scripts/brain-source-inventory.py --days 7 > /data/.openclaw/workspace/.openclaw/tmp/brain-daily-20261124/inventory.json",
+    "persisted_path": "/data/.openclaw/workspace/.openclaw/tmp/brain-daily-20261124/inventory.json",
+    "persisted_sha256": "0f1f5a5167777dfddb671b26c24a7a118df601dc71db32d467db0fff0ef0a853",
+    "persisted_bytes": 62602,
+    "generated_at": "2026-11-25T02:07:11.483530+00:00",
+    "coverage_complete": false,
+    "errors": [],
+    "surface_count": 40,
+    "missing_surface_count": 18,
+    "source_count": 138,
+    "source_count_by_kind": {"openclaw_history": 134, "codex_history": 4},
+    "source_attributions": {"main": 106, "sentinel": 19, "kowalski": 13},
+    "limitation": "A primeira tentativa ocorreu em uma chamada paralela e excedeu o timeout. A recuperação válida foi executada individualmente. A repetição posterior serviu somente para persistir JSON completo e obter resumo verificável. Atribuições podem contar uma fonte em mais de um agente; inventário de metadados não prova leitura de conteúdo."
+  },
+  "sources_not_reviewed": {
+    "active_run_source": "/data/.openclaw/agents/main/sessions/7362104a-b35c-4347-90f2-502f57253a4e.jsonl",
+    "active_run_disposition": "PENDING_MUTABLE_SOURCE; muda durante esta execução e não pode certificar a própria cobertura.",
+    "classes": ["trajectories", "Codex bruto não selecionado", "memórias não selecionadas", "históricos fora das unidades declaradas", "payloads", "providers", "anexos"],
+    "meaning": "Não revisado ou ausente não significa ausência de conhecimento, inatividade ou saúde."
+  },
+  "knowledge_dispositions": {
+    "updated_existing": [
+      "BRAIN/01-DIARIO/README.md",
+      "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md",
+      "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md",
+      "BRAIN/99-SISTEMA/CHANGELOG.md",
+      "BRAIN/99-SISTEMA/HEALTH.md"
+    ],
+    "created_required_daily": ["BRAIN/01-DIARIO/2026/2026-11-24.md"],
+    "new_permanent_notes": [],
+    "new_people_companies_projects_agents_automations": [],
+    "archive_or_delete": [],
+    "deduplicated": ["Telegram user ID already present in configuration/history; no person note created", "durable continuation repeated the already reviewed NinjaOne result"],
+    "reason": "O delta trouxe um snapshot diário NinjaOne e um caso de prova por camadas, ambos pertencentes a registros existentes. Atualização foi preferida à fragmentação."
+  },
+  "products": [
+    {"path": "BRAIN/01-DIARIO/2026/2026-11-24.md", "sha256": "11a5bc7c2faf0e8de9c6595f5aed9c18b5b5d566dd31c28adf72c1117e09191c", "bytes": 5881},
+    {"path": "BRAIN/01-DIARIO/README.md", "sha256": "59c8f7374fbeb7712d67fed926c9fcc19c8e2eef6f3399c6981e8d84544b35df", "bytes": 5142},
+    {"path": "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md", "sha256": "d8a53d80d178ac49adfd508b4d00712b9cebafe1c8396cd7b55b0c855b3e181e", "bytes": 39813},
+    {"path": "BRAIN/40-CONHECIMENTO/Operacional/Ausencia-de-evidencia-nao-e-status-operacional.md", "sha256": "bc7086f506bf159c17b9374c2b9f5c432084ab78e11051168f1ab51da9bd7d86", "bytes": 36072},
+    {"path": "BRAIN/99-SISTEMA/CHANGELOG.md", "sha256": "148f9a86bca526a3bdba4e6e0963cf949ef817e5d96dca2939ba5a65a81c28c6", "bytes": 175991},
+    {"path": "BRAIN/99-SISTEMA/HEALTH.md", "sha256": "cb288caf47b169f4dba306975660062244af786263480fdf17d0d92880905740", "bytes": 125844}
+  ],
+  "pending": [
+    {"id": "CHANNEL_STATUS_PROVIDER_VOCABULARY", "dependency": "Mapear explicitamente os estados aceitos pelo adapter; preservar PROVIDER_STATUS_UNRECOGNIZED como inconclusivo até correção autorizada."},
+    {"id": "NINJAONE_LOGICAL_CYCLE_2026_11_24", "dependency": "Consumir somente a evidência do ciclo próprio após a janela natural; não usar snapshot de 23/11 como substituto nem disparar catch-up por esta consolidação."},
+    {"id": "PRIMARY_WINDOW_BACKLOG", "dependency": "Trajectories, Codex bruto, memórias, históricos não selecionados, payloads, providers e anexos não foram revisados integralmente."},
+    {"id": "LIVE_AGENT_HEALTH_UNPROVEN", "dependency": "Atividade selecionada de main e Sentinel não certifica saúde viva geral; ausência de fontes recentes de outros agentes não prova inatividade."},
+    {"id": "PRIOR_BACKLOG", "dependency": "Filas W47 e anteriores permanecem por identidade, exceto disposições explicitamente reconciliadas nos ciclos subsequentes."}
+  ],
+  "semantic_search": {
+    "command": "/data/.openclaw/skills/brain-semantic-search/scripts/search \"Quais decisões, pendências e mudanças úteis dos últimos sete dias ainda precisam ser consolidadas no diário do Brain em 2026-11-24?\"",
+    "first_attempt": "TIMED_OUT_AFTER_120S_SIGTERM; no result used",
+    "mode": "read_only_no_refresh",
+    "index_at": "2026-11-24T02:14:29.320843Z",
+    "source_digest": "b48fbdceb3ce77b183bde2e07ca0f5c1e4dec0cc7b2dad2ea1246ed39fd810ec",
+    "status": "COMPLETED_AFTER_TIMEOUT_RECOVERY_CANDIDATES_ONLY",
+    "disposition": "Candidatos orientaram navegação e deduplicação. O índice antecede o delta de 24/11 e não foi usado como prova de cobertura ou estado atual.",
+    "index_refresh_executed": false
+  },
+  "native_memory_search": {
+    "query": "Brain consolidação diária recente novembro 2026 decisões pendências registros úteis Hebert",
+    "status": "HISTORICAL_OR_GENERAL_HITS_ONLY",
+    "disposition": "Resultados eram históricos ou gerais e não foram promovidos como novidade de 24/11."
+  },
+  "validation": {
+    "product_readback_before_receipt": {
+      "status": "PASS",
+      "command": "python3 full-file readback with SHA-256 and size calculation",
+      "products_read": 6
+    },
+    "json_parse": {"status": "PASS", "command": "python3 -m json.tool BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-24-daily.json >/dev/null"},
+    "schema_and_relationships": {
+      "status": "PASS_AFTER_TARGET_RECOVERY",
+      "first_attempt": "FAIL because the receipt relationship target did not yet exist",
+      "recovery": "The actual receipt was created and the same validator was rerun against the real target.",
+      "command": "python3 local validator using note.schema.json and relationships/relationship-types.yaml for changed Markdown notes",
+      "notes": 6,
+      "relationships": 21,
+      "errors": []
+    },
+    "link_gate": {
+      "status": "PASS",
+      "command": "python3 BRAIN/99-SISTEMA/brain-v2/tools/brain_link_gate.py --root . --json",
+      "markdown_total": 463,
+      "internal_links": 1119,
+      "broken_internal_links": 0,
+      "uncategorized_markdown": 0,
+      "duplicate_ids": {},
+      "duplicate_aliases": {},
+      "secret_candidates": [],
+      "graph_components": 1,
+      "reachability_rate": 1.0,
+      "failures": []
+    },
+    "content_or_coverage_certified": false,
+    "limitation": "Gates reais certificam schema, vínculos e integridade estrutural; não certificam conteúdo, cobertura semântica, saúde viva, aceite humano ou transporte."
+  },
+  "publication": {
+    "previous_commit_remote_transport": "b38ab89 published by scheduled sync at 2026-11-24T09:00Z",
+    "current_local_commit": "PENDING_AT_RECEIPT_CREATION",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_INVOKED",
+    "remote_confirmation_for_current_cycle": "NOT_QUERIED",
+    "scheduled_git_routines": "UNCHANGED"
+  },
+  "operational_recovery": {
+    "invalid_tool_calls": 0,
+    "failed_read_calls": 1,
+    "failed_read_detail": "Attempted relationship-types.yaml under brain-v2/config; ENOENT. Recovered by lexical path search and read of brain-v2/relationships/relationship-types.yaml before validation.",
+    "failed_commands": 2,
+    "failed_command_details": ["Initial inventory timed out after 120 seconds and was terminated", "Initial semantic search timed out after 120 seconds and was terminated"],
+    "recovered_commands": ["Inventory rerun individually with sufficient timeout", "Semantic search rerun individually with sufficient timeout"],
+    "validation_recovery": "Initial schema check ran before the receipt target existed and failed only on that unresolved target; rerun required after receipt creation.",
+    "stages_repeated": ["inventory recovered once after timeout and repeated once more only to persist complete JSON", "semantic search recovered once after timeout"],
+    "mutation_repeated": false
+  },
+  "safety": {
+    "silent": true,
+    "messages_sent_by_consolidation": 0,
+    "external_access_by_consolidation": false,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "business_effects": false,
+    "tickets_or_financial_mutations": false,
+    "push_or_sync": false
+  }
+}

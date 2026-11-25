@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-24T02:00:00Z'
+updated: '2026-11-25T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,17 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-24 (execução em 25/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 24/11. O inventário obrigatório persistido declarou 138 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40; metadados não comprovam leitura de conteúdo ou saúde viva.
+- O ciclo anterior foi consumido por identidade no commit `b38ab89`; recibo e seis produtos declarados coincidiram por SHA-256 e tamanho. O sync das 09:00 UTC publicou esse checkpoint, enquanto os três checkpoints seguintes não encontraram delta. Isso comprova transporte Git daquele commit, não cobertura global.
+- A evidência canônica NinjaOne do ciclo lógico 23/11 foi lida integralmente: board `Tickets Bikon`, três observações, três detalhes, duas páginas e sem truncamento. O ciclo lógico de 24/11 ainda aguardava sua janela natural; nenhuma coleta ou mutação foi repetida.
+- A observação Telegram provou ingresso e ACK de saída naquela interação. O piloto de status permaneceu duas vezes bloqueado e uma vez inconclusivo por valor do provider não reconhecido. HTTP 200 e transporte funcional não certificam a classificação semântica do canal.
+- A primeira tentativa do inventário e a primeira pesquisa semântica foram encerradas por timeout de 120 segundos. As etapas foram recuperadas individualmente com timeout suficiente; nenhuma escrita, envio ou operação de negócio foi repetida. Uma execução posterior do inventário serviu apenas para persistir o JSON e obter resumo verificável.
+- Históricos não selecionados, trajectories, Codex bruto, memórias, payloads, providers e a sessão mutável deste run permaneceram pendentes. Atividade selecionada de main e Sentinel não certifica saúde viva geral; ausência de fontes recentes de outros agentes não prova inatividade.
+- Pesquisa semântica local executada read-only/sem refresh. O índice era de 24/11 às 02:14 UTC e serviu apenas para navegação; não certifica o delta posterior.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-24-daily.json`. Score legado 96/100 mantido sem recálculo; gates estruturais não certificam conteúdo, completude semântica, saúde viva ou transporte.
 
 ## Verificação de cobertura — 2026-11-23 (execução em 24/11 às 02:00 UTC)
 

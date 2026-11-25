@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-11-22T06:00:00Z'
+updated: '2026-11-25T02:00:00Z'
 relationships:
 - type: derived_from
   target: BRAIN/01-DIARIO/Semanal/2026-W39.md
@@ -52,6 +52,10 @@ relationships:
   target: BRAIN/01-DIARIO/Semanal/2026-W47.md
   reason: Limita falha intermediária, ausência de fonte e estado negativo à camada efetivamente observada.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-22-weekly.json
+- type: derived_from
+  target: BRAIN/01-DIARIO/2026/2026-11-24.md
+  reason: Distingue prova concreta de transporte Telegram de status semântico não reconhecido pelo provider.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-24-daily.json
 ---
 
 # Ausência de evidência não é status operacional
@@ -59,9 +63,9 @@ relationships:
 ```yaml
 categoria: operacional
 tipo: aprendizado_permanente
-fonte: consolidação semanal 2026-W28; Portal 213 Stage 1B R2.4 em 2026-08-20; qualificacao mensal ARX em 2026-09-08/09; fechamento semanal Relatorios Operacionais em 2026-09-14; consolidacao semanal 2026-W38; consolidações semanais 2026-W42/W43/W46/W47
+fonte: consolidação semanal 2026-W28; Portal 213 Stage 1B R2.4 em 2026-08-20; qualificacao mensal ARX em 2026-09-08/09; fechamento semanal Relatorios Operacionais em 2026-09-14; consolidacao semanal 2026-W38; consolidações semanais 2026-W42/W43/W46/W47; piloto read-only de status Telegram em 2026-11-24
 confiabilidade: alta
-ultima_revisao: 2026-11-22
+ultima_revisao: 2026-11-24
 tags: [monitoramento, evidencia, recencia, revalidacao, ninjaone, backup, hyper-v, operacao, checkpoint, cobertura-temporal, paginacao, canario, prova-estreita]
 ```
 
@@ -291,3 +295,11 @@ Fonte: unidades main M1–M3 no recibo `BRAIN/99-SISTEMA/brain-v2/reports/covera
 Na janela de 11–17/10, apenas três diários existiam; quatro datas estavam sem nota. O inventário listou arquivos por metadados e os syncs provaram o transporte de commits específicos, mas nenhuma dessas evidências reconstrói o conteúdo ausente. Da mesma forma, execução que excedeu o contexto sem diário ou recibo não pode ser promovida a consolidação concluída.
 
 Registrar separadamente: **artefato cognitivo disponível**, **fonte apenas inventariada**, **execução sem produto** e **commit transportado**. Ausência de diário não significa ausência de atividade; arquivo no inventário não significa leitura; sync atualizado não significa cobertura semântica. Recuperar fonte autêntica se aparecer ou manter a dependência explícita, sem fabricar diário retroativo, zero ou conclusão. Síntese em [[01-DIARIO/Semanal/2026-W42|W42]].
+
+## Transporte observado não substitui classificação do provider — 2026-11-24
+
+No canal Telegram padrão, o ingresso do pedido e um envio direto com ACK `messageId 18049` comprovaram a ida e a volta daquela interação. Em paralelo, o piloto read-only de status do canal terminou duas vezes `BLOCKED / CHANNEL_STATUS_PILOT_UNKNOWN_STATUS` e uma vez `READ_INCONCLUSIVE / PROVIDER_STATUS_UNRECOGNIZED`; a última leitura recebeu HTTP 200.
+
+Essas provas não se anulam nem são intercambiáveis. O ACK sustenta o transporte concreto observado; HTTP 200 sustenta resposta do endpoint; valor não reconhecido impede classificar o estado semântico do provider. O consumidor deve mapear explicitamente o vocabulário aceito e falhar fechado para valores desconhecidos, sem converter resposta técnica em “conectado” ou “desconectado” e sem repetir a consulta para obter status conveniente.
+
+Fonte: sessão main `12be8775-f7ab-4326-a0d7-9c3a862fa59d`, linhas 8–33, e sessões Sentinel `8644b8ef-bb7e-4dd6-a286-f6fdee4e8249`, `e1aa6c51-9f0a-42f8-bec3-456920cc2cbe` e `c09e3a6a-3a36-4b64-9871-c4dee9046764`, linhas 5–8; identidades no recibo diário de 24/11.

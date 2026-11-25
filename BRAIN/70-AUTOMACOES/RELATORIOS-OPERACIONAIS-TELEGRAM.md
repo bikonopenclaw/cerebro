@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-11-24T02:00:00Z'
+updated: '2026-11-25T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/KOWALSKI.md
@@ -28,15 +28,19 @@ relationships:
   target: BRAIN/01-DIARIO/2026/2026-11-23.md
   reason: Vincula a entrega natural do fechamento WhatsApp e a comparação dos quatro recortes semanais.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-23-daily.json
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-11-24.md
+  reason: Vincula o snapshot diário NinjaOne de 23/11 e seu limite temporal.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-24-daily.json
 ---
 
 # Relatórios Operacionais Telegram
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14, qualificacao do fluxo universal em 2026-09-16, fechamento executivo somente leitura de 2026-11-15, reconciliação da Torre de 2026-11-20 e fechamentos WhatsApp reconciliados em 2026-11-23
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14, qualificacao do fluxo universal em 2026-09-16, fechamento executivo somente leitura de 2026-11-15, reconciliação da Torre de 2026-11-20, fechamentos WhatsApp de 2026-11-23 e evidência diária NinjaOne de 2026-11-24
 confiabilidade: alta
-ultima_revisao: 2026-11-23
+ultima_revisao: 2026-11-24
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
@@ -91,6 +95,15 @@ Proveniência: diagnóstico completo `/data/.openclaw/workspace/artifacts/torre-
 - Referências dos produtos: 02–06/11, ordem `ORDER-SENTINEL-SCHEDULED-WHATSAPP-D72164C4C46599599084B9C7`, relatório SHA-256 `6a1fa3ec615723983eff00aa627e050be6823d1b51b3ea66d3118c107014dd5b`; 16–20/11, ordem `ORDER-SENTINEL-SCHEDULED-WHATSAPP-A00E96F8ADDD849284B37449`, relatório SHA-256 `2c7b81d63fcc7478f1a6b10d7200205dc87bc097112f392252021a3ed56f2a0c`.
 
 Proveniência: sessões main `46fa3553-8b58-45d3-b73a-8160a7109d38`, `1fede0d1-3a39-43ec-b6ce-3294d7448096`, `8b70e31e-7f68-4a41-b3d6-eb4ce982987a` e `e7a37306-9109-48fc-8e7e-71d9c1dda8dc`; identidades e intervalos no recibo diário de 23/11.
+
+## Coleta diária NinjaOne — ciclo lógico de 23/11 observado em 24/11/2026
+
+- A coleta canônica read-only foi gravada em 24/11 às 03:45:14 UTC para `reference_date_local=2026-11-23`. O board `Tickets Bikon` expôs três observações e não atingiu o limite de 500 tickets: `truncated_at_max_tickets=false`.
+- Os tickets observados foram `#2241`, `#2252` e `#2253`, todos `Novo` e sem responsável na coleta. `#2241` tinha prioridade alta e data de criação em 20/11; `#2252` e `#2253` foram criados em 23/11. Portanto, contagem do snapshot não equivale a contagem de tickets criados no dia.
+- A fonte autenticada usou escopo `monitoring`, leu duas páginas do board e hidratou os três detalhes. O contrato não expôs capacidade de escrita e nenhuma nova coleta ou mutação foi executada na conferência de 24/11.
+- No momento da consulta, o ciclo lógico de 24/11 ainda não havia ocorrido e não estava atrasado: a próxima janela natural era 25/11 às 03:45 UTC, equivalente a 00:45 BRT. A evidência de 23/11 não substitui o ciclo seguinte.
+
+Proveniência: `/data/.openclaw/workspace-sentinel/evidence/ninjaone/canonical-tickets-2026-11-23-daily.json`, SHA-256 `48e53c417dcf3bc0ee4b90f0dd4d25f8e44f1e474d04ee2d52c1a07efd60b7cb`; sessão main `12be8775-f7ab-4326-a0d7-9c3a862fa59d`, linhas 34–82; recibo diário de 24/11.
 
 ## Grupo
 

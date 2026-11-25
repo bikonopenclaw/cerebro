@@ -4,13 +4,24 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-24T02:00:00Z'
+updated: '2026-11-25T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-24, consolidação diária silenciosa — execução em 25/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico.
+- Atualizados os registros existentes de Relatórios Operacionais e ausência de evidência; nenhuma nota temática, pessoa, empresa, projeto, agente ou automação nova foi criada.
+- Consolidada a coleta canônica diária NinjaOne do ciclo lógico 23/11: snapshot autenticado do board `Tickets Bikon` com três observações (`#2241`, `#2252` e `#2253`), três detalhes lidos, duas páginas exauridas e sem truncamento. A contagem do snapshot não foi convertida em tickets criados no dia.
+- Preservado o limite temporal: no momento da consulta, o ciclo lógico de 24/11 ainda não havia ocorrido nem estava atrasado; a janela natural seguinte era 25/11 às 03:45 UTC. Nenhuma coleta ou mutação de ticket foi repetida.
+- Distinguida a prova de transporte Telegram da classificação do provider: ingresso e ACK `messageId 18049` provaram a interação concreta, enquanto o piloto read-only terminou duas vezes bloqueado por status desconhecido e uma vez inconclusivo por valor não reconhecido, apesar de HTTP 200.
+- Consumido por identidade o ciclo anterior no commit `b38ab89`: recibo e seis produtos declarados coincidiram por SHA-256 e tamanho. O sync das 09:00 UTC publicou esse commit; 15:00, 20:00 e 01:00 UTC não encontraram delta.
+- O inventário obrigatório persistido declarou 138 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40. A primeira tentativa do inventário e a primeira pesquisa semântica excederam 120 segundos; ambas foram recuperadas individualmente com timeout suficiente e sem repetir mutação documental ou de negócio.
+- HEALTH e recibo `brain-v2/reports/coverage-2026-11-24-daily.json` atualizados. Sem push, sync, mensagem, ticket, provider, reenvio ou mutação financeira por esta consolidação; o commit é somente local.
 
 ## 2026-11-23, consolidação diária silenciosa — execução em 24/11 às 02:00 UTC
 
