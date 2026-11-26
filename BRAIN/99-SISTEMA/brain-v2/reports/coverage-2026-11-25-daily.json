@@ -1,0 +1,418 @@
+{
+  "schema_version": "1.0",
+  "cycle": "daily",
+  "cycle_date": "2026-11-25",
+  "cycle_timezone": "America/Sao_Paulo",
+  "executed_at_utc": "2026-11-26T02:00:00Z",
+  "job_id": "d95bbe73-24d9-4e2b-ba57-0032082bb54b",
+  "run_id": "a556e614-87e3-4c16-bfe9-b4e47023a29d",
+  "session_key": "agent:main:cron:d95bbe73-24d9-4e2b-ba57-0032082bb54b:run:a556e614-87e3-4c16-bfe9-b4e47023a29d",
+  "recovery_instruction": "OPENCLAW_OPERATIONAL_RECOVERY_20261003_V1",
+  "reliability_instruction": "BRAIN_DAILY_RELIABILITY_20261026",
+  "base_commit": "9c92ac94e38bb0d453036c75991e943c228b46ef",
+  "product_state": "PRODUCED_DOCUMENTARY_PARTIAL",
+  "coverage_complete": false,
+  "window": {
+    "inventory_days": 7,
+    "inventory_generated_at": "2026-11-26T02:06:12.275040+00:00",
+    "selected_delta_start_utc": "2026-11-25T02:13:53Z",
+    "selected_delta_end_utc": "2026-11-26T02:00:00Z",
+    "note": "A seleção parte do commit diário anterior e inclui quatro checkpoints Git, consultas read-only NinjaOne, roteamento main/Kowalski/Darth/Sentinel, release/ciclo Ronda e estados locais identificados. A sessão ativa deste run permaneceu mutável e pendente."
+  },
+  "scope": "Revisão local seletiva do fechamento anterior por commit, quatro syncs, evidência NinjaOne de 24/11, consultas peer e release/ciclo da Ronda de 25/11. Não houve revisão integral de trajectories, Codex bruto, memórias, payloads, providers, anexos ou fontes fora das unidades declaradas.",
+  "sources_reviewed": [
+    {
+      "path": "git:9c92ac94e38bb0d453036c75991e943c228b46ef:BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-24-daily.json",
+      "path_base": "git_commit",
+      "sha256": "f0e121670a09ada98d36dbb59744eafdb28ad3f2284d8463baaca60b8be97b29",
+      "bytes": 19142,
+      "read_scope": "Documento completo e seis produtos declarados conferidos no mesmo commit.",
+      "disposition": "Consumir execução, produto, cobertura, Git e transporte do ciclo anterior sem reprocessar o conteúdo temático.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-25.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/2496400a-4baa-4ba5-9e84-a7878a40c032.jsonl",
+      "path_base": "host_local",
+      "sha256": "15dc587807e999dff0712df1a16f67c9f1402f1b2b8d2a0f0babfbf49d065bf3",
+      "bytes": 11941,
+      "mtime_ns": 1795597231850791853,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [1, 10], "note": "Sync de 25/11 às 09:00 UTC."},
+      "disposition": "Registrar publicação do commit 9c92ac9 sem promover transporte a cobertura.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-25.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/a08e5fb2-9a97-4483-8136-af954b0cf1ea.jsonl",
+      "path_base": "host_local",
+      "sha256": "fe0492ae67e12b252c9f283140d68de10ed0db47e6217f49b19b4db6f5ce36e0",
+      "bytes": 9873,
+      "mtime_ns": 1795618858458921002,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [1, 8], "note": "Sync de 25/11 às 15:00 UTC."},
+      "disposition": "Checkpoint sem delta; não promover a cobertura.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-25.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/dfa9d2e0-eef1-4555-a7e7-0bfa534dd5f7.jsonl",
+      "path_base": "host_local",
+      "sha256": "c77bd28a1cac2c806b137cda280fe0f6d9021dc99339021931bcb4543f83226d",
+      "bytes": 9430,
+      "mtime_ns": 1795636828928187085,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [1, 8], "note": "Sync de 25/11 às 20:00 UTC."},
+      "disposition": "Checkpoint sem delta; não promover a cobertura.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-25.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/cdbf965f-059d-4aab-81e3-6471e14d9e2b.jsonl",
+      "path_base": "host_local",
+      "sha256": "788a349573ab60f36fd3db02d3af7a3bb71a1ffd3b3a1e0acdca904d7db4f2f2",
+      "bytes": 11858,
+      "mtime_ns": 1795654840362141426,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [1, 10], "note": "Sync de 26/11 às 01:00 UTC."},
+      "disposition": "Checkpoint sem delta; não promover a cobertura.",
+      "target_notes": ["BRAIN/01-DIARIO/2026/2026-11-25.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/cf1a2a0d-c4a5-4419-be16-ce662b492fff.jsonl",
+      "path_base": "host_local",
+      "sha256": "eeddade6f5381a62211d5fa3fcd5d0caeab6412e83b7f6e1d184e1d35d67adcb",
+      "bytes": 234778,
+      "mtime_ns": 1795626726995743319,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [5, 60], "note": "Consultas NinjaOne delimitadas, reconciliação de goal duplicado e emissão da ordem/grant Ronda."},
+      "disposition": "Promover somente os resultados identificados; complementar a Ronda com fontes persistidas locais e não repetir operação.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md", "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md", "BRAIN/01-DIARIO/2026/2026-11-25.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/85f0d4cf-d621-424e-9f6f-f9e234d76bec.jsonl",
+      "path_base": "host_local",
+      "sha256": "6c72129575d4d1c28838ef14e4f6ec35efaea2179f401dc9c05e47acf66c9128",
+      "bytes": 47871,
+      "mtime_ns": 1795611862525587845,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [5, 12], "note": "Continuação durável do objetivo NinjaOne já entregue."},
+      "disposition": "Deduplicar; nenhuma nova coleta ou entrega.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/main/sessions/9bedaeb9-f012-40c9-a2b8-b19cc9ab6bd1.jsonl",
+      "path_base": "host_local",
+      "sha256": "13ace0ecaca25f5cf407bc2fda02884266c8d9c19da8c295f34f121e8af150ee",
+      "bytes": 171511,
+      "mtime_ns": 1795613469686145037,
+      "agent": "main",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [5, 48], "note": "Handoff Kowalski, ownership e encerramento do goal duplicado."},
+      "disposition": "Preservar a entrega canônica 18071 e o encerramento sem nova operação/coleta/mensagem.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md"]
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/kowalski/sessions/ba74cb53-785c-482d-87b4-361cd4f6b011.jsonl",
+      "path_base": "host_local",
+      "sha256": "2cd1471db8f266993875cd7294627c47456b7cc88622b92aabbbd38f2aab9a51",
+      "bytes": 36069,
+      "mtime_ns": 1795616411812474630,
+      "agent": "kowalski",
+      "profile": "kowalski",
+      "read_scope": {"jsonl_lines": [5, 20], "note": "Pedidos e respostas read-only sobre evidência diária NinjaOne."},
+      "disposition": "Promover o recibo peer; não inferir quantidade de entregas externas a partir de duplicação no log.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md"]
+    },
+    {
+      "path": "/home/openclaw/.openclaw-kowalski/agents/sentinel/sessions/86539fb0-d6da-455c-9b4d-e943affa2650.jsonl",
+      "path_base": "host_local",
+      "sha256": "9738622d2c637e722d68d13cc310b3d44ab1b9b6e34caca40837d0e4096cf614",
+      "bytes": 54184,
+      "mtime_ns": 1795612870578964318,
+      "agent": "sentinel",
+      "profile": "kowalski",
+      "read_scope": {"jsonl_lines": [2, 19], "note": "Confirmação de evidência publicada ao Kowalski."},
+      "disposition": "Corroborar referência, contagem, publicação e integridade da cópia.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md"]
+    },
+    {
+      "path": "/home/openclaw/.openclaw-darth-vader/agents/darth-vader/sessions/8035f82a-aca1-40a0-99f5-f015b771a3ae.jsonl",
+      "path_base": "host_local",
+      "sha256": "6ea649b81b7147997fc48b0f100273d3abe346fe8672610610830e8d94d35a09",
+      "bytes": 37733,
+      "mtime_ns": 1795616260002343412,
+      "agent": "darth-vader",
+      "profile": "darth-vader",
+      "read_scope": {"jsonl_lines": [2, 28], "note": "Tentativas de roteamento read-only e sucesso peer final."},
+      "disposition": "Preservar falhas intermediárias como rota, sem inferir saúde do Sentinel/NinjaOne; promover o recibo final somente com fonte Sentinel correspondente.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/5273e89e-ad6e-45af-aefc-d187b55d19f7.jsonl",
+      "path_base": "host_local",
+      "sha256": "c5c91080a7563c0558d52b33d0ef64aed51d44cce10618e99d521dd9922e709c",
+      "bytes": 3404,
+      "mtime_ns": 1795611359020190660,
+      "agent": "sentinel",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [2, 3], "note": "Primeiro caminho bound bloqueado."},
+      "disposition": "Preservar o bloqueio sem converter em ausência de evidência ou repetir coleta.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/c7931524-2fc3-494a-87e2-658c4d0259ae.jsonl",
+      "path_base": "host_local",
+      "sha256": "89787d4bfe144d66d54c84942e41a8e0851450b646ae9ff4f26e4ded21b15226",
+      "bytes": 8333,
+      "mtime_ns": 1795611738635230507,
+      "agent": "sentinel",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [2, 5], "note": "Consulta bound recuperada com receipt SUCCESS."},
+      "disposition": "Promover referência 24/11, total 3 e ausência de evidência 25/11 no momento da leitura.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/af37b262-6de4-42a6-96b2-ebb1c2ab7f53.jsonl",
+      "path_base": "host_local",
+      "sha256": "2177d504c47a00eac044b20e16f75d4af6eb3a0b53962dec37dfd908dec99a03",
+      "bytes": 5472,
+      "mtime_ns": 1795616263195353045,
+      "agent": "sentinel",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [2, 5], "note": "Consulta peer originada do Darth."},
+      "disposition": "Corroborar o recibo peer read-only e ausência de nova coleta.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md"]
+    },
+    {
+      "path": "/data/.openclaw/agents/sentinel/sessions/e00ddaae-e9f0-48f3-aa04-901e33cf3a75.jsonl",
+      "path_base": "host_local",
+      "sha256": "9eeffa2e0a726f1c4127168a5a2babcc37a25fb4f424532f3ab753ffc986637f",
+      "bytes": 5472,
+      "mtime_ns": 1795616423339465663,
+      "agent": "sentinel",
+      "profile": "main",
+      "read_scope": {"jsonl_lines": [2, 5], "note": "Consulta peer originada do Kowalski."},
+      "disposition": "Corroborar o mesmo recibo por rota independente delimitada.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md"]
+    },
+    {
+      "path": "/data/.openclaw/workspace-sentinel/evidence/ninjaone/canonical-tickets-2026-11-24-daily.json",
+      "path_base": "host_local",
+      "sha256": "50d70a744be368b4f7891302c16ce84ab19881ca277ba24800af51883f880bbb",
+      "bytes": 6873,
+      "mtime_ns": 1795578312989507440,
+      "agent": "sentinel",
+      "profile": "shared_workspace",
+      "read_scope": {"json_lines": [1, 261], "note": "Evidência canônica completa."},
+      "disposition": "Promover snapshot, identidades, paginação, autoria e limites sem tratar observações como criações do dia.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md", "BRAIN/01-DIARIO/2026/2026-11-25.md"]
+    },
+    {
+      "path": "/data/.openclaw/workspace-kowalski/evidence-inbox/ninjaone/evidence-2026-11-24.json",
+      "path_base": "host_local",
+      "sha256": "50d70a744be368b4f7891302c16ce84ab19881ca277ba24800af51883f880bbb",
+      "bytes": 6873,
+      "mtime_ns": 1795578312994507470,
+      "agent": "kowalski",
+      "profile": "shared_workspace",
+      "read_scope": {"json_lines": [1, 261], "note": "Cópia publicada completa."},
+      "disposition": "Confirmar igualdade byte a byte com o canônico; não promover a integridade a leitura humana.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md"]
+    },
+    {
+      "path": "/data/.openclaw/workspace/orchestration-orders/ORDER-RONDA-HISTORICAL-OUTBOX-20261125T1708Z.md",
+      "path_base": "host_local",
+      "sha256": "7b539720653f85b1be7902c1a74877abc2b4aa6b71f0dc42da3794f680d7a48f",
+      "bytes": 2040,
+      "mtime_ns": 1795626718161705725,
+      "read_scope": {"lines": [1, 25], "note": "Ordem normal completa."},
+      "disposition": "Promover escopo da correção, bindings e exclusões; não reutilizar autorização.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md", "BRAIN/01-DIARIO/2026/2026-11-25.md"]
+    },
+    {
+      "path": "/data/.openclaw/workspace/orchestration-orders/RONDA-HISTORICAL-OUTBOX-GRANT-20261125T1708Z.json",
+      "path_base": "host_local",
+      "sha256": "d1fd1629a89ed8ad808cbcbcf56ea9c0cbf776eb3b49747fe33015a0732e0892",
+      "bytes": 2530,
+      "mtime_ns": 1795626718872708759,
+      "read_scope": {"json_lines": [1, 80], "note": "Grant completo, sem segredos."},
+      "disposition": "Promover release/config/manifesto e proveniência; não transformar grant consumido em autorização futura.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"]
+    },
+    {
+      "path": "/data/.openclaw/workspace-sentinel/orchestration/state/audit.jsonl",
+      "path_base": "host_local",
+      "sha256": "262b61f884af2711dce1378dda3ea9f452e5c51b2dcd79d82649cf6faf885066",
+      "bytes": 28998223,
+      "mtime_ns": 1795642218288666631,
+      "read_scope": {"jsonl_lines": [51986, 52005], "note": "Eventos Ronda selecionados por identidades exatas; demais linhas não lidas."},
+      "disposition": "Promover fechamento da release e terminalidade das ordens do ciclo sem declarar cobertura do audit inteiro.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"]
+    },
+    {
+      "path": "/data/.openclaw/workspace-sentinel/orchestration/state/controller-state.json",
+      "path_base": "host_local",
+      "sha256": "de99c058e56e3aa54d42df011de2262c0432a4eb3054b13544d0842c284cf325",
+      "bytes": 2086,
+      "mtime_ns": 1795642218248666486,
+      "read_scope": "Projeção completa observada também por orchestrationctl status.",
+      "disposition": "Registrar IDLE e último terminal no corte; status não disparou execução.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md"]
+    },
+    {
+      "path": "/var/lib/bikon-ronda/ronda.sqlite",
+      "path_base": "host_local",
+      "sha256": "19633896812f10c75f20175b6d2131cc5aa2eb435379f479c6aa6d82c43cc008",
+      "bytes": 413696,
+      "mtime_ns": 1795642218238666450,
+      "read_scope": {"mode": "sqlite_ro", "rows": ["rounds.id=ronda:2026-11-25:equipe", "operations.round_id=ronda:2026-11-25:equipe", "operations.key=panel:ronda:2026-11-18:equipe:r10"]},
+      "disposition": "Promover somente ticket/progresso/checkpoints/resumo/fechamento/painel e isolamento histórico selecionados.",
+      "target_notes": ["BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md", "BRAIN/01-DIARIO/2026/2026-11-25.md"]
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/CONFIG.md",
+      "path_base": "brain",
+      "sha256": "9c30d7fdd2df9e7b6b6e28b4eabdb585c6c59e5c92cdaeb02b378db9a37658bd",
+      "bytes": 6594,
+      "read_scope": "Documento completo",
+      "disposition": "Critérios de relevância, atualização e estrutura aplicados."
+    },
+    {
+      "path": "BRAIN/99-SISTEMA/ROTINA-CONSOLIDACAO.md",
+      "path_base": "brain",
+      "sha256": "53ff9e88f0d6347545eb7cf0f58b5b819cb2cd8add324b134f0f836f43f51ae8",
+      "bytes": 6961,
+      "read_scope": "Documento completo",
+      "disposition": "Rotina diária, inventário, cobertura, recibo e separação Git/transporte aplicados."
+    }
+  ],
+  "source_recheck_before_receipt": {
+    "status": "PASS",
+    "command": "python3 local SHA-256/size verifier over 22 mutable/local selected sources",
+    "matching": 22,
+    "total": 22,
+    "note": "A fonte ativa desta consolidação não integrou a comparação."
+  },
+  "prior_commit_verification": {
+    "commit": "9c92ac94e38bb0d453036c75991e943c228b46ef",
+    "receipt_path": "BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-24-daily.json",
+    "receipt_sha256": "f0e121670a09ada98d36dbb59744eafdb28ad3f2284d8463baaca60b8be97b29",
+    "receipt_bytes": 19142,
+    "declared_products_checked": 6,
+    "declared_products_matching": 6,
+    "status": "PASS",
+    "command": "python3 read-only verifier using git show <commit>:<path> and SHA-256/size comparison"
+  },
+  "inventory": {
+    "mandatory_command": "python3 /data/.openclaw/workspace/Brain/scripts/brain-source-inventory.py --days 7",
+    "mandatory_workdir": "/data/.openclaw/workspace/Brain",
+    "first_attempt": "COMPLETED; output exceeded transport display limit and was not used as complete evidence",
+    "persisted_command": "python3 /data/.openclaw/workspace/Brain/scripts/brain-source-inventory.py --days 7 > /data/.openclaw/workspace/.openclaw/tmp/brain-daily-20261125/inventory.json",
+    "persisted_path": "/data/.openclaw/workspace/.openclaw/tmp/brain-daily-20261125/inventory.json",
+    "persisted_sha256": "998afd7a6f2cbb2e59dfbfb59cc0ee1cb9d2405cefcacfa16699aa24b1f2bfba",
+    "persisted_bytes": 74610,
+    "generated_at": "2026-11-26T02:06:12.275040+00:00",
+    "coverage_complete": false,
+    "errors": [],
+    "surface_count": 40,
+    "missing_surface_count": 18,
+    "source_count": 168,
+    "source_count_by_kind": {"openclaw_history": 157, "codex_history": 11},
+    "source_attributions": {"main": 113, "sentinel": 35, "kowalski": 15, "darth-vader": 5},
+    "limitation": "A repetição foi somente para persistir o JSON completo após truncamento de exibição. Atribuições podem contar uma fonte em mais de um agente; inventário de metadados não prova leitura de conteúdo."
+  },
+  "sources_not_reviewed": {
+    "active_run_source": "/data/.openclaw/agents/main/sessions/a556e614-87e3-4c16-bfe9-b4e47023a29d.jsonl",
+    "active_run_disposition": "PENDING_MUTABLE_SOURCE; muda durante esta execução e não pode certificar a própria cobertura.",
+    "classes": ["trajectories", "Codex bruto não selecionado", "memórias não selecionadas", "históricos fora das unidades declaradas", "payloads", "providers", "anexos"],
+    "meaning": "Não revisado ou ausente não significa ausência de conhecimento, inatividade ou saúde."
+  },
+  "knowledge_dispositions": {
+    "updated_existing": [
+      "BRAIN/01-DIARIO/README.md",
+      "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md",
+      "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md",
+      "BRAIN/99-SISTEMA/CHANGELOG.md",
+      "BRAIN/99-SISTEMA/HEALTH.md"
+    ],
+    "created_required_daily": ["BRAIN/01-DIARIO/2026/2026-11-25.md"],
+    "new_permanent_notes": [],
+    "new_people_companies_projects_agents_automations": [],
+    "archive_or_delete": [],
+    "deduplicated": ["goal main NinjaOne duplicado encerrado sem nova operação/coleta/mensagem", "cópia Kowalski idêntica ao canônico Sentinel por SHA-256"],
+    "reason": "O delta atualiza duas automações existentes; diário e recibo são artefatos obrigatórios do ciclo."
+  },
+  "products": [
+    {"path": "BRAIN/01-DIARIO/2026/2026-11-25.md", "sha256": "0d5e3479c0bfd79638d45daf36a6c36e5e6b308293dae78d58fc3179219b9279", "bytes": 7929},
+    {"path": "BRAIN/01-DIARIO/README.md", "sha256": "8f6e1281618d955c04ec99817054f1765d71ae691479e21e4dc913885e662177", "bytes": 5185},
+    {"path": "BRAIN/70-AUTOMACOES/BIKON-DURABLE-WORK-ORCHESTRATION.md", "sha256": "cb3e262a11d345bbf01b77b438cc081f908d7b9472dddb2b5764c49233a095c1", "bytes": 26577},
+    {"path": "BRAIN/70-AUTOMACOES/RELATORIOS-OPERACIONAIS-TELEGRAM.md", "sha256": "d46c706beea17ce0ca6b7e8eb067d0659d049eb52b2cb6781d361fbd33586866", "bytes": 41845},
+    {"path": "BRAIN/99-SISTEMA/CHANGELOG.md", "sha256": "373d39ebade92a6de7a35e68aab2df959e3a2beaf51c5761a9af1c5a858e70bd", "bytes": 178293},
+    {"path": "BRAIN/99-SISTEMA/HEALTH.md", "sha256": "0ccead1b287b2b0d087c9adf23de16921f3f46426e56986808cb6901088b3786", "bytes": 128138}
+  ],
+  "pending": [
+    {"id": "RONDA_2026_11_25_BACKUP_UNANSWERED", "dependency": "Preservar o item Backups dos clientes como sem resposta no snapshot congelado; verificação posterior deve ter identidade temporal própria."},
+    {"id": "RONDA_2026_11_25_CHECKPOINT_1300_EXPIRED", "dependency": "Preservar o checkpoint expirado; não o substituir pelo checkpoint de 17:30 ou pelo fechamento."},
+    {"id": "NINJAONE_LOGICAL_CYCLE_2026_11_25", "dependency": "Consumir somente evidência própria após publicação; a evidência 24/11 não substitui o ciclo seguinte."},
+    {"id": "PRIMARY_WINDOW_BACKLOG", "dependency": "Trajectories, Codex bruto, memórias, históricos não selecionados, payloads, providers e anexos não foram revisados integralmente."},
+    {"id": "LIVE_AGENT_HEALTH_UNPROVEN", "dependency": "Atividade selecionada não certifica saúde viva geral; ausência de fonte Robotnik recente não prova inatividade."},
+    {"id": "PRIOR_BACKLOG", "dependency": "Filas W47 e anteriores permanecem por identidade, exceto disposições explicitamente reconciliadas nos ciclos subsequentes."}
+  ],
+  "semantic_search": {
+    "command": "/data/.openclaw/skills/brain-semantic-search/scripts/search \"Quais registros existentes do Brain devem ser atualizados com decisões, riscos, projetos ou automações relevantes ocorridos em 25 de novembro de 2026?\"",
+    "mode": "read_only_no_refresh",
+    "index_at": "2026-11-25T02:16:34.634799Z",
+    "source_digest": "f2f9d3496060a91ac5099ddaa130cc8949230dc95d61ef1fd9069e6b8f16aa19",
+    "status": "COMPLETED_CANDIDATES_ONLY",
+    "disposition": "Candidatos orientaram navegação e deduplicação. O índice antecede o delta de 25/11 e não foi usado como prova de cobertura ou estado atual.",
+    "index_refresh_executed": false
+  },
+  "native_memory_search": {
+    "query": "Brain consolidação diária recente 2026-11-19 a 2026-11-25 decisões pendências conhecimento futuro",
+    "status": "HISTORICAL_OR_GENERAL_HITS_ONLY",
+    "disposition": "Resultados eram históricos ou gerais e não foram promovidos como novidade de 25/11."
+  },
+  "validation": {
+    "product_readback_before_receipt": {
+      "status": "PASS",
+      "command": "native read calls plus python3 full-file SHA-256 and size calculation",
+      "products_read": 6
+    },
+    "json_parse": {"status": "PASS", "command": "python3 -m json.tool BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-25-daily.json >/dev/null"},
+    "schema_and_relationships": {"status": "PASS", "command": "python3 local validator using note.schema.json and relationships/relationship-types.yaml for changed Markdown notes", "notes": 6, "relationships": 15, "errors": []},
+    "link_gate": {"status": "PASS", "command": "python3 BRAIN/99-SISTEMA/brain-v2/tools/brain_link_gate.py --root . --json", "markdown_total": 464, "internal_links": 1120, "broken_internal_links": 0, "uncategorized_markdown": 0, "duplicate_ids": {}, "duplicate_aliases": {}, "secret_candidates": [], "graph_components": 1, "reachability_rate": 1.0, "failures": []},
+    "content_or_coverage_certified": false,
+    "limitation": "Gates reais certificam schema, vínculos e integridade estrutural; não certificam conteúdo, cobertura semântica, saúde viva, aceite humano ou transporte."
+  },
+  "publication": {
+    "previous_commit_remote_transport": "9c92ac9 published by scheduled sync at 2026-11-25T09:00Z",
+    "current_local_commit": "PENDING_AT_RECEIPT_CREATION",
+    "push": "NOT_EXECUTED",
+    "sync": "NOT_INVOKED",
+    "remote_confirmation_for_current_cycle": "NOT_QUERIED",
+    "scheduled_git_routines": "UNCHANGED"
+  },
+  "operational_recovery": {
+    "invalid_tool_calls": 0,
+    "failed_read_calls": 1,
+    "failed_read_detail": "Native read of /data/.openclaw/agents/sentinel/sessions/5273e89e-ad6e-45af-aefc-d187b55d19f7.jsonl was blocked because the path is outside the workspace. Recovered by an individual local Python read-only parser before conclusions.",
+    "failed_commands": 0,
+    "inventory_display_recovery": "Initial completed output was truncated by transport; inventory was rerun only to persist complete JSON and summarize it.",
+    "mutation_repeated": false
+  },
+  "safety": {
+    "silent": true,
+    "messages_sent_by_consolidation": 0,
+    "external_access_by_consolidation": false,
+    "sessions_spawn": false,
+    "sessions_yield": false,
+    "new_agent_or_scheduler": false,
+    "config_changes": false,
+    "business_effects": false,
+    "tickets_or_financial_mutations": false,
+    "push_or_sync": false
+  }
+}

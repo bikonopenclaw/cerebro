@@ -6,7 +6,7 @@ created: '2026-09-21T17:53:52Z'
 created_semantics: Data de criação deste registro estruturado; não é a data de origem do conteúdo legado.
 schema_version: '1.0'
 legacy_content_preserved: true
-updated: '2026-11-25T02:00:00Z'
+updated: '2026-11-26T02:00:00Z'
 relationships:
 - type: references
   target: BRAIN/60-AGENTES/KOWALSKI.md
@@ -32,15 +32,19 @@ relationships:
   target: BRAIN/01-DIARIO/2026/2026-11-24.md
   reason: Vincula o snapshot diário NinjaOne de 23/11 e seu limite temporal.
   source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-24-daily.json
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-11-25.md
+  reason: Vincula a evidência diária de 24/11 e a consulta peer read-only exercitada em 25/11.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-25-daily.json
 ---
 
 # Relatórios Operacionais Telegram
 
 ```yaml
 categoria: canal_operacional
-fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14, qualificacao do fluxo universal em 2026-09-16, fechamento executivo somente leitura de 2026-11-15, reconciliação da Torre de 2026-11-20, fechamentos WhatsApp de 2026-11-23 e evidência diária NinjaOne de 2026-11-24
+fonte: decisão do Hebert em 2026-06-22, ajuste operacional de crons em 2026-08-03, reparo de rota em 2026-08-17, alias-router em 2026-08-19, checkpoint de crons em 2026-08-24, autoridade controlada de Felipe em 2026-08-26, incidente P1 em 2026-08-27/29, cancelamento RSE em 2026-08-31, snapshot da Torre de Controle em 2026-09-01, teste controlado ponta a ponta em 2026-09-02, qualificacao ARX em 2026-09-08/09, fechamento semanal de 2026-09-14, qualificacao do fluxo universal em 2026-09-16, fechamento executivo somente leitura de 2026-11-15, reconciliação da Torre de 2026-11-20, fechamentos WhatsApp de 2026-11-23 e evidências diárias NinjaOne de 2026-11-24/25
 confiabilidade: alta
-ultima_revisao: 2026-11-24
+ultima_revisao: 2026-11-25
 tags: [telegram, relatorios, kowalski, ninjaone, eol, operacao, gateway, identidade-visual, supervisao, idempotencia]
 ```
 
@@ -104,6 +108,16 @@ Proveniência: sessões main `46fa3553-8b58-45d3-b73a-8160a7109d38`, `1fede0d1-3
 - No momento da consulta, o ciclo lógico de 24/11 ainda não havia ocorrido e não estava atrasado: a próxima janela natural era 25/11 às 03:45 UTC, equivalente a 00:45 BRT. A evidência de 23/11 não substitui o ciclo seguinte.
 
 Proveniência: `/data/.openclaw/workspace-sentinel/evidence/ninjaone/canonical-tickets-2026-11-23-daily.json`, SHA-256 `48e53c417dcf3bc0ee4b90f0dd4d25f8e44f1e474d04ee2d52c1a07efd60b7cb`; sessão main `12be8775-f7ab-4326-a0d7-9c3a862fa59d`, linhas 34–82; recibo diário de 24/11.
+
+## Coleta diária NinjaOne e consulta peer — ciclo lógico de 24/11 observado em 25/11/2026
+
+- A evidência canônica foi coletada em 25/11 às 03:45:12 UTC para `reference_date_local=2026-11-24`. O board `Tickets Bikon` continha três observações: `#2241`, `#2253` e `#2258`, todos `Novo` e sem responsável; `#2241` tinha prioridade alta. Duas páginas e três detalhes foram lidos, sem truncamento.
+- A cópia publicada no inbox do Kowalski é byte-idêntica ao canônico Sentinel: SHA-256 `50d70a744be368b4f7891302c16ce84ab19881ca277ba24800af51883f880bbb`. Isso comprova integridade da publicação, não leitura humana nem cobertura além da referência.
+- Consultas read-only feitas durante 25/11 confirmaram referência 24/11, total 3 e `NO_PUBLISHED_EVIDENCE_AT_READ` para a referência 25/11. Nenhuma nova coleta, chamada ao provider ou alteração de ticket foi executada por essas consultas.
+- O primeiro caminho bound ficou bloqueado antes do produto. As capacidades peer delimitadas exercitadas depois por Kowalski e Darth Vader retornaram o mesmo recibo. Falhas intermediárias de rota do Darth — sessão canônica ausente, `TypeError`, ticket obrigatório e identidade indisponível — não provam indisponibilidade do Sentinel ou do NinjaOne.
+- Um goal main duplicado foi encerrado sem nova operação, coleta ou mensagem. A entrega canônica anterior ficou preservada no recibo Telegram `18071`; sucesso posterior não reclassifica as tentativas anteriores como bem-sucedidas.
+
+Proveniência: evidência canônica e cópia publicada com SHA-256 `50d70a…`; sessões main `cf1a2a0d-c4a5-4419-be16-ce662b492fff`, `85f0d4cf-d621-424e-9f6f-f9e234d76bec` e `9bedaeb9-f012-40c9-a2b8-b19cc9ab6bd1`; sessões Kowalski/Sentinel/Darth delimitadas no recibo diário de 25/11.
 
 ## Grupo
 

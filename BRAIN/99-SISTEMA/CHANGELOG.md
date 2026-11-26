@@ -4,13 +4,25 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-25T02:00:00Z'
+updated: '2026-11-26T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-25, consolidação diária silenciosa — execução em 26/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico.
+- Atualizados os registros existentes de Relatórios Operacionais e Bikon Durable Work Orchestration; nenhuma nota temática, pessoa, empresa, projeto, agente ou automação nova foi criada.
+- Consolidada a release corretiva da Ronda `c6405e03…`, com configuração inalterada `36714d89…`, grant `d1fd1629…` e fechamento `RONDA_HISTORICAL_OUTBOX_RELEASE_CONFIRMED`. A correção isola painel histórico incerto de rodada fechada, preserva evidência e impede replay.
+- Registrado o ciclo natural da Ronda de 25/11: ticket `#2259`, cinco de seis respostas, Backups dos clientes sem resposta, checkpoint de 13:00 expirado, checkpoint de 17:30 confirmado, resumo privado e encerramento `Resolvido/5000` confirmados. O resultado administrativo `SUCCESS` não foi convertido em verificação do item ausente.
+- Consolidada a evidência diária NinjaOne referente a 24/11: três tickets (`#2241`, `#2253` e `#2258`), todos `Novo` e sem responsável, com cópia publicada idêntica por SHA-256. Consultas peer read-only posteriores não fizeram nova coleta nem mutação.
+- Preservados bloqueios intermediários do roteamento Darth/Sentinel e encerrado documentalmente um goal main duplicado sem nova operação ou mensagem. Sucesso final não reclassifica tentativas anteriores.
+- Consumido por identidade o ciclo anterior no commit `9c92ac9`: recibo e seis produtos declarados coincidiram por SHA-256 e tamanho. O sync das 09:00 UTC publicou esse commit; 15:00, 20:00 e 01:00 UTC não encontraram delta.
+- O inventário obrigatório persistido declarou 168 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40. A saída inicial foi truncada no transporte; a execução foi repetida somente para persistir o JSON completo e obter resumo verificável.
+- Uma leitura nativa de histórico fora do workspace foi bloqueada pelo sandbox e recuperada por parser Python local somente leitura. HEALTH e recibo `brain-v2/reports/coverage-2026-11-25-daily.json` atualizados. Sem push, sync, mensagem, ticket, provider, reenvio ou mutação financeira por esta consolidação; o commit é somente local.
 
 ## 2026-11-24, consolidação diária silenciosa — execução em 25/11 às 02:00 UTC
 

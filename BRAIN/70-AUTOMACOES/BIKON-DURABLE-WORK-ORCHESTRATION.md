@@ -23,16 +23,20 @@ relationships:
   target: BRAIN/01-DIARIO/2026/2026-11-20.md
   reason: Vincula a correção de ownership das delegações nativas e o diagnóstico read-only da Torre.
   source: /data/.openclaw/agents/main/sessions/bc266bfd-5af3-4839-818e-302c9168a3f1.jsonl#L57-L85
-updated: '2026-11-21T02:00:00Z'
+- type: references
+  target: BRAIN/01-DIARIO/2026/2026-11-25.md
+  reason: Vincula a release de isolamento do outbox histórico e o ciclo natural da Ronda de 25/11.
+  source: BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-25-daily.json
+updated: '2026-11-26T02:00:00Z'
 ---
 
 # Bikon Durable Work Orchestration
 
 ```yaml
 categoria: automacao_operacional
-fonte: contrato canonico, requests de 2026-09-16/19, recusas protegidas de 2026-09-22, cadeias canônicas Ronda de 2026-11-06 e 2026-11-10 e reconciliação de delegação nativa de 2026-11-20
+fonte: contrato canonico, requests de 2026-09-16/19, recusas protegidas de 2026-09-22, cadeias canônicas Ronda de 2026-11-06, 2026-11-10 e 2026-11-25 e reconciliação de delegação nativa de 2026-11-20
 confiabilidade: alta para os eventos e estados persistidos citados, sem inferir saúde viva ou sucesso de ciclos futuros
-ultima_revisao: 2026-11-20
+ultima_revisao: 2026-11-25
 tags: [bikon, durable-work, relatorios, documentos, sentinel, kowalski, ronda, ninjaone, telegram, lifecycle, idempotencia]
 ```
 
@@ -117,6 +121,25 @@ No ciclo natural de 10/11, o ticket `#2215` foi criado, congelado às 18:30 BRT 
 A identificação “Fábio Fidelis” enviada depois do corte foi reconhecida somente na conversa Kowalski. O snapshot congelado e o resumo durável permaneceram com responsável não informado. Mensagem conversacional não deve retroescrever estado congelado; se responsável sem resposta precisar integrar a Ronda, deve existir persistência explícita e temporalmente qualificada.
 
 Fontes: sessão main `9e7fc978-437f-4248-b13b-fdd24bd43d6f`, sessão Kowalski `8f0c314c-a5c4-4cd5-b470-b19658e596aa`, audit canônico linhas 8559–8578, ordem final e SQLite local em modo somente leitura. Identidades e limites estão no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-10-daily.json`.
+
+## Ronda Bikon: isolamento do outbox histórico e ciclo natural — 2026-11-25
+
+A ordem normal `ORDER-RONDA-HISTORICAL-OUTBOX-20261125T1708Z` promoveu a release `c6405e039b08ac196712764077ecdf42571941f61b007e0ee5444dfeeb3f7e84`, com manifesto `426b7de0a34c8d6ea31404e9624d96260e9c19597022f447480635ce67680b92`, configuração inalterada `36714d89420609c20c267cdd4f541119c9fb631fd5862fb158e600fbebae9365` e grant `d1fd1629a89ed8ad808cbcbcf56ea9c0cbf776eb3b49747fe33015a0732e0892`. A ordem fechou às 17:13:31 UTC com `RONDA_HISTORICAL_OUTBOX_RELEASE_CONFIRMED`, e o ponteiro instalado foi observado na nova release.
+
+O reparo separa edições históricas incertas de painel de rodadas já fechadas do processamento atual. A evidência e a incerteza originais são preservadas, sem replay; trabalho corrente ou ainda incerto permanece fail-closed. A operação histórica `panel:ronda:2026-11-18:equipe:r10`, antes com resultado remoto desconhecido, ficou `skipped` com `expired_closed_round_panel_do_not_replay`. A promoção identificada não prova, sozinha, saúde futura do worker ou sucesso de ciclos posteriores.
+
+O ciclo natural `ronda:2026-11-25:equipe` produziu evidência própria:
+
+- ticket NinjaOne `#2259`, painel Telegram `1538` e cinco respostas registradas por Fábio Fidelis;
+- item **Backups dos clientes** sem resposta no corte, com progresso `5/6` e resultado `INCOMPLETO`;
+- checkpoint de 13:00 `skipped/expired_checkpoint` e checkpoint de 17:30 confirmado;
+- resumo privado `RONDA-SUMMARY:ronda:2026-11-25:equipe:r7:d85a80978549b17e` confirmado;
+- encerramento do ticket em `Resolvido/5000` e painel final confirmados;
+- último order do ciclo encerrado às 21:30:18 UTC com `SUCCESS`; controlador observado depois em `IDLE`, sem ordem ativa.
+
+O `SUCCESS` do order certifica a convergência dos efeitos registrados para esse ciclo. Não transforma o item sem resposta em verificação de backup, não encerra incidentes relacionados e não apaga o checkpoint expirado.
+
+Fontes: ordem e grant de 25/11; audit canônico eventos 51986–52005; `controller-state.json`; SQLite `/var/lib/bikon-ronda/ronda.sqlite` em modo somente leitura; identidades e limites no recibo `BRAIN/99-SISTEMA/brain-v2/reports/coverage-2026-11-25-daily.json`.
 
 ## Validação E2E do Puppet e recuperação de produto — 2026-11-11
 

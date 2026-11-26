@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-25T02:00:00Z'
+updated: '2026-11-26T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,17 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-25 (execução em 26/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 25/11. O inventário obrigatório persistido declarou 168 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40; metadados não comprovam leitura de conteúdo ou saúde viva.
+- O ciclo anterior foi consumido por identidade no commit `9c92ac9`; recibo e seis produtos declarados coincidiram por SHA-256 e tamanho. O sync das 09:00 UTC publicou esse checkpoint, enquanto os três checkpoints seguintes não encontraram delta. Isso comprova transporte Git daquele commit, não cobertura global.
+- A Ronda promoveu a release `c6405e03…` com config `36714d89…` e grant `d1fd1629…`. O ciclo de 25/11 fechou ticket `#2259` com resumo e painel confirmados, mas preservou `5/6`, Backups dos clientes sem resposta e checkpoint de 13:00 expirado. Release e order `SUCCESS` não certificam o item ausente nem saúde futura.
+- A evidência NinjaOne de 24/11 e sua cópia publicada coincidiram por SHA-256: três tickets, todos `Novo` e sem responsável. Consultas peer read-only confirmaram a referência e não executaram nova coleta, provider ou mutação. Falhas intermediárias de rota foram preservadas sem inferir indisponibilidade operacional.
+- A saída inicial do inventário ficou truncada; ele foi repetido somente para persistência completa e resumo verificável. Uma leitura nativa de histórico fora do workspace foi bloqueada pelo sandbox e recuperada por parser local somente leitura. Nenhuma escrita ou mutação de negócio foi repetida.
+- Históricos não selecionados, trajectories, Codex bruto, memórias, payloads, providers e a sessão mutável deste run permaneceram pendentes. Atividade selecionada de main, Kowalski, Darth Vader e Sentinel não certifica saúde viva geral; ausência de fontes recentes de Robotnik não prova inatividade.
+- Pesquisa semântica local executada read-only/sem refresh. O índice era de 25/11 às 02:16 UTC e serviu apenas para navegação; não certifica o delta posterior.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-25-daily.json`. Score legado 96/100 mantido sem recálculo; gates estruturais não certificam conteúdo, completude semântica, saúde viva ou transporte.
 
 ## Verificação de cobertura — 2026-11-24 (execução em 25/11 às 02:00 UTC)
 
