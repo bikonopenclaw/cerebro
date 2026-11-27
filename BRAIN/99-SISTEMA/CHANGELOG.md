@@ -4,13 +4,22 @@ type: state
 title: CHANGELOG.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-26T02:00:00Z'
+updated: '2026-11-27T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
 ---
 
 # CHANGELOG.md
+
+## 2026-11-26, consolidação diária silenciosa — execução em 27/11 às 02:00 UTC
+
+- Criado o diário da data de ciclo em `America/Sao_Paulo` e atualizado o MOC cronológico.
+- Nenhuma novidade temática nas unidades selecionadas justificou criar ou atualizar registro permanente de pessoa, empresa, projeto, agente, automação ou conhecimento; pendências anteriores foram preservadas por identidade.
+- Consumido por identidade o ciclo anterior no commit `ea147a3`: recibo e seis produtos declarados coincidiram por SHA-256 e tamanho. O sync das 09:00 UTC publicou esse commit; 15:00, 20:00 e 01:00 UTC não encontraram delta.
+- O inventário obrigatório persistido declarou 168 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40. A execução inicial foi concluída, mas a saída exibida ficou truncada; o inventário foi repetido somente para persistir o JSON completo e obter resumo verificável.
+- Pesquisa semântica executada read-only/sem refresh. HEALTH e recibo `brain-v2/reports/coverage-2026-11-26-daily.json` atualizados; nenhuma nota temática nova foi criada.
+- Sem push, sync, mensagem, ticket, provider, reenvio, operação financeira ou outra mutação externa por esta consolidação; o commit é somente local.
 
 ## 2026-11-25, consolidação diária silenciosa — execução em 26/11 às 02:00 UTC
 

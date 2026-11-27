@@ -4,7 +4,7 @@ type: state
 title: HEALTH.md
 created: '2026-09-21T21:52:07.972617Z'
 created_semantics: Data do registro estruturado; origem anterior preservada quando aplicável.
-updated: '2026-11-26T02:00:00Z'
+updated: '2026-11-27T02:00:00Z'
 schema_version: '1.0'
 legacy_content_preserved: true
 relationships: []
@@ -13,6 +13,16 @@ relationships: []
 # HEALTH.md
 
 Health Score: 96/100
+
+## Verificação de cobertura — 2026-11-26 (execução em 27/11 às 02:00 UTC)
+
+- Data de ciclo calculada em `America/Sao_Paulo`: 26/11. O inventário obrigatório persistido declarou 168 fontes, `coverage_complete=false`, zero erros e 18 superfícies ausentes entre 40; metadados não comprovam leitura de conteúdo ou saúde viva.
+- O ciclo anterior foi consumido por identidade no commit `ea147a3`; recibo e seis produtos declarados coincidiram por SHA-256 e tamanho. O sync das 09:00 UTC publicou esse checkpoint, enquanto os três checkpoints seguintes não encontraram delta. Isso comprova transporte Git daquele commit, não cobertura global.
+- Nenhuma unidade temática adicional apareceu no delta inventariado após a finalização do ciclo anterior. Isso não prova ausência de atividade, resolução das pendências de 25/11 nem saúde viva de agentes ou integrações.
+- A saída exibida do primeiro inventário ficou truncada; ele foi repetido somente para persistência completa e resumo verificável. Nenhuma escrita documental ou mutação de negócio foi repetida.
+- Históricos não selecionados, trajectories, Codex bruto, memórias, payloads, providers, anexos e a sessão mutável deste run permaneceram pendentes. Ausência de fontes recentes de agentes não-main não prova inatividade.
+- Pesquisa semântica local executada read-only/sem refresh. O índice era de 26/11 às 02:17 UTC e serviu apenas para navegação; não certifica o delta posterior.
+- Recibo efetivo: `brain-v2/reports/coverage-2026-11-26-daily.json`. Score legado 96/100 mantido sem recálculo; gates estruturais não certificam conteúdo, completude semântica, saúde viva ou transporte.
 
 ## Verificação de cobertura — 2026-11-25 (execução em 26/11 às 02:00 UTC)
 
